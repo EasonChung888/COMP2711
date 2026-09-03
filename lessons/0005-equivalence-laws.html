@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 5: Equivalence Laws | COMP2711 Logic</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lesson">Skip to the lesson</a>
+  <header class="site-header"><div class="shell"><a class="brand" href="../index.html">COMP2711 Logic</a><nav class="utility-nav" aria-label="Course navigation"><a href="../reference/0001-logic-symbols-and-laws.html">Logic reference</a></nav></div></header>
+  <main id="lesson" class="lesson shell">
+    <header class="lesson-header"><div><p class="eyebrow">Lesson 5</p><h1>Rewrite without changing meaning</h1><p class="lead">Equivalence laws replace one expression by another that has the same truth value in every possible assignment.</p></div><div class="lesson-meta"><span class="tag">Day 1</span><span>5 of 6</span><span>18 minutes</span></div></header>
+
+    <section class="goal"><h2>Concrete goal</h2><p>Use named propositional equivalence laws one step at a time, especially implication, De Morgan, double negation, distributive, negation, identity, and domination laws.</p></section>
+
+    <section class="intuition">
+      <h2>Treat every law as a safe rewrite</h2>
+      <p>If <span class="logic">A ≡ B</span>, you may replace <span class="logic">A</span> by <span class="logic">B</span> inside a larger formula. The symbol <span class="logic">≡</span> reports logical equivalence; it is not a connective inside a proposition. Work locally: find one matching pattern, rewrite it, and name the law.</p>
+    </section>
+
+    <section class="formal-definition">
+      <h2>High-yield lecture laws</h2>
+      <div class="table-wrap"><table class="reference-table"><thead><tr><th>Law</th><th>Safe rewrite</th></tr></thead><tbody>
+        <tr><td>Implication</td><td><span class="logic">p → q ≡ ¬p ∨ q</span></td></tr>
+        <tr><td>Contrapositive</td><td><span class="logic">p → q ≡ ¬q → ¬p</span></td></tr>
+        <tr><td>De Morgan</td><td><span class="logic">¬(p ∧ q) ≡ ¬p ∨ ¬q</span>; <span class="logic">¬(p ∨ q) ≡ ¬p ∧ ¬q</span></td></tr>
+        <tr><td>Double negation</td><td><span class="logic">¬¬p ≡ p</span></td></tr>
+        <tr><td>Negation</td><td><span class="logic">p ∨ ¬p ≡ T</span>; <span class="logic">p ∧ ¬p ≡ F</span></td></tr>
+        <tr><td>Identity / domination</td><td><span class="logic">p ∨ F ≡ p</span>; <span class="logic">p ∨ T ≡ T</span></td></tr>
+      </tbody></table></div>
+      <p>The lecture reference also includes idempotent, commutative, associative, distributive, absorption, conditional, and biconditional laws.</p>
+    </section>
+
+    <section class="worked-example">
+      <h2>Worked example 1: negate an implication</h2>
+      <p>Show that <span class="logic">¬(p → q) ≡ p ∧ ¬q</span>.</p>
+      <ol class="derivation">
+        <li><span class="logic">¬(p → q) ≡ ¬(¬p ∨ q)</span> <span class="reason">— implication law; eliminate the arrow first.</span></li>
+        <li><span class="logic">≡ ¬¬p ∧ ¬q</span> <span class="reason">— De Morgan’s law; negate both parts and change <span class="logic">∨</span> to <span class="logic">∧</span>.</span></li>
+        <li><span class="logic">≡ p ∧ ¬q</span> <span class="reason">— double negation.</span></li>
+      </ol>
+      <p class="watch-out"><strong>Likely error:</strong> writing <span class="logic">¬p ∧ ¬q</span>. The first input to De Morgan is already <span class="logic">¬p</span>, so negating it produces <span class="logic">p</span>.</p>
+    </section>
+
+    <section class="worked-example">
+      <h2>Worked example 2: a longer chain</h2>
+      <p><em>Lecture example:</em> simplify <span class="logic">¬(p ∨ (¬p ∧ q))</span>.</p>
+      <ol class="derivation">
+        <li><span class="logic">¬(p ∨ (¬p ∧ q)) ≡ ¬p ∧ ¬(¬p ∧ q)</span> <span class="reason">— De Morgan.</span></li>
+        <li><span class="logic">≡ ¬p ∧ (p ∨ ¬q)</span> <span class="reason">— De Morgan, then double negation.</span></li>
+        <li><span class="logic">≡ (¬p ∧ p) ∨ (¬p ∧ ¬q)</span> <span class="reason">— distributive law.</span></li>
+        <li><span class="logic">≡ F ∨ (¬p ∧ ¬q)</span> <span class="reason">— negation law.</span></li>
+        <li><span class="logic">≡ ¬p ∧ ¬q</span> <span class="reason">— identity law.</span></li>
+      </ol>
+    </section>
+
+    <section class="common-mistakes"><h2>Common mistakes</h2><ul><li>Changing two parts at once and being unable to justify the new expression.</li><li>Using De Morgan without switching <span class="logic">∧</span> and <span class="logic">∨</span>.</li><li>Using <span class="logic">=</span> between propositions; the lecture uses <span class="logic">≡</span> for logical equivalence.</li><li>Distributing only one branch: <span class="logic">p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)</span>.</li></ul></section>
+
+    <section class="practice">
+      <h2>Two short checks</h2>
+      <section class="quiz" data-quiz data-quiz-id="l05-negated-conditional" data-correct="c" data-points="1" data-feedback-correct="Correct. An implication fails exactly when p is true and q is false." data-feedback-incorrect="Not yet. Replace the implication first, then apply De Morgan.">
+        <h3>1. Which expression is equivalent to <span class="logic">¬(p → q)</span>?</h3>
+        <label class="option"><input type="radio" name="l05-negated-conditional" value="a"> <span class="logic">¬p ∨ q</span></label>
+        <label class="option"><input type="radio" name="l05-negated-conditional" value="b"> <span class="logic">¬p ∧ q</span></label>
+        <label class="option"><input type="radio" name="l05-negated-conditional" value="c"> <span class="logic">p ∧ ¬q</span></label>
+        <label class="option"><input type="radio" name="l05-negated-conditional" value="d"> <span class="logic">p ∨ ¬q</span></label>
+        <div class="quiz-actions"><button type="button" data-check-answer>Check</button><button type="button" class="secondary" data-reset-answer>Reset</button></div><p class="feedback" data-feedback aria-live="polite"></p>
+        <details><summary>Hint</summary><p>Start with <span class="logic">p → q ≡ ¬p ∨ q</span>.</p></details>
+      </section>
+
+      <section class="quiz" data-quiz data-quiz-id="l05-first-law" data-correct="b" data-points="1" data-feedback-correct="Correct. The outer negation of a conjunction calls for De Morgan first." data-feedback-incorrect="Not yet. Match the outermost structure, ¬(A ∧ B), to a law.">
+        <h3>2. What is the best first rewrite for <span class="logic">¬(p ∧ (q ∨ r))</span>?</h3>
+        <label class="option"><input type="radio" name="l05-first-law" value="a"> <span class="logic">¬p ∧ (¬q ∨ ¬r)</span></label>
+        <label class="option"><input type="radio" name="l05-first-law" value="b"> <span class="logic">¬p ∨ ¬(q ∨ r)</span></label>
+        <label class="option"><input type="radio" name="l05-first-law" value="c"> <span class="logic">p ∨ (¬q ∧ ¬r)</span></label>
+        <label class="option"><input type="radio" name="l05-first-law" value="d"> <span class="logic">p ∧ (¬q ∧ ¬r)</span></label>
+        <div class="quiz-actions"><button type="button" data-check-answer>Check</button><button type="button" class="secondary" data-reset-answer>Reset</button></div><p class="feedback" data-feedback aria-live="polite"></p>
+        <details><summary>Hint</summary><p>At the outer level, the two parts are <span class="logic">p</span> and <span class="logic">(q ∨ r)</span>.</p></details>
+      </section>
+      <div class="free-response">
+        <h3>Show your steps</h3><p>Simplify <span class="logic">(p ∧ q) → (p ∨ q)</span> using laws, not a truth table. Send each line and its law to me for line-by-line feedback.</p>
+      </div>
+      <p class="remediation-note">Below 70%? I will give you one arrow-elimination item, one De Morgan item, and then a mixed revisit.</p>
+    </section>
+
+    <details class="stretch"><summary>Stretch: NAND from a recent paper</summary>
+      <p>The Fall 2025 Midterm defines <span class="logic">p NAND q = ¬(p ∧ q)</span>. This is not a new mystery: expand NAND into familiar connectives, then use the same laws. For example, <span class="logic">p NAND p ≡ ¬(p ∧ p) ≡ ¬p</span> by idempotence. Keep this optional until the core laws feel secure.</p>
+      <p><a href="../past_paper/COMP2711_F2025_Midterm.pdf#page=3">Fall 2025 Midterm, Problem 1, PDF pages 3–4</a>.</p>
+    </details>
+
+    <section class="takeaway"><h2>Takeaway</h2><p><strong>Rewrite one matching pattern at a time, preserve equivalence, and name every law.</strong></p></section>
+    <aside class="source-card"><h2>Sources</h2><p><a href="../lecture/L01-Logic-Propositional-Logic.pdf#page=24">L01, PDF pages 24–35</a>. Complete table: <a href="../reference/0001-logic-symbols-and-laws.html#equivalence-laws">propositional equivalence laws</a>.</p></aside>
+    <aside class="follow-up"><h2>Ask your teacher</h2><p>Paste your equivalence chain. I will mark the first invalid rewrite and explain how to repair it.</p></aside>
+    <nav class="lesson-nav" aria-label="Lesson navigation"><a href="0004-truth-tables-and-classification.html">← Classification</a><a href="0006-day-1-checkpoint.html">Next: Day 1 checkpoint →</a></nav>
+  </main>
+</body>
+</html>

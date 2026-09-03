@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 2: Connectives and Truth Values | COMP2711 Logic</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lesson">Skip to the lesson</a>
+  <header class="site-header"><div class="shell"><a class="brand" href="../index.html">COMP2711 Logic</a><nav class="utility-nav" aria-label="Course navigation"><a href="../reference/0001-logic-symbols-and-laws.html">Logic reference</a></nav></div></header>
+  <main id="lesson" class="lesson shell">
+    <header class="lesson-header"><div><p class="eyebrow">Lesson 2</p><h1>Build compound propositions</h1><p class="lead">“Not”, “and”, and “or” have exact truth conditions in logic.</p></div><div class="lesson-meta"><span class="tag">Day 1</span><span>2 of 6</span><span>15 minutes</span></div></header>
+
+    <section class="goal"><h2>Concrete goal</h2><p>Translate and evaluate negation <span class="logic">¬</span>, conjunction <span class="logic">∧</span>, inclusive disjunction <span class="logic">∨</span>, and exclusive or <span class="logic">⊕</span>.</p></section>
+
+    <section class="intuition">
+      <h2>Connectives are truth-value machines</h2>
+      <p>Give a connective the truth values of its inputs, and it returns one truth value. Ordinary “or” can be ambiguous; logical <span class="logic">∨</span> is inclusive, so it remains true when both inputs are true.</p>
+    </section>
+
+    <section class="formal-definition">
+      <h2>Formal lecture definitions</h2>
+      <div class="table-wrap"><table class="truth-table"><thead><tr><th><span class="logic">p</span></th><th><span class="logic">q</span></th><th><span class="logic">¬p</span></th><th><span class="logic">p ∧ q</span></th><th><span class="logic">p ∨ q</span></th><th><span class="logic">p ⊕ q</span></th></tr></thead><tbody>
+        <tr><td>T</td><td>T</td><td>F</td><td>T</td><td>T</td><td>F</td></tr>
+        <tr><td>T</td><td>F</td><td>F</td><td>F</td><td>T</td><td>T</td></tr>
+        <tr><td>F</td><td>T</td><td>T</td><td>F</td><td>T</td><td>T</td></tr>
+        <tr><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td><td>F</td></tr>
+      </tbody></table></div>
+      <ul>
+        <li><span class="logic">¬p</span> reverses the truth value of <span class="logic">p</span>.</li>
+        <li><span class="logic">p ∧ q</span> is true only when both parts are true.</li>
+        <li><span class="logic">p ∨ q</span> is true when at least one part is true.</li>
+        <li><span class="logic">p ⊕ q</span> is true when exactly one part is true.</li>
+      </ul>
+    </section>
+
+    <section class="worked-example">
+      <h2>Worked example 1: translate before evaluating</h2>
+      <p>Let <span class="logic">p</span> be “The server is online” and <span class="logic">q</span> be “The database is reachable”. Suppose <span class="logic">p = T</span> and <span class="logic">q = F</span>.</p>
+      <ol class="derivation">
+        <li>“The server is online and the database is not reachable” becomes <span class="logic">p ∧ ¬q</span>.</li>
+        <li>Since <span class="logic">q = F</span>, negation gives <span class="logic">¬q = T</span>.</li>
+        <li>Now evaluate <span class="logic">T ∧ T</span>; conjunction gives <span class="logic">T</span>.</li>
+      </ol>
+      <p class="watch-out"><strong>Likely error:</strong> applying <span class="logic">¬</span> to the whole sentence instead of only to <span class="logic">q</span>.</p>
+    </section>
+
+    <section class="worked-example">
+      <h2>Worked example 2: inclusive versus exclusive</h2>
+      <p>Suppose <span class="logic">p = T</span> and <span class="logic">q = T</span>.</p>
+      <ol class="derivation">
+        <li><span class="logic">p ∨ q = T</span> because at least one part is true.</li>
+        <li><span class="logic">p ⊕ q = F</span> because exclusive or requires exactly one true part.</li>
+        <li>The two operators differ precisely in the <span class="logic">T,T</span> row.</li>
+      </ol>
+    </section>
+
+    <section class="common-mistakes"><h2>Common mistakes</h2><ul><li>Reading <span class="logic">∨</span> as “one or the other, but not both”.</li><li>Calling <span class="logic">p ∧ q</span> true when only one conjunct is true.</li><li>Forgetting that negation acts only on the expression immediately following it unless parentheses enlarge its scope.</li></ul></section>
+
+    <section class="practice">
+      <h2>Two short checks</h2>
+      <section class="quiz" data-quiz data-quiz-id="l02-evaluate" data-correct="d" data-points="1" data-feedback-correct="Correct. ¬p is false, so false OR false is false." data-feedback-incorrect="Not yet. Negate p first, then evaluate the disjunction.">
+        <h3>1. If <span class="logic">p = T</span> and <span class="logic">q = F</span>, what is <span class="logic">¬p ∨ q</span>?</h3>
+        <label class="option"><input type="radio" name="l02-evaluate" value="a"> True by conjunction.</label>
+        <label class="option"><input type="radio" name="l02-evaluate" value="b"> True by disjunction.</label>
+        <label class="option"><input type="radio" name="l02-evaluate" value="c"> False by conjunction.</label>
+        <label class="option"><input type="radio" name="l02-evaluate" value="d"> False by disjunction.</label>
+        <div class="quiz-actions"><button type="button" data-check-answer>Check</button><button type="button" class="secondary" data-reset-answer>Reset</button></div><p class="feedback" data-feedback aria-live="polite"></p>
+        <details><summary>Hint</summary><p><span class="logic">¬T = F</span>, then use the <span class="logic">F,F</span> row for <span class="logic">∨</span>.</p></details>
+      </section>
+
+      <section class="quiz" data-quiz data-quiz-id="l02-xor" data-correct="c" data-points="1" data-feedback-correct="Correct. XOR is true only when exactly one input is true." data-feedback-incorrect="Not yet. Count how many of the two inputs are true.">
+        <h3>2. When is <span class="logic">p ⊕ q</span> true?</h3>
+        <label class="option"><input type="radio" name="l02-xor" value="a"> When both inputs have the value true.</label>
+        <label class="option"><input type="radio" name="l02-xor" value="b"> When both inputs have the value false.</label>
+        <label class="option"><input type="radio" name="l02-xor" value="c"> When exactly one input has value true.</label>
+        <label class="option"><input type="radio" name="l02-xor" value="d"> When at least one input is true.</label>
+        <div class="quiz-actions"><button type="button" data-check-answer>Check</button><button type="button" class="secondary" data-reset-answer>Reset</button></div><p class="feedback" data-feedback aria-live="polite"></p>
+        <details><summary>Hint</summary><p>The word “exclusive” excludes the row where both inputs are true.</p></details>
+      </section>
+      <p class="remediation-note">Below 70%? Send me your two choices. I will isolate whether negation, OR, or XOR caused the difficulty.</p>
+    </section>
+
+    <section class="takeaway"><h2>Takeaway</h2><p><strong><span class="logic">∧</span> means both, <span class="logic">∨</span> means at least one, and <span class="logic">⊕</span> means exactly one.</strong></p></section>
+    <aside class="source-card"><h2>Sources</h2><p><a href="../lecture/L01-Logic-Propositional-Logic.pdf#page=8">L01, PDF pages 8–12</a>. Quick reference: <a href="../reference/0001-logic-symbols-and-laws.html#truth-tables">complete truth tables</a>.</p></aside>
+    <aside class="follow-up"><h2>Ask your teacher</h2><p>Send me a sentence containing “not”, “and”, or “or” and your symbolic translation. I will check its scope with you.</p></aside>
+    <nav class="lesson-nav" aria-label="Lesson navigation"><a href="0001-propositions-and-symbols.html">← Propositions</a><a href="0003-implications-and-biconditionals.html">Next: Implications →</a></nav>
+  </main>
+</body>
+</html>
