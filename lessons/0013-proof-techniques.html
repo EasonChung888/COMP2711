@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 13 - Four Proof Techniques</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../index.html">COMP2711 Logic</a>
+      <nav class="utility-nav" aria-label="Course links"><a href="0012-predicate-inference.html">Previous</a><a href="../reference/0002-inference-and-proof-templates.html#proof-templates">Proof templates</a></nav>
+    </div>
+  </header>
+
+  <main class="lesson shell">
+    <article>
+      <header class="lesson-header">
+        <p class="eyebrow">About 20 minutes · Basic proof techniques</p>
+        <h1>Choose a proof opening that gives you useful information</h1>
+        <p class="lead">A proof method tells you what to assume first and what endpoint to seek. After that, definitions and algebra do the ordinary work.</p>
+      </header>
+
+      <nav class="lesson-nav" aria-label="Lesson navigation">
+        <a href="0012-predicate-inference.html">← Lesson 12</a>
+        <a href="../reference/0002-inference-and-proof-templates.html#proof-templates">Proof templates</a>
+        <a href="0014-final-mini-mock.html">Lesson 14 →</a>
+      </nav>
+
+      <section class="goal" id="goal">
+        <h2>Your concrete goal</h2>
+        <p>You will choose among direct proof, contraposition, contradiction, and biconditional proof, then write a complete proof that begins with the correct assumption and ends with the required conclusion.</p>
+      </section>
+
+      <section class="intuition" id="intuition">
+        <h2>Plain-English intuition: choose the easier doorway</h2>
+        <ul>
+          <li>If the hypothesis immediately gives a useful definition, go <strong>directly</strong>.</li>
+          <li>If the conclusion’s negation has a useful form, prove the <strong>contrapositive</strong>.</li>
+          <li>If assuming failure creates incompatible facts, use <strong>contradiction</strong>.</li>
+          <li>If the claim says “if and only if,” prove <strong>both directions</strong>.</li>
+        </ul>
+        <p>These methods do not compete: a biconditional proof may use a direct argument in one direction and contraposition in the other.</p>
+      </section>
+
+      <section class="formal-definition" id="definition">
+        <h2>The four proof templates</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Goal</th><th>Opening assumption</th><th>Required ending</th></tr></thead>
+            <tbody>
+              <tr><td>Directly prove <span class="logic">p → q</span></td><td>Assume <span class="logic">p</span>.</td><td>Derive <span class="logic">q</span>.</td></tr>
+              <tr><td>Prove <span class="logic">p → q</span> by contraposition</td><td>Assume <span class="logic">¬q</span>.</td><td>Derive <span class="logic">¬p</span>.</td></tr>
+              <tr><td>Prove statement <span class="logic">p</span> by contradiction</td><td>Assume <span class="logic">¬p</span>.</td><td>Derive <span class="logic">r ∧ ¬r</span>, or another impossibility.</td></tr>
+              <tr><td>Prove <span class="logic">p ↔ q</span></td><td>First assume <span class="logic">p</span>; later assume <span class="logic">q</span>.</td><td>Prove both <span class="logic">p → q</span> and <span class="logic">q → p</span>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Definitions are engines.</strong> For an integer <span class="logic">n</span>: even means <span class="logic">n = 2k</span>; odd means <span class="logic">n = 2k + 1</span>, for some integer <span class="logic">k</span>. A rational number has form <span class="logic">a/b</span> with integers <span class="logic">a,b</span> and <span class="logic">b ≠ 0</span>.</aside>
+      </section>
+
+      <section class="worked-example" id="direct-proof">
+        <h2>Worked example 1: direct proof</h2>
+        <p><strong>Theorem.</strong> If integer <span class="logic">n</span> is odd, then <span class="logic">n²</span> is odd.</p>
+        <ol class="proof-steps">
+          <li>Assume <span class="logic">n</span> is odd. This is the hypothesis.</li>
+          <li>By the definition of odd, <span class="logic">n = 2k + 1</span> for some integer <span class="logic">k</span>.</li>
+          <li>Square and rearrange: <span class="logic">n² = (2k+1)² = 4k² + 4k + 1 = 2(2k²+2k)+1</span>.</li>
+          <li>Because <span class="logic">2k²+2k</span> is an integer, <span class="logic">n²</span> has the form <span class="logic">2m+1</span>. Therefore <span class="logic">n²</span> is odd.</li>
+        </ol>
+        <p class="small-note">The last sentence matters: the algebra only becomes a proof when you reconnect the final form to the definition.</p>
+      </section>
+
+      <section class="worked-example" id="contraposition">
+        <h2>Worked example 2: contraposition</h2>
+        <p><strong>Theorem.</strong> If <span class="logic">3n+2</span> is odd, then integer <span class="logic">n</span> is odd.</p>
+        <ol class="proof-steps">
+          <li>The contrapositive is: if <span class="logic">n</span> is even, then <span class="logic">3n+2</span> is even.</li>
+          <li>Assume <span class="logic">n</span> is even, so <span class="logic">n=2k</span> for some integer <span class="logic">k</span>.</li>
+          <li>Then <span class="logic">3n+2 = 3(2k)+2 = 2(3k+1)</span>.</li>
+          <li>Since <span class="logic">3k+1</span> is an integer, <span class="logic">3n+2</span> is even. The contrapositive is true, so the original conditional is true.</li>
+        </ol>
+        <p class="small-note">Do not assume the original hypothesis here. A contrapositive proof starts with the negation of the original conclusion.</p>
+      </section>
+
+      <section class="worked-example" id="contradiction">
+        <h2>Worked example 3: contradiction</h2>
+        <p><strong>Theorem.</strong> <span class="logic">√2</span> is irrational.</p>
+        <ol class="proof-steps">
+          <li>Assume the opposite: <span class="logic">√2</span> is rational. Then <span class="logic">√2=a/b</span> for integers <span class="logic">a,b</span> with no common factor and <span class="logic">b ≠ 0</span>.</li>
+          <li>Squaring gives <span class="logic">2b²=a²</span>, so <span class="logic">a²</span> is even. Hence <span class="logic">a</span> is even; write <span class="logic">a=2c</span>.</li>
+          <li>Substitute: <span class="logic">2b²=(2c)²=4c²</span>, so <span class="logic">b²=2c²</span>. Thus <span class="logic">b</span> is even.</li>
+          <li>Both <span class="logic">a</span> and <span class="logic">b</span> are divisible by 2, contradicting the choice that they have no common factor. Therefore <span class="logic">√2</span> is irrational.</li>
+        </ol>
+        <details class="hint"><summary>Why does an even square imply an even integer?</summary><p>Its contrapositive was proved above: an odd integer has an odd square. Therefore, if <span class="logic">a²</span> is not odd, <span class="logic">a</span> is not odd.</p></details>
+      </section>
+
+      <section class="worked-example" id="biconditional">
+        <h2>Worked example 4: biconditional proof</h2>
+        <p><strong>Theorem.</strong> An integer <span class="logic">n</span> is odd if and only if <span class="logic">n²</span> is odd.</p>
+        <p><strong>Forward direction, <span class="logic">n</span> odd → <span class="logic">n²</span> odd:</strong> this is exactly the direct proof in Worked example 1.</p>
+        <p><strong>Reverse direction, <span class="logic">n²</span> odd → <span class="logic">n</span> odd:</strong> prove the contrapositive. If <span class="logic">n</span> is even, then <span class="logic">n=2k</span> for an integer <span class="logic">k</span>. Hence <span class="logic">n²=4k²=2(2k²)</span>, which is even. Therefore the reverse conditional holds. Since both directions hold, the biconditional holds.</p>
+      </section>
+
+      <section class="common-mistakes" id="common-mistakes">
+        <h2>Common mistakes</h2>
+        <ul>
+          <li><strong>Proving the converse:</strong> for <span class="logic">p → q</span>, proving <span class="logic">q → p</span> proves a different statement.</li>
+          <li><strong>Wrong contradiction opening:</strong> for a conditional, assume <span class="logic">p ∧ ¬q</span>, not merely <span class="logic">¬q</span>.</li>
+          <li><strong>One-sided biconditional:</strong> proving only <span class="logic">p → q</span> earns only half the logical task.</li>
+          <li><strong>Stopping at algebra:</strong> explicitly state why the final expression matches “even,” “odd,” “rational,” or the requested property.</li>
+        </ul>
+      </section>
+
+      <section class="practice" id="practice">
+        <h2>Two short checks</h2>
+        <section class="quiz" data-quiz data-quiz-id="lesson-13-method-check" data-correct="b" data-points="1" data-feedback-correct="Correct. Negating the conclusion gives the useful assumption that n is even." data-feedback-incorrect="Try again. Look for the method whose first assumption is the negation of the conclusion.">
+          <h3>Check 1. To prove “if <span class="logic">n²</span> is odd, then <span class="logic">n</span> is odd,” which opening is most natural?</h3>
+          <label class="option"><input type="radio" name="lesson-13-method-check" value="a"> Assume <span class="logic">n²</span> is odd directly</label>
+          <label class="option"><input type="radio" name="lesson-13-method-check" value="b"> Assume <span class="logic">n</span> is even contrapositively</label>
+          <label class="option"><input type="radio" name="lesson-13-method-check" value="c"> Assume <span class="logic">n</span> is odd conversely</label>
+          <label class="option"><input type="radio" name="lesson-13-method-check" value="d"> Assume <span class="logic">n²</span> is even directly</label>
+          <button type="button" data-check-answer>Check answer</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+          <p class="feedback" data-feedback aria-live="polite"></p>
+          <details class="hint"><summary>Hint</summary><p>The contrapositive is “if <span class="logic">n</span> is even, then <span class="logic">n²</span> is even.”</p></details>
+        </section>
+
+        <div class="free-response" data-free-response>
+          <h3 id="lesson-13-proof-prompt">Check 2. Complete a direct proof</h3>
+          <p>Prove that the sum of two rational numbers is rational. Begin from the formal definition, track nonzero denominators, and reconnect your result to the definition.</p>
+          <textarea id="lesson-13-proof-response" rows="8" data-response aria-label="Your direct proof"></textarea>
+          <div class="quiz-actions"><button type="button" data-copy-response data-target="lesson-13-proof-response" data-prompt="lesson-13-proof-prompt">Copy response for chat</button><span data-copy-status aria-live="polite"></span></div>
+          <details class="hint"><summary>Hint</summary><p>Write <span class="logic">x=a/b</span> and <span class="logic">y=c/d</span>, where <span class="logic">b,d ≠ 0</span>. Find one fraction for <span class="logic">x+y</span>.</p></details>
+          <details class="worked-answer"><summary>Worked answer - open only after trying</summary><p>Let <span class="logic">x=a/b</span> and <span class="logic">y=c/d</span>, where <span class="logic">a,b,c,d</span> are integers and <span class="logic">b,d ≠ 0</span>. Then <span class="logic">x+y=(ad+bc)/(bd)</span>. The numerator <span class="logic">ad+bc</span> and denominator <span class="logic">bd</span> are integers, and <span class="logic">bd ≠ 0</span>. Hence <span class="logic">x+y</span> is rational.</p></details>
+          <div class="manual-score" data-manual-score data-score-id="lesson-13-direct-proof" data-domain="proof" data-points="1"><label>Teacher-awarded check score <input type="number" min="0" max="1" step="1" data-score-input></label></div>
+        </div>
+      </section>
+
+      <section class="takeaway" id="takeaway">
+        <h2>Takeaway</h2>
+        <p><strong>A proof method fixes the opening and target; definitions supply the bridge between them.</strong></p>
+      </section>
+
+      <aside class="source-card" id="sources">
+        <h2>Primary sources</h2>
+        <ul>
+          <li><a href="../lecture/L03-Logic-Inference.pdf#page=20">L03, pp. 20-40</a>: proof terminology, direct proof, contraposition, contradiction, and biconditional proof.</li>
+          <li><a href="../past_paper/2015-midterm.pdf#page=9">2015 Midterm, Problem 4, p. 9</a>: direct, contrapositive, and contradiction proofs, 4 marks each.</li>
+          <li><a href="../past_paper/2019-midterm.pdf#page=10">2019 Midterm, Problem 8, p. 10</a>: an 8-mark contradiction proof.</li>
+        </ul>
+      </aside>
+
+      <aside class="follow-up callout"><strong>Need help?</strong> Paste your proof into chat. I will check the opening assumption, the first unsupported step, and whether the final line actually closes the stated goal.</aside>
+
+      <nav class="lesson-nav bottom" aria-label="Lesson navigation">
+        <a href="0012-predicate-inference.html">← Lesson 12</a>
+        <a href="0014-final-mini-mock.html">Take the final mini-mock →</a>
+      </nav>
+    </article>
+  </main>
+</body>
+</html>

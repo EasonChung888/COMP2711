@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 14 - Final 20-Point Mini-Mock</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../index.html">COMP2711 Logic</a>
+      <nav class="utility-nav" aria-label="Course links">
+        <a href="0013-proof-techniques.html">Previous lesson</a>
+        <a href="../reference/0001-logic-symbols-and-laws.html">Laws</a>
+        <a href="../reference/0002-inference-and-proof-templates.html#proof-templates">Proof templates</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="lesson shell">
+    <header class="lesson-header">
+      <div>
+        <p class="eyebrow">Lesson 14 of 14 · Final assessment</p>
+        <h1>Your 30-minute Logic mini-mock</h1>
+        <p class="lead">Twenty unseen points across propositions, predicates, inference, and proof. Reach 14/20 to meet the two-day mission.</p>
+      </div>
+      <div class="lesson-meta">
+        <span class="tag">30 minutes</span>
+        <span>Target: 14/20</span>
+        <span>Closed notes first</span>
+      </div>
+    </header>
+
+    <div class="progress-strip" aria-hidden="true"><span style="--progress:100%"></span></div>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0013-proof-techniques.html">← Lesson 13</a>
+      <a href="#remediation">Jump to remediation ↓</a>
+    </nav>
+
+    <section class="goal" id="goal">
+      <h2>Your concrete goal</h2>
+      <p>Complete every question without notes in 30 minutes, submit the four written responses in chat for marking, and earn at least <strong>14/20</strong>.</p>
+    </section>
+
+    <section class="intuition" id="intuition">
+      <h2>Before you start</h2>
+      <ol>
+        <li>Set a 30-minute timer and keep the two reference sheets closed.</li>
+        <li>Answer the four browser-checked questions, but do not reset an incorrect first attempt.</li>
+        <li>Write the four free responses in full. Copy them into chat together so I can mark them consistently.</li>
+        <li>Enter the teacher-awarded marks. The page will show the total and weakest domain.</li>
+      </ol>
+    </section>
+
+    <section class="formal-definition" id="blueprint">
+      <h2>Assessment blueprint</h2>
+      <div class="table-wrap">
+        <table class="reference-table">
+          <thead><tr><th>Domain</th><th>Questions</th><th>Marks</th><th>What earns marks</th></tr></thead>
+          <tbody>
+            <tr><td>Propositional logic</td><td>1-2</td><td>4</td><td>Equivalence, classification, justified transformation</td></tr>
+            <tr><td>Predicate logic</td><td>3-4</td><td>5</td><td>Negation, quantifier order, restricted translation</td></tr>
+            <tr><td>Inference</td><td>5-6</td><td>6</td><td>Rule choice, numbered line-by-line derivation</td></tr>
+            <tr><td>Proof</td><td>7-8</td><td>5</td><td>Method selection, correct openings and closure</td></tr>
+          </tbody>
+          <tfoot><tr><th colspan="2">Total</th><th>20</th><th>Target: 14</th></tr></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="worked-example" id="marking-example">
+      <h2>How a written answer is marked</h2>
+      <p>For the sample prompt “derive <span class="logic">p</span> from <span class="logic">p ∧ q</span>,” the answer “obviously <span class="logic">p</span>” does not show a justified step. A markable answer is:</p>
+      <div class="derivation">
+        <div class="derivation-row"><span class="step-number">1</span><span class="step-expression">p ∧ q</span><span class="step-reason">Premise</span></div>
+        <div class="derivation-row"><span class="step-number">2</span><span class="step-expression">p</span><span class="step-reason">1, Simplification</span></div>
+      </div>
+      <p>Your written work below is scored from the visible rubric. Symbolically equivalent answers are accepted when scopes and reasons are clear.</p>
+    </section>
+
+    <section class="common-mistakes" id="common-mistakes">
+      <h2>Protect your marks</h2>
+      <ul>
+        <li>Do not open hints, marking guides, or reference sheets until the timer ends.</li>
+        <li>Do not omit a domain or the meaning of a predicate in a translation.</li>
+        <li>Number inference lines and cite the exact earlier lines used.</li>
+        <li>For a biconditional, label and complete both directions.</li>
+      </ul>
+    </section>
+
+    <section class="practice assessment" id="mini-mock" data-scoreboard data-total="20" data-threshold="14">
+      <h2>Final mini-mock</h2>
+      <div class="score" aria-live="polite">
+        <p data-score>0/20 points · complete the checked questions and enter teacher-awarded scores.</p>
+        <p data-weakest>Your weakest domain will appear after all scores are entered.</p>
+      </div>
+
+      <section class="assessment-box" aria-labelledby="domain-propositional">
+        <h3 id="domain-propositional">A. Propositional logic · 4 points</h3>
+
+        <section class="quiz" data-quiz data-quiz-id="final-propositional-1" data-domain="propositional" data-correct="c" data-points="2" data-feedback-correct="Correct. Negating a biconditional keeps exactly the two rows in which p and q differ." data-feedback-incorrect="Not yet. A biconditional is false exactly when its two inputs have different truth values.">
+          <p class="question-title">1. [2 pts] Which expression is equivalent to <span class="logic">¬(p ↔ q)</span>?</p>
+          <label class="option"><input type="radio" name="final-propositional-1" value="a"> <span class="logic">(p ∧ q) ∨ (¬p ∧ ¬q)</span></label>
+          <label class="option"><input type="radio" name="final-propositional-1" value="b"> <span class="logic">(¬p ∧ q) ∨ (p ∧ q)</span></label>
+          <label class="option"><input type="radio" name="final-propositional-1" value="c"> <span class="logic">(p ∧ ¬q) ∨ (¬p ∧ q)</span></label>
+          <label class="option"><input type="radio" name="final-propositional-1" value="d"> <span class="logic">(p ∨ ¬q) ∧ (¬p ∨ q)</span></label>
+          <div class="quiz-actions"><button type="button" data-check-answer>Check answer</button><button type="button" class="secondary" data-reset-answer>Reset</button></div>
+          <p class="feedback" data-feedback aria-live="polite"></p>
+          <details class="hint"><summary>Hint - open after the timer</summary><p>List the two cases in which the truth values of <span class="logic">p</span> and <span class="logic">q</span> do not match.</p></details>
+        </section>
+
+        <section class="assessment-question" data-domain="propositional">
+          <p id="final-propositional-prompt" class="question-title">2. [2 pts] Without a truth table, determine whether <span class="logic">(p ∨ q) → r</span> and <span class="logic">(p → r) ∧ (q → r)</span> are logically equivalent. Give a law at each transformation, or give a counterexample if you think they are not.</p>
+          <textarea id="final-propositional-response" rows="7" aria-labelledby="final-propositional-prompt"></textarea>
+          <div class="quiz-actions"><button type="button" data-copy-response data-target="final-propositional-response" data-prompt="final-propositional-prompt">Copy response for chat</button><span data-copy-status aria-live="polite"></span></div>
+          <details><summary>Marking guide - open after submission</summary><p><strong>1 mark</strong> for the correct verdict; <strong>1 mark</strong> for a valid law-by-law derivation. The expressions are equivalent because both simplify to <span class="logic">(¬p ∧ ¬q) ∨ r</span>.</p></details>
+          <div class="manual-score" data-manual-score data-score-id="final-propositional-2" data-domain="propositional" data-points="2"><label>Teacher-awarded score <input type="number" min="0" max="2" step="1" data-score-input></label></div>
+        </section>
+      </section>
+
+      <section class="assessment-box" aria-labelledby="domain-predicate">
+        <h3 id="domain-predicate">B. Predicate logic · 5 points</h3>
+
+        <section class="quiz" data-quiz data-quiz-id="final-predicate-1" data-domain="predicate" data-correct="d" data-points="2" data-feedback-correct="Correct. Negating ∀ gives ∃, the implication becomes a conjunction, and negating ∃ gives ∀." data-feedback-incorrect="Not yet. Move the negation inward one connective or quantifier at a time.">
+          <p class="question-title">3. [2 pts] Which is the fully simplified negation of <span class="logic">∀x(M(x) → ∃y(S(y) ∧ R(x,y)))</span>?</p>
+          <label class="option"><input type="radio" name="final-predicate-1" value="a"> <span class="logic">∀x(M(x) ∧ ∃y(¬S(y) ∨ ¬R(x,y)))</span></label>
+          <label class="option"><input type="radio" name="final-predicate-1" value="b"> <span class="logic">∃x(M(x) → ∀y(¬S(y) ∧ ¬R(x,y)))</span></label>
+          <label class="option"><input type="radio" name="final-predicate-1" value="c"> <span class="logic">∀x(M(x) ∧ ∀y(¬S(y) ∨ ¬R(x,y)))</span></label>
+          <label class="option"><input type="radio" name="final-predicate-1" value="d"> <span class="logic">∃x(M(x) ∧ ∀y(¬S(y) ∨ ¬R(x,y)))</span></label>
+          <div class="quiz-actions"><button type="button" data-check-answer>Check answer</button><button type="button" class="secondary" data-reset-answer>Reset</button></div>
+          <p class="feedback" data-feedback aria-live="polite"></p>
+          <details class="hint"><summary>Hint - open after the timer</summary><p>The negation says: there is an <span class="logic">M</span>-object for which no suitable <span class="logic">S</span>-object is related.</p></details>
+        </section>
+
+        <section class="assessment-question" data-domain="predicate">
+          <p id="final-predicate-prompt" class="question-title">4. [3 pts] The domain for <span class="logic">x,z</span> is all people and the domain for <span class="logic">y</span> is all Logic problems. Let <span class="logic">Student(x)</span>, <span class="logic">Beginner(x)</span>, and <span class="logic">Solved(x,y)</span> have their natural meanings. Translate: “Every student solved at least one Logic problem that no beginner solved.”</p>
+          <textarea id="final-predicate-response" rows="7" aria-labelledby="final-predicate-prompt"></textarea>
+          <div class="quiz-actions"><button type="button" data-copy-response data-target="final-predicate-response" data-prompt="final-predicate-prompt">Copy response for chat</button><span data-copy-status aria-live="polite"></span></div>
+          <details><summary>Marking guide - open after submission</summary><p><strong>1 mark</strong> for <span class="logic">∀x(Student(x) → ...)</span>; <strong>1 mark</strong> for an existential problem <span class="logic">∃y</span> solved by that same <span class="logic">x</span>; <strong>1 mark</strong> for <span class="logic">∀z(Beginner(z) → ¬Solved(z,y))</span> with correct scope. One answer is <span class="logic">∀x(Student(x) → ∃y(Solved(x,y) ∧ ∀z(Beginner(z) → ¬Solved(z,y))))</span>.</p></details>
+          <div class="manual-score" data-manual-score data-score-id="final-predicate-2" data-domain="predicate" data-points="3"><label>Teacher-awarded score <input type="number" min="0" max="3" step="1" data-score-input></label></div>
+        </section>
+      </section>
+
+      <section class="assessment-box" aria-labelledby="domain-inference">
+        <h3 id="domain-inference">C. Inference · 6 points</h3>
+
+        <section class="quiz" data-quiz data-quiz-id="final-inference-1" data-domain="inference" data-correct="b" data-points="2" data-feedback-correct="Correct. Hypothetical Syllogism joins two implications whose middle proposition matches." data-feedback-incorrect="Not yet. Look for the rule that chains two conditional statements through a shared middle proposition.">
+          <p class="question-title">5. [2 pts] From <span class="logic">a → b</span> and <span class="logic">b → c</span>, which rule derives <span class="logic">a → c</span>?</p>
+          <label class="option"><input type="radio" name="final-inference-1" value="a"> Modus Ponens</label>
+          <label class="option"><input type="radio" name="final-inference-1" value="b"> Hypothetical Syllogism</label>
+          <label class="option"><input type="radio" name="final-inference-1" value="c"> Modus Tollens</label>
+          <label class="option"><input type="radio" name="final-inference-1" value="d"> Resolution Rule</label>
+          <div class="quiz-actions"><button type="button" data-check-answer>Check answer</button><button type="button" class="secondary" data-reset-answer>Reset</button></div>
+          <p class="feedback" data-feedback aria-live="polite"></p>
+        </section>
+
+        <section class="assessment-question" data-domain="inference">
+          <p id="final-inference-prompt" class="question-title">6. [4 pts] Give a numbered derivation of <span class="logic">¬c</span> from these premises: (1) <span class="logic">a → (b ∧ ¬c)</span>, (2) <span class="logic">d → a</span>, (3) <span class="logic">d ∨ e</span>, (4) <span class="logic">¬e</span>. Cite a rule and earlier line number(s) for every new line.</p>
+          <textarea id="final-inference-response" rows="9" aria-labelledby="final-inference-prompt"></textarea>
+          <div class="quiz-actions"><button type="button" data-copy-response data-target="final-inference-response" data-prompt="final-inference-prompt">Copy response for chat</button><span data-copy-status aria-live="polite"></span></div>
+          <details><summary>Marking guide - open after submission</summary><p>One mark per justified step: <span class="logic">d</span> by DS from (3),(4); <span class="logic">a</span> by MP from (2) and <span class="logic">d</span>; <span class="logic">b ∧ ¬c</span> by MP from (1) and <span class="logic">a</span>; <span class="logic">¬c</span> by Simplification.</p></details>
+          <div class="manual-score" data-manual-score data-score-id="final-inference-2" data-domain="inference" data-points="4"><label>Teacher-awarded score <input type="number" min="0" max="4" step="1" data-score-input></label></div>
+        </section>
+      </section>
+
+      <section class="assessment-box" aria-labelledby="domain-proof">
+        <h3 id="domain-proof">D. Proof technique · 5 points</h3>
+
+        <section class="quiz" data-quiz data-quiz-id="final-proof-1" data-domain="proof" data-correct="d" data-points="1" data-feedback-correct="Correct. An iff statement requires both directions." data-feedback-incorrect="Not yet. Translate the phrase “if and only if” before choosing the structure.">
+          <p class="question-title">7. [1 pt] What proof structure is required for “<span class="logic">n</span> is even if and only if <span class="logic">3n+5</span> is odd”?</p>
+          <label class="option"><input type="radio" name="final-proof-1" value="a"> Direct proof only</label>
+          <label class="option"><input type="radio" name="final-proof-1" value="b"> Contradiction only</label>
+          <label class="option"><input type="radio" name="final-proof-1" value="c"> Contrapositive only</label>
+          <label class="option"><input type="radio" name="final-proof-1" value="d"> Both directions separately</label>
+          <div class="quiz-actions"><button type="button" data-check-answer>Check answer</button><button type="button" class="secondary" data-reset-answer>Reset</button></div>
+          <p class="feedback" data-feedback aria-live="polite"></p>
+        </section>
+
+        <section class="assessment-question" data-domain="proof">
+          <p id="final-proof-prompt" class="question-title">8. [4 pts] Prove that, for every integer <span class="logic">n</span>, <span class="logic">n</span> is even if and only if <span class="logic">3n+5</span> is odd. Clearly label the two directions.</p>
+          <textarea id="final-proof-response" rows="10" aria-labelledby="final-proof-prompt"></textarea>
+          <div class="quiz-actions"><button type="button" data-copy-response data-target="final-proof-response" data-prompt="final-proof-prompt">Copy response for chat</button><span data-copy-status aria-live="polite"></span></div>
+          <details><summary>Marking guide - open after submission</summary><p><strong>2 marks forward:</strong> if <span class="logic">n=2k</span>, then <span class="logic">3n+5=6k+5=2(3k+2)+1</span>, which is odd. <strong>2 marks reverse:</strong> contrapositively, if <span class="logic">n=2k+1</span> is odd, then <span class="logic">3n+5=6k+8=2(3k+4)</span> is even; hence if <span class="logic">3n+5</span> is odd, <span class="logic">n</span> is even.</p></details>
+          <div class="manual-score" data-manual-score data-score-id="final-proof-2" data-domain="proof" data-points="4"><label>Teacher-awarded score <input type="number" min="0" max="4" step="1" data-score-input></label></div>
+        </section>
+      </section>
+    </section>
+
+    <section class="takeaway" id="takeaway">
+      <h2>Takeaway</h2>
+      <p><strong>14/20 completes the two-day mission; below 14 means “target the weakest skill,” not “restart the whole course.”</strong></p>
+    </section>
+
+    <section class="card" id="result-actions">
+      <h2>After marking</h2>
+      <p><strong>14-20:</strong> target reached. Review every lost mark once, then retake only those question types after one day.</p>
+      <p><strong>0-13:</strong> open the weakest-domain panel identified above. Spend 10-15 minutes on its refresher, complete both prompts, and paste both answers into chat.</p>
+    </section>
+
+    <section id="remediation" aria-labelledby="remediation-title">
+      <h2 id="remediation-title">Weakest-domain remediation</h2>
+
+      <details data-remediation-domain="propositional">
+        <summary>Propositional logic refresher + two retest prompts</summary>
+        <p><strong>10-minute reset:</strong> rewrite implications first; move negations inward one symbol at a time; for non-equivalence, seek one assignment where truth values differ.</p>
+        <ol>
+          <li>Without a truth table, simplify <span class="logic">¬(p → (q ∨ r))</span> until negation touches variables only.</li>
+          <li>Decide whether <span class="logic">p → (q ∧ r)</span> and <span class="logic">(p → q) ∧ (p → r)</span> are equivalent. Prove or give a counterexample.</li>
+        </ol>
+      </details>
+
+      <details data-remediation-domain="predicate">
+        <summary>Predicate logic refresher + two retest prompts</summary>
+        <p><strong>10-minute reset:</strong> restricted “every” uses implication; restricted “some” uses conjunction; crossing a negation swaps <span class="logic">∀/∃</span> and negates the body.</p>
+        <ol>
+          <li>Negate <span class="logic">∀x(A(x) → ∃y(B(y) ∧ T(x,y)))</span> with negation symbols only before predicates.</li>
+          <li>Translate: “Every tutor recommended a book that no first-year student read,” using clearly defined predicates.</li>
+        </ol>
+      </details>
+
+      <details data-remediation-domain="inference">
+        <summary>Inference refresher + two retest prompts</summary>
+        <p><strong>10-minute reset:</strong> circle the target, identify a rule that can produce it, and write any required Simplification or equivalence line explicitly.</p>
+        <ol>
+          <li>Name the rule: <span class="logic">x → y</span>, <span class="logic">¬y</span>, therefore <span class="logic">¬x</span>.</li>
+          <li>Derive <span class="logic">t</span> from <span class="logic">m → (s ∨ t)</span>, <span class="logic">n → m</span>, <span class="logic">n ∨ r</span>, <span class="logic">¬r</span>, and <span class="logic">¬s</span>.</li>
+        </ol>
+      </details>
+
+      <details data-remediation-domain="proof">
+        <summary>Proof-technique refresher + two retest prompts</summary>
+        <p><strong>10-minute reset:</strong> write the logical form; state the method; expand parity definitions; finish by naming the required property. An iff proof always needs two arrows.</p>
+        <ol>
+          <li>Which method gives the useful opening for “if <span class="logic">5n+4</span> is odd, then <span class="logic">n</span> is odd”? Write its first assumption.</li>
+          <li>Prove that integer <span class="logic">n</span> is odd if and only if <span class="logic">5n+2</span> is odd.</li>
+        </ol>
+      </details>
+    </section>
+
+    <aside class="source-card" id="sources">
+      <h2>Source and difficulty trace</h2>
+      <ul>
+        <li><a href="../lecture/L01-Logic-Propositional-Logic.pdf#page=31">L01, pp. 31-33</a>: propositional equivalence laws used in Questions 1-2.</li>
+        <li><a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=31">L02, pp. 31-32 and 43-49</a>: quantifier negation, English translation, and nested quantifiers used in Questions 3-4.</li>
+        <li><a href="../lecture/L03-Logic-Inference.pdf#page=6">L03, pp. 6-18 and 24-40</a>: inference rules and proof templates used in Questions 5-8.</li>
+        <li><a href="../past_paper/COMP2711_F2023_Midterm.pdf#page=3">Fall 2023 Midterm, Problems 1-2</a> and <a href="../past_paper/COMP2711_F2024_Midterm.pdf#page=3">Fall 2024 Midterm, Problems 1-2</a>: source difficulty for propositional and predicate items.</li>
+        <li><a href="../past_paper/COMP2711_F2025_Midterm.pdf#page=3">Fall 2025 Midterm, Problems 1-2</a>: source difficulty for recent Logic questions; <a href="../past_paper/2015-midterm.pdf#page=9">2015 Midterm, Problem 4</a> calibrates proof-method marks. All mock wording and symbols above are new variants, not reused worked examples.</li>
+      </ul>
+    </aside>
+
+    <aside class="follow-up callout"><h2>Send your work for feedback</h2><p>Paste all four written answers into chat. I will mark against the rubrics, enter the first unsupported line for each error, and assign the weakest-domain retest if needed.</p></aside>
+
+    <nav class="lesson-nav bottom" aria-label="Lesson navigation">
+      <a href="0013-proof-techniques.html">← Review Lesson 13</a>
+      <a href="../index.html">Return to course home ↑</a>
+    </nav>
+  </main>
+</body>
+</html>
