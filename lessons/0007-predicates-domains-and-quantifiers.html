@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 7 - Predicates, Domains, and Quantifiers</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../index.html">COMP2711 Logic</a>
+      <nav class="utility-nav" aria-label="Course links"><a href="0006-day-1-checkpoint.html">Previous</a><a href="../reference/0001-logic-symbols-and-laws.html">Logic reference</a></nav>
+    </div>
+  </header>
+
+  <main class="lesson shell">
+    <header class="lesson-header">
+      <p class="eyebrow">About 15 minutes · Predicate logic begins</p>
+      <h1>Turn an open sentence into a claim you can judge</h1>
+      <p class="lead">A predicate is a sentence with a blank. A value or a quantifier fills the blank, and the domain tells us which values are allowed.</p>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0006-day-1-checkpoint.html">← Day 1 checkpoint</a>
+      <a href="../reference/0001-logic-symbols-and-laws.html">Logic symbols reference</a>
+      <a href="0008-restricted-domains-and-translation.html">Lesson 8 →</a>
+    </nav>
+
+    <section class="goal" id="goal">
+      <h2>Your concrete goal</h2>
+      <p>By the end, you can distinguish a predicate from a proposition, explain why the domain matters, and decide a finite universal or existential statement by finding a counterexample or a witness.</p>
+    </section>
+
+    <section class="intuition" id="intuition">
+      <h2>Plain-English intuition: a sentence with a slot</h2>
+      <p><span class="logic">P(x): “x is greater than 3”</span> is not yet true or false: we do not know what <span class="logic">x</span> is. It is a <strong>predicate</strong>, like a sentence with an empty slot.</p>
+      <div class="compare-grid">
+        <div class="card">
+          <h3>Fill the slot</h3>
+          <p><span class="logic">P(5)</span> means “5 is greater than 3.” It is a true proposition.</p>
+        </div>
+        <div class="card">
+          <h3>Quantify the slot</h3>
+          <p><span class="logic">∀x P(x)</span> checks every allowed <span class="logic">x</span>; <span class="logic">∃x P(x)</span> looks for at least one.</p>
+        </div>
+      </div>
+      <aside class="callout tip"><strong>Two search modes:</strong> to refute <span class="logic">∀</span>, find one counterexample. To establish <span class="logic">∃</span>, find one witness.</aside>
+    </section>
+
+    <section class="formal-definition" id="formal-definition">
+      <h2>Formal lecture definitions</h2>
+      <dl class="definition-list">
+        <dt>Predicate</dt>
+        <dd><span class="logic">P(x₁, …, xₙ)</span> is a statement whose truth value depends on its variables. Assigning all variables produces a proposition.</dd>
+        <dt>Domain (or universe)</dt>
+        <dd>The set of all values that a variable may take. The same symbols can have different truth values under different domains.</dd>
+        <dt>Universal quantification</dt>
+        <dd><span class="logic">∀x P(x)</span>: “for every <span class="logic">x</span> in the domain, <span class="logic">P(x)</span> is true.”</dd>
+        <dt>Existential quantification</dt>
+        <dd><span class="logic">∃x P(x)</span>: “there is at least one <span class="logic">x</span> in the domain for which <span class="logic">P(x)</span> is true.”</dd>
+      </dl>
+      <p>For a finite domain <span class="logic">D = {a, b, c}</span>:</p>
+      <p class="formula display">∀x P(x) ≡ P(a) ∧ P(b) ∧ P(c)</p>
+      <p class="formula display">∃x P(x) ≡ P(a) ∨ P(b) ∨ P(c)</p>
+      <p class="small-note">The lecture normally assumes the domain is nonempty. Empty-domain behavior is therefore not part of the core course.</p>
+    </section>
+
+    <section class="worked-example" id="worked-example-1">
+      <h2>Worked example 1: scan a finite domain</h2>
+      <p>Let <span class="logic">D = {−1, 0, 2}</span> and <span class="logic">P(x): x² &gt; 0</span>.</p>
+      <ol class="derivation">
+        <li><span class="logic">P(−1)</span> is true because <span class="logic">(−1)² = 1 &gt; 0</span>.</li>
+        <li><span class="logic">P(0)</span> is false because <span class="logic">0² = 0</span>, not greater than 0.</li>
+        <li><span class="logic">P(2)</span> is true because <span class="logic">2² = 4 &gt; 0</span>.</li>
+        <li><span class="logic">∀x P(x)</span> is <strong>false</strong>: <span class="logic">x = 0</span> is one counterexample.</li>
+        <li><span class="logic">∃x P(x)</span> is <strong>true</strong>: <span class="logic">x = −1</span> is one witness.</li>
+      </ol>
+      <p class="small-note">Likely beginner error: counting two true cases and calling the universal statement “mostly true.” Universal means every case; one failure is enough.</p>
+    </section>
+
+    <section class="worked-example" id="worked-example-2">
+      <h2>Worked example 2: changing the domain changes the claim</h2>
+      <p>Consider <span class="logic">∀x (x² ≥ x)</span>.</p>
+      <ol class="derivation">
+        <li>Over the integers, <span class="logic">x² − x = x(x − 1)</span>. This is nonnegative for every integer <span class="logic">x</span>, so the statement is true.</li>
+        <li>Over the reals, choose <span class="logic">x = 1/2</span>. Then <span class="logic">x² = 1/4 &lt; 1/2 = x</span>.</li>
+        <li>Therefore the same written formula is false over the reals.</li>
+      </ol>
+      <p class="small-note">The formula did not change; the allowed values did. Always write the domain before reasoning.</p>
+    </section>
+
+    <section class="common-mistakes" id="common-mistakes">
+      <h2>Common mistakes</h2>
+      <ul>
+        <li><strong>No domain:</strong> <span class="logic">∀x(x² ≥ x)</span> is incomplete until the allowed values are known.</li>
+        <li><strong>One example “proves” every:</strong> a witness proves an existential claim, not a universal one.</li>
+        <li><strong>Existence means uniqueness:</strong> <span class="logic">∃x</span> means one or more, not exactly one.</li>
+        <li><strong>An open predicate is given a truth value:</strong> <span class="logic">x &gt; 3</span> cannot be judged until <span class="logic">x</span> is assigned or bound.</li>
+      </ul>
+    </section>
+
+    <section class="practice" id="practice">
+      <h2>Two short checks</h2>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-07-check-1" data-correct="c" data-points="1" data-feedback-correct="Correct. Substitution fills the variable, so P(4) has a definite truth value." data-feedback-incorrect="Not yet. A predicate with an unfilled variable is open; assigning 4 turns P(x) into a proposition.">
+        <h3>Check 1</h3>
+        <p>Let <span class="logic">P(x): x + 1 &gt; x</span>. Which expression is a proposition without needing a domain for a quantifier?</p>
+        <label class="option"><input type="radio" name="lesson-07-check-1" value="a"> <span class="logic">P(x)</span> with x unassigned</label>
+        <label class="option"><input type="radio" name="lesson-07-check-1" value="b"> <span class="logic">P(y)</span> with y unassigned</label>
+        <label class="option"><input type="radio" name="lesson-07-check-1" value="c"> <span class="logic">P(4)</span> with 4 substituted</label>
+        <label class="option"><input type="radio" name="lesson-07-check-1" value="d"> <span class="logic">P(z)</span> with z unassigned</label>
+        <details><summary>Hint</summary><p>Look for the expression in which no variable is left as an empty slot.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-07-check-2" data-correct="b" data-points="1" data-feedback-correct="Correct. A universal quantifier becomes an AND across every member of a finite domain." data-feedback-incorrect="Look again at the quantifier. Universal means every member must pass, so the finite expansion uses AND.">
+        <h3>Check 2</h3>
+        <p>If <span class="logic">D = {1, 3}</span>, which is exactly equivalent to <span class="logic">∀x P(x)</span>?</p>
+        <label class="option"><input type="radio" name="lesson-07-check-2" value="a"> <span class="logic">P(1) ∨ P(3)</span></label>
+        <label class="option"><input type="radio" name="lesson-07-check-2" value="b"> <span class="logic">P(1) ∧ P(3)</span></label>
+        <label class="option"><input type="radio" name="lesson-07-check-2" value="c"> <span class="logic">P(1) → P(3)</span></label>
+        <label class="option"><input type="radio" name="lesson-07-check-2" value="d"> <span class="logic">P(1) ↔ P(3)</span></label>
+        <details><summary>Hint</summary><p>Universal quantification behaves like a large conjunction over a finite domain.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <details class="stretch">
+        <summary>Stretch only: how “exactly one” is different</summary>
+        <p><span class="logic">∃x P(x)</span> only asserts existence. Unique existence can be written as:</p>
+        <p class="formula display">∃x(P(x) ∧ ∀y(P(y) → y = x))</p>
+        <p>The first part finds a witness. The second says that every other possible witness must equal it. This is useful later, but it is not required before Lesson 8.</p>
+      </details>
+      <p class="remediation-note">Below 70%? Tell your teacher which choice you made. Complete two targeted questions before moving on; this idea will return after unrelated practice.</p>
+    </section>
+
+    <section class="takeaway" id="takeaway">
+      <h2>Takeaway</h2>
+      <p><strong><span class="logic">∀</span> searches for a counterexample; <span class="logic">∃</span> searches for a witness - always inside a stated domain.</strong></p>
+    </section>
+
+    <section class="source-card" id="sources">
+      <h2>Primary source and exam trail</h2>
+      <p>Read <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=4">L02, pages 4–13</a> for the lecture definitions, finite-domain expansion, and examples. The domain-sensitive example appears on <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=9">L02, page 9</a>. The collapsed unique-existence form follows <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=47">L02, page 47</a>.</p>
+      <p>Exam calibration: <a href="../past_paper/2019-midterm.pdf#page=4">2019 Midterm, Problem 2 (12 points)</a> asks for quantified statements over the real numbers.</p>
+    </section>
+
+    <section class="follow-up" id="follow-up">
+      <h2>Need a slower explanation?</h2>
+      <p>Ask your teacher in chat. You can say, “Show me why a counterexample defeats <span class="logic">∀</span> using a three-element domain.” If either check was wrong, ask for two targeted questions before continuing.</p>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0006-day-1-checkpoint.html">← Day 1 checkpoint</a>
+      <a href="0008-restricted-domains-and-translation.html">Continue to Lesson 8 →</a>
+    </nav>
+  </main>
+</body>
+</html>

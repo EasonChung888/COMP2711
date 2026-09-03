@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 8 - Restricted Domains and Translation</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../index.html">COMP2711 Logic</a>
+      <nav class="utility-nav" aria-label="Course links"><a href="0007-predicates-domains-and-quantifiers.html">Previous</a><a href="../reference/0001-logic-symbols-and-laws.html">Logic reference</a></nav>
+    </div>
+  </header>
+
+  <main class="lesson shell">
+    <header class="lesson-header">
+      <p class="eyebrow">About 17 minutes · High-yield translation pattern</p>
+      <h1>Translate “all” with an implication and “some” with a conjunction</h1>
+      <p class="lead">When the broad domain contains objects outside the group we care about, universal and existential restrictions need different connectives.</p>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0007-predicates-domains-and-quantifiers.html">← Lesson 7</a>
+      <a href="../reference/0001-logic-symbols-and-laws.html">Logic symbols reference</a>
+      <a href="0009-scope-and-nested-quantifiers.html">Lesson 9 →</a>
+    </nav>
+
+    <section class="goal" id="goal">
+      <h2>Your concrete goal</h2>
+      <p>Given a broad domain and predicates, you can translate “all members of a group …,” “some member of a group …,” and “no member of a group …” without accidentally making a vacuously true existential claim.</p>
+    </section>
+
+    <section class="intuition" id="intuition">
+      <h2>Plain-English intuition: filter, then test</h2>
+      <p>Suppose the domain is <em>all students</em>, <span class="logic">C(x)</span> means “x is a COMP student,” and <span class="logic">L(x)</span> means “x studies Logic.”</p>
+      <div class="compare-grid">
+        <div class="card">
+          <h3>Every COMP student</h3>
+          <p class="formula">∀x(C(x) → L(x))</p>
+          <p>If <span class="logic">x</span> is outside COMP, the claim makes no demand. If <span class="logic">x</span> is in COMP, <span class="logic">L(x)</span> must hold.</p>
+        </div>
+        <div class="card">
+          <h3>Some COMP student</h3>
+          <p class="formula">∃x(C(x) ∧ L(x))</p>
+          <p>The same witness must be both a COMP student and a Logic student.</p>
+        </div>
+      </div>
+      <aside class="callout warning"><strong>Memory hook:</strong> universal restriction uses <span class="logic">→</span>; existential restriction uses <span class="logic">∧</span>.</aside>
+    </section>
+
+    <section class="formal-definition" id="formal-definition">
+      <h2>Formal restricted-domain rules</h2>
+      <p>Let <span class="logic">U₁ ⊆ U₂</span>, and let <span class="logic">Q(x)</span> mean that <span class="logic">x</span> belongs to <span class="logic">U₁</span>. Then:</p>
+      <p class="formula display">∀x ∈ U₁ P(x) ≡ ∀x ∈ U₂ (Q(x) → P(x))</p>
+      <p class="formula display">∃x ∈ U₁ P(x) ≡ ∃x ∈ U₂ (Q(x) ∧ P(x))</p>
+      <p>Three English templates follow immediately:</p>
+      <div class="table-wrap">
+        <table class="reference-table">
+          <thead><tr><th>English</th><th>Domain: all objects</th></tr></thead>
+          <tbody>
+            <tr><td>Every A is B</td><td><span class="logic">∀x(A(x) → B(x))</span></td></tr>
+            <tr><td>Some A is B</td><td><span class="logic">∃x(A(x) ∧ B(x))</span></td></tr>
+            <tr><td>No A is B</td><td><span class="logic">∀x(A(x) → ¬B(x))</span>, equivalently <span class="logic">¬∃x(A(x) ∧ B(x))</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="worked-example" id="worked-example-1">
+      <h2>Worked example 1: why existential implication fails</h2>
+      <p>Domain: all creatures. <span class="logic">L(x)</span>: “x is a lion”; <span class="logic">D(x)</span>: “x drinks coffee.” Translate “Some lion does not drink coffee.”</p>
+      <ol class="derivation">
+        <li>“Some” tells us to begin with <span class="logic">∃x</span>.</li>
+        <li>The witness must be a lion, so include <span class="logic">L(x)</span>.</li>
+        <li>The <em>same</em> witness must not drink coffee, so join with <span class="logic">∧ ¬D(x)</span>.</li>
+        <li>Answer: <span class="logic">∃x(L(x) ∧ ¬D(x))</span>.</li>
+      </ol>
+      <p>Why not <span class="logic">∃x(L(x) → ¬D(x))</span>? Any non-lion makes the implication true because its antecedent is false. That formula could be true even if every lion drinks coffee.</p>
+    </section>
+
+    <section class="worked-example" id="worked-example-2">
+      <h2>Worked example 2: an exam-style nested translation</h2>
+      <p>Domain: all integers. Translate “Every integer multiple of 4 can be expressed as the difference of two perfect squares.”</p>
+      <ol class="derivation">
+        <li>“Every integer” gives <span class="logic">∀x</span>.</li>
+        <li>Only multiples of 4 are restricted, so use the universal filter <span class="logic">4 ∣ x → …</span>.</li>
+        <li>“Can be expressed” means suitable integers exist: <span class="logic">∃a∃b</span>.</li>
+        <li>The required relationship is <span class="logic">x = a² − b²</span>.</li>
+      </ol>
+      <p class="formula display">∀x(4 ∣ x → ∃a∃b(x = a² − b²))</p>
+      <p class="exam-note">This matches one accepted formulation in 2024 Spring Midterm, Problem 4(a), part of a 6-point question.</p>
+    </section>
+
+    <section class="common-mistakes" id="common-mistakes">
+      <h2>Common mistakes</h2>
+      <ul>
+        <li><strong><span class="logic">∀</span> with <span class="logic">∧</span>:</strong> <span class="logic">∀x(C(x) ∧ L(x))</span> says every student is a COMP student and studies Logic.</li>
+        <li><strong><span class="logic">∃</span> with <span class="logic">→</span>:</strong> an object outside the restricted group may satisfy the implication automatically.</li>
+        <li><strong>Missing the restriction:</strong> “some integers are odd” needs one witness that is both an integer and odd when the domain is all reals.</li>
+        <li><strong>Changing domains silently:</strong> state whether variables range over people, integers, reals, or another set.</li>
+      </ul>
+    </section>
+
+    <section class="practice" id="practice">
+      <h2>Two short checks</h2>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-08-check-1" data-correct="b" data-points="1" data-feedback-correct="Correct. The domain is broad, so C(x) filters the universal claim with an implication." data-feedback-incorrect="Use the universal restriction pattern: every A is B becomes ∀x(A(x) → B(x)).">
+        <h3>Check 1</h3>
+        <p>Domain: all HKUST students. <span class="logic">C(x)</span>: “x is a CSE student”; <span class="logic">R(x)</span>: “x takes the required course.” Translate “Every CSE student takes the required course.”</p>
+        <label class="option"><input type="radio" name="lesson-08-check-1" value="a"> <span class="logic">∀x(C(x) ∧ R(x))</span></label>
+        <label class="option"><input type="radio" name="lesson-08-check-1" value="b"> <span class="logic">∀x(C(x) → R(x))</span></label>
+        <label class="option"><input type="radio" name="lesson-08-check-1" value="c"> <span class="logic">∃x(C(x) ∧ R(x))</span></label>
+        <label class="option"><input type="radio" name="lesson-08-check-1" value="d"> <span class="logic">∃x(C(x) → R(x))</span></label>
+        <details><summary>Hint</summary><p>The statement makes a promise about every student who passes the CSE filter.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-08-check-2" data-correct="c" data-points="1" data-feedback-correct="Correct. One witness must satisfy both E(x) and ¬P(x), so existential restriction uses conjunction." data-feedback-incorrect="The sentence requires an actual even integer that is not positive. Use ∃ with a conjunction so the same witness has both properties.">
+        <h3>Check 2</h3>
+        <p>Domain: all real numbers. <span class="logic">E(x)</span>: “x is an even integer”; <span class="logic">P(x)</span>: “x is positive.” Translate “Some even integer is not positive.”</p>
+        <label class="option"><input type="radio" name="lesson-08-check-2" value="a"> <span class="logic">∀x(E(x) → ¬P(x))</span></label>
+        <label class="option"><input type="radio" name="lesson-08-check-2" value="b"> <span class="logic">∃x(E(x) → ¬P(x))</span></label>
+        <label class="option"><input type="radio" name="lesson-08-check-2" value="c"> <span class="logic">∃x(E(x) ∧ ¬P(x))</span></label>
+        <label class="option"><input type="radio" name="lesson-08-check-2" value="d"> <span class="logic">∀x(E(x) ∧ ¬P(x))</span></label>
+        <details><summary>Hint</summary><p>The same witness must pass both tests: even integer and not positive.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <div class="free-response" data-free-response>
+        <h3>Send this translation to your teacher</h3>
+        <p id="lesson-08-chat-prompt">Domain: all birds. <span class="logic">H(x)</span>: “x is a hummingbird”; <span class="logic">C(x)</span>: “x is richly colored.” Translate: “No hummingbird is richly colored.” Give two equivalent forms if you can.</p>
+        <textarea id="lesson-08-chat-response" rows="4" data-response aria-label="Your predicate-logic translation"></textarea>
+        <button type="button" data-copy-response data-target="lesson-08-chat-response" data-prompt="lesson-08-chat-prompt">Copy response for chat</button>
+        <p data-copy-status aria-live="polite"></p>
+        <details class="hint"><summary>Hint</summary><p>Try one universal implication form and one negated existential form.</p></details>
+      </div>
+      <p class="remediation-note">Below 70%? Tell your teacher which connective you chose. Complete two targeted restriction questions before continuing; the pattern will return later.</p>
+    </section>
+
+    <section class="takeaway" id="takeaway">
+      <h2>Takeaway</h2>
+      <p><strong>When the domain is broader than the group named in the sentence: “every” uses <span class="logic">→</span>, while “some” uses <span class="logic">∧</span>.</strong></p>
+    </section>
+
+    <section class="source-card" id="sources">
+      <h2>Primary source and exam trail</h2>
+      <p>Read <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=15">L02, pages 15–18</a> for restricted domains and the lion counterexample, then <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=40">L02, pages 40–43</a> for nested translation examples.</p>
+      <p>Exam calibration: <a href="../past_paper/2016-midterm.pdf#page=10">2016 Midterm, Problem 6 (15 points)</a> directly tests all four restriction/connective combinations; <a href="../past_paper/2019-midterm.pdf#page=4">2019 Midterm, Problem 2 (12 points)</a> and <a href="../past_paper/COMP2711_S2024_Midterm.pdf#page=6">2024 Spring Midterm, Problem 4 (6 points)</a> test translation.</p>
+    </section>
+
+    <section class="follow-up" id="follow-up">
+      <h2>Need a slower explanation?</h2>
+      <p>Send your free response to your teacher for line-by-line feedback. If your first connective after the predicate is wrong, ask for a three-row “every/some/no” drill before continuing.</p>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0007-predicates-domains-and-quantifiers.html">← Lesson 7</a>
+      <a href="0009-scope-and-nested-quantifiers.html">Continue to Lesson 9 →</a>
+    </nav>
+  </main>
+</body>
+</html>

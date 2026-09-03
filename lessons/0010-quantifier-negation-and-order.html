@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 10 - Quantifier Negation and Order</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../index.html">COMP2711 Logic</a>
+      <nav class="utility-nav" aria-label="Course links"><a href="0009-scope-and-nested-quantifiers.html">Previous</a><a href="../reference/0001-logic-symbols-and-laws.html">Logic reference</a></nav>
+    </div>
+  </header>
+
+  <main class="lesson shell">
+    <header class="lesson-header">
+      <p class="eyebrow">About 18 minutes · Negation and equivalence</p>
+      <h1>Push negation inward without changing the claim</h1>
+      <p class="lead">To negate a quantified statement, reverse each quantifier as the negation crosses it, then use the propositional laws you learned on Day 1.</p>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0009-scope-and-nested-quantifiers.html">← Lesson 9</a>
+      <a href="../reference/0001-logic-symbols-and-laws.html">Logic symbols reference</a>
+      <a href="0011-propositional-inference.html">Lesson 11 →</a>
+    </nav>
+
+    <section class="goal" id="goal">
+      <h2>Your concrete goal</h2>
+      <p>You can negate nested quantified expressions until every <span class="logic">¬</span> sits immediately before a predicate, identify the two valid distribution laws, and reject invalid distribution or mixed-order swaps with a small counterexample.</p>
+    </section>
+
+    <section class="intuition" id="intuition">
+      <h2>Plain-English intuition: deny the guarantee</h2>
+      <p>“Everyone passed” is false exactly when “someone did not pass” is true. “Someone passed” is false exactly when “everyone did not pass” is true.</p>
+      <p class="formula display">¬∀x P(x) ≡ ∃x ¬P(x)</p>
+      <p class="formula display">¬∃x P(x) ≡ ∀x ¬P(x)</p>
+      <aside class="callout tip"><strong>Mechanical rule:</strong> each time <span class="logic">¬</span> crosses a quantifier, flip <span class="logic">∀ ↔ ∃</span>. Keep pushing until negation touches only a predicate.</aside>
+    </section>
+
+    <section class="formal-definition" id="formal-definition">
+      <h2>What distributes - and what does not</h2>
+      <div class="table-wrap">
+        <table class="reference-table">
+          <thead><tr><th>Status</th><th>Statement</th><th>Reason in a finite domain</th></tr></thead>
+          <tbody>
+            <tr><td>Valid</td><td><span class="logic">∀x(P(x) ∧ Q(x)) ≡ ∀xP(x) ∧ ∀xQ(x)</span></td><td>Every object must pass both tests.</td></tr>
+            <tr><td>Valid</td><td><span class="logic">∃x(P(x) ∨ Q(x)) ≡ ∃xP(x) ∨ ∃xQ(x)</span></td><td>Some object passes at least one test.</td></tr>
+            <tr><td>Invalid</td><td><span class="logic">∀x(P(x) ∨ Q(x)) ≢ ∀xP(x) ∨ ∀xQ(x)</span></td><td>Different objects may pass different tests.</td></tr>
+            <tr><td>Invalid</td><td><span class="logic">∃x(P(x) ∧ Q(x)) ≢ ∃xP(x) ∧ ∃xQ(x)</span></td><td>The two witnesses may be different objects.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Quantifier order follows a related rule: same-type neighbors may swap, so <span class="logic">∀x∀y R(x,y) ≡ ∀y∀x R(x,y)</span> and <span class="logic">∃x∃y R(x,y) ≡ ∃y∃x R(x,y)</span>. Mixed neighbors generally may not swap.</p>
+    </section>
+
+    <section class="worked-example" id="worked-example-1">
+      <h2>Worked example 1: negate a nested statement</h2>
+      <p>Negate <span class="logic">∀x(E(x) → ∃y W(x,y))</span> so that negation immediately precedes predicates.</p>
+      <ol class="derivation">
+        <li><span class="logic">¬∀x(E(x) → ∃y W(x,y))</span> <span class="reason">Start with the negation of the whole statement.</span></li>
+        <li><span class="logic">≡ ∃x ¬(E(x) → ∃y W(x,y))</span> <span class="reason">Cross <span class="logic">∀x</span>; flip it to <span class="logic">∃x</span>.</span></li>
+        <li><span class="logic">≡ ∃x(E(x) ∧ ¬∃y W(x,y))</span> <span class="reason">Use <span class="logic">¬(p → q) ≡ p ∧ ¬q</span>.</span></li>
+        <li><span class="logic">≡ ∃x(E(x) ∧ ∀y ¬W(x,y))</span> <span class="reason">Cross <span class="logic">∃y</span>; flip it to <span class="logic">∀y</span>.</span></li>
+      </ol>
+      <p>In English: there is an <span class="logic">x</span> with property <span class="logic">E</span> for which no <span class="logic">y</span> is a witness.</p>
+      <p class="small-note">Likely beginner error: writing <span class="logic">¬(p → q)</span> as <span class="logic">¬p → ¬q</span>. The correct negation is <span class="logic">p ∧ ¬q</span>.</p>
+    </section>
+
+    <section class="worked-example" id="worked-example-2">
+      <h2>Worked example 2: one two-object counterexample catches both bad distributions</h2>
+      <p>Let the domain be <span class="logic">{a,b}</span>, with <span class="logic">P(a)=T, P(b)=F</span> and <span class="logic">Q(a)=F, Q(b)=T</span>.</p>
+      <ol class="derivation">
+        <li>Each object satisfies at least one predicate, so <span class="logic">∀x(P(x) ∨ Q(x))</span> is true.</li>
+        <li>Not every object satisfies <span class="logic">P</span>, and not every object satisfies <span class="logic">Q</span>. Thus <span class="logic">∀xP(x) ∨ ∀xQ(x)</span> is false.</li>
+        <li>A witness for <span class="logic">P</span> exists (<span class="logic">a</span>) and a witness for <span class="logic">Q</span> exists (<span class="logic">b</span>). Thus <span class="logic">∃xP(x) ∧ ∃xQ(x)</span> is true.</li>
+        <li>No single object satisfies both, so <span class="logic">∃x(P(x) ∧ Q(x))</span> is false.</li>
+      </ol>
+      <p>A single counterexample is enough to disprove a claimed logical equivalence.</p>
+    </section>
+
+    <section class="card" id="order-check">
+      <h2>Order check: a stronger claim can imply a weaker one</h2>
+      <p>If <span class="logic">∃x∀y R(x,y)</span> is true, one fixed <span class="logic">x</span> works for every <span class="logic">y</span>. Therefore, for each particular <span class="logic">y</span>, that same <span class="logic">x</span> is available, so <span class="logic">∀y∃x R(x,y)</span> is true.</p>
+      <p class="formula display">∃x∀y R(x,y) → ∀y∃x R(x,y)</p>
+      <p>The converse is not guaranteed: different values of <span class="logic">y</span> may require different choices of <span class="logic">x</span>. This is the key distinction tested in 2024 Spring Midterm, Problem 3.</p>
+    </section>
+
+    <section class="common-mistakes" id="common-mistakes">
+      <h2>Common mistakes</h2>
+      <ul>
+        <li><strong>Moving <span class="logic">¬</span> without flipping the quantifier:</strong> every crossed <span class="logic">∀</span> becomes <span class="logic">∃</span>, and vice versa.</li>
+        <li><strong>Stopping too early:</strong> “negation immediately precedes predicates” means no <span class="logic">¬</span> may remain before a quantifier, connective, or parenthesized compound.</li>
+        <li><strong>Distributing by visual symmetry:</strong> only <span class="logic">∀</span> over <span class="logic">∧</span> and <span class="logic">∃</span> over <span class="logic">∨</span> work in both directions.</li>
+        <li><strong>Swapping <span class="logic">∀</span> and <span class="logic">∃</span>:</strong> mixed order changes which witness may depend on which value.</li>
+      </ul>
+    </section>
+
+    <section class="practice" id="practice">
+      <h2>Two short checks</h2>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-10-check-1" data-correct="c" data-points="1" data-feedback-correct="Correct. Flip ∀x to ∃x, negate the implication as A ∧ ¬B, then flip ∃y to ∀y." data-feedback-incorrect="Move the negation inward one layer at a time: flip ∀, negate the implication, then flip ∃.">
+        <h3>Check 1</h3>
+        <p>Which is the negation of <span class="logic">∀x(A(x) → ∃y B(x,y))</span> with negations only before predicates?</p>
+        <label class="option"><input type="radio" name="lesson-10-check-1" value="a"> <span class="logic">∀x(A(x) ∧ ∃y¬B(x,y))</span></label>
+        <label class="option"><input type="radio" name="lesson-10-check-1" value="b"> <span class="logic">∃x(¬A(x) ∧ ∀yB(x,y))</span></label>
+        <label class="option"><input type="radio" name="lesson-10-check-1" value="c"> <span class="logic">∃x(A(x) ∧ ∀y¬B(x,y))</span></label>
+        <label class="option"><input type="radio" name="lesson-10-check-1" value="d"> <span class="logic">∀x(¬A(x) ∨ ∃yB(x,y))</span></label>
+        <details><summary>Hint</summary><p>Use <span class="logic">¬∀xS ≡ ∃x¬S</span> and <span class="logic">¬(A → B) ≡ A ∧ ¬B</span>.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-10-check-2" data-correct="a" data-points="1" data-feedback-correct="Correct. Universal quantification distributes over conjunction in both directions." data-feedback-incorrect="Look for the safe pair: ∀ behaves like a large AND over the domain, while ∃ behaves like a large OR.">
+        <h3>Check 2</h3>
+        <p>Which equivalence is valid over every common nonempty domain?</p>
+        <label class="option"><input type="radio" name="lesson-10-check-2" value="a"> <span class="logic">∀x(P(x) ∧ Q(x)) ≡ ∀xP(x) ∧ ∀xQ(x)</span></label>
+        <label class="option"><input type="radio" name="lesson-10-check-2" value="b"> <span class="logic">∀x(P(x) ∨ Q(x)) ≡ ∀xP(x) ∨ ∀xQ(x)</span></label>
+        <label class="option"><input type="radio" name="lesson-10-check-2" value="c"> <span class="logic">∃x(P(x) ∧ Q(x)) ≡ ∃xP(x) ∧ ∃xQ(x)</span></label>
+        <label class="option"><input type="radio" name="lesson-10-check-2" value="d"> <span class="logic">∀x∃yR(x,y) ≡ ∃y∀xR(x,y)</span></label>
+        <details><summary>Hint</summary><p>Over a finite domain, <span class="logic">∀</span> expands to a large AND and <span class="logic">∃</span> expands to a large OR.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <div class="free-response" data-free-response>
+        <h3>Send this transformation to your teacher</h3>
+        <p id="lesson-10-chat-prompt">Negate the following until every negation immediately precedes a predicate:</p>
+        <p class="formula display">∀x(P(x) ∧ ∃y∀z(Q(x,y) → R(y,z)))</p>
+        <textarea id="lesson-10-chat-response" rows="7" data-response aria-label="Your step-by-step quantified negation"></textarea>
+        <button type="button" data-copy-response data-target="lesson-10-chat-response" data-prompt="lesson-10-chat-prompt">Copy response for chat</button>
+        <p data-copy-status aria-live="polite"></p>
+        <details class="hint"><summary>Hint</summary><p>Expected outer quantifier pattern after negation: <span class="logic">∃x … ∀y∃z …</span>. Also use <span class="logic">¬(Q → R) ≡ Q ∧ ¬R</span>.</p></details>
+      </div>
+
+      <details class="stretch">
+        <summary>Stretch only: null quantification</summary>
+        <p>If <span class="logic">x</span> is not free in <span class="logic">A</span>, then a quantifier over <span class="logic">x</span> can move across a connective involving <span class="logic">A</span>. For example:</p>
+        <p class="formula display">∀x(A ∧ P(x)) ≡ A ∧ ∀xP(x)</p>
+        <p>The condition is essential: if <span class="logic">x</span> occurs freely in <span class="logic">A</span>, moving the quantifier may capture a variable and change the statement. This topic is optional for the two-day core.</p>
+      </details>
+      <p class="remediation-note">Below 70%? Send your first transformation step to your teacher. Complete two targeted “flip and push” items before inference.</p>
+    </section>
+
+    <section class="takeaway" id="takeaway">
+      <h2>Takeaway</h2>
+      <p><strong>Negation flips every crossed quantifier; valid distribution depends on matching <span class="logic">∀</span> with <span class="logic">∧</span> or <span class="logic">∃</span> with <span class="logic">∨</span>.</strong></p>
+    </section>
+
+    <section class="source-card" id="sources">
+      <h2>Primary source and exam trail</h2>
+      <p>Read <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=22">L02, pages 22–27</a> for valid and invalid distribution with counterexamples, <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=29">L02, pages 29–34</a> for quantifier De Morgan laws, and <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=48">L02, pages 48–49</a> for nested negation. The collapsed stretch section follows <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=44">L02, pages 44–46</a>.</p>
+      <p>Exam calibration: <a href="../past_paper/2019-midterm.pdf#page=7">2019 Midterm, Problem 5 (6 points)</a> and <a href="../past_paper/COMP2711_F2025_Midterm.pdf#page=6">2025 Fall Midterm, Problem 2(b) (4 points)</a> require fully pushed-in negation; <a href="../past_paper/COMP2711_S2024_Midterm.pdf#page=5">2024 Spring Midterm, Problem 3 (4 points)</a> tests quantifier order.</p>
+    </section>
+
+    <section class="follow-up" id="follow-up">
+      <h2>Need a slower explanation?</h2>
+      <p>Send your free-response steps to your teacher. They will identify the first invalid transformation rather than only showing the final answer. If either check was wrong, request two targeted “flip and push” items before Lesson 11.</p>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0009-scope-and-nested-quantifiers.html">← Lesson 9</a>
+      <a href="0011-propositional-inference.html">Continue to Lesson 11 →</a>
+    </nav>
+  </main>
+</body>
+</html>

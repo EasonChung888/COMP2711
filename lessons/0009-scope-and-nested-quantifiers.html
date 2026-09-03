@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 9 - Scope and Nested Quantifiers</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <script src="../assets/quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../index.html">COMP2711 Logic</a>
+      <nav class="utility-nav" aria-label="Course links"><a href="0008-restricted-domains-and-translation.html">Previous</a><a href="../reference/0001-logic-symbols-and-laws.html">Logic reference</a></nav>
+    </div>
+  </header>
+
+  <main class="lesson shell">
+    <header class="lesson-header">
+      <p class="eyebrow">About 18 minutes · Scope and dependency</p>
+      <h1>Read quantifiers as choices made in order</h1>
+      <p class="lead">Parentheses show where a quantifier controls a variable. With nested quantifiers, the order tells us whether a later choice may depend on an earlier one.</p>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0008-restricted-domains-and-translation.html">← Lesson 8</a>
+      <a href="../reference/0001-logic-symbols-and-laws.html">Logic symbols reference</a>
+      <a href="0010-quantifier-negation-and-order.html">Lesson 10 →</a>
+    </nav>
+
+    <section class="goal" id="goal">
+      <h2>Your concrete goal</h2>
+      <p>You can mark bound and free variables, decide whether an expression is a proposition, and translate or interpret two-variable statements while preserving who may depend on whom.</p>
+    </section>
+
+    <section class="intuition" id="intuition">
+      <h2>Plain-English intuition: a choice game</h2>
+      <p>Read quantifiers from left to right as instructions in a game.</p>
+      <div class="compare-grid">
+        <div class="card">
+          <h3><span class="logic">∀x∃y R(x,y)</span></h3>
+          <p>An opponent chooses <span class="logic">x</span>; then you may choose a matching <span class="logic">y</span>. Your <span class="logic">y</span> may change when <span class="logic">x</span> changes.</p>
+        </div>
+        <div class="card">
+          <h3><span class="logic">∃y∀x R(x,y)</span></h3>
+          <p>You must choose one fixed <span class="logic">y</span> first; that same value must work for every later <span class="logic">x</span>.</p>
+        </div>
+      </div>
+      <aside class="callout tip"><strong>Dependency test:</strong> ask whether the existential witness is allowed to depend on the universally chosen value.</aside>
+    </section>
+
+    <section class="formal-definition" id="formal-definition">
+      <h2>Formal definitions: binding and scope</h2>
+      <ul>
+        <li>A quantifier <strong>binds</strong> its variable inside its <strong>scope</strong>.</li>
+        <li>A variable occurrence not bound by a quantifier and not assigned a value is <strong>free</strong>.</li>
+        <li>All variables must be bound or assigned before the expression is a proposition.</li>
+        <li>Quantifiers have higher precedence than logical connectives. Therefore <span class="logic">∀x P(x) ∨ Q(x)</span> is read as <span class="logic">(∀x P(x)) ∨ Q(x)</span>, leaving the last <span class="logic">x</span> free.</li>
+      </ul>
+      <p>Use parentheses to make the intended scope explicit:</p>
+      <p class="formula display">∀x(P(x) ∨ Q(x))</p>
+      <p>Now both occurrences of <span class="logic">x</span> are inside the scope of <span class="logic">∀x</span>.</p>
+    </section>
+
+    <section class="worked-example" id="worked-example-1">
+      <h2>Worked example 1: find every free variable</h2>
+      <p>Consider <span class="logic">∃x(P(x) ∧ Q(x,y))</span>.</p>
+      <ol class="derivation">
+        <li>The scope of <span class="logic">∃x</span> is the entire parenthesized expression.</li>
+        <li>Both occurrences of <span class="logic">x</span> lie inside that scope, so they are bound.</li>
+        <li>No quantifier binds <span class="logic">y</span>, so <span class="logic">y</span> is free.</li>
+        <li>The expression is not yet a proposition. Prefixing <span class="logic">∀y</span> or <span class="logic">∃y</span>, or assigning a value to <span class="logic">y</span>, closes it.</li>
+      </ol>
+      <p class="small-note">Likely beginner error: seeing a quantifier anywhere and assuming every variable is bound. A quantifier binds only its own variable, only inside its scope.</p>
+    </section>
+
+    <section class="worked-example" id="worked-example-2">
+      <h2>Worked example 2: order changes the truth value</h2>
+      <p>Domain: all real numbers. Compare two statements about <span class="logic">x + y = 0</span>.</p>
+      <ol class="derivation">
+        <li><span class="logic">∀x∃y(x + y = 0)</span> is true. After any <span class="logic">x</span> is chosen, choose <span class="logic">y = −x</span>.</li>
+        <li>Notice that the witness changes with <span class="logic">x</span>: for <span class="logic">x = 2</span>, use <span class="logic">y = −2</span>; for <span class="logic">x = 5</span>, use <span class="logic">y = −5</span>.</li>
+        <li><span class="logic">∃y∀x(x + y = 0)</span> is false. It asks for one fixed real <span class="logic">y</span> that cancels every real <span class="logic">x</span>.</li>
+      </ol>
+      <p class="exam-note">This is the central order example on L02, page 37. 2024 Spring Midterm, Problem 3 tests the same dependency idea.</p>
+    </section>
+
+    <section class="card" id="exam-connection">
+      <h2>Translation pattern: “there is no largest real number”</h2>
+      <ol class="derivation">
+        <li>Take an arbitrary real <span class="logic">x</span>: begin with <span class="logic">∀x</span>.</li>
+        <li>A larger real may depend on <span class="logic">x</span>: continue with <span class="logic">∃y</span>.</li>
+        <li>State the relationship: <span class="logic">y &gt; x</span>.</li>
+      </ol>
+      <p class="formula display">∀x∃y(y &gt; x)</p>
+      <p>A concrete witness strategy is <span class="logic">y = x + 1</span>. This translation appeared in 2019 Midterm, Problem 2(e), worth 3 of the problem’s 12 points.</p>
+    </section>
+
+    <section class="common-mistakes" id="common-mistakes">
+      <h2>Common mistakes</h2>
+      <ul>
+        <li><strong>Ignoring parentheses:</strong> the scope may end before a later connective.</li>
+        <li><strong>Reusing a variable carelessly:</strong> inner quantifiers can shadow an outer variable and make a formula hard to read.</li>
+        <li><strong>Swapping mixed quantifiers:</strong> <span class="logic">∀x∃y</span> usually does not mean <span class="logic">∃y∀x</span>.</li>
+        <li><strong>Forgetting dependency:</strong> in <span class="logic">∀x∃y</span>, one fixed witness is not required; a method for choosing <span class="logic">y</span> from <span class="logic">x</span> is enough.</li>
+      </ul>
+    </section>
+
+    <section class="practice" id="practice">
+      <h2>Two short checks</h2>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-09-check-1" data-correct="d" data-points="1" data-feedback-correct="Correct. Both x and y are bound inside the scope, so the expression has a truth value once the domain is fixed." data-feedback-incorrect="Check each variable occurrence. A proposition cannot leave x or y free.">
+        <h3>Check 1</h3>
+        <p>Which expression has no free variable?</p>
+        <label class="option"><input type="radio" name="lesson-09-check-1" value="a"> <span class="logic">P(x) ∧ Q(y)</span></label>
+        <label class="option"><input type="radio" name="lesson-09-check-1" value="b"> <span class="logic">∀x P(x,y)</span></label>
+        <label class="option"><input type="radio" name="lesson-09-check-1" value="c"> <span class="logic">∃y P(x,y)</span></label>
+        <label class="option"><input type="radio" name="lesson-09-check-1" value="d"> <span class="logic">∀x∃y P(x,y)</span></label>
+        <details><summary>Hint</summary><p>Account for both <span class="logic">x</span> and <span class="logic">y</span>; neither may remain free.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <section class="quiz" data-quiz data-quiz-id="lesson-09-check-2" data-correct="b" data-points="1" data-feedback-correct="Correct. The existential choice comes after x, so y may be chosen separately for each x." data-feedback-incorrect="Read left to right. First every x is presented; only then may a suitable y be chosen.">
+        <h3>Check 2</h3>
+        <p>What does <span class="logic">∀x∃y F(x,y)</span> say?</p>
+        <label class="option"><input type="radio" name="lesson-09-check-2" value="a"> One fixed x works for every y</label>
+        <label class="option"><input type="radio" name="lesson-09-check-2" value="b"> Each x has some matching y</label>
+        <label class="option"><input type="radio" name="lesson-09-check-2" value="c"> One fixed y works for every x</label>
+        <label class="option"><input type="radio" name="lesson-09-check-2" value="d"> Each y has some matching x</label>
+        <details><summary>Hint</summary><p>Read left to right: an arbitrary <span class="logic">x</span> is chosen before <span class="logic">y</span>.</p></details>
+        <div class="quiz-actions">
+          <button type="button" data-check-answer>Check</button>
+          <button type="button" class="secondary" data-reset-answer>Reset</button>
+        </div>
+        <p class="feedback" data-feedback aria-live="polite"></p>
+      </section>
+
+      <div class="free-response" data-free-response>
+        <h3>Send this translation to your teacher</h3>
+        <p id="lesson-09-chat-prompt">Domain: all students. <span class="logic">C(x)</span>: “x has a computer”; <span class="logic">F(x,y)</span>: “x and y are friends.” Translate: “Every student has a friend who has a computer.”</p>
+        <textarea id="lesson-09-chat-response" rows="4" data-response aria-label="Your nested-quantifier translation"></textarea>
+        <button type="button" data-copy-response data-target="lesson-09-chat-response" data-prompt="lesson-09-chat-prompt">Copy response for chat</button>
+        <p data-copy-status aria-live="polite"></p>
+        <details class="hint"><summary>Hint</summary><p>For each student <span class="logic">x</span>, choose a possibly different friend <span class="logic">y</span>. Both friendship and computer ownership must hold for that <span class="logic">y</span>.</p></details>
+      </div>
+      <p class="remediation-note">Below 70%? Tell your teacher where you think each scope ends. Complete two targeted binding/order questions before Lesson 10.</p>
+    </section>
+
+    <section class="takeaway" id="takeaway">
+      <h2>Takeaway</h2>
+      <p><strong>Scope tells you which variable occurrences are controlled; order tells you which choices may depend on earlier choices.</strong></p>
+    </section>
+
+    <section class="source-card" id="sources">
+      <h2>Primary source and exam trail</h2>
+      <p>Read <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=19">L02, pages 19–20</a> for precedence, scope, and free variables, and <a href="../lecture/L02-Logic-Predicate-Logic.pdf#page=36">L02, pages 36–43</a> for nested quantifiers, order, and translations.</p>
+      <p>Exam calibration: <a href="../past_paper/2019-midterm.pdf#page=4">2019 Midterm, Problem 2 (12 points)</a> includes “there is no largest real number”; <a href="../past_paper/COMP2711_S2024_Midterm.pdf#page=5">2024 Spring Midterm, Problem 3 (4 points)</a> compares mixed quantifier orders.</p>
+    </section>
+
+    <section class="follow-up" id="follow-up">
+      <h2>Need a slower explanation?</h2>
+      <p>Send your translation to your teacher for feedback on the first incorrect quantifier or scope boundary. You can also ask for a “choice game” walkthrough with a two-element domain.</p>
+    </section>
+
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <a href="0008-restricted-domains-and-translation.html">← Lesson 8</a>
+      <a href="0010-quantifier-negation-and-order.html">Continue to Lesson 10 →</a>
+    </nav>
+  </main>
+</body>
+</html>
