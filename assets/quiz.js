@@ -56,8 +56,16 @@
           record.total += Number(item.dataset.points || 0);
           domains.set(domain, record);
         });
-        const [name, record] = [...domains.entries()].sort((a, b) => (a[1].earned / a[1].total) - (b[1].earned / b[1].total))[0];
-        weakest.textContent = `Weakest domain: ${name} (${record.earned}/${record.total}). Open its remediation panel below.`;
+        const ranked = [...domains.entries()].sort((a, b) => (a[1].earned / a[1].total) - (b[1].earned / b[1].total));
+        const ratios = ranked.map(([, record]) => record.earned / record.total);
+        if (ratios.every((ratio) => ratio === ratios[0])) {
+          weakest.textContent = ratios[0] === 1
+            ? "All domains: full marks. Review only the questions that felt uncertain."
+            : "All domains are tied. Start with the domain you found slowest.";
+        } else {
+          const [name, record] = ranked[0];
+          weakest.textContent = `Weakest domain: ${name} (${record.earned}/${record.total}). Open its remediation panel below.`;
+        }
       }
     });
   }

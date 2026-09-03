@@ -43,6 +43,20 @@ a {
 
 a:hover { color: var(--accent); }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  z-index: 10;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  background: var(--accent-dark);
+  font-family: Inter, ui-sans-serif, sans-serif;
+}
+
+.skip-link:focus { top: 0; }
+
 :focus-visible {
   outline: 3px solid rgba(40, 95, 130, 0.38);
   outline-offset: 3px;
@@ -209,6 +223,54 @@ code, .formula, .logic, .step-expression {
   box-shadow: var(--shadow);
 }
 
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.callout, .watch-out, .exam-note, .remediation-note, .small-note {
+  max-width: var(--measure);
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  background: var(--surface-blue);
+}
+
+.callout.warning, .watch-out {
+  border-left-color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.exam-note {
+  border-left-color: #796326;
+  background: #f7f0d9;
+}
+
+.remediation-note {
+  border-left-color: var(--good);
+  background: var(--good-soft);
+}
+
+.small-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.definition-list {
+  max-width: var(--measure);
+  margin: 1rem 0;
+}
+
+.definition-list dt {
+  margin-top: 1rem;
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-weight: 760;
+}
+
+.definition-list dd { margin: 0.25rem 0 0 1.25rem; }
+
 .worked-example {
   position: relative;
   padding-top: 1.7rem;
@@ -252,6 +314,32 @@ code, .formula, .logic, .step-expression {
   font-size: 0.84rem;
 }
 
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-wrap > table:not(.truth-table):not(.reference-table) {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.84rem;
+}
+
+.table-wrap > table:not(.truth-table):not(.reference-table) th,
+.table-wrap > table:not(.truth-table):not(.reference-table) td {
+  padding: 0.62rem 0.75rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.table-wrap > table:not(.truth-table):not(.reference-table) th {
+  color: #fff;
+  background: var(--accent-dark);
+}
+
 .truth-table th, .truth-table td, .reference-table th, .reference-table td {
   padding: 0.62rem 0.75rem;
   border: 1px solid var(--line);
@@ -286,6 +374,8 @@ code, .formula, .logic, .step-expression {
 .derivation-row + .derivation-row { border-top: 1px solid var(--line); }
 .step-number { color: var(--muted); font-family: Inter, sans-serif; font-size: 0.8rem; }
 .step-reason { color: var(--muted); font-size: 0.88rem; }
+.reason { color: var(--muted); font-size: 0.9rem; }
+.proof-steps li { padding-left: 0.25rem; }
 
 .common-mistakes {
   padding: 1.2rem 1.35rem;
@@ -397,6 +487,15 @@ textarea {
   background: var(--surface);
   font: inherit;
   resize: vertical;
+}
+
+.free-response {
+  max-width: var(--measure);
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: rgba(255, 253, 248, 0.65);
 }
 
 .manual-score {
@@ -511,7 +610,7 @@ summary {
 @media (max-width: 720px) {
   .lesson-header { grid-template-columns: 1fr; }
   .lesson-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .course-grid, .reference-grid, .rule-grid { grid-template-columns: 1fr; }
+  .course-grid, .reference-grid, .rule-grid, .compare-grid { grid-template-columns: 1fr; }
   .derivation-row { grid-template-columns: 1.8rem minmax(0, 1fr); }
   .step-reason { grid-column: 2; }
   .site-header .shell { align-items: flex-start; padding-block: 0.7rem; }
@@ -534,6 +633,7 @@ summary {
   h2 { margin-top: 18pt; font-size: 16pt; break-after: avoid; }
   h3 { break-after: avoid; }
   .card, .worked-example, .quiz, .rule-card { box-shadow: none; break-inside: avoid; }
+  .worked-example::before { display: none; }
   .score { position: static; box-shadow: none; }
   details { break-inside: avoid; }
   details > * { display: block !important; }

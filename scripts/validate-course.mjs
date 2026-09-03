@@ -51,7 +51,9 @@ function quizzesIn(html) {
     return {
       id: attr(tag, "data-quiz-id"),
       correct: attr(tag, "data-correct"),
-      points: Number(attr(tag, "data-points") || 0)
+      points: Number(attr(tag, "data-points") || 0),
+      category: attr(tag, "data-category"),
+      domain: attr(tag, "data-domain")
     };
   });
 }
@@ -61,9 +63,21 @@ function manualScoresIn(html) {
     const tag = match[0];
     return {
       id: attr(tag, "data-score-id"),
-      points: Number(attr(tag, "data-points") || 0)
+      points: Number(attr(tag, "data-points") || 0),
+      category: attr(tag, "data-category"),
+      domain: attr(tag, "data-domain")
     };
   });
+}
+
+function validateAnswerKeys(relativePath, html) {
+  for (const match of html.matchAll(/<section[^>]*\bdata-quiz\b[^>]*>([\s\S]*?)<\/section>/gi)) {
+    const openingTag = match[0].match(/^<section[^>]*>/i)?.[0] || "";
+    const id = attr(openingTag, "data-quiz-id");
+    const correct = attr(openingTag, "data-correct");
+    const values = [...match[1].matchAll(/<input[^>]*\bvalue=["']([^"']+)["']/gi)].map((value) => value[1]);
+    if (!values.includes(correct)) errors.push(`${relativePath}: answer key ${correct} is not an option in ${id}`);
+  }
 }
 
 function validateLinks(relativePath, html) {
@@ -104,6 +118,7 @@ for (const [index, name] of lessonNames.entries()) {
   const quizzes = quizzesIn(html);
   const manualScores = manualScoresIn(html);
   if (quizzes.length + manualScores.length < 2) errors.push(`${relativePath}: expected at least two scored checks`);
+  if (!isAssessment && quizzes.length + manualScores.length !== 2) errors.push(`${relativePath}: ordinary lessons must have exactly two scored checks`);
   for (const quiz of quizzes) {
     if (!quiz.id || !quiz.correct || quiz.points <= 0) errors.push(`${relativePath}: quiz metadata is incomplete`);
     if (quizIds.has(quiz.id)) errors.push(`${relativePath}: duplicate quiz id ${quiz.id}`);
@@ -115,6 +130,7 @@ for (const [index, name] of lessonNames.entries()) {
     if (quizIds.has(syntheticId)) errors.push(`${relativePath}: duplicate manual score id ${score.id}`);
     quizIds.add(syntheticId);
   }
+  validateAnswerKeys(relativePath, html);
   validateLinks(relativePath, html);
 }
 
@@ -137,6 +153,25 @@ function validateAssessment(name, expectedTotal, expectedThreshold) {
 
 validateAssessment("0006-day-1-checkpoint.html", 10, 7);
 validateAssessment("0014-final-mini-mock.html", 20, 14);
+
+function validateBreakdown(name, field, expected) {
+  const relativePath = `lessons/${name}`;
+  const absolutePath = resolve(root, relativePath);
+  if (!existsSync(absolutePath)) return;
+  const html = readFileSync(absolutePath, "utf8");
+  const items = [...quizzesIn(html), ...manualScoresIn(html)];
+  const actual = {};
+  items.forEach((item) => {
+    const key = item[field];
+    if (key) actual[key] = (actual[key] || 0) + item.points;
+  });
+  for (const [key, points] of Object.entries(expected)) {
+    if (actual[key] !== points) errors.push(`${relativePath}: ${field} ${key} totals ${actual[key] || 0}, expected ${points}`);
+  }
+}
+
+validateBreakdown("0006-day-1-checkpoint.html", "category", { translation: 2, truth: 2, equivalence: 4, counterexample: 2 });
+validateBreakdown("0014-final-mini-mock.html", "domain", { propositional: 4, predicate: 5, inference: 6, proof: 5 });
 
 for (const path of ["index.html", ...referenceNames.map((name) => `reference/${name}`)]) {
   const absolutePath = resolve(root, path);
