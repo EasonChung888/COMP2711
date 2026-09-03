@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inference and Proof Templates — COMP2711</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../index.html">COMP2711 Logic</a>
+      <nav class="utility-nav" aria-label="Reference navigation">
+        <a href="0001-logic-symbols-and-laws.html">Logic laws</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="reference-sheet shell">
+    <p class="eyebrow">Reference 02 · L03 Inference and Proofs</p>
+    <h1>Rules that move a proof.</h1>
+    <p class="lead">An inference rule turns premises you already have into a justified new line. A proof template tells you what to assume first and what the final line must establish.</p>
+
+    <section id="propositional-rules">
+      <h2>1 · Eight propositional inference rules</h2>
+      <div class="rule-grid">
+        <article class="rule-card"><h3>Modus ponens</h3><p class="formula">p<br>p → q<br>∴ q</p><p>Trigger a conditional with its hypothesis.</p></article>
+        <article class="rule-card"><h3>Modus tollens</h3><p class="formula">¬q<br>p → q<br>∴ ¬p</p><p>Deny the consequence, then deny the hypothesis.</p></article>
+        <article class="rule-card"><h3>Hypothetical syllogism</h3><p class="formula">p → q<br>q → r<br>∴ p → r</p><p>Join two compatible implication links.</p></article>
+        <article class="rule-card"><h3>Disjunctive syllogism</h3><p class="formula">p ∨ q<br>¬p<br>∴ q</p><p>Remove an impossible branch of an or.</p></article>
+        <article class="rule-card"><h3>Addition</h3><p class="formula">p<br>∴ p ∨ q</p><p>A true statement makes an inclusive or true.</p></article>
+        <article class="rule-card"><h3>Simplification</h3><p class="formula">p ∧ q<br>∴ p</p><p>Extract either true component of an and.</p></article>
+        <article class="rule-card"><h3>Conjunction</h3><p class="formula">p<br>q<br>∴ p ∧ q</p><p>Combine two established lines.</p></article>
+        <article class="rule-card"><h3>Resolution</h3><p class="formula">p ∨ q<br>¬p ∨ r<br>∴ q ∨ r</p><p>Cancel opposite versions of one proposition.</p></article>
+      </div>
+      <p class="card"><strong>Also legal:</strong> replace any line by a logically equivalent form. State the equivalence used.</p>
+    </section>
+
+    <section id="predicate-rules">
+      <h2>2 · Four predicate inference rules</h2>
+      <table class="reference-table">
+        <thead><tr><th>Rule</th><th>Form</th><th>Safety condition</th></tr></thead>
+        <tbody>
+          <tr><td>Universal instantiation</td><td class="logic">∀x P(x) ∴ P(c)</td><td>c may be any element in the domain.</td></tr>
+          <tr><td>Universal generalisation</td><td class="logic">P(c) for arbitrary c ∴ ∀x P(x)</td><td>c must be arbitrary, not a special witness.</td></tr>
+          <tr><td>Existential instantiation</td><td class="logic">∃x P(x) ∴ P(c) for some c</td><td>Use a fresh name for the unknown witness.</td></tr>
+          <tr><td>Existential generalisation</td><td class="logic">P(c) ∴ ∃x P(x)</td><td>One established witness is enough.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="goal-first">
+      <h2>3 · Goal-first derivation routine</h2>
+      <ol>
+        <li>Write the conclusion separately and ask which rule could produce its outermost operator.</li>
+        <li>Split conjunction premises early; eliminate implications when a useful rule becomes visible.</li>
+        <li>For quantified premises, instantiate before using propositional rules.</li>
+        <li>Number every new line and cite the exact earlier lines that justify it.</li>
+        <li>Stop when the conclusion appears exactly. Do not add an unsupported “therefore”.</li>
+      </ol>
+    </section>
+
+    <section id="proof-templates">
+      <h2>4 · Four proof templates</h2>
+      <div class="rule-grid">
+        <article class="rule-card">
+          <h3>Direct proof of p → q</h3>
+          <ol><li>Assume p.</li><li>Unpack definitions.</li><li>Use valid algebra or known results.</li><li>Reach q.</li></ol>
+          <p class="logic">Assume p. … Therefore q.</p>
+        </article>
+        <article class="rule-card">
+          <h3>Contrapositive proof of p → q</h3>
+          <ol><li>Rewrite the target as ¬q → ¬p.</li><li>Assume ¬q.</li><li>Derive ¬p.</li></ol>
+          <p class="logic">Assume ¬q. … Therefore ¬p.</p>
+        </article>
+        <article class="rule-card">
+          <h3>Contradiction proof of p</h3>
+          <ol><li>Assume ¬p.</li><li>Use definitions and known facts.</li><li>Derive r ∧ ¬r, or violate an assumption.</li><li>Reject ¬p.</li></ol>
+          <p class="logic">Assume ¬p. … Contradiction. Hence p.</p>
+        </article>
+        <article class="rule-card">
+          <h3>Biconditional proof of p ↔ q</h3>
+          <ol><li>Prove p → q.</li><li>Separately prove q → p.</li><li>Conclude p ↔ q.</li></ol>
+          <p class="logic">(⇒) … &nbsp;&nbsp; (⇐) …</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="method-choice">
+      <h2>5 · Choosing a method</h2>
+      <table class="reference-table">
+        <thead><tr><th>Signal in the target</th><th>First method to try</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td class="logic">If p, then q</td><td>Direct</td><td>The hypothesis gives useful structure immediately.</td></tr>
+          <tr><td class="logic">If p, then “not …”</td><td>Contrapositive</td><td>The negated conclusion may unpack into a positive form.</td></tr>
+          <tr><td>Impossible existence or irrationality</td><td>Contradiction</td><td>Assuming the opposite gives a concrete witness to attack.</td></tr>
+          <tr><td class="logic">p iff q</td><td>Two directions</td><td>A biconditional literally contains two implications.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="common-mistakes">
+      <h2>Fast error check</h2>
+      <ul>
+        <li>Affirming the consequent is invalid: <span class="logic">p → q, q ∴ p</span>.</li>
+        <li>Denying the antecedent is invalid: <span class="logic">p → q, ¬p ∴ ¬q</span>.</li>
+        <li>An existential witness is “some” element, not an arbitrary element.</li>
+        <li>A contradiction must conflict with an assumption or established fact; surprising algebra is not enough.</li>
+      </ul>
+    </section>
+
+    <section class="source-card">
+      <h2>Primary source</h2>
+      <p><a href="../lecture/L03-Logic-Inference.pdf#page=4">L03, pages 4-18</a> for inference rules and examples; <a href="../lecture/L03-Logic-Inference.pdf#page=24">L03, pages 24-41</a> for direct proof, contraposition, contradiction, and biconditional proof.</p>
+    </section>
+  </main>
+</body>
+</html>
