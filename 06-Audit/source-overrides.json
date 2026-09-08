@@ -1,0 +1,6 @@
+{
+  "past_paper/COMP2711_S2023_Final.pdf": {
+    "duplicate_of": "past_paper/COMP2711_S2023_Midterm.pdf",
+    "reason": "The files have identical SHA-256 hashes, and both first pages identify the document as the Spring 2023 Midterm Examination."
+  }
+}

@@ -9,6 +9,7 @@ import {
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import { validateVault } from "../knowledge-base/validate.mjs";
 
 const VIEW_FILES = [
@@ -20,6 +21,8 @@ const VIEW_FILES = [
   "Answer Verification.base",
   "Paper Reconciliation.base"
 ];
+
+const REPOSITORY_ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
 function write(root, relativePath, content) {
   const path = join(root, relativePath);
@@ -301,4 +304,38 @@ test("requires all seven native Bases only when requested", () => {
       /missing required view: 05-Views\/Methods\.base/
     );
   });
+});
+
+test("inventories the complete source corpus with known anomalies", () => {
+  const inventory = JSON.parse(readFileSync(
+    join(REPOSITORY_ROOT, "06-Audit/source-inventory.json"),
+    "utf8"
+  ));
+
+  assert.equal(inventory.sources.length, 35);
+  assert.equal(
+    new Set(inventory.sources.map((source) => source.source_pdf)).size,
+    35
+  );
+  for (const source of inventory.sources) {
+    assert.match(source.sha256, /^[a-f0-9]{64}$/);
+    assert(Number.isInteger(source.page_count) && source.page_count > 0);
+  }
+
+  const duplicate = inventory.sources.find(
+    (source) => source.source_pdf === "past_paper/COMP2711_S2023_Final.pdf"
+  );
+  const canonical = inventory.sources.find(
+    (source) => source.source_pdf === "past_paper/COMP2711_S2023_Midterm.pdf"
+  );
+  assert.equal(
+    duplicate.duplicate_of,
+    "past_paper/COMP2711_S2023_Midterm.pdf"
+  );
+  assert.equal(duplicate.sha256, canonical.sha256);
+
+  const scanned = inventory.sources.find(
+    (source) => source.source_pdf === "past_paper/2013-final.pdf"
+  );
+  assert.equal(scanned.text_layer_status, "none");
 });

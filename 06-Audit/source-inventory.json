@@ -1,0 +1,446 @@
+{
+  "generated_at": "2026-09-08",
+  "schema_version": 1,
+  "sources": [
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "page_count": 18,
+      "sha256": "e378c89319b3e8cc14d5c57e75f8db0a16c9d6a2257487684b5687f6e30000f0",
+      "source_pdf": "past_paper/2013-final.pdf",
+      "text_char_count": 0,
+      "text_layer_status": "none"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        10
+      ],
+      "page_count": 13,
+      "sha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d",
+      "source_pdf": "past_paper/2013-midterm.pdf",
+      "text_char_count": 14786,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        8,
+        15,
+        16,
+        17
+      ],
+      "page_count": 17,
+      "sha256": "778a2a0e37c04a803edce848127f852e143166c5e472f3474a72cbbf0fc93e2b",
+      "source_pdf": "past_paper/2014-final.pdf",
+      "text_char_count": 12869,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 10,
+      "sha256": "5ade2facf0869598044eee36243999a991276980e9f97ee7a55954faf3e5a87e",
+      "source_pdf": "past_paper/2014-midterm.pdf",
+      "text_char_count": 10251,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        6
+      ],
+      "page_count": 17,
+      "sha256": "ca2e596dadc10d8c088cbd6f5cebb4de54fd11cabe38bc7e2acea57f6943639c",
+      "source_pdf": "past_paper/2015-final.pdf",
+      "text_char_count": 14686,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 13,
+      "sha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6",
+      "source_pdf": "past_paper/2015-midterm.pdf",
+      "text_char_count": 12857,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        17,
+        18,
+        19
+      ],
+      "page_count": 19,
+      "sha256": "08045a966e9c27a4ac89219addb70af8f699286d12d0b9950a064eb5e2263f22",
+      "source_pdf": "past_paper/2016-final.pdf",
+      "text_char_count": 16463,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        15,
+        16,
+        17
+      ],
+      "page_count": 17,
+      "sha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c",
+      "source_pdf": "past_paper/2016-midterm.pdf",
+      "text_char_count": 16610,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 18,
+      "sha256": "1a3a43234b2f03f6503b3c0d648d3021cde963b37d33182642481a125300c8f8",
+      "source_pdf": "past_paper/2017-final.pdf",
+      "text_char_count": 20543,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 13,
+      "sha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+      "source_pdf": "past_paper/2017-midterm.pdf",
+      "text_char_count": 7966,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 17,
+      "sha256": "4107217a4179737cc7e7aedd960d091d0d74288516b45cd1fc64322b72474ce9",
+      "source_pdf": "past_paper/2018-final.pdf",
+      "text_char_count": 17310,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 10,
+      "sha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+      "source_pdf": "past_paper/2018-midterm.pdf",
+      "text_char_count": 12480,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 17,
+      "sha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+      "source_pdf": "past_paper/2019-final.pdf",
+      "text_char_count": 16718,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 15,
+      "sha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+      "source_pdf": "past_paper/2019-midterm.pdf",
+      "text_char_count": 9164,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 5,
+      "sha256": "dab6603922032b927f7dae8fdeae6b915f29522539c6d392cc8d83d7394a2306",
+      "source_pdf": "past_paper/2020-final-part-1.pdf",
+      "text_char_count": 7649,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 6,
+      "sha256": "88d7c2386e0451544cb5b509e45c9aef05dcfca742b23085f8954f19eab1dff4",
+      "source_pdf": "past_paper/2020-final-part-2.pdf",
+      "text_char_count": 8476,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 5,
+      "sha256": "e4043254770981190c07d2a6729740cdf4ffed8ae0d370efff7f5d93f88bacc0",
+      "source_pdf": "past_paper/2020-midterm.pdf",
+      "text_char_count": 7187,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 4,
+      "sha256": "66e07776ca96c4a49882932e2ee10b953b0b19349fc1f32882af0e214e13e74a",
+      "source_pdf": "past_paper/2021-final-part-1.pdf",
+      "text_char_count": 6076,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 5,
+      "sha256": "fb2af7c5980bcd2c25cb3142048d1ef1600b40227aeb7376fec5646557b94006",
+      "source_pdf": "past_paper/2021-final-part-2.pdf",
+      "text_char_count": 8659,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 5,
+      "sha256": "e9b963c63e39ba04fe209133b7b65813c05a328592b42a9f118b4fc619d5fe39",
+      "source_pdf": "past_paper/2021-midterm.pdf",
+      "text_char_count": 8145,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 4,
+      "sha256": "33394a06812a3a0c18c1ddf85498ca32c23d9c23aa3e64b237a5927d2fd43b1c",
+      "source_pdf": "past_paper/2022-final-part-1.pdf",
+      "text_char_count": 7680,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 4,
+      "sha256": "fd0da2bac7f4bd6e968efc605f2e50e0150080318d0c52231fc5800c329a5dc5",
+      "source_pdf": "past_paper/2022-final-part-2.pdf",
+      "text_char_count": 7252,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 5,
+      "sha256": "e850b65c3507378ba333e13be3cd9fb3d16be91157cf585030a340b3ab3a5220",
+      "source_pdf": "past_paper/2022-midterm.pdf",
+      "text_char_count": 8532,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        18,
+        19,
+        20
+      ],
+      "page_count": 20,
+      "sha256": "7d130692eefddad676faf43cbe4eac7f777c09fea055dd5d4d84acf575355c0e",
+      "source_pdf": "past_paper/COMP2711_F2023_Final.pdf",
+      "text_char_count": 19659,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        11,
+        15,
+        21,
+        22,
+        23,
+        24
+      ],
+      "page_count": 24,
+      "sha256": "4ced9291189c331f77d1a2d614cac17c95b372cf3153db6403c3946af2c1ea9b",
+      "source_pdf": "past_paper/COMP2711_F2023_Midterm.pdf",
+      "text_char_count": 21965,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        11,
+        14,
+        16,
+        18,
+        20,
+        22,
+        25,
+        28,
+        29,
+        30,
+        31
+      ],
+      "page_count": 31,
+      "sha256": "d6ddd1bb2ff55313079dbc5927731593d3c49cbbe3cc0294d000f8d10f014e0d",
+      "source_pdf": "past_paper/COMP2711_F2024_Final.pdf",
+      "text_char_count": 15674,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        15,
+        16,
+        17
+      ],
+      "page_count": 17,
+      "sha256": "a2c7c1624898971f48fd6a5cf143df67db1fe4f9a8bd59cdfc880c8a3120458c",
+      "source_pdf": "past_paper/COMP2711_F2024_Midterm.pdf",
+      "text_char_count": 12728,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "page_count": 24,
+      "sha256": "8c99ca5ef7b1426d42aedc27023a61333a17cef4f9133a2e253803604384388f",
+      "source_pdf": "past_paper/COMP2711_F2025_Final.pdf",
+      "text_char_count": 18522,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        9,
+        16,
+        24,
+        25,
+        26
+      ],
+      "page_count": 26,
+      "sha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+      "source_pdf": "past_paper/COMP2711_F2025_Midterm.pdf",
+      "text_char_count": 16001,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": "past_paper/COMP2711_S2023_Midterm.pdf",
+      "duplicate_reason": "The files have identical SHA-256 hashes, and both first pages identify the document as the Spring 2023 Midterm Examination.",
+      "low_text_pages": [
+        13,
+        14
+      ],
+      "page_count": 14,
+      "sha256": "7cb61aa82894104e5769eb2c2a20c53874e401c9f1e41b1e0cd8e7191a318aa5",
+      "source_pdf": "past_paper/COMP2711_S2023_Final.pdf",
+      "text_char_count": 8803,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        13,
+        14
+      ],
+      "page_count": 14,
+      "sha256": "7cb61aa82894104e5769eb2c2a20c53874e401c9f1e41b1e0cd8e7191a318aa5",
+      "source_pdf": "past_paper/COMP2711_S2023_Midterm.pdf",
+      "text_char_count": 8803,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 12,
+      "sha256": "c3c98022a98dd9586cb2eff94c5e7d78bda69b0cb0fb4f4ecf5401241615779d",
+      "source_pdf": "past_paper/COMP2711_S2024_Final.pdf",
+      "text_char_count": 15212,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [],
+      "page_count": 18,
+      "sha256": "1cc40fb0f4795239949a0e2f0b4c0b789ab2d3e701f2eebddf5b407b97bae526",
+      "source_pdf": "past_paper/COMP2711_S2024_Midterm.pdf",
+      "text_char_count": 16193,
+      "text_layer_status": "full"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        8,
+        14,
+        18,
+        19,
+        20,
+        21
+      ],
+      "page_count": 21,
+      "sha256": "15b253986652a8a846ad56904c0d61c46450bcc4b8369299e36002d2bdba647a",
+      "source_pdf": "past_paper/COMP2711_S2025_Final.pdf",
+      "text_char_count": 19413,
+      "text_layer_status": "partial"
+    },
+    {
+      "duplicate_of": null,
+      "duplicate_reason": null,
+      "low_text_pages": [
+        3,
+        9
+      ],
+      "page_count": 12,
+      "sha256": "48c1146c444e656e80b6525864946de08f287ab4dddf92190c2188faa6284fde",
+      "source_pdf": "past_paper/COMP2711_S2025_Midterm.pdf",
+      "text_char_count": 9565,
+      "text_layer_status": "partial"
+    }
+  ]
+}
