@@ -97,6 +97,20 @@ test("enforces required fields, controlled values, links, and difficulty", () =>
   assert(errors.includes("difficulty must be an integer from 1 to 5"));
 });
 
+test("enforces required scalar types and nonblank strings", () => {
+  const errors = validateQuestionProperties(validQuestion({
+    id: "question-1",
+    source_pdf: "archive/question.txt",
+    question_number: "   ",
+    difficulty_basis: 42
+  }));
+
+  assert(errors.includes("id must be a nonblank Question ID beginning with Q-"));
+  assert(errors.includes("source_pdf must be a nonblank path under past_paper ending in .pdf"));
+  assert(errors.includes("question_number must be a nonblank string"));
+  assert(errors.includes("difficulty_basis must be a nonblank string"));
+});
+
 test("validates the three optional fields", () => {
   const errors = validateQuestionProperties(validQuestion({
     solution_page: [0, 2.5],
@@ -107,4 +121,9 @@ test("validates the three optional fields", () => {
   assert(errors.includes("solution_page must be an array of positive integers"));
   assert(errors.includes("marks must be a positive number"));
   assert(errors.includes("related_questions must be an array of Question Wikilinks"));
+});
+
+test("requires solution_page to be nonempty when present", () => {
+  const errors = validateQuestionProperties(validQuestion({ solution_page: [] }));
+  assert(errors.includes("solution_page must be a nonempty array of positive integers"));
 });

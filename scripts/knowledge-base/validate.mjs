@@ -159,6 +159,19 @@ function validateQuestionLinks(note, notesByBasename, errors) {
       }
     }
   }
+
+  if (typeof note.properties.source_paper === "string") {
+    const targetName = normalizeWikiLink(note.properties.source_paper);
+    const target = notesByBasename.get(targetName);
+    if (
+      target?.properties.note_type === "paper"
+      && target.properties.source_pdf !== note.properties.source_pdf
+    ) {
+      errors.push(
+        `${noteLabel(note)}: source_paper ${targetName} uses ${target.properties.source_pdf}, expected ${note.properties.source_pdf}`
+      );
+    }
+  }
 }
 
 function validateVerifiedBody(note, errors) {
@@ -166,13 +179,25 @@ function validateVerifiedBody(note, errors) {
 
   let priorIndex = -1;
   for (const heading of REQUIRED_HEADINGS) {
-    const index = note.body.search(new RegExp(`^## ${escapeRegExp(heading)}\\s*$`, "m"));
-    if (index === -1) {
+    const match = new RegExp(`^## ${escapeRegExp(heading)}\\s*$`, "m").exec(note.body);
+    if (!match) {
       errors.push(`${noteLabel(note)}: verified Question is missing heading: ${heading}`);
-    } else if (index < priorIndex) {
+      continue;
+    }
+
+    if (match.index < priorIndex) {
       errors.push(`${noteLabel(note)}: verified Question headings are out of order`);
     }
-    if (index !== -1) priorIndex = index;
+    priorIndex = match.index;
+
+    const afterHeading = note.body.slice(match.index + match[0].length);
+    const nextHeadingIndex = afterHeading.search(/^##\s+/m);
+    const section = nextHeadingIndex === -1
+      ? afterHeading
+      : afterHeading.slice(0, nextHeadingIndex);
+    if (section.trim().length === 0) {
+      errors.push(`${noteLabel(note)}: verified Question section is empty: ${heading}`);
+    }
   }
 
   const expectedEmbed = `${note.properties.source_pdf}#page=${note.properties.source_page}`;
@@ -270,8 +295,7 @@ function validateAuditRelationship(questions, auditRecords, root, requireComplet
   }
   const auditById = new Map();
   for (const record of auditRecords) {
-    if (auditById.has(record.id)) errors.push(`duplicate audit question ID: ${record.id}`);
-    else auditById.set(record.id, record);
+    if (!auditById.has(record.id)) auditById.set(record.id, record);
   }
 
   for (const question of questions) {
@@ -303,6 +327,14 @@ function validateAuditRelationship(questions, auditRecords, root, requireComplet
     } else if (question.properties.verification_status !== "verified") {
       errors.push(`in-scope audit record has no verified Question note: ${record.id}`);
     }
+  }
+}
+
+function validateUniqueAuditIds(auditRecords, errors) {
+  const seen = new Set();
+  for (const record of auditRecords) {
+    if (seen.has(record.id)) errors.push(`duplicate audit question ID: ${record.id}`);
+    else seen.add(record.id);
   }
 }
 
@@ -375,7 +407,8 @@ export function validateVault(root, options = {}) {
     (record) => matchesSource(record.source_pdf, selectedSources)
   );
 
-  validateUniqueIds(selectedNotes, errors);
+  validateUniqueIds(allNotes, errors);
+  validateUniqueAuditIds(allAuditRecords, errors);
   for (const question of questions) {
     for (const error of validateQuestionProperties(question.properties)) {
       errors.push(`${noteLabel(question)}: ${error}`);

@@ -114,6 +114,22 @@ function validateControlled(properties, key, errors) {
   }
 }
 
+function isNonblankString(value) {
+  return typeof value === "string" && value.trim().length > 0;
+}
+
+function isQuestionId(value) {
+  return isNonblankString(value)
+    && /^Q-[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/.test(value);
+}
+
+function isPastPaperPdf(value) {
+  return isNonblankString(value)
+    && /^past_paper\/[^/].*\.pdf$/i.test(value)
+    && !value.includes("\\")
+    && !value.split("/").includes("..");
+}
+
 export function validateQuestionProperties(properties) {
   const errors = [];
   if (!properties || typeof properties !== "object" || Array.isArray(properties)) {
@@ -129,6 +145,25 @@ export function validateQuestionProperties(properties) {
   const allowed = new Set([...QUESTION_REQUIRED, ...QUESTION_OPTIONAL]);
   for (const key of Object.keys(properties)) {
     if (!allowed.has(key)) errors.push(`unsupported property: ${key}`);
+  }
+
+  if (!isQuestionId(properties.id)) {
+    errors.push("id must be a nonblank Question ID beginning with Q-");
+  }
+  if (!isPastPaperPdf(properties.source_pdf)) {
+    errors.push("source_pdf must be a nonblank path under past_paper ending in .pdf");
+  }
+  if (!isNonblankString(properties.question_number)) {
+    errors.push("question_number must be a nonblank string");
+  }
+  if (!isNonblankString(properties.difficulty_basis)) {
+    errors.push("difficulty_basis must be a nonblank string");
+  }
+  for (const key of [
+    "note_type", "course", "source_paper", "term", "exam_type",
+    "syllabus_version", "syllabus_status", "answer_source", "verification_status"
+  ]) {
+    if (!isNonblankString(properties[key])) errors.push(`${key} must be a nonblank string`);
   }
 
   if (properties.note_type !== "question") errors.push("note_type must be question");
@@ -176,6 +211,9 @@ export function validateQuestionProperties(properties) {
     || properties.solution_page.some((page) => !Number.isInteger(page) || page < 1)
   )) {
     errors.push("solution_page must be an array of positive integers");
+  }
+  if (Array.isArray(properties.solution_page) && properties.solution_page.length === 0) {
+    errors.push("solution_page must be a nonempty array of positive integers");
   }
   if (Object.hasOwn(properties, "marks") && (
     typeof properties.marks !== "number"

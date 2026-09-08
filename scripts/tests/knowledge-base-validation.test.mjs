@@ -27,6 +27,13 @@ function write(root, relativePath, content) {
   writeFileSync(path, content);
 }
 
+function updateJson(root, relativePath, update) {
+  const path = join(root, relativePath);
+  const document = JSON.parse(readFileSync(path, "utf8"));
+  update(document);
+  writeFileSync(path, `${JSON.stringify(document, null, 2)}\n`);
+}
+
 function questionNote(overrides = {}, bodyOverride) {
   const values = {
     id: "Q-2015-MID-P01-a",
@@ -167,6 +174,46 @@ test("rejects duplicate Question IDs", () => {
   });
 });
 
+test("checks duplicate note IDs globally when source filters are active", () => {
+  withFixture((root) => {
+    write(root, "past_paper/other.pdf", "fixture");
+    updateJson(root, "06-Audit/source-inventory.json", (inventory) => {
+      inventory.sources.push({ source_pdf: "past_paper/other.pdf", page_count: 3 });
+    });
+    write(
+      root,
+      "04-Questions/Q-duplicate-from-other-source.md",
+      questionNote({ source_pdf: "past_paper/other.pdf" })
+    );
+
+    assertError(
+      validateVault(root, { sources: ["past_paper/sample.pdf"] }),
+      /duplicate question ID: Q-2015-MID-P01-a/
+    );
+  });
+});
+
+test("checks duplicate audit IDs globally when source filters are active", () => {
+  withFixture((root) => {
+    write(root, "past_paper/other.pdf", "fixture");
+    updateJson(root, "06-Audit/source-inventory.json", (inventory) => {
+      inventory.sources.push({ source_pdf: "past_paper/other.pdf", page_count: 3 });
+    });
+    updateJson(root, "06-Audit/question-audit.json", (audit) => {
+      audit.questions.push({
+        ...audit.questions[0],
+        source_pdf: "past_paper/other.pdf",
+        note_path: "04-Questions/Q-from-other-source.md"
+      });
+    });
+
+    assertError(
+      validateVault(root, { sources: ["past_paper/sample.pdf"] }),
+      /duplicate audit question ID: Q-2015-MID-P01-a/
+    );
+  });
+});
+
 test("rejects a missing source PDF", () => {
   withFixture((root) => {
     rmSync(join(root, "past_paper/sample.pdf"));
@@ -216,6 +263,32 @@ test("rejects placeholder text in a verified note", () => {
     );
     write(root, relativePath, content);
     assertError(validateVault(root), /verified Question contains incomplete marker: TODO/);
+  });
+});
+
+test("rejects an empty required section in a verified note", () => {
+  withFixture((root) => {
+    const relativePath = "04-Questions/Q-2015-MID-P01-a - Propositional Equivalence.md";
+    const content = readFileSync(join(root, relativePath), "utf8").replace(
+      "## Question\nShow that the two propositions are equivalent.",
+      "## Question\n   "
+    );
+    write(root, relativePath, content);
+    assertError(validateVault(root), /verified Question section is empty: Question/);
+  });
+});
+
+test("requires source_paper to reference a Paper for the same source PDF", () => {
+  withFixture((root) => {
+    write(
+      root,
+      "03-Papers/2015 Midterm.md",
+      paperNote().replace("past_paper/sample.pdf", "past_paper/other.pdf")
+    );
+    assertError(
+      validateVault(root),
+      /source_paper 2015 Midterm uses past_paper\/other\.pdf, expected past_paper\/sample\.pdf/
+    );
   });
 });
 
