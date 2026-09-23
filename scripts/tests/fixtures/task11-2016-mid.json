@@ -1,0 +1,221 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2016-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "26+10=36",
+        "=36^7"
+      ],
+      "prompt_sha256": "5ca8620a1f90681bf30fc924f7da20768a3c14db4ea8a6e7782ab697e99093ce"
+    },
+    "Q-2016-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "36!/29!",
+        "\\binom{36}{7}7!"
+      ],
+      "prompt_sha256": "e5bb7d27920788aa0e8749e1fec45bd3ce92d03a3dd718f0901939df84c2c3cc"
+    },
+    "Q-2016-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "始终有35种",
+        "10\\cdot35^6"
+      ],
+      "prompt_sha256": "bdb78f18990ac6e390a63c4bd5db0ba1a03ac86d8b99f595d2363d40965b0b9b"
+    },
+    "Q-2016-MID-P01-d": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "L-D-L-D-L-D-L",
+        "D-L-D-L-D-L-D",
+        "26^4 10^3+10^4 26^3"
+      ],
+      "prompt_sha256": "480630c3e1ed75e08a157bd00312f7cff6aafce53e87f37fbe9efca264d31381"
+    },
+    "Q-2016-MID-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{300}{4}\\binom{500}{10}\\binom{600}{10}\\binom{10000}{40}",
+        "邀请顺序不区分"
+      ],
+      "prompt_sha256": "e2d87cc45eed05fcd51c12bd3cc6f8612387d55795d40e990d010ec950b6cbb5"
+    },
+    "Q-2016-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{500}{9}\\binom{599}{10}",
+        "已包含该生以研究生身份"
+      ],
+      "prompt_sha256": "0cebef65748db110d07c1c181725c0a5e8c4754385501c88de232c859fbe432f"
+    },
+    "Q-2016-MID-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom nk k",
+        "n\\binom{n-1}{k-1}",
+        "可以除以k"
+      ],
+      "prompt_sha256": "cd31b3ca0f1bb75febe8e1b62f4601edc0fd69763625140d14cff19d4231d37c"
+    },
+    "Q-2016-MID-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n!/[k!(n-k)!]",
+        "0<k\\le n"
+      ],
+      "prompt_sha256": "67fe2451658d31ce07a235fb50324fc91623bda82cf03d96835a9ab29147dd7c"
+    },
+    "Q-2016-MID-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "F,F,T,T,T,T,F,F",
+        "F,T,T,F,T,F,F,T",
+        "TTF"
+      ],
+      "prompt_sha256": "c1bab7abd1bbe4b96d62ef0d2a334a29f89fd70bd501a9bc9e6b0fed6b4fe7e9"
+    },
+    "Q-2016-MID-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(p\\land\\neg q)\\lor r",
+        "(p\\lor r)\\land(\\neg q\\lor r)"
+      ],
+      "prompt_sha256": "dc33c2871c9f18ddac9f5e870af4f8821adb4bfb0710a7d984e6cb486f05034b"
+    },
+    "Q-2016-MID-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "第一条越界边",
+        "n−1条不同线段",
+        "n=1"
+      ],
+      "prompt_sha256": "856254a73a6155bcb876d248ec0947e4f3b91b6379acfe046334570688b8db5e"
+    },
+    "Q-2016-MID-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "m<n",
+        "2n=2m<2n",
+        "每条线段恰有两个端点"
+      ],
+      "prompt_sha256": "74a1afedf7486d16ada4a47bc5d6cda24bd6d7a251ac35cc1d75566044e0200b"
+    },
+    "Q-2016-MID-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "若x奇，则q(x)假",
+        "反向假设(ii)",
+        "肯定前件"
+      ],
+      "prompt_sha256": "a7235964a0255e37749910ae4192d69ed7082bc573c105aa96fe6a38fea241b9"
+    },
+    "Q-2016-MID-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "q(1)=F",
+        "q(1)\\land p(1)=F"
+      ],
+      "prompt_sha256": "c1f0b4fb1aa6470e2c9089d27e92f6a5cd74094fc69919e69832fb42875d0976"
+    },
+    "Q-2016-MID-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "F\\to T=T",
+        "取见证x=1",
+        "(i)为假"
+      ],
+      "prompt_sha256": "7c6b3be0ae136e1656e9652d99a6ddab9d6015735364dcae9d61223651f615c0"
+    },
+    "Q-2016-MID-P06-d": {
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "q(u)\\land p(u)",
+        "合取消去",
+        "v∈E"
+      ],
+      "prompt_sha256": "94bbe3000ee2b2af3926b3db09c33212c98afe471e6dc55395fc169111d1e5f1"
+    }
+  }
+}

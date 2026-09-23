@@ -1,0 +1,298 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2020-FINAL2-P01": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1,
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n=1",
+        "\\sum_{i=2}^n i(i-1)\\binom ni",
+        "n(n+1)2^{n-2}"
+      ],
+      "prompt_sha256": "30d4803f13c07ef358d7f69077eae82c4b1d9fe72ffac8ffe2ffe1ad54b38cf4"
+    },
+    "Q-2020-FINAL2-P02": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\overline A\\cup\\overline B\\cup\\overline C",
+        "(0.3+0.2+0.1)|U|=0.6|U|",
+        "|A\\cap B\\cap C|\\ge|U|-0.6|U|=0.4|U|"
+      ],
+      "prompt_sha256": "f38c52b1751858fa546ba3bf6356eebdab24adc1f13816bb9613a91b4f7064e1"
+    },
+    "Q-2020-FINAL2-P03": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "B\\cap(A\\cup\\overline B)",
+        "\\overline A\\cap B",
+        "0.6-0.5=0.1",
+        "0.5/0.9=5/9"
+      ],
+      "prompt_sha256": "e9e05e9b6185048e87ff88eda226e66d3f4f293baf3fb70a9ff8014cba1814d3"
+    },
+    "Q-2020-FINAL2-P04-a-decision": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A,B,C,D",
+        "I",
+        "E,F,G,H",
+        "四个奇度点"
+      ],
+      "prompt_sha256": "bf11a6dd7c45d9988aad86362847d3b7eda077603031cfe0305ff1c0a6634abe"
+    },
+    "Q-2020-FINAL2-P04-a-insert": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "4/2=2",
+        "HF",
+        "EG",
+        "从三变四"
+      ],
+      "prompt_sha256": "690775f2bffb6f38ea1ec274d5f12ed4fa4bccc7386b1c64d7dc98cd0f1dbff4"
+    },
+    "Q-2020-FINAL2-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "B,F,D,E",
+        "A,C,G,H",
+        "插入数为零"
+      ],
+      "prompt_sha256": "24e0e4cfda2e040866b0c443d401f67a056a1aaa8b8e59f07e387175ba34280b"
+    },
+    "Q-2020-FINAL2-P04-c-decision": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A,B,C,D,E,F,G,H",
+        "八个度数全是 $3$",
+        "无标记交叉不另加顶点"
+      ],
+      "prompt_sha256": "0b82945f957f903baea73249c6828f066d3ba8ad07457688e626ecbb171b7dec"
+    },
+    "Q-2020-FINAL2-P04-c-insert": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "8/2=4",
+        "AH,BE,DG,CF",
+        "每个顶点恰出现一次"
+      ],
+      "prompt_sha256": "7b581aeaafa74e0501051f4fede878522e9a73127a0315144e78747c9a8f3e7b"
+    },
+    "Q-2020-FINAL2-P04-d-decision": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "D,G",
+        "各度数 $6$",
+        "J",
+        "A,K"
+      ],
+      "prompt_sha256": "a44f3171d5cc9770fa944e0c7a7ed7cf976a96aa703275479c63ef7497edaace"
+    },
+    "Q-2020-FINAL2-P04-d-insert": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "AK",
+        "由三变四",
+        "由一变二",
+        "最少一条"
+      ],
+      "prompt_sha256": "bc0be3387cbd568b7e0bf8c3d28c22cd17844a48bd023462755c60e5209d47c3"
+    },
+    "Q-2020-FINAL2-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n-1",
+        "(1-p)^{n-1}",
+        "1-(1-p)^{n-1}",
+        "正概率"
+      ],
+      "prompt_sha256": "fe83495d44b42e792c0911409b745ca7f2dd19f8ca3cc1c74ed46894dfd37daa"
+    },
+    "Q-2020-FINAL2-P05-b-expectation": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom n2",
+        "X=\\sum_e I_e",
+        "E(X)=\\sum_e E(I_e)=\\binom n2p"
+      ],
+      "prompt_sha256": "57e8b71380c5a15bf3beae4166e466d95de8529d280145ef9a9a9acae454c41a"
+    },
+    "Q-2020-FINAL2-P05-b-variance": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "I_e^2=I_e",
+        "p-p^2=p(1-p)",
+        "\\operatorname{Var}(X)=\\binom n2p(1-p)"
+      ],
+      "prompt_sha256": "b3c17b42fd7987abef6da1b46226b20dd77cb47ffdc49226a6f7f7ef64b1ae04"
+    },
+    "Q-2020-FINAL2-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\sum_i v_i=n",
+        "v_i-1",
+        "\\sum_i(v_i-1)=n-k",
+        "一棵树"
+      ],
+      "prompt_sha256": "81bb8423b530395cc20f08efa4afc02ccaf3375690bdf34a413c1de1e164e0f7"
+    },
+    "Q-2020-FINAL2-P05-d": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom63=20",
+        "\\binom43=4",
+        "20-4=16",
+        "16p^3(1-p)^3"
+      ],
+      "prompt_sha256": "24974b4a15ea2e70a453bd7f8b8569dea9e8690ddaafeea787e4287c4962781e"
+    },
+    "Q-2020-FINAL2-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4,
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A[i]=i",
+        "第二固定点",
+        "10D_9"
+      ],
+      "prompt_sha256": "631d424e2a53e4f776a51f54a19f8ed5e9806c98e267584876ec9de9953554cb"
+    },
+    "Q-2020-FINAL2-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "空位置 $j$",
+        "后者只能是 $j$",
+        "十个而不是九个",
+        "答案为 $0$"
+      ],
+      "prompt_sha256": "c19f81c2ee5467a4e000c5c1e83df07faa99981e410ad641f3fbc1bce27fe4a2"
+    },
+    "Q-2020-FINAL2-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2,3,\\ldots,9",
+        "8!",
+        "不能误用 $D_8$"
+      ],
+      "prompt_sha256": "f62de028d4939473cf4300c4c1029203603e0f231152c6f4252e34def52179c6"
+    },
+    "Q-2020-FINAL2-P06-d": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "8!",
+        "唯一扩展",
+        "恰好两个"
+      ],
+      "prompt_sha256": "da7de97de096cabc575574280743a2816b6113e911291fe34aa042dbc3104dba"
+    },
+    "Q-2020-FINAL2-P06-e": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "S_1\\cap S_3",
+        "8D_7",
+        "S_3\\cap S_4",
+        "6!",
+        "10D_9+2\\cdot8!-8D_7-6!"
+      ],
+      "prompt_sha256": "80549737404b92fbdcc4ec0bb91486d07db7b5f9b11138f0a4846fbb7b06f1d7"
+    }
+  }
+}

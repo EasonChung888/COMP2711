@@ -1,0 +1,89 @@
+{
+  "restored_toolchain_files": 45,
+  "restored_obsidian_configs": 4,
+  "canonical_questions": 715,
+  "canonical_papers": 34,
+  "native_bases": [
+    {
+      "base": "All Questions.base",
+      "rows": 715
+    },
+    {
+      "base": "Answer Verification.base",
+      "rows": 715
+    },
+    {
+      "base": "Methods.base",
+      "rows": 715
+    },
+    {
+      "base": "Paper Reconciliation.base",
+      "rows": 34
+    },
+    {
+      "base": "Papers by Year.base",
+      "rows": 34
+    },
+    {
+      "base": "Question Type and Difficulty.base",
+      "rows": 715
+    },
+    {
+      "base": "Topic Coverage.base",
+      "rows": 715
+    }
+  ],
+  "corrected_native_link_edges": 72,
+  "updated_hub_paper_notes": 36,
+  "native_unresolved_links_after": 0,
+  "native_outside_targets_after": 0,
+  "tests_passed": 211,
+  "website_question_mapping_checks": 17,
+  "question_source_lecture_bytes_unchanged": true,
+  "changed_navigation_files": [
+    "knowledge_base/00-Home/COMP2711 Knowledge Hub.md",
+    "knowledge_base/00-Home/Knowledge Base Guide.md",
+    "knowledge_base/03-Papers/2013 Final.md",
+    "knowledge_base/03-Papers/2013 Midterm.md",
+    "knowledge_base/03-Papers/2014 Final.md",
+    "knowledge_base/03-Papers/2014 Midterm.md",
+    "knowledge_base/03-Papers/2015 Final.md",
+    "knowledge_base/03-Papers/2015 Midterm.md",
+    "knowledge_base/03-Papers/2016 Final.md",
+    "knowledge_base/03-Papers/2016 Midterm.md",
+    "knowledge_base/03-Papers/2017 Final.md",
+    "knowledge_base/03-Papers/2017 Midterm.md",
+    "knowledge_base/03-Papers/2018 Final.md",
+    "knowledge_base/03-Papers/2018 Midterm.md",
+    "knowledge_base/03-Papers/2019 Final.md",
+    "knowledge_base/03-Papers/2019 Midterm.md",
+    "knowledge_base/03-Papers/2020 Final Part 1.md",
+    "knowledge_base/03-Papers/2020 Final Part 2.md",
+    "knowledge_base/03-Papers/2020 Midterm.md",
+    "knowledge_base/03-Papers/2021 Final Part 1.md",
+    "knowledge_base/03-Papers/2021 Final Part 2.md",
+    "knowledge_base/03-Papers/2021 Midterm.md",
+    "knowledge_base/03-Papers/2022 Final Part 1.md",
+    "knowledge_base/03-Papers/2022 Final Part 2.md",
+    "knowledge_base/03-Papers/2022 Midterm.md",
+    "knowledge_base/03-Papers/2023 Fall Final.md",
+    "knowledge_base/03-Papers/2023 Fall Midterm.md",
+    "knowledge_base/03-Papers/2023 Spring Midterm.md",
+    "knowledge_base/03-Papers/2024 Fall Final.md",
+    "knowledge_base/03-Papers/2024 Fall Midterm.md",
+    "knowledge_base/03-Papers/2024 Spring Final.md",
+    "knowledge_base/03-Papers/2024 Spring Midterm.md",
+    "knowledge_base/03-Papers/2025 Fall Final.md",
+    "knowledge_base/03-Papers/2025 Fall Midterm.md",
+    "knowledge_base/03-Papers/2025 Spring Final.md",
+    "knowledge_base/03-Papers/2025 Spring Midterm.md",
+    "knowledge_base/05-Views/All Questions.base",
+    "knowledge_base/05-Views/Answer Verification.base",
+    "knowledge_base/05-Views/Methods.base",
+    "knowledge_base/05-Views/Paper Reconciliation.base",
+    "knowledge_base/05-Views/Papers by Year.base",
+    "knowledge_base/05-Views/Question Type and Difficulty.base",
+    "knowledge_base/05-Views/Topic Coverage.base",
+    "knowledge_base/06-Audit/Syllabus Audit.md"
+  ]
+}

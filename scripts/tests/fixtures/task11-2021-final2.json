@@ -1,0 +1,119 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2021-FINAL2-P01": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "|S_n|=|S_{n-1}|+|S_{n-2}|",
+        "\\binom{n-i+1}{i}",
+        "i\\le(n+1)/2"
+      ],
+      "prompt_sha256": "568320b29859c0dfd51288c1e9f77f60c76e07277b5a9aa8458b20dc0116147d"
+    },
+    "Q-2021-FINAL2-P02": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1,
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{26}{7}-8\\binom{16}{7}",
+        "657800-8\\cdot11440=566280",
+        "两两不交"
+      ],
+      "prompt_sha256": "ff3d6cb70abfcbb3d5720236e1fe25bb1ca2dea2e50e9a8c329a5915fceeca39"
+    },
+    "Q-2021-FINAL2-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "特别是题列度零的那个顶点",
+        "被迫存在的那条边矛盾"
+      ],
+      "prompt_sha256": "a85a78fb1ae6fc914931ae363db04c9bf8793161d2a4c883174750f51af15346"
+    },
+    "Q-2021-FINAL2-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "三个度七顶点、七个度三顶点",
+        "三个度三顶点、七个度七顶点",
+        "重数相反"
+      ],
+      "prompt_sha256": "bbac0b83a6cdb55fdb27d99e95734ee86695bf94e0d237059d1f2ad044f33644"
+    },
+    "Q-2021-FINAL2-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "i\\ne4",
+        "最后一条边必进入 $v_4$",
+        "入度零"
+      ],
+      "prompt_sha256": "81c1b44795b577671b2175d3f18bb2aa09642da26cabbff36b426bab82c8a058"
+    },
+    "Q-2021-FINAL2-P05-d": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1+2+3+1+2=9",
+        "3+1+2+1+1=8",
+        "都必须等于边数"
+      ],
+      "prompt_sha256": "4c0daf8078725ae6901ecde21cb19e371a13207d24b043ab90d4cfe28e34de0a"
+    },
+    "Q-2021-FINAL2-BONUS-a": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "若 $u=v$",
+        "(1-p)^k",
+        "h=1+\\frac{n-2}{n-1}h",
+        "h=n-1"
+      ],
+      "prompt_sha256": "a332736883158f1e676547ae5bd1efcc8b339ff71fd88f32a5feaf5a9125a014"
+    },
+    "Q-2021-FINAL2-BONUS-b": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2^{-(n-1)}>0",
+        "d_i=d_{i-1}+2",
+        "d_i=2i-1",
+        "(n-1)^2"
+      ],
+      "prompt_sha256": "7c639b938d85c128395d0947dc43fbd673887499486ff0c8512a744db6afd29a"
+    }
+  }
+}

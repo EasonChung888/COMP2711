@@ -1,0 +1,379 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2018-FINAL-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\gcd(y,p)=1",
+        "z\\equiv-y^{-1}x\\pmod p",
+        "x-x=0"
+      ],
+      "prompt_sha256": "1dc2a1537a2f500ca00ce9f9370186f53dc07966485dd65b04285e47810b57b6"
+    },
+    "Q-2018-FINAL-P02-a-E1": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1\\times3",
+        "覆盖整列",
+        "E_1=1"
+      ],
+      "prompt_sha256": "3eeff7a19870548b533e39faa572180667fd3b0143082e0e077ff52412af88e2"
+    },
+    "Q-2018-FINAL-P02-a-E2": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "两列各自",
+        "六格",
+        "E_2=1"
+      ],
+      "prompt_sha256": "bb894329bb0a928c9faa8fbf4118c3078a783229cb3bae69afe2465f841b6857"
+    },
+    "Q-2018-FINAL-P02-a-E3": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "全竖",
+        "全横",
+        "E_3=2"
+      ],
+      "prompt_sha256": "4a086114be3dc1c71f5b87559a989199da8141588cd3809ffd7685ac3293a770"
+    },
+    "Q-2018-FINAL-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "E_{n-1}",
+        "E_{n-3}",
+        "最右三列",
+        "一一对应"
+      ],
+      "prompt_sha256": "4a95ba260b794cf0059d45ae6bf7b0b4e82382cbe54b74ac8ededd640e4806e4"
+    },
+    "Q-2018-FINAL-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "E_1=F_1=1",
+        "E_2=F_2=1",
+        "E_3=F_3=2",
+        "F_{n-1}+F_{n-3}\\le F_{n-1}+F_{n-2}=F_n"
+      ],
+      "prompt_sha256": "96ffc34cf98f564ea55429c4cb890cc479273a60d3f1410d1b4c17ab76d5eb58"
+    },
+    "Q-2018-FINAL-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0=a-a\\in S",
+        "a(k+1)=ak-(-a)\\in S",
+        "-a(k+1)=(-ak)-a\\in S"
+      ],
+      "prompt_sha256": "1d57448be510756b0d21f349be9644869264b24b2622343e21089b6b617a3cba"
+    },
+    "Q-2018-FINAL-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "390=2\\cdot156+78",
+        "78\\mathbb Z\\subseteq S",
+        "S\\subseteq78\\mathbb Z",
+        "m=78"
+      ],
+      "prompt_sha256": "e64cbea2679a9bc08c7c26034d2de0c46bd829e7391dc4e44473c09f5ce862e9"
+    },
+    "Q-2018-FINAL-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1+3k,2+3k,3+3k",
+        "1,2,3\\in X",
+        "\\{1,2,3\\}\\subseteq X"
+      ],
+      "prompt_sha256": "e6ece7685398cf9543c0546606803bd4aa1f362a5f7c6afdb0616c9ee3de5360"
+    },
+    "Q-2018-FINAL-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\dfrac{k+1}{k+1-m}",
+        "k\\ge m",
+        "f(m)=\\binom mm=1"
+      ],
+      "prompt_sha256": "098203f21b66d29fa0e86941581eeeb1cbcb494c119ac5a2887037f8d86eaa10"
+    },
+    "Q-2018-FINAL-P04-c-basis": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "K_1",
+        "单顶点无边图",
+        "K_2,K_3,\\ldots"
+      ],
+      "prompt_sha256": "a487afc73c0fb41a1e37f600b16d2fae2d7c449ae34fa782359962fa59ca8958"
+    },
+    "Q-2018-FINAL-P04-c-edges": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "E'=E\\cup\\{\\{v_i,v_{n+1}\\}:1\\le i\\le n\\}",
+        "n$ 条边",
+        "不加自环"
+      ],
+      "prompt_sha256": "715966e952e1366c6ecdbe901cfb38c815ccb2a69844ad9459beab5d58424699"
+    },
+    "Q-2018-FINAL-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "另一部空",
+        "n=1,2",
+        "评分说明明确接受"
+      ],
+      "prompt_sha256": "41af98b9e2d2c143fa3891a13e37bbf55ba6b046cc0382429bb1aadf3020559d"
+    },
+    "Q-2018-FINAL-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "derived",
+      "checkpoints": [
+        "奇度点恰两个",
+        "m+n",
+        "(m,n)=(1,1)",
+        "单边"
+      ],
+      "prompt_sha256": "17526e82f98ab6a8badcd7e961f1336b180e8ebb95897f35285e7d7eaaa97a36"
+    },
+    "Q-2018-FINAL-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "12,23,34,41",
+        "13$ 或 $24",
+        "每点度数恰二"
+      ],
+      "prompt_sha256": "ea8bad64dadf3291c812c3ad0861f84c9f4b1308c0444bcb804077edc91789eb"
+    },
+    "Q-2018-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "选 $5$",
+        "C_4",
+        "所有 $k+1$",
+        "只覆盖"
+      ],
+      "prompt_sha256": "4a8a0e67ce18f439405c11b429abae92b5ae4808263bfaec48dced1f94db5ba7"
+    },
+    "Q-2018-FINAL-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "X=\\sum_{i=1}^m I_i",
+        "E(I_i)=1/n",
+        "m/n",
+        "不需球之间独立"
+      ],
+      "prompt_sha256": "d7ccc2df26463ce0fa11b1b12d493f50b48cbc93519ac13e43800d57dcdf7ceb"
+    },
+    "Q-2018-FINAL-P09-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "35+14+10-7-5-2+1=46",
+        "70-46=24",
+        "70(1-1/2)(1-1/5)(1-1/7)=24"
+      ],
+      "prompt_sha256": "7c9e74180681820a8eaded767dd878c139396c3ff60bfd3d49c9d58e73dd729c"
+    },
+    "Q-2018-FINAL-P10-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "C_{11}=(-1)3",
+        "C_{23}=5\\cdot2+0\\cdot4=10",
+        "\\begin{pmatrix}-3&0&2\\\\15&5&10\\end{pmatrix}"
+      ],
+      "prompt_sha256": "80399c000b80fda398cefdbbac9b70f972bf19348db4bab94bc26647e3bee7cb"
+    },
+    "Q-2018-FINAL-P10-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n\\cdot n\\cdot n=n^3",
+        "\\Theta(n^3)",
+        "三重循环"
+      ],
+      "prompt_sha256": "878b7e707cd95d3869f626fbafa67210ab131bfaf42c81887fccb73c6dbdce58"
+    },
+    "Q-2018-FINAL-P10-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "nm",
+        "nmp",
+        "A[i,k]\\cdot B[k,j]"
+      ],
+      "prompt_sha256": "08146e19efeb0acb2577848b6146b2935c8b195eb433b13987e9548a82987a01"
+    },
+    "Q-2018-FINAL-P10-d": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "75000",
+        "10000",
+        "12000",
+        "24000",
+        "36000<85000",
+        "M_1(M_2M_3)"
+      ],
+      "prompt_sha256": "f42133087eda4f2d31e902ef97e15ef878fff1bc1660b9455fbda301e735b635"
+    },
+    "Q-2018-FINAL-P11-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "五个右步与三个上步",
+        "\\binom85=56",
+        "一一对应"
+      ],
+      "prompt_sha256": "d87edb0634ff059ccda73b429765e42cb9386662e9714ed51e6178f0192a2b53"
+    },
+    "Q-2018-FINAL-P11-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom42=6",
+        "\\binom32=3",
+        "56-18=38",
+        "唯一分成"
+      ],
+      "prompt_sha256": "3a46c1e060bbb1df61fced0647c28e388748225aba26d12777b1c2bff08af341"
+    },
+    "Q-2018-FINAL-P12-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "N=\\max(N_1,N_2)",
+        "(a_1+a_2)g(x)\\le f_1(x)+f_2(x)\\le(b_1+b_2)g(x)"
+      ],
+      "prompt_sha256": "56a77fd311f43f026b7d62ad6f1f4cb36f2b8ddb6c2f9fd34c4fd2d0a8c71f69"
+    },
+    "Q-2018-FINAL-P12-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "answer_source": "derived",
+      "checkpoints": [
+        "g(x)=2^x",
+        "f(x)=2\\cdot2^x",
+        "2^{2^x}\\to\\infty",
+        "处处正"
+      ],
+      "prompt_sha256": "5cc5ea23bbfc3ec36e1dae5a9845ac22b84465bbddf3182be5179637c9c0228c"
+    }
+  }
+}

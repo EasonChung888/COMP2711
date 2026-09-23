@@ -1,0 +1,85 @@
+filters:
+  and:
+    - 'file.inFolder("knowledge_base/04-Questions")'
+    - "note.note_type == \"question\""
+    - "note.syllabus_status == \"in-scope\""
+formulas:
+  title: "file.asLink(file.name.split(\" - \").slice(1).join(\" - \"))"
+  verification_order: "if(note.verification_status == \"verified\", 1, 0)"
+properties:
+  note.id:
+    displayName: "ID"
+  formula.title:
+    displayName: "Title / 题目"
+  note.answer_source:
+    displayName: "Answer source / 答案来源"
+  note.verification_status:
+    displayName: "Verification / 核验"
+  note.source_paper:
+    displayName: "Paper / 试卷"
+  note.source_page:
+    displayName: "PDF page / 页码"
+  note.year:
+    displayName: "Year / 年份"
+  formula.verification_order:
+    displayName: "Verification order"
+views:
+  -
+    type: "table"
+    name: "Answer Sources and Verification"
+    sort:
+      -
+        property: "formula.verification_order"
+        direction: "ASC"
+      -
+        property: "note.verification_status"
+        direction: "ASC"
+      -
+        property: "note.answer_source"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.answer_source"
+      - "note.verification_status"
+      - "note.source_paper"
+      - "note.source_page"
+      - "note.year"
+  -
+    type: "table"
+    name: "Needs Verification"
+    filters: "note.verification_status != \"verified\""
+    sort:
+      -
+        property: "formula.verification_order"
+        direction: "ASC"
+      -
+        property: "note.verification_status"
+        direction: "ASC"
+      -
+        property: "note.answer_source"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.answer_source"
+      - "note.verification_status"
+      - "note.source_paper"
+      - "note.source_page"
+      - "note.year"

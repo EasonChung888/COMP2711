@@ -1,0 +1,25 @@
+{
+  "protocol": "file:",
+  "offline": true,
+  "viewports": [
+    1440,
+    390
+  ],
+  "topicPages": 8,
+  "indexChecked": true,
+  "overflow": false,
+  "consoleErrors": [],
+  "katexErrors": 0,
+  "restore": {
+    "read": true,
+    "draft": true,
+    "practice": true,
+    "homeProgress": "已读 1 / 39 页",
+    "resume": "lessons/minimum-guarantees.html"
+  },
+  "repairs": [
+    "pre horizontal scroll",
+    "contained KaTeX hidden MathML",
+    "Chinese bold punctuation rendering"
+  ]
+}

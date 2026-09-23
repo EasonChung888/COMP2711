@@ -1,0 +1,388 @@
+filters:
+  and:
+    - 'file.inFolder("knowledge_base/04-Questions")'
+    - "note.note_type == \"question\""
+    - "note.syllabus_status == \"in-scope\""
+    - "note.verification_status == \"verified\""
+formulas:
+  title: "file.asLink(file.name.split(\" - \").slice(1).join(\" - \"))"
+properties:
+  note.id:
+    displayName: "ID"
+  formula.title:
+    displayName: "Title / 题目"
+  note.question_types:
+    displayName: "Question type / 题型"
+  note.difficulty:
+    displayName: "Difficulty / 难度"
+  note.topics:
+    displayName: "Topics / 主题"
+  note.methods:
+    displayName: "Methods / 方法"
+  note.year:
+    displayName: "Year / 年份"
+views:
+  -
+    type: "table"
+    name: "Question Type then Difficulty"
+    groupBy:
+      property: "note.question_types"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.difficulty"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Difficulty then Question Type"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.question_types"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - proof"
+    filters: "note.question_types.contains(\"proof\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - calculation"
+    filters: "note.question_types.contains(\"calculation\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - construction"
+    filters: "note.question_types.contains(\"construction\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - translation"
+    filters: "note.question_types.contains(\"translation\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - classification"
+    filters: "note.question_types.contains(\"classification\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - counterexample"
+    filters: "note.question_types.contains(\"counterexample\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - modeling"
+    filters: "note.question_types.contains(\"modeling\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Type - algorithm-analysis"
+    filters: "note.question_types.contains(\"algorithm-analysis\")"
+    groupBy:
+      property: "note.difficulty"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Difficulty 1"
+    filters: "note.difficulty == 1"
+    sort:
+      -
+        property: "note.question_types"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Difficulty 2"
+    filters: "note.difficulty == 2"
+    sort:
+      -
+        property: "note.question_types"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Difficulty 3"
+    filters: "note.difficulty == 3"
+    sort:
+      -
+        property: "note.question_types"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Difficulty 4"
+    filters: "note.difficulty == 4"
+    sort:
+      -
+        property: "note.question_types"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"
+  -
+    type: "table"
+    name: "Difficulty 5"
+    filters: "note.difficulty == 5"
+    sort:
+      -
+        property: "note.question_types"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.topics"
+      - "note.methods"
+      - "note.year"

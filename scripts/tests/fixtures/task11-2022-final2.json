@@ -1,0 +1,173 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2022-FINAL2-P02-a-23": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom42=6",
+        "P(M=\\{2,3\\}\\mid W=1)=1/6",
+        "可选羊门集合在这里相同"
+      ],
+      "prompt_sha256": "94a612501d8fcaef8118809eebb8b0e8393872845f03cd84995c25802b1a219a"
+    },
+    "Q-2022-FINAL2-P02-a-35": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\{2,3\\},\\{2,4\\},\\{2,5\\},\\{3,4\\},\\{3,5\\},\\{4,5\\}",
+        "占六对之一"
+      ],
+      "prompt_sha256": "35c399d77000283bffb389ed00d82a75bff2308a1cc913f459cde43bfccffac3"
+    },
+    "Q-2022-FINAL2-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(M=\\{2,3\\}\\mid W=2)=0",
+        "不依赖初选羊门一是否可开"
+      ],
+      "prompt_sha256": "cdcd4c55aa2195381a16d0185372a535f38907c5eaffb6e5d2063c9952cc27f7"
+    },
+    "Q-2022-FINAL2-P03": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "47y\\equiv5",
+        "3\\cdot4=12\\equiv1",
+        "x=9+11s,y=9+11t"
+      ],
+      "prompt_sha256": "dbf389904f69efc7aac167a410a50be9abe4e9063028dfdee1920af11a876bd1"
+    },
+    "Q-2022-FINAL2-P05-a-i": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall u\\in V_1\\forall v\\in V_1\\neg E(u,v)",
+        "\\forall u\\in V_2\\forall v\\in V_2\\neg E(u,v)",
+        "没有要求每一对跨部顶点都连边"
+      ],
+      "prompt_sha256": "3027848ebbb71663852efc696afbe202dae9f2835413cae00ff403abe0478b3a"
+    },
+    "Q-2022-FINAL2-P05-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall u\\in V_1\\forall v\\in V_2 E(u,v)",
+        "内部边没有被禁止"
+      ],
+      "prompt_sha256": "456ceccc3156cbf1ee1916e8e6ab94559841c8f5e25356ed5c9789821e27c822"
+    },
+    "Q-2022-FINAL2-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "V_1\\cup V_2=V",
+        "V_1\\cap V_2=\\varnothing",
+        "二分划分的见证"
+      ],
+      "prompt_sha256": "f10649632097bf489e902248ea070bd00c5c9956a409adef0013a54475be4b19"
+    },
+    "Q-2022-FINAL2-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "V_1=\\{a,b\\}",
+        "ac,bc,ab",
+        "三角形 $K_3$",
+        "V_2=\\varnothing"
+      ],
+      "prompt_sha256": "b7308998ad7294def2859763cb51882cb8e4618f82d5162e1accef8fd9308d73"
+    },
+    "Q-2022-FINAL2-P06-a-expectation": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "X=\\sum_e I_e",
+        "E[X]=\\sum_e p=Np=\\binom n2p",
+        "线性性本身不需独立"
+      ],
+      "prompt_sha256": "c684926e5499db9d4c7c983bce7c7c20c4c726a8bf09dab92e2046a498135b75"
+    },
+    "Q-2022-FINAL2-P06-a-variance": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "I_e^2=I_e",
+        "p-p^2=p(1-p)",
+        "\\binom n2p(1-p)",
+        "协方差为零"
+      ],
+      "prompt_sha256": "7a2f965ed30d0c3262e426b203084a5a77ab8aa5c896511d7d44be31a8a8f24a"
+    },
+    "Q-2022-FINAL2-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "X\\le\\sum_{i=1}^m\\binom{v_i}{2}",
+        "补成完全图 $K_{v_i}$",
+        "不能另外重分配顶点"
+      ],
+      "prompt_sha256": "b4f5e7e5fdbffc01d6a27ff02dfe89ffd9cee121b6bb1b29f94be2288d67f71b"
+    },
+    "Q-2022-FINAL2-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "三角形加孤点",
+        "六条潜在边",
+        "4p^3(1-p)^3",
+        "四种配置互斥"
+      ],
+      "prompt_sha256": "ccfd0bb78d14ad058d910f7176e3ab503bc695fe6806bba6f48655c20cc87e32"
+    }
+  }
+}

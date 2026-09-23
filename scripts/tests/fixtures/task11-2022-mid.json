@@ -1,0 +1,459 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2022-MID-P01-a-i": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "a\\to(b\\to\\neg c)",
+        "\\neg a\\lor\\neg b\\lor\\neg c"
+      ],
+      "prompt_sha256": "6238fad30374f4f334a0ccab6081592fcc65b65d02c49d33ba1019de3ba1dfec"
+    },
+    "Q-2022-MID-P01-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "b\\to\\neg c\\equiv\\neg b\\lor\\neg c",
+        "\\neg a\\lor\\neg b\\lor\\neg c",
+        "全真时为假"
+      ],
+      "prompt_sha256": "9b79c70b7f82752796994a6bc75a1daa19d6161a9a02db07c970bb6e3808e913"
+    },
+    "Q-2022-MID-P01-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg(a\\land b\\land c)",
+        "仅在三变量全真时为假"
+      ],
+      "prompt_sha256": "26d8b07b7898a2273d48ca370c9d072f39ca15215c7ab17e16eabf54d8cdd98a"
+    },
+    "Q-2022-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "X\\land Y\\equiv\\neg(\\neg X\\lor\\neg Y)",
+        "\\neg((\\neg a\\to b)\\to\\neg(b\\to c))"
+      ],
+      "prompt_sha256": "f46fe4cfddc53e916ecc7202e62874f8de729346e8def7c1af07f5e4fc42ee21"
+    },
+    "Q-2022-MID-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\exists y(W(\\mathrm{Alice},y)\\land W(\\mathrm{Bob},y))",
+        "同一个 $y$"
+      ],
+      "prompt_sha256": "7c3cead281fbb1153ea484681386ec4528d66148d8d40a80948cd8c794ace99b"
+    },
+    "Q-2022-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x\\ne\\mathrm{David}",
+        "\\forall y(W(\\mathrm{David},y)\\to W(x,y))",
+        "不能每个网站换一人"
+      ],
+      "prompt_sha256": "a1066207d91c4b235790ff2c9661f54efaf5390a6b19bc0a358b77f17523ce3e"
+    },
+    "Q-2022-MID-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\exists x\\exists x'(x\\ne x'\\land\\forall y(W(x,y)\\leftrightarrow W(x',y)))",
+        "两个方向的包含"
+      ],
+      "prompt_sha256": "56c35091ddefc260bf2ad2b03936c168131da984c8e51fd38db0fe2589dae8ff"
+    },
+    "Q-2022-MID-P03-1": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall x(P(x)\\to S(x))",
+        "非蜂鸟的前件为假"
+      ],
+      "prompt_sha256": "56bdac1661b4ab533b08916d24d868d3630e4a50f5bc468b8fa1042d9651600c"
+    },
+    "Q-2022-MID-P03-2": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg\\exists x(Q(x)\\land R(x))",
+        "\\forall x(Q(x)\\to\\neg R(x))"
+      ],
+      "prompt_sha256": "a0dcaa3fc00b3df51fa898a2be93a7d3326690e37b1a77b1fd4719a014bc33cd"
+    },
+    "Q-2022-MID-P03-3": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall x(\\neg R(x)\\to\\neg S(x))",
+        "\\forall x(S(x)\\to R(x))"
+      ],
+      "prompt_sha256": "25e02c8b9a2eee72005d99525b368aec1d5baf8edc0cfb50b4f0c94679314951"
+    },
+    "Q-2022-MID-P03-4": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall x(P(x)\\to\\neg Q(x))",
+        "不额外断言蜂鸟存在"
+      ],
+      "prompt_sha256": "6022823c9263b893e1818c564e45f122d0038ba6e64538827d999803d1856226"
+    },
+    "Q-2022-MID-P03-proof": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "由(1)在 $a$ 实例化",
+        "S(a)\\to R(a)",
+        "R(a)\\to\\neg Q(a)",
+        "由(8)全称推广"
+      ],
+      "prompt_sha256": "9f49f1a98639fd4ddcc1136c18b282e4320fcf6f0638ec9035129b5e67529f49"
+    },
+    "Q-2022-MID-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A=[1,2)",
+        "B=(1,2)",
+        "A-B=\\{1\\}"
+      ],
+      "prompt_sha256": "c04593e79aa6784632252490714ab5bad4339c32ed9578db42613c8ff3e2d571"
+    },
+    "Q-2022-MID-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A=(-\\infty,-1)\\cup\\mathbb N",
+        "A-B=\\mathbb N",
+        "可数且无限"
+      ],
+      "prompt_sha256": "a14077b5dec7fa4c3eeb4872a5b59999cdea3d22699e5f6b96aa4033c2f3fb99"
+    },
+    "Q-2022-MID-P04-c": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A=[1,3]",
+        "B=[1,2)",
+        "A-B=[2,3]",
+        "通过平移双射"
+      ],
+      "prompt_sha256": "9abb51bc68666cc4562c0c4fc80aabcd2eec5754a5810cc6849cdc730ced13bd"
+    },
+    "Q-2022-MID-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=\\pm\\sqrt{k}",
+        "0,1,-1,\\sqrt2,-\\sqrt2",
+        "可数无限"
+      ],
+      "prompt_sha256": "68ba1bf7f2c053867ead8c58959861850f8775bde867de4c7f4d1ba1786e867d"
+    },
+    "Q-2022-MID-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=\\sum_{i\\ge1}2b_i10^{-i}",
+        "\\tfrac29 10^{-k}",
+        "所得实数仍不同"
+      ],
+      "prompt_sha256": "3194ad178b956e684049c5dea1db92eadc4336acb1083c13dc15f8d65532d7f0"
+    },
+    "Q-2022-MID-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "按 $i+j$ 从小到大",
+        "有限阶段输出",
+        "也可能有限或为空"
+      ],
+      "prompt_sha256": "f5aeb654ab6dec18a64f1f6d9467b2d3a34d7f056709f26fd9ea802b6ca3f148"
+    },
+    "Q-2022-MID-P05-d": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x^2+y^2=r^2",
+        "不同半径给不同圆",
+        "正实数集"
+      ],
+      "prompt_sha256": "ddb7baf5e84dba5b12e17af55aadb8c88f04830f0b342878329ca0e3efb7ffc8"
+    },
+    "Q-2022-MID-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n=pt",
+        "p\\mid(4n^2+1)-4n^2=1",
+        "p\\nmid n"
+      ],
+      "prompt_sha256": "f5cedb2ac21f1d6439eb2029c35d4f734ac8025c73281e6fd870a99ad1bd25d5"
+    },
+    "Q-2022-MID-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\gcd(2n,p)=1",
+        "(4n^2)^{2k+1}",
+        "p\\mid2",
+        "p\\equiv1\\pmod4"
+      ],
+      "prompt_sha256": "02e8ac81e553ab986ebad930551a503195a361e2214fda279b78b7c681c7aabd"
+    },
+    "Q-2022-MID-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "N=4M^2+1>1",
+        "q\\equiv1\\pmod4",
+        "p_i\\nmid N"
+      ],
+      "prompt_sha256": "3227b4ead969a14b32d5da16d1e6918b09cfac3c4b85ae28ea80289825301b33"
+    },
+    "Q-2022-MID-P07-a": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "542=5\\cdot108+2",
+        "2^{542}=(2^{108})^5\\cdot2^2"
+      ],
+      "prompt_sha256": "ebeae599d82f0c4b314ff328e28829f85b644fd22f5806f72c63aa37e7f107d3"
+    },
+    "Q-2022-MID-P07-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "3^{2022}\\equiv(-1)^{2022}=1\\pmod4",
+        "3^{3^{2022}}=(3^4)^t\\cdot3"
+      ],
+      "prompt_sha256": "a48bda6b5628e64611947428a97ea53e464859bea4fb9d03c0e85c6f2e2cd21a"
+    },
+    "Q-2022-MID-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "29=16+8+4+1",
+        "1331=10\\cdot133+1",
+        "1452=10\\cdot133+122"
+      ],
+      "prompt_sha256": "38197730f64d30bc9316461078cd7fa4431f9d69c1ba94eecdf14edc9b9b0c2a"
+    },
+    "Q-2022-MID-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "8\\cdot29-11\\cdot21",
+        "41\\cdot29-11\\cdot108",
+        "1189=11\\cdot108+1"
+      ],
+      "prompt_sha256": "0c7c34a8849098994bacca14dadbce142bd5f38790cff29185b6058e366c0692"
+    },
+    "Q-2022-MID-P09": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\frac{\\log n}{\\sqrt2\\,n^{1/6}}\\to0",
+        "\\log(n^3),\\ n^{1/3}\\log n,\\ \\sqrt{2n},\\ \\log(2^n),\\ n^2+20,\\ 2^n"
+      ],
+      "prompt_sha256": "5e48ce726a23b5ba3e07dba3711278fd76aab0ce8a9567834f438a905581cbc8"
+    },
+    "Q-2022-MID-P10-a-best": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n-1",
+        "并没有提前返回分支",
+        "\\Theta(n)"
+      ],
+      "prompt_sha256": "bf00b673c4cdc5099ddc3a84b364a9ecb36f1c8befcf676f0ac8595ec90c196e"
+    },
+    "Q-2022-MID-P10-a-worst": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "严格递增序列",
+        "O(n)",
+        "\\Omega(n)",
+        "\\Theta(n)"
+      ],
+      "prompt_sha256": "c1e07325c23d457e51860a784e53b0fa4dd3f31bef7cb1b10ac3176860decebc"
+    },
+    "Q-2022-MID-P10-b-best": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=a_1",
+        "后续元素都不读取",
+        "\\Theta(1)"
+      ],
+      "prompt_sha256": "2171cf94c463b8aec75a8626357cb6cae9105627c6800f8224b26eda62ffd4ca"
+    },
+    "Q-2022-MID-P10-b-worst": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "全部 $n$ 次比较都失败",
+        "\\Omega(n)",
+        "\\Theta(n)"
+      ],
+      "prompt_sha256": "77678a858fd49178b2c4979c645b23f159d12895a34e58f6b371d473aa9ae9e7"
+    },
+    "Q-2022-MID-P10-c-best": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "m=\\lfloor3/4+n/4\\rfloor",
+        "x=a_m",
+        "\\Theta(1)"
+      ],
+      "prompt_sha256": "8e8106307629b4b79a74939aa3bb508337c0f2a1d16d5a7e27b1e0dbbd54d9f7"
+    },
+    "Q-2022-MID-P10-c-worst": {
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "L-1-\\lfloor(L-1)/4\\rfloor",
+        "L_{t+1}+3\\ge\\tfrac34(L_t+3)",
+        "t\\ge\\log_{4/3}((n+3)/3)"
+      ],
+      "prompt_sha256": "31f57a9dc1241f5814626fea131818c248353a6d4be71a6b6693169cf06680f3"
+    }
+  }
+}

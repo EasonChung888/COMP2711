@@ -1,0 +1,234 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2020-FINAL1-P01-a-i": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall u\\in V\\exists v\\in V",
+        "\\forall w\\in V(E(u,w)\\to v=w)",
+        "排除孤立点"
+      ],
+      "prompt_sha256": "ec8ae8893df92552536159512d658a8058f961540e1e045adfcec9dea5f3e882"
+    },
+    "Q-2020-FINAL1-P01-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall u\\in V_1\\forall v\\in V_1\\neg E(u,v)",
+        "\\forall u\\in V_2\\forall v\\in V_2\\neg E(u,v)",
+        "因为边无向"
+      ],
+      "prompt_sha256": "0c2fc8f37e43f7bc31a68dc1912f37d697d97ce6ee299878791ca3d1b9d12336"
+    },
+    "Q-2020-FINAL1-P01-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall u\\in V_1\\forall v\\in V_2E(u,v)",
+        "未声明同部边不存在"
+      ],
+      "prompt_sha256": "e9c3a803fbd02f60f3d4864c489da5ff1ce8adc54046d55618c200bd97ff5c6e"
+    },
+    "Q-2020-FINAL1-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "V_1\\cup V_2=V",
+        "V_1\\cap V_2=\\varnothing",
+        "合法二分划分"
+      ],
+      "prompt_sha256": "db7eef3355ee09f95c511c9f3f2089ba926d3dc2a4974f1769b558317da69aee"
+    },
+    "Q-2020-FINAL1-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "V_1=\\{a,b\\}",
+        "V_2=\\{c\\}",
+        "ac,bc",
+        "同部边 $ab$"
+      ],
+      "prompt_sha256": "d46b8414e65b944251565f3b5d0bc993a92eba408506de409d05fda9ce4ba09a"
+    },
+    "Q-2020-FINAL1-P02": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1,
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A_1=2",
+        "A_k=2^kt",
+        "A_{k+1}=d10^k+A_k=2^k(d5^k+t)",
+        "2^{k+1}\\mid A_{k+1}"
+      ],
+      "prompt_sha256": "35c74e6037bab644a9e871daf1cfe6377df3cfed4df96aa4446ed75e2152977b"
+    },
+    "Q-2020-FINAL1-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "向右六格、向上五格",
+        "\\binom{11}{5}=462"
+      ],
+      "prompt_sha256": "0e7f9d19ada97d818f6d493b216d51b9da834fe0537720add6e352b711e694a0"
+    },
+    "Q-2020-FINAL1-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom63=20",
+        "\\binom53=10",
+        "462-200=262"
+      ],
+      "prompt_sha256": "343beb0ad6098761ac5ce43592feefa6df9619af522635b2877bf3ddb9d282a7"
+    },
+    "Q-2020-FINAL1-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "f(d)=1+\\lfloor999/d\\rfloor",
+        "500+334+200-167-100-67+34=734",
+        "3-3+1=1"
+      ],
+      "prompt_sha256": "a6ba79088a6544ca504dae01ecd139ea4ae77631e89035b7baa31259f118a095"
+    },
+    "Q-2020-FINAL1-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "3,8,13,18,23,28",
+        "n=23+30k",
+        "32-0+1=33",
+        "983"
+      ],
+      "prompt_sha256": "c9e7d3688e052493d2057af0683ac1674a907a5827e138576bc5f85282e70f54"
+    },
+    "Q-2020-FINAL1-P04-c": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "100\\equiv10\\equiv1\\pmod9",
+        "x_3\\equiv-x_1-x_2\\pmod9",
+        "9^2=81"
+      ],
+      "prompt_sha256": "c2361fe2401bae60ffc73c5754ad73a0b9d25dc98a1d004e21c1224b87361d78"
+    },
+    "Q-2020-FINAL1-P05-a-formula": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x^{-1},-x^{-2},2x^{-3},-6x^{-4}",
+        "(-1)(-2)\\cdots(-n)=(-1)^n n!",
+        "f_n(x)=(-1)^n n!x^{-(n+1)}"
+      ],
+      "prompt_sha256": "e6363cdb9c58794506e1b434bd0b8293a01ca15df8043f914152187e84d91c09"
+    },
+    "Q-2020-FINAL1-P05-a-proof": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(-1)^00!x^{-1}=x^{-1}=f_0(x)",
+        "(-1)^kk![-(k+1)]x^{-(k+2)}",
+        "(-1)^{k+1}(k+1)!x^{-(k+2)}"
+      ],
+      "prompt_sha256": "ba4bc3d62340862cfbf59e929c01e54d12046401a5d0c70f46953c3136eebaa3"
+    },
+    "Q-2020-FINAL1-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "f_n(-1)=-n!",
+        "a_n\\le n\\log n",
+        "\\frac n4\\log n",
+        "1/4,1"
+      ],
+      "prompt_sha256": "24b9b61bf08ae7dd9f0e5fabdebfe1ecd1fdfce709ba16ac8b71e11b225a0f9f"
+    },
+    "Q-2020-FINAL1-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(m+1)(n+1)",
+        "\\Theta((m+1)(n+1))",
+        "m,n\\ge1",
+        "O(mn)"
+      ],
+      "prompt_sha256": "9f25ab9c7ec21985c6a31fd9bc91a5d18a0d886d74698973444d193cd50183f9"
+    },
+    "Q-2020-FINAL1-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2n",
+        "T(n)=T(n-1)+\\Theta(n)",
+        "n(n+1)/2-1",
+        "T(n)=\\Theta(n^2)"
+      ],
+      "prompt_sha256": "3c4ea9096ec4d1aabad91048744dd2137203562c27d14f5807265928d039b88a"
+    }
+  }
+}

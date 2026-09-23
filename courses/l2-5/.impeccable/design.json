@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-23T15:30:56.871110Z",
+  "title": "Design System: COMP2711",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.0131 82.40)",
+          "oklch(26.43% 0.0131 82.40)",
+          "oklch(37.86% 0.0131 82.40)",
+          "oklch(49.29% 0.0131 82.40)",
+          "oklch(60.71% 0.0131 82.40)",
+          "oklch(72.14% 0.0131 82.40)",
+          "oklch(83.57% 0.0131 82.40)",
+          "oklch(95.00% 0.0131 82.40)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0069 88.64)",
+          "oklch(26.43% 0.0069 88.64)",
+          "oklch(37.86% 0.0069 88.64)",
+          "oklch(49.29% 0.0069 88.64)",
+          "oklch(60.71% 0.0069 88.64)",
+          "oklch(72.14% 0.0069 88.64)",
+          "oklch(83.57% 0.0069 88.64)",
+          "oklch(95.00% 0.0069 88.64)"
+        ]
+      },
+      "surface-blue": {
+        "role": "neutral",
+        "displayName": "Surface Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.0084 236.56)",
+          "oklch(26.43% 0.0084 236.56)",
+          "oklch(37.86% 0.0084 236.56)",
+          "oklch(49.29% 0.0084 236.56)",
+          "oklch(60.71% 0.0084 236.56)",
+          "oklch(72.14% 0.0084 236.56)",
+          "oklch(83.57% 0.0084 236.56)",
+          "oklch(95.00% 0.0084 236.56)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0150 244.23)",
+          "oklch(26.43% 0.0150 244.23)",
+          "oklch(37.86% 0.0150 244.23)",
+          "oklch(49.29% 0.0150 244.23)",
+          "oklch(60.71% 0.0150 244.23)",
+          "oklch(72.14% 0.0150 244.23)",
+          "oklch(83.57% 0.0150 244.23)",
+          "oklch(95.00% 0.0150 244.23)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.0156 241.18)",
+          "oklch(26.43% 0.0156 241.18)",
+          "oklch(37.86% 0.0156 241.18)",
+          "oklch(49.29% 0.0156 241.18)",
+          "oklch(60.71% 0.0156 241.18)",
+          "oklch(72.14% 0.0156 241.18)",
+          "oklch(83.57% 0.0156 241.18)",
+          "oklch(95.00% 0.0156 241.18)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15.00% 0.0169 79.34)",
+          "oklch(26.43% 0.0169 79.34)",
+          "oklch(37.86% 0.0169 79.34)",
+          "oklch(49.29% 0.0169 79.34)",
+          "oklch(60.71% 0.0169 79.34)",
+          "oklch(72.14% 0.0169 79.34)",
+          "oklch(83.57% 0.0169 79.34)",
+          "oklch(95.00% 0.0169 79.34)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15.00% 0.0810 239.75)",
+          "oklch(26.43% 0.0810 239.75)",
+          "oklch(37.86% 0.0810 239.75)",
+          "oklch(49.29% 0.0810 239.75)",
+          "oklch(60.71% 0.0810 239.75)",
+          "oklch(72.14% 0.0810 239.75)",
+          "oklch(83.57% 0.0810 239.75)",
+          "oklch(95.00% 0.0810 239.75)"
+        ]
+      },
+      "accent-dark": {
+        "role": "primary",
+        "displayName": "Accent Dark",
+        "tonalRamp": [
+          "oklch(15.00% 0.0687 241.80)",
+          "oklch(26.43% 0.0687 241.80)",
+          "oklch(37.86% 0.0687 241.80)",
+          "oklch(49.29% 0.0687 241.80)",
+          "oklch(60.71% 0.0687 241.80)",
+          "oklch(72.14% 0.0687 241.80)",
+          "oklch(83.57% 0.0687 241.80)",
+          "oklch(95.00% 0.0687 241.80)"
+        ]
+      },
+      "selection": {
+        "role": "neutral",
+        "displayName": "Selection",
+        "tonalRamp": [
+          "oklch(15.00% 0.0262 231.65)",
+          "oklch(26.43% 0.0262 231.65)",
+          "oklch(37.86% 0.0262 231.65)",
+          "oklch(49.29% 0.0262 231.65)",
+          "oklch(60.71% 0.0262 231.65)",
+          "oklch(72.14% 0.0262 231.65)",
+          "oklch(83.57% 0.0262 231.65)",
+          "oklch(95.00% 0.0262 231.65)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Page heading",
+        "purpose": "Course, module, chapter and lesson titles."
+      },
+      "body": {
+        "displayName": "Reading prose",
+        "purpose": "Complete slide explanations and question text."
+      },
+      "module-entry-title": {
+        "displayName": "Module / chapter entry heading",
+        "purpose": "Intentional 1.5rem heading for full-width module-entry rows."
+      },
+      "entry-action": {
+        "displayName": "Entry action",
+        "purpose": "Intentional 0.9rem underlined action within module-entry rows."
+      },
+      "label": {
+        "displayName": "Metadata and breadcrumb",
+        "purpose": "0.82rem sans text for portal metadata, page breadcrumbs and reading controls."
+      }
+    },
+    "shadows": [
+      {
+        "name": "inherited-ambient",
+        "value": "0 14px 34px rgba(35, 44, 50, 0.08)",
+        "purpose": "Inherited legacy card/score styles; active course/practice cards are flat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "anchor-scroll",
+        "value": "smooth",
+        "purpose": "Anchor navigation; auto under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-column",
+        "value": "720px"
+      },
+      {
+        "name": "compact",
+        "value": "600px"
+      }
+    ],
+    "notes": [
+      "Tonal ramps are synthesized panel previews, not additional implemented colors.",
+      "Component snippets preserve active CSS and include fallback token values for standalone rendering."
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary link-button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Start/resume action on course, module and chapter entry pages.",
+      "html": "<a class=\"ds-primary\" href=\"#lesson\">开始第一课</a>",
+      "css": ".ds-primary{display:inline-block;min-height:42px;padding:.65rem 1rem;border:1px solid var(--accent-dark,#17425f);border-radius:8px;background:var(--accent,#285f82);color:var(--surface,#fffdf8);font:720 .82rem/1 Georgia,\"Times New Roman\",serif;text-decoration:none;cursor:pointer}.ds-primary:hover{background:var(--accent-dark,#17425f);color:var(--surface,#fffdf8)}.ds-primary:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}"
+    },
+    {
+      "name": "Course card",
+      "kind": "card",
+      "refersTo": "course-card",
+      "description": "Chapter-level topic entry with reading status.",
+      "html": "<a class=\"ds-course\" href=\"#lesson\"><strong>01 · 乘法与加法法则</strong><span>分步骤构造结果，按互斥情况分类。</span><small>尚未开始 · 6 页</small></a>",
+      "css": ".ds-course{display:block;padding:1.15rem;border:1px solid var(--line,#d7d0c5);border-radius:14px;color:var(--ink,#20272d);background:rgba(255,253,248,.8);text-decoration:none;font:19px/1.68 Georgia,serif}.ds-course strong{display:block;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-course span{color:var(--muted,#626b72);font-size:.88rem}.ds-course small{display:block;margin-top:.7rem;color:var(--muted,#626b72);font-size:.78rem}.ds-course:hover{border-color:var(--accent,#285f82);background:var(--surface,#fffdf8)}.ds-course:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}"
+    },
+    {
+      "name": "Lesson completion",
+      "kind": "input",
+      "refersTo": "read-toggle",
+      "description": "One native checkbox after the complete lesson and its practice; native hover/checked behavior.",
+      "html": "<label class=\"ds-read\"><input type=\"checkbox\">我已学完这课</label>",
+      "css": ".ds-read{display:flex;align-items:center;gap:.6rem;width:fit-content;padding:.6rem .8rem;border-radius:8px;background:var(--surface-blue,#edf3f7);color:var(--muted,#626b72);font:.82rem/1.68 Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer}.ds-read input{width:1.1rem;height:1.1rem;accent-color:var(--accent,#285f82)}.ds-read input:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}"
+    },
+    {
+      "name": "Practice attempt",
+      "kind": "input",
+      "refersTo": "attempt-input",
+      "description": "Practice writing area; no authored hover treatment.",
+      "html": "<label class=\"ds-attempt\">先写下你的思路<textarea aria-label=\"你的思路\"></textarea></label>",
+      "css": ".ds-attempt{display:block;color:var(--ink,#20272d);font:19px/1.68 Georgia,serif}.ds-attempt textarea{display:block;width:100%;min-height:7rem;padding:.75rem;margin:1rem 0;border:1px solid var(--line,#d7d0c5);border-radius:8px;background:var(--paper,#f5f0e7);color:var(--ink,#20272d);font:inherit;resize:vertical}.ds-attempt textarea:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}"
+    },
+    {
+      "name": "Original-slide disclosure",
+      "kind": "custom",
+      "refersTo": "original-slide",
+      "description": "Native disclosure; preview uses descriptive text rather than an external source image.",
+      "html": "<details class=\"ds-original\"><summary>查看原课件</summary><p>原课件页在这里展开。</p></details>",
+      "css": ".ds-original{max-width:74ch;margin:1rem 0;padding:.7rem 1rem;border:1px solid var(--line,#d7d0c5);border-radius:var(--radius,16px);background:var(--surface,#fffdf8);color:var(--ink,#20272d);font:19px/1.68 Georgia,serif}.ds-original summary{cursor:pointer;color:var(--accent-dark,#17425f);font:720 .85rem/1.68 Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-original summary:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}"
+    },
+    {
+      "name": "Utility navigation",
+      "kind": "nav",
+      "description": "Level-aware header links below the COMP2711 brand; no selected-tab treatment.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"课程导航\"><a href=\"#modules\">课程模块</a><a href=\"#counting\">Counting</a><a href=\"#topics\">本章目录</a><a href=\"#source\">课件页码索引</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.85rem;font:.78rem/1.68 Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-nav a{color:var(--accent-dark,#17425f);text-decoration-thickness:1px;text-underline-offset:.18em}.ds-nav a:hover{color:var(--accent,#285f82)}.ds-nav a:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}"
+    },
+    {
+      "name": "Practice card",
+      "kind": "card",
+      "refersTo": "practice-card",
+      "description": "Flat container for a past-paper question; noninteractive container has no hover/focus state.",
+      "html": "<section class=\"ds-practice\"><h3>练习</h3><p>阅读题目，先独立尝试，再展开答案。</p></section>",
+      "css": ".ds-practice{margin:2rem 0;padding:1.5rem;border:1px solid var(--line,#d7d0c5);border-radius:var(--radius,16px);background:var(--surface,#fffdf8);color:var(--ink,#20272d);font:19px/1.68 Georgia,serif}.ds-practice h3{margin:0 0 .65rem;font:700 1.08rem/1.4 Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}"
+    },
+    {
+      "name": "Module / chapter entry row",
+      "kind": "custom",
+      "refersTo": "module-entry",
+      "description": "Full-width link from course to module or module to chapter; stacks at 600px.",
+      "html": "<a class=\"ds-module-entry\" href=\"#counting\"><div><h3>Counting</h3><p>计数</p><p class=\"ds-module-description\">从基础计数法则到鸽巢原理，逐步理解如何计数与证明。</p><p class=\"ds-portal-meta\">1 个章节 · 39 页讲解 · 8 课 · 17 道真题</p></div><span class=\"ds-entry-action\">进入模块 <span aria-hidden=\"true\">→</span></span></a>",
+      "css": ".ds-module-entry{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:1.7rem 0;border-block:1px solid var(--line,#d7d0c5);text-decoration:none;color:var(--ink,#20272d);font:clamp(17px,1.5vw,19px)/1.68 Georgia,\"Times New Roman\",serif}.ds-module-entry h3{margin:0 0 .3rem;font:700 1.5rem/1.4 Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-module-entry p{margin:.4rem 0;max-width:74ch}.ds-module-description{color:var(--muted,#626b72)}.ds-module-entry .ds-portal-meta{font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:.82rem;color:var(--muted,#626b72)}.ds-entry-action{flex-shrink:0;font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:.9rem;color:var(--accent-dark,#17425f);text-decoration:underline;text-underline-offset:.2em}.ds-module-entry:hover{color:var(--ink,#20272d);border-color:var(--accent,#285f82)}.ds-module-entry:hover .ds-entry-action{color:var(--accent,#285f82)}.ds-module-entry:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}@media(max-width:600px){.ds-module-entry{align-items:flex-start;flex-direction:column;gap:1rem}}"
+    },
+    {
+      "name": "Page breadcrumb",
+      "kind": "nav",
+      "refersTo": "page-breadcrumb",
+      "description": "Location context above the page header, from COMP2711 through Counting and the chapter.",
+      "html": "<nav class=\"ds-breadcrumb\" aria-label=\"当前位置\"><a href=\"#home\">COMP2711</a><span aria-hidden=\"true\"> / </span><span aria-current=\"page\">Counting</span></nav>",
+      "css": ".ds-breadcrumb{margin:0 0 1.5rem;font:.82rem/1.9 Inter,ui-sans-serif,system-ui,sans-serif;color:var(--muted,#626b72)}.ds-breadcrumb a{color:var(--accent-dark,#17425f);text-decoration-thickness:1px;text-underline-offset:.18em}.ds-breadcrumb a:hover{color:var(--accent,#285f82)}.ds-breadcrumb a:focus-visible{outline:3px solid rgba(40,95,130,.38);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Logic Reading Notebook",
+    "overview": "A paper-colored reading notebook that inherits the existing Logic site. Muted blue identifies links, actions and reading controls; Georgia-led prose sits beneath compact system-sans headings. The design serves sustained reading, with restrained borders and generous separation between source pages. The COMP2711 brand spans a course → Counting module → L2.5 chapter → topic lesson hierarchy. Full-width module and chapter entry rows reuse the same restrained rules and blue actions; chapter topic cards retain the existing reading layout.",
+    "keyCharacteristics": [
+      "COMP2711 → Counting → L2.5 → 8 topic lessons, with stable lesson URLs and existing progress.",
+      "Read mode: complete explanations first, practice after each topic.",
+      "Warm paper, blue emphasis and softly rounded reading surfaces.",
+      "Local assets, local progress and direct file opening."
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve the Logic palette and Georgia/system-sans pairing.",
+      "Do keep complete explanations readable within the 74ch text measure.",
+      "Do keep original pages and answers available through native disclosure controls.",
+      "Do preserve keyboard focus, responsive wrapping and local asset paths."
+    ],
+    "donts": [
+      "Don't replace the reading layout with a dashboard or day-based organization.",
+      "Don't require downloaded fonts, remote math rendering or network access.",
+      "Don't rewrite saved explanations as a visual-design change."
+    ]
+  }
+}

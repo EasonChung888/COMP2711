@@ -1,0 +1,55 @@
+filters:
+  and:
+    - 'file.inFolder("knowledge_base/03-Papers")'
+    - "note.note_type == \"paper\""
+formulas:
+  term_order: "if(note.term == \"spring\", 0, if(note.term == \"fall\", 1, 2))"
+  exam_order: "if(note.exam_type == \"midterm\", 0, 1)"
+properties:
+  file.name:
+    displayName: "Note / 笔记"
+  note.year:
+    displayName: "Year / 年份"
+  note.term:
+    displayName: "Term / 学期"
+  note.exam_type:
+    displayName: "Exam / 考试"
+  note.source_pdf:
+    displayName: "Source PDF"
+  note.admitted_count:
+    displayName: "Admitted / 已纳入"
+  note.unresolved_count:
+    displayName: "Unresolved / 未解决"
+  formula.term_order:
+    displayName: "Term order"
+  formula.exam_order:
+    displayName: "Exam order"
+views:
+  -
+    type: "table"
+    name: "Papers by Year"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "formula.term_order"
+        direction: "ASC"
+      -
+        property: "formula.exam_order"
+        direction: "ASC"
+      -
+        property: "file.name"
+        direction: "ASC"
+    summaries:
+      file.name: "Filled"
+      note.admitted_count: "Sum"
+      note.unresolved_count: "Sum"
+    order:
+      - "file.name"
+      - "note.year"
+      - "note.term"
+      - "note.exam_type"
+      - "note.source_pdf"
+      - "note.admitted_count"
+      - "note.unresolved_count"

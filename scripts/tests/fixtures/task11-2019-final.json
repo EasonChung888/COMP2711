@@ -1,0 +1,515 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2019-FINAL-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "y=2x",
+        "2x-y=0\\le1",
+        "\\forall x\\exists y(2x-y\\le1)"
+      ],
+      "prompt_sha256": "c13e6e43b54c33a30e3b447ae94cadfb17dc0eed5d0fa638d3c9a880ce2e2407"
+    },
+    "Q-2019-FINAL-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=y=0",
+        "(x-y)^2=0",
+        "0>0"
+      ],
+      "prompt_sha256": "dbed24578421dd7574b85157ff4aaad6c41eada0d9095ba0b38d2851d9c32541"
+    },
+    "Q-2019-FINAL-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "y=2x",
+        "2x-2x=0\\le1",
+        "\\forall x\\exists y"
+      ],
+      "prompt_sha256": "011d061c8c959e4a803faad016b3b879e8e97c0eed2eccd6f189a0f9ce028869"
+    },
+    "Q-2019-FINAL-P01-d": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=0",
+        "z=-y",
+        "0+y-y=0"
+      ],
+      "prompt_sha256": "2424fcbcb0a3500c9c7a4b5293f13a15b2156879d11147d60a57bd29293808b5"
+    },
+    "Q-2019-FINAL-P02": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "M_1=70,M_2=45,M_3=126",
+        "3298\\equiv148\\pmod{630}",
+        "148=16\\cdot9+4=10\\cdot14+8=29\\cdot5+3"
+      ],
+      "prompt_sha256": "1341c92e426a6f752684e5853896f94f7d68f755fa1205df4572e3799b4e0533"
+    },
+    "Q-2019-FINAL-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2\\log t=o(\\sqrt t)",
+        "(\\log n)^{1001}=o(n^{0.0001})",
+        "(1.0001/n)^n\\to0"
+      ],
+      "prompt_sha256": "fd9337aac86277837180caf524e20a11ccbee76f3bd54208f6d8280c865b33d3"
+    },
+    "Q-2019-FINAL-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n^{2\\lfloor n/2\\rfloor+1}",
+        "n^{2\\lceil n/2\\rceil}",
+        "f(n)/g(n)=n",
+        "g(n)/f(n)=n"
+      ],
+      "prompt_sha256": "5b4755beaf4cfff4b60740607b068fb8aa8724e27cd8060bc715c51ce2f48ae7"
+    },
+    "Q-2019-FINAL-P05": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom ni",
+        "\\binom{n-i}j",
+        "0\\le j\\le n-i",
+        "允许空组"
+      ],
+      "prompt_sha256": "2d6d88852d62e8df0d52f805edd4cc75d82372aa6b91566410c01ac7dea523d9"
+    },
+    "Q-2019-FINAL-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\operatorname{ones}(\\lambda)=0",
+        "\\operatorname{ones}(wx)=\\operatorname{ones}(w)+x",
+        "唯一分解"
+      ],
+      "prompt_sha256": "42fa65379434c0ffe6929cfd1caf45e42990c1d2c0ec5492a0e28ac747f8d430"
+    },
+    "Q-2019-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\operatorname{ones}(s\\lambda)",
+        "\\operatorname{ones}((sw)x)",
+        "\\operatorname{ones}(s)+\\operatorname{ones}(wx)"
+      ],
+      "prompt_sha256": "9a0e1c74cad1e2c5b240ae27dcfe3d3a86550da250613a04a051207414c72449"
+    },
+    "Q-2019-FINAL-P07": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(0,0),(0,1),(1,0),(1,1)",
+        "a\\equiv c\\pmod2",
+        "((a+c)/2,(b+d)/2)"
+      ],
+      "prompt_sha256": "735197fca7962193a4ea3420033b922afaa4cb0dcb82f0bbe29f3e55ec2dc6fd"
+    },
+    "Q-2019-FINAL-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "26^6-25^6",
+        "25^6",
+        "至少出现一次"
+      ],
+      "prompt_sha256": "907a00b7f2b680ba8f8753c6f112f7d74cf522550a1b8ed911036523f32e973c"
+    },
+    "Q-2019-FINAL-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "|A\\cap B|=24^6",
+        "26^6-2\\cdot25^6+24^6"
+      ],
+      "prompt_sha256": "2c880409675cd65d3b89c709312c7156f186b310f7de9f2ba2b8cbd13f4acc2a"
+    },
+    "Q-2019-FINAL-P08-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1,2,3,4,5",
+        "P(24,4)",
+        "24\\cdot23\\cdot22\\cdot21=255024",
+        "1275120"
+      ],
+      "prompt_sha256": "975eefad3b273012c9204cf7bad33b1ec35c0c826c79286226c4203b85ded103"
+    },
+    "Q-2019-FINAL-P08-d": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom62=15",
+        "15\\cdot255024=3825360",
+        "可以不相邻"
+      ],
+      "prompt_sha256": "76bde51cc6a946022fc505f56149d38ed6b69b1c544824749a490affef4f50ae"
+    },
+    "Q-2019-FINAL-P09-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{40}{10}\\binom{30}{10}\\binom{20}{10}",
+        "\\frac{40!}{(10!)^4}"
+      ],
+      "prompt_sha256": "4bdf8593c40f15d16cdaf4ce534933713ca42492d6def19dc4a6784ec397ab3c"
+    },
+    "Q-2019-FINAL-P09-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "4!",
+        "彼此不同",
+        "\\frac{40!}{(10!)^4\\,4!}"
+      ],
+      "prompt_sha256": "8d9a63751c804fdba99553cb7b65dc01a95ad7f5ce7f113e603da77002c069e5"
+    },
+    "Q-2019-FINAL-P10-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{22}{2}=22\\cdot21/2=231",
+        "隔板可相邻"
+      ],
+      "prompt_sha256": "d20fa1b4966c78984ff3b8c0ce7f0417ac92a50fc00a6154942f7130e95d9ff8"
+    },
+    "Q-2019-FINAL-P10-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "y_1=x_1-9",
+        "y_1+x_2+x_3=11",
+        "\\binom{13}{2}=78"
+      ],
+      "prompt_sha256": "1dd0d6c6fd51007e6557b939e2b3788eee825558d876bb3c04e2b76ec37fe779"
+    },
+    "Q-2019-FINAL-P10-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "y_1+y_2+x_3=20-18=2",
+        "\\binom42=6",
+        "共六种"
+      ],
+      "prompt_sha256": "cea29900c067501de0af65cb8cfd947111987576a18e7d94fa6385229c6a3020"
+    },
+    "Q-2019-FINAL-P10-d": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "27>20",
+        "231-3\\cdot78+3\\cdot6=15",
+        "y_1+y_2+y_3=4"
+      ],
+      "prompt_sha256": "358bc116b301e916a32467bd1144f04c9d5b85db5d815bb46f6a3d3180c55e1b"
+    },
+    "Q-2019-FINAL-P11-a-W1": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(M=2)=0.5(1/2)+0.3(0)+0.2(1)=0.45",
+        "0.25/0.45=5/9"
+      ],
+      "prompt_sha256": "7b79e23265c3fac653698117fe36f7d633a822904106d4c0e310290078293190"
+    },
+    "Q-2019-FINAL-P11-a-W3": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(W=3,M=2)=0.2",
+        "0.2+0.5/2=0.45",
+        "0.2/0.45=4/9"
+      ],
+      "prompt_sha256": "03cc3145d2e2445df2834d6cc8892f1949b5aecafd7ec4d45af41c705ab10109"
+    },
+    "Q-2019-FINAL-P11-a-decision": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0.25",
+        "0.45",
+        "5/9>4/9",
+        "保留门一"
+      ],
+      "prompt_sha256": "6d8e125cd74df3b00c619897c30ff235813dd758fc4b668d2ca9455df91a2a98"
+    },
+    "Q-2019-FINAL-P11-b-W1": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0.5(1/2)+0.3(1)+0.2(0)=0.55",
+        "0.25/0.55=5/11"
+      ],
+      "prompt_sha256": "951b27abea8b98f94f1d5a77e87e25cbe6bb32d77329951ebbb9bccbf0c17a87"
+    },
+    "Q-2019-FINAL-P11-b-W2": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(W=2,M=3)=0.3",
+        "0.3+0.25=0.55",
+        "0.3/0.55=6/11"
+      ],
+      "prompt_sha256": "99730b8de4d8ee2855c57c9b248965c8c166e8ecfadfb2f00cdaf5a64dc703a3"
+    },
+    "Q-2019-FINAL-P11-b-decision": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(0.5/2)/0.55=5/11",
+        "0.3/0.55=6/11",
+        "6/11>5/11"
+      ],
+      "prompt_sha256": "87059b3ae06064412ed1143e87e75589dae13f99c6e4555557acf683d677c37d"
+    },
+    "Q-2019-FINAL-P11-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0.25+0.3=0.55=11/20",
+        "0.45\\cdot(5/9)+0.55\\cdot(6/11)=0.55"
+      ],
+      "prompt_sha256": "4b14088c43b775451a1c39d63a11baccd4c360b0d2a62e27a1ac82da181da1bc"
+    },
+    "Q-2019-FINAL-P11-d-strategy": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "W\\ne3",
+        "0.5+0.3=0.8",
+        "0.8>0.55",
+        "先选先验概率最小"
+      ],
+      "prompt_sha256": "3289772b53c2aa949020a25ec4ed59db29193b34c3fa20b7c9d94b441b4312c3"
+    },
+    "Q-2019-FINAL-P11-d-probability": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0.5\\cdot1+0.3\\cdot1+0.2\\cdot0=0.8=4/5",
+        "两种选择都输"
+      ],
+      "prompt_sha256": "7ac5033f3553a78f19a11f27e0768572c876b3a37a5a7ccc0c08f34aa0badf40"
+    },
+    "Q-2019-FINAL-P12-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "60\\cdot60=3600",
+        "E(N)=\\sum_{t=1}^{3600}E(I_t)=3600p",
+        "不要求不同秒独立"
+      ],
+      "prompt_sha256": "54c7b2dcc609bb747ddcb3bbdf42ef1d61333fc95be0a37438c0ce47f62e2250"
+    },
+    "Q-2019-FINAL-P13-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "六个外部尖端",
+        "六个内部交叉点",
+        "图连通且所有顶点度数为偶数"
+      ],
+      "prompt_sha256": "3c4af8d9ca00e53617187f4954242dd799d0a5f0d5a62101daa5c3f5424a8216"
+    },
+    "Q-2019-FINAL-P13-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "十二个正方形角",
+        "六个交点",
+        "只有两个奇度点"
+      ],
+      "prompt_sha256": "455eeb0984bd75bf06bb1075a0267af4110550f30f01f733994ac75c477bd664"
+    },
+    "Q-2019-FINAL-P13-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "烟囱最上端度数 $1$",
+        "四个点为奇度",
+        "共有四个奇度顶点"
+      ],
+      "prompt_sha256": "7f5038a8a56043368f0f2eaa0f8ecb85056825a7427a4fe85f6021615e9c51e0"
+    },
+    "Q-2019-FINAL-BONUS-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(2C+1)n-2C",
+        "(C+1)n\\le2C",
+        "同一个常数"
+      ],
+      "prompt_sha256": "c74162199a72ae840f6d2bb352b84af58d195bc516c06f5da5a9f19148d5ed81"
+    },
+    "Q-2019-FINAL-BONUS-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "f_n=2^{n+1}-n-2",
+        "C=2",
+        "n_0=1",
+        "1,4,11,26"
+      ],
+      "prompt_sha256": "7ac47c868dd530e3b247002ed588fbfd21ae7dd2fac2d78d0a88b0cbf2cd9b41"
+    }
+  }
+}

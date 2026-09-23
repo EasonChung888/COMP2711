@@ -1,0 +1,122 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2014-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom95=9!/(5!4!)=126",
+        "不额外乘"
+      ],
+      "prompt_sha256": "8cb110bf03574ca7749829685dd36891cac36a39c690dbba90e36933c3593fd4"
+    },
+    "Q-2014-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom43\\binom52=40",
+        "40+5=45"
+      ],
+      "prompt_sha256": "8b162a758e104bad1df32fc0d8dad9e6b3d4ff7f73a8d0c92323e856f4377a77"
+    },
+    "Q-2014-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(1,2,2),(1,3,1),(2,1,2),(2,2,1),(3,1,1)",
+        "12+8+18+36+24=98"
+      ],
+      "prompt_sha256": "dbe3ac47de36580488cd4c53a91dbe4c9b938a4dad19ec9a2c2ae7ba2488e3bd"
+    },
+    "Q-2014-MID-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "3n-1",
+        "(3n)!"
+      ],
+      "prompt_sha256": "d27a453359b695bdda3f942d5cc75a3ae9b4669f1cb92fa6a05f1bab78a5134c"
+    },
+    "Q-2014-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "区块内部三人",
+        "n!(3!)^n"
+      ],
+      "prompt_sha256": "fe374e1a573fa57be6e6daa59d15f82196fbb48d76d72400e62330c1366b8169"
+    },
+    "Q-2014-MID-P02-d": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2n 个不同单位",
+        "(2n)!2^n"
+      ],
+      "prompt_sha256": "fef010bd5a703a58fb2bef431986b3bc6f5632bc9952e0324ce4b6b018d2e937"
+    },
+    "Q-2014-MID-P03": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "四个红、六个绿、三个蓝",
+        "各出现恰一次"
+      ],
+      "prompt_sha256": "90cc003f17d911c011df7490eb61bf73385919ee16dba135155cb4e00bbcfb04"
+    },
+    "Q-2014-MID-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "交换两个 a",
+        "4!/2!=12"
+      ],
+      "prompt_sha256": "722da750f9dee1c2ba433a08bb715ce116fa4d708f731b271a92752d9aa88175"
+    },
+    "Q-2014-MID-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "l 有四个，a 有三个，o 有三个",
+        "12!/(4!3!3!)=554400"
+      ],
+      "prompt_sha256": "8befafeac94cc35c60383aa37b9f740e27b23238d088324141ee111da20f99eb"
+    }
+  }
+}

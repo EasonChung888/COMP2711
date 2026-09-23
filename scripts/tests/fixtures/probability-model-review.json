@@ -1,0 +1,601 @@
+{
+  "review": "Task 11 review round 1; source/model review record, not automatic semantic proof.",
+  "families": [
+    {
+      "family": "Q-2013-FINAL-P10",
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_pages": [
+        14
+      ],
+      "ids": [
+        "Q-2013-FINAL-P10-a",
+        "Q-2013-FINAL-P10-b",
+        "Q-2013-FINAL-P10-c"
+      ],
+      "quarantined_ids": [
+        "Q-2013-FINAL-P10-a",
+        "Q-2013-FINAL-P10-b",
+        "Q-2013-FINAL-P10-c"
+      ],
+      "model_check": "The prompt specifies random drawing and random return but no uniform return law. The transition probability and recurrence depend on that missing law. Grant independent uniform draws of one ball per box, but whenever the red ball is selected return it to A with probability alpha in (0,1), and return the other selected ball to B (otherwise reverse). Both assignments remain possible. White-white assignments can be uniform. Then P(red in A next|A)=3/4+alpha/4 and P(red in A next|B)=alpha/4, hence p_n=(3/4)p_(n-1)+alpha/4 and p_n=alpha+(1-alpha)(3/4)^n from p_0=1. The printed intended alpha=1/2 yields p_1=7/8, recurrence 3p_(n-1)/4+1/8 and closed form 1/2+(1/2)(3/4)^n. A full-support alpha=3/4 return law instead gives p_1=15/16 and 3/4+(1/4)(3/4)^n. The source does not select between these laws."
+    },
+    {
+      "family": "Q-2013-MID-P04",
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_pages": [
+        6
+      ],
+      "ids": [
+        "Q-2013-MID-P04-a",
+        "Q-2013-MID-P04-b",
+        "Q-2013-MID-P04-c",
+        "Q-2013-MID-P04-d"
+      ],
+      "quarantined_ids": [
+        "Q-2013-MID-P04-b",
+        "Q-2013-MID-P04-c"
+      ],
+      "model_check": "Pair-up at random does not specify a uniform distribution on the 8! complete boy-girl matchings. The marginal and conditional requested probabilities are underdetermined. The intended uniform permutation model gives P(E)=7!/8!=1/8 and P(F|E)=6!/7!=1/7. For a full-support alternative, give John partner Mary with probability t in (0,1) and each other girl probability (1-t)/7. Conditional on E, pair Jack with Jill with probability s in (0,1) and each other available girl probability (1-s)/6; complete the other matches uniformly. Conditional on not E, complete the remaining matching uniformly. Every matching is possible, everyone participates exactly once, but P(E)=t and P(F|E)=s. Taking t=s=1/2 differs from both intended results. Parts (a,d) remain pure counts independent of these weights."
+    },
+    {
+      "family": "Q-2013-MID-P06",
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_pages": [
+        9
+      ],
+      "ids": [
+        "Q-2013-MID-P06-a",
+        "Q-2013-MID-P06-b",
+        "Q-2013-MID-P06-c"
+      ],
+      "quarantined_ids": [
+        "Q-2013-MID-P06-a",
+        "Q-2013-MID-P06-b",
+        "Q-2013-MID-P06-c"
+      ],
+      "model_check": "Randomly drawn does not specify an equal-probability triple law, and a lottery every day does not assert cross-day independence. Neither the requested single-day value nor the geometric waiting/120-day result is determined. Intended uniform law has C(10,3)=120 triples and p=1/120. Intended independent daily trials give E(T)=1/p=120 and P(T<=120)=1-(119/120)^120=0.6336587344..., rounding to 0.6337, not the printed 0.6322. For (a), any fixed ticket can receive winning probability t in (0,1), assigning (1-t)/119 to every other triple, a full-support random draw. For (b,c), even granting uniform winning triples each day, choose one uniform triple U once and repeat it every day while Tom buys the same fixed ticket. Each day still has win probability 1/120; T=1 with probability 1/120 and T=infinity otherwise. Thus E(T)=infinity and P(T<=120)=1/120. The numerical 0.6337 correction is valid only in the intended iid model and is audit-only, not an admitted derived answer."
+    },
+    {
+      "family": "Q-2013-MID-P07",
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_pages": [
+        11
+      ],
+      "ids": [
+        "Q-2013-MID-P07-a-distribution",
+        "Q-2013-MID-P07-a-expectation",
+        "Q-2013-MID-P07-a-variance",
+        "Q-2013-MID-P07-b-expectation",
+        "Q-2013-MID-P07-b-variance",
+        "Q-2013-MID-P07-c"
+      ],
+      "quarantined_ids": [
+        "Q-2013-MID-P07-a-distribution",
+        "Q-2013-MID-P07-a-expectation",
+        "Q-2013-MID-P07-a-variance",
+        "Q-2013-MID-P07-b-expectation",
+        "Q-2013-MID-P07-b-variance",
+        "Q-2013-MID-P07-c"
+      ],
+      "model_check": "The gift is hidden randomly and randomly replaced, without uniform initial or conditional replacement probabilities. The distributions, moments and variance comparison require missing model information. Intended uniform nonrevisiting search has P(X=k)=1/n, E(X)=(n+1)/2 and V(X)=(n^2-1)/12. Intended independent uniform replacement after failure gives geometric(1/n), E(X)=n and V(X)=n(n-1). Initial n=2 hidden-location probabilities t,1-t with a fixed search order instead give E(X)=2-t and V(X)=t(1-t), changing every part-(a) result. For part (b), always inspect location 1, assign probability q in (0,1) to hiding there initially and at each fresh independent replacement, and split the remainder positively among the other locations. Then X is geometric(q), E=1/q and V=(1-q)/q^2, not forced to use q=1/n. For the comparison, even grant uniform initial hiding at n=3: nonrevisiting search has variance 2/3. In (b), inspect location 1 every time and after each failure replace there with probability 9/10 and at each other location with probability 1/20. X=1 with probability 1/3 and 1+G otherwise, G geometric(9/10), so V(X)=(2/3)(10/81)+(2/9)(100/81)=260/729<2/3. This is full-support replacement and reverses the intended comparison. At n=1 the intended variances are equal, not strictly different."
+    },
+    {
+      "family": "Q-2014-FINAL-P01",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_pages": [
+        3
+      ],
+      "ids": [
+        "Q-2014-FINAL-P01-a",
+        "Q-2014-FINAL-P01-b",
+        "Q-2014-FINAL-P01-c",
+        "Q-2014-FINAL-P01-d"
+      ],
+      "quarantined_ids": [
+        "Q-2014-FINAL-P01-a",
+        "Q-2014-FINAL-P01-b",
+        "Q-2014-FINAL-P01-c",
+        "Q-2014-FINAL-P01-d"
+      ],
+      "model_check": "Two fair dice specify marginal laws, not their joint distribution; n plays also does not specify independent games. The per-game distribution/expectation/variance and accumulated moments are underdetermined. The intended independent dice model yields E(X)=-1/4, V(X)=475/144; intended independent games yield E(sum X_i)=-n/4 and V(sum X_i)=n*475/144. Let both dice equal one uniform U in {1,...,6}. Both are fair, but their equality makes the payoff U, so P(X=k)=1/6 for k=1,...,6, E(X)=7/2 and V(X)=35/12. This changes the per-game law and both moments, so even part (c) cannot recover the intended expectation by linearity. Separately, grant independent dice within one game and reuse the same sampled pair for all n games: every game has the intended marginal law, yet total variance is n^2*475/144. Linearity still gives -n/4 only after granting the intended within-game law; that law is not printed."
+    },
+    {
+      "family": "Q-2014-MID-P05",
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_pages": [
+        7,
+        8
+      ],
+      "ids": [
+        "Q-2014-MID-P05-a",
+        "Q-2014-MID-P05-b",
+        "Q-2014-MID-P05-c",
+        "Q-2014-MID-P05-d",
+        "Q-2014-MID-P05-e",
+        "Q-2014-MID-P05-second-a",
+        "Q-2014-MID-P05-second-b"
+      ],
+      "quarantined_ids": [
+        "Q-2014-MID-P05-a",
+        "Q-2014-MID-P05-b",
+        "Q-2014-MID-P05-c",
+        "Q-2014-MID-P05-d",
+        "Q-2014-MID-P05-e",
+        "Q-2014-MID-P05-second-a",
+        "Q-2014-MID-P05-second-b"
+      ],
+      "model_check": "The first printed Problem 5 gives two fair dice without a joint law; the second gives one sticker at random per day without a uniform independent recipient process. Intended answers are not forced by the prompts. For dice let t=P(both odd)=P(both even), with each cross-parity cell 1/2-t, so 0<=t<=1/2 and fair marginals can be supplied uniformly within each parity. Then P(A)=2t for even sum, P(B)=1-t for at least one odd, P(A intersection B)=t, and P(A|B)=t/(1-t). Intended iid t=1/4 gives 1/2,3/4,1/4,1/3 and dependence. The fair coupling D2=D1 gives t=1/2, hence 1,1/2,1/2,1 respectively, and A is certain so A and B are independent; even the yes/no decision changes. For the second printed Problem 5, the intended iid uniform recipients give specific-student probability 1-(19/20)^30 and all-covered probability sum_{j=0}^{20}(-1)^j C(20,j)((20-j)/20)^30. Instead choose one uniform student U once and award all 30 stickers to U. Every day has a uniform recipient, but the specific probability is 1/20 and all-covered probability is 0. The duplicate printed number is preserved by the second-a/second-b IDs."
+    },
+    {
+      "family": "Q-2014-MID-P08",
+      "source_pdf": "knowledge_base/past_paper/2014-midterm.pdf",
+      "source_pages": [
+        10
+      ],
+      "ids": [
+        "Q-2014-MID-P08"
+      ],
+      "quarantined_ids": [
+        "Q-2014-MID-P08"
+      ],
+      "model_check": "At-random draws and reshuffling do not specify the uniform next-card law used for the coupon-collector expectation. Intended uniform draws with r aces remaining have success probability r/(48+r) and expected stage length (48+r)/r. Summing r=4,3,2,1 gives 13+17+25+49=104. As a full-support alternative reshuffle, with r>=1 choose the next top card to be an ace with probability 1/2 (uniform among remaining aces), otherwise a non-ace with probability 1/2 (uniform among 48 non-aces); arrange the other cards uniformly. Redraw freshly after returning a non-ace, and remove a drawn ace as required. Every remaining card and permutation is possible. Each of the four stages then has geometric(1/2) mean 2, so total expectation is 8. Randomness alone does not select 104."
+    },
+    {
+      "family": "Q-2015-FINAL-P01",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_pages": [
+        3
+      ],
+      "ids": [
+        "Q-2015-FINAL-P01-a",
+        "Q-2015-FINAL-P01-b",
+        "Q-2015-FINAL-P01-c",
+        "Q-2015-FINAL-P01-d"
+      ],
+      "quarantined_ids": [
+        "Q-2015-FINAL-P01-a",
+        "Q-2015-FINAL-P01-b",
+        "Q-2015-FINAL-P01-c",
+        "Q-2015-FINAL-P01-d"
+      ],
+      "model_check": "Two or three fair dice specify only uniform marginals. The maximum distribution and its moments, including the two-versus-three variance comparison, depend on the missing joint laws. Intended independent two-die maximum has P(X=k)=(2k-1)/36, E(X)=161/36 and V(X)=2555/1296. Let both dice equal one uniform U in {1,...,6}. The maximum is U, with uniform mass 1/6, mean 7/2 and variance 35/12. For (d), choose the two dice independently (variance 2555/1296) but all three dice for Y equal one shared uniform U (variance 35/12): now V(Y)>V(X), reversing the printed iid comparison. With three independent dice the maximum variance is 2261/1728<2555/1296, so both directions occur within the printed fair marginal requirements. No unprinted iid assumption is inserted."
+    },
+    {
+      "family": "Q-2016-FINAL-P01",
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_pages": [
+        3
+      ],
+      "ids": [
+        "Q-2016-FINAL-P01-a",
+        "Q-2016-FINAL-P01-b",
+        "Q-2016-FINAL-P01-c",
+        "Q-2016-FINAL-P01-d"
+      ],
+      "quarantined_ids": [
+        "Q-2016-FINAL-P01-a",
+        "Q-2016-FINAL-P01-c",
+        "Q-2016-FINAL-P01-d"
+      ],
+      "model_check": "The two fair dice do not have a printed within-pair joint law, and the uniformly distributed wheel spins do not have printed cross-spin independence. The requested win probabilities/comparison depend on those missing laws. Intended independent dice in (a) give P(D1+D2>5)=26/36=13/18. Coupling D1=D2=U with U uniform 1,...,6 gives 4/6=2/3 instead. Intended independent wheel spins in (c) give P(X1+X2>=10)=100/121. Coupling both spins to the same uniform U in 2,...,12 gives 8/11 instead, preserving the stated uniform spin marginals. In (d), intended four independent dice give P(sum>=10)=65/72>100/121, so the source prefers dice. Couple all four dice to one fair U instead: probability 2/3<100/121 for independent wheel spins, reversing that preference. Alternatively each dice pair (U,7-U) always totals 7, so two such rolls win certainly. Part (b) remains 35 by linearity from five stated mean-7 spin marginals; no independence is required."
+    },
+    {
+      "family": "Q-2016-FINAL-P03",
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_pages": [
+        7
+      ],
+      "ids": [
+        "Q-2016-FINAL-P03-a-1",
+        "Q-2016-FINAL-P03-a-2",
+        "Q-2016-FINAL-P03-b",
+        "Q-2016-FINAL-P03-c",
+        "Q-2016-FINAL-P03-d",
+        "Q-2016-FINAL-P03-e"
+      ],
+      "quarantined_ids": [
+        "Q-2016-FINAL-P03-b",
+        "Q-2016-FINAL-P03-c",
+        "Q-2016-FINAL-P03-d"
+      ],
+      "model_check": "The source explicitly gives equal die-selection probabilities and equally likely faces, but not independence of the two rolls conditional on die type. The requested joint/conditional probabilities are underdetermined. Let t=P(A1 intersection A2 | fair die), where both fair-die success marginals are 1/3, so 0<=t<=1/3. The special die always succeeds. Hence P(A1)=P(A2)=2/3, J=P(A1 intersection A2)=1/2+t/2, P(A2|A1)=3/4+3t/4, P(A1 union A2)=5/6-t/2, and P(neither)=1/6+t/2. Intended independent conditional rolls use t=1/9, giving 5/6,7/9,2/9 for (b,c,d). Instead choose a uniform physical face once after picking the die and repeat that same face on both rolls; all individual faces remain equally likely, while fair-die t=1/3 gives 1,2/3,1/3. Parts (a) remain the forced 2/3 marginals. Part (e) remains dependent for every allowed t since J>=1/2>4/9, but its proof is replaced with an explicitly derived general-coupling proof."
+    },
+    {
+      "family": "Q-2015-FINAL-P02",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_pages": [
+        5
+      ],
+      "ids": [
+        "Q-2015-FINAL-P02-c"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The per-minute arrival probability p and per-customer purchase probability q give E(I_i)=pq by conditional multiplication; part (c) sums 60 such means. No cross-minute independence is used."
+    },
+    {
+      "family": "Q-2015-MID-P07",
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_pages": [
+        12
+      ],
+      "ids": [
+        "Q-2015-MID-P07-a",
+        "Q-2015-MID-P07-b",
+        "Q-2015-MID-P07-c"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Part (c) is a worst-case guarantee: at most n(2k-1) coupons can leave every rank below 2k. Adding one forces a rank to reach 2k; the balanced extremal assignment proves minimality. No sampling law is needed."
+    },
+    {
+      "family": "Q-2016-FINAL-P02",
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_pages": [
+        5
+      ],
+      "ids": [
+        "Q-2016-FINAL-P02-a",
+        "Q-2016-FINAL-P02-b",
+        "Q-2016-FINAL-P02-c",
+        "Q-2016-FINAL-P02-d"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Mean m and variance v are supplied. Parts (a,b,c) expand affine functions and second moments of the same variable; part (d) explicitly says p is independent of n and identically distributed, authorizing product of expectations."
+    },
+    {
+      "family": "Q-2017-MID-P07",
+      "source_pdf": "knowledge_base/past_paper/2017-midterm.pdf",
+      "source_pages": [
+        9
+      ],
+      "ids": [
+        "Q-2017-MID-P07"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The printed guarantee concerns all possible code sequences. There are 10*9*8=720 types, so five per type plus one gives 3601. This pigeonhole threshold does not depend on random weights."
+    },
+    {
+      "family": "Q-2017-FINAL-P04",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_pages": [
+        6
+      ],
+      "ids": [
+        "Q-2017-FINAL-P04-a",
+        "Q-2017-FINAL-P04-b-algorithm",
+        "Q-2017-FINAL-P04-b-time",
+        "Q-2017-FINAL-P04-c"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Worst-case distinct candidate enumeration does not need uniform sampling. Euclid and the failed-prime product bound in the separately derived part (c) are deterministic; no expected-runtime distribution is assumed."
+    },
+    {
+      "family": "Q-2017-FINAL-P05",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_pages": [
+        8
+      ],
+      "ids": [
+        "Q-2017-FINAL-P05-a"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Retained part (a) explicitly gives equal coin-selection priors and the single-flip likelihoods 0.8 and 0.5. Bayes gives 0.4/0.65=8/13. It needs no joint law for later flips; part (b) remains quarantined."
+    },
+    {
+      "family": "Q-2017-FINAL-P06",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_pages": [
+        10
+      ],
+      "ids": [
+        "Q-2017-FINAL-P06-a",
+        "Q-2017-FINAL-P06-b",
+        "Q-2017-FINAL-P06-c",
+        "Q-2017-FINAL-P06-d"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The prompt explicitly says 64 fair coins are flipped independently and then arranged without looking. Any outcome-independent permutation preserves the iid fair-bit law, even if placement permutations are not uniform. Thus row indicators use disjoint independent coin sets; no uniform-placement assumption is added."
+    },
+    {
+      "family": "Q-2018-FINAL-P08",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_pages": [
+        11
+      ],
+      "ids": [
+        "Q-2018-FINAL-P08-a"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Retained part (a) uses the explicit per-ball probability 1/n of each box and sums m indicators: E(X)=m/n. It does not reuse the printed binomial assumption; variance/empty-box parts remain quarantined."
+    },
+    {
+      "family": "Q-2019-FINAL-P11",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_pages": [
+        13
+      ],
+      "ids": [
+        "Q-2019-FINAL-P11-a-W1",
+        "Q-2019-FINAL-P11-a-W3",
+        "Q-2019-FINAL-P11-a-decision",
+        "Q-2019-FINAL-P11-b-W1",
+        "Q-2019-FINAL-P11-b-W2",
+        "Q-2019-FINAL-P11-b-decision",
+        "Q-2019-FINAL-P11-c",
+        "Q-2019-FINAL-P11-d-strategy",
+        "Q-2019-FINAL-P11-d-probability"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The prompt specifies door priors 0.5,0.3,0.2 and equal probabilities among eligible unchosen goat doors. These conditional host laws determine each joint probability. The posterior/optimal-choice results use that given nonuniform prior, not an assumed uniform one."
+    },
+    {
+      "family": "Q-2019-FINAL-P12",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_pages": [
+        15
+      ],
+      "ids": [
+        "Q-2019-FINAL-P12-b"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Retained part (b) needs only the explicitly supplied per-second visit probability p; 3600 indicators yield 3600p by linearity. Waiting-time and variance parts remain quarantined."
+    },
+    {
+      "family": "Q-2020-FINAL2-P03",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_pages": [
+        2
+      ],
+      "ids": [
+        "Q-2020-FINAL2-P03"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The event marginals 0.7,0.6 and joint probability 0.5 are all given, determining the four cells. Conditional probability 0.5/0.9=5/9 uses no independence assumption."
+    },
+    {
+      "family": "Q-2020-FINAL2-P05",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_pages": [
+        3,
+        4
+      ],
+      "ids": [
+        "Q-2020-FINAL2-P05-a",
+        "Q-2020-FINAL2-P05-b-expectation",
+        "Q-2020-FINAL2-P05-b-variance",
+        "Q-2020-FINAL2-P05-c",
+        "Q-2020-FINAL2-P05-d"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The source explicitly says every edge exists with probability p independently. Thus variance sums and incident-edge conditioning are licensed; min-edge/component and four-vertex tree counts are deterministic combinatorics within that model."
+    },
+    {
+      "family": "Q-2021-FINAL2-BONUS",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_pages": [
+        4
+      ],
+      "ids": [
+        "Q-2021-FINAL2-BONUS-a",
+        "Q-2021-FINAL2-BONUS-b"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The source defines an ongoing random walk by choosing a neighbor uniformly at each step (first step specified, second step and so on continue the process). Per the recorded parent ruling, this supplies the current-state conditional transition law, not independent vertex positions. First-step equations and boundary completions are retained."
+    },
+    {
+      "family": "Q-2022-FINAL2-P02",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_pages": [
+        2
+      ],
+      "ids": [
+        "Q-2022-FINAL2-P02-a-23",
+        "Q-2022-FINAL2-P02-a-35",
+        "Q-2022-FINAL2-P02-b"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The host explicitly chooses with equal probabilities among his goat-door choices. When W=1, both interpretations have the same four eligible goat doors and six pairs, giving each queried pair 1/6. When W=2, a pair containing door 2 is impossible. These three atoms do not use the ambiguous eligibility cases quarantined in (c,d,e)."
+    },
+    {
+      "family": "Q-2022-FINAL2-P06",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_pages": [
+        3,
+        4
+      ],
+      "ids": [
+        "Q-2022-FINAL2-P06-a-expectation",
+        "Q-2022-FINAL2-P06-a-variance",
+        "Q-2022-FINAL2-P06-b",
+        "Q-2022-FINAL2-P06-c"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The source explicitly gives independent Bernoulli(p) edges. Expectation and variance therefore use the stated model. Complete-component maximum and four-vertex triangle count are separately finite graph counts."
+    },
+    {
+      "family": "Q-2023F-MID-P08",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf",
+      "source_pages": [
+        17
+      ],
+      "ids": [
+        "Q-2023F-MID-P08"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Sent-bit priors and both conditional received-bit laws are explicitly specified. Bayes uses 0.63/(0.63+0.06)=21/23 and needs no cross-transmission assumptions."
+    },
+    {
+      "family": "Q-2023F-MID-P09",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf",
+      "source_pages": [
+        19
+      ],
+      "ids": [
+        "Q-2023F-MID-P09-a-expectation",
+        "Q-2023F-MID-P09-a-variance",
+        "Q-2023F-MID-P09-b-expectation",
+        "Q-2023F-MID-P09-b-variance",
+        "Q-2023F-MID-P09-c",
+        "Q-2023F-MID-P09-d-i"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The explicit two-point PMF supplies all single-variable and transformed moments. Retained (d)(i) is zero solely because an even number of unit signed steps cannot reach +1; it does not require independent increments or almost-sure termination. Other stopping-time atoms remain quarantined."
+    },
+    {
+      "family": "Q-2023F-FINAL-P03",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_pages": [
+        6
+      ],
+      "ids": [
+        "Q-2023F-FINAL-P03"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The prevalence and conditional test rates specify the single-person probability table. Taking complements and Bayes gives 49985001/49985006. No multi-person independence is used. The printed percentage conversion slip is separately recorded as source_correction."
+    },
+    {
+      "family": "Q-2023F-FINAL-P04",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_pages": [
+        7
+      ],
+      "ids": [
+        "Q-2023F-FINAL-P04-d"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Retained (d) is deterministic existence. A proof may deliberately average over all 2^m switch subsets: toggling one incident switch pairs ON and OFF states of each bulb, so some subset lights at least n/2 bulbs. This constructed finite averaging law is not an assumption about the unspecified random mechanism in quarantined (a,b)."
+    },
+    {
+      "family": "Q-2024S-MID-P08",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf",
+      "source_pages": [
+        11
+      ],
+      "ids": [
+        "Q-2024S-MID-P08"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Every prefix average is constrained to be an integer. Exhaustive/deterministic modular reasoning forces the last score to be 80 independently of the distribution over valid orders; random order is not used as a uniformity assumption."
+    },
+    {
+      "family": "Q-2024S-FINAL-P05",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2024_Final.pdf",
+      "source_pages": [
+        6
+      ],
+      "ids": [
+        "Q-2024S-FINAL-P05"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The source explicitly gives each bias 1/(2m+1) and says toss outcomes are independent of each other. The parity recurrence is therefore licensed and yields n/(2n+1)."
+    },
+    {
+      "family": "Q-2024F-MID-P05",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf",
+      "source_pages": [
+        10
+      ],
+      "ids": [
+        "Q-2024F-MID-P05-a",
+        "Q-2024F-MID-P05-b"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The selected part (a) counts rotational equivalence classes of distinct face labels, not probabilities: 6!/24=30. The word dice does not introduce a sampling-law requirement."
+    },
+    {
+      "family": "Q-2024F-MID-P09",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf",
+      "source_pages": [
+        14
+      ],
+      "ids": [
+        "Q-2024F-MID-P09-a",
+        "Q-2024F-MID-P09-b"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Part (a) pairs every subset of a (2n-1)-element set with its complement, exactly one having size <=n-1. The random-subset hint is unnecessary; the bijection counts 2^(2n-2) without a probability law."
+    },
+    {
+      "family": "Q-2025S-FINAL-P10",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_pages": [
+        13
+      ],
+      "ids": [
+        "Q-2025S-FINAL-P10"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Each of nine cells is explicitly independently colored red/blue with equal probability. Enumeration of 512 colorings gives 95 with a red 2x2 square and 417 without. Uniformity and independence are printed."
+    },
+    {
+      "family": "Q-2025S-FINAL-P11",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_pages": [
+        15
+      ],
+      "ids": [
+        "Q-2025S-FINAL-P11"
+      ],
+      "quarantined_ids": [],
+      "model_check": "A single fair die supplies its uniform marginal, and truthfulness probability 3/4 is explicitly independent of the event outcome. The two YES cases then give posterior 3/8. No unprinted multi-roll independence is involved."
+    },
+    {
+      "family": "Q-2025F-MID-P07",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "source_pages": [
+        17
+      ],
+      "ids": [
+        "Q-2025F-MID-P07"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Any 17 selected cells among the 16 disjoint 2x2 blocks force two sharing a corner. This deterministic guarantee is independent of the random choice distribution."
+    },
+    {
+      "family": "Q-2025F-MID-P10",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "source_pages": [
+        21
+      ],
+      "ids": [
+        "Q-2025F-MID-P10-a-i-E",
+        "Q-2025F-MID-P10-a-i-var",
+        "Q-2025F-MID-P10-a-ii-E",
+        "Q-2025F-MID-P10-a-ii-var",
+        "Q-2025F-MID-P10-a-iii-E",
+        "Q-2025F-MID-P10-a-iii-var"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Part (a) explicitly defines 100 independent rolls of a fair die. All six retained expectation/variance atoms use these given marginals and zero covariances. Separate part-(b)/(c) model defects remain quarantined."
+    },
+    {
+      "family": "Q-2025F-FINAL-P02",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_pages": [
+        5
+      ],
+      "ids": [
+        "Q-2025F-FINAL-P02-a-i",
+        "Q-2025F-FINAL-P02-a-ii",
+        "Q-2025F-FINAL-P02-a-iii",
+        "Q-2025F-FINAL-P02-b",
+        "Q-2025F-FINAL-P02-c"
+      ],
+      "quarantined_ids": [],
+      "model_check": "Part (b) chooses 17 different subsets of a five-element set. Sixteen complementary pairs force a pair of disjoint subsets for every selection, with no uniform sampling needed."
+    },
+    {
+      "family": "Q-2025F-FINAL-P03",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_pages": [
+        7
+      ],
+      "ids": [
+        "Q-2025F-FINAL-P03-a",
+        "Q-2025F-FINAL-P03-b",
+        "Q-2025F-FINAL-P03-c"
+      ],
+      "quarantined_ids": [],
+      "model_check": "The prompt explicitly makes all 14! rankings equally likely. Conditional rank counts in (a,b,c) are 1/7,11/91,3/26; no unstated exchangeability is needed."
+    }
+  ]
+}

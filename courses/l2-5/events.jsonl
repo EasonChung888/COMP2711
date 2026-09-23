@@ -1,0 +1,159 @@
+{"time": "2026-09-23T11:54:58.928304+00:00", "event": "prepare_started", "page": 1, "prompt": "解释一下"}
+{"time": "2026-09-23T11:55:36.593920+00:00", "event": "prepare_started", "page": 1, "prompt": "解释一下"}
+{"time": "2026-09-23T11:55:52.452473+00:00", "event": "prepare_started", "page": 1, "prompt": "解释一下"}
+{"time": "2026-09-23T11:55:53.998479+00:00", "event": "page_presented", "page": 1, "image": "slides/01.png"}
+{"time": "2026-09-23T11:56:32.202445+00:00", "event": "page_written", "page": 1, "responseSha256": "c29f56090afad9c21a038400afc45f157e01eba72216834240ffc9cec8ab782b", "html": "pages/01.html"}
+{"time": "2026-09-23T11:56:32.252383+00:00", "event": "prepare_started", "page": 2, "prompt": "解释一下"}
+{"time": "2026-09-23T11:56:33.872923+00:00", "event": "page_presented", "page": 2, "image": "slides/02.png"}
+{"time": "2026-09-23T11:57:18.468219+00:00", "event": "page_written", "page": 2, "responseSha256": "667aef08a781b1eb869f0909ed89eb75188ce10109a453c4183847e25d26fa2e", "html": "pages/02.html"}
+{"time": "2026-09-23T11:57:18.519119+00:00", "event": "prepare_started", "page": 3, "prompt": "解释一下"}
+{"time": "2026-09-23T11:57:19.695684+00:00", "event": "page_presented", "page": 3, "image": "slides/03.png"}
+{"time": "2026-09-23T11:57:44.343398+00:00", "event": "page_written", "page": 3, "responseSha256": "6f2189736a33b3ddf7422f8958fa35c56e0878efb09f572a1a3ea00980bd3d34", "html": "pages/03.html"}
+{"time": "2026-09-23T11:57:44.397631+00:00", "event": "prepare_started", "page": 4, "prompt": "解释一下"}
+{"time": "2026-09-23T11:57:45.866838+00:00", "event": "page_presented", "page": 4, "image": "slides/04.png"}
+{"time": "2026-09-23T11:58:23.783418+00:00", "event": "page_written", "page": 4, "responseSha256": "b6e98c683f156bbde0bceafb9b0b0f1fc23e56239d4ebab9ce33990963e69297", "html": "pages/04.html"}
+{"time": "2026-09-23T11:58:23.835897+00:00", "event": "prepare_started", "page": 5, "prompt": "解释一下"}
+{"time": "2026-09-23T11:58:25.586238+00:00", "event": "page_presented", "page": 5, "image": "slides/05.png"}
+{"time": "2026-09-23T11:58:55.259307+00:00", "event": "page_written", "page": 5, "responseSha256": "9842555b40db4833c0491d0953e621cdcc2c2f70fcf8ffeaa6bf279b35e69436", "html": "pages/05.html"}
+{"time": "2026-09-23T11:58:55.312066+00:00", "event": "prepare_started", "page": 6, "prompt": "解释一下"}
+{"time": "2026-09-23T11:58:57.047094+00:00", "event": "page_presented", "page": 6, "image": "slides/06.png"}
+{"time": "2026-09-23T11:59:18.544330+00:00", "event": "page_written", "page": 6, "responseSha256": "cee7b4ba9cebb249666774b918284a686ac398a65e34ac52dadfbc98b833003c", "html": "pages/06.html"}
+{"time": "2026-09-23T11:59:18.596360+00:00", "event": "prepare_started", "page": 7, "prompt": "解释一下"}
+{"time": "2026-09-23T11:59:20.046787+00:00", "event": "page_presented", "page": 7, "image": "slides/07.png"}
+{"time": "2026-09-23T11:59:42.368462+00:00", "event": "page_written", "page": 7, "responseSha256": "0de687f03d383bae0e1b34021161b230ad9a60b2c52a60bdc0d2e96322dbf86c", "html": "pages/07.html"}
+{"time": "2026-09-23T11:59:42.419085+00:00", "event": "prepare_started", "page": 8, "prompt": "解释一下"}
+{"time": "2026-09-23T11:59:44.019375+00:00", "event": "page_presented", "page": 8, "image": "slides/08.png"}
+{"time": "2026-09-23T12:00:07.831253+00:00", "event": "page_written", "page": 8, "responseSha256": "7f352ff92ef9dd34fc0985728b9f1d431ea47edb520c4050fcb8b0a880f618a5", "html": "pages/08.html"}
+{"time": "2026-09-23T12:00:07.882072+00:00", "event": "prepare_started", "page": 9, "prompt": "解释一下"}
+{"time": "2026-09-23T12:00:09.488898+00:00", "event": "page_presented", "page": 9, "image": "slides/09.png"}
+{"time": "2026-09-23T12:00:38.853911+00:00", "event": "page_written", "page": 9, "responseSha256": "8d55d9c251e24856c0cb2753ae8213bbeea7a4d4ccc7a5cf75686e0678790bb0", "html": "pages/09.html"}
+{"time": "2026-09-23T12:00:38.903566+00:00", "event": "prepare_started", "page": 10, "prompt": "解释一下"}
+{"time": "2026-09-23T12:00:40.525166+00:00", "event": "page_presented", "page": 10, "image": "slides/10.png"}
+{"time": "2026-09-23T12:01:07.501391+00:00", "event": "page_written", "page": 10, "responseSha256": "e7f9e16e9ddff13c24bd8f91c42a63a8589bde4d0fdd0ad9013491fc3ccee4b8", "html": "pages/10.html"}
+{"time": "2026-09-23T12:01:07.553980+00:00", "event": "prepare_started", "page": 11, "prompt": "解释一下"}
+{"time": "2026-09-23T12:01:08.885049+00:00", "event": "page_presented", "page": 11, "image": "slides/11.png"}
+{"time": "2026-09-23T12:01:33.098161+00:00", "event": "page_written", "page": 11, "responseSha256": "65ce77deb4f455562f3d1b23f033f7b370cf51bb08f29e22052d83d8c17320dc", "html": "pages/11.html"}
+{"time": "2026-09-23T12:01:33.151300+00:00", "event": "prepare_started", "page": 12, "prompt": "解释一下"}
+{"time": "2026-09-23T12:01:34.497064+00:00", "event": "page_presented", "page": 12, "image": "slides/12.png"}
+{"time": "2026-09-23T12:02:00.186394+00:00", "event": "page_written", "page": 12, "responseSha256": "ae58c9a72a69ca7f6f4c89dea9b9789f0f54f99d4ab94a2452c9f8968adc863c", "html": "pages/12.html"}
+{"time": "2026-09-23T12:02:00.236845+00:00", "event": "prepare_started", "page": 13, "prompt": "解释一下"}
+{"time": "2026-09-23T12:02:01.556164+00:00", "event": "page_presented", "page": 13, "image": "slides/13.png"}
+{"time": "2026-09-23T12:02:25.768109+00:00", "event": "page_written", "page": 13, "responseSha256": "d1b85e21b8ca228b2dd66a843247a3ee636fae310b1d10dada62005e5c9cf7ee", "html": "pages/13.html"}
+{"time": "2026-09-23T12:02:25.818160+00:00", "event": "prepare_started", "page": 14, "prompt": "解释一下"}
+{"time": "2026-09-23T12:02:27.434803+00:00", "event": "page_presented", "page": 14, "image": "slides/14.png"}
+{"time": "2026-09-23T12:02:53.912449+00:00", "event": "page_written", "page": 14, "responseSha256": "6d1c56c793503ac3e28b7f9c3e3682e15413cd2db08dfe22f39fdb457895e07d", "html": "pages/14.html"}
+{"time": "2026-09-23T12:02:53.965470+00:00", "event": "prepare_started", "page": 15, "prompt": "解释一下"}
+{"time": "2026-09-23T12:02:55.726406+00:00", "event": "page_presented", "page": 15, "image": "slides/15.png"}
+{"time": "2026-09-23T12:03:25.394544+00:00", "event": "page_written", "page": 15, "responseSha256": "336ae364607f6f503c4c36ef7b1059282f4b7f9544fd3eaf14520e2aa69f6e4f", "html": "pages/15.html"}
+{"time": "2026-09-23T12:03:25.445059+00:00", "event": "prepare_started", "page": 16, "prompt": "解释一下"}
+{"time": "2026-09-23T12:03:26.808983+00:00", "event": "page_presented", "page": 16, "image": "slides/16.png"}
+{"time": "2026-09-23T12:03:53.599086+00:00", "event": "page_written", "page": 16, "responseSha256": "37b023e06d649592c431afe59c86caea4dec6abd8068858c3fa7e1286391ee09", "html": "pages/16.html"}
+{"time": "2026-09-23T12:03:53.648201+00:00", "event": "prepare_started", "page": 17, "prompt": "解释一下"}
+{"time": "2026-09-23T12:03:54.923664+00:00", "event": "page_presented", "page": 17, "image": "slides/17.png"}
+{"time": "2026-09-23T12:04:17.716579+00:00", "event": "page_written", "page": 17, "responseSha256": "1aec980a3c03c0d9fd6a96d5a85120171b611904b4c0c813e14b6da05bae2416", "html": "pages/17.html"}
+{"time": "2026-09-23T12:04:17.769656+00:00", "event": "prepare_started", "page": 18, "prompt": "解释一下"}
+{"time": "2026-09-23T12:04:19.127874+00:00", "event": "page_presented", "page": 18, "image": "slides/18.png"}
+{"time": "2026-09-23T12:04:40.906397+00:00", "event": "page_written", "page": 18, "responseSha256": "2ac6d9e8a13cb3d2bf66c7808ad9365eb742fddb9d3f851bab321e5ad69abc68", "html": "pages/18.html"}
+{"time": "2026-09-23T12:04:40.958530+00:00", "event": "prepare_started", "page": 19, "prompt": "解释一下"}
+{"time": "2026-09-23T12:04:42.298969+00:00", "event": "page_presented", "page": 19, "image": "slides/19.png"}
+{"time": "2026-09-23T12:05:03.514087+00:00", "event": "page_written", "page": 19, "responseSha256": "a8f4b372fb9cdd79ea030f186858267f593bc39f4dbacf59d031a4be52161a71", "html": "pages/19.html"}
+{"time": "2026-09-23T12:05:03.567927+00:00", "event": "prepare_started", "page": 20, "prompt": "解释一下"}
+{"time": "2026-09-23T12:05:05.004188+00:00", "event": "page_presented", "page": 20, "image": "slides/20.png"}
+{"time": "2026-09-23T12:05:27.907098+00:00", "event": "page_written", "page": 20, "responseSha256": "53020aa6b7026f4cc2f084fbe0e32a016d1fc9072eb30fcae7288c8bcf8e0286", "html": "pages/20.html"}
+{"time": "2026-09-23T12:05:27.955813+00:00", "event": "prepare_started", "page": 21, "prompt": "解释一下"}
+{"time": "2026-09-23T12:05:29.128162+00:00", "event": "page_presented", "page": 21, "image": "slides/21.png"}
+{"time": "2026-09-23T12:05:56.417885+00:00", "event": "page_written", "page": 21, "responseSha256": "79e1e35acb3c41f1e6759ac6182580eade298d866559198590b9a4e9e26e48dd", "html": "pages/21.html"}
+{"time": "2026-09-23T12:05:56.466765+00:00", "event": "prepare_started", "page": 22, "prompt": "解释一下"}
+{"time": "2026-09-23T12:05:57.634743+00:00", "event": "page_presented", "page": 22, "image": "slides/22.png"}
+{"time": "2026-09-23T12:06:18.615631+00:00", "event": "page_written", "page": 22, "responseSha256": "c36fcf5be03f11e37dad69b52f2f143cda60ec656557f904d4b4faba6f65a077", "html": "pages/22.html"}
+{"time": "2026-09-23T12:06:18.668534+00:00", "event": "prepare_started", "page": 23, "prompt": "解释一下"}
+{"time": "2026-09-23T12:06:20.263113+00:00", "event": "page_presented", "page": 23, "image": "slides/23.png"}
+{"time": "2026-09-23T12:06:43.633680+00:00", "event": "page_written", "page": 23, "responseSha256": "e66e7d1bebb729b46278c604eb0b3451606ad360cdd85af71e939e6e33ab4708", "html": "pages/23.html"}
+{"time": "2026-09-23T12:06:43.683656+00:00", "event": "prepare_started", "page": 24, "prompt": "解释一下"}
+{"time": "2026-09-23T12:06:44.734284+00:00", "event": "page_presented", "page": 24, "image": "slides/24.png"}
+{"time": "2026-09-23T12:07:09.999592+00:00", "event": "page_written", "page": 24, "responseSha256": "af99bc13836e392ea9f47fea42e321f88c7496b21a9c109814dd846a4dd1e39b", "html": "pages/24.html"}
+{"time": "2026-09-23T12:07:10.054190+00:00", "event": "prepare_started", "page": 25, "prompt": "解释一下"}
+{"time": "2026-09-23T12:07:11.423495+00:00", "event": "page_presented", "page": 25, "image": "slides/25.png"}
+{"time": "2026-09-23T12:07:37.169217+00:00", "event": "page_written", "page": 25, "responseSha256": "fcd2b5b9a1bc45ad1fb7ceab479ea61e8cdde6cb6e7c2de8de915fd9983a341c", "html": "pages/25.html"}
+{"time": "2026-09-23T12:07:37.222849+00:00", "event": "prepare_started", "page": 26, "prompt": "解释一下"}
+{"time": "2026-09-23T12:07:38.689752+00:00", "event": "page_presented", "page": 26, "image": "slides/26.png"}
+{"time": "2026-09-23T12:08:04.025345+00:00", "event": "page_written", "page": 26, "responseSha256": "5cbc7d7f7ca4313434f79e5d1772a8f2264c13ecbadcc2c157c3ae0ff38f7bef", "html": "pages/26.html"}
+{"time": "2026-09-23T12:08:04.078156+00:00", "event": "prepare_started", "page": 27, "prompt": "解释一下"}
+{"time": "2026-09-23T12:08:05.948203+00:00", "event": "page_presented", "page": 27, "image": "slides/27.png"}
+{"time": "2026-09-23T12:08:33.869521+00:00", "event": "page_written", "page": 27, "responseSha256": "20196120fc3a1d5e37a07224fad2275155de90513531bf3531097aaf48991d0a", "html": "pages/27.html"}
+{"time": "2026-09-23T12:08:33.919615+00:00", "event": "prepare_started", "page": 28, "prompt": "解释一下"}
+{"time": "2026-09-23T12:08:35.588785+00:00", "event": "page_presented", "page": 28, "image": "slides/28.png"}
+{"time": "2026-09-23T12:09:02.006846+00:00", "event": "page_written", "page": 28, "responseSha256": "0f24901a289c56f3be3e9746a8653e0e2f1f3985a22dad2d3d06baa95f2aca6b", "html": "pages/28.html"}
+{"time": "2026-09-23T12:09:02.059519+00:00", "event": "prepare_started", "page": 29, "prompt": "解释一下"}
+{"time": "2026-09-23T12:09:03.496861+00:00", "event": "page_presented", "page": 29, "image": "slides/29.png"}
+{"time": "2026-09-23T12:09:27.255355+00:00", "event": "page_written", "page": 29, "responseSha256": "de46cdf84ffe34093ccdaea2afd9002e872b8c98cb6db23adba4d23819122dcb", "html": "pages/29.html"}
+{"time": "2026-09-23T12:09:27.303890+00:00", "event": "prepare_started", "page": 30, "prompt": "解释一下"}
+{"time": "2026-09-23T12:09:28.472598+00:00", "event": "page_presented", "page": 30, "image": "slides/30.png"}
+{"time": "2026-09-23T12:09:50.417971+00:00", "event": "page_written", "page": 30, "responseSha256": "e807d19f4d16ae6f57b3531553f6654f9edc2fb7c106e9e8c125d690949f284e", "html": "pages/30.html"}
+{"time": "2026-09-23T12:09:50.466222+00:00", "event": "prepare_started", "page": 31, "prompt": "解释一下"}
+{"time": "2026-09-23T12:09:51.580333+00:00", "event": "page_presented", "page": 31, "image": "slides/31.png"}
+{"time": "2026-09-23T12:10:15.336933+00:00", "event": "page_written", "page": 31, "responseSha256": "3f4019ae4c01bf926c768444afebacbbab735a8d50ed26cbcdadc080b5998717", "html": "pages/31.html"}
+{"time": "2026-09-23T12:10:15.387983+00:00", "event": "prepare_started", "page": 32, "prompt": "解释一下"}
+{"time": "2026-09-23T12:10:16.635245+00:00", "event": "page_presented", "page": 32, "image": "slides/32.png"}
+{"time": "2026-09-23T12:10:46.194117+00:00", "event": "page_written", "page": 32, "responseSha256": "8fbab6f1b1aec45e54b437a205d7bee376f04e23111789a056a7b1feaec8b954", "html": "pages/32.html"}
+{"time": "2026-09-23T12:10:46.247400+00:00", "event": "prepare_started", "page": 33, "prompt": "解释一下"}
+{"time": "2026-09-23T12:10:47.583689+00:00", "event": "page_presented", "page": 33, "image": "slides/33.png"}
+{"time": "2026-09-23T12:11:12.809626+00:00", "event": "page_written", "page": 33, "responseSha256": "28278b12d2b9a56938f25cda164af878b82c09f5136ffdd6af0ea119abf6a564", "html": "pages/33.html"}
+{"time": "2026-09-23T12:11:12.859051+00:00", "event": "prepare_started", "page": 34, "prompt": "解释一下"}
+{"time": "2026-09-23T12:11:14.045740+00:00", "event": "page_presented", "page": 34, "image": "slides/34.png"}
+{"time": "2026-09-23T12:11:49.273555+00:00", "event": "page_written", "page": 34, "responseSha256": "8e6b264aa0d772218182243412332bcf80a61a9b919ab735d61c3264152b0feb", "html": "pages/34.html"}
+{"time": "2026-09-23T12:11:49.324581+00:00", "event": "prepare_started", "page": 35, "prompt": "解释一下"}
+{"time": "2026-09-23T12:11:50.629881+00:00", "event": "page_presented", "page": 35, "image": "slides/35.png"}
+{"time": "2026-09-23T12:12:19.933523+00:00", "event": "page_written", "page": 35, "responseSha256": "ca0e32fde57d9d09d8927beada9ff36b635fc05fddea822801387fd71f1e5f8b", "html": "pages/35.html"}
+{"time": "2026-09-23T12:12:19.982705+00:00", "event": "prepare_started", "page": 36, "prompt": "解释一下"}
+{"time": "2026-09-23T12:12:21.190337+00:00", "event": "page_presented", "page": 36, "image": "slides/36.png"}
+{"time": "2026-09-23T12:12:48.930288+00:00", "event": "page_written", "page": 36, "responseSha256": "70f9d47c2d39e4e546b5dc8c5bb05efa15b84e31a7b8ecbecc7b8c7a8f5f3afd", "html": "pages/36.html"}
+{"time": "2026-09-23T12:12:48.979631+00:00", "event": "prepare_started", "page": 37, "prompt": "解释一下"}
+{"time": "2026-09-23T12:12:50.205441+00:00", "event": "page_presented", "page": 37, "image": "slides/37.png"}
+{"time": "2026-09-23T12:13:12.162561+00:00", "event": "page_written", "page": 37, "responseSha256": "ebcfb7c732c0b31dfb29e4fc10708de9c5efd5c061f75d861a955c0fab11f348", "html": "pages/37.html"}
+{"time": "2026-09-23T12:13:12.211352+00:00", "event": "prepare_started", "page": 38, "prompt": "解释一下"}
+{"time": "2026-09-23T12:13:13.488051+00:00", "event": "page_presented", "page": 38, "image": "slides/38.png"}
+{"time": "2026-09-23T12:13:47.426079+00:00", "event": "page_written", "page": 38, "responseSha256": "fe77ec0b32300b718b78c427a26ec7cecf4fa5f110554e11e3a2066734d03233", "html": "pages/38.html"}
+{"time": "2026-09-23T12:13:47.477894+00:00", "event": "prepare_started", "page": 39, "prompt": "解释一下"}
+{"time": "2026-09-23T12:13:49.167195+00:00", "event": "page_presented", "page": 39, "image": "slides/39.png"}
+{"time": "2026-09-23T12:14:23.915917+00:00", "event": "page_written", "page": 39, "responseSha256": "0a1462094db46bb5510a714ac554c438ba0e9279d19780fb68fd2ca43bfd240e", "html": "pages/39.html"}
+{"time": "2026-09-23T12:22:49.250141+00:00", "event": "practice_selected", "questionCount": 17}
+{"time": "2026-09-23T12:29:49.158066+00:00", "event": "image_rerendered", "page": 1, "imageSha256": "5f1d41b1f5f13e0017b6a747082ad38c1ca88904783c49cded1d8ff9b64a13ac", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:29:51.477923+00:00", "event": "image_rerendered", "page": 2, "imageSha256": "f7cf89a3191ec0a6a9e96d09897d89d98aa3d65c2be9024e9c5f7bca48ccd38a", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:29:53.867914+00:00", "event": "image_rerendered", "page": 3, "imageSha256": "30a2b4b0c8e7504775e4e9ed0513241c9e87e94cddd43bb502c914e4391698d5", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:29:56.350482+00:00", "event": "image_rerendered", "page": 4, "imageSha256": "31d69032aabfe573405922afab25e260d39c6dd4dbf85e67ed42eaf52ed59f8f", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:29:58.796524+00:00", "event": "image_rerendered", "page": 5, "imageSha256": "958046cc68199bbadab2530cab15051ad95e670821a9edc8933f583e663f76ee", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:01.209923+00:00", "event": "image_rerendered", "page": 6, "imageSha256": "aaa1ba24f7fcc706b6d263830083b31233c68adf62d9fc9d2e849a25c4ab74ef", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:03.659293+00:00", "event": "image_rerendered", "page": 7, "imageSha256": "5c789d221dc587c90939c7d76d5bab1fbc8eab316b1b7fba4f5a31d4bc8b8a25", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:05.918699+00:00", "event": "image_rerendered", "page": 8, "imageSha256": "82028dc27db3312eef67dad90697e1d7e4c6242867ae07e21c879d9cfb5c8b1b", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:08.245960+00:00", "event": "image_rerendered", "page": 9, "imageSha256": "da47406522c6a643899899c7c597b7ecd91e59cba9abb6deb3f06f6ed2c83be8", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:10.845814+00:00", "event": "image_rerendered", "page": 10, "imageSha256": "3989778425eadb568aa7ee819479face5cd5311fb88c68be8a57e2b97821cf1e", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:13.570846+00:00", "event": "image_rerendered", "page": 11, "imageSha256": "e12238a9f4cdb6b35db431005bd5e9317f93ccf479881418b75f904df5843513", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:16.032249+00:00", "event": "image_rerendered", "page": 12, "imageSha256": "ba5d986909899657c7ee30da984572225a4a79d57883a4abb8aea7183aa1bb2d", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:18.359168+00:00", "event": "image_rerendered", "page": 13, "imageSha256": "fe50f50d0d679df6746da3579035ec4c15a74127829c59b5866c889761aedc2a", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:20.640616+00:00", "event": "image_rerendered", "page": 14, "imageSha256": "30e30411c521fba447b6cbdfd136fe9dc7cc4eb69d1bc4f7b205e9e12c89cc0e", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:23.063336+00:00", "event": "image_rerendered", "page": 15, "imageSha256": "866fd28337e41574ddf3211736c505af13be8d866abfe18a326b92290fa4dad6", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:25.484184+00:00", "event": "image_rerendered", "page": 16, "imageSha256": "8de6f631c9385e3be82ef92d917bdaea9ff105104e104a17ae4426d3f58b68ef", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:27.837374+00:00", "event": "image_rerendered", "page": 17, "imageSha256": "560b17b1219e5b4ce479215be4e49223a41657b575e71e77015ded53fcd7f92f", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:30.263110+00:00", "event": "image_rerendered", "page": 18, "imageSha256": "6157e818b6677ec1544a784475d9b17e01c2b4c053f190778c613d64e360fbab", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:32.694238+00:00", "event": "image_rerendered", "page": 19, "imageSha256": "8947c5193cb97f59e4ca80903b65f580a67f4a69e243d6e9134ef0150400011f", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:35.123011+00:00", "event": "image_rerendered", "page": 20, "imageSha256": "25f5b3f69c0c069d039f2e312709f867a45d03ea6260f5d07b4db36f207a0104", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:37.481040+00:00", "event": "image_rerendered", "page": 21, "imageSha256": "3ef9318beb16195bd3bd49aa1d8087bf030c27798f40101822ad342902b92c51", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:39.772591+00:00", "event": "image_rerendered", "page": 22, "imageSha256": "caee37c806e3e528d93d51a06f38397982e0b852d984fa07487317a573f94db2", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:42.302477+00:00", "event": "image_rerendered", "page": 23, "imageSha256": "7e6a81623aec931ec143cc5b15be090ae98e090aa6e10f185c6b2c7bdc93b3e8", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:44.581631+00:00", "event": "image_rerendered", "page": 24, "imageSha256": "3c5ac582c53269c008c3df7ad33411ac6836fd337ad7d02462a625ad24b041d7", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:47.063799+00:00", "event": "image_rerendered", "page": 25, "imageSha256": "eb1d453a11d4733c7d99450125953313197d29698cda203921faef1ac2737a1b", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:49.559868+00:00", "event": "image_rerendered", "page": 26, "imageSha256": "a1cea67376dfff1b9c1868ebe1c764787bcd1f04c9900a652ef76a806caefbb1", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:51.996848+00:00", "event": "image_rerendered", "page": 27, "imageSha256": "8ea1c7f5463647ce0c39e5489497ac0fff85b6f4f37341431bfaae560869160f", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:54.452204+00:00", "event": "image_rerendered", "page": 28, "imageSha256": "8232a3cf545dace0b0489c46836904e407f3c2bedc909736cd4d53461e41d3ac", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:57.087862+00:00", "event": "image_rerendered", "page": 29, "imageSha256": "008d0bea38869071504ca2757b9300c1e9c488b1ba4790ca7e52f2affbb795aa", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:30:59.409524+00:00", "event": "image_rerendered", "page": 30, "imageSha256": "5cc87f2e928dd7dec75b1599fab9f29510236223cf4e79c9fea52289eb897fa4", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:01.687996+00:00", "event": "image_rerendered", "page": 31, "imageSha256": "99be800895096d254f597238dcab8975a61dc73aee22de6665cc205ad4e9e4f2", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:04.108874+00:00", "event": "image_rerendered", "page": 32, "imageSha256": "cf3725cb75ba6f2715c5d6679107cc82420d1fad162e460f19b0c98b3cbd7fc6", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:06.570332+00:00", "event": "image_rerendered", "page": 33, "imageSha256": "b9bd2475f8c4c9672295b47651980469a09a655ee13576f02b8530b15cf82349", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:09.033652+00:00", "event": "image_rerendered", "page": 34, "imageSha256": "4069a59ea9704cc436b57bdabea34c37478dee4417f9880780faf3232042ac19", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:11.500231+00:00", "event": "image_rerendered", "page": 35, "imageSha256": "a6af81217da7b60faea2aa19ced03fe30ed30c66c338aaec05bb05ffc537058a", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:14.044824+00:00", "event": "image_rerendered", "page": 36, "imageSha256": "a408dae39a2798089614bce581ca1bfb68c29c0fc5030f527f11749c72fbc714", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:16.431508+00:00", "event": "image_rerendered", "page": 37, "imageSha256": "03b3552e3e39d9c809c78a81a8c2e5cdf64ff42ec8d9465c9d55868fcb6d3fb1", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:18.914295+00:00", "event": "image_rerendered", "page": 38, "imageSha256": "cbc87e639df537fbc53409de0c899568ec226a94743b79c3383ce42d871370d0", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}
+{"time": "2026-09-23T12:31:21.298915+00:00", "event": "image_rerendered", "page": 39, "imageSha256": "8ae9d94160a5d0be1382f5eb067aa7233d9f4eb619d1f50685fc29162dcc3a75", "reason": "Use installed Office fonts; preserve original page-number field; no response change"}

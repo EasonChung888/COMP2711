@@ -1,0 +1,133 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2021-FINAL1-P01": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(30,40,0),(0,41,1),(1,42,2),(2,0,3),(3,1,4)",
+        "159746\\equiv18448\\pmod{70649}",
+        "最小正代表"
+      ],
+      "prompt_sha256": "8070af8ad37297eceb22f7726505be9ead98ce48c3a066735c8823f0bab203bb"
+    },
+    "Q-2021-FINAL1-P02": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 1,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "异常在 $A$ 会令 $B,C$ 平衡",
+        "3^k,3^{k-1},\\ldots,3,1",
+        "2k=2\\log_3n"
+      ],
+      "prompt_sha256": "4d034c0cbae01022ef5d5d4e9a9628b6bf48f5a900ef524ae909edeb14257e0b"
+    },
+    "Q-2021-FINAL1-P03": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2,
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "绝不会排除真正的 famous-solo-worker",
+        "第一方向全否、第二方向全是",
+        "(n-1)+2(n-1)=3(n-1)"
+      ],
+      "prompt_sha256": "87e0f39ceb8a7325602a65f1e902683b4c1ccc4311bf3454b2e9ebdde090332e"
+    },
+    "Q-2021-FINAL1-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(n)\\iff n=0",
+        "不能把零代入",
+        "所有其他整数确实可以为假"
+      ],
+      "prompt_sha256": "be9153e721ddf7cdadc0399c5fc344b1a6e37c7904b987175988b82de86b56a8"
+    },
+    "Q-2021-FINAL1-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n=4\\cdot2^j=2^{j+2}",
+        "链外元素的递推前件为假",
+        "k\\ge2"
+      ],
+      "prompt_sha256": "8f1974b58888d6eba7e85a827ae86186c011aaa4321602217776f6dd554bb3f0"
+    },
+    "Q-2021-FINAL1-P04-c": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(n)\\iff n=1",
+        "P(n)\\land P(n+1)",
+        "没有其他整数被条件强制"
+      ],
+      "prompt_sha256": "3a483d7c7acb8bebb638affad8e0b6cff1c3be72f4058273df393cd26906c0f0"
+    },
+    "Q-2021-FINAL1-P04-d": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(2),\\ldots,P(n)",
+        "2\\le k\\le1",
+        "空真只推出 $P(2)$"
+      ],
+      "prompt_sha256": "ebc70b4f5a367010122fab7ca1bc5b6e9128a2699800b6aceadb26d1b8d09d1a"
+    },
+    "Q-2021-FINAL1-P05": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "derived",
+      "checkpoints": [
+        "u0v,u01v,u10v",
+        "删去该对后余额不变",
+        "长度严格减二",
+        "在原切分处插回"
+      ],
+      "prompt_sha256": "195717ffba7ba304f48e9bfffca2bf6aa0be4697a8ab40139db0b5556a688dd1"
+    },
+    "Q-2021-FINAL1-P06": {
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "E_n=4E_{n-1}+2(6^{n-1}-E_{n-1})",
+        "(6^n+2^n)/2",
+        "最终答案无求和符号"
+      ],
+      "prompt_sha256": "9215345f573ddc7ebd0366ebd61b968d0136b88d0dd23f058362f7a42f594392"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+- generic [active] [ref=f2e1]:
+  - link "跳到正文" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - link "COMP2711" [ref=f2e5] [cursor=pointer]:
+        - /url: index.html
+      - navigation "课程导航" [ref=f2e6]:
+        - link "课程模块" [ref=f2e7] [cursor=pointer]:
+          - /url: index.html#modules
+        - link "Counting" [ref=f2e8] [cursor=pointer]:
+          - /url: counting.html
+        - link "本章目录" [ref=f2e9] [cursor=pointer]:
+          - /url: l2-5.html#topics
+        - link "课件页码索引" [ref=f2e10] [cursor=pointer]:
+          - /url: source-map.html
+  - main [ref=f2e11]:
+    - navigation "当前位置" [ref=f2e12]:
+      - link "COMP2711" [ref=f2e13] [cursor=pointer]:
+        - /url: index.html
+      - text: /
+      - link "Counting" [ref=f2e14] [cursor=pointer]:
+        - /url: counting.html
+      - text: / L2.5 · 计数基础
+    - generic [ref=f2e15]:
+      - heading "L2.5 · 计数基础" [level=1] [ref=f2e16]
+      - paragraph [ref=f2e17]: 从“有多少种可能”，到“为什么一定存在”。按知识主题读懂每页课件，再用对应真题检验理解。
+      - generic [ref=f2e18]:
+        - link "开始学习" [ref=f2e19] [cursor=pointer]:
+          - /url: lessons/counting-rules.html
+        - link "浏览课程" [ref=f2e20] [cursor=pointer]:
+          - /url: "#topics"
+      - paragraph [ref=f2e21]: 已学完 0 / 8 课
+    - generic [ref=f2e22]:
+      - heading "按自己的节奏学习" [level=2] [ref=f2e23]
+      - paragraph [ref=f2e24]: 每课依次阅读相关课件页的完整讲解，需要对照时展开原页。本课讲解结束后，再尝试对应练习；完成后在课末勾选“我已学完这课”。
+    - generic [ref=f2e25]:
+      - heading "本章课程" [level=2] [ref=f2e26]
+      - generic [ref=f2e27]:
+        - link "01 · 乘法与加法法则 分步骤构造结果，按互斥情况分类；从座位分配开始。 未学完" [ref=f2e28] [cursor=pointer]:
+          - /url: lessons/counting-rules.html
+          - strong [ref=f2e29]: 01 · 乘法与加法法则
+          - text: 分步骤构造结果，按互斥情况分类；从座位分配开始。
+          - generic [ref=f2e30]: 未学完
+        - link "02 · 函数与子集计数 把函数的输出、单射的限制和子集的取舍变成选择。 未学完" [ref=f2e31] [cursor=pointer]:
+          - /url: lessons/functions-and-subsets.html
+          - strong [ref=f2e32]: 02 · 函数与子集计数
+          - text: 把函数的输出、单射的限制和子集的取舍变成选择。
+          - generic [ref=f2e33]: 未学完
+        - link "03 · 算法中的操作次数 数矩阵乘法的循环次数，理解排序中的逐轮求和。 未学完" [ref=f2e34] [cursor=pointer]:
+          - /url: lessons/algorithm-operations.html
+          - strong [ref=f2e35]: 03 · 算法中的操作次数
+          - text: 数矩阵乘法的循环次数，理解排序中的逐轮求和。
+          - generic [ref=f2e36]: 未学完
+        - link "04 · 有条件的字符串 处理车牌、变量名的长度、首位和保留字限制。 未学完" [ref=f2e37] [cursor=pointer]:
+          - /url: lessons/restricted-strings.html
+          - strong [ref=f2e38]: 04 · 有条件的字符串
+          - text: 处理车牌、变量名的长度、首位和保留字限制。
+          - generic [ref=f2e39]: 未学完
+        - link "05 · 补集计数与密码 用全部减去不符合的情况，避免“至少一个”的重复计数。 未学完" [ref=f2e40] [cursor=pointer]:
+          - /url: lessons/complement-counting.html
+          - strong [ref=f2e41]: 05 · 补集计数与密码
+          - text: 用全部减去不符合的情况，避免“至少一个”的重复计数。
+          - generic [ref=f2e42]: 未学完
+        - link "06 · 树形图与停止条件 沿分支构造合法位串，数清五局三胜的结束路径。 未学完" [ref=f2e43] [cursor=pointer]:
+          - /url: lessons/tree-diagrams.html
+          - strong [ref=f2e44]: 06 · 树形图与停止条件
+          - text: 沿分支构造合法位串，数清五局三胜的结束路径。
+          - generic [ref=f2e45]: 未学完
+        - link "07 · 鸽巢原理与证明 为生日、几何距离、奇偶性和积分问题找到合适的盒子。 未学完" [ref=f2e46] [cursor=pointer]:
+          - /url: lessons/pigeonhole-proofs.html
+          - strong [ref=f2e47]: 07 · 鸽巢原理与证明
+          - text: 为生日、几何距离、奇偶性和积分问题找到合适的盒子。
+          - generic [ref=f2e48]: 未学完
+        - link "08 · 广义鸽巢原理与最小保证 计算人数、扑克牌、袜子与电话号码的保证门槛。 未学完" [ref=f2e49] [cursor=pointer]:
+          - /url: lessons/minimum-guarantees.html
+          - strong [ref=f2e50]: 08 · 广义鸽巢原理与最小保证
+          - text: 计算人数、扑克牌、袜子与电话号码的保证门槛。
+          - generic [ref=f2e51]: 未学完
+    - generic [ref=f2e52]:
+      - heading "对照课件" [level=2] [ref=f2e53]
+      - generic [ref=f2e54]:
+        - link [ref=f2e55] [cursor=pointer]:
+          - /url: source-map.html
+          - strong [ref=f2e56]: 按 PPT 页码查找
+          - text: 从原来的第 1–39 页定位讲解与所属课程。
+        - link [ref=f2e57] [cursor=pointer]:
+          - /url: sources/L2.5.pptx
+          - strong [ref=f2e58]: 原始 PowerPoint
+          - text: 保留原课件，便于在 PowerPoint 中查看。
+  - contentinfo [ref=f2e59]: COMP2711 · 按知识主题学习

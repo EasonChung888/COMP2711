@@ -1,0 +1,88 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2022-FINAL1-P02": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "10\\cdot20=200",
+        "\\binom{10}{2}=45",
+        "435-190=245"
+      ],
+      "prompt_sha256": "98088916dc3a69d1f131c293afe84d27b93cc9c96632cea3bfa58cf0f948838d"
+    },
+    "Q-2022-FINAL1-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "26+10=36",
+        "36^7",
+        "首位为零也合法"
+      ],
+      "prompt_sha256": "1fa407c56f7e82abd55414da72eae89a150a3bec636cc950ffe9295246cf566e"
+    },
+    "Q-2022-FINAL1-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "36\\cdot35\\cdot34\\cdot33\\cdot32\\cdot31\\cdot30=36!/29!",
+        "\\binom{36}{7}7!"
+      ],
+      "prompt_sha256": "36a5e0777ce0e5727112c5f48500fea60ed67748ec058c87f57cd646bcdbbbf1"
+    },
+    "Q-2022-FINAL1-P03-c": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "10\\cdot35^6",
+        "3ABA3C6",
+        "相邻不等而非全局不重复"
+      ],
+      "prompt_sha256": "5973ac6c6eb8fdddfe784c2bb086610642bb9c0586343d49460bf4d8fa94f715"
+    },
+    "Q-2022-FINAL1-P03-d": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-1.pdf",
+      "source_page": 2,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "L-D-L-D-L-D-L",
+        "D-L-D-L-D-L-D",
+        "26^4\\cdot10^3+10^4\\cdot26^3"
+      ],
+      "prompt_sha256": "eaad24108e53ff95640f313b3567e0e374f078263fb6d5357bbd08a4049549ce"
+    },
+    "Q-2022-FINAL1-P04": {
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-1.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "27=3\\cdot9",
+        "5(5^k+2\\cdot11^k)+12\\cdot11^k",
+        "3(5t+4\\cdot11^k)"
+      ],
+      "prompt_sha256": "912440fcd5c9a36322a0231ddd102c52b44ce69beae76df74eca4fd8b4a0bfd1"
+    }
+  }
+}

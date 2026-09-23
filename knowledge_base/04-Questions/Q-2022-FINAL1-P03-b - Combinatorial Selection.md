@@ -1,0 +1,66 @@
+---
+id: "Q-2022-FINAL1-P03-b"
+note_type: "question"
+schema_version: 1
+course: "COMP2711"
+source_paper: "[[2022 Final Part 1]]"
+source_pdf: "knowledge_base/past_paper/2022-final-part-1.pdf"
+source_page: 2
+question_number: "3(b)"
+year: 2022
+term: "spring"
+exam_type: "final"
+topics: ["[[Topic - Counting - 计数]]"]
+subtopics: ["[[Subtopic - Permutations and Combinations - 排列与组合]]"]
+concepts: ["[[Combinatorial Selection - 组合选择]]"]
+methods: ["[[Combinatorial Case Analysis - 组合分类法]]"]
+question_types: ["calculation"]
+difficulty: 1
+difficulty_basis: "No repetition creates a falling factorial over seven ordered positions."
+syllabus_version: "COMP2711-2026-27-fall"
+syllabus_status: "in-scope"
+answer_source: "official"
+verification_status: "verified"
+solution_page: [2]
+marks: 2
+---
+# Q-2022-FINAL1-P03-b
+
+## Source
+
+![[knowledge_base/past_paper/2022-final-part-1.pdf#page=2]]
+
+Published solution material: ![[knowledge_base/past_paper/2022-final-part-1.pdf#page=2]]
+
+## Question
+
+How many possible order IDs are there if no two characters are the same? (E.g. A034NXD is valid, A034NAD is invalid)
+
+Shared context: [[STEM-2022-FINAL1-P03 - Shared Problem Prompt]].
+
+## 中文解析
+
+不能重复会让可选字符逐位递减，从三十六一直到三十。编号有顺序，所以选出七个不同字符后还要排列；仅用三十六选七会遗漏不同顺序的编号。
+
+## Detailed Solution
+
+Provenance: published official answer, independently checked by the derivation below.
+
+**Answer.** $P(36,7)=36!/29!$.
+
+**Derivation/proof.** The first position has 36 choices, then each used character becomes unavailable, leaving 35,34,33,32,31,30 choices for later positions. Multiplication gives 36!/29!, equivalent to C(36,7)·7!. The order matters: two IDs containing the same set of seven characters in different orders are distinct.
+
+### 中文解答
+
+**推导。** 全部字符不同，故第一位有三十六种，第二位排除第一位后有三十五种，以此类推，第七位剩三十种。相乘为 $36\cdot35\cdot34\cdot33\cdot32\cdot31\cdot30=36!/29!$，也等于 $\binom{36}{7}7!$。同一组七个字符的不同排列是不同编号，因此不能只选字符集合而省略排列。
+
+## Common Mistakes
+
+- 只用组合数而漏排列顺序。
+- 把可用字符数每步减二。
+
+## Connections
+
+- [[Subtopic - Permutations and Combinations - 排列与组合]]
+- [[Combinatorial Selection - 组合选择]]
+- [[Combinatorial Case Analysis - 组合分类法]]

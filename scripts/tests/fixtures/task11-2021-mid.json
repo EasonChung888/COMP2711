@@ -1,0 +1,340 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2021-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "y=x^2+2x+2",
+        "1\\ne0",
+        "\\forall x\\exists y"
+      ],
+      "prompt_sha256": "a180d0212ffee9ffb4ff7de1d9181f5d9d912afa9366b258d8c374c1ec388ecd"
+    },
+    "Q-2021-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(x+1)^2",
+        "y=-1",
+        "不是整数平方"
+      ],
+      "prompt_sha256": "5683e93211e07efe9089118e0a4ccb9def070f664e0317b09a23e20b70a53884"
+    },
+    "Q-2021-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=0",
+        "z=2y",
+        "2y-z=2y-2y=0=4x"
+      ],
+      "prompt_sha256": "33f07b15305ebe3068998bb739802b843301d39d59c70d9c0eb28968d9531048"
+    },
+    "Q-2021-MID-P01-d": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "-z=4x",
+        "2-z=4x",
+        "2=0"
+      ],
+      "prompt_sha256": "c282ef6fd35e4596279bf9e8de421ba81162c51146b813e8ae0d5210316d6129"
+    },
+    "Q-2021-MID-P02-translation-course": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "c(\\mathrm{Sarah})",
+        "独立修课事实"
+      ],
+      "prompt_sha256": "9dcfd28ab0e46ab71a0aabf6243f8744291ba8ed3e3823e2031feee21e56dd89"
+    },
+    "Q-2021-MID-P02-translation-gcd": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "g(\\mathrm{Sarah})",
+        "主语承接 Sarah"
+      ],
+      "prompt_sha256": "4d04eee254178313c5241397f51e26b32f716329f998ffdff6613881dda69246"
+    },
+    "Q-2021-MID-P02-translation-rule": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall x(g(x)\\to h(x))",
+        "必要条件"
+      ],
+      "prompt_sha256": "7222e67d1b100a39dace768e530b32142cbc6c7a07a44a8b9e499caf819c9d26"
+    },
+    "Q-2021-MID-P02-translation-conclusion": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        1
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\exists x(c(x)\\land h(x))",
+        "内部必须合取"
+      ],
+      "prompt_sha256": "66dcaf567e5071ef3056cbc73671e41fe5759b021b423b5b41f97638c4b0832f"
+    },
+    "Q-2021-MID-P02-proof": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 1,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "由(2)、(3)",
+        "c(\\mathrm{Sarah})\\land h(\\mathrm{Sarah})",
+        "\\exists x(c(x)\\land h(x))"
+      ],
+      "prompt_sha256": "640a0d22fcb6720b6a7bc0c0d920411450056d07810520fd00893d4719bc9706"
+    },
+    "Q-2021-MID-P03": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "q\\mid(N-p!)=1",
+        "q>p",
+        "5!+1=121=11^2"
+      ],
+      "prompt_sha256": "ef238a94612cb0eba6560c55b0921ba05d98f00611e7cb9a5ebfa7dbf7207d2b"
+    },
+    "Q-2021-MID-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "先列空集",
+        "2^k",
+        "任何非空有限子集都有最大元素",
+        "可数无限"
+      ],
+      "prompt_sha256": "8191272ecd5ee89617d25f6f343ca259ac9574785ef2ec5af02c721cebf307c9"
+    },
+    "Q-2021-MID-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(\\mathbb N)=F\\cup I",
+        "交替枚举",
+        "I$ 不可数"
+      ],
+      "prompt_sha256": "7b7db44e2f16d87557e9c270154338dd900ce3b76ccb70e534901679049f4a59"
+    },
+    "Q-2021-MID-P05": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 2,
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1394=46\\cdot30+14",
+        "17^8\\equiv49\\equiv18",
+        "1260\\equiv20\\pmod{31}"
+      ],
+      "prompt_sha256": "b1227db62d5287fcb15f9d275acbb993607b958bdfc1bf123f39f0ec7ed9b1c9"
+    },
+    "Q-2021-MID-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "93473",
+        "2^2\\cdot3\\cdot5\\cdot7\\cdot13\\cdot17",
+        "(93473,121)",
+        "(93473,127)"
+      ],
+      "prompt_sha256": "db2f74e44797fc3029d037dcfd802c9b0de8c1e29503a202737a044d716350fe"
+    },
+    "Q-2021-MID-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "28\\cdot92820-21479\\cdot121",
+        "-21479\\equiv71341",
+        "8632261=93\\cdot92820+1"
+      ],
+      "prompt_sha256": "d310145f14bf394646c9bb7f52eaf0f4d4350dbbf19c15589699affbf3a8b12f"
+    },
+    "Q-2021-MID-P07": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "q\\mid A-1",
+        "p\\mid A-1",
+        "pq\\mid A-1"
+      ],
+      "prompt_sha256": "da6cc982b4c441d5ada5f1a6640899206fb480f07efa54deffb463e1ccd1dcaa"
+    },
+    "Q-2021-MID-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=\\pi/2+2k\\pi",
+        "x=k\\pi",
+        "|f(x)|=0"
+      ],
+      "prompt_sha256": "63c3e109f768d149f31650555d4b1b2dbd484b6145fac16a9171ffccf22a1447"
+    },
+    "Q-2021-MID-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "|f(x)|\\le4g(x)",
+        "g(x)=1.5",
+        "只选(ii)"
+      ],
+      "prompt_sha256": "6f9f07425a578cb8106c055e7320841014e153179033478d614a252bfbe5bfe5"
+    },
+    "Q-2021-MID-P08-c": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "g(x)\\le x=2f(x)",
+        "x=\\pi/2+k\\pi",
+        "只选(iii)"
+      ],
+      "prompt_sha256": "71c0b7c0e9625222cb1ad8135f5a1a30726e0a65533dce8aeeedda9c236b5a5d"
+    },
+    "Q-2021-MID-P08-d": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "f(x)/g(x)=\\ln20/\\ln3=c>0",
+        "(i)、(ii)、(iii)都选"
+      ],
+      "prompt_sha256": "ef17a1cc390a1e01151a6acbbb527dd3e5f3fbe95bf50c2ead42627fa28025a6"
+    },
+    "Q-2021-MID-P08-e": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2^2>3",
+        "3^2<20",
+        "f/g=x^{\\alpha-\\beta}\\to\\infty"
+      ],
+      "prompt_sha256": "e106ef7a213972c9c4067e7ba37180d97a03035da55204e9afc2adc2205e0ff8"
+    },
+    "Q-2021-MID-P09-A": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\lfloor\\log_2n\\rfloor+1",
+        "(1)、(2)、(3)、(5)",
+        "位数无界"
+      ],
+      "prompt_sha256": "494e26d0a135d3595b7fd5f469f9b0f2a6e78b76041c27c9ee307d082e2a9fae"
+    },
+    "Q-2021-MID-P09-B": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\operatorname{popcount}(n)",
+        "n=2^k-1",
+        "只选(1)、(5)"
+      ],
+      "prompt_sha256": "5be6f83779b9f370504b7f5669d46b866e298988899d9324e3cc60f6a30964fd"
+    },
+    "Q-2021-MID-BONUS": {
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4,
+        5
+      ],
+      "answer_source": "derived",
+      "checkpoints": [
+        "f(x)=(x,1/2)",
+        "g(x,y)=0.x_1y_1x_2y_2",
+        "奇数位恢复 $x$、偶数位恢复 $y$",
+        "最终全九"
+      ],
+      "prompt_sha256": "14d93ae57679ffb10c8caf80e1f1c568427bbf7bad5e6ff4530ec8d66be3efff"
+    }
+  }
+}

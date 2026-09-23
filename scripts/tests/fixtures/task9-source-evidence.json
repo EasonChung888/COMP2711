@@ -1,0 +1,2491 @@
+{
+  "questions": {
+    "Q-2025S-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 2,
+      "label": "1(a)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ],
+      "prompt_sha256": "b5b8b83f178f7ed023b2afb100dd5790fc039b44aeb5cf4e8d9623fb67c1daf3",
+      "checkpoints": [
+        "\\neg(p\\lor(q\\land\\neg r))",
+        "p\\lor\\neg q\\lor r\\lor\\neg r"
+      ]
+    },
+    "Q-2025S-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 2,
+      "label": "1(b)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ],
+      "prompt_sha256": "a5f0add34b9da734dbb00a9b2178b48ec036cedaf920eba45b8823c647da17e6",
+      "checkpoints": [
+        "p=q=r=T",
+        "A=F\\lor F=F",
+        "(T\\lor F)\\land(T\\lor F)=T"
+      ]
+    },
+    "Q-2025S-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 2,
+      "label": "1(c)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "prompt_sha256": "de418ef378b5ebf827d1aaa5ec86053210a37bfd2a293f0b91cf750252f124e2",
+      "checkpoints": [
+        "由 2、3",
+        "由 6、4",
+        "\\neg s\\land p"
+      ]
+    },
+    "Q-2025S-MID-P02-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 4,
+      "label": "2(a)(i)",
+      "marks": null,
+      "status": "needs-review",
+      "reason_check": "Rechecked all source pages 1–12, including the page-4 prompt/answer and page 5 Peano zero basis. The domain is all natural numbers, but no restriction m>0 or explicit mod-zero convention is printed. At a=b=1,m=0, the positive-modulus meaning of congruence is undefined, whereas extending it to the divisibility equation would make a=b true. That extension is not supplied and is not adopted. Positive-domain algebra retained as audit evidence only: for m>0 and natural a,b, the formula $\\exists u\\exists v(a+mu=b+mv)$ is equivalent to m dividing a-b. A witness gives a-b=m(v-u); conversely write a-b=mt with integer t, take u=0,v=t if t≥0, and u=-t,v=0 if t<0, producing natural witnesses in both cases. Page 4 prints $\\exists r\\exists q_1\\exists q_2(r<m\\land ra=mq_1+r\\land b=mq_2+r)$: its extra ra is independently wrong even for m>0, since a=1,b=3,m=5,r=3,q_1=q_2=0 satisfies it although 1 and 3 are not congruent modulo 5. Correcting that algebra cannot define the missing m=0 case. No verified Question is published.",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2025S-MID-P02-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 4,
+      "label": "2(a)(ii)",
+      "marks": null,
+      "status": "needs-review",
+      "reason_check": "Rechecked all source pages 1–12, including the page-4 all-natural-number domain and page 5 zero basis. No gcd(0,0) convention is printed. At a=b=0, the greatest-positive-common-divisor definition gives an undefined term: every positive integer is a common divisor and there is no greatest one. Under a common extension gcd(0,0)=0, gcd(0,0)=1 would instead be false, but that convention is not adopted; undefined is not false. Page 4 prints $\\forall k((\\exists x\\exists y(kx=a\\land ky=b))\\to k=1)$. Its a=b=0 instance is false using k=2,x=y=0, which cannot justify assigning a truth value to the undefined source predicate. Positive-domain algebra retained as audit evidence only: for a,b>0, any k with natural witnesses kx=a and ky=b must be a positive common divisor. If gcd(a,b)=1, every such k equals 1; conversely 1 always divides both inputs and the formula excludes every common divisor greater than 1, so their greatest common divisor is 1. This proves equivalence on positive inputs but does not settle the literal full domain. No verified Question is published.",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2025S-MID-P02-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 4,
+      "label": "2(a)(iii)",
+      "marks": null,
+      "status": "needs-review",
+      "reason_check": "The domain is all natural numbers (page 5 explicitly includes 0), but no convention is given for gcd(0,0). Under the greatest-positive-common-divisor definition it is undefined; under the common extension gcd(0,0)=0 the predicate is true at a=b=d=0. The page-4 answer also prints the impossible strict bound k<d: at a=b=d=1 its common divisor k=1 violates the formula. Replacing < by ≤ fixes positive inputs but cannot select the unprovided zero-input convention. Audit only until the intended gcd domain/convention is supplied.",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2025S-MID-P02-b-iv": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 4,
+      "label": "2(b)(iv)",
+      "marks": null,
+      "status": "needs-review",
+      "solution_page": null,
+      "answer_source": "derived",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "63ef0b63808e0a8c48dd5d5ab3d3eb8a01709afefad060a7e06b9e2dfa38c0b3",
+      "checkpoints": [
+        "(\\exists bP(b))\\leftrightarrow G",
+        "\\exists b(P(b)\\leftrightarrow G)"
+      ]
+    },
+    "Q-2025S-MID-P02-b-v": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 4,
+      "label": "2(b)(v)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": null,
+      "answer_source": "derived",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "5929025508763f05a4e23380d9762d894a4e59d204af75bf30f137d8629a9097",
+      "checkpoints": [
+        "0<x\\land x<p",
+        "p=2,x=0",
+        "0y\\equiv1\\pmod2"
+      ]
+    },
+    "Q-2025S-MID-P03": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 5,
+      "label": "3",
+      "marks": 12,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "prompt_sha256": "363b3c4f9f08200f8b72b19edb03920a22dbadf70c5f9688faea26e195dc643e",
+      "checkpoints": [
+        "每个自然数不是零就是某个后继",
+        "0+y=y+0=y",
+        "S(x)+k=k+S(x)=S(k+x)"
+      ]
+    },
+    "Q-2025S-MID-P04-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 6,
+      "label": "4(i)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "7e4fa3d1b2a16d991f696e86a5b413c2c5f54535c26d4c875c2e76af88d7c7dc",
+      "checkpoints": [
+        "\\mathbb Z^{k+1}",
+        "不同整数常数"
+      ]
+    },
+    "Q-2025S-MID-P04-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 6,
+      "label": "4(ii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "91ed5e9d39ba46170ec7b4be035fa9d385105db691586ad5c84fedfff6cb28bf",
+      "checkpoints": [
+        "\\mathbb Z^6",
+        "每层有限"
+      ]
+    },
+    "Q-2025S-MID-P04-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 6,
+      "label": "4(iii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "27f6b584bc655cd9e72f3a80a6177afdf47d251be64196de2ceeab5ab6d1b1b7",
+      "checkpoints": [
+        "f_t(x)=t",
+        "单射"
+      ]
+    },
+    "Q-2025S-MID-P04-iv": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 6,
+      "label": "4(iv)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "d5790d9a5bfe1c91dad502ab549848f19236548af14ee1a2a7c56ccd0abf70b6",
+      "checkpoints": [
+        "(t,0,0,0,0,0)",
+        "次数上限"
+      ]
+    },
+    "Q-2025S-MID-P04-v": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 6,
+      "label": "4(v)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "591f0405030d7c10e723cfe81e9b3366f3c2f448157722a4c54be4ca4958665e",
+      "checkpoints": [
+        "至多有四个",
+        "2(x-1/2)^2+1/2>0"
+      ]
+    },
+    "Q-2025S-MID-P05": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 7,
+      "label": "5",
+      "marks": 12,
+      "status": "in-scope",
+      "solution_page": null,
+      "answer_source": "derived",
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "prompt_sha256": "45eaf45339fceabb4331d995f283de12671a97e51c9d06d7365b06fe84a4b9c8",
+      "checkpoints": [
+        "f(3)-1=1\\le2",
+        "f(H+2)+f(H+1)-1=f(H+3)-1",
+        "H=0"
+      ]
+    },
+    "Q-2025S-MID-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 10,
+      "label": "6(a)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "prompt_sha256": "fdea41f9c1100f520d97e00a0a65db6d5a4476b89dc26788afe6ae30ba86d2de",
+      "checkpoints": [
+        "2\\uparrow3=16",
+        "2\\uparrow99=16k",
+        "(2^{16})^k"
+      ]
+    },
+    "Q-2025S-MID-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 10,
+      "label": "6(b)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "prompt_sha256": "9719a98c29e23f245240c73faffd64b4c171803007ef79a5dec7fc5cb5856c8d",
+      "checkpoints": [
+        "7^4\\equiv1",
+        "37^{27}=10k+3",
+        "27\\equiv5"
+      ]
+    },
+    "Q-2025S-MID-P07": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 11,
+      "label": "7",
+      "marks": 8,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "prompt_sha256": "542e46cf80ed795a3ace223b4d04739034e46403e784a00e9ad476763a361523",
+      "checkpoints": [
+        "4k(k+1)",
+        "k(k+1)=2t",
+        "a^2-1=8t"
+      ]
+    },
+    "Q-2025S-MID-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 12,
+      "label": "8(a)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": null,
+      "answer_source": "derived",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "prompt_sha256": "9cd8b29e5dd12eaede41a259d6744fc0110171461beb4bc57715efad6e7a2c2c",
+      "checkpoints": [
+        "d(a-b)=cdk",
+        "逆向",
+        "ad-bd=cdk"
+      ]
+    },
+    "Q-2025S-MID-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "page": 12,
+      "label": "8(b)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": null,
+      "answer_source": "derived",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "prompt_sha256": "8f218b2a6ca7731118142adc532e1fb25347da34034cae1b7216ae6ce572f89b",
+      "checkpoints": [
+        "23=1\\cdot14+9",
+        "5\\cdot14-3\\cdot23",
+        "46(6+14t)"
+      ]
+    },
+    "Q-2025S-FINAL-P01-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 2,
+      "label": "1(a)(i)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "256b83efe1a463831028939ea9de85069fdb4816b113730212a20aa147339245",
+      "checkpoints": [
+        "D=\\{n:n\\notin A_n\\}",
+        "D\\ne A_j"
+      ]
+    },
+    "Q-2025S-FINAL-P01-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 2,
+      "label": "1(a)(ii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "82cb15778c56e6c45d5a27622eff01f47ec957cbca45c50d7657c020f2229f32",
+      "checkpoints": [
+        "E=\\{x_j:x_j\\notin B_j\\}",
+        "适用于每个"
+      ]
+    },
+    "Q-2025S-FINAL-P01-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 2,
+      "label": "1(a)(iii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "5c395cb6bbbc3b02ce630537837eedc65834d8ece8c6a7dba7e5d4e1a1f195ca",
+      "checkpoints": [
+        "f(1/n)=1/(n+1)",
+        "1/(m-1)",
+        "f$ 满射"
+      ]
+    },
+    "Q-2025S-FINAL-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 2,
+      "label": "1(b)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ],
+      "prompt_sha256": "c7e778f1b05fd94590654d7b9437fff47aeeba455146d44b7c7974f393960d82",
+      "checkpoints": [
+        "y\\lor((x\\lor\\neg z)\\land(\\neg x\\lor z))",
+        "z\\to x",
+        "\\neg(\\neg y)"
+      ]
+    },
+    "Q-2025S-FINAL-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 2,
+      "label": "1(c)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "6b2bf7837faaa96ebc049de2c9c96354542a4688dcecfbb3152f4612f02b0e72",
+      "checkpoints": [
+        "x\\in A\\land x\\in B",
+        "\\forall x(x\\notin A\\lor x\\notin B)"
+      ]
+    },
+    "Q-2025S-FINAL-P01-d": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 2,
+      "label": "1(d)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        2
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "62f6924d053874614784e7ed5f9cf648a1f3d10ff05b4231fcf3c147a0c438f6",
+      "checkpoints": [
+        "\\exists x\\neg(x\\notin A\\lor x\\notin B)",
+        "同一个见证"
+      ]
+    },
+    "Q-2025S-FINAL-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 3,
+      "label": "2(a)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "prompt_sha256": "54ee3118f53f10d710e869d13118dc186ea133034330d9d67fb3d5ea34fb19ac",
+      "checkpoints": [
+        "2^6=64",
+        "62=6\\cdot10+2",
+        "1^{10}\\cdot4=4"
+      ]
+    },
+    "Q-2025S-FINAL-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 3,
+      "label": "2(b)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "prompt_sha256": "bf34b17748ee12f471468e9320445e01d85fe9af304ff6686d804a24605219d1",
+      "checkpoints": [
+        "63\\nmid2",
+        "2^{63-1}\\equiv1",
+        "63\\nmid(4-1)=3"
+      ]
+    },
+    "Q-2025S-FINAL-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 4,
+      "label": "3(a)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "prompt_sha256": "325ea25c6f3b08b1c76c5e56b2255cef8a2e84c5ac82070ee21c0fae60650205",
+      "checkpoints": [
+        "r>2",
+        "7-r>2",
+        "2<r<5"
+      ]
+    },
+    "Q-2025S-FINAL-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 4,
+      "label": "3(b)",
+      "marks": 6,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "d80129d5fd78ead913399220ef63df93f0f4e570f025d2095fbf9dc0d425d042",
+      "checkpoints": [
+        "\\{3,4,5,6,7,8\\}",
+        "1\\le x<1001",
+        "2\\cdot6\\cdot8=96"
+      ]
+    },
+    "Q-2025S-FINAL-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 5,
+      "label": "4(a)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "prompt_sha256": "400c1224eecf470f6b47eda04814e5c7b37073d708fc03f0635ce4e5c1065f4b",
+      "checkpoints": [
+        "\\max(3,4)=4",
+        "\\max(6,3)=6"
+      ]
+    },
+    "Q-2025S-FINAL-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 5,
+      "label": "4(b)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "aa315beafeaec05509aea45173b2bce75b3102560c5efb7bada126340304e9d7",
+      "checkpoints": [
+        "\\max(u,s)=3",
+        "(e+1)^2-e^2=2e+1",
+        "7\\cdot15\\cdot27=2835"
+      ]
+    },
+    "Q-2025S-FINAL-P05-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 6,
+      "label": "5(a)(i)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "02494aa59cdec44cea23748c2f242e525a9ae105e218d4f792bc5fba3d5a0194",
+      "checkpoints": [
+        "n^{2\\log_2 3}",
+        "2\\log_2 3<4",
+        "\\to0"
+      ]
+    },
+    "Q-2025S-FINAL-P05-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 6,
+      "label": "5(a)(ii)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "257bfa338d4096df73132281965dbfc2cdc326151e85179833f96e04993ac129",
+      "checkpoints": [
+        "2\\sum_{j=1}^n\\log j",
+        "B\\ge(n/3)\\log n",
+        "A/3\\le B\\le2A"
+      ]
+    },
+    "Q-2025S-FINAL-P05-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 6,
+      "label": "5(a)(iii)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "1b566ea823ce043a5eb62d86598522a30b0ca8bfa8103c95443ed5e866866a6f",
+      "checkpoints": [
+        "A=\\Theta(n^3)",
+        "t^6/2^t",
+        "\\to0"
+      ]
+    },
+    "Q-2025S-FINAL-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 6,
+      "label": "5(b)",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "af4f64a40f2376d982cdd993425ca520a8dbec30a2c11c256d8963ac9691d6dd",
+      "checkpoints": [
+        "n-i",
+        "n(n-1)/2",
+        "所有比较仍须执行"
+      ]
+    },
+    "Q-2025S-FINAL-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 6,
+      "label": "5(c)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "fca61fecc19004cbdf44e2ef139441e6c8f5cce89234465aee1ad39e2aa8f252",
+      "checkpoints": [
+        "n^{1/2+1/4+\\cdots+1/2^j}",
+        "n^{1-1/2^k}=n/2",
+        "T(4)=2\\cdot1+4=6"
+      ]
+    },
+    "Q-2025S-FINAL-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 9,
+      "label": "6(a)",
+      "marks": 4,
+      "status": "needs-review",
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "fc4145bb60e226a627c46a3c8bcadb9ba3c0f3fa343c3f5462a05c515129cbdb",
+      "checkpoints": [
+        "内部恰有五个",
+        "\\binom53\\cdot3!=60"
+      ]
+    },
+    "Q-2025S-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 9,
+      "label": "6(b)",
+      "marks": 6,
+      "status": "in-scope",
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]",
+        "[[Subtopic - Inclusion-Exclusion - 容斥原理]]"
+      ],
+      "prompt_sha256": "e8494c82ccd01e54418d78b871a3389cfe917ef6392090732b89a3c5dabcc2b1",
+      "checkpoints": [
+        "b_1+a_2+\\cdots+a_6=10",
+        "b_1\\le8",
+        "3003-6-5=2992"
+      ]
+    },
+    "Q-2025S-FINAL-P07-N": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 10,
+      "label": "7",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "66d01eb19515ce5904ecf060b8314c864af91b6efdd477b23ada67a210f39a60",
+      "checkpoints": [
+        "u\\le3",
+        "(23-3)/2=10",
+        "(5,5,5,7)"
+      ]
+    },
+    "Q-2025S-FINAL-P07-sufficient": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 10,
+      "label": "7",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "49a76b4d2a4b111d2063fc0f845b875f3c0ff9ca009767bc6a77f209234317ac",
+      "checkpoints": [
+        "n=23",
+        "u$ 为奇数",
+        "(23-u)/2\\ge10"
+      ]
+    },
+    "Q-2025S-FINAL-P07-minimal": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 10,
+      "label": "7",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "7cc311581535cfd2701aaf0313918c3ad651e56c027a7d52b1d74bfdb36c2114",
+      "checkpoints": [
+        "5+5+5+7=22",
+        "\\lfloor7/2\\rfloor=3",
+        "总共九对"
+      ]
+    },
+    "Q-2025S-FINAL-P08": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 11,
+      "label": "8",
+      "marks": 7,
+      "status": "needs-review",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ],
+      "prompt_sha256": "cae0a3b117e9d38f1e57dbdfd7a9b1ba36ed1dca19be16bdb70e23ea98b94dc2",
+      "checkpoints": [
+        "S=\\sum_{i=1}^{13}I_i",
+        "\\frac5{14}\\frac9{13}",
+        "13\\cdot45/91=45/7"
+      ]
+    },
+    "Q-2025S-FINAL-P09": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 12,
+      "label": "9",
+      "marks": 7,
+      "status": "in-scope",
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]"
+      ],
+      "prompt_sha256": "34bdb489629b107533035e6ef33dccedf42d50371e30dd1d356674e6f57cebf0",
+      "checkpoints": [
+        "1\\le m\\le1023",
+        "\\sum_{t=1}^{1023}\\sum_{m=t}^{1023}",
+        "\\binom{2023-t}{1000}"
+      ]
+    },
+    "Q-2025S-FINAL-P10": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 13,
+      "label": "10",
+      "marks": 7,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Inclusion-Exclusion - 容斥原理]]",
+        "[[Subtopic - Introduction to Probability - 概率基础]]"
+      ],
+      "prompt_sha256": "806f82620138c6045cb1aa45be30f746b8ce47b128173f0ddb80b6b68ae292f9",
+      "checkpoints": [
+        "4\\cdot8+2\\cdot4",
+        "4\\cdot2-1=95",
+        "512-95=417"
+      ]
+    },
+    "Q-2025S-FINAL-P11": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 15,
+      "label": "11",
+      "marks": 7,
+      "status": "in-scope",
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]"
+      ],
+      "prompt_sha256": "fa1f3478801d3fc9371b62ea0ed60ea6bbf123bd6116c449e35643cd0720b802",
+      "checkpoints": [
+        "P(M\\mid\\overline S)=1/4",
+        "8/24",
+        "(3/24)/(8/24)=3/8"
+      ]
+    },
+    "Q-2025S-FINAL-P12-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 16,
+      "label": "12(a)(i)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "1162e29bd805309376e3e44843b9971dbab68d7d16cc70f062d70ee49019958d",
+      "checkpoints": [
+        "五个邻点必是其余所有顶点",
+        "\\deg(w)\\ge1"
+      ]
+    },
+    "Q-2025S-FINAL-P12-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 16,
+      "label": "12(a)(ii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "5c3f39161951cd9c6435d85e54c5eb09be9972d8aa536ad639e3fe20aec0ac9a",
+      "checkpoints": [
+        "4+4+3+2+1+1=15",
+        "2|E|"
+      ]
+    },
+    "Q-2025S-FINAL-P12-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 16,
+      "label": "12(a)(iii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "0d8c7616d98a825b213214cf445dea4ecb64c7f6a016acaa01a9ac03b1230004",
+      "checkpoints": [
+        "至少有一条边",
+        "至少向该两点发出三条边",
+        "\\deg(v_1)+\\deg(v_2)=2"
+      ]
+    },
+    "Q-2025S-FINAL-P12-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 16,
+      "label": "12(b)",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        16,
+        17
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "321276769861d3e0076d4a647031833475a330c39a21b53fe5bc2239acce0cb1",
+      "checkpoints": [
+        "\\binom62=15",
+        "(15+6+1)2^{15}",
+        "720896"
+      ]
+    },
+    "Q-2025S-FINAL-P12-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "page": 16,
+      "label": "12(c)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "958322ae601f26ff404039c41076ff0099b8dabae1f33418542e7eb186aed195",
+      "checkpoints": [
+        "d_i-1",
+        "每条长度二路径只有一个中点",
+        "3\\cdot2=6"
+      ]
+    },
+    "Q-2025F-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 3,
+      "label": "1(a)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ],
+      "prompt_sha256": "1a7339bc564e1f5b31f7de31c300e1de0dbfa421de6a0e3e125c5d45c4f79616",
+      "checkpoints": [
+        "\\neg(p\\land(\\neg q\\lor r))",
+        "\\neg p\\lor(q\\land\\neg r)"
+      ]
+    },
+    "Q-2025F-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 3,
+      "label": "1(b)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ],
+      "prompt_sha256": "76fa796579a7742fb39f7e04badab5421a75d1d8f759a2b01de85ae40388b11d",
+      "checkpoints": [
+        "p=T,q=F",
+        "\\neg(T\\land T)=F",
+        "\\neg(F\\land F)=T"
+      ]
+    },
+    "Q-2025F-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 4,
+      "label": "1(c)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "prompt_sha256": "350ff8944113e08437d159f0de779b4db0bddff94f2e4da2c732ded9cc76837c",
+      "checkpoints": [
+        "由 2 与 premise 1",
+        "由 3 与",
+        "\\neg r\\land t"
+      ]
+    },
+    "Q-2025F-MID-P02-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 6,
+      "label": "2(a)(i)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "401a9f03341ee0e14f3e694697f20f99f33f85d4f4ce20d37ccda302f7965cca",
+      "checkpoints": [
+        "\\exists y(5\\times y=x)",
+        "取其见证"
+      ]
+    },
+    "Q-2025F-MID-P02-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 6,
+      "label": "2(a)(ii)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "29e02bd46342bb1409fec1c024622f1da272b609b62377dc4599a2de4b2878bf",
+      "checkpoints": [
+        "y=|z|",
+        "y\\times y=x"
+      ]
+    },
+    "Q-2025F-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 6,
+      "label": "2(b)",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        7,
+        8
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "e8ac21e9b6d96f216f6e4f64746f579708cc7aaf0a218ef7e5e42ad1e69f68b4",
+      "checkpoints": [
+        "\\forall y\\neg(p(y)\\to\\forall zq(x,z))",
+        "\\neg(A\\to B)\\equiv A\\land\\neg B",
+        "\\exists z\\neg q(x,z)"
+      ]
+    },
+    "Q-2025F-MID-P02-c-premise1": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 7,
+      "label": "2(c)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "9d4eb386ee26480c72192061e7c601fd77767a8aafb65c5b47ade6f032915887",
+      "checkpoints": [
+        "C(x)\\to S(x)",
+        "空真"
+      ]
+    },
+    "Q-2025F-MID-P02-c-premise2": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 7,
+      "label": "2(c)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "5b9f738e561bf13605dfbbd364491f9b15383f3f20f3d9e5395f4c4342dba953",
+      "checkpoints": [
+        "E(x)\\land\\neg S(x)",
+        "每一次出现均被绑定"
+      ]
+    },
+    "Q-2025F-MID-P02-c-proof": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 7,
+      "label": "2(c)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "prompt_sha256": "56734880f5cdb60676b8de0728e654916458a58b3197bbb24f179ddd23c0fc32",
+      "checkpoints": [
+        "E(a)\\land\\neg S(a)",
+        "C(a)\\to S(a)",
+        "existential generalization"
+      ]
+    },
+    "Q-2025F-MID-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 10,
+      "label": "3(a)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "4db5928583a320634984cf6130ba8d09ddc15a0a5fe1d2ae00a9be59e71f004e",
+      "checkpoints": [
+        "任取 $x\\in A\\cap B$",
+        "x\\in A$ 得 $x\\in C$"
+      ]
+    },
+    "Q-2025F-MID-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 10,
+      "label": "3(b)",
+      "marks": 3,
+      "status": "needs-review",
+      "reason_check": "The rendered page 10 has a complement bar on C only in the conclusion; the text layer drops it. The claim is false: in universe {0}, choose A=B=C={0}; both premises hold, but A∪B={0} is not a subset of C̄=∅. Page 11 proves A∪B⊆C instead, silently removing the bar. No proof of the literal printed claim is possible, so no Question note is admitted.",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2025F-MID-P03-c-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 11,
+      "label": "3(c)(i)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "589cfcbfe973f9e39b01162cbbe19f7d925a0898cb0189bd921953154e5164b1",
+      "checkpoints": [
+        "S=\\varnothing",
+        "只有一个元素"
+      ]
+    },
+    "Q-2025F-MID-P03-c-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 11,
+      "label": "3(c)(ii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "a28da61d91ef5b9e4dd6f444ebe502bf2f7861cbd348ad504246d274ede3529f",
+      "checkpoints": [
+        "g(n)=f_n(n)+1",
+        "g\\ne f_n"
+      ]
+    },
+    "Q-2025F-MID-P03-c-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 11,
+      "label": "3(c)(iii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "d8c55474678c2f3f2073e280b7754135875696e361cbed0918598905ea052f04",
+      "checkpoints": [
+        "A=(-\\infty,0)",
+        "B-A=[0,\\infty)"
+      ]
+    },
+    "Q-2025F-MID-P03-c-iv": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 11,
+      "label": "3(c)(iv)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "d7e763ed818ac7c973abb8078fba560ad86a601ec27ab69ff4fcfa5dc4ecbf44",
+      "checkpoints": [
+        "0,1,-1,2,-2",
+        "唯一原像"
+      ]
+    },
+    "Q-2025F-MID-P03-c-v": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 11,
+      "label": "3(c)(v)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "5fce0fea00541441a911eb4f124bef467c0967c5e7d00718a390e6a9abea70f7",
+      "checkpoints": [
+        "0^n\\mapsto n",
+        "不同长度"
+      ]
+    },
+    "Q-2025F-MID-P03-c-vi": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 11,
+      "label": "3(c)(vi)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "d06b99205d8bc18bd92c33edfa4bff0980c9b801499a3fe173c130164005d9f4",
+      "checkpoints": [
+        "d_n=1-s_n(n)",
+        "第 $n$ 位不同"
+      ]
+    },
+    "Q-2025F-MID-P03-c-vii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 11,
+      "label": "3(c)(vii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "3fe8b2e595643c366f1ecac316167bcdef5551907b2496e793bfcc05d3d125d8",
+      "checkpoints": [
+        "i<j<k",
+        "\\binom{k-1}2",
+        "(1,2,k)"
+      ]
+    },
+    "Q-2025F-MID-P04-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 12,
+      "label": "4(a)(i)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "8af3b9be274a2bf602a89d97a2cb626fb4352cf0a7c1e19c3320190809b2e702",
+      "checkpoints": [
+        "6+5=11",
+        "11\\cdot10"
+      ]
+    },
+    "Q-2025F-MID-P04-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 12,
+      "label": "4(a)(ii)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "53db75018d6a80870b9b61e16219118a0b9dea0521f921a0ce03088f0a9a6b56",
+      "checkpoints": [
+        "六个不同对象",
+        "6!\\cdot6!"
+      ]
+    },
+    "Q-2025F-MID-P04-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 12,
+      "label": "4(a)(iii)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "f746e759bc0116be0d34fd672aef210ec2efb0a1f7459ed0cfa6bbab65367fe8",
+      "checkpoints": [
+        "两个区块",
+        "2!\\cdot5!\\cdot6!"
+      ]
+    },
+    "Q-2025F-MID-P04-a-iv": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 12,
+      "label": "4(a)(iv)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "004e60fbb7b93fbf408c0d2f1c07227a37e4dfa71e44ec844699a1c8e8f3648a",
+      "checkpoints": [
+        "每个空隙最多放一位",
+        "TSTSTSTSTST"
+      ]
+    },
+    "Q-2025F-MID-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 12,
+      "label": "4(b)",
+      "marks": 2,
+      "status": "needs-review",
+      "reason_check": "Page 13 prints 3×4×5×4×3×2=1440, counting exactly one crossing of each stage outbound and inbound. The printed condition forbids reusing roads but does not forbid revisiting towns or detours. For example A–B–C–B–C–D–C–B–A can use 2 distinct A–B roads, all 4 distinct B–C roads, and 2 distinct C–D roads without any road reuse, but is not included in 1440. Requiring simple outbound/inbound paths yields 1440; allowing all edge-nonrepeating trips permits additional valid tours. The missing route restriction is material, so this is audit only. Original graph crop: knowledge_base/06-Audit/figures/2025F-MID-P04-b-roads.png.",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ]
+    },
+    "Q-2025F-MID-P04-c-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 13,
+      "label": "4(c)(i)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "a85c9d1ffec276ff75e386058c1745de8dfd4ac0f8c729c3d155c46e12fcc047",
+      "checkpoints": [
+        "10\\cdot9\\cdots4",
+        "不需要除以"
+      ]
+    },
+    "Q-2025F-MID-P04-c-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 13,
+      "label": "4(c)(ii)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "80183d8e9a3adc9f4f2cc329883b7ab0c5ced7989383c9166340d0f241afdb3f",
+      "checkpoints": [
+        "\\binom75",
+        "\\binom{10}5",
+        "唯一确定双方所选子集"
+      ]
+    },
+    "Q-2025F-MID-P04-d": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 13,
+      "label": "4(d)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "f95664ec474f24b93051678dc0c2fa1048d5ea9bc1a0b1a46cee8c1b228f8dd8",
+      "checkpoints": [
+        "第四位必须等于 $b$",
+        "9\\cdot10\\cdot10=900"
+      ]
+    },
+    "Q-2025F-MID-P05": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 14,
+      "label": "5",
+      "marks": 10,
+      "status": "in-scope",
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]"
+      ],
+      "prompt_sha256": "258283d2053c8cf1e9c79363c81dfce3d3c15e94ac4aabb9ccca362ee59b47f1",
+      "checkpoints": [
+        "不含 $a$ 但含 $b$",
+        "不含 $a,b$ 但含 $c$",
+        "三类互斥且穷尽"
+      ]
+    },
+    "Q-2025F-MID-P06": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 15,
+      "label": "6",
+      "marks": 9,
+      "status": "in-scope",
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Inclusion-Exclusion - 容斥原理]]"
+      ],
+      "prompt_sha256": "326a07f29029f9ddd6dac9d0c4b1e0881ec10defc8fd58caa4637add3fda9510",
+      "checkpoints": [
+        "|A_i|=8\\cdot9^5",
+        "7\\cdot8^5",
+        "6\\cdot7^5"
+      ]
+    },
+    "Q-2025F-MID-P07": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 17,
+      "label": "7",
+      "marks": 7,
+      "status": "in-scope",
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "540638c9571f7ad886e8986f9282d5f17b3ae96e8912ab4a5b7c4a285cbbeb00",
+      "checkpoints": [
+        "4\\cdot4=16",
+        "中心网格点",
+        "任意两个不同红格"
+      ]
+    },
+    "Q-2025F-MID-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 18,
+      "label": "8(a)",
+      "marks": 1,
+      "status": "needs-review",
+      "reason_check": "Five marginal capture probabilities 1/2 do not specify independence. The page-19 answer 1/32 follows from independent captures. If all five capture indicators equal one shared fair bit, every marginal remains 1/2 but P(k=0)=1/2. Thus the requested probability is not determined.",
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]"
+      ]
+    },
+    "Q-2025F-MID-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 18,
+      "label": "8(b)",
+      "marks": 1,
+      "status": "needs-review",
+      "reason_check": "The independent-capture model used on page 19 gives 5/32. If all five indicators equal one fair bit, each capture marginal is still 1/2 but P(k=1)=0. No independence condition is printed, so the value is underdetermined.",
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]"
+      ]
+    },
+    "Q-2025F-MID-P08-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 18,
+      "label": "8(c)",
+      "marks": 1,
+      "status": "needs-review",
+      "reason_check": "The page-19 independent value is 10/32. With all five indicators equal one fair bit, every capture marginal is 1/2 but P(k=2)=0. Missing joint assumptions prevent a verified numeric answer.",
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]"
+      ]
+    },
+    "Q-2025F-MID-P08-d": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 18,
+      "label": "8(d)",
+      "marks": 1,
+      "status": "needs-review",
+      "reason_check": "Page 19 gives hungry probability 1/2 under independent captures. A different exchangeable joint model takes total potential captures K=0 with probability 3/8 and K=4 with probability 5/8, choosing the four successes uniformly. Each fly has marginal success (5/8)(4/5)=1/2, but after the stopping rule the spider is hungry with probability 3/8. Thus the missing dependence assumption materially changes this item too.",
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]"
+      ]
+    },
+    "Q-2025F-MID-P08-e": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 18,
+      "label": "8(e)",
+      "marks": 2,
+      "status": "needs-review",
+      "reason_check": "Page 19 gives 3/4 by assuming independence plus the part-(d) stopping policy. In a model where all six potential capture indicators equal one shared fair bit, every marginal capture probability is 1/2. On bit 1 the spider has stopped after catching three; on bit 0 every fly escapes. The sixth fly therefore survives with probability 1, rather than 3/4. If “encounters” conditions on still hunting, the conditioning is another unstated distinction; no Question note is admitted.",
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]"
+      ]
+    },
+    "Q-2025F-MID-P09-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 20,
+      "label": "9(a)",
+      "marks": 3,
+      "status": "needs-review",
+      "reason_check": "Page 20 obtains 1/4 by independent Bernoulli tosses, but the prompt specifies only each coin's head probability, not independence between tosses. If the three tosses of the fair second coin share one fair bit, each is marginally fair but exactly two heads is impossible, so P(D|B)=0 instead of 1/4. The observation can still have positive probability under the other branch using independent biased tosses.",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]"
+      ]
+    },
+    "Q-2025F-MID-P09-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 20,
+      "label": "9(b)",
+      "marks": 4,
+      "status": "needs-review",
+      "reason_check": "The printed 9/17 uses independent tosses with likelihoods 1/4 and 2/9. Keep the first coin selection uniform and first tosses independent of later trials, let the three fair-coin tosses share one fair bit, and keep biased-coin tosses independent. Then P(D|B)=0, P(D|not B)=2/9, P(D)=1/9>0, so P(B|D)=0. Both models have the printed coin marginals; independence is not supplied.",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]"
+      ]
+    },
+    "Q-2025F-MID-P10-a-i-E": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 21,
+      "label": "10(a)(i)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        22
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ],
+      "prompt_sha256": "6bfa2622d603f19dbb85054581024e90054cb424c404c18b3b12c3c1d6714aab",
+      "checkpoints": [
+        "21/6=7/2",
+        "每对和七"
+      ]
+    },
+    "Q-2025F-MID-P10-a-i-var": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 21,
+      "label": "10(a)(i)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        22
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ],
+      "prompt_sha256": "ba671db622922af3388a4ad4fee7cd1e12632f05bcf11e502d994e29aa25d230",
+      "checkpoints": [
+        "91/6-49/4",
+        "(182-147)/12=35/12"
+      ]
+    },
+    "Q-2025F-MID-P10-a-ii-E": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 21,
+      "label": "10(a)(ii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        22
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ],
+      "prompt_sha256": "b884ac4cdddb2be55a40ef5277d54f8cbf49a32e59c2932bd07d54253db2ae97",
+      "checkpoints": [
+        "7/2-2(7/2)+7/2=0",
+        "1-2+1=0"
+      ]
+    },
+    "Q-2025F-MID-P10-a-ii-var": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 21,
+      "label": "10(a)(ii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        22
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ],
+      "prompt_sha256": "0b5e3ed3e7901b004ab3cd64e1b33f1d3ad6acfa4037ad14ecca68abbe3f8c6c",
+      "checkpoints": [
+        "协方差项为零",
+        "(1+4+1)35/12",
+        "35/2"
+      ]
+    },
+    "Q-2025F-MID-P10-a-iii-E": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 21,
+      "label": "10(a)(iii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        22
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ],
+      "prompt_sha256": "04601b2fea3840df5c6496e051e7b96901ef87fa80e3c19d06fe5e284f1e8326",
+      "checkpoints": [
+        "50(7/2)-50(7/2)=0",
+        "五十个相邻差"
+      ]
+    },
+    "Q-2025F-MID-P10-a-iii-var": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 21,
+      "label": "10(a)(iii)",
+      "marks": null,
+      "status": "in-scope",
+      "solution_page": [
+        22
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ],
+      "prompt_sha256": "f05563ccd615ca24efeeeb1156ce363460433c188b84b9361178326d44c8bc22",
+      "checkpoints": [
+        "100\\cdot35/12",
+        "875/3",
+        "1750/6"
+      ]
+    },
+    "Q-2025F-MID-P10-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 22,
+      "label": "10(b)",
+      "marks": 4,
+      "status": "needs-review",
+      "reason_check": "Scenario 2 specifies fair marginals but no independence. Page 22 adds “we can assume the two die rolls are iid” and claims scenario 1 is higher. Independent dice give E(UV)=49/4<91/6, whereas perfectly coupled fair dice V=U give E(UV)=91/6, equal to scenario 1. Part (a)'s independence applies to its named X1,...,X100, not this newly introduced scenario. A non-strict universal inequality is derivable, but the requested strict comparison is underdetermined; no extra independence assumption is imported.",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ]
+    },
+    "Q-2025F-MID-P10-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "page": 23,
+      "label": "10(c)",
+      "marks": null,
+      "status": "needs-review",
+      "reason_check": "Page 23 contains only this orphaned answer fragment labeled (c); every page 1–26 was inspected and no corresponding problem statement or marks are printed. It suggests a first-ace expectation of 10.6, but the random shuffle experiment, deck and requested quantity are absent as a prompt. Do not invent a question from the answer. Kept as an answer-only unresolved atomic record, with no Question or Stem.",
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]"
+      ]
+    },
+    "Q-2025F-FINAL-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 3,
+      "label": "1(a)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        3,
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ],
+      "prompt_sha256": "e3a99342e58ab0438d54904862d4192165baa5584d4fcb8b18c7616c123884fd",
+      "checkpoints": [
+        "A=p\\land q",
+        "A\\lor(A\\land r)\\equiv A"
+      ]
+    },
+    "Q-2025F-FINAL-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 3,
+      "label": "1(b)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "prompt_sha256": "7741b20f6d3dab9b42405a3f527bdd6777e023e44e0132fe6116e2cec28d6477",
+      "checkpoints": [
+        "得 $r\\land q$",
+        "得 $s\\lor t$",
+        "disjunctive syllogism"
+      ]
+    },
+    "Q-2025F-FINAL-P01-c-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 3,
+      "label": "1(c)(i)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "0609cc36b98c628ce67a728c179468be1e1c26eb6ab03815bfc3350fbe1aa4fa",
+      "checkpoints": [
+        "s(x)\\to(c(x)\\lor m(x))",
+        "同时满足"
+      ]
+    },
+    "Q-2025F-FINAL-P01-c-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 3,
+      "label": "1(c)(ii)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ],
+      "prompt_sha256": "018e81731f10501616ca20a3cbcb829f53fc7294b14592835daa7e0b2d2d7611",
+      "checkpoints": [
+        "x\\ne y\\to\\neg Compare(x,y)",
+        "同分者而无人更高"
+      ]
+    },
+    "Q-2025F-FINAL-P02-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 5,
+      "label": "2(a)(i)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "e02f4b6277216ebe7ced262ad467868071411f00d815e58b1e84481d99ebcf55",
+      "checkpoints": [
+        "010101\\ldots",
+        "101010\\ldots",
+        "大小恰为二"
+      ]
+    },
+    "Q-2025F-FINAL-P02-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 5,
+      "label": "2(a)(ii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "3191de7a70e8356361bacf913b25d4d2d9a99a44c9b50b0decba060fe92a1318",
+      "checkpoints": [
+        "d_n=(s_n(n)+1)\\bmod3",
+        "d_n\\ne s_n(n)"
+      ]
+    },
+    "Q-2025F-FINAL-P02-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 5,
+      "label": "2(a)(iii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ],
+      "prompt_sha256": "b9293c0ed52f240b58537639d7552d8da0030b826a5dbde4ad6f7d900fdf6a6c",
+      "checkpoints": [
+        "f(s)=012s",
+        "012s\\ne012t",
+        "单射像也不可数"
+      ]
+    },
+    "Q-2025F-FINAL-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 5,
+      "label": "2(b)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "prompt_sha256": "be0e31bd8c9f506ad9487a0c50879a0c562a603626c604470e4f4a4d2040be8d",
+      "checkpoints": [
+        "2^5=32",
+        "恰分为十六个",
+        "它们互补"
+      ]
+    },
+    "Q-2025F-FINAL-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 5,
+      "label": "2(c)",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        5,
+        6
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]"
+      ],
+      "prompt_sha256": "4ff1792ba6b82a21b2e51ae96d17faa8b1ff3d92acd398ae2839149a8bb668b6",
+      "checkpoints": [
+        "0\\le r\\le k\\le n",
+        "其余 $n-r$ 人",
+        "同一对象一一对应"
+      ]
+    },
+    "Q-2025F-FINAL-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 7,
+      "label": "3(a)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "1c64912b11192cc964e8dee8c85797f8d1735d308ae5b8321cd008e8eaba4b09",
+      "checkpoints": [
+        "14!/2",
+        "13!/(14!/2)=2/14=1/7"
+      ]
+    },
+    "Q-2025F-FINAL-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 7,
+      "label": "3(b)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "8d6e8fc6d93eb5df78f11b9680e8d236ea146ca60e7cc897dd3fceef15198c55",
+      "checkpoints": [
+        "14-3=11",
+        "11\\cdot12!",
+        "11/91"
+      ]
+    },
+    "Q-2025F-FINAL-P03-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 7,
+      "label": "3(c)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "5793d24ca0cc8db08d2e3e9548d9c4cda645e9d74be9d1cfa10614371e3e175a",
+      "checkpoints": [
+        "14!/6",
+        "6\\cdot7\\cdot11!",
+        "3/26"
+      ]
+    },
+    "Q-2025F-FINAL-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 8,
+      "label": "4(a)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "cbdb0ba4f1553e1e6e74cfe5c0be5e45e3f99a4752127c427bc65f1f7111f5f3",
+      "checkpoints": [
+        "最前四位全是教师",
+        "\\binom{22}{12}12!4!6!"
+      ]
+    },
+    "Q-2025F-FINAL-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 8,
+      "label": "4(b)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "3073d227d6e04849b2fdd17aa49aee33d1ca1c0161383c9707ddc582a664ec31",
+      "checkpoints": [
+        "最后一位从六名医生中选",
+        "余下九人任意排列"
+      ]
+    },
+    "Q-2025F-FINAL-P04-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 8,
+      "label": "4(c)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "prompt_sha256": "2f86cc4d0d425a078f216e286c8357aa339fd03a9e52518da1ff9b2edcc45e80",
+      "checkpoints": [
+        "4\\cdot5\\cdot2=40",
+        "剩八个位置中最早一个必须是该区块",
+        "\\binom{21}{13}13!"
+      ]
+    },
+    "Q-2025F-FINAL-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 9,
+      "label": "5(a)",
+      "marks": 3,
+      "status": "needs-review",
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]"
+      ],
+      "prompt_sha256": "ac7664888d9618c893307e50b8e36841610f948179ddfca890b228e6fa974418",
+      "checkpoints": [
+        "P(N\\mid H)=0.8",
+        "0.4/0.85=8/17"
+      ]
+    },
+    "Q-2025F-FINAL-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 9,
+      "label": "5(b)",
+      "marks": 3,
+      "status": "needs-review",
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]"
+      ],
+      "prompt_sha256": "2e88a5e5f2ccb016ba013891393d27c809b839c3ee894104bcff83c35fe13d16",
+      "checkpoints": [
+        "P(J)=0.15",
+        "0.1/0.15=2/3"
+      ]
+    },
+    "Q-2025F-FINAL-P06": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 10,
+      "label": "6",
+      "marks": 8,
+      "status": "in-scope",
+      "solution_page": [
+        10,
+        11
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "prompt_sha256": "d31316e302b6472387e3c5f86fc8ad171db78a45c8b04daea121e5b0f76f5ce6",
+      "checkpoints": [
+        "M_1=20,M_2=15,M_3=12",
+        "211\\equiv31",
+        "一、一、三、一"
+      ]
+    },
+    "Q-2025F-FINAL-P07-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 12,
+      "label": "7(i)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Cryptography - 密码学]]"
+      ],
+      "prompt_sha256": "9fb52cdea4cebf990594c3cf6a1c0fdc76ebfd1079270816c793264773b5c2f4",
+      "checkpoints": [
+        "60=2^2\\cdot3\\cdot5",
+        "11,13,17,19"
+      ]
+    },
+    "Q-2025F-FINAL-P07-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 12,
+      "label": "7(ii)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Cryptography - 密码学]]"
+      ],
+      "prompt_sha256": "e5473a14cdaec9cfe54aece5e3d3dc1d5f7acf825f490fca88f3f622b3b18316",
+      "checkpoints": [
+        "60=8\\cdot7+4",
+        "2\\cdot60-17\\cdot7",
+        "301=5\\cdot60+1"
+      ]
+    },
+    "Q-2025F-FINAL-P07-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 12,
+      "label": "7(iii)",
+      "marks": 3,
+      "status": "in-scope",
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Cryptography - 密码学]]"
+      ],
+      "prompt_sha256": "2ba78bbaaab7ece0092965ab7d86312b0480b5656f9f948a74bf766b2f40226c",
+      "checkpoints": [
+        "3^4\\equiv9^2=81\\equiv4",
+        "7=4+2+1",
+        "108\\equiv31"
+      ]
+    },
+    "Q-2025F-FINAL-P08-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 13,
+      "label": "8(i)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "c0ade2f1c5658f19841b2050ac7a527ca8bc9f425467ad54f5324c3cbb10a56a",
+      "checkpoints": [
+        "n\\cdot n^2=n^3",
+        "1/n\\to0"
+      ]
+    },
+    "Q-2025F-FINAL-P08-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 13,
+      "label": "8(ii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "d57789247e5dd5d732ce053379092e4b397f30445597a0942f6d17bd790b92bf",
+      "checkpoints": [
+        "T_A(n)\\le Cn^3",
+        "T_B(n)\\ge cn^{3+\\epsilon}",
+        "n^{-\\epsilon}\\to0"
+      ]
+    },
+    "Q-2025F-FINAL-P08-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 13,
+      "label": "8(iii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "4e19d70ecf30a685bd24d7c10d5df2a7a51f0c444bb2f2606d5da20266ebf148",
+      "checkpoints": [
+        "T_A(n)\\ge c\\sqrt n",
+        "(\\log n)/\\sqrt n\\to0"
+      ]
+    },
+    "Q-2025F-FINAL-P08-iv": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 13,
+      "label": "8(iv)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "1eaeaaac84d816597859f76f97f1209b7ba0a83aa5abf81d79adcbd40725848b",
+      "checkpoints": [
+        "T_A=n^2,T_B=n^3",
+        "T_A=n^3,T_B=n^2",
+        "相反比较结果"
+      ]
+    },
+    "Q-2025F-FINAL-P08-v": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 13,
+      "label": "8(v)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "c6f59e20ecdb378bd9fbc7d04e23a99fb24897e91a71ef7c89fac46d12455bc7",
+      "checkpoints": [
+        "\\log(n!)=\\Theta(n\\log n)",
+        "T_B=\\Theta(n^3\\log n)",
+        "1/\\log n"
+      ]
+    },
+    "Q-2025F-FINAL-P09-a": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 14,
+      "label": "9(a)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        14,
+        15
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "56e7eee851c7549537531f68122eda80aacf62e916158965034850d16f386b92",
+      "checkpoints": [
+        "(3/16)^i",
+        "n^2(3/16)^k=3^k",
+        "3T(1)+16=19"
+      ]
+    },
+    "Q-2025F-FINAL-P09-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 14,
+      "label": "9(b)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        15,
+        16
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "prompt_sha256": "24605253f95eaf49b921d5cc0c8ee88baf9a76277e3b8c4dd7784c86ed3e12b0",
+      "checkpoints": [
+        "(16-3)/13=1",
+        "(256m^2-9m^c)/13",
+        "4^cm^c=3m^c"
+      ]
+    },
+    "Q-2025F-FINAL-P10-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 17,
+      "label": "10(i)",
+      "marks": 2,
+      "status": "in-scope",
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "prompt_sha256": "e5ba9b635ca3ba53dccd117b74984c7a1459d4c44430ea61778503584be2f87f",
+      "checkpoints": [
+        "a_n=2a_{n-1}-2",
+        "a_1=20-2=18"
+      ]
+    },
+    "Q-2025F-FINAL-P10-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 17,
+      "label": "10(ii)",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "prompt_sha256": "2b10c69d7b9e5e9c188b8275074cf6ee10ef222aeb017bb3cc39749d5ccdde87",
+      "checkpoints": [
+        "2^2a_{n-2}-2(2+1)",
+        "2^n-1",
+        "8\\cdot2^n+2"
+      ]
+    },
+    "Q-2025F-FINAL-P10-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 17,
+      "label": "10(iii)",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        18
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "prompt_sha256": "92a40ced36035510b64d45695e022467c498677a40ac19335e3c59458d21145c",
+      "checkpoints": [
+        "8\\cdot2^0+2=10",
+        "2(8\\cdot2^k+2)-2",
+        "8\\cdot2^{k+1}+2"
+      ]
+    },
+    "Q-2025F-FINAL-P11-a-i": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 19,
+      "label": "11(a)(i)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        19
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "c759780e0e56b8ecace3a7f782f23fb8251a1a4d071f4f1065a108526a4a3ff9",
+      "checkpoints": [
+        "奇数步后位于出发点的另一侧",
+        "单条边图"
+      ]
+    },
+    "Q-2025F-FINAL-P11-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 19,
+      "label": "11(a)(ii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        19
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "7de210cfcc3e4e43d7a14aab02d653ffd7655006145ed8946600001e8c08e89c",
+      "checkpoints": [
+        "8-6=2",
+        "8-3=5",
+        "一个三角形"
+      ]
+    },
+    "Q-2025F-FINAL-P11-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 19,
+      "label": "11(a)(iii)",
+      "marks": 1,
+      "status": "in-scope",
+      "solution_page": [
+        19
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "43232f6e1e8a407c644ac22748a4678b6b7166166c4d7c6c6be4ca4a194a0b79",
+      "checkpoints": [
+        "最长简单路径",
+        "10-k\\le9",
+        "十条边矛盾"
+      ]
+    },
+    "Q-2025F-FINAL-P11-b": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 19,
+      "label": "11(b)",
+      "marks": 4,
+      "status": "in-scope",
+      "solution_page": [
+        20
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "94b2062a79c3caddadcde9b0854e155b2a0b9db3dc3af3919c28ecc5ea9ca9f9",
+      "checkpoints": [
+        "AB,AC,BC",
+        "\\deg(A)=3,\\deg(B)=3,\\deg(C)=2",
+        "A --- D"
+      ]
+    },
+    "Q-2025F-FINAL-P11-c": {
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "page": 19,
+      "label": "11(c)",
+      "marks": 5,
+      "status": "in-scope",
+      "solution_page": [
+        20
+      ],
+      "answer_source": "official",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "prompt_sha256": "ee6026277ca7eda203133e8fc20ff85db48ee53cae46a55aef733f750767e6fc",
+      "checkpoints": [
+        "5\\cdot5+2\\cdot6+5\\cdot7+4=76",
+        "A:3,B:4,C:4,D:4,E:2,F:5,G:2,H:2",
+        "76+10=86",
+        "H,G,C,F,D,C,A,D,B,A,B,F,E,B,F,H"
+      ]
+    }
+  },
+  "stems": {
+    "STEM-2025S-MID-P02-b - Shared Problem Prompt": "01447e115b31ffdbe990bd51e42bdfb399dba31ecb6aaa7a4e5c1e7f6f7ed991",
+    "STEM-2025S-MID-P04 - Shared Problem Prompt": "451370b4092aaf8f710257ed069ec0a75f53f2ef178d51ab7c72d559c22af53e",
+    "STEM-2025S-FINAL-P01-a - Shared Problem Prompt": "12da81493411e3f17bca5b30526496ce892d533969cbf1091035d94e1c2e701d",
+    "STEM-2025S-FINAL-P03 - Shared Problem Prompt": "0cebbad37bd2c3b3456d6fa2a83bc033af025b13affd7bf22ad78c86b4d246ef",
+    "STEM-2025S-FINAL-P04 - Shared Problem Prompt": "e8da8afe196e81bbf188949381f2be94bf970032073c37d3faebf4833cf185ab",
+    "STEM-2025S-FINAL-P05-a - Shared Problem Prompt": "5c3bcaf37a403b88fe40c3233eb98dd5fb61f28d11bbc7bb1414d35208931919",
+    "STEM-2025S-FINAL-P07 - Shared Problem Prompt": "71acfb65932a1687fc4bc71a57e7ea59d52ef0e622415d5d3fc3c1f070f13444",
+    "STEM-2025S-FINAL-P12-a - Shared Problem Prompt": "920581de8e682cde6fde9b61709acdd516af16f690b220383cc9e901b9e9fe13",
+    "STEM-2025F-MID-P01 - Shared Problem Prompt": "ce748cfbb30bc8f815af7a0fe4ca8751d6562356c348ac131e76f97f0d697a30",
+    "STEM-2025F-MID-P02-a - Shared Problem Prompt": "b51b0208be64443d7218a3ceaf609ff692f0229c2fdc3f5c2c5f4c9c7a20130c",
+    "STEM-2025F-MID-P02-c - Shared Problem Prompt": "1f7812bc69b187ca9ecbc47b79b5e960cfcd829ddc1c355fc129f8edeaf3d897",
+    "STEM-2025F-MID-P03-c - Shared Problem Prompt": "660effc04ab979fc2031c94a3d7d7e6c7324117b5d0bb1b0e5d8a280b7139aeb",
+    "STEM-2025F-MID-P04-a - Shared Problem Prompt": "7499868479aeabda67fed9510cac672509d294cf14af37dd6a41ebf6c8b16705",
+    "STEM-2025F-MID-P04-c - Shared Problem Prompt": "c7aff5939686eebfdc710d4bf2f524c42689ffa2a3d4dadaa31fa069aeb71db8",
+    "STEM-2025F-MID-P10-a - Shared Problem Prompt": "3b37c503d5c11aa60e7e3fb069bece3f17cea927013a7fe496387b561d3bdc0d",
+    "STEM-2025F-MID-P10-a-ii - Shared Problem Prompt": "c88e4635bed52fa056989d8b89db822151c0d06f9dae010bd2e17defb29402ee",
+    "STEM-2025F-MID-P10-a-iii - Shared Problem Prompt": "125d6d6c8abff0293c06056d770c250e92993e291cef113537a28363f2ccc08f",
+    "STEM-2025F-FINAL-P01-c - Shared Problem Prompt": "69dd345a4ffdb8158940a272d16e630252a68ba883ae0713dc287841b2ae8258",
+    "STEM-2025F-FINAL-P02-a - Shared Problem Prompt": "a8d779f9fef9d6b69687ecff771c8e9f1a54701d8cdeecd035dcfb5245413d34",
+    "STEM-2025F-FINAL-P03 - Shared Problem Prompt": "0f99438e0e770f8d2fb498443c780831e603218a1aa8887e9b9cfcd8d4bf14ca",
+    "STEM-2025F-FINAL-P04 - Shared Problem Prompt": "a9ed234487c5e9aad8904d46888e3dea2a22ac70f67b3b3c1470461923291006",
+    "STEM-2025F-FINAL-P07 - Shared Problem Prompt": "34bf3540c01746de901ba36f008ade102b4fd0fcfdd7cd0d79ff9142ff5d9f49",
+    "STEM-2025F-FINAL-P08 - Shared Problem Prompt": "cbddf79be230e68a3768dc791c31370cebb7c81e0a9ff21796c80baf069769bf",
+    "STEM-2025F-FINAL-P10 - Shared Problem Prompt": "e226c6c1120bcd751ed7abcaf3112457ffcc9d12ece9e0ffc750789bec5be7e2",
+    "STEM-2025F-FINAL-P11-a - Shared Problem Prompt": "723d5e44c533aff7c84dd29ff7de4c48a94b6db387795eddda6fc6a16a5e3c8b"
+  },
+  "figures": {
+    "2025S-MID-P05-hbt.png": "1aa5e5d103deb4f784d24c06f53c3b82bd9d815b55ccd4967d4e33e73e427658",
+    "2025S-FINAL-P12-c-star.png": "a1a5b24836b3ead974a92b847fc3bd8052993c925636573488ed347c965f8ce7",
+    "2025F-MID-P04-b-roads.png": "ca68e90b83d21657f3f98ace179bcea36991399d776d6826905598a0ed5c0077",
+    "2025F-MID-P07-grid.png": "9335be75f9af12f934822f79f8327bd9ca914ac0b53bd914fb98a231b752d31c",
+    "2025F-FINAL-P11-c-weighted.png": "ab7184d39aa2746ddce3f030411f9c6b531a5691c522a54cf612f9b0b3769d39"
+  }
+}

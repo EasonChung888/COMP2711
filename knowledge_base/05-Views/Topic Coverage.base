@@ -1,0 +1,1437 @@
+filters:
+  and:
+    - 'file.inFolder("knowledge_base/04-Questions")'
+    - "note.note_type == \"question\""
+    - "note.syllabus_status == \"in-scope\""
+    - "note.verification_status == \"verified\""
+formulas:
+  title: "file.asLink(file.name.split(\" - \").slice(1).join(\" - \"))"
+properties:
+  note.id:
+    displayName: "ID"
+  formula.title:
+    displayName: "Title / 题目"
+  note.topics:
+    displayName: "Topics / 主题"
+  note.subtopics:
+    displayName: "Subtopics / 子主题"
+  note.concepts:
+    displayName: "Concepts / 概念"
+  note.difficulty:
+    displayName: "Difficulty / 难度"
+  note.year:
+    displayName: "Year / 年份"
+  note.methods:
+    displayName: "Methods / 方法"
+  note.question_types:
+    displayName: "Question type / 题型"
+  note.source_paper:
+    displayName: "Paper / 试卷"
+views:
+  -
+    type: "table"
+    name: "Topic and Subtopic Summary"
+    groupBy:
+      property: "note.topics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.subtopics"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.topics"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.difficulty"
+      - "note.year"
+  -
+    type: "table"
+    name: "CON-ALGORITHM-CORRECTNESS - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Algorithm Correctness - 算法正确性.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-ASYM - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Asymptotic Complexity - 渐近复杂度.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-BINOMIAL-COEFFICIENTS - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Binomial Coefficients - 二项式系数.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-BIPARTITE - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Bipartite Graphs - 二分图.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-COMB - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Combinatorial Selection - 组合选择.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-COND - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Conditional Probability - 条件概率.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-COUNTABILITY - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Countability - 可数性.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-COUNT - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Counting Principles - 计数原理.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-DERANGEMENTS - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Derangements - 错排.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-DIFFIE-HELLMAN - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Diffie-Hellman Key Exchange - 迪菲赫尔曼密钥交换.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-EULER - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Euler Trails - 欧拉通路.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-FUNC - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Functions - 函数.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-GEOMETRIC-DISTRIBUTION - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Geometric Distribution - 几何分布.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-GRAPH-COMPLEMENTS - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Graph Complements - 图的补图.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-GRAPH - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Graph Connectivity - 图连通性.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-INCLUSION-EXCLUSION - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Inclusion-Exclusion - 容斥原理.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-LOGEQ - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Logical Equivalence - 逻辑等价.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-IND - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Mathematical Induction - 数学归纳法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-MOD - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Modular Congruence - 同余.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-NONCROSSING-PAIRINGS - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Noncrossing Pairings - 不相交配对.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-OSCILLATING-BOUNDS - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Oscillating Asymptotic Bounds - 振荡函数渐近界.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-PRED - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Predicate Logic - 谓词逻辑.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-PRIME-FACTORIZATION-LCM - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Prime Factorization and LCM - 素因数分解与最小公倍数.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-PROB-EXISTENCE - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Probabilistic Existence - 概率存在性.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-PROB - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Probability Events - 概率事件.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-PROOF - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Proof Strategy - 证明策略.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-RSA - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/RSA Cryptosystem - RSA 密码系统.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-RV - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Random Variables - 随机变量.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-RANDOM-WALK-HITTING - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Random Walk Hitting Times - 随机游走到达时间.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-REC - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Recurrence Relations - 递推关系.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-RECURSIVE-STRUCTURES - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Recursive Structures - 递归结构.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-REFLECTION-BIJECTION - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Reflection Bijection - 反射双射.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "CON-SET-OPERATIONS - Questions"
+    filters: "note.concepts.contains(link(\"knowledge_base/01-Topics/Concepts/Set Operations - 集合运算.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-ALGORITHMS - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Algorithms - 算法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-BASIC-COUNTING - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Basic Counting - 基本计数.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-BINOMIAL-COEFFICIENTS - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Binomial Coefficients - 二项式系数.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-CONDITIONAL-PROBABILITY - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Conditional Probability - 条件概率.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-CRYPTOGRAPHY - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Cryptography - 密码学.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-GCDS-AND-CONGRUENCES - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - GCDs and Congruences - 最大公因数与同余.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-GRAPHS - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Graphs - 图论基础.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-INCLUSION-EXCLUSION - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Inclusion-Exclusion - 容斥原理.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-INDUCTION - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Induction - 数学归纳法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-INFERENCE-AND-PROOFS - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Inference and Proofs - 推理与证明.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-INTRODUCTION-TO-PROBABILITY - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Introduction to Probability - 概率基础.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-MODULAR-ARITHMETIC - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Modular Arithmetic - 模运算.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-PERMUTATIONS-AND-COMBINATIONS - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Permutations and Combinations - 排列与组合.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-PREDICATE-LOGIC - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Predicate Logic - 谓词逻辑.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-PROPOSITIONAL-LOGIC - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Propositional Logic - 命题逻辑.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-RANDOM-VARIABLES - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Random Variables - 随机变量.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-RECURSION - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Recursion - 递归.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "ST-SETS-AND-FUNCTIONS - Questions"
+    filters: "note.subtopics.contains(link(\"knowledge_base/01-Topics/Subtopic - Sets and Functions - 集合与函数.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-ALGORITHMS - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Algorithms - 算法.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-COUNTING - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Counting - 计数.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-GRAPHS - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Graphs - 图论.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-INDUCTION-AND-RECURSION - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Induction and Recursion - 归纳与递归.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-LOGIC - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Logic - 逻辑.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-NUMBER-THEORY - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Number Theory - 数论.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-PROBABILITY - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Probability - 概率.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "T-SETS-AND-FUNCTIONS - Questions"
+    filters: "note.topics.contains(link(\"knowledge_base/01-Topics/Topic - Sets and Functions - 集合与函数.md\"))"
+    groupBy:
+      property: "note.subtopics"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"

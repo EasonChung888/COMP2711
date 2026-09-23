@@ -1,0 +1,963 @@
+- generic [active] [ref=f1e1]:
+  - link "跳到正文" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "COMP2711 · L2.5" [ref=f1e5] [cursor=pointer]:
+        - /url: ../index.html
+      - navigation "课程资源" [ref=f1e6]:
+        - link "课程目录" [ref=f1e7] [cursor=pointer]:
+          - /url: ../index.html#topics
+        - link "课件页码索引" [ref=f1e8] [cursor=pointer]:
+          - /url: ../source-map.html
+  - main [ref=f1e9]:
+    - paragraph [ref=f1e10]:
+      - link "计数基础" [ref=f1e11] [cursor=pointer]:
+        - /url: ../index.html
+      - text: / 广义鸽巢原理与最小保证
+    - generic [ref=f1e12]:
+      - generic [ref=f1e13]:
+        - heading "广义鸽巢原理与最小保证" [level=1] [ref=f1e14]
+        - paragraph [ref=f1e15]: 计算人数、扑克牌、袜子与电话号码的保证门槛。
+      - generic [ref=f1e16]: 5 页讲解3 道练习
+    - navigation "本课页码" [ref=f1e17]:
+      - list [ref=f1e18]:
+        - listitem [ref=f1e19]:
+          - link "第 34 页" [ref=f1e20] [cursor=pointer]:
+            - /url: "#slide-34"
+        - listitem [ref=f1e21]:
+          - link "第 35 页" [ref=f1e22] [cursor=pointer]:
+            - /url: "#slide-35"
+        - listitem [ref=f1e23]:
+          - link "第 36 页" [ref=f1e24] [cursor=pointer]:
+            - /url: "#slide-36"
+        - listitem [ref=f1e25]:
+          - link "第 37 页" [ref=f1e26] [cursor=pointer]:
+            - /url: "#slide-37"
+        - listitem [ref=f1e27]:
+          - link "第 38 页" [ref=f1e28] [cursor=pointer]:
+            - /url: "#slide-38"
+        - listitem [ref=f1e29]:
+          - link "课后练习" [ref=f1e30] [cursor=pointer]:
+            - /url: "#practice"
+    - generic [ref=f1e31]:
+      - generic [ref=f1e32]:
+        - generic [ref=f1e33]: 课件第 34 页
+        - link "讲解原文" [ref=f1e34] [cursor=pointer]:
+          - /url: ../responses/34.md
+      - group [ref=f1e35]:
+        - generic "查看这一页课件" [ref=f1e36] [cursor=pointer]
+      - generic [ref=f1e37]:
+        - heading "广义鸽巢原理：至少有一个盒子达到平均数的向上取整" [level=1] [ref=f1e38]
+        - paragraph [ref=f1e39]:
+          - text: 普通鸽巢原理保证某个盒子里至少有两个对象。**Generalized Pigeonhole Principle（广义鸽巢原理）**进一步给出数量下界：把
+          - generic [ref=f1e40]:
+            - math [ref=f1e42]:
+              - generic [ref=f1e43]: "n"
+            - generic [ref=f1e47]: "n"
+          - text: 个对象放进
+          - generic [ref=f1e48]:
+            - math [ref=f1e50]:
+              - generic [ref=f1e51]: k
+            - generic [ref=f1e55]: k
+          - text: 个盒子，至少有一个盒子包含不少于
+        - paragraph [ref=f1e56]:
+          - generic [ref=f1e58]:
+            - math [ref=f1e60]:
+              - generic [ref=f1e62]:
+                - generic [ref=f1e63]: ⌈
+                - generic [ref=f1e64]:
+                  - generic [ref=f1e65]: "n"
+                  - generic [ref=f1e66]: k
+                - generic [ref=f1e67]: ⌉
+            - generic [ref=f1e70]:
+              - generic [ref=f1e71]: ⌈
+              - generic [ref=f1e76]:
+                - generic [ref=f1e77]: k
+                - generic [ref=f1e79]: "n"
+              - generic [ref=f1e83]: ⌉
+        - paragraph [ref=f1e84]:
+          - text: 个对象。课件讨论
+          - generic [ref=f1e85]:
+            - math [ref=f1e87]:
+              - generic [ref=f1e89]:
+                - generic [ref=f1e90]: "n"
+                - generic [ref=f1e91]: ">"
+                - generic [ref=f1e92]: k
+            - generic [aria-hidden] [ref=f1e93]:
+              - generic [ref=f1e94]: n >
+              - generic [ref=f1e95]: k
+          - text: 的情况，盒子数
+          - generic [ref=f1e96]:
+            - math [ref=f1e98]:
+              - generic [ref=f1e99]: k
+            - generic [ref=f1e103]: k
+          - text: 必须为正整数。
+        - paragraph [ref=f1e104]:
+          - text: 符号
+          - generic [ref=f1e105]:
+            - math [ref=f1e107]:
+              - generic [ref=f1e109]:
+                - generic [ref=f1e110]: ⌈
+                - generic [ref=f1e111]: x
+                - generic [ref=f1e112]: ⌉
+            - generic [ref=f1e114]: ⌈x⌉
+          - text: 表示向上取整，即不小于
+          - generic [ref=f1e115]:
+            - math [ref=f1e117]:
+              - generic [ref=f1e118]: x
+            - generic [ref=f1e122]: x
+          - text: 的最小整数。例如
+          - generic [ref=f1e123]:
+            - math [ref=f1e125]:
+              - generic [ref=f1e127]:
+                - generic [ref=f1e128]: ⌈
+                - generic [ref=f1e129]: "10"
+                - generic [ref=f1e130]: /
+                - generic [ref=f1e131]: "3"
+                - generic [ref=f1e132]: ⌉
+                - generic [ref=f1e133]: =
+                - generic [ref=f1e134]: "4"
+            - generic [aria-hidden] [ref=f1e135]:
+              - generic [ref=f1e136]: ⌈10/3⌉ =
+              - generic [ref=f1e137]: "4"
+          - text: ，而
+          - generic [ref=f1e138]:
+            - math [ref=f1e140]:
+              - generic [ref=f1e142]:
+                - generic [ref=f1e143]: ⌈
+                - generic [ref=f1e144]: "12"
+                - generic [ref=f1e145]: /
+                - generic [ref=f1e146]: "3"
+                - generic [ref=f1e147]: ⌉
+                - generic [ref=f1e148]: =
+                - generic [ref=f1e149]: "4"
+            - generic [aria-hidden] [ref=f1e150]:
+              - generic [ref=f1e151]: ⌈12/3⌉ =
+              - generic [ref=f1e152]: "4"
+          - text: ，整数不会再额外加 1。
+        - paragraph [ref=f1e153]:
+          - text: 直观上，
+          - generic [ref=f1e154]:
+            - math [ref=f1e156]:
+              - generic [ref=f1e158]:
+                - generic [ref=f1e159]: "n"
+                - generic [ref=f1e160]: /
+                - generic [ref=f1e161]: k
+            - generic [ref=f1e163]: n/k
+          - text: 是每个盒子的平均对象数，至少有一个盒子不能低于这个平均数；对象数量又必须是整数，因此得到向上取整。
+        - paragraph [ref=f1e164]:
+          - text: 课件用反证法。令
+          - generic [ref=f1e165]:
+            - math [ref=f1e167]:
+              - generic [ref=f1e169]:
+                - generic [ref=f1e170]: q
+                - generic [ref=f1e171]: =
+                - generic [ref=f1e172]: ⌈
+                - generic [ref=f1e173]: "n"
+                - generic [ref=f1e174]: /
+                - generic [ref=f1e175]: k
+                - generic [ref=f1e176]: ⌉
+            - generic [aria-hidden] [ref=f1e177]:
+              - generic [ref=f1e178]: q =
+              - generic [ref=f1e179]: ⌈n/k⌉
+          - text: 。假设没有任何盒子含至少
+          - generic [ref=f1e180]:
+            - math [ref=f1e182]:
+              - generic [ref=f1e183]: q
+            - generic [ref=f1e187]: q
+          - text: 个对象，那么每个盒子至多有
+          - generic [ref=f1e188]:
+            - math [ref=f1e190]:
+              - generic [ref=f1e192]:
+                - generic [ref=f1e193]: q
+                - generic [ref=f1e194]: −
+                - generic [ref=f1e195]: "1"
+            - generic [aria-hidden] [ref=f1e196]:
+              - generic [ref=f1e197]: q −
+              - generic [ref=f1e198]: "1"
+          - text: 个，总数至多为
+          - generic [ref=f1e199]:
+            - math [ref=f1e201]:
+              - generic [ref=f1e203]:
+                - generic [ref=f1e204]: k
+                - generic [ref=f1e205]: (
+                - generic [ref=f1e206]: q
+                - generic [ref=f1e207]: −
+                - generic [ref=f1e208]: "1"
+                - generic [ref=f1e209]: )
+            - generic [aria-hidden] [ref=f1e210]:
+              - generic [ref=f1e211]: k(q −
+              - generic [ref=f1e212]: 1)
+          - text: 。
+        - paragraph [ref=f1e213]:
+          - text: 根据向上取整的定义，
+          - generic [ref=f1e214]:
+            - math [ref=f1e216]:
+              - generic [ref=f1e218]:
+                - generic [ref=f1e219]: q
+                - generic [ref=f1e220]: −
+                - generic [ref=f1e221]: "1"
+                - generic [ref=f1e222]: <
+                - generic [ref=f1e223]: "n"
+                - generic [ref=f1e224]: /
+                - generic [ref=f1e225]: k
+            - generic [aria-hidden] [ref=f1e226]:
+              - generic [ref=f1e227]: q −
+              - generic [ref=f1e228]: 1 <
+              - generic [ref=f1e229]: n/k
+          - text: 。两边乘以正数
+          - generic [ref=f1e230]:
+            - math [ref=f1e232]:
+              - generic [ref=f1e233]: k
+            - generic [ref=f1e237]: k
+          - text: ：
+        - paragraph [ref=f1e238]:
+          - generic [ref=f1e240]:
+            - math [ref=f1e242]:
+              - generic [ref=f1e244]:
+                - generic [ref=f1e245]: k
+                - generic [ref=f1e246]: (
+                - generic [ref=f1e247]: q
+                - generic [ref=f1e248]: −
+                - generic [ref=f1e249]: "1"
+                - generic [ref=f1e250]: )
+                - generic [ref=f1e251]: <
+                - generic [ref=f1e252]: "n"
+                - generic [ref=f1e253]: .
+            - generic [aria-hidden] [ref=f1e254]:
+              - generic [ref=f1e255]: k(q −
+              - generic [ref=f1e256]: 1) <
+              - generic [ref=f1e257]: n.
+        - paragraph [ref=f1e258]:
+          - text: 这意味着所有盒子加起来装不下已知的
+          - generic [ref=f1e259]:
+            - math [ref=f1e261]:
+              - generic [ref=f1e262]: "n"
+            - generic [ref=f1e266]: "n"
+          - text: 个对象，产生矛盾，所以至少有一个盒子含
+          - generic [ref=f1e267]:
+            - math [ref=f1e269]:
+              - generic [ref=f1e270]: q
+            - generic [ref=f1e274]: q
+          - text: 个或更多对象。
+        - paragraph [ref=f1e275]: 例如把 10 个对象放进 3 个盒子：如果每个最多 3 个，只能放 9 个，因此有一个至少 4 个。这里保证的是“存在一个盒子至少有 4 个”，并不是说每个盒子都有 4 个，也不一定恰好是 4 个。
+      - generic [ref=f1e276] [cursor=pointer]:
+        - checkbox "我已读完这一页" [ref=f1e277]
+        - text: 我已读完这一页
+    - generic [ref=f1e278]:
+      - generic [ref=f1e279]:
+        - generic [ref=f1e280]: 课件第 35 页
+        - link "讲解原文" [ref=f1e281] [cursor=pointer]:
+          - /url: ../responses/35.md
+      - group [ref=f1e282]:
+        - generic "查看这一页课件" [ref=f1e283] [cursor=pointer]
+      - generic [ref=f1e284]:
+        - heading "已知人数求下界，或反过来求最少人数" [level=1] [ref=f1e285]
+        - paragraph [ref=f1e286]: 第一个例子把 100 个人按出生月份分入 12 个盒子。根据广义鸽巢原理，至少有一个月份包含：
+        - paragraph [ref=f1e287]:
+          - generic [ref=f1e289]:
+            - math [ref=f1e291]:
+              - generic [ref=f1e293]:
+                - generic [ref=f1e294]:
+                  - generic [ref=f1e295]: ⌈
+                  - generic [ref=f1e296]:
+                    - generic [ref=f1e297]: "100"
+                    - generic [ref=f1e298]: "12"
+                  - generic [ref=f1e299]: ⌉
+                - generic [ref=f1e300]: =
+                - generic [ref=f1e301]: "9"
+            - generic [aria-hidden] [ref=f1e302]:
+              - generic [ref=f1e303]:
+                - generic [ref=f1e304]:
+                  - generic [ref=f1e305]: ⌈
+                  - generic [ref=f1e310]:
+                    - generic [ref=f1e311]: "12"
+                    - generic [ref=f1e313]: "100"
+                  - generic [ref=f1e317]: ⌉
+                - text: =
+              - generic [ref=f1e318]: "9"
+        - paragraph [ref=f1e319]:
+          - text: 个人。因为
+          - generic [ref=f1e320]:
+            - math [ref=f1e322]:
+              - generic [ref=f1e324]:
+                - generic [ref=f1e325]: "100"
+                - generic [ref=f1e326]: /
+                - generic [ref=f1e327]: "12"
+            - generic [ref=f1e329]: 100/12
+          - text: 大约是 8.33，若所有月份都最多 8 人，只能容纳
+          - generic [ref=f1e330]:
+            - math [ref=f1e332]:
+              - generic [ref=f1e334]:
+                - generic [ref=f1e335]: "12"
+                - generic [ref=f1e336]: ×
+                - generic [ref=f1e337]: "8"
+                - generic [ref=f1e338]: =
+                - generic [ref=f1e339]: "96"
+            - generic [aria-hidden] [ref=f1e340]:
+              - generic [ref=f1e341]: 12 ×
+              - generic [ref=f1e342]: 8 =
+              - generic [ref=f1e343]: "96"
+          - text: 人，不足 100 人。
+        - paragraph [ref=f1e344]:
+          - text: 接下来课件讨论反向问题：有
+          - generic [ref=f1e345]:
+            - math [ref=f1e347]:
+              - generic [ref=f1e348]: k
+            - generic [ref=f1e352]: k
+          - text: 个盒子，要保证至少一个盒子达到
+          - generic [ref=f1e353]:
+            - math [ref=f1e355]:
+              - generic [ref=f1e356]: g
+            - generic [ref=f1e360]: g
+          - text: 个对象，最少需要多少对象？
+        - paragraph [ref=f1e361]:
+          - text: 先考虑“还没有达到目标”时最多能放多少。每个盒子最多放
+          - generic [ref=f1e362]:
+            - math [ref=f1e364]:
+              - generic [ref=f1e366]:
+                - generic [ref=f1e367]: g
+                - generic [ref=f1e368]: −
+                - generic [ref=f1e369]: "1"
+            - generic [aria-hidden] [ref=f1e370]:
+              - generic [ref=f1e371]: g −
+              - generic [ref=f1e372]: "1"
+          - text: 个，
+          - generic [ref=f1e373]:
+            - math [ref=f1e375]:
+              - generic [ref=f1e376]: k
+            - generic [ref=f1e380]: k
+          - text: 个盒子共能放：
+        - paragraph [ref=f1e381]:
+          - generic [ref=f1e383]:
+            - math [ref=f1e385]:
+              - generic [ref=f1e387]:
+                - generic [ref=f1e388]: k
+                - generic [ref=f1e389]: (
+                - generic [ref=f1e390]: g
+                - generic [ref=f1e391]: −
+                - generic [ref=f1e392]: "1"
+                - generic [ref=f1e393]: )
+                - generic [ref=f1e394]: .
+            - generic [aria-hidden] [ref=f1e395]:
+              - generic [ref=f1e396]: k(g −
+              - generic [ref=f1e397]: 1).
+        - paragraph [ref=f1e398]:
+          - text: 这时仍然可能没有任何盒子达到
+          - generic [ref=f1e399]:
+            - math [ref=f1e401]:
+              - generic [ref=f1e402]: g
+            - generic [ref=f1e406]: g
+          - text: 。再加入一个对象，不管放在哪个盒子，总有一个盒子必须达到目标，因此最小保证数量是：
+        - paragraph [ref=f1e407]:
+          - generic [ref=f1e409]:
+            - math [ref=f1e411]:
+              - generic [ref=f1e413]:
+                - generic [ref=f1e414]:
+                  - generic [ref=f1e415]: "n"
+                  - generic [ref=f1e416]: min
+                  - generic: ⁡
+                - generic [ref=f1e417]: =
+                - generic [ref=f1e418]: k
+                - generic [ref=f1e419]: (
+                - generic [ref=f1e420]: g
+                - generic [ref=f1e421]: −
+                - generic [ref=f1e422]: "1"
+                - generic [ref=f1e423]: )
+                - generic [ref=f1e424]: +
+                - generic [ref=f1e425]: "1."
+            - generic [aria-hidden] [ref=f1e426]:
+              - generic [ref=f1e427]:
+                - generic [ref=f1e428]:
+                  - text: "n"
+                  - generic [ref=f1e429]: min
+                - text: =
+              - generic [ref=f1e439]: k(g −
+              - generic [ref=f1e440]: 1) +
+              - generic [ref=f1e441]: "1."
+        - paragraph [ref=f1e442]:
+          - text: 本页例子有 5 种成绩等级，要保证至少 6 名学生获得同一等级。代入
+          - generic [ref=f1e443]:
+            - math [ref=f1e445]:
+              - generic [ref=f1e447]:
+                - generic [ref=f1e448]: k
+                - generic [ref=f1e449]: =
+                - generic [ref=f1e450]: "5"
+                - generic [ref=f1e451]: ","
+                - generic [ref=f1e452]: g
+                - generic [ref=f1e453]: =
+                - generic [ref=f1e454]: "6"
+            - generic [aria-hidden] [ref=f1e455]:
+              - generic [ref=f1e456]: k =
+              - generic [ref=f1e457]: 5, g =
+              - generic [ref=f1e458]: "6"
+          - text: ：
+        - paragraph [ref=f1e459]:
+          - generic [ref=f1e461]:
+            - math [ref=f1e463]:
+              - generic [ref=f1e465]:
+                - generic [ref=f1e466]:
+                  - generic [ref=f1e467]: "n"
+                  - generic [ref=f1e468]: min
+                  - generic: ⁡
+                - generic [ref=f1e469]: =
+                - generic [ref=f1e470]: "5"
+                - generic [ref=f1e471]: (
+                - generic [ref=f1e472]: "6"
+                - generic [ref=f1e473]: −
+                - generic [ref=f1e474]: "1"
+                - generic [ref=f1e475]: )
+                - generic [ref=f1e476]: +
+                - generic [ref=f1e477]: "1"
+                - generic [ref=f1e478]: =
+                - generic [ref=f1e479]: "26."
+            - generic [aria-hidden] [ref=f1e480]:
+              - generic [ref=f1e481]:
+                - generic [ref=f1e482]:
+                  - text: "n"
+                  - generic [ref=f1e483]: min
+                - text: =
+              - generic [ref=f1e493]: 5(6 −
+              - generic [ref=f1e494]: 1) +
+              - generic [ref=f1e495]: 1 =
+              - generic [ref=f1e496]: "26."
+        - paragraph [ref=f1e497]: 25 人不够保证，因为可能每个等级恰有 5 人；26 人则必然有某个等级至少 6 人。这同时证明了“26 足够”和“更少不一定足够”，所以答案确实是最小值。
+        - paragraph [ref=f1e498]:
+          - text: 课件用寻找最小
+          - generic [ref=f1e499]:
+            - math [ref=f1e501]:
+              - generic [ref=f1e502]: "n"
+            - generic [ref=f1e506]: "n"
+          - text: 使
+          - generic [ref=f1e507]:
+            - math [ref=f1e509]:
+              - generic [ref=f1e511]:
+                - generic [ref=f1e512]: ⌈
+                - generic [ref=f1e513]: "n"
+                - generic [ref=f1e514]: /
+                - generic [ref=f1e515]: k
+                - generic [ref=f1e516]: ⌉
+                - generic [ref=f1e517]: =
+                - generic [ref=f1e518]: g
+            - generic [aria-hidden] [ref=f1e519]:
+              - generic [ref=f1e520]: ⌈n/k⌉ =
+              - generic [ref=f1e521]: g
+          - text: 来表达门槛。更一般的保证条件是
+          - generic [ref=f1e522]:
+            - math [ref=f1e524]:
+              - generic [ref=f1e526]:
+                - generic [ref=f1e527]: ⌈
+                - generic [ref=f1e528]: "n"
+                - generic [ref=f1e529]: /
+                - generic [ref=f1e530]: k
+                - generic [ref=f1e531]: ⌉
+                - generic [ref=f1e532]: ≥
+                - generic [ref=f1e533]: g
+            - generic [aria-hidden] [ref=f1e534]:
+              - generic [ref=f1e535]: ⌈n/k⌉ ≥
+              - generic [ref=f1e536]: g
+          - text: ；在刚达到最小门槛时，等号成立。注意不是
+          - generic [ref=f1e537]:
+            - math [ref=f1e539]:
+              - generic [ref=f1e541]:
+                - generic [ref=f1e542]: k
+                - generic [ref=f1e543]: g
+                - generic [ref=f1e544]: +
+                - generic [ref=f1e545]: "1"
+            - generic [aria-hidden] [ref=f1e546]:
+              - generic [ref=f1e547]: kg +
+              - generic [ref=f1e548]: "1"
+          - text: ，因为最坏情况下应先让每盒停在目标前的
+          - generic [ref=f1e549]:
+            - math [ref=f1e551]:
+              - generic [ref=f1e553]:
+                - generic [ref=f1e554]: g
+                - generic [ref=f1e555]: −
+                - generic [ref=f1e556]: "1"
+            - generic [aria-hidden] [ref=f1e557]:
+              - generic [ref=f1e558]: g −
+              - generic [ref=f1e559]: "1"
+          - text: 个。
+      - generic [ref=f1e560] [cursor=pointer]:
+        - checkbox "我已读完这一页" [ref=f1e561]
+        - text: 我已读完这一页
+    - generic [ref=f1e562]:
+      - generic [ref=f1e563]:
+        - generic [ref=f1e564]: 课件第 36 页
+        - link "讲解原文" [ref=f1e565] [cursor=pointer]:
+          - /url: ../responses/36.md
+      - group [ref=f1e566]:
+        - generic "查看这一页课件" [ref=f1e567] [cursor=pointer]
+      - generic [ref=f1e568]:
+        - heading "任意一种花色与指定红桃，保证条件不同" [level=1] [ref=f1e569]
+        - paragraph [ref=f1e570]: 标准 52 张扑克牌有 4 种花色，每种 13 张，不含大小王。题目默认从牌堆中选出不同的牌，不放回。
+        - paragraph [ref=f1e571]:
+          - strong [ref=f1e572]: 第一问：至少抽多少张，才能保证某一种花色有至少 3 张？
+          - text: 把选出的牌当作对象，4 种花色当作盒子。为了尽量避免出现三张同花色，可以让每种花色先各有 2 张，共
+          - generic [ref=f1e573]:
+            - math [ref=f1e575]:
+              - generic [ref=f1e577]:
+                - generic [ref=f1e578]: "4"
+                - generic [ref=f1e579]: ×
+                - generic [ref=f1e580]: "2"
+                - generic [ref=f1e581]: =
+                - generic [ref=f1e582]: "8"
+            - generic [aria-hidden] [ref=f1e583]:
+              - generic [ref=f1e584]: 4 ×
+              - generic [ref=f1e585]: 2 =
+              - generic [ref=f1e586]: "8"
+          - text: 张。第 9 张无论是什么花色，都会使某种花色达到至少 3 张。
+        - paragraph [ref=f1e587]: 因此最少需要：
+        - paragraph [ref=f1e588]:
+          - generic [ref=f1e590]:
+            - math [ref=f1e592]:
+              - generic [ref=f1e594]:
+                - generic [ref=f1e595]: "4"
+                - generic [ref=f1e596]: (
+                - generic [ref=f1e597]: "3"
+                - generic [ref=f1e598]: −
+                - generic [ref=f1e599]: "1"
+                - generic [ref=f1e600]: )
+                - generic [ref=f1e601]: +
+                - generic [ref=f1e602]: "1"
+                - generic [ref=f1e603]: =
+                - generic [ref=f1e604]: "9"
+                - generic [ref=f1e605]: 张
+                - generic [ref=f1e606]: .
+            - generic [aria-hidden] [ref=f1e607]:
+              - generic [ref=f1e608]: 4(3 −
+              - generic [ref=f1e609]: 1) +
+              - generic [ref=f1e610]: 1 =
+              - generic [ref=f1e611]:
+                - text: "9"
+                - generic [ref=f1e612]: 张
+                - text: .
+        - paragraph [ref=f1e613]: 8 张仍可分成每种花色 2 张，所以 9 不仅足够，也是最小保证数量。
+        - paragraph [ref=f1e614]:
+          - strong [ref=f1e615]: 第二问：至少抽多少张，才能保证有至少 3 张红桃？
+          - text: 这次目标花色已经指定，不能只保证“某一种花色”很多。最坏情况下，可以先抽完所有非红桃：梅花、方块、黑桃各 13 张，共 39 张。
+        - paragraph [ref=f1e616]: 再抽 2 张红桃时，共有 41 张，仍未达到三张红桃。第 42 张才必然使红桃至少有 3 张。因此：
+        - paragraph [ref=f1e617]:
+          - generic [ref=f1e619]:
+            - math [ref=f1e621]:
+              - generic [ref=f1e623]:
+                - generic [ref=f1e624]: "39"
+                - generic [ref=f1e625]: +
+                - generic [ref=f1e626]: "3"
+                - generic [ref=f1e627]: =
+                - generic [ref=f1e628]: "42"
+                - generic [ref=f1e629]: 张
+                - generic [ref=f1e630]: .
+            - generic [aria-hidden] [ref=f1e631]:
+              - generic [ref=f1e632]: 39 +
+              - generic [ref=f1e633]: 3 =
+              - generic [ref=f1e634]:
+                - text: "42"
+                - generic [ref=f1e635]: 张
+                - text: .
+        - paragraph [ref=f1e636]:
+          - text: 也可以直接说明：任何 42 张牌中，非红桃最多 39 张，所以红桃至少有
+          - generic [ref=f1e637]:
+            - math [ref=f1e639]:
+              - generic [ref=f1e641]:
+                - generic [ref=f1e642]: "42"
+                - generic [ref=f1e643]: −
+                - generic [ref=f1e644]: "39"
+                - generic [ref=f1e645]: =
+                - generic [ref=f1e646]: "3"
+            - generic [aria-hidden] [ref=f1e647]:
+              - generic [ref=f1e648]: 42 −
+              - generic [ref=f1e649]: 39 =
+              - generic [ref=f1e650]: "3"
+          - text: 张。
+        - paragraph [ref=f1e651]:
+          - text: 9 张可能全是黑桃，因此第一问的答案绝不能直接用于第二问。区别在于第一问只要求
+          - strong [ref=f1e652]: 存在一种花色
+          - text: 满足条件，第二问要求
+          - strong [ref=f1e653]: 红桃这一指定类别
+          - text: 满足条件。两题都可以从“目标尚未发生时，最多容纳多少张”来思考。
+      - generic [ref=f1e654] [cursor=pointer]:
+        - checkbox "我已读完这一页" [ref=f1e655]
+        - text: 我已读完这一页
+    - generic [ref=f1e656]:
+      - generic [ref=f1e657]:
+        - generic [ref=f1e658]: 课件第 37 页
+        - link "讲解原文" [ref=f1e659] [cursor=pointer]:
+          - /url: ../responses/37.md
+      - group [ref=f1e660]:
+        - generic "查看这一页课件" [ref=f1e661] [cursor=pointer]
+      - generic [ref=f1e662]:
+        - heading "摸袜子：保证同色一双与保证白色一双" [level=1] [ref=f1e663]
+        - paragraph [ref=f1e664]:
+          - text: 抽屉里有 100 只黑袜子和 100 只白袜子，摸取时看不见颜色，每取出一只就不放回。题目中的
+          - strong [ref=f1e665]: ENSURE
+          - text: 表示保证：即使出现最不利的取出顺序，也必须满足目标。
+        - paragraph [ref=f1e666]:
+          - strong [ref=f1e667]: 要保证两只同色，最少取 3 只。
+          - text: 对象是取出的袜子，盒子是黑色、白色两种颜色。取两只时可能一黑一白，尚未同色；第三只无论是什么颜色，都能与前两只中的一只同色。
+        - paragraph [ref=f1e668]: 用公式表示就是：
+        - paragraph [ref=f1e669]:
+          - generic [ref=f1e671]:
+            - math [ref=f1e673]:
+              - generic [ref=f1e675]:
+                - generic [ref=f1e676]: "2"
+                - generic [ref=f1e677]: (
+                - generic [ref=f1e678]: "2"
+                - generic [ref=f1e679]: −
+                - generic [ref=f1e680]: "1"
+                - generic [ref=f1e681]: )
+                - generic [ref=f1e682]: +
+                - generic [ref=f1e683]: "1"
+                - generic [ref=f1e684]: =
+                - generic [ref=f1e685]: "3."
+            - generic [aria-hidden] [ref=f1e686]:
+              - generic [ref=f1e687]: 2(2 −
+              - generic [ref=f1e688]: 1) +
+              - generic [ref=f1e689]: 1 =
+              - generic [ref=f1e690]: "3."
+        - paragraph [ref=f1e691]:
+          - text: 也可以直接用广义鸽巢原理：
+          - generic [ref=f1e692]:
+            - math [ref=f1e694]:
+              - generic [ref=f1e696]:
+                - generic [ref=f1e697]: ⌈
+                - generic [ref=f1e698]: "3"
+                - generic [ref=f1e699]: /
+                - generic [ref=f1e700]: "2"
+                - generic [ref=f1e701]: ⌉
+                - generic [ref=f1e702]: =
+                - generic [ref=f1e703]: "2"
+            - generic [aria-hidden] [ref=f1e704]:
+              - generic [ref=f1e705]: ⌈3/2⌉ =
+              - generic [ref=f1e706]: "2"
+          - text: ，所以必有一种颜色至少出现两次。
+        - paragraph [ref=f1e707]:
+          - strong [ref=f1e708]: 要保证两只白色，最少取 102 只。
+          - text: 这次不能依赖“某个颜色重复”，因为重复的可能一直是黑色。最不利的顺序是先拿到 100 只黑袜，再拿到白袜。
+        - paragraph [ref=f1e709]: 取 101 只时，仍可能是 100 黑加 1 白，不够两只白色。取 102 只时，因为黑袜最多只有 100 只，所以白袜至少有：
+        - paragraph [ref=f1e710]:
+          - generic [ref=f1e712]:
+            - math [ref=f1e714]:
+              - generic [ref=f1e716]:
+                - generic [ref=f1e717]: "102"
+                - generic [ref=f1e718]: −
+                - generic [ref=f1e719]: "100"
+                - generic [ref=f1e720]: =
+                - generic [ref=f1e721]: "2"
+                - generic [ref=f1e722]: 只
+                - generic [ref=f1e723]: .
+            - generic [aria-hidden] [ref=f1e724]:
+              - generic [ref=f1e725]: 102 −
+              - generic [ref=f1e726]: 100 =
+              - generic [ref=f1e727]:
+                - text: "2"
+                - generic [ref=f1e728]: 只
+                - text: .
+        - paragraph [ref=f1e729]: 因此 102 足够，101 不保证，最小值是 102。
+        - paragraph [ref=f1e730]: 两题使用的数量差别很大，是因为目标不同。第一题只关心两只颜色相同，黑白都可以；第二题只接受指定的白色。不要把“可能很快就摸到两只白袜”和“无论怎样摸都一定拿到两只白袜”混淆，后者需要分析最坏情况。
+      - generic [ref=f1e731] [cursor=pointer]:
+        - checkbox "我已读完这一页" [ref=f1e732]
+        - text: 我已读完这一页
+    - generic [ref=f1e733]:
+      - generic [ref=f1e734]:
+        - generic [ref=f1e735]: 课件第 38 页
+        - link "讲解原文" [ref=f1e736] [cursor=pointer]:
+          - /url: ../responses/38.md
+      - group [ref=f1e737]:
+        - generic "查看这一页课件" [ref=f1e738] [cursor=pointer]
+      - generic [ref=f1e739]:
+        - heading "电话号码容量：至少需要几个区号？" [level=1] [ref=f1e740]
+        - paragraph [ref=f1e741]: 题目设定电话号码格式为 NXX-NXX-XXXX，前三位是区号。N 可以是 2 到 9，共 8 个数字；X 可以是 0 到 9，共 10 个数字。要给 2,500 万部电话分配不同的十位号码，至少需要多少个区号？
+        - paragraph [ref=f1e742]: 先固定一个区号，只数后面的七位 NXX-XXXX。这里有一个 N 位置和六个 X 位置，所以每个区号可以提供：
+        - paragraph [ref=f1e743]:
+          - generic [ref=f1e745]:
+            - math [ref=f1e747]:
+              - generic [ref=f1e749]:
+                - generic [ref=f1e750]: "8"
+                - generic [ref=f1e751]: ⋅
+                - generic [ref=f1e752]:
+                  - generic [ref=f1e753]: "10"
+                  - generic [ref=f1e754]: "6"
+                - generic [ref=f1e755]: =
+                - generic [ref=f1e756]: 8,000,000
+            - generic [aria-hidden] [ref=f1e757]:
+              - generic [ref=f1e758]: 8 ⋅
+              - generic [ref=f1e759]:
+                - text: "1"
+                - generic [ref=f1e760]:
+                  - text: "0"
+                  - generic [ref=f1e761]: "6"
+                - text: =
+              - generic [ref=f1e766]:
+                - text: "8"
+                - generic [ref=f1e767]: ","
+                - text: "000"
+                - generic [ref=f1e768]: ","
+                - text: "000"
+        - paragraph [ref=f1e769]: 个不同号码。
+        - paragraph [ref=f1e770]:
+          - text: 若使用
+          - generic [ref=f1e771]:
+            - math [ref=f1e773]:
+              - generic [ref=f1e774]: a
+            - generic [ref=f1e778]: a
+          - text: 个不同区号，因为不同区号下的完整十位号码互不相同，总容量为
+          - generic [ref=f1e779]:
+            - math [ref=f1e781]:
+              - generic [ref=f1e783]:
+                - generic [ref=f1e784]: a
+                - generic [ref=f1e785]: ⋅
+                - generic [ref=f1e786]: 8,000,000
+            - generic [aria-hidden] [ref=f1e787]:
+              - generic [ref=f1e788]: a ⋅
+              - generic [ref=f1e789]:
+                - text: "8"
+                - generic [ref=f1e790]: ","
+                - text: "000"
+                - generic [ref=f1e791]: ","
+                - text: "000"
+          - text: 。为了容纳全部电话，需要：
+        - paragraph [ref=f1e792]:
+          - generic [ref=f1e794]:
+            - math [ref=f1e796]:
+              - generic [ref=f1e798]:
+                - generic [ref=f1e799]: a
+                - generic [ref=f1e800]: ⋅
+                - generic [ref=f1e801]: 8,000,000
+                - generic [ref=f1e802]: ≥
+                - generic [ref=f1e803]: 25,000,000.
+            - generic [aria-hidden] [ref=f1e804]:
+              - generic [ref=f1e805]: a ⋅
+              - generic [ref=f1e806]:
+                - text: "8"
+                - generic [ref=f1e807]: ","
+                - text: "000"
+                - generic [ref=f1e808]: ","
+                - text: 000 ≥
+              - generic [ref=f1e809]:
+                - text: "25"
+                - generic [ref=f1e810]: ","
+                - text: "000"
+                - generic [ref=f1e811]: ","
+                - text: "000."
+        - paragraph [ref=f1e812]: 区号数量必须是整数，因此：
+        - paragraph [ref=f1e813]:
+          - generic [ref=f1e815]:
+            - math [ref=f1e817]:
+              - generic [ref=f1e819]:
+                - generic [ref=f1e820]: a
+                - generic [ref=f1e821]: ≥
+                - generic [ref=f1e822]:
+                  - generic [ref=f1e823]: ⌈
+                  - generic [ref=f1e824]:
+                    - generic [ref=f1e825]: 25,000,000
+                    - generic [ref=f1e826]: 8,000,000
+                  - generic [ref=f1e827]: ⌉
+                - generic [ref=f1e828]: =
+                - generic [ref=f1e829]: ⌈
+                - generic [ref=f1e830]: "3.125"
+                - generic [ref=f1e831]: ⌉
+                - generic [ref=f1e832]: =
+                - generic [ref=f1e833]: "4."
+            - generic [aria-hidden] [ref=f1e834]:
+              - generic [ref=f1e835]: a ≥
+              - generic [ref=f1e836]:
+                - generic [ref=f1e837]:
+                  - generic [ref=f1e838]: ⌈
+                  - generic [ref=f1e843]:
+                    - generic [ref=f1e844]:
+                      - text: "8"
+                      - generic [ref=f1e845]: ","
+                      - text: "000"
+                      - generic [ref=f1e846]: ","
+                      - text: "000"
+                    - generic [ref=f1e848]:
+                      - text: "25"
+                      - generic [ref=f1e849]: ","
+                      - text: "000"
+                      - generic [ref=f1e850]: ","
+                      - text: "000"
+                  - generic [ref=f1e854]: ⌉
+                - text: =
+              - generic [ref=f1e855]: ⌈3.125⌉ =
+              - generic [ref=f1e856]: "4."
+        - paragraph [ref=f1e857]:
+          - text: 3 个区号只能提供 2,400 万个号码，不足；4 个区号有 3,200 万个号码，足够，所以最小值是
+          - strong [ref=f1e858]: "4"
+          - text: 。
+        - paragraph [ref=f1e859]: 课件也从鸽巢原理解释：把电话按后七位号码分入 800 万个盒子，2,500 万部电话中至少有四部共享同一个后七位号码。要让它们的完整号码不同，至少需要四个不同区号。
+        - paragraph [ref=f1e860]: 这个鸽巢论证说明“至少四个”的必要性；每个区号 800 万个号码的容量计算同时说明四个确实足够。这里按题目给出的抽象编号规则计数，没有额外加入实际电话系统中的保留号码或其他限制。
+      - generic [ref=f1e861] [cursor=pointer]:
+        - checkbox "我已读完这一页" [ref=f1e862]
+        - text: 我已读完这一页
+    - generic [ref=f1e863]:
+      - heading "课后练习" [level=2] [ref=f1e864]
+      - paragraph [ref=f1e865]: 先独立尝试，再展开解析核对。原题保留英文，解析含中文。
+      - article [ref=f1e866]:
+        - heading "练习 1 · 2017 Midterm 7" [level=3] [ref=f1e867]
+        - paragraph [ref=f1e868]:
+          - text: 7 分 ·
+          - link "原题 PDF · 第 9 页" [ref=f1e869] [cursor=pointer]:
+            - /url: ../sources/papers/2017-midterm.pdf#page=9
+        - paragraph [ref=f1e871]: A computer randomly prints three-digit codes, with no repeated digits in any code (for example, 387, 072, 760). What is the minimum number of codes that must be printed in order to guarantee that at least six of the codes are identical?
+        - text: 我的解题过程
+        - textbox "我的解题过程" [ref=f1e872]:
+          - /placeholder: 先写下思路，再展开答案。输入会自动保存。
+        - group [ref=f1e873]:
+          - generic "查看答案与解析" [ref=f1e874] [cursor=pointer]
+        - generic [ref=f1e875] [cursor=pointer]:
+          - checkbox "我已核对这道题" [ref=f1e876]
+          - text: 我已核对这道题
+      - article [ref=f1e877]:
+        - heading "练习 2 · 2015 Midterm 7(c)" [level=3] [ref=f1e878]
+        - paragraph [ref=f1e879]:
+          - text: 4 分 ·
+          - link "原题 PDF · 第 12 页" [ref=f1e880] [cursor=pointer]:
+            - /url: ../sources/papers/2015-midterm.pdf#page=12
+        - generic [ref=f1e881]:
+          - paragraph [ref=f1e882]:
+            - text: You are going to distribute
+            - generic [ref=f1e883]:
+              - math [ref=f1e885]:
+                - generic [ref=f1e887]:
+                  - generic [ref=f1e888]: k
+                  - generic [ref=f1e889]: "n"
+              - generic [ref=f1e891]: kn
+            - text: cash coupons to
+            - generic [ref=f1e892]:
+              - math [ref=f1e894]:
+                - generic [ref=f1e896]:
+                  - generic [ref=f1e897]: k
+                  - generic [ref=f1e898]: "n"
+              - generic [ref=f1e900]: kn
+            - text: members in your company such that each member will get one cash coupon, where
+            - generic [ref=f1e901]:
+              - math [ref=f1e903]:
+                - generic [ref=f1e905]:
+                  - generic [ref=f1e906]: k
+                  - generic [ref=f1e907]: ","
+                  - generic [ref=f1e908]: "n"
+                  - generic [ref=f1e909]: ≥
+                  - generic [ref=f1e910]: "1"
+              - generic [aria-hidden] [ref=f1e911]:
+                - generic [ref=f1e912]: k, n ≥
+                - generic [ref=f1e913]: "1"
+            - text: . The values of the
+            - generic [ref=f1e914]:
+              - math [ref=f1e916]:
+                - generic [ref=f1e918]:
+                  - generic [ref=f1e919]: k
+                  - generic [ref=f1e920]: "n"
+              - generic [ref=f1e922]: kn
+            - text: cash coupons are distinct. Suppose there are
+            - generic [ref=f1e923]:
+              - math [ref=f1e925]:
+                - generic [ref=f1e926]: "n"
+              - generic [ref=f1e930]: "n"
+            - text: ranks of seniority in the company, and there are exactly
+            - generic [ref=f1e931]:
+              - math [ref=f1e933]:
+                - generic [ref=f1e934]: k
+              - generic [ref=f1e938]: k
+            - text: members at each rank. If a more senior member receives a cash coupon worth less than the cash coupon given to a more junior member, you will receive a complaint.
+          - paragraph [ref=f1e939]:
+            - text: (c) Suppose you have an unlimited number of cash coupons, instead of
+            - generic [ref=f1e940]:
+              - math [ref=f1e942]:
+                - generic [ref=f1e944]:
+                  - generic [ref=f1e945]: k
+                  - generic [ref=f1e946]: "n"
+              - generic [ref=f1e948]: kn
+            - text: cash coupons. Each member may receive 0 or more cash coupons, and you distribute the cash coupons randomly. For each rank
+            - generic [ref=f1e949]:
+              - math [ref=f1e951]:
+                - generic [ref=f1e952]: r
+              - generic [ref=f1e956]: r
+            - text: ", let"
+            - generic [ref=f1e957]:
+              - math [ref=f1e959]:
+                - generic [ref=f1e962]:
+                  - generic [ref=f1e963]: t
+                  - generic [ref=f1e964]: r
+              - generic [ref=f1e967]:
+                - text: t
+                - generic [ref=f1e968]: r
+            - text: be the total number of coupons members at the rank receive altogether. What is the minimum number of cash coupons you will need to distribute so that there is at least one rank
+            - generic [ref=f1e976]:
+              - math [ref=f1e978]:
+                - generic [ref=f1e979]: r
+              - generic [ref=f1e983]: r
+            - text: for which
+            - generic [ref=f1e984]:
+              - math [ref=f1e986]:
+                - generic [ref=f1e988]:
+                  - generic [ref=f1e989]:
+                    - generic [ref=f1e990]: t
+                    - generic [ref=f1e991]: r
+                  - generic [ref=f1e992]: ≥
+                  - generic [ref=f1e993]: "2"
+                  - generic [ref=f1e994]: k
+              - generic [aria-hidden] [ref=f1e995]:
+                - generic [ref=f1e996]:
+                  - generic [ref=f1e997]:
+                    - text: t
+                    - generic [ref=f1e998]: r
+                  - text: ≥
+                - generic [ref=f1e1006]: 2k
+            - text: "?"
+          - paragraph [ref=f1e1007]: Briefly explain how your answers are derived.
+        - text: 我的解题过程
+        - textbox "我的解题过程" [ref=f1e1008]:
+          - /placeholder: 先写下思路，再展开答案。输入会自动保存。
+        - group [ref=f1e1009]:
+          - generic "查看答案与解析" [ref=f1e1010] [cursor=pointer]
+        - generic [ref=f1e1011] [cursor=pointer]:
+          - checkbox "我已核对这道题" [ref=f1e1012]
+          - text: 我已核对这道题
+      - article [ref=f1e1013]:
+        - heading "练习 3 · 2025 Spring Final 7" [level=3] [ref=f1e1014]
+        - paragraph [ref=f1e1015]:
+          - text: 6 分 ·
+          - link "原题 PDF · 第 10 页" [ref=f1e1016] [cursor=pointer]:
+            - /url: ../sources/papers/COMP2711_S2025_Final.pdf#page=10
+        - generic [ref=f1e1017]:
+          - paragraph [ref=f1e1018]:
+            - text: A drawer in a dark room contains 100 red socks, 80 green socks, 60 blue socks and 40 black socks. A youngster selects socks one at a time from the drawer but is unable to see the color of the socks drawn. (A pair of socks is two socks of the same color. No sock may be counted in more than one pair.) Suppose your answer is
+            - generic [ref=f1e1019]:
+              - math [ref=f1e1021]:
+                - generic [ref=f1e1022]: "n"
+              - generic [ref=f1e1026]: "n"
+            - text: .
+          - paragraph [ref=f1e1027]: What is the smallest number of socks that must be selected to guarantee that the selection contains at least 10 pairs?
+          - paragraph [ref=f1e1028]:
+            - text: You need to argue that
+            - generic [ref=f1e1029]:
+              - math [ref=f1e1031]:
+                - generic [ref=f1e1032]: "n"
+              - generic [ref=f1e1036]: "n"
+            - text: socks guarantee at least 10 pairs, while
+            - generic [ref=f1e1037]:
+              - math [ref=f1e1039]:
+                - generic [ref=f1e1041]:
+                  - generic [ref=f1e1042]: "n"
+                  - generic [ref=f1e1043]: −
+                  - generic [ref=f1e1044]: "1"
+              - generic [aria-hidden] [ref=f1e1045]:
+                - generic [ref=f1e1046]: n −
+                - generic [ref=f1e1047]: "1"
+            - text: socks are not enough.
+        - text: 我的解题过程
+        - textbox "我的解题过程" [ref=f1e1048]:
+          - /placeholder: 先写下思路，再展开答案。输入会自动保存。
+        - group [ref=f1e1049]:
+          - generic "查看答案与解析" [ref=f1e1050] [cursor=pointer]
+        - generic [ref=f1e1051] [cursor=pointer]:
+          - checkbox "我已核对这道题" [ref=f1e1052]
+          - text: 我已核对这道题
+    - navigation "课程顺序" [ref=f1e1053]:
+      - link "上一课：鸽巢原理与证明" [ref=f1e1054] [cursor=pointer]:
+        - /url: pigeonhole-proofs.html
+      - link "回顾全部课程" [ref=f1e1055] [cursor=pointer]:
+        - /url: ../index.html
+  - contentinfo [ref=f1e1056]: L2.5 · 依照课件逐页学习

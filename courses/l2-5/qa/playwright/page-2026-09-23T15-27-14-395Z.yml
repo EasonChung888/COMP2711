@@ -1,0 +1,957 @@
+- generic [active] [ref=f3e1]:
+  - link "跳到正文" [ref=f3e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - link "COMP2711" [ref=f3e5] [cursor=pointer]:
+        - /url: ../index.html
+      - navigation "课程导航" [ref=f3e6]:
+        - link "课程模块" [ref=f3e7] [cursor=pointer]:
+          - /url: ../index.html#modules
+        - link "Counting" [ref=f3e8] [cursor=pointer]:
+          - /url: ../counting.html
+        - link "本章目录" [ref=f3e9] [cursor=pointer]:
+          - /url: ../l2-5.html#topics
+        - link "课件页码索引" [ref=f3e10] [cursor=pointer]:
+          - /url: ../source-map.html
+  - main [ref=f3e11]:
+    - navigation "当前位置" [ref=f3e12]:
+      - link "COMP2711" [ref=f3e13] [cursor=pointer]:
+        - /url: ../index.html
+      - text: /
+      - link "Counting" [ref=f3e14] [cursor=pointer]:
+        - /url: ../counting.html
+      - text: /
+      - link "L2.5 · 计数基础" [ref=f3e15] [cursor=pointer]:
+        - /url: ../l2-5.html
+      - text: / 乘法与加法法则
+    - generic [ref=f3e16]:
+      - generic [ref=f3e17]:
+        - heading "乘法与加法法则" [level=1] [ref=f3e18]
+        - paragraph [ref=f3e19]: 分步骤构造结果，按互斥情况分类；从座位分配开始。
+      - generic [ref=f3e20]: 6 页讲解2 道练习
+    - navigation "本课页码" [ref=f3e21]:
+      - list [ref=f3e22]:
+        - listitem [ref=f3e23]:
+          - link "第 1 页" [ref=f3e24] [cursor=pointer]:
+            - /url: "#slide-01"
+        - listitem [ref=f3e25]:
+          - link "第 2 页" [ref=f3e26] [cursor=pointer]:
+            - /url: "#slide-02"
+        - listitem [ref=f3e27]:
+          - link "第 3 页" [ref=f3e28] [cursor=pointer]:
+            - /url: "#slide-03"
+        - listitem [ref=f3e29]:
+          - link "第 4 页" [ref=f3e30] [cursor=pointer]:
+            - /url: "#slide-04"
+        - listitem [ref=f3e31]:
+          - link "第 15 页" [ref=f3e32] [cursor=pointer]:
+            - /url: "#slide-15"
+        - listitem [ref=f3e33]:
+          - link "第 16 页" [ref=f3e34] [cursor=pointer]:
+            - /url: "#slide-16"
+        - listitem [ref=f3e35]:
+          - link "课后练习" [ref=f3e36] [cursor=pointer]:
+            - /url: "#practice"
+    - generic [ref=f3e37]:
+      - generic [ref=f3e38]:
+        - generic [ref=f3e39]: 课件第 1 页
+        - link "讲解原文" [ref=f3e40] [cursor=pointer]:
+          - /url: ../responses/01.md
+      - group [ref=f3e41]:
+        - generic "查看这一页课件" [ref=f3e42] [cursor=pointer]
+      - generic [ref=f3e43]:
+        - heading "计数基础：什么时候乘，什么时候加？" [level=1] [ref=f3e44]
+        - paragraph [ref=f3e45]:
+          - text: 这一页是本讲的目录。标题
+          - strong [ref=f3e46]: Basics of Counting
+          - text: 指的是“计数基础”：不把所有情况逐个列出来，而是用清楚的分类和步骤，算出一共有多少种可能。
+        - paragraph [ref=f3e47]: 课件列出了两个基本工具。
+        - paragraph [ref=f3e48]:
+          - strong [ref=f3e49]: Product Rule，乘法法则
+          - text: ：一个完整结果需要经过几个步骤才能形成，就逐步计算选择数，再把它们相乘。例如，选一件上衣有 3 种选择，选一条裤子有 2 种选择，而且每件上衣都能搭配这两条裤子，那么有
+          - generic [ref=f3e50]:
+            - math [ref=f3e52]:
+              - generic [ref=f3e54]:
+                - generic [ref=f3e55]: "3"
+                - generic [ref=f3e56]: ×
+                - generic [ref=f3e57]: "2"
+                - generic [ref=f3e58]: =
+                - generic [ref=f3e59]: "6"
+            - generic [aria-hidden] [ref=f3e60]:
+              - generic [ref=f3e61]: 3 ×
+              - generic [ref=f3e62]: 2 =
+              - generic [ref=f3e63]: "6"
+          - text: 种搭配。这里每套搭配都同时包含“一件上衣”和“一条裤子”。
+        - paragraph [ref=f3e64]:
+          - strong [ref=f3e65]: Sum Rule，加法法则
+          - text: ：把所有结果分成互不重叠的类别，再把各类的数量相加。例如，只买一个点心，可以从 3 种蛋糕或 2 种面包中选一个，并且这两类没有重复的选项，那么一共有
+          - generic [ref=f3e66]:
+            - math [ref=f3e68]:
+              - generic [ref=f3e70]:
+                - generic [ref=f3e71]: "3"
+                - generic [ref=f3e72]: +
+                - generic [ref=f3e73]: "2"
+                - generic [ref=f3e74]: =
+                - generic [ref=f3e75]: "5"
+            - generic [aria-hidden] [ref=f3e76]:
+              - generic [ref=f3e77]: 3 +
+              - generic [ref=f3e78]: 2 =
+              - generic [ref=f3e79]: "5"
+          - text: 种选择。
+        - paragraph [ref=f3e80]:
+          - text: 判断时先问：
+          - strong [ref=f3e81]: 我是在分步骤构造一个结果，还是把结果分成不同类别？
+          - text: 分步骤通常对应乘法，分成互不重叠的类别通常对应加法。还要检查计数是否重复，以及每一步的选择数是否真的适用。
+        - paragraph [ref=f3e82]: "“Reading: Rosen 6.1, 6.2” 是课件给出的教材阅读范围。这页没有要求记忆复杂公式；它先告诉你，本讲要建立的核心能力是把一个计数问题拆成可以相乘或相加的部分。"
+    - generic [ref=f3e83]:
+      - generic [ref=f3e84]:
+        - generic [ref=f3e85]: 课件第 2 页
+        - link "讲解原文" [ref=f3e86] [cursor=pointer]:
+          - /url: ../responses/02.md
+      - group [ref=f3e87]:
+        - generic "查看这一页课件" [ref=f3e88] [cursor=pointer]
+      - generic [ref=f3e89]:
+        - heading "为什么计算机科学需要计数？" [level=1] [ref=f3e90]
+        - paragraph [ref=f3e91]: 这页说明：计数不仅是“数出有几个”，它帮助我们判断程序需要多少资源、事件发生的机会有多大，以及一种编码能容纳多少对象。
+        - paragraph [ref=f3e92]:
+          - strong [ref=f3e93]: 第一种应用是算法的时间或空间复杂度。
+          - text: 例如，一个循环执行
+          - generic [ref=f3e94]:
+            - math [ref=f3e96]:
+              - generic [ref=f3e97]: "n"
+            - generic [ref=f3e101]: "n"
+          - text: 次，每次做固定数量的操作，工作量就与
+          - generic [ref=f3e102]:
+            - math [ref=f3e104]:
+              - generic [ref=f3e105]: "n"
+            - generic [ref=f3e109]: "n"
+          - text: 成正比。如果有两层循环，每一层都执行
+          - generic [ref=f3e110]:
+            - math [ref=f3e112]:
+              - generic [ref=f3e113]: "n"
+            - generic [ref=f3e117]: "n"
+          - text: 次，内层操作总共执行
+          - generic [ref=f3e118]:
+            - math [ref=f3e120]:
+              - generic [ref=f3e122]:
+                - generic [ref=f3e123]: "n"
+                - generic [ref=f3e124]: ×
+                - generic [ref=f3e125]: "n"
+                - generic [ref=f3e126]: =
+                - generic [ref=f3e127]:
+                  - generic [ref=f3e128]: "n"
+                  - generic [ref=f3e129]: "2"
+            - generic [aria-hidden] [ref=f3e130]:
+              - generic [ref=f3e131]: n ×
+              - generic [ref=f3e132]: n =
+              - generic [ref=f3e134]:
+                - text: "n"
+                - generic [ref=f3e135]: "2"
+          - text: 次。这里数的是“操作发生了多少次”。空间分析也类似，可以数需要保存多少个数据项。
+        - paragraph [ref=f3e140]:
+          - strong [ref=f3e141]: 第二种应用是计算概率。
+          - text: 在所有基本结果等可能时，事件的概率可以写成：
+        - paragraph [ref=f3e142]:
+          - generic [ref=f3e144]:
+            - math [ref=f3e146]:
+              - generic [ref=f3e148]:
+                - generic [ref=f3e149]: P
+                - generic [ref=f3e150]: (
+                - generic [ref=f3e151]: E
+                - generic [ref=f3e152]: )
+                - generic [ref=f3e153]: =
+                - generic [ref=f3e154]:
+                  - generic [ref=f3e155]:
+                    - generic [ref=f3e156]: 事件
+                    - generic [ref=f3e157]: E
+                    - generic [ref=f3e158]: 包含的结果数
+                  - generic [ref=f3e159]: 全部可能结果数
+                - generic [ref=f3e160]: .
+            - generic [aria-hidden] [ref=f3e161]:
+              - generic [ref=f3e162]: P(E) =
+              - generic [ref=f3e163]:
+                - generic [ref=f3e168]:
+                  - generic [ref=f3e169]: 全部可能结果数
+                  - generic [ref=f3e172]:
+                    - generic [ref=f3e173]: 事件
+                    - text: E
+                    - generic [ref=f3e174]: 包含的结果数
+                - text: .
+        - paragraph [ref=f3e178]: 所以先数清分子和分母，才能算出概率。等可能这个条件很重要：如果不同结果的概率不相等，就不能只靠结果数量相除。
+        - paragraph [ref=f3e179]:
+          - strong [ref=f3e180]: 第三种应用是检查编码容量，例如 IP 地址。
+          - text: 若某种编号用
+          - generic [ref=f3e181]:
+            - math [ref=f3e183]:
+              - generic [ref=f3e184]: b
+            - generic [ref=f3e188]: b
+          - text: 个二进制位表示，每一位有 0、1 两种选择，那么有
+          - generic [ref=f3e189]:
+            - math [ref=f3e191]:
+              - generic [ref=f3e194]:
+                - generic [ref=f3e195]: "2"
+                - generic [ref=f3e196]: b
+            - generic [ref=f3e199]:
+              - text: "2"
+              - generic [ref=f3e200]: b
+          - text: 种位串。实际可用地址数还要考虑协议保留值等限制；本页只是说明“先计算总容量，再和需求比较”的思路。
+        - paragraph [ref=f3e205]: 页末给了两组同义名称：
+        - list [ref=f3e206]:
+          - listitem [ref=f3e207]:
+            - strong [ref=f3e208]: Product rule = sequential rule
+            - text: ：乘法法则，也叫顺序法则。关键词是完成任务所需的多个步骤。
+          - listitem [ref=f3e209]:
+            - strong [ref=f3e210]: Sum rule = disjunctive rule
+            - text: ：加法法则，也叫析取法则。关键词是互不重叠的不同选择类别。
+        - paragraph [ref=f3e211]: 同一个问题可以同时用两种法则：先分类，在每类中分步骤计数，最后把各类的数量加起来。
+    - generic [ref=f3e212]:
+      - generic [ref=f3e213]:
+        - generic [ref=f3e214]: 课件第 3 页
+        - link "讲解原文" [ref=f3e215] [cursor=pointer]:
+          - /url: ../responses/03.md
+      - group [ref=f3e216]:
+        - generic "查看这一页课件" [ref=f3e217] [cursor=pointer]
+      - generic [ref=f3e218]:
+        - heading "乘法法则的条件和含义" [level=1] [ref=f3e219]
+        - paragraph [ref=f3e220]:
+          - text: 这一页给出乘法法则的正式表述。假设一个过程需要依次完成
+          - generic [ref=f3e221]:
+            - math [ref=f3e223]:
+              - generic [ref=f3e224]: m
+            - generic [ref=f3e228]: m
+          - text: 个任务：
+        - paragraph [ref=f3e229]:
+          - generic [ref=f3e231]:
+            - math [ref=f3e233]:
+              - generic [ref=f3e235]:
+                - generic [ref=f3e236]:
+                  - generic [ref=f3e237]: T
+                  - generic [ref=f3e238]: "1"
+                - generic [ref=f3e239]: ","
+                - generic [ref=f3e240]:
+                  - generic [ref=f3e241]: T
+                  - generic [ref=f3e242]: "2"
+                - generic [ref=f3e243]: ","
+                - generic [ref=f3e244]: …
+                - generic [ref=f3e245]: ","
+                - generic [ref=f3e246]:
+                  - generic [ref=f3e247]: T
+                  - generic [ref=f3e248]: m
+                - generic [ref=f3e249]: .
+            - generic [ref=f3e251]:
+              - generic [ref=f3e252]:
+                - text: T
+                - generic [ref=f3e253]: "1"
+              - text: ","
+              - generic [ref=f3e261]:
+                - text: T
+                - generic [ref=f3e262]: "2"
+              - text: ", … ,"
+              - generic [ref=f3e270]:
+                - text: T
+                - generic [ref=f3e271]: m
+              - text: .
+        - paragraph [ref=f3e279]:
+          - text: 其中
+          - generic [ref=f3e280]:
+            - math [ref=f3e282]:
+              - generic [ref=f3e284]:
+                - generic [ref=f3e285]: m
+                - generic [ref=f3e286]: ≥
+                - generic [ref=f3e287]: "1"
+            - generic [aria-hidden] [ref=f3e288]:
+              - generic [ref=f3e289]: m ≥
+              - generic [ref=f3e290]: "1"
+          - text: 。红色的
+          - strong [ref=f3e291]: all
+          - text: 很关键：一个完整结果必须把这些任务全部做完。例如，给一个人分配座位，再给另一个人分配座位，两步都完成后才得到一次完整安排。
+        - paragraph [ref=f3e292]:
+          - text: 如果第
+          - generic [ref=f3e293]:
+            - math [ref=f3e295]:
+              - generic [ref=f3e296]: i
+            - generic [ref=f3e300]: i
+          - text: 步总有
+          - generic [ref=f3e301]:
+            - math [ref=f3e303]:
+              - generic [ref=f3e306]:
+                - generic [ref=f3e307]: "n"
+                - generic [ref=f3e308]: i
+            - generic [ref=f3e311]:
+              - text: "n"
+              - generic [ref=f3e312]: i
+          - text: 种可选做法，那么完整过程的做法数是：
+        - paragraph [ref=f3e320]:
+          - generic [ref=f3e322]:
+            - math [ref=f3e324]:
+              - generic [ref=f3e326]:
+                - generic [ref=f3e327]:
+                  - generic [ref=f3e328]: "n"
+                  - generic [ref=f3e329]: "1"
+                - generic [ref=f3e330]:
+                  - generic [ref=f3e331]: "n"
+                  - generic [ref=f3e332]: "2"
+                - generic [ref=f3e333]: ⋯
+                - generic [ref=f3e334]:
+                  - generic [ref=f3e335]: "n"
+                  - generic [ref=f3e336]: m
+                - generic [ref=f3e337]: =
+                - generic [ref=f3e338]:
+                  - generic [ref=f3e339]: ∏
+                  - generic [ref=f3e340]:
+                    - generic [ref=f3e341]: i
+                    - generic [ref=f3e342]: =
+                    - generic [ref=f3e343]: "1"
+                  - generic [ref=f3e344]: m
+                - generic [ref=f3e345]:
+                  - generic [ref=f3e346]: "n"
+                  - generic [ref=f3e347]: i
+                - generic [ref=f3e348]: .
+            - generic [aria-hidden] [ref=f3e349]:
+              - generic [ref=f3e350]:
+                - generic [ref=f3e351]:
+                  - text: "n"
+                  - generic [ref=f3e352]: "1"
+                - generic [ref=f3e360]:
+                  - text: "n"
+                  - generic [ref=f3e361]: "2"
+                - text: ⋯
+                - generic [ref=f3e369]:
+                  - text: "n"
+                  - generic [ref=f3e370]: m
+                - text: =
+              - generic [ref=f3e378]:
+                - generic [ref=f3e382]:
+                  - generic [ref=f3e383]: i=1
+                  - generic [ref=f3e385]: ∏
+                  - generic [ref=f3e386]: m
+                - generic [ref=f3e391]:
+                  - text: "n"
+                  - generic [ref=f3e392]: i
+                - text: .
+        - paragraph [ref=f3e400]:
+          - text: 为什么相乘？先看两步：第一步有
+          - generic [ref=f3e401]:
+            - math [ref=f3e403]:
+              - generic [ref=f3e406]:
+                - generic [ref=f3e407]: "n"
+                - generic [ref=f3e408]: "1"
+            - generic [ref=f3e411]:
+              - text: "n"
+              - generic [ref=f3e412]: "1"
+          - text: 个分支，每个分支下又有
+          - generic [ref=f3e420]:
+            - math [ref=f3e422]:
+              - generic [ref=f3e425]:
+                - generic [ref=f3e426]: "n"
+                - generic [ref=f3e427]: "2"
+            - generic [ref=f3e430]:
+              - text: "n"
+              - generic [ref=f3e431]: "2"
+          - text: 个第二步分支，因此最后共有
+          - generic [ref=f3e439]:
+            - math [ref=f3e441]:
+              - generic [ref=f3e443]:
+                - generic [ref=f3e444]:
+                  - generic [ref=f3e445]: "n"
+                  - generic [ref=f3e446]: "1"
+                - generic [ref=f3e447]: ×
+                - generic [ref=f3e448]:
+                  - generic [ref=f3e449]: "n"
+                  - generic [ref=f3e450]: "2"
+            - generic [aria-hidden] [ref=f3e451]:
+              - generic [ref=f3e452]:
+                - generic [ref=f3e453]:
+                  - text: "n"
+                  - generic [ref=f3e454]: "1"
+                - text: ×
+              - generic [ref=f3e463]:
+                - text: "n"
+                - generic [ref=f3e464]: "2"
+          - text: 个结果。再做第三步，每个已有结果继续产生
+          - generic [ref=f3e472]:
+            - math [ref=f3e474]:
+              - generic [ref=f3e477]:
+                - generic [ref=f3e478]: "n"
+                - generic [ref=f3e479]: "3"
+            - generic [ref=f3e482]:
+              - text: "n"
+              - generic [ref=f3e483]: "3"
+          - text: 个分支，于是再乘
+          - generic [ref=f3e491]:
+            - math [ref=f3e493]:
+              - generic [ref=f3e496]:
+                - generic [ref=f3e497]: "n"
+                - generic [ref=f3e498]: "3"
+            - generic [ref=f3e501]:
+              - text: "n"
+              - generic [ref=f3e502]: "3"
+          - text: 。
+        - paragraph [ref=f3e510]:
+          - text: 课件中 “regardless of how the previous tasks were done” 的意思是：
+          - strong [ref=f3e511]: 不管前面的具体选择是什么，这一步的可选数量都相同。
+          - text: 可选对象本身可以改变，不必是完全相同的一组对象。
+        - paragraph [ref=f3e512]:
+          - text: 例如，从 5 个人中依次选队长和副队长，且不能是同一个人：队长有 5 种选法；无论队长是谁，副队长都剩 4 种选法。因此是
+          - generic [ref=f3e513]:
+            - math [ref=f3e515]:
+              - generic [ref=f3e517]:
+                - generic [ref=f3e518]: "5"
+                - generic [ref=f3e519]: ×
+                - generic [ref=f3e520]: "4"
+                - generic [ref=f3e521]: =
+                - generic [ref=f3e522]: "20"
+            - generic [aria-hidden] [ref=f3e523]:
+              - generic [ref=f3e524]: 5 ×
+              - generic [ref=f3e525]: 4 =
+              - generic [ref=f3e526]: "20"
+          - text: 。虽然第二步能选谁取决于第一步，但第二步的数量始终是 4，仍然可以相乘。
+        - paragraph [ref=f3e527]: 使用时还要确保每条选择序列对应一个要数的结果，没有遗漏，也没有把同一结果数多次。若题目只要求选两名普通成员，队长、副队长的顺序就不是实际区别，直接使用 20 会把每个两人组合数两次。
+    - generic [ref=f3e528]:
+      - generic [ref=f3e529]:
+        - generic [ref=f3e530]: 课件第 4 页
+        - link "讲解原文" [ref=f3e531] [cursor=pointer]:
+          - /url: ../responses/04.md
+      - group [ref=f3e532]:
+        - generic "查看这一页课件" [ref=f3e533] [cursor=pointer]
+      - generic [ref=f3e534]:
+        - heading "分配座位：为什么顺序会改变答案？" [level=1] [ref=f3e535]
+        - paragraph [ref=f3e536]: 第一个例子有 10 把不同的椅子，编号为 1 到 10。要给 Joseph 和 Mary 各安排一把，而且两人不能坐同一把椅子。
+        - paragraph [ref=f3e537]: 先给 Joseph 选，有 10 种选择。选好之后，不管他坐哪一把，Mary 都还有 9 把可选。因此：
+        - paragraph [ref=f3e538]:
+          - generic [ref=f3e540]:
+            - math [ref=f3e542]:
+              - generic [ref=f3e544]:
+                - generic [ref=f3e545]: "10"
+                - generic [ref=f3e546]: ×
+                - generic [ref=f3e547]: "9"
+                - generic [ref=f3e548]: =
+                - generic [ref=f3e549]: "90."
+            - generic [aria-hidden] [ref=f3e550]:
+              - generic [ref=f3e551]: 10 ×
+              - generic [ref=f3e552]: 9 =
+              - generic [ref=f3e553]: "90."
+        - paragraph [ref=f3e554]:
+          - text: 这里每个结果可以写成有序对
+          - generic [ref=f3e555]:
+            - math [ref=f3e557]:
+              - generic [ref=f3e559]:
+                - generic [ref=f3e560]: (
+                - generic [ref=f3e561]: j
+                - generic [ref=f3e562]: ","
+                - generic [ref=f3e563]: m
+                - generic [ref=f3e564]: )
+            - generic [ref=f3e566]: (j, m)
+          - text: ，第一个坐标是 Joseph 的椅子，第二个坐标是 Mary 的椅子。例如
+          - generic [ref=f3e567]:
+            - math [ref=f3e569]:
+              - generic [ref=f3e571]:
+                - generic [ref=f3e572]: (
+                - generic [ref=f3e573]: "1"
+                - generic [ref=f3e574]: ","
+                - generic [ref=f3e575]: "2"
+                - generic [ref=f3e576]: )
+            - generic [ref=f3e578]: (1, 2)
+          - text: 和
+          - generic [ref=f3e579]:
+            - math [ref=f3e581]:
+              - generic [ref=f3e583]:
+                - generic [ref=f3e584]: (
+                - generic [ref=f3e585]: "2"
+                - generic [ref=f3e586]: ","
+                - generic [ref=f3e587]: "1"
+                - generic [ref=f3e588]: )
+            - generic [ref=f3e590]: (2, 1)
+          - text: 是不同安排：两个人的座位交换了。
+        - paragraph [ref=f3e591]:
+          - text: 课件问 “Does the order matter?”，重点是结果中有没有可区分的角色或位置。这里 Joseph 和 Mary 是不同的人，所以有顺序的分配对应
+          - strong [ref=f3e592]: permutation（排列）
+          - text: 。
+        - paragraph [ref=f3e593]:
+          - text: 如果问题改成“从 10 把椅子中选出 2 把”，不指定谁坐哪把，就只关心一个集合，例如
+          - generic [ref=f3e594]:
+            - math [ref=f3e596]:
+              - generic [ref=f3e598]:
+                - generic [ref=f3e599]: "{"
+                - generic [ref=f3e600]: "1"
+                - generic [ref=f3e601]: ","
+                - generic [ref=f3e602]: "2"
+                - generic [ref=f3e603]: "}"
+            - generic [ref=f3e605]: "{1, 2}"
+          - text: 。前面的两种安排
+          - generic [ref=f3e606]:
+            - math [ref=f3e608]:
+              - generic [ref=f3e610]:
+                - generic [ref=f3e611]: (
+                - generic [ref=f3e612]: "1"
+                - generic [ref=f3e613]: ","
+                - generic [ref=f3e614]: "2"
+                - generic [ref=f3e615]: )
+            - generic [ref=f3e617]: (1, 2)
+          - text: 、
+          - generic [ref=f3e618]:
+            - math [ref=f3e620]:
+              - generic [ref=f3e622]:
+                - generic [ref=f3e623]: (
+                - generic [ref=f3e624]: "2"
+                - generic [ref=f3e625]: ","
+                - generic [ref=f3e626]: "1"
+                - generic [ref=f3e627]: )
+            - generic [ref=f3e629]: (2, 1)
+          - text: 此时算同一个选择，所以要除以 2：
+        - paragraph [ref=f3e630]:
+          - generic [ref=f3e632]:
+            - math [ref=f3e634]:
+              - generic [ref=f3e636]:
+                - generic [ref=f3e637]:
+                  - generic [ref=f3e638]:
+                    - generic [ref=f3e639]: "10"
+                    - generic [ref=f3e640]: ×
+                    - generic [ref=f3e641]: "9"
+                  - generic [ref=f3e642]: "2"
+                - generic [ref=f3e643]: =
+                - generic [ref=f3e644]: "45."
+            - generic [aria-hidden] [ref=f3e645]:
+              - generic [ref=f3e646]:
+                - generic [ref=f3e651]:
+                  - generic [ref=f3e652]: "2"
+                  - generic [ref=f3e654]: 10 × 9
+                - text: =
+              - generic [ref=f3e658]: "45."
+        - paragraph [ref=f3e659]:
+          - text: 这对应
+          - strong [ref=f3e660]: combination（组合）
+          - text: 。90 和 45 都有意义，但回答的是不同问题。
+        - paragraph [ref=f3e661]: 第二个例子是把 4 把不同椅子分配给 4 个不同的人，每人一把。固定处理人的顺序：第一人有 4 种选择，第二人有 3 种，第三人有 2 种，最后一人只有 1 种。因此：
+        - paragraph [ref=f3e662]:
+          - generic [ref=f3e664]:
+            - math [ref=f3e666]:
+              - generic [ref=f3e668]:
+                - generic [ref=f3e669]: "4"
+                - generic [ref=f3e670]: ×
+                - generic [ref=f3e671]: "3"
+                - generic [ref=f3e672]: ×
+                - generic [ref=f3e673]: "2"
+                - generic [ref=f3e674]: ×
+                - generic [ref=f3e675]: "1"
+                - generic [ref=f3e676]: =
+                - generic [ref=f3e677]: "4"
+                - generic [ref=f3e678]: "!"
+                - generic [ref=f3e679]: =
+                - generic [ref=f3e680]: "24."
+            - generic [aria-hidden] [ref=f3e681]:
+              - generic [ref=f3e682]: 4 ×
+              - generic [ref=f3e683]: 3 ×
+              - generic [ref=f3e684]: 2 ×
+              - generic [ref=f3e685]: 1 =
+              - generic [ref=f3e686]: 4! =
+              - generic [ref=f3e687]: "24."
+        - paragraph [ref=f3e688]:
+          - text: 符号
+          - generic [ref=f3e689]:
+            - math [ref=f3e691]:
+              - generic [ref=f3e693]:
+                - generic [ref=f3e694]: "4"
+                - generic [ref=f3e695]: "!"
+            - generic [ref=f3e697]: 4!
+          - text: 读作“4 的阶乘”，就是从 4 一直乘到 1。可以用“先选好第一人的座位，再安排剩下的人”来理解这 24 种结果，而不必把每一种都列出。
+    - generic [ref=f3e698]:
+      - generic [ref=f3e699]:
+        - generic [ref=f3e700]: 课件第 15 页
+        - link "讲解原文" [ref=f3e701] [cursor=pointer]:
+          - /url: ../responses/15.md
+      - group [ref=f3e702]:
+        - generic "查看这一页课件" [ref=f3e703] [cursor=pointer]
+      - generic [ref=f3e704]:
+        - heading "加法法则：把结果分成互不重叠的类别" [level=1] [ref=f3e705]
+        - paragraph [ref=f3e706]:
+          - text: 这一页介绍
+          - strong [ref=f3e707]: Sum Rule（加法法则）
+          - text: 。课件把完成一个过程的方式分成
+          - generic [ref=f3e708]:
+            - math [ref=f3e710]:
+              - generic [ref=f3e711]: m
+            - generic [ref=f3e715]: m
+          - text: 类
+          - generic [ref=f3e716]:
+            - math [ref=f3e718]:
+              - generic [ref=f3e720]:
+                - generic [ref=f3e721]:
+                  - generic [ref=f3e722]: T
+                  - generic [ref=f3e723]: "1"
+                - generic [ref=f3e724]: ","
+                - generic [ref=f3e725]:
+                  - generic [ref=f3e726]: T
+                  - generic [ref=f3e727]: "2"
+                - generic [ref=f3e728]: ","
+                - generic [ref=f3e729]: …
+                - generic [ref=f3e730]: ","
+                - generic [ref=f3e731]:
+                  - generic [ref=f3e732]: T
+                  - generic [ref=f3e733]: m
+            - generic [ref=f3e735]:
+              - generic [ref=f3e736]:
+                - text: T
+                - generic [ref=f3e737]: "1"
+              - text: ","
+              - generic [ref=f3e745]:
+                - text: T
+                - generic [ref=f3e746]: "2"
+              - text: ", … ,"
+              - generic [ref=f3e754]:
+                - text: T
+                - generic [ref=f3e755]: m
+          - text: ，每次只采用其中一类。若第
+          - generic [ref=f3e763]:
+            - math [ref=f3e765]:
+              - generic [ref=f3e766]: i
+            - generic [ref=f3e770]: i
+          - text: 类有
+          - generic [ref=f3e771]:
+            - math [ref=f3e773]:
+              - generic [ref=f3e776]:
+                - generic [ref=f3e777]: "n"
+                - generic [ref=f3e778]: i
+            - generic [ref=f3e781]:
+              - text: "n"
+              - generic [ref=f3e782]: i
+          - text: 种结果，而且不同类别之间没有共同结果，那么总数就是：
+        - paragraph [ref=f3e790]:
+          - generic [ref=f3e792]:
+            - math [ref=f3e794]:
+              - generic [ref=f3e796]:
+                - generic [ref=f3e797]:
+                  - generic [ref=f3e798]: "n"
+                  - generic [ref=f3e799]: "1"
+                - generic [ref=f3e800]: +
+                - generic [ref=f3e801]:
+                  - generic [ref=f3e802]: "n"
+                  - generic [ref=f3e803]: "2"
+                - generic [ref=f3e804]: +
+                - generic [ref=f3e805]: ⋯
+                - generic [ref=f3e806]: +
+                - generic [ref=f3e807]:
+                  - generic [ref=f3e808]: "n"
+                  - generic [ref=f3e809]: m
+                - generic [ref=f3e810]: =
+                - generic [ref=f3e811]:
+                  - generic [ref=f3e812]: ∑
+                  - generic [ref=f3e813]:
+                    - generic [ref=f3e814]: i
+                    - generic [ref=f3e815]: =
+                    - generic [ref=f3e816]: "1"
+                  - generic [ref=f3e817]: m
+                - generic [ref=f3e818]:
+                  - generic [ref=f3e819]: "n"
+                  - generic [ref=f3e820]: i
+                - generic [ref=f3e821]: .
+            - generic [aria-hidden] [ref=f3e822]:
+              - generic [ref=f3e823]:
+                - generic [ref=f3e824]:
+                  - text: "n"
+                  - generic [ref=f3e825]: "1"
+                - text: +
+              - generic [ref=f3e833]:
+                - generic [ref=f3e834]:
+                  - text: "n"
+                  - generic [ref=f3e835]: "2"
+                - text: +
+              - generic [ref=f3e843]: ⋯ +
+              - generic [ref=f3e844]:
+                - generic [ref=f3e845]:
+                  - text: "n"
+                  - generic [ref=f3e846]: m
+                - text: =
+              - generic [ref=f3e854]:
+                - generic [ref=f3e858]:
+                  - generic [ref=f3e859]: i=1
+                  - generic [ref=f3e861]: ∑
+                  - generic [ref=f3e862]: m
+                - generic [ref=f3e867]:
+                  - text: "n"
+                  - generic [ref=f3e868]: i
+                - text: .
+        - paragraph [ref=f3e876]:
+          - text: 符号
+          - generic [ref=f3e877]:
+            - math [ref=f3e879]:
+              - generic [ref=f3e880]: ∑
+            - generic [ref=f3e884]: ∑
+          - text: 表示求和：让
+          - generic [ref=f3e885]:
+            - math [ref=f3e887]:
+              - generic [ref=f3e888]: i
+            - generic [ref=f3e892]: i
+          - text: 从 1 取到
+          - generic [ref=f3e893]:
+            - math [ref=f3e895]:
+              - generic [ref=f3e896]: m
+            - generic [ref=f3e900]: m
+          - text: ，把对应的
+          - generic [ref=f3e901]:
+            - math [ref=f3e903]:
+              - generic [ref=f3e906]:
+                - generic [ref=f3e907]: "n"
+                - generic [ref=f3e908]: i
+            - generic [ref=f3e911]:
+              - text: "n"
+              - generic [ref=f3e912]: i
+          - text: 全部相加。红色的
+          - strong [ref=f3e920]: one
+          - text: 强调一次结果属于其中一种方法，而非把所有方法都做一遍。
+        - paragraph [ref=f3e921]:
+          - text: 例如，选一名代表，可以从 12 名本科生或 8 名研究生中选择。若两份名单不重叠，一共就是
+          - generic [ref=f3e922]:
+            - math [ref=f3e924]:
+              - generic [ref=f3e926]:
+                - generic [ref=f3e927]: "12"
+                - generic [ref=f3e928]: +
+                - generic [ref=f3e929]: "8"
+                - generic [ref=f3e930]: =
+                - generic [ref=f3e931]: "20"
+            - generic [aria-hidden] [ref=f3e932]:
+              - generic [ref=f3e933]: 12 +
+              - generic [ref=f3e934]: 8 =
+              - generic [ref=f3e935]: "20"
+          - text: 名候选人。
+        - paragraph [ref=f3e936]:
+          - strong [ref=f3e937]: 真正重要的条件是互不重叠（disjoint），不仅是类别的名字不同。
+          - text: “会英语的人”和“会中文的人”是两个不同描述，但有人同时符合两者。直接相加会把这些人算两遍。
+        - paragraph [ref=f3e938]:
+          - text: 用集合表达，若
+          - generic [ref=f3e939]:
+            - math [ref=f3e941]:
+              - generic [ref=f3e943]:
+                - generic [ref=f3e944]:
+                  - generic [ref=f3e945]: A
+                  - generic [ref=f3e946]: "1"
+                - generic [ref=f3e947]: ","
+                - generic [ref=f3e948]: …
+                - generic [ref=f3e949]: ","
+                - generic [ref=f3e950]:
+                  - generic [ref=f3e951]: A
+                  - generic [ref=f3e952]: m
+            - generic [ref=f3e954]:
+              - generic [ref=f3e955]:
+                - text: A
+                - generic [ref=f3e956]: "1"
+              - text: ", … ,"
+              - generic [ref=f3e964]:
+                - text: A
+                - generic [ref=f3e965]: m
+          - text: 两两不相交，那么：
+        - paragraph [ref=f3e973]:
+          - generic [ref=f3e975]:
+            - math [ref=f3e977]:
+              - generic [ref=f3e979]:
+                - generic [ref=f3e980]:
+                  - generic [ref=f3e981]: ∣
+                  - generic [ref=f3e982]:
+                    - generic [ref=f3e983]: A
+                    - generic [ref=f3e984]: "1"
+                  - generic [ref=f3e985]: ∪
+                  - generic [ref=f3e986]: ⋯
+                  - generic [ref=f3e987]: ∪
+                  - generic [ref=f3e988]:
+                    - generic [ref=f3e989]: A
+                    - generic [ref=f3e990]: m
+                  - generic [ref=f3e991]: ∣
+                - generic [ref=f3e992]: =
+                - generic [ref=f3e993]:
+                  - generic [ref=f3e994]: ∑
+                  - generic [ref=f3e995]:
+                    - generic [ref=f3e996]: i
+                    - generic [ref=f3e997]: =
+                    - generic [ref=f3e998]: "1"
+                  - generic [ref=f3e999]: m
+                - generic [ref=f3e1000]: ∣
+                - generic [ref=f3e1001]:
+                  - generic [ref=f3e1002]: A
+                  - generic [ref=f3e1003]: i
+                - generic [ref=f3e1004]: ∣
+                - generic [ref=f3e1005]: .
+            - generic [aria-hidden] [ref=f3e1006]:
+              - generic [ref=f3e1007]:
+                - generic [ref=f3e1008]:
+                  - text: ∣
+                  - generic [ref=f3e1009]:
+                    - text: A
+                    - generic [ref=f3e1010]: "1"
+                  - text: ∪ ⋯ ∪
+                  - generic [ref=f3e1018]:
+                    - text: A
+                    - generic [ref=f3e1019]: m
+                  - text: ∣
+                - text: =
+              - generic [ref=f3e1027]:
+                - generic [ref=f3e1031]:
+                  - generic [ref=f3e1032]: i=1
+                  - generic [ref=f3e1034]: ∑
+                  - generic [ref=f3e1035]: m
+                - text: ∣
+                - generic [ref=f3e1040]:
+                  - text: A
+                  - generic [ref=f3e1041]: i
+                - text: ∣.
+        - paragraph [ref=f3e1049]:
+          - text: 若只有两个集合且有交集，就要扣除重复的部分：
+          - generic [ref=f3e1050]:
+            - math [ref=f3e1052]:
+              - generic [ref=f3e1054]:
+                - generic [ref=f3e1055]: ∣
+                - generic [ref=f3e1056]: A
+                - generic [ref=f3e1057]: ∪
+                - generic [ref=f3e1058]: B
+                - generic [ref=f3e1059]: ∣
+                - generic [ref=f3e1060]: =
+                - generic [ref=f3e1061]: ∣
+                - generic [ref=f3e1062]: A
+                - generic [ref=f3e1063]: ∣
+                - generic [ref=f3e1064]: +
+                - generic [ref=f3e1065]: ∣
+                - generic [ref=f3e1066]: B
+                - generic [ref=f3e1067]: ∣
+                - generic [ref=f3e1068]: −
+                - generic [ref=f3e1069]: ∣
+                - generic [ref=f3e1070]: A
+                - generic [ref=f3e1071]: ∩
+                - generic [ref=f3e1072]: B
+                - generic [ref=f3e1073]: ∣
+            - generic [aria-hidden] [ref=f3e1074]:
+              - generic [ref=f3e1075]: ∣A ∪
+              - generic [ref=f3e1076]: B∣ =
+              - generic [ref=f3e1077]: ∣A∣ +
+              - generic [ref=f3e1078]: ∣B∣ −
+              - generic [ref=f3e1079]: ∣A ∩
+              - generic [ref=f3e1080]: B∣
+          - text: 。这属于页末提到的
+          - strong [ref=f3e1081]: inclusion-exclusion principle（容斥原理）
+          - text: 。
+        - paragraph [ref=f3e1082]: 应用加法法则之前，先检查两点：分类有没有覆盖所有目标结果？每个结果会不会落入两个类别？只有覆盖完整且没有重复，简单相加才得到正确总数。
+    - generic [ref=f3e1083]:
+      - generic [ref=f3e1084]:
+        - generic [ref=f3e1085]: 课件第 16 页
+        - link "讲解原文" [ref=f3e1086] [cursor=pointer]:
+          - /url: ../responses/16.md
+      - group [ref=f3e1087]:
+        - generic "查看这一页课件" [ref=f3e1088] [cursor=pointer]
+      - generic [ref=f3e1089]:
+        - heading "选一名代表与各选一名代表" [level=1] [ref=f3e1090]
+        - paragraph [ref=f3e1091]: 课件把班上的学生分为两份不重叠的名单：15 名男生和 18 名女生。用同一组数字，题目可以问出两种不同的计数问题。
+        - paragraph [ref=f3e1092]:
+          - strong [ref=f3e1093]: 第一问：只选一名代表。
+          - text: 代表可以来自男生名单，也可以来自女生名单。选男生有 15 种结果，选女生有 18 种结果。按题目设定，两份名单没有重复人员，因此：
+        - paragraph [ref=f3e1094]:
+          - generic [ref=f3e1096]:
+            - math [ref=f3e1098]:
+              - generic [ref=f3e1100]:
+                - generic [ref=f3e1101]: "15"
+                - generic [ref=f3e1102]: +
+                - generic [ref=f3e1103]: "18"
+                - generic [ref=f3e1104]: =
+                - generic [ref=f3e1105]: "33."
+            - generic [aria-hidden] [ref=f3e1106]:
+              - generic [ref=f3e1107]: 15 +
+              - generic [ref=f3e1108]: 18 =
+              - generic [ref=f3e1109]: "33."
+        - paragraph [ref=f3e1110]: 一个完整结果就是一个人，所以使用加法法则，将两个候选类别合并。
+        - paragraph [ref=f3e1111]:
+          - strong [ref=f3e1112]: 第二问：选一名男生代表和一名女生代表。
+          - text: 这一次完整结果包含两个人。先从男生名单选，有 15 种选择；对每一个选定的男生，再选女生都有 18 种选择。因此：
+        - paragraph [ref=f3e1113]:
+          - generic [ref=f3e1115]:
+            - math [ref=f3e1117]:
+              - generic [ref=f3e1119]:
+                - generic [ref=f3e1120]: "15"
+                - generic [ref=f3e1121]: ×
+                - generic [ref=f3e1122]: "18"
+                - generic [ref=f3e1123]: =
+                - generic [ref=f3e1124]: "270."
+            - generic [aria-hidden] [ref=f3e1125]:
+              - generic [ref=f3e1126]: 15 ×
+              - generic [ref=f3e1127]: 18 =
+              - generic [ref=f3e1128]: "270."
+        - paragraph [ref=f3e1129]:
+          - text: 一个完整结果可以写成
+          - generic [ref=f3e1130]:
+            - math [ref=f3e1132]:
+              - generic [ref=f3e1134]:
+                - generic [ref=f3e1135]: (
+                - generic [ref=f3e1136]: 男生代表
+                - generic [ref=f3e1137]: ","
+                - generic [ref=f3e1138]: 女生代表
+                - generic [ref=f3e1139]: )
+            - generic [ref=f3e1141]: (男生代表, 女生代表)
+          - text: 。这里没有重复计数：两人的角色已经由所属名单区分，不需要除以 2。
+        - paragraph [ref=f3e1142]:
+          - text: 可以用一个小例子看清差别：若两份名单分别有 2 人和 3 人，只选一人有
+          - generic [ref=f3e1143]:
+            - math [ref=f3e1145]:
+              - generic [ref=f3e1147]:
+                - generic [ref=f3e1148]: "2"
+                - generic [ref=f3e1149]: +
+                - generic [ref=f3e1150]: "3"
+                - generic [ref=f3e1151]: =
+                - generic [ref=f3e1152]: "5"
+            - generic [aria-hidden] [ref=f3e1153]:
+              - generic [ref=f3e1154]: 2 +
+              - generic [ref=f3e1155]: 3 =
+              - generic [ref=f3e1156]: "5"
+          - text: 种；各选一人则有
+          - generic [ref=f3e1157]:
+            - math [ref=f3e1159]:
+              - generic [ref=f3e1161]:
+                - generic [ref=f3e1162]: "2"
+                - generic [ref=f3e1163]: ×
+                - generic [ref=f3e1164]: "3"
+                - generic [ref=f3e1165]: =
+                - generic [ref=f3e1166]: "6"
+            - generic [aria-hidden] [ref=f3e1167]:
+              - generic [ref=f3e1168]: 2 ×
+              - generic [ref=f3e1169]: 3 =
+              - generic [ref=f3e1170]: "6"
+          - text: 种搭配。
+        - paragraph [ref=f3e1171]:
+          - text: “or”和“and”在这页分别帮助提示加法与乘法，但解题时更稳妥的判断是：
+          - strong [ref=f3e1172]: 一个结果到底包含什么？
+          - text: 是一个候选人，还是一对搭配？先确定所数对象，才知道应该怎样组合数量。
+    - generic [ref=f3e1173]:
+      - heading "课后练习" [level=2] [ref=f3e1174]
+      - paragraph [ref=f3e1175]: 先独立尝试，再展开解析核对。原题保留英文，解析含中文。
+      - article [ref=f3e1176]:
+        - heading "练习 1 · 2017 Midterm 6(a)" [level=3] [ref=f3e1177]
+        - paragraph [ref=f3e1178]:
+          - link "原题 PDF · 第 8 页" [ref=f3e1179] [cursor=pointer]:
+            - /url: ../sources/papers/2017-midterm.pdf#page=8
+        - generic [ref=f3e1180]:
+          - paragraph [ref=f3e1181]: Five couples go to the movies together and sit in a row of ten seats. In how many ways can the 10 people be arranged if
+          - paragraph [ref=f3e1182]: (a) They may sit in any order.
+        - text: 我的解题过程
+        - textbox "我的解题过程" [ref=f3e1183]:
+          - /placeholder: 先写下思路，再展开答案。输入会自动保存。
+        - group [ref=f3e1184]:
+          - generic "查看答案与解析" [ref=f3e1185] [cursor=pointer]
+      - article [ref=f3e1186]:
+        - heading "练习 2 · 2016 Midterm 1(d)" [level=3] [ref=f3e1187]
+        - paragraph [ref=f3e1188]:
+          - text: 3 分 ·
+          - link "原题 PDF · 第 3 页" [ref=f3e1189] [cursor=pointer]:
+            - /url: ../sources/papers/2016-midterm.pdf#page=3
+        - generic [ref=f3e1190]:
+          - paragraph [ref=f3e1191]: Consider a web system for online shopping that generates an order id for each business. The order id is a sequence of 7 characters where each character could be either one of the 26 Upper Case English Alphabets (A to Z) or one of the 10 digits (0 to 9).
+          - paragraph [ref=f3e1192]: (d) How many possible order id’s are there if the order id is alternative between alphabet and digit? (E.g., A3R4B7Q and 4V7X3V7 are valid, B7XB4Q3 is invalid)
+        - text: 我的解题过程
+        - textbox "我的解题过程" [ref=f3e1193]:
+          - /placeholder: 先写下思路，再展开答案。输入会自动保存。
+        - group [ref=f3e1194]:
+          - generic "查看答案与解析" [ref=f3e1195] [cursor=pointer]
+    - generic [ref=f3e1196] [cursor=pointer]:
+      - checkbox "我已学完这课" [ref=f3e1197]
+      - text: 我已学完这课
+    - navigation "课程顺序" [ref=f3e1198]:
+      - link "返回本章目录" [ref=f3e1199] [cursor=pointer]:
+        - /url: ../l2-5.html
+      - link "下一课：函数与子集计数" [ref=f3e1200] [cursor=pointer]:
+        - /url: functions-and-subsets.html
+  - contentinfo [ref=f3e1201]: COMP2711 · 按知识主题学习

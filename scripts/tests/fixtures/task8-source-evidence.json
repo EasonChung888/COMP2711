@@ -1,0 +1,1298 @@
+{
+  "review": "All 78 original PDF pages visually inspected; prompt fingerprints freeze the source-compared original wording after line-wrap and LaTeX transcription only.",
+  "questions": {
+    "Q-2024S-MID-P01": {
+      "label": "1",
+      "page": 3,
+      "status": "in-scope",
+      "solution_page": [
+        3
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "3c0373414d7829deaa093374ba5d728cef80ad1710b4bbd0a4a8422bbca4dd7a",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ]
+    },
+    "Q-2024S-MID-P02-a": {
+      "label": "2(a)",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "d1a01e93c67b6f5da5d2dbcbbff2f37825834d9526432b002215c824c24c7d5b",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P02-b": {
+      "label": "2(b)",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "5cea15b96e0dfb87070b7ea006e6b49dcf1b929b9e6a098a8a98306e056e74e8",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P02-c": {
+      "label": "2(c)",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "89e3fc0ad2c533e44d1a036d7b881816d3096884f9b4769b279f598cf7fe2943",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P02-d": {
+      "label": "2(d)",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "e028a3522abef4d501625e873f8c0a1563dc65dffa5ba38e2d09fed9a3216dd0",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P02-e": {
+      "label": "2(e)",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "debe35f079ef44c37f723b3dc688f88251ee011f8dd3e0deb46ee4c21bf68e8a",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P03-a": {
+      "label": "3(a)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "61c733952aeae2dd42909c0f7a41524b368aae20a3d49d49a313c17295ef0847",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P03-b": {
+      "label": "3(b)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "e468173431af6598bb1ded535aeb079642e1a9ed8a6add3cb3d2cbdd84cf6db6",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P03-c": {
+      "label": "3(c)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "16f8b8d269f40e7d8f873a9285fa6c3131bf18f5d05e79d086993c12636ac82f",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P03-d": {
+      "label": "3(d)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        5
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "c455dddc58b9bb262aa7329ba8d983103ba2e2cec135833970ede1866324003c",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P04-a": {
+      "label": "4(a)",
+      "page": 6,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": null,
+      "answer_source": "official",
+      "prompt_sha256": "3038c80d6a05f605caf72de60e47a9c5aa4584ed33b5a691f1dc481d1edc5d06",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P04-b": {
+      "label": "4(b)",
+      "page": 6,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": null,
+      "answer_source": "official",
+      "prompt_sha256": "7431aa322566a347f4aee9968b4e60a56c3aa92cf8008e85f8552a0bc05764a7",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024S-MID-P05": {
+      "label": "5",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "545ad1e5914852c132edce9d93f4cbb3792fb2249ea797587674de2ffef303f7",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ]
+    },
+    "Q-2024S-MID-P06": {
+      "label": "6",
+      "page": 8,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "9fb072246d640e6d901b27055a4ca6a9a9a99fcace6cb799e73d134b926c41db",
+      "subtopics": [
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ]
+    },
+    "Q-2024S-MID-P07": {
+      "label": "7",
+      "page": 9,
+      "status": "in-scope",
+      "solution_page": [
+        9,
+        10
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "04beb8e30e81d398d6287ff3aa8266b635a5d4f32730b62df0e3c465280cd138",
+      "subtopics": [
+        "[[Subtopic - Inference and Proofs - 推理与证明]]",
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ]
+    },
+    "Q-2024S-MID-P08": {
+      "label": "8",
+      "page": 11,
+      "status": "in-scope",
+      "solution_page": [
+        11,
+        12
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "f991063187ad14d3295e6fd5f7fe052eea66cdf908ad1a98c524aeab343eae8b",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ]
+    },
+    "Q-2024S-MID-P09": {
+      "label": "9",
+      "page": 13,
+      "status": "in-scope",
+      "solution_page": [
+        13
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "be3319351e7d049b080386129d2ec6ed7e6018a407df8867275f4502bf619770",
+      "subtopics": [
+        "[[Subtopic - Cryptography - 密码学]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024S-MID-P10": {
+      "label": "10",
+      "page": 14,
+      "status": "in-scope",
+      "solution_page": [
+        14,
+        15
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "9a0e59ca4b8a8bfa159d487eceebd45f46a34d0bba8c278ff153381c864550bd",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024S-MID-P11": {
+      "label": "11",
+      "page": 16,
+      "status": "in-scope",
+      "solution_page": [
+        16,
+        17
+      ],
+      "marks": 15,
+      "answer_source": "official",
+      "prompt_sha256": "1450307dc110c9529ffa9792657b721511d359989b0d3b7952da6a1b706f0256",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024S-MID-P12-a": {
+      "label": "12(a)",
+      "page": 18,
+      "status": "in-scope",
+      "solution_page": [
+        18
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "dc8b699e896407e6771817d696c2fd17ed168e2e91b5dbe78598c0063ec65c71",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024S-MID-P12-b": {
+      "label": "12(b)",
+      "page": 18,
+      "status": "in-scope",
+      "solution_page": [
+        18
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "2f1d43ae97c79a99fdefde4246949a41aca72f95629afaf6fd3a22e6714cd789",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024S-FINAL-P01-N": {
+      "label": "1",
+      "page": 1,
+      "status": "in-scope",
+      "solution_page": [
+        1
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "23686494672d6cd3ab77f2fe779df2c81f7820aa0ae645613c0df0196f19d671",
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ]
+    },
+    "Q-2024S-FINAL-P01-proof": {
+      "label": "1",
+      "page": 1,
+      "status": "in-scope",
+      "solution_page": [
+        1
+      ],
+      "marks": null,
+      "answer_source": "official",
+      "prompt_sha256": "b91d8c8c9db553f98b79649bea0f82d36d1140a2b8fb5dc105f07a3083c9dca3",
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ]
+    },
+    "Q-2024S-FINAL-P02-a": {
+      "label": "2(a)",
+      "page": 2,
+      "status": "needs-review",
+      "solution_page": [
+        2
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "b347ce8a8ca3869d490bd753b12a75a5e61c619169cc3556782484f48c7fa131",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]"
+      ]
+    },
+    "Q-2024S-FINAL-P02-b": {
+      "label": "2(b)",
+      "page": 2,
+      "status": "needs-review",
+      "solution_page": [
+        2
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "87fb527341c6db8f91d262fba09e6fccce95cb2a07774a56df6b5d111e7a5974",
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]"
+      ]
+    },
+    "Q-2024S-FINAL-P03-a": {
+      "label": "3(a)",
+      "page": 3,
+      "status": "out-of-scope"
+    },
+    "Q-2024S-FINAL-P03-b": {
+      "label": "3(b)",
+      "page": 3,
+      "status": "needs-review"
+    },
+    "Q-2024S-FINAL-P04": {
+      "label": "4",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4,
+        5
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "ada629cd9887a6ec4f012d3e9b11cd35a64101f531eae513b2967021c91d041f",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024S-FINAL-P05": {
+      "label": "5",
+      "page": 6,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "f42e522ab710bbaccd140258b32db43d8f1afc2dc5f51663415d54f93d8298f5",
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ]
+    },
+    "Q-2024S-FINAL-P06": {
+      "label": "6",
+      "page": 7,
+      "status": "needs-review"
+    },
+    "Q-2024S-FINAL-P07": {
+      "label": "7",
+      "page": 8,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "62b8d73597258143418f0d240785c4fc5c54d7a0cbf6acb68fa6ca5f569a9f6f",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024S-FINAL-P08": {
+      "label": "8",
+      "page": 9,
+      "status": "in-scope",
+      "solution_page": [
+        9,
+        10
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "bf3412f1caf40a374908b24e1e2c7a7d16ad2097dcd2643a630610671c57d1e0",
+      "subtopics": [
+        "[[Subtopic - Inclusion-Exclusion - 容斥原理]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024S-FINAL-P09-a": {
+      "label": "9(a)",
+      "page": 11,
+      "status": "in-scope",
+      "solution_page": [
+        11,
+        12
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "164b6bbe1faacee75c4106d662e4ead61ca2c996416f28f98ded9d1bdd1faf73",
+      "subtopics": [
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024S-FINAL-P09-b": {
+      "label": "9(b)",
+      "page": 11,
+      "status": "in-scope",
+      "solution_page": [
+        11,
+        12
+      ],
+      "marks": 10,
+      "answer_source": "official",
+      "prompt_sha256": "14c291fcce81c44102cdf356bff15a6b4df39fb77bd5ea3e3d7298716fe8df88",
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024F-MID-P01-a": {
+      "label": "1(a)",
+      "page": 3,
+      "status": "in-scope",
+      "solution_page": [
+        3
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "8b8923474f3845d5dd81d25d7887d9815df8bdc199b0afdbace588e792c2f4e7",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024F-MID-P01-b": {
+      "label": "1(b)",
+      "page": 3,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "3e0b8d3c1643bcb92ae23f7719dd35fb10042ebe665c1fb1a685db49f30a9026",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024F-MID-P01-c": {
+      "label": "1(c)",
+      "page": 3,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 6,
+      "answer_source": "official",
+      "prompt_sha256": "82008afde7ad0bf8b88c7629bef2dbffb3b3a018a4c99d3edd43aaf94d118668",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ]
+    },
+    "Q-2024F-MID-P01-d": {
+      "label": "1(d)",
+      "page": 3,
+      "status": "needs-review"
+    },
+    "Q-2024F-MID-P02-a": {
+      "label": "2(a)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "7b947827fbac7c478ea90746169b28a29c30df6b60a425517d3047520a9f57bb",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024F-MID-P02-b": {
+      "label": "2(b)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "e7865bee0ccf1235f8316726ffc53fd74328992a0d382c4ac75db54c4db45dd5",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024F-MID-P02-c": {
+      "label": "2(c)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "0af1f86f7f1068b6d44db874f84aae47a0d46559fc06e05fc4913c2f519164c4",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024F-MID-P03-a-i": {
+      "label": "3(a)(i)",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "6bb1a0b2a24dac077e2c2e4768796b1a12d82b6f795adb276052f79a97fd5925",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-MID-P03-a-ii": {
+      "label": "3(a)(ii)",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "8d8c91fc3e35667627ad69f547cc19c3a614626bd342e94814a26d558803f6c8",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-MID-P03-a-iii": {
+      "label": "3(a)(iii)",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "bf20541072b2c98e8e6e7a08d2370a4dc2d4315cb8ab7d04c04132dbca5e6d1e",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-MID-P03-a-iv": {
+      "label": "3(a)(iv)",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "85787f9004ef4bffb33654bdf7551042a82d85683ac1916b23514a658f5c1dfe",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-MID-P03-b-i": {
+      "label": "3(b)(i)",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "96c6e2622e2f7d2d4862714e2066fb9c0e57dbc6ab3434e1ac62da2077881ab9",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-MID-P03-b-ii": {
+      "label": "3(b)(ii)",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "67b5e871debd07754988cf5a7a4402ecf03f30a01c745574720ffb18557d27eb",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-MID-P03-c": {
+      "label": "3(c)",
+      "page": 7,
+      "status": "in-scope",
+      "solution_page": [
+        7
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "5628a888df91b7d654a798f70a0744f8d0ca377fbca0f2560936e49589013712",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]",
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024F-MID-P04-a-i": {
+      "label": "4(a)(i)",
+      "page": 8,
+      "status": "in-scope",
+      "solution_page": [
+        8
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "5748fa5e9ebc1e201ae45482ef29f7f33d0e00289b22df44341854307a3fa1f6",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P04-a-ii": {
+      "label": "4(a)(ii)",
+      "page": 8,
+      "status": "in-scope",
+      "solution_page": [
+        9
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "2c1a7c911869041f23f26b4aff4bd97ccfc321772b8cdfe31d9e9f3302098aae",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P04-a-iii": {
+      "label": "4(a)(iii)",
+      "page": 8,
+      "status": "in-scope",
+      "solution_page": [
+        9
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "60fbd3b821ab31f656ee131cb61858a4a555df58002fefd1dc8737a45dc23a61",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P04-b-i": {
+      "label": "4(b)(i)",
+      "page": 8,
+      "status": "in-scope",
+      "solution_page": [
+        9
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "a47037f328d2790908d653b221ead38b5f72bfca5f23b6ac6aa525e926784c34",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ]
+    },
+    "Q-2024F-MID-P04-b-ii": {
+      "label": "4(b)(ii)",
+      "page": 8,
+      "status": "in-scope",
+      "solution_page": [
+        9
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "ea371f996bcc235a90e0c7c2132aa5128686b54c68e0b275dd1540c9e588d9d2",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ]
+    },
+    "Q-2024F-MID-P05-a": {
+      "label": "5(a)",
+      "page": 10,
+      "status": "in-scope",
+      "solution_page": [
+        10
+      ],
+      "marks": 6,
+      "answer_source": "official",
+      "prompt_sha256": "cb3527ddc6d19f2d16f2ab4b03e9ad8a6a6e0c9c0fdd415143338dddb79b4bbb",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P05-b": {
+      "label": "5(b)",
+      "page": 10,
+      "status": "in-scope",
+      "solution_page": [
+        10
+      ],
+      "marks": 6,
+      "answer_source": "official",
+      "prompt_sha256": "9c38ef889228931a41256c0ae41d1f655a2bf447d5617199b4abbbba5a129981",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P06-a": {
+      "label": "6(a)",
+      "page": 11,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "2bc1e32e8d05c9a68f7485ad34880f99a3f25ddf9faa170a8260c7c9b651cb44",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P06-b": {
+      "label": "6(b)",
+      "page": 11,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "5e4a0059354cf2eb6b7b06e4da2c6a7952ba0331d118e1bcd406e2299bb4cad9",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P06-c": {
+      "label": "6(c)",
+      "page": 11,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "f96f401adfa21191be1aaa4eeefb17c3e925b937e7b8f93197d96c0aba3611fe",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P06-d": {
+      "label": "6(d)",
+      "page": 11,
+      "status": "in-scope",
+      "solution_page": [
+        11
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "df90401059d57c08a4408325f730d4e6feb1cc77aef9bee91c036d8f764249d4",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P07": {
+      "label": "7",
+      "page": 12,
+      "status": "in-scope",
+      "solution_page": [
+        12
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "bd09e01ba691b0218a569d0f2bab0b9d37db5e12c67b91a5b3835deb7fbd760c",
+      "subtopics": [
+        "[[Subtopic - Inclusion-Exclusion - 容斥原理]]",
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-MID-P08": {
+      "label": "8",
+      "page": 13,
+      "status": "in-scope",
+      "solution_page": null,
+      "marks": 8,
+      "answer_source": "derived",
+      "prompt_sha256": "d71830f851817575aaf253b513ca6316500abdf8182bf832d1da9689f7fb2b55",
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ]
+    },
+    "Q-2024F-MID-P09-a": {
+      "label": "9(a)",
+      "page": 14,
+      "status": "in-scope",
+      "solution_page": [
+        14
+      ],
+      "marks": 7,
+      "answer_source": "official",
+      "prompt_sha256": "b496443fd9669f5f9baab14e907082042b1b02095a535fc94907206ed00d35d6",
+      "subtopics": [
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-MID-P09-b": {
+      "label": "9(b)",
+      "page": 14,
+      "status": "in-scope",
+      "solution_page": [
+        14
+      ],
+      "marks": 5,
+      "answer_source": "official",
+      "prompt_sha256": "36141e6e39832a0cbaf6e8738a840e45b168a921df0235a451ee2d8cdd2235e4",
+      "subtopics": [
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ]
+    },
+    "Q-2024F-FINAL-P01-a": {
+      "label": "1(a)",
+      "page": 3,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "4b8598939717c2f9060f1618000eefd7ee75885d3cdc92bab018fc7e7dd2df4f",
+      "subtopics": [
+        "[[Subtopic - Propositional Logic - 命题逻辑]]"
+      ]
+    },
+    "Q-2024F-FINAL-P01-b": {
+      "label": "1(b)",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "96862d2ca9f92f435bd160881a690db9d428d2acbadb4ad33e58b9123dc496e3",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024F-FINAL-P01-c": {
+      "label": "1(c)",
+      "page": 4,
+      "status": "in-scope",
+      "solution_page": [
+        4
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "8bc06e9a5ea48eb9b4a3caa5624a95cf2fd44547ece6f5f2cf78c4220701e9bb",
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]"
+      ]
+    },
+    "Q-2024F-FINAL-P02-a": {
+      "label": "2(a)",
+      "page": 5,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "280dd4c1e080f851e7427231e2d54bc70970ff579e4dd1fdcce0322af1d9dd25",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-FINAL-P02-b": {
+      "label": "2(b)",
+      "page": 6,
+      "status": "in-scope",
+      "solution_page": [
+        6
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "0be15fafcd6d179c68665a5222ce71b0905e5dab362ada23705263f26ae7deb2",
+      "subtopics": [
+        "[[Subtopic - Sets and Functions - 集合与函数]]"
+      ]
+    },
+    "Q-2024F-FINAL-P03-a": {
+      "label": "3(a)",
+      "page": 7,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P03-b": {
+      "label": "3(b)",
+      "page": 8,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P03-c-i": {
+      "label": "3(c)(i)",
+      "page": 9,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P03-c-ii": {
+      "label": "3(c)(ii)",
+      "page": 9,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P04-a": {
+      "label": "4(a)",
+      "page": 12,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P04-b-i": {
+      "label": "4(b)(i)",
+      "page": 13,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P04-b-ii": {
+      "label": "4(b)(ii)",
+      "page": 13,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P04-b-iii": {
+      "label": "4(b)(iii)",
+      "page": 13,
+      "status": "needs-review"
+    },
+    "Q-2024F-FINAL-P05-a": {
+      "label": "5(a)",
+      "page": 15,
+      "status": "in-scope",
+      "solution_page": [
+        15
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "fef09e81ffc33d3e58b40f014c3e0ddeab740346cbc405f7d7fecc64fb6917c3",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ]
+    },
+    "Q-2024F-FINAL-P05-b": {
+      "label": "5(b)",
+      "page": 15,
+      "status": "in-scope",
+      "solution_page": [
+        15
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "9bc8096b420c45f2e16d1a6eed3779f831cdddea2b7ab8468a615fdf8711bab0",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ]
+    },
+    "Q-2024F-FINAL-P05-c": {
+      "label": "5(c)",
+      "page": 15,
+      "status": "in-scope",
+      "solution_page": [
+        15
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "09b2d340207ce9937b65e439f700b392526c8928f04e7b58631a949758980ec7",
+      "subtopics": [
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ]
+    },
+    "Q-2024F-FINAL-P06-a": {
+      "label": "6(a)",
+      "page": 17,
+      "status": "in-scope",
+      "solution_page": [
+        17
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "8daa704d55a0171bc1050dcae7da1280eaed63b3ca9b5f0eefe0e00ef166bb22",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024F-FINAL-P06-b": {
+      "label": "6(b)",
+      "page": 17,
+      "status": "in-scope",
+      "solution_page": [
+        17
+      ],
+      "marks": 8,
+      "answer_source": "official",
+      "prompt_sha256": "3cf7b5071e83063182b0e345d81b75df4026c7031e5a08ddac5c9c93ad294f70",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024F-FINAL-P07-1": {
+      "label": "7(1)",
+      "page": 19,
+      "status": "in-scope",
+      "solution_page": [
+        19
+      ],
+      "marks": null,
+      "answer_source": "official",
+      "prompt_sha256": "9ee13adba4791990a44908d083ae6e916e6a7d5d4f4c1bfc8c95f9cc55e6e1f1",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024F-FINAL-P07-2": {
+      "label": "7(2)",
+      "page": 19,
+      "status": "in-scope",
+      "solution_page": null,
+      "marks": null,
+      "answer_source": "derived",
+      "prompt_sha256": "d1d455a035be314ef71478c17373db108f647522211fe7c2e265b006001baf03",
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024F-FINAL-P08-a": {
+      "label": "8(a)",
+      "page": 21,
+      "status": "in-scope",
+      "solution_page": [
+        21
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "ceea9c3aa279fc8df29aca442fe4d403e8858c7e31cbfbf91bcf822e78a46530",
+      "subtopics": [
+        "[[Subtopic - Cryptography - 密码学]]"
+      ]
+    },
+    "Q-2024F-FINAL-P08-b": {
+      "label": "8(b)",
+      "page": 21,
+      "status": "in-scope",
+      "solution_page": [
+        21
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "bb686497043288fda30f361b0d32629d04349cb5c893b6201f98094e74a47100",
+      "subtopics": [
+        "[[Subtopic - Cryptography - 密码学]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ]
+    },
+    "Q-2024F-FINAL-P08-c": {
+      "label": "8(c)",
+      "page": 21,
+      "status": "in-scope",
+      "solution_page": [
+        21
+      ],
+      "marks": 4,
+      "answer_source": "official",
+      "prompt_sha256": "c8c38ce158aa03e6b22a9bcf3aa25dc8951a1dc3546bd075b0915603300ceddb",
+      "subtopics": [
+        "[[Subtopic - Cryptography - 密码学]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-a-i": {
+      "label": "9(a)(i)",
+      "page": 23,
+      "status": "in-scope",
+      "solution_page": null,
+      "marks": 1,
+      "answer_source": "derived",
+      "prompt_sha256": "4104ba239f9b75e3eb2e5be7c93cc9aea3c67fe2ba04e4d0a204e486e7095132",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-a-ii": {
+      "label": "9(a)(ii)",
+      "page": 23,
+      "status": "in-scope",
+      "solution_page": null,
+      "marks": 1,
+      "answer_source": "derived",
+      "prompt_sha256": "50157828b5c898060d60efe64428ee359bf1b4091e6e84fa567ada4d2baa681e",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-a-iii": {
+      "label": "9(a)(iii)",
+      "page": 23,
+      "status": "in-scope",
+      "solution_page": null,
+      "marks": 1,
+      "answer_source": "derived",
+      "prompt_sha256": "22f2e1695433de5bd9dc7d608fb8ada185d53ef94feb9f558dabc732bcbf2ffa",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-a-iv": {
+      "label": "9(a)(iv)",
+      "page": 23,
+      "status": "in-scope",
+      "solution_page": null,
+      "marks": 1,
+      "answer_source": "derived",
+      "prompt_sha256": "2642101035d0074f2ef312d3ee6893d3a5ab0c5f6ef60c6bf11ab079213f3d5b",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-a-v": {
+      "label": "9(a)(v)",
+      "page": 23,
+      "status": "in-scope",
+      "solution_page": null,
+      "marks": 1,
+      "answer_source": "derived",
+      "prompt_sha256": "67382532a2dade853126e177c89f99bc720b813b007ed0f6f2f3c11920575c21",
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-b-i": {
+      "label": "9(b)(i)",
+      "page": 24,
+      "status": "in-scope",
+      "solution_page": [
+        24
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "7c3446d696cc49b9820e730afe907973f0d6d4ec8145d0f4bdec60ecd4caeddd",
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-b-ii": {
+      "label": "9(b)(ii)",
+      "page": 24,
+      "status": "in-scope",
+      "solution_page": [
+        24
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "13c847ef3ee2a873a7e914ed8c370943a6997ab13fa759d08019d9452ade0dea",
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ]
+    },
+    "Q-2024F-FINAL-P09-b-iii": {
+      "label": "9(b)(iii)",
+      "page": 24,
+      "status": "in-scope",
+      "solution_page": [
+        24
+      ],
+      "marks": 2,
+      "answer_source": "official",
+      "prompt_sha256": "0bb882213abef1301d79ba27a5e69071040f463148354c400aae463e87646066",
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ]
+    },
+    "Q-2024F-FINAL-P10": {
+      "label": "10",
+      "page": 26,
+      "status": "needs-review",
+      "solution_page": null,
+      "marks": 6,
+      "answer_source": "derived",
+      "prompt_sha256": "05b50e388e9aa9ec245467a97bcc8b38240c795cc7779d20eb844ef2a4e7fdec",
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ]
+    },
+    "Q-2024F-FINAL-P11-a": {
+      "label": "11(a)",
+      "page": 27,
+      "status": "in-scope",
+      "solution_page": [
+        27
+      ],
+      "marks": 1,
+      "answer_source": "official",
+      "prompt_sha256": "14de237385cab1e0909deecba9d578a7b481291a37b15d70f250503d178f32d9",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ]
+    },
+    "Q-2024F-FINAL-P11-b": {
+      "label": "11(b)",
+      "page": 27,
+      "status": "in-scope",
+      "solution_page": [
+        27
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "702cb574a5a088caa504134dd1ab61205583cef4a32b614d4ee0c2250a02f8c0",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ]
+    },
+    "Q-2024F-FINAL-P11-c": {
+      "label": "11(c)",
+      "page": 27,
+      "status": "in-scope",
+      "solution_page": [
+        27
+      ],
+      "marks": 3,
+      "answer_source": "official",
+      "prompt_sha256": "ccc54ee69c0b96ee515d4e8086aeea1496715dacbcb4763cdbf4a9115492f1d0",
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ]
+    }
+  },
+  "stems": {
+    "STEM-2024S-MID-P02 - Shared Problem Prompt": "73a30f119f7b356345fc5d1abc01c7c11c8c66fe80e3f61cd752980e9557f4d9",
+    "STEM-2024S-MID-P03 - Shared Problem Prompt": "ce12835e4aba5c70327b0a143c3ea7da481b614f14251ae707aa005fbea05502",
+    "STEM-2024F-MID-P02-ab - Shared Problem Prompt": "77159848e84df3cb510b4e32406e5fcb6b50076db60d901f03a5ebb2ec30f818",
+    "STEM-2024F-MID-P03-a - Shared Problem Prompt": "9ce7474557bd3fef1e2db3259a347a7f575f0cd80f4ef363c15c909e26ea9c50",
+    "STEM-2024F-MID-P04-a - Shared Problem Prompt": "6b184c0281a68dd8e25218c88b0f547109fa29fdeca7d75ccb7ac52138858563",
+    "STEM-2024F-MID-P04-b - Shared Problem Prompt": "97f2509533ac611054bb205f844b720b528f33c1319eb58e6f01b2b7fb548c65",
+    "STEM-2024F-MID-P06 - Shared Problem Prompt": "e13a8b5dbc83688298fd557105babb589bf3974d28ef7e4be37eefeed4552006",
+    "STEM-2024F-FINAL-P01-bc - Shared Problem Prompt": "d762ebf3effacd569af906cc632c6313ceaa670e29ce9c25759aa4d18b87080e",
+    "STEM-2024F-FINAL-P06 - Shared Problem Prompt": "a19ea1c7f9c4ae2d4627e811ce0004035ca451a0d326cdaebbe566eca75dc139",
+    "STEM-2024F-FINAL-P07 - Shared Problem Prompt": "c75388d2e6a1e421bd3da66e3b08053f90ab2ac3be1147ca466c349e3195b2dd",
+    "STEM-2024F-FINAL-P08 - Shared Problem Prompt": "2aa84b7b73b92dd518b040b7f8fca7942c427a7717b68c5c8390b494d731ada2",
+    "STEM-2024F-FINAL-P09-a - Shared Problem Prompt": "0f64ff58031cd3879636ce07edb302110e9210296240b8fecdf5f24530ab80ce",
+    "STEM-2024F-FINAL-P09-b - Shared Problem Prompt": "8021f8106b3a98237139d1707ed7ab9de20a09a5a3787c0e33cf98590fe1a89d",
+    "STEM-2024F-FINAL-P11 - Shared Problem Prompt": "6c1fa2cca9a88fa9aa36aa8a253ebaf61b2975e54f523809d52214ceb6a87193"
+  },
+  "figures": {
+    "task8-2024F-MID-P04-a.png": "25376fa719790528eed02b8d1e10b4b353cedf069e8c3e2b5e3b5f942f1f8778",
+    "task8-2024F-MID-P04-b.png": "7ca54a8ae6e8f4f2acd5c52d637c02b84deb42e881fa6a64d392fcfadfa745ea",
+    "task8-2024F-FINAL-P09-b.png": "ea4f932c98b4f04ca61a9ce8b52d81d89cfdf6d67e06d75564fb73023efcb7d4",
+    "task8-2024F-FINAL-P11.png": "ea4f7f910e5f7d0a03ff1f1772d572dead6a27e92442653ac09a77fd070542e8"
+  }
+}

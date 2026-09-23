@@ -1,0 +1,47 @@
+filters:
+  and:
+    - 'file.inFolder("knowledge_base/04-Questions")'
+    - note.note_type == "question"
+    - note.syllabus_status == "in-scope"
+    - note.verification_status == "verified"
+formulas:
+  title: file.asLink(file.name.split(" - ").slice(1).join(" - "))
+properties:
+  note.id:
+    displayName: ID
+  formula.title:
+    displayName: Title / 题目
+  note.topics:
+    displayName: Topics / 主题
+  note.subtopics:
+    displayName: Subtopics / 子主题
+  note.year:
+    displayName: Year / 年份
+  note.term:
+    displayName: Term / 学期
+  note.exam_type:
+    displayName: Exam / 考试
+  note.marks:
+    displayName: Marks / 分值
+  note.difficulty:
+    displayName: Difficulty / 难度
+views:
+  - type: table
+    name: All Verified Questions
+    order:
+      - note.id
+      - formula.title
+      - note.topics
+      - note.subtopics
+      - note.year
+      - note.term
+      - note.exam_type
+      - note.marks
+      - note.difficulty
+    sort:
+      - property: note.year
+        direction: DESC
+      - property: note.id
+        direction: ASC
+    summaries:
+      note.id: Filled

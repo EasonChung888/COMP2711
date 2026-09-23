@@ -1,0 +1,425 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2019-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg c\\land\\neg d",
+        "\\neg(c\\lor d)"
+      ],
+      "prompt_sha256": "8c5aafb53e81c61ba5db7af48eaec3c0e9dafc4996fff50b8f622c1c4d176b0c"
+    },
+    "Q-2019-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg c\\to r",
+        "不冷且不下雨"
+      ],
+      "prompt_sha256": "5724652e30a6a9f60420d8c652baadca96463362e45ea15a2b951cc87fe97030"
+    },
+    "Q-2019-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "w\\to c",
+        "冷而无风"
+      ],
+      "prompt_sha256": "cbd007da240244b58e34f26f9ab48ed849acd2042e51a59f9324114ce0ed2299"
+    },
+    "Q-2019-MID-P01-d": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "r\\to(w\\land c)",
+        "(r\\to w)\\land(r\\to c)"
+      ],
+      "prompt_sha256": "49cdb6d77b354eae7bedbc9d26ce2d4cfbce0be7a6f1c8d5fde714e805d27248"
+    },
+    "Q-2019-MID-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\exists x(x\\le0)",
+        "x=0"
+      ],
+      "prompt_sha256": "242aeb1eb9483e3f07318142a5d96dd2a7631299c3e3ffa4e1bbe8d32f6cbd62"
+    },
+    "Q-2019-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall x(Q(x)\\to P(x))",
+        "虽为假"
+      ],
+      "prompt_sha256": "f411bdcbcb4e7c4ae05e1dbe04b7ef0491a104d24d2d265723de1c1e2a9f59c3"
+    },
+    "Q-2019-MID-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\exists x(Q(x)\\land\\neg P(x))",
+        "同一个"
+      ],
+      "prompt_sha256": "863227cb2de85d66b940fab2e7f2f6ee126e8620193ce01658b29b342a75d0b4"
+    },
+    "Q-2019-MID-P02-d": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall x\\forall y((x<y)\\to(x\\ne y))",
+        "两个变量"
+      ],
+      "prompt_sha256": "9280bef3f4bab5c71c3c20615ac947cf31db5518db39ad55cb04b26976011c21"
+    },
+    "Q-2019-MID-P02-e": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall x\\exists y(y>x)",
+        "y=x+1",
+        "\\neg\\exists x\\forall y(y\\le x)"
+      ],
+      "prompt_sha256": "bb52287f4d905723a67d0f5db6bc2a573f22657166f6fce7a4e23a2991a5b66d"
+    },
+    "Q-2019-MID-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p=F,q=T",
+        "T\\to F=F"
+      ],
+      "prompt_sha256": "2189c9dd83497671ed30fccb8a87f983985b32a3fe9aea5ddc4720fac13e5b1b"
+    },
+    "Q-2019-MID-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg p\\land q",
+        "(p\\lor\\neg p)\\lor\\neg q\\equiv T"
+      ],
+      "prompt_sha256": "4ac77d926914c8a1af0055cdf126e0291f6cfc92c2e6b7af11031a9a893a4f73"
+    },
+    "Q-2019-MID-P04": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "由(2)、(4)",
+        "由(2)、(6)",
+        "\\exists x(Q(x)\\land R(x))"
+      ],
+      "prompt_sha256": "8f23619a1545b3edd8162e006174e50cc25a43a2e5a79d9413095ff901857dd5"
+    },
+    "Q-2019-MID-P05": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\forall y\\exists z(Q(x,y)\\land\\neg R(y,z))",
+        "\\neg(A\\to B)\\equiv A\\land\\neg B"
+      ],
+      "prompt_sha256": "c1026c85d350a8c36a6eb79224ba4ee2dfbc3326ba8c0cc774b3467d40262d05"
+    },
+    "Q-2019-MID-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "c=ak",
+        "c=bl",
+        "ab(kl)",
+        "没有除以"
+      ],
+      "prompt_sha256": "3ac989f659b8af6b674f48dc8b86279e4e40150582728addf54c678ecac11bac"
+    },
+    "Q-2019-MID-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "a=1,b=-1",
+        "1=(-1)\\cdot(-1)",
+        "1\\ne-1"
+      ],
+      "prompt_sha256": "6cdbad73826f28590450d7c8c89c4856ba58f666bff618740bb4f1f7e139b4e0"
+    },
+    "Q-2019-MID-P07-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A=B=\\mathbb R",
+        "A-B=\\varnothing"
+      ],
+      "prompt_sha256": "37fa82a5e3e6747aafdf1571b4648c73d736cc2878be342ca35f9b369a8094a3"
+    },
+    "Q-2019-MID-P07-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A-B=\\mathbb Z^+",
+        "\\mathbb R=B\\cup\\mathbb Z^+",
+        "矛盾"
+      ],
+      "prompt_sha256": "d5060205f9f9cdb1a44111e35b4d95f65d1861b4db3ed74d2f8323178f3b20c9"
+    },
+    "Q-2019-MID-P07-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "B=(0,\\infty)",
+        "A-B=(-\\infty,0]",
+        "(-1,0)"
+      ],
+      "prompt_sha256": "2617ddcfbb5c02b5d69d7f97a7cb87defb52bf0af25fe9d1d16f31e24d6d3c1d"
+    },
+    "Q-2019-MID-P08": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x\\ge0",
+        "x>0",
+        "(x-1)^2=x^2-2x+1<0"
+      ],
+      "prompt_sha256": "862ffd02321787bead9aa84bfd9cc68a839b6624ff155c4890fcc88f61a00bd9"
+    },
+    "Q-2019-MID-P09-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "11-3=8",
+        "c=8"
+      ],
+      "prompt_sha256": "de0991b46e5d71db3329c4f6b3bbf419754d95a4e3599e791c14a96509e6435d"
+    },
+    "Q-2019-MID-P09-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "7\\cdot11+3\\cdot3=86",
+        "86=4\\cdot19+10"
+      ],
+      "prompt_sha256": "62e96e0f3f4aa94d7fb1360d8e6ef18a0429744c0204c45b717903c2ab70e9da"
+    },
+    "Q-2019-MID-P09-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "11\\cdot3^2=99",
+        "99=5\\cdot19+4"
+      ],
+      "prompt_sha256": "5fa2cd2b483cf145e0a2d46de049717da05e0224d39ba9e07a564f3fbb63b91a"
+    },
+    "Q-2019-MID-P10-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "465",
+        "\\equiv49\\pmod{104}",
+        "343=3\\cdot104+31"
+      ],
+      "prompt_sha256": "59130fcee126ded859b547bad48c2271db2605f3c45c1034480bf5911c4637c0"
+    },
+    "Q-2019-MID-P10-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "15x\\equiv-23",
+        "-161\\equiv47",
+        "746=7\\cdot104+18"
+      ],
+      "prompt_sha256": "199103e8b2b302d014d914597a801da41d4e650fcc52a3951a58b40ef88832ad"
+    },
+    "Q-2019-MID-P10-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "7x\\equiv165\\equiv61",
+        "915",
+        "4067=39\\cdot104+11"
+      ],
+      "prompt_sha256": "c932727324f36db39184d0c1b0e4d7b3f6cea09ecbdc1ca3064389d9cc442d45"
+    },
+    "Q-2019-MID-P10-d": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "7x\\equiv8",
+        "(x,y)=(16,89)",
+        "105=104+1"
+      ],
+      "prompt_sha256": "51bb8780086f15952ec10818211623e31ae69b957639de3c5155f62077185625"
+    },
+    "Q-2019-MID-P11-a": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "924=2^2\\cdot3\\cdot7\\cdot11",
+        "\\gcd(25,924)=1",
+        "e=25"
+      ],
+      "prompt_sha256": "ecb11adb5807ed5a535015474e298339ce011b370637acdad64ee91597dc3c23"
+    },
+    "Q-2019-MID-P11-b": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "924=17\\cdot53+23",
+        "401\\cdot53-23\\cdot924",
+        "21253=23\\cdot924+1"
+      ],
+      "prompt_sha256": "0db37acfc869666a7eeeb2b4ddf8bd5459020f8145bae95874c8e1c153a5fb7c"
+    },
+    "Q-2019-MID-P11-c": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "c=720^{53}\\bmod989",
+        "401",
+        "私钥解密"
+      ],
+      "prompt_sha256": "32410b85b9cc3170cef9b4ad2937fb7bba7288bb0165ca394f30fe3a29ef783f"
+    },
+    "Q-2019-MID-P12": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "8,20,4,16,14,20,4,16,14,20,4",
+        "1027=2^{10}+2^1+2^0",
+        "640=29\\cdot22+2"
+      ],
+      "prompt_sha256": "a5bab42290fe95e983f30d27b02683efb4325b19ca77ea357ce10d556f6d87b1"
+    },
+    "Q-2019-MID-BONUS": {
+      "source_pdf": "knowledge_base/past_paper/2019-midterm.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x+y=2,3,4,\\ldots",
+        "x_i+i y_i",
+        "x+jy=x_j+jy_j"
+      ],
+      "prompt_sha256": "4f04cec61be7f81d19ab2ca6a75665fe9f98c495f053ad115c1b6556dc6d31c4"
+    }
+  }
+}

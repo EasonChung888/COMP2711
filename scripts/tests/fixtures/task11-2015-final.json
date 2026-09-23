@@ -1,0 +1,200 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2015-FINAL-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "X=\\sum_{t=1}^{60}I_t",
+        "=60pq",
+        "即使不同分钟相关"
+      ],
+      "prompt_sha256": "dcf7a89c3b39a4fed4aa4349b112ffa05aba4a73e380961fd9b1efacf05ec366"
+    },
+    "Q-2015-FINAL-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0,1,4,9,5,3",
+        "\\{0,1,3,4,5,9\\}"
+      ],
+      "prompt_sha256": "48c2951e281c30674f3f49418f815b08fdb381d3081372876e921e5c4986b745"
+    },
+    "Q-2015-FINAL-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p(p-2)+1",
+        "\\equiv1\\pmod p"
+      ],
+      "prompt_sha256": "6a92e01dd439bab4ba7518d237eb90298768a948061ddbc1339a4eb5d3da731f"
+    },
+    "Q-2015-FINAL-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p^2-2py+y^2",
+        "(p-y)\\bmod p"
+      ],
+      "prompt_sha256": "eaf70398863868bc1d6a18fb57548dafe616ff311680be974607605a1c6876b2"
+    },
+    "Q-2015-FINAL-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\varphi(n)=(17-1)(31-1)=480",
+        "\\gcd(7,480)=1"
+      ],
+      "prompt_sha256": "bb6a775b6379df8d79cc88358cf697d90a48b5876599802e2c58baeb1a204981"
+    },
+    "Q-2015-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2\\cdot480-137\\cdot7",
+        "2401=5\\cdot480+1"
+      ],
+      "prompt_sha256": "42164e5b4314878380dbcf1d17798343dde150eb9c6dafe606876947f30a9a5e"
+    },
+    "Q-2015-FINAL-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "343=256+64+16+4+2+1",
+        "2,4,16,256,188,35,171,256,188",
+        "349^7\\bmod527=2"
+      ],
+      "prompt_sha256": "335d583509f78376bb98f80e9921bc10802c42943419f67dea696d81bc335682"
+    },
+    "Q-2015-FINAL-P07-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "48=24\\cdot2=12\\cdot4=8\\cdot6",
+        "模105类唯一"
+      ],
+      "prompt_sha256": "c25da9f8b2b4c899f06e64c9eab0122f65122accfda04519ea504b667887544a"
+    },
+    "Q-2015-FINAL-P07-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "385=7\\cdot49+42",
+        "4^7\\cdot4^{42}=4^{49}"
+      ],
+      "prompt_sha256": "7005e78c987e284e9ed793e74494aa1dbae7b5291343b96ae258cd4548ce7e03"
+    },
+    "Q-2015-FINAL-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "12\\sum_{j=0}^{n-1}7^j",
+        "5\\cdot7^n-2"
+      ],
+      "prompt_sha256": "f2ef50e9c898bef584c58bf24539e4ec6606e702354c4c2cd7cc119256ae6285"
+    },
+    "Q-2015-FINAL-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 14,
+      "solution_page": null,
+      "answer_source": "derived",
+      "checkpoints": [
+        "n\\ge1",
+        "5\\cdot7^n-14+12",
+        "零到一"
+      ],
+      "prompt_sha256": "facf96de9fdd68be58a1e2dc899367abf806f38a0692428ec8cf1ad53f7a4820"
+    },
+    "Q-2015-FINAL-P09-recurrence": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "A_hB_h,A_hB_l,A_lB_h,A_lB_l",
+        "T(n)=4T(n/2)+cn"
+      ],
+      "prompt_sha256": "e3699fce1e82fd976560868c3291c00ee31fa778b03543efa2f240ca7c823daa"
+    },
+    "Q-2015-FINAL-P09-closed-form": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "cn\\sum_{i=0}^{j-1}2^i",
+        "(1+c)n^2-cn"
+      ],
+      "prompt_sha256": "4cca5c98b26f986f961f86d2fe54a1bbe013e341820d481dcfdda1fe3c583746"
+    },
+    "Q-2015-FINAL-P09-theta": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "T(n)\\ge n^2",
+        "T(n)\\le(1+c)n^2"
+      ],
+      "prompt_sha256": "d3033eeb307a22243fb24a2bf7e5a5163d7b8b84bd1c73875fa284772dd2763a"
+    },
+    "Q-2015-FINAL-P10": {
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 17,
+      "solution_page": null,
+      "answer_source": "derived",
+      "checkpoints": [
+        "2\\le m\\le n-1",
+        "新加入的模数 m=n",
+        "n!=n(n-1)!"
+      ],
+      "prompt_sha256": "bc590f93e1c8b8c72881c724c97282e615801b99ddbeab949f5a530048482775"
+    }
+  }
+}

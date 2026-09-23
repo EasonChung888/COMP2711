@@ -1,0 +1,723 @@
+filters:
+  and:
+    - 'file.inFolder("knowledge_base/04-Questions")'
+    - "note.note_type == \"question\""
+    - "note.syllabus_status == \"in-scope\""
+    - "note.verification_status == \"verified\""
+formulas:
+  title: "file.asLink(file.name.split(\" - \").slice(1).join(\" - \"))"
+properties:
+  note.id:
+    displayName: "ID"
+  formula.title:
+    displayName: "Title / 题目"
+  note.methods:
+    displayName: "Methods / 方法"
+  note.topics:
+    displayName: "Topics / 主题"
+  note.question_types:
+    displayName: "Question type / 题型"
+  note.difficulty:
+    displayName: "Difficulty / 难度"
+  note.year:
+    displayName: "Year / 年份"
+  note.subtopics:
+    displayName: "Subtopics / 子主题"
+  note.concepts:
+    displayName: "Concepts / 概念"
+  note.source_paper:
+    displayName: "Paper / 试卷"
+views:
+  -
+    type: "table"
+    name: "Method Summary"
+    groupBy:
+      property: "note.methods"
+      direction: "ASC"
+    sort:
+      -
+        property: "note.difficulty"
+        direction: "ASC"
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.methods"
+      - "note.topics"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+  -
+    type: "table"
+    name: "METH-ALGORITHM-TRACE-INVARIANT - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Algorithm Trace and Invariant Method - 算法跟踪与不变量方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-ASYM-BOUND - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Asymptotic Bound Method - 渐近界方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-CASE - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Combinatorial Case Analysis - 组合分类法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-COND - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Conditional-Probability Method - 条件概率方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-COUNT - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Counting Method - 计数方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-ENUMERATION - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Enumeration and Cardinality Method - 枚举与基数方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-EULER-DEGREE - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Euler Degree Method - 欧拉度数方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-EXPECTATION-EXISTENCE - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Expectation Existence Method - 期望存在性方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METHOD-FIRST-STEP-EXPECTATION - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/First-Step Expectation Method - 首步期望法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-FUNC - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Function Counting Method - 函数计数方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-GRAPH - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Graph Proof Method - 图论证明法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-INCLUSION-EXCLUSION - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Inclusion-Exclusion Method - 容斥方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-IND - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Induction Proof Method - 归纳证明法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-LOGIC - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Logic-Law Method - 逻辑律方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-MOD - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Modular Arithmetic Method - 模运算方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-PRED - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Predicate Translation Method - 谓词翻译方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METHOD-PRIME-EXPONENT - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Prime Exponent Method - 素因数指数方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-PROB - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Probability Calculation Method - 概率计算方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-PROOF - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Proof Method - 证明方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-PROPOSITIONAL-TRANSLATION - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Propositional Translation Method - 命题翻译方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-RSA - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/RSA Calculation Method - RSA 计算方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-RV - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Random-Variable Method - 随机变量方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-REC - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Recurrence-Solving Method - 递推求解法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-TREE - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Recursion-Tree Method - 递归树方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-RECURSIVE-CONSTRUCTION - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Recursive Construction Method - 递归构造法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METHOD-REFLECTION-COUNTING - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Reflection Counting Method - 反射计数法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METHOD-SET-IDENTITY - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Set Identity Method - 集合恒等式方法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-SPLIT-PARTNER - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Split-at-a-Partner Method - 固定伙伴分解法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"
+  -
+    type: "table"
+    name: "METH-STRUCTURAL-INDUCTION - Questions"
+    filters: "note.methods.contains(link(\"knowledge_base/02-Methods/Structural Induction Method - 结构归纳法.md\"))"
+    sort:
+      -
+        property: "note.year"
+        direction: "DESC"
+      -
+        property: "note.id"
+        direction: "ASC"
+    summaries:
+      note.id: "Filled"
+    order:
+      - "note.id"
+      - "formula.title"
+      - "note.subtopics"
+      - "note.concepts"
+      - "note.methods"
+      - "note.question_types"
+      - "note.difficulty"
+      - "note.year"
+      - "note.source_paper"

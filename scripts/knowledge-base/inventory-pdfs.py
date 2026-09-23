@@ -16,9 +16,9 @@ INVENTORY_SNAPSHOT_DATE = "2026-09-08"
 
 
 def build_inventory(root: Path, overrides: dict[str, dict[str, Any]]) -> dict[str, Any]:
-    """Return metadata for every sorted PDF under ``root/past_paper``."""
+    """Return metadata for every sorted PDF under ``root/knowledge_base/past_paper``."""
     root = root.resolve()
-    pdf_paths = sorted((root / "past_paper").glob("*.pdf"))
+    pdf_paths = sorted((root / "knowledge_base/past_paper").glob("*.pdf"))
     relative_paths = {path.relative_to(root).as_posix() for path in pdf_paths}
     unknown_overrides = sorted(set(overrides) - relative_paths)
     if unknown_overrides:

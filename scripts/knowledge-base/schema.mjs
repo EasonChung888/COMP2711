@@ -125,7 +125,7 @@ function isQuestionId(value) {
 
 function isPastPaperPdf(value) {
   return isNonblankString(value)
-    && /^past_paper\/[^/].*\.pdf$/i.test(value)
+    && /^knowledge_base\/past_paper\/[^/].*\.pdf$/i.test(value)
     && !value.includes("\\")
     && !value.split("/").includes("..");
 }
@@ -151,7 +151,7 @@ export function validateQuestionProperties(properties) {
     errors.push("id must be a nonblank Question ID beginning with Q-");
   }
   if (!isPastPaperPdf(properties.source_pdf)) {
-    errors.push("source_pdf must be a nonblank path under past_paper ending in .pdf");
+    errors.push("source_pdf must be a nonblank path under knowledge_base/past_paper ending in .pdf");
   }
   if (!isNonblankString(properties.question_number)) {
     errors.push("question_number must be a nonblank string");

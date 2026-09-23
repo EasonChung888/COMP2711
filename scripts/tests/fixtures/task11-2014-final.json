@@ -1,0 +1,267 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2014-FINAL-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0\\le r_2<n",
+        "(q_1m+q_2)n+r_2"
+      ],
+      "prompt_sha256": "394a39ac0abc57b845d353e6163b670cd4e5bed3f56fe6c83d680caa1a26b632"
+    },
+    "Q-2014-FINAL-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "a=8,m=2,n=3",
+        "2\\ne0"
+      ],
+      "prompt_sha256": "5c458236993a5fa70252632e5cac36e49d2b3081473653295c95f32be4f21d2a"
+    },
+    "Q-2014-FINAL-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "a=qn+1",
+        "a-qn=1"
+      ],
+      "prompt_sha256": "387560ad3c930fd372cdc04b20d507cd7de5befc0bd1547a4d9682a94e7b6297"
+    },
+    "Q-2014-FINAL-P02-d": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\gcd(5,3)=1",
+        "2\\ne1"
+      ],
+      "prompt_sha256": "643518d9dc2694963166d11ba1a068c1931646f82e159126b39174e46ee61445"
+    },
+    "Q-2014-FINAL-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "33\\cdot24-7\\cdot113",
+        "10001=40\\cdot250+1"
+      ],
+      "prompt_sha256": "6acf7745bdee5437dc2467aa19d74be8bb2c250faad67f843219a708b782b69f"
+    },
+    "Q-2014-FINAL-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "91,249,4,16,5,25,123",
+        "98400"
+      ],
+      "prompt_sha256": "b71cd0aac72a70846c0b46db0d853291e756ab74c68512c5c67f0228c0cdaf3e"
+    },
+    "Q-2014-FINAL-P03-c": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\varphi(n)=n-1=250",
+        "d=73"
+      ],
+      "prompt_sha256": "5c11cb002e4f3babc7bf240621a5cf28ab1b7edf8782413a3548802b36b45703"
+    },
+    "Q-2014-FINAL-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "530",
+        "50\\bmod15=5"
+      ],
+      "prompt_sha256": "3f9c378c13401db324c3222bfc1d2e50a2322cb9812c3259f52cf5f08183fa74"
+    },
+    "Q-2014-FINAL-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "16q_2-30q_1=3",
+        "没有整数解"
+      ],
+      "prompt_sha256": "db852d6cab793757fe2f8836607c4680a07acf57746dc6848c415a55a014f723"
+    },
+    "Q-2014-FINAL-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "r\\land\\neg r",
+        "\\neg p\\lor q\\lor F"
+      ],
+      "prompt_sha256": "8b1987c1710e04ed94e85163731af5c752e45a012b17e2030b8d6e3ee4c22343"
+    },
+    "Q-2014-FINAL-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p(u)=T,p(v)=F",
+        "q(u)=q(v)=F",
+        "F\\Rightarrow F=T"
+      ],
+      "prompt_sha256": "bdb973cc4c370cfcab6a54d5cbcd8b971e205119fd009e00ca2a28e5672d0c5a"
+    },
+    "Q-2014-FINAL-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "先证左推右",
+        "反向",
+        "任意 y"
+      ],
+      "prompt_sha256": "36d73b01557ed3a1730828d015a2a54cfd0354d090b0bd60facb2f622842d5a0"
+    },
+    "Q-2014-FINAL-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\gcd(m,n)=1",
+        "n^2=3k^2"
+      ],
+      "prompt_sha256": "c48e6b20156a5226f5ad774b2ec936847db16cca2531a28743a331bef9291048"
+    },
+    "Q-2014-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "m=2k+1,n=2h+1",
+        "2(2kh+k+h)+1"
+      ],
+      "prompt_sha256": "87b939706887393b104264ebe4aa7281864fb481ae61144e4842e2d87bf030d9"
+    },
+    "Q-2014-FINAL-P07": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0\\le m-n<m",
+        "(q'+1)n+r'"
+      ],
+      "prompt_sha256": "f61063c0bcbb63064e3dac915db3bfc10f3a19d35fe8f25050bd03999b6f2276"
+    },
+    "Q-2014-FINAL-P08": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 12,
+      "solution_page": null,
+      "answer_source": "derived",
+      "checkpoints": [
+        "x=1/a\\in(0,1)",
+        "n+1-nx>0",
+        "[1+a/(a-1)^2]a^n"
+      ],
+      "prompt_sha256": "35999df3e0f165c4b00b25a34d319a07b3d1137eafcd4af640ec630af820a3b1"
+    },
+    "Q-2014-FINAL-P09-closed-form": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n^2(5/4)^j",
+        "5n^{\\log_2 5}-4n^2"
+      ],
+      "prompt_sha256": "4ea900a6e490b4f83ec5cb4032b819cd23e13e986e866097003d187929adcb11"
+    },
+    "Q-2014-FINAL-P09-theta": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\log_2 5>2",
+        "T(n)\\le5n^{\\log_2 5}"
+      ],
+      "prompt_sha256": "b706f803e81092cdbeb47be47b364e7faa1ad7003c75aba397a16352c736e19d"
+    },
+    "Q-2014-FINAL-P10-recurrence": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "9V_{n-1}",
+        "10^{n-1}-V_{n-1}",
+        "V_1=9"
+      ],
+      "prompt_sha256": "0613472c6464ac6fbc4f3b43b71c6ecc5fecb638e5ff87a3d2021e81781b3a8d"
+    },
+    "Q-2014-FINAL-P10-closed-form": {
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\sum_{j=0}^{n-2}(10/8)^j",
+        "(10+8)/2=9"
+      ],
+      "prompt_sha256": "37d90bd40036e4c9c54793564d0983e5f69641ed07293cf6a17d72cdc642dbd3"
+    }
+  }
+}

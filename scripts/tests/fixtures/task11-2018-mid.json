@@ -1,0 +1,336 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2018-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(p\\leftrightarrow\\neg q)\\land(q\\leftrightarrow(\\neg p\\land\\neg q))",
+        "(p\\land\\neg q)\\lor(\\neg p\\land q)"
+      ],
+      "prompt_sha256": "3fccf3be5255f812b8f6700390b0de43af8128455c2dc15c9b80cea98a4d4517"
+    },
+    "Q-2018-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "q=F",
+        "p=T,q=F",
+        "唯一解"
+      ],
+      "prompt_sha256": "bf9dd1c57098ac9f0a21cafad11e6c1adee05e6cf646a87ca08357912c5c6153"
+    },
+    "Q-2018-MID-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "q\\land(p\\lor\\neg p)=q",
+        "T\\lor r=T"
+      ],
+      "prompt_sha256": "8ce91e4361e53a0d7d3acef74bb3a32b314f8d15d6d9fc2f5fdef286373c2a90"
+    },
+    "Q-2018-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p=F,q=T,r=T",
+        "T\\to F=F"
+      ],
+      "prompt_sha256": "47326720e67b0343ab9311621d1764d33337754f56c0a6cad57e15c40b53055f"
+    },
+    "Q-2018-MID-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "D=\\{a\\}",
+        "P(a)=T,Q(a)=F",
+        "T\\to F=F"
+      ],
+      "prompt_sha256": "32c669df86dd4894eff70e9e6424bb36900946199b5267bb0b4f7463af88ee8e"
+    },
+    "Q-2018-MID-P02-d": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=0",
+        "y=4",
+        "x^2+16\\ge16>10"
+      ],
+      "prompt_sha256": "58590d46067b12ed6a04b11f0c03b884c2a382fbc2592b80722a23152fb6936d"
+    },
+    "Q-2018-MID-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P=\\{n+1,n+2,\\ldots,2n\\}",
+        "b\\ge2a\\ge2(n+1)>2n"
+      ],
+      "prompt_sha256": "53533cb9e437daabc06dad75bd41cc5855597cc317d2de2eb5cf36e2dcfc1b01"
+    },
+    "Q-2018-MID-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p_i2^{k_j-k_i}",
+        "p_i\\mid p_j",
+        "不是等号"
+      ],
+      "prompt_sha256": "9f711952e5a093552c80f4cca9d588f31752d2b97a3d37a602b5566e5e7c0ed8"
+    },
+    "Q-2018-MID-P03-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1,3,\\ldots,2n-1",
+        "n+1",
+        "|P'|\\le n"
+      ],
+      "prompt_sha256": "b2da47a454fd8f2de5da0c8e7d696a0122dedbf1b2a6f62926adc5166b4d4708"
+    },
+    "Q-2018-MID-P04-a-contrapositive": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg B\\to\\neg A",
+        "|T|<|S|",
+        "不是单射"
+      ],
+      "prompt_sha256": "a5a3d3ccebd06ebdae4a73cf9476751d003ef4316b53efe5835d9be36e92c353"
+    },
+    "Q-2018-MID-P04-a-proof": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "|S|>|T|",
+        "a\\ne b",
+        "f(a)=f(b)"
+      ],
+      "prompt_sha256": "f03c30063fe0516f36736e2a2640928a9de6c5ab0b501821c4c249a89f7c7ce5"
+    },
+    "Q-2018-MID-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "S=T=\\{a,b\\}",
+        "U=\\{0\\}",
+        "g(f(a))=0=g(f(b))"
+      ],
+      "prompt_sha256": "78702c166baab37be2e7618829d188da6c38a7a782ff093d907b4d4b4d20ee22"
+    },
+    "Q-2018-MID-P04-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "|T|\\le2^n-1<2^{n+1}-1=|F_n|",
+        "|T|\\ge|F_n|",
+        "解码器"
+      ],
+      "prompt_sha256": "2af86caf7f2305ca3826892aed96457f233c2d8b9a045eb5a5d7281adf8f818d"
+    },
+    "Q-2018-MID-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "sy+tz=1",
+        "sxy+tzx=x",
+        "z\\mid(sxy+tzx)=x"
+      ],
+      "prompt_sha256": "4c1656621dd0d2272792613d11356b8ab26fc76c1983041c5cf5074fb90a6034"
+    },
+    "Q-2018-MID-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p\\nmid x",
+        "\\gcd(p,x)=1",
+        "p\\mid y"
+      ],
+      "prompt_sha256": "5a4a9061e75d336a8885bd28fa13027a5fd30a44fcdd21a075ca5488eea3ed60"
+    },
+    "Q-2018-MID-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "648=2^3\\cdot3^4",
+        "e=11",
+        "互素"
+      ],
+      "prompt_sha256": "89800dec08b81e38f59103f9bb6152b17cf10a0e47231190607f2178a4f2271b"
+    },
+    "Q-2018-MID-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "648=58\\cdot11+10",
+        "59\\cdot11-648",
+        "649=648+1"
+      ],
+      "prompt_sha256": "509325544bb59a35fcafb99f3e6781056312d716d27926c5eae4e8a3de1e625b"
+    },
+    "Q-2018-MID-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "11=8+2+1",
+        "6561\\equiv234\\pmod{703}",
+        "8\\cdot703+694",
+        "694^{59}\\bmod703=3"
+      ],
+      "prompt_sha256": "d5a66ec0b993272925c74bc9b66989dc876adaa8ff6b35ac2808c73a6b2467f1"
+    },
+    "Q-2018-MID-P07-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "20\\cdot19\\cdot18\\cdot17\\cdot16",
+        "\\binom{20}{5}=15504"
+      ],
+      "prompt_sha256": "f21f5985ac19989387092ea6385b9d69e406f7df6cefcb6f09675a41ad0856a8"
+    },
+    "Q-2018-MID-P07-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{11}{5}=462",
+        "\\binom95=126",
+        "15504-462-126=14916"
+      ],
+      "prompt_sha256": "ef67f46797ee3dca9283d1f71a5f1c696e3f405beef432cef427dd9dc9326ca2"
+    },
+    "Q-2018-MID-P07-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "w=3,4,5",
+        "4620+1386+126=6132",
+        "w\\le2"
+      ],
+      "prompt_sha256": "c29e0f3427970fda12e9a34a254423e5b10fe06ddc645b1563200e0d5987d79b"
+    },
+    "Q-2018-MID-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "10^5=100000",
+        "首位为零"
+      ],
+      "prompt_sha256": "560addcb88bff584f928436031314816a3a27c4cf11d431bef894a209763002b"
+    },
+    "Q-2018-MID-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "10\\cdot9^4",
+        "第三盘再用",
+        "只禁"
+      ],
+      "prompt_sha256": "a4fd8056a9ef0e2f9941a0b29b52cda7161fdaec3e32ac6fad5661c2e2c06a7d"
+    },
+    "Q-2018-MID-P08-c": {
+      "source_pdf": "knowledge_base/past_paper/2018-midterm.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x_0+\\cdots+x_9=5",
+        "\\binom{14}{5}=2002",
+        "九条隔板"
+      ],
+      "prompt_sha256": "4a3d6f7366e36beab4206b7708b199a265d5308a7154adf0324ef45951e9f0e9"
+    }
+  }
+}

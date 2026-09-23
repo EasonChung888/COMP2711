@@ -12,12 +12,12 @@ import {
 } from "./schema.mjs";
 
 const CONTENT_DIRECTORIES = Object.freeze([
-  "00-Home",
-  "01-Topics",
-  "02-Methods",
-  "03-Papers",
-  "04-Questions",
-  "06-Audit"
+  "knowledge_base/00-Home",
+  "knowledge_base/01-Topics",
+  "knowledge_base/02-Methods",
+  "knowledge_base/03-Papers",
+  "knowledge_base/04-Questions",
+  "knowledge_base/06-Audit"
 ]);
 
 const REQUIRED_LINKS = Object.freeze({
@@ -363,7 +363,7 @@ function validateRelatedQuestions(questions, notesByBasename, errors) {
 
 function validateViews(root, errors) {
   for (const filename of REQUIRED_VIEWS) {
-    const relativePath = `05-Views/${filename}`;
+    const relativePath = `knowledge_base/05-Views/${filename}`;
     if (!existsSync(vaultPath(root, relativePath))) {
       errors.push(`missing required view: ${relativePath}`);
     }
@@ -374,8 +374,8 @@ export function validateVault(root, options = {}) {
   const resolvedRoot = resolve(root);
   const errors = [];
   const selectedSources = new Set(options.sources ?? []);
-  const inventory = readJson(resolvedRoot, "06-Audit/source-inventory.json", errors);
-  const audit = readJson(resolvedRoot, "06-Audit/question-audit.json", errors);
+  const inventory = readJson(resolvedRoot, "knowledge_base/06-Audit/source-inventory.json", errors);
+  const audit = readJson(resolvedRoot, "knowledge_base/06-Audit/question-audit.json", errors);
   const inventorySources = Array.isArray(inventory?.sources) ? inventory.sources : [];
   const allAuditRecords = Array.isArray(audit?.questions) ? audit.questions : [];
   const inventoryBySource = new Map(

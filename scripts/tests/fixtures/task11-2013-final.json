@@ -1,0 +1,239 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2013-FINAL-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0\\le r_2<m",
+        "(q_1s+q_2)m+r_2"
+      ],
+      "prompt_sha256": "87c10dd920c7568d3aeed222e22d3902d2cc014d154299b21c543669fd641f0a"
+    },
+    "Q-2013-FINAL-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0,2,4,6",
+        "1,9,25,49"
+      ],
+      "prompt_sha256": "a7f011ce37d8b07b0cb50815dc9e3568a9351f90dfa7d7529ceeeda0d50712db"
+    },
+    "Q-2013-FINAL-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "11\\cdot19=209",
+        "(7,209)"
+      ],
+      "prompt_sha256": "72512a25519fb730ff091c011a6359eae5c988dab4cef87431c885b322699f3f"
+    },
+    "Q-2013-FINAL-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "3\\cdot180-77\\cdot7",
+        "721=4\\cdot180+1"
+      ],
+      "prompt_sha256": "aee224c0cd8174c3df42805c59dcc9bbda3c4ebeb84da6bfa721c5fe291edb36"
+    },
+    "Q-2013-FINAL-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "7=4+2+1",
+        "27072"
+      ],
+      "prompt_sha256": "cdc9c8f45236b1c5975f3a3ae1d1f5729c43faa6e06d2a84adb605aa22497976"
+    },
+    "Q-2013-FINAL-P03": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "pq\\mid(x_1-x_2)",
+        "0<|x_1-x_2|<pq"
+      ],
+      "prompt_sha256": "0aed24c6a6bc61124cc2d26fdc4937394b5b4ce65f6a2efdeb7de9b936dfc21b"
+    },
+    "Q-2013-FINAL-P04": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(46^6)^{20}",
+        "(46^{10})^{12}"
+      ],
+      "prompt_sha256": "1480e38db20edfa9380c822553aa08eb07ca69150413a7f6aeff128c59db47e7"
+    },
+    "Q-2013-FINAL-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg(p\\land q)\\lor r",
+        "德摩根律"
+      ],
+      "prompt_sha256": "a5ce24f778398009e88a3f68bab5215d502b31ac88f38d02591207cb56bdf059"
+    },
+    "Q-2013-FINAL-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "r\\lor(\\neg p\\lor\\neg q)",
+        "第一式也化为"
+      ],
+      "prompt_sha256": "271cfca2109a305819a1cc8ff0713e8aafa61b68f8759af80268a4d036397890"
+    },
+    "Q-2013-FINAL-P05-c": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p=T,q=F,r=F",
+        "F\\land T=F"
+      ],
+      "prompt_sha256": "f99ef8a0f6c1499a433e68f87b8ba22c6649d1085c3883f075eb8dc7da8adbe8"
+    },
+    "Q-2013-FINAL-P06-a-i": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "F(x)\\land\\neg J(x)",
+        "非富人不受"
+      ],
+      "prompt_sha256": "923b14c18d8729519091fbdc65ab68e66eb012080a41b34d9df5c2ea2e01da95"
+    },
+    "Q-2013-FINAL-P06-a-ii": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "S(x)\\land J(x)\\land F(x)",
+        "同一个 x"
+      ],
+      "prompt_sha256": "f568baa2faead3b00b1e4e92150b9b98675b7bb0016d36060a8b8074f3764049"
+    },
+    "Q-2013-FINAL-P06-a-iii": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "S(x)\\land J(x)",
+        "\\Rightarrow\\neg R(x)"
+      ],
+      "prompt_sha256": "55931fa750c3b5252aee5040a39b9e6a0ef51d654b911f06b70a64d8b2200927"
+    },
+    "Q-2013-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "J(x)\\Rightarrow\\neg R(x)",
+        "全称推广"
+      ],
+      "prompt_sha256": "b2f36f58b647440b67c8ad54dc8aea50face3ea25c6b8b44c5697e4823943832"
+    },
+    "Q-2013-FINAL-P07": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n=1",
+        "3(5u+4\\cdot11^{n-1})"
+      ],
+      "prompt_sha256": "912440fcd5c9a36322a0231ddd102c52b44ce69beae76df74eca4fd8b4a0bfd1"
+    },
+    "Q-2013-FINAL-P08-closed-form": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n^2(3/4)^i",
+        "4n^2-3n^{\\log_2 3}"
+      ],
+      "prompt_sha256": "e45d63b49330d12156bf192e1e3fd7ba1f44631138e6fa3527f945f1b5947ec8"
+    },
+    "Q-2013-FINAL-P08-theta": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\log_2 3<2",
+        "\\le4n^2"
+      ],
+      "prompt_sha256": "647d6fecfcf15129d46593617deff7e87749b9d7fac308ff8f052456b06327b9"
+    },
+    "Q-2013-FINAL-P09": {
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "9+36+300=345",
+        "4n^2+100n\\le104n^2"
+      ],
+      "prompt_sha256": "7be5027aa39d3492ae5b497de409ebf5a2bb4b2c6a3c339bcefc84a46d33b2cf"
+    }
+  }
+}

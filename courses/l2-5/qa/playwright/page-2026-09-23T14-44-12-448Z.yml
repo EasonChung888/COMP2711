@@ -1,0 +1,81 @@
+- generic [active] [ref=e1]:
+  - link "跳到正文" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "COMP2711 · L2.5" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+      - navigation "课程资源" [ref=e6]:
+        - link "课程目录" [ref=e7] [cursor=pointer]:
+          - /url: index.html#topics
+        - link "课件页码索引" [ref=e8] [cursor=pointer]:
+          - /url: source-map.html
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: L2.5 · Basics of Counting
+      - heading "计数基础" [level=1] [ref=e12]
+      - paragraph [ref=e13]: 从“有多少种可能”，到“为什么一定存在”。按知识主题读懂每页课件，再用对应真题检验理解。
+      - generic [ref=e14]:
+        - link "开始第一课" [ref=e15] [cursor=pointer]:
+          - /url: lessons/counting-rules.html
+        - link "浏览课程" [ref=e16] [cursor=pointer]:
+          - /url: "#topics"
+      - paragraph [ref=e17]: 已学完 0 / 8 课 · 进度保存在当前浏览器
+    - generic [ref=e18]:
+      - heading "按自己的节奏学习" [level=2] [ref=e19]
+      - paragraph [ref=e20]: 每课依次阅读相关课件页的完整讲解，需要对照时展开原页。本课讲解结束后，再尝试对应练习；完成后在课末勾选“我已学完这课”。
+    - generic [ref=e21]:
+      - heading "课程目录" [level=2] [ref=e22]
+      - generic [ref=e23]:
+        - link "01 · 乘法与加法法则 分步骤构造结果，按互斥情况分类；从座位分配开始。 未学完" [ref=e24] [cursor=pointer]:
+          - /url: lessons/counting-rules.html
+          - strong [ref=e25]: 01 · 乘法与加法法则
+          - text: 分步骤构造结果，按互斥情况分类；从座位分配开始。
+          - generic [ref=e26]: 未学完
+        - link "02 · 函数与子集计数 把函数的输出、单射的限制和子集的取舍变成选择。 未学完" [ref=e27] [cursor=pointer]:
+          - /url: lessons/functions-and-subsets.html
+          - strong [ref=e28]: 02 · 函数与子集计数
+          - text: 把函数的输出、单射的限制和子集的取舍变成选择。
+          - generic [ref=e29]: 未学完
+        - link "03 · 算法中的操作次数 数矩阵乘法的循环次数，理解排序中的逐轮求和。 未学完" [ref=e30] [cursor=pointer]:
+          - /url: lessons/algorithm-operations.html
+          - strong [ref=e31]: 03 · 算法中的操作次数
+          - text: 数矩阵乘法的循环次数，理解排序中的逐轮求和。
+          - generic [ref=e32]: 未学完
+        - link "04 · 有条件的字符串 处理车牌、变量名的长度、首位和保留字限制。 未学完" [ref=e33] [cursor=pointer]:
+          - /url: lessons/restricted-strings.html
+          - strong [ref=e34]: 04 · 有条件的字符串
+          - text: 处理车牌、变量名的长度、首位和保留字限制。
+          - generic [ref=e35]: 未学完
+        - link "05 · 补集计数与密码 用全部减去不符合的情况，避免“至少一个”的重复计数。 未学完" [ref=e36] [cursor=pointer]:
+          - /url: lessons/complement-counting.html
+          - strong [ref=e37]: 05 · 补集计数与密码
+          - text: 用全部减去不符合的情况，避免“至少一个”的重复计数。
+          - generic [ref=e38]: 未学完
+        - link "06 · 树形图与停止条件 沿分支构造合法位串，数清五局三胜的结束路径。 未学完" [ref=e39] [cursor=pointer]:
+          - /url: lessons/tree-diagrams.html
+          - strong [ref=e40]: 06 · 树形图与停止条件
+          - text: 沿分支构造合法位串，数清五局三胜的结束路径。
+          - generic [ref=e41]: 未学完
+        - link "07 · 鸽巢原理与证明 为生日、几何距离、奇偶性和积分问题找到合适的盒子。 未学完" [ref=e42] [cursor=pointer]:
+          - /url: lessons/pigeonhole-proofs.html
+          - strong [ref=e43]: 07 · 鸽巢原理与证明
+          - text: 为生日、几何距离、奇偶性和积分问题找到合适的盒子。
+          - generic [ref=e44]: 未学完
+        - link "08 · 广义鸽巢原理与最小保证 计算人数、扑克牌、袜子与电话号码的保证门槛。 未学完" [ref=e45] [cursor=pointer]:
+          - /url: lessons/minimum-guarantees.html
+          - strong [ref=e46]: 08 · 广义鸽巢原理与最小保证
+          - text: 计算人数、扑克牌、袜子与电话号码的保证门槛。
+          - generic [ref=e47]: 未学完
+    - generic [ref=e48]:
+      - heading "对照课件" [level=2] [ref=e49]
+      - generic [ref=e50]:
+        - link [ref=e51] [cursor=pointer]:
+          - /url: source-map.html
+          - strong [ref=e52]: 按 PPT 页码查找
+          - text: 从原来的第 1–39 页定位讲解与所属课程。
+        - link [ref=e53] [cursor=pointer]:
+          - /url: sources/L2.5.pptx
+          - strong [ref=e54]: 原始 PowerPoint
+          - text: 保留原课件，便于在 PowerPoint 中查看。
+  - contentinfo [ref=e55]: L2.5 · 依照课件逐页学习

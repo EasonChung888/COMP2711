@@ -1,0 +1,149 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2013-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{12}{5}",
+        "=792"
+      ],
+      "prompt_sha256": "4049329cb06ebbf9d3a48ac8138a2321562f2f5684cab918f567eb8c9e71fbe5"
+    },
+    "Q-2013-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom85=56",
+        "792-3\\cdot56=624"
+      ],
+      "prompt_sha256": "e5815285bcf8ff7387279009ba4972b4aa3716efa3c16f1ade8c58d4d9be74cc"
+    },
+    "Q-2013-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "r>5-r",
+        "112+8=120"
+      ],
+      "prompt_sha256": "de56e169b2db98135d435ad3f6ddc46b99524d283a06e496fea05a7236b6252b"
+    },
+    "Q-2013-MID-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "f(1),f(2),f(3)",
+        "n\\cdot n\\cdot n=n^3"
+      ],
+      "prompt_sha256": "558cd56c53077e82dfaa63e3cbf8bfedd83b929d4da43edc7b9ecd9265712991"
+    },
+    "Q-2013-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n−1",
+        "n(n-1)n=n^2(n-1)"
+      ],
+      "prompt_sha256": "e9ee7764c556ec1a0f272154bd7d4489be3c676cb1f645060f12ae047393535c"
+    },
+    "Q-2013-MID-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "f(2)",
+        "n(n-1)^2"
+      ],
+      "prompt_sha256": "09e06a9e28bf14c45a05ffd2efd84458b9ef2267bb0da3b31dbe1e3fbc5ef454"
+    },
+    "Q-2013-MID-P02-d": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{n-1}{2}",
+        "不再乘二"
+      ],
+      "prompt_sha256": "0627a0b218037d29745e677d5f675578a2126236e152506d1d239263ea6ffd8d"
+    },
+    "Q-2013-MID-P03": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "三类互斥",
+        "2\\binom n2+n^2"
+      ],
+      "prompt_sha256": "f976c45d40607395dcf523339942b5c1dae0a1ccff77bbccf8a0bf86008b3d89"
+    },
+    "Q-2013-MID-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "8\\cdot7\\cdots1=8!",
+        "唯一确定"
+      ],
+      "prompt_sha256": "9ca44cd24f08865f0f2a7590845f8b87d1a24c5cfc7cd583234c9fd67d0890e4"
+    },
+    "Q-2013-MID-P04-d": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 6,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{16}{8}8!",
+        "16\\cdot15\\cdots9"
+      ],
+      "prompt_sha256": "d8335e1a9ed396fe3cd9cb7c217bb26ecc7b38a4af3d65ac4e2901418a4b7726"
+    },
+    "Q-2013-MID-P08": {
+      "source_pdf": "knowledge_base/past_paper/2013-midterm.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "长度 102",
+        "反向按三段星号数",
+        "\\binom{102}{2}=5151"
+      ],
+      "prompt_sha256": "ce3148f1205a8ef81cb55f4843adf769b334c3b216fcd5c663b7ea9db61f120f"
+    }
+  }
+}

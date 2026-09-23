@@ -1,0 +1,1 @@
+{"browser": {"browserName": "chromium", "launchOptions": {"headless": true, "executablePath": "/Users/easonzhong/Library/Caches/ms-playwright/chromium_headless_shell-1246/chrome-headless-shell-mac-arm64/chrome-headless-shell"}}, "outputDir": "/Users/easonzhong/Documents/ChatGPT/COMP2711/courses/l2-5/qa/playwright", "allowUnrestrictedFileAccess": true}

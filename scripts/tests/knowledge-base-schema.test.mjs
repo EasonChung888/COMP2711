@@ -13,7 +13,7 @@ function validQuestion(overrides = {}) {
     schema_version: 1,
     course: "COMP2711",
     source_paper: "[[2015 Midterm]]",
-    source_pdf: "past_paper/2015-midterm.pdf",
+    source_pdf: "knowledge_base/past_paper/2015-midterm.pdf",
     source_page: 3,
     question_number: "1(a)",
     year: 2015,
@@ -66,7 +66,7 @@ test("normalizes an aliased Wikilink", () => {
 });
 
 test("normalizes a Wikilink with path and heading fragments", () => {
-  assert.equal(normalizeWikiLink("[[01-Topics/Topic - Logic - 逻辑#Overview]]"), "Topic - Logic - 逻辑");
+  assert.equal(normalizeWikiLink("[[knowledge_base/01-Topics/Topic - Logic - 逻辑#Overview]]"), "Topic - Logic - 逻辑");
 });
 
 test("accepts a complete in-scope Question note", () => {
@@ -106,7 +106,7 @@ test("enforces required scalar types and nonblank strings", () => {
   }));
 
   assert(errors.includes("id must be a nonblank Question ID beginning with Q-"));
-  assert(errors.includes("source_pdf must be a nonblank path under past_paper ending in .pdf"));
+  assert(errors.includes("source_pdf must be a nonblank path under knowledge_base/past_paper ending in .pdf"));
   assert(errors.includes("question_number must be a nonblank string"));
   assert(errors.includes("difficulty_basis must be a nonblank string"));
 });

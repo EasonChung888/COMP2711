@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "title": "计数基础",
+  "subtitle": "Basics of Counting",
+  "language": "zh-CN",
+  "storagePrefix": "comp2711:l2-5:",
+  "topics": [
+    {"slug":"counting-rules","title":"乘法与加法法则","description":"分步骤构造结果，按互斥情况分类；从座位分配开始。","pages":[1,2,3,4,15,16],"questions":["Q-2017-MID-P06-a","Q-2016-MID-P01-d"]},
+    {"slug":"functions-and-subsets","title":"函数与子集计数","description":"把函数的输出、单射的限制和子集的取舍变成选择。","pages":[5,6,7,11,12],"questions":["Q-2013-MID-P02-a","Q-2013-MID-P02-b","Q-2013-MID-P02-c"]},
+    {"slug":"algorithm-operations","title":"算法中的操作次数","description":"数矩阵乘法的循环次数，理解排序中的逐轮求和。","pages":[8,9,10,17,18,19,20],"questions":["Q-2018-FINAL-P10-c"]},
+    {"slug":"restricted-strings","title":"有条件的字符串","description":"处理车牌、变量名的长度、首位和保留字限制。","pages":[13,21,22,23],"questions":["Q-2015-MID-P06-a","Q-2016-MID-P01-b","Q-2016-MID-P01-c"]},
+    {"slug":"complement-counting","title":"补集计数与密码","description":"用全部减去不符合的情况，避免“至少一个”的重复计数。","pages":[14,24,25,26,27],"questions":["Q-2015-MID-P06-b","Q-2015-MID-P06-c"]},
+    {"slug":"tree-diagrams","title":"树形图与停止条件","description":"沿分支构造合法位串，数清五局三胜的结束路径。","pages":[28,29],"questions":[]},
+    {"slug":"pigeonhole-proofs","title":"鸽巢原理与证明","description":"为生日、几何距离、奇偶性和积分问题找到合适的盒子。","pages":[30,31,32,33,39],"questions":["Q-2025F-MID-P07","Q-2025F-FINAL-P02-b","Q-2019-FINAL-P07"]},
+    {"slug":"minimum-guarantees","title":"广义鸽巢原理与最小保证","description":"计算人数、扑克牌、袜子与电话号码的保证门槛。","pages":[34,35,36,37,38],"questions":["Q-2017-MID-P07","Q-2015-MID-P07-c","Q-2025S-FINAL-P07-N"]}
+  ]
+}

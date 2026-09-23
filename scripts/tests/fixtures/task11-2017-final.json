@@ -1,0 +1,420 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2017-FINAL-P01": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(4-j)^9",
+        "262144-78732+3072-4=186480",
+        "容斥"
+      ],
+      "prompt_sha256": "5d153c64970a64b8a32db5618de0fe5f2e19c67bd8202291658990ef6e601ec9"
+    },
+    "Q-2017-FINAL-P02": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\log n^4=4\\log n",
+        "n(2/3)^n\\to0",
+        "10000,"
+      ],
+      "prompt_sha256": "6cd98a8b5b89c0d91db963ebd3bae6aed5cb9289680b76f64032406e2e6d61ed"
+    },
+    "Q-2017-FINAL-P03-a": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2^{n-1}",
+        "\\Theta(2^n)",
+        "常数计费"
+      ],
+      "prompt_sha256": "e02d5f59993225a9ad0fdf4469a59d4ca83176f4c005c15aa41516774f69a933"
+    },
+    "Q-2017-FINAL-P03-b": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1\\le i<j\\le n",
+        "\\binom n2=n(n-1)/2",
+        "O(n^2)"
+      ],
+      "prompt_sha256": "7ad3c8ceff256af2a28f90fba5caa7bfe742ae6421e9bb1d308b00d711894125"
+    },
+    "Q-2017-FINAL-P03-c": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\lfloor n_0/4^k\\rfloor",
+        "n_0/4^k<2",
+        "O(\\log n)"
+      ],
+      "prompt_sha256": "0925d69e48c8c82fe247250feb496800cc6cb153cd760024f1ac3a764d4e87a3"
+    },
+    "Q-2017-FINAL-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6,
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "360+240+144-120-72-48+24=528",
+        "529",
+        "不重复"
+      ],
+      "prompt_sha256": "23f16747b4f7d4e12e798dc9bef413f20770879d11cb44564da01c2ea4cec0fc"
+    },
+    "Q-2017-FINAL-P04-b-algorithm": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6,
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(a,b)\\leftarrow(b,a\\bmod b)",
+        "g=\\gcd(T,d)",
+        "d=0"
+      ],
+      "prompt_sha256": "4ebc6eb51e7a6beb3f8f66b5c30e1d4743cce3fe417f7f437f9f22f6af17a7dc"
+    },
+    "Q-2017-FINAL-P04-b-time": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6,
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "a\\ge b+r>2r",
+        "2\\log_2T+O(1)",
+        "O(\\log T)"
+      ],
+      "prompt_sha256": "a1852ba598a98a214bf07eb3a363954d009c07e7f374de30e889bbd1b82a7552"
+    },
+    "Q-2017-FINAL-P04-c": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "derived",
+      "checkpoints": [
+        "2^r\\le\\prod_{i=1}^r\\ell_i\\le T<n",
+        "\\lfloor\\log_2T\\rfloor+1=O(\\log n)",
+        "不是整除"
+      ],
+      "prompt_sha256": "bc26990b7a9fae85907097903cba537ac3b3b88f327e8ca2572aa120c3304c3f"
+    },
+    "Q-2017-FINAL-P05-a": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8,
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(H)=(1/2)(4/5)+(1/2)(1/2)=13/20",
+        "(2/5)/(13/20)=8/13",
+        "不需要"
+      ],
+      "prompt_sha256": "af88de2fbe9108aa50f8f2d2542187555158425a882a5ccfe247da003ee7b710"
+    },
+    "Q-2017-FINAL-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "I_1=\\cdots=I_8=1",
+        "X=\\sum_{i=1}^8I_i=8"
+      ],
+      "prompt_sha256": "0e5588e67f1560cb8c4fa77e5d6c02159deccf6390ac804a4cd2f0312749e017"
+    },
+    "Q-2017-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "q=2(1/2)^8=1/128",
+        "P(X=1)=8(1/128)(127/128)^7",
+        "不相交"
+      ],
+      "prompt_sha256": "1f02d59a8ece286150f77585a3949e7e80eb6679926a7cd03802379db414f2ee"
+    },
+    "Q-2017-FINAL-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2(1/2)^8=1/128",
+        "8/128=1/16",
+        "期望线性性"
+      ],
+      "prompt_sha256": "ce3a6ede36e4301f7d309c4cbca0b19738eeccc798eef422f775e398962c6a25"
+    },
+    "Q-2017-FINAL-P06-d": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "I_i^2=I_i",
+        "\\operatorname{Cov}(I_i,I_j)=0",
+        "\\frac{127}{2048}"
+      ],
+      "prompt_sha256": "2b7a60651649071b7a7705d8a127b400a52713b046c5df94f0475bc0f6527e03"
+    },
+    "Q-2017-FINAL-P08": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "18=7+7+4",
+        "19=7+4+4+4",
+        "20=5\\cdot4",
+        "21=3\\cdot7",
+        "k-3\\ge18"
+      ],
+      "prompt_sha256": "e2186ddff9444296e8970c8c9107f03171fa5adf2c6cb14ca3587b8861e97d0a"
+    },
+    "Q-2017-FINAL-P09": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1+r>0",
+        "1+r(k+1)+kr^2",
+        "k\\ge0,r^2\\ge0"
+      ],
+      "prompt_sha256": "b04598aa84020116deea29c5ede32d69bdb916de6cb6e4c4711a4edbc1f5eec2"
+    },
+    "Q-2017-FINAL-P10-a-first": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(0,1),(1,1),(2,1)",
+        "\\{(0,0),(0,1),(1,1),(2,1)\\}"
+      ],
+      "prompt_sha256": "fe3119b4198bb229f9d6e7c8e692d32d7f3af2d4bf6d531fa92f84decbd99939"
+    },
+    "Q-2017-FINAL-P10-a-second": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(0,2),(1,2),(2,2),(3,2),(4,2)",
+        "共九个",
+        "去重"
+      ],
+      "prompt_sha256": "0d61c5b4803ef0b628eded94b5339ef2d6fe2dc69753edb049963fa86345dcd4"
+    },
+    "Q-2017-FINAL-P10-b": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "0\\le2\\cdot0",
+        "j\\in\\{0,1,2\\}",
+        "a+j\\le2b+2=2(b+1)"
+      ],
+      "prompt_sha256": "fc64ea26b32ef929e5e912eb2cfad73e86cd549176642ae0cc2d438cdac1072f"
+    },
+    "Q-2017-FINAL-P11-a-T1": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "至少两步",
+        "T(1)=2",
+        "同大小"
+      ],
+      "prompt_sha256": "563840d87cd36e6b8b8bf55888531d751efbe2c5784df919ea0448f7efcd2b39"
+    },
+    "Q-2017-FINAL-P11-a-T2": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "T(2)\\le2+2+2=6",
+        "首次移动大盘前",
+        "T(2)=6"
+      ],
+      "prompt_sha256": "665055ebc566a826cd7e929a4b7544607df7a11f1b502046057db38aa81109f1"
+    },
+    "Q-2017-FINAL-P11-b": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "T(2)=6",
+        "6+2+6=14",
+        "T(3)=14"
+      ],
+      "prompt_sha256": "955075775935338fc8400fb7d84f771579aeb91bedc446502544004e16adeca7"
+    },
+    "Q-2017-FINAL-P11-c": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "首次之前和末次之后",
+        "T(n)=2T(n-1)+2",
+        "T(1)=2"
+      ],
+      "prompt_sha256": "9448fb102afc21e6230479f2214495ab9515d1688953e884866f3424c8d32515"
+    },
+    "Q-2017-FINAL-P11-d": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "U(n)=T(n)+2",
+        "U(1)=4",
+        "T(n)=2^{n+1}-2",
+        "2(2^n-2)+2=2^{n+1}-2"
+      ],
+      "prompt_sha256": "778a3db531cc79307960cfd562b65641179715dda5fb89853cf7077be37e4e1d"
+    },
+    "Q-2017-FINAL-P13-a": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "answer_source": "derived",
+      "checkpoints": [
+        "K_1",
+        "另一部空",
+        "n=1,2",
+        "三角形"
+      ],
+      "prompt_sha256": "1bf8bc9549981736f7777374f918ac97e93807ae0c9af53841a76ad848d95562"
+    },
+    "Q-2017-FINAL-P13-b": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "偶数编号蓝",
+        "闭合边",
+        "n\\ge4"
+      ],
+      "prompt_sha256": "5c9473a7b9281e306beff70db9a6bf56c698e15c47b93a323560bf9e04ceee88"
+    },
+    "Q-2017-FINAL-P13-c": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "answer_source": "derived",
+      "checkpoints": [
+        "恰有两个奇度点",
+        "m+n",
+        "(m,n)=(1,1)",
+        "单边图"
+      ],
+      "prompt_sha256": "d30790af7191a0e309aeadf600800ec7247496d03845a9588b2a275190ee07b2"
+    },
+    "Q-2017-FINAL-P14-a": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 18,
+      "solution_page": [
+        18
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\{v_i,v_{i+1}\\}",
+        "1\\le i<n",
+        "n=1",
+        "n-1"
+      ],
+      "prompt_sha256": "3a83edecf8c2bc5c1ad4a2c70a160ef0751d6e548ad35dc138b3bfa36189ea53"
+    },
+    "Q-2017-FINAL-P14-c": {
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 18,
+      "solution_page": [
+        18
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\sum\\deg v=2k<2n",
+        "n-k>1",
+        "零条边",
+        "至少两个顶点"
+      ],
+      "prompt_sha256": "d96dd5a5a95d504bc947b8a152de6820a2f9626bd2d9e6eb891e94468ad9a1f5"
+    }
+  }
+}

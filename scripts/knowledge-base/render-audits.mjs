@@ -9,8 +9,9 @@ import {
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseFrontmatter } from "./schema.mjs";
+import { collectVaultTotals, formatTotalsTable } from "./totals.mjs";
 
-const GENERATED_NOTICE = "<!-- Generated from 06-Audit/*.json by scripts/knowledge-base/render-audits.mjs. -->";
+const GENERATED_NOTICE = "<!-- Generated from knowledge_base/06-Audit/*.json by scripts/knowledge-base/render-audits.mjs. -->";
 
 function readJson(root, relativePath) {
   return JSON.parse(readFileSync(join(root, relativePath), "utf8"));
@@ -121,7 +122,8 @@ function renderSyllabusAudit(audit) {
         Array.isArray(question.syllabus_evidence)
           ? question.syllabus_evidence.join("<br>")
           : "-",
-        question.exclusion_reason
+        // Literal mathematical [coefficient](probability) is not a Markdown link.
+        question.exclusion_reason?.replace(/\[([^\[\]]+)\](?=\()/g, "\\[$1\\]")
       ];
       lines.push(`| ${cells.map(tableCell).join(" | ")} |`);
     }
@@ -129,7 +131,7 @@ function renderSyllabusAudit(audit) {
   return `${lines.join("\n")}\n`;
 }
 
-function renderExtractionAudit(root, inventory, audit) {
+export function renderExtractionAudit(root, inventory, audit) {
   const sources = [...inventory.sources].sort((left, right) => (
     compareText(left.source_pdf, right.source_pdf)
   ));
@@ -139,9 +141,21 @@ function renderExtractionAudit(root, inventory, audit) {
     "",
     "# Extraction and Verification Audit",
     "",
-    "An identified audit record counts as transcribed. A solution counts as verified only when its admitted Question note exists and has `verification_status: verified`.",
+    "Source enumeration and admission certainty are separate: an identified atom has a recorded disposition, but unresolved and excluded atoms are not admitted Questions. A note's verified flag is not by itself visual/source evidence; the per-ID register below exposes each recorded check and any missing evidence.",
     "",
-    "| Source PDF | Identified | Transcribed | Admitted | Verified solutions |",
+    "Prompt fingerprints and Chinese checkpoints are structural/regression safeguards, not automatic semantic proof. They do not replace direct PDF comparison, mathematical/model review, or native Obsidian rendering checks.",
+    "",
+    "## Live Authoritative Totals",
+    "",
+    formatTotalsTable(collectVaultTotals(root, inventory, audit)),
+    "",
+    "Computed from the source inventory, all audit dispositions, live admitted Question provenance, and live Paper/taxonomy/Method Properties. Source completeness does not certify unresolved admission or complete syllabus coverage. Each identified atom has one disposition; duplicate source aliases add no canonical Paper or atom.",
+    "",
+    "Exact maintenance commands, including read-only inventory recomputation, are in [[Knowledge Base Guide#Maintenance commands]]. Run `node scripts/knowledge-base/totals.mjs` to recompute these totals, and `node scripts/knowledge-base/render-audits.mjs` to refresh both this table and the Guide's marked totals block.",
+    "",
+    "## Source Reconciliation",
+    "",
+    "| Source PDF | Identified | Inventoried atoms | Admitted | Notes marked verified |",
     "| --- | ---: | ---: | ---: | ---: |"
   ];
 
@@ -158,6 +172,32 @@ function renderExtractionAudit(root, inventory, audit) {
     ];
     lines.push(`| ${cells.map(tableCell).join(" | ")} |`);
   }
+  const corrections = questions.filter((record) => typeof record.source_correction === "string" && record.source_correction.trim());
+  if (corrections.length > 0) {
+    lines.push("", "## Documented Source Answer Corrections", "",
+      "The printed claims and their corrections are retained below. Provenance is item-specific: changed conclusions or independently completed proofs are derived; secondary notation, arithmetic, label or cross-reference slips may retain a correct official conclusion and complete underlying argument. Unresolved records are not admitted answers.", "",
+      "| ID | Source PDF | Page | Answer provenance | Source defect and correction |",
+      "| --- | --- | ---: | --- | --- |");
+    for (const record of corrections) {
+      const provenance = record.status === "in-scope" ? record.answer_source : "not admitted";
+      lines.push(`| ${[record.id, pdfLink(record.source_pdf), record.source_page, provenance, record.source_correction].map(tableCell).join(" | ")} |`);
+    }
+  }
+  const ordered = [...questions].sort((a, b) => compareText(a.id, b.id));
+  const hasEvidence = record => ["transcription", "scope", "solution"].every(
+    key => typeof record.verification?.[key] === "string" && record.verification[key].trim()
+  );
+  const admitted = ordered.filter(record => record.status === "in-scope");
+  lines.push("", "## Per-ID Verification Register", "",
+    `Admitted records with all three evidence fields: **${admitted.filter(hasEvidence).length}/${admitted.length}**. Missing fields are shown explicitly, not inferred from a neighbouring note or a passing test. Unresolved/excluded rows retain only the evidence actually recorded; their inclusion here does not certify admission.`, "",
+    "| ID | Disposition | Source / page | Answer provenance | Transcription / visual source check | Scope / difficulty check | Solution / independent check |",
+    "| --- | --- | --- | --- | --- | --- | --- |");
+  for (const record of ordered) {
+    const evidence = key => record.verification?.[key] || "NOT RECORDED — source review required before claiming this check";
+    const cells = [record.id, record.status, `${pdfLink(record.source_pdf)} p.${record.source_page}`,
+      record.status === "in-scope" ? (record.answer_source || "NOT RECORDED — provenance review required") : "not admitted", evidence("transcription"), evidence("scope"), evidence("solution")];
+    lines.push(`| ${cells.map(tableCell).join(" | ")} |`);
+  }
   return `${lines.join("\n")}\n`;
 }
 
@@ -169,23 +209,32 @@ function writeGenerated(root, relativePath, content) {
 
 export function renderAuditDocuments(root) {
   const resolvedRoot = resolve(root);
-  const inventory = readJson(resolvedRoot, "06-Audit/source-inventory.json");
-  const audit = readJson(resolvedRoot, "06-Audit/question-audit.json");
+  const inventory = readJson(resolvedRoot, "knowledge_base/06-Audit/source-inventory.json");
+  const audit = readJson(resolvedRoot, "knowledge_base/06-Audit/question-audit.json");
   writeGenerated(
     resolvedRoot,
-    "06-Audit/Source Inventory.md",
+    "knowledge_base/06-Audit/Source Inventory.md",
     renderSourceInventory(inventory)
   );
   writeGenerated(
     resolvedRoot,
-    "06-Audit/Syllabus Audit.md",
+    "knowledge_base/06-Audit/Syllabus Audit.md",
     renderSyllabusAudit(audit)
   );
   writeGenerated(
     resolvedRoot,
-    "06-Audit/Extraction and Verification Audit.md",
+    "knowledge_base/06-Audit/Extraction and Verification Audit.md",
     renderExtractionAudit(resolvedRoot, inventory, audit)
   );
+  const guidePath = join(resolvedRoot, "knowledge_base/00-Home/Knowledge Base Guide.md");
+  if (existsSync(guidePath)) {
+    const guide = readFileSync(guidePath, "utf8");
+    const block = /<!-- BEGIN LIVE TOTALS -->[\s\S]*?<!-- END LIVE TOTALS -->/;
+    if (block.test(guide)) {
+      const table = formatTotalsTable(collectVaultTotals(resolvedRoot, inventory, audit));
+      writeFileSync(guidePath, guide.replace(block, `<!-- BEGIN LIVE TOTALS -->\n${table}\n<!-- END LIVE TOTALS -->`), "utf8");
+    }
+  }
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

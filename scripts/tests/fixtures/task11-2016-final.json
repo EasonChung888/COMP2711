@@ -1,0 +1,272 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2016-FINAL-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 3,
+      "solution_page": [
+        3
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "77/11=7",
+        "5\\cdot7=35"
+      ],
+      "prompt_sha256": "3c065c4cf8857aa6bf81dd0d4aa93f70d01b5fe9355af1a0112f6c0bbeaa2521"
+    },
+    "Q-2016-FINAL-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "a(n-m)",
+        "a^2E[(n-m)^2]=a^2v"
+      ],
+      "prompt_sha256": "2116f7c0ff4a96c37450303330a39cbe3e89696ab618a62eb5afde102fce3b1a"
+    },
+    "Q-2016-FINAL-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "f(n^2)=an^2+b",
+        "a(v+m^2)+b"
+      ],
+      "prompt_sha256": "69d013c6dd6f2714ac8a1fce534d786059794adf6388aa08013ad1a60aa0b129"
+    },
+    "Q-2016-FINAL-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "a^2n^2+2abn+b^2",
+        "a^2(v+m^2)+2abm+b^2"
+      ],
+      "prompt_sha256": "a4ec053cc6d307e04bd85f538fc281eb932b5187c00d74e2857291369b3b5599"
+    },
+    "Q-2016-FINAL-P02-d": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "E(np)=m^2",
+        "a^2m^2+abm+abm+b^2=(am+b)^2"
+      ],
+      "prompt_sha256": "e8525720039ca1f4533486430a26fb6b72e262641cabc394016cb72797ff0b56"
+    },
+    "Q-2016-FINAL-P03-a-1": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(A_1\\mid F)=1/3",
+        "(1/2)(1/3)+(1/2)(1)=2/3"
+      ],
+      "prompt_sha256": "1cbfe065e181d2dff74352946b84d88ff969971ece625de11c979e1995691073"
+    },
+    "Q-2016-FINAL-P03-a-2": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "P(A_2)=(1/2)(1/3)+(1/2)(1)=2/3",
+        "未条件于第一掷"
+      ],
+      "prompt_sha256": "e98bcdc23acfbe8daa0304622b548b7ee511f415744fa8784a7d7a8aa4bd86f0"
+    },
+    "Q-2016-FINAL-P03-e": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 7,
+      "solution_page": null,
+      "answer_source": "derived",
+      "checkpoints": [
+        "0\\le t\\le1/3",
+        "\\frac12t+\\frac12",
+        "1/2>4/9",
+        "没有借用"
+      ],
+      "prompt_sha256": "4de26d8829c81309525a6dd1db1e84ec3dc939de24792471624fcbedc8c590a5"
+    },
+    "Q-2016-FINAL-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "1161=1024+128+8+1",
+        "302\\cdot36\\equiv36"
+      ],
+      "prompt_sha256": "6c4186dba15a575f40ccdcaf00b6b289732051bc82e3ed568c5fd2c8fa38a06b"
+    },
+    "Q-2016-FINAL-P04-b-i": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8,
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "3,243,554",
+        "72+26\\equiv1\\pmod{97}",
+        "左零右一"
+      ],
+      "prompt_sha256": "1a71c69ba5c023b6049a48a1c66e85b8778ad7bd75642c9cf094d2fdc57daed8"
+    },
+    "Q-2016-FINAL-P04-b-ii": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "r=3(7\\cdot21^{70}-24q)",
+        "余数45"
+      ],
+      "prompt_sha256": "3aa1fcf252ff631770cda2deae54db109f0d399990bfaa67810a7a7ff736a3ec"
+    },
+    "Q-2016-FINAL-P05-a-raymond": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "31\\cdot7-216",
+        "d_R=31"
+      ],
+      "prompt_sha256": "a94cdd5005c71b52c6d93303e1be68bd2526ad6dc753e14b9c5c4d051ce0d23c"
+    },
+    "Q-2016-FINAL-P05-a-kenneth": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "37\\cdot13-3\\cdot160",
+        "d_K=37"
+      ],
+      "prompt_sha256": "98333160f99fc8e7058681194035aaddc0948e2697f06534b98d353f1095601a"
+    },
+    "Q-2016-FINAL-P05-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(7,247)",
+        "77\\cdot20\\equiv58\\pmod{247}"
+      ],
+      "prompt_sha256": "600a294f724a6b601def37b51dad9d236dd3add1054cef644b0f286541e9b1e1"
+    },
+    "Q-2016-FINAL-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=733+6930k",
+        "10t\\equiv0\\pmod7",
+        "唯一解733"
+      ],
+      "prompt_sha256": "a6fe9ff9ea193c7f0038e4cce1af3de6bcb70bb3766f5fcf59440c5b1847dcd5"
+    },
+    "Q-2016-FINAL-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11,
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=447693+988027k",
+        "752、746、740"
+      ],
+      "prompt_sha256": "2472abe0341c4bdd9eaebc3e761fe9a36096f07d6928289ab365bd69290c32d1"
+    },
+    "Q-2016-FINAL-P07-a-recurrence": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "T(1)=1",
+        "T(n)=2T(n-1)+1",
+        "三类互斥穷尽"
+      ],
+      "prompt_sha256": "cb8c6b740e3f9d0dc32b4ea866ebf1a817d8c642beacb16f5029d8a6056a6885"
+    },
+    "Q-2016-FINAL-P07-a-proof": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "基例n=1",
+        "删掉新人形成旧非空委员会",
+        "2T(n-1)+1"
+      ],
+      "prompt_sha256": "2c815b5b7a0f5c4a1485ba38e22f9eee69b7db95bd09f2055c091ec8dd65d705"
+    },
+    "Q-2016-FINAL-P07-b": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "2^jT(n-j)+\\sum_{i=0}^{j-1}2^i",
+        "2^{n-1}+(2^{n-1}-1)=2^n-1"
+      ],
+      "prompt_sha256": "424e926e446cfc0fccfa74938d10ff7406ea8bb8f0c85d5e0c5801359b321dea"
+    },
+    "Q-2016-FINAL-P07-c": {
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "T(1)=1=2^1-1",
+        "2^n-2+1=2^n-1"
+      ],
+      "prompt_sha256": "07b8a888d02215c09c12f020493f24f892ae45fdeb13b86345e05b6460e434c8"
+    }
+  }
+}

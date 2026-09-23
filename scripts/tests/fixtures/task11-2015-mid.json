@@ -1,0 +1,325 @@
+{
+  "source_review": "Task 11: rendered physical PDF pages reopened and compared with the atomic requests and supplied conclusions.",
+  "questions": {
+    "Q-2015-MID-P01-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(T,T),(F,F)",
+        "q\\to p",
+        "1、2、4"
+      ],
+      "prompt_sha256": "1ab705ebeae4b08cf40adb0e94c8c40734524bc64159f2779deac1972a749d70"
+    },
+    "Q-2015-MID-P01-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "p\\lor\\neg p\\lor q",
+        "p=T,q=F",
+        "2、3"
+      ],
+      "prompt_sha256": "bedde2ea66b491ce02977400cb99a059731710eac9231212edef8a6363900eea"
+    },
+    "Q-2015-MID-P01-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg P(y)\\to Q(y)",
+        "U=\\{a,b\\}",
+        "目标真而四假"
+      ],
+      "prompt_sha256": "788054ee5420f685c68a7098292f34ae5e9c07eb3de58f64701b1fc6022459d0"
+    },
+    "Q-2015-MID-P01-d": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 3,
+      "solution_page": [
+        4
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "U_1=U_2=\\{0,1\\}",
+        "P 真、R 假",
+        "3、4"
+      ],
+      "prompt_sha256": "24883f06011d6897dd77be8513feb775e1786f2c7f1336607c24b2fb71973cbc"
+    },
+    "Q-2015-MID-P02-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg\\neg(p\\lor q)",
+        "析取三段论"
+      ],
+      "prompt_sha256": "c339c6e8076f525eca8edf7c48bdd9e37eaf95c615fab5973c84a8f5eb5d2b8f"
+    },
+    "Q-2015-MID-P02-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg p\\to(r\\land s)",
+        "合取消去得到 r"
+      ],
+      "prompt_sha256": "8d469c562ee9ac31940c7e37a9bec2e64cdc6b3462583584e7d23d5166fc0412"
+    },
+    "Q-2015-MID-P02-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 5,
+      "solution_page": [
+        6
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg q\\lor\\neg r",
+        "第二行 p",
+        "\\neg s"
+      ],
+      "prompt_sha256": "f23d6d044f8c25da31e728da66c2c1fceb913e0b1213820e1458f1054b3ac132"
+    },
+    "Q-2015-MID-P03-statement-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "rich(x)\\land famous(x)",
+        "\\forall x\\in U"
+      ],
+      "prompt_sha256": "ff71c0ae6583415c775a42c26a0674d25c099836735ee9c1664726c68d3072ed"
+    },
+    "Q-2015-MID-P03-statement-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "famous(x)\\to successful(x)",
+        "rich(x)\\to(famous(x)"
+      ],
+      "prompt_sha256": "53fce239f8830cd3e7c836a2345da1631dee2adc0c67c7c24cebf56050ecdaa2"
+    },
+    "Q-2015-MID-P03-statement-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "rich(x)\\to successful(x)",
+        "famous(x)\\to(rich(x)"
+      ],
+      "prompt_sha256": "58b4a52c78c48f52f4f0609d5d7b4091f3c6c30a86db6aa49e74934810aa1bff"
+    },
+    "Q-2015-MID-P03-equivalence": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 7,
+      "solution_page": [
+        8
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\neg R\\lor\\neg F\\lor S",
+        "交换律",
+        "每个 x"
+      ],
+      "prompt_sha256": "59f788a3f1a8b1aa38d5c18bcf12adab4d7db7089f5dd87ed1eda1014abf574d"
+    },
+    "Q-2015-MID-P04-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "xy=ac/(bd)",
+        "bd\\ne0"
+      ],
+      "prompt_sha256": "1903e142210079a1523d4f5778e0bcfa8571880b5d6f69e4dbfce341a40207e4"
+    },
+    "Q-2015-MID-P04-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "x=a^5/b^5",
+        "逆否等价"
+      ],
+      "prompt_sha256": "66b96cb540c66526c29fc37da8b15dad59e138193b5a724901d508ef4044d68e"
+    },
+    "Q-2015-MID-P04-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "ad/(bc)",
+        "xy\\ne0",
+        "bc\\ne0"
+      ],
+      "prompt_sha256": "453995a32732f94a6180156b78afd5f31bd11b7c6b0096dbefbb438946f3341a"
+    },
+    "Q-2015-MID-P06-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "10+26=36",
+        "26\\cdot36^7"
+      ],
+      "prompt_sha256": "fbe57def1977321b8c1f17652c525d5f67ffd12795407dda230f0be8f7fb9094"
+    },
+    "Q-2015-MID-P06-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "26\\cdot36^7-26^8",
+        "八位全为字母"
+      ],
+      "prompt_sha256": "22184f421f1a5712110ab060bad0cf8baa4d43d46f946d8990172c433ceb0cc2"
+    },
+    "Q-2015-MID-P06-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "7\\cdot10\\cdot26^7",
+        "两类互斥"
+      ],
+      "prompt_sha256": "855fbf349fdb44959cd9de4fa01951dd7316a60011d15b3dfcadc75882133eda"
+    },
+    "Q-2015-MID-P06-d": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom72-6=15",
+        "26^6\\cdot10^2\\binom62"
+      ],
+      "prompt_sha256": "2bfacee64722bfb4cd0bcf5904d39b063124d9aa6ba090994658fd6315ebb7fe"
+    },
+    "Q-2015-MID-P07-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "(kn)(kn-1)\\cdots1=(kn)!",
+        "每人恰收一张"
+      ],
+      "prompt_sha256": "767e0890d98f9258bf7c58a2ca742e146b87db5f5e98117d63c3c4c2a7386eb2"
+    },
+    "Q-2015-MID-P07-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "最小 k 张",
+        "n 个连续块",
+        "(k!)^n"
+      ],
+      "prompt_sha256": "6a2e5d5d26cc2c46dd7386e33040d0d91ec2999e211d0a77b78e3f37d14c2f7e"
+    },
+    "Q-2015-MID-P07-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "n(2k-1)+1",
+        "每个等级 $2k-1$"
+      ],
+      "prompt_sha256": "3aab4736a276e94e597c1f114b2308e5735193c60df5e9f7e2592e029b4e7036"
+    },
+    "Q-2015-MID-P08-a": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "g_1+g_2+g_3=6",
+        "\\binom{12}{3}=220"
+      ],
+      "prompt_sha256": "69724a715c0dbe36cbb9671c45e9c7f1365889be6c06ca2809b0e48c6a048129"
+    },
+    "Q-2015-MID-P08-b": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "d=2,s=2",
+        "\\binom{12}{2}\\binom{10}{2}2^2=11880"
+      ],
+      "prompt_sha256": "61b157ecfa113da6d3c0e92925472fc65286cf8f07993e9d58ef7e860a4fce14"
+    },
+    "Q-2015-MID-P08-c": {
+      "source_pdf": "knowledge_base/past_paper/2015-midterm.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "answer_source": "official",
+      "checkpoints": [
+        "\\binom{12}{6}2^6=59136",
+        "不再乘六的阶乘"
+      ],
+      "prompt_sha256": "dd29a38a00ca8ebda9fcb1773134e76aa03689e5c07961fb53b65d8ba8fdca1f"
+    }
+  }
+}
