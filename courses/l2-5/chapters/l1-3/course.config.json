@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "title": "推理与证明",
+  "subtitle": "由有效论证与推理规则，进入直接、逆否和反证等证明方法。",
+  "language": "zh-CN",
+  "storagePrefix": "comp2711:l1-3:",
+  "topics": [
+    {"slug":"propositional-inference","title":"命题推理规则","description":"用前提与结论判定有效性，逐步应用命题推理规则。","pages":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],"questions":["Q-2015-MID-P02-a","Q-2015-MID-P02-b","Q-2015-MID-P02-c"]},
+    {"slug":"predicate-inference","title":"谓词推理规则","description":"结合量词实例化、概括及命题推理完成形式证明。","pages":[16,17,18,19,20,21,22],"questions":["Q-2019-MID-P04","Q-2013-FINAL-P06-b","Q-2025F-MID-P02-c-proof"]},
+    {"slug":"direct-proofs","title":"定理与直接证明","description":"理解定理、引理与推论，从已知条件直接推出结论。","pages":[23,24,25,26,27,28,29,30],"questions":["Q-2015-MID-P04-a","Q-2020-MID-P03-b"]},
+    {"slug":"contraposition","title":"逆否证明","description":"证明原命题的逆否命题，用于奇偶性和有界性问题。","pages":[31,32,33,34],"questions":["Q-2015-MID-P04-b","Q-2014-FINAL-P06-b","Q-2017-MID-P03-b"]},
+    {"slug":"contradiction","title":"反证法","description":"假设目标不成立，推导矛盾，处理无理数与条件命题。","pages":[35,36,37,38,39,40],"questions":["Q-2014-FINAL-P06-a","Q-2015-MID-P04-c","Q-2019-MID-P08"]},
+    {"slug":"proof-structure-and-limits","title":"证明结构、常见错误与自动化","description":"组织双条件与等价证明，识别错误步骤并认识自动定理证明的边界。","pages":[41,42,43,44,45],"questions":[]}
+  ]
+}

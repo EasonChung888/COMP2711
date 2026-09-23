@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "title": "谓词逻辑",
+  "subtitle": "以论域、量词和作用域描述对象，并处理嵌套量词与前束范式。",
+  "language": "zh-CN",
+  "storagePrefix": "comp2711:l1-2:",
+  "topics": [
+    {"slug":"predicates-and-quantifiers","title":"谓词、论域与量词","description":"区分命题和谓词，使用全称与存在量词判断真值。","pages":[1,2,3,4,5,6,7,8,9,10,11,12,13,14],"questions":["Q-2019-MID-P02-a","Q-2019-MID-P02-b","Q-2019-MID-P02-c"]},
+    {"slug":"restricted-domains","title":"受限论域与语句翻译","description":"把限制条件纳入量化语句，并检验自然语言推理。","pages":[15,16,17,18],"questions":["Q-2016-MID-P06-a","Q-2016-MID-P06-d","Q-2020-MID-P01-a"]},
+    {"slug":"quantifier-equivalence","title":"量词等价与反例","description":"判断量词跨合取或析取时的等价关系，构造反例。","pages":[19,20,21,22,23,24,25],"questions":["Q-2014-FINAL-P05-b","Q-2014-FINAL-P05-c","Q-2024S-MID-P03-a"]},
+    {"slug":"negating-quantifiers","title":"否定量化命题","description":"逐层翻转全称与存在量词，把否定推进到谓词。","pages":[26,27,28,29,30,31],"questions":["Q-2023F-MID-P02-a","Q-2025F-MID-P02-b"]},
+    {"slug":"nested-quantifiers","title":"嵌套量词与语句含义","description":"理解量词次序、多个变量和自然语言翻译与否定。","pages":[32,33,34,35,36,37,38,39,40,41,42,43,44,45,46],"questions":["Q-2019-FINAL-P01-a","Q-2019-FINAL-P01-c","Q-2019-FINAL-P01-d"]},
+    {"slug":"empty-quantification-and-pnf","title":"空量化与前束范式","description":"在明确作用域的条件下，整理公式开头的量词。","pages":[47,48,49,50,51,52,53],"questions":[]}
+  ]
+}

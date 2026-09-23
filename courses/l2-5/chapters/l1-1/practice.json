@@ -1,0 +1,226 @@
+[
+  {
+    "id": "Q-2016-MID-P04-a",
+    "topic": "propositions-and-connectives",
+    "sourceNote": "sources/notes/Q-2016-MID-P04-a - Logical Equivalence.md",
+    "sourceNoteSha256": "d84d1670b858f2f7a023ab4a6b6194645c595b6a1d66d6ca31ac8f8bcdd936f6",
+    "stems": [],
+    "paper": "2016 Midterm",
+    "pdf": "sources/papers/2016-midterm.pdf",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "4(a)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) Construct a truth table for the statement $(p\\oplus q)\\Leftrightarrow r$.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.\n\n**Answer.** The final column in TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF order is F, T, T, F, T, F, F, T.\n\n**Derivation/proof.** Evaluate XOR first, then compare that result with $r$ in each row.\n\n| $p$ | $q$ | $r$ | $p\\oplus q$ | $(p\\oplus q)\\leftrightarrow r$ |\n| --- | --- | --- | --- | --- |\n| T | T | T | F | F |\n| T | T | F | F | T |\n| T | F | T | T | T |\n| T | F | F | T | F |\n| F | T | T | T | T |\n| F | T | F | T | F |\n| F | F | T | F | F |\n| F | F | F | F | T |\n\nThe XOR column tests whether $p\\ne q$; the last column tests whether that Boolean result equals $r$.\n\n### 中文解答\n\n**推导。** 按 TTT、TTF、TFT、TFF、FTT、FTF、FFT、FFF 排列八个赋值。异或 $p\\oplus q$ 仅在前两值不同时真，故中间列依次为 F,F,T,T,T,T,F,F。再与第三值r比较，相同则双条件真，得到最终列 F,T,T,F,T,F,F,T。上方完整表逐行列出两列；例如TTF时异或为F，与r=F相同，所以最后为T，而TTT最后为F。八个赋值全部覆盖。",
+    "mistakesMarkdown": "- 把异或当作普通析取，使同真行错误。\n- 用蕴含规则而非双条件规则处理最后一列。"
+  },
+  {
+    "id": "Q-2019-MID-P01-a",
+    "topic": "propositions-and-connectives",
+    "sourceNote": "sources/notes/Q-2019-MID-P01-a - Logical Equivalence.md",
+    "sourceNoteSha256": "0a8164b3eba1ddcd6117a7779265f0c21066151f22a927ca1fbdfbd3327fae3d",
+    "stems": [
+      "STEM-2019-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $c,d,r$, and $w$ be the propositiions\n\n$c$: “It is cold”\n\n$d$: “It is dry”\n\n$r$: “It is rainy”\n\n$w$: “It is windy”\n\nWrite the following propositions using $c,d,r$ and $w$ and the Boolean connectives.\n\n(a) It is neither cold nor dry.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $\\neg c\\land\\neg d$.\n\n**Derivation/proof.** “Neither A nor B” requires both A and B to be false. Here that is not cold and not dry, so the two negative requirements are joined with $\\land$. By De Morgan's law, $\\neg(c\\lor d)$ is equivalent, whereas $\\neg(c\\land d)$ would also allow exactly one to be true.\n\n### 中文解答\n\n**推导。** “neither cold nor dry” 同时否认 cold 与 dry，故两个子句分别为 $\\neg c$、$\\neg d$，以“且”连接为 $\\neg c\\land\\neg d$。德摩根律也给 $\\neg(c\\lor d)$；只写 $\\neg(c\\land d)$ 会容许其中一种天气，不能表达两者皆无。",
+    "mistakesMarkdown": "- 写成非 c 或非 d。\n- 只否定整个合取而改变含义。"
+  },
+  {
+    "id": "Q-2019-MID-P01-b",
+    "topic": "conditionals-and-biconditionals",
+    "sourceNote": "sources/notes/Q-2019-MID-P01-b - Logical Equivalence.md",
+    "sourceNoteSha256": "c2ed17243f00b9e990685bc74602744a2516782d4363e4449b5ca34dde313c5c",
+    "stems": [
+      "STEM-2019-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(b)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $c,d,r$, and $w$ be the propositiions\n\n$c$: “It is cold”\n\n$d$: “It is dry”\n\n$r$: “It is rainy”\n\n$w$: “It is windy”\n\nWrite the following propositions using $c,d,r$ and $w$ and the Boolean connectives.\n\n(b) It is rainy if it is not cold.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $\\neg c\\to r$.\n\n**Derivation/proof.** A sentence “A if B” means “if B, then A.” Taking A as rainy and B as not cold places $\\neg c$ in the antecedent and $r$ in the consequent. It makes no claim about rain when it is cold.\n\n### 中文解答\n\n**推导。** “A if B” 由 B 推出 A。这里条件 B 为“不冷” $\\neg c$，结果 A 为“下雨” $r$，所以命题为 $\\neg c\\to r$。它只排除不冷且不下雨的组合，并不声称下雨必须不冷。",
+    "mistakesMarkdown": "- 写成 r 推出非 c。\n- 加上没有给出的逆方向。"
+  },
+  {
+    "id": "Q-2019-MID-P01-c",
+    "topic": "conditionals-and-biconditionals",
+    "sourceNote": "sources/notes/Q-2019-MID-P01-c - Logical Equivalence.md",
+    "sourceNoteSha256": "312f842e66e62515fc27f15c8623abc6046b31a3c93c69adf55e49bd2cbe14a3",
+    "stems": [
+      "STEM-2019-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(c)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $c,d,r$, and $w$ be the propositiions\n\n$c$: “It is cold”\n\n$d$: “It is dry”\n\n$r$: “It is rainy”\n\n$w$: “It is windy”\n\nWrite the following propositions using $c,d,r$ and $w$ and the Boolean connectives.\n\n(c) To be windy it is necessary that it be cold.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $w\\to c$.\n\n**Derivation/proof.** Cold is necessary for wind, meaning wind cannot occur without cold. Thus every valuation with $w=T$ must have $c=T$, exactly the implication $w\\to c$. The equivalent contrapositive is $\\neg c\\to\\neg w$. Cold alone does not guarantee wind.\n\n### 中文解答\n\n**推导。** “冷”是“有风”的必要条件，意即每当有风就必须冷。因此以前者要求的情形 $w$ 作前件，以必要条件 $c$ 作后件，得到 $w\\to c$。冷而无风并不违背此句，所以不能把方向写成 $c\\to w$。",
+    "mistakesMarkdown": "- 把必要条件当成充分条件。\n- 写成冷与有风等价。"
+  },
+  {
+    "id": "Q-2019-MID-P01-d",
+    "topic": "conditionals-and-biconditionals",
+    "sourceNote": "sources/notes/Q-2019-MID-P01-d - Logical Equivalence.md",
+    "sourceNoteSha256": "a7357b25c1fecda492d31855e504312b362d30d26606e316cdfc7204d5613a2c",
+    "stems": [
+      "STEM-2019-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(d)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $c,d,r$, and $w$ be the propositiions\n\n$c$: “It is cold”\n\n$d$: “It is dry”\n\n$r$: “It is rainy”\n\n$w$: “It is windy”\n\nWrite the following propositions using $c,d,r$ and $w$ and the Boolean connectives.\n\n(d) It is rainy only if it is windy and cold.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $r\\to(w\\land c)$.\n\n**Derivation/proof.** “A only if B” makes B necessary for A. Here B itself consists of two simultaneous requirements, windy and cold. Therefore rain implies both $w$ and $c$, expressed as a conjunction inside the consequent. The claim says nothing requiring rain whenever those two conditions hold.\n\n### 中文解答\n\n**推导。** “rainy only if ...” 把 only if 后的整句作为必要条件。“windy and cold”为 $w\\land c$，因此答案为 $r\\to(w\\land c)$。等价写法是 $(r\\to w)\\land(r\\to c)$：下雨时两项都要真，非下雨时本句不对二者施加要求。",
+    "mistakesMarkdown": "- 把 and 写成 or。\n- 把 only if 的蕴含方向写反。"
+  },
+  {
+    "id": "Q-2015-MID-P01-a",
+    "topic": "truth-tables-and-equivalence",
+    "sourceNote": "sources/notes/Q-2015-MID-P01-a - Logical Equivalence.md",
+    "sourceNoteSha256": "3115df72c7c15e534116d9c44292bf447e140ff90d7f2c1bbc92a7c8b6d80789",
+    "stems": [
+      "STEM-2015-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2015 Midterm",
+    "pdf": "sources/papers/2015-midterm.pdf",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6",
+    "page": 3,
+    "solutionPages": [
+      4
+    ],
+    "number": "1(a)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "For each of the following parts, circle the correct answer or answers. There is no need to explain how your answers are derived.\n\n(a) Let $p$ and $q$ be two propositions. Which of the following propositions is/are equivalent to $p\\leftrightarrow q$?\n\n1. $(p\\to q)\\land(q\\to p)$\n2. $(\\neg p\\to\\neg q)\\land(\\neg q\\to\\neg p)$\n3. $(p\\land q)\\land(\\neg p\\land\\neg q)$\n4. $(p\\land q)\\lor(\\neg p\\land\\neg q)$\n5. None of above.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** 1, 2, 4.\n\n**Derivation/proof.** Option 1 is the definition of the biconditional. Contraposition changes its two implications to the two factors in option 2. The true rows of $p\\leftrightarrow q$ are $(T,T)$ and $(F,F)$, exactly option 4. Option 3 is always false, so it fails on both those rows; consequently option 5 is false.\n\n### 中文解答\n\n**推导。** 双条件 $p\\leftrightarrow q$ 在 $(T,T),(F,F)$ 两行真，在另两行假。选项一是定义式；由逆否等价，$\\neg p\\to\\neg q$ 等价于 $q\\to p$，另一因子等价于 $p\\to q$，所以二也成立。四恰好列出同真或同假的两行，也等价。三要求 p 与非 p 同时真，恒假，在同真行与目标不同。因此选择 1、2、4，五不选。",
+    "mistakesMarkdown": "- 把第三项中的合取看成析取，会误把矛盾式当作双条件。\n- 只选定义式而漏掉逆否和真值展开形式。"
+  },
+  {
+    "id": "Q-2023F-MID-P01-a",
+    "topic": "truth-tables-and-equivalence",
+    "sourceNote": "sources/notes/Q-2023F-MID-P01-a - Logical Equivalence.md",
+    "sourceNoteSha256": "42dba5b25b078388bbbc32d887d370cc37a7ecb04c4de5cd21551f3f36beeed0",
+    "stems": [],
+    "paper": "2023 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2023_Midterm.pdf",
+    "pdfSha256": "4ced9291189c331f77d1a2d614cac17c95b372cf3153db6403c3946af2c1ea9b",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(a)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Prove the following propositional equivalence without using a truth table:\n$$(p\\to r)\\lor(q\\to r)\\equiv(p\\land q)\\to r.$$",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** 等价式成立，无须使用 truth table。\n\n**推导。**\n\n1. 对左边两个 implication 分别使用 $a\\to b\\equiv\\neg a\\lor b$，得到 $(\\neg p\\lor r)\\lor(\\neg q\\lor r)$。用 associativity 和 commutativity 重排，再由 idempotence 将重复的 $r$ 合并，化成 $\\neg p\\lor\\neg q\\lor r$。\n2. De Morgan 给出 $\\neg p\\lor\\neg q\\equiv\\neg(p\\land q)$，所以前式等价于 $\\neg(p\\land q)\\lor r$。最后反向应用 implication elimination，得到 $(p\\land q)\\to r$，恰为右式。整条链中的每一步都是对所有共同赋值成立的等价变换，而不是只检验某个例子。\n\n### English solution\n\n**Answer.** The equivalence holds.\n\n**Derivation/proof.** Using implication elimination, associativity, idempotence, and De Morgan in succession,\n$$(p\\to r)\\lor(q\\to r)\\equiv(\\neg p\\lor r)\\lor(\\neg q\\lor r)\\equiv\\neg p\\lor\\neg q\\lor r\\equiv\\neg(p\\land q)\\lor r\\equiv(p\\land q)\\to r.$$\nEach step preserves truth under every valuation, and the final expression is exactly the requested right-hand side. No truth table is used.",
+    "mistakesMarkdown": "- 错误地把两个前件用 or 合并会得到不同公式。 / The combined antecedent is a conjunction.\n- 只说两边看起来一样不足以证明 equivalence。 / Name and apply valid equivalence laws."
+  },
+  {
+    "id": "Q-2024F-FINAL-P01-a",
+    "topic": "truth-tables-and-equivalence",
+    "sourceNote": "sources/notes/Q-2024F-FINAL-P01-a - Logical Equivalence.md",
+    "sourceNoteSha256": "2d94488b4fa621733a6e0339544ef9411927cf601b801947e8c2deb86f78c6ae",
+    "stems": [],
+    "paper": "2024 Fall Final",
+    "pdf": "sources/papers/COMP2711_F2024_Final.pdf",
+    "pdfSha256": "d6ddd1bb2ff55313079dbc5927731593d3c49cbbe3cc0294d000f8d10f014e0d",
+    "page": 3,
+    "solutionPages": [
+      4
+    ],
+    "number": "1(a)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) Let $p,q,r$ denote primitive statements. Use the laws of logic to show that $p\\to(q\\lor r)$ is equivalent with $(p\\land\\neg q)\\to r$.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $p\\to(q\\lor r)\\equiv(p\\land\\neg q)\\to r$。\n\n**推导。** 左式由 implication law 化为 $\\neg p\\lor(q\\lor r)\\equiv\\neg p\\lor q\\lor r$。右式先消去蕴含：$(p\\land\\neg q)\\to r\\equiv\\neg(p\\land\\neg q)\\lor r$；用 De Morgan 得 $(\\neg p\\lor\\neg\\neg q)\\lor r$；再双重否定得 $\\neg p\\lor q\\lor r$。两式化到同一表达式，因此对所有赋值真值相同。原答案重复 $\\neg p$ 的等式也成立，但所需规则是幂等与结合，而非其所标的分配律。",
+    "mistakesMarkdown": "- $\\neg(p\\land\\neg q)$ 应为 $\\neg p\\lor q$，不是 $\\neg p\\land q$。\n- 源答案的规则名称有误，重复一个析取项用幂等律说明即可。"
+  },
+  {
+    "id": "Q-2018-MID-P01-a",
+    "topic": "propositional-applications",
+    "sourceNote": "sources/notes/Q-2018-MID-P01-a - Logical Equivalence.md",
+    "sourceNoteSha256": "c3f25672ae4914f4e28f5d66d34ae888173cf458c74a46674931d09fcbd93ccf",
+    "stems": [
+      "STEM-2018-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2018 Midterm",
+    "pdf": "sources/papers/2018-midterm.pdf",
+    "pdfSha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "There are only two kinds of inhabitants on an island: knights, who always tell the truth; and knaves, who always lie. You encounter two of the island’s inhabitants, Alice and Bob. Alice tells you, “Bob is a knave.” Bob clarifies, “Actually, Alice and I are both knaves.”\n\n(a) Let $p$ be the proposition “Alice is a knight”, and $q$ be the proposition “Bob is a knight”. Write a single compound proposition constructed from $p$ and $q$ which contains all the information given or implied in the question. (Hint: Consider that Alice could be a knight or a knave, and Bob could be a knight or a knave.)",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $(p\\leftrightarrow\\neg q)\\land(q\\leftrightarrow(\\neg p\\land\\neg q))$.\n\n**Derivation/proof.** Alice's statement has truth value $\\neg q$. Being a knight means that statement is true, and being a knave means it is false, giving $p\\leftrightarrow\\neg q$. Bob's whole statement is $\\neg p\\land\\neg q$, giving $q\\leftrightarrow(\\neg p\\land\\neg q)$. Both conversations occurred, so conjoin the constraints. Expanding each biconditional produces the source's two-case expression.\n\n### 中文解答\n\n**推导。** Alice 的陈述“Bob 是骗子”为 $\\neg q$。骑士陈述真、骗子陈述假，故她的身份真值恰等于陈述真值，即 $p\\leftrightarrow\\neg q$。Bob 的整句“我和 Alice 都是骗子”为 $\\neg p\\land\\neg q$，同理有 $q\\leftrightarrow(\\neg p\\land\\neg q)$。两人话语同时成立，答案为 $(p\\leftrightarrow\\neg q)\\land(q\\leftrightarrow(\\neg p\\land\\neg q))$。把第一个双条件展开成 $(p\\land\\neg q)\\lor(\\neg p\\land q)$，第二个展开成 $(q\\land\\neg p\\land\\neg q)\\lor(\\neg q\\land(p\\lor q))$，正是印本的两种身份分类。",
+    "mistakesMarkdown": "- 仅写骑士推出真话而漏掉骗子情况。\n- 把鲍勃的两人都为骗子误写成析取。"
+  },
+  {
+    "id": "Q-2018-MID-P01-b",
+    "topic": "propositional-applications",
+    "sourceNote": "sources/notes/Q-2018-MID-P01-b - Logical Equivalence.md",
+    "sourceNoteSha256": "aff8dc21e5d5450b1c46b901ff64432e96bb3a26389820eae4bfdfd6586a98be",
+    "stems": [
+      "STEM-2018-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2018 Midterm",
+    "pdf": "sources/papers/2018-midterm.pdf",
+    "pdfSha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "There are only two kinds of inhabitants on an island: knights, who always tell the truth; and knaves, who always lie. You encounter two of the island’s inhabitants, Alice and Bob. Alice tells you, “Bob is a knave.” Bob clarifies, “Actually, Alice and I are both knaves.”\n\n(b) Solve your proposition in (a) to show whether Alice is a knight or a knave, and Bob is a knight or a knave. (There may be multiple or no correct answers; list all of them.)",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** Alice is a knight and Bob is a knave; this is the only solution.\n\n**Derivation/proof.** If $q=T$, Bob's statement $\\neg p\\land\\neg q$ is false, contradicting his being a knight. Hence $q=F$. His statement must then be false, so $\\neg p\\land T$ is false and $p=T$. Alice's assertion $\\neg q$ is true, consistent with her being a knight. Both statements are now checked and all alternatives excluded.\n\n### 中文解答\n\n**推导。** 若 $q=T$，Bob 是骑士，但他的句子 $\\neg p\\land\\neg q$ 因 $\\neg q=F$ 必假，矛盾。所以 $q=F$。此时他是骗子，句子 $\\neg p\\land T=\\neg p$ 必假，迫使 $p=T$。再核对 Alice 说的 $\\neg q=T$，与她是骑士一致；Bob 说两人都骗子为假，与他的身份一致。故唯一解 $p=T,q=F$：Alice 为骑士、Bob 为骗子。",
+    "mistakesMarkdown": "- 只确定鲍勃而未检验爱丽丝。\n- 认为骗子所说合取的每一部分都必须为假。"
+  }
+]

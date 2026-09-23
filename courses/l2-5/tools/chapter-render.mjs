@@ -14,14 +14,14 @@ export function chapter(id) {
   return {dir, meta: readJson(path.join(dir, 'chapter.meta.json')), manifest: readJson(path.join(dir, 'manifest.json'))};
 }
 
-function chapterShell(meta, title, body, depth = 2, lesson = '') {
+export function chapterShell(meta, title, body, depth = 2, lesson = '') {
   const up = '../'.repeat(depth);
   const chapterUp = depth === 2 ? '' : '../';
   const lessonAttr = lesson ? ` data-lesson="${esc(lesson)}"` : '';
   return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · COMP2711</title><link rel="stylesheet" href="${up}assets/logic.css"><link rel="stylesheet" href="${up}assets/katex/katex.min.css"><link rel="stylesheet" href="${up}assets/site.css"><script defer src="${up}assets/site.js"></script></head><body data-storage-prefix="${esc(meta.storagePrefix)}" data-site-root="${up}"${lessonAttr}><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header"><div class="shell"><a class="brand" href="${up}index.html">COMP2711</a><nav class="utility-nav" aria-label="课程导航"><a href="${up}index.html#modules">课程模块</a><a href="${up}${esc(meta.moduleHref)}">${esc(meta.module)}</a><a href="${chapterUp}index.html">${esc(meta.label)} 目录</a></nav></div></header><main id="main-content" class="shell lesson">${body}</main><footer class="shell site-footer">COMP2711 · 按知识主题学习</footer></body></html>`;
 }
 
-function pageBlock(meta, record, response) {
+export function pageBlock(meta, record, response) {
   const id = idOf(record.page);
   const errataFile = path.join(root, 'chapters', meta.id, 'errata', `${id}.md`);
   const errata = fs.existsSync(errataFile)
@@ -37,7 +37,10 @@ export function buildPage(id, page) {
   const responsePath = path.join(dir, record.response);
   if (!fs.existsSync(responsePath)) throw Error(`Missing response: ${responsePath}`);
   const response = fs.readFileSync(responsePath, 'utf8');
-  const html = chapterShell(meta, `${meta.label} · 第 ${page} 页`, `<nav class="page-breadcrumb" aria-label="当前位置"><a href="../../../index.html">COMP2711</a> / <a href="../../../${esc(meta.moduleHref)}">${esc(meta.module)}</a> / <a href="../index.html">${esc(meta.label)}</a> / <span aria-current="page">第 ${page} 页</span></nav><p class="small-note"><a href="../${esc(meta.source)}#page=${page}">原始 PDF · 第 ${page} 页</a></p>${pageBlock(meta, record, response)}`, 3);
+  const configPath = path.join(dir, 'course.config.json');
+  const topic = fs.existsSync(configPath) && record.topic ? readJson(configPath).topics.find(item => item.slug === record.topic) : null;
+  const topicLink = topic ? ` / <a href="../lessons/${esc(topic.slug)}.html#slide-${idOf(page)}">${esc(topic.title)}</a>` : '';
+  const html = chapterShell(meta, `${meta.label} · 第 ${page} 页`, `<nav class="page-breadcrumb" aria-label="当前位置"><a href="../../../index.html">COMP2711</a> / <a href="../../../${esc(meta.moduleHref)}">${esc(meta.module)}</a> / <a href="../index.html">${esc(meta.label)}</a>${topicLink} / <span aria-current="page">第 ${page} 页</span></nav><p class="small-note"><a href="../${esc(meta.source)}#page=${page}">原始 PDF · 第 ${page} 页</a></p>${pageBlock(meta, record, response)}`, 3);
   const htmlPath = path.join(dir, record.html);
   fs.writeFileSync(htmlPath, html);
   if (!html.includes(markdown(response))) throw Error(`Rendered response missing from ${htmlPath}`);
@@ -68,7 +71,7 @@ export function buildIndex(id) {
     const config = readJson(configPath);
     const keys = config.topics.map(topic => `${meta.storagePrefix}lesson-complete:${topic.slug}`);
     const cards = config.topics.map((topic, index) => `<a class="course-card" data-completion-key="${esc(keys[index])}" href="lessons/${esc(topic.slug)}.html"><strong>${String(index + 1).padStart(2, '0')} · ${esc(topic.title)}</strong><span>${esc(topic.description)}</span><small class="course-status" data-status>未学完</small></a>`).join('');
-    content = `<p class="portal-meta" data-progress-keys="${esc(keys.join(' '))}">已学完 0 / ${keys.length} 课</p><section id="topics"><h2>本章课程</h2><div class="course-grid">${cards}</div></section>`;
+    content = `<p class="portal-meta" data-progress-keys="${esc(keys.join(' '))}">已学完 0 / ${keys.length} 课</p><section id="topics"><h2>本章课程</h2><div class="course-grid">${cards}</div></section><p><a href="source-map.html">按原课件页码查找讲解</a></p>`;
   } else {
     const links = written.map(page => `<li><a href="pages/${idOf(page.page)}.html">第 ${page.page} 页</a></li>`).join('');
     content = `<p class="portal-meta">已完成 ${written.length} / ${meta.pageCount} 页逐页讲解</p><section id="pages"><h2>逐页讲解</h2>${links ? `<ol>${links}</ol>` : '<p>本章讲解即将从第一页开始。</p>'}</section>`;

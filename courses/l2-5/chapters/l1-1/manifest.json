@@ -15,11 +15,11 @@
       "html": "pages/001.html",
       "status": "written",
       "preparedAt": "2026-09-23T15:59:12.231067+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "b5dddcf9a1be9d1207095eab3c3904a17794e9780c7635494e0e390ef3919212",
       "responseSha256": "bcae9042564b15e9f7425c2a85998bcccbaec6620deca79320b8abf66d5f1170",
       "responseSavedAt": "2026-09-23T15:59:37.484796+00:00",
-      "htmlSha256": "9d6e29bbc6e67409d51dfe8a19ddcfc07d109a11e55f8a0e85e940edd3db1c21",
+      "htmlSha256": "6e164902f42687d7b37a5606fd751b45f85046397dfa6b42b7a55dc2d4beada2",
       "writtenAt": "2026-09-23T15:59:37.611670+00:00"
     },
     {
@@ -32,11 +32,11 @@
       "html": "pages/002.html",
       "status": "written",
       "preparedAt": "2026-09-23T15:59:43.438540+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "4d1073ca22fdec799b5879edcd28768b0e7e0b9724e1fed87bd1c86ee0ad4fa0",
       "responseSha256": "7cc71579c9dbacdcdeb5cd87615a32824c5c78cbdf296ac3d54138a07e801438",
       "responseSavedAt": "2026-09-23T16:00:05.711750+00:00",
-      "htmlSha256": "864dfe8dbe77699163faf83f68731cd0b101b15694094ec80bcb11b23b2f6054",
+      "htmlSha256": "e5901fae2a83a7b16674ee0ab6a853ad881d33f1ae0ca9e278cffe85703b3676",
       "writtenAt": "2026-09-23T16:00:05.837245+00:00"
     },
     {
@@ -49,11 +49,11 @@
       "html": "pages/003.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:00:20.175274+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "a3a54a2fa49292df25c961af0135429a927db224ee7ae98a7c840831375a603a",
       "responseSha256": "768f64633f70a9f74041d123ad8bf01e50d541d5e37608f875f4334d711772ef",
       "responseSavedAt": "2026-09-23T16:00:48.365888+00:00",
-      "htmlSha256": "0a8870fb3f0ddb0805f5be1760a02ad71baf09e108b02669a4589045413142ec",
+      "htmlSha256": "f62ff0e8ab66747c41456667e838dec9bf1da2f3c65e8a8c1737a94be3a8fa49",
       "writtenAt": "2026-09-23T16:00:48.488137+00:00"
     },
     {
@@ -66,11 +66,11 @@
       "html": "pages/004.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:00:53.096986+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "25eeccef999cb882b05ab8b1c76205338373dbc2541f5465c3a59a3a80a34c46",
       "responseSha256": "177d1e1939a215e3d4d8f60dbce7ac60b98f09e8ce20e10d60bbdbb3786dbd7a",
       "responseSavedAt": "2026-09-23T16:01:17.237183+00:00",
-      "htmlSha256": "66a39af609f00e5eb4414cd63000ac7bcb65ea1c8b625c665102f383c2c03250",
+      "htmlSha256": "768544cb97c74cc012df9176bb9d92f3a5babc352f47e00f46ffa1db91fe3376",
       "writtenAt": "2026-09-23T16:01:17.377143+00:00"
     },
     {
@@ -83,11 +83,11 @@
       "html": "pages/005.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:01:21.930566+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "75454e823c6cbcb34b227ad004426995e4c78ef20f7c6a516d0b71dba39148a3",
       "responseSha256": "f8d40368d739ee674593fe289a233f9fd8b8268d02f2eadf9dfee315991d4433",
       "responseSavedAt": "2026-09-23T16:02:02.520435+00:00",
-      "htmlSha256": "050b18b8bae1bf253aed01efcc1a9bad1ecba79b40c6a82972667ca0a8622229",
+      "htmlSha256": "3ad30eea97409c3845212c02ff49644a6ab8ac1711cf8a2da6355a7a27192af4",
       "writtenAt": "2026-09-23T16:02:02.638633+00:00"
     },
     {
@@ -100,11 +100,11 @@
       "html": "pages/006.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:02:17.631113+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "e51cf018d037226f2602bf1fca00988ca9d725853161e604ce5d6523e5605743",
       "responseSha256": "0a843d87f75a034164f072c2cc37fe2cedbd4acab1a0c2c82dcb591d97ff2808",
       "responseSavedAt": "2026-09-23T16:04:47.983701+00:00",
-      "htmlSha256": "5748465a3268f883f19fb778e4b6781a1d3da8b9740e56c436399c7f963583cb",
+      "htmlSha256": "1da1ffe090a1d92f443687c8ccd0fe8787ed94491c572e9ac58e965215b933d3",
       "writtenAt": "2026-09-23T16:04:48.111749+00:00"
     },
     {
@@ -117,11 +117,11 @@
       "html": "pages/007.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:05:28.512384+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "02a9553f2f354ebb566f9f54172e509f7cc62e84478553864c658c53aaf3ac62",
       "responseSha256": "0bb9b256d6f5743d777f6dcdccc11154ace88c49bfaa81885e0c1e6fc17844db",
       "responseSavedAt": "2026-09-23T16:05:55.986517+00:00",
-      "htmlSha256": "c3ac41de76b87f1c7d1739d0dce1489ac1629231cebead24ef7b6cfa6c02c9f9",
+      "htmlSha256": "d6afa193826857bf60cb14f0d0f757f78c0fc834a6bbe4049b7b5b472199a908",
       "writtenAt": "2026-09-23T16:05:56.109121+00:00"
     },
     {
@@ -134,11 +134,11 @@
       "html": "pages/008.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:06:00.937977+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "b99f9955f1f28329c6ff56d5f6c58eac16bfd25f64ba56c2fd8fb97e0154ad19",
       "responseSha256": "8513d4c2ff9e9ee82d96ed6c590b29cf81a3a5152c4ddca8d2040419b52beffc",
       "responseSavedAt": "2026-09-23T16:07:24.492851+00:00",
-      "htmlSha256": "22c2889b42a8f7005d4352aaebd64c9ee28f5fb28f0bd6cd48b2df98bb192020",
+      "htmlSha256": "1f9111dc9ba3a5a8ac7e3ae58c0709353a8a42131f704ce8141f2141e48af4b3",
       "writtenAt": "2026-09-23T16:07:24.623808+00:00"
     },
     {
@@ -151,11 +151,11 @@
       "html": "pages/009.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:09:04.464352+00:00",
-      "topic": null,
+      "topic": "discrete-math-intro",
       "imageSha256": "83a17549b207c8f3e15258154b61908230e7bd786c5e2cefd4ceed6ed4be996c",
       "responseSha256": "9bed9eeef0b5d7a5ddf0bac9897d878e02e346670a734566502aa44277d38b1c",
       "responseSavedAt": "2026-09-23T16:09:52.418352+00:00",
-      "htmlSha256": "b0fa2f14a324b528d685ce6ace666163111c8b03154d247bee4c2a62830acc13",
+      "htmlSha256": "716a1d22f5ecedffbeca874d6a7761d0241d7b1e1f4f81049c7f0f47a5a31805",
       "writtenAt": "2026-09-23T16:09:52.550290+00:00"
     },
     {
@@ -168,11 +168,11 @@
       "html": "pages/010.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:10:02.731818+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "090d2d1b67158bf4fe67ee624c0e5ac627f5e3857669561072233ad265db90d5",
       "responseSha256": "7009c3204af3d2707ee7a80080cf6b6275f7fe2b0835cf3835f866ad91e92e2b",
       "responseSavedAt": "2026-09-23T16:10:19.784325+00:00",
-      "htmlSha256": "fc39d1977315388645e679b1d0bc3988b1ba490bfb593061b525d392e900ae09",
+      "htmlSha256": "63523be67c32f0b7c2af46c7fa35c5ec4c9024703625e69626e974c00406e507",
       "writtenAt": "2026-09-23T16:10:19.911195+00:00"
     },
     {
@@ -185,11 +185,11 @@
       "html": "pages/011.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:10:24.496573+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "a7a49d72c689d43364292fa202a7332ab7ee43c5144be4b94aed1fb72ee8bb3a",
       "responseSha256": "247df3ef882b1a2f95c0a368d9bd0a6f6a56d14643ee4702792b98a4ee0feb03",
       "responseSavedAt": "2026-09-23T16:11:21.132800+00:00",
-      "htmlSha256": "0e5212af3f63366e73dfc9d7aba82d994e53c44981f9711b924fc4d80c8fee96",
+      "htmlSha256": "10040898b01508b3b02b203689f906506cf8e07e2b1c6840b041a620758116df",
       "writtenAt": "2026-09-23T16:11:21.260138+00:00"
     },
     {
@@ -202,11 +202,11 @@
       "html": "pages/012.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:11:26.878404+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "51c873f773acfdb623db9d9b56e7600ade8e109b94c7291b4f8654146a1a21e8",
       "responseSha256": "4aeaec5014c65d93b5ea9935e364c30a6c4b4bb5558f3c3de122eef364aa5ba8",
       "responseSavedAt": "2026-09-23T16:11:49.700936+00:00",
-      "htmlSha256": "4742f0c5d0dcdaf255fe489ee55c7abf94cdad17391b04bcf5dc76fbd50cba01",
+      "htmlSha256": "10a8c6cc428f942729817f3114c81e9afe5f7bdc605c3fae904e4c125db138d3",
       "writtenAt": "2026-09-23T16:11:49.836091+00:00"
     },
     {
@@ -219,11 +219,11 @@
       "html": "pages/013.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:11:57.701817+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "8670b522e77fb30d01ee59e6526e334618766d7a7e37c597a72b5b6e983d7528",
       "responseSha256": "54508459901b3cc629ed4626941cbb75d44bc15446e3b747ac0ffcd7b0334c2e",
       "responseSavedAt": "2026-09-23T16:12:15.065110+00:00",
-      "htmlSha256": "9e0167aa0b6cf2fc72b1dd922fbf684ee6679d6e396d8f94d292c497f63976d4",
+      "htmlSha256": "2a0a1244c9e9bb8c00f25cf99ee0bbb473c3566d99924a9cb841c9f909cb4def",
       "writtenAt": "2026-09-23T16:12:15.193763+00:00"
     },
     {
@@ -236,11 +236,11 @@
       "html": "pages/014.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:12:20.492203+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "f376c14426534d9173a160cef3e5b9e3181b91602d85b3256ca652244e10b478",
       "responseSha256": "615b01c5ff132d2b8245157783b05f799fac6dd834681dcbd58956ec3dda321d",
       "responseSavedAt": "2026-09-23T16:15:37.775550+00:00",
-      "htmlSha256": "145f17aa0e8ff84f890681f65a5f5ac02cb06d2daf739542bb55cedc5005435e",
+      "htmlSha256": "ff3aba9e89a83a60a866c493e50e3fc455a4b84553c52c50b9ed18e9e1eb971d",
       "writtenAt": "2026-09-23T16:15:38.112869+00:00"
     },
     {
@@ -253,11 +253,11 @@
       "html": "pages/015.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:15:59.238533+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "f7c4be4e20c15cfa4eaafdae348bff3366432e2d7d8b507b9fbddcf9cd3f3b25",
       "responseSha256": "3cda806ad1b07f240a98f7b933b7c941065ff1e07ac1c47fa9f73c39f53b87af",
       "responseSavedAt": "2026-09-23T16:16:15.272798+00:00",
-      "htmlSha256": "6ce22c741a63e6218079db676cee5f98e9db211a6b7ed83f3ed7dc527877cd58",
+      "htmlSha256": "fa516479174050df64091491edebcf398e23f4acf26897d827dc78fde2045e05",
       "writtenAt": "2026-09-23T16:16:15.410493+00:00"
     },
     {
@@ -270,11 +270,11 @@
       "html": "pages/016.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:16:31.072090+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "1f6c2023878de5c8aed068afd6d2b2a3c6c1d5a100815d6028bfd0f59b5ecd7a",
       "responseSha256": "ace7d4442eaccf19e58717201098deed75bfb8068e9311a6f0ece8298f622c25",
       "responseSavedAt": "2026-09-23T16:17:17.353819+00:00",
-      "htmlSha256": "610446de52cb2ed4c1ad2c4a877e0ce9c78048d3f28eb9f59c870489e35ea49c",
+      "htmlSha256": "d7aa576231de430c21c9ddada6472071dc6fed3a4d71b8caadb237034d25d107",
       "writtenAt": "2026-09-23T16:17:17.487239+00:00"
     },
     {
@@ -287,11 +287,11 @@
       "html": "pages/017.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:17:25.511084+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "42fd8a3b20d03f080f8918d74f8fd72ea4cf74bec44c5b5672dd51da116a94bf",
       "responseSha256": "de1e01ae4877692f54ad00d31a815d46bcb57bf4867a8b3c83d5f84fcdc52950",
       "responseSavedAt": "2026-09-23T16:17:52.323297+00:00",
-      "htmlSha256": "56c1d0c543dbae5226fa76b67e6065bab2ca0407003e6eaf179a1005274b6aac",
+      "htmlSha256": "c0c5ee7ea2854d663068b1eed0d16d5338e0a3c689bcfe5cdabab892d5234980",
       "writtenAt": "2026-09-23T16:17:52.456481+00:00"
     },
     {
@@ -304,11 +304,11 @@
       "html": "pages/018.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:17:57.649604+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "08a2dcdbef069b858cabf745393f2ef2c9f6257c50c6d420ba6c87c0dee7f48c",
       "responseSha256": "e0345c3a90e116bad0a5c2ce15f0afec7080652f59a32306e9bb940f5c0eb18f",
       "responseSavedAt": "2026-09-23T16:18:15.256788+00:00",
-      "htmlSha256": "6f438621d5c129b1e64b702e975153e7355c605e097ab70d40b8f0d55717b344",
+      "htmlSha256": "53e33f174c35d7f46da62118f1eb3e7bb92b29501bddd9533fb91fe91ede18c4",
       "writtenAt": "2026-09-23T16:18:15.382446+00:00"
     },
     {
@@ -321,11 +321,11 @@
       "html": "pages/019.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:18:20.430332+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "b5143d20ad67fcda314abe53bd28c04eb52428f7fd1be58caa30cd6a2ccd9f1e",
       "responseSha256": "a0fab7515345cff3847b218012f2e44d55c798a8d3b9b92efc1df09f1186307c",
       "responseSavedAt": "2026-09-23T16:18:43.768229+00:00",
-      "htmlSha256": "08e257d745185cce5c1acb8b4e6a9597cf1899597e71c773706ea2ce4736ad19",
+      "htmlSha256": "3402500ac2865e3d3c2b003360caa74958abea5ae51d9c2b6ad8ec5ae24a2315",
       "writtenAt": "2026-09-23T16:18:43.899160+00:00"
     },
     {
@@ -338,11 +338,11 @@
       "html": "pages/020.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:19:03.769132+00:00",
-      "topic": null,
+      "topic": "propositions-and-connectives",
       "imageSha256": "9f8a1f6e23fa75d66668a66e8deeecb749c39409ff826e25c8440448070b0b03",
       "responseSha256": "3aa0792bbcee9755277da88d50adab1abe5531954537264d34cf5a4e9d5af86a",
       "responseSavedAt": "2026-09-23T16:19:43.739321+00:00",
-      "htmlSha256": "a5f781e1385a246892bd90204661d38ad65be8bc280a48491ac740e8818b2198",
+      "htmlSha256": "0671f0f2bde921c562524cc112a9fd4130240a796360e6ce357fd28b0488b4f0",
       "writtenAt": "2026-09-23T16:19:43.867449+00:00"
     },
     {
@@ -355,11 +355,11 @@
       "html": "pages/021.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:19:49.593366+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "1f49fac5a7aa391354a1dd041d182939a5f30f49c6a50feabdcfda47f1589870",
       "responseSha256": "dec553c3f63f454c77548d0b095f6ed09fd8f1088ba069aadad2809d24984280",
       "responseSavedAt": "2026-09-23T16:20:16.003149+00:00",
-      "htmlSha256": "452ef607aa16de9209c0e3800715ac6ec2abc95ba1dfedbbee2efac3386a4a95",
+      "htmlSha256": "fe7ec36eb77ae2fcc4dfaaa391bc8c71cb67bb289531186dd840289fbb2e0867",
       "writtenAt": "2026-09-23T16:20:16.131756+00:00"
     },
     {
@@ -372,11 +372,11 @@
       "html": "pages/022.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:20:34.701641+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "e41fd5a3f63f5a34b50b79f7ab840614dbf2d1a2c5704b0a2ec76b551b6606c7",
       "responseSha256": "bb10f24e9918a15b44e08d10c4f82f37b834c5bd58943a6e077ba99d81ab4d25",
       "responseSavedAt": "2026-09-23T16:20:56.661463+00:00",
-      "htmlSha256": "42344e5ce6db59e97d31380205c168b3fd171aec9c640360f37b6c9e96d18b92",
+      "htmlSha256": "8a6b64136fa37be1d52fff3977cb2c864f49e9ae4bd0cc521974f4388d522a36",
       "writtenAt": "2026-09-23T16:20:56.790841+00:00"
     },
     {
@@ -389,11 +389,11 @@
       "html": "pages/023.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:21:02.075593+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "40756ca7ecfbbdc569a085bec6bce9ec357da0e90e0a7dbc0131825eb77f838b",
       "responseSha256": "2fb3799d9d80b5ed2702555a188c51236d6e773782533b152205ee10a244603f",
       "responseSavedAt": "2026-09-23T16:21:21.730274+00:00",
-      "htmlSha256": "1e84a7ce242d7154c4ce5aa77b3901d89f14fe98bb613fec7f49b1847aa11c06",
+      "htmlSha256": "02e09491ce6b88dcd7d0822d5c4af4574da2f8ff8c533aceac2df0fa8f4fd8bb",
       "writtenAt": "2026-09-23T16:21:21.854958+00:00"
     },
     {
@@ -406,11 +406,11 @@
       "html": "pages/024.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:21:31.011567+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "a74660369675945d0c59a4bad57116a81aa45dc24f99d8119ade0cdce26bd3f6",
       "responseSha256": "cf7ef52dff4dd12be1598d3edb4fa111b237ad6d5c1304dd57f50efb986dac42",
       "responseSavedAt": "2026-09-23T16:21:51.129767+00:00",
-      "htmlSha256": "420013c06a1f9ff69a244f7e0c99a123b318a0875daa31b4999ed38f2c1cfcfb",
+      "htmlSha256": "7d038a7fa2acb67ab47653077bc126866e59222a50730d24c8a28c0f1a184b57",
       "writtenAt": "2026-09-23T16:21:51.255124+00:00"
     },
     {
@@ -423,11 +423,11 @@
       "html": "pages/025.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:22:48.606096+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "c442c5fb04d4491a851e4c995780a0e9e4194e08c266aaf007cfde02eda40233",
       "responseSha256": "e0647c592822c9caf29bac4cf75920879987b50c088bd27395076ad9fe15567b",
       "responseSavedAt": "2026-09-23T16:23:44.942416+00:00",
-      "htmlSha256": "84d0857b24c46bc4aea8e66915b9b7647fec1e9cf6f2c701981563a2d4bdb66a",
+      "htmlSha256": "8690f78c257f53defff6df7acdc13a53ac29067aa4562de4a3aafeb503bbb836",
       "writtenAt": "2026-09-23T16:23:45.076774+00:00"
     },
     {
@@ -440,11 +440,11 @@
       "html": "pages/026.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:23:50.238608+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "ca3b0bd2ad019cd7cef91c9269fcdb58f58a8d2cac21532b0f17d6a543f0cdb5",
       "responseSha256": "970fe8b60c5bc3226e79261e4049a35b387b23ad42b3ed208a25f3d018d0c369",
       "responseSavedAt": "2026-09-23T16:24:18.061104+00:00",
-      "htmlSha256": "1d2b1eccea5e1a155805d33def16c867fbc2ae6fa9987ae30e7682be14508f92",
+      "htmlSha256": "10024a36bf489d609b750938b182f34f412e54947e42a1a0c50e5aa092ac41fc",
       "writtenAt": "2026-09-23T16:24:18.185163+00:00"
     },
     {
@@ -457,11 +457,11 @@
       "html": "pages/027.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:24:25.640208+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "0f2b1b1c54a76178eb6e5350267562f48058d434eb17a5d444ea3d2143935676",
       "responseSha256": "a67152fe0a191501a4bd42e47e95fc5b48c52ab55c36ea1f44c8d3ff4a8f3f14",
       "responseSavedAt": "2026-09-23T16:25:08.336026+00:00",
-      "htmlSha256": "f6e8ada98ee7fdd771db6c5d7e330a60430465d044c0c6e4ad4ac0118ab1bff3",
+      "htmlSha256": "fd502b5f642975d756c05ab4afc70809abc91ed676c5e37ff680d7c30a28a210",
       "writtenAt": "2026-09-23T16:25:08.467249+00:00"
     },
     {
@@ -474,11 +474,11 @@
       "html": "pages/028.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:25:13.685934+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "ad66815d443cdd41c47c2d47595fd467effd5980f242705845d5742883b627af",
       "responseSha256": "e9cf1a201ce340ab8980850164806d72702da7290df16248ec39040ba97352ea",
       "responseSavedAt": "2026-09-23T16:25:30.452744+00:00",
-      "htmlSha256": "08f6aae2376d84ef5f63dcc380f37e47cbde5b7b52cce973bbe58a8a92ada6fb",
+      "htmlSha256": "885b0d050f1daf92ed852fb9e4f4ce19386d84d07f5f0d784fb734e1bd6ab6a4",
       "writtenAt": "2026-09-23T16:25:30.572884+00:00"
     },
     {
@@ -491,11 +491,11 @@
       "html": "pages/029.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:25:44.295626+00:00",
-      "topic": null,
+      "topic": "conditionals-and-biconditionals",
       "imageSha256": "53b99ead747fb5bbb0d709a8f49cdc4fc4e88eddc1586f81eb758876cd08fbf0",
       "responseSha256": "e4f62341cff92b5ca9480eba6de232223113876d0336acdcf44a5053dc2b7465",
       "responseSavedAt": "2026-09-23T16:26:10.629414+00:00",
-      "htmlSha256": "e8d0e85024f6d31264ae05a5c9564565c5889c8a2d190858d6520121fe0f27d7",
+      "htmlSha256": "ca32023ea853d356fe71a53db3fd89c67245dd6ea8caa33cbebb185a9020e069",
       "writtenAt": "2026-09-23T16:26:10.755096+00:00"
     },
     {
@@ -508,11 +508,11 @@
       "html": "pages/030.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:26:17.730032+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "5446d3c33cdc62dce8eb7adce21a2a8653cebff00b3d0198c7de756a09df1bcb",
       "responseSha256": "5aab1d2bf71926ce1bf415168c5a815359185916ee52ab92ab8145eb0e0ea1e5",
       "responseSavedAt": "2026-09-23T16:26:41.009755+00:00",
-      "htmlSha256": "2139dec4feb7b94ca7d39df9488bca4dc7f9bc229d531e130d218db59af07b76",
+      "htmlSha256": "6fe56c8af012ac78e845aea9c03c338b431aa756e3496c315d141b7b94b3e2d7",
       "writtenAt": "2026-09-23T16:26:41.167411+00:00"
     },
     {
@@ -525,11 +525,11 @@
       "html": "pages/031.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:27:36.037404+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "f87ff3cf36e9a3e41b81470174ec9ed3aeb513b2662b2132153e1e3adc0af370",
       "responseSha256": "3a0c45fdf092226c72774c15e93c58e16c5674951e57cca0312bda5a3c15a7e4",
       "responseSavedAt": "2026-09-23T16:28:17.632974+00:00",
-      "htmlSha256": "163ca4eadd67b0f5dff6df348af4dd2e4e81edf4397d76dba52039c27c598c3d",
+      "htmlSha256": "dafebcce46be5867a562dcaf6aa20f2f5d8448bc8beaadd7545ffb7cca5fb765",
       "writtenAt": "2026-09-23T16:28:17.758269+00:00"
     },
     {
@@ -542,11 +542,11 @@
       "html": "pages/032.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:28:39.501013+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "b50d340010916474016f28d281829777516e36a3690a338cf65ff49b8f4b5ee2",
       "responseSha256": "ed608027ea1ead256c39f27d3de9e81c6d03bad562b8c661c92e0adcc83c8f35",
       "responseSavedAt": "2026-09-23T16:31:44.432274+00:00",
-      "htmlSha256": "c80a4d7fbe8df211e53099051a94cbba0c40fa558548ddcec8a6615146a01016",
+      "htmlSha256": "5ae6d83a2913f98120ef8a28e8ea436e30e106f9d1cba0e7049b55ad0de20491",
       "writtenAt": "2026-09-23T16:31:44.745564+00:00"
     },
     {
@@ -559,11 +559,11 @@
       "html": "pages/033.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:33:13.861006+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "ed7632dadd1dc9d4b5949a0a61523baf1203525d4e69e99805119c2124f46f81",
       "responseSha256": "84e7a469aaa9c721305ddf7eee9f62844190e184a0a3b73bbb4e9e2088fac2b1",
       "responseSavedAt": "2026-09-23T16:33:37.052132+00:00",
-      "htmlSha256": "5f94c98865da18944fb5639170dce85a31cd60293048a07e2b621612d84c186e",
+      "htmlSha256": "bbb59855abe64a343ab8a63eef90bb897d79df52882bcb78f22e3dba9ff2d6b9",
       "writtenAt": "2026-09-23T16:33:37.366295+00:00"
     },
     {
@@ -576,11 +576,11 @@
       "html": "pages/034.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:33:44.726753+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "b42fa34014db341244060ec6c9b4545d2910f81957b13bdbd12e26268fc606a9",
       "responseSha256": "1f8e34b13f9e6700d4601d1b17f5f3c5e64e84de42cbae764407d0c3385da5cd",
       "responseSavedAt": "2026-09-23T16:34:08.999198+00:00",
-      "htmlSha256": "4f16f662042d61c22c3749a6b648d7c28d02e381bf231ede60aa4eba41a74fee",
+      "htmlSha256": "070603569093c781d99de9d603760358c4b942397dc850ec4e56035ccf18aff2",
       "writtenAt": "2026-09-23T16:34:09.283698+00:00"
     },
     {
@@ -593,11 +593,11 @@
       "html": "pages/035.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:34:17.728539+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "7490c6e4aa622df7a2add08a6f9fad458e0f5a78de8956f8ddf65a153fda50bd",
       "responseSha256": "397cf092adccd8a6e675549345cf73ae01017bde614aaee8c7dcf214cb1bc9da",
       "responseSavedAt": "2026-09-23T16:34:52.798075+00:00",
-      "htmlSha256": "9f615b025183e565de5199d94d976ff07a5ab69572ec4d207add968e0367c0d8",
+      "htmlSha256": "f0c1c00a62dd18857a6d576129c0292bd69dce70eaa527bdf4ccf61fe9cc804a",
       "writtenAt": "2026-09-23T16:34:53.096713+00:00"
     },
     {
@@ -610,11 +610,11 @@
       "html": "pages/036.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:36:33.717147+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "7e911e8ed5944444a71cbc528d418e0fcfdb408445b03805665bdd665aadf1ca",
       "responseSha256": "fe97bf5a5cec40b47fa9ef758bffa5e476b81ca2cf0b8fb119b71f09ec01b08a",
       "responseSavedAt": "2026-09-23T16:38:23.631273+00:00",
-      "htmlSha256": "60e2cfe1698cd6bed798bf98c46cb075aae4146a42c70445be54ff72a7f02e53",
+      "htmlSha256": "796b54ff2448039d3ecccbfcee14d9595184939640b98816199d251f5360cb7c",
       "writtenAt": "2026-09-23T16:38:23.929972+00:00"
     },
     {
@@ -627,11 +627,11 @@
       "html": "pages/037.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:38:32.205863+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "65f1576ff814935972dc9e052e57f82ade3cc7f1605af86dc1b80ae0320d179b",
       "responseSha256": "01791aa91ba88e69dc1bf04fccef2e8eebebfa09d05f516a2f5de5d6e1dbce99",
       "responseSavedAt": "2026-09-23T16:39:03.515199+00:00",
-      "htmlSha256": "ec076f6c01276be6041989dd5708a1ab92ec1bc194bebde7767ecef31945c659",
+      "htmlSha256": "c7753de71586c0d6d9d0733583d4ec0ac9e9548222d614c3672a28011b3e2422",
       "writtenAt": "2026-09-23T16:39:03.794058+00:00"
     },
     {
@@ -644,11 +644,11 @@
       "html": "pages/038.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:40:10.990225+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "4162a1e9fb10134d2567a352147de3768d6afbef31be47ad29e39f5270f44e19",
       "responseSha256": "ae8892578e64f529d57e68c2d0a1a5aef16d124a97605c0a0191824e7c082361",
       "responseSavedAt": "2026-09-23T16:40:50.205538+00:00",
-      "htmlSha256": "1ab35004900445d050322acd6339593ec9ac2e328971b95b6815b4ab7be55de4",
+      "htmlSha256": "d7a51665db0235866568216ad594029371245533c86bf2f221c850dd70199960",
       "writtenAt": "2026-09-23T16:40:50.498335+00:00"
     },
     {
@@ -661,11 +661,11 @@
       "html": "pages/039.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:41:03.553231+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "699233ba0d7df84cc32cf9c464f6888ed15ea5e9f9d8970c4f0074b286e37691",
       "responseSha256": "37385b4a832edfd19f9e1af932f189910a692b395a692a7d05384cc8dee0536d",
       "responseSavedAt": "2026-09-23T16:41:28.716348+00:00",
-      "htmlSha256": "e404426107bdb983a4c92ec594dcd922fff1c1f868c4830fc13200573915de53",
+      "htmlSha256": "28ab1d70e321449ed83214f2d855945336c1d73ba216b45390909d361a361f2a",
       "writtenAt": "2026-09-23T16:41:29.008311+00:00"
     },
     {
@@ -678,11 +678,11 @@
       "html": "pages/040.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:41:37.123148+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "31da9057f293004220711584dd6cf4b8bfe8c2323bb5d1459e7fd6a1462d7a9e",
       "responseSha256": "5760b7d865cfb02156636b9880a2427e293c3b7800f8be8ca889a24dc6c67874",
       "responseSavedAt": "2026-09-23T16:43:03.088907+00:00",
-      "htmlSha256": "c52f9ac92f8d7c1df965239ca7c2cb2dd4f7e90077dc00fc0aed18028dfd195a",
+      "htmlSha256": "1bf43ccf8160abcb6ac5075f0e64a4807e96aac952c2415adfe8bceca42dc0ec",
       "writtenAt": "2026-09-23T16:43:03.376875+00:00"
     },
     {
@@ -695,11 +695,11 @@
       "html": "pages/041.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:43:11.877820+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "067d98c23b06785bbec33bd431cace9cfe8fbf14c21e8c320f9b619b673fbe96",
       "responseSha256": "1036be8a31495753f0066f1a6bce3e9636ae6ed6db515fe70bc53e4ccbfeb51a",
       "responseSavedAt": "2026-09-23T16:43:38.458977+00:00",
-      "htmlSha256": "6d1875aa50cb4776ca813dfee8fb89da825e8de9ff1e9961667bd5e421ba2eab",
+      "htmlSha256": "8fef05f976f7752c080c5fe4fd923eb63cb95ed04dabae59954016096265ccb4",
       "writtenAt": "2026-09-23T16:43:38.587481+00:00"
     },
     {
@@ -712,11 +712,11 @@
       "html": "pages/042.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:43:43.351153+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "1d2cf879b87b21d539bd93a61d0045ee54fdd231ecb779094a9016f90b2ea146",
       "responseSha256": "1542effbaa1c0f3fe705ce46b4ab19eb7fafd6ca21a6036fb2d298226eafc90c",
       "responseSavedAt": "2026-09-23T16:44:00.675888+00:00",
-      "htmlSha256": "e6e9815055d489bb0b283aed8a3c3dc8d44745b7d6d7a77d3b0d2830c166e460",
+      "htmlSha256": "2019618f95c0b3436ac3de3b82bba7397e63a5c2dc418903a21e460d2b5602c3",
       "writtenAt": "2026-09-23T16:44:00.959106+00:00"
     },
     {
@@ -729,11 +729,11 @@
       "html": "pages/043.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:44:05.680668+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "cbae679e62699ce2cf315a6cfe4e90d6f414325f94093b74b7dbe91e4cbfdf25",
       "responseSha256": "54ff3d5a1c307135009b7a4ee66ebc5ee14e670b8e13b6c233c1e15c20b14035",
       "responseSavedAt": "2026-09-23T16:44:24.932017+00:00",
-      "htmlSha256": "e557c44337ee252c8bb07103e11929f3a227475301c7c76ae40c51e377c10d23",
+      "htmlSha256": "39f9b1f90b27a417d95ee5b369c1743771dc94640c76316cad848df80696e359",
       "writtenAt": "2026-09-23T16:44:25.062554+00:00"
     },
     {
@@ -746,11 +746,11 @@
       "html": "pages/044.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:44:29.384089+00:00",
-      "topic": null,
+      "topic": "truth-tables-and-equivalence",
       "imageSha256": "5d10815a5bb5c16a3c7e787d436cc439d71852331e3194b9023d63048a07256e",
       "responseSha256": "e701482351013f8a5c9b4045bd314b666e54da6de228c23d0e349ce68cdcaa76",
       "responseSavedAt": "2026-09-23T16:44:48.061602+00:00",
-      "htmlSha256": "1bf19f2b66c86cbfd3df94938a9e5d5abe16915a2f8cd6a9cb2c381fc4a70216",
+      "htmlSha256": "f9c74795d0ba24b28b6b4d3bfd21bfe80542879a1c54c682b2ed48de38d8d65d",
       "writtenAt": "2026-09-23T16:44:48.369389+00:00"
     },
     {
@@ -763,11 +763,11 @@
       "html": "pages/045.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:44:53.630319+00:00",
-      "topic": null,
+      "topic": "propositional-applications",
       "imageSha256": "851935eefcebedb2388c1f0e6ac373fe8aa859b6acba1cbc31d96d07ebfd5456",
       "responseSha256": "858268a2e9e696e8aa79d88cd9a67f0bf152f12dd5c3f383b6a04f24fa467bc7",
       "responseSavedAt": "2026-09-23T16:45:35.320720+00:00",
-      "htmlSha256": "0f71db5ebe809936998a649ee9a51f011bdb2e75f4e26c56e56dfa3f99870d19",
+      "htmlSha256": "ddf2cfdb439637c3e3730529de1360ef9c2e2faa3bfa88f02269ba19248dbba2",
       "writtenAt": "2026-09-23T16:45:35.592202+00:00"
     },
     {
@@ -780,11 +780,11 @@
       "html": "pages/046.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:45:41.112058+00:00",
-      "topic": null,
+      "topic": "propositional-applications",
       "imageSha256": "14999127de8c24ba9776992c1bc35d6c9a586b8a71dfa45bb2fc724777f71875",
       "responseSha256": "57950d461fb7b28da6e53ba78c289d9df59adab7a2a88259dfb96bda82826711",
       "responseSavedAt": "2026-09-23T16:48:40.405787+00:00",
-      "htmlSha256": "7a84bb4f3c4d243d04334ab5d3e60d2d6a52ea77926bc51206f5a040d48f9c1e",
+      "htmlSha256": "deb41fe52c18e46c46ed6db9a47cd64645483998d287570763e99b818ff7141f",
       "writtenAt": "2026-09-23T16:48:40.676193+00:00"
     },
     {
@@ -797,11 +797,11 @@
       "html": "pages/047.html",
       "status": "written",
       "preparedAt": "2026-09-23T16:48:45.289934+00:00",
-      "topic": null,
+      "topic": "propositional-applications",
       "imageSha256": "3b3627a754f98c2e6dd84f7865e87ecb0aa0c723f99894d3bdd92118c62e1c6e",
       "responseSha256": "344c1bc403683eb1058adb15ae4cea43a8ed5967eec266d0d90ba1090bf7a823",
       "responseSavedAt": "2026-09-23T16:49:02.786230+00:00",
-      "htmlSha256": "cdbffd217f06fb8cd9a349aee49e093f92ab96561488d5c9cd3b34a78b4fd8f5",
+      "htmlSha256": "bba7e9c1e9e75198d3778b26d2168e826568e32220a94024c04bd03b74faf178",
       "writtenAt": "2026-09-23T16:49:03.073181+00:00"
     }
   ]

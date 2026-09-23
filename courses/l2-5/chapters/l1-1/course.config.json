@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "title": "命题逻辑",
+  "subtitle": "从命题、条件句与真值表，到等价变形和逻辑推理应用。",
+  "language": "zh-CN",
+  "storagePrefix": "comp2711:l1-1:",
+  "topics": [
+    {"slug":"discrete-math-intro","title":"离散数学与逻辑导论","description":"从课程问题认识离散数学，了解本讲的学习路线。","pages":[1,2,3,4,5,6,7,8,9],"questions":[]},
+    {"slug":"propositions-and-connectives","title":"命题与逻辑连接词","description":"识别命题，用否定、合取、析取和异或建立真值表。","pages":[10,11,12,13,14,15,16,17,18,19,20],"questions":["Q-2016-MID-P04-a","Q-2019-MID-P01-a"]},
+    {"slug":"conditionals-and-biconditionals","title":"条件命题与双条件","description":"理解蕴含的方向、逆否命题及双条件，练习寻找反例。","pages":[21,22,23,24,25,26,27,28,29],"questions":["Q-2019-MID-P01-b","Q-2019-MID-P01-c","Q-2019-MID-P01-d"]},
+    {"slug":"truth-tables-and-equivalence","title":"真值表与逻辑等价","description":"区分永真、矛盾与偶然命题，使用逻辑律证明等价。","pages":[30,31,32,33,34,35,36,37,38,39,40,41,42,43,44],"questions":["Q-2015-MID-P01-a","Q-2023F-MID-P01-a","Q-2024F-FINAL-P01-a"]},
+    {"slug":"propositional-applications","title":"命题逻辑应用","description":"把骑士与无赖以及次序问题写成可逐项检验的推理。","pages":[45,46,47],"questions":["Q-2018-MID-P01-a","Q-2018-MID-P01-b"]}
+  ]
+}

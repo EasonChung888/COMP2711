@@ -1,0 +1,222 @@
+[
+  {
+    "id": "Q-2025F-MID-P03-a",
+    "topic": "set-foundations",
+    "sourceNote": "sources/notes/Q-2025F-MID-P03-a - Set Operations.md",
+    "sourceNoteSha256": "649b5aa85e961ce8fe4b9284b3163bf408fbaefdc13564870e77f659efa18c19",
+    "stems": [],
+    "paper": "2025 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2025_Midterm.pdf",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "page": 10,
+    "solutionPages": [
+      11
+    ],
+    "number": "3(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) [2 points] Assume $A\\subseteq C$ and $B\\subseteq C$. Use direct proof to prove that $A\\cap B\\subseteq C$.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $A\\cap B\\subseteq C$。\n\n**推导。** 任取 $x\\in A\\cap B$，由 intersection 定义有 $x\\in A$ 且 $x\\in B$。因为 $A\\subseteq C$，从 $x\\in A$ 得 $x\\in C$。所以交集中的每个元素都在 $C$ 中，按 subset 定义得到 $A\\cap B\\subseteq C$。也可使用 $B\\subseteq C$ 完成同一推理；两个前提同时给出，但这项结论实际上只需其中一个。空交集时包含关系亦为空真。",
+    "mistakesMarkdown": "- 不能由某一个元素属于 $C$ 就得集合包含，必须任取交集元素。\n- 包含关系不要求严格包含，三集合相等也满足题设。"
+  },
+  {
+    "id": "Q-2024F-FINAL-P02-a",
+    "topic": "set-operations",
+    "sourceNote": "sources/notes/Q-2024F-FINAL-P02-a - Set Operations.md",
+    "sourceNoteSha256": "a961cdefd0d4b05f6894168de1749bd25902743bc50c96bd1caa47f931ccf48a",
+    "stems": [],
+    "paper": "2024 Fall Final",
+    "pdf": "sources/papers/COMP2711_F2024_Final.pdf",
+    "pdfSha256": "d6ddd1bb2ff55313079dbc5927731593d3c49cbbe3cc0294d000f8d10f014e0d",
+    "page": 5,
+    "solutionPages": [
+      6
+    ],
+    "number": "2(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) Prove or disprove that if $(A\\cup B)\\subseteq(A\\cap B)$, then $A=B$.\nNote that one approach can be showing that $A\\subseteq B$ and $B\\subseteq A$, which means that they have to be equal.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** 命题为真，$A=B$。\n\n**推导。** 任取 $x\\in A$，则按并集定义 $x\\in A\\cup B$。由题设包含关系，$x\\in A\\cap B$，所以按交集定义 $x\\in B$；因此 $A\\subseteq B$。再任取 $x\\in B$，同理先有 $x\\in A\\cup B$，再有 $x\\in A\\cap B$，故 $x\\in A$，于是 $B\\subseteq A$。双向包含推出 $A=B$，包含空集情形在内。",
+    "mistakesMarkdown": "- 题设包含方向比通常关系更强，不能仅复述交集包含于并集。\n- 只证 $A\\subseteq B$ 不足够，需补对称方向。"
+  },
+  {
+    "id": "Q-2024F-MID-P03-c",
+    "topic": "set-operations",
+    "sourceNote": "sources/notes/Q-2024F-MID-P03-c - Set Operations.md",
+    "sourceNoteSha256": "50fcd6df984181bd379f19aacb9b076dae1282779b1870868fe7afad8db02126",
+    "stems": [],
+    "paper": "2024 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2024_Midterm.pdf",
+    "pdfSha256": "a2c7c1624898971f48fd6a5cf143df67db1fe4f9a8bd59cdfc880c8a3120458c",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "3(c)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(c) Prove that $A-(B\\cap C)=(A-B)\\cup(A-C)$. You are Not allowed to use Venn diagram to prove it.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $A-(B\\cap C)=(A-B)\\cup(A-C)$。\n\n**推导。** 任取元素 x。$x\\in A\\setminus(B\\cap C)$ 当且仅当 $x\\in A\\land\\neg(x\\in B\\land x\\in C)$。由 De Morgan，这等价于 $x\\in A\\land(x\\notin B\\lor x\\notin C)$；再由分配律等价于 $(x\\in A\\land x\\notin B)\\lor(x\\in A\\land x\\notin C)$，也就是 $x\\in(A\\setminus B)\\cup(A\\setminus C)$。各步均为双向等价且 x 任意，因此两集合所有元素完全相同，无需 Venn 图。",
+    "mistakesMarkdown": "- 交集的否定变析取，不能继续写不属于 B 且不属于 C。\n- 只证一个方向的包含关系不足以推出集合相等，应保证每步双向。"
+  },
+  {
+    "id": "Q-2023F-MID-P03-a",
+    "topic": "set-operations",
+    "sourceNote": "sources/notes/Q-2023F-MID-P03-a - Set Operations.md",
+    "sourceNoteSha256": "e614e3cf44fb18e148de2e5d8eeea31aabfa24d8743f973d4f3df570edfbb3f9",
+    "stems": [],
+    "paper": "2023 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2023_Midterm.pdf",
+    "pdfSha256": "4ced9291189c331f77d1a2d614cac17c95b372cf3153db6403c3946af2c1ea9b",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "3(a)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $S$ and $T$ denote two sets. Prove the following by contradiction:\n\nIf $S\\cap T=\\varnothing$ and $S\\cup T=T$ then $S=\\varnothing$.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $S=\\varnothing$。\n\n**推导。**\n\n1. 保留两条前提 $S\\cap T=\\varnothing$、$S\\cup T=T$，为 proof by contradiction 假设结论相反，即 $S\\ne\\varnothing$。于是能选出某个元素 $x\\in S$，并由并集定义得到 $x\\in S\\cup T$。\n2. 用第二条前提把并集替换为 $T$，可得 $x\\in T$。同一元素既在 $S$ 又在 $T$，于是 $x\\in S\\cap T$，与第一条前提的空交集矛盾。因此非空假设不能成立，必须 $S=\\varnothing$。两个集合条件都在证明中实际使用，不能仅凭空交集就断言其中一个集合为空。\n\n### English solution\n\n**Answer.** $S=\\varnothing$.\n\n**Derivation/proof.** Assume $S\\cap T=\\varnothing$ and $S\\cup T=T$, but suppose $S\\ne\\varnothing$. Then there is an element $x\\in S$. It follows that $x\\in S\\cup T$, and the union equality implies $x\\in T$. Hence $x\\in S\\cap T$, contradicting the premise that this intersection is empty. The assumption $S\\ne\\varnothing$ must therefore be false, proving the conclusion by contradiction.",
+    "mistakesMarkdown": "- 只用 S∩T=∅ 无法推出 S 为空。 / Disjointness alone is insufficient.\n- 不能假设待证的 S=∅ 来开始反证。 / Assume its negation and derive a contradiction."
+  },
+  {
+    "id": "Q-2013-MID-P02-a",
+    "topic": "functions-and-mappings",
+    "sourceNote": "sources/notes/Q-2013-MID-P02-a - Functions.md",
+    "sourceNoteSha256": "e97cd8fbfe58523651e16a4e4e274c29698266d8b95760631429cef2140b95bc",
+    "stems": [
+      "STEM-2013-MID-P02 - Shared Problem Prompt"
+    ],
+    "paper": "2013 Midterm",
+    "pdf": "sources/papers/2013-midterm.pdf",
+    "pdfSha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider $S_3=\\{1,2,3\\}$ and $S_n=\\{1,2,\\ldots,n\\}$, where $n>3$.\n\n(a) How many different functions $f$ are there from $S_3$ to $S_n$?\n\nExplain how your answers are derived.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** $n^3$.\n\n**Derivation/proof.** A function is fixed by the independent choices of $f(1),f(2),f(3)$. Each has $n$ possible images, hence $n\\cdot n\\cdot n=n^3$.\n\n### 中文解答\n\n**推导。** 函数由三个像 $f(1),f(2),f(3)$ 唯一确定。每一个像都可以从 $S_n$ 的 n 个元素中任取，题目允许像重复，因此三个选择独立。乘法原理给 $n\\cdot n\\cdot n=n^3$；每组三个像恰对应一个函数。",
+    "mistakesMarkdown": "- 把函数数目写成 $3^n$，颠倒定义域与陪域。\n- 把允许相同函数值的情形排除。"
+  },
+  {
+    "id": "Q-2018-MID-P04-a-proof",
+    "topic": "functions-and-mappings",
+    "sourceNote": "sources/notes/Q-2018-MID-P04-a-proof - Functions.md",
+    "sourceNoteSha256": "35a244851a6517461ab729c1e1ad541ec86e5f8535b97bb623fdad147fdb0ca3",
+    "stems": [
+      "STEM-2018-MID-P04-a - Shared Problem Prompt"
+    ],
+    "paper": "2018 Midterm",
+    "pdf": "sources/papers/2018-midterm.pdf",
+    "pdfSha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "4(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider finite sets $S$ and $T$, and a function $f:S\\to T$.\n\n“If $f$ is injective, then $|T|\\ge|S|$.”\n\nThen, prove the contrapositive directly.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.\n\n**Answer.** If $|T|<|S|$, the function $f$ is not injective.\n\n**Derivation/proof.** Assume $|S|>|T|$. Regard the elements of $S$ as pigeons and the elements of $T$ as holes, sending $s$ to hole $f(s)$. By pigeonhole principle, two distinct elements $a,b\\in S$ share an image: $f(a)=f(b)$. This is precisely failure of injectivity.\n\n### 中文解答\n\n**推导。** 设 $|S|>|T|$。把有限集合 $S$ 的元素当作鸽子，把 $T$ 的元素当作鸽巢，并将每个 $s$ 放入由函数值 $f(s)$ 指定的巢。鸽子多于巢，由鸽巢原理存在 $a,b\\in S$，$a\\ne b$ 而 $f(a)=f(b)$。这正是否定单射的见证，直接证明“若 $|T|<|S|$，则 $f$ 非单射”。",
+    "mistakesMarkdown": "- 只说输出少却没有联系单射定义。\n- 错误认为满射可以避免输入碰撞。"
+  },
+  {
+    "id": "Q-2018-MID-P04-b",
+    "topic": "functions-and-mappings",
+    "sourceNote": "sources/notes/Q-2018-MID-P04-b - Functions.md",
+    "sourceNoteSha256": "f351e98c22cfddfaa24893f60ec7f4d5753846b1468471daf6be0badf2dc8e6b",
+    "stems": [],
+    "paper": "2018 Midterm",
+    "pdf": "sources/papers/2018-midterm.pdf",
+    "pdfSha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "4(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(b) For functions on finite sets $f:S\\to T,g:T\\to U$, if $f$ is injective, and $g$ is surjective, is it true that $g\\circ f$ must be injective? Prove it.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.\n\n**Answer.** No. Let $S=T=\\{a,b\\},U=\\{0\\}$, $f$ be the identity and $g$ be constant zero.\n\n**Derivation/proof.** The identity sends distinct inputs to distinct elements, so $f$ is injective. The image of $g$ is all of the singleton $U$, so $g$ is surjective. Yet $g(f(a))=0=g(f(b))$ with $a\\ne b$, hence the composite is not injective. Every required premise is satisfied by this counterexample.\n\n### 中文解答\n\n**推导。** 不一定。取 $S=T=\\{a,b\\}$、$U=\\{0\\}$，定义 $f(a)=a,f(b)=b$，以及 $g(a)=g(b)=0$。$f$ 为恒等映射所以单射，$g$ 的像为整个 $U$ 所以满射；但 $g(f(a))=0=g(f(b))$ 且 $a\\ne b$，复合映射非单射。反例满足全部有限集合及单满射前提，故足以否定断言。",
+    "mistakesMarkdown": "- 把 g 的满射当成单射。\n- 反例没有检验两函数的定义域和值域相接。"
+  },
+  {
+    "id": "Q-2023S-MID-P03-1",
+    "topic": "infinite-cardinality",
+    "sourceNote": "sources/notes/Q-2023S-MID-P03-1 - Countability.md",
+    "sourceNoteSha256": "0fe45f6ac1d3673831cf9b4c13a66628bb692be87f4fccb9a49d502ca8c1c829",
+    "stems": [
+      "STEM-2023S-MID-P03 - Shared Problem Prompt"
+    ],
+    "paper": "2023 Spring Midterm",
+    "pdf": "sources/papers/COMP2711_S2023_Midterm.pdf",
+    "pdfSha256": "7cb61aa82894104e5769eb2c2a20c53874e401c9f1e41b1e0cd8e7191a318aa5",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "3(1)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Decide if the following sets are countable or uncountable. Let $\\mathbb N$ be the set of natural numbers. $P(S)$ denotes the power set of $S$. No need to justify your answers.\n\n1. $\\mathbb N^2$",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $\\mathbb N^2$ 是 countably infinite，故选择 countable。\n\n**推导。**\n\n1. 按两坐标和 $s=a+b$ 从小到大排列自然数有序对 $(a,b)$。对每个固定的 $s$，满足条件的对只有有限多个，可以按第一坐标从小到大全部列出，再进入下一条 diagonal。\n2. 每个有序对的坐标和都是某个有限自然数，所以这份按对角线扫描的序列最终必定列到它，没有遗漏；由此集合至多可数。固定一个合法第二坐标，让第一坐标依次取所有自然数，又得到无限多个不同有序对，所以集合无限可数。自然数是否包括零只改变最先几条对角线，不改变论证。\n\n### English solution\n\n**Answer.** Countable.\n\n**Derivation/proof.** For each possible sum $s$, list all pairs $(a,b)\\in\\mathbb N^2$ with $a+b=s$. Each diagonal is finite; scanning the diagonals in increasing $s$ reaches every pair because each pair has a finite sum. This constructs an enumeration. There are infinitely many distinct pairs with one coordinate fixed, so the set is countably infinite. The argument works with either convention for whether 0 belongs to $\\mathbb N$.",
+    "mistakesMarkdown": "- 认为二维自然数格点比一维自然数多就不可数，忽略了 diagonal enumeration。 / Diagonal enumeration reaches all pairs.\n- 在每个固定第一坐标下先列完无限多第二坐标，会永远到不了下一行。 / Use finite diagonals rather than infinite rows."
+  },
+  {
+    "id": "Q-2023S-MID-P03-2",
+    "topic": "infinite-cardinality",
+    "sourceNote": "sources/notes/Q-2023S-MID-P03-2 - Countability.md",
+    "sourceNoteSha256": "291f025640c3bd6be5ec43dcf0b462e0f60d19f9338bf3175ac58350bb4fda61",
+    "stems": [
+      "STEM-2023S-MID-P03 - Shared Problem Prompt"
+    ],
+    "paper": "2023 Spring Midterm",
+    "pdf": "sources/papers/COMP2711_S2023_Midterm.pdf",
+    "pdfSha256": "7cb61aa82894104e5769eb2c2a20c53874e401c9f1e41b1e0cd8e7191a318aa5",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "3(2)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Decide if the following sets are countable or uncountable. Let $\\mathbb N$ be the set of natural numbers. $P(S)$ denotes the power set of $S$. No need to justify your answers.\n\n2. $P(\\mathbb N)$",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $P(\\mathbb N)$ 是 uncountable。\n\n**推导。**\n\n1. 假设所有自然数子集能列为 $A_1,A_2,\\ldots$；如自然数包括零，可先重新编号。定义 diagonal 集合 $D=\\{n:n\\notin A_n\\}$。这个规则为每个自然数确定是否取入，所以 $D$ 本身是合法的自然数子集。\n2. 对任意列表编号 $k$，有 $k\\in D$ 当且仅当 $k\\notin A_k$。因此 $D$ 与 $A_k$ 至少在元素 $k$ 的归属上相反，必不相等。$D$ 不在任何一项中，与“完整列出全部子集”矛盾，故不存在可数枚举，幂集不可数。\n\n### English solution\n\n**Answer.** Uncountable.\n\n**Derivation/proof.** Suppose all subsets were listed as $A_1,A_2,\\ldots$ (reindex naturals starting at 1 if necessary). Define $D=\\{n:n\\notin A_n\\}$. For every index $k$, membership of $k$ in $D$ is opposite to its membership in $A_k$, so $D\\ne A_k$. Yet $D$ is a subset of $\\mathbb N$ and must occur in a complete list. This contradiction proves uncountability.",
+    "mistakesMarkdown": "- 把幂集只理解为有限子集会漏掉无限子集。 / The power set includes every infinite subset.\n- diagonal 集合是否包含 n 必须与第 n 个集合相反。 / Reverse membership at the matching index."
+  },
+  {
+    "id": "Q-2025F-MID-P03-c-ii",
+    "topic": "infinite-cardinality",
+    "sourceNote": "sources/notes/Q-2025F-MID-P03-c-ii - Countability.md",
+    "sourceNoteSha256": "0ef024f16c64f93da0eee1c6b2d781502ef4fc4857f07df76e2b26fb4f96b4b6",
+    "stems": [
+      "STEM-2025F-MID-P03-c - Shared Problem Prompt"
+    ],
+    "paper": "2025 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2025_Midterm.pdf",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "3(c)(ii)",
+    "marks": 1,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(c) [7 points, 1 pt each] Determine whether the following statements are True or False. No argument is needed.\n\n(ii) The set of functions from $\\mathbb N\\to\\mathbb N$ is uncountable infinite.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** True。\n\n**推导。** 反设所有函数可列为 $f_0,f_1,\\ldots$，构造 $g(n)=f_n(n)+1$。由于自然数对后继封闭，$g$ 仍是自然数到自然数的函数；但对每个 $n$，有 $g(n)\\ne f_n(n)$，故 $g\\ne f_n$。它遗漏在声称完整的列表之外，产生矛盾。因此该函数集合不可数无限。",
+    "mistakesMarkdown": "- 定义域和值域各自可数不表示函数集合可数，函数需无限多个取值。\n- 对角函数的每个输出必须仍在自然数域内，使用加一保证这一点。"
+  }
+]

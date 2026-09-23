@@ -1,0 +1,322 @@
+[
+  {
+    "id": "Q-2019-MID-P02-a",
+    "topic": "predicates-and-quantifiers",
+    "sourceNote": "sources/notes/Q-2019-MID-P02-a - Predicate Logic.md",
+    "sourceNoteSha256": "7cc1468cfa24b1e1c7a657a792064b80c6d18094e24eaef996234e0feaab88bf",
+    "stems": [
+      "STEM-2019-MID-P02 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $P(x)$ be the statement “$x$ is even” and $Q(x)$ be the statement “$x$ is an integer”. Express each of the following statements using predicates, quantifiers, logical connectives, and mathematical operators where the domain is all real numbers.\n\n(a) Some real numbers are not positive.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** $\\exists x(x\\le0)$.\n\n**Derivation/proof.** “Some” introduces an existential quantifier. Since the domain is already all real numbers, no separate real-number predicate is needed. The negation of $x>0$ is $x\\le0$, so the witness is required to satisfy that inequality; for example zero does.\n\n### 中文解答\n\n**推导。** 论域已经是全体实数，无需另加“实数”谓词。“some” 用存在量词，正数条件为 $x>0$，其否定为 $x\\le0$，故写 $\\exists x(x\\le0)$。特别是 $x=0$ 也是不正的数，不能把“不正”缩成严格负数。",
+    "mistakesMarkdown": "- 用 x<0 丢掉零的边界含义。\n- 误用全称量词。"
+  },
+  {
+    "id": "Q-2019-MID-P02-b",
+    "topic": "predicates-and-quantifiers",
+    "sourceNote": "sources/notes/Q-2019-MID-P02-b - Predicate Logic.md",
+    "sourceNoteSha256": "1baec336d5ed1879f2cbabe5e1845fa009aed51356d8e3116fab75021764a0bd",
+    "stems": [
+      "STEM-2019-MID-P02 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(b)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $P(x)$ be the statement “$x$ is even” and $Q(x)$ be the statement “$x$ is an integer”. Express each of the following statements using predicates, quantifiers, logical connectives, and mathematical operators where the domain is all real numbers.\n\n(b) Every integer is even.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** $\\forall x(Q(x)\\to P(x))$.\n\n**Derivation/proof.** For every real $x$, only the case in which $Q(x)$ holds is constrained. In that case the sentence requires $P(x)$. Thus the correct translation is a universally quantified implication. Translating a false English statement does not license changing it into a true one.\n\n### 中文解答\n\n**推导。** 遍历实数时，只要求整数满足偶数性质，故对每个 $x$ 写条件蕴含 $Q(x)\\to P(x)$，再用全称量词得到 $\\forall x(Q(x)\\to P(x))$。原自然语言在通常整数中虽为假，翻译仍须忠实表达它，不能为使句子为真而改换量词。",
+    "mistakesMarkdown": "- 为了让句子为真而改成存在量词。\n- 写合取导致所有实数都必须是整数。"
+  },
+  {
+    "id": "Q-2019-MID-P02-c",
+    "topic": "predicates-and-quantifiers",
+    "sourceNote": "sources/notes/Q-2019-MID-P02-c - Predicate Logic.md",
+    "sourceNoteSha256": "004efff19915cfb3598c963a415fed09195bc6b761e4e9f8cf241921b27581a5",
+    "stems": [
+      "STEM-2019-MID-P02 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(c)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $P(x)$ be the statement “$x$ is even” and $Q(x)$ be the statement “$x$ is an integer”. Express each of the following statements using predicates, quantifiers, logical connectives, and mathematical operators where the domain is all real numbers.\n\n(c) Some integers are odd.",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** $\\exists x(Q(x)\\land\\neg P(x))$.\n\n**Derivation/proof.** Over the real domain, not even alone does not establish that a value is an odd integer. The same witness must be an integer, $Q(x)$, and not even, $\\neg P(x)$. For integers, those two conditions describe oddness, and “some” requires their conjunction to hold for at least one $x$.\n\n### 中文解答\n\n**推导。** 必须找同一个实数 $x$ 同时是整数且不是偶数；整数中的非偶数就是奇数。因此用 $\\exists x(Q(x)\\land\\neg P(x))$。若误用蕴含 $Q(x)\\to\\neg P(x)$，任一非整数就能因假前件充当见证，不能保证存在奇整数。",
+    "mistakesMarkdown": "- 用非 P 单独表示实数中的奇数。\n- 在存在量词内用蕴含，使非整数也能满足。"
+  },
+  {
+    "id": "Q-2016-MID-P06-a",
+    "topic": "restricted-domains",
+    "sourceNote": "sources/notes/Q-2016-MID-P06-a - Predicate Logic.md",
+    "sourceNoteSha256": "3c622eaf486e34d6a74c08ac5ab18bc8ad25c2fe01718523f66a60ab788f2f2d",
+    "stems": [
+      "STEM-2016-MID-P06 - Shared Problem Prompt"
+    ],
+    "paper": "2016 Midterm",
+    "pdf": "sources/papers/2016-midterm.pdf",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "6(a)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $q(x)$ be “$x$ is even”. Let $Z$ be a set of all integers. Let $E$ be a set of all even integers.\n\nFor each of the following pairs, say whether (i) is equivalent to (ii). If they are equivalent, all you have to do is to say that they are equivalent. If they are not equivalent, give a counter example. A counter example should involve a specification of $p(x)$ and an explanation as to why the resulting statement is false.\n\n(a) (i) $\\forall x\\in E(p(x))$\n\n(ii) $\\forall x\\in Z(q(x)\\Rightarrow p(x))$",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.\n\n**Answer.** Equivalent.\n\n**Derivation/proof.** If (i) holds, every even integer satisfies $p$, and every odd integer satisfies $q\\to p$ vacuously, proving (ii). Conversely, apply (ii) to an arbitrary even integer: $q$ is true, so modus ponens yields $p$, proving (i).\n\n### 中文解答\n\n**推导。** 先假设(i)。任取整数x，若x偶，则在E中，故p(x)真，蕴含真；若x奇，则q(x)假，蕴含也真，于是(ii)成立。反向假设(ii)，任取偶数x，q(x)为真，用肯定前件得p(x)，所以所有E中元素满足p，(i)成立。两方向完成，故等价。",
+    "mistakesMarkdown": "- 认为奇数会使第二句失败，忽略假前件蕴含为真。\n- 将限定全称域的蕴含换成合取。"
+  },
+  {
+    "id": "Q-2016-MID-P06-d",
+    "topic": "restricted-domains",
+    "sourceNote": "sources/notes/Q-2016-MID-P06-d - Predicate Logic.md",
+    "sourceNoteSha256": "7091db2d9d900b5d26a3c7e449af88475438b07e88d6d80350ad21aa8b84dace",
+    "stems": [
+      "STEM-2016-MID-P06 - Shared Problem Prompt"
+    ],
+    "paper": "2016 Midterm",
+    "pdf": "sources/papers/2016-midterm.pdf",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "6(d)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $q(x)$ be “$x$ is even”. Let $Z$ be a set of all integers. Let $E$ be a set of all even integers.\n\nFor each of the following pairs, say whether (i) is equivalent to (ii). If they are equivalent, all you have to do is to say that they are equivalent. If they are not equivalent, give a counter example. A counter example should involve a specification of $p(x)$ and an explanation as to why the resulting statement is false.\n\n(d) (i) $\\exists x\\in E(p(x))$\n\n(ii) $\\exists x\\in Z(q(x)\\land p(x))$",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.\n\n**Answer.** Equivalent.\n\n**Derivation/proof.** A witness $x\\in E$ for (i) is an integer with $q(x)$ and $p(x)$, hence witnesses (ii). Conversely, a witness of $q(x)\\land p(x)$ is even by $q(x)$, so belongs to $E$ and witnesses (i).\n\n### 中文解答\n\n**推导。** 若(i)有见证u，则u偶且p(u)真；作为整数u又满足q(u)，所以 $q(u)\\land p(u)$ 真，可直接用u作(ii)见证。反之若(ii)有见证v，合取消去给q(v)与p(v)，q(v)说明v偶，即v∈E，因此v也作(i)见证。见证双向转用，故两式等价。",
+    "mistakesMarkdown": "- 用两个不同整数分别满足偶数与 $p$，违反同一见证要求。\n- 把合取改成蕴含，重新引入奇数的空真见证。"
+  },
+  {
+    "id": "Q-2020-MID-P01-a",
+    "topic": "restricted-domains",
+    "sourceNote": "sources/notes/Q-2020-MID-P01-a - Predicate Logic.md",
+    "sourceNoteSha256": "0a6fb2608cd97f599dbf22f43769b5231ba72973449fd62a41e774024629380c",
+    "stems": [
+      "STEM-2020-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2020 Midterm",
+    "pdf": "sources/papers/2020-midterm.pdf",
+    "pdfSha256": "e4043254770981190c07d2a6729740cdf4ffed8ae0d370efff7f5d93f88bacc0",
+    "page": 1,
+    "solutionPages": [
+      1
+    ],
+    "number": "1(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $Z(x),D(x),F(x)$ and $C(x)$ be the following predicates:\n\n$Z(x)$: “$x$ attended the Zoom meeting of midterm dry run”.\n$D(x)$: “$x$ gets some marks deducted for the midterm exam”.\n$F(x)$: “$x$ submitted a file for the midterm dry run”.\n$C(x)$: “$x$ is cheating”.\n\nExpress the following statements using quantifiers, logical connectives, and the predicates above, where the domain consists of all students in COMP2711.\n\nAny student absent from the Zoom meeting of midterm dry run gets some marks deducted for the midterm exam.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked by the derivation below.\n\n**Answer.** $\\forall x(\\neg Z(x)\\to D(x))$.\n\n**Derivation/proof.** “Any student” ranges over every member of the given student domain. Being absent is $\\neg Z(x)$; the statement requires $D(x)$ whenever that condition holds. Thus use implication inside the universal quantifier. A student who attended is unconstrained by this sentence.\n\n### 中文解答\n\n**推导。** 论域已是所有修读学生，因此“Any student”用 $\\forall x$。“缺席”是到场谓词的否定 $\\neg Z(x)$，要求一旦缺席就有扣分 $D(x)$，故写 $\\forall x(\\neg Z(x)\\to D(x))$。这只约束缺席者，不声称参加者是否扣分，也不是把全体学生都断言为缺席。",
+    "mistakesMarkdown": "- 把缺席误写成 Z。\n- 用合取断言所有学生都缺席。"
+  },
+  {
+    "id": "Q-2014-FINAL-P05-b",
+    "topic": "quantifier-equivalence",
+    "sourceNote": "sources/notes/Q-2014-FINAL-P05-b - Logical Equivalence.md",
+    "sourceNoteSha256": "7be05ad16b98ad39bcfc346fd0873529dcdda2cb28346f558cd95d85233b2a49",
+    "stems": [
+      "STEM-2014-FINAL-P05 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Final",
+    "pdf": "sources/papers/2014-final.pdf",
+    "pdfSha256": "778a2a0e37c04a803edce848127f852e143166c5e472f3474a72cbbf0fc93e2b",
+    "page": 9,
+    "solutionPages": [
+      9
+    ],
+    "number": "5(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "For each of the following pairs of logic statements, either prove that the two statements are logically equivalent, or give a counterexample. In your proof, you may use either a truth table or logic laws. A counterexample should consist of a truth setting of the variables and the truth values of the statements under the setting.\n\n(b) $\\exists x\\in U\\ p(x)\\Rightarrow\\exists x\\in U\\ q(x)$ and $\\exists x\\in U(p(x)\\Rightarrow q(x))$",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** No.\n\n**Derivation/proof.** Let $U$ be animals, $p(x)$ mean ‘$x$ can fly’, and $q(x)$ mean ‘$x$ can fly an airplane’. The left implication is false (some animal flies but none flies an airplane), while the right is true because any non-flying animal makes $p(x)\\Rightarrow q(x)$ true.\n\n### 中文解答\n\n**推导。** 两式不等价。将原解答的会飞/不会飞反例明确为二元素域 $U=\\{u,v\\}$：令 $p(u)=T,p(v)=F$，且 $q(u)=q(v)=F$。左式按题目外层蕴含读取，前件 $\\exists x\\,p(x)$ 真、后件 $\\exists x\\,q(x)$ 假，故为假。右式取见证 v，则 $p(v)\\Rightarrow q(v)=F\\Rightarrow F=T$，故存在式真。具体赋值消除了自然语言中动物类别的歧义。",
+    "mistakesMarkdown": "- 把两个 $\\exists x$ 当作同一个见证而未检验。\n- 反例中让两式都为真。"
+  },
+  {
+    "id": "Q-2014-FINAL-P05-c",
+    "topic": "quantifier-equivalence",
+    "sourceNote": "sources/notes/Q-2014-FINAL-P05-c - Logical Equivalence.md",
+    "sourceNoteSha256": "6bbe74fd44548be5c0f2e6e680994bfc11396329f7a94873370aee826e6d524f",
+    "stems": [
+      "STEM-2014-FINAL-P05 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Final",
+    "pdf": "sources/papers/2014-final.pdf",
+    "pdfSha256": "778a2a0e37c04a803edce848127f852e143166c5e472f3474a72cbbf0fc93e2b",
+    "page": 9,
+    "solutionPages": [
+      9
+    ],
+    "number": "5(c)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "For each of the following pairs of logic statements, either prove that the two statements are logically equivalent, or give a counterexample. In your proof, you may use either a truth table or logic laws. A counterexample should consist of a truth setting of the variables and the truth values of the statements under the setting.\n\n(c) $\\exists x\\in U\\ p(x)\\Rightarrow\\forall y\\in V\\ q(y)$ and $\\forall x\\in U\\forall y\\in V(p(x)\\Rightarrow q(y))$",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** Yes.\n\n**Derivation/proof.** The left formula is $\\neg\\exists x,p(x)\\lor\\forall y,q(y)=\\forall x\\neg p(x)\\lor\\forall yq(y)$. Distributing universal quantifiers over this two-variable disjunction gives $\\forall x\\forall y(\\neg p(x)\\lor q(y))$, the right formula.\n\n### 中文解答\n\n**推导。** 先证左推右。若没有 x 满足 p，则每个蕴含的前件均假，右式真；若有这样的 x，左式迫使所有 y 满足 q，于是右式也真。反向，假设右式成立；若存在 u 满足 p，对任意 y 用右式和 $p(u)$ 得 $q(y)$，故全称后件成立；若不存在 u，左式前件假而自动真。两方向均成立，所以等价；空域时上述真假条件也一致。",
+    "mistakesMarkdown": "- 把 $\\neg\\exists x$ 写成 $\\exists x\\neg$。\n- 错误把全称量词换成存在量词。"
+  },
+  {
+    "id": "Q-2024S-MID-P03-a",
+    "topic": "quantifier-equivalence",
+    "sourceNote": "sources/notes/Q-2024S-MID-P03-a - Predicate Logic.md",
+    "sourceNoteSha256": "6a6aa25f2344dcfe5b7d84a5f32e69ff3270e3d4edf47eb85e6fa0080f6b43cd",
+    "stems": [
+      "STEM-2024S-MID-P03 - Shared Problem Prompt"
+    ],
+    "paper": "2024 Spring Midterm",
+    "pdf": "sources/papers/COMP2711_S2024_Midterm.pdf",
+    "pdfSha256": "1cc40fb0f4795239949a0e2f0b4c0b789ab2d3e701f2eebddf5b407b97bae526",
+    "page": 5,
+    "solutionPages": [
+      5
+    ],
+    "number": "3(a)",
+    "marks": 1,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $P(x,y)$ be a propositional function. For each part below, state whether or not it is a tautology. No explanation is needed.\n\n(a) $\\exists x\\forall yP(x,y)\\to\\forall y\\exists xP(x,y)$.",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** Tautology.\n\n**推导。** 如果前件成立，存在某个固定 $x_0$ 使每个 $y$ 都满足 $P(x_0,y)$。现在任取 $y$，同一个 $x_0$ 就能作为 $\\exists xP(x,y)$ 的见证，故后件成立。前件为假时蕴含自动为真。即使论域为空，前件也假。因此该式对所有解释为真，是 tautology。",
+    "mistakesMarkdown": "- 固定的 x 见证可重复用于每个 y，不能误以为每个 y 必须对应不同 x。\n- 要证明恒真需说明前件成立时如何给出后件见证，不能只举一个谓词例子。"
+  },
+  {
+    "id": "Q-2023F-MID-P02-a",
+    "topic": "negating-quantifiers",
+    "sourceNote": "sources/notes/Q-2023F-MID-P02-a - Predicate Logic.md",
+    "sourceNoteSha256": "0e036717fb3817c85666f13cdddc7111e92cd6078c12cd0dffab1ce8d3ec8ac7",
+    "stems": [],
+    "paper": "2023 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2023_Midterm.pdf",
+    "pdfSha256": "4ced9291189c331f77d1a2d614cac17c95b372cf3153db6403c3946af2c1ea9b",
+    "page": 5,
+    "solutionPages": [
+      5,
+      6
+    ],
+    "number": "2(a)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Express the negation of the following statement so that all negation operators immediately precede the predicates:\n$$\\exists x(P(x)\\to\\forall y(Q(y)\\to(R(y)\\lor S(y)))).$$",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $\\forall x\\bigl(P(x)\\land\\exists y(Q(y)\\land\\neg R(y)\\land\\neg S(y))\\bigr)$。\n\n**推导。**\n\n1. 先否定整个存在式，并用 $\\neg(A\\to B)\\equiv A\\land\\neg B$：\n   $$\\neg\\exists x(P(x)\\to\\forall y(Q(y)\\to(R(y)\\lor S(y))))\n   \\equiv\\forall x(P(x)\\land\\neg\\forall y(Q(y)\\to(R(y)\\lor S(y)))).$$\n   因此 $P$ 保持正向，外层量词变为全称。\n2. 再把 $\\neg\\forall y$ 化为 $\\exists y\\neg$，否定内层 implication 得 $Q(y)\\land\\neg(R(y)\\lor S(y))$。最后用 De Morgan 将末项化为 $\\neg R(y)\\land\\neg S(y)$，即答案。保留所有原量词作用域，不把依赖定义域条件的量词任意外提；最终否定符只紧靠谓词 $R,S$。\n\n### English solution\n\n**Answer.** $\\forall x\\bigl(P(x)\\land\\exists y(Q(y)\\land\\neg R(y)\\land\\neg S(y))\\bigr)$.\n\n**Derivation/proof.** Negate the whole statement, rather than merely its final disjunction:\n$$\\begin{aligned}\n\\neg\\exists x(P(x)\\to\\forall y(Q(y)\\to(R(y)\\lor S(y))))\n&\\equiv\\forall x(P(x)\\land\\neg\\forall y(Q(y)\\to(R(y)\\lor S(y))))\\\\\n&\\equiv\\forall x(P(x)\\land\\exists y(Q(y)\\land\\neg(R(y)\\lor S(y))))\\\\\n&\\equiv\\forall x(P(x)\\land\\exists y(Q(y)\\land\\neg R(y)\\land\\neg S(y))).\n\\end{aligned}$$\nAll remaining negations are immediately before R or S. Keeping the quantifier scopes explicit also avoids any unnecessary domain-dependent extraction of a quantifier.",
+    "mistakesMarkdown": "- 将 ¬(A→B) 写为 ¬A→¬B 不是等价变换；应写成前件真且后件假。 / Negated implication is A∧¬B.\n- 把 ¬(R∨S) 化成 ¬R∨¬S 错用了 De Morgan，否定后两个条件必须同时满足。 / The resulting connective is conjunction."
+  },
+  {
+    "id": "Q-2025F-MID-P02-b",
+    "topic": "negating-quantifiers",
+    "sourceNote": "sources/notes/Q-2025F-MID-P02-b - Predicate Logic.md",
+    "sourceNoteSha256": "e92db5d48c54dc3cf13d83ae23b3479f64ea31434cbd44d897388ef2f8332f87",
+    "stems": [],
+    "paper": "2025 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2025_Midterm.pdf",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "page": 6,
+    "solutionPages": [
+      7,
+      8
+    ],
+    "number": "2(b)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(b) [4 points] Express the negations of each of these statements so that all negation symbols immediately precede predicates.\n$$\\forall x\\bigl(p(x)\\lor\\exists y(p(y)\\to\\forall z\\,q(x,z))\\bigr)$$",
+    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $\\exists x(\\neg p(x)\\land\\forall y(p(y)\\land\\exists z\\neg q(x,z)))$。\n\n**推导。** 先把否定移过外层量词：$\\exists x\\neg(p(x)\\lor\\exists y(p(y)\\to\\forall zq(x,z)))$。De Morgan 与量词否定得到 $\\exists x(\\neg p(x)\\land\\forall y\\neg(p(y)\\to\\forall zq(x,z)))$。再用 $\\neg(A\\to B)\\equiv A\\land\\neg B$，得到 $\\exists x(\\neg p(x)\\land\\forall y(p(y)\\land\\neg\\forall zq(x,z)))$。最后 $\\neg\\forall zq(x,z)\\equiv\\exists z\\neg q(x,z)$，即答案。这里 $z$ 可以随 $x,y$ 选择，所有否定都直接作用在 $p,q$ 上。",
+    "mistakesMarkdown": "- 否定蕴含后前件仍为 $p(y)$，不能错误地改为 $\\neg p(y)$。\n- 翻转量词不能改变 $q(x,z)$ 的变量次序或把它写成 $q(y,z)$。"
+  },
+  {
+    "id": "Q-2019-FINAL-P01-a",
+    "topic": "nested-quantifiers",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P01-a - Predicate Logic.md",
+    "sourceNoteSha256": "b51127e3b18c516a90796964bb584cd1a47870499dca0ee89fbe6da32b660b07",
+    "stems": [
+      "STEM-2019-FINAL-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "For each of the following statements, determine whether it is true or false, and justify your answer. The domain is all integers.\n\n(a) $\\exists x\\forall y(2x-y>1)$",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** False.\n\n**Derivation/proof.** For any integer $x$ proposed as the existential witness, choose the integer $y=2x$. Then $2x-y=0$, which is not greater than 1. Thus no x works for all y. This proves the negation $\\forall x\\exists y(2x-y\\le1)$, rather than merely testing one candidate x.\n\n### 中文解答\n\n**推导。** 断言为假。任取候选整数 $x$，都能在它之后选整数 $y=2x$，使 $2x-y=0\\le1$。所以没有任何 $x$ 能对所有 $y$ 满足严格大于 $1$ 的条件。我们实际证明了完整否定 $\\forall x\\exists y(2x-y\\le1)$，而非只否定一个候选见证。",
+    "mistakesMarkdown": "- 只试 x=0 而未排除其他候选。\n- 要求反例 y 不得依赖 x。"
+  },
+  {
+    "id": "Q-2019-FINAL-P01-c",
+    "topic": "nested-quantifiers",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P01-c - Predicate Logic.md",
+    "sourceNoteSha256": "6132a9ae3b440ee80325f7f6230a60b531a2fc802e4f72457cfcf9014b7e03ce",
+    "stems": [
+      "STEM-2019-FINAL-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(c)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "For each of the following statements, determine whether it is true or false, and justify your answer. The domain is all integers.\n\n(c) $\\forall x\\exists y(2x-y\\le1)$",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** True.\n\n**Derivation/proof.** Let $x$ be an arbitrary integer and choose $y=2x$, which is also an integer. Then $2x-y=0\\le1$. This constructs a valid witness for every allowed x, proving the quantified statement. The witness is selected after x, as required by the quantifier order.\n\n### 中文解答\n\n**推导。** 断言为真。给定任意整数 $x$，选整数 $y=2x$，于是 $2x-y=2x-2x=0\\le1$。这个构造对每个 $x$ 都有效，而且存在见证是在 $x$ 给定后才选择，正符合 $\\forall x\\exists y$ 的顺序。",
+    "mistakesMarkdown": "- 交换量词后仍声称同一个证明成立。\n- 选择非整数 y 却没有检查论域。"
+  },
+  {
+    "id": "Q-2019-FINAL-P01-d",
+    "topic": "nested-quantifiers",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P01-d - Predicate Logic.md",
+    "sourceNoteSha256": "01259af38f4dd3c7da9d48f97b4f5e46de351ca5956adebb94daa658d7d94849",
+    "stems": [
+      "STEM-2019-FINAL-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(d)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "For each of the following statements, determine whether it is true or false, and justify your answer. The domain is all integers.\n\n(d) $\\exists x\\forall y\\exists z(x+y+z=0)$",
+    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** True.\n\n**Derivation/proof.** Choose the fixed integer $x=0$ before y is given. For each integer y, choose $z=-y$. Then z is an integer and $x+y+z=0+y-y=0$. This respects the quantifier order: x is independent of y, whereas z may depend on y.\n\n### 中文解答\n\n**推导。** 断言为真。先选固定整数 $x=0$，它不依赖以后给定的 $y$。随后无论给什么整数 $y$，选 $z=-y$，就有 $x+y+z=0+y-y=0$。$z$ 可以依赖 $y$，$x$ 则已经预先固定，故构造满足全部量词的依赖限制。",
+    "mistakesMarkdown": "- 让最前面的 x 依赖尚未给定的 y。\n- 把最后的存在 z 误作必须固定的常数。"
+  }
+]
