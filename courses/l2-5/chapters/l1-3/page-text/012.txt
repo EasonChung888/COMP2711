@@ -1,0 +1,19 @@
+Example on Application of multiple rules of inference
+
+▪  We will use the following propositions
+    ▪   p: “it is sunny this afternoon.”
+    ▪   q: “it is colder than yesterday.”
+    ▪   r: “we will go swimming.”
+    ▪   s: “we will take a canoe trip.”
+    ▪   t: “we will be home by sunset”
+▪  Express the following statements in propositional logic
+    ▪   “it is not sunny this afternoon and it is colder than yesterday”
+    ▪   p ^ q
+    ▪   “we will go swimming only if it is sunny”
+    ▪   r →  p
+    ▪   “if we do not go swimming, then we will take a canoe trip”
+    ▪    r →  s
+    ▪   “if we take a canoe trip, then we will be home by sunset”
+    ▪   s →  t
+
+                                                                                       12

@@ -1,0 +1,19 @@
+Example 2 of Fallacy (invalid argument)
+
+▪ Example: Is the following argument valid?
+    Premises:
+    p → r
+    q → r
+     (p ∨ q)
+    Conclusion:  r
+▪ Solution: The argument is invalid.
+   ▪ The truth assignment p = F, q = F, r =T makes all
+     the premises true, but the conclusion     false.
+
+
+
+
+
+
+
+                                                             15

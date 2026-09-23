@@ -1,0 +1,18 @@
+Exercise: Show the validity of Resolution
+
+[(p∨q)^(¬p∨r)] →   (q∨r)
+I must show that this is a tautology
+[(p∨q)^(¬p∨r)] →   (q∨r)  ≡
+¬[(p∨q)^(¬p∨r)] ∨   (q∨r) ≡
+[¬(p∨q)∨¬(¬p∨r)]∨(q∨r)    ≡
+ (¬p^¬q)∨(p^¬r)   ∨q ∨r  ≡
+ (¬p^¬q)∨ [(p^¬r)   ∨r] ∨q ≡
+(¬p^¬q)∨[(p   ∨r)^(r ∨¬r)] ∨q  ≡
+(¬p^¬q)∨(p   ∨r ∨q) ≡
+[(¬p^¬q)∨p]   ∨r ∨q ≡
+[(¬p ∨p)^(¬q ∨ p)]  ∨r ∨q  ≡
+¬q ∨ p ∨r ∨q ≡
+¬q ∨ q ∨ p  ∨r ≡
+T ∨ p ∨r ≡ True
+
+                                                                            9

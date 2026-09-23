@@ -1,0 +1,21 @@
+ Example 1 of Fallacy (invalid argument)
+▪  Is the argument valid:
+"if you were a good student, you are rich".
+"You are rich"
+Therefore: "You were a good student"
+▪  p: "You were a good student "
+▪  q: "You are rich"
+                 p →  q
+                 q
+                 p
+▪  Wrong   because    p  →  q  is not  equivalent   to  q →   p. p  =  F, q  = T
+   makes the premises true, but the conclusion false.
+
+
+
+
+
+
+
+
+                                                                              14

@@ -1,0 +1,12 @@
+Exercise Show the Validity of Modus Tollens
+
+[¬q^(p → q)] →    ¬p
+I must   show   that  this  is a  tautology;   i.e., it is
+  always true
+[¬q^(p → q)] →    ¬p  ≡
+[¬q^(¬p∨q)] →    ¬p  ≡
+[(¬q^¬p)∨(¬q^q)] →     ¬p  ≡
+(¬q^¬p)  →   ¬p ≡
+¬(¬q^¬p)   ∨ ¬p ≡
+q ∨ p ∨ ¬p  ≡
+q ∨ T ≡  True                                           7

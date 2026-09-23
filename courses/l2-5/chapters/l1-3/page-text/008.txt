@@ -1,0 +1,16 @@
+Exercise: Show the validity of Disjunctive Syllogism
+
+ ▪ [(p ∨ q) ^ ¬p] →     q
+ ▪ Equivalently show that [(p ∨ q) ^ ¬p] →            q ≡  T
+ [(p ∨ q) ^ ¬p] →    q ≡
+ ¬[(p ∨ q) ^ ¬p] ∨ q ≡
+ [¬(p ∨ q) ∨ p] ∨ q ≡
+ [(¬p ^ ¬ q) ∨ p] ∨ q ≡
+ [(¬p ∨ p) ^ (¬q ∨ p)] ∨ q ≡
+ (¬q ∨ p) ∨   q ≡
+ (¬q ∨ q) ∨   p ≡  T ∨  p ≡  T
+
+
+
+
+                                                              8

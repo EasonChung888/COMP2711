@@ -1,0 +1,17 @@
+Example on Application of Resolution rule
+
+▪ Given the hypotheses “it is not snowing or Jasmine is
+  skiing” and “it is snowing or Bart is playing hockey”
+  draw a conclusion.
+▪ s: it is snowing
+▪ k: Jasmine is skiing
+▪ h: Bart is playing hockey
+▪ Solution
+                s  ∨ k
+               s  ∨ h
+               k ∨ h    (by resolution)
+“Jasmine is skiing or Bart is playing hockey”
+
+
+
+                                                                    10

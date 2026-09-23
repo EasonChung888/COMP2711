@@ -1,0 +1,16 @@
+Inference & Proofs
+
+ ▪  Objectives
+     ▪ Rules of Inference
+         ▪ Rules of Inference for Propositional Logic
+         ▪ Rules of Inference for Predicate Logic
+     ▪ Basic Proof Techniques
+         ▪ Some Terminology
+         ▪ Direct Proof
+         ▪ Proof by Contraposition
+         ▪ Proof by Contradiction
+
+ ▪  Reading
+     Kenneth Rosen: Section 1.6, 1.8
+
+Page 1

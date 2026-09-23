@@ -1,0 +1,21 @@
+   Argument and Validity
+
+▪  An   argument     is valid   if the  truth   of  all its premises     implies   that
+   the    conclusion      is   true,    independently        of   which     particular
+   propositions     are  substituted     for  particular   variables.   Equivalently,
+   an argument with premises p1, p2, … , pn and conclusion q is valid
+   when
+                            (p1 ^ p2 ^ … ^ pn) →       q
+   is a tautology, i.e., [(p1 ^ p2 ^ … ^ pn) →          q ] ≡ True
+▪  Using a truth table to show the validity of an argument can be
+   very tedious
+    ▪  if the argument involves     n propositional variables, the truth table has
+       2n rows.
+▪  This process can be simplified significantly by using               rules of
+   inference   . Rules of inference are valid argument forms,
+   independently of the underlying propositions.
+
+
+
+
+                                                                                     3

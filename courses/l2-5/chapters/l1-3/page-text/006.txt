@@ -1,0 +1,18 @@
+  Modus Ponens: The Most Basic Rule
+
+▪  If p is true and p → q is true, then q must be also true.
+▪  Premises: p, p → q
+▪  Conclusion: q
+▪  Tautology: [(p ^ (p → q)] →      q
+▪  Proof that [(p ^ (p → q)] →     q ≡ True (independently of p and q)
+[(p ^ (p → q)] →   q ≡ implication equivalence
+¬[(p ^ (¬p ∨ q)] ∨  q ≡ De Morgan
+[¬p ∨ ¬(¬p ∨ q)] ∨   q ≡ De Morgan
+[¬p ∨ (p ^ ¬q)] ∨   q ≡ Distibutive
+[(¬p ∨ p) ^ (¬p ∨ ¬q)] ∨   q ≡ Negation Law (¬p ∨ p) is T
+[(T ^ (¬p ∨ ¬q)] ∨  q ≡ Identity Law (T ^ (¬p ∨ ¬q)) is (¬p ∨ ¬q)
+(¬p ∨ ¬q) ∨  q ≡ Associative
+¬p ∨ (¬q ∨   q) ≡ Negation Law (¬q ∨ q) is T
+¬p ∨ 𝑇  ≡ 𝑇 Identity Law
+
+                                                                                6

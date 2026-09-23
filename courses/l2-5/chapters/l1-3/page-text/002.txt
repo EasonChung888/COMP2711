@@ -1,0 +1,17 @@
+ Argument
+
+
+▪ Definition
+    An  argument      in  propositional     logic  is  a sequence      of
+  propositions.
+    All but the final proposition in the argument are called
+  premises      or  hypotheses       and   the  final  proposition     is
+  called the conclusion.
+
+                               p1
+
+                               p2
+                 premises      …
+
+                               pn
+                               q          conclusion                   2
