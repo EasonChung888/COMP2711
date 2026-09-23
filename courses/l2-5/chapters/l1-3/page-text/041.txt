@@ -1,0 +1,22 @@
+ Proving Biconditional Statements
+
+
+▪ To prove a biconditional statement of the form p                 q,
+  we show that both       p  →  q and q    →  p are true.
+   ▪  Based on the tautology ( q   p)  ((p →  q) ∧ (q→  p)).
+▪ To prove that propositions p1, p2, p3,..., pn are
+  equivalent (   p1    p2    p3 ···   pn), we show that all p1
+  →   p2, p2  →  p3,…, pn   →   p1 are true.
+   ▪  Based on the tautology   p1  p2   p3 ··· pn   (p1 → p2) ∧ (p2
+      → p3) ∧···∧ (pn → p1)..
+
+
+
+
+
+
+
+
+
+
+                                                                    41

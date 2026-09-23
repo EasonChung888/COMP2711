@@ -1,0 +1,18 @@
+ Proof by Contradiction
+
+▪ Suppose we want to prove that a statement p is true.
+
+▪ Instead, we assume       p is false, i.e., ¬ p is true. Then,
+  using axioms, definitions, previously proved
+  theorems, and rules of inference, we derive a
+  contradiction F. This means that our assumption that
+  “¬p is true” is false.  Consequently,  p must be true.
+
+▪ If you want to prove p, you show ¬p →            F
+▪ An   example     of  contradiction     is r  ^  ¬r,  where   r  is a
+  proposition, .i.e., ¬p → r ^ ¬r.
+
+
+
+
+                                                                   35

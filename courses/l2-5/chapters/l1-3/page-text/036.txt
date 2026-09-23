@@ -1,0 +1,19 @@
+  Example Proof by Contradiction
+
+▪  Prove that     2 is irrational.
+▪  Assume     that    2  is rational.   We   will show    that  this  leads   to  a
+   contradiction.
+▪  There   exist  integers   a and   b  with   2  =  a/b,  where   a  and  b  have
+   no  common      factors   so  that  the  fraction   a/b  is  in lowest   terms
+   (e.g., instead of 4/12, we will use 1/3).
+▪    2 = a/b  2=(a2/b2)  2b2 = a2.
+▪  Therefore, a2 is even. As we have shown in the exercise for
+   contraposition, a is also even. Thus, there exists integer c such
+   that a=2c.
+▪  2b2 = a2  2b2 = (2c)2  2b2 = 4c2  b2 = 2c2
+▪  Thus, b2 is even, which implies that b is even.
+▪  2  divides   a  and   b,  which   contradicts    the   assumption     that   the
+   fraction a/b is in lowest terms.
+
+
+                                                                               36

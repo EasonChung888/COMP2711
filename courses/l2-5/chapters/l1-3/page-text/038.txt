@@ -1,0 +1,19 @@
+ Proof by Contradiction for
+ Conditional Statement (cont’d)
+
+▪ We can rewrite a proof by contraposition of a
+  conditional statement p→q as a proof by
+  contradiction.
+▪ In a proof by contraposition, we assume that ¬q is true
+  and then show that ¬p must also be true.
+▪ To rewrite as a proof by contradiction, we suppose
+  that both p and ¬q are true. Then, we use the steps
+  from the proof of ¬q     →  ¬p to show that ¬p is true.
+  This leads to the contradiction p ^ ¬p, completing the
+  proof.
+
+
+
+
+
+                                                               38

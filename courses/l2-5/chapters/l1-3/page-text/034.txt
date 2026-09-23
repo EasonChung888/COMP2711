@@ -1,0 +1,22 @@
+Exercise on Proof by Contraposition
+
+▪  Prove   that if n  is an  integer   and  n2  is even,  then   n  is
+   even.
+▪  P(n): n2 is even, Q(n): n is even
+▪  Proof by Contraposition: ¬Q(n)  →         ¬P(n)
+▪  Assume     ¬Q(n),  i.e., n  is odd.  Then    I will prove   ¬P(n),
+   i.e., n2 must be odd.
+▪  n  = 2k+1       n2 =  (2k+1)2   =  4k2+4k+1     =  2(2k2+2k)+1
+   =2k' +1                                                  n2 odd
+
+
+
+
+
+
+
+
+
+
+
+                                                                  34

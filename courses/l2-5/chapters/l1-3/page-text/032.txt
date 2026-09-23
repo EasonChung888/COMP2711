@@ -1,0 +1,17 @@
+ Example Proof by Contraposition
+
+▪ Give   a direct  proof   of “If n  is an  integer,  and   3n+2   is
+  odd, then n is odd.”
+▪ P(n): 3n+2 is odd, Q(n): n is odd
+▪ Direct proof: P(n) →     Q(n)
+▪ Assume that 3n+2 is odd. Then, 3n+2= 2k+1 for some
+  integer k. Thus, n=(2k-1)/3 … stuck.
+▪ Proof by Contraposition: ¬Q(n)  →         ¬P(n)
+▪ Assume     that  the   conclusion    is  false,  i.e., n is  even:
+  n=2k.   Then   I will prove   that  the  premise    is also  false,
+  i.e., 3n+2 must be even.
+▪ 3n+2 = 3(2k)+2 = 6k+2 = 2(3k+1)=2k'                       n even
+
+
+
+                                                                  32

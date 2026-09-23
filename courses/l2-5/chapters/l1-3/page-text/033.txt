@@ -1,0 +1,21 @@
+ Example Proof by Contraposition 2
+
+▪ Prove    that  if n   =  ab,  where    a  and    b  are  positive
+  integers, then a ≤      𝑛 or b ≤    𝑛.
+▪ P(n): n = ab, Q(n): (a ≤     𝑛 ∨ b ≤    𝑛)
+▪ Direct proof: P(n) →     Q(n)
+▪ Proof by Contraposition: ¬Q(n)  →         ¬P(n)
+▪ ¬Q(n): a >     𝑛 ^ b >    𝑛.
+▪ I will prove that ¬P(n), that is, n ≠ ab.
+▪ ab >    𝑛   𝑛 = n.
+
+
+
+
+
+
+
+
+
+
+                                                                 33

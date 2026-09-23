@@ -1,0 +1,17 @@
+ Automated Theorem Proving
+
+▪ Hilbert’s program: A computer program that,
+  starting from a finite number of axioms and
+  using the rule of inference, automatically
+  decides the truth of any mathematical
+  statement
+▪ Gödel’s incompleteness theorem: This is not
+  possible
+▪ There are several automated theorem
+  proving systems that can prove certain
+  subsets of mathematics
+▪ Recently AI models have proven conjectures
+  and theorems that remained unsolved for
+  many years
+
+                                                               45

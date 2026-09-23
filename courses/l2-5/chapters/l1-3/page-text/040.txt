@@ -1,0 +1,20 @@
+   Exercise On Proof by Contraposition and Contradiction
+A real number is rational if and only if it can be written as 𝒂/𝒃, where
+a and b are integers. Let x and y be two real numbers such that 𝐱y≠𝟎.
+(a) Show, by contraposition, that if x is irrational, then 𝒙1/2 is
+irrational (𝒙1/2 is the square root of 𝒙).
+Assume that 𝒙1/2 is rational, that is 𝒙1/2 = 𝒂/𝒃, where a and b are
+integers. Then x=𝒙1/2•𝒙1/2= 𝒂2/𝒃2, where a2 and b2 are also integers.
+Thus, x is rational
+(b) Show, by    contradiction, that if x is irrational and xy is rational,
+then y is irrational.
+Assume that the premise is true: x is irrational and xy is rational
+and the conclusion is false: y is rational. This should lead to a
+contradiction.
+Since y is rational, y=𝒂/𝒃 and 1/y=𝒃/𝒂
+Since xy is rational    xy=c/d, where a,b,c,d are all integers.
+Then x=(xy)1/y=cb/ad, which contradicts that x is irrational
+
+
+
+                                                                                    40

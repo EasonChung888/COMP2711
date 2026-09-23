@@ -1,0 +1,20 @@
+  Exercise on Equivalence of Multiple
+  Propositions
+Show   that   these   statements     about    the  integer   n   are  logically
+   equivalent:
+p1: n is even, p2: n-1 is odd, p3: n2 is even
+I must show that p1    →  p2, p2 →  p3 and p3   →  p1
+▪  Proof of p1  →  p2 (direct)
+Suppose that n is even (n=2k). Consequently, n−1 = 2k−1 = 2(k−1)+
+   1 = 2k'+ 1. Thus,   n−1 is odd.
+▪  Proof of p2  →  p3 (direct)
+Suppose that n−1 is odd (n−1=2k+1). Then, n=2k+2, and n2=(2k+2)2
+   = 4k2+8k+4 = 2(2k2+4k+2) = 2k'. Thus, n2 is even.
+▪  Proof of p3  →  p1 (contraposition)
+▪  We  prove   that if n is not  even,  then   n2 is not  even.  See  Exercise
+   on Proof by Contraposition.
+
+
+
+
+                                                                            42

@@ -1,0 +1,19 @@
+  Mistakes in Proofs
+
+What is wrong with this famous supposed “proof” that 1 = 2?
+
+Let a and b be two equal positive integers.
+1. a = b                             Given
+2. a2 = ab                           Multiply both sides of (1) by a
+3. a2 − b2 = ab − b2                 Subtract b2 from both sides of (2)
+4. (a − b)(a + b) = b(a − b)         Factor both sides of (3)
+5. a + b = b                         Divide both sides of (4) by a − b
+6. 2b = b                            Replace a by b in (5) because a = b
+7. 2 = 1                             Divide both sides of (6) by b
+
+Error:  Step  5  where    we   divided   both   sides   by  (a −   b). The   error  is
+   that (a − b) equals zero. Division of both sides of             an equation by
+   the same quantity is valid as long as this quantity is not zero.
+
+
+                                                                                  43

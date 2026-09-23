@@ -1,0 +1,16 @@
+ Proof by Contradiction for
+ Conditional Statement
+▪ Proofs by contradiction can be used to prove
+  conditional statements p       →  q.
+
+    We first assume    that the  negation of the conclusion is
+  true.  We   then   use   the  premises     of  the  theorem     in
+  conjunction     with  the   negation    of  the  conclusion    to
+  arrive at a contradiction.
+   That is, (p ^ ¬q) →   F.
+
+   The  validity  of  such   proofs   is  based   on   the  logical
+  equivalence of p    →   q and  (p ^ ¬q) →    F.
+
+
+                                                                37

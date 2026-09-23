@@ -1,0 +1,17 @@
+ Some comments on proofs
+
+▪ There are many other proof methods
+   ▪  We will go over some later; many will not be
+      covered in this course.
+▪ Constructing proofs is an art that can be learned only
+  by trying various lines of attack. There are no fixed
+  procedures for proving theorems.
+▪ Many statements that appear to be theorems have
+  resisted the persistent efforts of mathematicians for
+  hundreds of years.
+▪ For instance, Goldbach’s conjecture: “every even
+  positive integer greater than 2 is the sum of two
+  primes” has not yet been proved, and no
+  counterexample has been found.
+
+                                                                 44

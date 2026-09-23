@@ -1,0 +1,18 @@
+ Proof by Contraposition
+
+▪ A proof    by  contraposition     makes    use  of the fact  that
+  the  conditional    statement    p  →   q is  equivalent   to  its
+  contrapositive ¬q     →  ¬p.
+
+▪ This  means    that  the  conditional   statement    p  →  q  can
+  be  proved   by  showing    that its  contrapositive ¬q    →   ¬p
+  is true.
+
+▪ To   do   so,  we   take  ¬q   as  a  hypothesis,    and   using
+  axioms,    definitions,  previously    proved   theorems,    and
+  rules of inference, we show that ¬p must follow.
+
+
+
+
+                                                                31
