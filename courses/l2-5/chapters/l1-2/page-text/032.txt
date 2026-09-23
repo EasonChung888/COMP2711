@@ -1,0 +1,20 @@
+ Nested Quantifiers Example
+
+
+▪ Assume that the domain for the variables x and y
+  consists of all real numbers.
+    The statement
+               ∀x∀y (x + y = y + x)
+    says that x + y = y + x for all real numbers x and y.
+
+    This is  the  commutative      law   for  the  addition   of  real
+  numbers.
+
+
+
+
+
+
+
+
+                                                                   32

@@ -1,0 +1,18 @@
+  Order of Quantifiers Matters
+
+▪   ∀x∃y Loves(x,y) means (domain is all persons)
+    ▪ "For every person x, there is someone y that they love"
+      (everyone loves somebody)
+▪  ∃y∀x Loves(x,y) means
+    ▪ "There is a single person y whom everyone loves"
+▪   ∃x∀y Loves(x,y) means
+    ▪ "There is a person x who loves everyone".
+▪  ∀y∃x Loves(x,y) means
+    ▪ "For every person y, there is someone who loves them"
+      (everyone is loved by somebody)
+▪  We can switch the order of consecutive identical
+   quantifiers: ∀x∀y Loves(x,y) ≡ ∀y∀x Loves(x,y) .
+
+
+
+                                                                       33

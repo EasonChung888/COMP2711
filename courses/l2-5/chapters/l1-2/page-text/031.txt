@@ -1,0 +1,20 @@
+  Exercise on Equivalence
+
+▪  Let P(x), and Q(x) be the statements “x is a professor”, “x is
+   ignorant”.
+▪  "All professors are not ignorant" can be expressed as ∀x (P(x) →
+   ¬Q(x)).
+▪  Which of the following statements is equivalent to ∀x (P(x) → ¬Q(x)):
+        1. ∀x (¬ P(x) ∨ ¬Q(x))
+        2. ¬∃x (P(x) ^ Q(x))
+▪  Answer    1:Only 1
+▪  Answer    2:Only 2
+▪  Answer    3:Both 1. and 2.
+▪  Correct answer: Answer       3:Both 1. and 2.
+▪  ∀x (P(x) → ¬Q(x)) ≡ ∀x (¬ P(x) ∨ ¬Q(x)) ≡ ∀x ¬(P(x) ^ Q(x)) ≡ ¬∃x
+   (P(x) ^ Q(x))
+
+
+
+
+                                                                               31

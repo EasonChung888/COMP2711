@@ -1,0 +1,22 @@
+ Example 2: Is ∀𝑥∃y (𝑃(𝑥) → Q(y)) equivalent to
+ ∃y∀𝑥(𝑃(𝑥) → Q(y))?
+
+▪  Recall from the previous slide that ∃𝑥 𝑃(𝑥) → ∃y Q(y) ≡ ∀𝑥∃y (𝑃(𝑥) →
+   Q(y)) in PNF. Is it also equivalent to ∃y∀𝑥 (𝑃(𝑥) → Q(y))?
+    ▪  I will apply the reverse transformations
+▪  LHS: ∀𝑥∃y (𝑃(𝑥) → Q(y)) ≡ ∀𝑥∃y (¬𝑃(𝑥) ∨ Q(y)) ≡ ∀𝑥 (¬𝑃(𝑥) ∨ ∃y Q(y)) ≡
+   ∀𝑥¬𝑃(𝑥) ∨ ∃y Q(y) ≡ ¬∃𝑥𝑃(𝑥) ∨ ∃y Q(y) ≡ ∃𝑥𝑃(𝑥) → ∃yQ(y)
+▪  RHS: ∃y∀𝑥 (𝑃(𝑥) → Q(y)) ≡ ∃y∀𝑥 (¬𝑃(𝑥) ∨ Q(y)) ≡ ∃y (∀𝑥¬𝑃(𝑥) ∨ Q(y)) ≡
+   ∀𝑥¬𝑃(𝑥) ∨ ∃yQ(y) ≡        ¬∃𝑥𝑃(𝑥) ∨ ∃yQ(y) ≡ ∃𝑥𝑃(𝑥) → ∃yQ(y)
+▪  Thus: ∀𝑥∃y (𝑃(𝑥) → Q(y)) ≡ ∃y∀𝑥 (𝑃(𝑥) → Q(y))  ≡ ∃𝑥𝑃(𝑥) → ∃yQ(y)
+    ▪  In the previous slide I can obtain ∃y∀𝑥 (𝑃(𝑥) → Q(y)), instead of ∀𝑥∃y (𝑃(𝑥) →
+       Q(y)), if I change the order in which I apply rules 2 and 4.
+▪  This is an exception: usually when changing the order of different
+   quantifiers leads to non-equivalent expressions
+
+
+
+
+
+
+                                                                                     52

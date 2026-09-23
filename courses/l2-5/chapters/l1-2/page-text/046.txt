@@ -1,0 +1,21 @@
+  Natural Language Example and
+  Negation
+
+▪  Use quantifiers to express the statement “there is a woman who has
+   taken a flight on every airline in the world”.
+▪  Let P(w,f) be “woman w has taken flight f ”
+▪  Let Q(f,a) be “f is a flight on airline a ”
+   Solution:       ∃w ∀a ∃f ( (P(w, f) ^ Q(f, a) )
+▪  Negation
+    Use quantifiers to express       the  statement “there     does   not  exist  a  woman
+   who has taken a flight on every airline in the world” so that no negation
+   precedes a quantifier.
+   ¬  ∃w   ∀a  ∃f  ((P(w,f)^Q(f,a))   ≡   ∀w  ¬∀a    ∃f ((P(w,f)^Q(f,a))    ≡  ∀w   ∃a  ¬  ∃f
+   ((P(w,f)^Q(f,a))≡ ∀w ∃a∀f (¬(P(w,f)^Q(f,a)) ≡
+   ∀w ∃a ∀f (¬P(w,f)∨¬Q(f,a)) ≡       ∀w ∃a ∀f (P(w,f)→¬Q(f,a))
+   For every woman, there is an airline such that for all flights, this woman
+   has   not  taken    that  flight  or  the  flight  does   not   belong    to  the  airline
+   (alternatively,   if  the  woman     took   the   flight,  then   the  flight  does   not
+   belong to the airline).
+
+                                                                                         46

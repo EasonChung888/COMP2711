@@ -1,0 +1,15 @@
+  Negation Examples
+
+▪ Example 1
+   What is the negation of the statement
+   ∀x (x2 > x) ?
+▪ Let P(x) be: x2 > x
+▪ ¬∀x P(x)   ≡  ∃x ¬P(x) ≡   ∃x (x2 ≤ x)
+▪ Example 2
+   What is the negation of the statement
+   ∃x (x2 = 2) ?
+▪ Let P(x) be: x2 = 2
+▪ ¬∃x P(x) ≡   ∀x ¬P(x)   ≡  ∀x (x2 ≠ 2)
+
+
+                                                           29

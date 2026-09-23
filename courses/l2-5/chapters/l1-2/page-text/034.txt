@@ -1,0 +1,26 @@
+  Order of Quantifiers
+
+▪   ∀x ∃y (x + y = 0) states that  (domain is real numbers)
+    ▪ for every real number x , there is a real number y (additive
+      inverse) such that x +y = 0, T
+▪  What is the truth value of ∃y ∀x (x + y = 0)
+    ▪ It is false  since  there  is no  value  of  y  that satisfies  the
+      equation x + y = 0 for all values of x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                       34

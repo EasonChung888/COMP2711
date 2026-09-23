@@ -1,0 +1,21 @@
+   Example 3: Is ∀𝑥 𝑃(𝑥) → ∃y Q(y)
+   equivalent to ∀𝑥∃y (𝑃(𝑥) →  Q(y))?
+▪ ∀𝑥 𝑃(𝑥) → ∃y Q(y) ≡ ¬ ∀𝑥 𝑃(𝑥) ∨ ∃y Q(y) ≡ DeMorgan
+   ∃𝑥 ¬𝑃(𝑥) ∨ ∃y Q(y)  ≡(applying Rule 4 to the scope of x)
+   ∃𝑥 (¬𝑃(𝑥) ∨ ∃y Q(y)) ≡(applying Rule 4 to the scope of              y)
+   ∃𝑥∃y (¬𝑃(𝑥) ∨ Q(y)) ≡ ∃𝑥∃y (𝑃(𝑥) →  Q(y))
+▪ Thus: ∀𝑥 𝑃(𝑥) → ∃y Q(y) ≡ ∃𝑥∃y (𝑃(𝑥) →  Q(y))
+▪ In slide 51 we established that
+   ▪  ∀𝑥∃y (𝑃(𝑥) →  Q(y))  (≡∃𝑥 𝑃(𝑥) → ∃y Q(y)) is NOT equivalent to
+      ∃𝑥∃y (𝑃(𝑥) →  Q(y)) (≡ ∀𝑥 𝑃(𝑥) → ∃y Q(y))
+   ▪  Thus: ∀𝑥 𝑃(𝑥) → ∃y Q(y) is NOT equivalent to ∀𝑥∃y (𝑃(𝑥) →  Q(y))
+
+
+
+
+
+
+
+
+
+                                                                       53

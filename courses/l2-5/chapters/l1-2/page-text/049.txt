@@ -1,0 +1,19 @@
+  PNF: Prenex Normal Form
+
+▪  PNF means that all the quantifiers are in the beginning
+▪  Every formula in predicate logic can be written in PNF
+▪  When I convert to PNF, I can use Rules 1-4, provided that all
+   quantifiers are not negated, and all operators are ∨                or ∧.
+▪  Conversion Steps
+1.  Use different variable names
+    ▪  ∃x P(x) → ∀x Q(x) should change to     ∃x P(x) → ∀y Q(y)
+2.  If there are operators other than ∨           or ∧, replace them with
+    equivalent expressions that contain only ∨              or ∧
+    ▪  ∃x P(x) → ∀y Q(y) should change to ¬∃x P(x) ∨ ∀y Q(y)
+3.  Make sure that none of the quantifiers is negated
+    ▪   ¬∃x P(x) ∨ ∀y Q(y) should change to   ∀x ¬P(x)  ∨ ∀y Q(y)
+▪  Now you are ready to apply Rules 1-4
+    ▪  If you extend the scope of   ∀x, and then ∀y  you get ∀x∀y (¬P(x) ∨ Q(y))
+    ▪  If you extend the scope of   ∀y, and then ∀x  you get ∀y∀x (¬P(x) ∨ Q(y))
+▪  ∃xP(x)→∀yQ(y) ≡ ∀x∀y(¬P(x)∨Q(y)) ≡ ∀x∀y(P(x)→Q(y))                    ≡
+   ∀y∀x(P(x)→Q(y))                                                                   49

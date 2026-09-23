@@ -1,0 +1,24 @@
+ Quantifications of Two Variables and
+ Negations
+
+▪ The   following    table  summarizes       the  meanings
+  of    the    different     possible      quantifications
+  involving two variables.
+
+
+
+
+                                      ¬∀x ∀y (P(x,y)) ≡∃x ¬∀y
+                                      (P(x,y)) ≡∃x ∃y (¬P(x,y))
+
+
+
+
+
+
+
+
+
+
+
+                                                           41

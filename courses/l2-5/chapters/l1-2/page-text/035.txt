@@ -1,0 +1,18 @@
+  Example of Non Equivalence
+
+
+▪  Let Q(x, y, z) be the statement “         x + y = z”. What are the
+   truth values of the statements
+                      ∀x ∀y ∃z Q(x, y, z)
+                      ∃z ∀x ∀y Q(x, y, z),
+    where the domain of the variables is all real numbers?
+▪  Solution:
+▪  Suppose    x  and  y  are  assigned    values.   Then   there   exists  a
+   real number     z such that x +    y = z.  Thus the    first statement
+   is true.
+▪  There   is no  value  of  z that  satisfies  the  equation    x  + y  = z
+   for  all values   of  x  and   y. Thus,   the   second    statement     is
+   false
+
+
+                                                                         35

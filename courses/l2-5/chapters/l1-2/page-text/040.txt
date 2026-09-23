@@ -1,0 +1,17 @@
+ Negating Nested Quantifiers
+
+
+▪ Rule
+To negate a statement with a series of quantifiers “flip”
+the quantifiers and negate the remaining statement
+▪ Example
+Express the negation of the statement ∀x∃y (xy = 1) so
+  that no negation precedes a quantifier.
+¬∀x ∃y (xy = 1) ≡
+∃x ¬∃y (xy = 1) ≡
+∃x ∀y ¬(xy = 1) ≡
+∃x ∀y (xy ≠ 1)
+
+
+
+                                                                  40

@@ -1,0 +1,18 @@
+ Natural Language Example 1
+
+▪ Translate the statement
+                   ∀x (C(x) ∨  ∃y (C(y) ^ F(x, y)))
+    into English,   where   C(x)  is “x  has  a computer”,     F(x,  y)
+  is “x and y are friends”, and the domain for both x and
+  y consists of all students in the school.
+▪ Solution
+    For every student x in the school,       x has a computer  or
+there is a student    y such that y has a computer and x
+and y are friends.
+     Every student either has a computer or has a friend
+who has a computer.
+
+
+
+
+                                                                   37

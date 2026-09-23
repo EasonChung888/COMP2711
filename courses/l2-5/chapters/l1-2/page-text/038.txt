@@ -1,0 +1,15 @@
+ Natural Language Example 2
+
+▪ Translate the statement
+        ∃x∀y∀z ((F(x, y) ^ F(x, z) ^ (y ≠ z)) →       ¬F(y, z))
+    into English,   where   F(a,  b)  means    a  and  b  are  friends
+  and   the  domain for x,     y, and   z consists    of all students
+  in the school.
+▪ Solution
+   The statement says that there is a student           x such that
+for all students   y and all students z other than y, if x and
+y are friends and x and z are friends, then          y and z are
+not friends.
+    In other words, there is a student none of whose
+friends are also friends with each other.
+                                                                    38

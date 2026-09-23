@@ -1,0 +1,19 @@
+ De Morgan's Laws for Quantifiers
+ (cont'd)
+
+▪ When the domain has n elements x1, x2, … , xn, it
+  follows that
+     ¬∀x P(x) is the same as ¬ (     P(x1) ^ P(x2) ^ … ^    P(xn)),
+     which is equivalent to ¬    P(x1) ∨ ¬P(x2) ∨ … ∨ ¬P(xn) by
+       De Morgan's laws. This is the same as            ∃x ¬P(x).
+
+▪ Similarly, ¬∃x P(x) is the same as ¬ (P(x1) ∨ P(x2) ∨ … ∨
+  P(xn)), which by De Morgan's laws is equivalent to
+  ¬P(x1) ^ ¬   P(x2) ^ … ^ ¬   P(xn). This  is the same as     ∀x
+  ¬P(x).
+
+
+
+
+
+                                                                    28

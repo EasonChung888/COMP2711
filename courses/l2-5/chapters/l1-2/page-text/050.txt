@@ -1,0 +1,21 @@
+   PNF Exercise
+
+Convert ∃z(∃y R(y,z) → ∀y Q(y,z)) to PNF.
+
+∃z(∃y R(y,z) → ∀y Q(y,z)) ≡ variable change from y to x
+∃z(∃y R(y,z) → ∀x Q(x,z)) ≡ implication equivalence
+∃z(¬∃y R(y,z) ∨ ∀x Q(x,z)) ≡ De Morgan for ¬∃y R(y,z)
+∃z(∀y ¬R(y,z) ∨ ∀x Q(x,z)) ≡ Rule 2 on scope of ∀x (A is ∀y ¬R(y,z))
+∃z∀x(∀y ¬R(y,z) ∨ Q(x,z)) ≡ Rule 2 on scope of ∀y (A is Q(x,z))
+∃z∀x∀y(¬R(y,z) ∨ Q(x,z)) ≡ already PNF, implication equivalence
+∃z∀x∀y(R(y,z) → Q(x,z))
+▪  I can reorder quantifiers of the same type
+▪  ∃z∀x∀y(R(y,z) → Q(x,z)) ≡ ∃z∀y∀x(R(y,z) → Q(x,z))
+    ▪  In this example it depends on which scope, ∀x or ∀y, I extend first
+
+
+
+
+
+
+                                                                                   50

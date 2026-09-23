@@ -1,0 +1,16 @@
+   Natural Language Example 3
+▪ Express the statement “if a person is female and is a
+  parent, then this person is someone’s mother” as a
+  logical expression using the following predicates, with
+  a domain consisting of all people.
+   ▪  𝐹(𝑥): 𝑥 is female
+   ▪  𝑃(𝑥): 𝑥 is a parent
+   ▪  𝑀(𝑥, 𝑦): 𝑥 is 𝑦’s mother
+▪ ∀x((F(x)^P(x)) →     ∃yM(x, y))  ≡  ∀x∃y((F(x)^P(x)) →M(x, y))
+▪ Express the statement “everyone has exactly one best
+  friend” as a logical expression using the following
+  predicates, with a     domain consisting of all people        .
+   ▪  𝐵(𝑥, 𝑦): 𝑦 is 𝑥’s best friend
+▪ ∀x∃y((B(x,y) ^    ∀y' ((y'≠y)→¬B(x,y')))
+
+                                                                     39

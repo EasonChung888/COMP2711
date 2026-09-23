@@ -1,0 +1,19 @@
+ Negation Example
+
+
+▪ Show that ¬∀x (P(x)→Q(x)) and ∃x (P(x) ^ ¬Q(x))
+   are logically equivalent.
+
+▪ Solution
+         ¬∀x (P(x)→Q(x)) ≡    ∃x ¬ ((P(x)  →Q(x))
+                            ≡ ∃x ¬ (¬ P(x)   ∨ Q(x))
+                            ≡ ∃x (P(x)  ^ ¬Q(x))
+
+
+
+
+
+
+
+
+                                                                  30

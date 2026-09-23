@@ -1,0 +1,18 @@
+ Example 1: Is ∃𝑥 𝑃(𝑥) → ∃y Q(y) equivalent to
+ ∃𝑥∃y (𝑃(𝑥) →  Q(y)) (already PNF)?
+▪  ∃𝑥 𝑃(𝑥) → ∃y Q(y) ≡ ¬ ∃𝑥 𝑃(𝑥) ∨ ∃y Q(y)
+Consider the domains:
+Both ¬ ∃𝑥 𝑃(𝑥) and ∃y Q(y)  are false      .
+Therefore, ∃𝑥𝑃(𝑥)→∃y Q(y)≡¬∃𝑥𝑃(𝑥)∨∃y Q(y)≡F
+ ▪ ∃𝑥∃y (𝑃(𝑥) →  Q(y)) ≡ ∃𝑥∃y (¬ 𝑃(𝑥) ∨ Q(y))
+Using the above domains we have True for
+pairs (𝑃(b),Q(a)), (𝑃(b),Q(b)) because ¬ 𝑃(b) is T.
+▪  Explanation of non equivalence using PNF of ∃𝑥 𝑃(𝑥) → ∃y Q(y):
+∃𝑥 𝑃(𝑥) → ∃y Q(y) ≡ ¬ ∃𝑥 𝑃(𝑥) ∨ ∃y Q(y) ≡
+∀𝑥 ¬𝑃(𝑥) ∨ ∃y Q(y) ≡ by rule 2 ∀𝑥 (¬𝑃(𝑥) ∨ ∃y Q(y)) ≡ by rule 4
+∀𝑥∃y (¬𝑃(𝑥) ∨  Q(y)) ≡ ∀𝑥∃y (𝑃(𝑥) →  Q(y))
+▪  ∀𝑥∃y (𝑃(𝑥) →  Q(y)) not equivalent to ∃𝑥∃y (𝑃(𝑥) →  Q(y))
+▪  Although the expressions seem similar in their original form, they
+   are different in PNF
+
+                                                                                 51

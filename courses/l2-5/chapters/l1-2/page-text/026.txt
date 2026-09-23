@@ -1,0 +1,20 @@
+   Negation Example
+
+▪ Let 𝑃(𝑥) denote the statement “student 𝑥 has iPhone”.
+  The domain is all students in this class
+▪ Express the following statement as a universal
+  quantification: “every student in the class has an
+  iPhone”.
+▪ ∀x P(x)
+▪ Then express the negation of the statement ¬              ∀x P(x)
+  using an existential Quantifier.
+▪ “There exists (at least) a student in the class who has no
+  iPhone”
+▪ ∃x ¬P(x)
+
+
+
+
+
+                                                                     26
+

@@ -1,0 +1,19 @@
+   Null Quantifications: How can we
+   change the scope of quantifiers?
+Rules: If variable 𝑥 does not appear in 𝐴 (𝐴 is a logical
+expression bound by a quantifier whose scope does
+not cover 𝑥, e.g., ∀y 𝑃(y))
+Rule 1.
+∀𝑥 (𝐴 ∧ 𝑃(𝑥)) ≡ 𝐴 ∧ ∀𝑥 𝑃(𝑥) ≡ ∀𝑥 𝑃(𝑥) ∧ 𝐴 ≡ ∀𝑥 (𝑃(𝑥) ∧ 𝐴)
+Rule 2.
+∀𝑥 (𝐴 ∨ 𝑃(𝑥)) ≡ 𝐴 ∨ ∀𝑥 𝑃(𝑥) ≡ ∀𝑥 𝑃(𝑥) ∨ 𝐴 ≡ ∀𝑥 (𝑃(𝑥) ∨ 𝐴)
+Rule 3.
+∃𝑥 (𝐴 ∧ 𝑃(𝑥)) ≡ 𝐴 ∧ ∃𝑥 𝑃(𝑥)  ≡ ∃𝑥 𝑃(𝑥) ∧ 𝐴 ≡ ∃𝑥 (𝑃(𝑥) ∧ 𝐴)
+Rule 4.
+∃𝑥 (𝐴 ∨ 𝑃(𝑥)) ≡ 𝐴 ∨ ∃𝑥 𝑃(𝑥) ≡ ∃𝑥 𝑃(𝑥) ∨ 𝐴 ≡ ∃𝑥 (𝑃(𝑥) ∨ 𝐴)
+
+
+
+
+
+                                                                   47

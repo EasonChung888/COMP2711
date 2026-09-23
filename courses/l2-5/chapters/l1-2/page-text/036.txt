@@ -1,0 +1,18 @@
+  Math Examples
+
+▪  Translate the statement “the sum of two positive
+   integers is always positive” into a logical expression.
+    ▪ Assuming that the domain is positive integers:
+    ▪ ∀x ∀y (x+y>0)
+    ▪ Assuming that the domain is all integers:
+    ▪ ∀x ∀y ((x>0 ^ y>0)    →  (x+y>0))
+
+▪  Translate the statement “every nonzero real number
+   has a multiplicative inverse”.
+    ▪ ∀x ((x≠0)  →  ∃y (x•y =1)) ≡ ∀x   ∃y ((x≠0)  →  (x•y =1))
+    ▪ Note: This not always straightforward to move the quantifiers
+      in the beginning. See discussion about PNF later
+
+
+
+                                                                         36
