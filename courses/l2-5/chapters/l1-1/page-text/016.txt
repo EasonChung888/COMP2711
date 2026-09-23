@@ -1,0 +1,24 @@
+ Disjunction
+
+
+▪ Definition
+   The  disjunction     of p  and   q,  denoted    by  p∨q,   is  the
+  proposition “p OR q”.
+   The  disjunction   p  ∨  q is false  when    both   p and   q  are
+  false and is true otherwise      .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                  16

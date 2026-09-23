@@ -1,0 +1,15 @@
+ Notes on Propositional Equivalences
+
+▪ All laws (equivalences) van be proven using
+  truth tables
+▪ Sometimes you do not need the full truth table
+   ▪ Example of absorption law: p∨(p^q) ≡ p
+   ▪ When p is T(F), p∨(p^q) is also T(F), irrespectively of
+     the truth value of q
+▪ Sometimes instead of truth tables, you can use
+  other laws:
+   ▪ Example for implication law: (p→q)^(p→r)≡p→(q^r)
+   ▪ (p→q)^(p→r) ≡ (¬p∨q)^(¬p∨r) ≡
+   ▪ ¬p∨(q^r) (distributive)  ≡ p→(q^r)
+
+                                                             42

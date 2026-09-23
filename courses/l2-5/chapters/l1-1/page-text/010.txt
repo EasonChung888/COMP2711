@@ -1,0 +1,17 @@
+ Proposition
+
+
+▪ Definition
+    A  proposition       is  a   declarative     statement      (i.e.,  a
+  sentence      that  declares     a  fact)  that  is  either   true   or
+  false, but not both.
+▪ Definition
+    The truth value of a proposition is true, denoted by T,
+  if it is a  true  proposition,     and false, denoted by        F, if it
+  is a false proposition.
+▪ Remark
+    Propositions     are  the   basic   building    blocks    of   logic.
+  The area of logic that deals with propositions is called
+  propositional logic.
+
+                                                                      10

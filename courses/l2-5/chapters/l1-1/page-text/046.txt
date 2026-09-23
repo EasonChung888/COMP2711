@@ -1,0 +1,22 @@
+Different Knights and Knaves Variant
+
+You are on the island of knights and knaves and you want to find the way
+to the town. At a fork on the road, you have to decide whether to go left or
+right. There is a knight and a knave, but you do not know who is who. You
+chose one at random to ask for directions.
+▪  What question should you ask, in order to find the correct way to the
+   town.
+Example: If you ask "Which is the direction to the town", you will get the
+correct direction from the knight and the wrong direction from the knave.
+You should ask a different question.
+▪  Solution: "What the other person would answer if I asked which is the
+   direction to the town"
+▪  Explanation:
+The knight would give the wrong direction, because this is what the               knave
+would say.
+The knave would also give the wrong direction, because he would reverse
+the knight's answer.
+Thus, you should always go to the opposite direction of the answer.
+
+
+                                                                                    46

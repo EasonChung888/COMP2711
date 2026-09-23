@@ -1,0 +1,18 @@
+ Examples
+
+
+▪ Each of the following declarative statements is a
+  proposition:
+   (a) Beijing is the capital of China
+   (b) COMP 2711 is an elective  course for the COMP
+       program
+   (c) 2 + 2 = 22
+   (d) 1 + 1 = 3
+
+
+   Propositions (a) and (c) are true but (b) and (d) are
+  false.
+
+
+
+                                                                    11

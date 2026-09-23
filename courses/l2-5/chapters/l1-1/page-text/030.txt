@@ -1,0 +1,16 @@
+ Precedence of Logical Operators
+
+▪ Multiple logical operators
+  can be used to construct
+  compound propositions.
+▪ Parentheses can be used for
+  clarity
+            p ∨ ¬q →  p ^ q,
+   may be written more clearly as
+        (p ∨ ¬q) →    (p ^ q).
+▪ Remark
+   ▪  Boolean operations in programming languages (e.g., ||, ^, !, ==
+      in C) correspond to logical operators
+   ▪  “if … then …” statements in programming languages do         not
+      correspond to   →
+                                                                      30

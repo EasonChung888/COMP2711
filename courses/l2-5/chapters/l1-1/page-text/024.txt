@@ -1,0 +1,16 @@
+ Other Ways to Express conditional
+ statements in English
+
+▪ Equivalent ways of expressing p         →  q:
+   ▪  if p, then q
+   ▪  p implies q
+   ▪  p is a sufficient condition for q
+   ▪  p only if q (false q implies false p )
+       ▪ “The  company    can   succeed  only   if it has  sufficient
+         funding.”
+   ▪  q if p
+   ▪  q when p
+   ▪  q follows from p
+   ▪  q is a necessary condition for p
+
+                                                                 24

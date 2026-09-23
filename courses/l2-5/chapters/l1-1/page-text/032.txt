@@ -1,0 +1,26 @@
+ Tautology and Contradiction
+ Examples
+
+▪ p∨¬p is a tautology
+▪ p^¬p is a contradiction
+▪ p→¬p is a contingency
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   32

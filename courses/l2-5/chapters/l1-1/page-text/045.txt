@@ -1,0 +1,24 @@
+Knights and Knaves Revisited
+
+There are two kinds of inhabitants on an island, knights, who always tell
+the truth, and knaves, who always lie.
+Let propositions p be “A is knight” and 𝑞 be “B is knight”
+You encounter two people A and B.
+▪  A says: “We are both knaves”: ¬𝑝 ∧ ¬𝑞
+▪  B says nothing
+Question: What you can say about A and B (knight/knave)? Two cases:
+1. If A's is a knight then both 𝑝, and ¬𝑝 ∧ ¬𝑞 must be true. However, 𝑝 and
+   ¬𝑝 ∧ ¬𝑞 cannot both be true at the same time (contradiction). Case 1 is
+   not possible.
+▪  If A's is a knave, then ¬𝑝 ∧ ¬𝑞 is false, i.e.,¬ (¬𝑝 ∧ ¬𝑞) is true. Using De
+   Morgan's law,¬ (¬𝑝 ∧ ¬𝑞) ≡ 𝑝 ∨ 𝑞. Since A is a knave,           𝑝 is false. Therefore,
+   𝑞 must be true. Conclusion: A is knave, B is knight.
+
+
+
+
+
+
+
+
+                                                                                      45

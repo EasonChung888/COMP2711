@@ -1,0 +1,23 @@
+  Exercise on Tautologies
+
+▪ Is p ∨ (p→q) a tautology?
+▪ p∨(p→q) ≡ p∨(¬p ∨ q) ≡ (p ∨¬p) ∨ q ≡ T ∨ q ≡ T
+▪ Tautology
+
+▪ Is p ∨ (q→p) a tautology?
+▪  p ∨ (q→p) ≡ p ∨ (¬q ∨ p) ≡ (p ∨ p) ∨ ¬q ≡ p ∨ ¬q
+▪ Not Tautology (when p is F and q is T, p ∨ (q→p) is F).
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 38

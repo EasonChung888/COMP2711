@@ -1,0 +1,21 @@
+L01: Propositional Logic
+
+ ▪ Outline
+    ▪ Propositions
+    ▪ Compound Propositions
+    ▪ Propositional Equivalences
+
+ ▪ Reading
+    ▪ Kenneth Rosen, section 1.1-1.3
+
+
+
+
+
+
+
+
+
+
+
+Page 9

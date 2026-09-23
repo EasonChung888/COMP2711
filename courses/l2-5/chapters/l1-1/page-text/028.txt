@@ -1,0 +1,21 @@
+   Exercise: Differences between human and
+   propositional logic
+
+A real experiment was performed many years ago to study the relationship
+between human and propositional logic.
+Human subjects were given the rule: “If the envelope is sealed, it must
+contain a stamp on the other side”, and were asked to turn the minimum
+number of envelopes in order to verify the rule.
+An alternative description: you work in the post-office and you want to make
+sure that all sealed envelopes have stamps, by turning the minimum
+number of envelopes. There are 4 cases:
+1: You are shown a sealed envelope – do you need to turn it to check
+whether it contains a stamp?
+Yes. I turn it over to make sure that it contains a stamp.
+In terms of propositional logic you can think of
+a] p as the proposition “the envelope is sealed”,
+b] q as the proposition “the envelope contains a stamp”.
+c] The rule is p→q
+Since p is true, you must check that q is also true. If ¬q, p→q is F.
+
+                                                                                        28

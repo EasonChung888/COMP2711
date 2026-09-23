@@ -1,0 +1,16 @@
+ Negation
+
+▪ Definition
+  Let p be a proposition. The negation of p, denoted by
+  ¬p or 𝑝ҧ and read as “NOT p”, is the statement “it is not
+  the case that p”. The truth value of ¬p is the opposite
+  of the truth value of p.
+
+
+
+
+▪ Example:
+   ▪  p = “Tom’s iPhone has at least 32GB of memory”
+   ▪  ¬p  =  “It is not  the   case  that  Tom’s    iPhone    has  at
+      least 32GB of memory”
+   ▪  ¬p = “Tom’s iPhone has less than 32GB of memory”14

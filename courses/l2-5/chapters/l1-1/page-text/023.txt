@@ -1,0 +1,19 @@
+ Necessary and sufficient conditions
+
+▪ If 𝑝 →  𝑞 is true, then 𝑝 is a sufficient condition of 𝑞,
+  and 𝑞 is a necessary condition            of 𝑝
+▪ Example:
+   ▪  “If I am elected, then taxes will be lowered.”
+   ▪  “I am elected” is a sufficient condition for “lower
+      taxes”.
+       ▪ Other candidate may also lower taxes.
+   ▪  “Lower taxes” is a necessary condition for “I am
+      elected”
+       ▪ If taxes are not lowered, then I am definitely not elected.
+
+
+
+
+
+
+                                                                      23

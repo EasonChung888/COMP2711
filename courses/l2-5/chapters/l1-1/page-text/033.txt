@@ -1,0 +1,18 @@
+ Logical Equivalence
+
+▪ Compound       propositions     that  always   have    the
+  same truth values are logically equivalent.
+▪ The compound propositions p and q are called
+  logically equivalent if p         q is a tautology.
+   ▪ The notation is p ≡ q (or p ⇔   q).
+▪ Remark: The symbol ≡         (and ⇔) is not a logical
+  operator     and   p   ≡    q  is   not   a  compound
+  proposition,    but  rather   is the  statement    that  p
+    q is a tautology.
+
+
+
+
+
+
+                                                         33

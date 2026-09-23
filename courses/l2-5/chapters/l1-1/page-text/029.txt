@@ -1,0 +1,21 @@
+  Example of differences between human and
+  propositional logic (cont)
+
+2: You are shown an open envelope – do you need to turn it to check
+whether it contains a stamp?
+No. The rule does not apply to open envelopes. They may contain a
+stamp or not. Since I have ¬p, p→q is T, and I do not care about q.
+3: You are shown an envelope with a stamp – do you need to turn it
+to check whether it is sealed?
+No. I do not care whether the envelope is sealed or open. Since I have
+q, I do not care about whether it is the case of p or ¬p.
+4: You are shown an envelope without a stamp – do you need to turn
+it to check whether it is sealed?
+Yes. The envelope must be open, otherwise there is a rule violation.
+Since I have ¬q, it must be ¬p (contrapositive: ¬q→¬p).
+The majority of human subjects gave the wrong answer for case                4.
+
+
+
+
+                                                                               29

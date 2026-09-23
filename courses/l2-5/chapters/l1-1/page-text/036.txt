@@ -1,0 +1,19 @@
+ De Morgan’s law examples
+
+▪  ¬(p∨q) ≡ ¬p^¬q
+▪  Example:   Express the negation of “Alice will send a secret message
+   or Bob will send a secret message”
+▪  𝑝: Alice will send a secret message
+▪  𝑞: Bob will send a secret message
+▪  By ¬(p∨q)   ≡  ¬p^¬q   : “Alice will not send a secret message        and   Bob
+   will not send a secret message.”
+▪  Another form of De Morgan law: ¬(p^q) ≡ ¬p∨¬q
+▪  Example: Express the negation of “today          is Saturday and today      is a
+   holiday”
+▪  𝑝: today is Saturday
+▪  𝑞: today is a holiday
+▪  By ¬(p^q) ≡ ¬p∨¬q: “today is not Saturday or today is not a holiday”
+
+
+
+                                                                               36

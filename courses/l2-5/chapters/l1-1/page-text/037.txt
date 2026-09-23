@@ -1,0 +1,17 @@
+ Common Examples of Equivalences
+
+
+1. Can    we    express      p→q     using    negations
+   and disjunctions?
+   ▪ Yes, p→q ≡ ¬p∨q (Prove this using a truth table)
+2. Can    we    express     p ⊕  q   using    negations
+   and disjunctions?
+   ▪ Yes, p⊕q   ≡ (p^¬q)∨(¬p^q)  (Prove  this using a truth
+     table)
+3. Show that ¬(p→q)≡p^¬q
+   ▪ ¬(p→q) ≡ ¬(¬p∨q) (by 1) ≡ ¬(¬p) ^ (¬q) (by De Morgan
+     ≡ p^¬q
+
+
+
+                                                         37

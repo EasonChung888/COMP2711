@@ -1,0 +1,22 @@
+ Converse, Inverse, Contrapositive
+
+“If I am elected (p), then taxes will be lowered (q).”
+▪ The contrapositive of p→q is ¬q→¬p.
+   ▪  if taxes are not lowered, then I am not elected
+▪ The converse of p→q is q→p.
+   ▪  if taxes are lowered, then I am elected
+▪ The inverse of p→q is ¬p → ¬q.
+   ▪  if I am not elected, then taxes will not be lowered
+▪ p→q and its contrapositive are equivalent.
+
+
+
+
+
+
+
+
+
+
+
+                                                                     25

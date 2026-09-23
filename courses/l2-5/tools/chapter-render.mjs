@@ -23,7 +23,11 @@ function chapterShell(meta, title, body, depth = 2, lesson = '') {
 
 function pageBlock(meta, record, response) {
   const id = idOf(record.page);
-  return `<section class="slide-explanation" id="slide-${id}" data-slide="${record.page}" data-source-id="${esc(meta.id)}"><div class="slide-label"><span>${esc(meta.label)} · 第 ${record.page} 页</span><a href="../responses/${id}.md">讲解原文</a></div><details class="original-slide"><summary>查看这一页课件</summary><a href="../slides/${id}.png" target="_blank" rel="noopener"><img loading="lazy" src="../slides/${id}.png" alt="${esc(meta.label)} 课件第 ${record.page} 页"></a></details><div class="response-body">${markdown(response)}</div></section>`;
+  const errataFile = path.join(root, 'chapters', meta.id, 'errata', `${id}.md`);
+  const errata = fs.existsSync(errataFile)
+    ? `<details class="answer"><summary>查看本页勘误</summary><div class="response-body">${markdown(fs.readFileSync(errataFile, 'utf8'))}</div><p class="small-note"><a href="../errata/${id}.md">勘误原文</a></p></details>`
+    : '';
+  return `<section class="slide-explanation" id="slide-${id}" data-slide="${record.page}" data-source-id="${esc(meta.id)}"><div class="slide-label"><span>${esc(meta.label)} · 第 ${record.page} 页</span><a href="../responses/${id}.md">讲解原文</a></div><details class="original-slide"><summary>查看这一页课件</summary><a href="../slides/${id}.png" target="_blank" rel="noopener"><img loading="lazy" src="../slides/${id}.png" alt="${esc(meta.label)} 课件第 ${record.page} 页"></a></details><div class="response-body">${markdown(response)}</div>${errata}</section>`;
 }
 
 export function buildPage(id, page) {

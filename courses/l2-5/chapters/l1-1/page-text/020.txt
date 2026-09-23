@@ -1,0 +1,22 @@
+Exercise: Knight and Knave Puzzle 3
+  ▪  A says: “B is a knight” (q)
+  ▪  B says: “The two of us are opposite types” (p⊕q)
+  Question: What you can say about A and B (knight/knave)?
+  p :“A is a knight”, q:“B is a knight”.
+
+  1] Assume that A is a knight (p is true). Then q is true, and both A
+  and B are knights. But this contradicts the statement of B that A
+  and B are opposite types. Therefore, A cannot be a knight.
+  2] Assume that A is a knave (p is false). Then, q is false. Since B is
+  a knave, his statement is false. Therefore, both A and B are
+  knaves.
+
+
+
+
+
+
+
+
+
+                                                                             20

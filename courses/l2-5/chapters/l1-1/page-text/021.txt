@@ -1,0 +1,17 @@
+ Conditional Statement
+▪ Definition
+  The conditional statement p→q is the proposition “if
+  p, then q”. Also called an implication (p implies q).
+▪ p is called the hypothesis (or premise) and q is called
+  the conclusion (or consequence).
+
+
+
+
+
+
+
+▪ Note: There does not need to be any connection
+  between the hypothesis and the conclusion.
+  The true value of p →q depends only on the truth
+  values of p and q.                                             21

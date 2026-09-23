@@ -1,0 +1,17 @@
+ Logical Operator and Truth Table
+
+
+▪ Propositional variable: We use lowercase
+  letters 𝑝, 𝑞, 𝑟, … to represent propositions.
+▪ Logical operators      or logical connectives can
+  be used to turn existing propositions into new
+  propositions.
+▪ The definition of a logical operator can be
+  given in the form of a     truth table by
+  enumerating all possible truth values of the
+  proposition(s)    involved.
+
+
+
+
+                                                         13

@@ -1,0 +1,15 @@
+ The use of ≡,              , =
+
+▪ ≡   (⇔)   denotes     logical   equivalence      regardless
+  of truth values of the propositional variables.
+▪    is a binary logical operator.
+▪ =  is  not  used    on  propositions     . It is  only   used
+  between two mathematical objects.
+▪  Examples:
+   ▪ (𝑝 → 𝑞)    (¬𝑝 ∨ 𝑞) ≡ 𝑇
+   ▪ (𝑝    𝑞) ≡ (𝑝 → 𝑞 ∧ 𝑞 → 𝑝)
+   ▪ (𝑇    𝐹) ≡ 𝐹
+   ▪ (2 = 3) ∧ (5 ≠ 4) ≡ 𝐹
+   ▪ 𝑝: 2 + 2 = 4, 𝑝 is true
+
+                                                              34

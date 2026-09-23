@@ -1,0 +1,30 @@
+Logical Equivalence: De Morgan’s law
+
+▪ Show that ¬(p∨q) and ¬p^¬q are equivalent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  35

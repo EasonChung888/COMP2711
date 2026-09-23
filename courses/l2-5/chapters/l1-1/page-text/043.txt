@@ -1,0 +1,19 @@
+Propositional Equivalence Example 1
+Show that ¬(p∨(¬p^q)) and ¬p^¬q are logically
+equivalent by developing a series of logical
+equivalences:
+
+¬(p∨(¬p^q))       ≡ ¬p ^ (¬(¬p ^ q)) (De Morgan)
+                  ≡ ¬p ^ (¬(¬p) ∨ ¬q) (De Morgan)
+                  ≡ ¬p ^ (p ∨ ¬q) (Double Negation)
+                  ≡ (¬p ^ p) ∨ (¬p ^ ¬q) (Distributive)
+                  ≡ F ∨ (¬p ^ ¬q) (Negation)
+                  ≡ ¬p ^ ¬q (Identity)
+
+
+
+
+
+
+
+                                                               43

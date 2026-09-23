@@ -1,0 +1,17 @@
+ Biconditional Statement
+
+▪ Definition
+   The  biconditional     statement     p     q is the  proposition
+  “p if and only if q”.
+   The  statement     is true   when    p  and   q  have   the  same
+  truth value and is false otherwise.
+▪ Equivalent ways of expressing
+   p    q:
+   ▪  p if and only if q
+   ▪  p iff q
+   ▪  p is necessary and sufficient for q
+   ▪  if p then q, and conversely
+
+
+
+                                                                   26

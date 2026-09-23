@@ -1,0 +1,17 @@
+ Examples
+
+▪ These statements are not propositions:
+   (a) No parking
+   (b) Who has an iPad?
+   (c) y = log(x+1)
+   (d) x2 – 3x + 1 = 0
+
+  (c) and (d) can become propositions if x and y are
+  assigned values.
+▪ Logical paradoxes are not propositions
+   (a) This sentence is false (Liar paradox)
+   (b) All I know is that I know nothing (Socratic paradox)
+
+
+
+                                                                 12

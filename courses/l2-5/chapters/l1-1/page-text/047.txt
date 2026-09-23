@@ -1,0 +1,21 @@
+   Exercise: Logic Puzzle
+
+▪  Determine the relative salaries of three coworkers using two facts.
+1.   If Fred is not the highest paid of the three, then Janice is.
+2.   If Janice is not the lowest paid, then Maggie is paid the most.
+▪  Determine the relative salaries of Fred, Maggie, and Janice.
+Notation:   (F=1)   denotes    the   proposition     that  Fred   is the   highest   paid,   (J=3)
+   Janice is the lowest paid of the three etc.
+1. I interpret the first fact as ¬(F=1) →       (J=1) ≡ (F=1)∨(J=1)
+   Either (F=1) or     (J=1) is true  (but not both since only one person can              be the
+   most highly paid)
+2. I interpret the second fact as ¬(J=3) → (M=1) ≡ (J=3) ∨ (M=1).
+
+Assume that (J=1). Then the second fact cannot be true because M≠1 and J≠3.
+Therefore, it   must    be that (F=1). For the second         fact to be truth, it must hold
+   that (J=3).
+Thus, the (decreasing) order of salaries is Fred, Maggie and Janice.
+
+
+
+                                                                                           47

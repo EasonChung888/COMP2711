@@ -1,0 +1,23 @@
+Exercise: Knight and Knave Puzzle 1
+
+There are two kinds of inhabitants on an island, knights, who always tell
+the truth, and knaves, who always lie. You encounter two people A and B.
+▪  A says: “B is a knight” (q)
+▪  B says: “A is a knight” (p)
+Question: What you can say about A and B (knight/knave)?
+Lets define the propositions p :“A is a knight” and q:“B is a knight”. Knights
+tell the truth, which means that their propositions are true. Knaves tell lies,
+which means that their propositions are false.
+1] Assume that A is a knight (p is true). Then, according to his statement, q
+is true. Since B is a knight, his statement p is true, which is consistent with
+the assumption. Therefore, both A and B are knights (p              ∧ q).
+2] Assume that A is a knave (p is false). Then, according to his statement, q
+is false. Since B is a knave, his statement p is false, which is consistent with
+the assumption. Therefore, both A and B are knaves (¬p               ∧ ¬ q).
+Thus, I can conclude that A and B are of the same type ((p             ∧ q) ∨(¬p   ∧ ¬ q)).
+
+
+
+
+
+                                                                                      18

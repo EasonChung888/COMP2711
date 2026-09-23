@@ -1,0 +1,16 @@
+ Examples
+
+▪ “If Beijing is the capital of China, then Beijing is a city
+  of China”.
+▪ True.
+▪ “If Beijing is a city of China, then Beijing is the capital
+  of China.”
+▪ True.
+▪ “If the moon is made of green cheese, then I have
+  more money than Bill Gates. ”
+▪ True.
+▪ “If the moon is not made of green cheese, then I have
+  more money than Bill Gates. ”
+▪ False.
+
+                                                                     22

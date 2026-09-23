@@ -1,0 +1,17 @@
+ Ambiguity in natural language
+
+▪ Sometimes, “if … then …” in natural language
+  actually means “if and only if”.
+▪ “If you finish your meal, then you can have
+  dessert”
+▪ What if you don’t finish your meal?
+   ▪ In natural language: then you can’t have dessert.
+   ▪ In logic: unspecified
+▪ In this course, we should avoid such
+  ambiguities.
+
+
+
+
+
+                                                           27

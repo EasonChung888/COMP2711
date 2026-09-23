@@ -178,15 +178,38 @@ def commit(chapter_id, number):
     print(f'{chapter_id} 第 {number} 页已保存并入站。SHA-256 {digest}')
 
 
+def rerender(chapter_id, number):
+    directory, _, manifest = audit(chapter_id)
+    page = next((item for item in manifest['pages'] if item['page'] == number), None)
+    if page is None or page['status'] != 'written':
+        raise SystemExit('Only a written page can be rerendered')
+    old_hash = page['htmlSha256']
+    subprocess.run(['node', str(SITE / 'tools' / 'chapter-render.mjs'), 'build-page',
+                    chapter_id, str(number)], check=True)
+    subprocess.run(['node', str(SITE / 'tools' / 'chapter-render.mjs'), 'verify-page',
+                    chapter_id, str(number)], check=True)
+    page['htmlSha256'] = sha256(directory / page['html'])
+    write_json(directory / 'manifest.json', manifest)
+    event(directory, 'html_rerendered', number, oldHtmlSha256=old_hash,
+          htmlSha256=page['htmlSha256'], reason='display layer or erratum update')
+    print(f'{chapter_id} 第 {number} 页显示层已重建；回答哈希未变。')
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('action', choices=('prepare', 'show', 'commit', 'audit'))
+    parser.add_argument('action', choices=('prepare', 'show', 'commit', 'audit', 'rerender'))
     parser.add_argument('chapter_id', choices=ORDER)
     parser.add_argument('page', type=int, nargs='?')
     arguments = parser.parse_args()
-    if arguments.action in ('prepare', 'commit') and arguments.page is None:
-        parser.error('prepare and commit require a page number')
-    {'prepare': prepare, 'show': show, 'commit': commit,
-     'audit': lambda chapter_id: audit(chapter_id)}[arguments.action](
-        arguments.chapter_id, arguments.page) if arguments.action in ('prepare', 'commit') else (
-            show(arguments.chapter_id) if arguments.action == 'show' else audit(arguments.chapter_id))
+    if arguments.action in ('prepare', 'commit', 'rerender') and arguments.page is None:
+        parser.error('prepare, commit and rerender require a page number')
+    if arguments.action == 'prepare':
+        prepare(arguments.chapter_id, arguments.page)
+    elif arguments.action == 'commit':
+        commit(arguments.chapter_id, arguments.page)
+    elif arguments.action == 'rerender':
+        rerender(arguments.chapter_id, arguments.page)
+    elif arguments.action == 'show':
+        show(arguments.chapter_id)
+    else:
+        audit(arguments.chapter_id)

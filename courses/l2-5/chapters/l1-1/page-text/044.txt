@@ -1,0 +1,21 @@
+Propositional Equivalence Example 2
+Show that (p^q)→(p∨q) is a tautology  by developing a
+series of logical equivalences:
+
+(p^q)→(p∨q) ≡ ¬ (p^q) ∨ (p∨q) (Equiv. def. of implication)
+                 ≡ (¬p∨¬q) ∨ (p∨q) (DeMorgan)
+                 ≡ (¬p∨p) ∨ (¬q∨q) (Associative)
+                 ≡ T ∨ T ≡ T
+Note: You do not need to remember the names of the
+laws
+
+
+
+
+
+
+
+
+
+
+                                                               44
