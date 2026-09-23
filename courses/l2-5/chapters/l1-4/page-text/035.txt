@@ -1,0 +1,19 @@
+  Hilbert's Grand Hotel Paradox
+▪  Assume a hotel with infinite number of rooms, 0, 1,2,…, all full.
+   Guest 𝑥 is initially in room 𝑟      𝑥  =𝑥.
+    ▪  Although all rooms are full, we can still accept new quests
+▪  A new guest arrives. How to accommodate her?
+    ▪  Move each existing guest to the next room              𝑟 𝑥   = 𝑥 +  1, so
+       that the first room becomes available. This is possible because
+       there are infinite rooms. Put new guest in Room 0.
+▪  A bus with a finite number (e.g., 100) of new guests arrives. How
+   to accommodate them?
+    ▪  Move each existing guest to room            𝑟 𝑥  =  𝑥 +  100, so that the
+       first 100 rooms become available.
+▪  A bus with an infinite but countable          number of new guests
+   arrives. How to accommodate them?
+    ▪  Move each existing guest to room            𝑟 𝑥  =  2𝑥, so that all odd
+       numbered rooms (       countable) become available.
+
+
+  https://www.youtube.com/watch?v=OxGsU8oIWjY&ab_channel=Veritasium                                         35

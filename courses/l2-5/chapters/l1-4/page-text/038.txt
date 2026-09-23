@@ -1,0 +1,18 @@
+ Example of Countable Sets
+
+▪ To show that an infinite set 𝑆 is
+  countable, we can find a one-to-one
+  correspondence between 𝐍 and 𝑆.
+▪ 𝐙+  =  {1,2, 3,…  }.                                  N   0 1  2 3  ..
+  Let 𝑓:  𝐍 →  𝐙+ be 𝑓    𝑥  =  𝑥 +  1                  Z+  1 2  3 4  ..
+▪ The set of  nonnegative even numbers.                 N   0 1  2 3  ..
+                    𝑓  𝑥  =  2𝑥                     even Z+ 0 2  4 6  ..
+▪ The set of all integers 𝐙.
+▪ List all integers as: 0, 1, −1, 2, −2, 3, −3,
+  …
+                      − 𝑥 ,𝑖𝑓 𝑥 𝑖𝑠 𝑒𝑣𝑒𝑛                N    0 1  2 3  4 ..
+  Define 𝑓    𝑥   = ቐ   2                               Z   0 1  -12  -2..
+                      𝑥+1 ,𝑖𝑓 𝑥 𝑖𝑠 𝑜𝑑𝑑
+                        2
+
+                                                                     38

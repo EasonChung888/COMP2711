@@ -1,0 +1,19 @@
+ Set of Positive Rational Numbers
+
+ ▪  Every positive rational number can be written as the quotient p/q
+    of two positive integers
+ ▪  Arrange rational numbers in 2D array, where the first row
+    contains numbers with q=1, the second row q=2, etc. Within the
+    same row, arrange in increasing order of p.
+
+                     1/1       2/1       3/1        4/1
+                     1/2       2/2       3/2        4/2
+                     1/3       2/3       3/3        4/3
+                     1/4       2/4       3/4        4/4
+                     1/5       2/5       3/5        4/5
+
+▪  Red line lists rational numbers in increasing order of p+q: 1/1,
+   2/1, 1/2, 1/3, 2/2, 3/1 etc. Do not list duplicates.
+▪  Is the set of all rational numbers countable?
+    ▪  Yes: If A and B are countable, then 𝐴         ∪ 𝐵 is countable
+                                                                                  39

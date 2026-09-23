@@ -1,0 +1,21 @@
+  Cardinality of Infinite Sets
+▪  There are many infinities!
+▪  Definition: Two infinite sets 𝐴 and 𝐵 have the same cardinality if
+   and only if there is a one-to-one correspondence from 𝐴 to 𝐵.
+▪  Definition:  Cardinality       𝐍  =  ℵ0 of natural numbers 𝐍 {0, 1, 2, …}
+   is called aleph-nought
+▪  A infinite set 𝑆 with     𝑆  =  ℵ0 is called is  countable.
+    ▪  Set 𝑆 is countable if and only if we can list its elements in sequence
+       indexed by the natural numbers.
+    ▪  It is possible that  𝑆  = ℵ0 and 𝑆  ⊂  𝐍 (e.g., set of non-negative even
+       numbers ⊂    𝐍), or 𝐍  ⊂ 𝑆 (e.g., 𝐍 ⊂ 𝐙)
+▪  An infinite set that is not countable is uncountable.
+    ▪  Which set has higher cardinality: 𝐍 or the set of real numbers
+       between 0 and 1?
+
+
+
+
+
+
+                                                                                  34

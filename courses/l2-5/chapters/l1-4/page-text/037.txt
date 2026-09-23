@@ -1,0 +1,19 @@
+    Hilbert's Grand Hotel (cont)
+▪  Assume a hotel with infinite number of rooms, 0,1,2,…
+   all full. Guest 𝑥 is initially in room 𝑟               𝑥  =𝑥.
+▪  An (uncountable) number of guests arrives. Each guest has a unique ID which
+   is a string of 0,1. How to accommodate them?
+▪  Assume that you can accommodate all guests in increasing order of ID.
+
+                    Room                    Guest
+                    Room 1                  000011111..
+                    Room 2                  010001111..
+                    Room 3                  011001010
+                    …                       …
+
+▪  I generate a guest ID 100…, by flipping the first bit of the first guest, the
+   second bit of the second guest etc.
+    ▪  This new ID  100… is different from every other on (at least) the
+       diagonal, i.e., different from ID1 on first bit, from ID2 on second bit etc.
+    ▪  No matter what I do, I can always find a guest that cannot be                37
+       accommodated.

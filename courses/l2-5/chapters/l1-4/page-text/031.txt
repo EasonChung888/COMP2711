@@ -1,0 +1,19 @@
+  Examples
+
+
+
+▪ Example: Let 𝑓:      𝐙 →  𝐙 be such that 𝑓     𝑥   = 𝑥 +  1. Is 𝑓
+  invertible, and if it is, what is its inverse?
+Yes. f--1(y)=y-1
+▪ Example
+     Let 𝑓: 𝐙  → 𝐙 be such that 𝑓      𝑥  =  𝑥2. Is 𝑓 invertible?
+Not invertible because not one-to-one correspondence
+(e.g., f (4)=f (-4) = 16).
+▪ Example +          +
+     Let 𝑓: 𝐑   →  𝐑    be such that 𝑓     𝑥  =  𝑥2. Is 𝑓 invertible?
+Yes. f--1(y)=y
+
+
+
+
+                                                                      31

@@ -1,0 +1,21 @@
+ Composition
+
+
+▪ Example
+     Let 𝑓 and 𝑔 be functions from 𝐙 to 𝐙 defined by
+  𝑓 𝑥  =  2𝑥 + 3 and 𝑔   𝑥  = 3𝑥 + 2. What is the
+  composition of 𝑓 and 𝑔? What is the composition of
+  𝑔 and 𝑓?
+▪  𝑓 ∘ 𝑔  𝑥  = 𝑓  𝑔 𝑥    = 𝑓 3𝑥 + 2  =  2 3𝑥 + 2  +3 = 6x+7
+▪  𝑔 ∘ 𝑓  𝑥  = 𝑔  𝑓 𝑥    = 𝑓 2𝑥 + 3  =  3 2𝑥 + 3  +2 = 6x+11
+▪ Composition is not commutative
+
+
+
+
+
+
+
+
+
+                                                              33

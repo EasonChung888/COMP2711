@@ -1,0 +1,20 @@
+Set of Real Numbers Between 0 and 1
+
+▪  Assume that this set is countable. Then, the set of all real
+   numbers between 0 and 1 can be listed in some order
+r1=0.d11d12d13 ..
+r2=0.d21d22d23 ..
+r3=0.d31d32d33 ..
+…, where dij is a digit between 0 and 9.
+▪  I generate a real number r=0.d1d2d3.. such that
+   d1≠d11,d2≠d22,d3≠d33..
+▪  r is different from each ri on digit di, contradicting the assumption
+   that the set of all real numbers between 0 and 1 can be listed in
+   some order.
+▪  Thus, this set is uncountable.
+▪  This type of proof is called Cantor diagonalization  argument
+
+
+
+
+                                                                               40

@@ -1,0 +1,27 @@
+  Composition
+
+▪ Definition
+     Let 𝑔 be a function from the set 𝐴 to the set 𝐵 and
+  let 𝑓 be a function from the set 𝐵 to the set 𝐶. The
+  composition of the functions 𝑓 and 𝑔, denoted by 𝑓              ∘
+  𝑔, is defined by     𝑓 ∘ 𝑔  𝑎   = 𝑓  𝑔 𝑎   .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                   32
