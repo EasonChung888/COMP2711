@@ -1,0 +1,20 @@
+ Predicate
+▪ Definition: Informally, a predicate is a statement that
+  may be true or false depending on the choice of values
+  of its variables. Each choice of values produces a
+  proposition.
+▪ Example: P(x) denotes the statement “x is greater than
+  3”. x is the variable, and P is the predicate “is greater
+  than 3”. P(4) is T, but P(2) is F.
+▪ More formally, a statement involving n variables x1, x2,
+  … , xn, denoted by       P(x1, x2, … , xn), is the value of the
+  propositional function          P at the n-tuple (x1, x2, … , xn)
+  and P is called an n-ary predicate          .
+
+
+
+
+
+
+
+                                                                       2

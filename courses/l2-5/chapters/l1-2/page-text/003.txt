@@ -1,0 +1,24 @@
+ Examples
+
+
+▪ Let A(x) denote the statement “student x is required to
+  take either COMP 2711 or COMP 2711H”. Suppose
+  Alice is a COMP student and Bob is a CHEM student.
+  What are the truth values of A(Alice) and A(Bob)?
+▪ Let Q(x, y) denote the statement “       x=y+3”. What are the
+  truth values of the propositions        Q(1,2) and Q(3,0)?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                   3

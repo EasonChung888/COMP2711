@@ -1,0 +1,25 @@
+ Universal and Existential Quantifiers
+
+
+▪ When the domain has n elements x1, x2, … , xn
+
+      ∀x P(x) is the same as    P(x1) ^ P(x2) ^ … ^ P(xn),
+     ∃x P(x) is the same as     P(x1) ∨ P(x2) ∨ … ∨ P(xn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                   8

@@ -1,0 +1,17 @@
+ Logical Equivalence (cont'd)
+
+
+▪ The previous logical equivalence shows that we can
+  distribute a universal quantifier over a conjunction.
+              ∀x (Q(x) ^   P(x))  ≡   ∀x P(x) ^ ∀x Q(x)
+▪ We can also distribute an existential quantifier over a
+  disjunction:
+              ∃x (P(x) ∨  Q(x))   ≡   ∃x P(x) ∨ ∃x Q(x)
+    However,    we   cannot   distribute    a  universal   quantifier
+  over a disjunction, nor can we distribute            an existential
+  quantifier over a conjunction:
+             ∀x (P(x) ∨  Q(x))        ∀x P(x) ∨ ∀x Q(x)
+             ∃x (P(x) ^  Q(x))        ∃x P(x) ^ ∃x Q(x)
+
+
+                                                                    21

@@ -1,0 +1,18 @@
+   Universal Quantification
+
+▪ When     the    variables    in  a   propositional      function    are
+  assigned     values,   the  resulting   proposition     has  a  certain
+  truth value.
+▪ Sometimes      we   may   want   to  say  that   a predicate    is true
+  over a set of values.
+▪ Definition: The universal quantification of P(x) is the
+  statement “for all elements x in the domain, P(x) is true”.
+▪ Denote     as  ∀x  P(x).  We   read  it as  “for  all x  P(x)”  or  “for
+  every x P(x)”.
+▪ Here   ∀ is called the universal quantifier.
+▪ An    element      for    which    P(x)    is   false   is   called    a
+  counterexample of ∀x P(x).
+
+
+
+                                                                      4

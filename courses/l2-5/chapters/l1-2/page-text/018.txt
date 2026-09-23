@@ -1,0 +1,19 @@
+ Example on Restricted Domains 2
+▪  Let  P(x), Q(x),  and  R(x)  be  the  statements    “x  is a professor”,   “x  is
+   ignorant” , and “x is vain”, respectively.
+   Assume that the domain consists of all people
+▪  Express the statements using quantifiers and P(x), Q(x), and R(x).
+▪   All professors are not ignorant.
+         ∀x (P(x) →   ¬Q(x))
+▪   All ignorant people are vain.
+         ∀x (Q(x) →   R(x))
+▪   All professors are not vain.
+         ∀x (P(x) →   ¬R(x))
+▪   Does the last conclusion follow the first two statements?
+         No. There may well be vain professors, since the premises do
+not  rule  out  the  possibility   that  there   are  vain  people    besides   the
+ignorant ones.
+
+
+
+                                                                                18

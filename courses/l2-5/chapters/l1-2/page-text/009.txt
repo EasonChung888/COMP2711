@@ -1,0 +1,22 @@
+ Universal and Existential Quantifiers
+
+
+
+
+
+
+
+
+
+
+Easy to prove cases:
+▪ Give a counter example when       ∀x P(x)  is false
+▪ Give an example when ∃x P(x)  is true
+
+
+
+
+
+
+
+                                                             9

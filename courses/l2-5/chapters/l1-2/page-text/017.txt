@@ -1,0 +1,18 @@
+   Example on Restricted Domains 1
+▪  Let P(x), Q(x), and R(x) be the statements “x is a lion”, “x is fierce”,
+   and “x drinks coffee”, respectively.
+   Assume that the domain consists of all creatures
+▪  Consider the following argument:
+1.  Premise 1: “All lions are fierce”
+2.  Premise 2: “Some lions do not drink coffee”
+3.  Conclusion: “Some fierce creatures do not drink coffee”
+▪  Express the statements using quantifiers and P(x), Q(x), and R(x).
+1.  ∀x (P(x) →   Q(x))
+2.  ∃x (P(x) ^  ¬ R(x))
+3.  ∃x (Q(x) ^   ¬ R(x))
+
+▪  Remark: In the next classes, we will discuss the issue of
+   determining whether the conclusion is a valid consequence of the
+   premises. In this example, it is.
+
+                                                                                17

@@ -1,0 +1,18 @@
+   Example
+▪  𝑃(𝑥): student 𝑥 has learned C++
+▪  𝑄(𝑥): student 𝑥 has learned Python
+▪  Domain is all students
+▪  Express the following statements using predicate and quantifiers:
+    1.   “every student has learned C++”
+        ∀x P(x)
+    2.   “some student has learned C++”
+        ∃x P(x)
+    3.   “every student has learned either C++ or Python”
+         ∀x (P(x)  ∨ Q(x))
+    4.  “all students     have   learned    C++,   or  all students     have   learned
+    Python”
+         (∀x P(x)) ∨ (∀y Q(y))
+▪  3.  and  4.  are  not  the  same.    Example:    Domain     =  {Alice,  Bob},  Alice
+   learned C++, Bob learned Python. ∀𝑥 (𝑃           𝑥   ∨ 𝑄 𝑥  ) is T and (∀x P(x)) ∨
+   (∀y Q(y)) is F
+                                                                                  14

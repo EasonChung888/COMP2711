@@ -1,0 +1,19 @@
+ Quantifier with Restricted Domain
+
+
+▪ Let U1 and U2 be two domains with U1              ⊆  U2. Suppose
+  U1 is defined as:
+                       U1 = { x  ∈ U2 | Q(x) is true }.
+
+▪ Then, a statement P(x) about U1 may also be
+  interpreted as a statement about U2
+   (a) ∀x ∈ U1 (P(x))   is equivalent to
+          ∀x ∈ U2 (Q(x) →     P(x))                        Q(x) is false
+
+  (b) ∃x ∈ U     (P(x))  is equivalent to                    Q(x) is true
+               1
+          ∃x ∈ U2 (Q(x) ^    P(x))
+
+
+
+                                                                      15

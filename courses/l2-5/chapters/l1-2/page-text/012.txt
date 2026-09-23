@@ -1,0 +1,22 @@
+   Binding Variables
+▪  A variable can be
+    1.   bound by a quantifier
+         ▪ the part of a logical expression bound by a quantifier is
+           called its scope
+    2.   set to a particular value
+    3.   otherwise, free
+▪  Example: ∃𝑥     𝑃  𝑥  ∧ 𝑄 𝑥    ∨ ∀𝑥 𝑅  𝑥  ∨ 𝑄  2   ∨ 𝑆 𝑥
+▪  All variables in a propositional function must be bound or set to a
+   particular value to turn it into a proposition
+▪  Free variables, without a quantifier  (e.g., 𝑆       𝑥  ) are not allowed
+
+
+
+
+
+
+
+
+
+
+                                                                                 12

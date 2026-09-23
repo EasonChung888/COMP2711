@@ -1,0 +1,16 @@
+ General counterexample to show that we cannot
+ distribute an existential quantifier over a conjunction
+
+▪ ∃x (P(x) ^   Q(x))  is not equivalent to      ∃x P(x) ^ ∃x Q(x).
+▪ The domain contains only two elements a and b such
+  that P(a) is T, Q(a) is F, P(b) is F, Q(b) is T.
+▪ What is the truth value of        ∃x (P(x) ^   Q(x))?
+▪ False because both        P(a) ^  Q(a) and P(b) ^     Q(b) are F.
+▪ What is the truth value of        ∃x P(x)?
+▪ True because P(a) is T
+▪ What is the truth value of        ∃x Q(x)?
+▪ True because Q(b) is T
+▪ What is the truth value of        ∃x P(x) ^ ∃x Q(x)?
+▪ True.
+
+                                                                      25

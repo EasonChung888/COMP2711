@@ -1,0 +1,20 @@
+ Restricted Domains
+
+
+▪ Rewrite the following statements into equivalent
+  statements, where the domain consists of all real
+  numbers? (U2 is set of real numbers)
+     (a) ∀x < 0 (x2 > 0) (U1 is set of negative numbers)
+     (b) ∀y ≠ 0 (y3 ≠ 0) (U1 is set of non-zero numbers)
+     (c) ∃z > 0 (z2 = 2) (U1 is set of positive numbers)
+▪ Solution
+   ▪  (a) Equivalent to   ∀x (x < 0 →       x2 > 0).  True
+   ▪  (b) Equivalent to      ∀y (y ≠ 0 →     y3 ≠ 0).  True
+   ▪  (c) Equivalent to   ∃z (z > 0  ^      z2 = 2).  True
+
+
+
+
+
+
+                                                                     16

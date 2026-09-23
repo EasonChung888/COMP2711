@@ -1,0 +1,22 @@
+ Domain
+
+
+▪ The domain or universe is the set of all possible
+  values of a variable.
+▪ The domain must always be specified when a universal
+  quantifier is used; without it, the universal
+  quantification of a statement is not well defined.
+▪ Generally, an implicit assumption is made that the
+  domain is nonempty. Otherwise ∀x P(x) is true for any
+  propositional function P(x) because there are no
+  elements x in the domain for which P(x) is false.
+
+
+
+
+
+
+
+
+
+                                                                    5

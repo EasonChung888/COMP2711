@@ -1,0 +1,20 @@
+   Precedence of Quantifiers
+
+▪  The quantifiers ∀ and ∃ have higher precedence than all
+   logical operators.
+▪  Example
+    ▪ ∀𝑥 𝑃  𝑥  ∨ 𝑄(𝑥) is equivalent to (∀𝑥 𝑃   𝑥 ) ∨𝑄(𝑥)
+    ▪ (∀𝑥 𝑃  𝑥 ) ∨ 𝑄(𝑥) is not a valid proposition because 𝑄(𝑥) is not
+      quantified
+    ▪ We should write ∀𝑥 (𝑃     𝑥 ∨ 𝑄  𝑥 ) or (∀x P(x)) ∨ (∀x Q(x))
+    ▪ ∀𝑥 (𝑃  𝑥  ∨ 𝑄 𝑥 ) not equivalent to (∀x P(x)) ∨ (∀x Q(x)) (next slide)
+▪  When the scopes of two variables are disjoint we can
+   use the same (or different) names.
+    ▪ ∃𝑥𝑃  𝑥  ∨ ∀𝑥𝑄  𝑥   is the same as ∃𝑥𝑃   𝑥  ∨ ∀𝑦𝑄  𝑦
+    ▪ Hint: Use different names to avoid confusion.
+
+
+
+
+
+                                                                           13

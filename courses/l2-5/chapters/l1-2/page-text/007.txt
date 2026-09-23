@@ -1,0 +1,21 @@
+ Existential Quantification
+
+▪ Definition: The existential quantification of P(x) is
+  the statement “there exists an element x in the domain
+  such that P(x)”.
+▪ The notation     ∃x P(x) denotes the existential
+  quantification of     P(x).
+▪ Here   ∃ is called the   existential quantifier      .
+▪ Note that    ∃x  means    “there   exists  at least one    x  in the
+  domain”     but  not   “there  exists   one   and   only  one   x  in
+  the domain” or “there exists a unique x in the domain”.
+
+
+
+
+
+
+
+
+
+                                                                    7

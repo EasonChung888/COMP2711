@@ -1,0 +1,18 @@
+ Counterexample: we cannot distribute a
+ universal quantifier over a disjunction
+
+▪ Show with a counter example that ∀x (P(x) ∨            Q(x)) is
+  not equivalent to ∀x P(x) ∨ ∀x Q(x).
+   ▪  We already saw a counter example on Slide 14
+   ▪  Note: recall that ∀x P(x) ∨ ∀x Q(x) ≡∀x P(x) ∨ ∀y Q(y)
+▪ Let P(x) the predicate "x is male"
+▪ Let Q(y) the predicate "y is female"
+▪ Let the domain be all human.
+▪ ∀x (P(x) ∨   Q(x)) means that each human is male or
+  female (true).
+▪ ∀x P(x) ∨ ∀y Q(y) means all humans are male or all
+  humans are female (false)
+
+
+
+                                                                   22

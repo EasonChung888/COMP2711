@@ -1,0 +1,20 @@
+ Counterexample: we cannot distribute a
+ existential quantifier over a conjunction
+
+∃x (P(x) ^  Q(x))        ∃x P(x) ^ ∃x Q(x)
+Assume that the domain of x is the set of integers and
+  the predicates     P(x): 2x + 1 = 5     Q(x): x2 = 9
+▪ ∃x P(x) ^ ∃x Q(x) (equivalent: ∃x P(x) ^ ∃y Q(y))
+   ▪   is true because P(2) and Q(3) are true.
+▪ ∃x (P(x) ^   Q(x))
+   ▪   is false because there is no one integer a such that P(a) and
+      Q(a) are both true.
+▪ Therefore: ∃x P(x) ^ ∃x Q(x) is NOT equivalent to
+  ∃x (P(x) ^   Q(x))
+
+
+
+
+
+
+                                                                     24

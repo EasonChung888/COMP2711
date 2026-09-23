@@ -1,0 +1,19 @@
+ Logical Equivalence Example
+
+▪ Show that     ∀x (P(x)^Q(x)) and ∀xP(x) ^ ∀xQ(x) are
+  logically equivalent
+▪ Proof
+   ▪  Suppose ∀x (P(x) ^      Q(x)) is true. That is, if    a is in the
+      domain, then P(a) and Q(a) are both true. Thus, ∀x
+      P(x) is true and so is     ∀x Q(x). Thus    ∀x P(x) ^ ∀x Q(x)
+      is true.
+   ▪  Suppose ∀x P(x) ^ ∀x Q(x) is true. Then, ∀x P(x) is
+      true and ∀x Q(x) is true. Thus, if  a is in the domain,
+      then P(a) is true and Q(a) is true. Thus, for all a ,
+      P(a) ^ Q(a) is true. Thus ∀x (P(x) ^        Q(x)) is true.
+
+
+
+
+
+                                                                     20

@@ -1,0 +1,15 @@
+L02: Predicate Logic (First-order logic)
+
+ ▪ Outline
+    ▪ Predicates
+    ▪ Quantifiers
+    ▪ Quantifiers with Restricted domains
+    ▪ Logical Equivalences involving Quantifiers
+    ▪ Negating Quantified Expressions
+    ▪ Nested Quantifiers
+    ▪ PNF
+
+ ▪ Reading
+    ▪ Kenneth Rosen, Section 1.4-1.5
+
+                                                            1

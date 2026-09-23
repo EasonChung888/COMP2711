@@ -1,0 +1,19 @@
+ Logical Equivalence
+
+
+▪ Definition
+    Statements    involving    predicates    and   quantifiers    are
+  logically   equivalent     if and only   if they  have the    same
+  truth value no matter which         predicates are substituted
+  into  these   statements     and  which   (common)      domain    is
+  used for the variables in these propositional functions.
+
+    We  use   the   notation    S   ≡   T  to   indicate   that   two
+  statements       S   and     T    involving     predicates      and
+  quantifiers are logically equivalent.
+
+
+
+
+
+                                                                   19
