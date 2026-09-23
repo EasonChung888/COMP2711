@@ -1,0 +1,19 @@
+  Examples
+
+▪ Let 𝑓 be the function that assigns the last two bits of a
+  bit string of length 2 or greater to that string. For
+  example, 𝑓      11010    =  10. Then, the domain of 𝑓 is the
+  set of all bitstrings of length 2 or greater, and both
+  the codomain and range are the set {00,             01,10,11}.
+▪ Let 𝑓:  𝐙 →  𝐙  assign the square of an integer to this
+  integer. Then 𝑓      𝑥  =  𝑥 2, where the domain of        𝑓  is the
+  set of all integers.
+▪ We take the codomain of 𝑓           to be the set of all integers
+  (or positive integers), and the        range of 𝑓     is the set of
+  positive integers that are perfect squares, namely,
+   0,1,4,9, …  .
+
+
+
+
+                                                                      24

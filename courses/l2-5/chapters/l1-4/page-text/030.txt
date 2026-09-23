@@ -1,0 +1,24 @@
+  Inverse Function
+
+▪ Definition  Let 𝑓 be a one-to-one correspondence
+  (bijection)  from the set 𝐴 to the set 𝐵. The inverse
+  function of 𝑓 is the function that assigns to an
+  element 𝑏 belonging to 𝐵 the unique element 𝑎 in 𝐴
+  such that 𝑓    𝑎  =  𝑏. The inverse function of 𝑓 is
+  denoted by 𝑓    −1. Hence, 𝑓−1    𝑏   = 𝑎 when 𝑓    𝑎  =  𝑏.
+▪ A one-to-one correspondence is called invertible.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                  30

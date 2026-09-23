@@ -1,0 +1,17 @@
+  Surjective Function
+
+▪ Definition
+      A function 𝑓 from set 𝐴 to the set 𝐵 is said to be
+  surjective (or onto) if and only if for every element 𝑏             ∈
+  𝐵 there is an element 𝑎       ∈ 𝐴 with 𝑓    𝑎  =  𝑏. A surjective
+  function is also called a surjection.
+▪ Example                                        A                 B
+      Is the function 𝑓    𝑥  =  𝑥 +  1 from      a                x
+  the set of integers to the set of
+  integers surjective?                            b                y
+▪ Example                                         c
+      Is the function 𝑓    𝑥  =  𝑥2 from                           z
+  the set of integers to the set of               d
+  integers surjective?
+
+                                                                     28

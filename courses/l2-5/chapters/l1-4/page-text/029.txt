@@ -1,0 +1,18 @@
+  Bijection
+
+
+
+▪ Definition
+      A function 𝑓 is a bijection (or one-to-one
+  correspondence) iff it is both one-to-one and onto.
+
+▪ Note:                                     A                  B
+   ▪  one-to-one: injection                 a                   x
+   ▪  onto: surjection                       b
+   ▪  one-to-one and onto:                                     y
+      bijection                              c
+
+                                             d                 z
+
+                                                                w
+                                                                   29

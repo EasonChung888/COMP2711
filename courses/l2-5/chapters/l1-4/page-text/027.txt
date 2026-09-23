@@ -1,0 +1,17 @@
+  Exercise on Functions
+
+▪ Let A be a set with cardinality n
+▪ Let B be a set with cardinality n
+▪ Q1: What is the number of functions from 𝐴 to
+  𝐵, assuming no constraints?
+▪ Each element of A can be mapped to any of n elements
+  of B; thus, n choices for first element, times n choices
+  for second element,…,times n choices for n-th
+  element. In total nn functions.
+▪ Q2: What is the number of injective functions from 𝐴
+  to 𝐵?
+▪ There are n choices for first element, times n-1
+  choices for second element,…,times 1 choice for              n-th
+  element. In total n! functions.
+
+                                                                   27

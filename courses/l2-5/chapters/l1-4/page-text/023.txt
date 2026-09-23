@@ -1,0 +1,17 @@
+  Function
+
+▪ Definition: Let 𝐴 and 𝐵 be nonempty sets. A function
+  from 𝐴 to 𝐵 is an assignment of exactly one element
+  of 𝐵 to each element of 𝐴. We write 𝑓           𝑎  = 𝑏, if 𝑏 is the
+  unique element of 𝐵 assigned by the function 𝑓 to the
+  element 𝑎 of 𝐴. If 𝑓 is a function from 𝐴 to 𝐵, we write
+  𝑓: 𝐴 →  𝐵.
+▪ Remark: Functions are sometime also called
+  mappings or transformations. If 𝑓 is a function from
+  𝐴 to 𝐵, we say that 𝑓 maps 𝐴 to 𝐵.
+▪ Definition: If 𝑓 is a function from 𝐴 to 𝐵, we say that 𝐴
+  is  the  domain     of  𝑓  and   𝐵   is the  codomain       of  𝑓. If
+  𝑓  𝑎  =  𝑏, we   say  that  𝑏 is the  image     of 𝑎  and  𝑎  is the
+  preimage of 𝑏. The range of 𝑓 is the set of all images
+  of elements of 𝐴.
+                                                                    23

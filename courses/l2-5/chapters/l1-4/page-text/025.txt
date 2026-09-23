@@ -1,0 +1,18 @@
+  Injective Function
+
+▪ Definition
+      A function 𝑓 is said to be injective (or one-to-one)
+  if and only if 𝑓   𝑎   = 𝑓(𝑏) implies that 𝑎     = 𝑏 for all 𝑎 and
+  𝑏 in the domain of 𝑓. An injective function is also
+  called an injection.
+▪ Example                                          A               B
+      Is the function 𝑓    𝑥  =  𝑥 + 1 from        a               x
+  the set of real numbers to the set                               v
+  of real numbers injective?                       b               y
+▪ Example                                          c
+      Is the function 𝑓    𝑥  =  𝑥2 from the                       z
+                                                   d
+  set of integers to the set of integers
+  injective?                                                       w
+
+                                                                    25

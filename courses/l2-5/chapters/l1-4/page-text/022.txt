@@ -1,0 +1,20 @@
+ Set Identities and Logic Equivalences
+
+▪ All these set identities follow from corresponding logic
+  equivalences
+▪ Example: De Morgan’s law
+
+
+
+
+
+
+
+
+
+
+▪ So, just replace ∩ with ∧, ∪ with ∨,    ഥ  with ¬
+
+
+
+                                                              22

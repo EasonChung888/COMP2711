@@ -1,0 +1,20 @@
+  Exercise on Injective Functions
+
+▪ Let 𝑓 be a one-to-one (injective) function: 𝑎𝑏((𝑓         𝑎  =
+  𝑓  𝑏 ) → (𝑎  =  𝑏)). Which of the following statements is
+  true for 𝑓.
+1. 𝑎𝑏((𝑎   ≠ 𝑏) →(𝑓   𝑎  ≠  𝑓 𝑏  ))
+True because contrapositive of original implication
+2. 𝑎𝑏( (𝑎  =  𝑏) →(𝑓   𝑎  = 𝑓  𝑏 ))
+True by the definition of functions
+3. 𝑎𝑏((𝑓   𝑎  ≠  𝑓 𝑏 ) → (𝑎  ≠  𝑏))
+True because contrapositive of 2.
+
+
+
+
+
+
+
+
+                                                                26
