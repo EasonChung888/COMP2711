@@ -1,0 +1,23 @@
+ Cartesian Product Example
+
+
+▪ Example
+     Let 𝐴 =  {1,2} and 𝐵  =  {𝑎,𝑏, 𝑐}. The Cartesian product
+  is
+        𝐴 × 𝐵 =  { 1,𝑎  , 1,𝑏 , 1, 𝑐 , 2,𝑎  ,2, 𝑏 ,(2,𝑐)}
+   and
+  𝑅  = { 1,𝑎  , 1,𝑐 , 2, 𝑎 , 2,𝑏  }⊂  𝐴 × 𝐵 is an example
+  relation from    𝐴 to 𝐵.
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 13

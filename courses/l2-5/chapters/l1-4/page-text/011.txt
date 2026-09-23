@@ -1,0 +1,19 @@
+ Ordered Tuple
+
+
+▪ Definition
+     The ordered n-tuple (𝑎1,       𝑎2, … ,𝑎𝑛) is the ordered
+  collection that has 𝑎1 as its first element, 𝑎2 as its
+  second element, …, and 𝒂𝒏 as its 𝑛-th elements. An
+  ordered 2-tuple is more commonly called an ordered
+  pair. Informally, an ordered tuple can be called and
+  ordered set.
+▪ Definition
+     Two ordered n-tuples (𝑎1,       𝑎2, … ,𝑎𝑚 ) and (𝑏1,  𝑏2, … ,𝑏𝑛 )
+  are equal if and only if 𝑚      =  𝑛 and 𝑎𝑖   = 𝑏𝑖 for all 𝑖 =
+  1,2, … ,𝑛.
+
+
+
+
+                                                                    11

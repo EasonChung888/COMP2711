@@ -1,0 +1,21 @@
+ Union
+
+▪ Definition
+     Let 𝐴 and 𝐵 be two sets. The union of 𝐴 and 𝐵,
+  denoted by      𝐴 ∪ 𝐵, is the set that contains those
+  elements that are either in        𝐴 or in 𝐵, or in both.
+▪ 𝐴  ∪ 𝐵=   𝑥  𝑥  ∈  𝐴  ∨ 𝑥  ∈ 𝐵}
+▪ Definition
+     Let 𝐴1,  𝐴2,…  ,𝐴𝑛  be n sets. The union of the collection
+  of n sets, denoted by        ∪𝑛   𝐴𝑖, is the set that contains
+                                𝑖=1
+  those elements that are members of at least one set in
+  the collection.
+
+
+
+
+
+
+
+                                                                      15

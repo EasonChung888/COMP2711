@@ -1,0 +1,20 @@
+ Difference and Complement
+
+▪ Definition: Let 𝐴 and 𝐵 be two sets. The difference of
+  𝐴 and 𝐵, denoted by 𝐴       − 𝐵 or 𝐴\𝐵, is the set containing
+  those elements that are in 𝐴 but not in 𝐵. It is also
+  called the complement of 𝐵 with respect to 𝐴
+▪ 𝐴  − 𝐵 =   𝑥  𝑥  ∈  𝐴 ^ 𝑥  ∉   𝐵}
+▪ Example:      1, 3,5  −  1, 2,3  =  {5}.
+▪ Definition: Let 𝑈 be the universal set. The
+                                                ҧ
+  complement of a set 𝐴, denoted by 𝐴, is the
+  complement of 𝐴 with respect to 𝑈: 𝑈           − 𝐴.
+▪ 𝐴ҧ= 𝑥   𝑥 ∈  𝑈  ^ 𝑥  ∉  𝐴}
+▪ When U is assumed, it is simplified to 𝐴ҧ=         𝑥  𝑥 ∉   𝐴}
+
+
+
+
+
+                                                                  18

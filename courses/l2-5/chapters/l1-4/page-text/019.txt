@@ -1,0 +1,19 @@
+ Exercise on Difference and
+ Intersection
+
+▪ Which of the following is equivalent to the intersection
+  𝐴 ∩ 𝐵?
+1. ((𝐴 ∪ 𝐵) −𝐴)  − 𝐵
+2. 𝐴 −  𝐴 − 𝐵
+3. 𝐵 −  𝐴 − 𝐵
+▪ Correct answer is 2.
+▪ Can you express the set difference 𝐴      − 𝐵 using
+  intersection and complement?
+▪ 𝐴 − 𝐵= 𝐴  ∩ 𝐵ത
+
+
+
+
+
+
+                                                            19

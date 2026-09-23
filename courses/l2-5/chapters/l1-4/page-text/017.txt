@@ -1,0 +1,25 @@
+ Union, Intersection, and Cardinality
+
+
+▪ Theorem
+  Let 𝐴 and 𝐵 be two finite sets. The cardinality of their
+  union   𝐴∪  𝐵 =  𝐴  +  𝐵  − 𝐴 ∩ 𝐵  .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          17

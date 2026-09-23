@@ -1,0 +1,19 @@
+  Intersection
+
+▪ Definition
+     Let 𝐴 and 𝐵 be two sets. The intersection of 𝐴 and
+  𝐵, denoted by 𝐴      ∩ 𝐵, is the set that contains those
+  elements that are in both 𝐴 and 𝐵.
+▪ 𝐴  ∩ 𝐵 =   𝑥   𝑥 ∈   𝐴 ^ 𝑥  ∈ 𝐵}
+▪ Definition
+     Let 𝐴1, 𝐴2, … ,𝐴𝑛 be n sets. The intersection of the
+  collection of n sets, denoted by ∩𝑛           𝐴𝑖, is the set that
+                                            𝑖=1
+  contains those elements that are members of all the
+  sets in the collection.
+▪ Definition
+     Two sets 𝐴 and 𝐵 are disjoint if 𝐴         ∩ 𝐵  = ∅.
+
+
+
+                                                                    16

@@ -1,0 +1,20 @@
+ Cartesian Product of Two Sets
+
+
+▪ Definition
+     Let 𝐴 and 𝐵 be two sets. The Cartesian product of 𝐴
+  and 𝐵, denoted by 𝐴      × 𝐵, is the set of all ordered pairs
+  (𝑎, 𝑏) where 𝑎   ∈ 𝐴 and 𝑏   ∈ 𝐵, i.e.
+              𝐴 ×  𝐵 =    𝑎,𝑏   𝑎 ∈  𝐴 and 𝑏 ∈  𝐵}.
+
+▪ Definition
+     Let 𝐴 and 𝐵 be two sets. A subset 𝑅 of 𝐴        ×  𝐵 is called
+  a relation from the set 𝐴 to the set 𝐵.
+
+
+
+
+
+
+
+                                                                 12
