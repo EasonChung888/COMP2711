@@ -1,0 +1,15 @@
+      Many interesting problems  (Logic)
+
+▪ Knights and Knaves
+   ▪ There are two kinds of inhabitants
+     on an island, knights, who always
+     tell the truth, and knaves, who
+     always lie.
+   ▪ You encounter two people A and B.
+   ▪ A says: “B is a knight”
+   ▪ B says: “A is a knight”
+
+   ▪ Question: What you can say about A and B
+     (knight/knave)?
+
+                                                                 4

@@ -1,0 +1,18 @@
+         What is discrete mathematics?
+
+▪ Part of mathematics devoted to the study of discrete
+  objects.
+   ▪  E.g., counting objects/events, analyzing processes
+      (algorithms) with a finite set of steps.
+▪ Topics in discrete mathematics
+   ▪  Logic
+   ▪  Counting (combinatorics)
+   ▪  Sets and their cardinality
+   ▪  (Discrete) probability theory
+   ▪  Number theory and cryptography
+   ▪  Induction and Recurrence
+   ▪  Algorithms and Asymptotic Notation
+   ▪  Graph theory
+
+
+                                                                       2

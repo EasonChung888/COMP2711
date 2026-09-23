@@ -14,10 +14,10 @@ export function markdown(source){
   input=input.replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>');
   return marked.parse(input).replace(/MATHPLACEHOLDER(\d+)END/g,(_,i)=>math[Number(i)]);
 }
-export function shell(title,body,depth=1,level='chapter'){
+export function shell(title,body,depth=1,level='chapter',moduleNav={href:'counting.html',label:'Counting'}){
   const p=depth?'../':'';
   const chapterNav=level==='chapter'?`<a href="${p}l2-5.html#topics">本章目录</a><a href="${p}source-map.html">课件页码索引</a>`:'';
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title==='COMP2711'?'COMP2711':esc(title)+' · COMP2711'}</title><link rel="stylesheet" href="${p}assets/logic.css"><link rel="stylesheet" href="${p}assets/katex/katex.min.css"><link rel="stylesheet" href="${p}assets/site.css"><script defer src="${p}assets/site.js"></script></head><body data-storage-prefix="comp2711:l2-5:"><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header"><div class="shell"><a class="brand" href="${p}index.html">COMP2711</a><nav class="utility-nav" aria-label="课程导航"><a href="${p}index.html#modules">课程模块</a>${level==='site'?'':`<a href="${p}counting.html">Counting</a>`}${chapterNav}</nav></div></header><main id="main-content" class="shell lesson">${body}</main><footer class="shell site-footer">COMP2711 · 按知识主题学习</footer></body></html>`;
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title==='COMP2711'?'COMP2711':esc(title)+' · COMP2711'}</title><link rel="stylesheet" href="${p}assets/logic.css"><link rel="stylesheet" href="${p}assets/katex/katex.min.css"><link rel="stylesheet" href="${p}assets/site.css"><script defer src="${p}assets/site.js"></script></head><body data-storage-prefix="comp2711:l2-5:"><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header"><div class="shell"><a class="brand" href="${p}index.html">COMP2711</a><nav class="utility-nav" aria-label="课程导航"><a href="${p}index.html#modules">课程模块</a>${level==='site'?'':`<a href="${p}${esc(moduleNav.href)}">${esc(moduleNav.label)}</a>`}${chapterNav}</nav></div></header><main id="main-content" class="shell lesson">${body}</main><footer class="shell site-footer">COMP2711 · 按知识主题学习</footer></body></html>`;
 }
 export function slideBlock(n){
  const id=String(n).padStart(2,'0');

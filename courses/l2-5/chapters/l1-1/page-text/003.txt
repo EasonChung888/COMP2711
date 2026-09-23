@@ -1,0 +1,15 @@
+    Why study discrete mathematics?
+
+
+▪ It’s a required course for CS students
+   ▪ Most important math for computer science
+▪ Mathematical maturity
+   ▪ Modeling, reasoning, brain training
+   ▪ Basis for more advanced mathematics
+▪ Useful in many other fields
+   ▪ Operations research (IELM)
+   ▪ Chemistry
+   ▪ Biology
+   ▪ Economics (game theory, decision theory, etc.)
+
+                                                             3

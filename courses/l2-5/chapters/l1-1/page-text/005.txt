@@ -1,0 +1,21 @@
+      Monty Hall Problem (Probability)
+
+▪ Suppose you're on a game show, and you're given
+  the choice of three doors: Behind one door is a
+  prize; behind the others, goats. You pick a door,
+  say No.    1. The host, who knows what's behind
+  the doors, opens another door, say No.             2, which
+  has a goat. He then asks to you, “Do you want to
+  switch to door No.       3?”
+
+
+
+     Answer 1: It’s 50-50, no need
+     to switch.
+     Answer 2: Switch to door No 3.
+     87% respondents gave the wrong
+     answer in a survey
+
+
+
+                                                                     5

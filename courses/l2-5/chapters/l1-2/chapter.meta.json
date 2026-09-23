@@ -1,0 +1,10 @@
+{
+  "id": "l1-2",
+  "label": "L1.2",
+  "module": "Logic",
+  "moduleHref": "logic.html",
+  "source": "sources/L1.2.pdf",
+  "sourceSha256": "7be868e4c08aefb5c4a8f972658e9eaac410a0417bb2973d09efc8621f014a06",
+  "pageCount": 53,
+  "storagePrefix": "comp2711:l1-2:"
+}

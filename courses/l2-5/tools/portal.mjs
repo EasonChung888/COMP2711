@@ -2,19 +2,67 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {root, esc, shell} from './render.mjs';
 
-// The existing chapter keeps its lesson URLs and storage namespace.
-export function buildPortal(config, questionCount, pageCount) {
-  const ids=esc(config.topics.map(topic=>topic.slug).join(' '));
-  const first=`lessons/${config.topics[0].slug}.html`;
-  const progress=`<span data-progress-topics="${ids}">已学完 0 / ${config.topics.length} 课</span>`;
-  const resume=`<a class="button" data-resume data-resume-topics="${ids}" href="${first}">开始学习</a>`;
-  const counts=`${pageCount} 页讲解 · ${config.topics.length} 课 · ${questionCount} 道真题`;
+// This catalog contains navigation metadata only; no PDF pages are read here.
+const catalog = [
+  {name:'Logic', file:'logic.html', description:'学习命题、推理与证明的基础。', chapters:[['l1-1','L1.1',47],['l1-2','L1.2',53],['l1-3','L1.3',45]]},
+  {name:'Sets and Functions', file:'sets-and-functions.html', description:'学习集合与函数的基础。', chapters:[['l1-4','L1.4',44]]},
+];
+const h = (tag, attrs, content) => `<${tag}${attrs}>${content}</${tag}>`;
+const a = (href, content, attrs='') => h('a', `${attrs} href="${esc(href)}"`, content);
 
-  const home=`<header class="home-header"><h1>COMP2711</h1><p class="lead">按模块学习离散数学。<br>从课件讲解到真题练习，在这里继续你的课程。</p><div class="home-actions">${resume}<a href="#modules">浏览课程模块</a></div><p class="portal-meta">${progress}</p></header>
-<section id="modules" aria-labelledby="modules-heading"><h2 id="modules-heading">课程模块</h2><a class="module-entry" href="counting.html"><div><h3>Counting</h3><p>计数</p><p class="module-description">从基础计数法则到鸽巢原理，逐步理解如何计数与证明。</p><p class="portal-meta">1 个章节 · ${counts}</p></div><span class="entry-action">进入模块 <span aria-hidden="true">→</span></span></a></section>`;
+function chapterData([id,label,pages]) {
+  const file=path.join(root,'chapters',id,'course.config.json');
+  const config=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):{};
+  const topics=Array.isArray(config.topics)?config.topics:[];
+  for(const topic of topics) if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(topic.slug)) throw Error(`${id}: invalid topic slug ${topic.slug}`);
+  return {id,label,pages,title:config.title||'',subtitle:config.subtitle||'',topics,
+    href:`chapters/${id}/index.html`,
+    paths:topics.map(t=>`chapters/${id}/lessons/${t.slug}.html`),
+    keys:topics.map(t=>`comp2711:${id}:lesson-complete:${t.slug}`)};
+}
+function progress(keys, legacy='') {
+  return `<span data-progress-keys="${esc(keys.join(' '))}"${legacy?` data-progress-topics="${esc(legacy)}"`:''}>已学完 0 / ${keys.length} 课</span>`;
+}
+function resume(paths,fallback,legacy='',preferred='') {
+  const first=preferred||paths[0]||fallback;
+  return a(first,'开始学习',` class="button" data-resume data-resume-paths="${esc(paths.join(' '))}" data-resume-fallback="${esc(fallback)}" data-resume-default="${esc(first)}"${legacy?` data-resume-topics="${esc(legacy)}"`:''}`);
+}
+function chapterCard(c) {
+  const title=c.title?` · ${esc(c.title)}`:'';
+  const subtitle=c.subtitle?`<p class="module-description">${esc(c.subtitle)}</p>`:'';
+  const count=`${c.pages} 页课件${c.topics.length?` · ${c.topics.length} 课`:''}`;
+  const status=c.topics.length?`<p class="portal-meta">${progress(c.keys)}</p>`:'';
+  return a(c.href,`<div><h3>${c.label}${title}</h3>${subtitle}<p class="portal-meta">${count}</p>${status}</div><span class="entry-action">进入章节 <span aria-hidden="true">→</span></span>`,' class="module-entry"');
+}
+function moduleCard(m) {
+  const pages=m.chapters.reduce((n,c)=>n+c.pages,0), lessons=m.chapters.reduce((n,c)=>n+c.topics.length,0);
+  return a(m.file,`<div><h3>${m.name}</h3><p class="module-description">${m.description}</p><p class="portal-meta">${m.chapters.length} 个章节 · ${pages} 页课件${lessons?` · ${lessons} 课`:''}</p></div><span class="entry-action">进入模块 <span aria-hidden="true">→</span></span>`,' class="module-entry"');
+}
+
+// Counting's URLs, key names and visible L1.5 chapter label remain unchanged.
+export function buildPortal(config, questionCount, pageCount) {
+  const modules=catalog.map(m=>({...m,chapters:m.chapters.map(chapterData)}));
+  const chapters=modules.flatMap(m=>m.chapters);
+  const oldIds=config.topics.map(t=>t.slug).join(' ');
+  const oldPaths=config.topics.map(t=>`lessons/${t.slug}.html`);
+  const oldKeys=config.topics.map(t=>`comp2711:l2-5:lesson-complete:${t.slug}`);
+  const newPaths=chapters.flatMap(c=>c.paths);
+  const allPaths=[...newPaths,...oldPaths];
+  const allKeys=[...chapters.flatMap(c=>c.keys),...oldKeys];
+  const counts=`${pageCount} 页讲解 · ${config.topics.length} 课 · ${questionCount} 道真题`;
+  const countingCard=a('counting.html',`<div><h3>Counting</h3><p>计数</p><p class="module-description">从基础计数法则到鸽巢原理，逐步理解如何计数与证明。</p><p class="portal-meta">1 个章节 · ${counts}</p></div><span class="entry-action">进入模块 <span aria-hidden="true">→</span></span>`,' class="module-entry"');
+  const home=`<header class="home-header"><h1>COMP2711</h1><p class="lead">按模块学习离散数学。<br>从课件讲解到真题练习，在这里继续你的课程。</p><div class="home-actions">${resume(allPaths,chapters[0].href,oldIds,newPaths[0]||chapters[0].href)}<a href="#modules">浏览课程模块</a></div><p class="portal-meta">${progress(allKeys,oldIds)}</p></header><section id="modules" aria-labelledby="modules-heading"><h2 id="modules-heading">课程模块</h2>${modules.map(moduleCard).join('')}${countingCard}</section>`;
   fs.writeFileSync(path.join(root,'index.html'),shell('COMP2711',home,0,'site'));
 
-  const module=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="index.html">COMP2711</a><span aria-hidden="true"> / </span><span aria-current="page">Counting</span></nav><header class="home-header"><h1>Counting</h1><p class="lead">计数：从“有多少种可能”，到“为什么一定存在”。</p><div class="home-actions">${resume}<a href="#chapters">浏览章节</a></div><p class="portal-meta">${progress}</p></header>
+  for(const m of modules) {
+    const paths=m.chapters.flatMap(c=>c.paths), keys=m.chapters.flatMap(c=>c.keys);
+    const body=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="index.html">COMP2711</a><span aria-hidden="true"> / </span><span aria-current="page">${m.name}</span></nav><header class="home-header"><h1>${m.name}</h1><p class="lead">${m.description}</p><div class="home-actions">${resume(paths,m.chapters[0].href)}<a href="#chapters">浏览章节</a></div><p class="portal-meta">${progress(keys)}</p></header><section id="chapters" aria-labelledby="chapters-heading"><h2 id="chapters-heading">学习章节</h2>${m.chapters.map(chapterCard).join('')}</section>`;
+    fs.writeFileSync(path.join(root,m.file),shell(m.name,body,0,'module',{href:m.file,label:m.name}));
+  }
+
+  const oldResume=a(oldPaths[0],'开始学习',` class="button" data-resume data-resume-topics="${esc(oldIds)}"`);
+  const oldProgress=`<span data-progress-topics="${esc(oldIds)}">已学完 0 / ${config.topics.length} 课</span>`;
+  const counting=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="index.html">COMP2711</a><span aria-hidden="true"> / </span><span aria-current="page">Counting</span></nav><header class="home-header"><h1>Counting</h1><p class="lead">计数：从“有多少种可能”，到“为什么一定存在”。</p><div class="home-actions">${oldResume}<a href="#chapters">浏览章节</a></div><p class="portal-meta">${oldProgress}</p></header>
 <section id="chapters" aria-labelledby="chapters-heading"><h2 id="chapters-heading">学习章节</h2><a class="module-entry" href="l2-5.html"><div><h3>L1.5 · 计数基础</h3><p class="module-description">Basics of Counting</p><p>乘法与加法法则、函数与子集、补集计数、树形图与鸽巢原理。</p><p class="portal-meta">${counts}</p></div><span class="entry-action">进入章节 <span aria-hidden="true">→</span></span></a></section>`;
-  fs.writeFileSync(path.join(root,'counting.html'),shell('Counting',module,0,'module'));
+  fs.writeFileSync(path.join(root,'counting.html'),shell('Counting',counting,0,'module'));
 }

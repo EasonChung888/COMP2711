@@ -1,0 +1,10 @@
+{
+  "id": "l1-4",
+  "label": "L1.4",
+  "module": "Sets and Functions",
+  "moduleHref": "sets-and-functions.html",
+  "source": "sources/L1.4.pdf",
+  "sourceSha256": "4fde9679a7fda1cf4a04b45173bf6ba333948a0af69af12b346b5cdd2c38b4a8",
+  "pageCount": 44,
+  "storagePrefix": "comp2711:l1-4:"
+}

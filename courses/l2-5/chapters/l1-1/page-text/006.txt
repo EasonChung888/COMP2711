@@ -1,0 +1,21 @@
+Seven Bridges of Königsberg (Graphs)
+
+▪  Q: Can you find a path to cross all seven bridges,
+   each exactly once?
+                                            D
+
+                  D
+                                  A                   B
+                  A
+                          B
+
+               C                              C
+
+▪  Q: (Reformulated as a graph problem) Can you
+   find a path in the graph that includes every edge
+   exactly once?
+
+
+
+
+                                                             6
