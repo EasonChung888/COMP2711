@@ -1,0 +1,17 @@
+  Power Set
+▪  Definition
+      Given a set 𝑆, the power set of 𝑆, denoted by 𝑃(𝑆), is the
+   set of all subsets of 𝑆.
+▪  Example
+      The power set of the set {𝑎,       𝑏,𝑐} is 𝑃   𝑎, 𝑏,𝑐   =
+    ∅, 𝑎  , 𝑏 , 𝑐  , 𝑎,𝑏  , 𝑎,𝑐  , 𝑏,𝑐 , 𝑎, 𝑏,𝑐   .
+▪  Remark
+      If a set has 𝑛 elements where 𝑛 is a nonnegative integer,
+   then its power set has 2𝑛 elements.
+▪  Example
+▪  What is the power set of the empty set?
+▪  𝑃(∅)= {∅} (cardinality 1=20)
+▪  What is the power set of the set {𝑎}?
+▪  𝑃({𝑎})= {∅,{𝑎}} (cardinality 2=21)
+
+                                                                            10

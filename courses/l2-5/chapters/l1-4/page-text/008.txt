@@ -1,0 +1,22 @@
+ Proper Subset
+
+
+▪ Definition
+     A set 𝐴 is said to be a proper subset of a set 𝐵,
+  denoted by     𝐴 ⊂  𝐵, if and only if  𝐴 ⊆  𝐵 but 𝐴   ≠ 𝐵.
+   We can use a Venn diagram to illustrate, among other
+  things, the subset relationship.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                   8

@@ -1,0 +1,20 @@
+ Subset
+
+
+▪ Definition
+     A set 𝐴 is said to be a subset of a set 𝐵, denoted by
+  𝐴  ⊆ 𝐵, if and only if every element of 𝐴 is also an
+  element of 𝐵.
+▪ Note
+     For every set 𝑆, (a) ∅    ⊆  𝑆 and (b) 𝑆   ⊆ 𝑆.
+     Every nonempty set is guaranteed to have at least
+  two subsets, the empty set and the set itself.
+▪ 𝐴  = 𝐵 if and only if 𝐴    ⊆  𝐵 and 𝐵   ⊆  𝐴.
+
+
+
+
+
+
+
+                                                                     7

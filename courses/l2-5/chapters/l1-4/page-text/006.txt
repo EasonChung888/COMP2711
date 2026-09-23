@@ -1,0 +1,24 @@
+ Set Equality
+
+
+▪ Definition
+     Two sets 𝐴 and 𝐵 are equal, denoted by 𝐴             =  𝐵, if and
+  only if they have the same elements, i.e., for every 𝑥,
+  𝑥  ∈ 𝐴 if and only if   𝑥 ∈ 𝐵.
+▪ Example 3
+                {1, 2,3} =  {3,1, 2} = {1, 2,2,2, 3,3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                     6

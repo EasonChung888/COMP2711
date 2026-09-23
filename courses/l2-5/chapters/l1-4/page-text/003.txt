@@ -1,0 +1,19 @@
+Some Important Sets
+
+
+𝐍 = natural numbers = {0,      1, 2,3,…  }
+𝐙 = integers = {…   ,−3,  −2, −1, 0,1, 2,3,… }
+𝐙+ = positive integers = {1, 2, 3, …}
+𝐙− = negative integers = {-1, -2,- 3, …}
+𝐑 = real numbers
+𝐑+= positive real numbers
+𝐑−= negative real numbers
+𝐐 = rational numbers
+
+
+
+
+
+
+
+                                                                 3

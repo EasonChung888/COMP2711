@@ -1,0 +1,20 @@
+ Empty Set and Singleton Set
+
+
+▪ Definition
+     The empty set or null set, denoted by ∅ or {}, is a
+  special set containing no elements.
+▪ Definition
+     A set with one element is called a singleton set.
+▪ Example
+     Note that ∅   ≠   ∅ . The latter is a singleton set.
+     Yes, an element of a set can also be a set!
+▪ In pure set theory, everything is a set!
+
+
+
+
+
+
+
+                                                                   5

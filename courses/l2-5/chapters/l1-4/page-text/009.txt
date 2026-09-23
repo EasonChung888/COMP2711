@@ -1,0 +1,25 @@
+ Cardinality of Finite Sets
+
+
+▪ Definition
+     Let 𝑆 be a finite set. The cardinality of 𝑆, denoted by
+   𝑆  , is the number of (distinct) elements in 𝑆.
+▪ Definition
+     A set is said to be infinite if it is not finite.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                      9

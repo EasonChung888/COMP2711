@@ -1,0 +1,19 @@
+   Set Builder Method
+▪  We can also use the set builder notation to express the set as
+    𝑥  𝑥  is an odd positive interger less than 100}, or
+    𝑥  𝑥 ∈  𝐙+ and x is odd and   𝑥 <  100},
+▪  Generally, we can define a set as         𝑥  𝑃(𝑥)} or {𝑥   ∶𝑃(𝑥)} using a
+   predicate 𝑃    𝑥 , which contains all     𝑥 such that 𝑃    𝑥  =  𝑇.
+▪  Remark: Using set builders may lead to           paradoxes
+▪  A village has a single male barber who follows a strict rule: he
+   shaves all men who       do not shave themselves         , and only those men.
+▪  Russel's paradox:      Who shaves the barber?
+▪  If the barber shaves himself:         Then he breaks rule, because he is
+   only supposed to shave men who do not shave themselves.
+▪  If the barber does not shave himself:            Then he must be shaved by
+   the barber (i.e., by himself), breaking the rule that he shaves
+   everyone who doesn't shave themselves.
+▪  Leads to axiomatic set theory. In this course we study “            naïve set
+   theory”
+
+                                                                                   4
