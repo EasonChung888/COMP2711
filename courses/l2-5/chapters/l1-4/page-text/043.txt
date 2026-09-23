@@ -1,0 +1,22 @@
+   Properties of Functions and
+   Cardinality of Infinite Sets
+
+For two sets A and B
+• If there is bijection 𝑓:A→B,      then |A| =   |B| (Bijection principle)
+• If there is injection 𝑓:A→B, then |A| ≤       |B|
+• If there is injection 𝑓:A→B, but not bijection, then |A|<          |B|
+
+Schröder-Bernstein Theorem: if |A| ≤         |B| and |B| ≤  |A|, then |A|=  |B|.
+•  Example: Show that |(0,1)| = |(0,1       |
+    •  First interval contains all real numbers x: 0<x<1
+    •  Second interval contains all real numbers x: 0<x≤1
+    •  Not easy to find a bijection between the two sets. Easier to
+       find two injections and apply the theorem.
+•  An injection (0,1) → (0,1]: 𝑓      x  =  x. Thus, |(0,1)| ≤ |(0,1    |
+•  An injection (0,1] → (0,1): 𝑓      x  =  x/2. Thus, |(0,1    | ≤ |(0,1)|
+•  Thus, according to theorem: |(0,1)| = |(0,1         |
+
+
+
+
+                                                                                 43

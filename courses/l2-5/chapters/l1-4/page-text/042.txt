@@ -1,0 +1,19 @@
+  Recap on Countable Sets
+
+▪  To prove that 𝑆 is countable we find a bijection 𝑓:𝐍          →  𝑆, or show
+   how its elements can be listed in sequence indexed by the natural
+   numbers
+▪  Example: Set 𝐸 of nonnegative even numbers is countable.
+▪  Define function 𝑓    𝑎   = 2𝑎, 𝐍  →  𝐸 and show that it is    bijection.
+▪  Assume 𝑓    𝑎   = 𝑓  𝑏 . Then, 2𝑎  =  2𝑏 ⇒ 𝑎  =  𝑏 . Thus, 𝑓 injection.
+▪  Assume any number 𝑎′𝐸. Since 𝑎′ is even: 𝑘  𝑁 𝑎′            = 2𝑘  = 𝑓  𝑘 .
+   Thus, 𝑓 surjection.
+▪  Thus, 𝑓 bijection.
+▪  Countable Sets: Integers, Rational Numbers
+▪  Uncountable Sets: Real Numbers
+▪  The continuum hypothesis: There is no set whose cardinality is
+   strictly between that of natural numbers and that of real numbers
+   (Hilbert’s first problem)
+
+
+                                                                               42

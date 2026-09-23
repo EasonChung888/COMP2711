@@ -1,0 +1,23 @@
+  Recap on Functions
+
+A function   𝑓:A→B    is injection   (or one-to-one)
+if and only if  𝑓 𝑎  =  𝑓(𝑏)  implies that 𝑎   = 𝑏 for
+all 𝑎 and 𝑏 in the domain of 𝑓.
+
+A function   𝑓:A  → B  is  surjection (or onto) if
+and only   if for every  element 𝑏   ∈ 𝐵 there is   an
+element 𝑎   ∈ 𝐴 with 𝑓   𝑎  = 𝑏.
+
+A function 𝑓:A   →  B is a bijection (or one-to-one
+correspondence)     iff it is both  one-to-one    and
+onto.
+
+
+
+
+
+
+
+
+
+                                                                             41

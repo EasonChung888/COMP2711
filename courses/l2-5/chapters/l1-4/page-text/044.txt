@@ -1,0 +1,20 @@
+   Additional Theorems
+•  Theorem. The cardinality of any set S is lower than the cardinality
+   of its powerset P(S): |S|<     |P(S)|
+    •   It holds for both finite and infinite sets
+    •   P(𝐑) has higher cardinality than the set of real numbers 𝐑
+•  Definition: A function is computable if there is a computer
+   program that finds the value of the function on any input.
+   Otherwise, it is uncomputable.
+•  Theorem: There exist functions from 𝐍 to {0, 1} that are
+   uncomputable.
+    •   Each function 𝐍 to {0, 1} can be mapped to an infinite bitstring
+         •  f1(0)=0, f1(1)=0, f1(2)=1, f1(3)=0.. maps to 0010..
+         •  f2(0)=0, f1(2)=1, f1(2)=0, f1(3)=1.. maps to 0101..
+         •  The set of infinite bitstrings (and functions) is uncountable
+    •   Each program can be encoded as a finite bitstring. The set of
+        all finite bitstrings is countable, Thus, the set of all possible
+        computer programs is also countable.
+•  Halting Problem (Alan Turing): There is no general program that
+   determines whether another program terminates for some input
+                                                                                 44
