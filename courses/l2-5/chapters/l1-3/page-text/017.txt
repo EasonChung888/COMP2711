@@ -1,0 +1,24 @@
+  Rules for Propositions and
+  Quantified Statements
+
+
+▪  Rules for propositions and quantified statements can be
+   combined.
+▪  Because universal instantiation and modus ponens are used
+   together very often, we call this combination universal modus
+   ponens.
+▪  The rule states that if ∀x   (P(x) → C(x)) and P(a) is true for a
+   particular element in the domain, then C(a).
+▪  Similarly, universal modus tollens states that if ∀x        (P(x) →  C(x))
+   and  C(a) is true for a particular element in the domain, then 
+   P(a).
+
+
+
+
+
+
+
+
+
+                                                                            17

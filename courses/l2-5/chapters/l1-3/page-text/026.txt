@@ -1,0 +1,18 @@
+  Example on Direct Proof
+
+
+
+▪  Definition: The integer n is even if        there exists an integer       k such
+   that n = 2k, and n is odd if there exists an integer k such that n =
+   2k + 1.
+
+▪  Give a direct proof of the theorem “If n is an odd integer, then n2
+   is odd.”
+▪  Equivalent statement: ∀n (P(n) → Q(n)),           where P(n) is “n is    an odd
+   integer”   and   Q(n)   is “n2  is  odd”,   where    the  domain     of  n  is all
+   integers.
+▪  Assume the hypothesis P(n) is true: n=2k+1.
+▪  We must show that the conclusion Q(n) is also true.
+▪  n2 =(2k+1)2= 4k2+ 4k + 1 = 2(2k2+ 2k)+1 = 2k'+1.
+▪  Thus,   n2= 2k'+1 for some      integer   k'; n2 is odd.
+                                                                                 26

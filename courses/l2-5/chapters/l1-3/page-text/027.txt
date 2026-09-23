@@ -1,0 +1,24 @@
+  Connection between Direct Proofs
+  and Inference in Predicate Logic
+
+▪  I wish to prove ∀n (P(n) → Q(n)) (e.g., ∀n (Odd(n) → Odd(n2))
+▪  I use  universal  instantiation   to  select  an arbitrary   element    c of
+   the domain, such that P(c) is True.
+    ▪ e.g., an arbitrary odd integer c=2k+1
+▪   I show that P(c) → Q(c) is True.
+    ▪ e.g., Odd(c) → Odd(c2)
+▪  I apply universal generalization to derive ∀n (P(n) → Q(n))
+▪  We skip universal instantiation and generalization in our proofs.
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                           27

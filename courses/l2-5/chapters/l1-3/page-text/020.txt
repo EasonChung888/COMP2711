@@ -1,0 +1,20 @@
+  Example of Multiple Rules (cont)
+
+
+
+From Premises: ∃x        (P(x) ^   R(x)) and ∀x      (P(x) →   U(x)), draw the
+conclusion: ∃x     (U(x) ^    R(x))
+
+1. ∃x  (P(x) ^   R(x))                  Premise
+2. P(a) ^  R(a)  for some a      1, Existential instantiation
+3. P(a)                                     2, Simplification
+4.   R(a)                              2,  Simplification
+5. ∀x  (P(x) →   U(x))                    Premise
+6. P(a) →   U(a)                          5, Universal instantiation
+7. U(a)                                 3,6, Modus ponens
+8. U(a) ^    R(a)                        4,7, Conjunction
+9. ∃x  (U(x) ^   R(x))                  8, Existential generalization
+
+
+
+                                                                                      20

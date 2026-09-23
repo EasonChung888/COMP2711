@@ -1,0 +1,20 @@
+  Exercise 1 on Direct Proof
+
+
+
+▪  Definition: An integer a is a perfect square if there is an integer b
+   such that a = b2
+
+▪  Give a  direct  proof of:   “if m and n    are both perfect squares,       then
+   mn is also a perfect square”
+▪  Assume     the   hypothesis    is  true:  m=s2    and   n=t2,  where    s,t  are
+   integers.
+▪  We must show that mn is a perfect square.
+▪  mn = s2t2 = (st)2. Thus, mn is a perfect square (of s•t).
+
+
+
+
+
+
+                                                                               28

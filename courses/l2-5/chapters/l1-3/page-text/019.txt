@@ -1,0 +1,19 @@
+  Example of Multiple Rules
+
+▪  Show that the premises “a student in this class has not read the
+   textbook” and “everyone in this class passed the course” imply
+   the conclusion “someone who passed the course has not read the
+   textbook”.
+▪  Predicates:
+    ▪  𝑃(𝑥): 𝑥 is a student in this class
+    ▪  𝑅(𝑥): 𝑥 has read the textbook
+    ▪  𝑈(𝑥): 𝑥 passed the course
+▪  Premises
+▪  “A student in this class has not read the textbook”: ∃x          (P(x) ^
+   R(x))
+▪  “Everyone in this class passed the course”: ∀x         (P(x) →  U(x))
+▪  Conclusion
+▪  “Someone who passed the course has not read the textbook”: ∃x
+   (U(x) ^  R(x))
+
+                                                                              19

@@ -1,0 +1,18 @@
+  Exercise 2 on Direct Proof
+
+
+
+▪  Definition: A real number r is rational if there exist integers p and
+   q with q ≠0 such that r = p/q. A real number that is not rational is
+   called irrational
+
+▪  Give   a  direct   proof   for:  “the   sum    of  two   rational   numbers      is
+   rational.”   Equivalently,    “for  every   real  number     r  and   every   real
+   number s, if r and s are rational numbers, then r + s is rational.
+▪  Assume the hypothesis is true: r = p/q and s = t/u, with q ≠0 and
+   u ≠0.
+▪  r+s = p/q + t/u = (pu + tq)/qu.
+▪  Since  q  ≠0  and   u  ≠0, we   express    r+s  as the ratio of two integers
+   (pu + tq) and qu. Thus, r+s is rational.
+
+                                                                                  29

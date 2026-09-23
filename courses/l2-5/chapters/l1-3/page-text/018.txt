@@ -1,0 +1,19 @@
+Example on (Universal) Modus Ponens
+
+▪  Show that the premises “all men must die” and “John Snow is a
+   man” imply the conclusion “John Snow must die”, using the
+   following predicates.
+    ▪  𝑃(𝑥): 𝑥 is a man
+    ▪  𝐶(𝑥): 𝑥 must die
+▪  Solution
+1.  ∀x  (P(x) →  C(x))                      Premise
+2.   P(John Snow)                            Premise
+3.  P(John Snow) →     C(John Snow)  1 Universal instantiation
+4.  C(John Snow)                            2,3 Modus ponens
+Combining 3. and 4. into a single step
+1.  ∀x  (P(x) →  C(x))                      Premise
+2.   P(John Snow)                            Premise
+3. C(John Snow)  1,2 Universal Modus ponens
+
+
+                                                                              18

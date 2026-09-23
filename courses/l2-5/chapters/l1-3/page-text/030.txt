@@ -1,0 +1,20 @@
+ Limitation of Direct Proofs
+
+
+▪ Direct proofs are useful but attempts at direct proofs
+  sometimes lead to dead ends. There are other proof
+  techniques.
+
+   Proofs that are not direct     proofs, i.e., they do not start
+  with   the  hypothesis    and   end   with  the  conclusion,    are
+  called indirect proofs.
+
+    We will consider several types of indirect proofs.
+
+
+
+
+
+
+
+                                                                   30

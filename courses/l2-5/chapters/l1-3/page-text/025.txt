@@ -1,0 +1,19 @@
+ Direct Proof
+
+
+▪ A direct proof of a conditional statement p→q
+
+   The first step is the assumption that p is true.
+
+   Subsequent steps are constructed using axioms,
+   definitions, previously proved theorems, and
+   rules of inference, with the final step showing
+   that q must also be true.
+
+
+
+
+
+
+
+                                                                    25

@@ -1,0 +1,17 @@
+   Previous Exercise  continued                                     2
+1.  Premise 1: ∀x (P(x) →      Q(x))
+2.  Premise 2: ∃x (P(x) ^     ¬ R(x))
+3.  Conclusion: ∃x (Q(x) ^       ¬ R(x))
+▪  Show how to reach the conclusion through inference rules
+1.  ∃x (P(x) ^   ¬ R(x))             Premise
+2.  P(a) ^  ¬ R(a)                   1. Existential instantiation
+3.  ¬ R(a)                           2. Simplification
+4.  P(a)                             2. Simplification
+5.  ∀x  (P(x) →   Q(x))              Premise
+6.  P(a) →   Q(a)                    5. Universal instantiation
+7.  Q(a)                             4.,6. Modus Ponens
+8.  Q(a) ^   ¬ R(a)                  3.,7. Conjunction
+9.  ∃x (Q(x) ^   ¬ R(x))             8. Existential generalization
+The steps that we used are the same as in the previous example. The actual
+predicates (e.g., meaning    of P(x)) and the domains    are not important.
+                                                                                  22

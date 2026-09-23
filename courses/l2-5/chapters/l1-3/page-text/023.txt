@@ -1,0 +1,17 @@
+ Terminology on Proof Techniques
+
+▪ Definition: An axiom is a statement that is assumed
+  to be true.
+▪ Definition: A theorem is a statement that can be
+  shown to be true.
+▪ Definition: A less important theorem that is helpful in
+  the proof of other theorems is called a lemma.
+▪ Definition: A proof is a valid argument that
+  establishes the truth of a theorem. The statements
+  used in a proof can include axioms, premises of the
+  theorem, and previously proved theorems or lemmas.
+  Using these ingredients and rules of inference, the
+  final step of the proof establishes the truth of the
+  statement being proved.
+
+                                                                 23
