@@ -38,26 +38,19 @@ For every vertex in $V_1$, there are edges that connect it with all vertices in 
 
 Shared context: [[STEM-2022-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-第一组每个点都要连到第二组每个点，两个全称量词已经完整表达。无向性让反方向自动成立，但内部边仍未被限制；这与“只能跨组”的上一项是不同性质。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (ii) $\forall u\in V_1\forall v\in V_2(E(u,v))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall u\in V_1\forall v\in V_2 E(u,v)$.
 
 **Derivation/proof.** For each u in the first part, assert E(u,v) for every v in the second. This is exactly two restricted universal quantifiers. Undirectedness supplies the reverse orientation automatically. Since neither quantifier ranges over two vertices in the same part, the formula says nothing about internal edges.
 
-### 中文解答
-
-**推导。** 先任取第一部顶点 $u\in V_1$，要求它与每个第二部顶点 $v\in V_2$ 都有边，所以写 $\forall u\in V_1\forall v\in V_2 E(u,v)$。两个全称量词完整覆盖全部跨部点对；无向性使反方向 $E(v,u)$ 自动成立。量词从未同时取同一部的两个点，因此内部边没有被禁止，这与(a)(i)的“只能跨部”不是同一条件。
-
-## Common Mistakes
-
-- 用存在量词只要求一个邻点。
-- 以为公式自动禁止组内边。
+Internal edges have not been forbidden.
 
 ## Connections
 

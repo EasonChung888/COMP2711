@@ -36,26 +36,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Let $P$ be a set of 5 distinct points in the plane with integer coordinates. Draw a line segment between every two points of $P$ (note that a total of 10 line segments will be drawn). Show that at least one of these line segments has its midpoint with integer coordinates.
 
-## 中文解析
+## Official Answer
 
-核心是模二余数，不需要比较距离或角度。两个坐标各有奇偶两种状态，总共四类；五个点必有同类的一对。它们对应坐标相加均为偶数，除二取平均后仍为整数，正好得到整数坐标中点。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+The midpoint of the segment whose endpoints are $(a,b)$ and $(c,d)$ is $((a+c)/2,(b+d)/2)$. We are concerned only with integer values of the original coordinates. Clearly the coordinates of these fractions will be integers as well if and only if $a$ and $c$ have the same parity (both odd or both even) and $b$ and $d$ have the same parity. Thus what matters in this problem is the parities of the coordinates. There are four possible pairs of parities: (odd, odd), (odd, even), (even, odd), and (even, even). Since we are given five points, the pigeonhole principle guarantees that at least two of them will have the same pair of parities. The midpoint of the segment joining these two points will therefore have integer coordinates.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** At least one of the ten segments has an integer-coordinate midpoint.
 
 **Derivation/proof.** Classify a point $(a,b)$ by $(a\bmod2,b\bmod2)$. There are four classes: $(0,0),(0,1),(1,0),(1,1)$. Five points force two distinct points $(a,b),(c,d)$ in one class by pigeonhole principle. Then a+c and b+d are even, so the midpoint $((a+c)/2,(b+d)/2)$ has both coordinates integral. The required segment is present because every pair is joined.
 
-### 中文解答
+Every pair of points is joined in the question, so the guaranteed same-parity pair supplies one of the ten drawn segments.
 
-**推导。** 把每个整数点 $(a,b)$ 按两个坐标的奇偶分进四个鸽巢 $(0,0),(0,1),(1,0),(1,1)$，其中分量表示模 $2$ 的余数。五个不同点多于四个巢，鸽巢原理保证某两个不同点 $(a,b),(c,d)$ 同巢，即 $a\equiv c\pmod2$ 且 $b\equiv d\pmod2$。所以 $a+c$、$b+d$ 都是偶数，连接它们的中点 $((a+c)/2,(b+d)/2)$ 两坐标均为整数。题目画出了每一对点的线段，因此这条所需线段确实在十条之中。
-
-## Common Mistakes
-
-- 只按一个坐标的奇偶分组。
-- 把中点坐标写成两个端点坐标的差。
+If $a\equiv b\pmod2$ and $b\equiv c\pmod2$, then adding the two even differences gives $a\equiv c\pmod2$. This verifies transitivity of the parity relation.
 
 ## Connections
 

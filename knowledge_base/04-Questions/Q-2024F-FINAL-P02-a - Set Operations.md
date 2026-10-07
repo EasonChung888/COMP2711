@@ -39,24 +39,18 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 (a) Prove or disprove that if $(A\cup B)\subseteq(A\cap B)$, then $A=B$.
 Note that one approach can be showing that $A\subseteq B$ and $B\subseteq A$, which means that they have to be equal.
 
-## 中文解析
+## Official Answer
 
-通常交集包含于并集，题设给了反向包含。任意一侧元素先进入并集，再被迫进入交集，从而也属于另一侧，两个方向完全对称。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> Answer: (a) To prove $A\subseteq B$, assume $x\in A$. $x\in A\implies x\in A\cup B$ by the definition of union. Then This implies that $x\in A\cap B$ Because $(A\cup B)\subseteq(A\cap B)$. This means $x\in B$ according to the definition of intersection. Therefore, $A\subseteq B$.
+> The same argument can be applied for the other way. So we can prove that $A=B$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True: $A=B$.
 
-**答案。** 命题为真，$A=B$。
-
-**推导。** 任取 $x\in A$，则按并集定义 $x\in A\cup B$。由题设包含关系，$x\in A\cap B$，所以按交集定义 $x\in B$；因此 $A\subseteq B$。再任取 $x\in B$，同理先有 $x\in A\cup B$，再有 $x\in A\cap B$，故 $x\in A$，于是 $B\subseteq A$。双向包含推出 $A=B$，包含空集情形在内。
-
-## Common Mistakes
-
-- 题设包含方向比通常关系更强，不能仅复述交集包含于并集。
-- 只证 $A\subseteq B$ 不足够，需补对称方向。
+**Derivation/proof.** For any $x\in A$, union membership gives $x\in A\cup B$. The hypothesis forces $x\in A\cap B$, hence $x\in B$. Thus $A\subseteq B$. Conversely, if $x\in B$, then $x\in A\cup B$, so $x\in A\cap B$ and $x\in A$. Therefore $B\subseteq A$. The two-way inclusion proves $A=B$, including cases involving empty sets.
 
 ## Connections
 

@@ -38,24 +38,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (a) [2 points] Assume $A\subseteq C$ and $B\subseteq C$. Use direct proof to prove that $A\cap B\subseteq C$.
 
-## 中文解析
+## Official Answer
 
-直接证明只需从交集的任意元素开始，使用其中一个已知包含关系。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (a) Let $x\in A\cap B$. By definition of intersection, $x\in A$ and $x\in B$. Since $A\subseteq C$, it follows that $x\in C$. Similarly, since $B\subseteq C$, $x\in C$ also holds. Thus, $x\in C$. Therefore, $A\cap B\subseteq C$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $A\cap B\subseteq C$.
 
-**答案。** $A\cap B\subseteq C$。
-
-**推导。** 任取 $x\in A\cap B$，由 intersection 定义有 $x\in A$ 且 $x\in B$。因为 $A\subseteq C$，从 $x\in A$ 得 $x\in C$。所以交集中的每个元素都在 $C$ 中，按 subset 定义得到 $A\cap B\subseteq C$。也可使用 $B\subseteq C$ 完成同一推理；两个前提同时给出，但这项结论实际上只需其中一个。空交集时包含关系亦为空真。
-
-## Common Mistakes
-
-- 不能由某一个元素属于 $C$ 就得集合包含，必须任取交集元素。
-- 包含关系不要求严格包含，三集合相等也满足题设。
+**Derivation/proof.** Take arbitrary $x\in A\cap B$. By the definition of intersection, x belongs to both A and B. Since $A\subseteq C$, from $x\in A$ obtain $x\in C$. Every element of the intersection therefore belongs to C, proving the inclusion. The premise $B\subseteq C$ could be used instead; only one of the two premises is actually needed. An empty intersection satisfies the inclusion vacuously.
 
 ## Connections
 

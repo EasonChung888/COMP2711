@@ -41,26 +41,19 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每种颜色最多有两只手套。六只只来自三种颜色，就必须每色都拿完整的一对。因此只需选出三种颜色，没有额外左右手选择。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+(a) The number of colors of these 6 gloves is 3 means you have picked 3 pairs of gloves out of 12. So there are $\binom{12}{3}$ possible cases.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{12}{3}=220$.
 
 **Derivation/proof.** If the three selected colors contribute $g_1,g_2,g_3\le2$ gloves each and sum to six, all $g_i=2$. Choose those three colors from twelve; their gloves are then fixed.
 
-### 中文解答
-
-**推导。** 设选中三色的手套数为 $g_1,g_2,g_3$。每色仅两只，所以每个不超过二，而 $g_1+g_2+g_3=6$，迫使三者都等于二。选定三色后左右手两只全拿，没有进一步选择。故总数 $\binom{12}{3}=220$。
-
-## Common Mistakes
-
-- 再乘 $2^3$，尽管每一色已取左右两只。
-- 把取六只手套误解为取六对。
+The constraints $g_1+g_2+g_3=6$ and $g_i\le2$ force all three values to be two.
 
 ## Connections
 

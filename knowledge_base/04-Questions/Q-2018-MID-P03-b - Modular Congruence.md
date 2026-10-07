@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每个正整数反复除二后留下唯一奇数部分。如果两个不同元素留下相同奇数，它们只差若干个二的因子，较小的就整除较大的，正好违反题设。因此奇数部分必须两两不同。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+WLOG consider $p_i<p_j\in P$. If $i\ne j$, then $p_i\nmid p_j$. However, if $c_i=c_j$, then $p_i=c_i\cdot2^{k_i}\mid c_i\cdot2^{k_i+(k_j-k_i)}=c_i\cdot2^{k_j}=p_j$. This is a contradiction, so $c_i\ne c_j$. (3 marks)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Distinct elements of $P$ have distinct odd parts.
 
 **Derivation/proof.** Suppose $c_i=c_j=c$. Since the elements differ, their exponents differ; assume $k_i<k_j$. Then $p_j=c2^{k_j}=p_i2^{k_j-k_i}$, so $p_i\mid p_j$, contradicting the defining criterion. Thus equal odd parts are impossible.
 
-### 中文解答
-
-**推导。** 反设不同元素具有相同奇部 $c_i=c_j=c$。因元素不同，二的指数不同；不妨设 $k_i<k_j$。于是 $p_j=c2^{k_j}=c2^{k_i}2^{k_j-k_i}=p_i2^{k_j-k_i}$，其中倍数为正整数，得到 $p_i\mid p_j$，与条件矛盾。所以不同元素必有不同奇部。高分辨率印本链中的细竖线是整除号 $\mid$，不是等号，印本本身正是在说明这项整除关系。
-
-## Common Mistakes
-
-- 假设两个指数相等却未考虑元素不同。
-- 把奇数部分相等误当作原数一定相等。
+The thin vertical stroke in the printed chain is divisibility $\mid$, not equality.
 
 ## Connections
 

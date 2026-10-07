@@ -42,35 +42,20 @@ Source discrepancy: the printed sentence says values from ℕ, but it explicitly
 
 Shared printed context: ![[STEM-2023F-MID-P09 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-本原子题取 (a) 中的 variance。由于 X 只取正负一，X² 恒为一，因此先算二阶矩再减去均值平方最方便；方差衡量围绕均值的波动，不是位移的绝对值。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=19|physical PDF page 19]].
 
-## Detailed Solution
+> (a)
+> $$\begin{aligned}E(X)&=1\cdot\frac23-1\cdot\frac13\\&=\frac13\\E(X^2)&=1\cdot\frac23+1\cdot\frac13\\&=1\\V(X)&=E(X^2)-E(X)^2=\frac89.\end{aligned}$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $V(X)=8/9$ 平方厘米。
-
-**推导。**
-
-1. 从单步分布重新计算均值 $E(X)=1\cdot2/3+(-1)\cdot1/3=1/3$。因为两个可能值平方都为一，$E(X^2)=1^2\cdot2/3+(-1)^2\cdot1/3=1$。
-2. 使用 variance 的矩公式，$V(X)=E(X^2)-E(X)^2=1-1/9=8/9$。独立核对中心化平方：
-   $$(1-1/3)^2\frac23+(-1-1/3)^2\frac13=\frac8{27}+\frac{16}{27}=\frac89.$$
-   两种计算一致且非负。此处均值在本题内重新求出，不要求先阅读另一条 expectation 笔记；方差单位是位移单位的平方。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $V(X)=8/9$.
 
 **Derivation/proof.** The atomic target is $V(X)$. Directly, $E(X)=2/3-1/3=1/3$ and $E(X^2)=1^2(2/3)+(-1)^2(1/3)=1$. Thus $V(X)=E(X^2)-E(X)^2=1-1/9=8/9$ square cm. As a separate check, the centered-square calculation is $(1-1/3)^2(2/3)+(-1-1/3)^2(1/3)=8/27+16/27=8/9$.
 
-## Common Mistakes
-
-- E(X²)=1 不等于 V(X)，还需减去均值平方。 / Subtract the squared mean.
-- 负一平方等于一，不是负一。 / Square each support value before weighting.
+The independent centered-square check is $\frac8{27}+\frac{16}{27}=\frac89$.
 
 ## Connections
 

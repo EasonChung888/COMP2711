@@ -1,0 +1,23 @@
+Exercise
+ on Committee Selection
+Suppose there are 
+40
+ faculty members in the computer science department and 
+30
+ in the mathematics department. How many ways are there to select a committee that has 
+4
+ faculty members from the computer science and 
+3
+ from the mathematics department?
+Solution
+There are 
+ ways to select the 4 computer science faculty members. 
+For each fixed set of selected CSE faculty members, there are 
+ ways to select the 3 Math faculty members.
+By the 
+product rule
+ so there are a total of 
+ 
+ possible ways. 
+ 
+19

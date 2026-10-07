@@ -40,26 +40,20 @@ Explain your answers.
 
 Shared context: [[STEM-2014-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先核对字母重数：l 有四个、a 和 o 各三个。多重集合排列的分母只包括重复字母的阶乘。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(b) This is the same as the number of ways to label 12 positions according to the following rules: Label 3 positions with 'a', 4 positions with 'l', 3 positions with 'o', 1 position with 'p', and 1 position with 'z'. So the answer is:
+$$\frac{12!}{3!4!1!3!1!}=?$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $12!/(4!3!3!)=554400$.
 
 **Derivation/proof.** The twelve letters have multiplicities $l:4$, $a:3$, $o:3$, $p:1$, $z:1$. Divide $12!$ by factorials of repeated-letter multiplicities.
 
-### 中文解答
-
-**推导。** 逐字核对 lollapalooza：l 有四个，a 有三个，o 有三个，p 与 z 各一个，共十二个字母。给重复字母临时编号会产生 $12!$ 种排列；去掉编号时，每种实际单词被重复计数 $4!3!3!$ 次。因此不同排列数为 $12!/(4!3!3!)=554400$。
-
-## Common Mistakes
-
-- 把 l 误数为三个。
-- 遗漏 o 的 $3!$ 分母。
+Temporarily labelling repeated letters gives $12!$ permutations. Removing the labels identifies $4!3!3!$ permutations for each word, giving $12!/(4!3!3!)=554400$.
 
 ## Connections
 

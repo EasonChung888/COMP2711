@@ -42,34 +42,21 @@ An algebraic number is a number that is a root of a non-zero polynomial in one v
 
 Hint: Try to think about how many polynomials exist and how many roots each one has. You may use the result of any of (b) as well.
 
-## 中文解析
+## Official Answer
 
-按次数分组后，每个多项式由有限个整数系数确定，因而所有多项式可枚举。非零多项式的根只有有限多个，再对这些有限根集合取可数并集就得到所有 algebraic numbers，最后用整数子集说明不是有限集。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (c) You can express the set of algebraic numbers as a countable union of finite sets.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** Algebraic numbers 构成 countably infinite 集合。
-
-**推导。**
-
-1. 固定次数 $d$，每个非零整系数多项式由有限元组 $(a_0,\ldots,a_d)\in\mathbb Z^{d+1}$ 且 $a_d\ne0$ 决定。整数可数，有限整数元组也可数；再对 $d=0,1,\ldots$ 取可数并集，得到全部非零整系数多项式仍然可数。
-2. 每个 $d$ 次非零多项式至多有 $d$ 个不同复根，所以所有代数数是上述可数多个有限根集合的并集，至多可数。非零条件重要：零多项式会以所有复数为根。
-3. 每个整数 $k$ 都是 $x-k$ 的根，因此代数数集合包含无限的整数子集，不可能有限。把“至多可数”与“无限”合起来，才得到所需的无限可数结论。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** The algebraic numbers form a countably infinite set.
 
 **Derivation/proof.** For every degree d, a polynomial is specified by a tuple $(a_0,\ldots,a_d)\in\mathbb Z^{d+1}$ with $a_d\ne0$, and finite integer tuples form a countable set. Taking the union over nonnegative d leaves countably many nonzero polynomials. Each degree-d polynomial has at most d distinct complex roots. Thus the algebraic numbers are a countable union of finite root sets, hence at most countable. Every integer k is a root of $x-k$, so the set is infinite and therefore countably infinite.
 
-## Common Mistakes
+The nonzero condition is essential: the zero polynomial would make every complex number a root.
 
-- 零多项式必须排除，否则所有复数都会被它当作根。 / The nonzero condition is essential.
-- 只说每个多项式根有限还不够，必须同时说明多项式族可数。 / Control both the number of polynomials and roots.
+A degree-$d$ nonzero polynomial has at most $d$ distinct roots.
 
 ## Connections
 

@@ -38,26 +38,23 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把第二式乘二后从第一式减去，可以消掉 y 并得到系数七，正好使用已给逆元。算出 x 后回代第二式得到 y，再把两个原方程都检查一次，不能只检验消元后的方程。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+We have $9x+2y+(-2)(x+y)\equiv10-2\pmod{104}$, which is $7x\equiv8\pmod{104}$. So,
+$$\begin{aligned}7x&\equiv8\pmod{104}\\\to15\cdot7x&\equiv15\cdot8\pmod{104}\\\to x&\equiv16\pmod{104}.\end{aligned}$$
+When $x=16$, we have $16+y\equiv1\pmod{104}$, and thus $y\equiv-15\equiv89\pmod{104}$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $(x,y)=(16,89)$.
 
 **Derivation/proof.** Subtract twice the second congruence from the first to obtain $7x\equiv8\pmod{104}$. Multiply by 15: $x\equiv120\equiv16$. Then $y\equiv1-16=-15\equiv89$. Substitution checks $9\cdot16+2\cdot89=322\equiv10$ and $16+89=105\equiv1\pmod{104}$. The invertible coefficient makes x unique and then y unique in the required ranges.
 
-### 中文解答
+Elimination and multiplication by an inverse are reversible, so the solution in the specified range is unique.
 
-**推导。** 用第一式减去第二式的两倍消去 $y$，得到 $7x\equiv8\pmod{104}$。乘逆元 $15$，$x\equiv120\equiv16$。代回第二式得 $y\equiv1-16=-15\equiv89$，所以指定范围内 $(x,y)=(16,89)$。核对 $9\cdot16+2\cdot89=322=3\cdot104+10$，且 $16+89=105=104+1$。消元及逆元步骤可逆，故此解唯一。
-
-## Common Mistakes
-
-- 消去 y 时只减左边未减右边。
-- 得到 x 后忘记求 y 或检验原方程。
+For the second congruence the proposed values give $x+y=16+89=105$. Since $105=104+1$, their sum has the required remainder one modulo 104.
 
 ## Connections
 

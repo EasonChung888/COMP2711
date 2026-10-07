@@ -1,0 +1,21 @@
+Exercise
+ on Ball Selection
+3
+ balls are selected randomly from a bag with 
+36
+ balls. If the bag contains 
+8 yellow
+ balls, 
+7 green
+ balls, 
+6 blue
+ balls, 
+5 red
+ balls, and 10 black balls. How many ways are there such that at least 
+1 blue ball
+ is selected? 
+Solution
+There are C(36,3) to select 3 balls with no constraints. 
+There are C(30,3) ways to select 3 balls that are not blue. 
+Thus, the number of ways to select 3 balls with at least one blue is: C(36,3)-C(30,3)=3080.
+21

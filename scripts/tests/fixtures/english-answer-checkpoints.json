@@ -1,0 +1,8366 @@
+{
+  "Q-2013-FINAL-P01-a": {
+    "legacy": [
+      "0\\le r_2<m",
+      "(q_1s+q_2)m+r_2"
+    ],
+    "english": [
+      "0\\le r_2<m",
+      "(q_1s+q_2)m+r_2"
+    ]
+  },
+  "Q-2013-FINAL-P01-b": {
+    "legacy": [
+      "0,2,4,6",
+      "1,9,25,49"
+    ],
+    "english": [
+      "0,2,4,6",
+      "1,9,25,49"
+    ]
+  },
+  "Q-2013-FINAL-P02-a": {
+    "legacy": [
+      "11\\cdot19=209",
+      "(7,209)"
+    ],
+    "english": [
+      "11\\cdot19=209",
+      "(7,209)"
+    ]
+  },
+  "Q-2013-FINAL-P02-b": {
+    "legacy": [
+      "3\\cdot180-77\\cdot7",
+      "721=4\\cdot180+1"
+    ],
+    "english": [
+      "3\\cdot180-77\\cdot7",
+      "721=4\\cdot180+1"
+    ]
+  },
+  "Q-2013-FINAL-P02-c": {
+    "legacy": [
+      "7=4+2+1",
+      "27072"
+    ],
+    "english": [
+      "7=4+2+1",
+      "27072"
+    ]
+  },
+  "Q-2013-FINAL-P03": {
+    "legacy": [
+      "pq\\mid(x_1-x_2)",
+      "0<|x_1-x_2|<pq"
+    ],
+    "english": [
+      "pq\\mid(x_1-x_2)",
+      "0<|x_1-x_2|<pq"
+    ]
+  },
+  "Q-2013-FINAL-P04": {
+    "legacy": [
+      "(46^6)^{20}",
+      "(46^{10})^{12}"
+    ],
+    "english": [
+      "(46^6)^{20}",
+      "(46^{10})^{12}"
+    ]
+  },
+  "Q-2013-FINAL-P05-a": {
+    "legacy": [
+      "\\neg(p\\land q)\\lor r",
+      "德摩根律"
+    ],
+    "english": [
+      "\\neg(p\\land q)\\lor r",
+      "De Morgan's law"
+    ]
+  },
+  "Q-2013-FINAL-P05-b": {
+    "legacy": [
+      "r\\lor(\\neg p\\lor\\neg q)",
+      "第一式也化为"
+    ],
+    "english": [
+      "r\\lor(\\neg p\\lor\\neg q)",
+      "The first expression also becomes"
+    ]
+  },
+  "Q-2013-FINAL-P05-c": {
+    "legacy": [
+      "p=T,q=F,r=F",
+      "F\\land T=F"
+    ],
+    "english": [
+      "p=T,q=F,r=F",
+      "F\\land T=F"
+    ]
+  },
+  "Q-2013-FINAL-P06-a-i": {
+    "legacy": [
+      "F(x)\\land\\neg J(x)",
+      "非富人不受"
+    ],
+    "english": [
+      "F(x)\\land\\neg J(x)",
+      "People who are not rich are not constrained"
+    ]
+  },
+  "Q-2013-FINAL-P06-a-ii": {
+    "legacy": [
+      "S(x)\\land J(x)\\land F(x)",
+      "同一个 x"
+    ],
+    "english": [
+      "S(x)\\land J(x)\\land F(x)",
+      "that same witness"
+    ]
+  },
+  "Q-2013-FINAL-P06-a-iii": {
+    "legacy": [
+      "S(x)\\land J(x)",
+      "\\Rightarrow\\neg R(x)"
+    ],
+    "english": [
+      "S(x)\\land J(x)",
+      "\\Rightarrow\\neg R(x)"
+    ]
+  },
+  "Q-2013-FINAL-P06-b": {
+    "legacy": [
+      "J(x)\\Rightarrow\\neg R(x)",
+      "全称推广"
+    ],
+    "english": [
+      "J(x)\\Rightarrow\\neg R(x)",
+      "universal generalization"
+    ]
+  },
+  "Q-2013-FINAL-P07": {
+    "legacy": [
+      "n=1",
+      "3(5u+4\\cdot11^{n-1})"
+    ],
+    "english": [
+      "n=1",
+      "3(5u+4\\cdot11^{n-1})"
+    ]
+  },
+  "Q-2013-FINAL-P08-closed-form": {
+    "legacy": [
+      "n^2(3/4)^i",
+      "4n^2-3n^{\\log_2 3}"
+    ],
+    "english": [
+      "n^2(3/4)^i",
+      "4n^2-3n^{\\log_2 3}"
+    ]
+  },
+  "Q-2013-FINAL-P08-theta": {
+    "legacy": [
+      "\\log_2 3<2",
+      "\\le4n^2"
+    ],
+    "english": [
+      "\\log_2 3<2",
+      "\\le4n^2"
+    ]
+  },
+  "Q-2013-FINAL-P09": {
+    "legacy": [
+      "9+36+300=345",
+      "4n^2+100n\\le104n^2"
+    ],
+    "english": [
+      "9+36+300=345",
+      "4n^2+100n\\le104n^2"
+    ]
+  },
+  "Q-2013-MID-P01-a": {
+    "legacy": [
+      "\\binom{12}{5}",
+      "=792"
+    ],
+    "english": [
+      "\\binom{12}{5}",
+      "=792"
+    ]
+  },
+  "Q-2013-MID-P01-b": {
+    "legacy": [
+      "\\binom85=56",
+      "792-3\\cdot56=624"
+    ],
+    "english": [
+      "\\binom85=56",
+      "792-3\\cdot56=624"
+    ]
+  },
+  "Q-2013-MID-P01-c": {
+    "legacy": [
+      "r>5-r",
+      "112+8=120"
+    ],
+    "english": [
+      "r>5-r",
+      "112+8=120"
+    ]
+  },
+  "Q-2013-MID-P02-a": {
+    "legacy": [
+      "f(1),f(2),f(3)",
+      "n\\cdot n\\cdot n=n^3"
+    ],
+    "english": [
+      "f(1),f(2),f(3)",
+      "n\\cdot n\\cdot n=n^3"
+    ]
+  },
+  "Q-2013-MID-P02-b": {
+    "legacy": [
+      "n−1",
+      "n(n-1)n=n^2(n-1)"
+    ],
+    "english": [
+      "n−1",
+      "n(n-1)n=n^2(n-1)"
+    ]
+  },
+  "Q-2013-MID-P02-c": {
+    "legacy": [
+      "f(2)",
+      "n(n-1)^2"
+    ],
+    "english": [
+      "f(2)",
+      "n(n-1)^2"
+    ]
+  },
+  "Q-2013-MID-P02-d": {
+    "legacy": [
+      "\\binom{n-1}{2}",
+      "不再乘二"
+    ],
+    "english": [
+      "\\binom{n-1}{2}",
+      "no factor of two"
+    ]
+  },
+  "Q-2013-MID-P03": {
+    "legacy": [
+      "三类互斥",
+      "2\\binom n2+n^2"
+    ],
+    "english": [
+      "exhaustive and disjoint",
+      "2\\binom n2+n^2"
+    ]
+  },
+  "Q-2013-MID-P04-a": {
+    "legacy": [
+      "8\\cdot7\\cdots1=8!",
+      "唯一确定"
+    ],
+    "english": [
+      "8\\cdot7\\cdots1=8!",
+      "determines exactly one"
+    ]
+  },
+  "Q-2013-MID-P04-d": {
+    "legacy": [
+      "\\binom{16}{8}8!",
+      "16\\cdot15\\cdots9"
+    ],
+    "english": [
+      "\\binom{16}{8}8!",
+      "16\\cdot15\\cdots9"
+    ]
+  },
+  "Q-2013-MID-P08": {
+    "legacy": [
+      "长度 102",
+      "反向按三段星号数",
+      "\\binom{102}{2}=5151"
+    ],
+    "english": [
+      "length-$102$",
+      "Counting stars in the three blocks inverts the map",
+      "\\binom{102}{2}=5151"
+    ]
+  },
+  "Q-2014-FINAL-P02-a": {
+    "legacy": [
+      "0\\le r_2<n",
+      "(q_1m+q_2)n+r_2"
+    ],
+    "english": [
+      "0\\le r_2<n",
+      "(q_1m+q_2)n+r_2"
+    ]
+  },
+  "Q-2014-FINAL-P02-b": {
+    "legacy": [
+      "a=8,m=2,n=3",
+      "2\\ne0"
+    ],
+    "english": [
+      "a=8,m=2,n=3",
+      "2\\ne0"
+    ]
+  },
+  "Q-2014-FINAL-P02-c": {
+    "legacy": [
+      "a=qn+1",
+      "a-qn=1"
+    ],
+    "english": [
+      "a=qn+1",
+      "a-qn=1"
+    ]
+  },
+  "Q-2014-FINAL-P02-d": {
+    "legacy": [
+      "\\gcd(5,3)=1",
+      "2\\ne1"
+    ],
+    "english": [
+      "\\gcd(5,3)=1",
+      "2\\ne1"
+    ]
+  },
+  "Q-2014-FINAL-P03-a": {
+    "legacy": [
+      "33\\cdot24-7\\cdot113",
+      "10001=40\\cdot250+1"
+    ],
+    "english": [
+      "33\\cdot24-7\\cdot113",
+      "10001=40\\cdot250+1"
+    ]
+  },
+  "Q-2014-FINAL-P03-b": {
+    "legacy": [
+      "91,249,4,16,5,25,123",
+      "98400"
+    ],
+    "english": [
+      "91,249,4,16,5,25,123",
+      "98400"
+    ]
+  },
+  "Q-2014-FINAL-P03-c": {
+    "legacy": [
+      "\\varphi(n)=n-1=250",
+      "d=73"
+    ],
+    "english": [
+      "\\varphi(n)=n-1=250",
+      "d=73"
+    ]
+  },
+  "Q-2014-FINAL-P04-a": {
+    "legacy": [
+      "530",
+      "50\\bmod15=5"
+    ],
+    "english": [
+      "530",
+      "50\\bmod15=5"
+    ]
+  },
+  "Q-2014-FINAL-P04-b": {
+    "legacy": [
+      "16q_2-30q_1=3",
+      "没有整数解"
+    ],
+    "english": [
+      "16q_2-30q_1=3",
+      "excludes every integer solution"
+    ]
+  },
+  "Q-2014-FINAL-P05-a": {
+    "legacy": [
+      "r\\land\\neg r",
+      "\\neg p\\lor q\\lor F"
+    ],
+    "english": [
+      "r\\land\\neg r",
+      "\\neg p\\lor q\\lor F"
+    ]
+  },
+  "Q-2014-FINAL-P05-b": {
+    "legacy": [
+      "p(u)=T,p(v)=F",
+      "q(u)=q(v)=F",
+      "F\\Rightarrow F=T"
+    ],
+    "english": [
+      "p(u)=T,p(v)=F",
+      "q(u)=q(v)=F",
+      "F\\Rightarrow F=T"
+    ]
+  },
+  "Q-2014-FINAL-P05-c": {
+    "legacy": [
+      "先证左推右",
+      "反向",
+      "任意 y"
+    ],
+    "english": [
+      "If no object satisfies",
+      "Conversely",
+      "arbitrary $y$"
+    ]
+  },
+  "Q-2014-FINAL-P06-a": {
+    "legacy": [
+      "\\gcd(m,n)=1",
+      "n^2=3k^2"
+    ],
+    "english": [
+      "\\gcd(m,n)=1",
+      "n^2=3k^2"
+    ]
+  },
+  "Q-2014-FINAL-P06-b": {
+    "legacy": [
+      "m=2k+1,n=2h+1",
+      "2(2kh+k+h)+1"
+    ],
+    "english": [
+      "m=2k+1,n=2h+1",
+      "2(2kh+k+h)+1"
+    ]
+  },
+  "Q-2014-FINAL-P07": {
+    "legacy": [
+      "0\\le m-n<m",
+      "(q'+1)n+r'"
+    ],
+    "english": [
+      "0\\le m-n<m",
+      "(q'+1)n+r'"
+    ]
+  },
+  "Q-2014-FINAL-P08": {
+    "legacy": [
+      "x=1/a\\in(0,1)",
+      "n+1-nx>0",
+      "[1+a/(a-1)^2]a^n"
+    ],
+    "english": [
+      "x=1/a\\in(0,1)",
+      "n+1-nx>0",
+      "[1+a/(a-1)^2]a^n"
+    ]
+  },
+  "Q-2014-FINAL-P09-closed-form": {
+    "legacy": [
+      "n^2(5/4)^j",
+      "5n^{\\log_2 5}-4n^2"
+    ],
+    "english": [
+      "n^2(5/4)^j",
+      "5n^{\\log_2 5}-4n^2"
+    ]
+  },
+  "Q-2014-FINAL-P09-theta": {
+    "legacy": [
+      "\\log_2 5>2",
+      "T(n)\\le5n^{\\log_2 5}"
+    ],
+    "english": [
+      "\\log_2 5>2",
+      "T(n)\\le5n^{\\log_2 5}"
+    ]
+  },
+  "Q-2014-FINAL-P10-recurrence": {
+    "legacy": [
+      "9V_{n-1}",
+      "10^{n-1}-V_{n-1}",
+      "V_1=9"
+    ],
+    "english": [
+      "9V_{n-1}",
+      "10^{n-1}-V_{n-1}",
+      "V_1=9"
+    ]
+  },
+  "Q-2014-FINAL-P10-closed-form": {
+    "legacy": [
+      "\\sum_{j=0}^{n-2}(10/8)^j",
+      "(10+8)/2=9"
+    ],
+    "english": [
+      "\\sum_{j=0}^{n-2}(10/8)^j",
+      "(10+8)/2=9"
+    ]
+  },
+  "Q-2014-MID-P01-a": {
+    "legacy": [
+      "\\binom95=9!/(5!4!)=126",
+      "不额外乘"
+    ],
+    "english": [
+      "\\binom95=9!/(5!4!)=126",
+      "no additional factor"
+    ]
+  },
+  "Q-2014-MID-P01-b": {
+    "legacy": [
+      "\\binom43\\binom52=40",
+      "40+5=45"
+    ],
+    "english": [
+      "\\binom43\\binom52=40",
+      "40+5=45"
+    ]
+  },
+  "Q-2014-MID-P01-c": {
+    "legacy": [
+      "(1,2,2),(1,3,1),(2,1,2),(2,2,1),(3,1,1)",
+      "12+8+18+36+24=98"
+    ],
+    "english": [
+      "(1,2,2),(1,3,1),(2,1,2),(2,2,1),(3,1,1)",
+      "12+8+18+36+24=98"
+    ]
+  },
+  "Q-2014-MID-P02-a": {
+    "legacy": [
+      "3n-1",
+      "(3n)!"
+    ],
+    "english": [
+      "3n-1",
+      "(3n)!"
+    ]
+  },
+  "Q-2014-MID-P02-b": {
+    "legacy": [
+      "区块内部三人",
+      "n!(3!)^n"
+    ],
+    "english": [
+      "Each block has $3!$ internal orders",
+      "n!(3!)^n"
+    ]
+  },
+  "Q-2014-MID-P02-d": {
+    "legacy": [
+      "2n 个不同单位",
+      "(2n)!2^n"
+    ],
+    "english": [
+      "$2n$ units",
+      "(2n)!2^n"
+    ]
+  },
+  "Q-2014-MID-P03": {
+    "legacy": [
+      "四个红、六个绿、三个蓝",
+      "各出现恰一次"
+    ],
+    "english": [
+      "4 red, 6 green, 3 blue",
+      "exactly once in each process"
+    ]
+  },
+  "Q-2014-MID-P04-a": {
+    "legacy": [
+      "交换两个 a",
+      "4!/2!=12"
+    ],
+    "english": [
+      "swaps that do not change the word",
+      "4!/2!=12"
+    ]
+  },
+  "Q-2014-MID-P04-b": {
+    "legacy": [
+      "l 有四个，a 有三个，o 有三个",
+      "12!/(4!3!3!)=554400"
+    ],
+    "english": [
+      "$l:4$, $a:3$, $o:3$",
+      "12!/(4!3!3!)=554400"
+    ]
+  },
+  "Q-2015-FINAL-P02-c": {
+    "legacy": [
+      "X=\\sum_{t=1}^{60}I_t",
+      "=60pq",
+      "即使不同分钟相关"
+    ],
+    "english": [
+      "X=\\sum_{t=1}^{60}I_t",
+      "=60pq",
+      "even if different minutes are dependent"
+    ]
+  },
+  "Q-2015-FINAL-P05-a": {
+    "legacy": [
+      "0,1,4,9,5,3",
+      "\\{0,1,3,4,5,9\\}"
+    ],
+    "english": [
+      "0,1,4,9,5,3",
+      "\\{0,1,3,4,5,9\\}"
+    ]
+  },
+  "Q-2015-FINAL-P05-b": {
+    "legacy": [
+      "p(p-2)+1",
+      "\\equiv1\\pmod p"
+    ],
+    "english": [
+      "p(p-2)+1",
+      "\\equiv1\\pmod p"
+    ]
+  },
+  "Q-2015-FINAL-P05-c": {
+    "legacy": [
+      "p^2-2py+y^2",
+      "(p-y)\\bmod p"
+    ],
+    "english": [
+      "p^2-2py+y^2",
+      "(p-y)\\bmod p"
+    ]
+  },
+  "Q-2015-FINAL-P06-a": {
+    "legacy": [
+      "\\varphi(n)=(17-1)(31-1)=480",
+      "\\gcd(7,480)=1"
+    ],
+    "english": [
+      "\\varphi(n)=(17-1)(31-1)=480",
+      "\\gcd(7,480)=1"
+    ]
+  },
+  "Q-2015-FINAL-P06-b": {
+    "legacy": [
+      "2\\cdot480-137\\cdot7",
+      "2401=5\\cdot480+1"
+    ],
+    "english": [
+      "2\\cdot480-137\\cdot7",
+      "2401=5\\cdot480+1"
+    ]
+  },
+  "Q-2015-FINAL-P06-c": {
+    "legacy": [
+      "343=256+64+16+4+2+1",
+      "2,4,16,256,188,35,171,256,188",
+      "349^7\\bmod527=2"
+    ],
+    "english": [
+      "343=256+64+16+4+2+1",
+      "2,4,16,256,188,35,171,256,188",
+      "349^7\\bmod527=2"
+    ]
+  },
+  "Q-2015-FINAL-P07-a": {
+    "legacy": [
+      "48=24\\cdot2=12\\cdot4=8\\cdot6",
+      "模105类唯一"
+    ],
+    "english": [
+      "48=24\\cdot2=12\\cdot4=8\\cdot6",
+      "CRT uniqueness"
+    ]
+  },
+  "Q-2015-FINAL-P07-b": {
+    "legacy": [
+      "385=7\\cdot49+42",
+      "4^7\\cdot4^{42}=4^{49}"
+    ],
+    "english": [
+      "385=7\\cdot49+42",
+      "4^7\\cdot4^{42}=4^{49}"
+    ]
+  },
+  "Q-2015-FINAL-P08-a": {
+    "legacy": [
+      "12\\sum_{j=0}^{n-1}7^j",
+      "5\\cdot7^n-2"
+    ],
+    "english": [
+      "12\\sum_{j=0}^{n-1}7^j",
+      "5\\cdot7^n-2"
+    ]
+  },
+  "Q-2015-FINAL-P08-b": {
+    "legacy": [
+      "n\\ge1",
+      "5\\cdot7^n-14+12",
+      "零到一"
+    ],
+    "english": [
+      "n\\ge1",
+      "5\\cdot7^n-14+12",
+      "transition from the sole base case $n=0$ to $n=1$"
+    ]
+  },
+  "Q-2015-FINAL-P09-recurrence": {
+    "legacy": [
+      "A_hB_h,A_hB_l,A_lB_h,A_lB_l",
+      "T(n)=4T(n/2)+cn"
+    ],
+    "english": [
+      "A_hB_h,A_hB_l,A_lB_h,A_lB_l",
+      "T(n)=4T(n/2)+cn"
+    ]
+  },
+  "Q-2015-FINAL-P09-closed-form": {
+    "legacy": [
+      "cn\\sum_{i=0}^{j-1}2^i",
+      "(1+c)n^2-cn"
+    ],
+    "english": [
+      "cn\\sum_{i=0}^{j-1}2^i",
+      "(1+c)n^2-cn"
+    ]
+  },
+  "Q-2015-FINAL-P09-theta": {
+    "legacy": [
+      "T(n)\\ge n^2",
+      "T(n)\\le(1+c)n^2"
+    ],
+    "english": [
+      "T(n)\\ge n^2",
+      "T(n)\\le(1+c)n^2"
+    ]
+  },
+  "Q-2015-FINAL-P10": {
+    "legacy": [
+      "2\\le m\\le n-1",
+      "新加入的模数 m=n",
+      "n!=n(n-1)!"
+    ],
+    "english": [
+      "2\\le m\\le n-1",
+      "new case $m=n$",
+      "n!=n(n-1)!"
+    ]
+  },
+  "Q-2015-MID-P01-a": {
+    "legacy": [
+      "(T,T),(F,F)",
+      "q\\to p",
+      "1、2、4"
+    ],
+    "english": [
+      "(T,T),(F,F)",
+      "q\\to p",
+      "1, 2, 4"
+    ]
+  },
+  "Q-2015-MID-P01-b": {
+    "legacy": [
+      "p\\lor\\neg p\\lor q",
+      "p=T,q=F",
+      "2、3"
+    ],
+    "english": [
+      "p\\lor\\neg p\\lor q",
+      "p=T,q=F",
+      "2, 3"
+    ]
+  },
+  "Q-2015-MID-P01-c": {
+    "legacy": [
+      "\\neg P(y)\\to Q(y)",
+      "U=\\{a,b\\}",
+      "目标真而四假"
+    ],
+    "english": [
+      "\\neg P(y)\\to Q(y)",
+      "U=\\{a,b\\}",
+      "the target is true but option 4 false"
+    ]
+  },
+  "Q-2015-MID-P01-d": {
+    "legacy": [
+      "U_1=U_2=\\{0,1\\}",
+      "P 真、R 假",
+      "3、4"
+    ],
+    "english": [
+      "U_1=U_2=\\{0,1\\}",
+      "$P$ true, and $R$ false",
+      "3, 4"
+    ]
+  },
+  "Q-2015-MID-P02-a": {
+    "legacy": [
+      "\\neg\\neg(p\\lor q)",
+      "析取三段论"
+    ],
+    "english": [
+      "\\neg\\neg(p\\lor q)",
+      "disjunctive syllogism"
+    ]
+  },
+  "Q-2015-MID-P02-b": {
+    "legacy": [
+      "\\neg p\\to(r\\land s)",
+      "合取消去得到 r"
+    ],
+    "english": [
+      "\\neg p\\to(r\\land s)",
+      "$r$ (simplification"
+    ]
+  },
+  "Q-2015-MID-P02-c": {
+    "legacy": [
+      "\\neg q\\lor\\neg r",
+      "第二行 p",
+      "\\neg s"
+    ],
+    "english": [
+      "\\neg q\\lor\\neg r",
+      "$p$, which is line 2",
+      "\\neg s"
+    ]
+  },
+  "Q-2015-MID-P03-statement-a": {
+    "legacy": [
+      "rich(x)\\land famous(x)",
+      "\\forall x\\in U"
+    ],
+    "english": [
+      "rich(x)\\land famous(x)",
+      "\\forall x\\in U"
+    ]
+  },
+  "Q-2015-MID-P03-statement-b": {
+    "legacy": [
+      "famous(x)\\to successful(x)",
+      "rich(x)\\to(famous(x)"
+    ],
+    "english": [
+      "famous(x)\\to successful(x)",
+      "rich(x)\\to(famous(x)"
+    ]
+  },
+  "Q-2015-MID-P03-statement-c": {
+    "legacy": [
+      "rich(x)\\to successful(x)",
+      "famous(x)\\to(rich(x)"
+    ],
+    "english": [
+      "rich(x)\\to successful(x)",
+      "famous(x)\\to(rich(x)"
+    ]
+  },
+  "Q-2015-MID-P03-equivalence": {
+    "legacy": [
+      "\\neg R\\lor\\neg F\\lor S",
+      "交换律",
+      "每个 x"
+    ],
+    "english": [
+      "\\neg R\\lor\\neg F\\lor S",
+      "commutativity",
+      "every $x$"
+    ]
+  },
+  "Q-2015-MID-P04-a": {
+    "legacy": [
+      "xy=ac/(bd)",
+      "bd\\ne0"
+    ],
+    "english": [
+      "xy=ac/(bd)",
+      "bd\\ne0"
+    ]
+  },
+  "Q-2015-MID-P04-b": {
+    "legacy": [
+      "x=a^5/b^5",
+      "逆否等价"
+    ],
+    "english": [
+      "x=a^5/b^5",
+      "contrapositive"
+    ]
+  },
+  "Q-2015-MID-P04-c": {
+    "legacy": [
+      "ad/(bc)",
+      "xy\\ne0",
+      "bc\\ne0"
+    ],
+    "english": [
+      "ad/(bc)",
+      "xy\\ne0",
+      "bc\\ne0"
+    ]
+  },
+  "Q-2015-MID-P06-a": {
+    "legacy": [
+      "10+26=36",
+      "26\\cdot36^7"
+    ],
+    "english": [
+      "10+26=36",
+      "26\\cdot36^7"
+    ]
+  },
+  "Q-2015-MID-P06-b": {
+    "legacy": [
+      "26\\cdot36^7-26^8",
+      "八位全为字母"
+    ],
+    "english": [
+      "26\\cdot36^7-26^8",
+      "all eight characters are letters"
+    ]
+  },
+  "Q-2015-MID-P06-c": {
+    "legacy": [
+      "7\\cdot10\\cdot26^7",
+      "两类互斥"
+    ],
+    "english": [
+      "7\\cdot10\\cdot26^7",
+      "excluded cases are disjoint"
+    ]
+  },
+  "Q-2015-MID-P06-d": {
+    "legacy": [
+      "\\binom72-6=15",
+      "26^6\\cdot10^2\\binom62"
+    ],
+    "english": [
+      "\\binom72-6=15",
+      "26^6\\cdot10^2\\binom62"
+    ]
+  },
+  "Q-2015-MID-P07-a": {
+    "legacy": [
+      "(kn)(kn-1)\\cdots1=(kn)!",
+      "每人恰收一张"
+    ],
+    "english": [
+      "(kn)(kn-1)\\cdots1=(kn)!",
+      "each member receives exactly one"
+    ]
+  },
+  "Q-2015-MID-P07-b": {
+    "legacy": [
+      "最小 k 张",
+      "n 个连续块",
+      "(k!)^n"
+    ],
+    "english": [
+      "smallest $k$ coupons",
+      "$n$ consecutive blocks",
+      "(k!)^n"
+    ]
+  },
+  "Q-2015-MID-P07-c": {
+    "legacy": [
+      "n(2k-1)+1",
+      "每个等级 $2k-1$"
+    ],
+    "english": [
+      "n(2k-1)+1",
+      "exactly $2k-1$ coupons to each rank"
+    ]
+  },
+  "Q-2015-MID-P08-a": {
+    "legacy": [
+      "g_1+g_2+g_3=6",
+      "\\binom{12}{3}=220"
+    ],
+    "english": [
+      "g_1+g_2+g_3=6",
+      "\\binom{12}{3}=220"
+    ]
+  },
+  "Q-2015-MID-P08-b": {
+    "legacy": [
+      "d=2,s=2",
+      "\\binom{12}{2}\\binom{10}{2}2^2=11880"
+    ],
+    "english": [
+      "d=2,s=2",
+      "\\binom{12}{2}\\binom{10}{2}2^2=11880"
+    ]
+  },
+  "Q-2015-MID-P08-c": {
+    "legacy": [
+      "\\binom{12}{6}2^6=59136",
+      "不再乘六的阶乘"
+    ],
+    "english": [
+      "\\binom{12}{6}2^6=59136",
+      "no factor of $6!$"
+    ]
+  },
+  "Q-2016-FINAL-P01-b": {
+    "legacy": [
+      "77/11=7",
+      "5\\cdot7=35"
+    ],
+    "english": [
+      "77/11=7",
+      "5\\cdot7=35"
+    ]
+  },
+  "Q-2016-FINAL-P02-a": {
+    "legacy": [
+      "a(n-m)",
+      "a^2E[(n-m)^2]=a^2v"
+    ],
+    "english": [
+      "a(n-m)",
+      "a^2E[(n-m)^2]=a^2v"
+    ]
+  },
+  "Q-2016-FINAL-P02-b": {
+    "legacy": [
+      "f(n^2)=an^2+b",
+      "a(v+m^2)+b"
+    ],
+    "english": [
+      "f(n^2)=an^2+b",
+      "a(v+m^2)+b"
+    ]
+  },
+  "Q-2016-FINAL-P02-c": {
+    "legacy": [
+      "a^2n^2+2abn+b^2",
+      "a^2(v+m^2)+2abm+b^2"
+    ],
+    "english": [
+      "a^2n^2+2abn+b^2",
+      "a^2(v+m^2)+2abm+b^2"
+    ]
+  },
+  "Q-2016-FINAL-P02-d": {
+    "legacy": [
+      "E(np)=m^2",
+      "a^2m^2+abm+abm+b^2=(am+b)^2"
+    ],
+    "english": [
+      "E(np)=m^2",
+      "a^2m^2+abm+abm+b^2=(am+b)^2"
+    ]
+  },
+  "Q-2016-FINAL-P03-a-1": {
+    "legacy": [
+      "P(A_1\\mid F)=1/3",
+      "(1/2)(1/3)+(1/2)(1)=2/3"
+    ],
+    "english": [
+      "P(A_1\\mid F)=1/3",
+      "(1/2)(1/3)+(1/2)(1)=2/3"
+    ]
+  },
+  "Q-2016-FINAL-P03-a-2": {
+    "legacy": [
+      "P(A_2)=(1/2)(1/3)+(1/2)(1)=2/3",
+      "未条件于第一掷"
+    ],
+    "english": [
+      "P(A_2)=(1/2)(1/3)+(1/2)(1)=2/3",
+      "not conditioned on the first roll"
+    ]
+  },
+  "Q-2016-FINAL-P03-e": {
+    "legacy": [
+      "0\\le t\\le1/3",
+      "\\frac12t+\\frac12",
+      "1/2>4/9",
+      "没有借用"
+    ],
+    "english": [
+      "0\\le t\\le1/3",
+      "\\frac12t+\\frac12",
+      "1/2>4/9",
+      "does not borrow"
+    ]
+  },
+  "Q-2016-FINAL-P04-a": {
+    "legacy": [
+      "1161=1024+128+8+1",
+      "302\\cdot36\\equiv36"
+    ],
+    "english": [
+      "1161=1024+128+8+1",
+      "302\\cdot36\\equiv36"
+    ]
+  },
+  "Q-2016-FINAL-P04-b-i": {
+    "legacy": [
+      "3,243,554",
+      "72+26\\equiv1\\pmod{97}",
+      "左零右一"
+    ],
+    "english": [
+      "3,243,554",
+      "72+26\\equiv1\\pmod{97}",
+      "left side is $0$ and the right side is $1$"
+    ]
+  },
+  "Q-2016-FINAL-P04-b-ii": {
+    "legacy": [
+      "r=3(7\\cdot21^{70}-24q)",
+      "余数45"
+    ],
+    "english": [
+      "r=3(7\\cdot21^{70}-24q)",
+      "remainder 45"
+    ]
+  },
+  "Q-2016-FINAL-P05-a-raymond": {
+    "legacy": [
+      "31\\cdot7-216",
+      "d_R=31"
+    ],
+    "english": [
+      "31\\cdot7-216",
+      "d_R=31"
+    ]
+  },
+  "Q-2016-FINAL-P05-a-kenneth": {
+    "legacy": [
+      "37\\cdot13-3\\cdot160",
+      "d_K=37"
+    ],
+    "english": [
+      "37\\cdot13-3\\cdot160",
+      "d_K=37"
+    ]
+  },
+  "Q-2016-FINAL-P05-b": {
+    "legacy": [
+      "(7,247)",
+      "77\\cdot20\\equiv58\\pmod{247}"
+    ],
+    "english": [
+      "(7,247)",
+      "77\\cdot20\\equiv58\\pmod{247}"
+    ]
+  },
+  "Q-2016-FINAL-P06-a": {
+    "legacy": [
+      "x=733+6930k",
+      "10t\\equiv0\\pmod7",
+      "唯一解733"
+    ],
+    "english": [
+      "x=733+6930k",
+      "10t\\equiv0\\pmod7",
+      "only solution is $733$"
+    ]
+  },
+  "Q-2016-FINAL-P06-b": {
+    "legacy": [
+      "x=447693+988027k",
+      "752、746、740"
+    ],
+    "english": [
+      "x=447693+988027k",
+      "$752,746,740$"
+    ]
+  },
+  "Q-2016-FINAL-P07-a-recurrence": {
+    "legacy": [
+      "T(1)=1",
+      "T(n)=2T(n-1)+1",
+      "三类互斥穷尽"
+    ],
+    "english": [
+      "T(1)=1",
+      "T(n)=2T(n-1)+1",
+      "disjoint and exhaustive"
+    ]
+  },
+  "Q-2016-FINAL-P07-a-proof": {
+    "legacy": [
+      "基例n=1",
+      "删掉新人形成旧非空委员会",
+      "2T(n-1)+1"
+    ],
+    "english": [
+      "Base case: for one person",
+      "Removing the new person gives an old nonempty committee",
+      "2T(n-1)+1"
+    ]
+  },
+  "Q-2016-FINAL-P07-b": {
+    "legacy": [
+      "2^jT(n-j)+\\sum_{i=0}^{j-1}2^i",
+      "2^{n-1}+(2^{n-1}-1)=2^n-1"
+    ],
+    "english": [
+      "2^jT(n-j)+\\sum_{i=0}^{j-1}2^i",
+      "2^{n-1}+(2^{n-1}-1)=2^n-1"
+    ]
+  },
+  "Q-2016-FINAL-P07-c": {
+    "legacy": [
+      "T(1)=1=2^1-1",
+      "2^n-2+1=2^n-1"
+    ],
+    "english": [
+      "T(1)=1=2^1-1",
+      "2^n-2+1=2^n-1"
+    ]
+  },
+  "Q-2016-MID-P01-a": {
+    "legacy": [
+      "26+10=36",
+      "=36^7"
+    ],
+    "english": [
+      "26+10=36",
+      "=36^7"
+    ]
+  },
+  "Q-2016-MID-P01-b": {
+    "legacy": [
+      "36!/29!",
+      "\\binom{36}{7}7!"
+    ],
+    "english": [
+      "36!/29!",
+      "\\binom{36}{7}7!"
+    ]
+  },
+  "Q-2016-MID-P01-c": {
+    "legacy": [
+      "始终有35种",
+      "10\\cdot35^6"
+    ],
+    "english": [
+      "always 35 choices",
+      "10\\cdot35^6"
+    ]
+  },
+  "Q-2016-MID-P01-d": {
+    "legacy": [
+      "L-D-L-D-L-D-L",
+      "D-L-D-L-D-L-D",
+      "26^4 10^3+10^4 26^3"
+    ],
+    "english": [
+      "L-D-L-D-L-D-L",
+      "D-L-D-L-D-L-D",
+      "26^4 10^3+10^4 26^3"
+    ]
+  },
+  "Q-2016-MID-P02-a": {
+    "legacy": [
+      "\\binom{300}{4}\\binom{500}{10}\\binom{600}{10}\\binom{10000}{40}",
+      "邀请顺序不区分"
+    ],
+    "english": [
+      "\\binom{300}{4}\\binom{500}{10}\\binom{600}{10}\\binom{10000}{40}",
+      "no invitation ordering"
+    ]
+  },
+  "Q-2016-MID-P02-b": {
+    "legacy": [
+      "\\binom{500}{9}\\binom{599}{10}",
+      "已包含该生以研究生身份"
+    ],
+    "english": [
+      "\\binom{500}{9}\\binom{599}{10}",
+      "already includes that person as a postgraduate"
+    ]
+  },
+  "Q-2016-MID-P03-a": {
+    "legacy": [
+      "\\binom nk k",
+      "n\\binom{n-1}{k-1}",
+      "可以除以k"
+    ],
+    "english": [
+      "\\binom nk k",
+      "n\\binom{n-1}{k-1}",
+      "division by $k$ is legitimate"
+    ]
+  },
+  "Q-2016-MID-P03-b": {
+    "legacy": [
+      "n!/[k!(n-k)!]",
+      "0<k\\le n"
+    ],
+    "english": [
+      "n!/[k!(n-k)!]",
+      "0<k\\le n"
+    ]
+  },
+  "Q-2016-MID-P04-a": {
+    "legacy": [
+      "F,F,T,T,T,T,F,F",
+      "F,T,T,F,T,F,F,T",
+      "TTF"
+    ],
+    "english": [
+      "F,F,T,T,T,T,F,F",
+      "F,T,T,F,T,F,F,T",
+      "TTF"
+    ]
+  },
+  "Q-2016-MID-P04-b": {
+    "legacy": [
+      "(p\\land\\neg q)\\lor r",
+      "(p\\lor r)\\land(\\neg q\\lor r)"
+    ],
+    "english": [
+      "(p\\land\\neg q)\\lor r",
+      "(p\\lor r)\\land(\\neg q\\lor r)"
+    ]
+  },
+  "Q-2016-MID-P05-a": {
+    "legacy": [
+      "第一条越界边",
+      "n−1条不同线段",
+      "n=1"
+    ],
+    "english": [
+      "first edge leaving the highlighted set",
+      "$n-1$ distinct edges",
+      "n=1"
+    ]
+  },
+  "Q-2016-MID-P05-b": {
+    "legacy": [
+      "m<n",
+      "2n=2m<2n",
+      "每条线段恰有两个端点"
+    ],
+    "english": [
+      "m<n",
+      "2n=2m<2n",
+      "Each segment has exactly two endpoints"
+    ]
+  },
+  "Q-2016-MID-P06-a": {
+    "legacy": [
+      "若x奇，则q(x)假",
+      "反向假设(ii)",
+      "肯定前件"
+    ],
+    "english": [
+      "For odd $x$, $q(x)$ is false",
+      "Conversely, assume (ii)",
+      "modus ponens"
+    ]
+  },
+  "Q-2016-MID-P06-b": {
+    "legacy": [
+      "q(1)=F",
+      "q(1)\\land p(1)=F"
+    ],
+    "english": [
+      "q(1)=F",
+      "q(1)\\land p(1)=F"
+    ]
+  },
+  "Q-2016-MID-P06-c": {
+    "legacy": [
+      "F\\to T=T",
+      "取见证x=1",
+      "(i)为假"
+    ],
+    "english": [
+      "F\\to T=T",
+      "witness $x=1$",
+      "(i) is false"
+    ]
+  },
+  "Q-2016-MID-P06-d": {
+    "legacy": [
+      "q(u)\\land p(u)",
+      "合取消去",
+      "v∈E"
+    ],
+    "english": [
+      "q(u)\\land p(u)",
+      "conjunction elimination",
+      "v\\in E"
+    ]
+  },
+  "Q-2017-FINAL-P01": {
+    "legacy": [
+      "(4-j)^9",
+      "262144-78732+3072-4=186480",
+      "容斥"
+    ],
+    "english": [
+      "(4-j)^9",
+      "262144-78732+3072-4=186480",
+      "inclusion-exclusion"
+    ]
+  },
+  "Q-2017-FINAL-P02": {
+    "legacy": [
+      "\\log n^4=4\\log n",
+      "n(2/3)^n\\to0",
+      "10000,"
+    ],
+    "english": [
+      "\\log n^4=4\\log n",
+      "n(2/3)^n\\to0",
+      "10000,"
+    ]
+  },
+  "Q-2017-FINAL-P03-a": {
+    "legacy": [
+      "2^{n-1}",
+      "\\Theta(2^n)",
+      "常数计费"
+    ],
+    "english": [
+      "2^{n-1}",
+      "\\Theta(2^n)",
+      "constant cost per string"
+    ]
+  },
+  "Q-2017-FINAL-P03-b": {
+    "legacy": [
+      "1\\le i<j\\le n",
+      "\\binom n2=n(n-1)/2",
+      "O(n^2)"
+    ],
+    "english": [
+      "1\\le i<j\\le n",
+      "\\binom n2=n(n-1)/2",
+      "O(n^2)"
+    ]
+  },
+  "Q-2017-FINAL-P03-c": {
+    "legacy": [
+      "\\lfloor n_0/4^k\\rfloor",
+      "n_0/4^k<2",
+      "O(\\log n)"
+    ],
+    "english": [
+      "\\lfloor n_0/4^k\\rfloor",
+      "n_0/4^k<2",
+      "O(\\log n)"
+    ]
+  },
+  "Q-2017-FINAL-P04-a": {
+    "legacy": [
+      "360+240+144-120-72-48+24=528",
+      "529",
+      "不重复"
+    ],
+    "english": [
+      "360+240+144-120-72-48+24=528",
+      "529",
+      "without replacement"
+    ]
+  },
+  "Q-2017-FINAL-P04-b-algorithm": {
+    "legacy": [
+      "(a,b)\\leftarrow(b,a\\bmod b)",
+      "g=\\gcd(T,d)",
+      "d=0"
+    ],
+    "english": [
+      "(a,b)\\leftarrow(b,a\\bmod b)",
+      "g=\\gcd(T,d)",
+      "d=0"
+    ]
+  },
+  "Q-2017-FINAL-P04-b-time": {
+    "legacy": [
+      "a\\ge b+r>2r",
+      "2\\log_2T+O(1)",
+      "O(\\log T)"
+    ],
+    "english": [
+      "a\\ge b+r>2r",
+      "2\\log_2T+O(1)",
+      "O(\\log T)"
+    ]
+  },
+  "Q-2017-FINAL-P04-c": {
+    "legacy": [
+      "2^r\\le\\prod_{i=1}^r\\ell_i\\le T<n",
+      "\\lfloor\\log_2T\\rfloor+1=O(\\log n)",
+      "不是整除"
+    ],
+    "english": [
+      "2^r\\le\\prod_{i=1}^r\\ell_i\\le T<n",
+      "\\lfloor\\log_2T\\rfloor+1=O(\\log n)",
+      "not of $n$"
+    ]
+  },
+  "Q-2017-FINAL-P05-a": {
+    "legacy": [
+      "P(H)=(1/2)(4/5)+(1/2)(1/2)=13/20",
+      "(2/5)/(13/20)=8/13",
+      "不需要"
+    ],
+    "english": [
+      "P(H)=(1/2)(4/5)+(1/2)(1/2)=13/20",
+      "(2/5)/(13/20)=8/13",
+      "no assumption about later tosses is needed"
+    ]
+  },
+  "Q-2017-FINAL-P06-a": {
+    "legacy": [
+      "I_1=\\cdots=I_8=1",
+      "X=\\sum_{i=1}^8I_i=8"
+    ],
+    "english": [
+      "I_1=\\cdots=I_8=1",
+      "X=\\sum_{i=1}^8I_i=8"
+    ]
+  },
+  "Q-2017-FINAL-P06-b": {
+    "legacy": [
+      "q=2(1/2)^8=1/128",
+      "P(X=1)=8(1/128)(127/128)^7",
+      "不相交"
+    ],
+    "english": [
+      "q=2(1/2)^8=1/128",
+      "P(X=1)=8(1/128)(127/128)^7",
+      "disjoint"
+    ]
+  },
+  "Q-2017-FINAL-P06-c": {
+    "legacy": [
+      "2(1/2)^8=1/128",
+      "8/128=1/16",
+      "期望线性性"
+    ],
+    "english": [
+      "2(1/2)^8=1/128",
+      "8/128=1/16",
+      "linearity"
+    ]
+  },
+  "Q-2017-FINAL-P06-d": {
+    "legacy": [
+      "I_i^2=I_i",
+      "\\operatorname{Cov}(I_i,I_j)=0",
+      "\\frac{127}{2048}"
+    ],
+    "english": [
+      "I_i^2=I_i",
+      "\\operatorname{Cov}(I_i,I_j)=0",
+      "\\frac{127}{2048}"
+    ]
+  },
+  "Q-2017-FINAL-P08": {
+    "legacy": [
+      "18=7+7+4",
+      "19=7+4+4+4",
+      "20=5\\cdot4",
+      "21=3\\cdot7",
+      "k-3\\ge18"
+    ],
+    "english": [
+      "18=7+7+4",
+      "19=7+4+4+4",
+      "20=5\\cdot4",
+      "21=3\\cdot7",
+      "k-3\\ge18"
+    ]
+  },
+  "Q-2017-FINAL-P09": {
+    "legacy": [
+      "1+r>0",
+      "1+r(k+1)+kr^2",
+      "k\\ge0,r^2\\ge0"
+    ],
+    "english": [
+      "1+r>0",
+      "1+r(k+1)+kr^2",
+      "k\\ge0,r^2\\ge0"
+    ]
+  },
+  "Q-2017-FINAL-P10-a-first": {
+    "legacy": [
+      "(0,1),(1,1),(2,1)",
+      "\\{(0,0),(0,1),(1,1),(2,1)\\}"
+    ],
+    "english": [
+      "(0,1),(1,1),(2,1)",
+      "\\{(0,0),(0,1),(1,1),(2,1)\\}"
+    ]
+  },
+  "Q-2017-FINAL-P10-a-second": {
+    "legacy": [
+      "(0,2),(1,2),(2,2),(3,2),(4,2)",
+      "共九个",
+      "去重"
+    ],
+    "english": [
+      "(0,2),(1,2),(2,2),(3,2),(4,2)",
+      "nine distinct elements",
+      "remove duplicates"
+    ]
+  },
+  "Q-2017-FINAL-P10-b": {
+    "legacy": [
+      "0\\le2\\cdot0",
+      "j\\in\\{0,1,2\\}",
+      "a+j\\le2b+2=2(b+1)"
+    ],
+    "english": [
+      "0\\le2\\cdot0",
+      "j\\in\\{0,1,2\\}",
+      "a+j\\le2b+2=2(b+1)"
+    ]
+  },
+  "Q-2017-FINAL-P11-a-T1": {
+    "legacy": [
+      "至少两步",
+      "T(1)=2",
+      "同大小"
+    ],
+    "english": [
+      "at least two moves",
+      "T(1)=2",
+      "same size"
+    ]
+  },
+  "Q-2017-FINAL-P11-a-T2": {
+    "legacy": [
+      "T(2)\\le2+2+2=6",
+      "首次移动大盘前",
+      "T(2)=6"
+    ],
+    "english": [
+      "T(2)\\le2+2+2=6",
+      "before the first large disk moves",
+      "T(2)=6"
+    ]
+  },
+  "Q-2017-FINAL-P11-b": {
+    "legacy": [
+      "T(2)=6",
+      "6+2+6=14",
+      "T(3)=14"
+    ],
+    "english": [
+      "T(2)=6",
+      "6+2+6=14",
+      "T(3)=14"
+    ]
+  },
+  "Q-2017-FINAL-P11-c": {
+    "legacy": [
+      "首次之前和末次之后",
+      "T(n)=2T(n-1)+2",
+      "T(1)=2"
+    ],
+    "english": [
+      "before the first and after the last largest-disk move",
+      "T(n)=2T(n-1)+2",
+      "T(1)=2"
+    ]
+  },
+  "Q-2017-FINAL-P11-d": {
+    "legacy": [
+      "U(n)=T(n)+2",
+      "U(1)=4",
+      "T(n)=2^{n+1}-2",
+      "2(2^n-2)+2=2^{n+1}-2"
+    ],
+    "english": [
+      "U(n)=T(n)+2",
+      "U(1)=4",
+      "T(n)=2^{n+1}-2",
+      "2(2^n-2)+2=2^{n+1}-2"
+    ]
+  },
+  "Q-2017-FINAL-P13-a": {
+    "legacy": [
+      "K_1",
+      "另一部空",
+      "n=1,2",
+      "三角形"
+    ],
+    "english": [
+      "K_1",
+      "other part empty",
+      "n=1,2",
+      "triangle"
+    ]
+  },
+  "Q-2017-FINAL-P13-b": {
+    "legacy": [
+      "偶数编号蓝",
+      "闭合边",
+      "n\\ge4"
+    ],
+    "english": [
+      "even-numbered vertices are blue",
+      "closing edge",
+      "n\\ge4"
+    ]
+  },
+  "Q-2017-FINAL-P13-c": {
+    "legacy": [
+      "恰有两个奇度点",
+      "m+n",
+      "(m,n)=(1,1)",
+      "单边图"
+    ],
+    "english": [
+      "exactly two odd-degree vertices",
+      "m+n",
+      "(m,n)=(1,1)",
+      "single-edge graph"
+    ]
+  },
+  "Q-2017-FINAL-P14-a": {
+    "legacy": [
+      "\\{v_i,v_{i+1}\\}",
+      "1\\le i<n",
+      "n=1",
+      "n-1"
+    ],
+    "english": [
+      "\\{v_i,v_{i+1}\\}",
+      "1\\le i<n",
+      "n=1",
+      "n-1"
+    ]
+  },
+  "Q-2017-FINAL-P14-c": {
+    "legacy": [
+      "\\sum\\deg v=2k<2n",
+      "n-k>1",
+      "零条边",
+      "至少两个顶点"
+    ],
+    "english": [
+      "\\sum\\deg v=2k<2n",
+      "n-k>1",
+      "no edges",
+      "at least two vertices"
+    ]
+  },
+  "Q-2017-MID-P01-a": {
+    "legacy": [
+      "q\\land(p\\lor\\neg p)",
+      "T\\lor p=T"
+    ],
+    "english": [
+      "q\\land(p\\lor\\neg p)",
+      "T\\lor p=T"
+    ]
+  },
+  "Q-2017-MID-P01-b": {
+    "legacy": [
+      "p=T,q=F,r=F",
+      "F\\lor F\\lor F=F"
+    ],
+    "english": [
+      "p=T,q=F,r=F",
+      "F\\lor F\\lor F=F"
+    ]
+  },
+  "Q-2017-MID-P01-c": {
+    "legacy": [
+      "D=\\{a\\}",
+      "P(a)=T,Q(a)=F",
+      "T\\to F=F"
+    ],
+    "english": [
+      "D=\\{a\\}",
+      "P(a)=T,Q(a)=F",
+      "T\\to F=F"
+    ]
+  },
+  "Q-2017-MID-P01-d": {
+    "legacy": [
+      "y=0",
+      "x=\\sqrt2",
+      "x^2+y^2>4>2"
+    ],
+    "english": [
+      "y=0",
+      "x=\\sqrt2",
+      "x^2+y^2>4>2"
+    ]
+  },
+  "Q-2017-MID-P02-1": {
+    "legacy": [
+      "\\forall x(C(x)\\to K(x))",
+      "非儿童"
+    ],
+    "english": [
+      "\\forall x(C(x)\\to K(x))",
+      "nonchild"
+    ]
+  },
+  "Q-2017-MID-P02-2": {
+    "legacy": [
+      "\\forall x\\forall y((\\neg K(x)\\land N(x,y))\\to\\neg K(y))",
+      "不保证邻居存在"
+    ],
+    "english": [
+      "\\forall x\\forall y((\\neg K(x)\\land N(x,y))\\to\\neg K(y))",
+      "does not require a neighbour to exist"
+    ]
+  },
+  "Q-2017-MID-P02-3": {
+    "legacy": [
+      "\\forall x(\\neg L(x)\\to\\neg K(x))",
+      "\\forall x(K(x)\\to L(x))"
+    ],
+    "english": [
+      "\\forall x(\\neg L(x)\\to\\neg K(x))",
+      "\\forall x(K(x)\\to L(x))"
+    ]
+  },
+  "Q-2017-MID-P02-4": {
+    "legacy": [
+      "C(\\mathrm{Mencius})\\land\\exists x(N(x,\\mathrm{Mencius})\\land\\neg K(x))",
+      "同一个"
+    ],
+    "english": [
+      "C(\\mathrm{Mencius})\\land\\exists x(N(x,\\mathrm{Mencius})\\land\\neg K(x))",
+      "same witness"
+    ]
+  },
+  "Q-2017-MID-P03-a": {
+    "legacy": [
+      "y=c/d-a/b=(bc-ad)/(bd)",
+      "b\\ne0",
+      "d\\ne0"
+    ],
+    "english": [
+      "y=c/d-a/b=(bc-ad)/(bd)",
+      "b\\ne0",
+      "d\\ne0"
+    ]
+  },
+  "Q-2017-MID-P03-b": {
+    "legacy": [
+      "x^2=a^2/b^2",
+      "b^2\\ne0",
+      "逆否命题"
+    ],
+    "english": [
+      "x^2=a^2/b^2",
+      "b^2\\ne0",
+      "contrapositive"
+    ]
+  },
+  "Q-2017-MID-P04-a": {
+    "legacy": [
+      "a=1,b=3,c=5,m=2",
+      "b+c=8",
+      "1\\not\\equiv8\\pmod2"
+    ],
+    "english": [
+      "a=1,b=3,c=5,m=2",
+      "b+c=8",
+      "1\\not\\equiv8\\pmod2"
+    ]
+  },
+  "Q-2017-MID-P04-b": {
+    "legacy": [
+      "a-b=km",
+      "2a-2b=k(2m)",
+      "2m\\mid(2a-2b)"
+    ],
+    "english": [
+      "a-b=km",
+      "2a-2b=k(2m)",
+      "2m\\mid(2a-2b)"
+    ]
+  },
+  "Q-2017-MID-P05-a": {
+    "legacy": [
+      "221=15\\cdot14+11",
+      "4=3\\cdot1+1",
+      "\\gcd(15,221)=1"
+    ],
+    "english": [
+      "221=15\\cdot14+11",
+      "4=3\\cdot1+1",
+      "\\gcd(15,221)=1"
+    ]
+  },
+  "Q-2017-MID-P05-b": {
+    "legacy": [
+      "59\\cdot15-4\\cdot221",
+      "2\\cdot59=118",
+      "1770=8\\cdot221+2"
+    ],
+    "english": [
+      "59\\cdot15-4\\cdot221",
+      "2\\cdot59=118",
+      "1770=8\\cdot221+2"
+    ]
+  },
+  "Q-2017-MID-P06-a": {
+    "legacy": [
+      "10\\cdot9\\cdots1=10!",
+      "唯一"
+    ],
+    "english": [
+      "10\\cdot9\\cdots1=10!",
+      "unique"
+    ]
+  },
+  "Q-2017-MID-P06-b": {
+    "legacy": [
+      "2!\\cdot5!\\cdot5!=2(5!)^2",
+      "两个块"
+    ],
+    "english": [
+      "2!\\cdot5!\\cdot5!=2(5!)^2",
+      "two blocks"
+    ]
+  },
+  "Q-2017-MID-P06-c": {
+    "legacy": [
+      "5!",
+      "2^5",
+      "唯一缩块"
+    ],
+    "english": [
+      "5!",
+      "2^5",
+      "unique block decomposition"
+    ]
+  },
+  "Q-2017-MID-P06-d": {
+    "legacy": [
+      "2\\cdot9!",
+      "10!-9\\cdot8!\\cdot2",
+      "其余八人"
+    ],
+    "english": [
+      "2\\cdot9!",
+      "10!-9\\cdot8!\\cdot2",
+      "other eight people"
+    ]
+  },
+  "Q-2017-MID-P07": {
+    "legacy": [
+      "10\\cdot9\\cdot8=720",
+      "5\\cdot720=3600",
+      "3601"
+    ],
+    "english": [
+      "10\\cdot9\\cdot8=720",
+      "5\\cdot720=3600",
+      "3601"
+    ]
+  },
+  "Q-2017-MID-P08-a": {
+    "legacy": [
+      "\\binom{12}{7}",
+      "3^7(-1)^5",
+      "-\\binom{12}{7}3^7"
+    ],
+    "english": [
+      "\\binom{12}{7}",
+      "3^7(-1)^5",
+      "-\\binom{12}{7}3^7"
+    ]
+  },
+  "Q-2017-MID-P08-b": {
+    "legacy": [
+      "\\binom{15}{k}5^{15-k}8^ka^{15-k}b^k",
+      "(15-k,k)",
+      "16"
+    ],
+    "english": [
+      "\\binom{15}{k}5^{15-k}8^ka^{15-k}b^k",
+      "(15-k,k)",
+      "16"
+    ]
+  },
+  "Q-2017-MID-P09-a": {
+    "legacy": [
+      "\\binom62\\binom93=15\\cdot84=1260",
+      "无序"
+    ],
+    "english": [
+      "\\binom62\\binom93=15\\cdot84=1260",
+      "without ordering"
+    ]
+  },
+  "Q-2017-MID-P09-b": {
+    "legacy": [
+      "k=2,3,4,5",
+      "\\sum_{k=2}^{5}\\binom6k\\binom9{5-k}",
+      "1260+720+135+6=2121"
+    ],
+    "english": [
+      "k=2,3,4,5",
+      "\\sum_{k=2}^{5}\\binom6k\\binom9{5-k}",
+      "1260+720+135+6=2121"
+    ]
+  },
+  "Q-2017-MID-P10-a": {
+    "legacy": [
+      "A,B,C,D",
+      "4^{50}",
+      "允许空盒"
+    ],
+    "english": [
+      "A,B,C,D",
+      "4^{50}",
+      "empty boxes are allowed"
+    ]
+  },
+  "Q-2017-MID-P10-b": {
+    "legacy": [
+      "x_A+x_B+x_C+x_D=50",
+      "\\binom{53}{3}",
+      "一一对应"
+    ],
+    "english": [
+      "x_A+x_B+x_C+x_D=50",
+      "\\binom{53}{3}",
+      "one-to-one correspondence"
+    ]
+  },
+  "Q-2017-MID-P10-c": {
+    "legacy": [
+      "50-20=30",
+      "\\binom{33}{3}",
+      "5456",
+      "双射"
+    ],
+    "english": [
+      "50-20=30",
+      "\\binom{33}{3}",
+      "5456",
+      "bijection"
+    ]
+  },
+  "Q-2017-MID-P11": {
+    "legacy": [
+      "\\binom nk\\binom k1=\\binom n1\\binom{n-1}{k-1}",
+      "恰好一次",
+      "社长"
+    ],
+    "english": [
+      "\\binom nk\\binom k1=\\binom n1\\binom{n-1}{k-1}",
+      "exactly once",
+      "leader"
+    ]
+  },
+  "Q-2018-FINAL-P01-b": {
+    "legacy": [
+      "\\gcd(y,p)=1",
+      "z\\equiv-y^{-1}x\\pmod p",
+      "x-x=0"
+    ],
+    "english": [
+      "\\gcd(y,p)=1",
+      "z\\equiv-y^{-1}x\\pmod p",
+      "x-x=0"
+    ]
+  },
+  "Q-2018-FINAL-P02-a-E1": {
+    "legacy": [
+      "1\\times3",
+      "覆盖整列",
+      "E_1=1"
+    ],
+    "english": [
+      "1\\times3",
+      "covers the entire column",
+      "E_1=1"
+    ]
+  },
+  "Q-2018-FINAL-P02-a-E2": {
+    "legacy": [
+      "两列各自",
+      "六格",
+      "E_2=1"
+    ],
+    "english": [
+      "each of the two columns",
+      "six cells",
+      "E_2=1"
+    ]
+  },
+  "Q-2018-FINAL-P02-a-E3": {
+    "legacy": [
+      "全竖",
+      "全横",
+      "E_3=2"
+    ],
+    "english": [
+      "all vertical",
+      "all horizontal",
+      "E_3=2"
+    ]
+  },
+  "Q-2018-FINAL-P02-b": {
+    "legacy": [
+      "E_{n-1}",
+      "E_{n-3}",
+      "最右三列",
+      "一一对应"
+    ],
+    "english": [
+      "E_{n-1}",
+      "E_{n-3}",
+      "rightmost three columns",
+      "one-to-one correspondence"
+    ]
+  },
+  "Q-2018-FINAL-P02-c": {
+    "legacy": [
+      "E_1=F_1=1",
+      "E_2=F_2=1",
+      "E_3=F_3=2",
+      "F_{n-1}+F_{n-3}\\le F_{n-1}+F_{n-2}=F_n"
+    ],
+    "english": [
+      "E_1=F_1=1",
+      "E_2=F_2=1",
+      "E_3=F_3=2",
+      "F_{n-1}+F_{n-3}\\le F_{n-1}+F_{n-2}=F_n"
+    ]
+  },
+  "Q-2018-FINAL-P03-a": {
+    "legacy": [
+      "0=a-a\\in S",
+      "a(k+1)=ak-(-a)\\in S",
+      "-a(k+1)=(-ak)-a\\in S"
+    ],
+    "english": [
+      "0=a-a\\in S",
+      "a(k+1)=ak-(-a)\\in S",
+      "-a(k+1)=(-ak)-a\\in S"
+    ]
+  },
+  "Q-2018-FINAL-P03-b": {
+    "legacy": [
+      "390=2\\cdot156+78",
+      "78\\mathbb Z\\subseteq S",
+      "S\\subseteq78\\mathbb Z",
+      "m=78"
+    ],
+    "english": [
+      "390=2\\cdot156+78",
+      "78\\mathbb Z\\subseteq S",
+      "S\\subseteq78\\mathbb Z",
+      "m=78"
+    ]
+  },
+  "Q-2018-FINAL-P04-a": {
+    "legacy": [
+      "1+3k,2+3k,3+3k",
+      "1,2,3\\in X",
+      "\\{1,2,3\\}\\subseteq X"
+    ],
+    "english": [
+      "1+3k,2+3k,3+3k",
+      "1,2,3\\in X",
+      "\\{1,2,3\\}\\subseteq X"
+    ]
+  },
+  "Q-2018-FINAL-P04-b": {
+    "legacy": [
+      "\\dfrac{k+1}{k+1-m}",
+      "k\\ge m",
+      "f(m)=\\binom mm=1"
+    ],
+    "english": [
+      "\\dfrac{k+1}{k+1-m}",
+      "k\\ge m",
+      "f(m)=\\binom mm=1"
+    ]
+  },
+  "Q-2018-FINAL-P04-c-basis": {
+    "legacy": [
+      "K_1",
+      "单顶点无边图",
+      "K_2,K_3,\\ldots"
+    ],
+    "english": [
+      "K_1",
+      "single vertex with no edges",
+      "K_2,K_3,\\ldots"
+    ]
+  },
+  "Q-2018-FINAL-P04-c-edges": {
+    "legacy": [
+      "E'=E\\cup\\{\\{v_i,v_{n+1}\\}:1\\le i\\le n\\}",
+      "n$ 条边",
+      "不加自环"
+    ],
+    "english": [
+      "E'=E\\cup\\{\\{v_i,v_{n+1}\\}:1\\le i\\le n\\}",
+      "exactly $n$ new edges",
+      "no self-loop"
+    ]
+  },
+  "Q-2018-FINAL-P05-a": {
+    "legacy": [
+      "另一部空",
+      "n=1,2",
+      "评分说明明确接受"
+    ],
+    "english": [
+      "other part empty",
+      "n=1,2",
+      "the grading note explicitly accepts"
+    ]
+  },
+  "Q-2018-FINAL-P05-b": {
+    "legacy": [
+      "奇度点恰两个",
+      "m+n",
+      "(m,n)=(1,1)",
+      "单边"
+    ],
+    "english": [
+      "exactly two odd-degree vertices",
+      "m+n",
+      "(m,n)=(1,1)",
+      "single edge"
+    ]
+  },
+  "Q-2018-FINAL-P06-a": {
+    "legacy": [
+      "12,23,34,41",
+      "13$ 或 $24",
+      "每点度数恰二"
+    ],
+    "english": [
+      "12,23,34,41",
+      "edges $13$ or $24$",
+      "every vertex has degree two"
+    ]
+  },
+  "Q-2018-FINAL-P06-b": {
+    "legacy": [
+      "选 $5$",
+      "C_4",
+      "所有 $k+1$",
+      "只覆盖"
+    ],
+    "english": [
+      "Choose $5$",
+      "C_4",
+      "all $k+1$-vertex graphs",
+      "covers only"
+    ]
+  },
+  "Q-2018-FINAL-P08-a": {
+    "legacy": [
+      "X=\\sum_{i=1}^m I_i",
+      "E(I_i)=1/n",
+      "m/n",
+      "不需球之间独立"
+    ],
+    "english": [
+      "X=\\sum_{i=1}^m I_i",
+      "E(I_i)=1/n",
+      "m/n",
+      "independence between balls is not required"
+    ]
+  },
+  "Q-2018-FINAL-P09-a": {
+    "legacy": [
+      "35+14+10-7-5-2+1=46",
+      "70-46=24",
+      "70(1-1/2)(1-1/5)(1-1/7)=24"
+    ],
+    "english": [
+      "35+14+10-7-5-2+1=46",
+      "70-46=24",
+      "70(1-1/2)(1-1/5)(1-1/7)=24"
+    ]
+  },
+  "Q-2018-FINAL-P10-a": {
+    "legacy": [
+      "C_{11}=(-1)3",
+      "C_{23}=5\\cdot2+0\\cdot4=10",
+      "\\begin{pmatrix}-3&0&2\\\\15&5&10\\end{pmatrix}"
+    ],
+    "english": [
+      "C_{11}=(-1)3",
+      "C_{23}=5\\cdot2+0\\cdot4=10",
+      "\\begin{pmatrix}-3&0&2\\\\15&5&10\\end{pmatrix}"
+    ]
+  },
+  "Q-2018-FINAL-P10-b": {
+    "legacy": [
+      "n\\cdot n\\cdot n=n^3",
+      "\\Theta(n^3)",
+      "三重循环"
+    ],
+    "english": [
+      "n\\cdot n\\cdot n=n^3",
+      "\\Theta(n^3)",
+      "three nested loops"
+    ]
+  },
+  "Q-2018-FINAL-P10-c": {
+    "legacy": [
+      "nm",
+      "nmp",
+      "A[i,k]\\cdot B[k,j]"
+    ],
+    "english": [
+      "nm",
+      "nmp",
+      "A[i,k]\\cdot B[k,j]"
+    ]
+  },
+  "Q-2018-FINAL-P10-d": {
+    "legacy": [
+      "75000",
+      "10000",
+      "12000",
+      "24000",
+      "36000<85000",
+      "M_1(M_2M_3)"
+    ],
+    "english": [
+      "75000",
+      "10000",
+      "12000",
+      "24000",
+      "36000<85000",
+      "M_1(M_2M_3)"
+    ]
+  },
+  "Q-2018-FINAL-P11-a": {
+    "legacy": [
+      "五个右步与三个上步",
+      "\\binom85=56",
+      "一一对应"
+    ],
+    "english": [
+      "five right steps and three up steps",
+      "\\binom85=56",
+      "one-to-one correspondence"
+    ]
+  },
+  "Q-2018-FINAL-P11-b": {
+    "legacy": [
+      "\\binom42=6",
+      "\\binom32=3",
+      "56-18=38",
+      "唯一分成"
+    ],
+    "english": [
+      "\\binom42=6",
+      "\\binom32=3",
+      "56-18=38",
+      "splits uniquely"
+    ]
+  },
+  "Q-2018-FINAL-P12-a": {
+    "legacy": [
+      "N=\\max(N_1,N_2)",
+      "(a_1+a_2)g(x)\\le f_1(x)+f_2(x)\\le(b_1+b_2)g(x)"
+    ],
+    "english": [
+      "N=\\max(N_1,N_2)",
+      "(a_1+a_2)g(x)\\le f_1(x)+f_2(x)\\le(b_1+b_2)g(x)"
+    ]
+  },
+  "Q-2018-FINAL-P12-b": {
+    "legacy": [
+      "g(x)=2^x",
+      "f(x)=2\\cdot2^x",
+      "2^{2^x}\\to\\infty",
+      "处处正"
+    ],
+    "english": [
+      "g(x)=2^x",
+      "f(x)=2\\cdot2^x",
+      "2^{2^x}\\to\\infty",
+      "positive everywhere"
+    ]
+  },
+  "Q-2018-MID-P01-a": {
+    "legacy": [
+      "(p\\leftrightarrow\\neg q)\\land(q\\leftrightarrow(\\neg p\\land\\neg q))",
+      "(p\\land\\neg q)\\lor(\\neg p\\land q)"
+    ],
+    "english": [
+      "(p\\leftrightarrow\\neg q)\\land(q\\leftrightarrow(\\neg p\\land\\neg q))",
+      "(p\\land\\neg q)\\lor(\\neg p\\land q)"
+    ]
+  },
+  "Q-2018-MID-P01-b": {
+    "legacy": [
+      "q=F",
+      "p=T,q=F",
+      "唯一解"
+    ],
+    "english": [
+      "q=F",
+      "p=T,q=F",
+      "only solution"
+    ]
+  },
+  "Q-2018-MID-P02-a": {
+    "legacy": [
+      "q\\land(p\\lor\\neg p)=q",
+      "T\\lor r=T"
+    ],
+    "english": [
+      "q\\land(p\\lor\\neg p)=q",
+      "T\\lor r=T"
+    ]
+  },
+  "Q-2018-MID-P02-b": {
+    "legacy": [
+      "p=F,q=T,r=T",
+      "T\\to F=F"
+    ],
+    "english": [
+      "p=F,q=T,r=T",
+      "T\\to F=F"
+    ]
+  },
+  "Q-2018-MID-P02-c": {
+    "legacy": [
+      "D=\\{a\\}",
+      "P(a)=T,Q(a)=F",
+      "T\\to F=F"
+    ],
+    "english": [
+      "D=\\{a\\}",
+      "P(a)=T,Q(a)=F",
+      "T\\to F=F"
+    ]
+  },
+  "Q-2018-MID-P02-d": {
+    "legacy": [
+      "x=0",
+      "y=4",
+      "x^2+16\\ge16>10"
+    ],
+    "english": [
+      "x=0",
+      "y=4",
+      "x^2+16\\ge16>10"
+    ]
+  },
+  "Q-2018-MID-P03-a": {
+    "legacy": [
+      "P=\\{n+1,n+2,\\ldots,2n\\}",
+      "b\\ge2a\\ge2(n+1)>2n"
+    ],
+    "english": [
+      "P=\\{n+1,n+2,\\ldots,2n\\}",
+      "b\\ge2a\\ge2(n+1)>2n"
+    ]
+  },
+  "Q-2018-MID-P03-b": {
+    "legacy": [
+      "p_i2^{k_j-k_i}",
+      "p_i\\mid p_j",
+      "不是等号"
+    ],
+    "english": [
+      "p_i2^{k_j-k_i}",
+      "p_i\\mid p_j",
+      "not equality"
+    ]
+  },
+  "Q-2018-MID-P03-c": {
+    "legacy": [
+      "1,3,\\ldots,2n-1",
+      "n+1",
+      "|P'|\\le n"
+    ],
+    "english": [
+      "1,3,\\ldots,2n-1",
+      "n+1",
+      "|P'|\\le n"
+    ]
+  },
+  "Q-2018-MID-P04-a-contrapositive": {
+    "legacy": [
+      "\\neg B\\to\\neg A",
+      "|T|<|S|",
+      "不是单射"
+    ],
+    "english": [
+      "\\neg B\\to\\neg A",
+      "|T|<|S|",
+      "not injective"
+    ]
+  },
+  "Q-2018-MID-P04-a-proof": {
+    "legacy": [
+      "|S|>|T|",
+      "a\\ne b",
+      "f(a)=f(b)"
+    ],
+    "english": [
+      "|S|>|T|",
+      "a\\ne b",
+      "f(a)=f(b)"
+    ]
+  },
+  "Q-2018-MID-P04-b": {
+    "legacy": [
+      "S=T=\\{a,b\\}",
+      "U=\\{0\\}",
+      "g(f(a))=0=g(f(b))"
+    ],
+    "english": [
+      "S=T=\\{a,b\\}",
+      "U=\\{0\\}",
+      "g(f(a))=0=g(f(b))"
+    ]
+  },
+  "Q-2018-MID-P04-c": {
+    "legacy": [
+      "|T|\\le2^n-1<2^{n+1}-1=|F_n|",
+      "|T|\\ge|F_n|",
+      "解码器"
+    ],
+    "english": [
+      "|T|\\le2^n-1<2^{n+1}-1=|F_n|",
+      "|T|\\ge|F_n|",
+      "decoder"
+    ]
+  },
+  "Q-2018-MID-P05-a": {
+    "legacy": [
+      "sy+tz=1",
+      "sxy+tzx=x",
+      "z\\mid(sxy+tzx)=x"
+    ],
+    "english": [
+      "sy+tz=1",
+      "sxy+tzx=x",
+      "z\\mid(sxy+tzx)=x"
+    ]
+  },
+  "Q-2018-MID-P05-b": {
+    "legacy": [
+      "p\\nmid x",
+      "\\gcd(p,x)=1",
+      "p\\mid y"
+    ],
+    "english": [
+      "p\\nmid x",
+      "\\gcd(p,x)=1",
+      "p\\mid y"
+    ]
+  },
+  "Q-2018-MID-P06-a": {
+    "legacy": [
+      "648=2^3\\cdot3^4",
+      "e=11",
+      "互素"
+    ],
+    "english": [
+      "648=2^3\\cdot3^4",
+      "e=11",
+      "coprime"
+    ]
+  },
+  "Q-2018-MID-P06-b": {
+    "legacy": [
+      "648=58\\cdot11+10",
+      "59\\cdot11-648",
+      "649=648+1"
+    ],
+    "english": [
+      "648=58\\cdot11+10",
+      "59\\cdot11-648",
+      "649=648+1"
+    ]
+  },
+  "Q-2018-MID-P06-c": {
+    "legacy": [
+      "11=8+2+1",
+      "6561\\equiv234\\pmod{703}",
+      "8\\cdot703+694",
+      "694^{59}\\bmod703=3"
+    ],
+    "english": [
+      "11=8+2+1",
+      "6561\\equiv234\\pmod{703}",
+      "8\\cdot703+694",
+      "694^{59}\\bmod703=3"
+    ]
+  },
+  "Q-2018-MID-P07-a": {
+    "legacy": [
+      "20\\cdot19\\cdot18\\cdot17\\cdot16",
+      "\\binom{20}{5}=15504"
+    ],
+    "english": [
+      "20\\cdot19\\cdot18\\cdot17\\cdot16",
+      "\\binom{20}{5}=15504"
+    ]
+  },
+  "Q-2018-MID-P07-b": {
+    "legacy": [
+      "\\binom{11}{5}=462",
+      "\\binom95=126",
+      "15504-462-126=14916"
+    ],
+    "english": [
+      "\\binom{11}{5}=462",
+      "\\binom95=126",
+      "15504-462-126=14916"
+    ]
+  },
+  "Q-2018-MID-P07-c": {
+    "legacy": [
+      "w=3,4,5",
+      "4620+1386+126=6132",
+      "w\\le2"
+    ],
+    "english": [
+      "w=3,4,5",
+      "4620+1386+126=6132",
+      "w\\le2"
+    ]
+  },
+  "Q-2018-MID-P08-a": {
+    "legacy": [
+      "10^5=100000",
+      "首位为零"
+    ],
+    "english": [
+      "10^5=100000",
+      "leading zero"
+    ]
+  },
+  "Q-2018-MID-P08-b": {
+    "legacy": [
+      "10\\cdot9^4",
+      "第三盘再用",
+      "只禁"
+    ],
+    "english": [
+      "10\\cdot9^4",
+      "reuse the first digit on the third dial",
+      "only the preceding digit is forbidden"
+    ]
+  },
+  "Q-2018-MID-P08-c": {
+    "legacy": [
+      "x_0+\\cdots+x_9=5",
+      "\\binom{14}{5}=2002",
+      "九条隔板"
+    ],
+    "english": [
+      "x_0+\\cdots+x_9=5",
+      "\\binom{14}{5}=2002",
+      "nine bars"
+    ]
+  },
+  "Q-2019-FINAL-P01-a": {
+    "legacy": [
+      "y=2x",
+      "2x-y=0\\le1",
+      "\\forall x\\exists y(2x-y\\le1)"
+    ],
+    "english": [
+      "y=2x",
+      "2x-y=0\\le1",
+      "\\forall x\\exists y(2x-y\\le1)"
+    ]
+  },
+  "Q-2019-FINAL-P01-b": {
+    "legacy": [
+      "x=y=0",
+      "(x-y)^2=0",
+      "0>0"
+    ],
+    "english": [
+      "x=y=0",
+      "(x-y)^2=0",
+      "0>0"
+    ]
+  },
+  "Q-2019-FINAL-P01-c": {
+    "legacy": [
+      "y=2x",
+      "2x-2x=0\\le1",
+      "\\forall x\\exists y"
+    ],
+    "english": [
+      "y=2x",
+      "2x-2x=0\\le1",
+      "\\forall x\\exists y"
+    ]
+  },
+  "Q-2019-FINAL-P01-d": {
+    "legacy": [
+      "x=0",
+      "z=-y",
+      "0+y-y=0"
+    ],
+    "english": [
+      "x=0",
+      "z=-y",
+      "0+y-y=0"
+    ]
+  },
+  "Q-2019-FINAL-P02": {
+    "legacy": [
+      "M_1=70,M_2=45,M_3=126",
+      "3298\\equiv148\\pmod{630}",
+      "148=16\\cdot9+4=10\\cdot14+8=29\\cdot5+3"
+    ],
+    "english": [
+      "M_1=70,M_2=45,M_3=126",
+      "3298\\equiv148\\pmod{630}",
+      "148=16\\cdot9+4=10\\cdot14+8=29\\cdot5+3"
+    ]
+  },
+  "Q-2019-FINAL-P04-a": {
+    "legacy": [
+      "2\\log t=o(\\sqrt t)",
+      "(\\log n)^{1001}=o(n^{0.0001})",
+      "(1.0001/n)^n\\to0"
+    ],
+    "english": [
+      "2\\log t=o(\\sqrt t)",
+      "(\\log n)^{1001}=o(n^{0.0001})",
+      "(1.0001/n)^n\\to0"
+    ]
+  },
+  "Q-2019-FINAL-P04-b": {
+    "legacy": [
+      "n^{2\\lfloor n/2\\rfloor+1}",
+      "n^{2\\lceil n/2\\rceil}",
+      "f(n)/g(n)=n",
+      "g(n)/f(n)=n"
+    ],
+    "english": [
+      "n^{2\\lfloor n/2\\rfloor+1}",
+      "n^{2\\lceil n/2\\rceil}",
+      "f(n)/g(n)=n",
+      "g(n)/f(n)=n"
+    ]
+  },
+  "Q-2019-FINAL-P05": {
+    "legacy": [
+      "\\binom ni",
+      "\\binom{n-i}j",
+      "0\\le j\\le n-i",
+      "允许空组"
+    ],
+    "english": [
+      "\\binom ni",
+      "\\binom{n-i}j",
+      "0\\le j\\le n-i",
+      "empty groups are allowed"
+    ]
+  },
+  "Q-2019-FINAL-P06-a": {
+    "legacy": [
+      "\\operatorname{ones}(\\lambda)=0",
+      "\\operatorname{ones}(wx)=\\operatorname{ones}(w)+x",
+      "唯一分解"
+    ],
+    "english": [
+      "\\operatorname{ones}(\\lambda)=0",
+      "\\operatorname{ones}(wx)=\\operatorname{ones}(w)+x",
+      "unique decomposition"
+    ]
+  },
+  "Q-2019-FINAL-P06-b": {
+    "legacy": [
+      "\\operatorname{ones}(s\\lambda)",
+      "\\operatorname{ones}((sw)x)",
+      "\\operatorname{ones}(s)+\\operatorname{ones}(wx)"
+    ],
+    "english": [
+      "\\operatorname{ones}(s\\lambda)",
+      "\\operatorname{ones}((sw)x)",
+      "\\operatorname{ones}(s)+\\operatorname{ones}(wx)"
+    ]
+  },
+  "Q-2019-FINAL-P07": {
+    "legacy": [
+      "(0,0),(0,1),(1,0),(1,1)",
+      "a\\equiv c\\pmod2",
+      "((a+c)/2,(b+d)/2)"
+    ],
+    "english": [
+      "(0,0),(0,1),(1,0),(1,1)",
+      "a\\equiv c\\pmod2",
+      "((a+c)/2,(b+d)/2)"
+    ]
+  },
+  "Q-2019-FINAL-P08-a": {
+    "legacy": [
+      "26^6-25^6",
+      "25^6",
+      "至少出现一次"
+    ],
+    "english": [
+      "26^6-25^6",
+      "25^6",
+      "at least one occurrence"
+    ]
+  },
+  "Q-2019-FINAL-P08-b": {
+    "legacy": [
+      "|A\\cap B|=24^6",
+      "26^6-2\\cdot25^6+24^6"
+    ],
+    "english": [
+      "|A\\cap B|=24^6",
+      "26^6-2\\cdot25^6+24^6"
+    ]
+  },
+  "Q-2019-FINAL-P08-c": {
+    "legacy": [
+      "1,2,3,4,5",
+      "P(24,4)",
+      "24\\cdot23\\cdot22\\cdot21=255024",
+      "1275120"
+    ],
+    "english": [
+      "1,2,3,4,5",
+      "P(24,4)",
+      "24\\cdot23\\cdot22\\cdot21=255024",
+      "1275120"
+    ]
+  },
+  "Q-2019-FINAL-P08-d": {
+    "legacy": [
+      "\\binom62=15",
+      "15\\cdot255024=3825360",
+      "可以不相邻"
+    ],
+    "english": [
+      "\\binom62=15",
+      "15\\cdot255024=3825360",
+      "need not be adjacent"
+    ]
+  },
+  "Q-2019-FINAL-P09-a": {
+    "legacy": [
+      "\\binom{40}{10}\\binom{30}{10}\\binom{20}{10}",
+      "\\frac{40!}{(10!)^4}"
+    ],
+    "english": [
+      "\\binom{40}{10}\\binom{30}{10}\\binom{20}{10}",
+      "\\frac{40!}{(10!)^4}"
+    ]
+  },
+  "Q-2019-FINAL-P09-b": {
+    "legacy": [
+      "4!",
+      "彼此不同",
+      "\\frac{40!}{(10!)^4\\,4!}"
+    ],
+    "english": [
+      "4!",
+      "pairwise distinct",
+      "\\frac{40!}{(10!)^4\\,4!}"
+    ]
+  },
+  "Q-2019-FINAL-P10-a": {
+    "legacy": [
+      "\\binom{22}{2}=22\\cdot21/2=231",
+      "隔板可相邻"
+    ],
+    "english": [
+      "\\binom{22}{2}=22\\cdot21/2=231",
+      "bars may be adjacent"
+    ]
+  },
+  "Q-2019-FINAL-P10-b": {
+    "legacy": [
+      "y_1=x_1-9",
+      "y_1+x_2+x_3=11",
+      "\\binom{13}{2}=78"
+    ],
+    "english": [
+      "y_1=x_1-9",
+      "y_1+x_2+x_3=11",
+      "\\binom{13}{2}=78"
+    ]
+  },
+  "Q-2019-FINAL-P10-c": {
+    "legacy": [
+      "y_1+y_2+x_3=20-18=2",
+      "\\binom42=6",
+      "共六种"
+    ],
+    "english": [
+      "y_1+y_2+x_3=20-18=2",
+      "\\binom42=6",
+      "six possibilities"
+    ]
+  },
+  "Q-2019-FINAL-P10-d": {
+    "legacy": [
+      "27>20",
+      "231-3\\cdot78+3\\cdot6=15",
+      "y_1+y_2+y_3=4"
+    ],
+    "english": [
+      "27>20",
+      "231-3\\cdot78+3\\cdot6=15",
+      "y_1+y_2+y_3=4"
+    ]
+  },
+  "Q-2019-FINAL-P11-a-W1": {
+    "legacy": [
+      "P(M=2)=0.5(1/2)+0.3(0)+0.2(1)=0.45",
+      "0.25/0.45=5/9"
+    ],
+    "english": [
+      "P(M=2)=0.5(1/2)+0.3(0)+0.2(1)=0.45",
+      "0.25/0.45=5/9"
+    ]
+  },
+  "Q-2019-FINAL-P11-a-W3": {
+    "legacy": [
+      "P(W=3,M=2)=0.2",
+      "0.2+0.5/2=0.45",
+      "0.2/0.45=4/9"
+    ],
+    "english": [
+      "P(W=3,M=2)=0.2",
+      "0.2+0.5/2=0.45",
+      "0.2/0.45=4/9"
+    ]
+  },
+  "Q-2019-FINAL-P11-a-decision": {
+    "legacy": [
+      "0.25",
+      "0.45",
+      "5/9>4/9",
+      "保留门一"
+    ],
+    "english": [
+      "0.25",
+      "0.45",
+      "5/9>4/9",
+      "keep door one"
+    ]
+  },
+  "Q-2019-FINAL-P11-b-W1": {
+    "legacy": [
+      "0.5(1/2)+0.3(1)+0.2(0)=0.55",
+      "0.25/0.55=5/11"
+    ],
+    "english": [
+      "0.5(1/2)+0.3(1)+0.2(0)=0.55",
+      "0.25/0.55=5/11"
+    ]
+  },
+  "Q-2019-FINAL-P11-b-W2": {
+    "legacy": [
+      "P(W=2,M=3)=0.3",
+      "0.3+0.25=0.55",
+      "0.3/0.55=6/11"
+    ],
+    "english": [
+      "P(W=2,M=3)=0.3",
+      "0.3+0.25=0.55",
+      "0.3/0.55=6/11"
+    ]
+  },
+  "Q-2019-FINAL-P11-b-decision": {
+    "legacy": [
+      "(0.5/2)/0.55=5/11",
+      "0.3/0.55=6/11",
+      "6/11>5/11"
+    ],
+    "english": [
+      "(0.5/2)/0.55=5/11",
+      "0.3/0.55=6/11",
+      "6/11>5/11"
+    ]
+  },
+  "Q-2019-FINAL-P11-c": {
+    "legacy": [
+      "0.25+0.3=0.55=11/20",
+      "0.45\\cdot(5/9)+0.55\\cdot(6/11)=0.55"
+    ],
+    "english": [
+      "0.25+0.3=0.55=11/20",
+      "0.45\\cdot(5/9)+0.55\\cdot(6/11)=0.55"
+    ]
+  },
+  "Q-2019-FINAL-P11-d-strategy": {
+    "legacy": [
+      "W\\ne3",
+      "0.5+0.3=0.8",
+      "0.8>0.55",
+      "先选先验概率最小"
+    ],
+    "english": [
+      "W\\ne3",
+      "0.5+0.3=0.8",
+      "0.8>0.55",
+      "initially choose the door with the smallest prior"
+    ]
+  },
+  "Q-2019-FINAL-P11-d-probability": {
+    "legacy": [
+      "0.5\\cdot1+0.3\\cdot1+0.2\\cdot0=0.8=4/5",
+      "两种选择都输"
+    ],
+    "english": [
+      "0.5\\cdot1+0.3\\cdot1+0.2\\cdot0=0.8=4/5",
+      "both choices lose"
+    ]
+  },
+  "Q-2019-FINAL-P12-b": {
+    "legacy": [
+      "60\\cdot60=3600",
+      "E(N)=\\sum_{t=1}^{3600}E(I_t)=3600p",
+      "不要求不同秒独立"
+    ],
+    "english": [
+      "60\\cdot60=3600",
+      "E(N)=\\sum_{t=1}^{3600}E(I_t)=3600p",
+      "independence across seconds is not required"
+    ]
+  },
+  "Q-2019-FINAL-P13-a": {
+    "legacy": [
+      "六个外部尖端",
+      "六个内部交叉点",
+      "图连通且所有顶点度数为偶数"
+    ],
+    "english": [
+      "six outer tips",
+      "six inner crossings",
+      "connected with every vertex of even degree"
+    ]
+  },
+  "Q-2019-FINAL-P13-b": {
+    "legacy": [
+      "十二个正方形角",
+      "六个交点",
+      "只有两个奇度点"
+    ],
+    "english": [
+      "twelve square corners",
+      "six crossings",
+      "only two odd-degree vertices"
+    ]
+  },
+  "Q-2019-FINAL-P13-c": {
+    "legacy": [
+      "烟囱最上端度数 $1$",
+      "四个点为奇度",
+      "共有四个奇度顶点"
+    ],
+    "english": [
+      "chimney's top endpoint has degree $1$",
+      "four vertices have odd degree",
+      "four odd-degree vertices in total"
+    ]
+  },
+  "Q-2019-FINAL-BONUS-a": {
+    "legacy": [
+      "(2C+1)n-2C",
+      "(C+1)n\\le2C",
+      "同一个常数"
+    ],
+    "english": [
+      "(2C+1)n-2C",
+      "(C+1)n\\le2C",
+      "same constant"
+    ]
+  },
+  "Q-2019-FINAL-BONUS-b": {
+    "legacy": [
+      "f_n=2^{n+1}-n-2",
+      "C=2",
+      "n_0=1",
+      "1,4,11,26"
+    ],
+    "english": [
+      "f_n=2^{n+1}-n-2",
+      "C=2",
+      "n_0=1",
+      "1,4,11,26"
+    ]
+  },
+  "Q-2019-MID-P01-a": {
+    "legacy": [
+      "\\neg c\\land\\neg d",
+      "\\neg(c\\lor d)"
+    ],
+    "english": [
+      "\\neg c\\land\\neg d",
+      "\\neg(c\\lor d)"
+    ]
+  },
+  "Q-2019-MID-P01-b": {
+    "legacy": [
+      "\\neg c\\to r",
+      "不冷且不下雨"
+    ],
+    "english": [
+      "\\neg c\\to r",
+      "not cold and not rainy"
+    ]
+  },
+  "Q-2019-MID-P01-c": {
+    "legacy": [
+      "w\\to c",
+      "冷而无风"
+    ],
+    "english": [
+      "w\\to c",
+      "cold without wind"
+    ]
+  },
+  "Q-2019-MID-P01-d": {
+    "legacy": [
+      "r\\to(w\\land c)",
+      "(r\\to w)\\land(r\\to c)"
+    ],
+    "english": [
+      "r\\to(w\\land c)",
+      "(r\\to w)\\land(r\\to c)"
+    ]
+  },
+  "Q-2019-MID-P02-a": {
+    "legacy": [
+      "\\exists x(x\\le0)",
+      "x=0"
+    ],
+    "english": [
+      "\\exists x(x\\le0)",
+      "x=0"
+    ]
+  },
+  "Q-2019-MID-P02-b": {
+    "legacy": [
+      "\\forall x(Q(x)\\to P(x))",
+      "虽为假"
+    ],
+    "english": [
+      "\\forall x(Q(x)\\to P(x))",
+      "although the statement is false"
+    ]
+  },
+  "Q-2019-MID-P02-c": {
+    "legacy": [
+      "\\exists x(Q(x)\\land\\neg P(x))",
+      "同一个"
+    ],
+    "english": [
+      "\\exists x(Q(x)\\land\\neg P(x))",
+      "same witness"
+    ]
+  },
+  "Q-2019-MID-P02-d": {
+    "legacy": [
+      "\\forall x\\forall y((x<y)\\to(x\\ne y))",
+      "两个变量"
+    ],
+    "english": [
+      "\\forall x\\forall y((x<y)\\to(x\\ne y))",
+      "both variables"
+    ]
+  },
+  "Q-2019-MID-P02-e": {
+    "legacy": [
+      "\\forall x\\exists y(y>x)",
+      "y=x+1",
+      "\\neg\\exists x\\forall y(y\\le x)"
+    ],
+    "english": [
+      "\\forall x\\exists y(y>x)",
+      "y=x+1",
+      "\\neg\\exists x\\forall y(y\\le x)"
+    ]
+  },
+  "Q-2019-MID-P03-a": {
+    "legacy": [
+      "p=F,q=T",
+      "T\\to F=F"
+    ],
+    "english": [
+      "p=F,q=T",
+      "T\\to F=F"
+    ]
+  },
+  "Q-2019-MID-P03-b": {
+    "legacy": [
+      "\\neg p\\land q",
+      "(p\\lor\\neg p)\\lor\\neg q\\equiv T"
+    ],
+    "english": [
+      "\\neg p\\land q",
+      "(p\\lor\\neg p)\\lor\\neg q\\equiv T"
+    ]
+  },
+  "Q-2019-MID-P04": {
+    "legacy": [
+      "由(2)、(4)",
+      "由(2)、(6)",
+      "\\exists x(Q(x)\\land R(x))"
+    ],
+    "english": [
+      "from (2) and (4)",
+      "from (2) and (6)",
+      "\\exists x(Q(x)\\land R(x))"
+    ]
+  },
+  "Q-2019-MID-P05": {
+    "legacy": [
+      "\\forall y\\exists z(Q(x,y)\\land\\neg R(y,z))",
+      "\\neg(A\\to B)\\equiv A\\land\\neg B"
+    ],
+    "english": [
+      "\\forall y\\exists z(Q(x,y)\\land\\neg R(y,z))",
+      "\\neg(A\\to B)\\equiv A\\land\\neg B"
+    ]
+  },
+  "Q-2019-MID-P06-a": {
+    "legacy": [
+      "c=ak",
+      "c=bl",
+      "ab(kl)",
+      "没有除以"
+    ],
+    "english": [
+      "c=ak",
+      "c=bl",
+      "ab(kl)",
+      "no division"
+    ]
+  },
+  "Q-2019-MID-P06-b": {
+    "legacy": [
+      "a=1,b=-1",
+      "1=(-1)\\cdot(-1)",
+      "1\\ne-1"
+    ],
+    "english": [
+      "a=1,b=-1",
+      "1=(-1)\\cdot(-1)",
+      "1\\ne-1"
+    ]
+  },
+  "Q-2019-MID-P07-a": {
+    "legacy": [
+      "A=B=\\mathbb R",
+      "A-B=\\varnothing"
+    ],
+    "english": [
+      "A=B=\\mathbb R",
+      "A-B=\\varnothing"
+    ]
+  },
+  "Q-2019-MID-P07-b": {
+    "legacy": [
+      "A-B=\\mathbb Z^+",
+      "\\mathbb R=B\\cup\\mathbb Z^+",
+      "矛盾"
+    ],
+    "english": [
+      "A-B=\\mathbb Z^+",
+      "\\mathbb R=B\\cup\\mathbb Z^+",
+      "contradiction"
+    ]
+  },
+  "Q-2019-MID-P07-c": {
+    "legacy": [
+      "B=(0,\\infty)",
+      "A-B=(-\\infty,0]",
+      "(-1,0)"
+    ],
+    "english": [
+      "B=(0,\\infty)",
+      "A-B=(-\\infty,0]",
+      "(-1,0)"
+    ]
+  },
+  "Q-2019-MID-P08": {
+    "legacy": [
+      "x\\ge0",
+      "x>0",
+      "(x-1)^2=x^2-2x+1<0"
+    ],
+    "english": [
+      "x\\ge0",
+      "x>0",
+      "(x-1)^2=x^2-2x+1<0"
+    ]
+  },
+  "Q-2019-MID-P09-a": {
+    "legacy": [
+      "11-3=8",
+      "c=8"
+    ],
+    "english": [
+      "11-3=8",
+      "c=8"
+    ]
+  },
+  "Q-2019-MID-P09-b": {
+    "legacy": [
+      "7\\cdot11+3\\cdot3=86",
+      "86=4\\cdot19+10"
+    ],
+    "english": [
+      "7\\cdot11+3\\cdot3=86",
+      "86=4\\cdot19+10"
+    ]
+  },
+  "Q-2019-MID-P09-c": {
+    "legacy": [
+      "11\\cdot3^2=99",
+      "99=5\\cdot19+4"
+    ],
+    "english": [
+      "11\\cdot3^2=99",
+      "99=5\\cdot19+4"
+    ]
+  },
+  "Q-2019-MID-P10-a": {
+    "legacy": [
+      "465",
+      "\\equiv49\\pmod{104}",
+      "343=3\\cdot104+31"
+    ],
+    "english": [
+      "465",
+      "\\equiv49\\pmod{104}",
+      "343=3\\cdot104+31"
+    ]
+  },
+  "Q-2019-MID-P10-b": {
+    "legacy": [
+      "15x\\equiv-23",
+      "-161\\equiv47",
+      "746=7\\cdot104+18"
+    ],
+    "english": [
+      "15x\\equiv-23",
+      "-161\\equiv47",
+      "746=7\\cdot104+18"
+    ]
+  },
+  "Q-2019-MID-P10-c": {
+    "legacy": [
+      "7x\\equiv165\\equiv61",
+      "915",
+      "4067=39\\cdot104+11"
+    ],
+    "english": [
+      "7x\\equiv165\\equiv61",
+      "915",
+      "4067=39\\cdot104+11"
+    ]
+  },
+  "Q-2019-MID-P10-d": {
+    "legacy": [
+      "7x\\equiv8",
+      "(x,y)=(16,89)",
+      "105=104+1"
+    ],
+    "english": [
+      "7x\\equiv8",
+      "(x,y)=(16,89)",
+      "105=104+1"
+    ]
+  },
+  "Q-2019-MID-P11-a": {
+    "legacy": [
+      "924=2^2\\cdot3\\cdot7\\cdot11",
+      "\\gcd(25,924)=1",
+      "e=25"
+    ],
+    "english": [
+      "924=2^2\\cdot3\\cdot7\\cdot11",
+      "\\gcd(25,924)=1",
+      "e=25"
+    ]
+  },
+  "Q-2019-MID-P11-b": {
+    "legacy": [
+      "924=17\\cdot53+23",
+      "401\\cdot53-23\\cdot924",
+      "21253=23\\cdot924+1"
+    ],
+    "english": [
+      "924=17\\cdot53+23",
+      "401\\cdot53-23\\cdot924",
+      "21253=23\\cdot924+1"
+    ]
+  },
+  "Q-2019-MID-P11-c": {
+    "legacy": [
+      "c=720^{53}\\bmod989",
+      "401",
+      "私钥解密"
+    ],
+    "english": [
+      "c=720^{53}\\bmod989",
+      "401",
+      "private decryption"
+    ]
+  },
+  "Q-2019-MID-P12": {
+    "legacy": [
+      "8,20,4,16,14,20,4,16,14,20,4",
+      "1027=2^{10}+2^1+2^0",
+      "640=29\\cdot22+2"
+    ],
+    "english": [
+      "8,20,4,16,14,20,4,16,14,20,4",
+      "1027=2^{10}+2^1+2^0",
+      "640=29\\cdot22+2"
+    ]
+  },
+  "Q-2019-MID-BONUS": {
+    "legacy": [
+      "x+y=2,3,4,\\ldots",
+      "x_i+i y_i",
+      "x+jy=x_j+jy_j"
+    ],
+    "english": [
+      "x+y=2,3,4,\\ldots",
+      "x_i+i y_i",
+      "x+jy=x_j+jy_j"
+    ]
+  },
+  "Q-2020-FINAL1-P01-a-i": {
+    "legacy": [
+      "\\forall u\\in V\\exists v\\in V",
+      "\\forall w\\in V(E(u,w)\\to v=w)",
+      "排除孤立点"
+    ],
+    "english": [
+      "\\forall u\\in V\\exists v\\in V",
+      "\\forall w\\in V(E(u,w)\\to v=w)",
+      "excludes isolated vertices"
+    ]
+  },
+  "Q-2020-FINAL1-P01-a-ii": {
+    "legacy": [
+      "\\forall u\\in V_1\\forall v\\in V_1\\neg E(u,v)",
+      "\\forall u\\in V_2\\forall v\\in V_2\\neg E(u,v)",
+      "因为边无向"
+    ],
+    "english": [
+      "\\forall u\\in V_1\\forall v\\in V_1\\neg E(u,v)",
+      "\\forall u\\in V_2\\forall v\\in V_2\\neg E(u,v)",
+      "because the edge is undirected"
+    ]
+  },
+  "Q-2020-FINAL1-P01-a-iii": {
+    "legacy": [
+      "\\forall u\\in V_1\\forall v\\in V_2E(u,v)",
+      "未声明同部边不存在"
+    ],
+    "english": [
+      "\\forall u\\in V_1\\forall v\\in V_2E(u,v)",
+      "does not prohibit edges within a part"
+    ]
+  },
+  "Q-2020-FINAL1-P01-b": {
+    "legacy": [
+      "V_1\\cup V_2=V",
+      "V_1\\cap V_2=\\varnothing",
+      "合法二分划分"
+    ],
+    "english": [
+      "V_1\\cup V_2=V",
+      "V_1\\cap V_2=\\varnothing",
+      "valid bipartition"
+    ]
+  },
+  "Q-2020-FINAL1-P01-c": {
+    "legacy": [
+      "V_1=\\{a,b\\}",
+      "V_2=\\{c\\}",
+      "ac,bc",
+      "同部边 $ab$"
+    ],
+    "english": [
+      "V_1=\\{a,b\\}",
+      "V_2=\\{c\\}",
+      "ac,bc",
+      "internal edge $ab$"
+    ]
+  },
+  "Q-2020-FINAL1-P02": {
+    "legacy": [
+      "A_1=2",
+      "A_k=2^kt",
+      "A_{k+1}=d10^k+A_k=2^k(d5^k+t)",
+      "2^{k+1}\\mid A_{k+1}"
+    ],
+    "english": [
+      "A_1=2",
+      "A_k=2^kt",
+      "A_{k+1}=d10^k+A_k=2^k(d5^k+t)",
+      "2^{k+1}\\mid A_{k+1}"
+    ]
+  },
+  "Q-2020-FINAL1-P03-a": {
+    "legacy": [
+      "向右六格、向上五格",
+      "\\binom{11}{5}=462"
+    ],
+    "english": [
+      "six right steps and five up steps",
+      "\\binom{11}{5}=462"
+    ]
+  },
+  "Q-2020-FINAL1-P03-b": {
+    "legacy": [
+      "\\binom63=20",
+      "\\binom53=10",
+      "462-200=262"
+    ],
+    "english": [
+      "\\binom63=20",
+      "\\binom53=10",
+      "462-200=262"
+    ]
+  },
+  "Q-2020-FINAL1-P04-a": {
+    "legacy": [
+      "f(d)=1+\\lfloor999/d\\rfloor",
+      "500+334+200-167-100-67+34=734",
+      "3-3+1=1"
+    ],
+    "english": [
+      "f(d)=1+\\lfloor999/d\\rfloor",
+      "500+334+200-167-100-67+34=734",
+      "3-3+1=1"
+    ]
+  },
+  "Q-2020-FINAL1-P04-b": {
+    "legacy": [
+      "3,8,13,18,23,28",
+      "n=23+30k",
+      "32-0+1=33",
+      "983"
+    ],
+    "english": [
+      "3,8,13,18,23,28",
+      "n=23+30k",
+      "32-0+1=33",
+      "983"
+    ]
+  },
+  "Q-2020-FINAL1-P04-c": {
+    "legacy": [
+      "100\\equiv10\\equiv1\\pmod9",
+      "x_3\\equiv-x_1-x_2\\pmod9",
+      "9^2=81"
+    ],
+    "english": [
+      "100\\equiv10\\equiv1\\pmod9",
+      "x_3\\equiv-x_1-x_2\\pmod9",
+      "9^2=81"
+    ]
+  },
+  "Q-2020-FINAL1-P05-a-formula": {
+    "legacy": [
+      "x^{-1},-x^{-2},2x^{-3},-6x^{-4}",
+      "(-1)(-2)\\cdots(-n)=(-1)^n n!",
+      "f_n(x)=(-1)^n n!x^{-(n+1)}"
+    ],
+    "english": [
+      "x^{-1},-x^{-2},2x^{-3},-6x^{-4}",
+      "(-1)(-2)\\cdots(-n)=(-1)^n n!",
+      "f_n(x)=(-1)^n n!x^{-(n+1)}"
+    ]
+  },
+  "Q-2020-FINAL1-P05-a-proof": {
+    "legacy": [
+      "(-1)^00!x^{-1}=x^{-1}=f_0(x)",
+      "(-1)^kk![-(k+1)]x^{-(k+2)}",
+      "(-1)^{k+1}(k+1)!x^{-(k+2)}"
+    ],
+    "english": [
+      "(-1)^00!x^{-1}=x^{-1}=f_0(x)",
+      "(-1)^kk![-(k+1)]x^{-(k+2)}",
+      "(-1)^{k+1}(k+1)!x^{-(k+2)}"
+    ]
+  },
+  "Q-2020-FINAL1-P05-b": {
+    "legacy": [
+      "f_n(-1)=-n!",
+      "a_n\\le n\\log n",
+      "\\frac n4\\log n",
+      "1/4,1"
+    ],
+    "english": [
+      "f_n(-1)=-n!",
+      "a_n\\le n\\log n",
+      "\\frac n4\\log n",
+      "1/4,1"
+    ]
+  },
+  "Q-2020-FINAL1-P06-a": {
+    "legacy": [
+      "(m+1)(n+1)",
+      "\\Theta((m+1)(n+1))",
+      "m,n\\ge1",
+      "O(mn)"
+    ],
+    "english": [
+      "(m+1)(n+1)",
+      "\\Theta((m+1)(n+1))",
+      "m,n\\ge1",
+      "O(mn)"
+    ]
+  },
+  "Q-2020-FINAL1-P06-b": {
+    "legacy": [
+      "2n",
+      "T(n)=T(n-1)+\\Theta(n)",
+      "n(n+1)/2-1",
+      "T(n)=\\Theta(n^2)"
+    ],
+    "english": [
+      "2n",
+      "T(n)=T(n-1)+\\Theta(n)",
+      "n(n+1)/2-1",
+      "T(n)=\\Theta(n^2)"
+    ]
+  },
+  "Q-2020-FINAL2-P01": {
+    "legacy": [
+      "n=1",
+      "\\sum_{i=2}^n i(i-1)\\binom ni",
+      "n(n+1)2^{n-2}"
+    ],
+    "english": [
+      "n=1",
+      "\\sum_{i=2}^n i(i-1)\\binom ni",
+      "n(n+1)2^{n-2}"
+    ]
+  },
+  "Q-2020-FINAL2-P02": {
+    "legacy": [
+      "\\overline A\\cup\\overline B\\cup\\overline C",
+      "(0.3+0.2+0.1)|U|=0.6|U|",
+      "|A\\cap B\\cap C|\\ge|U|-0.6|U|=0.4|U|"
+    ],
+    "english": [
+      "\\overline A\\cup\\overline B\\cup\\overline C",
+      "(0.3+0.2+0.1)|U|=0.6|U|",
+      "|A\\cap B\\cap C|\\ge|U|-0.6|U|=0.4|U|"
+    ]
+  },
+  "Q-2020-FINAL2-P03": {
+    "legacy": [
+      "B\\cap(A\\cup\\overline B)",
+      "\\overline A\\cap B",
+      "0.6-0.5=0.1",
+      "0.5/0.9=5/9"
+    ],
+    "english": [
+      "B\\cap(A\\cup\\overline B)",
+      "\\overline A\\cap B",
+      "0.6-0.5=0.1",
+      "0.5/0.9=5/9"
+    ]
+  },
+  "Q-2020-FINAL2-P04-a-decision": {
+    "legacy": [
+      "A,B,C,D",
+      "I",
+      "E,F,G,H",
+      "四个奇度点"
+    ],
+    "english": [
+      "A,B,C,D",
+      "I",
+      "E,F,G,H",
+      "four odd-degree vertices"
+    ]
+  },
+  "Q-2020-FINAL2-P04-a-insert": {
+    "legacy": [
+      "4/2=2",
+      "HF",
+      "EG",
+      "从三变四"
+    ],
+    "english": [
+      "4/2=2",
+      "HF",
+      "EG",
+      "from three to four"
+    ]
+  },
+  "Q-2020-FINAL2-P04-b": {
+    "legacy": [
+      "B,F,D,E",
+      "A,C,G,H",
+      "插入数为零"
+    ],
+    "english": [
+      "B,F,D,E",
+      "A,C,G,H",
+      "zero insertions"
+    ]
+  },
+  "Q-2020-FINAL2-P04-c-decision": {
+    "legacy": [
+      "A,B,C,D,E,F,G,H",
+      "八个度数全是 $3$",
+      "无标记交叉不另加顶点"
+    ],
+    "english": [
+      "A,B,C,D,E,F,G,H",
+      "all eight degrees are $3$",
+      "unmarked crossings do not add vertices"
+    ]
+  },
+  "Q-2020-FINAL2-P04-c-insert": {
+    "legacy": [
+      "8/2=4",
+      "AH,BE,DG,CF",
+      "每个顶点恰出现一次"
+    ],
+    "english": [
+      "8/2=4",
+      "AH,BE,DG,CF",
+      "each vertex appears exactly once"
+    ]
+  },
+  "Q-2020-FINAL2-P04-d-decision": {
+    "legacy": [
+      "D,G",
+      "各度数 $6$",
+      "J",
+      "A,K"
+    ],
+    "english": [
+      "D,G",
+      "each have degree $6$",
+      "J",
+      "A,K"
+    ]
+  },
+  "Q-2020-FINAL2-P04-d-insert": {
+    "legacy": [
+      "AK",
+      "由三变四",
+      "由一变二",
+      "最少一条"
+    ],
+    "english": [
+      "AK",
+      "from three to four",
+      "from one to two",
+      "one edge is minimal"
+    ]
+  },
+  "Q-2020-FINAL2-P05-a": {
+    "legacy": [
+      "n-1",
+      "(1-p)^{n-1}",
+      "1-(1-p)^{n-1}",
+      "正概率"
+    ],
+    "english": [
+      "n-1",
+      "(1-p)^{n-1}",
+      "1-(1-p)^{n-1}",
+      "positive probability"
+    ]
+  },
+  "Q-2020-FINAL2-P05-b-expectation": {
+    "legacy": [
+      "\\binom n2",
+      "X=\\sum_e I_e",
+      "E(X)=\\sum_e E(I_e)=\\binom n2p"
+    ],
+    "english": [
+      "\\binom n2",
+      "X=\\sum_e I_e",
+      "E(X)=\\sum_e E(I_e)=\\binom n2p"
+    ]
+  },
+  "Q-2020-FINAL2-P05-b-variance": {
+    "legacy": [
+      "I_e^2=I_e",
+      "p-p^2=p(1-p)",
+      "\\operatorname{Var}(X)=\\binom n2p(1-p)"
+    ],
+    "english": [
+      "I_e^2=I_e",
+      "p-p^2=p(1-p)",
+      "\\operatorname{Var}(X)=\\binom n2p(1-p)"
+    ]
+  },
+  "Q-2020-FINAL2-P05-c": {
+    "legacy": [
+      "\\sum_i v_i=n",
+      "v_i-1",
+      "\\sum_i(v_i-1)=n-k",
+      "一棵树"
+    ],
+    "english": [
+      "\\sum_i v_i=n",
+      "v_i-1",
+      "\\sum_i(v_i-1)=n-k",
+      "a tree"
+    ]
+  },
+  "Q-2020-FINAL2-P05-d": {
+    "legacy": [
+      "\\binom63=20",
+      "\\binom43=4",
+      "20-4=16",
+      "16p^3(1-p)^3"
+    ],
+    "english": [
+      "\\binom63=20",
+      "\\binom43=4",
+      "20-4=16",
+      "16p^3(1-p)^3"
+    ]
+  },
+  "Q-2020-FINAL2-P06-a": {
+    "legacy": [
+      "A[i]=i",
+      "第二固定点",
+      "10D_9"
+    ],
+    "english": [
+      "A[i]=i",
+      "second fixed point",
+      "10D_9"
+    ]
+  },
+  "Q-2020-FINAL2-P06-b": {
+    "legacy": [
+      "空位置 $j$",
+      "后者只能是 $j$",
+      "十个而不是九个",
+      "答案为 $0$"
+    ],
+    "english": [
+      "empty position $j$",
+      "remaining digit must be $j$",
+      "ten rather than nine",
+      "answer is $0$"
+    ]
+  },
+  "Q-2020-FINAL2-P06-c": {
+    "legacy": [
+      "2,3,\\ldots,9",
+      "8!",
+      "不能误用 $D_8$"
+    ],
+    "english": [
+      "2,3,\\ldots,9",
+      "8!",
+      "do not use $D_8$"
+    ]
+  },
+  "Q-2020-FINAL2-P06-d": {
+    "legacy": [
+      "8!",
+      "唯一扩展",
+      "恰好两个"
+    ],
+    "english": [
+      "8!",
+      "unique extension",
+      "exactly two"
+    ]
+  },
+  "Q-2020-FINAL2-P06-e": {
+    "legacy": [
+      "S_1\\cap S_3",
+      "8D_7",
+      "S_3\\cap S_4",
+      "6!",
+      "10D_9+2\\cdot8!-8D_7-6!"
+    ],
+    "english": [
+      "S_1\\cap S_3",
+      "8D_7",
+      "S_3\\cap S_4",
+      "6!",
+      "10D_9+2\\cdot8!-8D_7-6!"
+    ]
+  },
+  "Q-2020-MID-P01-a": {
+    "legacy": [
+      "\\forall x(\\neg Z(x)\\to D(x))",
+      "只约束缺席者"
+    ],
+    "english": [
+      "\\forall x(\\neg Z(x)\\to D(x))",
+      "constrains only absent students"
+    ]
+  },
+  "Q-2020-MID-P01-b": {
+    "legacy": [
+      "Z(x)\\land D(x)",
+      "\\forall x((Z(x)\\land D(x))\\to\\neg F(x))"
+    ],
+    "english": [
+      "Z(x)\\land D(x)",
+      "\\forall x((Z(x)\\land D(x))\\to\\neg F(x))"
+    ]
+  },
+  "Q-2020-MID-P01-c": {
+    "legacy": [
+      "\\exists x(\\neg Z(x)\\land\\neg D(x))",
+      "同一见证"
+    ],
+    "english": [
+      "\\exists x(\\neg Z(x)\\land\\neg D(x))",
+      "same witness"
+    ]
+  },
+  "Q-2020-MID-P01-d": {
+    "legacy": [
+      "\\forall x((F(x)\\land\\neg Z(x))\\to C(x))",
+      "不应把蕴含增强为双条件"
+    ],
+    "english": [
+      "\\forall x((F(x)\\land\\neg Z(x))\\to C(x))",
+      "do not strengthen the implication to a biconditional"
+    ]
+  },
+  "Q-2020-MID-P02": {
+    "legacy": [
+      "(q\\lor\\neg p)\\land q\\equiv q",
+      "\\neg q\\lor p\\lor s\\lor r",
+      "q\\to(p\\lor s\\lor r)"
+    ],
+    "english": [
+      "(q\\lor\\neg p)\\land q\\equiv q",
+      "\\neg q\\lor p\\lor s\\lor r",
+      "q\\to(p\\lor s\\lor r)"
+    ]
+  },
+  "Q-2020-MID-P03-a": {
+    "legacy": [
+      "x=-2",
+      "2\\cdot(-2)=-4<-2=x"
+    ],
+    "english": [
+      "x=-2",
+      "2\\cdot(-2)=-4<-2=x"
+    ]
+  },
+  "Q-2020-MID-P03-b": {
+    "legacy": [
+      "x-1>1,y-1>1",
+      "(x-1)(y-1)>1",
+      "xy-x-y+1>1"
+    ],
+    "english": [
+      "x-1>1,y-1>1",
+      "(x-1)(y-1)>1",
+      "xy-x-y+1>1"
+    ]
+  },
+  "Q-2020-MID-P03-c": {
+    "legacy": [
+      "y=(x-3)/2",
+      "2((x-3)/2)+3=x",
+      "\\forall x\\exists y"
+    ],
+    "english": [
+      "y=(x-3)/2",
+      "2((x-3)/2)+3=x",
+      "\\forall x\\exists y"
+    ]
+  },
+  "Q-2020-MID-P03-d": {
+    "legacy": [
+      "x=2y+4",
+      "x\\ne2y+3",
+      "每个候选"
+    ],
+    "english": [
+      "x=2y+4",
+      "x\\ne2y+3",
+      "every candidate"
+    ]
+  },
+  "Q-2020-MID-P03-e": {
+    "legacy": [
+      "x=0",
+      "T\\leftrightarrow F=F",
+      "左侧为真"
+    ],
+    "english": [
+      "x=0",
+      "T\\leftrightarrow F=F",
+      "left side is true"
+    ]
+  },
+  "Q-2020-MID-P03-f": {
+    "legacy": [
+      "\\forall x((x\\le1)\\lor(x^2>x))",
+      "\\forall x((x>1)\\to(x^2>x))",
+      "两个逻辑等价句"
+    ],
+    "english": [
+      "\\forall x((x\\le1)\\lor(x^2>x))",
+      "\\forall x((x>1)\\to(x^2>x))",
+      "two logically equivalent statements"
+    ]
+  },
+  "Q-2020-MID-P04": {
+    "legacy": [
+      "由(4)、(6)",
+      "\\forall y(P(y)\\to c=y)",
+      "\\exists x(P(x)\\land\\forall y(P(y)\\to x=y))"
+    ],
+    "english": [
+      "from (4) and (6)",
+      "\\forall y(P(y)\\to c=y)",
+      "\\exists x(P(x)\\land\\forall y(P(y)\\to x=y))"
+    ]
+  },
+  "Q-2020-MID-P05-a": {
+    "legacy": [
+      "a+b+c=s",
+      "每个固定的 $s$ 只有有限多个",
+      "可数无限"
+    ],
+    "english": [
+      "a+b+c=s",
+      "finitely many triples for each fixed $s$",
+      "countably infinite"
+    ]
+  },
+  "Q-2020-MID-P05-b": {
+    "legacy": [
+      "D=\\{i\\in\\mathbb N:i\\notin S_i\\}",
+      "j\\in D\\iff j\\notin S_j",
+      "D=S_j"
+    ],
+    "english": [
+      "D=\\{i\\in\\mathbb N:i\\notin S_i\\}",
+      "j\\in D\\iff j\\notin S_j",
+      "D=S_j"
+    ]
+  },
+  "Q-2020-MID-P05-c": {
+    "legacy": [
+      "\\{S\\}=\\{T\\}",
+      "S=T",
+      "单射像"
+    ],
+    "english": [
+      "\\{S\\}=\\{T\\}",
+      "S=T",
+      "injective image"
+    ]
+  },
+  "Q-2020-MID-P05-d": {
+    "legacy": [
+      "f_S(i)=a",
+      "f_S(i)=b",
+      "f_S\\ne f_T",
+      "单射嵌入"
+    ],
+    "english": [
+      "f_S(i)=a",
+      "f_S(i)=b",
+      "f_S\\ne f_T",
+      "injective embedding"
+    ]
+  },
+  "Q-2020-MID-P05-e": {
+    "legacy": [
+      "f\\mapsto(f(0),f(1))",
+      "f(0)+f(1)",
+      "可用的对角枚举"
+    ],
+    "english": [
+      "f\\mapsto(f(0),f(1))",
+      "f(0)+f(1)",
+      "a valid diagonal enumeration"
+    ]
+  },
+  "Q-2020-MID-P06": {
+    "legacy": [
+      "180=3\\cdot53+21",
+      "17\\cdot53-5\\cdot180",
+      "901=5\\cdot180+1"
+    ],
+    "english": [
+      "180=3\\cdot53+21",
+      "17\\cdot53-5\\cdot180",
+      "901=5\\cdot180+1"
+    ]
+  },
+  "Q-2020-MID-P07": {
+    "legacy": [
+      "7\\cdot10-3\\cdot23",
+      "x\\equiv-28\\equiv18\\pmod{23}",
+      "184=8\\cdot23"
+    ],
+    "english": [
+      "7\\cdot10-3\\cdot23",
+      "x\\equiv-28\\equiv18\\pmod{23}",
+      "184=8\\cdot23"
+    ]
+  },
+  "Q-2020-MID-P08": {
+    "legacy": [
+      "(14n+3)-2(7n+1)=1",
+      "\\gcd(7n+1,1)=1",
+      "3(14n+3)-2(21n+4)=1"
+    ],
+    "english": [
+      "(14n+3)-2(7n+1)=1",
+      "\\gcd(7n+1,1)=1",
+      "3(14n+3)-2(21n+4)=1"
+    ]
+  },
+  "Q-2020-MID-P09": {
+    "legacy": [
+      "5x\\equiv4\\pmod{22}",
+      "68=3\\cdot22+2",
+      "x=14",
+      "不声称"
+    ],
+    "english": [
+      "5x\\equiv4\\pmod{22}",
+      "68=3\\cdot22+2",
+      "x=14",
+      "not a claim of the least period"
+    ]
+  },
+  "Q-2020-MID-P10": {
+    "legacy": [
+      "\\gcd(r,n)=1",
+      "st\\equiv rx^dt\\equiv x^d=C\\pmod n",
+      "n=55,e=3,d=27,x=7,r=2",
+      "28^3\\bmod55=7"
+    ],
+    "english": [
+      "\\gcd(r,n)=1",
+      "st\\equiv rx^dt\\equiv x^d=C\\pmod n",
+      "n=55,e=3,d=27,x=7,r=2",
+      "28^3\\bmod55=7"
+    ]
+  },
+  "Q-2020-MID-BONUS": {
+    "legacy": [
+      "x\\equiv-i\\pmod{p_i^2}",
+      "p_i^2\\mid x_0+i",
+      "548=4\\cdot137",
+      "549=9\\cdot61",
+      "550=25\\cdot22"
+    ],
+    "english": [
+      "x\\equiv-i\\pmod{p_i^2}",
+      "p_i^2\\mid x_0+i",
+      "548=4\\cdot137",
+      "549=9\\cdot61",
+      "550=25\\cdot22"
+    ]
+  },
+  "Q-2021-FINAL1-P01": {
+    "legacy": [
+      "(30,40,0),(0,41,1),(1,42,2),(2,0,3),(3,1,4)",
+      "159746\\equiv18448\\pmod{70649}",
+      "最小正代表"
+    ],
+    "english": [
+      "(30,40,0),(0,41,1),(1,42,2),(2,0,3),(3,1,4)",
+      "159746\\equiv18448\\pmod{70649}",
+      "least positive representative"
+    ]
+  },
+  "Q-2021-FINAL1-P02": {
+    "legacy": [
+      "异常在 $A$ 会令 $B,C$ 平衡",
+      "3^k,3^{k-1},\\ldots,3,1",
+      "2k=2\\log_3n"
+    ],
+    "english": [
+      "an odd coin in $A$ would leave $B,C$ balanced",
+      "3^k,3^{k-1},\\ldots,3,1",
+      "2k=2\\log_3n"
+    ]
+  },
+  "Q-2021-FINAL1-P03": {
+    "legacy": [
+      "绝不会排除真正的 famous-solo-worker",
+      "第一方向全否、第二方向全是",
+      "(n-1)+2(n-1)=3(n-1)"
+    ],
+    "english": [
+      "never eliminates a genuine famous-solo-worker",
+      "all first-direction answers are no and all reverse-direction answers are yes",
+      "(n-1)+2(n-1)=3(n-1)"
+    ]
+  },
+  "Q-2021-FINAL1-P04-a": {
+    "legacy": [
+      "P(n)\\iff n=0",
+      "不能把零代入",
+      "所有其他整数确实可以为假"
+    ],
+    "english": [
+      "P(n)\\iff n=0",
+      "zero is not an allowed starting value",
+      "every other integer can be false"
+    ]
+  },
+  "Q-2021-FINAL1-P04-b": {
+    "legacy": [
+      "n=4\\cdot2^j=2^{j+2}",
+      "链外元素的递推前件为假",
+      "k\\ge2"
+    ],
+    "english": [
+      "n=4\\cdot2^j=2^{j+2}",
+      "outside the chain the antecedent is false",
+      "k\\ge2"
+    ]
+  },
+  "Q-2021-FINAL1-P04-c": {
+    "legacy": [
+      "P(n)\\iff n=1",
+      "P(n)\\land P(n+1)",
+      "没有其他整数被条件强制"
+    ],
+    "english": [
+      "P(n)\\iff n=1",
+      "P(n)\\land P(n+1)",
+      "no other integer is forced"
+    ]
+  },
+  "Q-2021-FINAL1-P04-d": {
+    "legacy": [
+      "P(2),\\ldots,P(n)",
+      "2\\le k\\le1",
+      "空真只推出 $P(2)$"
+    ],
+    "english": [
+      "P(2),\\ldots,P(n)",
+      "2\\le k\\le1",
+      "the vacuous premise only yields $P(2)$"
+    ]
+  },
+  "Q-2021-FINAL1-P05": {
+    "legacy": [
+      "u0v,u01v,u10v",
+      "删去该对后余额不变",
+      "长度严格减二",
+      "在原切分处插回"
+    ],
+    "english": [
+      "u0v,u01v,u10v",
+      "deleting that pair preserves the balance",
+      "the length decreases by exactly two",
+      "reinsert it at the original split"
+    ]
+  },
+  "Q-2021-FINAL1-P06": {
+    "legacy": [
+      "E_n=4E_{n-1}+2(6^{n-1}-E_{n-1})",
+      "(6^n+2^n)/2",
+      "最终答案无求和符号"
+    ],
+    "english": [
+      "E_n=4E_{n-1}+2(6^{n-1}-E_{n-1})",
+      "(6^n+2^n)/2",
+      "the final answer contains no summation"
+    ]
+  },
+  "Q-2021-FINAL2-P01": {
+    "legacy": [
+      "|S_n|=|S_{n-1}|+|S_{n-2}|",
+      "\\binom{n-i+1}{i}",
+      "i\\le(n+1)/2"
+    ],
+    "english": [
+      "|S_n|=|S_{n-1}|+|S_{n-2}|",
+      "\\binom{n-i+1}{i}",
+      "i\\le(n+1)/2"
+    ]
+  },
+  "Q-2021-FINAL2-P02": {
+    "legacy": [
+      "\\binom{26}{7}-8\\binom{16}{7}",
+      "657800-8\\cdot11440=566280",
+      "两两不交"
+    ],
+    "english": [
+      "\\binom{26}{7}-8\\binom{16}{7}",
+      "657800-8\\cdot11440=566280",
+      "pairwise disjoint"
+    ]
+  },
+  "Q-2021-FINAL2-P05-a": {
+    "legacy": [
+      "特别是题列度零的那个顶点",
+      "被迫存在的那条边矛盾"
+    ],
+    "english": [
+      "in particular, the listed degree-zero vertex",
+      "contradicts the forced edge"
+    ]
+  },
+  "Q-2021-FINAL2-P05-b": {
+    "legacy": [
+      "三个度七顶点、七个度三顶点",
+      "三个度三顶点、七个度七顶点",
+      "重数相反"
+    ],
+    "english": [
+      "three degree-seven vertices and seven degree-three vertices",
+      "three degree-three vertices and seven degree-seven vertices",
+      "the multiplicities are reversed"
+    ]
+  },
+  "Q-2021-FINAL2-P05-c": {
+    "legacy": [
+      "i\\ne4",
+      "最后一条边必进入 $v_4$",
+      "入度零"
+    ],
+    "english": [
+      "i\\ne4",
+      "the last edge must enter $v_4$",
+      "indegree zero"
+    ]
+  },
+  "Q-2021-FINAL2-P05-d": {
+    "legacy": [
+      "1+2+3+1+2=9",
+      "3+1+2+1+1=8",
+      "都必须等于边数"
+    ],
+    "english": [
+      "1+2+3+1+2=9",
+      "3+1+2+1+1=8",
+      "both totals must equal the number of edges"
+    ]
+  },
+  "Q-2021-FINAL2-BONUS-a": {
+    "legacy": [
+      "若 $u=v$",
+      "(1-p)^k",
+      "h=1+\\frac{n-2}{n-1}h",
+      "h=n-1"
+    ],
+    "english": [
+      "if $u=v$",
+      "(1-p)^k",
+      "h=1+\\frac{n-2}{n-1}h",
+      "h=n-1"
+    ]
+  },
+  "Q-2021-FINAL2-BONUS-b": {
+    "legacy": [
+      "2^{-(n-1)}>0",
+      "d_i=d_{i-1}+2",
+      "d_i=2i-1",
+      "(n-1)^2"
+    ],
+    "english": [
+      "2^{-(n-1)}>0",
+      "d_i=d_{i-1}+2",
+      "d_i=2i-1",
+      "(n-1)^2"
+    ]
+  },
+  "Q-2021-MID-P01-a": {
+    "legacy": [
+      "y=x^2+2x+2",
+      "1\\ne0",
+      "\\forall x\\exists y"
+    ],
+    "english": [
+      "y=x^2+2x+2",
+      "1\\ne0",
+      "\\forall x\\exists y"
+    ]
+  },
+  "Q-2021-MID-P01-b": {
+    "legacy": [
+      "(x+1)^2",
+      "y=-1",
+      "不是整数平方"
+    ],
+    "english": [
+      "(x+1)^2",
+      "y=-1",
+      "is not an integer square"
+    ]
+  },
+  "Q-2021-MID-P01-c": {
+    "legacy": [
+      "x=0",
+      "z=2y",
+      "2y-z=2y-2y=0=4x"
+    ],
+    "english": [
+      "x=0",
+      "z=2y",
+      "2y-z=2y-2y=0=4x"
+    ]
+  },
+  "Q-2021-MID-P01-d": {
+    "legacy": [
+      "-z=4x",
+      "2-z=4x",
+      "2=0"
+    ],
+    "english": [
+      "-z=4x",
+      "2-z=4x",
+      "2=0"
+    ]
+  },
+  "Q-2021-MID-P02-translation-course": {
+    "legacy": [
+      "c(\\mathrm{Sarah})",
+      "独立修课事实"
+    ],
+    "english": [
+      "c(\\mathrm{Sarah})",
+      "independent course-attendance fact"
+    ]
+  },
+  "Q-2021-MID-P02-translation-gcd": {
+    "legacy": [
+      "g(\\mathrm{Sarah})",
+      "主语承接 Sarah"
+    ],
+    "english": [
+      "g(\\mathrm{Sarah})",
+      "the subject remains Sarah"
+    ]
+  },
+  "Q-2021-MID-P02-translation-rule": {
+    "legacy": [
+      "\\forall x(g(x)\\to h(x))",
+      "必要条件"
+    ],
+    "english": [
+      "\\forall x(g(x)\\to h(x))",
+      "necessary condition"
+    ]
+  },
+  "Q-2021-MID-P02-translation-conclusion": {
+    "legacy": [
+      "\\exists x(c(x)\\land h(x))",
+      "内部必须合取"
+    ],
+    "english": [
+      "\\exists x(c(x)\\land h(x))",
+      "a conjunction is required inside"
+    ]
+  },
+  "Q-2021-MID-P02-proof": {
+    "legacy": [
+      "由(2)、(3)",
+      "c(\\mathrm{Sarah})\\land h(\\mathrm{Sarah})",
+      "\\exists x(c(x)\\land h(x))"
+    ],
+    "english": [
+      "from (2) and (3)",
+      "c(\\mathrm{Sarah})\\land h(\\mathrm{Sarah})",
+      "\\exists x(c(x)\\land h(x))"
+    ]
+  },
+  "Q-2021-MID-P03": {
+    "legacy": [
+      "q\\mid(N-p!)=1",
+      "q>p",
+      "5!+1=121=11^2"
+    ],
+    "english": [
+      "q\\mid(N-p!)=1",
+      "q>p",
+      "5!+1=121=11^2"
+    ]
+  },
+  "Q-2021-MID-P04-a": {
+    "legacy": [
+      "先列空集",
+      "2^k",
+      "任何非空有限子集都有最大元素",
+      "可数无限"
+    ],
+    "english": [
+      "list the empty set first",
+      "2^k",
+      "every nonempty finite subset has a maximum",
+      "countably infinite"
+    ]
+  },
+  "Q-2021-MID-P04-b": {
+    "legacy": [
+      "P(\\mathbb N)=F\\cup I",
+      "交替枚举",
+      "I$ 不可数"
+    ],
+    "english": [
+      "P(\\mathbb N)=F\\cup I",
+      "interleaving the enumerations",
+      "$I$ is uncountable"
+    ]
+  },
+  "Q-2021-MID-P05": {
+    "legacy": [
+      "1394=46\\cdot30+14",
+      "17^8\\equiv49\\equiv18",
+      "1260\\equiv20\\pmod{31}"
+    ],
+    "english": [
+      "1394=46\\cdot30+14",
+      "17^8\\equiv49\\equiv18",
+      "1260\\equiv20\\pmod{31}"
+    ]
+  },
+  "Q-2021-MID-P06-a": {
+    "legacy": [
+      "93473",
+      "2^2\\cdot3\\cdot5\\cdot7\\cdot13\\cdot17",
+      "(93473,121)",
+      "(93473,127)"
+    ],
+    "english": [
+      "93473",
+      "2^2\\cdot3\\cdot5\\cdot7\\cdot13\\cdot17",
+      "(93473,121)",
+      "(93473,127)"
+    ]
+  },
+  "Q-2021-MID-P06-b": {
+    "legacy": [
+      "28\\cdot92820-21479\\cdot121",
+      "-21479\\equiv71341",
+      "8632261=93\\cdot92820+1"
+    ],
+    "english": [
+      "28\\cdot92820-21479\\cdot121",
+      "-21479\\equiv71341",
+      "8632261=93\\cdot92820+1"
+    ]
+  },
+  "Q-2021-MID-P07": {
+    "legacy": [
+      "q\\mid A-1",
+      "p\\mid A-1",
+      "pq\\mid A-1"
+    ],
+    "english": [
+      "q\\mid A-1",
+      "p\\mid A-1",
+      "pq\\mid A-1"
+    ]
+  },
+  "Q-2021-MID-P08-a": {
+    "legacy": [
+      "x=\\pi/2+2k\\pi",
+      "x=k\\pi",
+      "|f(x)|=0"
+    ],
+    "english": [
+      "x=\\pi/2+2k\\pi",
+      "x=k\\pi",
+      "|f(x)|=0"
+    ]
+  },
+  "Q-2021-MID-P08-b": {
+    "legacy": [
+      "|f(x)|\\le4g(x)",
+      "g(x)=1.5",
+      "只选(ii)"
+    ],
+    "english": [
+      "|f(x)|\\le4g(x)",
+      "g(x)=1.5",
+      "select only (ii)"
+    ]
+  },
+  "Q-2021-MID-P08-c": {
+    "legacy": [
+      "g(x)\\le x=2f(x)",
+      "x=\\pi/2+k\\pi",
+      "只选(iii)"
+    ],
+    "english": [
+      "g(x)\\le x=2f(x)",
+      "x=\\pi/2+k\\pi",
+      "select only (iii)"
+    ]
+  },
+  "Q-2021-MID-P08-d": {
+    "legacy": [
+      "f(x)/g(x)=\\ln20/\\ln3=c>0",
+      "(i)、(ii)、(iii)都选"
+    ],
+    "english": [
+      "f(x)/g(x)=\\ln20/\\ln3=c>0",
+      "select (i), (ii), and (iii)"
+    ]
+  },
+  "Q-2021-MID-P08-e": {
+    "legacy": [
+      "2^2>3",
+      "3^2<20",
+      "f/g=x^{\\alpha-\\beta}\\to\\infty"
+    ],
+    "english": [
+      "2^2>3",
+      "3^2<20",
+      "f/g=x^{\\alpha-\\beta}\\to\\infty"
+    ]
+  },
+  "Q-2021-MID-P09-A": {
+    "legacy": [
+      "\\lfloor\\log_2n\\rfloor+1",
+      "(1)、(2)、(3)、(5)",
+      "位数无界"
+    ],
+    "english": [
+      "\\lfloor\\log_2n\\rfloor+1",
+      "(1), (2), (3), and (5)",
+      "the bit length is unbounded"
+    ]
+  },
+  "Q-2021-MID-P09-B": {
+    "legacy": [
+      "\\operatorname{popcount}(n)",
+      "n=2^k-1",
+      "只选(1)、(5)"
+    ],
+    "english": [
+      "\\operatorname{popcount}(n)",
+      "n=2^k-1",
+      "select only (1) and (5)"
+    ]
+  },
+  "Q-2021-MID-BONUS": {
+    "legacy": [
+      "f(x)=(x,1/2)",
+      "g(x,y)=0.x_1y_1x_2y_2",
+      "奇数位恢复 $x$、偶数位恢复 $y$",
+      "最终全九"
+    ],
+    "english": [
+      "f(x)=(x,1/2)",
+      "g(x,y)=0.x_1y_1x_2y_2",
+      "odd positions recover $x$ and even positions recover $y$",
+      "eventually all nines"
+    ]
+  },
+  "Q-2022-FINAL1-P02": {
+    "legacy": [
+      "10\\cdot20=200",
+      "\\binom{10}{2}=45",
+      "435-190=245"
+    ],
+    "english": [
+      "10\\cdot20=200",
+      "\\binom{10}{2}=45",
+      "435-190=245"
+    ]
+  },
+  "Q-2022-FINAL1-P03-a": {
+    "legacy": [
+      "26+10=36",
+      "36^7",
+      "首位为零也合法"
+    ],
+    "english": [
+      "26+10=36",
+      "36^7",
+      "a leading zero is also valid"
+    ]
+  },
+  "Q-2022-FINAL1-P03-b": {
+    "legacy": [
+      "36\\cdot35\\cdot34\\cdot33\\cdot32\\cdot31\\cdot30=36!/29!",
+      "\\binom{36}{7}7!"
+    ],
+    "english": [
+      "36\\cdot35\\cdot34\\cdot33\\cdot32\\cdot31\\cdot30=36!/29!",
+      "\\binom{36}{7}7!"
+    ]
+  },
+  "Q-2022-FINAL1-P03-c": {
+    "legacy": [
+      "10\\cdot35^6",
+      "3ABA3C6",
+      "相邻不等而非全局不重复"
+    ],
+    "english": [
+      "10\\cdot35^6",
+      "3ABA3C6",
+      "adjacent inequality, not global nonrepetition"
+    ]
+  },
+  "Q-2022-FINAL1-P03-d": {
+    "legacy": [
+      "L-D-L-D-L-D-L",
+      "D-L-D-L-D-L-D",
+      "26^4\\cdot10^3+10^4\\cdot26^3"
+    ],
+    "english": [
+      "L-D-L-D-L-D-L",
+      "D-L-D-L-D-L-D",
+      "26^4\\cdot10^3+10^4\\cdot26^3"
+    ]
+  },
+  "Q-2022-FINAL1-P04": {
+    "legacy": [
+      "27=3\\cdot9",
+      "5(5^k+2\\cdot11^k)+12\\cdot11^k",
+      "3(5t+4\\cdot11^k)"
+    ],
+    "english": [
+      "27=3\\cdot9",
+      "5(5^k+2\\cdot11^k)+12\\cdot11^k",
+      "3(5t+4\\cdot11^k)"
+    ]
+  },
+  "Q-2022-FINAL2-P02-a-23": {
+    "legacy": [
+      "\\binom42=6",
+      "P(M=\\{2,3\\}\\mid W=1)=1/6",
+      "可选羊门集合在这里相同"
+    ],
+    "english": [
+      "\\binom42=6",
+      "P(M=\\{2,3\\}\\mid W=1)=1/6",
+      "The eligible goat-door set is the same"
+    ]
+  },
+  "Q-2022-FINAL2-P02-a-35": {
+    "legacy": [
+      "\\{2,3\\},\\{2,4\\},\\{2,5\\},\\{3,4\\},\\{3,5\\},\\{4,5\\}",
+      "占六对之一"
+    ],
+    "english": [
+      "\\{2,3\\},\\{2,4\\},\\{2,5\\},\\{3,4\\},\\{3,5\\},\\{4,5\\}",
+      "occupies one of six pairs"
+    ]
+  },
+  "Q-2022-FINAL2-P02-b": {
+    "legacy": [
+      "P(M=\\{2,3\\}\\mid W=2)=0",
+      "不依赖初选羊门一是否可开"
+    ],
+    "english": [
+      "P(M=\\{2,3\\}\\mid W=2)=0",
+      "independently of whether the initially chosen goat door may be opened"
+    ]
+  },
+  "Q-2022-FINAL2-P03": {
+    "legacy": [
+      "47y\\equiv5",
+      "3\\cdot4=12\\equiv1",
+      "x=9+11s,y=9+11t"
+    ],
+    "english": [
+      "47y\\equiv5",
+      "3\\cdot4=12\\equiv1",
+      "x=9+11s,y=9+11t"
+    ]
+  },
+  "Q-2022-FINAL2-P05-a-i": {
+    "legacy": [
+      "\\forall u\\in V_1\\forall v\\in V_1\\neg E(u,v)",
+      "\\forall u\\in V_2\\forall v\\in V_2\\neg E(u,v)",
+      "没有要求每一对跨部顶点都连边"
+    ],
+    "english": [
+      "\\forall u\\in V_1\\forall v\\in V_1\\neg E(u,v)",
+      "\\forall u\\in V_2\\forall v\\in V_2\\neg E(u,v)",
+      "does not require every cross-part pair to be adjacent"
+    ]
+  },
+  "Q-2022-FINAL2-P05-a-ii": {
+    "legacy": [
+      "\\forall u\\in V_1\\forall v\\in V_2 E(u,v)",
+      "内部边没有被禁止"
+    ],
+    "english": [
+      "\\forall u\\in V_1\\forall v\\in V_2 E(u,v)",
+      "Internal edges have not been forbidden"
+    ]
+  },
+  "Q-2022-FINAL2-P05-b": {
+    "legacy": [
+      "V_1\\cup V_2=V",
+      "V_1\\cap V_2=\\varnothing",
+      "二分划分的见证"
+    ],
+    "english": [
+      "V_1\\cup V_2=V",
+      "V_1\\cap V_2=\\varnothing",
+      "a witness to a bipartition"
+    ]
+  },
+  "Q-2022-FINAL2-P05-c": {
+    "legacy": [
+      "V_1=\\{a,b\\}",
+      "ac,bc,ab",
+      "三角形 $K_3$",
+      "V_2=\\varnothing"
+    ],
+    "english": [
+      "V_1=\\{a,b\\}",
+      "ac,bc,ab",
+      "the triangle $K_3$",
+      "V_2=\\varnothing"
+    ]
+  },
+  "Q-2022-FINAL2-P06-a-expectation": {
+    "legacy": [
+      "X=\\sum_e I_e",
+      "E[X]=\\sum_e p=Np=\\binom n2p",
+      "线性性本身不需独立"
+    ],
+    "english": [
+      "X=\\sum_e I_e",
+      "E[X]=\\sum_e p=Np=\\binom n2p",
+      "Linearity itself does not require independence"
+    ]
+  },
+  "Q-2022-FINAL2-P06-a-variance": {
+    "legacy": [
+      "I_e^2=I_e",
+      "p-p^2=p(1-p)",
+      "\\binom n2p(1-p)",
+      "协方差为零"
+    ],
+    "english": [
+      "I_e^2=I_e",
+      "p-p^2=p(1-p)",
+      "\\binom n2p(1-p)",
+      "the covariance zero"
+    ]
+  },
+  "Q-2022-FINAL2-P06-b": {
+    "legacy": [
+      "X\\le\\sum_{i=1}^m\\binom{v_i}{2}",
+      "补成完全图 $K_{v_i}$",
+      "不能另外重分配顶点"
+    ],
+    "english": [
+      "X\\le\\sum_{i=1}^m\\binom{v_i}{2}",
+      "Complete each component to $K_{v_i}$",
+      "The given sizes cannot be reallocated"
+    ]
+  },
+  "Q-2022-FINAL2-P06-c": {
+    "legacy": [
+      "三角形加孤点",
+      "六条潜在边",
+      "4p^3(1-p)^3",
+      "四种配置互斥"
+    ],
+    "english": [
+      "a triangle plus an isolated vertex",
+      "six potential edges",
+      "4p^3(1-p)^3",
+      "The four configurations are disjoint"
+    ]
+  },
+  "Q-2022-MID-P01-a-i": {
+    "legacy": [
+      "a\\to(b\\to\\neg c)",
+      "\\neg a\\lor\\neg b\\lor\\neg c"
+    ],
+    "english": [
+      "a\\to(b\\to\\neg c)",
+      "\\neg a\\lor\\neg b\\lor\\neg c"
+    ]
+  },
+  "Q-2022-MID-P01-a-ii": {
+    "legacy": [
+      "b\\to\\neg c\\equiv\\neg b\\lor\\neg c",
+      "\\neg a\\lor\\neg b\\lor\\neg c",
+      "全真时为假"
+    ],
+    "english": [
+      "b\\to\\neg c\\equiv\\neg b\\lor\\neg c",
+      "\\neg a\\lor\\neg b\\lor\\neg c",
+      "false when all three are true"
+    ]
+  },
+  "Q-2022-MID-P01-a-iii": {
+    "legacy": [
+      "\\neg(a\\land b\\land c)",
+      "仅在三变量全真时为假"
+    ],
+    "english": [
+      "\\neg(a\\land b\\land c)",
+      "false only when all three variables are true"
+    ]
+  },
+  "Q-2022-MID-P01-b": {
+    "legacy": [
+      "X\\land Y\\equiv\\neg(\\neg X\\lor\\neg Y)",
+      "\\neg((\\neg a\\to b)\\to\\neg(b\\to c))"
+    ],
+    "english": [
+      "X\\land Y\\equiv\\neg(\\neg X\\lor\\neg Y)",
+      "\\neg((\\neg a\\to b)\\to\\neg(b\\to c))"
+    ]
+  },
+  "Q-2022-MID-P02-a": {
+    "legacy": [
+      "\\exists y(W(\\mathrm{Alice},y)\\land W(\\mathrm{Bob},y))",
+      "同一个 $y$"
+    ],
+    "english": [
+      "\\exists y(W(\\mathrm{Alice},y)\\land W(\\mathrm{Bob},y))",
+      "the same $y$"
+    ]
+  },
+  "Q-2022-MID-P02-b": {
+    "legacy": [
+      "x\\ne\\mathrm{David}",
+      "\\forall y(W(\\mathrm{David},y)\\to W(x,y))",
+      "不能每个网站换一人"
+    ],
+    "english": [
+      "x\\ne\\mathrm{David}",
+      "\\forall y(W(\\mathrm{David},y)\\to W(x,y))",
+      "cannot change from one website to another"
+    ]
+  },
+  "Q-2022-MID-P02-c": {
+    "legacy": [
+      "\\exists x\\exists x'(x\\ne x'\\land\\forall y(W(x,y)\\leftrightarrow W(x',y)))",
+      "两个方向的包含"
+    ],
+    "english": [
+      "\\exists x\\exists x'(x\\ne x'\\land\\forall y(W(x,y)\\leftrightarrow W(x',y)))",
+      "both directions of containment"
+    ]
+  },
+  "Q-2022-MID-P03-1": {
+    "legacy": [
+      "\\forall x(P(x)\\to S(x))",
+      "非蜂鸟的前件为假"
+    ],
+    "english": [
+      "\\forall x(P(x)\\to S(x))",
+      "For a non-hummingbird the antecedent is false"
+    ]
+  },
+  "Q-2022-MID-P03-2": {
+    "legacy": [
+      "\\neg\\exists x(Q(x)\\land R(x))",
+      "\\forall x(Q(x)\\to\\neg R(x))"
+    ],
+    "english": [
+      "\\neg\\exists x(Q(x)\\land R(x))",
+      "\\forall x(Q(x)\\to\\neg R(x))"
+    ]
+  },
+  "Q-2022-MID-P03-3": {
+    "legacy": [
+      "\\forall x(\\neg R(x)\\to\\neg S(x))",
+      "\\forall x(S(x)\\to R(x))"
+    ],
+    "english": [
+      "\\forall x(\\neg R(x)\\to\\neg S(x))",
+      "\\forall x(S(x)\\to R(x))"
+    ]
+  },
+  "Q-2022-MID-P03-4": {
+    "legacy": [
+      "\\forall x(P(x)\\to\\neg Q(x))",
+      "不额外断言蜂鸟存在"
+    ],
+    "english": [
+      "\\forall x(P(x)\\to\\neg Q(x))",
+      "does not additionally assert that hummingbirds exist"
+    ]
+  },
+  "Q-2022-MID-P03-proof": {
+    "legacy": [
+      "由(1)在 $a$ 实例化",
+      "S(a)\\to R(a)",
+      "R(a)\\to\\neg Q(a)",
+      "由(8)全称推广"
+    ],
+    "english": [
+      "instantiate (1) at $a$",
+      "S(a)\\to R(a)",
+      "R(a)\\to\\neg Q(a)",
+      "universal generalization to (8)"
+    ]
+  },
+  "Q-2022-MID-P04-a": {
+    "legacy": [
+      "A=[1,2)",
+      "B=(1,2)",
+      "A-B=\\{1\\}"
+    ],
+    "english": [
+      "A=[1,2)",
+      "B=(1,2)",
+      "A-B=\\{1\\}"
+    ]
+  },
+  "Q-2022-MID-P04-b": {
+    "legacy": [
+      "A=(-\\infty,-1)\\cup\\mathbb N",
+      "A-B=\\mathbb N",
+      "可数且无限"
+    ],
+    "english": [
+      "A=(-\\infty,-1)\\cup\\mathbb N",
+      "A-B=\\mathbb N",
+      "countable and infinite"
+    ]
+  },
+  "Q-2022-MID-P04-c": {
+    "legacy": [
+      "A=[1,3]",
+      "B=[1,2)",
+      "A-B=[2,3]",
+      "通过平移双射"
+    ],
+    "english": [
+      "A=[1,3]",
+      "B=[1,2)",
+      "A-B=[2,3]",
+      "in bijection with $(0,1)$ by translation"
+    ]
+  },
+  "Q-2022-MID-P05-a": {
+    "legacy": [
+      "x=\\pm\\sqrt{k}",
+      "0,1,-1,\\sqrt2,-\\sqrt2",
+      "可数无限"
+    ],
+    "english": [
+      "x=\\pm\\sqrt{k}",
+      "0,1,-1,\\sqrt2,-\\sqrt2",
+      "countably infinite"
+    ]
+  },
+  "Q-2022-MID-P05-b": {
+    "legacy": [
+      "x=\\sum_{i\\ge1}2b_i10^{-i}",
+      "\\tfrac29 10^{-k}",
+      "所得实数仍不同"
+    ],
+    "english": [
+      "x=\\sum_{i\\ge1}2b_i10^{-i}",
+      "\\tfrac29 10^{-k}",
+      "the resulting real numbers are still different"
+    ]
+  },
+  "Q-2022-MID-P05-c": {
+    "legacy": [
+      "按 $i+j$ 从小到大",
+      "有限阶段输出",
+      "也可能有限或为空"
+    ],
+    "english": [
+      "in increasing order of $i+j$",
+      "output at a finite stage",
+      "may also be finite or empty"
+    ]
+  },
+  "Q-2022-MID-P05-d": {
+    "legacy": [
+      "x^2+y^2=r^2",
+      "不同半径给不同圆",
+      "正实数集"
+    ],
+    "english": [
+      "x^2+y^2=r^2",
+      "Distinct radii give distinct circles",
+      "positive real numbers"
+    ]
+  },
+  "Q-2022-MID-P06-a": {
+    "legacy": [
+      "n=pt",
+      "p\\mid(4n^2+1)-4n^2=1",
+      "p\\nmid n"
+    ],
+    "english": [
+      "n=pt",
+      "p\\mid(4n^2+1)-4n^2=1",
+      "p\\nmid n"
+    ]
+  },
+  "Q-2022-MID-P06-b": {
+    "legacy": [
+      "\\gcd(2n,p)=1",
+      "(4n^2)^{2k+1}",
+      "p\\mid2",
+      "p\\equiv1\\pmod4"
+    ],
+    "english": [
+      "\\gcd(2n,p)=1",
+      "(4n^2)^{2k+1}",
+      "p\\mid2",
+      "p\\equiv1\\pmod4"
+    ]
+  },
+  "Q-2022-MID-P06-c": {
+    "legacy": [
+      "N=4M^2+1>1",
+      "q\\equiv1\\pmod4",
+      "p_i\\nmid N"
+    ],
+    "english": [
+      "N=4M^2+1>1",
+      "q\\equiv1\\pmod4",
+      "p_i\\nmid N"
+    ]
+  },
+  "Q-2022-MID-P07-a": {
+    "legacy": [
+      "542=5\\cdot108+2",
+      "2^{542}=(2^{108})^5\\cdot2^2"
+    ],
+    "english": [
+      "542=5\\cdot108+2",
+      "2^{542}=(2^{108})^5\\cdot2^2"
+    ]
+  },
+  "Q-2022-MID-P07-b": {
+    "legacy": [
+      "3^{2022}\\equiv(-1)^{2022}=1\\pmod4",
+      "3^{3^{2022}}=(3^4)^t\\cdot3"
+    ],
+    "english": [
+      "3^{2022}\\equiv(-1)^{2022}=1\\pmod4",
+      "3^{3^{2022}}=(3^4)^t\\cdot3"
+    ]
+  },
+  "Q-2022-MID-P08-a": {
+    "legacy": [
+      "29=16+8+4+1",
+      "1331=10\\cdot133+1",
+      "1452=10\\cdot133+122"
+    ],
+    "english": [
+      "29=16+8+4+1",
+      "1331=10\\cdot133+1",
+      "1452=10\\cdot133+122"
+    ]
+  },
+  "Q-2022-MID-P08-b": {
+    "legacy": [
+      "8\\cdot29-11\\cdot21",
+      "41\\cdot29-11\\cdot108",
+      "1189=11\\cdot108+1"
+    ],
+    "english": [
+      "8\\cdot29-11\\cdot21",
+      "41\\cdot29-11\\cdot108",
+      "1189=11\\cdot108+1"
+    ]
+  },
+  "Q-2022-MID-P09": {
+    "legacy": [
+      "\\frac{\\log n}{\\sqrt2\\,n^{1/6}}\\to0",
+      "\\log(n^3),\\ n^{1/3}\\log n,\\ \\sqrt{2n},\\ \\log(2^n),\\ n^2+20,\\ 2^n"
+    ],
+    "english": [
+      "\\frac{\\log n}{\\sqrt2\\,n^{1/6}}\\to0",
+      "\\log(n^3),\\ n^{1/3}\\log n,\\ \\sqrt{2n},\\ \\log(2^n),\\ n^2+20,\\ 2^n"
+    ]
+  },
+  "Q-2022-MID-P10-a-best": {
+    "legacy": [
+      "n-1",
+      "并没有提前返回分支",
+      "\\Theta(n)"
+    ],
+    "english": [
+      "n-1",
+      "There is no early-return branch",
+      "\\Theta(n)"
+    ]
+  },
+  "Q-2022-MID-P10-a-worst": {
+    "legacy": [
+      "严格递增序列",
+      "O(n)",
+      "\\Omega(n)",
+      "\\Theta(n)"
+    ],
+    "english": [
+      "A strictly increasing sequence",
+      "O(n)",
+      "\\Omega(n)",
+      "\\Theta(n)"
+    ]
+  },
+  "Q-2022-MID-P10-b-best": {
+    "legacy": [
+      "x=a_1",
+      "后续元素都不读取",
+      "\\Theta(1)"
+    ],
+    "english": [
+      "x=a_1",
+      "no later elements are read",
+      "\\Theta(1)"
+    ]
+  },
+  "Q-2022-MID-P10-b-worst": {
+    "legacy": [
+      "全部 $n$ 次比较都失败",
+      "\\Omega(n)",
+      "\\Theta(n)"
+    ],
+    "english": [
+      "all $n$ comparisons fail",
+      "\\Omega(n)",
+      "\\Theta(n)"
+    ]
+  },
+  "Q-2022-MID-P10-c-best": {
+    "legacy": [
+      "m=\\lfloor3/4+n/4\\rfloor",
+      "x=a_m",
+      "\\Theta(1)"
+    ],
+    "english": [
+      "m=\\lfloor3/4+n/4\\rfloor",
+      "x=a_m",
+      "\\Theta(1)"
+    ]
+  },
+  "Q-2022-MID-P10-c-worst": {
+    "legacy": [
+      "L-1-\\lfloor(L-1)/4\\rfloor",
+      "L_{t+1}+3\\ge\\tfrac34(L_t+3)",
+      "t\\ge\\log_{4/3}((n+3)/3)"
+    ],
+    "english": [
+      "L-1-\\lfloor(L-1)/4\\rfloor",
+      "L_{t+1}+3\\ge\\tfrac34(L_t+3)",
+      "t\\ge\\log_{4/3}((n+3)/3)"
+    ]
+  },
+  "Q-2023S-MID-P01-a-1": {
+    "legacy": [
+      "\\neg r\\lor\\neg f",
+      "s\\land l",
+      "前件为假"
+    ],
+    "english": [
+      "\\neg r\\lor\\neg f",
+      "s\\land l",
+      "the antecedent is false"
+    ]
+  },
+  "Q-2023S-MID-P01-a-2": {
+    "legacy": [
+      "s\\to t",
+      "唯一的否定情形",
+      "颁奖而没有比赛"
+    ],
+    "english": [
+      "s\\to t",
+      "The only falsifying case",
+      "a trophy without a race"
+    ]
+  },
+  "Q-2023S-MID-P01-a-3": {
+    "legacy": [
+      "\\neg t",
+      "t$ 的真值为假",
+      "额外的推理步骤"
+    ],
+    "english": [
+      "\\neg t",
+      "the truth value of $t$ false",
+      "a separate inference step"
+    ]
+  },
+  "Q-2023S-MID-P01-a-proof": {
+    "legacy": [
+      "\\neg(s\\land l)",
+      "\\neg(\\neg r\\lor\\neg f)",
+      "⑨ $r$"
+    ],
+    "english": [
+      "\\neg(s\\land l)",
+      "\\neg(\\neg r\\lor\\neg f)",
+      "Step 9 concludes $r$"
+    ]
+  },
+  "Q-2023S-MID-P02-a": {
+    "legacy": [
+      "(x-y)^2\\ge0",
+      "x^2+y^2\\ge2xy",
+      "当且仅当 $x=y$"
+    ],
+    "english": [
+      "(x-y)^2\\ge0",
+      "x^2+y^2\\ge2xy",
+      "if and only if $x=y$"
+    ]
+  },
+  "Q-2023S-MID-P02-b": {
+    "legacy": [
+      "\\forall x\\exists y(x<y^2)",
+      "\\sqrt{|x|+1}",
+      "y^2=|x|+1>x"
+    ],
+    "english": [
+      "\\forall x\\exists y(x<y^2)",
+      "\\sqrt{|x|+1}",
+      "y^2=|x|+1>x"
+    ]
+  },
+  "Q-2023S-MID-P02-c": {
+    "legacy": [
+      "\\neg\\exists x",
+      "De Morgan",
+      "x\\le0\\lor\\neg P(x)"
+    ],
+    "english": [
+      "\\neg\\exists x",
+      "De Morgan",
+      "x\\le0\\lor\\neg P(x)"
+    ]
+  },
+  "Q-2023S-MID-P02-d": {
+    "legacy": [
+      "P(1)$ 真",
+      "P(0)$ 假",
+      "分别是假、真"
+    ],
+    "english": [
+      "$P(1)$ is true",
+      "$P(0)$ is false",
+      "false and true, respectively"
+    ]
+  },
+  "Q-2023S-MID-P03-1": {
+    "legacy": [
+      "a+b",
+      "最终必定列到",
+      "所以集合无限可数"
+    ],
+    "english": [
+      "a+b",
+      "eventually reaches every pair",
+      "so the set is countably infinite"
+    ]
+  },
+  "Q-2023S-MID-P03-2": {
+    "legacy": [
+      "D=\\{n:n\\notin A_n\\}",
+      "至少在元素 $k$",
+      "与“完整列出全部子集”矛盾"
+    ],
+    "english": [
+      "D=\\{n:n\\notin A_n\\}",
+      "at least on element $k$",
+      "contradicting a complete list of all subsets"
+    ]
+  },
+  "Q-2023S-MID-P03-3": {
+    "legacy": [
+      "f\\mapsto(f(0),f(1))",
+      "bijection",
+      "函数集合无限可数"
+    ],
+    "english": [
+      "f\\mapsto(f(0),f(1))",
+      "bijection",
+      "the function set is countably infinite"
+    ]
+  },
+  "Q-2023S-MID-P03-4": {
+    "legacy": [
+      "A_f=\\{n:f(n)=1\\}",
+      "g(n)=1-f_n(n)",
+      "与完整枚举矛盾"
+    ],
+    "english": [
+      "A_f=\\{n:f(n)=1\\}",
+      "g(n)=1-f_n(n)",
+      "contradicts a complete enumeration"
+    ]
+  },
+  "Q-2023S-MID-P03-5": {
+    "legacy": [
+      "\\{1,2\\}",
+      "g(n)=3-f_n(n)",
+      "每个子集都至多可数"
+    ],
+    "english": [
+      "\\{1,2\\}",
+      "g(n)=3-f_n(n)",
+      "every subset would be at most countable"
+    ]
+  },
+  "Q-2023S-MID-P04": {
+    "legacy": [
+      "y^2\\equiv1\\pmod8",
+      "2x^2\\equiv7+5\\equiv4",
+      "两种情况穷尽所有整数"
+    ],
+    "english": [
+      "y^2\\equiv1\\pmod8",
+      "2x^2\\equiv7+5\\equiv4",
+      "The two parity cases exhaust all integers"
+    ]
+  },
+  "Q-2023S-MID-P05": {
+    "legacy": [
+      "x=37+231k",
+      "1192\\equiv37",
+      "3\\cdot37=111"
+    ],
+    "english": [
+      "x=37+231k",
+      "1192\\equiv37",
+      "3\\cdot37=111"
+    ]
+  },
+  "Q-2023S-MID-P06": {
+    "legacy": [
+      "2^n(2^{m-n}-1)",
+      "\\gcd(2^n,2^n-1)=1",
+      "(5,0)"
+    ],
+    "english": [
+      "2^n(2^{m-n}-1)",
+      "\\gcd(2^n,2^n-1)=1",
+      "(5,0)"
+    ]
+  },
+  "Q-2023S-MID-P07-a": {
+    "legacy": [
+      "1260=54\\cdot23+18",
+      "9\\cdot1260-493\\cdot23",
+      "17641=14\\cdot1260+1"
+    ],
+    "english": [
+      "1260=54\\cdot23+18",
+      "9\\cdot1260-493\\cdot23",
+      "17641=14\\cdot1260+1"
+    ]
+  },
+  "Q-2023S-MID-P07-b": {
+    "legacy": [
+      "512+128+64+32+16+8+4+2+1",
+      "219,-27,729,907,188,686",
+      "16\\cdot560\\cdot128\\equiv500"
+    ],
+    "english": [
+      "512+128+64+32+16+8+4+2+1",
+      "219,-27,729,907,188,686",
+      "16\\cdot560\\cdot128\\equiv500"
+    ]
+  },
+  "Q-2023S-MID-P08-a": {
+    "legacy": [
+      "n^{-0.1}+100n^{-1}",
+      "小于任何这样的 $c$",
+      "没有 $\\Theta$"
+    ],
+    "english": [
+      "n^{-0.1}+100n^{-1}",
+      "smaller than any such $c",
+      "no $\\Theta$"
+    ]
+  },
+  "Q-2023S-MID-P08-b": {
+    "legacy": [
+      "2^{-n}",
+      "2^{-n}<c",
+      "排除 $\\Omega$"
+    ],
+    "english": [
+      "2^{-n}",
+      "2^{-n}<c",
+      "rules out $\\Omega$"
+    ]
+  },
+  "Q-2023S-MID-P08-c": {
+    "legacy": [
+      "\\frac{\\log_bn}{\\log_b5}",
+      "有限正常数",
+      "因此题目要求的所有适用关系"
+    ],
+    "english": [
+      "\\frac{\\log_bn}{\\log_b5}",
+      "a finite positive constant",
+      "all applicable relations must be listed"
+    ]
+  },
+  "Q-2023S-MID-P08-e": {
+    "legacy": [
+      "A/B\\to\\infty",
+      "A=\\Omega(B)",
+      "任何拟定的有限上界常数"
+    ],
+    "english": [
+      "A/B\\to\\infty",
+      "A=\\Omega(B)",
+      "any proposed finite upper-bound constant"
+    ]
+  },
+  "Q-2023F-MID-P01-a": {
+    "legacy": [
+      "(\\neg p\\lor r)\\lor(\\neg q\\lor r)",
+      "\\neg(p\\land q)\\lor r",
+      "(p\\land q)\\to r"
+    ],
+    "english": [
+      "(\\neg p\\lor r)\\lor(\\neg q\\lor r)",
+      "\\neg(p\\land q)\\lor r",
+      "(p\\land q)\\to r"
+    ]
+  },
+  "Q-2023F-MID-P01-b": {
+    "legacy": [
+      "⑤ $p$",
+      "⑥ $q\\to r$",
+      "⑧ $\\neg r\\to\\neg t$"
+    ],
+    "english": [
+      "step 5 gives $p$",
+      "step 6 gives $q\\to r$",
+      "step 8 gives $\\neg r\\to\\neg t$"
+    ]
+  },
+  "Q-2023F-MID-P01-c": {
+    "legacy": [
+      "p=F,q=T,r=F,s=F",
+      "T\\to T=T",
+      "T\\to F=F"
+    ],
+    "english": [
+      "p=F,q=T,r=F,s=F",
+      "T\\to T=T",
+      "T\\to F=F"
+    ]
+  },
+  "Q-2023F-MID-P02-a": {
+    "legacy": [
+      "\\forall x(P(x)\\land\\neg\\forall y",
+      "\\exists y\\neg",
+      "\\neg R(y)\\land\\neg S(y)"
+    ],
+    "english": [
+      "\\forall x(P(x)\\land\\neg\\forall y",
+      "\\exists y\\neg",
+      "\\neg R(y)\\land\\neg S(y)"
+    ]
+  },
+  "Q-2023F-MID-P02-b": {
+    "legacy": [
+      "\\forall c\\exists x\\exists y(c=ax+by)",
+      "biconditional",
+      "系数可依赖 $a,b,c$"
+    ],
+    "english": [
+      "\\forall c\\exists x\\exists y(c=ax+by)",
+      "biconditional",
+      "coefficients may depend on $a,b,c$"
+    ]
+  },
+  "Q-2023F-MID-P03-a": {
+    "legacy": [
+      "S\\ne\\varnothing",
+      "x\\in T",
+      "x\\in S\\cap T"
+    ],
+    "english": [
+      "S\\ne\\varnothing",
+      "x\\in T",
+      "x\\in S\\cap T"
+    ]
+  },
+  "Q-2023F-MID-P03-b-ii": {
+    "legacy": [
+      "官方分类一致",
+      "f\\mapsto(f(1),f(2))",
+      "故是无限可数"
+    ],
+    "english": [
+      "agrees with the official classification",
+      "f\\mapsto(f(1),f(2))",
+      "Thus the set is infinitely countable"
+    ]
+  },
+  "Q-2023F-MID-P03-b-iii": {
+    "legacy": [
+      "官方分类一致",
+      "g(n)=3-f_n(n)",
+      "与完整枚举矛盾"
+    ],
+    "english": [
+      "agrees with the official classification",
+      "g(n)=3-f_n(n)",
+      "contradicts a complete enumeration"
+    ]
+  },
+  "Q-2023F-MID-P03-c": {
+    "legacy": [
+      "\\mathbb Z^{d+1}",
+      "至多有 $d$ 个",
+      "x-k"
+    ],
+    "english": [
+      "\\mathbb Z^{d+1}",
+      "at most $d$ distinct roots",
+      "x-k"
+    ]
+  },
+  "Q-2023F-MID-P04-a": {
+    "legacy": [
+      "C=(3,3)",
+      "20\\cdot15=300",
+      "792-300=492"
+    ],
+    "english": [
+      "C=(3,3)",
+      "20\\cdot15=300",
+      "792-300=492"
+    ]
+  },
+  "Q-2023F-MID-P04-b": {
+    "legacy": [
+      "\\binom42=6",
+      "2^4=16",
+      "不可能同时属于两条不同路径"
+    ],
+    "english": [
+      "\\binom42=6",
+      "2^4=16",
+      "cannot belong to two distinct successful paths"
+    ]
+  },
+  "Q-2023F-MID-P04-c": {
+    "legacy": [
+      "数量分别为一、一、四",
+      "第三行",
+      "6(1\\cdot1+1\\cdot6+4\\cdot2)=90"
+    ],
+    "english": [
+      "counts are one, one, and four",
+      "third row",
+      "6(1\\cdot1+1\\cdot6+4\\cdot2)=90"
+    ]
+  },
+  "Q-2023F-MID-P04-d": {
+    "legacy": [
+      "九个边长一",
+      "顶点仅有一个",
+      "距离只能严格小于一"
+    ],
+    "english": [
+      "nine side-one triangles",
+      "Only one grid vertex",
+      "distance must be strictly less than one"
+    ]
+  },
+  "Q-2023F-MID-P05": {
+    "legacy": [
+      "固定 $i$ 时相乘",
+      "互斥且覆盖全部选择",
+      "\\binom n{n-i}=\\binom ni"
+    ],
+    "english": [
+      "For fixed $i$, multiply",
+      "disjoint and cover every selection",
+      "\\binom n{n-i}=\\binom ni"
+    ]
+  },
+  "Q-2023F-MID-P06": {
+    "legacy": [
+      "A:a\\ge5",
+      "三重交集为空",
+      "105-45-36-28+6+3+1-0=6"
+    ],
+    "english": [
+      "A:a\\ge5",
+      "The triple intersection is empty",
+      "105-45-36-28+6+3+1-0=6"
+    ]
+  },
+  "Q-2023F-MID-P08": {
+    "legacy": [
+      "0.7\\cdot0.9=0.63",
+      "0.3\\cdot0.2=0.06",
+      "\\frac{21}{23}"
+    ],
+    "english": [
+      "0.7\\cdot0.9=0.63",
+      "0.3\\cdot0.2=0.06",
+      "\\frac{21}{23}"
+    ]
+  },
+  "Q-2023F-MID-P09-a-expectation": {
+    "legacy": [
+      "(-1)\\cdot(1/3)",
+      "=1/3",
+      "完全不需要假设"
+    ],
+    "english": [
+      "(-1)\\cdot(1/3)",
+      "=1/3",
+      "No independence assumption between different steps is needed"
+    ]
+  },
+  "Q-2023F-MID-P09-a-variance": {
+    "legacy": [
+      "E(X^2)=1^2",
+      "1-1/9=8/9",
+      "\\frac8{27}+\\frac{16}{27}"
+    ],
+    "english": [
+      "E(X^2)=1^2",
+      "1-1/9=8/9",
+      "\\frac8{27}+\\frac{16}{27}"
+    ]
+  },
+  "Q-2023F-MID-P09-b-expectation": {
+    "legacy": [
+      "Y=-2",
+      "=-2/3",
+      "E(X)-1=-2/3"
+    ],
+    "english": [
+      "Y=-2",
+      "=-2/3",
+      "E(X)-1=-2/3"
+    ]
+  },
+  "Q-2023F-MID-P09-b-variance": {
+    "legacy": [
+      "E(Y^2)",
+      "4/3-4/9=8/9",
+      "(X-1)-E(X-1)=X-E(X)"
+    ],
+    "english": [
+      "E(Y^2)",
+      "4/3-4/9=8/9",
+      "(X-1)-E(X-1)=X-E(X)"
+    ]
+  },
+  "Q-2023F-MID-P09-c": {
+    "legacy": [
+      "(-1)(-2)=2",
+      "E(Z)=1-1/3=2/3",
+      "并没有 independence"
+    ],
+    "english": [
+      "(-1)(-2)=2",
+      "E(Z)=1-1/3=2/3",
+      "there is no independence"
+    ]
+  },
+  "Q-2023F-MID-P09-d-i": {
+    "legacy": [
+      "\\{T=2k\\}",
+      "概率只能为零",
+      "不使用不同步之间 independent"
+    ],
+    "english": [
+      "\\{T=2k\\}",
+      "probability must be zero",
+      "does not use independence between different moves"
+    ]
+  },
+  "Q-2023F-FINAL-P01-a-i": {
+    "legacy": [
+      "x=6,a=2,b=3",
+      "T\\to F",
+      "没有被限制为 prime"
+    ],
+    "english": [
+      "x=6,a=2,b=3",
+      "T\\to F",
+      "not restricted to primes"
+    ]
+  },
+  "Q-2023F-FINAL-P01-a-ii": {
+    "legacy": [
+      "ux+va=1",
+      "uxb+vab=b",
+      "x\\mid b"
+    ],
+    "english": [
+      "ux+va=1",
+      "uxb+vab=b",
+      "x\\mid b"
+    ]
+  },
+  "Q-2023F-FINAL-P01-a-iii": {
+    "legacy": [
+      "x=1,a=b=1",
+      "P(1)=F",
+      "T\\to F=F"
+    ],
+    "english": [
+      "x=1,a=b=1",
+      "P(1)=F",
+      "T\\to F=F"
+    ]
+  },
+  "Q-2023F-FINAL-P01-b": {
+    "legacy": [
+      "Q(a,p)",
+      "E(a^{p-1},1,p)",
+      "两个必要假设"
+    ],
+    "english": [
+      "Q(a,p)",
+      "E(a^{p-1},1,p)",
+      "two necessary hypotheses"
+    ]
+  },
+  "Q-2023F-FINAL-P02-b": {
+    "legacy": [
+      "进位一",
+      "\\{0,2,4\\}",
+      "2\\cdot3\\cdot3\\cdot3=54"
+    ],
+    "english": [
+      "carry of one",
+      "\\{0,2,4\\}",
+      "2\\cdot3\\cdot3\\cdot3=54"
+    ]
+  },
+  "Q-2023F-FINAL-P03": {
+    "legacy": [
+      "0.0002",
+      "0.99970012",
+      "49\\,985\\,001/49\\,985\\,006"
+    ],
+    "english": [
+      "0.0002",
+      "0.99970012",
+      "49\\,985\\,001/49\\,985\\,006"
+    ]
+  },
+  "Q-2023F-FINAL-P04-d": {
+    "legacy": [
+      "2^m",
+      "一一配对",
+      "K=-Y",
+      "Y\\ge n/2"
+    ],
+    "english": [
+      "2^m",
+      "one-to-one pairing",
+      "K=-Y",
+      "Y\\ge n/2"
+    ]
+  },
+  "Q-2023F-FINAL-P05-a": {
+    "legacy": [
+      "288=12\\cdot23+12",
+      "2\\cdot288-25\\cdot23",
+      "6049=21\\cdot288+1"
+    ],
+    "english": [
+      "288=12\\cdot23+12",
+      "2\\cdot288-25\\cdot23",
+      "6049=21\\cdot288+1"
+    ]
+  },
+  "Q-2023F-FINAL-P05-b": {
+    "legacy": [
+      "18^2=324",
+      "23=16+4+2+1",
+      "1\\cdot1\\cdot1\\cdot18"
+    ],
+    "english": [
+      "18^2=324",
+      "23=16+4+2+1",
+      "1\\cdot1\\cdot1\\cdot18"
+    ]
+  },
+  "Q-2023F-FINAL-P06-a": {
+    "legacy": [
+      "模三只有三个余数类",
+      "两个偶因子",
+      "乘积为零仍被十二整除"
+    ],
+    "english": [
+      "three residue classes modulo three",
+      "two even factors",
+      "product is zero and is still divisible by twelve"
+    ]
+  },
+  "Q-2023F-FINAL-P06-b": {
+    "legacy": [
+      "2023=3\\cdot674+1",
+      "(-1)^{674}\\cdot3=3",
+      "标准余数范围"
+    ],
+    "english": [
+      "2023=3\\cdot674+1",
+      "(-1)^{674}\\cdot3=3",
+      "standard remainder range"
+    ]
+  },
+  "Q-2023F-FINAL-P07": {
+    "legacy": [
+      "4k\\equiv2\\pmod6",
+      "k=2+3t",
+      "x=27+30t"
+    ],
+    "english": [
+      "4k\\equiv2\\pmod6",
+      "k=2+3t",
+      "x=27+30t"
+    ]
+  },
+  "Q-2023F-FINAL-P08-a": {
+    "legacy": [
+      "Base cases",
+      "induction hypothesis",
+      "\\lfloor9N/10\\rfloor<N",
+      "归纳步成立"
+    ],
+    "english": [
+      "Base cases",
+      "induction hypothesis",
+      "\\lfloor9N/10\\rfloor<N",
+      "induction step is complete"
+    ]
+  },
+  "Q-2023F-FINAL-P08-b": {
+    "legacy": [
+      "b_n=3a_{n-1}+3",
+      "b_0=a_0+1=2",
+      "3(2\\cdot3^{n-1}-1)+2"
+    ],
+    "english": [
+      "b_n=3a_{n-1}+3",
+      "b_0=a_0+1=2",
+      "3(2\\cdot3^{n-1}-1)+2"
+    ]
+  },
+  "Q-2023F-FINAL-P09-a": {
+    "legacy": [
+      "p_2,p_3,p_4",
+      "三是奇数",
+      "违反 noncrossing 条件"
+    ],
+    "english": [
+      "p_2,p_3,p_4",
+      "three is odd",
+      "violates the noncrossing condition"
+    ]
+  },
+  "Q-2023F-FINAL-P09-b": {
+    "legacy": [
+      "j-2",
+      "2n-j",
+      "相邻两人配成对"
+    ],
+    "english": [
+      "j-2",
+      "2n-j",
+      "pair adjacent people"
+    ]
+  },
+  "Q-2023F-FINAL-P09-c": {
+    "legacy": [
+      "a_{j-2}a_{2n-j}",
+      "奇数 $j$ 时为零",
+      "bijection"
+    ],
+    "english": [
+      "a_{j-2}a_{2n-j}",
+      "zero for odd $j$",
+      "bijection"
+    ]
+  },
+  "Q-2023F-FINAL-P09-d": {
+    "legacy": [
+      "\\sum_{k=1}^{n}a_{2k-2}a_{2n-2k}",
+      "a_0=1",
+      "a_6=2+1+2=5"
+    ],
+    "english": [
+      "\\sum_{k=1}^{n}a_{2k-2}a_{2n-2k}",
+      "a_0=1",
+      "a_6=2+1+2=5"
+    ]
+  },
+  "Q-2023F-FINAL-P10": {
+    "legacy": [
+      "\\sum_{i=2}^n(i-1)",
+      "真实可达到的二次下界",
+      "同一表达式也给出比较数上界"
+    ],
+    "english": [
+      "\\sum_{i=2}^n(i-1)",
+      "attainable quadratic lower bound",
+      "same expression bounds the comparisons above"
+    ]
+  },
+  "Q-2024S-MID-P01": {
+    "legacy": [
+      "\\log n=o(n^{1/2})",
+      "(2/3)^n",
+      "(n/2)^{n/2}"
+    ],
+    "english": [
+      "\\log n=o(n^{1/2})",
+      "(2/3)^n",
+      "(n/2)^{n/2}"
+    ]
+  },
+  "Q-2024S-MID-P02-a": {
+    "legacy": [
+      "p=T,q=F",
+      "p=q=T",
+      "不能是 contradiction"
+    ],
+    "english": [
+      "p=T,q=F",
+      "p=q=T",
+      "cannot be a contradiction"
+    ]
+  },
+  "Q-2024S-MID-P02-b": {
+    "legacy": [
+      "p=F,q=T",
+      "p\\lor\\neg q=F\\lor F=F",
+      "没有真赋值"
+    ],
+    "english": [
+      "p=F,q=T",
+      "p\\lor\\neg q=F\\lor F=F",
+      "no true assignment"
+    ]
+  },
+  "Q-2024S-MID-P02-c": {
+    "legacy": [
+      "distributive law",
+      "左右同真同假",
+      "答案是 $T$"
+    ],
+    "english": [
+      "distributive law",
+      "Both sides have the same truth value",
+      "answer is $T$"
+    ]
+  },
+  "Q-2024S-MID-P02-d": {
+    "legacy": [
+      "真值全部相同",
+      "最后的否定",
+      "两类情况穷尽"
+    ],
+    "english": [
+      "all have the same truth value",
+      "final negation",
+      "two cases exhaust"
+    ]
+  },
+  "Q-2024S-MID-P02-e": {
+    "legacy": [
+      "\\neg p\\lor q\\lor r",
+      "幂等律",
+      "双条件恒真"
+    ],
+    "english": [
+      "\\neg p\\lor q\\lor r",
+      "idempotent law",
+      "biconditional a tautology"
+    ]
+  },
+  "Q-2024S-MID-P03-a": {
+    "legacy": [
+      "固定 $x_0$",
+      "同一个 $x_0$",
+      "前件为假"
+    ],
+    "english": [
+      "fixed $x_0$",
+      "same $x_0$",
+      "antecedent is false"
+    ]
+  },
+  "Q-2024S-MID-P03-b": {
+    "legacy": [
+      "\\{0,1\\}",
+      "$x=y$",
+      "$x=0$ 不满足 $y=1$",
+      "后件假"
+    ],
+    "english": [
+      "\\{0,1\\}",
+      "$x=y$",
+      "$x=0$ fails for $y=1$",
+      "consequent is false"
+    ]
+  },
+  "Q-2024S-MID-P03-c": {
+    "legacy": [
+      "\\{0,1\\}",
+      "$x=0$",
+      "P(1,y)",
+      "后件"
+    ],
+    "english": [
+      "\\{0,1\\}",
+      "$x=0$",
+      "P(1,y)",
+      "consequent"
+    ]
+  },
+  "Q-2024S-MID-P03-d": {
+    "legacy": [
+      "\\{0,1\\}",
+      "$y=x$",
+      "后件假"
+    ],
+    "english": [
+      "\\{0,1\\}",
+      "$y=x$",
+      "consequent is false"
+    ]
+  },
+  "Q-2024S-MID-P04-a": {
+    "legacy": [
+      "4\\mid x",
+      "\\exists a\\exists b",
+      "x=a^2-b^2"
+    ],
+    "english": [
+      "4\\mid x",
+      "\\exists a\\exists b",
+      "x=a^2-b^2"
+    ]
+  },
+  "Q-2024S-MID-P04-b": {
+    "legacy": [
+      "\\neg(A\\to B)\\equiv A\\land\\neg B",
+      "两个全称",
+      "x\\ne a^2-b^2"
+    ],
+    "english": [
+      "\\neg(A\\to B)\\equiv A\\land\\neg B",
+      "two universal quantifiers",
+      "x\\ne a^2-b^2"
+    ]
+  },
+  "Q-2024S-MID-P05": {
+    "legacy": [
+      "由 4、6",
+      "由 2、8",
+      "由 1、9",
+      "p\\land\\neg q"
+    ],
+    "english": [
+      "From 4 and 6",
+      "From 2 and 8",
+      "From 1 and 9",
+      "p\\land\\neg q"
+    ]
+  },
+  "Q-2024S-MID-P06": {
+    "legacy": [
+      "5+2\\sqrt6=a^2/b^2",
+      "p^2=6q^2",
+      "p=2k",
+      "q$ 也偶"
+    ],
+    "english": [
+      "5+2\\sqrt6=a^2/b^2",
+      "p^2=6q^2",
+      "p=2k",
+      "$q$ is also even"
+    ]
+  },
+  "Q-2024S-MID-P07": {
+    "legacy": [
+      "D=\\prod_i a_i",
+      "D/a_i=\\prod_{j\\ne i}a_j",
+      "左侧偶",
+      "右侧 $D$ 为奇数"
+    ],
+    "english": [
+      "D=\\prod_i a_i",
+      "D/a_i=\\prod_{j\\ne i}a_j",
+      "left side is even",
+      "right side $D$ is odd"
+    ]
+  },
+  "Q-2024S-MID-P08": {
+    "legacy": [
+      "2,1,2,1,1",
+      "249",
+      "71\\equiv3\\pmod4",
+      "76,79,83,80,80"
+    ],
+    "english": [
+      "2,1,2,1,1",
+      "249",
+      "71\\equiv3\\pmod4",
+      "76,79,83,80,80"
+    ]
+  },
+  "Q-2024S-MID-P09": {
+    "legacy": [
+      "792=46",
+      "233\\cdot17-5\\cdot792",
+      "3961"
+    ],
+    "english": [
+      "792=46",
+      "233\\cdot17-5\\cdot792",
+      "3961"
+    ]
+  },
+  "Q-2024S-MID-P10": {
+    "legacy": [
+      "M_1=35,M_2=21,M_3=15",
+      "269",
+      "59+105k"
+    ],
+    "english": [
+      "M_1=35,M_2=21,M_3=15",
+      "269",
+      "59+105k"
+    ]
+  },
+  "Q-2024S-MID-P11": {
+    "legacy": [
+      "共有 $p-1$ 项",
+      "9S=10^{p-1}-1",
+      "p\\nmid9",
+      "p\\mid S"
+    ],
+    "english": [
+      "with $p-1$ terms",
+      "9S=10^{p-1}-1",
+      "p\\nmid9",
+      "p\\mid S"
+    ]
+  },
+  "Q-2024S-MID-P12-a": {
+    "legacy": [
+      "a=du,m=dv",
+      "y=d(ru+sv)",
+      "y\\ge d"
+    ],
+    "english": [
+      "a=du,m=dv",
+      "y=d(ru+sv)",
+      "y\\ge d"
+    ]
+  },
+  "Q-2024S-MID-P12-b": {
+    "legacy": [
+      "ab\\equiv1\\pmod m",
+      "1=ba-tm",
+      "0<1<d"
+    ],
+    "english": [
+      "ab\\equiv1\\pmod m",
+      "1=ba-tm",
+      "0<1<d"
+    ]
+  },
+  "Q-2024S-FINAL-P01-N": {
+    "legacy": [
+      "128<147",
+      "256>192",
+      "2k^2-(k+1)^2=k^2-2k-1"
+    ],
+    "english": [
+      "128<147",
+      "256>192",
+      "2k^2-(k+1)^2=k^2-2k-1"
+    ]
+  },
+  "Q-2024S-FINAL-P01-proof": {
+    "legacy": [
+      "基础步",
+      "2^8=256>192",
+      "(k-1)^2-2\\ge49-2",
+      "归纳假设"
+    ],
+    "english": [
+      "Base case",
+      "2^8=256>192",
+      "(k-1)^2-2\\ge49-2",
+      "Inductive hypothesis"
+    ]
+  },
+  "Q-2024S-FINAL-P04": {
+    "legacy": [
+      "五次上移",
+      "462",
+      "150",
+      "3120",
+      "唯一分解"
+    ],
+    "english": [
+      "five up steps",
+      "462",
+      "150",
+      "3120",
+      "unique decomposition"
+    ]
+  },
+  "Q-2024S-FINAL-P05": {
+    "legacy": [
+      "P_0=0",
+      "互斥",
+      "(2n+3)P_{n+1}=(2n+1)P_n+1",
+      "A_{n+1}=A_n+1"
+    ],
+    "english": [
+      "P_0=0",
+      "mutually exclusive",
+      "(2n+3)P_{n+1}=(2n+1)P_n+1",
+      "A_{n+1}=A_n+1"
+    ]
+  },
+  "Q-2024S-FINAL-P07": {
+    "legacy": [
+      "两端",
+      "\\binom{m+1}k",
+      "\\binom{n-1}{k-1}",
+      "k>n",
+      "k>m+1"
+    ],
+    "english": [
+      "both ends",
+      "\\binom{m+1}k",
+      "\\binom{n-1}{k-1}",
+      "k>n",
+      "k>m+1"
+    ]
+  },
+  "Q-2024S-FINAL-P08": {
+    "legacy": [
+      "A_p,A_q,A_r",
+      "n/(pq)",
+      "n/(pqr)",
+      "提出 n"
+    ],
+    "english": [
+      "A_p,A_q,A_r",
+      "n/(pq)",
+      "n/(pqr)",
+      "Factor out $n$"
+    ]
+  },
+  "Q-2024S-FINAL-P09-a": {
+    "legacy": [
+      "C\\,k!(p-k)!=p!",
+      "p\\nmid k!(p-k)!",
+      "p\\mid C"
+    ],
+    "english": [
+      "C\\,k!(p-k)!=p!",
+      "p\\nmid k!(p-k)!",
+      "p\\mid C"
+    ]
+  },
+  "Q-2024S-FINAL-P09-b": {
+    "legacy": [
+      "基础步",
+      "(a+1)^p-(a+1)=(a^p-a)+\\sum_{i=1}^{p-1}\\binom pi a^i",
+      "归纳假设"
+    ],
+    "english": [
+      "Base case",
+      "(a+1)^p-(a+1)=(a^p-a)+\\sum_{i=1}^{p-1}\\binom pi a^i",
+      "inductive hypothesis"
+    ]
+  },
+  "Q-2024F-MID-P01-a": {
+    "legacy": [
+      "\\neg p\\lor(q\\lor\\neg q)\\lor r",
+      "q\\lor\\neg q=T"
+    ],
+    "english": [
+      "\\neg p\\lor(q\\lor\\neg q)\\lor r",
+      "q\\lor\\neg q=T"
+    ]
+  },
+  "Q-2024F-MID-P01-b": {
+    "legacy": [
+      "F\\to F=T",
+      "T\\to F=F",
+      "同一个合法赋值"
+    ],
+    "english": [
+      "F\\to F=T",
+      "T\\to F=F",
+      "same valid assignment"
+    ]
+  },
+  "Q-2024F-MID-P01-c": {
+    "legacy": [
+      "由 6、7",
+      "由 8、9",
+      "由 1、10",
+      "\\neg p\\land\\neg t"
+    ],
+    "english": [
+      "From 6 and 7",
+      "From 8 and 9",
+      "From 1 and 10",
+      "\\neg p\\land\\neg t"
+    ]
+  },
+  "Q-2024F-MID-P02-a": {
+    "legacy": [
+      "Even(x)",
+      "\\exists y\\exists z",
+      "Every even natural number greater than 2 is the sum of two prime numbers.",
+      "distinct"
+    ],
+    "english": [
+      "Even(x)",
+      "\\exists y\\exists z",
+      "Every even natural number greater than 2 is the sum of two prime numbers.",
+      "distinct"
+    ]
+  },
+  "Q-2024F-MID-P02-b": {
+    "legacy": [
+      "\\exists x(A(x)\\land\\forall y\\forall z\\neg B(x,y,z))",
+      "\\neg Prime(y)\\lor\\neg Prime(z)",
+      "y+z\\ne x"
+    ],
+    "english": [
+      "\\exists x(A(x)\\land\\forall y\\forall z\\neg B(x,y,z))",
+      "\\neg Prime(y)\\lor\\neg Prime(z)",
+      "y+z\\ne x"
+    ]
+  },
+  "Q-2024F-MID-P02-c": {
+    "legacy": [
+      "P(a)=T,P(b)=F,Q(a)=T,Q(b)=F",
+      "选 $y=b$",
+      "T\\to F=F"
+    ],
+    "english": [
+      "P(a)=T,P(b)=F,Q(a)=T,Q(b)=F",
+      "choose $y=b$",
+      "T\\to F=F"
+    ]
+  },
+  "Q-2024F-MID-P03-a-i": {
+    "legacy": [
+      "有限长度字符串",
+      "可数并集",
+      "无限多个"
+    ],
+    "english": [
+      "finite-length string",
+      "countable union",
+      "infinitely many"
+    ]
+  },
+  "Q-2024F-MID-P03-a-ii": {
+    "legacy": [
+      "X=0",
+      "(0,y)",
+      "有理数合并会使实数可数"
+    ],
+    "english": [
+      "X=0",
+      "(0,y)",
+      "union with the countable rationals would make the reals countable"
+    ]
+  },
+  "Q-2024F-MID-P03-a-iii": {
+    "legacy": [
+      "q_1,q_2",
+      "i+j=2,3,4",
+      "对角线",
+      "无限"
+    ],
+    "english": [
+      "q_1,q_2",
+      "i+j=2,3,4",
+      "diagonal",
+      "infinite"
+    ]
+  },
+  "Q-2024F-MID-P03-a-iv": {
+    "legacy": [
+      "反设",
+      "\\mathcal P(\\mathbb R)=C\\cup D",
+      "Cantor",
+      "矛盾"
+    ],
+    "english": [
+      "Suppose for contradiction",
+      "\\mathcal P(\\mathbb R)=C\\cup D",
+      "Cantor",
+      "contradiction"
+    ]
+  },
+  "Q-2024F-MID-P03-b-i": {
+    "legacy": [
+      "B=\\mathbb R\\setminus\\mathbb N",
+      "B 包含全部无理数",
+      "=\\mathbb N"
+    ],
+    "english": [
+      "B=\\mathbb R\\setminus\\mathbb N",
+      "$B$ contains every irrational",
+      "=\\mathbb N"
+    ]
+  },
+  "Q-2024F-MID-P03-b-ii": {
+    "legacy": [
+      "B=(0,1)",
+      "[1,2]",
+      "不可数集合的超集"
+    ],
+    "english": [
+      "B=(0,1)",
+      "[1,2]",
+      "superset of an uncountable set"
+    ]
+  },
+  "Q-2024F-MID-P03-c": {
+    "legacy": [
+      "De Morgan",
+      "分配律",
+      "各步均为双向等价"
+    ],
+    "english": [
+      "De Morgan",
+      "distributive law",
+      "Every step is a two-way equivalence"
+    ]
+  },
+  "Q-2024F-MID-P04-a-i": {
+    "legacy": [
+      "六次 Right",
+      "四次 Up",
+      "\\binom{10}4=210"
+    ],
+    "english": [
+      "six Right",
+      "four Up",
+      "\\binom{10}4=210"
+    ]
+  },
+  "Q-2024F-MID-P04-a-ii": {
+    "legacy": [
+      "(5,1)",
+      "(5,2)",
+      "\\binom61=6",
+      "\\binom31=3",
+      "=18"
+    ],
+    "english": [
+      "(5,1)",
+      "(5,2)",
+      "\\binom61=6",
+      "\\binom31=3",
+      "=18"
+    ]
+  },
+  "Q-2024F-MID-P04-a-iii": {
+    "legacy": [
+      "=210",
+      "=18",
+      "210-18=192",
+      "禁止的是边"
+    ],
+    "english": [
+      "=210",
+      "=18",
+      "210-18=192",
+      "forbidden object is the edge"
+    ]
+  },
+  "Q-2024F-MID-P04-b-i": {
+    "legacy": [
+      "二、四、六、八",
+      "第三、五、七",
+      "2\\cdot2\\cdot2=8"
+    ],
+    "english": [
+      "two, four, six and eight",
+      "three, five and seven",
+      "2\\cdot2\\cdot2=8"
+    ]
+  },
+  "Q-2024F-MID-P04-b-ii": {
+    "legacy": [
+      "第五列顶行",
+      "第三、七列",
+      "2\\cdot1\\cdot2=4"
+    ],
+    "english": [
+      "top row of the fifth column",
+      "Columns three and seven",
+      "2\\cdot1\\cdot2=4"
+    ]
+  },
+  "Q-2024F-MID-P05-a": {
+    "legacy": [
+      "一在顶面",
+      "五个数字",
+      "4!/4=3!=6",
+      "6!/24=30"
+    ],
+    "english": [
+      "one on the top face",
+      "five remaining numbers",
+      "4!/4=3!=6",
+      "6!/24=30"
+    ]
+  },
+  "Q-2024F-MID-P05-b": {
+    "legacy": [
+      "b=(a+c)/2",
+      "同奇偶",
+      "2\\binom n2",
+      "唯一端点对"
+    ],
+    "english": [
+      "b=(a+c)/2",
+      "same parity",
+      "2\\binom n2",
+      "unique endpoint pair"
+    ]
+  },
+  "Q-2024F-MID-P06-a": {
+    "legacy": [
+      "六位数字互不相同",
+      "\\binom{10}6",
+      "首位一定非零"
+    ],
+    "english": [
+      "six distinct digits",
+      "\\binom{10}6",
+      "first digit is nonzero"
+    ]
+  },
+  "Q-2024F-MID-P06-b": {
+    "legacy": [
+      "零",
+      "一至九",
+      "\\binom96=84"
+    ],
+    "english": [
+      "zero",
+      "one through nine",
+      "\\binom96=84"
+    ]
+  },
+  "Q-2024F-MID-P06-c": {
+    "legacy": [
+      "x_0+\\cdots+x_9=6",
+      "\\binom{15}9=5005",
+      "000000",
+      "5004"
+    ],
+    "english": [
+      "x_0+\\cdots+x_9=6",
+      "\\binom{15}9=5005",
+      "000000",
+      "5004"
+    ]
+  },
+  "Q-2024F-MID-P06-d": {
+    "legacy": [
+      "x_0=0",
+      "x_1+\\cdots+x_9=6",
+      "\\binom{14}8=3003"
+    ],
+    "english": [
+      "x_0=0",
+      "x_1+\\cdots+x_9=6",
+      "\\binom{14}8=3003"
+    ]
+  },
+  "Q-2024F-MID-P07": {
+    "legacy": [
+      "3^5=243",
+      "2^5",
+      "1^5=1",
+      "243-3\\cdot32+3\\cdot1=150"
+    ],
+    "english": [
+      "3^5=243",
+      "2^5",
+      "1^5=1",
+      "243-3\\cdot32+3\\cdot1=150"
+    ]
+  },
+  "Q-2024F-MID-P08": {
+    "legacy": [
+      "w+d+\\ell=5",
+      "2w+5\\le13",
+      "十四分不可能",
+      "最多十五种"
+    ],
+    "english": [
+      "w+d+\\ell=5",
+      "2w+5\\le13",
+      "fourteen points is impossible",
+      "at most fifteen possibilities"
+    ]
+  },
+  "Q-2024F-MID-P09-a": {
+    "legacy": [
+      "2n-1",
+      "补集",
+      "二元对",
+      "每对恰一个小子集"
+    ],
+    "english": [
+      "2n-1",
+      "complement",
+      "two-element pairs",
+      "Each pair contains exactly one small subset"
+    ]
+  },
+  "Q-2024F-MID-P09-b": {
+    "legacy": [
+      "2^{2n-2}",
+      "\\binom{2n-1}r",
+      "互斥",
+      "同一批子集"
+    ],
+    "english": [
+      "2^{2n-2}",
+      "\\binom{2n-1}r",
+      "disjoint",
+      "same collection of subsets"
+    ]
+  },
+  "Q-2024F-FINAL-P01-a": {
+    "legacy": [
+      "\\neg(p\\land\\neg q)\\lor r",
+      "De Morgan",
+      "双重否定",
+      "同一表达式"
+    ],
+    "english": [
+      "\\neg(p\\land\\neg q)\\lor r",
+      "De Morgan",
+      "double negation",
+      "same expression"
+    ]
+  },
+  "Q-2024F-FINAL-P01-b": {
+    "legacy": [
+      "\\forall n",
+      "\\exists p",
+      "n<p",
+      "p<2n"
+    ],
+    "english": [
+      "\\forall n",
+      "\\exists p",
+      "n<p",
+      "p<2n"
+    ]
+  },
+  "Q-2024F-FINAL-P01-c": {
+    "legacy": [
+      "\\exists n((n>1)\\land\\neg\\exists p",
+      "De Morgan",
+      "p\\le n",
+      "p\\ge2n"
+    ],
+    "english": [
+      "\\exists n((n>1)\\land\\neg\\exists p",
+      "De Morgan",
+      "p\\le n",
+      "p\\ge2n"
+    ]
+  },
+  "Q-2024F-FINAL-P02-a": {
+    "legacy": [
+      "A\\subseteq B",
+      "B\\subseteq A",
+      "双向包含"
+    ],
+    "english": [
+      "A\\subseteq B",
+      "B\\subseteq A",
+      "two-way inclusion"
+    ]
+  },
+  "Q-2024F-FINAL-P02-b": {
+    "legacy": [
+      "索引对",
+      "对角线",
+      "固定 $n=2$",
+      "至少无限"
+    ],
+    "english": [
+      "index pairs",
+      "diagonals",
+      "Fix $n=2$",
+      "at least infinite"
+    ]
+  },
+  "Q-2024F-FINAL-P05-a": {
+    "legacy": [
+      "a=4k",
+      "a=4k+2",
+      "16k^2+16k+4",
+      "实现零和四"
+    ],
+    "english": [
+      "a=4k",
+      "a=4k+2",
+      "16k^2+16k+4",
+      "realizes zero and four"
+    ]
+  },
+  "Q-2024F-FINAL-P05-b": {
+    "legacy": [
+      "a=2k+1",
+      "4k(k+1)+1",
+      "一个偶数",
+      "a^2\\equiv1\\pmod8"
+    ],
+    "english": [
+      "a=2k+1",
+      "4k(k+1)+1",
+      "one is even",
+      "a^2\\equiv1\\pmod8"
+    ]
+  },
+  "Q-2024F-FINAL-P05-c": {
+    "legacy": [
+      "a^2+b^2\\equiv6\\pmod8",
+      "0,1,4",
+      "0,1,2,4,5",
+      "矛盾"
+    ],
+    "english": [
+      "a^2+b^2\\equiv6\\pmod8",
+      "0,1,4",
+      "0,1,2,4,5",
+      "contradiction"
+    ]
+  },
+  "Q-2024F-FINAL-P06-a": {
+    "legacy": [
+      "p\\mid a^2",
+      "p\\mid[(a^2+b^2)-a^2]=b^2",
+      "Euclid"
+    ],
+    "english": [
+      "p\\mid a^2",
+      "p\\mid[(a^2+b^2)-a^2]=b^2",
+      "Euclid"
+    ]
+  },
+  "Q-2024F-FINAL-P06-b": {
+    "legacy": [
+      "p\\nmid b",
+      "2k+1",
+      "a^{p-1}\\equiv-b^{p-1}",
+      "p\\mid2",
+      "矛盾"
+    ],
+    "english": [
+      "p\\nmid b",
+      "2k+1",
+      "a^{p-1}\\equiv-b^{p-1}",
+      "p\\mid2",
+      "contradiction"
+    ]
+  },
+  "Q-2024F-FINAL-P07-1": {
+    "legacy": [
+      "3\\cdot2=6",
+      "3\\cdot5=15",
+      "x\\equiv30\\equiv2\\pmod7",
+      "完全等价"
+    ],
+    "english": [
+      "3\\cdot2=6",
+      "3\\cdot5=15",
+      "x\\equiv30\\equiv2\\pmod7",
+      "completely equivalent"
+    ]
+  },
+  "Q-2024F-FINAL-P07-2": {
+    "legacy": [
+      "M=5\\cdot4\\cdot7=140",
+      "28,35,20",
+      "2,3,6",
+      "618",
+      "58+140t"
+    ],
+    "english": [
+      "M=5\\cdot4\\cdot7=140",
+      "28,35,20",
+      "2,3,6",
+      "618",
+      "58+140t"
+    ]
+  },
+  "Q-2024F-FINAL-P08-a": {
+    "legacy": [
+      "4\\cdot18=72",
+      "\\gcd(9,72)=9>1",
+      "不可能等于一"
+    ],
+    "english": [
+      "4\\cdot18=72",
+      "\\gcd(9,72)=9>1",
+      "cannot equal one"
+    ]
+  },
+  "Q-2024F-FINAL-P08-b": {
+    "legacy": [
+      "72=3\\cdot23+3",
+      "8\\cdot72-25\\cdot23",
+      "1081"
+    ],
+    "english": [
+      "72=3\\cdot23+3",
+      "8\\cdot72-25\\cdot23",
+      "1081"
+    ]
+  },
+  "Q-2024F-FINAL-P08-c": {
+    "legacy": [
+      "3^{23}",
+      "196\\equiv6",
+      "23=16+4+2+1",
+      "2916",
+      "594",
+      "72"
+    ],
+    "english": [
+      "3^{23}",
+      "196\\equiv6",
+      "23=16+4+2+1",
+      "2916",
+      "594",
+      "72"
+    ]
+  },
+  "Q-2024F-FINAL-P09-a-i": {
+    "legacy": [
+      "\\log n/(2n)\\to0",
+      "正的最终下界",
+      "不是"
+    ],
+    "english": [
+      "\\log n/(2n)\\to0",
+      "positive eventual lower bound",
+      "is not"
+    ]
+  },
+  "Q-2024F-FINAL-P09-a-ii": {
+    "legacy": [
+      "10/(2+10000/n+5\\log n/n)",
+      "=5",
+      "正上下界",
+      "三个"
+    ],
+    "english": [
+      "10/(2+10000/n+5\\log n/n)",
+      "=5",
+      "positive upper and lower bounds",
+      "all three"
+    ]
+  },
+  "Q-2024F-FINAL-P09-a-iii": {
+    "legacy": [
+      "5^{\\log_2 n}=n^{\\log_2 5}",
+      "\\log_2 5>2",
+      "\\to0"
+    ],
+    "english": [
+      "5^{\\log_2 n}=n^{\\log_2 5}",
+      "\\log_2 5>2",
+      "\\to0"
+    ]
+  },
+  "Q-2024F-FINAL-P09-a-iv": {
+    "legacy": [
+      "n/(\\log n)^5",
+      "趋无穷",
+      "A=\\Omega(B)"
+    ],
+    "english": [
+      "n/(\\log n)^5",
+      "tends to infinity",
+      "A=\\Omega(B)"
+    ]
+  },
+  "Q-2024F-FINAL-P09-a-v": {
+    "legacy": [
+      "(\\log n)^5/n^{0.1}",
+      "趋零",
+      "A=O(B)"
+    ],
+    "english": [
+      "(\\log n)^5/n^{0.1}",
+      "tends to zero",
+      "A=O(B)"
+    ]
+  },
+  "Q-2024F-FINAL-P09-b-i": {
+    "legacy": [
+      "T(1)=1",
+      "T(n-1)+n",
+      "1,3,6,10,15"
+    ],
+    "english": [
+      "T(1)=1",
+      "T(n-1)+n",
+      "1,3,6,10,15"
+    ]
+  },
+  "Q-2024F-FINAL-P09-b-ii": {
+    "legacy": [
+      "n+(n-1)+\\cdots+1",
+      "2S=n(n+1)",
+      "n(n+1)/2"
+    ],
+    "english": [
+      "n+(n-1)+\\cdots+1",
+      "2S=n(n+1)",
+      "n(n+1)/2"
+    ]
+  },
+  "Q-2024F-FINAL-P09-b-iii": {
+    "legacy": [
+      "基础步",
+      "归纳假设",
+      "(k+1)(k+2)/2",
+      "全部正整数"
+    ],
+    "english": [
+      "Base case",
+      "inductive hypothesis",
+      "(k+1)(k+2)/2",
+      "all positive integers"
+    ]
+  },
+  "Q-2024F-FINAL-P11-a": {
+    "legacy": [
+      "两个不同端点",
+      "2|E(G)|",
+      "偶数"
+    ],
+    "english": [
+      "two distinct endpoints",
+      "2|E(G)|",
+      "even"
+    ]
+  },
+  "Q-2024F-FINAL-P11-b": {
+    "legacy": [
+      "G\\cong H",
+      "\\deg_G(v)+\\deg_H(v)=n-1",
+      "S+S=2S"
+    ],
+    "english": [
+      "G\\cong H",
+      "\\deg_G(v)+\\deg_H(v)=n-1",
+      "S+S=2S"
+    ]
+  },
+  "Q-2024F-FINAL-P11-c": {
+    "legacy": [
+      "S=2e",
+      "n(n-1)=2S=4e",
+      "2\\cdot1=2",
+      "3\\cdot2=6"
+    ],
+    "english": [
+      "S=2e",
+      "n(n-1)=2S=4e",
+      "2\\cdot1=2",
+      "3\\cdot2=6"
+    ]
+  },
+  "Q-2025S-MID-P01-a": {
+    "legacy": [
+      "\\neg(p\\lor(q\\land\\neg r))",
+      "p\\lor\\neg q\\lor r\\lor\\neg r"
+    ],
+    "english": [
+      "\\neg(p\\lor(q\\land\\neg r))",
+      "p\\lor\\neg q\\lor r\\lor\\neg r"
+    ]
+  },
+  "Q-2025S-MID-P01-b": {
+    "legacy": [
+      "p=q=r=T",
+      "A=F\\lor F=F",
+      "(T\\lor F)\\land(T\\lor F)=T"
+    ],
+    "english": [
+      "p=q=r=T",
+      "A=F\\lor F=F",
+      "(T\\lor F)\\land(T\\lor F)=T"
+    ]
+  },
+  "Q-2025S-MID-P01-c": {
+    "legacy": [
+      "由 2、3",
+      "由 6、4",
+      "\\neg s\\land p"
+    ],
+    "english": [
+      "from 2 and 3",
+      "from 6 and 4",
+      "\\neg s\\land p"
+    ]
+  },
+  "Q-2025S-MID-P02-b-v": {
+    "legacy": [
+      "0<x\\land x<p",
+      "p=2,x=0",
+      "0y\\equiv1\\pmod2"
+    ],
+    "english": [
+      "0<x\\land x<p",
+      "p=2,x=0",
+      "0y\\equiv1\\pmod2"
+    ]
+  },
+  "Q-2025S-MID-P03": {
+    "legacy": [
+      "每个自然数不是零就是某个后继",
+      "0+y=y+0=y",
+      "S(x)+k=k+S(x)=S(k+x)"
+    ],
+    "english": [
+      "every natural number is zero or a successor",
+      "0+y=y+0=y",
+      "S(x)+k=k+S(x)=S(k+x)"
+    ]
+  },
+  "Q-2025S-MID-P04-i": {
+    "legacy": [
+      "\\mathbb Z^{k+1}",
+      "不同整数常数"
+    ],
+    "english": [
+      "\\mathbb Z^{k+1}",
+      "Distinct integer constants"
+    ]
+  },
+  "Q-2025S-MID-P04-ii": {
+    "legacy": [
+      "\\mathbb Z^6",
+      "每层有限"
+    ],
+    "english": [
+      "\\mathbb Z^6",
+      "each layer is finite"
+    ]
+  },
+  "Q-2025S-MID-P04-iii": {
+    "legacy": [
+      "f_t(x)=t",
+      "单射"
+    ],
+    "english": [
+      "f_t(x)=t",
+      "injection"
+    ]
+  },
+  "Q-2025S-MID-P04-iv": {
+    "legacy": [
+      "(t,0,0,0,0,0)",
+      "次数上限"
+    ],
+    "english": [
+      "(t,0,0,0,0,0)",
+      "degree bound"
+    ]
+  },
+  "Q-2025S-MID-P04-v": {
+    "legacy": [
+      "至多有四个",
+      "2(x-1/2)^2+1/2>0"
+    ],
+    "english": [
+      "at most four",
+      "2(x-1/2)^2+1/2>0"
+    ]
+  },
+  "Q-2025S-MID-P05": {
+    "legacy": [
+      "f(3)-1=1\\le2",
+      "f(H+2)+f(H+1)-1=f(H+3)-1",
+      "H=0"
+    ],
+    "english": [
+      "f(3)-1=1\\le2",
+      "f(H+2)+f(H+1)-1=f(H+3)-1",
+      "H=0"
+    ]
+  },
+  "Q-2025S-MID-P06-a": {
+    "legacy": [
+      "2\\uparrow3=16",
+      "2\\uparrow99=16k",
+      "(2^{16})^k"
+    ],
+    "english": [
+      "2\\uparrow3=16",
+      "2\\uparrow99=16k",
+      "(2^{16})^k"
+    ]
+  },
+  "Q-2025S-MID-P06-b": {
+    "legacy": [
+      "7^4\\equiv1",
+      "37^{27}=10k+3",
+      "27\\equiv5"
+    ],
+    "english": [
+      "7^4\\equiv1",
+      "37^{27}=10k+3",
+      "27\\equiv5"
+    ]
+  },
+  "Q-2025S-MID-P07": {
+    "legacy": [
+      "4k(k+1)",
+      "k(k+1)=2t",
+      "a^2-1=8t"
+    ],
+    "english": [
+      "4k(k+1)",
+      "k(k+1)=2t",
+      "a^2-1=8t"
+    ]
+  },
+  "Q-2025S-MID-P08-a": {
+    "legacy": [
+      "d(a-b)=cdk",
+      "逆向",
+      "ad-bd=cdk"
+    ],
+    "english": [
+      "d(a-b)=cdk",
+      "Reverse direction",
+      "ad-bd=cdk"
+    ]
+  },
+  "Q-2025S-MID-P08-b": {
+    "legacy": [
+      "23=1\\cdot14+9",
+      "5\\cdot14-3\\cdot23",
+      "46(6+14t)"
+    ],
+    "english": [
+      "23=1\\cdot14+9",
+      "5\\cdot14-3\\cdot23",
+      "46(6+14t)"
+    ]
+  },
+  "Q-2025S-FINAL-P01-a-i": {
+    "legacy": [
+      "D=\\{n:n\\notin A_n\\}",
+      "D\\ne A_j"
+    ],
+    "english": [
+      "D=\\{n:n\\notin A_n\\}",
+      "D\\ne A_j"
+    ]
+  },
+  "Q-2025S-FINAL-P01-a-ii": {
+    "legacy": [
+      "E=\\{x_j:x_j\\notin B_j\\}",
+      "适用于每个"
+    ],
+    "english": [
+      "E=\\{x_j:x_j\\notin B_j\\}",
+      "applies to every"
+    ]
+  },
+  "Q-2025S-FINAL-P01-a-iii": {
+    "legacy": [
+      "f(1/n)=1/(n+1)",
+      "1/(m-1)",
+      "f$ 满射"
+    ],
+    "english": [
+      "f(1/n)=1/(n+1)",
+      "1/(m-1)",
+      "f is surjective"
+    ]
+  },
+  "Q-2025S-FINAL-P01-b": {
+    "legacy": [
+      "y\\lor((x\\lor\\neg z)\\land(\\neg x\\lor z))",
+      "z\\to x",
+      "\\neg(\\neg y)"
+    ],
+    "english": [
+      "y\\lor((x\\lor\\neg z)\\land(\\neg x\\lor z))",
+      "z\\to x",
+      "\\neg(\\neg y)"
+    ]
+  },
+  "Q-2025S-FINAL-P01-c": {
+    "legacy": [
+      "x\\in A\\land x\\in B",
+      "\\forall x(x\\notin A\\lor x\\notin B)"
+    ],
+    "english": [
+      "x\\in A\\land x\\in B",
+      "\\forall x(x\\notin A\\lor x\\notin B)"
+    ]
+  },
+  "Q-2025S-FINAL-P01-d": {
+    "legacy": [
+      "\\exists x\\neg(x\\notin A\\lor x\\notin B)",
+      "同一个见证"
+    ],
+    "english": [
+      "\\exists x\\neg(x\\notin A\\lor x\\notin B)",
+      "same witness"
+    ]
+  },
+  "Q-2025S-FINAL-P02-a": {
+    "legacy": [
+      "2^6=64",
+      "62=6\\cdot10+2",
+      "1^{10}\\cdot4=4"
+    ],
+    "english": [
+      "2^6=64",
+      "62=6\\cdot10+2",
+      "1^{10}\\cdot4=4"
+    ]
+  },
+  "Q-2025S-FINAL-P02-b": {
+    "legacy": [
+      "63\\nmid2",
+      "2^{63-1}\\equiv1",
+      "63\\nmid(4-1)=3"
+    ],
+    "english": [
+      "63\\nmid2",
+      "2^{63-1}\\equiv1",
+      "63\\nmid(4-1)=3"
+    ]
+  },
+  "Q-2025S-FINAL-P03-a": {
+    "legacy": [
+      "r>2",
+      "7-r>2",
+      "2<r<5"
+    ],
+    "english": [
+      "r>2",
+      "7-r>2",
+      "2<r<5"
+    ]
+  },
+  "Q-2025S-FINAL-P03-b": {
+    "legacy": [
+      "\\{3,4,5,6,7,8\\}",
+      "1\\le x<1001",
+      "2\\cdot6\\cdot8=96"
+    ],
+    "english": [
+      "\\{3,4,5,6,7,8\\}",
+      "1\\le x<1001",
+      "2\\cdot6\\cdot8=96"
+    ]
+  },
+  "Q-2025S-FINAL-P04-a": {
+    "legacy": [
+      "\\max(3,4)=4",
+      "\\max(6,3)=6"
+    ],
+    "english": [
+      "\\max(3,4)=4",
+      "\\max(6,3)=6"
+    ]
+  },
+  "Q-2025S-FINAL-P04-b": {
+    "legacy": [
+      "\\max(u,s)=3",
+      "(e+1)^2-e^2=2e+1",
+      "7\\cdot15\\cdot27=2835"
+    ],
+    "english": [
+      "\\max(u,s)=3",
+      "(e+1)^2-e^2=2e+1",
+      "7\\cdot15\\cdot27=2835"
+    ]
+  },
+  "Q-2025S-FINAL-P05-a-i": {
+    "legacy": [
+      "n^{2\\log_2 3}",
+      "2\\log_2 3<4",
+      "\\to0"
+    ],
+    "english": [
+      "n^{2\\log_2 3}",
+      "2\\log_2 3<4",
+      "\\to0"
+    ]
+  },
+  "Q-2025S-FINAL-P05-a-ii": {
+    "legacy": [
+      "2\\sum_{j=1}^n\\log j",
+      "B\\ge(n/3)\\log n",
+      "A/3\\le B\\le2A"
+    ],
+    "english": [
+      "2\\sum_{j=1}^n\\log j",
+      "B\\ge(n/3)\\log n",
+      "A/3\\le B\\le2A"
+    ]
+  },
+  "Q-2025S-FINAL-P05-a-iii": {
+    "legacy": [
+      "A=\\Theta(n^3)",
+      "t^6/2^t",
+      "\\to0"
+    ],
+    "english": [
+      "A=\\Theta(n^3)",
+      "t^6/2^t",
+      "\\to0"
+    ]
+  },
+  "Q-2025S-FINAL-P05-b": {
+    "legacy": [
+      "n-i",
+      "n(n-1)/2",
+      "所有比较仍须执行"
+    ],
+    "english": [
+      "n-i",
+      "n(n-1)/2",
+      "All comparisons must still execute"
+    ]
+  },
+  "Q-2025S-FINAL-P05-c": {
+    "legacy": [
+      "n^{1/2+1/4+\\cdots+1/2^j}",
+      "n^{1-1/2^k}=n/2",
+      "T(4)=2\\cdot1+4=6"
+    ],
+    "english": [
+      "n^{1/2+1/4+\\cdots+1/2^j}",
+      "n^{1-1/2^k}=n/2",
+      "T(4)=2\\cdot1+4=6"
+    ]
+  },
+  "Q-2025S-FINAL-P06-b": {
+    "legacy": [
+      "b_1+a_2+\\cdots+a_6=10",
+      "b_1\\le8",
+      "3003-6-5=2992"
+    ],
+    "english": [
+      "b_1+a_2+\\cdots+a_6=10",
+      "b_1\\le8",
+      "3003-6-5=2992"
+    ]
+  },
+  "Q-2025S-FINAL-P07-N": {
+    "legacy": [
+      "u\\le3",
+      "(23-3)/2=10",
+      "(5,5,5,7)"
+    ],
+    "english": [
+      "u\\le3",
+      "(23-3)/2=10",
+      "(5,5,5,7)"
+    ]
+  },
+  "Q-2025S-FINAL-P07-sufficient": {
+    "legacy": [
+      "n=23",
+      "u$ 为奇数",
+      "(23-u)/2\\ge10"
+    ],
+    "english": [
+      "n=23",
+      "u is odd",
+      "(23-u)/2\\ge10"
+    ]
+  },
+  "Q-2025S-FINAL-P07-minimal": {
+    "legacy": [
+      "5+5+5+7=22",
+      "\\lfloor7/2\\rfloor=3",
+      "总共九对"
+    ],
+    "english": [
+      "5+5+5+7=22",
+      "\\lfloor7/2\\rfloor=3",
+      "nine pairs in total"
+    ]
+  },
+  "Q-2025S-FINAL-P09": {
+    "legacy": [
+      "1\\le m\\le1023",
+      "\\sum_{t=1}^{1023}\\sum_{m=t}^{1023}",
+      "\\binom{2023-t}{1000}"
+    ],
+    "english": [
+      "1\\le m\\le1023",
+      "\\sum_{t=1}^{1023}\\sum_{m=t}^{1023}",
+      "\\binom{2023-t}{1000}"
+    ]
+  },
+  "Q-2025S-FINAL-P10": {
+    "legacy": [
+      "4\\cdot8+2\\cdot4",
+      "4\\cdot2-1=95",
+      "512-95=417"
+    ],
+    "english": [
+      "4\\cdot8+2\\cdot4",
+      "4\\cdot2-1=95",
+      "512-95=417"
+    ]
+  },
+  "Q-2025S-FINAL-P11": {
+    "legacy": [
+      "P(M\\mid\\overline S)=1/4",
+      "8/24",
+      "(3/24)/(8/24)=3/8"
+    ],
+    "english": [
+      "P(M\\mid\\overline S)=1/4",
+      "8/24",
+      "(3/24)/(8/24)=3/8"
+    ]
+  },
+  "Q-2025S-FINAL-P12-a-i": {
+    "legacy": [
+      "五个邻点必是其余所有顶点",
+      "\\deg(w)\\ge1"
+    ],
+    "english": [
+      "five neighbors are all the other vertices",
+      "\\deg(w)\\ge1"
+    ]
+  },
+  "Q-2025S-FINAL-P12-a-ii": {
+    "legacy": [
+      "4+4+3+2+1+1=15",
+      "2|E|"
+    ],
+    "english": [
+      "4+4+3+2+1+1=15",
+      "2|E|"
+    ]
+  },
+  "Q-2025S-FINAL-P12-a-iii": {
+    "legacy": [
+      "至少有一条边",
+      "至少向该两点发出三条边",
+      "\\deg(v_1)+\\deg(v_2)=2"
+    ],
+    "english": [
+      "at least one edge",
+      "at least three edges to those two vertices",
+      "\\deg(v_1)+\\deg(v_2)=2"
+    ]
+  },
+  "Q-2025S-FINAL-P12-b": {
+    "legacy": [
+      "\\binom62=15",
+      "(15+6+1)2^{15}",
+      "720896"
+    ],
+    "english": [
+      "\\binom62=15",
+      "(15+6+1)2^{15}",
+      "720896"
+    ]
+  },
+  "Q-2025S-FINAL-P12-c": {
+    "legacy": [
+      "d_i-1",
+      "每条长度二路径只有一个中点",
+      "3\\cdot2=6"
+    ],
+    "english": [
+      "d_i-1",
+      "Every length-two path has exactly one middle vertex",
+      "3\\cdot2=6"
+    ]
+  },
+  "Q-2025F-MID-P01-a": {
+    "legacy": [
+      "\\neg(p\\land(\\neg q\\lor r))",
+      "\\neg p\\lor(q\\land\\neg r)"
+    ],
+    "english": [
+      "\\neg(p\\land(\\neg q\\lor r))",
+      "\\neg p\\lor(q\\land\\neg r)"
+    ]
+  },
+  "Q-2025F-MID-P01-b": {
+    "legacy": [
+      "p=T,q=F",
+      "\\neg(T\\land T)=F",
+      "\\neg(F\\land F)=T"
+    ],
+    "english": [
+      "p=T,q=F",
+      "\\neg(T\\land T)=F",
+      "\\neg(F\\land F)=T"
+    ]
+  },
+  "Q-2025F-MID-P01-c": {
+    "legacy": [
+      "由 2 与 premise 1",
+      "由 3 与",
+      "\\neg r\\land t"
+    ],
+    "english": [
+      "from step 2 and premise 1",
+      "from step 3 and",
+      "\\neg r\\land t"
+    ]
+  },
+  "Q-2025F-MID-P02-a-i": {
+    "legacy": [
+      "\\exists y(5\\times y=x)",
+      "取其见证"
+    ],
+    "english": [
+      "\\exists y(5\\times y=x)",
+      "take its witness"
+    ]
+  },
+  "Q-2025F-MID-P02-a-ii": {
+    "legacy": [
+      "y=|z|",
+      "y\\times y=x"
+    ],
+    "english": [
+      "y=|z|",
+      "y\\times y=x"
+    ]
+  },
+  "Q-2025F-MID-P02-b": {
+    "legacy": [
+      "\\forall y\\neg(p(y)\\to\\forall zq(x,z))",
+      "\\neg(A\\to B)\\equiv A\\land\\neg B",
+      "\\exists z\\neg q(x,z)"
+    ],
+    "english": [
+      "\\forall y\\neg(p(y)\\to\\forall zq(x,z))",
+      "\\neg(A\\to B)\\equiv A\\land\\neg B",
+      "\\exists z\\neg q(x,z)"
+    ]
+  },
+  "Q-2025F-MID-P02-c-premise1": {
+    "legacy": [
+      "C(x)\\to S(x)",
+      "空真"
+    ],
+    "english": [
+      "C(x)\\to S(x)",
+      "vacuous truth"
+    ]
+  },
+  "Q-2025F-MID-P02-c-premise2": {
+    "legacy": [
+      "E(x)\\land\\neg S(x)",
+      "每一次出现均被绑定"
+    ],
+    "english": [
+      "E(x)\\land\\neg S(x)",
+      "Every occurrence is bound"
+    ]
+  },
+  "Q-2025F-MID-P02-c-proof": {
+    "legacy": [
+      "E(a)\\land\\neg S(a)",
+      "C(a)\\to S(a)",
+      "existential generalization"
+    ],
+    "english": [
+      "E(a)\\land\\neg S(a)",
+      "C(a)\\to S(a)",
+      "existential generalization"
+    ]
+  },
+  "Q-2025F-MID-P03-a": {
+    "legacy": [
+      "任取 $x\\in A\\cap B$",
+      "x\\in A$ 得 $x\\in C$"
+    ],
+    "english": [
+      "Take arbitrary $x\\in A\\cap B$",
+      "x\\in A$ obtain $x\\in C$"
+    ]
+  },
+  "Q-2025F-MID-P03-c-i": {
+    "legacy": [
+      "S=\\varnothing",
+      "只有一个元素"
+    ],
+    "english": [
+      "S=\\varnothing",
+      "only one element"
+    ]
+  },
+  "Q-2025F-MID-P03-c-ii": {
+    "legacy": [
+      "g(n)=f_n(n)+1",
+      "g\\ne f_n"
+    ],
+    "english": [
+      "g(n)=f_n(n)+1",
+      "g\\ne f_n"
+    ]
+  },
+  "Q-2025F-MID-P03-c-iii": {
+    "legacy": [
+      "A=(-\\infty,0)",
+      "B-A=[0,\\infty)"
+    ],
+    "english": [
+      "A=(-\\infty,0)",
+      "B-A=[0,\\infty)"
+    ]
+  },
+  "Q-2025F-MID-P03-c-iv": {
+    "legacy": [
+      "0,1,-1,2,-2",
+      "唯一原像"
+    ],
+    "english": [
+      "0,1,-1,2,-2",
+      "unique preimage"
+    ]
+  },
+  "Q-2025F-MID-P03-c-v": {
+    "legacy": [
+      "0^n\\mapsto n",
+      "不同长度"
+    ],
+    "english": [
+      "0^n\\mapsto n",
+      "Different lengths"
+    ]
+  },
+  "Q-2025F-MID-P03-c-vi": {
+    "legacy": [
+      "d_n=1-s_n(n)",
+      "第 $n$ 位不同"
+    ],
+    "english": [
+      "d_n=1-s_n(n)",
+      "differs at position $n$"
+    ]
+  },
+  "Q-2025F-MID-P03-c-vii": {
+    "legacy": [
+      "i<j<k",
+      "\\binom{k-1}2",
+      "(1,2,k)"
+    ],
+    "english": [
+      "i<j<k",
+      "\\binom{k-1}2",
+      "(1,2,k)"
+    ]
+  },
+  "Q-2025F-MID-P04-a-i": {
+    "legacy": [
+      "6+5=11",
+      "11\\cdot10"
+    ],
+    "english": [
+      "6+5=11",
+      "11\\cdot10"
+    ]
+  },
+  "Q-2025F-MID-P04-a-ii": {
+    "legacy": [
+      "六个不同对象",
+      "6!\\cdot6!"
+    ],
+    "english": [
+      "six distinct objects",
+      "6!\\cdot6!"
+    ]
+  },
+  "Q-2025F-MID-P04-a-iii": {
+    "legacy": [
+      "两个区块",
+      "2!\\cdot5!\\cdot6!"
+    ],
+    "english": [
+      "two blocks",
+      "2!\\cdot5!\\cdot6!"
+    ]
+  },
+  "Q-2025F-MID-P04-a-iv": {
+    "legacy": [
+      "每个空隙最多放一位",
+      "TSTSTSTSTST"
+    ],
+    "english": [
+      "At most one teacher may occupy each gap",
+      "TSTSTSTSTST"
+    ]
+  },
+  "Q-2025F-MID-P04-c-i": {
+    "legacy": [
+      "10\\cdot9\\cdots4",
+      "不需要除以"
+    ],
+    "english": [
+      "10\\cdot9\\cdots4",
+      "no need to divide"
+    ]
+  },
+  "Q-2025F-MID-P04-c-ii": {
+    "legacy": [
+      "\\binom75",
+      "\\binom{10}5",
+      "唯一确定双方所选子集"
+    ],
+    "english": [
+      "\\binom75",
+      "\\binom{10}5",
+      "uniquely determines both selected subsets"
+    ]
+  },
+  "Q-2025F-MID-P04-d": {
+    "legacy": [
+      "第四位必须等于 $b$",
+      "9\\cdot10\\cdot10=900"
+    ],
+    "english": [
+      "fourth digit must equal $b$",
+      "9\\cdot10\\cdot10=900"
+    ]
+  },
+  "Q-2025F-MID-P05": {
+    "legacy": [
+      "不含 $a$ 但含 $b$",
+      "不含 $a,b$ 但含 $c$",
+      "三类互斥且穷尽"
+    ],
+    "english": [
+      "not containing $a$ but containing $b$",
+      "not containing $a,b$ but containing $c$",
+      "three classes are disjoint and exhaustive"
+    ]
+  },
+  "Q-2025F-MID-P06": {
+    "legacy": [
+      "|A_i|=8\\cdot9^5",
+      "7\\cdot8^5",
+      "6\\cdot7^5"
+    ],
+    "english": [
+      "|A_i|=8\\cdot9^5",
+      "7\\cdot8^5",
+      "6\\cdot7^5"
+    ]
+  },
+  "Q-2025F-MID-P07": {
+    "legacy": [
+      "4\\cdot4=16",
+      "中心网格点",
+      "任意两个不同红格"
+    ],
+    "english": [
+      "4\\cdot4=16",
+      "central grid point",
+      "any two distinct red cells"
+    ]
+  },
+  "Q-2025F-MID-P10-a-i-E": {
+    "legacy": [
+      "21/6=7/2",
+      "每对和七"
+    ],
+    "english": [
+      "21/6=7/2",
+      "each pair sums to seven"
+    ]
+  },
+  "Q-2025F-MID-P10-a-i-var": {
+    "legacy": [
+      "91/6-49/4",
+      "(182-147)/12=35/12"
+    ],
+    "english": [
+      "91/6-49/4",
+      "(182-147)/12=35/12"
+    ]
+  },
+  "Q-2025F-MID-P10-a-ii-E": {
+    "legacy": [
+      "7/2-2(7/2)+7/2=0",
+      "1-2+1=0"
+    ],
+    "english": [
+      "7/2-2(7/2)+7/2=0",
+      "1-2+1=0"
+    ]
+  },
+  "Q-2025F-MID-P10-a-ii-var": {
+    "legacy": [
+      "协方差项为零",
+      "(1+4+1)35/12",
+      "35/2"
+    ],
+    "english": [
+      "covariance terms zero",
+      "(1+4+1)35/12",
+      "35/2"
+    ]
+  },
+  "Q-2025F-MID-P10-a-iii-E": {
+    "legacy": [
+      "50(7/2)-50(7/2)=0",
+      "五十个相邻差"
+    ],
+    "english": [
+      "50(7/2)-50(7/2)=0",
+      "fifty adjacent differences"
+    ]
+  },
+  "Q-2025F-MID-P10-a-iii-var": {
+    "legacy": [
+      "100\\cdot35/12",
+      "875/3",
+      "1750/6"
+    ],
+    "english": [
+      "100\\cdot35/12",
+      "875/3",
+      "1750/6"
+    ]
+  },
+  "Q-2025F-FINAL-P01-a": {
+    "legacy": [
+      "A=p\\land q",
+      "A\\lor(A\\land r)\\equiv A"
+    ],
+    "english": [
+      "A=p\\land q",
+      "A\\lor(A\\land r)\\equiv A"
+    ]
+  },
+  "Q-2025F-FINAL-P01-b": {
+    "legacy": [
+      "得 $r\\land q$",
+      "得 $s\\lor t$",
+      "disjunctive syllogism"
+    ],
+    "english": [
+      "gives $r\\land q$",
+      "gives $s\\lor t$",
+      "disjunctive syllogism"
+    ]
+  },
+  "Q-2025F-FINAL-P01-c-i": {
+    "legacy": [
+      "s(x)\\to(c(x)\\lor m(x))",
+      "同时满足"
+    ],
+    "english": [
+      "s(x)\\to(c(x)\\lor m(x))",
+      "satisfies both"
+    ]
+  },
+  "Q-2025F-FINAL-P01-c-ii": {
+    "legacy": [
+      "x\\ne y\\to\\neg Compare(x,y)",
+      "同分者而无人更高"
+    ],
+    "english": [
+      "x\\ne y\\to\\neg Compare(x,y)",
+      "tied students with nobody scoring higher"
+    ]
+  },
+  "Q-2025F-FINAL-P02-a-i": {
+    "legacy": [
+      "010101\\ldots",
+      "101010\\ldots",
+      "大小恰为二"
+    ],
+    "english": [
+      "010101\\ldots",
+      "101010\\ldots",
+      "cardinality is exactly two"
+    ]
+  },
+  "Q-2025F-FINAL-P02-a-ii": {
+    "legacy": [
+      "d_n=(s_n(n)+1)\\bmod3",
+      "d_n\\ne s_n(n)"
+    ],
+    "english": [
+      "d_n=(s_n(n)+1)\\bmod3",
+      "d_n\\ne s_n(n)"
+    ]
+  },
+  "Q-2025F-FINAL-P02-a-iii": {
+    "legacy": [
+      "f(s)=012s",
+      "012s\\ne012t",
+      "单射像也不可数"
+    ],
+    "english": [
+      "f(s)=012s",
+      "012s\\ne012t",
+      "injective image is uncountable"
+    ]
+  },
+  "Q-2025F-FINAL-P02-b": {
+    "legacy": [
+      "2^5=32",
+      "恰分为十六个",
+      "它们互补"
+    ],
+    "english": [
+      "2^5=32",
+      "partition into exactly 16",
+      "They are complements"
+    ]
+  },
+  "Q-2025F-FINAL-P02-c": {
+    "legacy": [
+      "0\\le r\\le k\\le n",
+      "其余 $n-r$ 人",
+      "同一对象一一对应"
+    ],
+    "english": [
+      "0\\le r\\le k\\le n",
+      "remaining $n-r$ people",
+      "one-to-one correspondence with the same objects"
+    ]
+  },
+  "Q-2025F-FINAL-P03-a": {
+    "legacy": [
+      "14!/2",
+      "13!/(14!/2)=2/14=1/7"
+    ],
+    "english": [
+      "14!/2",
+      "13!/(14!/2)=2/14=1/7"
+    ]
+  },
+  "Q-2025F-FINAL-P03-b": {
+    "legacy": [
+      "14-3=11",
+      "11\\cdot12!",
+      "11/91"
+    ],
+    "english": [
+      "14-3=11",
+      "11\\cdot12!",
+      "11/91"
+    ]
+  },
+  "Q-2025F-FINAL-P03-c": {
+    "legacy": [
+      "14!/6",
+      "6\\cdot7\\cdot11!",
+      "3/26"
+    ],
+    "english": [
+      "14!/6",
+      "6\\cdot7\\cdot11!",
+      "3/26"
+    ]
+  },
+  "Q-2025F-FINAL-P04-a": {
+    "legacy": [
+      "最前四位全是教师",
+      "\\binom{22}{12}12!4!6!"
+    ],
+    "english": [
+      "earliest four positions must all be teachers",
+      "\\binom{22}{12}12!4!6!"
+    ]
+  },
+  "Q-2025F-FINAL-P04-b": {
+    "legacy": [
+      "最后一位从六名医生中选",
+      "余下九人任意排列"
+    ],
+    "english": [
+      "Choose the last person from the six doctors",
+      "remaining nine people can be arranged arbitrarily"
+    ]
+  },
+  "Q-2025F-FINAL-P04-c": {
+    "legacy": [
+      "4\\cdot5\\cdot2=40",
+      "剩八个位置中最早一个必须是该区块",
+      "\\binom{21}{13}13!"
+    ],
+    "english": [
+      "4\\cdot5\\cdot2=40",
+      "eight remaining positions, the earliest must contain the block",
+      "\\binom{21}{13}13!"
+    ]
+  },
+  "Q-2025F-FINAL-P06": {
+    "legacy": [
+      "M_1=20,M_2=15,M_3=12",
+      "211\\equiv31",
+      "一、一、三、一"
+    ],
+    "english": [
+      "M_1=20,M_2=15,M_3=12",
+      "211\\equiv31",
+      "residues 1, 1, 3, 1"
+    ]
+  },
+  "Q-2025F-FINAL-P07-i": {
+    "legacy": [
+      "60=2^2\\cdot3\\cdot5",
+      "11,13,17,19"
+    ],
+    "english": [
+      "60=2^2\\cdot3\\cdot5",
+      "11,13,17,19"
+    ]
+  },
+  "Q-2025F-FINAL-P07-ii": {
+    "legacy": [
+      "60=8\\cdot7+4",
+      "2\\cdot60-17\\cdot7",
+      "301=5\\cdot60+1"
+    ],
+    "english": [
+      "60=8\\cdot7+4",
+      "2\\cdot60-17\\cdot7",
+      "301=5\\cdot60+1"
+    ]
+  },
+  "Q-2025F-FINAL-P07-iii": {
+    "legacy": [
+      "3^4\\equiv9^2=81\\equiv4",
+      "7=4+2+1",
+      "108\\equiv31"
+    ],
+    "english": [
+      "3^4\\equiv9^2=81\\equiv4",
+      "7=4+2+1",
+      "108\\equiv31"
+    ]
+  },
+  "Q-2025F-FINAL-P08-i": {
+    "legacy": [
+      "n\\cdot n^2=n^3",
+      "1/n\\to0"
+    ],
+    "english": [
+      "n\\cdot n^2=n^3",
+      "1/n\\to0"
+    ]
+  },
+  "Q-2025F-FINAL-P08-ii": {
+    "legacy": [
+      "T_A(n)\\le Cn^3",
+      "T_B(n)\\ge cn^{3+\\epsilon}",
+      "n^{-\\epsilon}\\to0"
+    ],
+    "english": [
+      "T_A(n)\\le Cn^3",
+      "T_B(n)\\ge cn^{3+\\epsilon}",
+      "n^{-\\epsilon}\\to0"
+    ]
+  },
+  "Q-2025F-FINAL-P08-iii": {
+    "legacy": [
+      "T_A(n)\\ge c\\sqrt n",
+      "(\\log n)/\\sqrt n\\to0"
+    ],
+    "english": [
+      "T_A(n)\\ge c\\sqrt n",
+      "(\\log n)/\\sqrt n\\to0"
+    ]
+  },
+  "Q-2025F-FINAL-P08-iv": {
+    "legacy": [
+      "T_A=n^2,T_B=n^3",
+      "T_A=n^3,T_B=n^2",
+      "相反比较结果"
+    ],
+    "english": [
+      "T_A=n^2,T_B=n^3",
+      "T_A=n^3,T_B=n^2",
+      "opposite comparison results"
+    ]
+  },
+  "Q-2025F-FINAL-P08-v": {
+    "legacy": [
+      "\\log(n!)=\\Theta(n\\log n)",
+      "T_B=\\Theta(n^3\\log n)",
+      "1/\\log n"
+    ],
+    "english": [
+      "\\log(n!)=\\Theta(n\\log n)",
+      "T_B=\\Theta(n^3\\log n)",
+      "1/\\log n"
+    ]
+  },
+  "Q-2025F-FINAL-P09-a": {
+    "legacy": [
+      "(3/16)^i",
+      "n^2(3/16)^k=3^k",
+      "3T(1)+16=19"
+    ],
+    "english": [
+      "(3/16)^i",
+      "n^2(3/16)^k=3^k",
+      "3T(1)+16=19"
+    ]
+  },
+  "Q-2025F-FINAL-P09-b": {
+    "legacy": [
+      "(16-3)/13=1",
+      "(256m^2-9m^c)/13",
+      "4^cm^c=3m^c"
+    ],
+    "english": [
+      "(16-3)/13=1",
+      "(256m^2-9m^c)/13",
+      "4^cm^c=3m^c"
+    ]
+  },
+  "Q-2025F-FINAL-P10-i": {
+    "legacy": [
+      "a_n=2a_{n-1}-2",
+      "a_1=20-2=18"
+    ],
+    "english": [
+      "a_n=2a_{n-1}-2",
+      "a_1=20-2=18"
+    ]
+  },
+  "Q-2025F-FINAL-P10-ii": {
+    "legacy": [
+      "2^2a_{n-2}-2(2+1)",
+      "2^n-1",
+      "8\\cdot2^n+2"
+    ],
+    "english": [
+      "2^2a_{n-2}-2(2+1)",
+      "2^n-1",
+      "8\\cdot2^n+2"
+    ]
+  },
+  "Q-2025F-FINAL-P10-iii": {
+    "legacy": [
+      "8\\cdot2^0+2=10",
+      "2(8\\cdot2^k+2)-2",
+      "8\\cdot2^{k+1}+2"
+    ],
+    "english": [
+      "8\\cdot2^0+2=10",
+      "2(8\\cdot2^k+2)-2",
+      "8\\cdot2^{k+1}+2"
+    ]
+  },
+  "Q-2025F-FINAL-P11-a-i": {
+    "legacy": [
+      "奇数步后位于出发点的另一侧",
+      "单条边图"
+    ],
+    "english": [
+      "After an odd number of steps one is on the opposite side",
+      "single-edge graph"
+    ]
+  },
+  "Q-2025F-FINAL-P11-a-ii": {
+    "legacy": [
+      "8-6=2",
+      "8-3=5",
+      "一个三角形"
+    ],
+    "english": [
+      "8-6=2",
+      "8-3=5",
+      "A triangle"
+    ]
+  },
+  "Q-2025F-FINAL-P11-a-iii": {
+    "legacy": [
+      "最长简单路径",
+      "10-k\\le9",
+      "十条边矛盾"
+    ],
+    "english": [
+      "longest simple path",
+      "10-k\\le9",
+      "contradicting the given ten edges"
+    ]
+  },
+  "Q-2025F-FINAL-P11-b": {
+    "legacy": [
+      "AB,AC,BC",
+      "\\deg(A)=3,\\deg(B)=3,\\deg(C)=2",
+      "A --- D"
+    ],
+    "english": [
+      "AB,AC,BC",
+      "\\deg(A)=3,\\deg(B)=3,\\deg(C)=2",
+      "A --- D"
+    ]
+  },
+  "Q-2025F-FINAL-P11-c": {
+    "legacy": [
+      "5\\cdot5+2\\cdot6+5\\cdot7+4=76",
+      "A:3,B:4,C:4,D:4,E:2,F:5,G:2,H:2",
+      "76+10=86",
+      "H,G,C,F,D,C,A,D,B,A,B,F,E,B,F,H"
+    ],
+    "english": [
+      "5\\cdot5+2\\cdot6+5\\cdot7+4=76",
+      "A:3,B:4,C:4,D:4,E:2,F:5,G:2,H:2",
+      "76+10=86",
+      "H,G,C,F,D,C,A,D,B,A,B,F,E,B,F,H"
+    ]
+  }
+}

@@ -39,24 +39,19 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 Use combinatorial reasoning to prove the identity.
 $$\binom nk-\binom{n-3}k=\binom{n-1}{k-1}+\binom{n-2}{k-1}+\binom{n-3}{k-1}.$$
 
-## 中文解析
+## Official Answer
 
-按先后优先级把含 $a$、不含 $a$ 但含 $b$、只首次含 $c$ 的情形分开。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+> Let $S$ be a set of $n$ elements, and let $a,b,c$ be distinct elements of $S$. The number of $k$-subsets of $S$ is $\binom nk$, and the number of $k$-subsets of $S-\{a,b,c\}$ is $\binom{n-3}k$. Then the LHS is the number of $k$-subsets of $S$ that contain at least one of the elements of $\{a,b,c\}$. Such $k$-subsets can be divided into $3$ types: (1) the $k$-subsets that contain the element $a$; (2) the $k$-subsets that do not contain $a$ but contain $b$; and (3) the $k$-subsets that do not contain $a,b$ but contain $c$. The numbers $k$-subsets of type (1), type (2), type (3) are
+> $$\binom{n-1}{k-1},\quad\binom{n-2}{k-1},\quad\binom{n-3}{k-1}$$
+> respectively. The sum of these numbers is exactly the RHS.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Both sides count the k-element subsets containing at least one of three designated elements.
 
-**答案。** 两边数同一批至少含三个指定元素之一的 $k$ 元子集。
-
-**推导。** 在二项式系数有通常组合意义的范围内，取 $n$ 元集合 $S$ 及三个不同元素 $a,b,c$。全部 $k$ 元子集减去不含这三者的子集，数量为左式 $\binom nk-\binom{n-3}k$。同一批集合分为三类：含 $a$ 的，从其他 $n-1$ 元素选 $k-1$ 个；不含 $a$ 但含 $b$ 的，从剩余 $n-2$ 元素选 $k-1$ 个；不含 $a,b$ 但含 $c$ 的，从剩余 $n-3$ 元素选 $k-1$ 个。三类互斥且穷尽，其数相加即右式，完成 combinatorial proof。边界上的不可选项按零个选择理解。
-
-## Common Mistakes
-
-- 如果三类仅写成分别含 a、b、c，就会重复计算同时含多个指定元素的子集。
-- 题目要求组合证明，只展开阶乘约分没有解释两边数的对象。
+**Derivation/proof.** In the range where the binomial coefficients have their usual combinatorial meaning, take an n-element set S with distinct elements a,b,c. From all $\binom nk$ k-subsets, remove the $\binom{n-3}k$ containing none of these elements. Partition the remainder into subsets containing a; subsets not containing $a$ but containing $b$; and subsets not containing $a,b$ but containing $c$. The counts are respectively $\binom{n-1}{k-1}$, $\binom{n-2}{k-1}$, and $\binom{n-3}{k-1}$, obtained by choosing the remaining k−1 elements from the allowed pool. The three classes are disjoint and exhaustive, so their sum is the right side and proves the identity. Impossible boundary selections count as zero.
 
 ## Connections
 

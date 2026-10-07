@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (i) There exists a countably infinite set $X$ with $\mathcal P(X)$ uncountable.
 
-## 中文解析
+## Official Answer
 
-取自然数集即可；其子集无法被一列完整列出。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(a) i) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True.
 
-**答案。** True。
-
-**推导。** 取 $X=\mathbb N$，它可数无限。若 $\mathcal P(\mathbb N)$ 可以列为 $A_0,A_1,\ldots$，构造 $D=\{n:n\notin A_n\}$。对每个 $j$，$j\in D$ 当且仅当 $j\notin A_j$，所以 $D\ne A_j$。但 $D$ 本身仍是自然数子集，与列表完整性矛盾。因此这个 $X$ 的幂集不可数，存在命题为真。
-
-## Common Mistakes
-
-- 幂集的元素是子集，不是原来的自然数。
-- 无限集合的幂集不能用有限公式的直觉直接判为同样可数。
+**Derivation/proof.** Take $X=\mathbb N$, a countably infinite set. If its power set were listed as $A_0,A_1,\ldots$, construct $D=\{n:n\notin A_n\}$. For every $j$, $j\in D$ exactly when $j\notin A_j$, so $D\ne A_j$. But $D$ is itself a subset of the natural numbers, contradicting completeness of the list. Thus this X has an uncountable power set and witnesses the existential statement.
 
 ## Connections
 

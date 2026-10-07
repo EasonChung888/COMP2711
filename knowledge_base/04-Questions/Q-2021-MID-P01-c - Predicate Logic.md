@@ -38,26 +38,17 @@ $\exists x\forall y\exists z(2y-z=4x)$
 
 Shared context: [[STEM-2021-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先统一选 x=0，再根据每次给出的 y 选 z=2y。z 的存在量词在 y 的全称量词里面，所以这种依赖合法；代入后两边都为零，构造对所有整数 y 有效。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> (c) True. Let $x=0$. Then for any $y$, set $z=2y$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** True.
 
 **Derivation/proof.** Choose x=0 once. For any integer y choose z=2y, which is an integer and satisfies $2y-z=2y-2y=0=4x$. The z witness may vary with y because its quantifier is inside ∀y. This directly meets the quantifier order without needing to solve for a common z.
-
-### 中文解答
-
-**推导。** 判为真。先统一选定整数 $x=0$。随后不论给出哪个整数 $y$，都选整数 $z=2y$，代入 $2y-z=2y-2y=0=4x$。这个 $z$ 在 $y$ 之后选，允许随 $y$ 改变；而 $x$ 早已固定，因此三个量词的顺序均得到满足。
-
-## Common Mistakes
-
-- 强行要求 z 不随 y 变化。
-- 把 x 也选成依赖 y 的值。
 
 ## Connections
 

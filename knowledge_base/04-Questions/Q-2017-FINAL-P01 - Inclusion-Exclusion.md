@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 An office manager has four employees and nine reports to be done. In how many ways can the reports be assigned to the employees so that each employee has at least one report to do?
 
-## 中文解析
+## Official Answer
 
-报告是不同任务，员工也不同，所以每份报告各有四个去向。要求每人非空时，用容斥扣除无人分到报告的员工集合；同时遗漏两人等情况会重复扣除，需要按交集大小交替加减。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+$4^9-\binom413^9+\binom422^9-\binom431^9$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $4^9-\binom413^9+\binom422^9-\binom431^9=186480$.
 
 **Derivation/proof.** There are $4^9$ unrestricted assignments. For each employee, define the bad event that they receive no report. If a specified set of $j$ employees is omitted, each report has $4-j$ choices, giving $(4-j)^9$ assignments. Inclusion-exclusion gives $\sum_{j=0}^4(-1)^j\binom4j(4-j)^9$, whose last term is zero. Evaluating yields 186480.
 
-### 中文解答
-
-**推导。** 把九份报告视为不同对象，四位员工为不同接收者。无限制分配共有 $4^9$ 种。令 $A_i$ 表示第 $i$ 人没有报告；指定 $j$ 人为空时每份报告有 $4-j$ 种去向，所以交集大小为 $(4-j)^9$。容斥得 $4^9-\binom413^9+\binom422^9-\binom431^9=262144-78732+3072-4=186480$；四人都空的交集为零。每个非空分配被保留一次，符合每人至少一份。
-
-## Common Mistakes
-
-- 把不同报告当成相同物品用隔板法。
-- 只减去单个空员工而忽略交集。
+Evaluation gives $262144-78732+3072-4=186480$. Each nonempty assignment survives inclusion-exclusion exactly once.
 
 ## Connections
 

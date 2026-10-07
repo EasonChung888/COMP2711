@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P02 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-合取对析取的 distributive law 给出 $(p\lor q)\land r\equiv(p\land r)\lor(q\land r)$。左侧真恰好表示 $r$ 真且 $p,q$ 至少一个真，右侧也准确描述同一条件。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> Answer. (c) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** T.
 
-**答案。** T
-
-**推导。** 合取对析取的 distributive law 给出 $(p\lor q)\land r\equiv(p\land r)\lor(q\land r)$。左侧真恰好表示 $r$ 真且 $p,q$ 至少一个真，右侧也准确描述同一条件。左右同真同假，所以两者之间的 biconditional 对每个赋值都真，答案是 $T$。
-
-## Common Mistakes
-
-- 分配后的两项都必须包含 r，少抄一次 r 会破坏等价。
-- 双条件在两侧同时假时仍为真，不能只看两侧能否分别为假。
+**Derivation/proof.** The distributive law gives $(p\lor q)\land r\equiv(p\land r)\lor(q\land r)$. The left side says that $r$ is true and at least one of $p,q$ is true; the right side says exactly the same. Both sides have the same truth value, so their biconditional is true under every assignment. The answer is $T$.
 
 ## Connections
 

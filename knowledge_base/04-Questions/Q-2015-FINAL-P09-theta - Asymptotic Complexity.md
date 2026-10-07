@@ -39,26 +39,24 @@ and simplify the closed-form expression using the big $\Theta$ notation.
 
 Shared context: [[STEM-2015-FINAL-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-闭式中的二次项决定增长速度。由于合并成本常数非负，运行时间至少包含 $n^2$ 个单位叶子，而闭式又不超过 $(1+c)n^2$，上下界一致。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=16|PDF physical page 16]].
 
-## Detailed Solution
+According to the above expression of $A\cdot B$,
+$$T(n)=4T(\frac n2)+cn$$
+Iterating the recurrence, we get:
+$$\begin{aligned}
+T(n)&=T(2^j)\\&=4T(2^{j-1})+2^jc\\&=4(4T(2^{j-2})+2^{j-1}c)+2^jc\\&=4^2T(2^{j-2})+2\cdot2^jc+2^jc\\&=4^2(4T(2^{j-3})+2^{j-2}c)+2\cdot2^jc+2^jc\\&=4^3T(2^{j-3})+2^2\cdot2^jc+2\cdot2^jc+2^jc\\&\quad\vdots\\&=4^jT(1)+2^{j-1}\cdot2^jc+\ldots+2\cdot2^jc+2^jc\\&=4^j+2^jc(2^j-1)\\&=(1+c)n^2-cn\\&=\Theta(n^2)
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 16. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=\Theta(n^2)$.
 
 **Derivation/proof.** From $T(n)=n^2+cn(n-1)$ and fixed $c\ge0$, for $n\ge1$ we have $n^2\le T(n)\le(1+c)n^2$. These positive constant bounds prove the tight quadratic order.
 
-### 中文解答
-
-**推导。** 闭式写作 $T(n)=n^2+cn(n-1)$。时间成本常数 c 非负，n≥1 时第二项非负，故 $T(n)\ge n^2$；又 $n(n-1)\le n^2$，得到 $T(n)\le(1+c)n^2$。上下界正系数一与1+c均不随n改变，所以 $T(n)=\Theta(n^2)$。
-
-## Common Mistakes
-
-- 只给大 O 上界而没有紧确下界。
-- 将固定合并常数 $c$ 当作随 $n$ 变化的量。
+The leaf work alone gives $T(n)\ge n^2$.
 
 ## Connections
 

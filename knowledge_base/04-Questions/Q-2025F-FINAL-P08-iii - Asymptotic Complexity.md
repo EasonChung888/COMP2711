@@ -40,24 +40,19 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (iii) [1 point] $T_A(n)=\Omega(\sqrt n)\quad T_B(n)=O(\log n)$
 
-## 中文解析
+## Official Answer
 
-B 的对数上界低于 A 的平方根下界，所以能确定 B 更快。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+(iii) B is faster
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** B is faster.
 
-**答案。** B is faster。
-
-**推导。** 存在正数 $c,C$，使足够大 $n$ 时 $T_A(n)\ge c\sqrt n$、$T_B(n)\le C\log n$。所以 $T_B/T_A\le(C/c)(\log n)/\sqrt n\to0$。B 的上界已经远小于 A 的下界，实际运行时间也保持这个分离，故 B 渐近更快。
-
-## Common Mistakes
-
-- 应比较 B/A 来证明 B 更快，分母和结论方向要一致。
-- 平方根虽然小于 n，仍最终快于对数增长。
+**Derivation/proof.** For positive constants $c,C$ and sufficiently large $n$, $T_A(n)\ge c\sqrt n$ and $T_B(n)\le C\log n$. Hence
+$$\frac{T_B(n)}{T_A(n)}\le\frac Cc\frac{\log n}{\sqrt n}\to0.$$
+Here $(\log n)/\sqrt n\to0$, so B's upper bound is already asymptotically smaller than A's lower bound. Their actual running times obey the same separation, and B is faster.
 
 ## Connections
 

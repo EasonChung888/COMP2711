@@ -38,26 +38,18 @@ What is the variance of $X$?
 
 Shared context: [[STEM-2020-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-方差计算需要用到边独立，才能把协方差都消掉。每个指示变量平方等于自身，所以方差为 p-p²，再乘潜在边数。与期望不同，若边相关就不能直接相加方差。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$X_e$ is the indicator random variable that indicates the event, pair of vertices $e=(u,v)$ has an edge. $X_e$ is a Bernoulli trial, thus $E(X_e)=p,V(X_e)=p(1-p)$.
+There are $\binom n2$ pairs of vertices in total. So that $E(X)=\binom n2p$ and $V(X)=\binom n2p(1-p)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\operatorname{Var}(X)=\binom n2p(1-p)$.
 
 **Derivation/proof.** Write X as the sum of independent edge indicators I_e. Because $I_e^2=I_e$, each has variance $E[I_e^2]-E[I_e]^2=p-p^2=p(1-p)$. Distinct indicators are independent by the graph model, so their covariances vanish. Adding $\binom n2$ identical variance terms gives the result.
-
-### 中文解答
-
-**推导。** 每个候选边指标 $I_e\in\{0,1\}$，故 $I_e^2=I_e$，得到 $\operatorname{Var}(I_e)=E(I_e^2)-E(I_e)^2=p-p^2=p(1-p)$。题目明确不同边独立，因而不同指标的协方差均为零。把 $\binom n2$ 个指标相加，$\operatorname{Var}(X)=\binom n2p(1-p)$。这里独立性确实用于消掉协方差，不能只由指标都是伯努利就省略它。
-
-## Common Mistakes
-
-- 把每条边方差写成 p。
-- 没有独立性就省略协方差。
 
 ## Connections
 

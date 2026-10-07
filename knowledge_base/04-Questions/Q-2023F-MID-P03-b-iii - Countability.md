@@ -43,33 +43,19 @@ Without the need for providing any explanation, determine if the following sets 
 
 (iii) The set of all functions from $\mathbb N\to\{1,2\}$
 
-## 中文解析
+## Official Answer
 
-这次 domain 是无限的，不能把上一小题的两个输出枚举直接套用。对假想列表中第 n 个函数，在第 n 个输入处改成另一个值，就得到一个不属于列表的新函数。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (b) C, C, U
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** U，infinitely uncountable，与第 7 页对应的官方分类一致。
-
-**推导。**
-
-1. 假设这些函数可完整枚举为 $f_1,f_2,\ldots$；若自然数从零开始，先作无害的重新编号。定义 $g(n)=3-f_n(n)$。由于每个 $f_n(n)$ 只为一或二，$g(n)$ 也只为二或一，所以 $g$ 确实属于题目要求的函数集合。
-2. 对每个编号 $n$，都有 $g(n)\ne f_n(n)$，于是 $g$ 与第 $n$ 个函数至少在输入 $n$ 处不同。故 $g$ 不在所列任何一项中，与完整枚举矛盾，证明不可数。原卷整行 C, C, U 的最后一个 U 与此 diagonal proof 一致。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** U: infinitely uncountable.
 
 **Derivation/proof.** Suppose these functions had a complete list $f_1,f_2,\ldots$. Define $g(n)=3-f_n(n)$, with a harmless reindexing if naturals start at 0. Because $f_n(n)$ is either 1 or 2, g also maps into $\{1,2\}$. However, $g(n)\ne f_n(n)$ for every n, so g differs from each listed function. This contradicts completeness of the list and proves uncountability.
 
-## Common Mistakes
-
-- 把无限 domain 当成两个输入会错误得到可数结论。 / The arrow direction is essential.
-- diagonal 函数仍必须取值在 {1,2} 中。 / Flip the value within the allowed codomain.
+This agrees with the official classification, the third entry U. It contradicts a complete enumeration.
 
 ## Connections
 

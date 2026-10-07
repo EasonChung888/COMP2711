@@ -45,27 +45,16 @@ Suppose Alice wants to encrypt message $m=18$ using Bob's public key $(n,e)$. Us
 
 Shared printed context: ![[STEM-2023F-FINAL-P05 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-RSA 的 ciphertext 按模 n 解释，原题末尾省略 mod 但所给算法和答案均明确使用它。这里十八的平方比 323 多一，所以之后的每次平方余数都是一，只有最低指数位贡献十八。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=8|physical PDF page 8]], [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> (b)
+> $$\begin{aligned}18^{2^0}\bmod323&=18\\18^{2^1}\bmod323&=18^2\bmod323=1\\18^{2^2}\bmod323&=1^2\bmod323=1\\18^{2^3}\bmod323&=1^2\bmod323=1\\18^{2^4}\bmod323&=1^2\bmod323=1.\end{aligned}$$
+> $$23=2^4+2^2+2^1+2^0.$$
+> $$\begin{aligned}18^{23}&\equiv18^{2^4}\cdot18^{2^2}\cdot18^{2^1}\cdot18^{2^0}\\&\equiv1\cdot1\cdot1\cdot18\\&\equiv18\pmod{323}.\end{aligned}$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 密文 $c=18\pmod{323}$。
-
-**推导。**
-
-1. 使用公钥参数 $n=17\cdot19=323$、$e=23$；前一小题算出的私钥 $d$ 不用于本次公钥加密。Repeated squaring 起于 $18^1\equiv18$，而 $18^2=324\equiv1\pmod{323}$。
-2. 再将余数一逐次平方，得 $18^4\equiv18^8\equiv18^{16}\equiv1$。由于 $23=16+4+2+1$，
-   $$18^{23}\equiv18^{16}18^4 18^2 18\equiv1\cdot1\cdot1\cdot18\equiv18\pmod{323}.$$
-   所有因子均按指定的逐次平方法计算。
-3. 原式写出的 $c=m^e$ 在 RSA 语境下按模 $n$ 解释，这一来源省略已在 Source 中公开说明；最终报告的是规范余数十八，而非巨大的未取模整数幂。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $c=18\pmod{323}$.
 
@@ -73,10 +62,7 @@ Provenance: published official answer, independently checked and expanded below.
 $$18^{23}\equiv18^{16}18^4 18^2 18\equiv1\cdot1\cdot1\cdot18\equiv18\pmod{323}.$$
 All factors were computed by the requested repeated-squaring method, not by expanding the large integer power.
 
-## Common Mistakes
-
-- 本题用公钥 e=23，不用前项算出的 d=263。 / Encryption uses the public exponent.
-- 不能把 18²=324 当作余数 324；还需模 323。 / Reduce each square.
+Since $18^2=324\equiv1\pmod{323}$ and $23=16+4+2+1$, the selected residues multiply to $1\cdot1\cdot1\cdot18$.
 
 ## Connections
 

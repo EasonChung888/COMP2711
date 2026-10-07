@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-没有最大实数表示每次提出一个候选 x，都还能找到更大的 y。y 可以随 x 改变，所以全称在前、存在在后；如果交换量词，就错误要求存在一个固定 y 超过所有实数。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$\forall x\exists y(y>x)$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\forall x\exists y(y>x)$.
 
 **Derivation/proof.** For any candidate $x$ to be a largest real, there must be a real $y$ larger than it. Thus every $x$ has a suitable possibly different $y$, giving $\forall x\exists y(y>x)$. The witness $y=x+1$ checks the intended meaning. Reversing the quantifiers would require one number larger than all reals.
 
-### 中文解答
-
-**推导。** 任何候选最大值 $x$ 都会被某个更大的 $y$ 超过，故为 $\forall x\exists y(y>x)$。每给定实数 $x$，取 $y=x+1$ 就可核对这一量词顺序。等价否定形式是 $\neg\exists x\forall y(y\le x)$；不可交换为一个固定的 $y$ 大于所有 $x$。
-
-## Common Mistakes
-
-- 交换全称与存在量词。
-- 使用大于等于而允许 y=x。
+For any $x$ choose $y=x+1$. An equivalent form is $\neg\exists x\forall y(y\le x)$.
 
 ## Connections
 

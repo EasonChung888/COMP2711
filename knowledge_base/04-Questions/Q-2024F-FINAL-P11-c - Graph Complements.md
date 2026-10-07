@@ -46,24 +46,17 @@ You can use part (b) as a fact even if you could not solve it.
 
 Shared printed context: ![[STEM-2024F-FINAL-P11 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-把握手定理得到的偶性代入自补图度数等式，推出相邻整数乘积被四整除。相邻两数只一个偶，四的因子必须全部落在这个偶数中。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=27|physical PDF page 27]].
 
-## Detailed Solution
+> (c) Note that $n(n-1)=2S$ and $S$ is even. So $4\mid(n)(n-1)$. Also note that between $n$ and $n-1$ one is odd and one is even. So either $4\mid n$ or $4\mid n-1$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $n\equiv0$ or $1\pmod4$.
 
-**答案。** $n\equiv0$ 或 $1\pmod4$。
-
-**推导。** 由 (a) 导入 S 为偶数，存在整数 e 使 $S=2e$。由 (b) 导入 $n(n-1)=2S=4e$，所以 $4\mid n(n-1)$。如果 n 模四余零或一，该乘积模四为零；若 n 模四余二，则 $n(n-1)\equiv2\cdot1=2$；若余三，则 $n(n-1)\equiv3\cdot2=6\equiv2$。后两类与整除四矛盾，排除后只剩 $n\equiv0$ 或 $1\pmod4$，完成必要条件证明。
-
-## Common Mistakes
-
-- 偶数乘奇数只能保证被二整除，仍须检查是否被四整除。
-- 这里证明自补图顶点数的必要条件，不能反过来把它当作任意图自补的充分条件。
+**Derivation/proof.** By (a), $S$ is even, so $S=2e$ for an integer $e$. By (b), $n(n-1)=2S=4e$, hence $4\mid n(n-1)$. Residues zero and one for $n$ give product zero modulo four. If $n$ has residue two, then $n(n-1)\equiv2\cdot1=2$. If it has residue three, then $n(n-1)\equiv3\cdot2=6\equiv2$. The last two cases contradict divisibility by four, leaving only residues zero and one. This proves the necessary condition.
 
 ## Connections
 

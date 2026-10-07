@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P02 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-若整个合取为真，右侧必使 $p=F,q=T$。但此时左侧 $p\lor\neg q=F\lor F=F$，与整个合取为真矛盾。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> Answer. (b) F
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** F.
 
-**答案。** F
-
-**推导。** 若整个合取为真，右侧必使 $p=F,q=T$。但此时左侧 $p\lor\neg q=F\lor F=F$，与整个合取为真矛盾。因此没有真赋值，公式是 contradiction，分类 $F$。这也可化简为 $(p\land\neg p\land q)\lor(\neg q\land\neg p\land q)=F$。
-
-## Common Mistakes
-
-- 右合取强迫 $p=F,q=T$，必须把这组取值代回左析取。
-- $\neg p$ 和 q 可以同时真，但会与左侧 $p\lor\neg q$ 冲突。
+**Derivation/proof.** If the whole conjunction were true, its right side would force $p=F,q=T$. Then $p\lor\neg q=F\lor F=F$, a contradiction. Thus there is no true assignment, so the formula is a contradiction, classified $F$. Equivalently, distributing gives $(p\land\neg p\land q)\lor(\neg q\land\neg p\land q)=F$.
 
 ## Connections
 

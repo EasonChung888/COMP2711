@@ -38,26 +38,19 @@ knows how to compute the gcd of two integers.
 
 Shared context: [[STEM-2021-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-这句的主语仍是 Sarah，g 的定义已经包含会算两个整数最大公因数的意思，因此直接写 g(Sarah)。不用把“两个整数”重新展开成额外量词，也不能推广成所有学生都有这个能力。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> We are given premises $c(\mathrm{Sarah})$, $g(\mathrm{Sarah})$, and $\forall x(g(x)\to h(x))$, and we want to conclude $\exists x(c(x)\land h(x))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $g(\mathrm{Sarah})$.
 
 **Derivation/proof.** The grammatical subject remains Sarah. Predicate g already means knowing how to compute the gcd of two integers, so apply g to that named person. The integers mentioned are internal to the given predicate meaning; the translation does not need new number quantifiers or assert that every student has the skill.
 
-### 中文解答
-
-**推导。** 本句的主语承接 Sarah，而谓词 $g(x)$ 已完整表示“知道如何计算两个整数的 gcd”。把 Sarah 代入便得到 $g(\mathrm{Sarah})$。两个整数属于给定谓词的意义，不是本题人物论域里要额外量化的对象；答案也没有声称所有学生都有这种能力。
-
-## Common Mistakes
-
-- 把命名事实擅自全称推广。
-- 混淆课程谓词 c 与能力谓词 g。
+In the second clause, the subject remains Sarah.
 
 ## Connections
 

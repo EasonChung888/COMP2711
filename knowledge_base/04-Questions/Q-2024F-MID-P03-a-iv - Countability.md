@@ -42,24 +42,17 @@ The fourth printed answer on page 7 is mislabeled (iii); its position and Uncoun
 
 Shared printed context: ![[STEM-2024F-MID-P03-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-反设 $C=\mathcal P(\mathbb R)\setminus\mathbb R$ 可数。另一个部分 $D=\mathcal P(\mathbb R)\cap\mathbb R$ 是实数的子集，故至多有实数那么多元素。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (iii) Uncountable
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Uncountable.
 
-**答案。** Uncountable.
-
-**推导。** 反设 $C=\mathcal P(\mathbb R)\setminus\mathbb R$ 可数。另一个部分 $D=\mathcal P(\mathbb R)\cap\mathbb R$ 是实数的子集，故至多有实数那么多元素。于是 $\mathcal P(\mathbb R)=C\cup D$ 的基数至多为 $|\mathbb R|$，因为给无限实数集加可数多个元素不会增大其基数。但 Cantor's theorem 说明任意集合的幂集严格大于原集合，故 $|\mathcal P(\mathbb R)|>|\mathbb R|$，矛盾。因此差集不可数；无需把实数误当作所有实数子集。
-
-## Common Mistakes
-
-- 不能把幂集大小写成实数集大小，Cantor 定理给出严格增大。
-- 差集 P(R)−R 不等于去掉空集；应论证被删除部分至多为实数基数。
+**Derivation/proof.** Suppose for contradiction that $C=\mathcal P(\mathbb R)\setminus\mathbb R$ is countable. The remaining part $D=\mathcal P(\mathbb R)\cap\mathbb R$ is a subset of the reals, so has cardinality at most $|\mathbb R|$. Hence $\mathcal P(\mathbb R)=C\cup D$ has cardinality at most $|\mathbb R|$, since adding countably many elements to an infinite real set does not increase its cardinality. Cantor's theorem gives $|\mathcal P(\mathbb R)|>|\mathbb R|$, a contradiction. Thus the difference is uncountable, without treating all reals as all real subsets.
 
 ## Connections
 

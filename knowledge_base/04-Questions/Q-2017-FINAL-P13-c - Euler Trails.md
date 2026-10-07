@@ -41,26 +41,19 @@ Source verification: The published parity answer omits K1,1. The source permits 
 
 Shared context: [[STEM-2017-FINAL-P13 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先用完全二分图各边跨两组的结构得到度数，再按两个参数的奇偶分四种情况。两者都奇时，全部顶点为奇度；若两组各只有一个点，恰好两个奇点，单边也有开放欧拉通路。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+For a bipartite graph, the vertices in $U$ all have degree $n$ and the vertices in $V$ all have degree $m$. We know that there exists an Euler path but not an Euler circuit if there are exactly two vertices of odd degree and all other vertices have even degree. For such a scenario to occur, this means that either $m=2$ and $n$ is odd, or $n=2$ and $m$ is odd. So it is possible.
 
-Provenance: derived; independently derived correction; discrepant source material is retained in Source. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Yes: $m=2$ and $n$ odd, or $n=2$ and $m$ odd, or $(m,n)=(1,1)$.
 
 **Derivation/proof.** The graph is connected for $m,n\ge1$. Its $m$ vertices in one part have degree $n$, and its other $n$ vertices have degree $m$. An open Euler trail requires exactly two odd-degree vertices. If both parameters are even, the count is zero. If only $n$ is odd, the count is $m$, requiring $m=2$; symmetrically the other mixed case needs $n=2$. If both are odd, the count is $m+n$, which equals two exactly for $m=n=1$. Checking the single edge independently confirms the final case.
 
-### 中文解答
-
-**推导。** 因 $m,n\ge1$，图连通。左部 $m$ 个顶点度数全为 $n$，右部 $n$ 个顶点度数全为 $m$；有开欧拉迹而无欧拉回路当且仅当恰有两个奇度点。两参数都偶时奇度点为零，不合；$n$ 奇、$m$ 偶时奇度点数为 $m$，故须 $m=2$；$m$ 奇、$n$ 偶时同理须 $n=2$。两者都奇时数目为 $m+n$，等于二恰在 $m=n=1$。故答案为 $m=2,n$ 奇，或 $n=2,m$ 奇，或 $(m,n)=(1,1)$；最后一种是单边图，确有一次走完的开迹，印本遗漏此边界。
-
-## Common Mistakes
-
-- 只讨论一奇一偶而漏掉 K1,1。
-- 把同侧顶点度数写成本侧人数。
+The single-edge graph $K_{1,1}$ has exactly two odd-degree vertices and therefore an Euler trail, supplying the small case omitted by the printed classification.
 
 ## Connections
 

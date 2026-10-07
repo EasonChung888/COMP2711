@@ -43,24 +43,18 @@ Prerequisite context (editorial): [[Q-2025S-FINAL-P03-a - Modular Congruence]]. 
 
 (b) [6 pts] Find the number of positive integers less than 1001 ($1001=7\cdot11\cdot13$) that are simultaneously 7-safe, 11-safe, and 13-safe. Please justify your answer.
 
-## 中文解析
+## Official Answer
 
-三个安全条件给出三个余数集合，CRT 将每个余数组合唯一对应到指定区间的数。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+(b) Consider the mapping from $x$ to the 3-tuple $(a=x\bmod7,b=x\bmod11,c=x\bmod13)$. For any $x$ that is 7-safe, 11-safe, and 13-safe, we must have $a\in\{3,4\}$, $b\in\{3,4,5,6,7,8\}$, $c\in\{3,4,5,6,7,8,9,10\}$. By the Chinese Remainder Theorem, for each such triple $(a,b,c)$, there is also a unique positive integer $x<1001$ such that $a=x\bmod7,b=x\bmod11,c=x\bmod13$. So there is a one-to-one correspondence between such triples and the set of positive integers less 1001 that are 7-safe, 11-safe, and 13-safe. Thus, the answer is
+$$2\cdot6\cdot8=96.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $96$.
 
-**答案。** $96$。
-
-**推导。** 模七允许 $\{3,4\}$，模十一允许 $\{3,4,5,6,7,8\}$，模十三允许 $\{3,4,5,6,7,8,9,10\}$。三者分别有二、六、八种。七、十一、十三两两互素，Chinese Remainder Theorem 保证每个余数三元组唯一确定模 $1001$ 的一个解，因此不同三元组不会计数重叠。零不满足任何允许的余数，故每个类在 $1\le x<1001$ 中恰有一个代表。用 product rule 得 $2\cdot6\cdot8=96$。
-
-## Common Mistakes
-
-- 不能直接把安全概率相乘而不说明区间上余数组合的一一对应。
-- CRT 的代表区间包含零，但零不合法，需要明确排除这一边界。
+**Derivation/proof.** The allowed residues are $\{3,4\}$ modulo seven, $\{3,4,5,6,7,8\}$ modulo eleven, and $\{3,4,5,6,7,8,9,10\}$ modulo thirteen. These sets have two, six and eight members. The moduli are pairwise coprime, so CRT assigns each triple a unique class modulo $1001$ and distinct triples cannot overlap. Zero satisfies none of the allowed residue conditions; hence each class has exactly one representative with $1\le x<1001$. The product rule yields $2\cdot6\cdot8=96$.
 
 ## Connections
 

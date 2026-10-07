@@ -1,0 +1,11 @@
+Example
+What is the coefficient of 
+ in the expansion of 
+?
+Solution:
+By the Binomial theorem the term involving 
+ is 
+. Therefore, the coefficient of 
+ is
+ 
+10

@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 
 Shared printed context: ![[STEM-2024F-FINAL-P09-b - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-相邻三角形只增加最底下一行，该行的圆个数等于新的边长。递推必须配初值，否则同一差分规律可产生很多不同的数列。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=24|physical PDF page 24]].
 
-## Detailed Solution
+> (b) (i) $T(1)=1,\quad T(n)=T(n-1)+n$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $T(1)=1,\quad T(n)=T(n-1)+n\ (n\ge2)$.
 
-**答案。** $T(1)=1,\quad T(n)=T(n-1)+n\ (n\ge2)$。
-
-**推导。** 图中边长一的三角形只有一个圆，所以 $T(1)=1$。对边长 $n\ge2$，最底层恰有 n 个圆；去掉该层，剩下的是边长 $n-1$ 的同形三角形，包含 $T(n-1)$ 个圆。两部分不重叠且覆盖全部圆，所以 $T(n)=T(n-1)+n$。代入检查得到 $1,3,6,10,15$，与图示五项完全一致。
-
-## Common Mistakes
-
-- 递推增量是新底层的 n 个圆，不能误写固定增加二或三。
-- 需要初值一，单给递推式不能唯一确定图中数列。
+**Derivation/proof.** The side-one triangle has a single circle, so $T(1)=1$. For side length $n\ge2$, remove the bottom row containing exactly $n$ circles. The remaining triangle has side length $n-1$ and $T(n-1)$ circles. The parts are disjoint and cover the full triangle, so $T(n)=T(n-1)+n$. Substituting gives $1,3,6,10,15$, matching the five pictured triangles.
 
 ## Connections
 

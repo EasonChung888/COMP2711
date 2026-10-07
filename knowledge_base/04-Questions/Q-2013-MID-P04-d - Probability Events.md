@@ -40,26 +40,19 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2013-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先决定哪八名男生有舞伴，再安排他们和八名女生的一一配对。这样不会把未配对的男生错误当成可安排对象。
+Source: [[knowledge_base/past_paper/2013-midterm.pdf#page=7|PDF physical page 7]].
 
-## Detailed Solution
+(d) There are totally 16 boys. Only 8 of them will have dance partners. The number of ways to pick 8 boys from among 16 is $\binom{16}{8}$. Let $b_1,b_2,\ldots,b_8$ be the 8 boys picked. Boy $b_1$ can be paired up with any of the 8 girls; Boy $b_2$ can be paired up any of the remaining 7 girls; and so on. So the answer is:
+$$\binom{16}{8}8!.$$
+There is another way to solve the problem. Number the girls from 1 to 8. Girl number 1 can be paired up with any of the 16 boys; girl number 2 can then be paired up with with any of the remaining 15 boys; and so on. So the answer is $16\times15\times\ldots\times9=16^{\underline8}$, which is the same as $\binom{16}{8}8!$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{16}{8}8!=16!/8!$.
 
 **Derivation/proof.** Choose the eight boys who receive partners, then biject them with the eight girls. This is $\binom{16}{8}8!=16\cdot15\cdots9$.
-
-### 中文解答
-
-**推导。** 先从十六名男生中选出有舞伴的八人，有 $\binom{16}{8}$ 种；其余男生不参与配对。再把选出的八人与八名女生一一对应，有 $8!$ 种。两阶段唯一确定配对，因此总数 $\binom{16}{8}8!=16!/8!=16\cdot15\cdots9$。
-
-## Common Mistakes
-
-- 只写 $16P8$ 却没有说明它等于选择后配对。
-- 把未获配对的八名男生再排列。
 
 ## Connections
 

@@ -38,26 +38,19 @@ $f(x)=\log_3(x),g(x)=\log_{20}(x)$.
 
 Shared context: [[STEM-2021-MID-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-对数换底只改变常数因子。两个函数之比固定为 ln20/ln3，既有正的上界也有正的下界，所以 Θ 成立，而题目要求多选，O 与 Ω 也必须一并选上。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (d) (i)(ii)(iii), $f(x)=\Theta(g(x))$. $\log_{20}(x)=\log_3(x)/\log_3 20$ where $1/\log_3 20$ is a constant.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** (i), (ii), and (iii).
 
 **Derivation/proof.** For x>1, change of base gives $f(x)=\ln x/\ln3$ and $g(x)=\ln x/\ln20$. Consequently f/g=ln20/ln3 is a fixed positive constant. Taking that constant (or slightly larger/smaller constants) yields both upper and lower bounds, so Θ holds and automatically includes O and Ω.
 
-### 中文解答
-
-**推导。** 对 $x>1$ 用换底公式：$f(x)=\ln x/\ln3$，$g(x)=\ln x/\ln20$，故 $f(x)/g(x)=\ln20/\ln3=c>0$ 为固定常数。因此 $f=cg$ 同时给出正的常数上界和下界，$f=\Theta(g)$，也必有 $f=O(g)$ 和 $f=\Omega(g)$。题目多选“所有适用”，所以(i)、(ii)、(iii)都选。
-
-## Common Mistakes
-
-- 只选 Θ，忘记它蕴含 O 和 Ω。
-- 把底数大小当作不同增长阶。
+Precisely, $f(x)/g(x)=\ln20/\ln3=c>0$, so select (i), (ii), and (iii).
 
 ## Connections
 

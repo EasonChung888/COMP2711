@@ -1,0 +1,42 @@
+Combinations with Repetition
+How many ways are there to select 
+5
+ bills from the following 
+7
+ denominations: 
+$
+1
+, 
+$
+2
+, 
+$
+5
+, 
+$
+10
+, 
+$
+20
+, 
+$
+50
+, and 
+$
+100
+? Assume there are enough bills of each denomination
+Solution
+Select the bills from the appropriate position of a cash box illustrated below. 
+Equivalently, according to the "
+Distributing Objects into Boxes
+" framework, 
+distribute 
+5
+ 
+indistinguishable
+ objects (bills) into 
+7
+ 
+distinguishable
+ boxes (denominations).
+40

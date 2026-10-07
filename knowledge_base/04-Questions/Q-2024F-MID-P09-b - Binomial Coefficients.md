@@ -43,24 +43,17 @@ Prerequisite context (editorial): [[Q-2024F-MID-P09-a - Combinatorial Selection]
 $$2^{2n-2}=\sum_{r=0}^{n-1}\binom{2n-1}r.$$
 Hint: You may use part (a), even if you do not manage to prove it.
 
-## 中文解析
+## Official Answer
 
-两边要解释为同一类对象的数量。左边由补集配对得到小子集总数，右边按子集大小从零到 n−1 分成互斥类别计算。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+> For the second part, the LHS is the number of subsets of $\{1,2,3,\cdots,2n-1\}$ with at most $n-1$ elements. The RHS counts the number of subsets that have exactly 0 elements, 1 element, 2 elements, $\cdots$, $n-1$ elements separately and adds them together.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2^{2n-2}=\sum_{r=0}^{n-1}\binom{2n-1}r$.
 
-**答案。** $2^{2n-2}=\sum_{r=0}^{n-1}\binom{2n-1}r$。
-
-**推导。** 考虑 $U=\{1,\ldots,2n-1\}$ 中至多 $n-1$ 个元素的子集。由可直接使用的 (a)，它们总数为 $2^{2n-1}/2=2^{2n-2}$，给出左侧。另一方面，固定大小 r 时从 $2n-1$ 个元素选 r 个，数量为 $\binom{2n-1}r$。不同 r 的类别互斥，且 $r=0,\ldots,n-1$ 覆盖全部所需子集，因此总数等于右侧求和。两种方式都一一计数同一批子集，所以恒等式成立。
-
-## Common Mistakes
-
-- 空集对应 r=0，不可从一开始求和。
-- 题目要求组合论证，单纯变形二项式恒等式没有说明计数对象。
+**Derivation/proof.** Consider subsets of $U=\{1,\ldots,2n-1\}$ with at most $n-1$ elements. Part (a), which may be used directly, counts them as $2^{2n-1}/2=2^{2n-2}$, the left side. For fixed size $r$, choosing $r$ of the $2n-1$ elements gives $\binom{2n-1}r$. These size classes are disjoint, and $r=0,\ldots,n-1$ covers all desired subsets. Adding gives the right side. Both methods count the same collection of subsets exactly once, proving the identity.
 
 ## Connections
 

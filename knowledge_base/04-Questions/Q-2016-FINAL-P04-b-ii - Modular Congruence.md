@@ -38,26 +38,34 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P04-b - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-图像上底数是二十一，指数分别为七十和七十一。左边由费马小定理等于一；右边的被除数和模数都被三整除，所以余数也被三整除，不可能等于一。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(ii) No.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+Consider LHS. We have
+$$21^{70}\bmod71=1$$
+Consider RHS $=21^{71}\bmod72$.
+
+By Euclid's Division Theorem, the above expression could be written as follows.
+$$21^{71}=72q+r$$
+where $q$ and $r$ are two unique integers.
+
+Note that $r=21^{71}\bmod72$. Thus,
+$$21^{71}=72q+(21^{71}\bmod72)$$
+$$\begin{aligned}21^{71}\bmod72&=21^{71}-72q\\&=3(7\cdot21^{70}-24q)\end{aligned}$$
+which is divisible by 3. Thus, RHS is divisible by 3.
+
+Note that LHS is equal to 1 which is not divisible by 3.
+
+Thus, LHS is not equal to RHS.
+
+## Supplementary Explanation
 
 **Answer.** False. $21^{70}\bmod71=1$, while $21^{71}\bmod72$ is divisible by 3 (in fact, it is 45).
 
 **Derivation/proof.** The prime 71 does not divide 21, so Fermat's theorem gives $21^{70}\equiv1\pmod{71}$. Write $21^{71}=72q+r$ with $0\le r<72$. Then $r=3(7\cdot21^{70}-24q)$, a multiple of 3, and hence $r\ne1$. A numerical check uses $21^2\equiv9$, $21^3\equiv45$, and $45\cdot9\equiv45\pmod{72}$; thus every odd power from the third onward, including the 71st, has remainder 45.
-
-### 中文解答
-
-**推导。** 71是素数且不整除21，费马小定理给左边 $21^{70}\bmod71=1$。右边设 $21^{71}=72q+r$，则 $r=3(7\cdot21^{70}-24q)$，是三的倍数，不可能等于一，故等式假。独立数值检查 $21^2\equiv9$、$21^3\equiv45$、$45\cdot9\equiv45\pmod{72}$，所以71次这个奇数次幂余数45。
-
-## Common Mistakes
-
-- 把底数二十一的个位一误并入指数，抄成 $2^{170}$。
-- 把七十二误当素数或对不互素的底数使用费马小定理。
 
 ## Connections
 

@@ -37,26 +37,17 @@ If a student attended the Zoom meeting of midterm dry run but got some marks ded
 
 Shared context: [[STEM-2020-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-but 在逻辑上仍然表示“并且”，不是否定后面内容。前件需要同一个学生既参加会议又被扣分，后件才要求没有提交文件；不能把否定错误移到扣分条件上。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+$\forall x((Z(x)\land D(x))\to\neg F(x))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall x((Z(x)\land D(x))\to\neg F(x))$.
 
 **Derivation/proof.** “But” joins the two factual conditions with $\land$: the same student attended and lost marks. Their conjunction is the complete if-clause. The then-clause negates submission, not attendance. Universally quantify x because the assertion concerns any student satisfying those conditions.
-
-### 中文解答
-
-**推导。** 前件包括同一学生的两个事实：“参加” $Z(x)$ 和“被扣分” $D(x)$；but 在逻辑中仍是合取。因此完整前件为 $Z(x)\land D(x)$。后件“没有交文件”是 $\neg F(x)$，最后对每名学生量化得 $\forall x((Z(x)\land D(x))\to\neg F(x))$。否定作用在交文件上，不能错放在整条蕴含外。
-
-## Common Mistakes
-
-- 把 but 当成非 D。
-- 只让 D 而非整个合取受 if 支配。
 
 ## Connections
 

@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (iii) The set of ternary strings of infinite length such that they contain “012”.
 
-## 中文解析
+## Official Answer
 
-固定前三位为 012 后，剩下无限尾部仍可任意选择。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+(iii) Uncountable
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Uncountable.
 
-**答案。** Uncountable。
-
-**推导。** 对每个无限三进制串 $s$，构造 $f(s)=012s$，即在开头加上固定前缀 012。这个新串必含题目要求的连续子串。若 $s\ne t$，其尾部不同，所以 $012s\ne012t$；因此 $f$ 是单射。无限三进制串集合已经不可数，其单射像也不可数，且该像包含于本题集合，故本题集合不可数。要求“出现一次以上”不会限制其余无限尾部。
-
-## Common Mistakes
-
-- 题目只说包含 012，没有说只能包含一次，不能额外限制尾部。
-- 固定一个有限前缀并不能使所有无限尾部变成可数。
+**Derivation/proof.** For every infinite ternary string $s$, define $f(s)=012s$ by attaching the fixed prefix 012. This new string contains the required consecutive substring. If $s\ne t$, their tails differ, so $012s\ne012t$; thus $f$ is injective. The set of infinite ternary strings is uncountable, so its injective image is uncountable. That image is contained in the requested set, proving that the requested set is also uncountable. Requiring an occurrence of 012 leaves the infinite tail unrestricted.
 
 ## Connections
 

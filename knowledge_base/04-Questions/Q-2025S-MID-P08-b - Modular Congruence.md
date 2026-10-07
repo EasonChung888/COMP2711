@@ -42,24 +42,21 @@ Prerequisite context (editorial): [[Q-2025S-MID-P08-a - Modular Congruence]]. Fo
 (b) Solve the following congruence. When finding the inverse, you must use the extended Euclidean algorithm and show the steps.
 $$28x\equiv32\pmod{46}$$
 
-## 中文解析
+## Official Answer
 
-二十八和四十六不互素，先约去共同因数二，再求十四模二十三的逆元。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+(b) As we can see, we cannot find the inverse of 28 modulo 46 as they are not co-prime. Note that $28x\equiv32\pmod{46}$ is equivalent to $14x\equiv16\pmod{23}$. Now we calculate the inverse of 14 modulo 23 (Euclidean algorithm), which is 5.
 
-Provenance: independently derived correction/completion; the printed defect is retained in Source.
+$$70x\equiv x\equiv80\equiv11\pmod{23}$$
 
-### 中文解答
+## Supplementary Explanation
 
-**答案。** $x\equiv11\pmod{23}$，即 $x=11+23t$，$t\in\mathbb Z$。
+**Answer.** $x\equiv11\pmod{23}$, or $x=11+23t$ for $t\in\mathbb Z$.
 
-**推导。** 由 $46\mid28x-32$ 得到等价的 $23\mid14x-16$，故解 $14x\equiv16\pmod{23}$。extended Euclidean algorithm 的除法链为 $23=1\cdot14+9$，$14=1\cdot9+5$，$9=1\cdot5+4$，$5=1\cdot4+1$。回代：$1=5-4=2\cdot5-9=2\cdot14-3\cdot9=5\cdot14-3\cdot23$，所以十四的逆元是五。两边乘五得到 $x\equiv80\equiv11\pmod{23}$。全部整数解 $x=11+23t$ 代回有 $28x-32=276+644t=46(6+14t)$，故都满足原式；模四十六时为十一和三十四两类。
-
-## Common Mistakes
-
-- 二十八在模四十六下没有逆元，不能直接执行逆元消去。
-- 最终模数是二十三；若用模四十六表示，必须保留两类解。
+**Derivation/proof.** The condition $46\mid28x-32$ is equivalent to $23\mid14x-16$. The extended Euclidean algorithm is
+$$23=1\cdot14+9,\quad14=1\cdot9+5,\quad9=1\cdot5+4,\quad5=1\cdot4+1.$$
+Back-substitution gives $1=5-4=2\cdot5-9=2\cdot14-3\cdot9=5\cdot14-3\cdot23$, so the inverse of fourteen is five. Multiply by five to get $x\equiv80\equiv11\pmod{23}$. Substituting every $x=11+23t$ into the original expression gives $28x-32=276+644t=46(6+14t)$. Thus all these integers solve it; modulo forty-six they form the two classes eleven and thirty-four.
 
 ## Connections
 

@@ -39,26 +39,21 @@ For two given vertices $u$ and $v$ of $G$, what’s the expected number of steps
 
 Shared context: [[STEM-2021-FINAL2-BONUS - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-完全图中只要尚未到目标，每一步都有同样的命中概率一除以 n-1。把一次步数加上失败后的剩余期望，得到线性方程 h=1+(n-2)h/(n-1)，解为 n-1。若起点就是终点，则首达时间为零。
+Source: [[knowledge_base/past_paper/2021-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) The probability of visiting $v$ at the next step is $p=\frac1{n-1}$ if the current vertex is not $v$. So the answer is $1/p=n-1$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $n-1$ for distinct $u,v$; 0 if the starting vertex already equals the target.
 
 **Derivation/proof.** For n≥2 and current vertex different from v, one of its n−1 equally likely neighbors is v. Thus each nonabsorbed step has success probability 1/(n−1), independent of which non-target vertex was reached. Let h be the expected remaining steps. First-step conditioning gives h=1+((n−2)/(n−1))h, hence h=n−1. If u=v, the first hitting time is already zero before any step.
 
-### 中文解答
+After $k$ steps the non-hitting probability is $(1-p)^k$, a geometric tail proving finite expectation. Symmetry makes the remaining expectation the same at all non-target vertices. For $n=2$ the next step hits with certainty, giving expectation one.
 
-**推导。** 若 $u=v$，起始时已经到达目标，首达步数为零。以下设 $u\ne v$，于是 $n\ge2$。按题目逐步均匀选邻居的游走，只要尚未到 $v$，当前点的 $n-1$ 个邻居中恰有一个是 $v$，条件命中概率恒为 $p=1/(n-1)$。因此未命中 $k$ 步的概率为 $(1-p)^k$，几何尾保证期望有限。由非目标顶点的对称性，剩余期望都相同，记作 $h$。走一步后以概率 $p$ 结束，否则仍有期望 $h$，所以 $h=1+\frac{n-2}{n-1}h$。移项得 $h/(n-1)=1$，即 $h=n-1$。这也覆盖 $n=2$ 时下一步必达，期望为一。
-
-## Common Mistakes
-
-- 把命中概率用成 1/n，允许停留自环。
-- 遗漏 u=v 时已经到达的边界。
+The boundary case is zero if $u=v$. Otherwise $h=1+\frac{n-2}{n-1}h$, so $h=n-1$.
 
 ## Connections
 

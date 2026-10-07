@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把“不含 a”和“不含 b”作为两个坏事件，分别扣除后，不含二者的字符串被扣了两次，必须加回一次。这样得到同时含有 a 与 b 的数量，重复出现仍然允许。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+We use $W_a$ to denote the set of words containing $a$, and similarly $W_b,W_{a\land b},W_{a\lor b}$. By the inclusion-exclusion rule, we have $\lvert W_{a\lor b}\rvert=\lvert W_a\rvert+\lvert W_b\rvert-\lvert W_{a\land b}\rvert$.
+From (a), we know $\lvert W_a\rvert=\lvert W_b\rvert=26^6-25^6$. Similarly, $\lvert W_{a\lor b}\rvert=26^6-24^6$. So
+$$\lvert W_{a\land b}\rvert=\lvert W_a\rvert+\lvert W_b\rvert-\lvert W_{a\lor b}\rvert=2(26^6-25^6)-(26^6-24^6)=26^6-2\cdot25^6+24^6.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $26^6-2\cdot25^6+24^6$.
 
 **Derivation/proof.** Let A be strings missing a and B strings missing b. Their sizes are $25^6$ each, and their intersection misses both, with $24^6$ strings. The strings containing both are outside $A\cup B$. Inclusion-exclusion gives $26^6-(25^6+25^6-24^6)$, which simplifies to the answer.
 
-### 中文解答
-
-**推导。** 令 $A$ 是不含 $a$ 的串，$B$ 是不含 $b$ 的串，则 $|A|=|B|=25^6$，同时不含二者的交集有 $|A\cap B|=24^6$ 个。所求串为两者并集的补集，容斥原理给 $26^6-|A\cup B|=26^6-2\cdot25^6+24^6$。加回交集是因为前两次扣除把既无 $a$ 也无 $b$ 的串扣了两遍。
-
-## Common Mistakes
-
-- 忘记加回同时缺少两字母的交集。
-- 把含 a 或 b 误当成含 a 且 b。
+The intersection omits both named letters, leaving twenty-four choices at each position, so $|A\cap B|=24^6$. Inclusion-exclusion adds this intersection back after the two subtractions.
 
 ## Connections
 

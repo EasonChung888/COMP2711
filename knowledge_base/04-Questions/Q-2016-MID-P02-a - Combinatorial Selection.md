@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-四类人员没有交集，可独立从每一类中按配额选人。每类内部只关心选中了谁，不关心邀请顺序，因此使用组合数再相乘。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(a) $\binom{300}{4}\binom{500}{10}\binom{600}{10}\binom{10000}{40}$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{300}{4}\binom{500}{10}\binom{600}{10}\binom{10000}{40}$.
 
 **Derivation/proof.** Select 4 of 300 faculty, 10 of 500 assistants, 10 of 600 postgraduates, and 40 of 10,000 undergraduates. The original roles are disjoint, so each combination of four selections gives one allowed guest group.
 
-### 中文解答
-
-**推导。** 四类身份初始互斥。选4位教员有 $\binom{300}{4}$，选10位助教有 $\binom{500}{10}$，选10位研究生有 $\binom{600}{10}$，选40位本科生有 $\binom{10000}{40}$。各类选择组合唯一确定一个宾客集合，故乘积为 $\binom{300}{4}\binom{500}{10}\binom{600}{10}\binom{10000}{40}$。邀请顺序不区分，所以每一类用组合而非排列。
-
-## Common Mistakes
-
-- 将全部人员合在一起选六十四人，无法保证角色配额。
-- 在每个组合数上额外乘阶乘计邀请次序。
+Each four-part selection determines exactly one guest set, with no invitation ordering.
 
 ## Connections
 

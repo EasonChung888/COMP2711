@@ -1,0 +1,5 @@
+Pascal’s Triangle 
+34
+Yang Hui triangle (12??)
+20=C(6,3)
+ – There is a total of 6 moves down/right. If we select the 3 moves down (or right), we fix the entire path.

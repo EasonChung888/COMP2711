@@ -38,26 +38,21 @@ For CountOneB’s running time, select all that apply from the list below, and b
 
 Shared context: [[STEM-2021-MID-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-算法 B 每次只删掉最低的一个一，运行次数是置位个数。二的幂只运行一次，而二的幂减一有很多个一，所以同一个数值增长尺度下既可能很快也可能随位数增长，不能给统一 Θ(log n) 或 Θ(1)。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> Algorithm B's running time is proportional to the number of 1's in the binary representation of $n$, which fluctuates between 1 and $\log n$, depending on the actual value of $n$. So it's $O(\log n)$ and $\Omega(1)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** (1) and (5).
 
 **Derivation/proof.** The update n AND (n−1) clears exactly the lowest set bit, so iterations equal popcount(n). For positive n this lies between 1 and floor(log2 n)+1, proving Ω(1) and O(log n). At n=2^k there is only one iteration, ruling out Ω(log n). At n=2^k−1 there are k iterations, ruling out O(1). Consequently neither listed Θ bound applies to the per-value running-time function.
 
-### 中文解答
+Write the binary representation as a higher-bit prefix, the lowest one, and trailing zeros. Subtracting one changes that one to zero and the trailing zeros to ones. AND with the original therefore clears exactly that one and preserves every higher one. This justifies the popcount iteration count.
 
-**推导。** 把 $n$ 写成“高位串、最低一个一、若干零”；减一会把这个最低一变零、其后零全变一，与原数逐位 AND 后只清除这个最低一，其余一保留。因此每轮恰删一个置位，轮数为 $\operatorname{popcount}(n)$，正整数时介于 $1$ 与 $\lfloor\log_2n\rfloor+1$ 之间，给出 $\Omega(1)$ 和 $O(\log n)$。取 $n=2^k$ 时只有一轮，排除统一的 $\Omega(\log n)$；取 $n=2^k-1$ 时有 $k$ 轮，排除 $O(1)$。所以两个列出的 $\Theta$ 也都不成立，答案只选(1)、(5)。这讨论每个数值的运行时间，不能把最坏位型的时间当成对所有输入的下界。
-
-## Common Mistakes
-
-- 把最坏情况 Θ(log n) 当作逐值 Θ 下界。
-- 以为 n AND(n-1) 每次都把数值减半。
+The count is $\operatorname{popcount}(n)$. The values $n=2^k-1$ show unbounded running time, so select only (1) and (5).
 
 ## Connections
 

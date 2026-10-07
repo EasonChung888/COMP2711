@@ -38,19 +38,19 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (b) [4 points] Draw the simple graph $G$ with 5 vertices and the following degrees $\{3,3,2,1,1\}$.
 
-## 中文解析
+## Official Answer
 
-先用三角形给三个点基础度数二，再给两个点各接一片叶子。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=19|physical PDF page 19]], [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=20|physical PDF page 20]].
 
-## Detailed Solution
+(b) Here is a simple graph with the following degrees.
 
-Provenance: published official answer, independently checked and expanded below.
+![[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=20]]
 
-### 中文解答
+## Supplementary Explanation
 
-**答案。** 可取边集 $\{AB,AC,BC,AD,BE\}$。
+**Answer.** One suitable edge set is $\{AB,AC,BC,AD,BE\}$.
 
-**推导。** 取三角形 A、B、C，边为 $AB,AC,BC$，此时三点度数均为二。再添加新顶点 D 并只连接 $AD$，新顶点 E 并只连接 $BE$。于是 $\deg(A)=3,\deg(B)=3,\deg(C)=2,\deg(D)=1,\deg(E)=1$，恰好得到指定度数多重集。所有边端点不同且无重复边，所以图简单；图形与原答案的三角形加两片叶子一致。
+**Derivation/proof.** Form the triangle on $A,B,C$ with edges $AB,AC,BC$, giving all three vertices degree two. Add a new vertex $D$ adjacent only to $A$, and a new vertex $E$ adjacent only to $B$. Then $\deg(A)=3,\deg(B)=3,\deg(C)=2$, while $\deg(D)=1$ and $\deg(E)=1$. This is the requested degree multiset. Every edge joins distinct vertices and no edge is repeated, so the graph is simple. The construction matches the official triangle with two leaves.
 
 ~~~mermaid
 graph TD
@@ -60,11 +60,6 @@ graph TD
  A --- D
  B --- E
 ~~~
-
-## Common Mistakes
-
-- 度数序列指定的是每个顶点的度，不能只核对总和十。
-- 构造中每添加一条边会同时改变两个端点的度数，要逐点重新计算。
 
 ## Connections
 

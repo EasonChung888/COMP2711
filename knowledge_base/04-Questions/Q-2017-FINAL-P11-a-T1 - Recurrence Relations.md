@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-规模一表示一对同样大小的圆盘，不是一个盘。两盘都要离开起点，至少两步；允许相同大小相叠，所以直接逐个搬到终点恰好两步，达到下界。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+$T(1)=2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 15. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(1)=2$.
 
 **Derivation/proof.** There are only two disks, of the same size. Move the top disk from the source to the destination, then place the second disk on top of it. Both moves are legal because equal disks may stack. Each disk must move at least once, so two is also a lower bound.
 
-### 中文解答
-
-**推导。** $n=1$ 时只有两枚同大小圆盘。先把上方一枚从起点移到终点，再将另一枚放到它上面，共两步；题设允许同大小相叠。另一方面两枚都必须离开起点且一次只能移一枚，至少两步。因此 $T(1)=2$，构造与下界相合。
-
-## Common Mistakes
-
-- 把 T(1) 写成一。
-- 误认为相同大小不能相叠。
+Both same-size disks must change poles and one move changes only one disk. Hence at least two moves are necessary, and moving them consecutively achieves that lower bound.
 
 ## Connections
 

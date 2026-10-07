@@ -41,26 +41,19 @@ Let $\{p_n(x)\}$ be a sequence of polynomials, all having degree 1. What is the 
 
 Shared context: [[STEM-2020-FINAL1-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每次把一个一次多项式乘进累计乘积，累计次数逐步增大，所以第 k 次的工作量与 k 成正比。把这些线性代价相加得到平方阶；不能仅看到递归调用 n 次就误判线性时间。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+Let $C_n$ be the time complexity of computing $p_1(x)p_2(x)\cdots p_n(x)$ using Algorithm 2, then $C_1=0$ and $C_n=C_{n-1}+n-1$. Therefore $C_n=\sum_{i=1}^n(i-1)=O(n^2)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $O(n^2)$, in fact $\Theta(n^2)$.
 
 **Derivation/proof.** A product of k−1 degree-one polynomials has degree k−1. Multiplying it by the kth degree-one polynomial with Algorithm 1 uses Θ(k) coefficient operations. Algorithm 2 does this sequentially for k=2,…,n, so $T(n)=T(n-1)+\Theta(n)$ with T(1)=Θ(1). Expanding sums the arithmetic sequence, yielding Θ(n²). The recursion has only one child at each step, not a balanced multiplication tree.
 
-### 中文解答
-
-**推导。** 递归只有一个规模 $n-1$ 的子问题，先乘好前 $n-1$ 个一次多项式，其积的次数为 $n-1$。再乘第 $n$ 个一次多项式，用算法一精确执行 $n\cdot2=2n$ 次系数乘加，其余读写也是 $\Theta(n)$。故时间满足 $T(n)=T(n-1)+\Theta(n)$，$T(1)=\Theta(1)$。逐级累加 $2+3+\cdots+n=n(n+1)/2-1$，得 $T(n)=\Theta(n^2)$，所以最佳大 O 为 $O(n^2)$。它不是每层分成两半的平衡乘法树；印本 $C_n=C_{n-1}+n-1$ 表达的是同阶递增成本，不应当作这段含端点循环的精确操作次数。
-
-## Common Mistakes
-
-- 假设每次乘法代价固定。
-- 把源码的顺序递归改成平衡分治再分析。
+The last level performs exactly $2n$ coefficient multiplications, and the total for levels two through $n$ is twice the arithmetic sum $2+3+\cdots+n=n(n+1)/2-1$. This quadratic count yields $T(n)=\Theta(n^2)$; the displayed recurrence is an asymptotic simplification rather than the exact loop count.
 
 ## Connections
 

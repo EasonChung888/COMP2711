@@ -1,0 +1,20 @@
+Alternative: Combinatorial Proof
+We have already seen that set with 
+ elements has a total of 
+ different subsets (
+powerset
+). Each subset has either zero elements, or one element, or two elements, …, or 
+ elements in it. 
+There are 
+ subsets with zero elements, 
+ subsets with one element, 
+ subsets with two elements, …, and 
+ subsets with 
+n
+ elements. 
+Therefore,
+counts the total number of subsets of a set with 
+ elements, which is  
+.
+ 
+13

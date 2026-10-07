@@ -39,26 +39,20 @@ Write a recurrence for $T(n)$,
 
 Shared context: [[STEM-2015-FINAL-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-公式里有高高、高低、低高、低低四个子乘法，每个输入长度都是原来的一半。将四个子问题时间相加，再加已经给出的线性合并成本，另列单位长度的初值。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=16|PDF physical page 16]].
 
-## Detailed Solution
+According to the above expression of $A\cdot B$,
+$$T(n)=4T(\frac n2)+cn$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 16. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(1)=1$, $T(n)=4T(n/2)+cn$ for powers of two $n>1$.
 
 **Derivation/proof.** Each of the four products in the expansion takes $T(n/2)$ time. Shifts and additions after these results are available cost $cn$ by hypothesis. Therefore their sum is $4T(n/2)+cn$, with the specified direct-multiplication base case.
 
-### 中文解答
-
-**推导。** 二进制高低位展开包含 $A_hB_h,A_hB_l,A_lB_h,A_lB_l$ 四个乘积，每个操作数长度 n/2，所以递归总成本 $4T(n/2)$。四个结果算好后的移位、加法按题给成本 cn 计算，因此 $T(n)=4T(n/2)+cn$，用于二的幂 n>1。直接一位乘法给基础 $T(1)=1$，不能把合并成本再加到基础情形。
-
-## Common Mistakes
-
-- 看到输入被分成两半就只写两个递归调用。
-- 把合并成本写成常数，忽略题设的 $cn$。
+The four products are $A_hB_h,A_hB_l,A_lB_h,A_lB_l$. The base $T(1)=1$ is direct multiplication, with no additional combine term.
 
 ## Connections
 

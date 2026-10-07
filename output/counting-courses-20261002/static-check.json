@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "pages": 92,
+  "lessons": 15,
+  "questions": 42,
+  "localLinks": 2771,
+  "existingFilesChecked": 1195,
+  "allowedChanges": [
+    "courses/l2-5/counting.html",
+    "courses/l2-5/index.html",
+    "courses/l2-5/tools/portal.mjs",
+    "courses/l2-5/tools/chapter-render.mjs",
+    "courses/l2-5/assets/site.js"
+  ],
+  "originalResponsesPreserved": true,
+  "serialEvents": 368
+}

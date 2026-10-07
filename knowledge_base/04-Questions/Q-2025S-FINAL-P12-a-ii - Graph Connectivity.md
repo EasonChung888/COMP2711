@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (ii) $4,4,3,2,1,1$
 
-## 中文解析
+## Official Answer
 
-无向边每条给度数和贡献二，度数和必须为偶数。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=16|physical PDF page 16]].
 
-## Detailed Solution
+(ii) The sum of the degrees is odd. So not possible.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Impossible.
 
-**答案。** 不可能。
-
-**推导。** 把所给六个度数相加，$4+4+3+2+1+1=15$。Handshaking lemma 说明任意有限无向图都有 $\sum_v\deg(v)=2|E|$，右侧为偶数，而十五为奇数，产生矛盾。因此不存在该图。这一论证本身可在三行内写完，也不需要尝试绘图。
-
-## Common Mistakes
-
-- 度数个别为奇数没有问题，关键是奇数度顶点个数及整个度数和的奇偶性。
-- 不能把每条无向边只算给一个端点，否则会破坏握手恒等式。
+**Derivation/proof.** The proposed sum is $4+4+3+2+1+1=15$. The handshaking lemma gives $\sum_v\deg(v)=2|E|$, an even integer, whereas fifteen is odd. This contradiction rules out the graph without any attempted drawing. The argument itself fits within the requested three-line limit.
 
 ## Connections
 

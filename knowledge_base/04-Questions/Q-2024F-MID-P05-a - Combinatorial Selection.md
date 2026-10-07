@@ -38,24 +38,18 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 (a) How many ways are there to place numbers 1 to 6 on a dice so that different rotations are considered equivalent? Explain your solution.
 
-## 中文解析
+## Official Answer
 
-旋转等价可通过固定顶面消除，再处理四个侧面的循环排列。反射不会由空间旋转产生，不能再额外把镜像除掉。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+> Answer: (a) Solution 1: Lets say we put “1” on top side. for the opposite side we have 5 possible ways. Now for the 4 remaining values on its side we have $(4-1)!$ different ways to put the numbers as they are in a round situation. So the total answer is $5\cdot3!$.
+> Solution 2: we have $6!$ permutations in general but each case can be duplicate if it can be made from different rotations. So we can fix one side to be on top which as 6 options. And we can now rotate it 4 times clockwise. So we have to divide $6!$ by $6\cdot4$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $5\cdot3!=30$.
 
-**答案。** $5\cdot3!=30$。
-
-**推导。** 任何标号骰子都能旋转使数字一在顶面，因此可固定一朝上。与一相对的底面有其余五个数字可选。余下四个不同数字围绕侧面排列，只识别绕竖直轴的四种转动，所以循环排列数为 $4!/4=3!=6$。因此总数 $5\cdot6=30$。等价检查：六面有 $6!$ 个标号，每个旋转类含 $6\cdot4=24$ 个方向，标签互异保证没有非平凡旋转固定它，故 $6!/24=30$。
-
-## Common Mistakes
-
-- 不应把镜像也当作同一骰子，题目只识别 rotations。
-- 数字全部不同，侧面按循环排列计数，不是无序集合。
+**Derivation/proof.** Rotate any labelled die to place one on the top face. The opposite face can take any of the five remaining numbers. Arrange the four other distinct numbers around the sides, identifying four rotations about the vertical axis: $4!/4=3!=6$ cyclic arrangements. Thus the total is $5\cdot6=30$. As a check, there are $6!$ labellings and $6\cdot4=24$ orientations per rotation class. Distinct labels prevent any nontrivial rotation from fixing a labelling, so $6!/24=30$.
 
 ## Connections
 

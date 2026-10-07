@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L1.6 · 第 37 页 · COMP2711</title><link rel="stylesheet" href="../../../assets/logic.css"><link rel="stylesheet" href="../../../assets/katex/katex.min.css"><link rel="stylesheet" href="../../../assets/site.css"><link rel="stylesheet" href="../../../assets/counting-courses.css"><script defer src="../../../assets/site.js"></script></head><body data-storage-prefix="comp2711:l1-6:" data-site-root="../../../"><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header"><div class="shell"><a class="brand" href="../../../index.html">COMP2711</a><nav class="utility-nav" aria-label="课程导航"><a href="../../../index.html#modules">课程模块</a><a href="../../../counting.html">Counting</a><a href="../index.html">L1.6 目录</a></nav></div></header><main id="main-content" class="shell lesson"><nav class="page-breadcrumb" aria-label="当前位置"><a href="../../../index.html">COMP2711</a> / <a href="../../../counting.html">Counting</a> / <a href="../index.html">L1.6</a> / <a href="../lessons/object-distributions.html#slide-037">不同对象的分配</a> / <span aria-current="page">第 37 页</span></nav><p class="small-note"><a href="../sources/L1.6.pptx#page=37">原始 PowerPoint</a></p><section class="slide-explanation" id="slide-037" data-slide="37" data-source-id="l1-6"><div class="slide-label"><span>L1.6 · 第 37 页</span><a href="../responses/037.md">讲解原文</a></div><details class="original-slide"><summary>查看这一页课件</summary><a href="../slides/037.png" target="_blank" rel="noopener"><img loading="lazy" src="../slides/037.png" alt="L1.6 课件第 37 页"></a></details><div class="response-body"><h1>分配对象到盒子：四种区分方式</h1>
+<p>许多计数问题可以转化为“把对象分配到盒子”。这里只记录最后每盒装什么，不记录放入先后。关键是对象与盒子各自是否可区分。</p>
+<p>Distinguishable（D，有标签）指身份不同，交换身份可能改变结果；Indistinguishable（I，无标签）指个体相同，交换不产生新结果。</p>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>对象</th>
+<th>盒子</th>
+<th>结果记录什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D–D</td>
+<td>不同</td>
+<td>不同</td>
+<td>每个对象进入哪一个指定盒子</td>
+</tr>
+<tr>
+<td>D–I</td>
+<td>不同</td>
+<td>相同</td>
+<td>不同对象如何分组，组没有名称</td>
+</tr>
+<tr>
+<td>I–D</td>
+<td>相同</td>
+<td>不同</td>
+<td>每个指定盒子的数量</td>
+</tr>
+<tr>
+<td>I–I</td>
+<td>相同</td>
+<td>相同</td>
+<td>各盒数量构成的无序分拆</td>
+</tr>
+</tbody></table>
+<p>例如 A、B 两个不同球放入红盒与蓝盒，A 红 B 蓝和 A 蓝 B 红是不同结果；若盒子无标签，这两个单球分组则相同。若球也相同，就只关心数量分配。</p>
+<p>这页是模型分类，没有给出一个可包办四种情形的公式。还要看盒子是否允许为空、容量是否受限、各盒数量是否指定，才能选择具体方法。不能仅因盒子无标签就机械地除以盒子数的阶乘：不同安排可能具有不同的对称性。</p>
+</div></section></main><footer class="shell site-footer">COMP2711 · 按知识主题学习</footer></body></html>

@@ -1,0 +1,19 @@
+Number of 
+k
+-Combinations
+Theorem
+Let 
+n
+ and 
+k
+ be integers with 
+. The number of 
+k
+-combinations of a set with 
+n
+ distinct elements, denoted by 
+or 
+, is equal to
+Comment:  
+ 
+15

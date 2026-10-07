@@ -40,24 +40,18 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (i) [3 pts] Write down the possible values for $e$ if it has to be between 10 and 20. No argument is needed.
 
-## 中文解析
+## Official Answer
 
-RSA 的公开指数必须和 $T=60$ 互素，只需排除二、三、五的倍数。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+(i) Possible $e$ with $10\le e\le20$ and $\gcd(e,60)=1$:
+$$e=11,13,17,19.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $e=11,13,17,19$.
 
-**答案。** $e=11,13,17,19$。
-
-**推导。** 分解 $60=2^2\cdot3\cdot5$。$\gcd(e,60)=1$ 当且仅当 $e$ 不被二、三、五整除。十到二十中的偶数全部排除；剩十一、十三、十五、十七、十九，再删去含三与五因数的十五，得到 $11,13,17,19$。四个数分别与六十无共同素因数，所以都存在模六十的乘法逆元，是合法公开指数。
-
-## Common Mistakes
-
-- 不能只要求 e 小于六十，还必须与六十互素。
-- 十五是奇数但仍有三和五因数，因此不合格。
+**Derivation/proof.** Factor $60=2^2\cdot3\cdot5$. The condition $\gcd(e,60)=1$ means that $e$ is divisible by none of 2, 3 or 5. Eliminate every even number from 10 through 20. The remaining candidates are 11, 13, 15, 17 and 19; remove 15 because it has factors 3 and 5. The four values $11,13,17,19$ have no prime factor in common with 60. Each therefore has a multiplicative inverse modulo 60 and is a valid public exponent.
 
 ## Connections
 

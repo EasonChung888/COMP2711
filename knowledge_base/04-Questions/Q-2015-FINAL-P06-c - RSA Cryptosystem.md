@@ -41,26 +41,43 @@ You may find the following equalities helpful: $171^2\bmod527=256$, $256^2\bmod5
 
 Shared context: [[STEM-2015-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-解密计算 $2^{343}\bmod527$。将指数写成二进制后，只乘对应为一的平方项；每一步取模可保持数字较小，最后再用公钥重新加密核对。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=12|PDF physical page 12]].
 
-## Detailed Solution
+(c) To decrypt the ciphertext 2, we need to do the following:
+$$2^{343}\bmod(17\times31)$$
+$$2^{343}\bmod527$$
+Since $343=101010111_{(2)}$ (i.e., $343=2^8+2^6+2^4+2^2+2+1$), we need to get $I_0,I_1,I_2,I_4,I_6$ and $I_8$:
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+| | |
+| --- | --- |
+| $I_0$ | $2\bmod527=2$ |
+| $I_1$ | $I_0\times I_0\bmod527=4$ |
+| $I_2$ | $I_1\times I_1\bmod527=16$ |
+| $I_3$ | $I_2\times I_2\bmod527=256$ |
+| $I_4$ | $I_3\times I_3\bmod527=188$ (given) |
+| $I_5$ | $I_4\times I_4\bmod527=35$ (given) |
+| $I_6$ | $I_5\times I_5\bmod527=171$ |
+| $I_7$ | $I_6\times I_6\bmod527=256$ (given) |
+| $I_8$ | $I_7\times I_7\bmod527=188$ (given) |
+
+Now we have:
+$$\begin{aligned}
+2^{343}\bmod527&=(I_8\times I_6\times I_4\times I_2\times I_1\times I_0)\bmod527)\\
+&=(188\times171\times188\times16\times4\times2)\bmod527\\
+&=((188^2\bmod527)\times171\times16\times4\times2)\bmod527\\
+&=((35\times171\bmod527)\times16\times4\times2)\bmod527\quad\text{(given)}\\
+&=(188\times16\times4\times2)\bmod527\quad\text{(given)}\\
+&=24064\bmod527\\&=349
+\end{aligned}$$
+Therefore the plaintext is 349.
+
+## Supplementary Explanation
 
 **Answer.** The plaintext is $349$.
 
 **Derivation/proof.** Write $343=256+64+16+4+2+1$. The residues of $2^{2^j}$ for $j=0,\ldots,8$ are $2,4,16,256,188,35,171,256,188$. Hence $2^{343}\equiv188\cdot171\cdot188\cdot16\cdot4\cdot2$. Use $188^2\equiv35$ and $35\cdot171\equiv188$ to reduce this to $188\cdot16\cdot4\cdot2=24064\equiv349\pmod{527}$. Re-encryption gives $349^7\bmod527=2$, independently checking the plaintext.
-
-### 中文解答
-
-**推导。** 计算 $2^{343}\bmod527$。指数 $343=256+64+16+4+2+1$。从 $2^{2^0}$ 至 $2^{2^8}$ 逐次平方取模，得余数 $2,4,16,256,188,35,171,256,188$。选取出现的幂并相乘，得 $188\cdot171\cdot188\cdot16\cdot4\cdot2$。用 $188^2\equiv35$、$35\cdot171\equiv188$ 化为 $188\cdot16\cdot4\cdot2=24064\equiv349\pmod{527}$。所以明文是349；独立重加密检查 $349^7\bmod527=2$，返回原密文。
-
-## Common Mistakes
-
-- 用公钥指数七去解密密文。
-- 把指数 343 的二进制位置当成直接相乘的数字。
 
 ## Connections
 

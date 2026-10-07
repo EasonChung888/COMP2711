@@ -1,0 +1,8 @@
+Example
+What is the coefficient of 
+ in the expansion of 
+?
+Solution:
+By the Binomial theorem the coefficient is 
+ 
+9

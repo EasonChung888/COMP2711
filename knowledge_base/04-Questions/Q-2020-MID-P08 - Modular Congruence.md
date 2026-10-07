@@ -36,26 +36,21 @@ Published solution material: ![[knowledge_base/past_paper/2020-midterm.pdf#page=
 
 Show that $\gcd(21n+4,14n+3)=1$, for any $n\in\mathbb N$.
 
-## 中文解析
+## Official Answer
 
-不必知道 n 的值，用线性组合直接消掉它。先相减得到七 n 加一，再从第二式减去两倍这个余数就得到一；任何公因数都整除该线性组合，因此只能为一。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+Using the Euclid's algorithm, we have $\gcd(21n+4,14n+3)=\gcd(14n+3,7n+1)=\gcd(7n+1,1)=1$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** The gcd equals 1 for every permitted n.
 
 **Derivation/proof.** Subtract the second argument from the first: $(21n+4)-(14n+3)=7n+1$. Subtract twice this remainder from the second: $(14n+3)-2(7n+1)=1$. Any common divisor therefore divides 1, so it is 1. Equivalently $3(14n+3)-2(21n+4)=1$ is a Bezout certificate valid for every integer n, including the requested naturals.
 
-### 中文解答
+The independent Bezout certificate is $3(14n+3)-2(21n+4)=1$, also valid at $n=0$.
 
-**推导。** 用欧几里得算法保持最大公因数：$\gcd(21n+4,14n+3)=\gcd(14n+3,7n+1)$，因为两式相减为 $7n+1$。又 $(14n+3)-2(7n+1)=1$，所以后者等于 $\gcd(7n+1,1)=1$。独立的贝祖证书是 $3(14n+3)-2(21n+4)=1$，任何公因数必须整除右边 $1$。因此结论对所给所有自然数成立，含零时也成立。
-
-## Common Mistakes
-
-- 只检查几个自然数就声称证明。
-- 相减常数时把三减二误算。
+The Euclidean reductions end in $\gcd(7n+1,1)=1$. This final gcd is one for every allowed $n$, so no exceptional natural-number case remains.
 
 ## Connections
 

@@ -1,0 +1,17 @@
+{
+  "baseline_files": 2722,
+  "changed_existing_files": 719,
+  "question_notes": 715,
+  "protected_existing_files_unchanged": true,
+  "source_pdfs_unchanged": true,
+  "practice_pdf_unchanged": true,
+  "website_unchanged": true,
+  "historical_source_and_question_audits_unchanged": true,
+  "active_run_log_appended": true,
+  "allowed_nonquestion_changes": [
+    "knowledge_base/00-Home/COMP2711 Knowledge Hub.md",
+    "knowledge_base/00-Home/Knowledge Base Guide.md",
+    "knowledge_base/06-Audit/Run Log.md",
+    "output/pdf/COMP2711_Sets_and_Functions_Past_Paper_Solutions.pdf"
+  ]
+}

@@ -41,26 +41,19 @@ If (a)(i) is true, is $G$ necessarily a bipartite graph? Please give a brief jus
 
 Shared context: [[STEM-2022-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-二分图定义要求存在两组互斥覆盖顶点，且边全部跨组。题设已给前半条件，(a)(i) 给后半条件，所以可直接引用定义证明；不需要每对跨组顶点都相连。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (b) Yes. Based on the definition of bipartite graph, the graph $G$ is bipartite because it can be partitioned into two disjoint subsets $V_1$ and $V_2$ and every edge connects a vertex in $V_1$ and a vertex in $V_2$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Yes.
 
 **Derivation/proof.** A bipartite graph is one whose vertices can be partitioned into two disjoint parts so every edge joins the parts. V1,V2 already give the disjoint covering partition, and (a)(i) gives exactly the edge restriction. Therefore they witness a bipartition of G. Completeness of cross edges is not part of this definition.
 
-### 中文解答
-
-**推导。** 答案为是。二分图定义要求存在两个互斥且覆盖顶点的部分，使每条边跨越两部。题设已给 $V_1\cup V_2=V$ 与 $V_1\cap V_2=\varnothing$，而(a)(i)正好给所有边都跨部，所以这两个集合直接作为所需二分划分的见证。无需额外补足跨部缺失边；只有完全二分图才要求那些边全部存在。
-
-## Common Mistakes
-
-- 只写 Yes 而漏题目要求的说明。
-- 混淆二分与完全二分。
+The assumptions $V_1\cup V_2=V$ and $V_1\cap V_2=\varnothing$ make these sets a witness to a bipartition when every edge crosses.
 
 ## Connections
 

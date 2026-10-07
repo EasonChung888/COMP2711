@@ -44,24 +44,20 @@ Hint: You might find little Fermat theorem useful here. You can also use part (a
 
 Shared printed context: ![[STEM-2024F-FINAL-P06 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-平方和使两个平方互为负数。若两者都非零，提升到费马定理的指数时负号保留，因为 p 模四余三；这样得到一等于负一的矛盾。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+> (b) Assume that $p\nmid a$. This also implies that $p\nmid b$ (think why?). This means $\gcd(p,a)=\gcd(p,b)=1$.
+> $p\mid a^2+b^2\implies a^2\equiv-b^2\pmod p$. Note that $p-1$ is an even number and $\frac{p-1}2$ is odd.
+> $$a^2\equiv-b^2\pmod p\implies(a^2)^{\frac{p-1}2}\equiv(-b^2)^{\frac{p-1}2}\implies a^{p-1}\equiv-b^{p-1}.$$
+> By little Fermat theorem we know that $a^{p-1}\equiv b^{p-1}\equiv1\pmod p$. So this means $1\equiv-1\pmod p\implies2\equiv0\pmod p$. This is impossible as $p$ is odd and this is the contradiction.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $p\mid a$ and $p\mid b$.
 
-**答案。** 必有 $p\mid a$ 且 $p\mid b$。
-
-**推导。** 反设 $p\nmid a$。如果 $p\mid b$，则对共享平方和作减法得到 $p\mid a^2$，素数性质将推出 $p\mid a$，矛盾，故 $p\nmid b$。现在 $a^2\equiv-b^2\pmod p$。因 $p=4k+3$，指数 $(p-1)/2=2k+1$ 为奇数，两边乘幂得到 $a^{p-1}\equiv-b^{p-1}\pmod p$。费马小定理对两个不被 p 整除的底数都适用，故 $1\equiv-1\pmod p$，即 $p\mid2$。但 p 是至少三的奇素数，不可能整除二，矛盾。于是 $p\mid a$，再由 (a) 得 $p\mid b$。
-
-## Common Mistakes
-
-- 提升幂后保留负号依赖指数为奇数，对 $p\equiv1\pmod4$ 不能照用。
-- 费马定理前必须先证明 a 与 b 均不被 p 整除。
+**Derivation/proof.** Suppose $p\nmid a$. If $p\mid b$, subtraction from the square sum would give $p\mid a^2$ and then $p\mid a$, a contradiction. Thus $p\nmid b$. Now $a^2\equiv-b^2\pmod p$. Since $p=4k+3$, the exponent $(p-1)/2=2k+1$ is odd, so raising both sides gives $a^{p-1}\equiv-b^{p-1}\pmod p$. Fermat applies to both nondivisible bases and gives $1\equiv-1\pmod p$, hence $p\mid2$. But $p$ is an odd prime at least three, so this is a contradiction. Therefore $p\mid a$, and part (a) gives $p\mid b$.
 
 ## Connections
 

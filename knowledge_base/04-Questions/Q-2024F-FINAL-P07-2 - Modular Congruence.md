@@ -43,24 +43,21 @@ Prerequisite context (editorial): [[Q-2024F-FINAL-P07-1 - Modular Congruence]]. 
 
 Shared printed context: ![[STEM-2024F-FINAL-P07 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-规范化后三个模数两两互素，可构造 CRT 权重。最后必须写出模一百四十的完整解类，并代回带系数的原式验证。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=19|physical PDF page 19]].
 
-## Detailed Solution
+> Answer: Note that the first step is to remove the coefficients.
+> Note that the inverse of 3 (mod 5) is 2. So if we multiply 2 by both sides of the first equation we have: $2\cdot3x\equiv2\cdot4\implies x\equiv3\pmod5$.
+> Note that as $\gcd(3,7)=1$ we can simply divide both sides by 3 which gives us $x\equiv2\pmod7$. So we need to solve the following system of congruences:
+> $$x\equiv3\pmod5,\qquad x\equiv2\pmod4,\qquad x\equiv2\pmod7.$$
+> As all the modulos are coprime with each other. We can simply use chinese remainder theorem to find the solutions $x$.
 
-Provenance: independently derived; any supplied answer discrepancy is documented in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $x=58+140t$, $t\in\mathbb Z$.
 
-**答案。** $x=58+140t$，$t\in\mathbb Z$。
-
-**推导。** 导入第 1 步的系统 $x\equiv3\pmod5,x\equiv2\pmod4,x\equiv2\pmod7$。取 $M=5\cdot4\cdot7=140$，部分乘积为 $28,35,20$。它们模对应模数的逆元分别为 $2,3,6$：$28\cdot2\equiv1\pmod5$，$35\cdot3\equiv1\pmod4$，$20\cdot6\equiv1\pmod7$。因此 $x\equiv3\cdot28\cdot2+2\cdot35\cdot3+2\cdot20\cdot6=618\equiv58\pmod{140}$。验算 $3\cdot58=174$ 模五余四、模七余六，58 模四余二。由 CRT 唯一性，所有解是 $58+140t$。
-
-## Common Mistakes
-
-- 页十九未实际求出剩余类，不能将本题的 58 称为打印的官方答案。
-- 最终周期是三个模数之积一百四十，不是模数之和十六。
+**Derivation/proof.** Use the preceding system $x\equiv3\pmod5,x\equiv2\pmod4,x\equiv2\pmod7$. Set $M=5\cdot4\cdot7=140$, with partial products $28,35,20$. Their inverses in the corresponding moduli are $2,3,6$: $28\cdot2\equiv1\pmod5$, $35\cdot3\equiv1\pmod4$, and $20\cdot6\equiv1\pmod7$. Thus $x\equiv3\cdot28\cdot2+2\cdot35\cdot3+2\cdot20\cdot6=618\equiv58\pmod{140}$. Checking the original system, $3\cdot58=174$ has residues four modulo five and six modulo seven, while $58$ has residue two modulo four. CRT uniqueness gives all solutions $58+140t$.
 
 ## Connections
 

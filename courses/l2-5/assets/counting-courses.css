@@ -1,0 +1,8 @@
+/* Long inline formulas remain readable within the new course's text column. */
+.response-body p,
+.question-body p,
+.practice-item .answer p {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-block: .15rem;
+}

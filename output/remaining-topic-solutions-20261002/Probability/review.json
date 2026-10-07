@@ -1,0 +1,34 @@
+{
+  "topic": "Probability",
+  "status": "pass",
+  "pdfSha256": "8581112fdeec84f790ea95b6b7cdebb8c1b411c43ad2630b17635ff712dd606e",
+  "questions": 59,
+  "pages": 61,
+  "content": {
+    "topic": "Probability",
+    "count": 59,
+    "eligible": 59,
+    "figures": 0,
+    "stems": 53,
+    "errors": []
+  },
+  "browser": {
+    "images": 0,
+    "failedImages": [],
+    "badMath": [],
+    "links": 67
+  },
+  "marginOutliers": [],
+  "allPageContactsReviewed": true,
+  "fullsizePagesReviewed": [
+    27,
+    58
+  ],
+  "resolvedIssues": [
+    "Removed Markdown quote prefixes from rendered display math in P059"
+  ],
+  "blankPages": [],
+  "orphanOnlyPages": [],
+  "remainingBlockers": [],
+  "minorObservations": []
+}

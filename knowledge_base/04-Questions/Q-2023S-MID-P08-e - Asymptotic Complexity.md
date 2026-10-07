@@ -40,33 +40,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2023_Midte
 
 Shared printed context: ![[STEM-2023S-MID-P08 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-一百次方虽然巨大，却仍是与 n 无关的常数。两层 log 增长极慢但无界，所以最终会超过任何常数倍的 B；不能用日常数值范围代替渐近极限。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+> (e) $A=\Omega(B)$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 只有 $A=\Omega(B)$ 成立。
-
-**推导。**
-
-1. 当对数底固定且大于一、$n$ 足够大时，$\log n$ 无界增长，所以 $\log\log n$ 也无界增长。分母 $B=10^{100}$ 虽然很大，却是与 $n$ 无关的固定正数，因此 $A/B\to\infty$。
-2. 取下界常数一，存在某个位置使之后都有 $A/B\ge1$，故 $A=\Omega(B)$。相反，任何拟定的有限上界常数最终都会被比值超过，所以不可能有 $A=O(B)$，也就没有 $\Theta$。这里只讨论最终行为，不要求在日常可计算的 $n$ 范围里已经超过这个巨大常数。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $A=\Omega(B)$ only.
 
 **Derivation/proof.** For a fixed logarithm base greater than 1 and sufficiently large n, $\log\log n$ increases without bound, whereas $B=10^{100}$ is a fixed positive number. Therefore $A/B\to\infty$. The ratio is eventually at least 1, proving $A=\Omega(B)$, but it has no eventual finite upper bound. Hence $A\ne O(B)$ and $A\ne\Theta(B)$.
 
-## Common Mistakes
-
-- 10¹⁰⁰ 再大也是常数，而 log log n 最终无界。 / Large constants do not dominate unbounded growth asymptotically.
-- 渐近比较只需充分大的 n，不必在 log log n 未定义的小输入处判断。 / Use the eventual domain.
+The ratio eventually exceeds any proposed finite upper-bound constant.
 
 ## Connections
 

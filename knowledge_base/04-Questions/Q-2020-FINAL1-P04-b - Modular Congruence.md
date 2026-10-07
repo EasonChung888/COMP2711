@@ -38,26 +38,19 @@ $n\equiv1\pmod2$, $n\equiv2\pmod3$, and $n\equiv3\pmod5$?
 
 Shared context: [[STEM-2020-FINAL1-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先把三个同余合并成模三十的一类，再数范围内的等差数列。符合条件的代表元是二十三，最后一个是九百八十三，对应 k 从零到三十二；端点个数应多加一。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+By Chinese remainder theorem, we know that $n\equiv1\pmod2,n\equiv2\pmod3,$ and $n\equiv3\pmod5$ is equivalent to $n=23+30k$ for an integer $k$. Since $0\le n<1000$, we have $0\le k\le32$. Therefore the answer is $33$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $33$.
 
 **Derivation/proof.** The last condition gives residues 3,8,13,18,23,28 modulo 30. Requiring oddness leaves 3,13,23; requiring remainder 2 modulo 3 leaves only 23. As 2,3,5 are pairwise coprime this is the unique CRT class: $n=23+30k$. The range imposes $0\le k\le32$, giving 33 integers (last 983).
 
-### 中文解答
-
-**推导。** 满足模五余三的模三十代表为 $3,8,13,18,23,28$；再满足模二余一，只剩 $3,13,23$；这三者中模三余二的只有 $23$。因为 $2,3,5$ 两两互素，CRT保证全部解为唯一类 $n=23+30k$。范围 $0\le n<1000$ 强迫整数 $0\le k\le32$，共 $32-0+1=33$ 个，最后一个为 $23+30\cdot32=983$。
-
-## Common Mistakes
-
-- 认为三个余数可直接相加。
-- 把 k 的最大值三十二当成数量。
+The allowed integer parameter runs from zero through thirty-two inclusive. Therefore its count is $32-0+1=33$, retaining both endpoints.
 
 ## Connections
 

@@ -1,0 +1,20 @@
+k
+-Combinations
+Example
+In how many ways can we select 
+three
+ students to form a study-team, from a group of 
+four
+ students?
+Note: 
+the order in which the students are selected does not matter
+! 
+Solution:
+We need only to find the number of subsets containing 3 elements from the set of 4 students. There are 4 such subsets (each subset excludes one student). Therefore, there are 4 ways to choose the three students for the team.
+Equivalent Question
+: How many bit strings of length 
+four
+ have exactly 
+three
+ 1? 
+13

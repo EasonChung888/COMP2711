@@ -41,26 +41,23 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-存在量词里的蕴含可以靠假前件成立，因而奇数也能作第二句的见证。让 $p(x)$ 表示奇数，则不存在满足它的偶数，但取 $x=1$ 就能使第二句为真。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(c) No.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+Let $p(x)$ be “x is odd”.
+
+“$\exists x\in E(p(x))$” is false but “$\exists x\in Z(q(x)\Rightarrow p(x))$” is true (because when $x=1$ (where $x\in Z$), $q(x)$ is false and $p(x)$ is true (which means that “$q(x)\Rightarrow p(x)$” is true)).
+
+## Supplementary Explanation
 
 **Answer.** Not equivalent; take $p(x)$ to mean “$x$ is odd.”
 
 **Derivation/proof.** No even integer is odd, so (i) is false. With witness $x=1$, $q(1)$ is false and $p(1)$ true, making $q(1)\to p(1)$ true. Thus (ii) is true, disproving equivalence.
 
-### 中文解答
-
-**推导。** 取p(x)为“x是奇数”。偶数中没有奇数，所以(i)为假。在(ii)中取见证x=1，q(1)假而p(1)真，故 $q(1)\to p(1)=F\to T=T$，存在式真。两式真假相反，因此不等价；存在量词下的蕴含能由假前件成立，不等于限定见证在偶数域。
-
-## Common Mistakes
-
-- 误以为存在蕴含的见证必须使前件为真。
-- 将第二句中全整数域的见证限制到偶数域。
+At $x=1$, the implication is $F\to T=T$.
 
 ## Connections
 

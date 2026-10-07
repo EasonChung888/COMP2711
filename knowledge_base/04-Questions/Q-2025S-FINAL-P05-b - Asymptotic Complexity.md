@@ -52,24 +52,17 @@ end for
 Return inversions
 ~~~
 
-## 中文解析
+## Official Answer
 
-是否发生逆序只影响常数次加法；双层循环对所有下标对都检查一次。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(b) We can see that the for $i=1$, the second loops cost is $n-1$, for $i=2$ the second loop cost is $n-2$ and $\cdots$. So we can conclude that the total cost is $(n-1)+(n-2)+\cdots+0=\frac{n\cdot(n-1)}2$ which is $O(n^2)$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The tightest big-O is $O(n^2)$; the running time is $\Theta(n^2)$.
 
-**答案。** 最紧 big-O 为 $O(n^2)$，实际为 $\Theta(n^2)$。
-
-**推导。** 固定外层 $i$，内层从 $i+1$ 到 $n$ 共执行 $n-i$ 次比较。总比较次数为 $\sum_{i=1}^{n-1}(n-i)=(n-1)+(n-2)+\cdots+1=n(n-1)/2$。每次比较及可能的计数递增都为常数时间，初始化和外层控制开销不超过线性，因此总时间被常数倍 $n^2$ 上下界夹住，为 $\Theta(n^2)$，最紧 big-O 是 $O(n^2)$。即使数组已排序，所有比较仍须执行。
-
-## Common Mistakes
-
-- 运行时间取决于比较次数，不能因为没有逆序就说算法只需常数时间。
-- 内循环不是每次都长 $n$，精确总数应为三角和而非 $n^2$ 次。
+**Derivation/proof.** For fixed i, the inner loop runs from $i+1$ to n, making $n-i$ comparisons. Their sum is $\sum_{i=1}^{n-1}(n-i)=(n-1)+(n-2)+\cdots+1=n(n-1)/2$. Each comparison and possible increment costs constant time, while initialization and outer-loop overhead are at most linear. The time is bounded above and below by positive multiples of $n^2$. All comparisons must still execute even when the array is already sorted.
 
 ## Connections
 

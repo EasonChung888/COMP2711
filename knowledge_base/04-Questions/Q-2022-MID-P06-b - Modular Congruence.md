@@ -41,26 +41,19 @@ Show that $p\equiv1\pmod4$. (Hint: Analyze $(2n)^{p-1}$ using Fermat’s Little 
 
 Shared context: [[STEM-2022-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先排除素数二并确认 p 与 2n 互质，再假设 p 模四为三。费马定理要求该幂为一，而把底数平方换成负一后奇数次幂给负一，两者冲突；因此只剩模四为一。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (b) $4n^2+1$ is an odd number so we know that $p$ has to be odd. So either $p\equiv1\pmod4$ or $p\equiv3\pmod4$. Assume $p\equiv3\pmod4$ which means $p=4k+3$. Since $p\nmid n$ and $p$ is an odd prime, so $p\nmid2n$. By Fermat's Little Theorem, we have $(2n)^{p-1}\equiv(2n)^{4k+2}\equiv(4n^2)^{2k+1}\equiv1\pmod p$. Recall that $p\mid4n^2+1\implies4n^2\equiv-1\pmod p$. So $(4n^2)^{2k+1}\equiv(-1)^{2k+1}\equiv-1\pmod p$. Now we have $1\equiv-1\pmod p$, which is impossible since $p\ne2$. This proves that $p\equiv1\pmod4$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $p\equiv1\pmod4$.
 
 **Derivation/proof.** Because 4n²+1 is odd, p is odd, and p∤n implies gcd(2n,p)=1. If p≡3 mod 4, write p=4k+3. Fermat gives (2n)^(p−1)≡1 modp, but (2n)^(4k+2)=(4n²)^(2k+1)≡(−1)^(2k+1)=−1 modp by the divisibility hypothesis. Hence p divides2, contradicting oddness. The only other odd residue modulo 4 is 1, proving the result.
 
-### 中文解答
-
-**推导。** 因为 $4n^2+1$ 为奇数，其质因数 $p$ 也是奇数；结合(a)的 $p\nmid n$，可得 $\gcd(2n,p)=1$。奇数模四只可能余一或三。反设 $p=4k+3$，费马小定理给 $(2n)^{p-1}\equiv1\pmod p$。另一方面，题设给 $4n^2\equiv-1\pmod p$，于是 $(2n)^{p-1}=(4n^2)^{2k+1}\equiv(-1)^{2k+1}=-1\pmod p$。比较得 $1\equiv-1\pmod p$，即 $p\mid2$，与 $p$ 奇质数矛盾。因此只剩 $p\equiv1\pmod4$。
-
-## Common Mistakes
-
-- 未检查互质就应用费马定理。
-- 把 2k+1 误当偶数次幂。
+The required hypothesis is $\gcd(2n,p)=1$. The power $(4n^2)^{2k+1}$ is $-1$ modulo $p$, so comparison with Fermat gives $p\mid2$, contradicting oddness.
 
 ## Connections
 

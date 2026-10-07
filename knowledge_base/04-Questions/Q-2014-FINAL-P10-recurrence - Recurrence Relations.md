@@ -38,26 +38,25 @@ For $n>1$, find a recurrence for $V_n$ by determining how it is related to $V_{n
 
 Shared context: [[STEM-2014-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-末位分类时，非零数字不改变零的奇偶性；添零会把无效（奇数零）字符串变为有效。无效总数来自所有长度 $n-1$ 串减去有效数。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=14|PDF physical page 14]].
 
-## Detailed Solution
+A valid length $n$ code can be obtained
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 14. The Chinese derivation expands the reasoning.
+- From a valid length $n-1$ code by appending “1”, “2”, $\ldots$, or “9”to the end, or
+- From an invalid length $n-1$ code by appending “0” to the end.
+
+The total number of length $n-1$ codes is $10^{n-1}$. Hence the number of invalid length $n-1$ codes is $(10^{n-1}-V_{n-1})$. So, we have
+$$V_n=9V_{n-1}+(10^{n-1}-V_{n-1})=8V_{n-1}+10^{n-1}.$$
+
+## Supplementary Explanation
 
 **Answer.** $V_1=9$ and $V_n=8V_{n-1}+10^{n-1}$ for $n>1$.
 
 **Derivation/proof.** Append a nonzero digit (nine choices) to each valid length-$n-1$ string, or append 0 to each invalid one. There are $10^{n-1}-V_{n-1}$ invalid strings, so $V_n=9V_{n-1}+10^{n-1}-V_{n-1}$.
 
-### 中文解答
-
-**推导。** 按最后一位是否为零分类。若非零，有九种数字，前 n−1 位必须已经含偶数个零，贡献 $9V_{n-1}$；若为零，前缀必须含奇数个零，总数为 $10^{n-1}-V_{n-1}$。两类互斥并穷尽，所以 $V_n=9V_{n-1}+10^{n-1}-V_{n-1}=8V_{n-1}+10^{n-1}$，基础值 $V_1=9$。
-
-## Common Mistakes
-
-- 把所有十个数字都接在有效串后。
-- 写成 $9V_{n-1}+V_{n-1}$。
+The classes are disjoint and exhaustive: nine nonzero endings contribute $9V_{n-1}$ and a zero ending contributes $10^{n-1}-V_{n-1}$. The initial value is $V_1=9$.
 
 ## Connections
 

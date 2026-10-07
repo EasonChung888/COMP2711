@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P03-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-固定一个有理横坐标，例如 $X=0$，则每个无理数 y 都对应不同点 $(0,y)$，并且这些点属于题目集合。无理数集不可数：若它可数，与可数的有理数合并会使实数可数，矛盾。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (ii) Uncountable
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Uncountable.
 
-**答案。** Uncountable.
-
-**推导。** 固定一个有理横坐标，例如 $X=0$，则每个无理数 y 都对应不同点 $(0,y)$，并且这些点属于题目集合。无理数集不可数：若它可数，与可数的有理数合并会使实数可数，矛盾。所以原集合包含一个与无理数一一对应的不可数子集，自身必不可数。
-
-## Common Mistakes
-
-- 固定有理横坐标零已经包含所有无理纵坐标，不能因第一坐标可数而判整体可数。
-- 证明无理数不可数可利用实数等于有理与无理的并，不应直接声称所有无限集都不可数。
+**Derivation/proof.** Fix the rational coordinate $X=0$. Every irrational $y$ gives a distinct allowed point $(0,y)$. The irrationals are uncountable: if countable, their union with the countable rationals would make the reals countable, a contradiction. Thus the target set contains an uncountable subset in bijection with the irrationals and is itself uncountable.
 
 ## Connections
 

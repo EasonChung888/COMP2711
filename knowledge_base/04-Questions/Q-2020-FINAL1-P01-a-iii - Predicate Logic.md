@@ -38,26 +38,19 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-1.pdf#
 
 Shared context: [[STEM-2020-FINAL1-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-两个“所有”分别对应两个受限全称量词，对每个跨组点对断言相邻即可。不要附加禁止同组边的条件，因为本句只要求跨组边齐全，允许组内还存在额外的边。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+$\forall u\in V_1\forall v\in V_2(E(u,v))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall u\in V_1\forall v\in V_2 E(u,v)$.
 
 **Derivation/proof.** The phrase “every vertex” in the first part supplies the first universal quantifier; “all vertices” in the other part supplies the second. For each resulting pair assert adjacency. This places no restriction on edges whose two endpoints are both in V1 or both in V2.
 
-### 中文解答
-
-**推导。** 对第一部分“每个顶点”用 $\forall u\in V_1$，对第二部分“所有顶点”用 $\forall v\in V_2$。每一对所得顶点都要求一条边，因此答案 $\forall u\in V_1\forall v\in V_2E(u,v)$。这是要求跨部边全部存在，未声明同部边不存在；后一点正是不能直接推出完全二分图的原因。
-
-## Common Mistakes
-
-- 把第二个全称量词写成存在。
-- 擅自加入不存在组内边的条件。
+The formula $\forall u\in V_1\forall v\in V_2E(u,v)$ requires all cross-part edges. By itself it does not prohibit edges within a part; that is a separate restriction in the preceding property.
 
 ## Connections
 

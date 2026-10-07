@@ -39,26 +39,30 @@ Prove the following equality without using repeated squaring:
 $$46^{120}\bmod77=1.$$
 [Hint: Make use of the fact that $77=11\cdot7$ and try to use Fermat's Little Theorem and the Chinese Reminder Theorem.]
 
-## 中文解析
+## Official Answer
 
-不需要直接算巨大的幂。分别在 $7$ 和 $11$ 下用费马小定理，再以中国剩余定理把两个余数合并。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=7|PDF physical page 7]].
 
-## Detailed Solution
+Let $r=46^{120}\bmod77$. Using Problem 1 (a), we get
+$$r\bmod7=46^{120}\bmod7,r\bmod11=46^{120}\bmod11.$$
+By Fermat's Little Theorem, we have
+$$\begin{aligned}
+46^{120}\bmod7&=(4^6)^{20}\bmod7=(4^6\bmod7)^{20}\bmod7=1,\\
+46^{120}\bmod11&=(4^{10})^{12}\bmod11=(4^{10}\bmod11)^{12}\bmod11=1.
+\end{aligned}$$
+So, we have
+$$r\bmod7=1,r\bmod11=1.$$
+Obviously, we also have
+$$1\bmod7=1,1\bmod11=1.$$
+It follows from the Chinese Reminder Theorem that $r=1$. The proof is completed.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $46^{120}\equiv1\pmod{77}$.
 
 **Derivation/proof.** Let $r=46^{120}\bmod77$. Since $77=7\cdot11$, Fermat gives $46^{120}=(46^6)^{20}\equiv1\pmod7$ and $46^{120}=(46^{10})^{12}\equiv1\pmod{11}$. The residue $1$ has the same two remainders, so CRT uniqueness yields $r=1$ modulo $77$.
 
-### 中文解答
-
-**推导。** 因 $46\equiv4\pmod7$、$46\equiv2\pmod{11}$，底数均不被对应素数整除。费马小定理给 $46^6\equiv1\pmod7$、$46^{10}\equiv1\pmod{11}$。因此 $46^{120}=(46^6)^{20}\equiv1\pmod7$，同时 $(46^{10})^{12}\equiv1\pmod{11}$。数 1 满足这两个同余，由互素模数的 CRT 唯一性，$46^{120}\equiv1\pmod{77}$。
-
-## Common Mistakes
-
-- 把 $46^{120}$ 直接当成 $(46^{77})$。
-- 使用费马小定理但没有验证 $46$ 与模数互素。
+Here $46\equiv4\pmod7$ and $46\equiv2\pmod{11}$, so both relevant bases are nonzero.
 
 ## Connections
 

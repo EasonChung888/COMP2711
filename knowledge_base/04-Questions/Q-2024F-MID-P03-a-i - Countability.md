@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P03-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-每个 Java 程序是有限字符表上的有限长度字符串。固定长度 $\ell$ 的字符串集合有限，将长度从零开始逐个列举，所有有限字符串构成可数并集；语法正确的程序只是其中子集，所以至多可数。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> Answer: (a) (i) Countable
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Countable.
 
-**答案。** Countable.
-
-**推导。** 每个 Java 程序是有限字符表上的有限长度字符串。固定长度 $\ell$ 的字符串集合有限，将长度从零开始逐个列举，所有有限字符串构成可数并集；语法正确的程序只是其中子集，所以至多可数。又可构造带任意多个空格或任意多个重复语句的不同合法程序，得到无限多个。因此所给无限程序集合是可数无限。
-
-## Common Mistakes
-
-- Java 程序是有限字符串，运行时可能无限不等于源程序有无限长度。
-- 先列完一种固定长度再增加长度，不能把无限循环运行结果当作枚举单位。
+**Derivation/proof.** Every Java program is a finite-length string over a finite alphabet. For each length $\ell$ there are finitely many strings; enumerating lengths from zero makes all finite strings a countable union of finite sets. Syntactically valid programs are a subset, so are at most countable. Arbitrarily many spaces or repeated statements produce infinitely many distinct valid program texts. Thus the stated infinite program set is countably infinite.
 
 ## Connections
 

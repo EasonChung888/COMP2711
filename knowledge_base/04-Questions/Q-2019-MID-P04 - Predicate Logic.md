@@ -50,13 +50,23 @@ Conclusion: $\exists x(Q(x)\land R(x))$.
 
 Show that the argument is valid. Number your steps and refer to those numbers in the reason you give for each step, but it is not necessary to give the name of the inference rule.
 
-## 中文解析
+## Official Answer
 
-存在前提先提供一个见证 c。两条全称前提都在同一个 c 上实例化，才能得到同一对象同时满足 Q 和 R。最后合取并存在推广；不能从两个不同对象分别成立推出同一对象同时成立。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+Step — Reason
+1. $\exists xP(x)$ — Hypothesis
+2. $P(c)$ — (1), Existential instantiation
+3. $\forall x(P(x)\to Q(x))$ — Hypothesis
+4. $P(c)\to Q(c)$ — (3), Universal instantiation
+5. $\forall x(P(x)\to R(x))$ — Hypothesis
+6. $P(c)\to R(c)$ — (5), Universal instantiation
+7. $Q(c)$ — (2) and (4), Modus ponens
+8. $R(c)$ — (2) and (6), Modus ponens
+9. $Q(c)\land R(c)$ — (7) and (8), Conjunction
+10. $\exists x(Q(x)\land R(w))$ — (9), Existential generalization
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** The argument is valid.
 
@@ -73,27 +83,7 @@ Provenance: official; supplied source conclusion checked on PDF page(s) 6. The C
 9. $Q(c)\land R(c)$ (7,8).
 10. $\exists x(Q(x)\land R(x))$ (9, existential generalization; discharge the fresh witness).
 
-### 中文解答
-
-**推导。** 使用同一个新见证 $c$，避免把两个不同对象的性质错误合并。
-
-1. $\exists xP(x)$，前提 1。
-2. $P(c)$，由(1)存在实例化，$c$ 是新取的见证。
-3. $\forall x(P(x)\to Q(x))$，前提 2。
-4. $P(c)\to Q(c)$，由(3)全称实例化。
-5. $\forall x(P(x)\to R(x))$，前提 3。
-6. $P(c)\to R(c)$，由(5)全称实例化。
-7. $Q(c)$，由(2)、(4)肯定前件。
-8. $R(c)$，由(2)、(6)肯定前件。
-9. $Q(c)\land R(c)$，由(7)、(8)合取。
-10. $\exists x(Q(x)\land R(x))$，由(9)存在推广。
-
-最后一行两个谓词的自变量须一同量化成 $x$；印本误写的 $R(w)$ 没有来自任何前提。
-
-## Common Mistakes
-
-- 对 Q 与 R 使用不同存在见证。
-- 照抄源解最后的 R(w)，留下未量化的自由变量。
+The modus ponens step yielding $Q(c)$ follows from (2) and (4), and the one yielding $R(c)$ follows from (2) and (6). Both conclusions concern the same fresh witness, which is why conjunction and then existential generalization are valid.
 
 ## Connections
 

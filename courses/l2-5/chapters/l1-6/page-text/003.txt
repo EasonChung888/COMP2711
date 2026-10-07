@@ -1,0 +1,16 @@
+Example
+In how many ways can we arrange 
+n
+ students in a line for a photo?
+Solution:
+This example is similar to the previous one, except that we are now selecting all 
+n
+ students. Using the same rationale as the previous question, there are 
+n
+(
+n
+-1) ..2 1=
+ n
+! 
+ways
+3

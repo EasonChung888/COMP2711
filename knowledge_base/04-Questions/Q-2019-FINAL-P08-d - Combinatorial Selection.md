@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-不要求相邻，因此从六个位置中选两个位置，较左自动放 a、较右放 b，不需再乘二。剩余四个位置用其他二十四个字母无重复填入，形成唯一字符串。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+First choose the positions for the $a$ and $b$; this can be done in $C(6,2)$ ways, since once we pick two positions, we put the $a$ in the left-most and the $b$ in the other. There are four remaining positions, and these can be filled in $P(24,4)$ ways, since there are $24$ letters left (no repetitions being allowed this time). Therefore the answer is $C(6,2)P(24,4)=3825360$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom62P(24,4)=3825360$.
 
 **Derivation/proof.** Choose the two positions occupied by a and b in $\binom62=15$ ways. Their roles are determined: put a in the earlier position and b in the later. Fill the four remaining positions by an ordered selection of distinct letters from the other 24, giving $P(24,4)=255024$. The product is 3825360.
 
-### 中文解答
+$\binom62=15$ and $P(24,4)=255024$, so $15\cdot255024=3825360$.
 
-**推导。** 先从六个位置任选两个给 $a,b$，有 $\binom62=15$ 种。较左位置必须放 $a$，较右位置放 $b$，因此不再为它们的顺序乘 $2!$。其余四个有标签位置用剩余二十四字母的有序不重复选择填入，给 $P(24,4)=255024$。总数 $\binom62P(24,4)=15\cdot255024=3825360$；此处两字母可以不相邻。
-
-## Common Mistakes
-
-- 仍只考虑五个相邻位置对。
-- 选定两个位置后额外乘二，违反 a 在左条件。
+The required occurrences need not be adjacent. Choosing their positions handles separated occurrences as well as consecutive ones without imposing an extra block condition.
 
 ## Connections
 

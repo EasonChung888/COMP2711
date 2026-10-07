@@ -43,26 +43,19 @@ If (a)(ii) is true, is $G$ necessarily a complete bipartite graph? Please give a
 
 Shared context: [[STEM-2022-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-一个三角形就能反驳：把两个点放第一组、一个点放第二组，跨组边全都有，但第一组内部也有边。它满足题目条件却含奇环，连二分图都不是，更不是完全二分图。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (c) No. If there are edges connecting two vertices in $V_1$, the graph $G$ is not a bipartite graph, so it is not a complete bipartite graph.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No.
 
 **Derivation/proof.** Use V1={a,b}, V2={c}, and the triangle edges ac,bc,ab. Every vertex of V1 is connected to all vertices of V2, so (a)(ii) holds. The extra internal edge ab is not forbidden. It creates an odd cycle, so this graph is not bipartite at all, and hence not complete bipartite. This is a simple undirected counterexample.
 
-### 中文解答
-
-**推导。** 答案为否，给出明确反例。取 $V_1=\{a,b\}$、$V_2=\{c\}$，边为 $ac,bc,ab$，即三角形 $K_3$。$V_1$ 中每个点都连到 $V_2$ 的唯一点 $c$，所以满足(a)(ii)，却含三边奇环。若能二分，边 $ab$ 迫使 $a,b$ 分居两部，但 $c$ 又必须同时与两者异部，不可能，所以图根本不二分，更不是完全二分。源答案只说“原划分内部有边就不是二分图”过强：原划分失败不自动排除其他划分，例如允许的 $V_1=\{a,b\},V_2=\varnothing$ 仅有边 $ab$ 时(a)(ii)空真，但图仍可按 $\{a\},\{b\}$ 二分。三角形反例才明确排除了所有其他划分，同时保持官方的否定结论。
-
-## Common Mistakes
-
-- 认为额外边不会影响完全二分性。
-- 给出有重边的反例而违反简单图条件。
+Take $V_1=\{a,b\}$ and $V_2=\{c\}$ with edges $ac,bc,ab$: the triangle $K_3$. The edge $ab$ forces $a,b$ into opposite parts of any proposed bipartition, but $c$ must be opposite both, impossible. To see why failure of the original partition alone is insufficient, take $V_1=\{a,b\}$ and $V_2=\varnothing$ with the sole edge $ab$. The cross-edge condition is vacuous, yet another partition $\{a\},\{b\}$ makes this graph bipartite.
 
 ## Connections
 

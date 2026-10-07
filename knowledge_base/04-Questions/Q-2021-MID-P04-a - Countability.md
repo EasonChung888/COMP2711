@@ -39,26 +39,21 @@ Show that $\{S\mid S\subseteq\mathbb N,|S|\text{ is finite}\}$ is countable.
 
 Shared context: [[STEM-2021-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-按最大元素把有限子集分成有限组，空集没有最大元素，必须先单列。每个非空有限子集终有一个最大值，所以在相应有限阶段一定出现；仅仅说“所有子集都是有限的”并不能证明整个族可数。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (a) Here is one enumeration method for $\{S\mid S\subseteq\mathbb N,|S|\text{ is finite}\}$. We first enumerate $\varnothing$. Then for $k=0,1,\ldots$, we enumerate all $S\subseteq\mathbb N$ such that $\max S=k$. For each $k$, there are finitely many such $S$, and we can enumerate them in any order.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** The family is countably infinite.
 
 **Derivation/proof.** List the empty set first. For each natural k in increasing order, list every finite subset whose maximum is k. Each such block is finite because its elements come from the finite initial segment through k; if naturals begin at zero, the block has 2^k members. Every nonempty finite set has a finite maximum and appears in exactly one block, giving an enumeration. Singleton sets show the family is infinite.
 
-### 中文解答
+Each group occurs after finitely many earlier entries. For naturals starting at zero, $k$ must be included and each of the other $k$ elements may be chosen freely, giving $2^k$ sets in the group.
 
-**推导。** 先列空集，因为它没有最大元素。对每个自然数 $k$ 按递增顺序，列出最大元素恰为 $k$ 的全部子集；每一组都有限，因为所有元素都在截至 $k$ 的有限初始段中。若自然数从零起，该组有 $2^k$ 个集合：必须选 $k$，其余 $k$ 个元素任意选。任何非空有限子集都有最大元素，故会在唯一一组出现，且此前只有有限项，因此得到枚举。所有单元素集 $\{k\}$ 又说明这个族无限，结论是可数无限。
-
-## Common Mistakes
-
-- 漏掉空集。
-- 用无穷字典序导致某些有限集合永远不到。
+To enumerate the family, list the empty set first. Then every nonempty finite subset has a maximum, so the enumeration covers it. The family is countably infinite.
 
 ## Connections
 

@@ -39,26 +39,19 @@ Algorithm 1 computes the multiplication of two polynomials with degree $m$ and $
 
 Shared context: [[STEM-2020-FINAL1-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-循环包含零次项，因此精确次数是 (m+1)(n+1)。当两次数都至少一时与 mn 同阶，符合标准答案；如果允许常数多项式，用带加一的形式才能覆盖零次数边界，不能把实际工作量写成零。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+The time complexity of algorithm 1 is $O(mn)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $O(mn)$ as both degrees grow; more uniformly $\Theta((m+1)(n+1))$ also covers degree zero.
 
 **Derivation/proof.** The coefficient reads cost Θ(m+n+2), and zeroing/output construction cost Θ(m+n+1). The nested loop performs exactly (m+1)(n+1) coefficient multiply-adds. This product dominates the linear terms, giving Θ((m+1)(n+1)) in the source's unit-cost coefficient-operation model. For m,n≥1 this is Θ(mn), whose tight big-O answer is O(mn).
 
-### 中文解答
-
-**推导。** 读入两多项式系数共 $(m+1)+(n+1)$ 次；清零与构造输出各需线性于 $m+n+1$ 的工作。主双重循环含端点 $i=0,\ldots,m$、$j=0,\ldots,n$，因此精确执行 $(m+1)(n+1)$ 次系数乘加。这个乘积控制前面各线性项，按每次系数运算常数时间的模型，总时间 $\Theta((m+1)(n+1))$。当两次数 $m,n\ge1$ 时它与 $mn$ 同阶，故源文的最佳大 O 答案是 $O(mn)$。加一形式另外明确覆盖某个次数为零的常数多项式边界，不能把这种情形工作量说成零。
-
-## Common Mistakes
-
-- 忘记系数从零次项开始。
-- 把连续两个循环和嵌套循环都当作相加。
+For $m,n\ge1$, the exact product count $(m+1)(n+1)$ is between $mn$ and $4mn$. Thus the stated $\Theta(mn)$ simplification applies to positive degrees; allowing degree zero requires the unsimplified expression.
 
 ## Connections
 

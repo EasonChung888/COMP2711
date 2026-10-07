@@ -1,0 +1,28 @@
+Exercise 
+on Equation Solutions with minimum constraint
+How many solutions does the equation
+have, where 
+ and 
+ are nonnegative integers and 
+ ≥ 3
+?
+Equivalent problem: 
+Suppose that a cookie shop has 
+3 different kinds of cookies
+. In how many different ways can 
+5
+ cookies be chosen, 
+if I must choose at least 3 cookies of the third kind
+?
+Solution
+I rewrite the equation as follows:
+  
+ 
+.
+The number of solutions for the new equation is
+This is the number of solutions when 
+0 
+ 
+.
+ 
+47

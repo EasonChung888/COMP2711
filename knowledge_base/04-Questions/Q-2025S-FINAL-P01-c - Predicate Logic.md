@@ -41,24 +41,20 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 Set $A$ and set $B$ are disjoint
 
-## 中文解析
+## Official Answer
 
-互不相交指没有共同元素，不需要新增 intersection 谓词。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(c) Possible Solutions:
+- $\forall x(x\in A\to x\notin B)\land\forall x(x\in B\to x\notin A)$
+- $\forall x(x\notin A\lor x\notin B)$
+- $\neg\exists x(x\in A\land x\in B)$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\forall x(x\notin A\lor x\notin B)$.
 
-**答案。** $\forall x(x\notin A\lor x\notin B)$。
-
-**推导。** 一个数同时属于两集合的条件是 $x\in A\land x\in B$。要求这种数不存在，得到 $\neg\exists x(x\in A\land x\in B)$。用 quantifier negation 与 De Morgan，等价于 $\forall x(\neg(x\in A)\lor\neg(x\in B))$，即 $\forall x(x\notin A\lor x\notin B)$。自然数域覆盖了两集合全部元素，所以此条件既必要也充分，且只用题目允许的符号。
-
-## Common Mistakes
-
-- 写成对每个元素都同时不属于两集合会错误地强迫两集合为空。
-- 本题禁止新增谓词，不能直接写 Disjoint(A,B) 代替翻译。
+**Derivation/proof.** Belonging to both sets is $x\in A\land x\in B$. Excluding any such witness gives $\neg\exists x(x\in A\land x\in B)$. Quantifier negation and De Morgan's law give $\forall x(\neg(x\in A)\lor\neg(x\in B))$, or $\forall x(x\notin A\lor x\notin B)$. The natural-number domain contains all elements of both sets, making this necessary and sufficient and using only permitted symbols.
 
 ## Connections
 

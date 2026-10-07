@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (i) $x$ is a multiple of 5.
 
-## 中文解析
+## Official Answer
 
-五的倍数就是五乘以某个自然数，只需一个存在量词。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (a) (i) $\exists y$ s.t. $5\cdot y=x$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists y(5\times y=x)$.
 
-**答案。** $\exists y(5\times y=x)$。
-
-**推导。** 若 $x$ 是五的倍数，则有自然数 $y$ 使 $x=5y$，因此 $\exists y(5\times y=x)$ 成立。反过来，若这个存在式成立，取其见证 $y$，等式直接说明 $x$ 是五的倍数。公式使用的量词、乘法、等号与常数五都在允许列表中，且所有变量取自然数，未引入 divisible 等额外谓词。
-
-## Common Mistakes
-
-- 不能写成所有自然数乘五都等于同一个 $x$，这里需要存在量词。
-- 形式化要求不能用未列出的整除符号代替乘法等式。
+**Derivation/proof.** If $x$ is a multiple of five, some natural number $y$ satisfies $x=5y$, establishing the formula. Conversely, take its witness $y$; the equality directly says that $x$ is a multiple of five. The quantifier, multiplication, equality, and constant five are permitted, and all variables remain in the natural-number domain.
 
 ## Connections
 

@@ -1,0 +1,18 @@
+Consider the following picture. You are only allowed to move ↗ (one to the right and up) and ↘ (one to the right and down) only. In how many ways you can get from A to B such that: 
+51
+(
+i
+) 
+There are no restrictions. 
+Hint
+: Note that in order to get from A to B you have to pass from some certain points like X.
+ 
+The path has to pass from the middle point (e.g., X) of every other column. There are 4 such points (in red). The path between any two successive red points has only two options (top or bottom row). Total number of paths 2
+3
+.
+(ii) 
+You want to pass from C
+. 
+2 (ways from A to C) x 2 (ways from C to B) = 4  
+Exercise 
+on Paths 2 

@@ -39,24 +39,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 (b) We know that any number of form $\sqrt[n]p$ is irrational when $p$ is prime and $n$ is an integer $n\ge2$. How many irrational numbers of this form exist? Is it finite, countable infinite or uncountable? Briefly argue why.
 (Note that $y=\sqrt[n]p$ means $y^n=p$)
 
-## 中文解析
+## Official Answer
 
-每个数由素数和正整数次数两个可数参数决定，所以数量至多可数。再固定次数为二，得到无限多个不同根号素数，排除有限的可能。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> (b) Note that there are countably infinite prime numbers and countably infinite values for $n$. This implies that there are $|\mathbb N|^2$ many irrational numbers of this form, which is countable infinite.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Countably infinite.
 
-**答案。** Countable infinite.
-
-**推导。** 将素数枚举为 $p_1,p_2,\ldots$，次数 n 枚举为 $2,3,\ldots$。索引对 $(i,n)$ 可按对角线枚举，因此所有 $\sqrt[n]{p_i}$ 是可数集合的像，至多可数。固定 $n=2$ 时，不同素数的正平方根不同，因为平方可恢复原素数；又素数无限，所以这些数至少无限。结合上下界，所求集合是可数无限。题目已给这些根为无理数，不必再证明无理性。
-
-## Common Mistakes
-
-- 两个可数参数的组合仍可数，不能因为组合很多就判不可数。
-- 仅证明至多可数还需排除有限，这可用所有素数的平方根子集。
+**Derivation/proof.** Enumerate the primes as $p_1,p_2,\ldots$ and degrees as $2,3,\ldots$. The index pairs $(i,n)$ can be enumerated along diagonals, so all $\sqrt[n]{p_i}$ form an image of a countable set and are at most countable. Fix $n=2$: distinct primes give distinct positive square roots, since squaring recovers the prime. There are infinitely many primes, so the image is at least infinite. Together these bounds make it countably infinite. Irrationality is supplied by the question and need not be reproved.
 
 ## Connections
 

@@ -40,26 +40,21 @@ Atomic focus [editorial]: $P(A_1)$; the second requested marginal is a separate 
 
 Shared context: [[STEM-2016-FINAL-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先按选中的骰子分类。普通骰有两个合格面，概率三分之一；特殊骰六个面都不超过二，概率一。两类骰子各以一半概率被选，按权重相加即可。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=7|PDF physical page 7]].
 
-## Detailed Solution
+(a) If a fair dice is picked, the probability that we get one or two dots on top is $\frac13$. If a special dice is picked, the probability that we get one or two dots on top is 1. Therefore, $P(A_1)=\frac12\cdot\frac13+\frac12\cdot1=\frac23$. By the same argument, $P(A_2)=\frac23$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $P(A_1)=2/3$.
 
 **Derivation/proof.** Let $F$ and $S$ denote selecting the fair and special dice. They partition the experiment and each has probability $1/2$. Total probability gives $P(A_1)=P(A_1\mid F)P(F)+P(A_1\mid S)P(S)=\frac13\frac12+1\frac12=\frac23$.
 
-### 中文解答
+The equal weights come from the random selection of the die, not from a uniform distribution over the resulting numerical values.
 
-**推导。** 以F、S分别表示抽到普通或特殊骰，两事件互斥穷尽，各概率1/2。普通骰有两个≤2的面，故 $P(A_1\mid F)=1/3$；特殊骰六面都≤2，故条件概率一。全概率公式给 $P(A_1)=(1/2)(1/3)+(1/2)(1)=2/3$。权重来自抽骰的公平选择，不是六个数值的混合均匀假设。
-
-## Common Mistakes
-
-- 只按普通骰子的两个面计算。
-- 把两个骰子的点数种类看成等概率结果。
+Explicitly, $P(A_1\mid F)=1/3$ and the weighted sum is $(1/2)(1/3)+(1/2)(1)=2/3$.
 
 ## Connections
 

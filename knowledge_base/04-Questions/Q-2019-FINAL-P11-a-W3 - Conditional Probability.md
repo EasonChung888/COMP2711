@@ -37,26 +37,23 @@ and $p(W=3\mid M=2)$?
 
 Shared context: [[STEM-2019-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-奖品在三号门时，初选一号不能开，三号有奖不能开，所以二号是唯一可开门，条件开门概率为一。把三号先验零点二除以开二号门总概率零点四五，就得到九分之四。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=13|physical PDF page 13]]; [[knowledge_base/past_paper/2019-final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+By the Bayes\' theorem,
+$$p(W=w\mid M=2)=\frac{p(M=2\mid W=w)p(W=w)}{p(M=2)},$$
+where $p(M=2)=\sum_{w=1}^3p(M=2\mid W=w)p(W=w)$. We have $p(W=1)=0.5,p(W=2)=0.3,p(W=3)=0.2,p(M=2\mid W=1)=1/2,p(M=2\mid W=2)=0,p(M=2\mid W=3)=1$. Plugging in these numbers, we obtain $p(M=2)=0.45$ and $p(W=1\mid M=2)=5/9,p(W=3\mid M=2)=4/9$. So, we should not switch. Contrary to our intuition, the probability that our initial guess is correct has increased after door 2 is opened!
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13, 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $4/9$.
 
 **Derivation/proof.** If the prize is at door 3, Monty must open door 2, so $P(W=3,M=2)=0.2$. Total probability gives $P(M=2)=0.5(1/2)+0.3(0)+0.2(1)=0.45$. Thus $P(W=3\mid M=2)=0.2/0.45=4/9$. The other closed-door posterior is $5/9$, and they sum to one.
 
-### 中文解答
+The two posterior probabilities sum to $5/9+4/9=1$; the open door has probability zero.
 
-**推导。** 奖在门三的先验概率为 $0.2$，此时主持人必开门二，所以联合概率 $P(W=3,M=2)=0.2$。开门二总概率还包括奖在门一而以一半概率开二的分支，故 $P(M=2)=0.2+0.5/2=0.45$。条件概率为 $0.2/0.45=4/9$。与门一后验 $5/9$ 相加为一，开着的门二后验为零。
-
-## Common Mistakes
-
-- 把主持人在此情况的开门概率也设成二分之一。
-- 对剩下两门简单平均。
+Door two is opened with total probability $0.2+0.5/2=0.45$: the prize-at-door-three branch forces that opening, while the prize-at-door-one branch chooses it with probability one half.
 
 ## Connections
 

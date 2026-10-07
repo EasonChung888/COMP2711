@@ -1,0 +1,33 @@
+Comments on the Bill Example
+How many ways are there to select 5 bills from 7 denominations, assuming there are enough bills of each denomination
+An alternative solution
+Given that there are 7 choices for the first bill, 7 choices for the second bill,…., 7 choices for the fifth bill, somebody could argue that
+The total number of ways is 7
+5
+.
+What is 
+wrong
+ with this solution?
+Lets take a choice by the alternative solution : e.g., (
+7,7
+,
+1,1,1
+) means that for the 
+first 3 bills, I select the first denomination
+, while for 
+the next 2, I select the 7
+th
+. 
+Any other choice, e.g., (1,7,1,1,7)  with the same number of 1s and 7 is considered 
+distinct
+ by the alternative solution. 
+But it should 
+not
+ be 
+distinct
+ because the order in which the bills are selected is not important. Bills of the same denomination are 
+indistinguishable.
+The bars and stars representation eliminates this problem. 
+All choices with three 1s and two 7s have the same representation and are counted once. 
+Representation of (1,7,1,1,7) (7,7,1,1,1) and all equivalent choices using bars and stars:**||||||*** 
+42

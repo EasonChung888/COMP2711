@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (iii) Assume $A$ and $B$ are both uncountable sets such that $A\subset B$. $B-A$ is either countable infinite or finite.
 
-## 中文解析
+## Official Answer
 
-选一个不可数真子集，使其补去后的剩余部分仍含完整实区间。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) (iii) F
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** False.
 
-**答案。** False。
-
-**推导。** 取 $A=(-\infty,0)$、$B=\mathbb R$。这两个集合均不可数，且 $A$ 是 $B$ 的真子集。但 $B-A=[0,\infty)$ 包含区间 $(0,1)$，因此仍不可数。它既不是可数无限，也不是有限，构成合法反例。不可数集合的差可以有不同基数，题设的包含关系没有进一步限制剩余部分。
-
-## Common Mistakes
-
-- 不可数减不可数不是一种数值减法，不能推定结果有限。
-- 反例必须让 $A$ 与 $B$ 都不可数并且确为真包含。
+**Derivation/proof.** Take $A=(-\infty,0)$ and $B=\mathbb R$. Both sets are uncountable and A is a proper subset of B, yet $B-A=[0,\infty)$ contains (0,1) and is uncountable. Thus the difference is neither finite nor countably infinite. Subtraction of sets does not perform numerical subtraction of their cardinalities.
 
 ## Connections
 

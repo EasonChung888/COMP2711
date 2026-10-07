@@ -42,24 +42,17 @@ Page 5 explicitly states that the correct answer under the definition is Finite 
 
 (i) The set of binary strings of infinite length with no two identical consecutive bits (i.e., no “00” and no “11” anywhere in the sequence).
 
-## 中文解析
+## Official Answer
 
-没有相同相邻位会强迫每下一位翻转，首位决定整个无限串。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+(a) (i) Countable infinite and Finite are both accepted here. based on the definition, the correct answer is finite, because there are only 2 such strings. However if the phrasing of the question was set of arbitrary length strings ... then the answer was countable infinite. As it was not discussed clearly, we accept both Countable Infinite and Finite answers.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Finite; exactly two strings.
 
-**答案。** Finite；恰有两个。
-
-**推导。** 若首位是零，为避免“00”，第二位必须是一；为避免“11”，第三位又必须为零，依此类推，唯一得到 $010101\ldots$。首位若为一则唯一得到 $101010\ldots$。只有两个首位选择，而两串不同且都合法，所以集合大小恰为二，是有限集。原阅卷说明也接受 countably infinite，但明确称它针对“arbitrary length”的另一种措辞；本题字面为 infinite length，因此数学分类是有限。
-
-## Common Mistakes
-
-- 每个元素无限长不代表元素数量无限，本题恰只有两种元素。
-- 阅卷接受另一分类是针对措辞容错，不能把“两串”和“可数无限”同时视为正确数学结论。
+**Derivation/proof.** If the first bit is zero, avoiding “00” forces the next bit to be one. Avoiding “11” then forces the following bit to be zero. Continuing gives the unique string $010101\ldots$. Starting with one similarly forces $101010\ldots$. There are only two first-bit choices, and both distinct strings satisfy the restrictions; the cardinality is exactly two. The marking note also accepts “countably infinite” for an alternative interpretation involving arbitrary finite lengths. The literal question specifies infinite length, for which the mathematical classification is finite.
 
 ## Connections
 

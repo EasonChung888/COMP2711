@@ -44,24 +44,17 @@ Expression A: $p\mathbin{\overline\land}(p\mathbin{\overline\land}q)$
 
 Expression B: $(p\mathbin{\overline\land}p)\mathbin{\overline\land}q$
 
-## 中文解析
+## Official Answer
 
-NAND 没有结合律，需按两种括号先算内部运算。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (b) Consider a counterexample: let $p=\text{true},q=\text{false}$. - Expression A: False. - Expression B: True. Since the expressions differ, they are not equivalent.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Not equivalent: at $p=T,q=F$, $A=F$ and $B=T$.
 
-**答案。** 不等价；$p=T,q=F$ 时 $A=F,B=T$。
-
-**推导。** 取 $p=T,q=F$。Expression A 内层 $p\mathbin{\overline\land}q=\neg(T\land F)=T$，外层为 $\neg(T\land T)=F$。Expression B 内层 $p\mathbin{\overline\land}p=\neg(T\land T)=F$，外层为 $\neg(F\land F)=T$。同一赋值使两式相反，所以不等价。括号的改变改变了首先被否定的合取项，不能按普通合取的结合律换位。
-
-## Common Mistakes
-
-- 每使用一次 NAND 都有一次否定，嵌套式不能只在最外层否定。
-- 普通 AND 的结合律不自动适用于新定义的 NAND。
+**Derivation/proof.** For A, the inner NAND is $\neg(T\land F)=T$, so the outer NAND is $\neg(T\land T)=F$. For B, the inner NAND is $\neg(T\land T)=F$, so the outer NAND is $\neg(F\land F)=T$. One assignment giving opposite values disproves equivalence. Changing the parentheses changes which conjunction is negated first; ordinary AND’s associativity cannot be transferred to NAND.
 
 ## Connections
 

@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先选择紧邻的 ab 块从哪一位开始，六位串共有五个合法起点。剩余四位不能再使用 a 或 b，也不能重复，所以要从二十四个字母中作有序无重复选择，而不是四次独立任选。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+First choose the position for the $a$; this can be done in $5$ ways, since the $b$ must follow it. There are four remaining positions, and these can be filled in $P(24,4)$ ways, since there are $24$ letters left (no repetitions being allowed this time). Therefore the answer is $5P(24,4)=1275120$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $5P(24,4)=1275120$.
 
 **Derivation/proof.** The a in the forced block ab may start at positions 1 through 5, giving five choices. Its two positions are fixed and ordered. Fill the remaining four labeled positions with four distinct letters from the other 24 in $P(24,4)=24\cdot23\cdot22\cdot21=255024$ ways. Multiply to obtain 1275120.
 
-### 中文解答
+$P(24,4)=24\cdot23\cdot22\cdot21=255024$, and each valid string has one unique $ab$ starting position.
 
-**推导。** 相邻块必须是 $ab$，它可从六个位置中的第 $1,2,3,4,5$ 位起，共五种起点。块内次序已固定，不能再乘二。其他四个位置必须从排除 $a,b$ 的二十四字母中作无重复有序选择，数量 $P(24,4)=24\cdot23\cdot22\cdot21=255024$。总数为 $5P(24,4)=1275120$；每个合法串有唯一的 $ab$ 块起点，所以没有重数问题。
-
-## Common Mistakes
-
-- 把 ab 与 ba 都计入。
-- 其余位置仍允许重复而使用 24 的四次方。
+The forced block $ab$ can start at positions $1,2,3,4,5$ in a six-letter string. Its starting position is unique because repeated letters are prohibited, so the five choices may be multiplied by the arrangements of the other four letters.
 
 ## Connections
 

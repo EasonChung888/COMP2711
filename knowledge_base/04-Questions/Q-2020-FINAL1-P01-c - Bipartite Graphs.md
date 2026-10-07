@@ -41,26 +41,21 @@ If (a)(iii) is true, is $G$ necessarily a complete bipartite graph? Your answer 
 
 Shared context: [[STEM-2020-FINAL1-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-跨组边齐全并未排除组内边。取两组大小为二和一，跨组两边都存在，再在二人组内加一条边，就形成三角形；它不是二分图，因此更不可能是完全二分图。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+No.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No.
 
 **Derivation/proof.** Take $V_1=\{a,b\}$, $V_2=\{c\}$ and edges ac,bc,ab. Both required cross edges exist, so (a)(iii) holds, but the internal edge ab forms a triangle. A triangle cannot be bipartitioned and hence G is not a complete bipartite graph. This counterexample obeys simplicity and undirectedness.
 
-### 中文解答
+The counterexample respects all stated premises: it is simple and undirected, and its two parts are disjoint and cover the vertices.
 
-**推导。** 答案 No。取 $V_1=\{a,b\}$、$V_2=\{c\}$，放入跨部边 $ac,bc$，再加入同部边 $ab$。所有要求的跨部边都有，故(a)(iii)成立；但三条边形成三角形。若试图二分，$ac,bc$ 迫使 $a,b$ 同在与 $c$ 相反的一部，又被边 $ab$ 违反。所以图连二分都不是，更不是完全二分图。反例保持简单、无向且分部覆盖不交的全部前提。
-
-## Common Mistakes
-
-- 以为跨组边齐全自动排除其他边。
-- 只声称可能有内部边却不给合法反例。
+The internal edge $ab$ violates the no-within-part-edge condition, even though every required cross-part edge is present. Thus the cross-edge property does not imply bipartiteness with that partition.
 
 ## Connections
 

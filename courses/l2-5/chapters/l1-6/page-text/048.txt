@@ -1,0 +1,26 @@
+Exercise 
+on Equation Solutions with maximum constraint
+Suppose that a cookie shop has 
+3 different kinds of cookies
+. However, 
+some cookie box (say 
+kind 3
+) contains only 
+2 cookies
+. In how many different ways can 
+5
+ cookies be chosen, 
+so that you have at most 2 cookies of kind 1
+?
+Solution
+From previous slides of “Exercises on Equation Solutions”, without any constraint, the number of solutions is 
+= 
+=21.   
+The number of solutions for constraint 
+≥3 is
+Thus, the number of solutions when 
+ < 3 is 
+- 
+ = 21-6 = 15.
+ 
+48

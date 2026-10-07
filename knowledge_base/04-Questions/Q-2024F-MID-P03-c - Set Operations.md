@@ -38,24 +38,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 (c) Prove that $A-(B\cap C)=(A-B)\cup(A-C)$. You are Not allowed to use Venn diagram to prove it.
 
-## 中文解析
+## Official Answer
 
-要证明两个集合相同，取任意元素并逐步转换其属于左侧的条件。交集外意味着不在 B 或不在 C，再把属于 A 的条件分配到两边。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (c) Assume $x\in A-(B\cap C)\leftrightarrow x\in A\land x\notin(B\cap C)\leftrightarrow x\in A\land(x\notin B\lor x\notin C)\leftrightarrow(x\in A\land x\notin B)\lor(x\in A\land x\notin C)\leftrightarrow(x\in(A-B))\lor(x\in(A-C))\leftrightarrow x\in((A-B)\cup(A-C))$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $A-(B\cap C)=(A-B)\cup(A-C)$.
 
-**答案。** $A-(B\cap C)=(A-B)\cup(A-C)$。
-
-**推导。** 任取元素 x。$x\in A\setminus(B\cap C)$ 当且仅当 $x\in A\land\neg(x\in B\land x\in C)$。由 De Morgan，这等价于 $x\in A\land(x\notin B\lor x\notin C)$；再由分配律等价于 $(x\in A\land x\notin B)\lor(x\in A\land x\notin C)$，也就是 $x\in(A\setminus B)\cup(A\setminus C)$。各步均为双向等价且 x 任意，因此两集合所有元素完全相同，无需 Venn 图。
-
-## Common Mistakes
-
-- 交集的否定变析取，不能继续写不属于 B 且不属于 C。
-- 只证一个方向的包含关系不足以推出集合相等，应保证每步双向。
+**Derivation/proof.** For arbitrary $x$, membership $x\in A\setminus(B\cap C)$ is equivalent to $x\in A\land\neg(x\in B\land x\in C)$. De Morgan gives $x\in A\land(x\notin B\lor x\notin C)$. The distributive law turns this into $(x\in A\land x\notin B)\lor(x\in A\land x\notin C)$, exactly $x\in(A\setminus B)\cup(A\setminus C)$. Every step is a two-way equivalence and $x$ was arbitrary, so the sets have exactly the same members without a Venn diagram.
 
 ## Connections
 

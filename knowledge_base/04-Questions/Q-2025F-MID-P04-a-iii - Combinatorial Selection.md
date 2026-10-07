@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (iii) In how many ways, all teachers are adjacent and also all students are adjacent to each other?
 
-## 中文解析
+## Official Answer
 
-教师和学生各成一块，外层只有两种先后顺序。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+> (iii) $2!\times5!\times6!$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2!\times5!\times6!$.
 
-**答案。** $2!\times5!\times6!$。
-
-**推导。** 分别把所有教师和所有学生压缩为两个区块。外层只能教师在前或学生在前，共 $2!$ 种。教师内部有 $6!$ 种，学生内部有 $5!$ 种；展开区块唯一恢复队列，所以总数 $2!\cdot5!\cdot6!$。两个群体各自连续的要求正好被此分解完整表达。
-
-## Common Mistakes
-
-- 两块可交换前后顺序，漏掉因子二会只算其中一种。
-- 职业区块固定后，组内人员仍可任意排列。
+**Derivation/proof.** Compress the teachers and students into two blocks. The teacher block may come first or second, giving $2!$ outer orders. There are $6!$ teacher orders and $5!$ student orders inside, so the total is $2!\cdot5!\cdot6!$. Expansion recovers exactly one line, and every valid line has this decomposition.
 
 ## Connections
 

@@ -38,26 +38,32 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 Shared context: [[STEM-2013-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-富人没有兼职的逆否命题是有兼职的人不富有。学生条件虽不用于逆否本身，但可由合取前件推出兼职，再链式推出不富有。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(b) Yes, (i) does imply (iii).
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+**Proof:** Statement (i) can be broken up into the following two statements:
+$$\forall x\in U(R(x)\Rightarrow F(x))$$
+$$\forall x\in U(R(x)\Rightarrow\neg J(x))$$
+The contrapositive of the second rule is:
+$$\forall x\in U(J(x)\Rightarrow\neg R(x))$$
+Let $x$ be a generic element in $U$. We have
+$$\begin{aligned}S(x)\land J(x)&\Rightarrow J(x)\\J(x)&\Rightarrow\neg R(x)\end{aligned}$$
+By transitivity of logic implication, we get:
+$$S(x)\land J(x)\Rightarrow\neg R(x)$$
+By the rule of Universal Generalization, we obtain:
+$$\forall x\in U(S(x)\land J(x)\Rightarrow\neg R(x)).$$
+Q.E.D
+
+## Supplementary Explanation
 
 **Answer.** Yes, (i) implies (iii).
 
 **Derivation/proof.** From (i), simplify to $\forall x(R(x)\Rightarrow\neg J(x))$. By contraposition, $\forall x(J(x)\Rightarrow\neg R(x))$. For arbitrary $x$, $(S(x)\land J(x))\Rightarrow J(x)$; transitivity yields $(S(x)\land J(x))\Rightarrow\neg R(x)$. Universally generalize.
 
-### 中文解答
-
-**推导。** 答案是可以。取任意人 x，由 (i) 全称实例化并简化后件，得 $R(x)\Rightarrow\neg J(x)$。逆否律给 $J(x)\Rightarrow\neg R(x)$。若 $S(x)\land J(x)$，由合取消去得到 $J(x)$，再由肯定前件得到 $\neg R(x)$。所以 $(S(x)\land J(x))\Rightarrow\neg R(x)$；x 任意，作全称推广便是 (iii)。
-
-## Common Mistakes
-
-- 把逆否命题写成 $\neg R\Rightarrow J$。
-- 声称 $S(x)$ 单独能推出 $\neg R(x)$。
+Universal instantiation gives the premise for an arbitrary $x$; conjunction elimination supplies $J(x)$, and modus ponens supplies $\neg R(x)$. Since $x$ was arbitrary, universal generalization is valid.
 
 ## Connections
 

@@ -1,0 +1,32 @@
+Poker
+ Exercises 2
+A poker hand contains 5 out of 52 cards. The cards are 13 
+kinds
+ (1-Ace, 2,..,10,J,Q,K) and 4 
+suites
+ (spades, hearts, clubs, diamonds)
+How many hands are 
+royal flush
+? Royal flush is 
+{10,J,Q,K,Ace} of the same suit
+. This is the strongest card in poker. 
+There are 4 royal flushes/one per suit
+How many hands are 
+straight flush
+? A straight flush is a hand with all five cards of the same suit in sequential order starting at 1,2,….,9. 10 is excluded because it would lead to a Royal flush.
+I have C(9,1)=9 options for the beginning of straight flush, and 4 options for the suit, yielding a total of 4
+9=36
+. There is a single option for each of the remaining cards.   
+How many hands are 
+straight
+? A straight is a hand with all five cards in sequential order. At least two cards are of different suit; otherwise, it would be a royal or straight flush.
+I will first count all straights including straight and royal flushes.
+I have C(10,1)=10 options for the beginning of the straight. For each of the five cards, there are 4 suite options. Therefore, total number of straights is: 10
+4
+5
+. 
+If I exclude the straight and royal flushes, the number becomes: 10
+4
+5 
+- 40. 
+26

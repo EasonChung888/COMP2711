@@ -41,26 +41,19 @@ In how many ways you can go to point B without passing through point C?
 
 Shared context: [[STEM-2020-FINAL1-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-避开 C 用补集最直接。经过 C 的路线可唯一拆成 A 到 C 与 C 到 B 两段，各有二十和十种，乘起来得到二百；从总共四百六十二种中扣除即可，不能把两段数量相加。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+$\binom{11}{5}-\binom63\cdot\binom53$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\binom{11}{5}-\binom{6}{3}\binom{5}{3}=262$.
 
 **Derivation/proof.** There are $\binom{11}{5}=462$ unrestricted paths. From A to C the figure requires three right and three up moves, giving $\binom63=20$ prefixes. From C to B it requires three right and two up moves, giving $\binom53=10$ suffixes. A path through C uniquely decomposes into one prefix and one suffix, so exactly 200 pass through C. Subtracting leaves 262.
 
-### 中文解答
-
-**推导。** 先数所有 $A$ 到 $B$ 路径 $\binom{11}{5}=462$，再扣除经过 $C$ 的路径。源图 $A$ 到 $C$ 要向右三步、向上三步，所以前缀有 $\binom63=20$；$C$ 到 $B$ 要右三步、上两步，所以后缀有 $\binom53=10$。单调路径到 $C$ 的分解唯一，且任一前缀与任一后缀均可组合，故经过数 $20\cdot10=200$。所求 $\binom{11}{5}-\binom63\binom53=462-200=262$。
-
-## Common Mistakes
-
-- 把经过 C 的两段用加法组合。
-- 误读 C 位于纵向中点而非距 A 三格。
+All paths number 462, and the forbidden-point paths number 200 by the unique prefix/suffix split. Their difference is $462-200=262$.
 
 ## Connections
 

@@ -40,26 +40,22 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2013-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-“每种颜色至少一个”最方便用补集：遗漏某一种颜色。由于一次要选五个，而每种颜色只有四个，遗漏两种颜色根本无法发生。
+Source: [[knowledge_base/past_paper/2013-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(b) The wanted number equals the total number of ways minus the number of ways to choose the eggs from only two of the three colors.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+The number of ways to choose 5 eggs from among the red and green eggs is $\binom85$. The numbers for the red-purple and green-purple combination are the same. The three subsets of choice plans are disjoint. So, the answer to the question is:
+$$\binom{12}{5}-3\binom85.$$
+
+## Supplementary Explanation
 
 **Answer.** $\binom{12}{5}-3\binom{8}{5}=624$.
 
 **Derivation/proof.** Start with all $\binom{12}{5}$ selections. A bad selection omits red, green, or purple; after one colour is omitted only eight eggs remain. Choosing five eggs cannot omit two colours, so the three bad classes are disjoint and the subtraction is valid.
 
-### 中文解答
-
-**推导。** 总数为 $\binom{12}{5}=792$。若缺少指定一种颜色，只能从其余八个蛋选五个，有 $\binom85=56$ 种。三种缺色事件不可能重叠，因为缺两种色时只剩四个蛋，选不出五个。因此所求为 $792-3\cdot56=624$，无须再加交集。
-
-## Common Mistakes
-
-- 直接减去三类后又加回交集；这里交集为空。
-- 把 $\binom{8}{5}$ 当成排列。
+$\binom85=56$, so the subtraction gives $792-3\cdot56=624$.
 
 ## Connections
 

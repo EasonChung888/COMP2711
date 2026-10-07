@@ -40,26 +40,26 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2013-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-红蛋数必须大于其余两色的总数。先由 $r>5-r$ 限定红蛋只能为三或四，再分别选择红蛋及其余颜色。
+Source: [[knowledge_base/past_paper/2013-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(c) Here are are possible choice plans that satisfy the requirement:
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+3 red, 2 green or purple
+
+4 red, 1 green or purple
+
+So, the answer is:
+$$\binom43\binom82+\binom44\binom81.$$
+
+## Supplementary Explanation
 
 **Answer.** $\binom{4}{3}\binom{8}{2}+\binom{4}{4}\binom{8}{1}=120$.
 
 **Derivation/proof.** If $r$ red eggs are selected then $r>5-r$, hence $r=3$ or $4$. The two disjoint cases are $(r,5-r)=(3,2)$ and $(4,1)$, producing the displayed sum.
 
-### 中文解答
-
-**推导。** 设选 r 个红蛋，总共选五个要求 $r>5-r$，即 $r\ge3$；又只有四个红蛋，故 r 只能为 3 或 4。前一类有 $\binom43\binom82=4\cdot28=112$ 种，后一类有 $\binom44\binom81=8$ 种。两类互斥且穷尽，因此总数为 $112+8=120$。
-
-## Common Mistakes
-
-- 遗漏 $r=4$ 的情形。
-- 误把条件写成红蛋多于每一种颜色。
+The disjoint cases contribute $4\cdot28=112$ and $8$, giving $112+8=120$.
 
 ## Connections
 

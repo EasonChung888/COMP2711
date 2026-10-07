@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-有些对应存在量词。论域已经是实数，无需再加实数身份谓词；不为正数包括零，所以正确条件为小于等于零，不能只写负数。把否定的不等号边界写清楚很重要。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$\exists x(x\le0)$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\exists x(x\le0)$.
 
 **Derivation/proof.** “Some” introduces an existential quantifier. Since the domain is already all real numbers, no separate real-number predicate is needed. The negation of $x>0$ is $x\le0$, so the witness is required to satisfy that inequality; for example zero does.
 
-### 中文解答
-
-**推导。** 论域已经是全体实数，无需另加“实数”谓词。“some” 用存在量词，正数条件为 $x>0$，其否定为 $x\le0$，故写 $\exists x(x\le0)$。特别是 $x=0$ 也是不正的数，不能把“不正”缩成严格负数。
-
-## Common Mistakes
-
-- 用 x<0 丢掉零的边界含义。
-- 误用全称量词。
+The allowed choice $x=0$ must be considered when deciding the quantified claim; a universal statement over the reals cannot silently exclude zero.
 
 ## Connections
 

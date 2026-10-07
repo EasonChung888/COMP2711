@@ -41,26 +41,23 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-第二句要求所有整数同时是偶数并满足 $p$，奇数使它必假。取 $p(x)$ 也表示偶数，则第一句对所有偶数都真，而第二句在一这个整数上失败。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(b) No.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+Let $p(x)$ be “x is even”.
+
+“$\forall x\in E(p(x))$” is true but “$\forall x\in Z(q(x)\land p(x))$” is false.
+
+## Supplementary Explanation
 
 **Answer.** Not equivalent; take $p(x)$ to mean “$x$ is even.”
 
 **Derivation/proof.** For this predicate, (i) says all even integers are even and is true. In (ii), set $x=1$: $q(1)$ is false, so $q(1)\land p(1)$ is false. Therefore (ii) is false and the truth values differ.
 
-### 中文解答
-
-**推导。** 取具体谓词p(x)为“x是偶数”。(i)断言所有偶数都是偶数，为真。(ii)则要求每个整数都同时满足q和p，取x=1就有 $q(1)=F$，故 $q(1)\land p(1)=F$，全称式为假。一组谓词赋值令两式真假不同，足以反驳逻辑等价。
-
-## Common Mistakes
-
-- 只说不等价而没有按要求指定 $p(x)$。
-- 拿一个同时让两句为假的谓词，未构成区分真值的反例。
+The concrete counterexample has $q(1)=F$ and $q(1)\land p(1)=F$.
 
 ## Connections
 

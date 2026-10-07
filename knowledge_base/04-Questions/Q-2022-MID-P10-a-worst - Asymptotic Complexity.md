@@ -37,26 +37,19 @@ Determine the worst-case running time using the $\Theta$ notation.
 
 Shared context: [[STEM-2022-MID-P10-a - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-严格递增序列让每次比较都触发赋值，是最费操作的情况，但每轮仍只有常数工作，共 n-1 轮。因此最坏情况也为线性，不会因为频繁更新变成平方阶。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (a) The number of comparisons does not depend on the values of $a_1$ through $a_n$. Exactly $n-1$ comparisons are used. Therefore, the best and worst case performance are both $\Theta(n)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\Theta(n)$.
 
 **Derivation/proof.** For a strictly increasing input, every one of the n−1 comparisons succeeds and performs an assignment. This adds at most constant work per iteration. There are exactly n−1 iterations on every input, so total cost is both O(n) and Ω(n), yielding Θ(n) even when every update occurs.
 
-### 中文解答
-
-**推导。** 选严格递增序列，使每轮 $max<a_i$ 都成立并执行赋值，这是更新次数最多的输入。但依然只有从二到 $n$ 的 $n-1$ 轮，每轮至多常数次比较、控制和赋值，给 $O(n)$。任何输入都要做这些比较，给 $\Omega(n)$，因此最坏时间也是 $\Theta(n)$，不会因每次都更新而多出一层循环。
-
-## Common Mistakes
-
-- 把每次更新误认为重扫前缀。
-- 只写 O(n) 而没有按要求给 Θ。
+A strictly increasing sequence attains the most updates. The upper bound is $O(n)$ and the mandatory comparisons give $\Omega(n)$.
 
 ## Connections
 

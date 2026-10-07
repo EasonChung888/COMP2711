@@ -42,26 +42,17 @@ Source correction (derived proof): PDF page7 bounds prime factors of n, but fail
 
 Shared context: [[STEM-2017-FINAL-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-不合格的素数必须整除 T。若有 r 个不同坏素数，它们乘积至少是二的 r 次方，又因为乘积整除 T 而不超过 T，所以 r 至多对数大小。再加一个首次成功的候选，便得到所需循环界。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+Suppose $P_{\log_2n}$ consists of the first $\log_2n$ primes. Then $\prod_{x\in P_{\log_2n}}x>\prod_{x\in P_{\log_2n}}2>n$. So using the fundamental theorem of arithmetic, there cannot be more than $\log_2n$ primes which are factors of $n$. This means that Bob will have to try at most $\log_2n+1=O(\log n)$ primes.
 
-Provenance: derived; independently derived correction; discrepant source material is retained in Source. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** At most $\lfloor\log_2T\rfloor+1=O(\log n)$ prime candidates are tested.
 
 **Derivation/proof.** A prime candidate fails precisely when it divides $T$. If $r$ distinct primes fail, their product divides $T$ and is at least $2^r$. Therefore $2^r\le T$, giving $r\le\log_2T$. The next tested prime succeeds, so there are at most $r+1$ tests. Since $T=(p-1)(q-1)<pq=n$, this is $O(\log n)$. This counts candidate tests, not prime generation time.
-
-### 中文解答
-
-**推导。** 一个质数候选失败当且仅当它整除 $T=(p-1)(q-1)$，不是整除 $n=pq$。若已有 $r$ 个不同质数失败，它们互素，乘积整除 $T$；每个至少为 $2$，所以 $2^r\le\prod_{i=1}^r\ell_i\le T<n$。因此失败数 $r\le\lfloor\log_2T\rfloor$，加上下一个成功候选，测试数至多 $\lfloor\log_2T\rfloor+1=O(\log n)$。印本误数 $n$ 的质因子，现以失败条件所对应的 $T$ 完成独立证明；这里仅计测试循环，不计生成质数的时间。
-
-## Common Mistakes
-
-- 声称小于 n 的素数总数只有对数个。
-- 照抄来源把应整除 T 的素数写成整除 n。
 
 ## Connections
 

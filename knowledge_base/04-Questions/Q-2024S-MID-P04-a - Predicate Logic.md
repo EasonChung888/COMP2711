@@ -40,24 +40,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 “Every integer multiple of 4 can be expressed as the difference of two perfect squares.”
 You are only allowed to use $\forall,\exists,\land,\lor,\neg,\to,\leftrightarrow$, equality ($=$), power (e.g. ($a^b$)), addition (+,-), multiplication($\times$) and divisibility ($\mid$).
 
-## 中文解析
+## Official Answer
 
-先选任意整数，再以整除作为前件限定为四的倍数。两个平方的底数由该整数决定，所以两个存在量词要位于全称量词内部。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> Answer.
+> (a) possible solution 1: $\forall x\exists a\exists b(4x=a^2-b^2)$;
+> possible solution 2: $\forall x(4\mid x\to\exists a\exists b\ x=a^2-b^2)$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\forall x(4\mid x\to\exists a\exists b(x=a^2-b^2))$.
 
-**答案。** $\forall x(4\mid x\to\exists a\exists b(x=a^2-b^2))$。
-
-**推导。** 论域已规定为整数，故不需另写整数谓词。$4\mid x$ 表示被描述的对象是四的倍数；$x=a^2-b^2$ 则断言它由两个整数平方之差表示。用 $\exists a\exists b$ 为每个符合前件的 $x$ 选底数，用 $\forall x$ 覆盖所有整数。得到 $\forall x(4\mid x\to\exists a\exists b(x=a^2-b^2))$。另一官方形式 $\forall x\exists a\exists b(4x=a^2-b^2)$ 直接用 $4x$ 枚举所有倍数，两者等价。
-
-## Common Mistakes
-
-- 不要用合取代替前件蕴含，否则要求所有整数都被四整除。
-- 平方底数的存在量词应在全称量词内；不要求所有倍数共用同一对底数。
+**Derivation/proof.** The domain is already the integers, so no integer predicate is needed. The antecedent $4\mid x$ selects multiples of four, while $x=a^2-b^2$ expresses the required difference of integer squares. The quantifiers $\exists a\exists b$ choose bases for each qualifying $x$, and $\forall x$ covers all integers. This yields $\forall x(4\mid x\to\exists a\exists b(x=a^2-b^2))$. The other official form, $\forall x\exists a\exists b(4x=a^2-b^2)$, directly enumerates multiples as $4x$ and is equivalent.
 
 ## Connections
 

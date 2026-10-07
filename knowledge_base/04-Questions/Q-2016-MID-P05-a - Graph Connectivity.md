@@ -39,26 +39,25 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-证明逆否命题：若全部连通，则边数至少为 $n-1$。从一个点出发，每次沿连接已到达部分与未到达部分的边增加一个新点。连通性保证这一过程可继续，新增 $n-1$ 个点便需 $n-1$ 条不同边。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(a) Let $p$ be the kid only draws $n-2$ line segments.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+Let $q$ be the $n$ dots are not all connected.
+
+To prove $p\Rightarrow q$ using contraposition, we state $\neg q$ which is “$n$ dots are all conntected”. Since all $n$ dots are connected, each dot must have a least one line segment attached to it. We use a highlighter pen to highlight one arbitrary line segment and the two dots connected by the line segment. Then we highlight another line segment such that it connects one of the “highlighted” dots and one of the “unhighlighted” dots. Thus we will have two line segments and three dots highlighted and $n-3$ dots unhighligthed. The process repeats until all $n$ dots are highlighted. The process is repeatable since every dot is connected. That means there must be some unhighlighted dots connecting with a highlighted dot at any state of the process. After $n$ dots are highlighted, there are $n-1$ line segments highlighted. That implies the kid has drawn at least $n-1$ line segments ($\neg p$).
+
+## Supplementary Explanation
 
 **Answer.** With only $n-2$ segments, the dots cannot all be connected.
 
 **Derivation/proof.** Assume the graph is connected. Start with one highlighted vertex. While fewer than $n$ vertices are highlighted, a path to an unhighlighted vertex has a first edge leaving the highlighted set. Select that edge and its new endpoint. Each step adds one previously unhighlighted vertex using a distinct edge, so reaching all $n$ vertices selects $n-1$ edges. Thus a connected graph cannot have only $n-2$ edges. This proves the contrapositive for the meaningful range $n\ge2$.
 
-### 中文解答
+For $n=1$, the antecedent of drawing $-1$ segments is impossible, so the statement is vacuous. For $n\ge2$, each chosen crossing edge is new because it reaches a previously unhighlighted vertex.
 
-**推导。** 证逆否方向：若全部连通，则至少n−1条线段，因而不可能仅n−2条。先标记一个点。只要尚有未标记点，连通性给从已标记部分到未标记部分的路径，取其第一条越界边并标记新端点。每一步增加一个不同点，使用一条此前未选的边；到全部n点需n−1次，因此存在n−1条不同线段。n≥2时排除n−2条的可能；n=1时“画−1条线段”的前件本就不可能。
-
-## Common Mistakes
-
-- 只说每点至少有一条边，这最多得到约 $n/2$ 条边的弱界。
-- 没有说明每次为什么总能找到通往未访问点的边。
+The construction selects $n-1$ distinct edges, one for each newly reached vertex after the starting vertex.
 
 ## Connections
 

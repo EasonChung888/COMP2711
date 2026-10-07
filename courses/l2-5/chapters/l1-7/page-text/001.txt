@@ -1,0 +1,7 @@
+Page 
+1
+Binomial Coefficients
+Binomial Theorem
+Pascal’s Identity and Triangle
+Some Other Identities
+Reading: Rosen 6.4

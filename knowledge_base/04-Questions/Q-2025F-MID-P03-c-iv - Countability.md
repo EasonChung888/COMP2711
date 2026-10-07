@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (iv) Set $S$ is countable infinite if there exists a bijection between $S$ and the set of integers $\mathbb Z$.
 
-## 中文解析
+## Official Answer
 
-把整数的明确枚举经双射逆映射搬到 S，证明无重复且无遗漏。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) (iv) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True.
 
-**答案。** True。
-
-**推导。** 整数可以列成 $0,1,-1,2,-2,\ldots$，是可数无限。给定双射 $f:S\to\mathbb Z$，依上述次序把每个整数的唯一原像列出，得到 $f^{-1}(0),f^{-1}(1),f^{-1}(-1),\ldots$。单射保证无重复，满射保证每个 $S$ 元素都被列到；又无限整数各有不同原像，所以 $S$ 无限，因而可数无限。
-
-## Common Mistakes
-
-- 只有单射到整数集不足以保证无限，因为有限集也能单射进去。
-- 双射同时需要无重复和无遗漏，缺少其中一项不能转移基数。
+**Derivation/proof.** Enumerate the integers as $0,1,-1,2,-2,\ldots$. Given a bijection $f:S\to\mathbb Z$, list the unique preimage of each integer in this order: $f^{-1}(0),f^{-1}(1),f^{-1}(-1),\ldots$. Injectivity and surjectivity ensure exactly one preimage per integer and that every element of S appears, without repetition. Distinct infinitely many integers give distinct preimages, so S is countably infinite.
 
 ## Connections
 

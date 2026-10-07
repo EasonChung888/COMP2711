@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (i) Every senior in the class is majoring either in comp or mathematics.
 
-## 中文解析
+## Official Answer
 
-只对 senior 提出专业要求；原答案的 either-or 使用逻辑中的包容或。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+(c) (i) $\forall x\big(s(x)\to(c(x)\lor m(x))\big)$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\forall x(s(x)\to(c(x)\lor m(x)))$.
 
-**答案。** $\forall x(s(x)\to(c(x)\lor m(x)))$。
-
-**推导。** 任取域内学生 $x$。若他是 senior，即 $s(x)$ 成立，则需满足 comp 或 mathematics 至少一个专业条件 $c(x)\lor m(x)$。因此用蕴含 $s(x)\to(c(x)\lor m(x))$ 表达，再加全称量词覆盖所有学生。题目未说不能双专业，原答案也用包容析取，所以同时满足 $c(x),m(x)$ 的 senior 仍符合此句。非 senior 学生不受这一命题限制。
-
-## Common Mistakes
-
-- 把整个式子写成合取会错误要求每个学生都是 senior。
-- 没有“但不能同时”条件时，不应擅自加互斥或以排除双专业。
+**Derivation/proof.** Take any student $x$ in the domain. If $s(x)$ holds, the student must have at least one of the two majors, expressed by $c(x)\lor m(x)$. Therefore use $s(x)\to(c(x)\lor m(x))$ and universally quantify over all students. The statement does not prohibit a double major, and the official formula uses inclusive disjunction: a senior who satisfies both $c(x)$ and $m(x)$ still qualifies. Nonseniors are not constrained by this sentence.
 
 ## Connections
 

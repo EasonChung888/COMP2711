@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 
 Shared printed context: ![[STEM-2024F-FINAL-P06 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-已知平方和被素数整除，再加上 a 被整除，可推出 b 的平方被整除。素数性质把对平方的整除转换成对底数的整除。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+> Answer: (a) Note that if $p\mid a$ then $p\mid a^2$ which means $p\mid(a^2+b^2)-a^2\implies p\mid b^2\implies p\mid b$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $p\mid a\Rightarrow p\mid b$.
 
-**答案。** $p\mid a\Rightarrow p\mid b$。
-
-**推导。** 由 $p\mid a$，写 $a=pt$，于是 $p\mid a^2$。共享前提又有 $p\mid a^2+b^2$，整除关系对差封闭，所以 $p\mid[(a^2+b^2)-a^2]=b^2$。由于 p 为素数，Euclid's lemma 应用于 $b^2=b\cdot b$，得 $p\mid b$。本小题仅用素数性质，不需要额外使用 $p\equiv3\pmod4$，该条件将在下一题发挥作用。
-
-## Common Mistakes
-
-- 对一般合数，整除平方未必整除底数，必须使用 p 是素数。
-- 不能只从平方和被整除直接断言两平方分别被整除，还需要前提 $p\mid a$。
+**Derivation/proof.** From $p\mid a$, write $a=pt$, giving $p\mid a^2$. The shared premise says $p\mid a^2+b^2$. Divisibility is closed under subtraction, so $p\mid[(a^2+b^2)-a^2]=b^2$. Since $p$ is prime, Euclid's lemma applied to $b^2=b\cdot b$ yields $p\mid b$. This part needs primality only; the condition $p\equiv3\pmod4$ is used in the next part.
 
 ## Connections
 

@@ -38,26 +38,20 @@ Find the general formula of $f_n(x)$.
 
 Shared context: [[STEM-2020-FINAL1-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每次应用题目给定的幂函数规则，指数减一，系数乘当前负指数。连续 n 次乘积给出交替符号与 n 的阶乘，指数则变成负 n 减一；原函数在零点未定义，不能忽略。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$f_n(x)=(-1)^nn!\cdot x^{-(n+1)}$. We can prove this by induction. First $f_0(x)=(-1)^0\cdot0!\cdot x^{-1}=x^{-1}$. Suppose for some $k\ge0$, $f_k(x)=(-1)^kk!\cdot x^{-(k+1)}$, then
+$$f_{k+1}(x)=f\prime_k(x)=(-1)^kk!\cdot[-(k+1)]\cdot x^{-(k+2)}=(-1)^{k+1}(k+1)!\cdot x^{-(k+2)}.$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $f_n(x)=(-1)^n n!x^{-(n+1)}$ for $x\ne0$.
 
 **Derivation/proof.** The first terms are $x^{-1},-x^{-2},2x^{-3},-6x^{-4}$. At differentiation number j the current exponent is -j, so the coefficient is multiplied by -j and the exponent decreases by one. After n applications the coefficient is $(-1)(-2)\cdots(-n)=(-1)^n n!$ and exponent is -(n+1). The x≠0 domain is inherited from f0.
 
-### 中文解答
-
-**推导。** 从 $f_0=x^{-1}$ 开始求导，前四项是 $x^{-1},-x^{-2},2x^{-3},-6x^{-4}$。第 $j$ 次求导时，把系数乘当前指数 $-j$，并使指数降低一。因此 $n$ 次后系数为 $(-1)(-2)\cdots(-n)=(-1)^n n!$，幂指数为 $-(n+1)$，得到 $f_n(x)=(-1)^n n!x^{-(n+1)}$。定义域 $x\ne0$ 直接继承自初函数，不是补加给题目的前提。下一原子用归纳严格核验。
-
-## Common Mistakes
-
-- 把系数写成 n 而不是 n 的阶乘。
-- 漏掉随 n 变化的正负号。
+The first four functions are $x^{-1},-x^{-2},2x^{-3},-6x^{-4}$. The condition $x\ne0$ comes from the original function.
 
 ## Connections
 

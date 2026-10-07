@@ -37,26 +37,19 @@ Published solution material: ![[knowledge_base/past_paper/2022-final-part-2.pdf#
 Solve the following system of congruences:
 $$5x+9y\equiv5\pmod{11},\qquad3x-4y\equiv2\pmod{11}.$$
 
-## 中文解析
+## Official Answer
 
-先把 x 系数统一后相减消元，得到四十七 y 模十一化成三 y。三的逆元为四，求出 y=9，再回代得到 x=9。最后必须检查两个原方程，而不只检查消元后的关系。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> $$x\equiv9\pmod{11},\qquad y\equiv9\pmod{11}.$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $x\equiv9\pmod{11},\ y\equiv9\pmod{11}$.
 
 **Derivation/proof.** Multiply the first equation by 3 and the second by 5: 15x+27y≡15 and 15x−20y≡10. Subtract to obtain47y≡5, or3y≡5 mod 11. Since3·4≡1, y≡20≡9. Substitute in 3x−4y≡2 to get 3x≡38≡5, hence x≡9. Verify5·9+9·9=126≡5 and 3·9−4·9=−9≡2. The invertible coefficients show this residue pair is unique.
 
-### 中文解答
-
-**推导。** 在模十一下，把第一式乘三，第二式乘五，得到 $15x+27y\equiv15$ 和 $15x-20y\equiv10$。两式相减消去 $x$，给 $47y\equiv5$，化简为 $3y\equiv5\pmod{11}$。因 $3\cdot4=12\equiv1$，乘逆元四得 $y\equiv20\equiv9$。代回第二式，$3x\equiv2+4\cdot9=38\equiv5$，同样乘四得 $x\equiv9$。验证原式：$5\cdot9+9\cdot9=126\equiv5$，$3\cdot9-4\cdot9=-9\equiv2$。消元后两个系数三均可逆，因此模十一解对唯一，全部整数解为 $x=9+11s,y=9+11t$，$s,t\in\mathbb Z$。
-
-## Common Mistakes
-
-- 把负系数取余时丢掉符号。
-- 只给一个未知数而未解完整系统。
+The elimination gives $47y\equiv5$, and $3\cdot4=12\equiv1\pmod{11}$. Both resulting coefficients are invertible, so the residue pair is unique; all integer solutions are $x=9+11s,y=9+11t$ with $s,t\in\mathbb Z$.
 
 ## Connections
 

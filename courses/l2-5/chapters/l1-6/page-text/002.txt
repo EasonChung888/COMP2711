@@ -1,0 +1,17 @@
+Permutations
+In how many ways can we select 
+three
+ students from a group of 
+five
+ students to stand in line for a photo?
+Note:
+ 
+the order in which the students are selected matters
+ because it changes the order in the photo
+Solution:
+There are 5 ways to select the first student to stand at the start of the line. Afterwards, there are 4 ways to select the student to stand second in the line from the remaining 4 students. Finally, there are 3 ways to select the third student in line. By the 
+product rule
+, there are a total of 
+ ways
+ 
+2

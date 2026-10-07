@@ -38,26 +38,31 @@ Simplify the closed-form expression using the big $\Theta$ notation.
 
 Shared context: [[STEM-2013-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-闭式已显示两个幂次。比较指数 $2$ 与 $\log_2 3$，而不是只看系数 $4$ 和 $-3$。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+Iterating the recurrence, we get:
+$$\begin{aligned}
+T(n)&=T(2^j)\\
+&=3T(2^{j-1})+2^{2j}\\
+&=3(3T(2^{j-2})+2^{2(j-1)})+2^{2j}\\
+&=3^2T(2^{j-2})+\frac34 2^{2j}+2^{2j}\\
+&=3^2(3T(2^{j-3})+2^{2(j-2)})+\frac34 2^{2j}+2^{2j}\\
+&=3^3T(2^{j-3})+(\frac34)^2 2^{2j}+\frac34 2^{2j}+2^{2j}\\
+&\quad\vdots\\
+&=3^jT(1)+(\frac34)^{j-1}2^{2j}+\cdots+\frac34 2^{2j}+2^{2j}\\
+&=3^j+2^{2j}\frac{1-(3/4)^j}{1-3/4}\\
+&=3^j+4\cdot2^{2j}-4\cdot3^j=4\cdot2^{2j}-3\cdot3^j\\
+&=4n^2-3n^{\log_2 3}\\
+&=\Theta(n^2).
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=\Theta(n^2)$.
 
 **Derivation/proof.** From $T(n)=4n^2-3n^{\log_2 3}$ and $\log_2 3<2$, the $n^2$ term asymptotically dominates $n^{\log_2 3}$; the positive leading coefficient establishes $\Theta(n^2)$. Explicitly, $n^2\le4n^2-3n^{\log_2 3}\le4n^2$ for $n\ge1$.
-
-### 中文解答
-
-**推导。** 由闭式 $T(n)=4n^2-3n^{\log_2 3}$，且 $\log_2 3<2$，对 $n\ge1$ 有 $n^{\log_2 3}\le n^2$。因此 $n^2\le4n^2-3n^{\log_2 3}\le4n^2$。上下界常数可取 1 与 4，所以 $T(n)=\Theta(n^2)$，负的低阶项不会抵消二次主项。
-
-## Common Mistakes
-
-- 写成 $\Theta(n^{\log_2 3})$。
-- 把 $O(n^2)$ 当作足以回答 $\Theta$。
 
 ## Connections
 

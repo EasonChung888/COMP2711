@@ -41,26 +41,21 @@ There is no need to justify your answers in this problem.
 
 Shared context: [[STEM-2015-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-将总销量写成六十个指示变量之和，每个变量在该分钟售出时为一。每个指示变量的期望就是售出概率 $pq$，利用线性性相加。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=5|PDF physical page 5]].
 
-## Detailed Solution
+This is an independent Bernoulli trials process with success probability $pq$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+(c) $E(X)=60pq$.
+
+## Supplementary Explanation
 
 **Answer.** $E(X)=60pq$.
 
 **Derivation/proof.** Let $I_t$ indicate a sale in minute $t$. Then $X=\sum_{t=1}^{60}I_t$ and $E(I_t)=P(I_t=1)=pq$. Linearity gives $E(X)=\sum_{t=1}^{60}pq=60pq$.
 
-### 中文解答
-
-**推导。** 令 $I_t$ 表示第 t 分钟是否售出一袋。顾客到达概率为 p，到达后购买的条件概率为 q，因此乘法公式给 $P(I_t=1)=pq$，不需把到达与购买误作独立事件。总销量 $X=\sum_{t=1}^{60}I_t$，每项期望 $E(I_t)=pq$。期望线性性给 $E(X)=\sum_{t=1}^{60}pq=60pq$，即使不同分钟相关也成立。源卷在其他问的独立试验模型不能作为未打印在题干中的额外假设；此结论本身不依赖它。
-
-## Common Mistakes
-
-- 把六十次成功概率相乘，用于期望而非全成功事件。
-- 把顾客到达次数的期望 $60p$ 当成销量。
+The multiplication formula gives $P(I_t=1)=P(\text{arrival})P(\text{purchase}\mid\text{arrival})=pq$; arrival and purchase need not be independent. The expectation calculation remains valid even if different minutes are dependent. The source solution invokes an independent-trials model for the other parts; that additional assumption is unnecessary here.
 
 ## Connections
 

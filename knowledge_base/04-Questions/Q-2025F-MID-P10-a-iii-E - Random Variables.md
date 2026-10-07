@@ -42,24 +42,19 @@ The named Z calculation appears under answer label (iv), although the question i
 
 What are $E(Z)$?
 
-## 中文解析
+## Official Answer
 
-把一百项按正负各五十项分组，均值彼此抵消。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=22|physical PDF page 22]].
 
-## Detailed Solution
+> (iv) For $Z=X_1-X_2+X_3-\cdots+X_{99}-X_{100}$, there are $50$ positive terms and $50$ negative terms:
+> $$E(Z)=\sum_{i=1}^{50}E(X_{2i-1})-\sum_{i=1}^{50}E(X_{2i})=50\cdot3.5-50\cdot3.5=0.$$
+> $$\operatorname{var}(Z)=\sum_{i=1}^{50}\operatorname{var}(X_{2i-1})+\sum_{i=1}^{50}\operatorname{var}(X_{2i})=50\cdot\frac{17.5}{6}+50\cdot\frac{17.5}{6}=100\cdot\frac{17.5}{6}=\frac{1750}{6}.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $E(Z)=0$.
 
-**答案。** 本原子项求 $E(Z)=0$。
-
-**推导。** 线性性给出 $E(Z)=E(X_1)-E(X_2)+\cdots+E(X_{99})-E(X_{100})$。每次公平骰子期望都是 $7/2$，奇数下标有五十个、偶数下标也有五十个，故 $E(Z)=50(7/2)-50(7/2)=0$。这也等于五十个相邻差 $E(X_{2j-1}-X_{2j})$ 的和，每个差的均值为零。
-
-## Common Mistakes
-
-- 最后一项是一百项且为负，正负项数相等，不能错数为五十一与四十九。
-- 一百次投掷的期望不是一百再除六，应先求每次均值再线性组合。
+**Derivation/proof.** Linearity gives $E(Z)=E(X_1)-E(X_2)+\cdots+E(X_{99})-E(X_{100})$. There are fifty positive and fifty negative terms, each with mean 7/2, so $E(Z)=50(7/2)-50(7/2)=0$. Equivalently, sum fifty adjacent differences $E(X_{2j-1}-X_{2j})$, each with mean zero.
 
 ## Connections
 

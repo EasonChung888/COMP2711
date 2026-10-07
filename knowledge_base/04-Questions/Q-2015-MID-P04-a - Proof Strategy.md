@@ -39,26 +39,17 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-将两个有理数分别写成整数之比。相乘后分子、分母仍为整数，且两个非零分母的乘积不为零，恰好满足有理数定义。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(a) Since $x$ and $y$ are rational, they can be written as $x=\frac{a_1}{b_1}$ and $y=\frac{a_2}{b_2}$, where $a_1,b_1,a_1$ and $b_2$ are integers. Then we have $xy=\frac{a_1a_2}{b_1b_2}$. Since integers are closed under multiplication operations, $a_1a_2$ and $b_1b_2$ are both integers. Therefore $xy$ is rational.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $xy$ is rational.
 
 **Derivation/proof.** Write $x=a/b$ and $y=c/d$ with integers $a,b,c,d$ and $b,d\ne0$. Then $xy=ac/(bd)$. Closure of integers under multiplication gives integer $ac,bd$, and $bd\ne0$. This is a rational representation of $xy$.
-
-### 中文解答
-
-**推导。** 由有理数定义写 $x=a/b,y=c/d$，其中 a、b、c、d 为整数，$b,d\ne0$。相乘得 $xy=ac/(bd)$。整数乘法封闭使 ac、bd 都是整数，且两个非零实数之积非零，所以 $bd\ne0$。这给出 xy 的合法整数比表示，直接证明它有理。
-
-## Common Mistakes
-
-- 未说明分母乘积非零。
-- 把证明目标本身“有理数乘法封闭”直接当作未经说明的前提。
 
 ## Connections
 

@@ -39,34 +39,23 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2023_Midte
 Prove the following identity using combinatorial arguments:
 $$\sum_{i=0}^n\binom ni^2=\binom{2n}{n}.$$
 
-## 中文解析
+## Official Answer
 
-右侧表示从两组共二 n 个元素中选 n 个。左侧可以按第一组选了 i 个分类，第二组必选 n−i 个，再用 binomial symmetry 将第二个组合数改写为同样的下标 i。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+> It is equivalent to proving the identity $\sum_{i=0}^n\binom ni\cdot\binom n{n-i}=\binom{2n}n$.
+> Let us consider a set of $2n$ elements, and we want to select $n$ elements from this set. The right-hand side (RHS) of the equation directly gives us the total number of ways to do this, which is $\binom{2n}n$.
+> Now, let us focus on the left-hand side (LHS). We divide the set into two parts, each containing $n$ items. We then select items for each part. If we select $i$ items for the first part, we must select $n-i$ items for the second part. Therefore, there are $\binom ni\cdot\binom n{n-i}$ ways to make these selections.
+> To consider all possible values of $i$, we sum up these quantities for $i$ ranging from 0 to $n$. This gives us the sum $\sum_{i=0}^n\binom ni\cdot\binom n{n-i}$.
+> Hence, both the RHS and LHS represent the number of ways to select $n$ elements from a set of $2n$ elements, and thus, the equation holds true.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 两侧均计算同一集合的 $n$ 元子集数，因此恒等式成立。
-
-**推导。**
-
-1. 将 $2n$ 个不同元素分成有标签的两组 $A,B$，每组 $n$ 个。直接选 $n$ 个元素组成集合 $S$，共有 $\binom{2n}{n}$ 种，这是右侧。
-2. 另一种方式按 $i=|S\cap A|$ 分类。从 $A$ 选 $i$ 个有 $\binom ni$ 种，从 $B$ 选剩下 $n-i$ 个有 $\binom n{n-i}$ 种，所以固定 $i$ 时相乘。$i=0,\ldots,n$ 的类互斥且覆盖全部选择，每个 $S$ 只落入一个类。
-3. 因 binomial symmetry，$\binom n{n-i}=\binom ni$，求和得到 $\sum_{i=0}^n\binom ni^2$。两种方法一一计数同一批对象，故左侧等于右侧；这给出了题目要求的 combinatorial argument，而非代数展开。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** Both sides count the same $n$-element subsets of a fixed $2n$-element set.
 
 **Derivation/proof.** Split a fixed set of $2n$ distinct elements into disjoint labeled groups A and B, each of size n. Directly choosing an n-element subset gives $\binom{2n}{n}$. Alternatively, classify a chosen subset by $i=|S\cap A|$. There are $\binom ni$ choices from A and $\binom n{n-i}$ from B. The classes $i=0,\ldots,n$ are disjoint and exhaustive, and $\binom n{n-i}=\binom ni$. Summing yields the left side. Every subset appears once in each counting method, proving the identity.
 
-## Common Mistakes
-
-- 两个组若有交集，乘法计数将不再描述同一集合。 / Use disjoint labeled groups.
-- 只写代数恒等变换不满足 combinatorial argument 的要求。 / Explain the objects being counted.
+For fixed $i$, multiply the two choices. The classes are disjoint and cover every selection.
 
 ## Connections
 

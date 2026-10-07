@@ -1,0 +1,27 @@
+Exercise
+ on Seating Arrangement
+n
+ people sit down at a round table. We consider two seating arrangements equivalent if each person has the same person to the right in both seating charts. How many different seating charts are there?
+Solution
+According to previous slide, each arrangement corresponds to a set of 
+n
+ equivalent arrangements. Thus, I divide the total number of permutations 
+n
+! of 
+n
+ objects by 
+n
+:  
+n
+!/
+n 
+= (
+n
+-1)!
+Textbook Solution
+In a circular arrangement, we first have to fix the position of the first person, which can be performed only in 
+one way 
+(since every position is considered the same when no one is already sitting in any of the seats).  Once we have fixed the position of the first person, we can arrange the remaining persons in 
+ ways. 
+ 
+11

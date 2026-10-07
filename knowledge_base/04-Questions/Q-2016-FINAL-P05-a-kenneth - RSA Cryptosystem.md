@@ -40,26 +40,27 @@ Atomic focus [editorial]: Kenneth’s secret key; Raymond’s is a separate atom
 
 Shared context: [[STEM-2016-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-肯尼斯的模数分解为十一乘十七，故秘密指数要在模一百六十下求十三的逆元。用欧几里得回代得到三十七，并乘回公开指数核对。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(a) Yes.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+Consider Kenneth's case.
+
+Note that $11\times17=187$.
+
+Thus, $p=11$ and $q=17$.
+
+So, $T=(11-1)(17-1)=10\times16=160$
+
+Secret key of Kenneth = the multiplicative inverse of 13 in $Z_{160}=37$
+
+## Supplementary Explanation
 
 **Answer.** Yes. Kenneth's secret exponent is $d_K=37$ (private key $(37,187)$).
 
 **Derivation/proof.** Since $187=11\cdot17$, $\varphi(187)=10\cdot16=160$. Euclid gives $160=12\cdot13+4$, $13=3\cdot4+1$. Back substitution yields $1=37\cdot13-3\cdot160$, so $13^{-1}\equiv37\pmod{160}$. Directly, $13\cdot37=481=3\cdot160+1$.
-
-### 中文解答
-
-**推导。** 分解 $187=11\cdot17$，故 $\varphi(187)=10\cdot16=160$。求13模160的逆元：$160=12\cdot13+4$，$13=3\cdot4+1$。回代 $1=13-3(160-12\cdot13)=37\cdot13-3\cdot160$，所以 $d_K=37$，私钥(37,187)。验算 $13\cdot37=481=3\cdot160+1$，确为逆元。
-
-## Common Mistakes
-
-- 用 Raymond 的欧拉函数二百一十六。
-- 把素因子乘积直接当成欧拉函数。
 
 ## Connections
 

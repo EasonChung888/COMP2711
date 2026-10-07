@@ -1,0 +1,18 @@
+Vandermonde's
+ Identity
+Theorem (
+Vandermonde's
+ identity)
+Let 
+, and
+ 
+ 
+be integers with 
+ and 
+. Then
+ 
+Discovered by Zhu 
+Shijie
+ in 1303.
+ 
+35

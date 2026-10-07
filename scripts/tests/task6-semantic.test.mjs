@@ -83,7 +83,7 @@ test('Task 6 explicit quarantine and answer provenance sets cannot silently chan
  for(const [id,reason,page] of [['Q-2021-MID-P01-e',/y=0.*undefined/s,1],['Q-2022-FINAL2-P01',/parallel edges.*simple/s,1]]){const r=byId.get(id);assert.equal(r.note_path,null);assert.equal(r.source_page,page);assert.match(r.exclusion_reason,reason);assert.ok(!readdirSync('knowledge_base/04-Questions').some(f=>f.startsWith(id+' - ')));}
  const derived=['Q-2021-MID-BONUS','Q-2021-FINAL1-P05'];
  assert.deepEqual(admitted.filter(r=>props(r.id).answer_source==='derived').map(r=>r.id).sort(),derived.sort());
- for(const r of admitted){const p=props(r.id);assert.equal(p.answer_source,derived.includes(r.id)?'derived':'official');assert.match(section(read(r.id),'Detailed Solution'),/Provenance: (?:published official|independently derived)/);}
+ for(const r of admitted){const p=props(r.id);assert.equal(p.answer_source,derived.includes(r.id)?'derived':'official');}
  assert.match(read('Q-2021-MID-BONUS'),/outside \(0,1\).*1\/2/s);
  assert.match(read('Q-2021-FINAL1-P05'),/Soundness:.*Completeness:/s);
  assert.equal(rows.filter(r=>r.status==='out-of-scope').length,0);
@@ -91,12 +91,12 @@ test('Task 6 explicit quarantine and answer provenance sets cannot silently chan
  assert.equal(admitted.filter(r=>props(r.id).answer_source==='official').length,admitted.length-derived.length);
 });
 
-test('Task 6 prompts, independent solutions, Chinese reasoning and difficulties are substantive',()=>{
+test('Task 6 prompts, independent solutions, English reasoning and difficulties are substantive',()=>{
  const bases=new Set(),works=new Set(),difficulties=new Set(),types=new Set();
  for(const r of admitted){const text=read(r.id),p=props(r.id);assert.ok(!noControls.test(text),r.id);assert.ok(!noGeneric.test(text),r.id);assert.equal(p.term,'spring');assert.equal(p.verification_status,'verified');
-  assert.ok(section(text,'Question').length>5,r.id);const zh=section(text,'中文解析'),work=section(text,'Detailed Solution');assert.ok((zh.match(/[\u3400-\u9fff]/g)??[]).length>=40,r.id);assert.ok(work.length>=280,r.id);assert.match(work,/\*\*Answer\.\*\* /);assert.match(work,/\*\*Derivation\/proof\.\*\* /);assert.ok(!works.has(work),r.id);works.add(work);
-  assert.ok(p.difficulty_basis.length>=30,r.id);assert.ok(!bases.has(p.difficulty_basis),r.id);bases.add(p.difficulty_basis);difficulties.add(p.difficulty);p.question_types.forEach(t=>types.add(t));assert.equal((section(text,'Common Mistakes').match(/^- /gm)??[]).length,2,r.id);
-  const headers=[...text.matchAll(/^## (.+)$/gm)].map(m=>m[1]);assert.deepEqual(headers,['Source','Question','中文解析','Detailed Solution','Common Mistakes','Connections']);assert.ok(text.includes(`![[${p.source_pdf}#page=${p.source_page}]]`));
+  assert.ok(section(text,'Question').length>5,r.id);const work=section(text,'Supplementary Explanation');assert.ok(work.length>=280,r.id);assert.match(work,/\*\*Answer\.\*\* /);assert.match(work,/\*\*Derivation\/proof\.\*\* /);assert.ok(!works.has(work),r.id);works.add(work);
+  assert.ok(p.difficulty_basis.length>=30,r.id);assert.ok(!bases.has(p.difficulty_basis),r.id);bases.add(p.difficulty_basis);difficulties.add(p.difficulty);p.question_types.forEach(t=>types.add(t));
+  const headers=[...text.matchAll(/^## (.+)$/gm)].map(m=>m[1]);assert.deepEqual(headers,['Source','Question','Official Answer','Supplementary Explanation','Connections']);assert.ok(text.includes(`![[${p.source_pdf}#page=${p.source_page}]]`));
  }
  assert.deepEqual([...difficulties].sort(),[1,2,3,4]);assert.ok(types.has('proof')&&types.has('construction')&&types.has('algorithm-analysis'));
  // The only source-scoped modeling atom (2021 Final2 P04-b) is now quarantined for unspecified question weights.
@@ -170,7 +170,7 @@ test('Task 6 Stems, figures, teaching links and Question bodies have no contamin
  const vaultFiles=['knowledge_base/01-Topics','knowledge_base/02-Methods','knowledge_base/03-Papers','knowledge_base/04-Questions','knowledge_base/06-Audit',...(existsSync('knowledge_base/05-Views')?['knowledge_base/05-Views']:[])].flatMap(walk),known=new Set(vaultFiles.map(p=>basename(p,'.md')));
  const scopedStems=walk('knowledge_base/04-Questions/Stems').filter(p=>/STEM-202[012]-/.test(p));const touched=new Set();
  for(const r of admitted){const p=props(r.id);for(const link of [...p.concepts,...p.methods]){const name=link.slice(2,-2);const target=vaultFiles.find(p=>basename(p,'.md')===name);assert.ok(target,name);touched.add(target);}const text=read(r.id);for(const m of text.matchAll(/\[\[([^\]|#]+)(?:[^\]]*)\]\]/g)){const target=m[1];if(target.endsWith('.pdf'))assert.ok(existsSync(target),target);else assert.ok(known.has(basename(target,'.md')),`${r.id}: ${target}`);}}
- for(const p of scopedStems){const text=readFileSync(p,'utf8'),fm=parseFrontmatter(text).properties;assert.ok(sources.has(fm.source_pdf));assert.ok(!noControls.test(text));assert.ok(!noGeneric.test(text));assert.ok(!/^## (?:Answer|Detailed Solution)|\*\*Answer\./m.test(text));assert.ok(admitted.some(r=>read(r.id).includes(`[[${basename(p,'.md')}]]`)),p);for(const m of text.matchAll(/!\[\[([^\]#]+\.png)\]\]/g))assert.ok(existsSync('knowledge_base/04-Questions/Figures/'+m[1]),m[1]);}
+ for(const p of scopedStems){const text=readFileSync(p,'utf8'),fm=parseFrontmatter(text).properties;assert.ok(sources.has(fm.source_pdf));assert.ok(!noControls.test(text));assert.ok(!noGeneric.test(text));assert.ok(!/^## (?:Answer|Official Answer|Supplementary Explanation|Detailed Solution)|\*\*Answer\./m.test(text));assert.ok(admitted.some(r=>read(r.id).includes(`[[${basename(p,'.md')}]]`)),p);for(const m of text.matchAll(/!\[\[([^\]#]+\.png)\]\]/g))assert.ok(existsSync('knowledge_base/04-Questions/Figures/'+m[1]),m[1]);}
  for(const p of touched){const text=readFileSync(p,'utf8');assert.ok(!noControls.test(text),p);assert.ok(!noGeneric.test(text),p);assert.match(text,/[\u3400-\u9fff]/);assert.ok(text.length>250,p);for(const m of text.matchAll(/\[\[([^\]|#]+)(?:[^\]]*)\]\]/g))assert.ok(known.has(basename(m[1],'.md')),`${p}: ${m[1]}`);}
  const disk=walk('knowledge_base/04-Questions').filter(p=>/\/Q-202[012]-/.test(p));assert.deepEqual(disk.sort(),admitted.map(r=>r.note_path).sort());
  const figures=walk('knowledge_base/04-Questions/Figures').filter(p=>/202[012]-/.test(p));assert.equal(figures.length,5);for(const f of figures)assert.ok(scopedStems.some(p=>readFileSync(p,'utf8').includes(`![[${basename(f)}]]`)),f);
@@ -223,14 +223,14 @@ test('Task 6 fix 1 every audited sibling prerequisite is linked with locally suf
   'Q-2020-FINAL2-P06-e':['$10D_9$','impossible','$8!$','union'],
  };
  for(const [id,fragments] of Object.entries(exact))for(const fragment of fragments)assert.ok(section(read(id),'Source').includes(fragment),`${id}: ${fragment}`);
- for(const r of admitted){const q=section(read(r.id),'Question'),w=section(read(r.id),'Detailed Solution');if(/If \(a\)|Redo \([ab]\)|Use induction to prove its|Satisfying any of the above|Then show a step-by-step|first three statements|answer of \(a\)|part \(a\)/.test(q)||/preceding divisor result|The formula gives/.test(w))assert.ok(expected.has(r.id),r.id);}
+ for(const r of admitted){const q=section(read(r.id),'Question'),w=section(read(r.id),'Supplementary Explanation');if(/If \(a\)|Redo \([ab]\)|Use induction to prove its|Satisfying any of the above|Then show a step-by-step|first three statements|answer of \(a\)|part \(a\)/.test(q)||/preceding divisor result|The formula gives/.test(w))assert.ok(expected.has(r.id),r.id);}
 });
 
 test('Task 6 fix 1 attacker-chosen units admit the official RSA signature construction',()=>{
  const id='Q-2020-MID-P10',r=byId.get(id),p=props(id),text=read(id);
  assert.equal(r.status,'in-scope');assert.equal(r.exclusion_reason,null);assert.equal(p.answer_source,'official');assert.equal(p.source_page,5);assert.deepEqual(p.solution_page,[5]);assert.equal(p.marks,10);assert.deepEqual(p.question_types,['construction','proof']);
  assert.match(section(text,'Question'),/chosen by the attacker/);assert.ok(section(text,'Source').includes(String.raw`\gcd(r,n)=1`));
- assert.ok(section(text,'Detailed Solution').includes(String.raw`$st\equiv x^d=C\pmod n$`));assert.match(section(text,'中文解析'),/自己选择.*互质.*模 n 的逆元/s);
+ assert.ok(section(text,'Supplementary Explanation').includes(String.raw`$st\equiv x^d=C\pmod n$`));assert.match(section(text,'Supplementary Explanation'),/choos|chosen/i);assert.match(section(text,'Supplementary Explanation'),/coprime|relatively prime/i);assert.match(section(text,'Supplementary Explanation'),/inverse/i);
  assert.deepEqual(r.syllabus_evidence,p.subtopics.map(x=>x.slice(2,-2)));
  const gcd=(a,b)=>{while(b)[a,b]=[b,a%b];return a;};
  for(const [n,e,d,phi] of [[55,3,27,40],[33,3,7,20],[77,7,43,60]]){
@@ -245,7 +245,7 @@ test('Task 6 fix 1 attacker-chosen units admit the official RSA signature constr
 test('Task 6 fix 1 official CRT construction proves the stronger consecutive nontrivial-square theorem',()=>{
  const id='Q-2020-MID-BONUS',r=byId.get(id),p=props(id),text=read(id);
  assert.equal(r.status,'in-scope');assert.equal(r.exclusion_reason,null);assert.equal(p.answer_source,'official');assert.equal(p.source_page,5);assert.deepEqual(p.solution_page,[5]);assert.equal(p.marks,10);assert.deepEqual(p.question_types,['proof','construction']);
- assert.match(section(text,'Question'),/15 is not a quasi-square number/);assert.match(section(text,'Source'),/square 1.*inconsistent.*stronger/s);assert.ok(section(text,'Detailed Solution').includes(String.raw`$x\equiv-i\pmod{p_i^2}$`));assert.match(section(text,'中文解析'),/两两互质.*中国剩余定理.*大于一/s);assert.deepEqual(r.syllabus_evidence,p.subtopics.map(x=>x.slice(2,-2)));
+ assert.match(section(text,'Question'),/15 is not a quasi-square number/);assert.match(section(text,'Source'),/square 1.*inconsistent.*stronger/s);assert.ok(section(text,'Supplementary Explanation').includes(String.raw`$x\equiv-i\pmod{p_i^2}$`));assert.match(section(text,'Supplementary Explanation'),/pairwise coprime/i);assert.match(section(text,'Supplementary Explanation'),/Chinese remainder theorem|CRT/i);assert.match(section(text,'Supplementary Explanation'),/greater than (?:one|1)|>1/i);assert.deepEqual(r.syllabus_evidence,p.subtopics.map(x=>x.slice(2,-2)));
  const primes=[2n,3n,5n,7n,11n,13n,17n,19n];let x=0n,M=1n;
  for(let i=1;i<=primes.length;i++){const modulus=primes[i-1]**2n,target=(modulus-BigInt(i)%modulus)%modulus;while(x%modulus!==target)x+=M;M*=modulus;x%=M;for(let j=1;j<=i;j++){assert.equal((x+BigInt(j))%(primes[j-1]**2n),0n);assert.ok(x+BigInt(j)>0n);assert.ok(primes[j-1]**2n>1n);}if(i===3)assert.equal(x,547n);}
  assert.equal(548,4*137);assert.equal(549,9*61);assert.equal(550,25*22);

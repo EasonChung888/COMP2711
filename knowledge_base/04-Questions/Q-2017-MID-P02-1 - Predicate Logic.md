@@ -37,26 +37,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-midterm
 
 Shared context: [[STEM-2017-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-所有儿童都善良是对每个人进行条件判断：如果他是儿童，那么他善良。不是断言所有人既是儿童又善良，因此要用蕴含而非合取，全称量词放在整个条件句外面。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$\forall x(C(x)\to K(x))$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\forall x(C(x)\to K(x))$.
 
 **Derivation/proof.** For each person $x$, being a child is a sufficient condition for being kind. Quantifying this implication over all people captures “all children.” For a nonchild, the implication is automatically true, which is correct because the sentence says nothing about that person.
-
-### 中文解答
-
-**推导。** 任取一个人 $x$，“是儿童”写成 $C(x)$，“善良”写成 $K(x)$。原句要求凡满足前者者都满足后者，因此写作 $\forall x(C(x)\to K(x))$。非儿童时前件为假，条件自动成立，正好表示原句不限制非儿童；合取式则会误称人人都是儿童。
-
-## Common Mistakes
-
-- 用合取声称所有人都是儿童。
-- 反向写成善良者都是儿童。
 
 ## Connections
 

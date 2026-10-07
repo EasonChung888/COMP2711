@@ -39,26 +39,17 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先限定讨论富有的人，再表达“如果他著名，那么他成功”。这形成两层蕴含；内层的 if 后条件是著名，不能倒写成成功推出著名。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=8|PDF physical page 8]].
 
-## Detailed Solution
+(b) $\forall x\in U(rich(x)\to(famous(x)\to successful(x)))$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\forall x\in U(rich(x)\to(famous(x)\to successful(x)))$.
 
 **Derivation/proof.** For each person $x$, being rich requires the conditional assertion “if famous, then successful.” Thus $rich(x)$ is the outer antecedent and $famous(x)\to successful(x)$ its consequent.
-
-### 中文解答
-
-**推导。** 对任意人 x，先以 $rich(x)$ 限定句中的富有的人。所断言的内容是“若著名，则成功”，即 $famous(x)\to successful(x)$。把该条件句作为外层后件，得到 $\forall x\in U(rich(x)\to(famous(x)\to successful(x)))$。这里 if 后的著名是内层前件，不能倒转。
-
-## Common Mistakes
-
-- 把“成功 if 著名”的蕴含方向写反。
-- 写成富有直接推出成功，丢失著名这一条件。
 
 ## Connections
 

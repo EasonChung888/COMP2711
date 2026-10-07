@@ -42,24 +42,20 @@ $\{(adb),(bda),(adc),(cda),(bdc),(cdb)\}$.
 
 ![[knowledge_base/06-Audit/figures/2025S-FINAL-P12-c-star.png]]
 
-## 中文解析
+## Official Answer
 
-每条长二路径唯一确定中点，起终点是这个中点的两个不同邻居。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+(c) Note that each path consists of 3 nodes. By assuming each node $i$ to be the middle node, the number of possible ordered paths is equal to the number of ways to choose an ordered pair of distinct neighbors of $i$. Since $i$ has $d_i$ neighbors, the number of ordered pairs of distinct neighbors is $d_i(d_i-1)$. So the answer to the question is:
+$$\sum_{i=1}^n d_i(d_i-1)$$
+Also accept:
+$$2\sum_{i=1}^n\binom{d_i}{2}$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\sum_{i=1}^n d_i(d_i-1)$.
 
-**答案。** $\sum_{i=1}^n d_i(d_i-1)$。
-
-**推导。** 固定中点 $i$，第一个邻居即起点有 $d_i$ 种选法；终点必须不同于起点，因此有 $d_i-1$ 种选法。得到以 $i$ 为中点的 $d_i(d_i-1)$ 条有序路径。每条长度二路径只有一个中点，所以对 $i$ 求和没有重复，答案为 $\sum_{i=1}^n d_i(d_i-1)$。示例中中心 $d$ 度数三，其他点度数一，计数为 $3\cdot2=6$，正好对应题中六个有序三元组。
-
-## Common Mistakes
-
-- 不能用 $d_i^2$，它会计入起点与终点相同的回走。
-- 路径有方向顺序，$(adb)$ 与 $(bda)$ 分开计算，不能最后再除以二。
+**Derivation/proof.** Fix middle vertex i. There are $d_i$ choices for the starting neighbor and $d_i-1$ choices for a different ending neighbor, giving $d_i(d_i-1)$ ordered paths through i. Every length-two path has exactly one middle vertex, so summing over i does not duplicate any ordered path. In the example, the center has degree three and every other vertex degree one. The count is $3\cdot2=6$, matching the six listed ordered triples.
 
 ## Connections
 

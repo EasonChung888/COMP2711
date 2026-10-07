@@ -38,26 +38,33 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P04-b - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-左边底数正好是八十九的两倍，余数为零，不能套用要求互素的费马结论。右边先把底数及加数取模，再对非零底数按九十六约化指数，得到余数一。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=8|PDF physical page 8]]; [[knowledge_base/past_paper/2016-final.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(b) (i) No.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8, 9. The Chinese derivation expands the reasoning.
+Consider LHS.
+$$\begin{aligned}178^{88}\bmod89&=(178\bmod89)^{88}\bmod89\\&=0^{88}\bmod89\\&=0\end{aligned}$$
+Consider RHS.
+$$\begin{aligned}
+&(401^{3,243,554}+1,197,491)\bmod97\\
+&=[((401\bmod97)^{3,243,554}\bmod97)+(1,197,491\bmod97)]\bmod97\\
+&=[(13^{3,243,554}\bmod97)+26]\bmod97\\
+&=[(13^{3,243,554\bmod(97-1)}\bmod97)+26]\bmod97\\
+&\qquad\text{(By Fermat's Little Theorem)}\\
+&=[(13^2\bmod97)+26]\bmod97\\
+&=(72+26)\bmod97\\&=1
+\end{aligned}$$
+Thus, LHS is not equal to RHS.
+
+## Supplementary Explanation
 
 **Answer.** False: the left side is $0$ and the right side is $1$.
 
 **Derivation/proof.** Because $178\equiv0\pmod{89}$, the left side is 0. For the right side, $401\equiv13$, $1,197,491\equiv26\pmod{97}$, and $3,243,554\equiv2\pmod{96}$. As 97 is prime and $13\not\equiv0$, Fermat gives $13^{3,243,554}\equiv13^2\equiv72\pmod{97}$. The right residue is $(72+26)\bmod97=1$, which differs from 0.
 
-### 中文解答
-
-**推导。** 左边178为89的两倍，所以 $178^{88}\bmod89=0$，不能用非零底数的费马结论。右边先约化 $401\equiv13$、$1,197,491\equiv26\pmod{97}$；97素且13非零，指数可模96，$3,243,554\bmod96=2$。故右余数 $13^2+26\equiv72+26\equiv1\pmod{97}$。左零右一，不相等，命题为假。
-
-## Common Mistakes
-
-- 忽略互素前提，把左边也判为一。
-- 将指数对九十七而不是九十六约化。
+The final right-side reduction is $72+26\equiv1\pmod{97}$.
 
 ## Connections
 

@@ -41,24 +41,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (vii) The set of binary strings of infinite length such that it has exactly three “1”'s is countable infinite.
 
-## 中文解析
+## Official Answer
 
-恰三个一的位置构成递增自然数三元组，可按最大位置分层枚举。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) (vii) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True.
 
-**答案。** True。
-
-**推导。** 每个这样的串由三个一所在的位置唯一确定，写成 $i<j<k$ 的正整数三元组。可以按最大位置 $k=3,4,\ldots$ 分层枚举：固定 $k$ 时前两个位置只有 $\binom{k-1}2$ 种，有限；可数个有限层合起来可数。位置三元组 $(1,2,k)$ 随 $k\ge3$ 给出无限多个不同串，因此整个集合为可数无限。
-
-## Common Mistakes
-
-- 无限长度不一定导致不可数；固定三个一使每个对象只有有限位置参数。
-- 要求恰好三个一，不能把含至少三个一的所有无限串也计入。
+**Derivation/proof.** Each string is uniquely determined by the three one-positions $i<j<k$. Enumerate by maximum position $k=3,4,\ldots$; for fixed k there are only $\binom{k-1}2$ choices for the other two positions, a finite layer. A countable union of finite layers is countable. The triples $(1,2,k)$ for $k\ge3$ provide infinitely many distinct strings, so the set is countably infinite.
 
 ## Connections
 

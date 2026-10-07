@@ -1,0 +1,3605 @@
+[
+  {
+    "id": "Q-2024F-FINAL-P09-b-iii",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-b-iii - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-b-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 24,
+      "question_number": "9(b)(iii)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Verify the triangular closed form with n=1 base and substitute T(k)=k(k+1)/2 into the row-addition recurrence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        24
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2024F-FINAL-P09-b-i - Recurrence Relations]]",
+        "[[Q-2024F-FINAL-P09-b-ii - Recurrence Relations]]"
+      ]
+    },
+    "sha256": "7ccf170a7f144e23b392177d6bd12e559e29178500955ba3e1a112df2a739610"
+  },
+  {
+    "id": "Q-2024S-FINAL-P01-N",
+    "path": "knowledge_base/04-Questions/Q-2024S-FINAL-P01-N - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2024S-FINAL-P01-N",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2024_Final.pdf",
+      "source_page": 1,
+      "question_number": "1",
+      "year": 2024,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Locate an explicit integer threshold with 2^8>3(8)^2, then connect to the separately imported induction proof.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ],
+      "marks": 3,
+      "related_questions": [
+        "[[Q-2024S-FINAL-P01-proof - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "c7b3656d8717798d0c26722a5544806aa3f5769b8870705b4731ed9a07e6f6f2"
+  },
+  {
+    "id": "Q-2022-FINAL1-P04",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL1-P04 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2022-FINAL1-P04",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "4",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Number Theory - 数论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Modular Congruence - 同余]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Modular Arithmetic Method - 模运算方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Multiply the inductive expression by five and isolate a remainder with factor twelve.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 8
+    },
+    "sha256": "0b2724c4ac4b4749c20ac38c4b583c7e3a3f7fe7cf605eb8826041f5701a8042"
+  },
+  {
+    "id": "Q-2021-FINAL1-P04-a",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P04-a - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2021-FINAL1-P04-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "4(a)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The rule is restricted to positive premises and cannot be applied at the only seed zero.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 2
+    },
+    "sha256": "9d0de7fe8421174f54a41e2694d0c7c01252d9d679780fb5563b224f4660f331"
+  },
+  {
+    "id": "Q-2021-FINAL1-P04-b",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P04-b - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2021-FINAL1-P04-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "4(b)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Repeated doubling from four yields precisely powers of two with exponent at least two.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 2
+    },
+    "sha256": "cba1639b60b95abbafdbd4b57b4343e9fc9eb72a06e623be3895dec06ada6143"
+  },
+  {
+    "id": "Q-2021-FINAL1-P04-c",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P04-c - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2021-FINAL1-P04-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "4(c)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "A two-consecutive-premise rule cannot fire from only P(1).",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 2
+    },
+    "sha256": "806355a7de2836396c53f87ba358bf09f63391c71af6840be06acb0f7e2d03d5"
+  },
+  {
+    "id": "Q-2021-FINAL1-P04-d",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P04-d - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2021-FINAL1-P04-d",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "4(d)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Strong induction grows the interval starting at two without forcing lower or negative integers.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 2
+    },
+    "sha256": "b3ef3f11f735d4ed5d92021386308bdad98bfe4507a46a477fec607829c2effa"
+  },
+  {
+    "id": "Q-2016-FINAL-P07-c",
+    "path": "knowledge_base/04-Questions/Q-2016-FINAL-P07-c - Recurrence Relations.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2016-FINAL-P07-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2016 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13,
+        14
+      ],
+      "question_number": "7(c)",
+      "year": 2016,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 3,
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Substituting the n minus one closed form into the recurrence proves the next value after checking the base.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "f344514fb73c97d59c20bb874a548d908b443191d5763bafc47590196db36eaf"
+  },
+  {
+    "id": "Q-2015-FINAL-P08-b",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P08-b - Recurrence Relations.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2015-FINAL-P08-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 14,
+      "question_number": "8(b)",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 6,
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The induction starts at zero and the successor step must include n equals one as well as larger indices.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "962e3205080b6b68783ea88efac53c85aba102a8563aad2df839603e195076ca"
+  },
+  {
+    "id": "Q-2025F-FINAL-P09-b",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P09-b - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2025F-FINAL-P09-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 14,
+      "question_number": "9(b)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Induct on powers of four and use four to the logarithm of three to transform the lower-order term.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "solution_page": [
+        15,
+        16
+      ],
+      "verification_status": "verified",
+      "marks": 5,
+      "related_questions": [
+        "[[Q-2025F-FINAL-P09-a - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "a330f098f7bdc07b56f1d7c8e1ae1cba80970b241a7767ddcf79c0204f8435f0"
+  },
+  {
+    "id": "Q-2025F-FINAL-P10-iii",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P10-iii - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2025F-FINAL-P10-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 17,
+      "question_number": "10(iii)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Check the zero-day basis and substitute the exponential closed form into the next-day recurrence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        18
+      ],
+      "marks": 4,
+      "related_questions": [
+        "[[Q-2025F-FINAL-P10-i - Recurrence Relations]]",
+        "[[Q-2025F-FINAL-P10-ii - Recurrence Relations]]"
+      ]
+    },
+    "sha256": "acd62097483308b6ca5cdcaf400be5f1184c4c7c4d9824857ccfd4781261982f"
+  },
+  {
+    "id": "Q-2024S-FINAL-P01-proof",
+    "path": "knowledge_base/04-Questions/Q-2024S-FINAL-P01-proof - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2024S-FINAL-P01-proof",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2024_Final.pdf",
+      "source_page": 1,
+      "question_number": "1",
+      "year": 2024,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Prove the n=8 base case and inductive inequality 2k^2>(k+1)^2 under k≥8 for the selected threshold.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ],
+      "related_questions": [
+        "[[Q-2024S-FINAL-P01-N - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "1751526365348d22a9aedde1476bc687b4b8a1ed4b2729af8ab17b76ed81065c"
+  },
+  {
+    "id": "Q-2024S-FINAL-P09-b",
+    "path": "knowledge_base/04-Questions/Q-2024S-FINAL-P09-b - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2024S-FINAL-P09-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2024_Final.pdf",
+      "source_page": 11,
+      "question_number": "9(b)",
+      "year": 2024,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]",
+        "[[Topic - Number Theory - 数论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Binomial Coefficients - 二项式系数]]",
+        "[[Modular Congruence - 同余]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Induct on a rather than p and isolate the two binomial endpoint terms while invoking 9(a) only internally.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        11,
+        12
+      ],
+      "marks": 10,
+      "related_questions": [
+        "[[Q-2024S-FINAL-P09-a - Binomial Coefficients]]"
+      ]
+    },
+    "sha256": "f3ff35c1e3141dcc43992f15e3acb7750adfb0c90f68d21366f9af44dacba4e7"
+  },
+  {
+    "id": "Q-2020-FINAL1-P05-a-proof",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P05-a-proof - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2020-FINAL1-P05-a-proof",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "5(a)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The induction step must preserve both factorial coefficient and negative exponent.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL1-P05-a-formula - Recurrence Relations]]",
+        "[[Q-2020-FINAL1-P05-b - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "528121b9f02c0e0087a0dc50e52cb1bc6a33e44805acc1b7931b049e6dd3234e"
+  },
+  {
+    "id": "Q-2018-FINAL-P02-c",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P02-c - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2018-FINAL-P02-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "question_number": "2(c)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Three base cases and Fibonacci monotonicity compare the different recurrence offsets.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "c5606db0c96e1d296ec5f2fa6087d90b5106322b949315f38203cc09ceaa0cf7"
+  },
+  {
+    "id": "Q-2018-FINAL-P03-a",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P03-a - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2018-FINAL-P03-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "question_number": "3(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recursive Structures - 递归结构]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Structural Induction Method - 结构归纳法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Closure under differences first gives zero and negatives, then induction builds positive and negative multiples.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "451c8ae06a2612481314831c5e2f9d26e068d45fa120e5f6001e22961c692268"
+  },
+  {
+    "id": "Q-2018-FINAL-P06-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P06-b - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2018-FINAL-P06-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        9
+      ],
+      "question_number": "6(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The construction preserves triangles but fails to cover every two-dense graph of the next order.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "db3cff6018865129ab509195b8e5f06f28478e2079950bc94bcfa1affed4423a"
+  },
+  {
+    "id": "Q-2017-FINAL-P08",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P08 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2017-FINAL-P08",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "question_number": "8",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Four consecutive base postages allow a strong-induction step adding one four-cent stamp.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 6
+    },
+    "sha256": "6d89b33196ff68064ed915a3898c5dfaf61107a477e2ba705ebcc2fdc3665295"
+  },
+  {
+    "id": "Q-2017-FINAL-P09",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P09 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2017-FINAL-P09",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "question_number": "9",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Multiplication by positive 1+r preserves the induction inequality and leaves a nonnegative square term.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 6
+    },
+    "sha256": "d25a75802084910cf56e7b4a33a8e07418ab78a7e1925c37561c128858c669a0"
+  },
+  {
+    "id": "Q-2015-FINAL-P10",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P10 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2015-FINAL-P10",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 17,
+      "question_number": "10",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 10,
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Number Theory - 数论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Modular Congruence - 同余]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Modular Arithmetic Method - 模运算方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Induction must handle both the old modulus range and the new modulus n introduced at each successor step.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "a72cac3fa5e0a7b49ae8edf7e9529bf16cc86af7e8101d13eefc95d1611dcfba"
+  },
+  {
+    "id": "Q-2014-FINAL-P07",
+    "path": "knowledge_base/04-Questions/Q-2014-FINAL-P07 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2014-FINAL-P07",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2014 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "question_number": "7",
+      "year": 2014,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 8,
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The induction proof must use the fixed divisor n while keeping the quotient and remainder bounds valid at the successor step.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "993e35d79a581fb8e409b03cbf4770a746d364ee7f46a79e30b1a88d2025fd45"
+  },
+  {
+    "id": "Q-2013-FINAL-P07",
+    "path": "knowledge_base/04-Questions/Q-2013-FINAL-P07 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2013-FINAL-P07",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2013 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 10,
+      "solution_page": [
+        10
+      ],
+      "question_number": "7",
+      "year": 2013,
+      "term": "spring",
+      "exam_type": "final",
+      "marks": 10,
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The induction step must convert powers of five and eleven modulo three while retaining the exact target expression.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "960fa391a630f89c2a1837424a914e6a4f080a60cc807c0af04e0e91b9ac3833"
+  },
+  {
+    "id": "Q-2013-FINAL-P09",
+    "path": "knowledge_base/04-Questions/Q-2013-FINAL-P09 - Asymptotic Complexity.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2013-FINAL-P09",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2013 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "question_number": "9",
+      "year": 2013,
+      "term": "spring",
+      "exam_type": "final",
+      "marks": 11,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The advanced-induction step must choose a constant large enough for the negative logarithmic term to absorb both the quadratic and linear additions.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "aa4d086eea54404630d687238602cdc23bc88dd6a122b951b51b1c10451dcc18"
+  },
+  {
+    "id": "Q-2025S-MID-P03",
+    "path": "knowledge_base/04-Questions/Q-2025S-MID-P03 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2025S-MID-P03",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "source_page": 5,
+      "question_number": "3",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Induct on one variable while quantifying over the other and derive predecessor coverage using induction.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ],
+      "marks": 12
+    },
+    "sha256": "37ba81a9e1fa30a00eea3abdc409637b9568eb4dcf2ffa5e802e5d0bc2d31186"
+  },
+  {
+    "id": "Q-2023F-FINAL-P08-a",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P08-a - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2023F-FINAL-P08-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 12,
+      "question_number": "8(a)",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Algorithm Correctness - 算法正确性]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Algorithm Trace and Invariant Method - 算法跟踪与不变量方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Strong induction succeeds after grouping a possible ninefold increase with the following digit deletion into a strictly decreasing macro-step.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        12,
+        13
+      ],
+      "marks": 7
+    },
+    "sha256": "78b52ab7c055306c674316945de55dd74485d73cafcd8b96c52cca382e7349e0"
+  },
+  {
+    "id": "Q-2021-FINAL1-P03",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P03 - Algorithm Correctness.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2021-FINAL1-P03",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 2,
+      "question_number": "3",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Algorithm Correctness - 算法正确性]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Algorithm Trace and Invariant Method - 算法跟踪与不变量方法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "construction",
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "One comparison eliminates a candidate, and two final checks per other worker certify the survivor.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        2,
+        3
+      ],
+      "marks": 10
+    },
+    "sha256": "9182e0fb78303e3d3c7a84a07790c40236b6134b9cfcb27bb8e78915f8b608a6"
+  },
+  {
+    "id": "Q-2020-FINAL1-P02",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P02 - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2020-FINAL1-P02",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "2",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Number Theory - 数论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Modular Congruence - 同余]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Modular Arithmetic Method - 模运算方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "The next leading digit is selected using the two possible residues of the existing divisible suffix.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1,
+        2
+      ],
+      "marks": 8
+    },
+    "sha256": "5a5fb3bf5ef4522f2da98731222f759d4a3e11966eb43e5df030a0c98b727fe1"
+  },
+  {
+    "id": "Q-2019-FINAL-BONUS-a",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-BONUS-a - Asymptotic Complexity.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2019-FINAL-BONUS-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "Bonus Problem(a)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "The hidden linear-bound constant increases when the recurrence is applied, so the induction does not preserve a uniform bound.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 3
+    },
+    "sha256": "d21aad5708ed92fbc18e1bc7a2842c504cce7d5d418d23ffc3e9b293bdf4cdf8"
+  },
+  {
+    "id": "Q-2019-FINAL-BONUS-b",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-BONUS-b - Mathematical Induction.md",
+    "group": "Induction",
+    "meta": {
+      "id": "Q-2019-FINAL-BONUS-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "Bonus Problem(b)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Strengthening the exponential bound with a negative linear correction absorbs the added n term in the recurrence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 7
+    },
+    "sha256": "5f71618b5d7eb2bff543c82415769b84aaff9e1e17e08249d621271905d4b43c"
+  },
+  {
+    "id": "Q-2018-FINAL-P02-a-E1",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P02-a-E1 - Counting Principles.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P02-a-E1",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "question_number": "2(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Counting - 计数]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Counting Principles - 计数原理]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Counting Method - 计数方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "A width-one board can contain only one vertical tromino.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "57f450219f8a25f75d428087bb77b410f2afd7543be6baaff5d55d0b8bc2cd37"
+  },
+  {
+    "id": "Q-2018-FINAL-P02-a-E2",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P02-a-E2 - Counting Principles.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P02-a-E2",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "question_number": "2(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Counting - 计数]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Counting Principles - 计数原理]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Counting Method - 计数方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "A width-two board cannot fit a horizontal length-three tile and forces two vertical tiles.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "174a3f8236271754923cf9f38aaa72757721797c6dcb673b414ca404258d010e"
+  },
+  {
+    "id": "Q-2018-FINAL-P04-c-basis",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P04-c-basis - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P04-c-basis",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(c)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "The singleton complete graph is the smallest positive-order starting object.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "1eedcc1cff0ecbcdc402e7449bdef2e5000179d1a88c9e6cb3f64105f9e82c3f"
+  },
+  {
+    "id": "Q-2017-FINAL-P10-a-first",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P10-a-first - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P10-a-first",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "question_number": "10(a)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Applying the three constructors once to the single basis pair produces three new pairs.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "5861a1a40af8fe7d2e5239ce9a33e50ff32beed3ca689c489a0182d518790efc"
+  },
+  {
+    "id": "Q-2017-FINAL-P11-a-T1",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P11-a-T1 - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P11-a-T1",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "question_number": "11(a)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "The two equal disks may move directly onto one another at the destination.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "b2b67ecc18db52f41cf940130ffb263f438e63f486b822e25e6a8e5818520ab8"
+  },
+  {
+    "id": "Q-2025F-FINAL-P10-i",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P10-i - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2025F-FINAL-P10-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 17,
+      "question_number": "10(i)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "modeling"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Translate the ordered daily doubling-and-loss process into a recurrence with its initial value.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        17
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2025F-FINAL-P10-ii - Recurrence Relations]]",
+        "[[Q-2025F-FINAL-P10-iii - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "82e81b1334661882bfdae17f33779c287ca4b97b099a03a4992522361c3b8f8b"
+  },
+  {
+    "id": "Q-2024F-FINAL-P09-b-i",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-b-i - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-b-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 24,
+      "question_number": "9(b)(i)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]"
+      ],
+      "question_types": [
+        "modeling"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Add a bottom row of n circles to the size n−1 triangle and record the pictured T(1)=1 base.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        24
+      ],
+      "marks": 1,
+      "related_questions": [
+        "[[Q-2024F-FINAL-P09-b-ii - Recurrence Relations]]",
+        "[[Q-2024F-FINAL-P09-b-iii - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "034bc5cf21ba72842a06d25829f3df6201a8a4844b68824c43e7b8d172d978b5"
+  },
+  {
+    "id": "Q-2024F-FINAL-P09-b-ii",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-b-ii - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-b-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 24,
+      "question_number": "9(b)(ii)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Unroll the triangular-number recurrence into 1+...+n and pair forward/reverse sums for the exact formula.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        24
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2024F-FINAL-P09-b-i - Recurrence Relations]]",
+        "[[Q-2024F-FINAL-P09-b-iii - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "9923a210746d16979b6fdd5fead09921722546c78845e8ea0cc0e6c7ed2d554a"
+  },
+  {
+    "id": "Q-2023F-FINAL-P08-b",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P08-b - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2023F-FINAL-P08-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 12,
+      "question_number": "8(b)",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Adding one converts the affine recurrence into a geometric sequence with ratio three and initial value two.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        12,
+        13
+      ],
+      "marks": 4
+    },
+    "sha256": "8568b4cebb5df684f875f0c65c42b0e64ba2940c5181254b17f610760c90e3df"
+  },
+  {
+    "id": "Q-2023F-FINAL-P09-a",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P09-a - Noncrossing Pairings.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2023F-FINAL-P09-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 14,
+      "question_number": "9(a)",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Noncrossing Pairings - 不相交配对]]"
+      ],
+      "methods": [
+        "[[Split-at-a-Partner Method - 固定伙伴分解法]]"
+      ],
+      "question_types": [
+        "classification",
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The chord from p1 to p5 leaves exactly three people on one side, forcing a crossing in any perfect pairing.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        14,
+        15
+      ],
+      "marks": 2
+    },
+    "sha256": "ea505291a9a55267fe77ea12ff009df1ed8975010fddf958f0e901f418f3aabe"
+  },
+  {
+    "id": "Q-2023F-FINAL-P09-b",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P09-b - Noncrossing Pairings.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2023F-FINAL-P09-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 14,
+      "question_number": "9(b)",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Noncrossing Pairings - 不相交配对]]"
+      ],
+      "methods": [
+        "[[Split-at-a-Partner Method - 固定伙伴分解法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "A feasible partner index must be even so both circular blocks have even cardinality, and adjacent pairing proves sufficiency.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        14,
+        15
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2023F-FINAL-P09-d - Noncrossing Pairings]]"
+      ]
+    },
+    "sha256": "7002b9ab01ab38c6d625e1415e8e22e916a1d03c08871e74777732306c72647f"
+  },
+  {
+    "id": "Q-2020-FINAL1-P05-a-formula",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P05-a-formula - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2020-FINAL1-P05-a-formula",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "5(a)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Successive applications of the supplied power rule multiply by the next negative integer.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL1-P05-a-proof - Mathematical Induction]]",
+        "[[Q-2020-FINAL1-P05-b - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "5776f36d5ff4e27eaf0b442eac49415f1d18e5cb67fe9000f1cf6c1eb488f97f"
+  },
+  {
+    "id": "Q-2019-FINAL-P06-a",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-P06-a - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2019-FINAL-P06-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "question_number": "6(a)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The empty-string base and one appended bit determine the count on every finite bit string.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 2
+    },
+    "sha256": "5fca86872c7417f63eb01e64034908ecece11981ee4e82ec2d187b792d9cf5d1"
+  },
+  {
+    "id": "Q-2018-FINAL-P02-a-E3",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P02-a-E3 - Counting Principles.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P02-a-E3",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "question_number": "2(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Counting - 计数]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Basic Counting - 基本计数]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Counting Principles - 计数原理]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Counting Method - 计数方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "A three-by-three board allows all vertical or all horizontal tiles, with no mixed orientation.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "799e6ec1cbc44fc618d087d9d48c783238cfa922eb22823b2676285fbab33e9e"
+  },
+  {
+    "id": "Q-2018-FINAL-P04-a",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P04-a - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P04-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Number Theory - 数论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]",
+        "[[Modular Congruence - 同余]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]",
+        "[[Modular Arithmetic Method - 模运算方法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Three initial residues are necessary because adding three never changes the residue modulo three.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "fae05a36e0e6e5bde3effb0260be7b1cda205decae1a7b6bbd17a325fe20f57a"
+  },
+  {
+    "id": "Q-2018-FINAL-P04-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P04-b - Binomial Coefficients.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P04-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Counting - 计数]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Binomial Coefficients - 二项式系数]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Combinatorial Case Analysis - 组合分类法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The ratio of neighboring binomial coefficients with fixed lower argument gives the required multiplier.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "c09053dfded8cae67e7154beadf8808a3b426690b510792d67bbf4faff4f3b94"
+  },
+  {
+    "id": "Q-2018-FINAL-P04-c-edges",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P04-c-edges - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P04-c-edges",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(c)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Preserving existing edges and connecting the new vertex to all old vertices produces the next complete graph.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "2c2624fc496ac3a7bbce229676f8c72dd758a109bde178d7d25ac1ba241a5d20"
+  },
+  {
+    "id": "Q-2017-FINAL-P10-a-second",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P10-a-second - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P10-a-second",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "question_number": "10(a)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Nine constructor outputs collapse to five distinct pairs at second-coordinate level two.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "76ea6a808dd6fbb45fddda2e80cd96a5f3919eb5466533bce3d0b35194e85718"
+  },
+  {
+    "id": "Q-2017-FINAL-P10-b",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P10-b - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P10-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "question_number": "10(b)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Structural Induction Method - 结构归纳法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "A single invariant survives all three allowed increments to the first coordinate.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 4
+    },
+    "sha256": "867b791ea560e2ea65c417bafa64f6ae01bcd2354010b7fd1a11e802b06d4024"
+  },
+  {
+    "id": "Q-2017-FINAL-P11-a-T2",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P11-a-T2 - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P11-a-T2",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "question_number": "11(a)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Moving the small pair aside and back surrounds two direct moves of the large pair.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "1b86de2ef51f32b55781ac1573a8a01ac89530f89502039108f2dc90b002d1fc"
+  },
+  {
+    "id": "Q-2017-FINAL-P11-b",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P11-b - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P11-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "question_number": "11(b)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Two transfers of the four smaller disks enclose two largest-disk moves.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 2
+    },
+    "sha256": "ecd9a88021051c7363c74f0a183b0570f6b3af4a61fee0936de5804e24ced8dd"
+  },
+  {
+    "id": "Q-2016-FINAL-P07-a-recurrence",
+    "path": "knowledge_base/04-Questions/Q-2016-FINAL-P07-a-recurrence - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2016-FINAL-P07-a-recurrence",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2016 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "question_number": "7(a)",
+      "year": 2016,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Adding the nth person doubles the old nonempty committees and adds the singleton missed by that doubling.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "f6a8ba78bcbf43479e77612307538554745c92faad3554d7dff979e1881af8bc"
+  },
+  {
+    "id": "Q-2016-FINAL-P07-b",
+    "path": "knowledge_base/04-Questions/Q-2016-FINAL-P07-b - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2016-FINAL-P07-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2016 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "question_number": "7(b)",
+      "year": 2016,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 3,
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Iterating the affine recurrence produces a geometric sum with n minus one expansion steps.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "426ecf8a98809d115db3867e9be04ca1fd2ddad42ea882adac35bfc0a446a519"
+  },
+  {
+    "id": "Q-2015-FINAL-P08-a",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P08-a - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2015-FINAL-P08-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "question_number": "8(a)",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 4,
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "An affine recurrence is solved by summing the geometric accumulation of the constant twelve.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "52b1e9aafb423076d1945ed727bf219a369e4b7f0ff97894f77d81dae3615061"
+  },
+  {
+    "id": "Q-2015-FINAL-P09-recurrence",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P09-recurrence - Asymptotic Complexity.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2015-FINAL-P09-recurrence",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "question_number": "9",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 3,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "modeling"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The multiplication formula contains four half-size recursive products plus a linear combination cost.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "9fb06e87f23da03fd1cb0073d2688d8f68a7d96a9d7122068c1fc15a68b0f31c"
+  },
+  {
+    "id": "Q-2025F-FINAL-P10-ii",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P10-ii - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2025F-FINAL-P10-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 17,
+      "question_number": "10(ii)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Unroll an affine recurrence and combine the accumulated losses as a finite geometric series.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        17
+      ],
+      "marks": 4,
+      "related_questions": [
+        "[[Q-2025F-FINAL-P10-i - Recurrence Relations]]",
+        "[[Q-2025F-FINAL-P10-iii - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "a16f5ca45c228a64af5995e6e556bd6521b9c012bdcf9353fa9e6e5e7e3d9261"
+  },
+  {
+    "id": "Q-2024S-FINAL-P05",
+    "path": "knowledge_base/04-Questions/Q-2024S-FINAL-P05 - Probability Events.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2024S-FINAL-P05",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2024_Final.pdf",
+      "source_page": 6,
+      "question_number": "5",
+      "year": 2024,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Probability Events - 概率事件]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Probability Calculation Method - 概率计算方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Separate parity according to the independent final biased coin and telescope the scaled first-order recurrence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        6
+      ],
+      "marks": 10
+    },
+    "sha256": "fdf13872f9afad61d69657da283f5e4b0e69993bcee7f1058a2ae6015a8a75bc"
+  },
+  {
+    "id": "Q-2023F-FINAL-P09-c",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P09-c - Noncrossing Pairings.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2023F-FINAL-P09-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 14,
+      "question_number": "9(c)",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Noncrossing Pairings - 不相交配对]]",
+        "[[Recursive Structures - 递归结构]]"
+      ],
+      "methods": [
+        "[[Split-at-a-Partner Method - 固定伙伴分解法]]"
+      ],
+      "question_types": [
+        "modeling"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "A fixed legal chord creates two determined even-sized blocks whose noncrossing pairing counts multiply without a subset-selection factor.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        14,
+        15
+      ],
+      "marks": 5,
+      "related_questions": [
+        "[[Q-2023F-FINAL-P09-d - Noncrossing Pairings]]"
+      ]
+    },
+    "sha256": "385af1fe9386fd6bcf2b0848707a4ecf5ffc3e96f58c5cc21306defc2925bd23"
+  },
+  {
+    "id": "Q-2023F-FINAL-P09-d",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P09-d - Noncrossing Pairings.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2023F-FINAL-P09-d",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 14,
+      "question_number": "9(d)",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Noncrossing Pairings - 不相交配对]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Split-at-a-Partner Method - 固定伙伴分解法]]"
+      ],
+      "question_types": [
+        "modeling"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Summing the product decomposition over the unique partner of p1 yields a convolution recurrence with an essential empty-pairing base case.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        14,
+        15
+      ],
+      "marks": 3,
+      "related_questions": [
+        "[[Q-2023F-FINAL-P09-b - Noncrossing Pairings]]",
+        "[[Q-2023F-FINAL-P09-c - Noncrossing Pairings]]"
+      ]
+    },
+    "sha256": "43e81070ccd0f88b8ccc4725028356c59a9d648a2f0ccad658b99f1af65c6081"
+  },
+  {
+    "id": "Q-2021-FINAL1-P02",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P02 - Asymptotic Complexity.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2021-FINAL1-P02",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "2",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof",
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "One recursive child shrinks the coin set by three after at most two weighings.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        2
+      ],
+      "marks": 10
+    },
+    "sha256": "6640925201ee155739f49de927f1c5e9eb7a04cd38ffbd274d7870c6238cb0d5"
+  },
+  {
+    "id": "Q-2021-FINAL1-P06",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P06 - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2021-FINAL1-P06",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "6",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Four parity-preserving digits and two parity-flipping digits give a first-order counting recurrence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 10,
+      "related_questions": [
+        "[[Q-2021-FINAL2-P01 - Recurrence Relations]]"
+      ]
+    },
+    "sha256": "17046c5139e6f4120209af63f336d0f7df4b079eb73af1b783ec89f638b83bee"
+  },
+  {
+    "id": "Q-2020-FINAL1-P05-b",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P05-b - Asymptotic Complexity.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2020-FINAL1-P05-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "5(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Bounding log factorial above by all terms and below by its last half yields a tight n log n order.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 5,
+      "related_questions": [
+        "[[Q-2020-FINAL1-P05-a-formula - Recurrence Relations]]",
+        "[[Q-2020-FINAL1-P05-a-proof - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "aaa4012a202e7cddf1106220831f4f08aff39fe90dcdc1a7bd889c8b614d2c94"
+  },
+  {
+    "id": "Q-2020-FINAL1-P06-b",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P06-b - Asymptotic Complexity.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2020-FINAL1-P06-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 5,
+      "question_number": "6(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Sequential multiplication grows the intermediate degree by one and sums linear costs.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ],
+      "marks": 4,
+      "related_questions": [
+        "[[Q-2020-FINAL1-P06-a - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "271d454d5868dd9d7dfd95bd3eb1dbac3478d1448058e594ad8eaac2960b7785"
+  },
+  {
+    "id": "Q-2019-FINAL-P06-b",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-P06-b - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2019-FINAL-P06-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        8
+      ],
+      "question_number": "6(b)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Structural Induction Method - 结构归纳法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Structural induction on the second string uses concatenation associativity to expose its last-bit constructor.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 6
+    },
+    "sha256": "e147ffc69a3a37eeada503bbfa4843b31a11a390a6698573b6d333cfde160375"
+  },
+  {
+    "id": "Q-2018-FINAL-P02-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P02-b - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P02-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "question_number": "2(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The right boundary is either one vertical tile or three aligned horizontal tiles, giving disjoint smaller boards.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "af643359618e577460d5578f8a08b45e102f76e1c360c5f1960125c801132dc4"
+  },
+  {
+    "id": "Q-2017-FINAL-P11-c",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P11-c - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P11-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "question_number": "11(c)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "modeling"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The largest equal pair forces two transfers of the n minus one smaller size-pairs.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 3
+    },
+    "sha256": "00aeb7818019bf21451026a6217b1950f2350270280a92253ee4b9d38df2af70"
+  },
+  {
+    "id": "Q-2017-FINAL-P11-d",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P11-d - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2017-FINAL-P11-d",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        15
+      ],
+      "question_number": "11(d)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Shifting T by two turns the nonhomogeneous recurrence into a doubling sequence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 3
+    },
+    "sha256": "45d4cd3577ad3aab2e9ad6f6e706e22dcf637af3e4f955cb63cebd621c7847d5"
+  },
+  {
+    "id": "Q-2016-FINAL-P07-a-proof",
+    "path": "knowledge_base/04-Questions/Q-2016-FINAL-P07-a-proof - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2016-FINAL-P07-a-proof",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2016 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2016-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "question_number": "7(a)",
+      "year": 2016,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Combinatorial Selection - 组合选择]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Induction validates that the recurrence counts every nonempty committee once through three disjoint membership cases.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "007230fbdfa42362ff3cf8e18306d7fce7182abfffabd816e4fbafc0389f0647"
+  },
+  {
+    "id": "Q-2015-FINAL-P09-closed-form",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P09-closed-form - Asymptotic Complexity.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2015-FINAL-P09-closed-form",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "question_number": "9",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 5,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recursion-Tree Method - 递归树方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Expansion has a level-cost ratio of two and a leaf term of n squared, both of which must survive simplification.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "f5767c6636bafb45e848b4e1da4a16b4e5a3312a2510740a0289e3963096af1b"
+  },
+  {
+    "id": "Q-2014-FINAL-P08",
+    "path": "knowledge_base/04-Questions/Q-2014-FINAL-P08 - Asymptotic Complexity.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2014-FINAL-P08",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2014 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 12,
+      "question_number": "8",
+      "year": 2014,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 10,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The asymptotic proof factors out a to the n and bounds a weighted geometric series above and below by n-independent constants.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "related_questions": [
+        "[[Q-2025F-FINAL-P09-a - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "cb5e3d1fb5afad322bd8a2680c7cf3fadc8836278952c05c417ce3cdf2a10448"
+  },
+  {
+    "id": "Q-2014-FINAL-P10-closed-form",
+    "path": "knowledge_base/04-Questions/Q-2014-FINAL-P10-closed-form - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2014-FINAL-P10-closed-form",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2014 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "question_number": "10",
+      "year": 2014,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The recurrence solution combines an eight-fold homogeneous term with a ten-power forcing term and must satisfy V1 equals nine.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "88c0253a7446a2684ae5e53ee50c1cec0e89006c276cc76864ca744a650fb853"
+  },
+  {
+    "id": "Q-2014-FINAL-P10-recurrence",
+    "path": "knowledge_base/04-Questions/Q-2014-FINAL-P10-recurrence - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2014-FINAL-P10-recurrence",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2014 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        14
+      ],
+      "question_number": "10",
+      "year": 2014,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Appending a digit toggles zero parity only for a zero, so the recurrence must count valid and invalid prefixes separately.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "b4afa51f3dd0cd473760ea4f24819f7271c1b257955ebb1feeb17552dbc6988e"
+  },
+  {
+    "id": "Q-2025S-MID-P05",
+    "path": "knowledge_base/04-Questions/Q-2025S-MID-P05 - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2025S-MID-P05",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf",
+      "source_page": 7,
+      "question_number": "5",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]"
+      ],
+      "methods": [
+        "[[Structural Induction Method - 结构归纳法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Verify both recursive basis constructors and compare Fibonacci bounds for all balanced-height cases.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 12
+    },
+    "sha256": "c646d111618ae89f36471cbe5497652d5debd94fac5d8794f69730fa412fd84d"
+  },
+  {
+    "id": "Q-2021-FINAL1-P05",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P05 - Recursive Structures.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2021-FINAL1-P05",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "5",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]",
+        "[[Structural Induction Method - 结构归纳法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Insertion rules need both a preserved positive zero balance and a reverse deletion completeness argument.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 6
+    },
+    "sha256": "dc250766dd02f98f5998756d300b22b780b8405eb4cc0f94fd6b53b81b29d904"
+  },
+  {
+    "id": "Q-2021-FINAL2-BONUS-b",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-BONUS-b - Random Walk Hitting Times.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2021-FINAL2-BONUS-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 4,
+      "question_number": "Bonus(b)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Random Walk Hitting Times - 随机游走到达时间]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[First-Step Expectation Method - 首步期望法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "First-step equations on a path turn adjacent expected-time differences into consecutive odd integers.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ],
+      "marks": 8,
+      "related_questions": [
+        "[[Q-2021-FINAL2-BONUS-a - Random Walk Hitting Times]]"
+      ]
+    },
+    "sha256": "c4f7faad4033941a062719b71f2ed00912fe4f1d9657d19e05f3f158fabf36cd"
+  },
+  {
+    "id": "Q-2021-FINAL2-P01",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-P01 - Recurrence Relations.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2021-FINAL2-P01",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 1,
+      "question_number": "1",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Binomial Coefficients - 二项式系数]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Binomial Coefficients - 二项式系数]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "A two-ending recurrence and a gap selection count enumerate the same no-consecutive-zero strings.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ],
+      "marks": 10,
+      "related_questions": [
+        "[[Q-2021-FINAL1-P06 - Recurrence Relations]]"
+      ]
+    },
+    "sha256": "6b55301205f6cd8cecd6507c1bb09db37f09684a5b355c407e722d3d7f300d66"
+  },
+  {
+    "id": "Q-2018-FINAL-P03-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P03-b - Modular Congruence.md",
+    "group": "Recursion",
+    "meta": {
+      "id": "Q-2018-FINAL-P03-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "question_number": "3(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Number Theory - 数论]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]",
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Modular Congruence - 同余]]",
+        "[[Recursive Structures - 递归结构]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Modular Arithmetic Method - 模运算方法]]",
+        "[[Structural Induction Method - 结构归纳法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "calculation",
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "The Euclidean remainder chain constructs 78 inside S and two containment proofs establish exact equality.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "b4a6483e528680258dbb349ecb336a1f0db921a0ef3c4a431babf72e2c913b82"
+  }
+]

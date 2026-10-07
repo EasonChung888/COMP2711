@@ -46,24 +46,17 @@ First, write each premise as a logical form using quantifiers and the above pred
 
 Premise 2: Some excuses are unsatisfactory
 
-## 中文解析
+## Official Answer
 
-“Some”要求一个对象同时满足借口与不满意两个条件。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> $\exists x\,E(x)\land\neg S(x)$.
 
-Provenance: published official answer, independently checked; the source grouping clarification is retained above.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists x(E(x)\land\neg S(x))$.
 
-**答案。** $\exists x(E(x)\land\neg S(x))$。
-
-**推导。** 取某个对象 $x$，它是借口用 $E(x)$ 表达，它不令人满意用 $\neg S(x)$ 表达。英文将两个性质赋给同一对象，所以先组成 $E(x)\land\neg S(x)$，然后把整项置于同一个存在量词内，得到 $\exists x(E(x)\land\neg S(x))$。这样 $x$ 的每一次出现均被绑定。若只把 $E(x)$ 放在量词范围内，外部的 $S(x)$ 就是自由变量，不能表达这句完整前提。
-
-## Common Mistakes
-
-- 不能分别选一个借口与另一个不满意对象，它们可能不是同一个。
-- 存在量词后应把整个合取括起来，避免留下自由变量。
+**Derivation/proof.** E(x) says the object is an excuse, and $\neg S(x)$ says it is unsatisfactory. Both describe the same object, so first form $E(x)\land\neg S(x)$ and place the entire conjunction in the scope of one existential quantifier. Every occurrence is bound. If only E(x) were within the quantifier’s scope, the external occurrence in S(x) would be free and would not express a complete premise.
 
 ## Connections
 

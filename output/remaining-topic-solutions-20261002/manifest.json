@@ -1,0 +1,56 @@
+[
+  {
+    "topic": "Logic",
+    "questions": 202,
+    "pages": 175,
+    "path": "/Users/easonzhong/Documents/ChatGPT/COMP2711/output/pdf/COMP2711_Logic_Past_Paper_Solutions.pdf",
+    "sha256": "e8f0e05933c2580be3113d9df5996a7fc855bee264782d4d14c6a29e12941787",
+    "review": "pass",
+    "sourceLinks": 206
+  },
+  {
+    "topic": "Number Theory",
+    "questions": 143,
+    "pages": 131,
+    "path": "/Users/easonzhong/Documents/ChatGPT/COMP2711/output/pdf/COMP2711_Number_Theory_Past_Paper_Solutions.pdf",
+    "sha256": "4ea4b82e4cfcfbd9287fca09cc9053431a4bd4be16f32c93df057526a847ed94",
+    "review": "pass",
+    "sourceLinks": 155
+  },
+  {
+    "topic": "Induction and Recursion",
+    "questions": 76,
+    "pages": 79,
+    "path": "/Users/easonzhong/Documents/ChatGPT/COMP2711/output/pdf/COMP2711_Induction_and_Recursion_Past_Paper_Solutions.pdf",
+    "sha256": "03f74b98b23c2bd1358a1f5f94e10c20cadd564153e5b36dad65864a1a9a0cc3",
+    "review": "pass",
+    "sourceLinks": 83
+  },
+  {
+    "topic": "Algorithms",
+    "questions": 68,
+    "pages": 69,
+    "path": "/Users/easonzhong/Documents/ChatGPT/COMP2711/output/pdf/COMP2711_Algorithms_Past_Paper_Solutions.pdf",
+    "sha256": "43b34d6ab511db01da87046d280cdad4a09582a7c5aece0ac8cf56cad1d288fa",
+    "review": "pass",
+    "sourceLinks": 74
+  },
+  {
+    "topic": "Graphs",
+    "questions": 60,
+    "pages": 70,
+    "path": "/Users/easonzhong/Documents/ChatGPT/COMP2711/output/pdf/COMP2711_Graphs_Past_Paper_Solutions.pdf",
+    "sha256": "6dd207d3713d95203c8942b109df2f36cdafda156f3279dea7ac5f9341611d51",
+    "review": "pass",
+    "sourceLinks": 63
+  },
+  {
+    "topic": "Probability",
+    "questions": 59,
+    "pages": 61,
+    "path": "/Users/easonzhong/Documents/ChatGPT/COMP2711/output/pdf/COMP2711_Probability_Past_Paper_Solutions.pdf",
+    "sha256": "8581112fdeec84f790ea95b6b7cdebb8c1b411c43ad2630b17635ff712dd606e",
+    "review": "pass",
+    "sourceLinks": 67
+  }
+]

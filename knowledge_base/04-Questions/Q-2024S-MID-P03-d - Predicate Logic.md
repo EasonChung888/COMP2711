@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P03 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-取论域 $\{0,1\}$，令 $P(x,y)$ 表示 $x=y$。对每个 $x$ 选 $y=x$，故前件真；但任何固定 $x$ 总能遇到另一个不相等的 $y$，使 $P(x,y)$ 为假，所以没有一行全部为真。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> Answer. (d) Not a tautology
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Not a tautology.
 
-**答案。** Not a tautology.
-
-**推导。** 取论域 $\{0,1\}$，令 $P(x,y)$ 表示 $x=y$。对每个 $x$ 选 $y=x$，故前件真；但任何固定 $x$ 总能遇到另一个不相等的 $y$，使 $P(x,y)$ 为假，所以没有一行全部为真。后件假，因此蕴含不是 tautology。
-
-## Common Mistakes
-
-- 等号谓词使每行有真值，但每行也有假值，不能推出存在一行全真。
-- 反例论域需至少两个元素，单元素的等号谓词会令后件成立。
+**Derivation/proof.** Use domain $\{0,1\}$ and let $P(x,y)$ mean $x=y$. For each $x$ choose $y=x$, making the antecedent true. For any fixed $x$, the other value of $y$ makes $P(x,y)$ false, so no row is entirely true. The consequent is false, proving the implication is not a tautology.
 
 ## Connections
 

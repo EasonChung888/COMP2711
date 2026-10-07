@@ -1,0 +1,9 @@
+Exercise
+ on Seating Arrangements
+In how many ways, can 5 boys and 3 girls sit around a circular table so that 
+no two girls are together
+? (Order matters. Since people sit on a circular table, the arrangement 12345678 and 23456781 are considered to be same.)
+Solution 
+There are 4! seating arrangements for the 5 boys, when rotations are equivalent (see slide 11). 
+For each girl not to seat next to another girl, she must have a boy to the left in C(5,3) ways (also a boy to the right). Moreover, there are 3! permutations for the girls. Thus, C(5,3)4!3!
+24

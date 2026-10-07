@@ -41,26 +41,22 @@ What is the probability that $G$ with $n=4$ vertices is connected and $X$ takes 
 
 Shared context: [[STEM-2020-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-连通的四点图最少三条边。六条潜在边中选三条有二十种，唯一不连通的结构是三角形加孤点，共四种，剩十六种都是树。每种还要求其余三条边缺失，所以不能漏掉 (1-p)³。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$G$ is connected and $X$ is minimal if and only if $G$ is a tree. The probability of having $3$ edges in $G$ is $\binom63p^3(1-p)^3$. However, if the $3$ edges form a triangle, then the last vertex will be disconnected, which happens with probability $\binom43p^3(1-p)^3$. So, the final probability is
+$$\binom63p^3(1-p)^3-\binom43p^3(1-p)^3=16p^3(1-p)^3.$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $16p^3(1-p)^3$.
 
 **Derivation/proof.** A connected four-vertex graph has at least three edges, achieved exactly by trees. There are six potential edges and $\binom63=20$ three-edge subsets. A disconnected three-edge simple graph on four vertices must be a triangle plus an isolate: a 2+2 split permits at most two edges. There are $\binom43=4$ such triangles, leaving 16 trees. Each exact edge set has probability p³(1−p)³, so multiply by 16.
 
-### 中文解答
+To verify the disconnected exception is exhaustive, a partition into two pairs permits at most two edges; finer partitions permit no more. Thus a disconnected three-edge graph must consist of a triangle and an isolated vertex.
 
-**推导。** 四点连通图最少三条边，此时必为树。六条候选边任选三条有 $\binom63=20$ 个边集，其中不连通者只能是三角形加孤立点：若分成两组两点，最多两条边，达不到三条；其他更碎划分也不足。选择三角形顶点有 $\binom43=4$ 种，所以树边集有 $20-4=16$ 个。每个指定边集要求三条存在、另外三条不存在，独立性给概率 $p^3(1-p)^3$。不同精确边集互斥，总概率 $16p^3(1-p)^3$。
-
-## Common Mistakes
-
-- 把二十种三边图都当成树。
-- 只乘 p³，忘记其他边必须不存在。
+Of the twenty three-edge subsets, exactly four form a triangle plus an isolated vertex. Removing them leaves $20-4=16$ trees, each with the same probability $p^3(1-p)^3$.
 
 ## Connections
 

@@ -40,26 +40,29 @@ Atomic focus [editorial]: Raymond’s secret key; Kenneth’s is a separate atom
 
 Shared context: [[STEM-2016-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-公开模数较小，可分解为十三乘十九，再算欧拉函数为二百一十六。秘密指数是七在该模数下的乘法逆元，而不是七在二百四十七下的逆元。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(a) Yes.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+Consider Raymond's case.
+
+Note that $13\times19=247$.
+
+Thus, $p=13$ and $q=19$.
+
+So, $T=(13-1)(19-1)=12\times18=216$
+
+Secret key of Raymond = the multiplicative inverse of 7 in $Z_{216}=31$
+
+## Supplementary Explanation
 
 **Answer.** Yes. Raymond's secret exponent is $d_R=31$ (private key $(31,247)$).
 
 **Derivation/proof.** Factor $247=13\cdot19$, so $\varphi(247)=12\cdot18=216$. The Euclidean identity $216=30\cdot7+6$ and $7=6+1$ gives $1=31\cdot7-216$. Therefore $7\cdot31\equiv1\pmod{216}$ and the RSA secret exponent is 31.
 
-### 中文解答
-
-**推导。** 小模数可以直接分解 $247=13\cdot19$，得 $\varphi(247)=12\cdot18=216$。Raymond的秘密指数是七在模216的逆元。除法 $216=30\cdot7+6$、$7=6+1$；回代 $1=7-(216-30\cdot7)=31\cdot7-216$。故 $d_R=31$，私钥可记(31,247)，并有 $7\cdot31=217=216+1$ 验证。
-
-## Common Mistakes
-
-- 对公开模数二百四十七求七的逆元。
-- 把此人的欧拉函数和另一位收件人的参数混用。
+Check: $7\cdot31=217=216+1$.
 
 ## Connections
 

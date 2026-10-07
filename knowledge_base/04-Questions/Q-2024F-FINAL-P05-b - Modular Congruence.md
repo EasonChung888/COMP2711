@@ -39,24 +39,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 
 (b) Assume $a$ to be an odd integer. What are the possible values for $a^2\pmod8$?
 
-## 中文解析
+## Official Answer
 
-本题只讨论奇数。写成 $a=2k+1$ 后，将平方整理为 $4k(k+1)+1$，利用相邻整数乘积为偶数，证明模八余数唯一为一。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+> (b) $a=2k+1\implies a^2=4k^2+4k+1=4k(k+1)+1$. Note that $k(k+1)$ is always even. So $4k(k+1)\equiv0\pmod8$. We can conclude that $a^2\equiv1\pmod8$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Only $1$.
 
-**答案。** 只有 $1$。
-
-**推导。** 任意奇数写成 $a=2k+1$，其中 k 是整数。平方为 $a^2=4k^2+4k+1=4k(k+1)+1$。相邻整数 k 与 k+1 必有一个偶数，因此 $k(k+1)$ 被二整除，$4k(k+1)$ 被八整除，故 $a^2\equiv1\pmod8$。取 $a=1$ 实现此余数，所以唯一可能值是 一，负奇数也包含在同一表达式中。
-
-## Common Mistakes
-
-- 从 $a^2=4k(k+1)+1$ 不能只停在模四余一；要用 $k(k+1)$ 为偶数才能得到模八余一。
-- 不能把奇数可能的余数 $1,3,5,7$ 原样当作平方余数；平方后四类都约化为 $1$。
+**Derivation/proof.** Every odd integer is $a=2k+1$ for an integer $k$. Squaring gives $a^2=4k^2+4k+1=4k(k+1)+1$. Among consecutive integers $k,k+1$, one is even, so $k(k+1)$ is divisible by two and $4k(k+1)$ by eight. Thus $a^2\equiv1\pmod8$. Taking $a=1$ realizes the residue; negative odd integers are covered by the same form.
 
 ## Connections
 

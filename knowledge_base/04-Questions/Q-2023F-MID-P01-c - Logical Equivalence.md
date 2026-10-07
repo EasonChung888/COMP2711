@@ -38,33 +38,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2023_Midte
 
 Determine if the two compound propositions $(p\to q)\to(r\to s)$ and $(p\to r)\to(q\to s)$ are logically equivalent. Show a proof if they are, or give a counter-example if they are not.
 
-## 中文解析
+## Official Answer
 
-否定逻辑等价只需要找到一个共同赋值使两式不同。取 p 为假让两个外层前件都为真，再令 q 真而 r、s 假，就可以控制两个内层后件得到相反结果。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (c) Not equivalent. Counter-example: $p=F,q=T,r=F,s=F$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 两式不逻辑等价；反例为 $p=F,q=T,r=F,s=F$。
-
-**推导。**
-
-1. 在这个共同赋值下，$p\to q$ 因前件假而为真，$r\to s$ 也因前件假而为真。因此第一个复合式 $(p\to q)\to(r\to s)$ 的值为 $T\to T=T$。
-2. 仍用同一个赋值，$p\to r=T$，但 $q\to s$ 是 $T\to F$，故为假。第二个复合式 $(p\to r)\to(q\to s)$ 因而是 $T\to F=F$。逻辑等价要求每一个共同赋值下都同真同假；现在找到一处真值相反，已经足够否定等价，无须枚举所有赋值。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** Not equivalent; use $p=F,q=T,r=F,s=F$.
 
 **Derivation/proof.** For this valuation, $p\to q=T$ and $r\to s=T$, so the first expression is $T\to T=T$. Meanwhile $p\to r=T$ but $q\to s=F$, so the second expression is $T\to F=F$. Because logical equivalence requires equality under every common valuation, this one disagreement suffices to disprove it. The displayed values also independently verify the published counterexample.
-
-## Common Mistakes
-
-- 只报四个字母的值而不计算两式真假会使反例不完整。 / Evaluate both formulas.
-- 把假前件的 implication 判为假会毁掉反例。 / A false antecedent makes an implication true.
 
 ## Connections
 

@@ -1,0 +1,22 @@
+Proof 
+#
+k
+-combinations of {1,2,3,…,
+n
+}
+#
+k
+-combinations of {1,2,3,…, 
+n
+-1} 
+not
+ containing last element
+#(
+k
+-1)-combinations of {1,2,3, …, 
+n
+-1} containing last element
+Use the 
+Sum Rule
+ for the total number of combinations
+19

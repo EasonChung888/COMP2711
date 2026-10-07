@@ -40,24 +40,18 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (a) [3 points] Given A is taller than B, what is the probability that A is tallest?
 
-## 中文解析
+## Official Answer
 
-条件把所有排列按 A、B 的相对顺序筛掉一半，A 第一则其余人任意排列。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+(a) Given $A>B$, permutations satisfying this: $14!/2$. If $A$ is tallest, arrange others: $13!$ permutations.
+$$\Pr(A\text{ tallest}\mid A>B)=\frac{13!}{14!/2}=\frac2{14}=\frac17.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $1/7$.
 
-**答案。** $1/7$。
-
-**推导。** 题设所有 $14!$ 排名等可能。交换 A 与 B 的位置把 A 高于 B 的排列与反向排列一一对应，因此条件样本空间有 $14!/2$ 个排列。若 A 排第一，他必高于 B，其余十三人有 $13!$ 种排列。所求条件概率为 $13!/(14!/2)=2/14=1/7$。分母必须是满足条件的排名数量，而非全部排名。
-
-## Common Mistakes
-
-- 不能仍用无条件的十四分之一，因为已知 A 至少高于 B。
-- 无需再限制 B 在某一固定名次，A 第一时 B 的其余十三处位置都合法。
+**Derivation/proof.** All $14!$ rankings are equally likely. Swapping $A$ and $B$ gives a bijection between rankings with $A>B$ and those with $B>A$, so the conditional sample space contains $14!/2$ rankings. If $A$ is first, $A>B$ holds automatically and the other 13 players have $13!$ arrangements. Thus the conditional probability is $13!/(14!/2)=2/14=1/7$. The denominator counts rankings satisfying the condition, not all rankings.
 
 ## Connections
 

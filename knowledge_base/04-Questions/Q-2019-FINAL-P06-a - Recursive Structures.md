@@ -38,26 +38,20 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-递归定义必须先说明空串的值。非空串可唯一拆成前缀和末位，末位零不增加计数，末位一增加一；把位当整数相加就能统一两种规则，并且前缀变短保证终止。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+Let $\lambda$ denote an empty bit string.
+$\operatorname{ones}(\lambda)=0$ and $\operatorname{ones}(wx)=x+\operatorname{ones}(w)$, where $w$ is a bit string and $x$ is a bit (viewed as an integer when being added).
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\operatorname{ones}(\lambda)=0$; $\operatorname{ones}(wx)=\operatorname{ones}(w)+x$ for a bit $x\in\{0,1\}$.
 
 **Derivation/proof.** The empty string has no ones. Appending a zero leaves the count unchanged, and appending a one increases it by one; interpreting the bit as an integer combines those cases in the given rule. Every nonempty string has a unique shorter prefix w and last bit x, so the recursion terminates and defines exactly one value for each finite string.
 
-### 中文解答
-
-**推导。** 令 $\lambda$ 为空串，基例定义 $\operatorname{ones}(\lambda)=0$。若 $w$ 为位串、$x\in\{0,1\}$ 是最后一位，把 $x$ 当整数，定义 $\operatorname{ones}(wx)=\operatorname{ones}(w)+x$。追加 $0$ 不增加一的个数，追加 $1$ 恰增加一个，因此规则符合计数含义。每个非空有限位串都唯一分解成较短前缀与末位，递归最终到空串，所以定义对每个位串完备且唯一。
-
-## Common Mistakes
-
-- 省略空串基例。
-- 把字符串拼接误当数字加法。
+There is a unique decomposition of any nonempty bit string into its shorter prefix and its last bit. Removing the final bit reduces the length, and restoring it adds exactly its numerical value to the count of ones, so the recursion is well-defined.
 
 ## Connections
 

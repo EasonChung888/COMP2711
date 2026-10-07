@@ -42,24 +42,18 @@ $$\forall x((Even(x)\land x>2)\to\exists y\exists z(Prime(y)\land Prime(z)\land(
 
 Shared printed context: ![[STEM-2024F-MID-P02-ab - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-全称范围是自然数，而前件只筛选大于二的偶数。两个存在的素数可以相同；题目是在翻译量词命题，并没有要求证明该数论猜想。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> Answer: (a) “Every even natural number greater than 2 is the sum of two prime numbers.”
+> In reality this is a famous open problem called Goldbach's conjecture! We still have no proof for it and we don't know if its really correct =)
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Every even natural number greater than 2 is the sum of two prime numbers.
 
-**答案。** Every even natural number greater than 2 is the sum of two prime numbers.
-
-**推导。** $\forall x$ 覆盖所有自然数，前件 $Even(x)\land x>2$ 限定需要成立的对象。后件 $\exists y\exists z$ 要求存在两个自然数，且 $Prime(y)\land Prime(z)$ 使它们均为素数；$y+z=x$ 说明两者之和等于所选偶数。因此完整英文是 “Every even natural number greater than 2 is the sum of two prime numbers.” 原式没有 $y\ne z$，所以英文不能擅加 “distinct”。
-
-## Common Mistakes
-
-- 不要把两个素数译成两个不同素数，原公式没有不等约束。
-- 逻辑翻译不要求解决哥德巴赫猜想，数论背景在本题只是谓词内容。
+**Derivation/proof.** $\forall x$ ranges over all natural numbers, and $Even(x)\land x>2$ restricts which ones require the consequent. The quantifiers $\exists y\exists z$ choose two natural numbers. $Prime(y)\land Prime(z)$ makes both prime, and $y+z=x$ makes their sum the chosen even number. Thus: Every even natural number greater than 2 is the sum of two prime numbers. There is no $y\ne z$ condition, so adding “distinct” would change the claim.
 
 ## Connections
 

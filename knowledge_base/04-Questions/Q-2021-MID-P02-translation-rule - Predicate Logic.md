@@ -38,26 +38,19 @@ Everyone who knows how to compute the gcd of two integers can get a high-paying 
 
 Shared context: [[STEM-2021-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-“每个会算 gcd 的人”用全称量词配合条件 g，再推出高薪工作的 h。并不是说每个人都会算 gcd，也不是说只有会算 gcd 才能高薪，所以不能用合取或双条件。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> We are given premises $c(\mathrm{Sarah})$, $g(\mathrm{Sarah})$, and $\forall x(g(x)\to h(x))$, and we want to conclude $\exists x(c(x)\land h(x))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall x(g(x)\to h(x))$.
 
 **Derivation/proof.** The word everyone calls for a universal quantifier. Having gcd-computation skill is the qualifying condition g(x); being able to obtain a high-paying job is h(x). An implication makes the latter necessary whenever the former holds, while leaving people without the skill unconstrained.
 
-### 中文解答
-
-**推导。** “Everyone”要求全称量词 $\forall x$；被限定的条件是 $g(x)$，结论是可以获得高薪工作的 $h(x)$。所以完整规则为 $\forall x(g(x)\to h(x))$。蕴含只约束会算 gcd 的人，不断言每个人都具备这种技能，也不把技能说成获得高薪工作的必要条件。
-
-## Common Mistakes
-
-- 颠倒 g 与 h 的蕴含方向。
-- 把全称条件写成全称合取。
+Job eligibility is a necessary condition for the skill under this implication; the skill is not asserted to be a necessary condition for job eligibility.
 
 ## Connections
 

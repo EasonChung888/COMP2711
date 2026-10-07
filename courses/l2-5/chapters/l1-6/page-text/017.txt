@@ -1,0 +1,21 @@
+Example
+How many poker hands of 
+5
+ cards can be dealt from a standard deck of 52 cards? 
+Equivalently
+: how many ways to select 5 out of 52 hands? 
+Solution: 
+The order does not matter as we are only interested in the set of cards selected. Therefore, there are 
+ ways. 
+How many ways are there to select 
+47
+ cards from a standard deck of 52 cards?
+Solution: 
+When 5 cards are selected, there are 47 remaining cards. That is, there is a 
+1:1 correspondence
+ between sets of 5 cards and sets of 47 cards. Therefore, there are 
+ 
+ways
+.
+ 
+17

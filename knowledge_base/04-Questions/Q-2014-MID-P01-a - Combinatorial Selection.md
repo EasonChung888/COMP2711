@@ -40,26 +40,19 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2014-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-选票不记录候选人的次序，因此直接从九人中选五人；五个空缺不是不同职位，毋须安排座次。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(a) $\binom95=126$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom95=126$.
 
 **Derivation/proof.** The ballot is an unordered selection of five of the nine distinct candidates, so it has $\binom95$ possibilities.
 
-### 中文解答
-
-**推导。** 九名候选人互不相同，而选五人不记录先后次序。因此选票对应九人集合的五元素子集，共有 $\binom95=9!/(5!4!)=126$ 种。议席不是五个不同职位，所以不额外乘 $5!$。
-
-## Common Mistakes
-
-- 把组合误写成 $9P5$。
-- 把五个空缺当成有顺序的职位。
+$\binom95=9!/(5!4!)=126$. There is no additional factor $5!$.
 
 ## Connections
 

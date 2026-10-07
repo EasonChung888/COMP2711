@@ -43,26 +43,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-错误在于把一种合法生成过程的结果误当成所有大一阶的图。给三角形加点加边永远保留三角形，因此不会生成没有三角形的四环；构造本身没错，错的是其覆盖范围不足以推出全称结论。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+The correct choice is (5). Not all graphs with $k+1$ vertices satisfying $\deg(v)\ge2$ can be constructed using the procedure in the inductive step. However, $P(k+1)$ is a statement on all such graphs. Therefore, $P(k+1)$ being true does not follow from $G'$ containing a triangle.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Choice 5.
 
 **Derivation/proof.** The extension really is two-dense and retains the old triangle. However $P(k+1)$ quantifies over every two-dense graph with $k+1$ vertices, not merely the outputs of that extension. For example, $C_4$ cannot arise by adding a vertex and edges to a triangle, because such an operation never deletes the triangle. The induction step covers only a proper subclass and so cannot establish the universal statement.
 
-### 中文解答
+The base case and the constructed graph are valid, so choices 1, 3, and 4 misidentify the issue. Adding another base case would not make the construction cover every graph either.
 
-**推导。** 选 $5$。基础三顶点最小度二的简单图确实是三角形；构造中加一点与至少两个旧点连接，也确实保留最小度二以及旧三角形，所以选项 $1,3,4$ 指责的环节并无错误。问题是 $P(k+1)$ 要求所有 $k+1$ 点 two-dense 图，而构造只覆盖保留旧三角形的一部分图；例如 $C_4$ 无三角形，绝不可能由三角形仅加点加边得到。多补一个基础也不能使不充分的构造变为全覆盖，因此选 $5$ 的量词覆盖缺口才是归纳步的根本错误。
-
-## Common Mistakes
-
-- 选“构造出的图不满足度数条件”。
-- 认为多补一个基例就能修复覆盖漏洞。
+Choose $5$, the option identifying the missing universal coverage of the claimed induction extension. The step only constructs a special family; it does not establish the property for all $k+1$-vertex graphs, so it cannot justify the universal claim.
 
 ## Connections
 

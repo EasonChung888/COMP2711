@@ -1,0 +1,16 @@
+Assume that in any decimal number the leftmost digit cannot be 0. How many 6-digit numbers exist such that 
+their digits from left to right
+ (i.e., no two digits are identical) 
+(a) 
+Are strictly decreasing (e.g., 864320). 
+Hint
+: Any six different digits give you a unique number with strictly decreasing digits. 
+By choosing any 6 digits from {0, 1, 2, · · · , 9} we can form a unique 6 digit number that its digits are strictly decreasing from left to right. The answer is C(10,6)
+ 
+(b) 
+Are strictly increasing (e.g., 136789).  
+Similar to part (a), but we can not pick 0 because then it has to be the leftmost digit. So, the answer is C(9,6)
+  
+23
+Exercise
+ on Decreasing Numbers

@@ -39,26 +39,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P04-c - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-旧图已包含所有旧顶点之间的边，因此只需补上新顶点与每个旧顶点的连接，并保留旧边集。新点不需要连接自身；把旧边丢掉只会生成星形图，而不是完全图。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+Recursive step: $E'=E\cup\{e'_1,e'_2,\ldots,e'_n\}$, where $e'_i$ is the edge between vertex $i$ and $n+1$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E'=E\cup\{\{v_i,v_{n+1}\}:1\le i\le n\}$.
 
 **Derivation/proof.** Every pair of old vertices is already an edge because $G$ is complete. The only newly introduced pairs contain $v_{n+1}$, one with each of the $n$ old vertices. Adding exactly those edges and retaining $E$ supplies every distinct vertex pair once and adds no self-loops.
 
-### 中文解答
-
-**推导。** 所有旧点之间的边已在 $E$，须全部保留。新增加的点对仅是 $v_{n+1}$ 与每个旧点 $v_i$，$1\le i\le n$，所以填 $E'=E\cup\{\{v_i,v_{n+1}\}:1\le i\le n\}$。这新增恰好 $n$ 条边，旧旧、旧新两种不同点对均相邻，并不加自环，从而得到下一完整图。
-
-## Common Mistakes
-
-- 忘记并入原来的 E。
-- 给新顶点增加自环。
+There are exactly $n$ new edges, and the old-old and old-new pairs exhaust all distinct vertex pairs.
 
 ## Connections
 

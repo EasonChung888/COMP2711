@@ -38,26 +38,19 @@ What is $P(M=\{2,3\}\mid W=2)$?
 
 Shared context: [[STEM-2022-FINAL2-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-条件已经说明门二后面是车，而事件要求主持人打开门二。主持人只会开羊门，因此这个事件不在合法样本空间内，概率为零，不需要再计算其他对子数量。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (b) $P(M=\{2,3\}\mid W=2)=0$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $0$.
 
 **Derivation/proof.** The condition W=2 places the car behind door 2. The event M={2,3} requires Monty to open that car door, contrary to the stated rule that he opens goat doors. Hence no permitted choice realizes this event and its conditional probability is zero, regardless of the number of other eligible pairs.
 
-### 中文解答
-
-**推导。** 条件 $W=2$ 表示门二后面是车，而事件 $M=\{2,3\}$ 要求主持人打开门二。源规则明确只开羊门，所以这件事不可能发生，$P(M=\{2,3\}\mid W=2)=0$。这个零值不依赖初选羊门一是否可开，也不需要先计算其余合法对子有几种；包含车门已经排除了整个事件。
-
-## Common Mistakes
-
-- 忽略条件 W=2。
-- 把主持人当成不知道汽车位置的随机开门者。
+Thus $P(M=\{2,3\}\mid W=2)=0$, independently of whether the initially chosen goat door may be opened. No count of the other eligible pairs is needed.
 
 ## Connections
 

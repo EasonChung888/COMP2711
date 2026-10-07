@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (b) [3 points] Every teacher has at least one doctor behind (i.e., no teacher is after the last doctor). Note that behind does not necessarily mean the previous person.
 
-## 中文解析
+## Official Answer
 
-每位教师后面有医生等价于教师医生子序列的最后一人是医生。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+(b) $\binom{22}{12}\times12!\times6\times9!$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{22}{12}\,12!\,6\,9!$.
 
-**答案。** $\binom{22}{12}\,12!\,6\,9!$。
-
-**推导。** 仍先选十二个工程师学生的位置并排列，贡献 $\binom{22}{12}12!$。观察剩下十名教师医生的相对顺序：如果最后一位是教师，他后面没有医生，违例；如果最后一位是医生，所有教师都在他之前，条件满足。因此最后一位从六名医生中选，有六种，余下九人任意排列有 $9!$ 种。总数 $\binom{22}{12}12!\cdot6\cdot9!$。这里医生可以散布在教师之间。
-
-## Common Mistakes
-
-- “后面”并非“紧挨着后面”，不能强制每位教师配一个相邻医生。
-- 并不要求所有医生都在所有教师之后，只有最后一个教师不能超过最后一个医生。
+**Derivation/proof.** Choose positions for the 12 engineers and students, and arrange them, contributing $\binom{22}{12}12!$. Consider the relative order of the remaining ten teachers and doctors. If the last one is a teacher, that teacher has no doctor behind. If the last one is a doctor, every teacher has that doctor behind. Choose the last person from the six doctors; the remaining nine people can be arranged arbitrarily in $9!$ ways. The result is $\binom{22}{12}12!\cdot6\cdot9!$. Doctors may also appear between teachers.
 
 ## Connections
 

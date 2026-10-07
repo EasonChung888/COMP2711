@@ -1,0 +1,11 @@
+The Playoff Example (solved using tree diagrams in previous lecture)
+Two teams A and B 
+play a play-off series. Whoever wins 3 games becomes champion; there are no ties. How many possible outcomes exist for team A to become the champion?
+The output can be represented as a bit string with up to 5 bits, where each bit corresponds to a game.
+1 for some bit means that team A won the game. 0 means that team B won the game. There are no ties.
+Total ways for A to win = number of bit strings that contain three 1s: 
+Total ways for B to win = number of bit strings that contain three 0s: 
+Total ways for series
+Observation: There cannot be a bit string of length 5 that contains both three 1s and three 0s 
+ 
+32

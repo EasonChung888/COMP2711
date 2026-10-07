@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (v) The following set is countable infinite $\{0,00,000,0000,\cdots\}$.
 
-## 中文解析
+## Official Answer
 
-全零字符串由正整数长度唯一确定，长度就是可数编码。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) (v) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True.
 
-**答案。** True。
-
-**推导。** 这里元素是不同长度的零字符串。把长度为 $n$ 的字符串 $0^n$ 对应到正整数 $n$，即 $0^n\mapsto n$，其中 $n\ge1$。不同长度给出不同字符串，每个正整数长度恰有一个全零字符串，故映射为双射。正整数可数无限，因此该集合也可数无限。不能把这些字符串当作同一个数值零。
-
-## Common Mistakes
-
-- 字符串 0 与 00 是不同对象，不能按整数数值合并。
-- 每个字符串长度有限，但长度无上界，所以整个集合不是有限集。
+**Derivation/proof.** Map a string of n zeros to its positive integer length: $0^n\mapsto n$, for $n\ge1$. Different lengths give different strings, and each positive length determines exactly one all-zero string. This is a bijection with the positive integers, so the set is countably infinite. The strings 0 and 00 must not be identified as the same numerical zero; each string is finite but lengths are unbounded.
 
 ## Connections
 

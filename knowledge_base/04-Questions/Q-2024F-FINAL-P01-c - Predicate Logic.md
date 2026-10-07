@@ -43,24 +43,17 @@ Prerequisite context (editorial): [[Q-2024F-FINAL-P01-b - Predicate Logic]]. Neg
 
 Shared printed context: ![[STEM-2024F-FINAL-P01-bc - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-否定后要找到一个大于一的整数，使任何候选数都不是素数或不在所需开区间。开区间外包括两个端点，因此边界变为小于等于或大于等于。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (c) $\exists n((n>1)\land\forall p(\neg Prime(p)\lor(p\le n\lor p\ge2n)))$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists n((n>1)\land\forall p(\neg Prime(p)\lor p\le n\lor p\ge2n))$.
 
-**答案。** $\exists n((n>1)\land\forall p(\neg Prime(p)\lor p\le n\lor p\ge2n))$。
-
-**推导。** 否定 $\forall n((n>1)\to\exists p(Prime(p)\land n<p\land p<2n))$，先变成 $\exists n((n>1)\land\neg\exists p(Prime(p)\land n<p\land p<2n))$。将存在取反为全称，再对内部合取使用 De Morgan，得到 $\neg Prime(p)\lor\neg(n<p)\lor\neg(p<2n)$。整数的线性序使后两项等价于 $p\le n$ 与 $p\ge2n$，故得到答案。唯一 $\neg$ 紧邻素数谓词，符合格式要求。
-
-## Common Mistakes
-
-- 不能否定成所有大于一整数都没有区间素数，一个反例 n 已足够。
-- 不在严格区间包含等于端点，两处补条件必须包含等号。
+**Derivation/proof.** Negating the original universal implication first gives $\exists n((n>1)\land\neg\exists p(Prime(p)\land n<p\land p<2n))$. Negate the existential quantifier to obtain a universal one, then apply De Morgan to get $\neg Prime(p)\lor\neg(n<p)\lor\neg(p<2n)$. The integer linear order makes the last two conditions $p\le n$ and $p\ge2n$. This gives the answer, with the sole negation symbol immediately preceding the prime predicate.
 
 ## Connections
 

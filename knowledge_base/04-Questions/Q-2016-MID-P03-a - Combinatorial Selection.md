@@ -39,26 +39,33 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先将等式乘上 $k$，把它解释成“选出 $k$ 人并指定其中一人为代表”的计数。可以先选委员会再选代表，也可以先选代表再选剩余成员，两种方法计同一对象。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=5|PDF physical page 5]].
 
-## Detailed Solution
+(a) $\binom nk=\frac nk\binom{n-1}{k-1}$ could be re-written as
+$$k\binom nk=n\binom{n-1}{k-1}$$
+That is,
+$$\binom nk\binom k1=\binom n1\binom{n-1}{k-1}$$
+Consider $n$ distinct objects.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+Suppose that we want to distribute these $n$ distinct objets into 3 distinguishable buckets. The first bucket contains 1 object, the second bucket contains $k-1$ objects, and the third bucket contains the remaining objects (i.e., $n-k$ objects).
+
+The total number of ways of distributing the objects into these 3 buckets can be interpreted in the following two methods.
+
+- The first method is to select $k$ objects out of $n$ objects first and to keep the remaining objects (i.e., $n-k$ objects) in the third bucket. Then, select 1 object out of the selected $k$ objects and place it to the first bucket and keep the remaining objects (i.e., $k-1$ objects) in the second bucket. Here, the total number of ways in this method is $\binom nk\binom k1$.
+- The second method is to select 1 object out of $n$ objects first and put it to the first bucket. Then, we select $k-1$ objects out of the remaining objects (i.e., $n-1$ objects) and put it to the second bucket. All remaining objects (i.e., $n-k$ objects) are put to the third bucket. Here, the total number of ways in the second method is $\binom n1\binom{n-1}{k-1}$.
+
+Since the first method has the same physical meaning as the second method, we have
+$$\binom nk\binom k1=\binom n1\binom{n-1}{k-1}$$
+
+## Supplementary Explanation
 
 **Answer.** $k\binom nk=n\binom{n-1}{k-1}$, hence the required identity.
 
 **Derivation/proof.** Count pairs $(S,s)$ with $S\subseteq\{1,\ldots,n\}$, $|S|=k$, and $s\in S$. Choosing $S$ then $s$ gives $\binom nk k$. Choosing $s$ first gives $n$ choices and then $\binom{n-1}{k-1}$ choices for the other members. Equate the counts and divide by the positive integer $k$.
 
-### 中文解答
-
-**推导。** 计数二元组 (S,s)：从 n 个不同对象选大小 k 的集合 S，并指定一个成员 s。先选S再选s，计 $\binom nk k$；先选s，有n种，再从剩下n−1个对象选k−1个补齐S，计 $n\binom{n-1}{k-1}$。两种步骤与同一对象一一对应，所以两数相等。题给k>0，可以除以k，得到 $\binom nk=(n/k)\binom{n-1}{k-1}$。这与源解的三个桶（1个、k−1个、n−k个）计数完全对应。
-
-## Common Mistakes
-
-- 用阶乘化简取代本问的组合证明。
-- 先选代表后仍从全部 $n$ 人选其他成员，可能重选代表。
+The distinguished member, the other selected members, and the unselected objects correspond exactly to the source's three buckets of sizes $1,k-1,n-k$. Since $k>0$, division by $k$ is legitimate.
 
 ## Connections
 

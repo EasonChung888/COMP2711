@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (iv) In how many ways, no two teacher stand next to each other.
 
-## 中文解析
+## Official Answer
 
-五名学生制造六个含端点空隙，六名教师必须各占一个。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+> (iv) $6!\times5!$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $6!\times5!$.
 
-**答案。** $6!\times5!$。
-
-**推导。** 先排列五名学生，有 $5!$ 种。学生前后及相邻之间共六个空隙；六名教师不得相邻，因此每个空隙最多放一位，而教师恰好也是六名，必须每隙放一位。把六名不同教师分配到六隙有 $6!$ 种，故总数为 $5!\cdot6!$。最终职业模式必为 TSTSTSTSTST，其他职业模式不可能满足要求。
-
-## Common Mistakes
-
-- 两端空隙也能放教师，少算两端会错误地认为无解。
-- 教师人数比学生多一，所有空隙已被用满，无须再额外选择空隙。
+**Derivation/proof.** First arrange the students in $5!$ ways. There are six gaps, including both ends. At most one teacher may occupy each gap, and six teachers must fill all six gaps. Assigning the distinct teachers takes $6!$ ways, giving $5!\cdot6!$. The occupation pattern is necessarily TSTSTSTSTST.
 
 ## Connections
 

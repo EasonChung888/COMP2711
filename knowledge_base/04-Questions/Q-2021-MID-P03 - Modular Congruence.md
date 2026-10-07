@@ -38,26 +38,23 @@ Source verification: The published argument asserts that $p!+1$ is prime after t
 
 Show that there is no largest prime number.
 
-## 中文解析
+## Official Answer
 
-反证构造 p!+1，并取它的一个素因子。任何不超过 p 的素数都整除 p!，不可能同时整除相差一的新数，所以这个素因子一定更大。关键是取素因子，而不是直接声称阶乘加一永远为素数。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> We prove this by contradiction.
+>
+> Suppose there is a largest prime number $n$. Note that $n!+1$ has no factors between 1 and $n$. Thus, if all primes were $n$ or less, $n!+1$ would have no prime factors, and it would be prime itself. Therefore, $n!+1$ is a prime number greater than $n$, which is a contradiction.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** There is no largest prime.
 
 **Derivation/proof.** Assume a largest prime p exists and form N=p!+1>1. Every integer greater than one has a prime divisor q (take its smallest divisor greater than one, which must be prime). If q≤p, then q divides p! as well as N and thus divides their difference 1, impossible. Therefore q>p, contradicting maximality. We use a prime divisor of N; we do not assume N itself is prime.
 
-### 中文解答
+The least divisor $q>1$ of $N$ is prime: if it were composite, a proper divisor strictly between $1$ and $q$ would also divide $N$, contradicting minimality. The factorial construction need not itself be prime; for example $5!+1=121=11^2$.
 
-**推导。** 反设存在最大的质数 $p$，令整数 $N=p!+1>1$。取 $N$ 大于一的最小正因数 $q$；若 $q$ 为合数，它的一个严格介于一与 $q$ 之间的因数也整除 $N$，违背最小性，所以 $q$ 是质数。若 $q\le p$，则 $q\mid p!$，同时 $q\mid N$，故 $q\mid(N-p!)=1$，不可能。因此 $q>p$，与 $p$ 最大矛盾。我们只需要 $N$ 的质因数，不必在原假设之外断言 $N$ 总是质数；例如 $5!+1=121=11^2$。
-
-## Common Mistakes
-
-- 把 p!+1 无条件当作素数。
-- 未说明大于一的整数存在素因子。
+If $q\le p$, then $q\mid(N-p!)=1$, impossible; hence $q>p$.
 
 ## Connections
 

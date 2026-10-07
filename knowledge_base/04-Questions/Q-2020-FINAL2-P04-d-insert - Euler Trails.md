@@ -40,26 +40,22 @@ Prerequisite context (editorial): [[Q-2020-FINAL2-P04-d-decision - Euler Trails]
 
 Shared context: [[STEM-2020-FINAL2-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-仅有的两个奇度顶点就是 A 与 K，直接连接它们即可同时修正奇偶性。原图没有欧拉回路，所以零条不够；一条已能完成，故最少补边数就是一。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+It is not an Euler circuit, since $A,K$ have odd degree.
+The official answer drawing adds a curved edge $AK$ outside the graph.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Insert $AK$; the minimum is 1 edge.
 
 **Derivation/proof.** Only A and K have odd degree, respectively 3 and 1. At least one edge must be added because the original graph has no Euler cycle. The absent edge AK increases those degrees to 4 and 2, changing no other parity. The graph remains connected, so all Euler conditions hold after exactly one insertion.
 
-### 中文解答
+The curved edge avoids creating incidental vertices. It changes $A$ from degree three to four and $K$ from degree one to two.
 
-**推导。** 只有 $A$ 和 $K$ 为奇度，原图还没有直接的 $AK$ 边。加这一条后，$A$ 度数由三变四，$K$ 由一变二，其他度数不变，图仍连通，故有欧拉回路。原图没有回路说明零条不够；一条已成功，因此最少一条。新增边可以像源图解答那样沿图外弯曲连接，不能把途中未连接的交叉当成新顶点。
-
-## Common Mistakes
-
-- 把补边连到中间偶度点。
-- 把绘图交叉误认为必须额外新增顶点。
+Adding $AK$ changes the degree of $A$ from three to four and that of $K$ from one to two. All other degrees stay even, so one edge is minimal and sufficient.
 
 ## Connections
 

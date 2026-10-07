@@ -37,26 +37,21 @@ a) Compute the output of the algorithm for input: $A=\begin{pmatrix}-1&1\\5&0\en
 
 Shared context: [[STEM-2018-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-本题可直接跟踪已给循环，不需要额外线性代数定理。每个输出元素都先清零，然后累加两次 A 与 B 对应元素的乘积。第一行包含负一，尤其要检查第二、三列的加法符号。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+$$C=\begin{pmatrix}-3&0&2\\15&5&10\end{pmatrix}.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 15. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $C=\begin{pmatrix}-3&0&2\\15&5&10\end{pmatrix}$.
 
 **Derivation/proof.** The inner loop runs over $k=1,2$. Row 1 gives $C[1,1]=(-1)3+1\cdot0=-3$, $C[1,2]=(-1)1+1\cdot1=0$, $C[1,3]=(-1)2+1\cdot4=2$. Row 2 gives $C[2,1]=5\cdot3+0\cdot0=15$, $C[2,2]=5\cdot1+0\cdot1=5$, $C[2,3]=5\cdot2+0\cdot4=10$. These six loop traces form the returned array.
 
-### 中文解答
+The result has dimensions $2\times3$.
 
-**推导。** 按内层循环逐项累计两个乘积。第一行：$C_{11}=(-1)3+1\cdot0=-3$，$C_{12}=(-1)1+1\cdot1=0$，$C_{13}=(-1)2+1\cdot4=2$。第二行：$C_{21}=5\cdot3+0\cdot0=15$，$C_{22}=5\cdot1+0\cdot1=5$，$C_{23}=5\cdot2+0\cdot4=10$。六个结果按行列放回，返回 $C=\begin{pmatrix}-3&0&2\\15&5&10\end{pmatrix}$，维度为 $2\times3$。
-
-## Common Mistakes
-
-- 逐元素相乘而不跟踪 k 循环。
-- 忘记每个新输出位置先清零。
+For example, the first matrix entry starts with $C_{11}=(-1)3+1\cdot0=-3$, and the final entry is $C_{23}=5\cdot2+0\cdot4=10$. Each row-column dot product uses matching inner indices.
 
 ## Connections
 

@@ -37,26 +37,19 @@ $\forall x\forall y((x>2\land y>2)\to(xy>x+y))$
 
 Shared context: [[STEM-2020-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先只处理前件成立的情况。x 与 y 都大于二，所以分别减一后都大于一，乘积严格大于一；展开即可得到目标不等式。前件不成立时蕴含为空真，并不会成为反例。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+True. When $y>2$, $y/(y-1)<2$. So, $x>y/(y-1)$. This implies $x(y-1)>y$, and thus $xy>x+y$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** True.
 
 **Derivation/proof.** If either hypothesis fails the implication is true. Otherwise $x-1>1$ and $y-1>1$, so $(x-1)(y-1)>1$. Expanding gives $xy-x-y+1>1$, hence $xy>x+y$. The strict inequalities ensure a strict final result, including values arbitrarily close to 2.
 
-### 中文解答
-
-**推导。** 判为真。若 $x>2$ 或 $y>2$ 的任一条件不满足，蕴含因前件假而真。若两个条件同时满足，则 $x-1>1,y-1>1$，相乘有 $(x-1)(y-1)>1$。展开为 $xy-x-y+1>1$，即 $xy>x+y$，得到后件。两个分支覆盖所有实数输入。
-
-## Common Mistakes
-
-- 错误把 x=2 当作允许的反例。
-- 从乘积大于四直接推和的上界。
+Under the two hypotheses, $x-1>1,y-1>1$. Their product is greater than one, and expansion and subtraction then give $xy>x+y$.
 
 ## Connections
 

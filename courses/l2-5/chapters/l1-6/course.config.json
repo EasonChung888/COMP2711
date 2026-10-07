@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "title": "排列、组合与分配",
+  "subtitle": "Permutations and Combinations",
+  "language": "zh-CN",
+  "storagePrefix": "comp2711:l1-6:",
+  "topics": [
+    {
+      "slug": "permutations",
+      "title": "排列与有序选择",
+      "description": "从阶乘、r 元排列到奖项与访问顺序，区分有序结果。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "questions": [
+        "Q-2014-MID-P02-a",
+        "Q-2025F-MID-P04-a-i",
+        "Q-2025F-MID-P04-c-i"
+      ]
+    },
+    {
+      "slug": "combinations",
+      "title": "组合与无序选择",
+      "description": "由排列消除重复次序，理解组合数及其对称性。",
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "questions": [
+        "Q-2013-MID-P01-a",
+        "Q-2014-MID-P01-a",
+        "Q-2018-MID-P07-a"
+      ]
+    },
+    {
+      "slug": "restricted-permutations",
+      "title": "相邻、圆排列与间隙",
+      "description": "把相邻对象合成块，处理旋转等价与不相邻限制。",
+      "pages": [
+        9,
+        10,
+        11,
+        12,
+        24
+      ],
+      "questions": [
+        "Q-2014-MID-P02-b",
+        "Q-2014-MID-P02-d",
+        "Q-2025F-MID-P04-a-iv"
+      ]
+    },
+    {
+      "slug": "combination-applications",
+      "title": "组合分类与单调数字",
+      "description": "按组成分类、用补集处理至少条件，并把单调数字转成集合。",
+      "pages": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "questions": [
+        "Q-2017-MID-P09-a",
+        "Q-2017-MID-P09-b",
+        "Q-2024F-MID-P06-b"
+      ]
+    },
+    {
+      "slug": "categorized-selections",
+      "title": "扑克牌与按类型选择",
+      "description": "区分点数和花色，以多重选择步骤数不同手牌；练习使用同类的颜色选择模型。",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "questions": [
+        "Q-2015-MID-P08-a",
+        "Q-2015-MID-P08-b",
+        "Q-2015-MID-P08-c"
+      ]
+    },
+    {
+      "slug": "bijections",
+      "title": "双射、组合证明与停止序列",
+      "description": "在子集、位串和停止过程间建立可逆对应。",
+      "pages": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "questions": [
+        "Q-2013-MID-P03",
+        "Q-2016-MID-P03-a",
+        "Q-2016-MID-P03-b"
+      ]
+    },
+    {
+      "slug": "multiset-permutations",
+      "title": "相同对象的排列",
+      "description": "用位置选择与除重因子数重复字母和多类型对象。",
+      "pages": [
+        34,
+        35,
+        36
+      ],
+      "questions": [
+        "Q-2014-MID-P04-a",
+        "Q-2014-MID-P04-b"
+      ]
+    },
+    {
+      "slug": "object-distributions",
+      "title": "不同对象的分配",
+      "description": "识别对象与盒子是否可区分，按指定人数分配不同对象。",
+      "pages": [
+        37,
+        38,
+        39
+      ],
+      "questions": [
+        "Q-2019-FINAL-P09-a",
+        "Q-2019-FINAL-P09-b"
+      ]
+    },
+    {
+      "slug": "repeated-combinations",
+      "title": "重复组合与星号隔板",
+      "description": "将无序重复选择转换成各类数量，并比较四种基本选择模型。",
+      "pages": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        49
+      ],
+      "questions": [
+        "Q-2018-MID-P08-c",
+        "Q-2024F-MID-P06-c",
+        "Q-2024F-MID-P06-d"
+      ]
+    },
+    {
+      "slug": "integer-solutions",
+      "title": "整数解与数量限制",
+      "description": "用变量平移处理下界，用补集处理库存上界。",
+      "pages": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "questions": [
+        "Q-2013-MID-P08",
+        "Q-2017-MID-P10-b",
+        "Q-2017-MID-P10-c"
+      ]
+    },
+    {
+      "slug": "restricted-paths",
+      "title": "格点路径与必经、禁行限制",
+      "description": "把方向序列转成组合，按必经点或禁行边分段计算。",
+      "pages": [
+        50,
+        51
+      ],
+      "questions": [
+        "Q-2018-FINAL-P11-b",
+        "Q-2020-FINAL1-P03-b",
+        "Q-2024S-FINAL-P04"
+      ]
+    }
+  ]
+}

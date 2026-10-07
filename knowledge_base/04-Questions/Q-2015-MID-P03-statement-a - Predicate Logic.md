@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-“一个富有而著名的人”是在说明任意符合两个条件的人，并非只声称存在一个人。故用全称量词，前件同时包含富有和著名，后件才是成功。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=8|PDF physical page 8]].
 
-## Detailed Solution
+(a) $\forall x\in U((rich(x)\land famous(x))\to successful(x))$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\forall x\in U((rich(x)\land famous(x))\to successful(x))$.
 
 **Derivation/proof.** Choose an arbitrary person $x$. The claim applies when both $rich(x)$ and $famous(x)$ hold, and then requires $successful(x)$. Put these conditions into an implication and universally quantify $x$.
 
-### 中文解答
-
-**推导。** 任取域 U 中的人 x。原句不是仅说存在某个人，而是对每个同时富有和著名的人断言成功。因此条件为 $rich(x)\land famous(x)$，结论为 $successful(x)$，写成蕴含并对 x 全称化，得 $\forall x\in U((rich(x)\land famous(x))\to successful(x))$。不满足合取条件的人不受这条成功断言限制。
-
-## Common Mistakes
-
-- 用存在量词代替“任意符合条件的人”。
-- 把前件中的“而且”写成“或者”。
+People who do not satisfy both conditions are not constrained by this assertion of success.
 
 ## Connections
 

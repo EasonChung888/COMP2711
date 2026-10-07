@@ -41,26 +41,19 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-四种颜色各至少一只，要凑成六只，恰好两种颜色取两只，另两种各一只。先选完整配对的两色，再从剩余十色选单只颜色，最后为每个单只选左或右。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+(b) The number of colors of these 6 gloves is 4 means firstly you pick 2 pairs of gloves out of 12 so there are $\binom{12}{2}$ possibilities. Then the remaining 2 gloves are from 2 different pairs out of the remaining 10 pairs. You choose only one glove from each pair. So there are $\binom{10}{2}\cdot2\cdot2$ possibilities. Overall there are $\binom{12}{2}\binom{10}{2}\cdot2\cdot2$ cases.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{12}{2}\binom{10}{2}2^2=11880$.
 
 **Derivation/proof.** Let $d$ be the number of doubled colors and $s$ singleton colors. Then $d+s=4$ and $2d+s=6$, so $d=s=2$. Choose doubled colors in $\binom{12}{2}$ ways, singleton colors from the rest in $\binom{10}{2}$ ways, then each singleton glove in two ways. This decomposition is unique.
 
-### 中文解答
-
-**推导。** 设双只颜色有 d 种，单只颜色有 s 种。颜色数给 $d+s=4$，手套数给 $2d+s=6$，相减得 $d=2,s=2$。从十二色选双只两色，再从剩余十色选单只两色；每种单只颜色可选左或右。乘积 $\binom{12}{2}\binom{10}{2}2^2=11880$，每个选择唯一对应这两类颜色，不重计。
-
-## Common Mistakes
-
-- 从全部十二色选单只颜色，允许与已选完整配对颜色重合。
-- 对两类颜色再乘排列因子，使无序颜色集合重复计数。
+Subtracting $d+s=4$ from $2d+s=6$ gives $d=2,s=2$.
 
 ## Connections
 

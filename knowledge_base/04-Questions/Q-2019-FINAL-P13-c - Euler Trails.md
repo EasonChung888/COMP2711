@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P13 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-逐点数度可以准确定位四个奇点：烟囱顶端、屋顶尖点以及矩形下方两个角。矩形上方两角因为额外连接屋顶而度四，不是奇点。奇度顶点达到四个，已经超过欧拉通路允许的数量。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=16|physical PDF page 16]].
 
-## Detailed Solution
+There is no Euler path or Euler circuit because the graph has $4$ vertices of odd degree.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 16. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** It has neither an Euler path nor an Euler circuit.
 
 **Derivation/proof.** The drawing is connected. The chimney's free endpoint has degree one, the roof apex degree three, and each lower corner of the rectangle degree three. The two upper rectangle corners each have degree four, and the central diagonal crossing also has degree four under the source convention. Thus there are four odd-degree vertices. An undirected Euler trail requires zero or two, so neither a trail nor a circuit exists.
 
-### 中文解答
+The chimney endpoint has degree $1$, the roof peak degree $3$, and both bottom corners degree $3$. The two top corners and central crossing have degree $4$.
 
-**推导。** 图(c)是连通图。烟囱最上端度数 $1$，屋顶尖点连接两条斜屋顶及烟囱，度数 $3$；矩形左下、右下角各连接一条竖边、一条底边和一条对角线，度数各 $3$。这四个点为奇度。上面两角各度数 $4$；若把中央交叉点按印本方式计为顶点，它的度数也为 $4$，不增加奇度点。因此共有四个奇度顶点，不符合欧拉路的零或两个奇度点条件，欧拉路与欧拉回路都不存在。
-
-## Common Mistakes
-
-- 忘记竖直烟囱边带来的两个奇点。
-- 把矩形上角误数成度三。
+The chimney's top endpoint has degree $1$, the roof apex and both lower corners have degree three. Hence four vertices have odd degree: there are four odd-degree vertices in total, which rules out an Euler trail as well as a circuit.
 
 ## Connections
 

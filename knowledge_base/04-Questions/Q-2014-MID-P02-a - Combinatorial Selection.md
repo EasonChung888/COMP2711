@@ -40,26 +40,19 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2014-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-没有家庭限制时就是 $3n$ 个不同人的线性排列；即使来自同一家庭，父亲、母亲和孩子仍是不同个体。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(a) $(3n)!$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $(3n)!$.
 
 **Derivation/proof.** All $3n$ people are distinct and every permutation of them in the $3n$ seats is allowed.
 
-### 中文解答
-
-**推导。** 共有 n 个家庭，每家三名不同的人，总人数为 3n。座位排成直线且没有限制，从左到右依次有 $3n,3n-1,\ldots,1$ 个可选人，乘积为 $(3n)!$。同家三人也必须区分身份。
-
-## Common Mistakes
-
-- 把每个家庭的三人当成不可区分。
-- 错误加上家庭内部的额外因子。
+The sequential choices are $3n,3n-1,\ldots,1$, whose product is $(3n)!$.
 
 ## Connections
 

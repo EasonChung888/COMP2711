@@ -36,26 +36,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 (b) Give an example of two increasing functions $f(n)$ and $g(n)$ from the set of positive integers to the set of positive integers such that neither $f(n)$ is $O(g(n))$ nor $g(n)$ is $O(f(n))$. Justify your answer.
 
-## 中文解析
+## Official Answer
 
-要让两函数都递增，却互相没有大 O 关系，可让优势在奇偶下标交替。源解的指数序列各自不减，所以函数仍递增；偶数时 f 比 g 大 n 倍，奇数时反过来，两个方向都无法用固定常数控制。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+We want the functions to play leap-frog, with first one much bigger than the other. Something like this will do the trick: Let $f(n)=n^{2\lfloor n/2\rfloor+1}$ and $g(n)=n^{2\lceil n/2\rceil}$. Thus, $\{f(1)=1^1,g(1)=1^2\},\{f(2)=2^3,g(2)=2^2\},\{f(3)=3^3,g(3)=3^4\},\{f(4)=4^5,g(4)=4^4\}$, and so on. Then for even $n$ we have $f(n)/g(n)=n$, and for odd $n$ we have $g(n)/f(n)=n$. Because both ratios are unbounded, neither function is big-O of the other.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $f(n)=n^{2\lfloor n/2\rfloor+1}$ and $g(n)=n^{2\lceil n/2\rceil}$.
 
 **Derivation/proof.** Both exponent sequences are positive and nondecreasing, and the base n strictly increases, so each function is strictly increasing on positive integers. For even n, the exponents are n+1 and n, so $f(n)/g(n)=n$. For odd n, the exponents are n and n+1, so $g(n)/f(n)=n$. Each ratio is therefore unbounded along an infinite subsequence. Any purported eventual constant big-O bound fails on its corresponding subsequence.
-
-### 中文解答
-
-**推导。** 取 $f(n)=n^{2\lfloor n/2\rfloor+1}$、$g(n)=n^{2\lceil n/2\rceil}$。两函数的指数都是正整数且随 $n$ 不减，底数严格增加，因此函数值都是正整数且严格递增。偶数 $n$ 时指数分别为 $n+1,n$，所以 $f(n)/g(n)=n$；奇数 $n$ 时指数分别为 $n,n+1$，所以 $g(n)/f(n)=n$。两类子序列都含任意大的 $n$，各比值均无最终常数上界，故 $f\ne O(g)$ 且 $g\ne O(f)$。
-
-## Common Mistakes
-
-- 构造交替振荡但并不递增的函数。
-- 只证明一个方向的比值无界。
 
 ## Connections
 

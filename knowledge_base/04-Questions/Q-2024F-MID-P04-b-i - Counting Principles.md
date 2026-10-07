@@ -42,24 +42,17 @@ Hint: Note that in order to get from A to B you have to pass from some certain p
 
 Shared printed context: ![[STEM-2024F-MID-P04-b - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-把图的九个竖列从左到右编号为一至九。A 与 B 在底行。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> (b) (i) $2^3$. Note that the path has to pass from the middle point on even columns. So for columns with odd index (from 3) we have two options to either go up or down. Thus the answer is $2^3$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2^3=8$.
 
-**答案。** $2^3=8$。
-
-**推导。** 把图的九个竖列从左到右编号为一至九。A 与 B 在底行。每一步左右坐标增一，高度增减一，因此偶数列二、四、六、八只能位于中行。第一步 A 到第二列中点 X 和最后中点到底部 B 都被迫；第三、五、七列各可选顶行或底行，下一步必回中行，三个选择互不限制。于是乘法原理给出 $2\cdot2\cdot2=8$，每组选择唯一产生一条合法路径。
-
-## Common Mistakes
-
-- 只能使用图示三行，不能把八步四升四降的所有序列都当合法。
-- 固定的首尾动作不贡献额外二选一，实际只有三个自由分支。
+**Derivation/proof.** Number the nine columns from left to right. Both $A$ and $B$ lie on the bottom row. Every move advances one column and changes height by one, so columns two, four, six and eight must lie on the middle row. The initial move from $A$ to $X$ and the last move down to $B$ are forced. Columns three, five and seven may each be upper or lower, followed by a forced return to the middle. These three choices are independent, so $2\cdot2\cdot2=8$. Every choice triple gives one legal path.
 
 ## Connections
 

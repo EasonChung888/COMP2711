@@ -38,26 +38,19 @@ Suppose we remove a vertex $u$ and all edges incident to $u$, and get a subgraph
 
 Shared context: [[STEM-2020-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-删点后的图已经连通，所以只需让 u 至少接上一条边。这个条件与其余图内部的边无关，独立性保证条件化后边概率仍不变；先算所有 n-1 条边都不存在，再取补集。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$G$ is also connected if and only if $u$ connects with at least one vertex in $G'$. Since we know $u$ links to any other vertex with probability $p$, the probability that it has no edge with other vertices is, $(1-p)^{n-1}$. So the probability that $G$ is connected is $1-(1-p)^{n-1}$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $1-(1-p)^{n-1}$ whenever the conditioning event has positive probability.
 
 **Derivation/proof.** With G′ connected, G is connected exactly when u has at least one neighbor among the n−1 remaining vertices. The event about G′ depends only on edges not incident to u, so conditioning does not change the independent incident edge probabilities. All n−1 incident edges are absent with probability (1−p)^(n−1). Taking its complement yields the answer.
 
-### 中文解答
-
-**推导。** 已知 $G'$ 连通时，恢复顶点 $u$ 后，$G$ 连通当且仅当 $u$ 至少连到其余 $n-1$ 点之一。关于 $G'$ 的事件只依赖不接触 $u$ 的边，而题目明确各边独立，所以条件化不会改变这 $n-1$ 条关联边各自存在的概率及独立性。它们全不存在的概率为 $(1-p)^{n-1}$，取补集得到 $1-(1-p)^{n-1}$。通常条件概率要求所给连通事件有正概率；若参数使条件事件概率为零，不应把该公式冒称为零概率条件下的定义值。
-
-## Common Mistakes
-
-- 要求 u 连接所有其他顶点。
-- 把已知 G′ 连通误当成 G 自动连通。
+As usual, the conditioning event must have positive probability; the formula does not define conditioning on a zero-probability event.
 
 ## Connections
 

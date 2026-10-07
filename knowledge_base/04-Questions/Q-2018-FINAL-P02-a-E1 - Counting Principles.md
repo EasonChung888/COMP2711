@@ -37,26 +37,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-宽度一的板只有一列三格，横放长度三的拼块会超出边界，所以只能竖放一块。它恰好盖住整块板，没有第二种位置或方向，因此计数为一。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$1,1,2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E_1=1$.
 
 **Derivation/proof.** The board has three cells in one column. A horizontal piece of length three cannot fit in width one, so the only possible placement is a single vertical piece covering all three cells. This placement completes the board and is unique.
 
-### 中文解答
+The three printed values are respectively $E_1,E_2,E_3$; this atomic question asks for the first.
 
-**推导。** $3$ 行 $1$ 列的棋盘只有三个格。水平的 $1\times3$ 砖需要三列，放不下；唯一选择是一块竖砖覆盖整列。该放法恰覆盖且无重叠，所以 $E_1=1$。
-
-## Common Mistakes
-
-- 把旋转后的横块也算作有效。
-- 把同一块的上下翻转当不同铺法。
+A $1\times3$ tile covers the entire column in the one-column board. This is the sole tiling and gives the first initial value.
 
 ## Connections
 

@@ -42,24 +42,17 @@ Source typography: the printed formula has one redundant unmatched opening paren
 
 Shared printed context: ![[STEM-2024S-MID-P02 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-左操作数 $p\to(q\lor r)\equiv\neg p\lor q\lor r$。右操作数 $(p\to q)\lor(p\to r)\equiv(\neg p\lor q)\lor(\neg p\lor r)\equiv\neg p\lor q\lor r$，最后使用结合、交换和幂等律。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> Answer. (e) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** T.
 
-**答案。** T
-
-**推导。** 左操作数 $p\to(q\lor r)\equiv\neg p\lor q\lor r$。右操作数 $(p\to q)\lor(p\to r)\equiv(\neg p\lor q)\lor(\neg p\lor r)\equiv\neg p\lor q\lor r$，最后使用结合、交换和幂等律。两个操作数完全等价，因此双条件恒真，分类 $T$；开头多出的括号没有增加任何操作数或联结词。
-
-## Common Mistakes
-
-- 右侧两个蕴含之间是析取而非合取，消蕴含后重复的非 p 可合并。
-- 源式多一个开括号，但左右双条件操作数清楚；不要擅改联结词补救排版。
+**Derivation/proof.** The left operand satisfies $p\to(q\lor r)\equiv\neg p\lor q\lor r$. The right satisfies $(p\to q)\lor(p\to r)\equiv(\neg p\lor q)\lor(\neg p\lor r)\equiv\neg p\lor q\lor r$, using associativity, commutativity and the idempotent law. The operands are equivalent, making the biconditional a tautology, classified $T$. The extra opening parenthesis in the printed expression adds no operand or connective.
 
 ## Connections
 

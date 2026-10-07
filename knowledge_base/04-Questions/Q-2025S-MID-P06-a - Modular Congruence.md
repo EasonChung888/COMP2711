@@ -41,24 +41,19 @@ where there are $n$ 2's in the tower.
 Compute $2\uparrow100\pmod{17}$.
 Hint: Use Fermat's Little Theorem.
 
-## 中文解析
+## Official Answer
 
-塔顶的指数本身极大，但计算模十七只需知道它模十六的余数。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+(a) Note that 17 is a prime number. So $2^{16}\equiv1\pmod{17}$. So we need to calculate $2\uparrow(99)\pmod{16}$. It is easy to see that $2\uparrow x\equiv0\pmod{16}$ for $x\ge3$. So $2\uparrow(99)\equiv0\pmod{16}$.
 
-Provenance: published official answer, independently checked and expanded below.
+So we can conclude that $2\uparrow100\equiv2^{16\cdot k}\equiv(2^{16})^k\equiv1\pmod{17}$.
 
-### 中文解答
+## Supplementary Explanation
 
-**答案。** $1$。
+**Answer.** $1$.
 
-**推导。** 十七是素数且与二互素，Fermat's Little Theorem 给出 $2^{16}\equiv1\pmod{17}$。有 $2\uparrow2=4$、$2\uparrow3=16$，并且对所有 $t\ge3$，$2\uparrow t=2^{2\uparrow(t-1)}$ 的指数至少为四，因此 $16\mid2\uparrow t$。特别地，写 $2\uparrow99=16k$，则 $2\uparrow100=2^{16k}\equiv(2^{16})^k\equiv1\pmod{17}$。这只约化最外层指数，没有把塔高度误作普通幂指数。
-
-## Common Mistakes
-
-- 不能把 $2\uparrow100$ 当成 $2^{100}$，递归定义的运算完全不同。
-- Fermat 约化指数用十六而非十七，底数的模数才是十七。
+**Derivation/proof.** Since 17 is prime and coprime to 2, Fermat's Little Theorem gives $2^{16}\equiv1\pmod{17}$. We have $2\uparrow2=4$ and $2\uparrow3=16$. For every $t\ge3$, the exponent in $2\uparrow t=2^{2\uparrow(t-1)}$ is at least four, so $16\mid2\uparrow t$. Write $2\uparrow99=16k$. Then $2\uparrow100=2^{16k}\equiv(2^{16})^k\equiv1\pmod{17}$. Only the outer exponent was reduced; the tower height is not an ordinary exponent.
 
 ## Connections
 

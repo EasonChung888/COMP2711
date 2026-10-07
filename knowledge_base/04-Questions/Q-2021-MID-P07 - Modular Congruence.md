@@ -36,26 +36,23 @@ Published solution material: ![[knowledge_base/past_paper/2021-midterm.pdf#page=
 
 Show that $p^{q-1}+q^{p-1}\equiv1\pmod{pq}$ for any two distinct prime numbers $p$ and $q$.
 
-## 中文解析
+## Official Answer
 
-分别对 p 和 q 求余，一项由费马小定理为一，另一项含模数因子为零。两个不同素数互质，所以同时被它们整除就被乘积整除；不能省略“不同”这个保证互质的条件。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> By Fermat's little theorem, $p^{q-1}\equiv1\pmod q$.
+> Clearly, $q^{p-1}\equiv0\pmod q$.
+> Therefore, $p^{q-1}+q^{p-1}\equiv1+0\equiv1\pmod q$.
+> Similarly, $p^{q-1}+q^{p-1}\equiv0+1\equiv1\pmod p$.
+> By the Chinese remainder theorem, we have $p^{q-1}+q^{p-1}\equiv1\pmod{pq}$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** The congruence holds.
 
 **Derivation/proof.** Modulo q, p is nonzero because the primes are distinct, so Fermat gives $p^{q-1}\equiv1$. Also $q^{p-1}\equiv0$ since p−1≥1. Their sum is 1 modulo q. Similarly it is 1 modulo p. Thus p and q both divide the sum minus one; because they are coprime, pq divides it. This proves the desired congruence, including the case where one prime is 2.
 
-### 中文解答
-
-**推导。** 记 $A=p^{q-1}+q^{p-1}$。模 $q$ 考察，因为 $p,q$ 不同，$q\nmid p$，费马小定理给 $p^{q-1}\equiv1\pmod q$；又 $p-1\ge1$，故 $q^{p-1}\equiv0\pmod q$。因此 $q\mid A-1$。交换两质数同理得 $p\mid A-1$。不同质数互质，所以它们的乘积 $pq\mid A-1$，即 $A\equiv1\pmod{pq}$。即使其中一个质数为二，相应指数仍至少一，证明仍成立。
-
-## Common Mistakes
-
-- 把费马定理应用在与模数相同的底数上。
-- 未证明互质就把两条同余合并。
+With $A=p^{q-1}+q^{p-1}$, the separate congruences give $q\mid A-1$ and $p\mid A-1$; coprimality gives $pq\mid A-1$.
 
 ## Connections
 

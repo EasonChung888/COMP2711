@@ -44,24 +44,17 @@ First, write each premise as a logical form using quantifiers and the above pred
 
 Premise 1: All clear explanations are satisfactory
 
-## 中文解析
+## Official Answer
 
-“All”要求对域内每个对象检查，只有它是清楚解释时才要求令人满意。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> (c) The premises turn into: $\forall x(C(x)\to S(x))$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\forall x(C(x)\to S(x))$.
 
-**答案。** $\forall x(C(x)\to S(x))$。
-
-**推导。** 固定任意对象 $x$。若 $C(x)$ 为真，英文前提要求 $S(x)$ 也为真，因此对应 $C(x)\to S(x)$；若 $C(x)$ 为假，英文没有施加额外要求，蕴含式的空真恰好表达这一点。对所有 $x$ 加上全称量词便得 $\forall x(C(x)\to S(x))$。此公式不反过来要求每个令人满意的对象都是清楚解释。
-
-## Common Mistakes
-
-- 把蕴含换成合取会强迫域内所有对象都是清楚解释。
-- 前提只有一个方向，不能擅自写成双条件。
+**Derivation/proof.** Fix any object x. If C(x) is true, the premise requires S(x), which is exactly $C(x)\to S(x)$. If C(x) is false, the English sentence imposes no requirement, matching the implication’s vacuous truth. Universally quantify x. The premise does not require every satisfactory object to be a clear explanation.
 
 ## Connections
 

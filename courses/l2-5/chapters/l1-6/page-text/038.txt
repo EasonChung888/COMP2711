@@ -1,0 +1,21 @@
+Distributing Objects into Boxes
+How many ways are there to deal 
+5 cards to each of 4 players
+, from the standard deck of 52 cards?
+Solution
+Here, the cards are the 
+distinguishable
+ objects and the players hands are the 
+distinguishable
+ boxes.
+The first player’s can be chosen in 
+ ways
+The second player: 
+ ways
+The third player: 
+ ways
+The fourth player: 
+ ways
+By the product rule, the total number of ways is 
+ 
+38

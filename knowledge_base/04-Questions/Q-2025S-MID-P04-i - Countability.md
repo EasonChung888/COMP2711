@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 
 (i) The set of all polynomials with integer coefficients, i.e., polynomials of the form $a_0+a_1x+\cdots+a_{k-1}x^{k-1}+a_kx^k$ for some $k\in\mathbb N$, where $a_i\in\mathbb Z$ for $i=0,\ldots,k$.
 
-## 中文解析
+## Official Answer
 
-每个有限次数可编码为一个整数系数元组，再把所有次数作可数并。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(i) Countably infinite. The union of countably many countable sets is countable. This can be proved using the same argument as showing $\mathbb N^2$ is countable.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Countably infinite.
 
-**答案。** Countably infinite。
-
-**推导。** 对固定 $k$，系数元组属于 $\mathbb Z^{k+1}$，有限次可数集合的笛卡尔积仍可数，可按元组各坐标绝对值之和逐层枚举。所有有限次数的多项式属于 $\bigcup_{k\ge0}\mathbb Z^{k+1}$ 的像，可数并仍可数。不同整数常数给出无限多个不同多项式，所以该集合不是有限集，而是可数无限。
-
-## Common Mistakes
-
-- 不同次数仍属于可数个层级，不能把次数无上界误判为不可数。
-- 常数多项式已经无限多个，不能因为每个多项式只有有限系数便判为有限。
+**Derivation/proof.** For fixed $k$, coefficient tuples lie in $\mathbb Z^{k+1}$. A finite product of countable sets is countable: enumerate the tuples by the sum of the absolute values of their coordinates. All finite-degree polynomials are in the image of $\bigcup_{k\ge0}\mathbb Z^{k+1}$, a countable union of countable sets. Distinct integer constants give infinitely many different polynomials. The set is therefore countably infinite, not finite.
 
 ## Connections
 

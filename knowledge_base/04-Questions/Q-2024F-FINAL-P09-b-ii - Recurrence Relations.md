@@ -43,24 +43,17 @@ Prerequisite context (editorial): [[Q-2024F-FINAL-P09-b-i - Recurrence Relations
 
 Shared printed context: ![[STEM-2024F-FINAL-P09-b - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-从底层逐次展开到初值，得到前 n 个正整数之和。把正序和倒序相加，每一对都是 n+1，从而得到精确闭式。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=24|physical PDF page 24]].
 
-## Detailed Solution
+> (ii) $T(n)=n+T(n-1)=n+(n-1)+T(n-2)=\cdots=n+(n-1)+(n-2)+\cdots+1=\frac{n\cdot(n+1)}2$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $T(n)=n(n+1)/2$.
 
-**答案。** $T(n)=n(n+1)/2$。
-
-**推导。** 导入 $T(1)=1,T(n)=T(n-1)+n$。反复代入：$T(n)=n+(n-1)+T(n-2)=\cdots=n+(n-1)+\cdots+1$。记此和为 S，再倒序写 $S=1+2+\cdots+n$。逐位置相加，每项都是 $n+1$，共有 n 项，所以 $2S=n(n+1)$，即 $S=n(n+1)/2$。故 $T(n)$ 的闭式是该表达式，$n=1$ 时给一，与初值一致。
-
-## Common Mistakes
-
-- 闭式不是仅给 $\Theta(n^2)$，题目要精确圆数。
-- 整数和公式分子为 $n(n+1)$，不是 $n(n-1)$。
+**Derivation/proof.** Use $T(1)=1,T(n)=T(n-1)+n$. Repeated substitution gives $T(n)=n+(n-1)+T(n-2)=\cdots=n+(n-1)+\cdots+1$. Call this sum $S$ and also write $S=1+2+\cdots+n$. Adding term by term gives $n$ copies of $n+1$, so $2S=n(n+1)$ and $S=n(n+1)/2$. This is the desired closed form; at $n=1$ it gives one, agreeing with the initial value.
 
 ## Connections
 

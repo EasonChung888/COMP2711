@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (ii) In how many ways, all teachers are adjacent to each other?
 
-## 中文解析
+## Official Answer
 
-把六名教师压缩为一块，再分别排列外层对象与区块内人员。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+> (ii) $6!\times6!$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $6!\times6!$.
 
-**答案。** $6!\times6!$。
-
-**推导。** 把六名教师视为一个连续区块，与五名不同学生合起来成为六个不同对象。先排列这六个对象有 $6!$ 种，再把教师区块内部的六名教师排列有 $6!$ 种。两项独立，每个合法队列唯一压缩回一个区块排列和内部次序，因此总数 $6!\cdot6!$。
-
-## Common Mistakes
-
-- 教师区块内部仍有六人的次序，不能只计外层排列。
-- 学生不要求互相相邻，不能把他们也压成一个区块。
+**Derivation/proof.** Compress the six teachers into one consecutive block. Together with the five distinct students, there are six distinct objects, arranged in $6!$ ways. Independently arrange the teachers within their block in $6!$ ways, giving $6!\cdot6!$. Every valid line uniquely compresses to this outer order and inner order.
 
 ## Connections
 

@@ -42,24 +42,22 @@ The literal final prompt writes c=m^e without a modulus. The named RSA algorithm
 
 (iii) [3 pts] Suppose Alice wants to encrypt message $m=3$ using Bob's public key $(n,e)$. Note that $n=77$, $e=7$. Use the repeated squaring technique to calculate the ciphertext $c=m^e$.
 
-## 中文解析
+## Official Answer
 
-RSA 算法的密文取模 n；题末幂式省略了模号，正文保留它并按算法定义计算。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+(iii) Encrypt message $m=3$ using Bob's public key $(n=77,e=7)$ by repeated squaring to compute $c=3^7\bmod77$.
+$$\begin{aligned}3^1&\equiv3\pmod{77}\\3^2&\equiv9\pmod{77}\\3^4=(3^2)^2&\equiv9^2=81\equiv4\pmod{77}.\end{aligned}$$
+Thus, the ciphertext is $3^7=3\times3^2\times3^4\pmod{77}=3\times9\times4\pmod{77}=31$.
+$$c=31.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The RSA ciphertext is $c=31$.
 
-**答案。** RSA 密文 $c=31$。
-
-**推导。** RSA encryption 使用 $c\equiv m^e\pmod n$ 的标准代表。模七十七下，$3^1\equiv3$，$3^2\equiv9$，$3^4\equiv9^2=81\equiv4$。指数 $7=4+2+1$，所以 $3^7\equiv3^4\cdot3^2\cdot3\equiv4\cdot9\cdot3=108\equiv31\pmod{77}$。三十一位于零至七十六之间，故为输出密文。这里只用了两次平方和合并，符合 repeated squaring 要求。
-
-## Common Mistakes
-
-- 公开指数七与私钥指数四十三用途不同，加密不能换用私钥。
-- 幂乘积要模七十七约化，原整数三的七次幂不是 RSA 输出代表。
+**Derivation/proof.** RSA encryption uses the standard residue $c\equiv m^e\pmod n$. Modulo 77, $3^1\equiv3$, $3^2\equiv9$ and $3^4\equiv9^2=81\equiv4$. Since $7=4+2+1$,
+$$3^7\equiv3^4\cdot3^2\cdot3\equiv4\cdot9\cdot3=108\equiv31\pmod{77}.$$
+The value 31 lies between 0 and 76, so it is the ciphertext representative. Two squarings followed by multiplication implement the requested repeated-squaring method.
 
 ## Connections
 

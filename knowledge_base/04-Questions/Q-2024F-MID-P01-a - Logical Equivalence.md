@@ -41,24 +41,18 @@ $$(p\to q)\lor(q\to r)$$
 is a tautology or not. If Yes, prove it. If No, provide a counter example.
 (You are not allowed to use truth table)
 
-## 中文解析
+## Official Answer
 
-两个蕴含分别改成析取后，中间命题 q 的肯定与否定同时出现。这个互补对已经保证整个析取为真，无需枚举真值表。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> Answer: (a)
+> $$(p\to q)\lor(q\to r)\equiv(\neg p\lor q)\lor(\neg q\lor r)\equiv\neg p\lor q\lor\neg q\lor r\equiv\neg p\lor(q\lor\neg q)\lor r\equiv\neg p\lor T\lor r\equiv\mathrm{True}.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** It is a tautology.
 
-**答案。** 是 tautology。
-
-**推导。** 逐步使用逻辑律：$(p\to q)\lor(q\to r)\equiv(\neg p\lor q)\lor(\neg q\lor r)\equiv\neg p\lor(q\lor\neg q)\lor r$。排中律给出 $q\lor\neg q=T$，因此该式等价于 $\neg p\lor T\lor r=T$。这些等价变形适用于任意 $p,q,r$ 的赋值，所以整个式子恒真，且没有使用题目禁止的 truth table。
-
-## Common Mistakes
-
-- 不能只观察一个蕴含，它可为假，但另一个这时保证整个析取为真。
-- 题目禁止真值表，需用等价律或逻辑论证证明所有赋值。
+**Derivation/proof.** Logical equivalences give $(p\to q)\lor(q\to r)\equiv(\neg p\lor q)\lor(\neg q\lor r)\equiv\neg p\lor(q\lor\neg q)\lor r$. The excluded-middle law gives $q\lor\neg q=T$, so this is $\neg p\lor T\lor r=T$. These equivalences hold for every assignment of $p,q,r$, proving the tautology without the forbidden truth table.
 
 ## Connections
 

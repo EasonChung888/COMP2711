@@ -37,26 +37,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-midterm
 
 Shared context: [[STEM-2017-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-用反证法假设和也能写成整数之比，再减去已知的有理数，就会把原本的无理数表示为整数之比。分母必须非零，这样才能真正得到与无理数定义矛盾的有理表示。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+We use a proof by contradiction: assume that the sum of some rational number $x$ and some irrational number $y$ is a rational number $z$. $x=\frac ab$, and $z=\frac cd$ for some integers $c$ and $d$. We have $y=z-x=\frac cd-\frac ab=\frac{cb-ad}{db}$. Since $cb-ad$ and $db$ are integers, this contradicts with the assumption that $y$ is an irrational number.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** The sum is irrational.
 
 **Derivation/proof.** Let $y$ be irrational and $x=a/b$ rational, where $a,b\in\mathbb Z$ and $b\ne0$. If $x+y=c/d$ were rational with $d\ne0$, then $y=c/d-a/b=(bc-ad)/(bd)$ would be rational, since its numerator and nonzero denominator are integers. This contradicts the choice of $y$.
-
-### 中文解答
-
-**推导。** 设 $y$ 为无理数，$x=a/b$ 为有理数，其中 $a,b\in\mathbb Z,b\ne0$。反设和也有理，写成 $x+y=c/d$，其中 $c,d\in\mathbb Z,d\ne0$。则 $y=c/d-a/b=(bc-ad)/(bd)$，分子为整数、分母为非零整数，说明 $y$ 有理，与假设矛盾。因此和必为无理数。
-
-## Common Mistakes
-
-- 把两个无理数相加的情形混入本题。
-- 省略分母非零而未保证分数有定义。
 
 ## Connections
 

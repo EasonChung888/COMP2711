@@ -1,0 +1,3089 @@
+[
+  {
+    "id": "Q-2022-MID-P10-a-best",
+    "path": "knowledge_base/04-Questions/Q-2022-MID-P10-a-best - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2022-MID-P10-a-best",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "question_number": "10(a)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Even an initial maximum cannot bypass the remaining comparisons.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ]
+    },
+    "sha256": "a23e92fae86774cf0ee71b802c7266969f3ad1f4847f643677dae101bab49b5c"
+  },
+  {
+    "id": "Q-2022-MID-P10-a-worst",
+    "path": "knowledge_base/04-Questions/Q-2022-MID-P10-a-worst - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2022-MID-P10-a-worst",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "question_number": "10(a)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "An increasing input triggers every update but still performs one pass.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ]
+    },
+    "sha256": "f793815f1a4279f4002c06ef846180003d5ac888c7ae236ace5700ddd75af16c"
+  },
+  {
+    "id": "Q-2022-MID-P10-b-best",
+    "path": "knowledge_base/04-Questions/Q-2022-MID-P10-b-best - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2022-MID-P10-b-best",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "question_number": "10(b)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Matching the first list element immediately returns after one test.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ]
+    },
+    "sha256": "598169423fdf2c88ec979910242d29c2e4e198f6e772ae0b742bf594a94526ce"
+  },
+  {
+    "id": "Q-2022-MID-P10-b-worst",
+    "path": "knowledge_base/04-Questions/Q-2022-MID-P10-b-worst - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2022-MID-P10-b-worst",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "question_number": "10(b)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Absence or a last-position-only match forces all n comparisons.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ]
+    },
+    "sha256": "2314d2f80435410f7bc4f5d02d24ddfbdbcdb4ce241023d1e47ac34b60964732"
+  },
+  {
+    "id": "Q-2022-MID-P10-c-best",
+    "path": "knowledge_base/04-Questions/Q-2022-MID-P10-c-best - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2022-MID-P10-c-best",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "question_number": "10(c)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "The first quartile probe can equal the target and terminate immediately.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ]
+    },
+    "sha256": "c63c67a5ec68af4410c1a0e3b67bfab72a59f9941207790deb9bffff1c9685bf"
+  },
+  {
+    "id": "Q-2021-MID-P08-d",
+    "path": "knowledge_base/04-Questions/Q-2021-MID-P08-d - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-MID-P08-d",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "question_number": "8(d)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Changing logarithm bases gives a fixed positive ratio.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 3
+    },
+    "sha256": "66f1321c8a24238225bf02eed74b6b6dbf4d4a69d112b6116515b61d7d6aea90"
+  },
+  {
+    "id": "Q-2018-FINAL-P10-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P10-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2018-FINAL-P10-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "question_number": "10(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Square dimensions make all three independent loop ranges equal n.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "88638630eb1cc697beb80a092407375460416de74aeeb1d0b22bade5532fc33f"
+  },
+  {
+    "id": "Q-2017-FINAL-P03-b",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P03-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2017-FINAL-P03-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "question_number": "3(b)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "The output count is the binomial number of unordered pairs from n elements.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "4b16b682b8eb7d56aeee64782e4af036f05ffd5c45dcd374296e9ce56fe1e4d1"
+  },
+  {
+    "id": "Q-2025F-FINAL-P08-i",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P08-i - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025F-FINAL-P08-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 13,
+      "question_number": "8(i)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare the stated i asymptotic bounds with explicit ratios or opposing realizations.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        13
+      ],
+      "marks": 1
+    },
+    "sha256": "5e17ce03378f4d03b067b32a5012384b49e2adce61aca49676ee5c4b54b1130b"
+  },
+  {
+    "id": "Q-2025F-FINAL-P08-ii",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P08-ii - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025F-FINAL-P08-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 13,
+      "question_number": "8(ii)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare the stated ii asymptotic bounds with explicit ratios or opposing realizations.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        13
+      ],
+      "marks": 1
+    },
+    "sha256": "76d37dd32317f36a3549d9d28f5a3140110e88ecf8fbfb7f4258a5ecb233cfdf"
+  },
+  {
+    "id": "Q-2025F-FINAL-P08-iii",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P08-iii - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025F-FINAL-P08-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 13,
+      "question_number": "8(iii)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare the stated iii asymptotic bounds with explicit ratios or opposing realizations.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        13
+      ],
+      "marks": 1
+    },
+    "sha256": "6b7b6ef76d56e1bebb0d84bbdf5a4449e1a33d122572373b25b56630815b4be7"
+  },
+  {
+    "id": "Q-2025F-FINAL-P08-v",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P08-v - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025F-FINAL-P08-v",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 13,
+      "question_number": "8(v)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare the stated v asymptotic bounds with explicit ratios or opposing realizations.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        13
+      ],
+      "marks": 1
+    },
+    "sha256": "2f8d2833fda0876e64f4b4941c5a1246acbc94e0ae4c3b9604f26e112687ecb3"
+  },
+  {
+    "id": "Q-2025S-FINAL-P05-a-i",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P05-a-i - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025S-FINAL-P05-a-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 6,
+      "question_number": "5(a)(i)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Convert a constant raised to a logarithm into a power and compare exact exponents.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        6
+      ],
+      "marks": 2
+    },
+    "sha256": "5714ba55940ad2b804dee6e09f3d5b1dd0d6ccc9bd51b07b852a1d2c77c37f92"
+  },
+  {
+    "id": "Q-2025S-FINAL-P05-b",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P05-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025S-FINAL-P05-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 6,
+      "question_number": "5(b)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Algorithm Trace and Invariant Method - 算法跟踪与不变量方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Count all inner-loop iterations of the triangular inversion enumeration.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        6
+      ],
+      "marks": 4
+    },
+    "sha256": "57ffc1c4ec0d8abea8fda00054a4e1a6925fdaf27ae5e0aa384f52ef07c249b5"
+  },
+  {
+    "id": "Q-2024F-FINAL-P09-a-i",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-a-i - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-a-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 23,
+      "question_number": "9(a)(i)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare A/B for 9(a)(i) with A=\\log n, B=2n; list every valid asymptotic relation.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 1
+    },
+    "sha256": "e9527d5b403d8705ad37667f1914c6e2d76b8a190d5ff6aaf55709eefc450233"
+  },
+  {
+    "id": "Q-2024F-FINAL-P09-a-ii",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-a-ii - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-a-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 23,
+      "question_number": "9(a)(ii)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare A/B for 9(a)(ii) with A=10n^2, B=2n^2+10000n+5n\\log n; list every valid asymptotic relation.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 1
+    },
+    "sha256": "c8840a648e9742699a3a3d9d981ae95780bfeaef281420f2bdef1dccd8a66bbf"
+  },
+  {
+    "id": "Q-2024F-FINAL-P09-a-iii",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-a-iii - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-a-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 23,
+      "question_number": "9(a)(iii)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare A/B for 9(a)(iii) with A=n^2, B=5^{\\log_2 n}; list every valid asymptotic relation.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 1
+    },
+    "sha256": "eb57e9ebb3e57104671b0df238e7a5800eea87006c1f838f91ab917abe2418af"
+  },
+  {
+    "id": "Q-2024F-FINAL-P09-a-iv",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-a-iv - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-a-iv",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 23,
+      "question_number": "9(a)(iv)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare A/B for 9(a)(iv) with A=n^2\\log n, B=n\\log^6 n; list every valid asymptotic relation.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 1
+    },
+    "sha256": "2e5ab0317186ee9c700fbaa469cbf3cf8d35d2000a265952e1bf522a734beb87"
+  },
+  {
+    "id": "Q-2024F-FINAL-P09-a-v",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P09-a-v - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2024F-FINAL-P09-a-v",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 23,
+      "question_number": "9(a)(v)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Compare A/B for 9(a)(v) with A=n^3(\\log n)^5, B=n^{3.1}; list every valid asymptotic relation.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 1
+    },
+    "sha256": "0a5358e97563a58afe157deec0b5cdbddc69ad3666763bf21b617428566b392c"
+  },
+  {
+    "id": "Q-2024S-MID-P01",
+    "path": "knowledge_base/04-Questions/Q-2024S-MID-P01 - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2024S-MID-P01",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Spring Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf",
+      "source_page": 3,
+      "question_number": "1",
+      "year": 2024,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Order eight explicit logarithmic, polynomial, exponential and factorial functions using growth comparisons.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 5
+    },
+    "sha256": "cc20c64d9b69e88b15a4867d70f01afb09471b500f18eb92a5d84e326911440d"
+  },
+  {
+    "id": "Q-2023S-MID-P08-a",
+    "path": "knowledge_base/04-Questions/Q-2023S-MID-P08-a - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2023S-MID-P08-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Spring Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf",
+      "source_page": 12,
+      "question_number": "8(a)",
+      "year": 2023,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Dividing by n cubed exposes two decaying powers despite the coefficient 100.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        12
+      ],
+      "marks": 2
+    },
+    "sha256": "812755ee1e5d0ea8cca331d65d3e9b1a79c193ca53a6e5bb146faa8a82f502ed"
+  },
+  {
+    "id": "Q-2023S-MID-P08-b",
+    "path": "knowledge_base/04-Questions/Q-2023S-MID-P08-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2023S-MID-P08-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Spring Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf",
+      "source_page": 12,
+      "question_number": "8(b)",
+      "year": 2023,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Subtracting the linear exponents reveals the exponentially vanishing ratio.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        12
+      ],
+      "marks": 2
+    },
+    "sha256": "ab41892244e59448c2a100b99e1af80c26c3f4bbe62d1dfa37f2d6a2db7c13e8"
+  },
+  {
+    "id": "Q-2023S-MID-P08-c",
+    "path": "knowledge_base/04-Questions/Q-2023S-MID-P08-c - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2023S-MID-P08-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Spring Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf",
+      "source_page": 12,
+      "question_number": "8(c)",
+      "year": 2023,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The printed 5 is a logarithm base, so change of base gives a positive constant ratio.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        12
+      ],
+      "marks": 2
+    },
+    "sha256": "7a522848e262aba18485cbd4eed016cf9aa265ca56354874fa43682976b164f4"
+  },
+  {
+    "id": "Q-2023S-MID-P08-e",
+    "path": "knowledge_base/04-Questions/Q-2023S-MID-P08-e - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2023S-MID-P08-e",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Spring Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf",
+      "source_page": 12,
+      "question_number": "8(e)",
+      "year": 2023,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "An iterated logarithm is unbounded even when compared with the enormous fixed constant 10 to the 100.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        12
+      ],
+      "marks": 2
+    },
+    "sha256": "21a8703901e891ced0cdfb2ab26aa198816d0113bd26e45686c8892d30f9becc"
+  },
+  {
+    "id": "Q-2021-MID-P08-b",
+    "path": "knowledge_base/04-Questions/Q-2021-MID-P08-b - Oscillating Asymptotic Bounds.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-MID-P08-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "question_number": "8(b)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Oscillating Asymptotic Bounds - 振荡函数渐近界]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The comparison function stays above one half while sine remains bounded and repeatedly zero.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 3
+    },
+    "sha256": "cb1d968d7cc40d8f3ccb0ff79eafe4282448648dc24f8b0771b9824cb09728ae"
+  },
+  {
+    "id": "Q-2021-MID-P08-c",
+    "path": "knowledge_base/04-Questions/Q-2021-MID-P08-c - Oscillating Asymptotic Bounds.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-MID-P08-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "question_number": "8(c)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Oscillating Asymptotic Bounds - 振荡函数渐近界]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The cosine envelope supplies a lower bound but its zeros prevent a reverse upper bound.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 3
+    },
+    "sha256": "9bae5a5f5e054e8a2b8ee9cadf8e09f7f1c5c24544dba0a89a9641997e74d45d"
+  },
+  {
+    "id": "Q-2021-MID-P09-A",
+    "path": "knowledge_base/04-Questions/Q-2021-MID-P09-A - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-MID-P09-A",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 4,
+      "question_number": "9",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Repeated division by two scans every binary position including zeros.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 4
+    },
+    "sha256": "23377e33cfaaa9f08eeeb7b399a74c7b99e63193e3effc85c510834438c78e72"
+  },
+  {
+    "id": "Q-2020-FINAL1-P06-a",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P06-a - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2020-FINAL1-P06-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 5,
+      "question_number": "6(a)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The double coefficient loop dominates the linear initialization and output loops.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2020-FINAL1-P06-b - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "a038b40d612063825fa26d84af93a44fa6e7b713b71d5df184e6f2396b8ceeee"
+  },
+  {
+    "id": "Q-2018-FINAL-P10-a",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P10-a - Algorithm Correctness.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2018-FINAL-P10-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "question_number": "10(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Algorithm Correctness - 算法正确性]]"
+      ],
+      "methods": [
+        "[[Algorithm Trace and Invariant Method - 算法跟踪与不变量方法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Tracing the supplied two-term inner loop computes each of six output entries without extra matrix theory.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "74d73bb110658d1eaab3d3887c7825c7580ed86c01de733c87229eee7867d440"
+  },
+  {
+    "id": "Q-2018-FINAL-P10-c",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P10-c - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2018-FINAL-P10-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "question_number": "10(c)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "One scalar multiplication occurs for each independent row-column-inner-index triple.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "18d073b314960e0ffe027042b616714e55bc8964649f3bed85406d85dedcb6a3"
+  },
+  {
+    "id": "Q-2017-FINAL-P02",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P02 - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2017-FINAL-P02",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 4,
+      "solution_page": [
+        4
+      ],
+      "question_number": "2",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Logarithmic, polynomial, and exponential comparisons distinguish n times 2^n from 3^n.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 4
+    },
+    "sha256": "2978bd7fa23f37400d1af9d9fa3e8d7be1edcacd701ce37d76abff7bafb2e454"
+  },
+  {
+    "id": "Q-2017-FINAL-P03-a",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P03-a - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2017-FINAL-P03-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "question_number": "3(a)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Fixing the final bit leaves n minus one free bits, each requiring one constant-time print.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "7e5e7c3d5a94c6fd627ec6b687e4d3315d04654da37ad5ce9c508432ab63d313"
+  },
+  {
+    "id": "Q-2017-FINAL-P03-c",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P03-c - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2017-FINAL-P03-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 5,
+      "solution_page": [
+        5
+      ],
+      "question_number": "3(c)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Repeated floor division by four reduces the argument geometrically until it is at most one.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "1726e9785db7310593cccf19fcd87cb658b256394ceead918fe6a88963076b6e"
+  },
+  {
+    "id": "Q-2015-FINAL-P09-recurrence",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P09-recurrence - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2015-FINAL-P09-recurrence",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "question_number": "9",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 3,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "modeling"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The multiplication formula contains four half-size recursive products plus a linear combination cost.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "9fb06e87f23da03fd1cb0073d2688d8f68a7d96a9d7122068c1fc15a68b0f31c"
+  },
+  {
+    "id": "Q-2015-FINAL-P09-theta",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P09-theta - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2015-FINAL-P09-theta",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "question_number": "9",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 2,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The exact quadratic expression must be bounded above and below with constants independent of n.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "7c0716233d97b726d89e236446a101d11157ea82e76236a876d0d489fdbc8bd6"
+  },
+  {
+    "id": "Q-2014-FINAL-P09-theta",
+    "path": "knowledge_base/04-Questions/Q-2014-FINAL-P09-theta - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2014-FINAL-P09-theta",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2014 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "question_number": "9",
+      "year": 2014,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The Theta classification follows by comparing the two terms in the derived formula, including the lower-bound contribution.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "3a39e10a44714d98dc3254312ca75237ceca6fa54ccf6bed351f4b53e304c40e"
+  },
+  {
+    "id": "Q-2013-FINAL-P08-theta",
+    "path": "knowledge_base/04-Questions/Q-2013-FINAL-P08-theta - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2013-FINAL-P08-theta",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2013 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "question_number": "8",
+      "year": 2013,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The asymptotic conclusion follows only after comparing the exponents two and log base two of three in the established closed form.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "e422e32e421f6c2f4e520b19c6c3688e657a17451d5e4cf4ef5363a9d4b1b98f"
+  },
+  {
+    "id": "Q-2025F-FINAL-P08-iv",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P08-iv - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025F-FINAL-P08-iv",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 13,
+      "question_number": "8(iv)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Compare the stated iv asymptotic bounds with explicit ratios or opposing realizations.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        13
+      ],
+      "marks": 1
+    },
+    "sha256": "878ce9aa65971b9a11ec04fb4024dc8d23cff7850306b0185b0acaee86806ac9"
+  },
+  {
+    "id": "Q-2025F-FINAL-P09-a",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P09-a - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025F-FINAL-P09-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 14,
+      "question_number": "9(a)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Unroll a factor-four recurrence and sum the finite geometric series with ratio three-sixteenths.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "solution_page": [
+        14,
+        15
+      ],
+      "verification_status": "verified",
+      "marks": 5,
+      "related_questions": [
+        "[[Q-2025F-FINAL-P09-b - Mathematical Induction]]",
+        "[[Q-2014-FINAL-P08 - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "2c8b2e18bfb5ca6077116fbb4b39220567468430a714b1661e16aae688200f81"
+  },
+  {
+    "id": "Q-2025F-FINAL-P09-b",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P09-b - Mathematical Induction.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025F-FINAL-P09-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 14,
+      "question_number": "9(b)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Induct on powers of four and use four to the logarithm of three to transform the lower-order term.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "solution_page": [
+        15,
+        16
+      ],
+      "verification_status": "verified",
+      "marks": 5,
+      "related_questions": [
+        "[[Q-2025F-FINAL-P09-a - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "a330f098f7bdc07b56f1d7c8e1ae1cba80970b241a7767ddcf79c0204f8435f0"
+  },
+  {
+    "id": "Q-2025S-FINAL-P05-a-ii",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P05-a-ii - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025S-FINAL-P05-a-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 6,
+      "question_number": "5(a)(ii)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Bound a logarithmic factorial above and below to establish all three asymptotic relations.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        6
+      ],
+      "marks": 2
+    },
+    "sha256": "d4469b687bf71ca7d246fd3e77d46de1a9f7ad006b5b6b205fcc75a8f939faee"
+  },
+  {
+    "id": "Q-2025S-FINAL-P05-a-iii",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P05-a-iii - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025S-FINAL-P05-a-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 6,
+      "question_number": "5(a)(iii)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Compare a polynomial-logarithmic expression with an exponential in the square root.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        6
+      ],
+      "marks": 2
+    },
+    "sha256": "9dfb121328d14f317d6296769f819de27680810b5170997eaf2442aa2d4ca481"
+  },
+  {
+    "id": "Q-2023F-FINAL-P10",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P10 - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2023F-FINAL-P10",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 16,
+      "question_number": "10",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Algorithm Correctness - 算法正确性]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Algorithm Trace and Invariant Method - 算法跟踪与不变量方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "An all-distinct input forces comparison of every later element with every earlier one, giving an exact triangular count and tight quadratic bound.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        16
+      ],
+      "marks": 6
+    },
+    "sha256": "44fbf0560d3e5c986a063791ef95b47c89fb4eed97013288416bb24217a62758"
+  },
+  {
+    "id": "Q-2022-MID-P09",
+    "path": "knowledge_base/04-Questions/Q-2022-MID-P09 - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2022-MID-P09",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "question_number": "9",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The radical covers 2n while the logarithm of 2 to n reduces to a linear function.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 6
+    },
+    "sha256": "49ccc9e0bae656ffaa2a2a8bfb9c669c322ac3e0bef73f0525877418034ebec7"
+  },
+  {
+    "id": "Q-2022-MID-P10-c-worst",
+    "path": "knowledge_base/04-Questions/Q-2022-MID-P10-c-worst - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2022-MID-P10-c-worst",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2022-midterm.pdf",
+      "source_page": 4,
+      "question_number": "10(c)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The larger remaining interval shrinks by a constant fraction, and repeated right branches attain logarithmic depth.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ]
+    },
+    "sha256": "89c2e0c9ab931c6131f4bb0c37854e781b4de9a192f0baf296e34110f494ac3f"
+  },
+  {
+    "id": "Q-2021-FINAL1-P02",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P02 - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-FINAL1-P02",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "2",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof",
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "One recursive child shrinks the coin set by three after at most two weighings.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        2
+      ],
+      "marks": 10
+    },
+    "sha256": "6640925201ee155739f49de927f1c5e9eb7a04cd38ffbd274d7870c6238cb0d5"
+  },
+  {
+    "id": "Q-2021-MID-P08-a",
+    "path": "knowledge_base/04-Questions/Q-2021-MID-P08-a - Oscillating Asymptotic Bounds.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-MID-P08-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "question_number": "8(a)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Oscillating Asymptotic Bounds - 振荡函数渐近界]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Alternating zeros of sine and cosine independently disprove both asymptotic directions.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 3
+    },
+    "sha256": "50d2c42f8f48b81e60fd71d33983affb6a723a20a10201b71e46fe83a50e0bb3"
+  },
+  {
+    "id": "Q-2021-MID-P08-e",
+    "path": "knowledge_base/04-Questions/Q-2021-MID-P08-e - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-MID-P08-e",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 3,
+      "question_number": "8(e)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Rewriting the exponential-log expressions as powers reveals distinct positive exponents.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 3
+    },
+    "sha256": "727a87beaee34b1be3ca0b646f4fa484f59f66ef550d849ef95b84cae26d3eac"
+  },
+  {
+    "id": "Q-2021-MID-P09-B",
+    "path": "knowledge_base/04-Questions/Q-2021-MID-P09-B - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-MID-P09-B",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2021-midterm.pdf",
+      "source_page": 4,
+      "question_number": "9",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "midterm",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Clearing one set bit gives an oscillating count ranging from one to the bit length.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 4
+    },
+    "sha256": "33da2f53bf41f36cde1a2b79d7ea3b02231d46dd0042fcf4e1a2ea5bd4a60c4a"
+  },
+  {
+    "id": "Q-2020-FINAL1-P05-b",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P05-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2020-FINAL1-P05-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 3,
+      "question_number": "5(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Bounding log factorial above by all terms and below by its last half yields a tight n log n order.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 5,
+      "related_questions": [
+        "[[Q-2020-FINAL1-P05-a-formula - Recurrence Relations]]",
+        "[[Q-2020-FINAL1-P05-a-proof - Mathematical Induction]]"
+      ]
+    },
+    "sha256": "aaa4012a202e7cddf1106220831f4f08aff39fe90dcdc1a7bd889c8b614d2c94"
+  },
+  {
+    "id": "Q-2020-FINAL1-P06-b",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P06-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2020-FINAL1-P06-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 5,
+      "question_number": "6(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Sequential multiplication grows the intermediate degree by one and sums linear costs.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ],
+      "marks": 4,
+      "related_questions": [
+        "[[Q-2020-FINAL1-P06-a - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "271d454d5868dd9d7dfd95bd3eb1dbac3478d1448058e594ad8eaac2960b7785"
+  },
+  {
+    "id": "Q-2019-FINAL-P04-a",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-P04-a - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2019-FINAL-P04-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(a)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The stretched exponential lies between polylogarithms and positive powers of n, while fixed-base exponentials dominate all fixed powers.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 4
+    },
+    "sha256": "b0696b9c9b1c92f49fef5469baf9a0da9525885e73c1d89814bee1f968850df1"
+  },
+  {
+    "id": "Q-2018-FINAL-P10-d",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P10-d - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2018-FINAL-P10-d",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 14,
+      "solution_page": [
+        15
+      ],
+      "question_number": "10(d)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Two legal parenthesizations create different intermediate dimensions and costs of 85000 versus 36000.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "57b344138bff0b1ce39235f39b7f8b7fb72875f9ee599dcf79de0e4446089810"
+  },
+  {
+    "id": "Q-2018-FINAL-P12-a",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P12-a - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2018-FINAL-P12-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "12(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Adding two positive upper and lower comparison inequalities preserves a two-sided asymptotic bound.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "08e48438c3fbe53f2d84307ab2da941c2de064d1ad097425237d1827fb420ad7"
+  },
+  {
+    "id": "Q-2018-FINAL-P12-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P12-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2018-FINAL-P12-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "12(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "counterexample"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "A constant factor inside the exponent becomes an unbounded ratio after exponentiation.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified"
+    },
+    "sha256": "dc9f0c654674c746ad1b8aba2615c768aecd154917916c855f72e6a665be80b7"
+  },
+  {
+    "id": "Q-2017-FINAL-P04-b-time",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P04-b-time - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2017-FINAL-P04-b-time",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6,
+        7
+      ],
+      "question_number": "4(b)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Number Theory - 数论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]",
+        "[[Subtopic - Cryptography - 密码学]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Modular Congruence - 同余]]",
+        "[[RSA Cryptosystem - RSA 密码系统]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Modular Arithmetic Method - 模运算方法]]",
+        "[[RSA Calculation Method - RSA 计算方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Euclidean remainders at least halve every two steps, with Fibonacci inputs realizing logarithmic iterations.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "fcf9ddacb5a4cad54ee720a5665a8bf9b60e33ebad0d2c32bd7ca8ab27a38a7b"
+  },
+  {
+    "id": "Q-2017-FINAL-P04-c",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P04-c - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2017-FINAL-P04-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        7
+      ],
+      "question_number": "4(c)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Number Theory - 数论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - GCDs and Congruences - 最大公因数与同余]]",
+        "[[Subtopic - Cryptography - 密码学]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Modular Congruence - 同余]]",
+        "[[RSA Cryptosystem - RSA 密码系统]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Modular Arithmetic Method - 模运算方法]]",
+        "[[RSA Calculation Method - RSA 计算方法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Distinct rejected primes multiply to a divisor of T, so their count is bounded by log2 T below log2 n.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 3
+    },
+    "sha256": "a7a443491e54872ce460683b10bc89386e32eee53c82d15e7498a84273ef8bbe"
+  },
+  {
+    "id": "Q-2015-FINAL-P09-closed-form",
+    "path": "knowledge_base/04-Questions/Q-2015-FINAL-P09-closed-form - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2015-FINAL-P09-closed-form",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2015 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2015-final.pdf",
+      "source_page": 15,
+      "solution_page": [
+        16
+      ],
+      "question_number": "9",
+      "year": 2015,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 5,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Recursion-Tree Method - 递归树方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Expansion has a level-cost ratio of two and a leaf term of n squared, both of which must survive simplification.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "f5767c6636bafb45e848b4e1da4a16b4e5a3312a2510740a0289e3963096af1b"
+  },
+  {
+    "id": "Q-2014-FINAL-P08",
+    "path": "knowledge_base/04-Questions/Q-2014-FINAL-P08 - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2014-FINAL-P08",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2014 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 12,
+      "question_number": "8",
+      "year": 2014,
+      "term": "fall",
+      "exam_type": "final",
+      "marks": 10,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Recurrence Relations - 递推关系]]",
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The asymptotic proof factors out a to the n and bounds a weighted geometric series above and below by n-independent constants.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "related_questions": [
+        "[[Q-2025F-FINAL-P09-a - Asymptotic Complexity]]"
+      ]
+    },
+    "sha256": "cb5e3d1fb5afad322bd8a2680c7cf3fadc8836278952c05c417ce3cdf2a10448"
+  },
+  {
+    "id": "Q-2014-FINAL-P09-closed-form",
+    "path": "knowledge_base/04-Questions/Q-2014-FINAL-P09-closed-form - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2014-FINAL-P09-closed-form",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2014 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2014-final.pdf",
+      "source_page": 13,
+      "solution_page": [
+        13
+      ],
+      "question_number": "9",
+      "year": 2014,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Recursion-Tree Method - 递归树方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The recurrence expansion requires summing a geometric progression whose branching factor and subproblem size produce different exponents.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "0174b378e7a0971b117255c94cebf4ee8e8672ce14c0670add6d3d4a6d3cc911"
+  },
+  {
+    "id": "Q-2013-FINAL-P08-closed-form",
+    "path": "knowledge_base/04-Questions/Q-2013-FINAL-P08-closed-form - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2013-FINAL-P08-closed-form",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2013 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 11,
+      "solution_page": [
+        11
+      ],
+      "question_number": "8",
+      "year": 2013,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Recursion-Tree Method - 递归树方法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Solving the divide-by-two recurrence requires summing the level costs with ratio three quarters and converting the depth back to n.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "a785ecb2d4af2c3083c43413beba76407e9f9d213b1192c43a0f1f97f0b61633"
+  },
+  {
+    "id": "Q-2013-FINAL-P09",
+    "path": "knowledge_base/04-Questions/Q-2013-FINAL-P09 - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2013-FINAL-P09",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2013 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2013-final.pdf",
+      "source_page": 12,
+      "solution_page": [
+        12
+      ],
+      "question_number": "9",
+      "year": 2013,
+      "term": "spring",
+      "exam_type": "final",
+      "marks": 11,
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The advanced-induction step must choose a constant large enough for the negative logarithmic term to absorb both the quadratic and linear additions.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "aa4d086eea54404630d687238602cdc23bc88dd6a122b951b51b1c10451dcc18"
+  },
+  {
+    "id": "Q-2025S-FINAL-P05-c",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P05-c - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2025S-FINAL-P05-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 6,
+      "question_number": "5(c)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]"
+      ],
+      "methods": [
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "algorithm-analysis"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Unroll a square-root recurrence to a logarithmic-logarithmic depth and retain the leaf coefficient.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "solution_page": [
+        7
+      ],
+      "verification_status": "verified",
+      "marks": 5
+    },
+    "sha256": "e1ba074667f603449dca55ff30890602bfff9daefc728cf0b73353f276fca072"
+  },
+  {
+    "id": "Q-2023F-FINAL-P08-a",
+    "path": "knowledge_base/04-Questions/Q-2023F-FINAL-P08-a - Mathematical Induction.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2023F-FINAL-P08-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2023 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2023_Final.pdf",
+      "source_page": 12,
+      "question_number": "8(a)",
+      "year": 2023,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Algorithms - 算法]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Algorithm Correctness - 算法正确性]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Algorithm Trace and Invariant Method - 算法跟踪与不变量方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Strong induction succeeds after grouping a possible ninefold increase with the following digit deletion into a strictly decreasing macro-step.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        12,
+        13
+      ],
+      "marks": 7
+    },
+    "sha256": "78b52ab7c055306c674316945de55dd74485d73cafcd8b96c52cca382e7349e0"
+  },
+  {
+    "id": "Q-2021-FINAL1-P03",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL1-P03 - Algorithm Correctness.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2021-FINAL1-P03",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-1.pdf",
+      "source_page": 2,
+      "question_number": "3",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Induction - 数学归纳法]]"
+      ],
+      "concepts": [
+        "[[Algorithm Correctness - 算法正确性]]",
+        "[[Mathematical Induction - 数学归纳法]]"
+      ],
+      "methods": [
+        "[[Algorithm Trace and Invariant Method - 算法跟踪与不变量方法]]",
+        "[[Induction Proof Method - 归纳证明法]]"
+      ],
+      "question_types": [
+        "construction",
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "One comparison eliminates a candidate, and two final checks per other worker certify the survivor.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        2,
+        3
+      ],
+      "marks": 10
+    },
+    "sha256": "9182e0fb78303e3d3c7a84a07790c40236b6134b9cfcb27bb8e78915f8b608a6"
+  },
+  {
+    "id": "Q-2019-FINAL-BONUS-a",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-BONUS-a - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2019-FINAL-BONUS-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "Bonus Problem(a)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "The hidden linear-bound constant increases when the recurrence is applied, so the induction does not preserve a uniform bound.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 3
+    },
+    "sha256": "d21aad5708ed92fbc18e1bc7a2842c504cce7d5d418d23ffc3e9b293bdf4cdf8"
+  },
+  {
+    "id": "Q-2019-FINAL-BONUS-b",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-BONUS-b - Mathematical Induction.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2019-FINAL-BONUS-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "Bonus Problem(b)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Algorithms - 算法]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Strengthening the exponential bound with a negative linear correction absorbs the added n term in the recurrence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 7
+    },
+    "sha256": "5f71618b5d7eb2bff543c82415769b84aaff9e1e17e08249d621271905d4b43c"
+  },
+  {
+    "id": "Q-2019-FINAL-P04-b",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-P04-b - Asymptotic Complexity.md",
+    "group": "Algorithms",
+    "meta": {
+      "id": "Q-2019-FINAL-P04-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(b)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Algorithms - 算法]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Algorithms - 算法]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Asymptotic Complexity - 渐近复杂度]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Asymptotic Bound Method - 渐近界方法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Monotone exponent sequences let two increasing integer-valued functions alternate an unbounded factor advantage.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 4
+    },
+    "sha256": "de0ae7f82fe0be2c464126233ff16d11d99ef1c9626bee1ee369e5d8e842174d"
+  }
+]

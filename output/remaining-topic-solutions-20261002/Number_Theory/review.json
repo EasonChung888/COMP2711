@@ -1,0 +1,32 @@
+{
+  "topic": "Number Theory",
+  "questions": 143,
+  "expected": 143,
+  "stems": 82,
+  "figures": 1,
+  "issues": [],
+  "pdf_sha256": "4ea4b82e4cfcfbd9287fca09cc9053431a4bd4be16f32c93df057526a847ed94",
+  "pages": 131,
+  "all_pages_visually_reviewed": true,
+  "visual_review_note": "All pages reviewed after first rendering fixes; final four pagination refinements reviewed at full-size with adjacent pages.",
+  "margin_outliers": [],
+  "blank_pages": [],
+  "answer_heading_counts": {
+    "Official Answer": 143,
+    "Supplementary Explanation": 143
+  },
+  "full_size_review_pages": [
+    17,
+    51,
+    52,
+    114,
+    122,
+    123
+  ],
+  "resolved": [
+    "Quote-prefix artifacts removed from multiline display math",
+    "Short answer continuations now kept with their questions"
+  ],
+  "pending_fixes": [],
+  "status": "pass"
+}

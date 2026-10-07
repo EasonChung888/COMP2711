@@ -42,24 +42,17 @@ Hint: Only the number of occurrences of each digit is important.
 
 Shared printed context: ![[STEM-2024F-MID-P06 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-按例子和可重复限制，deceasing 表示非递增。令 $x_i$ 为数字 i 的出现次数，$x_0+\cdots+x_9=6$ 且每个 $x_i\ge0$。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) We can convert this question to another question so that we count the frequency of each digit. In other words: $x_0+x_1+x_2+\cdots+x_9=6$. this equation has $\binom{15}9$ non-negative integer solutions. However we need to remove 000000 case which gives us $\binom{15}9-1$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{15}9-1=5004$.
 
-**答案。** $\binom{15}9-1=5004$。
-
-**推导。** 按例子和可重复限制，deceasing 表示非递增。令 $x_i$ 为数字 i 的出现次数，$x_0+\cdots+x_9=6$ 且每个 $x_i\ge0$。每个频数向量唯一决定从九到零的排序。Stars and bars 给出 $\binom{6+10-1}{10-1}=\binom{15}9=5005$ 个非负解。唯一不合法的是 $x_0=6$、其他为零，对应 000000；只要有非零数字，降序首位就非零。所以答案为 $5005-1=5004$。
-
-## Common Mistakes
-
-- 允许零出现且只需排除 000000，不能删除所有含零的频数向量。
-- 非递增允许相等，原文 deceasing 的例子 997770 明确了重复的含义。
+**Derivation/proof.** With repetition, “deceasing” means nonincreasing as illustrated. Let $x_i$ be the frequency of digit $i$, so $x_0+\cdots+x_9=6$ and all $x_i\ge0$. Each frequency vector gives one descending arrangement. Stars and bars gives $\binom{6+10-1}{10-1}=\binom{15}9=5005$ nonnegative solutions. Only $x_0=6$ with all other entries zero is invalid, producing 000000. Any nonzero digit becomes the leading digit. Thus $5005-1=5004$.
 
 ## Connections
 

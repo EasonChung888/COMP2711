@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 For every integer $n$ bigger than 1, there is a prime strictly between $n$ and $2n$.
 (Strictly between $n$ and $2n$ means it can not be equal to $n$ an it can not be equal to $2n$)
 
-## 中文解析
+## Official Answer
 
-每个大于一的整数对应至少一个位于开区间内的素数。两个严格边界必须同时限制同一个素数，不能把它们变成可任选的析取。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (b) $\forall n((n>1)\to\exists p(Prime(p)\land(n<p<2n)))$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\forall n((n>1)\to\exists p(Prime(p)\land n<p\land p<2n))$.
 
-**答案。** $\forall n((n>1)\to\exists p(Prime(p)\land n<p\land p<2n))$。
-
-**推导。** 使用 $\forall n$ 遍历整数论域。由于只要求 $n>1$ 的情形，写成蕴含前件 $(n>1)$；后件 $\exists p$ 允许素数依赖 n。$Prime(p)$ 规定它为素数，$n<p$ 与 $p<2n$ 排除两个端点，用合取组合三项，得到上式。对 $n\le1$ 蕴含不提出额外要求。这里仅翻译给定句子，无需证明其数论真实性。
-
-## Common Mistakes
-
-- 不能用 $\le$ 表达 strictly between，端点均明确禁止。
-- 应让 $\exists p$ 位于 $\forall n$ 内，否则要求一个素数适用于所有 n。
+**Derivation/proof.** Use $\forall n$ over the integer domain. Since the requirement applies only when $n>1$, put that condition in the implication antecedent. The consequent $\exists p$ allows the prime to depend on $n$. Require $Prime(p)$, $n<p$ and $p<2n$ simultaneously, excluding both endpoints. For $n\le1$ the implication makes no additional demand. This translates the supplied sentence without needing to prove its number-theoretic truth.
 
 ## Connections
 

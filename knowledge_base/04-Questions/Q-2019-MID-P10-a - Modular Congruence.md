@@ -38,26 +38,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-十五是七的逆元，因此同余两边乘十五就能消去系数七。右侧四百六十五再模一百零四化成四十九；最后代回原式验证余数三十一，避免乘法或取余笔误。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+$$\begin{aligned}7x&\equiv31\pmod{104}\\\to15\cdot7x&\equiv15\cdot31\pmod{104}\\\to x&\equiv49\pmod{104}.\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $x=49$.
 
 **Derivation/proof.** Multiply both sides by the inverse 15: $x\equiv15\cdot31=465\equiv49\pmod{104}$ since $465=4\cdot104+49$. Direct verification gives $7\cdot49=343=3\cdot104+31$. The representative 49 lies in the required range.
-
-### 中文解答
-
-**推导。** 已知 $15\cdot7\equiv1\pmod{104}$，两边乘 $15$ 得 $x\equiv15\cdot31=465\equiv49\pmod{104}$。所给范围内唯一解为 $x=49$。回代 $7\cdot49=343=3\cdot104+31$，确实满足原同余。
-
-## Common Mistakes
-
-- 做普通除法三十一除七。
-- 乘了逆元却不把结果约到指定区间。
 
 ## Connections
 

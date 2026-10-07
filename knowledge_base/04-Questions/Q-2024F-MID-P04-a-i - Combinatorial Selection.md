@@ -41,24 +41,17 @@ Hint: Any path from A to B is a combination of Up and Right moves for a total of
 
 Shared printed context: ![[STEM-2024F-MID-P04-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-源图是六列宽、四行高的方格，故任何从 A 到 B 的单调路径都有六次 Right 和四次 Up。把路径编码成十个动作的序列，只需选出四个 Up 的位置，其余位置均为 Right，因此有 $\binom{10}4=210$ 条。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> Answer: (a) (i) $\binom{10}4$ Alternative explanation: We have to select with repetition 4 Up edges from the 7 columns: $\binom{7+4-1}4=\binom{10}4$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{10}4=210$.
 
-**答案。** $\binom{10}4=210$。
-
-**推导。** 源图是六列宽、四行高的方格，故任何从 A 到 B 的单调路径都有六次 Right 和四次 Up。把路径编码成十个动作的序列，只需选出四个 Up 的位置，其余位置均为 Right，因此有 $\binom{10}4=210$ 条。动作序列与路径逐边一一对应，不同序列必有至少一条不同边。
-
-## Common Mistakes
-
-- 六次 Right 与四次 Up 共十步，选择的是 Up 的四个位置。
-- 格点列有七条竖线但只有六段宽度，不能把线数当步数。
+**Derivation/proof.** The source grid is six columns wide and four rows high. Thus every path from $A$ to $B$ has six Right moves and four Up moves. Choose the four Up positions in a sequence of ten moves; the others are Right, giving $\binom{10}4=210$. Move sequences correspond to paths edge by edge, and distinct sequences differ in at least one edge.
 
 ## Connections
 

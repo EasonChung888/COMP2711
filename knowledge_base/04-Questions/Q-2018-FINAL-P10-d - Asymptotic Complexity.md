@@ -37,26 +37,24 @@ d) Assume you are given three matrices $M_1,M_2,M_3$ where $M_1$ is $50\times60$
 
 Shared context: [[STEM-2018-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-允许改变的是括号顺序，不是交换矩阵次序。分别算出两个可能中间矩阵的尺寸，再按 nmp 计算每一步标量乘法。先乘后两矩阵得到较小中间结果，总成本三万六千，比八万五千少。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+There are two ways to do the multiplication. Either $M_1\cdot M_2$ and then multiply the result with $M_3$ from the right, or $M_2\cdot M_3$ and then multiply the result with $M_1$ from the left.
+For the first case, to multiply $M_1\cdot M_2$ we need $50\cdot60\cdot25$ multiplications and the result is of size $50\times25$. Multiplying this with $M_3$ takes $50\cdot25\cdot8$ multiplications. Total multiplications is $85000$.
+For the second case, to multiply $M_2\cdot M_3$ we need $60\cdot25\cdot8$ multiplications and the result is of size $60\times8$. Multiplying this with $M_1$ takes $50\cdot60\cdot8$ multiplications. Total multiplications is $36000$.
+Clearly, the second approach is much faster.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 15. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Compute $M_2M_3$ first, then $M_1(M_2M_3)$; cost $36000$.
 
 **Derivation/proof.** For $(M_1M_2)M_3$, the first product costs $50\cdot60\cdot25=75000$ and is $50\times25$; the second costs $50\cdot25\cdot8=10000$, totaling 85000. For $M_1(M_2M_3)$, the first costs $60\cdot25\cdot8=12000$ and is $60\times8$; the second costs $50\cdot60\cdot8=24000$, totaling 36000. These are the two parenthesizations preserving matrix order, so the second is minimal.
 
-### 中文解答
+For three matrices in fixed order these are the only two binary parenthesizations.
 
-**推导。** 只改变括号而不能交换矩阵。先算 $M_1M_2$：成本 $50\cdot60\cdot25=75000$，得到 $50\times25$；再乘 $M_3$ 花 $50\cdot25\cdot8=10000$，共 $85000$。若先算 $M_2M_3$，成本 $60\cdot25\cdot8=12000$，得 $60\times8$；再左乘 $M_1$ 花 $50\cdot60\cdot8=24000$，共 $36000$。三矩阵保持顺序只有这两种二叉括号，比较 $36000<85000$，选 $M_1(M_2M_3)$。
-
-## Common Mistakes
-
-- 只比较第一步成本而不算第二步。
-- 擅自交换矩阵次序。
+Comparing the two legal parenthesizations gives $36000<85000$. Thus the product order with thirty-six thousand scalar multiplications is cheaper, even though both yield the same matrix.
 
 ## Connections
 

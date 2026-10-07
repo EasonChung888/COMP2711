@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (i) $A=3^{\log_2(n^2)},\quad B=n^4$
 
-## 中文解析
+## Official Answer
 
-把对数指数换为 $n$ 的幂，就能直接比较四次幂。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(a) i) $O$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Only $O$.
 
-**答案。** 只有 $O$。
-
-**推导。** 用换底恒等式 $3^{\log_2(n^2)}=(n^2)^{\log_2 3}=n^{2\log_2 3}$。因为 $3<4$，所以 $\log_2 3<2$，从而 $2\log_2 3<4$。因此 $A/B=n^{2\log_2 3-4}\to0$。比值最终有上界但没有正的固定下界，故 $A=O(B)$，而 $A\ne\Omega(B)$、$A\ne\Theta(B)$。 这里两函数均为正，比值趋零说明前者严格低阶；任何正的下界常数最终都会被该比值突破。
-
-## Common Mistakes
-
-- 外面的三是指数底数，不能当成乘法常数。
-- 只要比值趋零就不可能同时满足要求正下界的 Omega。
+**Derivation/proof.** The power-log identity gives $3^{\log_2(n^2)}=(n^2)^{\log_2 3}=n^{2\log_2 3}$. Since $3<4$, we have $\log_2 3<2$, so $2\log_2 3<4$. Thus $A/B=n^{2\log_2 3-4}\to0$. The ratio has an eventual upper bound but no positive constant lower bound. Hence $A=O(B)$, while neither $\Omega$ nor $\Theta$ holds. Both functions are positive, so the vanishing ratio makes A strictly lower order.
 
 ## Connections
 

@@ -38,26 +38,19 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-2.pdf#
 
 Shared context: [[STEM-2020-FINAL2-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-虽然外形像树，图中其实含多个三角形，不能凭形状套用树的结论。直接数边发现只有顶部 A 与底部 K 为奇度，因此可有从一端到另一端的欧拉通路，却没有闭合欧拉回路。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+It is not an Euler circuit, since $A,K$ have odd degree.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No.
 
 **Derivation/proof.** Counting incident edges in the printed figure gives degree 3 at the top vertex A and degree 1 at the bottom vertex K. Every remaining labeled vertex has even degree. Because A and K are odd, the connected graph has an open Euler trail between them but cannot have a closed Euler cycle.
 
-### 中文解答
-
-**推导。** 图四顶点 $A$ 接两条顶端斜边和竖边，度数 $3$；最底端 $K$ 仅一条边，度数 $1$。中轴 $D,G$ 各度数 $6$，$J$ 度数 $4$，其余外围点各度数 $2$，都为偶。故恰有 $A,K$ 两个奇度点。图连通，所以可有从 $A$ 到 $K$ 的开放欧拉路，但不能有要求全部点偶度的欧拉回路。
-
-## Common Mistakes
-
-- 把两个奇点的欧拉通路误当回路。
-- 把 A 的纵向边漏掉而数成二。
+The central vertices $D,G$ each have degree $6$; the remaining crossing vertex $J$ has degree four, and the other peripheral vertices have degree two. Only $A,K$ have odd degrees, respectively three and one, excluding an Euler cycle.
 
 ## Connections
 

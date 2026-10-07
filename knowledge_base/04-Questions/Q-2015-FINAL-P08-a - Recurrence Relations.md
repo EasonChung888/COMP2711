@@ -39,26 +39,18 @@ Give a closed-form solution to the recurrence. You only have to give the solutio
 
 Shared context: [[STEM-2015-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-反复展开时，初值三被乘上 $7^n$，每一步增加的十二按不同次幂累积。等比求和后，两部分合并为 $5\cdot7^n-2$。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=14|PDF physical page 14]].
 
-## Detailed Solution
+(a) By iterating the recurrence, we get:
+$$T(n)=3\cdot7^n+12\cdot\frac{7^n-1}{7-1}=5\cdot7^n-2.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=5\cdot7^n-2$.
 
 **Derivation/proof.** Iteration yields $T(n)=3\cdot7^n+12\sum_{j=0}^{n-1}7^j=3\cdot7^n+12(7^n-1)/6=5\cdot7^n-2$. At $n=0$, the formula gives 3, matching the initial condition.
-
-### 中文解答
-
-**推导。** 展开 n 次，初值三的贡献为 $3\cdot7^n$，每步新增的十二累积为 $12\sum_{j=0}^{n-1}7^j$。等比和给 $T(n)=3\cdot7^n+12(7^n-1)/6=5\cdot7^n-2$。n=0 时直接代入得 $5-2=3$，与初值相合；n≥1 时迭代合法。考试只要求闭式，这里补上完整求解。
-
-## Common Mistakes
-
-- 只写齐次解 $3\cdot7^n$，漏掉每步加十二的累积。
-- 把几何级数的项数误写成 $n+1$。
 
 ## Connections
 

@@ -41,24 +41,17 @@ Expression A: $(p\land\neg r)\lor(\neg q\land r)$
 
 Expression B: $(p\lor\neg q)\land(r\lor\neg r)$
 
-## 中文解析
+## Official Answer
 
-右式中的 $r\lor\neg r$ 恒真，左式则仍要求两条带条件的支路之一成立。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(b) They are not equivalent. $P=T,Q=T,R=T$ is a counter-example. It makes $A$ false and makes $B$ true.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Not equivalent; $p=q=r=T$ is a counterexample.
 
-**答案。** 不等价；$p=q=r=T$ 是反例。
-
-**推导。** 取同一赋值 $p=q=r=T$。Expression A 的第一项为 $T\land F=F$，第二项为 $F\land T=F$，故 $A=F\lor F=F$。Expression B 为 $(T\lor F)\land(T\lor F)=T$。一组赋值便使两式真值不同，因此它们不等价。这个反例也直接检验了右式删去 $r$ 限制后的区别。
-
-## Common Mistakes
-
-- 反例必须在左右式使用同一组赋值，不能各选一组。
-- 右式的恒真因子不会使整个右式恒真，还须检查 $p\lor\neg q$。
+**Derivation/proof.** Use the same assignment on both sides. In A, $T\land F=F$ and $F\land T=F$, so $A=F\lor F=F$. In B, $(T\lor F)\land(T\lor F)=T$. One assignment with different truth values disproves equivalence. The tautological factor in B removes the restriction involving $r$, but does not make B itself a tautology.
 
 ## Connections
 

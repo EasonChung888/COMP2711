@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P02 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-取 $p=T,q=F$，前件真而后件假，所以该式为假，不能是 tautology。再取 $p=q=T$，前后件均真，蕴含为真，不能是 contradiction。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> Answer. (a) N
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** N.
 
-**答案。** N
-
-**推导。** 取 $p=T,q=F$，前件真而后件假，所以该式为假，不能是 tautology。再取 $p=q=T$，前后件均真，蕴含为真，不能是 contradiction。两种赋值均符合任意命题的条件，因此它属于既非恒真也非恒假的 $N$。
-
-## Common Mistakes
-
-- $p=T,q=F$ 使蕴含为假，而二者同真使它为真，两个见证缺一不可。
-- 把蕴含当成双条件会改变真值；本式只禁止前件真且后件假。
+**Derivation/proof.** With $p=T,q=F$, the antecedent is true and the consequent false, so the formula is false and cannot be a tautology. With $p=q=T$, both are true, so the implication is true and cannot be a contradiction. Both assignments are permitted, establishing the classification $N$.
 
 ## Connections
 

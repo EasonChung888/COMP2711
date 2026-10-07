@@ -45,26 +45,17 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-目标需要同一个 $x$ 对所有 $y$ 都有效。第三项直接保证后件；第四项对全部 $x$ 成立，从非空域中任选一个即可。第一项允许随 $y$ 换见证，第二项只保证前件，均不足够。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(d) 3,4
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** 3, 4, under the usual nonempty-domain convention used by the official answer.
 
 **Derivation/proof.** Option 3 supplies a witness for which every consequent is true, making all implications true. For option 4 choose any $x\in U_2$; universal instantiation gives the target. To refute option 1 take $U_1=U_2=\{0,1\}$, $P$ always true, and $R(x,y)$ meaning $x=y$: a witness exists for each $y$, but no common witness exists. For option 2 take singleton domains, $P$ true, and $R$ false. If empty $U_2$ were permitted, option 4 would need that extra nonemptiness assumption.
-
-### 中文解答
-
-**推导。** 按官方采用的一阶逻辑非空域惯例，三提供一个对所有 y 都使 R 为真的 x，故每个蕴含后件真，该 x 就是目标见证。四对所有 x 都成立，从非空 $U_2$ 任取一个即得目标。反驳一：取 $U_1=U_2=\{0,1\}$，P 恒真，$R(x,y)$ 表示 $x=y$；每个 y 都有各自见证，但没有共同 x。反驳二：取单元素域，P 真、R 假，则二真目标假。因此选 3、4；若另行允许空 $U_2$，四不再推出存在式，这个约定不可省略。
-
-## Common Mistakes
-
-- 将 $\forall y\exists x$ 交换成 $\exists x\forall y$。
-- 只知道前件为真，不能推出蕴含成立。
 
 ## Connections
 

@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P04-b - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-源图 C 位于第五列顶行。与不受限情形一样，第二、四、六、八列必须在中行，第三、五、七列决定上下分支。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> (ii) We can simply see that for the fifth column we have to move up. So the total possible ways is $2^2$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2^2=4$.
 
-**答案。** $2^2=4$。
-
-**推导。** 源图 C 位于第五列顶行。与不受限情形一样，第二、四、六、八列必须在中行，第三、五、七列决定上下分支。经过 C 要求第五列选顶行，恰固定三个二选一中的一个；第三、七列仍各有上下两种合法选择。每个选择对都给出一条通过 C 的路径，故数量为 $2\cdot1\cdot2=4$。
-
-## Common Mistakes
-
-- C 是第五列顶点，固定的是中间分支，不是要求全程都走顶行。
-- 通过 C 后的第七列仍可上下任选，不能把后半程也完全固定。
+**Derivation/proof.** The source places $C$ on the top row of the fifth column. As before, columns two, four, six and eight are middle-row positions, and columns three, five and seven select the branches. Passing through $C$ forces the fifth-column choice upward. Columns three and seven remain independent upper-or-lower choices. Each pair gives one path through $C$, so $2\cdot1\cdot2=4$.
 
 ## Connections
 

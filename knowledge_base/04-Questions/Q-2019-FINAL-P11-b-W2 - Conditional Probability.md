@@ -37,26 +37,19 @@ and $p(W=2\mid M=3)$?
 
 Shared context: [[STEM-2019-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-二号门有奖时，三号是唯一可开门，因而联合概率就是二号门的先验零点三。用开三号门的总概率零点五五归一化，得到十一分之六，比一号门的十一分之五略大。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=13|physical PDF page 13]]; [[knowledge_base/past_paper/2019-final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+Same as above, but with $p(M=3\mid W=1)=1/2,p(M=3\mid W=2)=1,p(M=3\mid W=3)=0$. Plugging in these numbers, we obtain $p(M=3)=0.55$ and $p(W=1\mid M=3)=5/11,p(W=2\mid M=3)=6/11$. So, we should switch to door 2. This time, the probability that our initial guess is correct has decreased.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13, 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $6/11$.
 
 **Derivation/proof.** When the prize is behind door 2 and you chose door 1, Monty must open door 3, giving joint probability 0.3. The total opening probability is $0.5(1/2)+0.3(1)+0.2(0)=0.55$. Therefore the posterior is $0.3/0.55=6/11$, complementary to the $5/11$ for door 1.
 
-### 中文解答
-
-**推导。** 若 $W=2$，因为玩家已选一，主持人只可开三，故 $P(W=2,M=3)=0.3$。$M=3$ 的其他可能分支是 $W=1$ 后主持人随机开三，质量 $0.25$，所以归一化分母为 $0.3+0.25=0.55$。答案 $P(W=2\mid M=3)=0.3/0.55=6/11$；它与门一后验 $5/11$ 互补。
-
-## Common Mistakes
-
-- 把先验零点三直接当条件概率。
-- 把二号与三号的先验概率互换。
+The joint event is $P(W=2,M=3)=0.3$, and its observation probability is $0.3+0.25=0.55$. Dividing the joint probability by this total gives the posterior for door two.
 
 ## Connections
 

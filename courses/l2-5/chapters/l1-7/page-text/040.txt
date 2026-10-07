@@ -1,0 +1,20 @@
+Exercise
+ on Combinatorial Proof
+Show by combinatorial proof that:
+ 
+In a combinatorial proof, you must prove that both sides count the same number in different ways. 
+LHS:
+ 
+ could count the number of ways 
+ to select a committee of 
+ members 1≤ 
+ ≤ 
+, and then choose one the
+ members to be the chairperson, i.e., the committee should contain at least a chairperson and any other number of members. 
+RHS:
+ counts the same number because
+ there are 
+ choices for the chairperson and 
+ choices for the rest of the committee (the rest of the committee could be any subset, including the empty set, that does not contain the chairperson).  
+ 
+40

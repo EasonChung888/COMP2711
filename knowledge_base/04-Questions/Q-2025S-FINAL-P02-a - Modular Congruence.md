@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (a) [3 pts] Calculate $2^{62}\pmod{63}$.
 
-## 中文解析
+## Official Answer
 
-六次幂恰比六十三大一，能够直接建立周期，无需假设模数为素数。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+(a) $2^6\equiv1\pmod{63}\implies2^{60}\equiv1\implies2^{62}\equiv4\pmod{63}$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $4$.
 
-**答案。** $4$。
-
-**推导。** 直接计算 $2^6=64\equiv1\pmod{63}$。把指数分解为 $62=6\cdot10+2$，则 $2^{62}=(2^6)^{10}2^2\equiv1^{10}\cdot4=4\pmod{63}$。四在零至六十二之间，是约化后的余数。此计算由明确的整数同余得到，完全不依赖六十三的素性。
-
-## Common Mistakes
-
-- 六十三并非素数，不能未经判断便用 Fermat 说六十二次幂余一。
-- 指数六十二除以六余二，而不是整除；尾部的二次幂必须保留。
+**Derivation/proof.** Directly, $2^6=64\equiv1\pmod{63}$. Decompose the exponent as $62=6\cdot10+2$. Then $2^{62}=(2^6)^{10}2^2\equiv1^{10}\cdot4=4\pmod{63}$. Four lies between zero and sixty-two and is the reduced remainder. The calculation uses explicit integer congruences and does not rely on sixty-three being prime.
 
 ## Connections
 

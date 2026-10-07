@@ -44,29 +44,37 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 Using rules of inference for propositional logic, show that the truth of the above premises implies that the conclusion “$t$” is true.
 
-## 中文解析
+## Official Answer
 
-从第一前提提取 p，沿两条蕴含到 s 或 t，再由非 s 排除一支。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+(b)
 
-Provenance: published official answer, independently checked and expanded below.
+1. $p\land q$ (given)
+2. $p$ (1, simplification)
+3. $p\to(r\land q)$ (given)
+4. $r\land q$ (2, 3, modus ponens)
+5. $r$ (4, simplification)
+6. $r\to(s\lor t)$ (given)
+7. $s\lor t$ (5, 6, modus ponens)
+8. $\neg s$ (given)
+9. $t$ (7, 8, disjunctive syllogism)
 
-### 中文解答
+Thus, the premises logically imply $t$.
 
-**答案。** $t$。
+## Supplementary Explanation
 
-**推导。** 1. 由 premise 1 的 $p\land q$ 用 simplification 得 $p$。
-2. 与 premise 2 用 modus ponens 得 $r\land q$。
-3. 由 2 用 simplification 得 $r$。
-4. 与 premise 3 用 modus ponens 得 $s\lor t$。
-5. 用 premise 4 的 $\neg s$ 与 4 作 disjunctive syllogism，得到 $t$。
-每一步均只依赖给定前提或较早步骤，故前提全真时结论必真。
+**Answer.** $t$.
 
-## Common Mistakes
+**Derivation/proof.**
 
-- 析取 s 或 t 不能单独推出 t，必须结合非 s。
-- 第一条前提中的 q 在这条证明链中不必单独使用，不能为用尽字母而增加无效推论。
+1. Simplification of premise 1, $p\land q$, gives $p$.
+2. Modus ponens with premise 2 gives $r\land q$.
+3. Simplification of step 2 gives $r$.
+4. Modus ponens with premise 3 gives $s\lor t$.
+5. Premise 4 is $\neg s$. Combining it with step 4 by disjunctive syllogism gives $t$.
+
+Every step uses only a given premise or an earlier result. Thus, when all premises are true, the conclusion must be true.
 
 ## Connections
 

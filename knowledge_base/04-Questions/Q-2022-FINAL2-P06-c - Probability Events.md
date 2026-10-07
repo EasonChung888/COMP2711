@@ -39,26 +39,19 @@ What is the probability that $G$ with $n=4$ vertices has 3 edges and is not conn
 
 Shared context: [[STEM-2022-FINAL2-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-三条边却不连通只能是三角形加孤点，因为两点加两点最多两条边。选择哪一个顶点孤立有四种，每种要求三边存在、另三边不存在，概率相乘再乘四即可。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (c) The simple graph $G$ with 4 vertices and 3 edges is not connected if and only if three edges form a triangle and the last vertex is disconnected, which happens with the probability $\binom43p^3(1-p)^3$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $4p^3(1-p)^3$.
 
 **Derivation/proof.** A disconnected four-vertex simple graph with three edges cannot split2+2, since that allows at most two edges. Its nontrivial component must have three vertices, and all three possible edges must be present: a triangle. Choose the isolated vertex (or triangle vertices) in 4 ways. Each exact configuration has three present and three absent edges among K4's six possibilities, hence probability p³(1−p)³. These four configurations are disjoint, giving the result.
 
-### 中文解答
-
-**推导。** 四点简单图若不连通，分量若至多两点，则两两分成 $2+2$ 也最多两条边，无法满足三边。所以只能是 $3+1$ 分量分拆，且三点分量必须有全部三条边，即三角形加孤点。选孤点有四种。固定其中一种，在四点的六条潜在边中，需要三条三角形边存在、三条连向孤点的边不存在；由明确的独立性，每种概率 $p^3(1-p)^3$。四种配置互斥，因此总概率 $4p^3(1-p)^3$。这不是仅要求至少一个三角形，还必须排除连向第四点的三条边。
-
-## Common Mistakes
-
-- 包含两条边的路径加孤点却没满足三边条件。
-- 漏掉三条不存在边的概率。
+The structure is a triangle plus an isolated vertex among six potential edges. The four configurations are disjoint. This requires absence of all three edges to the fourth vertex, not merely the presence of a triangle.
 
 ## Connections
 

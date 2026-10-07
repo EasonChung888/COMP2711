@@ -37,26 +37,19 @@ NOT ($\neg$) and Implication ($\to$).
 
 Shared context: [[STEM-2022-MID-P01-a - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把内层蕴含暂时当作整体 X，外层“非 a 或 X”正是 a 推出 X。替换后所有连接词都是题目允许的否定和蕴含；展开箭头可再次检查没有改变真值。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> (a) (i) $a\to(b\to\neg c)$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $a\to(b\to\neg c)$.
 
 **Derivation/proof.** The equivalence $\neg a\lor X\equiv a\to X$ applies with X=(b→¬c). The inner formula already uses only implication and negation, so no further transformation is needed. Expanding both arrows produces ¬a∨¬b∨¬c, which verifies equivalence to the original expression.
 
-### 中文解答
-
-**推导。** 把 $b\to\neg c$ 视作整体 $X$，原式是 $\neg a\lor X$。由蕴含等价律 $\neg a\lor X\equiv a\to X$，得到 $a\to(b\to\neg c)$。内层本来就只用否定和蕴含，所以已经满足连接词限制。反向展开两个箭头是 $\neg a\lor\neg b\lor\neg c$，与原式相同，检验等价无误。
-
-## Common Mistakes
-
-- 把外层前件写成非 a。
-- 保留原来的析取符号而违反限制。
+Expanding both implications yields $\neg a\lor\neg b\lor\neg c$.
 
 ## Connections
 

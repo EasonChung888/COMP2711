@@ -38,26 +38,19 @@ $P(2)$ is true; for all positive integers $n$, if $P(k)$ is true for $2\le k\le 
 
 Shared context: [[STEM-2021-FINAL1-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-这是从二开始的强归纳：已知二到 n 全真，就推出 n+1。逐步覆盖所有至少二的整数；n=1 时前件区间为空，结论仍只是 P(2)，不会额外推出一或负数。
+Source: [[knowledge_base/past_paper/2021-final-part-1.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (d) For all integers $n\ge2$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** All integers $n\ge2$.
 
 **Derivation/proof.** P(2) is the base. If P(2),…,P(n) hold for n≥2, the rule gives P(n+1), so strong induction proves every integer at least 2. No smaller integer is forced: the predicate true exactly for integers ≥2 satisfies the rule. At n=1 the premise interval is empty and the conclusion is P(2), already included; it does not imply P(1).
 
-### 中文解答
-
-**推导。** 以 $P(2)$ 为基础，用强归纳：若 $P(2),\ldots,P(n)$ 全真，题设规则立即给 $P(n+1)$，因此所有整数 $n\ge2$ 都真。为排除更小值，令 $P$ 恰在整数二及以上为真；它满足基础，也满足规则，因为规则所有结论 $n+1$ 至少为二。特别地 $n=1$ 时前件 $2\le k\le1$ 的范围为空，空真只推出 $P(2)$，并不推出 $P(1)$。所以答案恰是所有 $n\ge2$。
-
-## Common Mistakes
-
-- 忽视 n=1 的空前件而误判矛盾。
-- 把归纳起点扩大成所有整数。
+The induction uses $P(2),\ldots,P(n)$. At $n=1$, the range $2\le k\le1$ is empty, and the vacuous premise only yields $P(2)$.
 
 ## Connections
 

@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-逆否命题是：如果五次方根有理，则原数有理。设五次方根等于整数之比，五次方后仍是整数之比，因此原命题成立；不能把五次方根读成倒数。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(b) Assume $x^{1/5}$ were rational. By part (a), $x=x^{1/5}x^{1/5}x^{1/5}x^{1/5}x^{1/5}$ must also be rational, which contradicts the premise of the statement. Therefore if $x$ is irrational, then $x^{1/5}$ is irrational.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** An irrational real $x$ has irrational real fifth root.
 
 **Derivation/proof.** Prove the contrapositive. Suppose $x^{1/5}=a/b$ with integers $a,b$ and $b\ne0$. Then $x=(a/b)^5=a^5/b^5$ is rational. Thus $x$ irrational implies $x^{1/5}$ irrational. The odd root exists for every real $x$.
 
-### 中文解答
-
-**推导。** 证明逆否命题：假设实数五次方根有理，写 $x^{1/5}=a/b$，a、b 整数且 $b\ne0$。两边五次方得 $x=a^5/b^5$；a⁵、b⁵ 为整数且分母非零，故 x 有理。逆否等价推出 x 无理时其五次方根无理。奇次实根对负数也存在，不需加 x 正的限制。
-
-## Common Mistakes
-
-- 将 $x^{1/5}$ 误读为 $1/x$ 或 $x/5$。
-- 证明“原数有理推出根有理”，那是原命题的逆命题而非逆否命题。
+Taking fifth powers gives $x=a^5/b^5$, a ratio of integers with nonzero denominator.
 
 ## Connections
 

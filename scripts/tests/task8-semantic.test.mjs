@@ -1,3 +1,5 @@
+import {historicalSection} from './answer-proof-helpers.mjs';
+import {checkWorkedProof, translatedCheckpoints, workedSolution} from './answer-proof-helpers.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync,statSync,existsSync} from 'node:fs';
@@ -47,17 +49,17 @@ test('Task 8 all source labels, pages, atomic marks, answer provenance and sourc
   assert.equal(p.source_page,f.page);assert.equal(p.question_number,f.label);assert.deepEqual(p.solution_page??null,f.solution_page);assert.equal(p.marks??null,f.marks);assert.equal(p.answer_source,f.answer_source);assert.deepEqual(p.subtopics,f.subtopics);
   assert.equal(sha(section(t,'Question')),f.prompt_sha256,`${r.id}: source prompt changed`);
   assert.ok(section(t,'Source').includes(`![[${r.source_pdf}#page=${f.page}]]`));
-  if(p.answer_source==='official')assert.ok(p.solution_page.length);else {assert.equal(p.solution_page,undefined);assert.match(section(t,'Source'),/printed|Printed|Page|page/);assert.match(section(t,'Detailed Solution'),/independently derived/);}
+  if(p.answer_source==='official')assert.ok(p.solution_page.length);else {assert.equal(p.solution_page,undefined);assert.match(section(t,'Source'),/printed|Printed|Page|page/);assert.equal(p.answer_source,'derived');}
  }
 });
 
-test('Task 8 all notes have Chinese worked solutions, fixed section order, specific mistakes and concrete syllabus evidence',()=>{
- const work=new Set(),mistakes=new Set();
- for(const r of admitted){const t=read(r.id),p=properties(r.id),w=section(t,'Detailed Solution'),m=section(t,'Common Mistakes');
-  assert.deepEqual([...t.matchAll(/^## (.+)$/gm)].map(m=>m[1]),['Source','Question','中文解析','Detailed Solution','Common Mistakes','Connections']);
+test('Task 8 all notes have English worked solutions, fixed two-section order and concrete syllabus evidence',()=>{
+ const work=new Set();
+ for(const r of admitted){const t=read(r.id),p=properties(r.id),w=section(t,'Supplementary Explanation');
+  assert.deepEqual([...t.matchAll(/^## (.+)$/gm)].map(m=>m[1]),['Source','Question','Official Answer','Supplementary Explanation','Connections']);
   assert.equal(p.syllabus_status,'in-scope');assert.equal(p.syllabus_version,'COMP2711-2026-27-fall');assert.equal(p.verification_status,'verified');
-  assert.match(w,/### 中文解答/);assert.match(w,/\*\*答案。\*\*/);assert.match(w,/\*\*推导。\*\*/);assert.ok((w.match(/[\u3400-\u9fff]/g)??[]).length>=30,r.id);assert.ok(w.length>=220,r.id);
-  assert.ok(!work.has(w),r.id);work.add(w);assert.ok((m.match(/[\u3400-\u9fff]/g)??[]).length>=20,r.id);assert.equal((m.match(/^- /gm)??[]).length,2,r.id);
+  assert.match(workedSolution(w),/\*\*Answer\.\*\*/);assert.match(workedSolution(w),/\*\*Derivation\/proof\.\*\*/);assert.ok((w.match(/[A-Za-z]/g)??[]).length>=30,r.id);assert.ok(w.length>=220,r.id);
+  assert.ok(!work.has(w),r.id);work.add(w);
   assert.ok(!controls.test(t),r.id);assert.ok(!/\bTODO\b|\bTBD\b|placeholder|\(cid:\d+\)|The dependent item imports the precise premise/.test(t),r.id);
   assert.deepEqual(r.syllabus_evidence,p.subtopics.map(s=>s.slice(2,-2)));for(const s of r.syllabus_evidence){assert.match(s,/Subtopic - [A-Za-z].* - [\u3400-\u9fff]/);assert.ok(r.verification.scope.includes(s),r.id);}
   assert.ok(r.verification.scope.length>90,r.id);assert.ok(r.verification.solution.includes('Independent check:'));assert.ok(r.verification.solution.includes(p.answer_source==='derived'?'Derived correction/completion':'Official answer')||r.verification.solution.includes('Task11 compared the '+p.answer_source+' conclusion')); assert.ok(p.difficulty_basis.length>45,r.id);
@@ -65,7 +67,7 @@ test('Task 8 all notes have Chinese worked solutions, fixed section order, speci
 });
 
 // Independently selected result + intermediate checkpoints, one entry per admitted
-// atom. These inspect the Chinese derivation itself, not mere answer presence or
+// atom. These inspect the authored English derivation, not mere answer presence or
 // length. Removing any checkpoint or substituting an approach-only paragraph fails.
 const checkpoints={
  '2024S-MID':{
@@ -161,15 +163,15 @@ const checkpoints={
  }
 };
 const checks=new Map(Object.entries(checkpoints).flatMap(([code,map])=>Object.entries(map).map(([s,c])=>['Q-'+code+'-'+s,c])));
-function assertChineseProof(id,w){assert.match(w,/### 中文解答/);assert.match(w,/\*\*推导。\*\*/);const derivation=w.split('**推导。**')[1];assert.ok(derivation);for(const token of checks.get(id))assert.ok(derivation.includes(token),`${id}: Chinese derivation missing ${token}`);}
-test('Task 8 all admitted Chinese derivations retain their specific intermediate computations or proof obligations',()=>{
- assert.deepEqual([...checks.keys()].sort(),admitted.map(r=>r.id).sort());for(const r of admitted)assertChineseProof(r.id,section(read(r.id),'Detailed Solution'));
+function assertEnglishProof(id,w){checkWorkedProof(w,translatedCheckpoints(id,checks.get(id)),id);}
+test('Task 8 all admitted English derivations retain their specific intermediate computations or proof obligations',()=>{
+ assert.deepEqual([...checks.keys()].sort(),admitted.map(r=>r.id).sort());for(const r of admitted)assertEnglishProof(r.id,section(read(r.id),'Supplementary Explanation'));
 });
-test('Task 8 negative controls reject approach-only Chinese and removal of each mathematical checkpoint',()=>{
- for(const r of admitted){const original=section(read(r.id),'Detailed Solution');
-  const approach='### 中文解答\n\n**答案。** 见结果。\n\n**推导。** 本题应先选用相关定义，再代入题设条件，逐步推导并检查结果。需要时可以使用反证、归纳或分类讨论完成证明。';
-  assert.throws(()=>assertChineseProof(r.id,approach),undefined,r.id+' approach-only');
-  for(const token of checks.get(r.id)){const changed=original.replaceAll(token,'[removed]');assert.throws(()=>assertChineseProof(r.id,changed),undefined,r.id+' '+token);}
+test('Task 8 negative controls reject approach-only English and removal of each mathematical checkpoint',()=>{
+ for(const r of admitted){const original=section(read(r.id),'Supplementary Explanation');
+  const approach='**Answer.** Pending.\n\n**Derivation/proof.** Select the definitions, substitute the assumptions, and check the conclusion.';
+  assert.throws(()=>assertEnglishProof(r.id,approach),undefined,r.id+' approach-only');
+  for(const token of translatedCheckpoints(r.id,checks.get(r.id))){const changed=original.replaceAll(token,'[removed]');assert.throws(()=>assertEnglishProof(r.id,changed),undefined,r.id+' '+token);}
  }
 });
 
@@ -239,32 +241,32 @@ test('Task 8 literal source errors, derived corrections, rubric marks and split-
 
 function assertFixedAsymptoticWarnings(part,m){
  const required=part==='ii'
-  ?[R`B=2n^2+10000n+5n\log n`,R`A/B\to5`,'有限正极限','原答案 (ii) 只列 $O$',R`$\Omega$ 与 $\Theta$`,'遗漏']
-  :[R`n^{2-\log_2 5}\to0`,'仅有 $O$',R`$\Omega$ 的正下界`,'原答案 (iii) 写',R`$A=\Omega(B)$`,'此标签错误','错误断言 $n^2$ 至少增长得和 $B$ 一样快','实际 $n^2=o(B)$'];
+  ?[R`B=2n^2+10000n+5n\log n`,R`A/B\to5`,'finite positive limit','official answer (ii) lists only $O$',R`$\Omega$ and $\Theta$`,'omits']
+  :[R`n^{2-\log_2 5}\to0`,'Only $O$ holds',R`positive lower bound for $\Omega$`,'official answer (iii) writes',R`$A=\Omega(B)$`,'This label is wrong','incorrectly asserts that $n^2$ grows at least as fast as $B$','actually $n^2=o(B)$'];
  for(const token of required)assert.ok(m.includes(token),`9(a)(${part}) warning lacks ${token}`);
- assert.doesNotMatch(m,/B=2n(?![\d^])|官方漏写的 O/,'must not import the linear item or misidentify the missing key label');
+ assert.doesNotMatch(m,/B=2n(?![\d^])|official missing O/,'must not import the linear item or misidentify the missing key label');
  if(part==='iii'){
-  assert.doesNotMatch(m,/有限正常数比值意味着三个关系都成立|三个关系都成立/,'zero ratio cannot support all three relations');
-  assert.ok(!m.includes('把增长较慢的 $n^2$ 当成了 $B$ 的渐近下界'),'the wrong Omega claim makes B a lower bound of A, not A of B');
+  assert.doesNotMatch(m,/all three relations hold/,'zero ratio cannot support all three relations');
+  assert.ok(!m.includes('treats the slower $n^2$ as an asymptotic lower bound for $B$'),'the wrong Omega claim makes B a lower bound of A, not A of B');
  }
 }
-test('Task 8 fix 1 asymptotic warnings agree with each actual ratio and its precise printed-key defect',()=>{
- for(const part of ['ii','iii'])assertFixedAsymptoticWarnings(part,section(read('Q-2024F-FINAL-P09-a-'+part),'Common Mistakes'));
+test('Historical removed warnings: Task 8 fix 1 asymptotic warnings agree with each actual ratio and its precise printed-key defect',()=>{
+ for(const part of ['ii','iii'])assertFixedAsymptoticWarnings(part,historicalSection(read('Q-2024F-FINAL-P09-a-'+part),'Common Mistakes'));
 });
-test('Task 8 fix 1 negative controls reject reviewed copied warnings and swapped limit/key claims',()=>{
- const copied='- 有限正常数比值意味着三个关系都成立，不能只列官方漏写的 O。\n';
- const reviewed={ii:copied+'- B=2n 是线性项而非二的 n 次幂，转录时必须保留这一差别。',iii:copied+'- 五的指数是以二为底的对数，需换成 n 的固定次幂再比较。'};
+test('Historical removed warnings: Task 8 fix 1 negative controls reject reviewed copied warnings and swapped limit/key claims',()=>{
+ const copied='- A finite positive ratio means all three relations hold; add the official missing O.\n';
+ const reviewed={ii:copied+'- B=2n is linear, not two to the nth power; preserve the distinction.',iii:copied+'- The exponent of five is a base-two logarithm; rewrite as a fixed power of n.'};
  for(const part of ['ii','iii']){
   assert.throws(()=>assertFixedAsymptoticWarnings(part,reviewed[part]),undefined,part+' reviewed contradiction');
-  const good=section(read('Q-2024F-FINAL-P09-a-'+part),'Common Mistakes');
+  const good=historicalSection(read('Q-2024F-FINAL-P09-a-'+part),'Common Mistakes');
   assert.throws(()=>assertFixedAsymptoticWarnings(part,good+'\n'+reviewed[part]),undefined,part+' contradiction appended to correct warnings');
   const wrongLimit=part==='ii'?good.replace(R`A/B\to5`,R`A/B\to0`):good.replace(R`n^{2-\log_2 5}\to0`,R`n^{2-\log_2 5}\to5`);
   assert.throws(()=>assertFixedAsymptoticWarnings(part,wrongLimit),undefined,part+' swapped limit');
-  const wrongKey=part==='ii'?good.replace('只列 $O$',R`只列 $\Omega$`):good.replace(R`$A=\Omega(B)$`,'$A=O(B)$');
+  const wrongKey=part==='ii'?good.replace('lists only $O$',R`lists only $\Omega$`):good.replace(R`$A=\Omega(B)$`,'$A=O(B)$');
   assert.throws(()=>assertFixedAsymptoticWarnings(part,wrongKey),undefined,part+' incorrect printed label');
   if(part==='iii'){
-   const reversed='它把增长较慢的 $n^2$ 当成了 $B$ 的渐近下界';
-   assert.throws(()=>assertFixedAsymptoticWarnings(part,good.replace('错误断言 $n^2$ 至少增长得和 $B$ 一样快',reversed)),undefined,'reversed lower-bound direction');
+   const reversed='it treats the slower $n^2$ as an asymptotic lower bound for $B$';
+   assert.throws(()=>assertFixedAsymptoticWarnings(part,good.replace('incorrectly asserts that $n^2$ grows at least as fast as $B$',reversed)),undefined,'reversed lower-bound direction');
    assert.throws(()=>assertFixedAsymptoticWarnings(part,good+'\n'+reversed),undefined,'reversed claim appended to correct direction');
   }
  }

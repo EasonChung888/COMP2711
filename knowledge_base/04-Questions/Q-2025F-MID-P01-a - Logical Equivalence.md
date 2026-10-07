@@ -44,24 +44,29 @@ Source correction: Page 4 temporarily drops the NAND bars in the redundant equal
 $$p\mathbin{\overline\land}(q\to r)\equiv(p\to q)\land(p\to\neg r)$$
 (you are NOT allowed to use truth table)
 
-## 中文解析
+## Official Answer
 
-左式的带横线合取是 NAND；消去它后应用 De Morgan 即可。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) Start with the left-hand side:
+> $$p\mathbin{\overline\land}(q\to r)=\neg(p\land(q\to r)).$$
+> Since $q\to r\equiv\neg q\lor r$:
+> $$p\land(q\to r)=p\land(\neg q\lor r).$$
+> Apply De Morgan’s law to the NAND:
+> $$\neg(p\land(\neg q\lor r))=\neg p\lor\neg(\neg q\lor r)=\neg p\lor(q\land\neg r).$$
+> Now consider the right-hand side:
+> $$(p\to q)\land(p\to\neg r)=(\neg p\lor q)\land(\neg p\lor\neg r).$$
+> Apply the distributive law:
+> $$(\neg p\lor q)\land(\neg p\lor\neg r)=\neg p\lor(q\land\neg r).$$
+> Both sides are equal:
+> $$\neg p\lor(q\land\neg r)\equiv\neg p\lor(q\land\neg r).$$
+> Thus, $p\mathbin{\overline\land}(q\to r)\equiv(p\to q)\land(p\to\neg r)$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The equivalence holds.
 
-**答案。** 等价成立。
-
-**推导。** 由 NAND 定义，左式为 $\neg(p\land(q\to r))$。消去蕴含得 $\neg(p\land(\neg q\lor r))$，再用 De Morgan 化为 $\neg p\lor(q\land\neg r)$。右式分别消去两蕴含得到 $(\neg p\lor q)\land(\neg p\lor\neg r)$，由 distributive law 也等于 $\neg p\lor(q\land\neg r)$。因此左右相等，各步只用逻辑等价律，没有使用真值表。
-
-## Common Mistakes
-
-- 运算符上横线必须保留，普通合取不会得到同一结论。
-- 否定 $q\to r$ 得 $q\land\neg r$，不是 $\neg q\lor r$。
+**Derivation/proof.** By definition, the left side is $\neg(p\land(q\to r))$. Eliminate implication to obtain $\neg(p\land(\neg q\lor r))$, and use De Morgan’s laws to obtain $\neg p\lor(q\land\neg r)$. On the right, eliminating both implications gives $(\neg p\lor q)\land(\neg p\lor\neg r)$, which equals the same expression by distribution. Every step uses equivalence laws, without a truth table.
 
 ## Connections
 

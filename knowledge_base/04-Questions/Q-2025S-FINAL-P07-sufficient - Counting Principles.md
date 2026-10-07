@@ -43,24 +43,17 @@ Prerequisite context (editorial): [[Q-2025S-FINAL-P07-N - Counting Principles]].
 
 You need to argue that $n$ socks guarantee at least 10 pairs,
 
-## 中文解析
+## Official Answer
 
-导入求得的阈值二十三，证明所有颜色分配都必须形成十对。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+For any selection, at most one sock of each color will be left unpaired, and this happens if and only if an odd number of socks of that color is selected. Thus 24 socks suffice: at most 4 will be unpaired, leaving at least 20 in pairs. However, 23 will do! Since 23 is not the sum of four odd numbers, at most 3 socks out of 23 will be unpaired.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Twenty-three socks always contain at least ten pairs.
 
-**答案。** 23 只袜子必有至少 10 对。
-
-**推导。** 导入 $n=23$。设各颜色只数为 $r,g,b,k$，总和二十三。各颜色配对后留下的数为各自除二的余数，因此总孤袜数 $u=(r\bmod2)+(g\bmod2)+(b\bmod2)+(k\bmod2)\le4$。又二十三减去 $u$ 必为偶数，故 $u$ 为奇数，最大只能三。于是配对数 $\sum\lfloor\text{该色只数}/2\rfloor=(23-u)/2\ge10$，对任意合法颜色分配均成立，充分性得证。
-
-## Common Mistakes
-
-- 从四种颜色推得至多四只孤袜后，还要利用二十三为奇数。
-- 只展示一种有十对的分配不能证明“保证”，必须覆盖所有分配。
+**Derivation/proof.** Use $n=23$. Let the color counts be r,g,b,k. After pairing within colors, the number left over is $u=(r\bmod2)+(g\bmod2)+(b\bmod2)+(k\bmod2)\le4$. Since $23-u$ is even, u is odd, hence at most three. The number of disjoint same-color pairs is $\sum\lfloor\text{color count}/2\rfloor=(23-u)/2\ge10$. This holds for every permitted distribution, establishing sufficiency.
 
 ## Connections
 

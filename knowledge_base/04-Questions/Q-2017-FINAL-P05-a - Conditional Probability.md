@@ -38,26 +38,24 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先验两枚币各占一半，但观察到正面后，偏向正面的假币更有可能被朋友拿到。把“拿到假币且出现正面”的联合概率除以出现正面的总概率，得到十三分之八。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=8|physical PDF page 8]]; [[knowledge_base/past_paper/2017-final.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+Define the following events: $E_1$: Your friend got the fake coin. $E_2$: Your friend got the real coin. $H$: Your friend's coin flip returns heads. $T$: Your friend's coin flip returns tails.
+We want to know $p(E_1\mid H)$.
+We know that $p(H)+p(T)=1,p(E_1)+p(E_2)=1$.
+Then we have:
+$$p(E_1\mid H)\cdot p(H)=p(H\mid E_1)\cdot p(E_1)$$
+$$p(E_1\mid H)=0.8\cdot0.5/p(H)=0.4/(0.5\cdot0.8+0.5\cdot0.5)=0.4/0.65=8/13.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8, 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $8/13$.
 
 **Derivation/proof.** Let $F$ mean the friend holds the fake coin and $H$ mean the observed head. Then $P(F)=1/2$, $P(H\mid F)=4/5$, and $P(H\mid F^c)=1/2$. Total probability gives $P(H)=(1/2)(4/5)+(1/2)(1/2)=13/20$. Bayes gives $P(F\mid H)=(2/5)/(13/20)=8/13$.
 
-### 中文解答
-
-**推导。** 令 $F$ 为朋友拿到假币、$H$ 为朋友首掷正面。等概率取币给 $P(F)=P(F^c)=1/2$，且 $P(H\mid F)=4/5$、$P(H\mid F^c)=1/2$。全概率得 $P(H)=(1/2)(4/5)+(1/2)(1/2)=13/20$，而 $P(F\cap H)=2/5$。由贝叶斯公式 $P(F\mid H)=(2/5)/(13/20)=8/13$，即十三分之八。这里只观察一次，不需要给后续掷币添加独立性。
-
-## Common Mistakes
-
-- 观察正面后仍用一半作为后验。
-- 把 P(H|F) 直接当 P(F|H)。
+The joint probability is $P(F\cap H)=2/5$. Only the observed first toss enters this calculation; no assumption about later tosses is needed.
 
 ## Connections
 

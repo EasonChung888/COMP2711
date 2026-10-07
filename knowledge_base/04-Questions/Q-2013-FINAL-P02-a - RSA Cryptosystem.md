@@ -38,26 +38,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 Shared context: [[STEM-2013-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-公钥由题给的 $e$ 和两个素数相乘得到的 $n$ 组成；不要把 $\varphi(n)$ 当作公钥的第二个分量。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(a) The public key is the pair: $(e,n)$ where $e=7$ and $n=p*q=209$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $(7,209)$.
 
 **Derivation/proof.** RSA modulus $n=pq=11\cdot19=209$; the specified public exponent is $e=7$.
 
-### 中文解答
-
-**推导。** RSA 公钥为 $(e,n)$，其中 $n=pq=11\cdot19=209$。题给公钥指数 $e=7$，因此公钥是 $(7,209)$。这里第二个分量使用两素数之积，而不是欧拉函数值 180。
-
-## Common Mistakes
-
-- 写成 $(7,180)$。
-- 将 $(n,e)$ 的顺序与题目指定的 $(e,n)$ 混淆。
+The second component is the product of the two primes, not the totient $180$. The question specifies the order $(e,n)$, so the exponent comes first.
 
 ## Connections
 

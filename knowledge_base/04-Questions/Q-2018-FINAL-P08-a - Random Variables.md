@@ -37,26 +37,25 @@ a) What is $E(X)$? Show the steps of your calculations.
 
 Shared context: [[STEM-2018-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把第一盒中的球数写成每颗球是否进入第一盒的指示变量之和。每颗球贡献的期望都是一除以 n，把 m 项相加得到 m 除以 n；这个期望计算本身并不需要独立性。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+$E(X)$: Each ball assignment is a Bernoulli trial with probability $1/n$ of success, and there are $m$ trials. Therefore, $X$ follows the Binomial distribution for which we know $E(X)=m(1/n)=m/n$.
+Alternative solution:
+Let $X_i$ be the indicator random variable such that $X_i=1$ if the $i$-th ball is in the first box, $X_i=0$ otherwise. Obviously, $X=\sum_{i=1}^mX_i$. For $1\le i\le m$, $E(X_i)=P(\text{ball }i\text{ in the first box})=1/n$.
+Therefore,
+$$E(X)=E\left(\sum_{i=1}^mX_i\right)=\sum_{i=1}^mE(X_i)=\sum_{i=1}^m\frac1n=\frac mn.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E(X)=m/n$.
 
 **Derivation/proof.** Let $I_i$ be one if ball $i$ lands in box 1 and zero otherwise. Then $X=\sum_{i=1}^mI_i$ and $E(I_i)=P(I_i=1)=1/n$. Linearity gives $E(X)=\sum_{i=1}^m1/n=m/n$. Equal marginals alone suffice for this particular expectation.
 
-### 中文解答
+Even if every ball shares one uniformly selected box, the same expectation holds. This illustrates why independence must not be added to this proof.
 
-**推导。** 令 $I_i$ 表示第 $i$ 个球落入第一盒，落入时为一，否则零。题设每个球的边缘概率都是 $1/n$，所以 $E(I_i)=1/n$，且 $X=\sum_{i=1}^m I_i$。期望线性性直接给 $E(X)=\sum_{i=1}^mE(I_i)=m/n$。这个步骤不需球之间独立，因此即使所有球共用一个随机盒子，期望仍相同；不把没有印在题干的二项分布假设加进证明。
-
-## Common Mistakes
-
-- 把盒子数 n 当作试验次数。
-- 认为第一盒的期望球数必须为整数。
+Let $I_i$ indicate that ball $i$ enters the specified box. Then $X=\sum_{i=1}^m I_i$ and $E(I_i)=1/n$, so linearity gives $E(X)=m/n$; independence between balls is not required for this expectation.
 
 ## Connections
 

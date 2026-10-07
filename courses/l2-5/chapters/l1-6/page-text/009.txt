@@ -1,0 +1,16 @@
+Exercise
+ on Strings
+How many permutations of the letters 
+ABCDEFGH
+ contain the string 
+ABC
+?
+Solution:
+Since the string ABC must occur together, we can consider it as a single letter (i.e. denote it by 
+S
+). So now we only need to find the number of permutations of six 
+S
+DEFGH. The answer is 
+.
+ 
+9

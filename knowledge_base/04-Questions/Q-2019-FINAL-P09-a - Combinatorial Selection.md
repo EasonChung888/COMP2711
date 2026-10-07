@@ -38,26 +38,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-盒子带编号，所以各组不能互换视为同一结果。逐箱选择十本，剩余数量依次减少，组合数乘积化成多项式系数；每箱内部不区分摆放顺序，因此分母有四个十的阶乘。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+$40!/10!^4$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\frac{40!}{(10!)^4}$.
 
 **Derivation/proof.** Choose ten issues for box 1, then ten of the remaining thirty for box 2, then ten of the remaining twenty for box 3; the last ten go to box 4. This gives $\binom{40}{10}\binom{30}{10}\binom{20}{10}\binom{10}{10}=40!/(10!)^4$. Order within a box does not matter, but box labels distinguish the four groups.
-
-### 中文解答
-
-**推导。** 依箱号选择内容：第一箱从四十期取十期，第二箱从余下三十期取十期，第三箱从余下二十期取十期，最后十期自动入第四箱。故计数为 $\binom{40}{10}\binom{30}{10}\binom{20}{10}\binom{10}{10}=\frac{40!}{(10!)^4}$。每箱内部无顺序，四个箱号则必须区分，因而分母除各箱内部的 $10!$，不除箱子的 $4!$。
-
-## Common Mistakes
-
-- 把每箱内部顺序计入。
-- 盒子有标签却仍除以四的阶乘。
 
 ## Connections
 

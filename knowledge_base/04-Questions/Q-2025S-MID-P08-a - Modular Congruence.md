@@ -42,24 +42,17 @@ $$ad\equiv bd\pmod{cd}$$
 if and only if
 $$a\equiv b\pmod c.$$
 
-## 中文解析
+## Official Answer
 
-把同余转成整数倍等式后，约去正数 $d$；逆方向则把同一等式乘回 $d$。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+(a) We know that $cd\mid ad-bd$. In other words $d(a-b)=cd\cdot k$. We can divide both sides by $d$. So $(a-b)=c\cdot k$, which means $c\mid a-b$. This is the same as $a\equiv b\pmod c$.
 
-Provenance: independently derived correction/completion; the printed defect is retained in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The two congruences are equivalent.
 
-**答案。** 两同余式等价。
-
-**推导。** 正向：$ad\equiv bd\pmod{cd}$ 表示存在整数 $k$ 使 $d(a-b)=cdk$。因为题设 $d>0$，在整数等式中除以 $d$ 得 $a-b=ck$，于是 $a\equiv b\pmod c$。逆向：若 $a\equiv b\pmod c$，则存在整数 $k$ 使 $a-b=ck$；两边乘 $d$ 得 $ad-bd=cdk$，因此 $ad\equiv bd\pmod{cd}$。两个方向都成立，故为 if and only if。原答案只有正向，逆向是这里补全的证明。
-
-## Common Mistakes
-
-- 约去公因数后模数也必须从 $cd$ 改成 $c$，不能保留原模数。
-- “if and only if”需要双向证明，只写除法方向并未完成题目。
+**Derivation/proof.** Forward direction: $ad\equiv bd\pmod{cd}$ means $d(a-b)=cdk$ for an integer $k$. Since $d>0$, divide the integer equality by $d$ to obtain $a-b=ck$, hence $a\equiv b\pmod c$. Reverse direction: if $a\equiv b\pmod c$, then $a-b=ck$ for an integer $k$. Multiplying by $d$ gives $ad-bd=cdk$, hence $ad\equiv bd\pmod{cd}$. Both directions hold. The reverse direction completes the printed one-direction argument.
 
 ## Connections
 

@@ -1,3 +1,4 @@
+import {checkWorkedProof, translatedCheckpoints, workedSolution} from './answer-proof-helpers.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readdirSync,readFileSync} from 'node:fs';
@@ -11,17 +12,8 @@ const byId=new Map(audit.map(r=>[r.id,r]));
 const section=(t,h)=>t.split('## '+h+'\n\n')[1]?.split('\n## ')[0].trim();
 const fixtures=readdirSync('scripts/tests/fixtures').filter(n=>/^task11-.*\.json$/.test(n));
 
-function checkChinese(t,checkpoints,id){
- const block=section(t,'Detailed Solution').split('### 中文解答\n\n')[1];
- assert.ok(block,id+' Chinese worked block');
- assert.match(block,/\*\*推导。\*\*/);
- for(const token of checkpoints)assert.ok(block.includes(token),id+' lacks '+token);
- // Structural safeguard only: a list of pending tokens is not worked reasoning.
- // This is intentionally not advertised as semantic validation of arbitrary proofs.
- const prose=block.replace(/```[\s\S]*?```|`[^`]*`/g,'').replace('**推导。**','').trim();
- assert.doesNotMatch(prose,/待使用的检查点|尚未推导/,id+' pending checklist');
- assert.ok(prose.replace(/\s/g,'').length>=60,id+' lacks worked content outside code/checkpoint quotations');
- assert.ok((prose.match(/[\u3400-\u9fff]/g)||[]).length>=18,id+' lacks explanatory Chinese prose');
+function checkEnglish(t, checkpoints, id) {
+ checkWorkedProof(t, translatedCheckpoints(id, checkpoints), id);
 }
 
 test('Task11 batch1 covers every admitted 2013–2016 atom, not just a sample',()=>{
@@ -74,7 +66,7 @@ test('Task11 2020 checkpoint covers every admitted atom, preserves source slips 
  assert.match(byId.get('Q-2020-FINAL2-BONUS-c-player3').verification.solution,/玩家1被淘汰后，玩家3是剩下两人中的后手，获胜概率为2\/3/);
  assert.match(byId.get('Q-2020-MID-P10').verification.solution,/deliberate unit choice/);
  assert.match(byId.get('Q-2020-MID-BONUS').verification.solution,/square1[\s\S]*stronger|square1[\s\S]*divisors p_i²>1/);
- assert.ok(readFileSync(byId.get('Q-2020-MID-P05-e').note_path,'utf8').includes('可用的对角枚举'));
+ assert.ok(readFileSync(byId.get('Q-2020-MID-P05-e').note_path,'utf8').match(/diagonal (?:argument|enumeration)/i));
  // Explicit independence in this source is preserved, not quarantined by a broad keyword rule.
  for(const s of ['P05-a','P05-b-expectation','P05-b-variance','P05-c','P05-d'])assert.equal(byId.get('Q-2020-FINAL2-'+s).status,'in-scope');
 });
@@ -158,7 +150,7 @@ test('Task11 2023 Final probability quarantines retain weighted sampling and fin
  assert.ok(Math.abs(5/11*4/10*3/9*6/8-1/22)<1e-12);assert.ok(Math.abs(weighted(5,3,4)-100/231)<1e-12);assert.notEqual(100/231,3/8);
  assert.match(byId.get('Q-2023F-FINAL-P04-c').verification.solution,/EK=−Σ1=−∞/);
  const kept=byId.get('Q-2023F-FINAL-P04-d'),t=readFileSync(kept.note_path,'utf8');assert.equal(kept.status,'in-scope');assert.ok(!t.includes('[[Q-2023F-FINAL-P04-c'));
- assert.match(section(t,'Detailed Solution'),/finite uniform average[\s\S]*contradicting/);assert.match(section(t,'Detailed Solution'),/有限个值的均匀平均/);
+ assert.match(workedSolution(t),/finite uniform average[\s\S]*contradicting/);
  assert.match(byId.get('Q-2023F-FINAL-P08-a').verification.solution,/finitely many steps[\s\S]*k\+1/);
  assert.match(byId.get('Q-2023F-FINAL-P10').verification.transcription,/scale-to3200[\s\S]*outside inner while/);
 });
@@ -214,7 +206,7 @@ test('Task11 batch1 approved quarantines retain concrete models and no Question 
 });
 for(const name of fixtures){
  const fixture=JSON.parse(readFileSync('scripts/tests/fixtures/'+name,'utf8'));
- test('Task 11 source and Chinese proof checkpoints: '+name,()=>{
+ test('Task 11 source and English proof checkpoints: '+name,()=>{
   for(const [id,f] of Object.entries(fixture.questions)){
    const r=byId.get(id);assert.ok(r?.note_path,id);
    const t=readFileSync(r.note_path,'utf8'),p=parseFrontmatter(t).properties;
@@ -225,19 +217,20 @@ for(const name of fixtures){
    assert.equal(sha(section(t,'Question')),f.prompt_sha256,id+' original request');
    assert.ok(r.verification.transcription.includes('page '+f.source_page),id);
    assert.ok(r.verification.solution.includes('Independent check:'),id);
-   checkChinese(t,f.checkpoints,id);
+   checkEnglish(t,f.checkpoints,id);
   }
  });
  test('Task 11 negative controls reject approach-only or removed proof steps: '+name,()=>{
   for(const [id,f] of Object.entries(fixture.questions)){
    const t=readFileSync(byId.get(id).note_path,'utf8');
-   const approach=t.replace(/### 中文解答[\s\S]*?(?=\n## Common Mistakes)/,'### 中文解答\n\n**推导。** 先考虑相关定义，再计算和核对答案。\n');
-   assert.throws(()=>checkChinese(approach,f.checkpoints,id),undefined,id);
-   const checklist='**推导。** 先考虑定义，随后计算。\n\n待使用的检查点（尚未推导）：\n'+f.checkpoints.map(token=>'`'+token+'`').join('\n');
-   const noReasoning=t.replace(/### 中文解答[\s\S]*?(?=\n## Common Mistakes)/,()=> '### 中文解答\n\n'+checklist+'\n');
-   for(const token of f.checkpoints)assert.ok(noReasoning.includes(token),'negative control must preserve '+token);
-   assert.throws(()=>checkChinese(noReasoning,f.checkpoints,id),undefined,id+' checklist-only case retaining every checkpoint');
-   for(const token of f.checkpoints)assert.throws(()=>checkChinese(t.replaceAll(token,'[removed]'),f.checkpoints,id),undefined,id+' '+token);
+   const checkpoints=translatedCheckpoints(id,f.checkpoints);
+   const approach=t.replace(section(t,'Supplementary Explanation'),()=>'**Answer.** Pending.\n\n**Derivation/proof.** Consider the definitions, then compute and check the answer.');
+   assert.throws(()=>checkEnglish(approach,f.checkpoints,id),undefined,id);
+   const checklist='**Answer.** Pending.\n\n**Derivation/proof.** Consider the definitions, then compute.\n\nPending checkpoints (not yet derived):\n'+checkpoints.map(token=>'`'+token+'`').join('\n');
+   const noReasoning=t.replace(section(t,'Supplementary Explanation'),()=>''+checklist);
+   for(const token of checkpoints)assert.ok(noReasoning.includes(token),'negative control must preserve '+token);
+   assert.throws(()=>checkEnglish(noReasoning,f.checkpoints,id),undefined,id+' checklist-only case retaining every checkpoint');
+   for(const token of checkpoints)assert.throws(()=>checkEnglish(t.replaceAll(token,'[removed]'),f.checkpoints,id),undefined,id+' '+token);
   }
  });
 }

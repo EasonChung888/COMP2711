@@ -37,30 +37,21 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-1.pdf#
 
 Shared context: [[STEM-2020-FINAL1-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-度数恰为一需要两个条件：至少存在一个邻点，而且所有邻点都等于它。先对每个 u 找 v，再对任意 w 表达唯一性。简单图条件保证邻点数就是度数，不会受到自环或重边影响。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+$\forall u\in V(\exists v\in V(E(u,v)\land\forall w\in V(E(u,w)\to v=w)))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall u\in V\exists v\in V(E(u,v)\land\forall w\in V(E(u,w)\to w=v))$.
 
 **Derivation/proof.** For each vertex u, the existential v supplies an adjacent vertex. The universal w clause says that any neighbor of u equals v, excluding a second neighbor. Together they mean degree exactly one. Simplicity excludes loops and multiple edges, so counting distinct neighbors equals degree.
 
-### 中文解答
+The existence conjunct excludes isolated vertices, while uniqueness excludes a second distinct neighbour.
 
-**推导。** 固定顶点 $u$，先用 $\exists v\in V$ 要求至少一个邻点 $E(u,v)$；再要求所有邻点 $w$ 都等于这个 $v$，得到 $\forall w\in V(E(u,w)\to v=w)$。合并后对 $u$ 全称量化，答案
-
-$$\forall u\in V\exists v\in V(E(u,v)\land\forall w\in V(E(u,w)\to v=w)).$$
-
-第一条件排除孤立点，第二条件排除第二个不同邻点。简单图没有环或重边，所以恰一个邻点等价于度恰一。
-
-## Common Mistakes
-
-- 只写存在邻点而没有唯一性。
-- 让所有顶点共用同一个唯一邻点。
+After requiring an adjacent vertex $v$, the clause $\forall w\in V(E(u,w)\to v=w)$ says that every neighbour equals that same $v$. Together they express existence and uniqueness, excluding isolated vertices as well as vertices with two neighbours.
 
 ## Connections
 

@@ -38,32 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-用欧几里得算法得到余数一之后，逐层回代到原来的五十三与九百二十四。读出五十三的系数四百零一就是私钥指数；注意回代中二十三既可能是余数也可能是系数，必须保留乘法结构。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+The private key should satisfy $ed\equiv1\pmod T$, i.e., $d$ is the multiplicative inverse of $e$ in $\mathbb Z_T$. Run the extended Euclidean algorithm to find $d$:
+$$\begin{aligned}924&=53\cdot17+23\\53&=23\cdot2+7\\23&=7\cdot3+2\\7&=2\cdot3+1\\2&=1\cdot2+0.\end{aligned}$$
+Then,
+$$\begin{aligned}1&=7-2\cdot3\\&=7-(23-7\cdot3)\cdot3\\&=7\cdot10+23\cdot(-3)\\&=(53-23\cdot2)\cdot10+23\cdot(-3)\\&=23\cdot(-23)+53\cdot10\\&=(924-53\cdot17)\cdot(-23)+53\cdot10\\&=53\cdot401+924\cdot(-23).\end{aligned}$$
+Thus, $d=401$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $d=401$.
 
 **Derivation/proof.** Use $924=17\cdot53+23$, $53=2\cdot23+7$, $23=3\cdot7+2$, $7=3\cdot2+1$, $2=2\cdot1$. Back substitute: $1=7-3\cdot2=10\cdot7-3\cdot23=10\cdot53-23\cdot23=401\cdot53-23\cdot924$. Hence $53^{-1}\equiv401\pmod{924}$. Check $53\cdot401=21253=23\cdot924+1$.
-
-### 中文解答
-
-**推导。** 需求 $53d\equiv1\pmod{924}$。欧几里得过程是 $924=17\cdot53+23$，$53=2\cdot23+7$，$23=3\cdot7+2$，$7=3\cdot2+1$，$2=2\cdot1+0$。从余数 $1$ 回代：
-
-$$1=7-3\cdot2=7-3(23-3\cdot7)=10\cdot7-3\cdot23$$
-$$=10(53-2\cdot23)-3\cdot23=10\cdot53-23\cdot23$$
-$$=10\cdot53-23(924-17\cdot53)=401\cdot53-23\cdot924.$$
-
-故 $d=401$。检查 $53\cdot401=21253=23\cdot924+1$，确实是所需模逆。
-
-## Common Mistakes
-
-- 在模九百八十九下求指数逆元。
-- 回代时混淆余数二十三和系数负二十三。
 
 ## Connections
 

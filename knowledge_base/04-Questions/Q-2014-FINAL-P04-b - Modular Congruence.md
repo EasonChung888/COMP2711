@@ -38,26 +38,24 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-非互素模数时先检查相容性。两式相减得到一个偶数必须等于奇数，立刻矛盾，无须错误套用 CRT。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=7|PDF physical page 7]].
 
-## Detailed Solution
+(b) Assume there is a solution $x$. Then there exist integers $q_1$ and $q_2$ such that
+$$x=q_1\cdot30+5,$$
+$$x=q_2\cdot16+2.$$
+Hence we have
+$$q_2\cdot16-q_1\cdot30=5-2=3.$$
+This equation cannot be satisfied because the left hand side is divisible by 2, while the right hand side is not. Therefore, there is no solution.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** No solution exists.
 
 **Derivation/proof.** If a solution existed, $x=30q_1+5=16q_2+2$, so $16q_2-30q_1=3$. The left side is even while the right side is odd, a contradiction.
 
-### 中文解答
-
-**推导。** 反设存在满足两式的 x，则有整数 $q_1,q_2$ 使 $x=30q_1+5=16q_2+2$。移项得到 $16q_2-30q_1=3$。左侧每项都是偶数，差仍为偶数；右侧为奇数，矛盾。因此没有整数解，更没有题目指定范围内的解。
-
-## Common Mistakes
-
-- 仍然强行使用互素版本的 CRT。
-- 把 $\gcd(30,16)=2$ 忽略。
+The contradiction excludes every integer solution, and therefore every solution in the specified interval.
 
 ## Connections
 

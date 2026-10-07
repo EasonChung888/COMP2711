@@ -1,0 +1,39 @@
+Proof of 
+ by Bijection Principle
+ 
+Suppose 
+S
+ is a set with 
+ distinct elements.
+Every subset 
+A
+ of 
+S
+ with 
+ elements corresponds to the subset 
+A
+'=
+ of 
+S
+ with 
+ elements. Therefore, the function that maps 
+A
+ to 
+A
+' is a bijection 
+Consequently, the number of subsets of 
+S 
+with
+ 
+ elements is the same as th
+e number of subsets of S with 
+ elements. The former can be counted by 
+and the latter by 
+.
+    
+    
+Consequently
+, 
+.
+ 
+30

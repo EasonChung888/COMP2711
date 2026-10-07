@@ -41,13 +41,16 @@ Prove that $T(n)=\Theta(a^n)$.
 You might need the fact that, for any $x\ne1$,
 $$\sum_{i=1}^{n}ix^i=\frac{nx^{n+2}-(n+1)x^{n+1}+x}{(1-x)^2}.$$
 
-## 中文解析
+## Official Answer
 
-将递推展开后提出 $a^n$。因 $a>1$，$1/a<1$，加权等比级数有固定上界，于是剩下的系数不会随 $n$ 发散。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=12|PDF physical page 12]].
 
-## Detailed Solution
+By iterating the recurrence, we get
+$$\begin{aligned}T(n)&=aT(n-1)+n\\&=a^2T(n-2)+a(n-1)+n\\&=a^3T(n-3)+a^2(n-2)+a(n-1)+n\\&\quad\ldots\\&=a^n+\sum_{i=1}^na^{n-i}i\end{aligned}$$
+Hence, we have
+$$\begin{aligned}T(n)&=a^n+\sum_{i=1}^na^{n-i}i\\&=a^n+a^n\sum_{i=1}^na^{-i}i\\&=a^n+a^n\frac{n(\frac1a)^{n+2}-(n+1)(\frac1a)^{n+1}+(\frac1a)}{(1-a)^2}\\&=\Theta(a^n).\end{aligned}$$
 
-Provenance: derived; independently derived correction; discrepant source material is retained in Source. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=\Theta(a^n)$.
 
@@ -55,14 +58,7 @@ Provenance: derived; independently derived correction; discrepant source materia
 $$a^n\le T(n)\le\left(1+\frac{a}{(a-1)^2}\right)a^n.$$
 The two multipliers are positive constants independent of $n$, proving the tight bound.
 
-### 中文解答
-
-**推导。** 展开递推得到 $T(n)=a^n+\sum_{i=1}^na^{n-i}i=a^n(1+\sum_{i=1}^ni(1/a)^i)$。令 $x=1/a\in(0,1)$，题给有限和等于 $[x-x^{n+1}(n+1-nx)]/(1-x)^2$。因为 $n+1-nx>0$ 且所有加项非负，得 $0\le\sum ix^i\le x/(1-x)^2=a/(a-1)^2$。所以 $a^n\le T(n)\le[1+a/(a-1)^2]a^n$，两常数与 n 无关，故为 $\Theta(a^n)$。注意代入 x 后分母应是 $(1-1/a)^2$；源页最后一行的 $(1-a)^2$ 不能直接作为等式代入。
-
-## Common Mistakes
-
-- 声称 $\sum i/a^i$ 随 $n$ 线性增长。
-- 只证明 $O(a^n)$ 而未给下界。
+In compact notation, the upper bound is $T(n)\le[1+a/(a-1)^2]a^n$.
 
 ## Connections
 

@@ -35,26 +35,25 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-midterm
 
 Find $x\in\mathbb Z_{221}$ such that $15x\equiv2\pmod{221}$. Show your workings.
 
-## 中文解析
+## Official Answer
 
-先由辗转相除的等式回代，找出十五的逆元五十九。方程右侧是二，所以还要把逆元乘二；一百一十八已在要求的代表元范围内。最后代回检查余数为二。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+Rewriting:
+$$\begin{aligned}11&=221-15\cdot14\\4&=15-11\cdot1\\3&=11-4\cdot2\\1&=4-3\cdot1.\end{aligned}$$
+Substituting:
+$$\begin{aligned}1&=4-(11-4\cdot2)\cdot1\\&=4\cdot3-11\cdot1\\&=(15-11\cdot1)\cdot3-11\cdot1\\&=15\cdot3-11\cdot4\\&=15\cdot3-(221-15\cdot14)\cdot4\\&=15\cdot59-221\cdot4.\end{aligned}$$
+Therefore, the inverse of $15$ modulo $221$ is $59$.
+$$15^{-1}\cdot15x\equiv15^{-1}\cdot2\pmod{221}.$$
+$$x\equiv59\cdot2\equiv118\pmod{221}.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $x=118$.
 
 **Derivation/proof.** Using $221=14\cdot15+11$, $15=11+4$, $11=2\cdot4+3$, $4=3+1$, back-substitute: $1=4-3=3\cdot4-11=3\cdot15-4\cdot11=59\cdot15-4\cdot221$. Thus $15^{-1}\equiv59\pmod{221}$ and $x\equiv2\cdot59=118$. Direct check: $15\cdot118=1770=8\cdot221+2$.
 
-### 中文解答
-
-**推导。** 由欧几里得等式回代，$1=4-3=4-(11-2\cdot4)=3\cdot4-11=3(15-11)-11=3\cdot15-4(221-14\cdot15)=59\cdot15-4\cdot221$。因此 $15$ 的模 $221$ 逆元为 $59$，方程两边乘它得 $x\equiv2\cdot59=118\pmod{221}$。$118\in\mathbb Z_{221}$，代回 $15\cdot118=1770=8\cdot221+2$。逆元存在也保证该剩余类唯一。
-
-## Common Mistakes
-
-- 把逆元五十九直接作为方程答案。
-- 做普通除法得到 2/15。
+The inverse also guarantees uniqueness of the residue class, and $118\in\mathbb Z_{221}$.
 
 ## Connections
 

@@ -41,27 +41,17 @@ Assume that Bob chooses $e=23$. Compute his private key $d$ by running the exten
 
 Shared printed context: ![[STEM-2023F-FINAL-P05 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-模数 n 与 Euler totient T 用途不同：私钥指数 d 是 e 模 T 的逆元。先做 Euclid 得到最后余数一，再反向代入保留符号，最后将负二十五规范为零到二百八十七之间的代表。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> (a) Find the inverse of $e=23$ in $\mathbb Z_{288}$:
+> $$288=23\cdot12+12,\quad23=12\cdot1+11,\quad12=11\cdot1+1,\quad11=1\cdot11+0.$$
+> Hence we get:
+> $$\begin{aligned}1&=12-11\cdot1\\&=12-(23-1\cdot12)\cdot1\\&=12\cdot2-23\cdot1\\&=(288-23\cdot12)\cdot2-23\cdot1\\&=288\cdot2+23\cdot(-25).\end{aligned}$$
+> The private key $d=-25\equiv263\pmod{288}$.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $d=263\pmod{288}$，可取私钥指数 $263$。
-
-**推导。**
-
-1. Stem 中 $p=17,q=19$，故 RSA 的求逆模数 $T=(17-1)(19-1)=288$。需要解 $23d\equiv1\pmod{288}$。Extended GCD 的除法依次为 $288=12\cdot23+12$，$23=12+11$，$12=11+1$。
-2. 回代得到
-   $$1=12-11=12-(23-12)=2\cdot12-23=2(288-12\cdot23)-23=2\cdot288-25\cdot23.$$
-   所以 $23$ 的逆元是 $-25\equiv263\pmod{288}$。
-3. 检验 $23\cdot263=6049=21\cdot288+1$，余数为一。这个私钥来自模 $288$ 的逆元，而不是模公钥模数 $323$ 求逆；二者在 RSA 中承担不同角色。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $d=263\pmod{288}$.
 
@@ -69,10 +59,7 @@ Provenance: published official answer, independently checked and expanded below.
 $$1=12-11=12-(23-12)=2\cdot12-23=2(288-12\cdot23)-23=2\cdot288-25\cdot23.$$
 Thus $23^{-1}\equiv-25\equiv263\pmod{288}$. Verify $23\cdot263=6049=21\cdot288+1$. This is the RSA private exponent because $T=(17-1)(19-1)=288$.
 
-## Common Mistakes
-
-- 丢掉 Bézout 系数的负号会得到错误逆元。 / Normalize −25 rather than +25.
-- 求逆的模数是 288，而非加密模数 323。 / Distinguish phi(n) from n.
+The first division is $288=12\cdot23+12$, and the final identity is $1=2\cdot288-25\cdot23$. Verification gives $23\cdot263=6049=21\cdot288+1$.
 
 ## Connections
 

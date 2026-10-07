@@ -39,24 +39,29 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 (a) [3 points] Without using truth table prove that:
 $$[(\neg p\lor\neg q)\to(p\land q\land r)]\equiv p\land q$$
 
-## 中文解析
+## Official Answer
 
-消去蕴含后，两项都含 $p\land q$，吸收律会删去附加的 $r$。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=3|physical PDF page 3]], [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+(a)
+$$\begin{aligned}
+(\neg p\lor\neg q)\to(p\land q\land r)
+&\equiv\neg(\neg p\lor\neg q)\lor(p\land q\land r)&&\text{(implication equivalence)}\\
+&\equiv(p\land q)\lor(p\land q\land r)&&\text{(De Morgan's law)}\\
+&\equiv(p\land q)\lor\big((p\land q)\land r\big)&&\text{(associativity)}\\
+&\equiv(p\land q)\land(1\lor r)&&\text{(distributivity: }A\lor(A\land B)\equiv A\land(1\lor B)\text{)}\\
+&\equiv(p\land q)\land1&&\text{(since }1\lor r\equiv1\text{)}\\
+&\equiv p\land q&&\text{(identity law for }\land\text{)}
+\end{aligned}$$
+Thus,
+$$[(\neg p\lor\neg q)\to(p\land q\land r)]\equiv p\land q.$$
+(Note: the proposition $r$ cancels out completely and does not affect the equivalence.)
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The equivalence holds.
 
-**答案。** 等价成立。
-
-**推导。** 由 implication law，左式等于 $\neg(\neg p\lor\neg q)\lor(p\land q\land r)$。De Morgan 与双重否定化为 $(p\land q)\lor((p\land q)\land r)$。令 $A=p\land q$，这是 $A\lor(A\land r)\equiv A$ 的 absorption law，所以左式等于 $p\land q$。全过程保持逻辑等价，没有列真值表，也未对 $r$ 的真假作额外假设。
-
-## Common Mistakes
-
-- 蕴含前件为一个析取式，否定它会变成两个正命题的合取。
-- r 消失来自吸收律，不是因为题目暗示 r 永真。
+**Derivation/proof.** The implication law rewrites the left side as $\neg(\neg p\lor\neg q)\lor(p\land q\land r)$. De Morgan's law and double negation give $(p\land q)\lor((p\land q)\land r)$. Put $A=p\land q$; absorption states $A\lor(A\land r)\equiv A$, so the expression equals $p\land q$. Every transformation preserves logical equivalence. No truth table or assumption about the truth value of $r$ is used.
 
 ## Connections
 

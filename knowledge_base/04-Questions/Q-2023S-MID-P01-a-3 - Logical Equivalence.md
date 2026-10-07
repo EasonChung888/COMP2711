@@ -42,33 +42,19 @@ First translate the following hypotheses into propositional logic statements:
 
 Shared printed context: ![[STEM-2023S-MID-P01-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-t 的定义就是奖杯被颁发，句子中的 not 直接否定这个命题。这里只需要一个否定符号，不应因为其他前提出现比赛和天气，就把这些额外条件加入本句。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) We are given premises $(\neg r\lor\neg f)\to(s\land l)$, $s\to t$, and $\neg t$. We want to conclude $r$.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $\neg t$。
-
-**推导。**
-
-1. Stem 已把命题 $t$ 定义为“trophy 被颁发”。当前句子与这个命题相比，只增加了“not”，所以对整个命题取一次 negation，得到 $\neg t$，即 $t$ 的真值为假。
-2. 本句没有出现比赛、下雨、起雾或救生示范，因此翻译中不应加入 $s,r,f,l$。在后续证明中可以把 $\neg t$ 与 $s\to t$ 合用得到 $\neg s$，但那是额外的推理步骤，不是这条事实本身的逻辑表达式。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $\neg t$.
 
 **Derivation/proof.** The shared definition assigns $t$ to the trophy being awarded. The third hypothesis explicitly says this event did not occur, so its translation is $\neg t$. This premise fixes the value of $t$ to false and does not itself fix $r$, $f$, $s$, or $l$. Combined with $s\to t$ it can later support modus tollens, but that later inference is not part of this translation.
 
-## Common Mistakes
-
-- 加入 $s\to\neg t$ 会把无条件事实改成条件句。 / The denial is unconditional.
-- 把 not awarded 当成新的未定义字母，会丢失与 t 的逻辑关系。 / Use the negation of the defined proposition.
+This makes the truth value of $t$ false. Combining it with another premise is a separate inference step, not part of the translation.
 
 ## Connections
 

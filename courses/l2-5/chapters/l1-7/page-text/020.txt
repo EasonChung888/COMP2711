@@ -1,0 +1,42 @@
+Combinatorial proof of Pascal’s identity
+Suppose 
+ is a set containing 
+ elements. Let 
+ be an element of 
+ and 
+. 
+There are 
+ subsets of 
+ containing 
+ elements. However, 
+a subset of 
+ with 
+ elements either contains 
+ together with 
+ elements of 
+, or 
+contains 
+ elements of 
+ and does not contain 
+. 
+Because there are 
+ subsets of 
+ elements of 
+, 
+there are
+ subsets of 
+elements of 
+ that contain 
+. Because there are 
+ subsets of 
+ elements of 
+ , 
+there are 
+ subsets of 
+ elements of 
+ that don’t contain 
+a
+.
+Therefore: 		
+ 
+20

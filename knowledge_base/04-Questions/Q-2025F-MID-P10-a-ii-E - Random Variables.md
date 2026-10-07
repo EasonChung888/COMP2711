@@ -42,24 +42,19 @@ The named Y answer is printed under answer label (iii) on page 22; an extraneous
 
 What are $E(Y)$?
 
-## 中文解析
+## Official Answer
 
-均值按系数直接相加，负二会抵消另外两项的平均值。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=22|physical PDF page 22]].
 
-## Detailed Solution
+> (iii) For $Y=X_1-2X_2+X_3$, since $X_1,X_2,X_3$ are independent:
+> $$E(Y)=E(X_1)-2E(X_2)+E(X_3)=3.5-2\cdot3.5+3.5=0.$$
+> $$\operatorname{var}(Y)=\operatorname{var}(X_1)+(-2)^2\operatorname{var}(X_2)+\operatorname{var}(X_3)=\frac{17.5}{6}+4\cdot\frac{17.5}{6}+\frac{17.5}{6}=\frac{105}{6}=17.5.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $E(Y)=0$.
 
-**答案。** 本原子项求 $E(Y)=0$。
-
-**推导。** 每个 $X_i$ 都是公平骰子点数，因此 $E(X_i)=7/2$。由 linearity of expectation，$E(Y)=E(X_1)-2E(X_2)+E(X_3)=7/2-2(7/2)+7/2=0$。系数和 $1-2+1=0$，解释了为何均值完全抵消。这个步骤即使变量相关也成立；本题给出的独立性留给方差计算使用。
-
-## Common Mistakes
-
-- 期望中的系数不平方，负二必须保持为负二。
-- 均值为零不表示 $Y$ 恒等于零，三次点数仍会波动。
+**Derivation/proof.** Every die has mean 7/2. By linearity, $E(Y)=E(X_1)-2E(X_2)+E(X_3)=7/2-2(7/2)+7/2=0$. The coefficient sum $1-2+1=0$ explains the cancellation. Linearity holds even for dependent variables; the independence given here is needed for the variance calculation.
 
 ## Connections
 

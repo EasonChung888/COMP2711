@@ -37,26 +37,21 @@ $\mathbb N^3$
 
 Shared context: [[STEM-2020-MID-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-自然数三元组可按坐标和分组，每组有限，再逐组列出。任意三元组的坐标和都是有限的，因此一定在有限阶段出现；三个坐标都无限并不会让有限笛卡儿积变成不可数。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+Countable.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Countable.
 
 **Derivation/proof.** Group triples by their coordinate sum. Each fixed sum contains only finitely many natural-number triples, and every triple belongs to one such group. Listing these finite groups in increasing sum enumerates the entire product. It is infinite because fixing two coordinates leaves infinitely many choices for the third.
 
-### 中文解答
+The set is infinite by fixing two coordinates and varying the first. The argument works whether natural numbers start at zero or one.
 
-**推导。** 判为可数。按坐标和 $a+b+c=s$ 把自然数三元组分类，每个固定的 $s$ 只有有限多个三元组。先按 $s$ 增加，再在每一有限组内按字典顺序列出，便使每个三元组在有限步骤后出现，得到完整枚举。固定后两个坐标，让第一个遍历自然数可知集合无限，因此是可数无限，而不是有限集。此论证不依赖自然数是否含零的约定。
-
-## Common Mistakes
-
-- 把无限乘无限直接当作不可数。
-- 按普通字典序列完第一行而永不到后续行。
+Group the triples by $a+b+c=s$. There are finitely many triples for each fixed $s$, so listing these finite groups in increasing $s$ enumerates the product. Fixing two coordinates and varying the third proves that the set is countably infinite rather than finite.
 
 ## Connections
 

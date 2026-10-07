@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-铺法递推使用前一项和前三项，而斐波那契使用前一项和前两项。归纳假设先把铺法数换成斐波那契数，再利用其单调不减把前三项换成前两项；三个基例保证所有调用合法。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+We prove this statement $P(n)$ using induction on three base cases. Observe that $E_1=F_1$ ($P(1)$), $E_2=F_2$ ($P(2)$), and $E_3=F_3$ ($P(3)$). For the inductive step, suppose that $P(k-1),P(k-2),$ and $P(k-3)$ are true. Then $E_n=E_{n-1}+E_{n-3}\le F_{n-1}+F_{n-3}\le F_{n-1}+F_{n-2}=F_n$. (For the last inequality, we use the fact that the Fibonacci sequence is non-decreasing.) So $P(k)$ is true, thus proving the statement $P(n)$ by induction.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E_n\le F_n$ for every $n\ge1$, with $F_1=F_2=1$.
 
 **Derivation/proof.** The base values are $E_1=1=F_1$, $E_2=1=F_2$, $E_3=2=F_3$. For $n\ge4$, assume the inequality for all smaller positive indices. Then $E_n=E_{n-1}+E_{n-3}\le F_{n-1}+F_{n-3}\le F_{n-1}+F_{n-2}=F_n$. The middle inequality follows because the positive Fibonacci sequence is nondecreasing. Strong induction completes the proof.
 
-### 中文解答
-
-**推导。** 采用 $F_1=F_2=1$、$F_n=F_{n-1}+F_{n-2}$ 的斐波那契数。基础为 $E_1=F_1=1$，$E_2=F_2=1$，$E_3=F_3=2$。设 $n\ge4$ 且所有较小正指标已满足不等式，由(b)得 $E_n=E_{n-1}+E_{n-3}\le F_{n-1}+F_{n-3}\le F_{n-1}+F_{n-2}=F_n$。中间一步成立，因为正斐波那契数非递减（后一项等于前两正项之和）。三项基础及强归纳步完成全体正整数证明。
-
-## Common Mistakes
-
-- 只检查两个基例却调用第三个下标。
-- 直接声称两个不同递推相同。
+The required initial matches are $E_1=F_1=1$, $E_2=F_2=1$, and $E_3=F_3=2$. Since the recurrences also agree, strong induction proves equality for every later index.
 
 ## Connections
 

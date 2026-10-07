@@ -36,26 +36,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 (a) For all integers $a,b,c$, if $a\mid c$ and $b\mid c$, then $ab\mid c^2$.
 
-## 中文解析
+## Official Answer
 
-从两个整除条件分别写出 c 等于 a 的整数倍，以及 c 等于 b 的整数倍，再把两个等式相乘。这样自然得到 c 的平方是 ab 的整数倍，不需要错误地先声称 ab 整除 c。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+True. If $c=ak$ and $c=bl$, then $c^2=ab(kl)$, so $ab\mid c^2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** True.
 
 **Derivation/proof.** The premises give integers $k,l$ with $c=ak$ and $c=bl$. Multiplying these equalities produces $c^2=(ak)(bl)=ab(kl)$. Since $kl$ is an integer, this is exactly the divisibility witness for $ab\mid c^2$. No coprimality assumption is required.
 
-### 中文解答
+No division is used, so zero values are also covered under the divisibility convention permitting $0\mid0$.
 
-**推导。** 结论真。按整除定义，有整数 $k,l$ 使 $c=ak$、$c=bl$。把两个等式相乘，$c^2=(ak)(bl)=ab(kl)$。因为 $kl$ 仍为整数，这个等式正是 $ab\mid c^2$ 的见证。不需要 $a,b$ 互素，也没有除以可能为零的数；在允许 $0\mid0$ 的整除定义下零值情况同样由此等式覆盖。
-
-## Common Mistakes
-
-- 把结论改成 ab 整除 c。
-- 无端添加 a 与 b 互质的条件。
+There is no division by a possibly zero integer in the product argument: expand the integer factors directly. Thus the reasoning remains valid even when one of the integers is zero.
 
 ## Connections
 

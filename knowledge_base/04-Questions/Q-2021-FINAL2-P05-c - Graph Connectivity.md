@@ -44,26 +44,19 @@ A strongly connected directed graph with 5 vertices, $v_1,v_2,v_3,v_4$ and $v_5$
 
 Shared context: [[STEM-2021-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-强连通要求任何其他点都能沿方向到达 v4，但任何到达路径最后必须有一条进入 v4 的边。其入度为零，所以不可能到达。出度二只表示可以离开，不能补救反向不可达的问题。
+Source: [[knowledge_base/past_paper/2021-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (c) None. There is no path from $v_i$ to $v_4$ for $i\ne4$, because in-degree of $v_4$ is 0.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No such strongly connected graph exists.
 
 **Derivation/proof.** Strong connectivity requires a directed path from every other vertex to v4. Such a path must end with an edge entering v4. Its indegree is prescribed as zero, so no entering edge exists and no such path can exist. The nonzero outdegree only permits leaving v4 and does not resolve the missing reverse reachability.
 
-### 中文解答
-
-**推导。** 不存在这样的强连通有向图。强连通要求任何 $v_i$（$i\ne4$）都有有向路径到 $v_4$，该路径最后一条边必进入 $v_4$。但题给 $v_4$ 入度零，根本没有这样的进入边，所以其他顶点全都不能到达它，与强连通矛盾。$v_4$ 出度二只能保证可能离开它，不能补救所需的进入路径。
-
-## Common Mistakes
-
-- 把弱连通当强连通。
-- 因为出度非零就认为能从别人到达它。
+For $i\ne4$, the last edge must enter $v_4$, but indegree zero forbids such an edge.
 
 ## Connections
 

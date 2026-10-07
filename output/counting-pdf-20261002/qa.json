@@ -1,0 +1,19 @@
+{
+  "questions": 178,
+  "pages": 160,
+  "formula_count": 2652,
+  "formula_errors": 0,
+  "figure_placements": 22,
+  "all_retained_answer_bodies_match": true,
+  "all_questions_unique": true,
+  "english_only": true,
+  "margin_outliers": [],
+  "knowledge_base_and_preexisting_pdfs_unchanged": true,
+  "concurrent_course_files_changed_externally": [
+    "courses/l2-5/chapters/l1-7/index.html",
+    "courses/l2-5/chapters/l1-7/events.jsonl",
+    "courses/l2-5/chapters/l1-7/manifest.json"
+  ],
+  "visual_review": "All original page thumbnails reviewed; revised long-answer page and six representative full-size pages checked.",
+  "pdf_sha256": "697cd28ff3069e20ea6b777aec17e1bbcc0bdb97fad22c50d69eb7c68cb60feb"
+}

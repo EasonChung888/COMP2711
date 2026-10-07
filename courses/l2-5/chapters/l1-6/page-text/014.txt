@@ -1,0 +1,19 @@
+k
+-Combinations
+Definition
+A 
+k
+-combination
+ of a set of 
+n
+ distinct elements is an unordered selection of 
+ elements from the set.
+Example 10
+Let 
+. Then 
+ is a 3-combination from 
+S
+. Moreover, 
+ all refer to the same combination (they count as one possible solution).
+ 
+14

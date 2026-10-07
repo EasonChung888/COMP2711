@@ -40,35 +40,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2023_Midte
 
 Shared printed context: ![[STEM-2023S-MID-P08 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-比较幂次时应看 n 趋向无穷时的主导项，而不是固定系数一百。把 A 除以 n³ 后两个项都趋于零，因此存在上界但不存在与 B 同阶的正下界。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+> (a) $A=O(B)$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 只有 $A=O(B)$ 成立，$\Omega$ 与 $\Theta$ 均不成立。
-
-**推导。**
-
-1. 对正的 $n$ 把两式相除：
-   $$\frac AB=\frac{n^{2.9}+100n^2}{n^3}=n^{-0.1}+100n^{-1}\longrightarrow0.$$
-   两项各自趋零，所以比值最终被某个正常数上界控制，这正给出 Big-O 所需的 $A\le CB$。
-2. 若同时有 $A=\Omega(B)$，应存在固定 $c>0$ 使充分大的 $n$ 都满足 $A/B\ge c$；但比值趋零会最终小于任何这样的 $c$，矛盾。没有下界就没有 $\Theta$。系数一百虽影响有限区间，却不能改变这里的渐近结论。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $A=O(B)$ only.
 
 **Derivation/proof.** For positive $n$, $A/B=n^{-0.1}+100n^{-1}\to0$. Thus the ratio is eventually bounded above, proving $A=O(B)$. Since it becomes smaller than every positive constant, no eventual positive lower bound exists, so $A\ne\Omega(B)$ and hence $A\ne\Theta(B)$. The large coefficient 100 affects a finite range but not the limiting order.
 
-## Common Mistakes
-
-- 系数一百不能抵消 2.9 与 3 的长期幂次差。 / A fixed coefficient does not change the growth exponent.
-- 由 A/B→0 应判 A=O(B)，不能把方向写反。 / A is the slower function.
+The ratio becomes smaller than any such $c>0$, so there is no $\Theta$ relation.
 
 ## Connections
 

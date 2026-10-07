@@ -38,26 +38,27 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-当左边的存在前件为假时，所有 $p(x)$ 都假；当它为真时，为使蕴含成立必须所有 $q(y)$ 都真。这正是右边对每一对 $(x,y)$ 的要求。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(c) Equivalent.
+$$\begin{aligned}
+\exists x\in U\,p(x)\Rightarrow\forall y\in V\,q(y)&\equiv\neg(\exists x\in U\,p(x))\lor(\forall y\in V\,q(y))\\
+&\equiv(\forall x\in U\,\neg p(x))\lor(\forall y\in V\,q(y))\\
+&\equiv\forall x\in U\forall y\in V(\neg p(x)\lor q(y))\\
+&\equiv\forall x\in U\forall y\in V(p(x)\Rightarrow q(y))
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Yes.
 
 **Derivation/proof.** The left formula is $\neg\exists x,p(x)\lor\forall y,q(y)=\forall x\neg p(x)\lor\forall yq(y)$. Distributing universal quantifiers over this two-variable disjunction gives $\forall x\forall y(\neg p(x)\lor q(y))$, the right formula.
 
-### 中文解答
+Conversely, if the right side holds and $p(u)$ holds for some $u$, instantiate at $(u,y)$ for arbitrary $y$ to derive $q(y)$. If there is no such $u$, the left antecedent is false. These cases also cover empty domains.
 
-**推导。** 先证左推右。若没有 x 满足 p，则每个蕴含的前件均假，右式真；若有这样的 x，左式迫使所有 y 满足 q，于是右式也真。反向，假设右式成立；若存在 u 满足 p，对任意 y 用右式和 $p(u)$ 得 $q(y)$，故全称后件成立；若不存在 u，左式前件假而自动真。两方向均成立，所以等价；空域时上述真假条件也一致。
-
-## Common Mistakes
-
-- 把 $\neg\exists x$ 写成 $\exists x\neg$。
-- 错误把全称量词换成存在量词。
+If no object satisfies $p$, every implication on the right has a false antecedent. If some object satisfies $p$, the left side forces $q(y)$ for every $y$, again proving the right side.
 
 ## Connections
 

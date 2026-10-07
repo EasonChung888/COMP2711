@@ -41,24 +41,19 @@ Printed discrepant/incomplete material: [[knowledge_base/past_paper/COMP2711_F20
 
 Shared printed context: ![[STEM-2024F-FINAL-P09-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-比值为 $A/B=(\log n)^5/n^{0.1}$。通过该比值识别本题所有成立的渐近关系，并逐一排除不成立的标签。
+No official answer is provided in the supplied source.
 
-## Detailed Solution
+Checked source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=24|physical PDF page 24]].
 
-Provenance: independently derived; any supplied answer discrepancy is documented in Source.
+## Supplementary Explanation
 
-### 中文解答
+The published answer on [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=24|physical PDF page 24]] lists (i) through (iv) only. It contains no answer for (v); this solution is independently derived.
 
-**答案。** $O$ only.
+**Answer.** $O$ only.
 
-**推导。** 比值为 $A/B=(\log n)^5/n^{0.1}$。任意固定次数的对数都被任意固定正幂支配，即使该幂只有零点一，此比值也趋零。因此 $A=O(B)$，而 $\Omega$ 的正下界不存在，所以不为 $\Omega$ 或 $\Theta$。结论比较 n 趋无穷的情况，不依赖较小 n 的数值交叉。
-
-## Common Mistakes
-
-- 本题比值没有正的有限极限，不能同时给出 O、Omega、Theta 三个标签。
-- 零点一次幂最终仍胜过固定五次对数幂，短区间的数值不能决定渐近阶。
+**Derivation/proof.** The ratio is $A/B=(\log n)^5/n^{0.1}$. Every fixed logarithmic power is dominated by every fixed positive power, even exponent $0.1$, so the ratio tends to zero. Therefore $A=O(B)$; the positive lower bound required for $\Omega$ does not exist, so neither $\Omega$ nor $\Theta$ holds. These relations concern $n$ tending to infinity and do not depend on numerical crossovers for small $n$.
 
 ## Connections
 

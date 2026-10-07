@@ -39,26 +39,19 @@ Source correction (derived proof): PDF page17 gives the counterexample f(x)=2x,g
 
 b) Let $f(x),g(x)$ be functions from the set of real numbers to the set of positive real numbers. If $f(x)$ is $O(g(x))$ then $2^{f(x)}$ is $O(2^{g(x)})$.
 
-## 中文解析
+## Official Answer
 
-大 O 中允许原函数差一个常数倍，但进入指数后，这个倍数会变成不断扩大的比例。选择对所有实数都为正的函数，保证反例满足题设论域和值域，再用指数之差得到无界比值。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+This is false. Consider $f(x)=2x$ and $g(x)=x$. Clearly $f(x)$ is $O(g(x))$. Then $2^{f(x)}=2^{2x}=4^x$, whereas $2^{g(x)}=2^x$. So $2^{f(x)}/2^{g(x)}=2^x$, i.e., the ratio of the two functions is not bound by any constant $C$, therefore $2^{f(x)}$ is not $O(2^{g(x)})$.
 
-Provenance: derived; independently derived correction; discrepant source material is retained in Source. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** False. For example $g(x)=2^x$ and $f(x)=2\cdot2^x$.
 
 **Derivation/proof.** Both functions are positive for all real $x$, and $f=2g$, so $f=O(g)$. But $2^{f(x)}/2^{g(x)}=2^{f(x)-g(x)}=2^{2^x}$, which tends to infinity. No constant can upper-bound this ratio eventually, so the proposed implication fails. The source's $f=2x,g=x$ shows the same growth on positive x but does not satisfy the stated codomain on all reals; the displayed example does.
 
-### 中文解答
-
-**推导。** 命题为假。为满足全部实数上的正值要求，取 $g(x)=2^x$、$f(x)=2\cdot2^x$，两函数处处正，且 $f=2g$，所以 $f=O(g)$。然而指数之比 $\dfrac{2^{f(x)}}{2^{g(x)}}=2^{f(x)-g(x)}=2^{2^x}\to\infty$（$x\to\infty$），不能被任何固定常数最终约束，故不是所声称的大 $O$。印本的 $f=2x,g=x$ 在非正实数上不满足值域；此反例保持同样增长机制但补足了全域合法性。
-
-## Common Mistakes
-
-- 把大 O 当成可以任意代入非线性函数的等号。
-- 给反例时忽略函数必须在全部实数上取正值。
+The counterexample must be positive everywhere on the stated real domain. Exponentials $f(x)=2\cdot2^x$ and $g(x)=2^x$ meet this condition while keeping the ratio and the desired contradiction fixed.
 
 ## Connections
 

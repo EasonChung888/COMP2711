@@ -39,24 +39,17 @@ Printed discrepant/incomplete material: [[knowledge_base/past_paper/COMP2711_F20
 
 Assume 16 teams. Each team plays exactly 5 games. A win gains 3 points, draw gains 1 point and loss gains 0 point. Prove that at least two teams will have the same number of points.
 
-## 中文解析
+## Official Answer
 
-把可能总积分当作抽屉。无需假设所有队互相交手，只要证明从零到十五的十六个整数里至少一个不可能，十六队就必有重复。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+> Answer: If a team with 15 points exists, the next team must have at least a loss, which means the next possible value for total points is 12 (i.e., 13 and 14 cannot occur). If no team achieves 15, the next maximum is 13 points for team(s) with for 4 wins and a tie (i.e., 14 and 15 cannot occur). In any case, the options for total points is less than 15, while we have 16 teams.
 
-Provenance: independently derived; any supplied answer discrepancy is documented in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** At least two teams have equal points.
 
-**答案。** 至少两支球队积分相同。
-
-**推导。** 一队的总积分 $s=3w+d$，其中 $w,d,\ell\ge0$ 且 $w+d+\ell=5$，所以 $0\le s\le15$。若 $w\le4$，则 $s=3w+d\le3w+(5-w)=2w+5\le13$；若 $w=5$，则 $d=0$ 且 $s=15$。因此十四分不可能，所有积分只可能落在 $\{0,1,\ldots,13,15\}$，最多十五种。十六支队放入最多十五个积分类别，由 pigeonhole principle 至少两队同分。这个证明不依赖赛程是否相交。
-
-## Common Mistakes
-
-- 某队全胜不能说明任意另一队输过，因为题目未说它们交手。
-- 零分也是可能值，按零到十五计数后需要排除不可能的十四。
+**Derivation/proof.** A team scores $s=3w+d$, where $w,d,\ell\ge0$ and $w+d+\ell=5$, so $0\le s\le15$. If $w\le4$, then $s\le3w+(5-w)=2w+5\le13$. If $w=5$, then $d=0$ and $s=15$. Therefore fourteen points is impossible, and every score lies in $\{0,1,\ldots,13,15\}$, at most fifteen possibilities. Sixteen teams occupy at most fifteen score classes, so the pigeonhole principle gives two with the same score. The argument does not depend on overlapping schedules.
 
 ## Connections
 

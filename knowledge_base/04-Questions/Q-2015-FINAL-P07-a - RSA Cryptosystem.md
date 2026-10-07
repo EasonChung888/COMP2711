@@ -38,26 +38,28 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-final.pdf
 (a) Use Fermat’s Little Theorem and the Chinese Remainder Theorem to show that, if an integer $a$ is not divisible by any of 3, 5 and 7, then
 $$a^{49}\bmod105=a\bmod105.$$
 
-## 中文解析
+## Official Answer
 
-指数四十九减一等于四十八，可被二、四、六整除，分别对应三个素数的费马指数。先在模三、五、七下得到同余，再利用互素模数的中国剩余定理合并。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+(a) Note that $105=3\times5\times7$. We also have:
+$$\begin{aligned}
+a^{49}\bmod3&=(a^{24*(3-1)+1})\bmod3=a\bmod3&&\text{by FLT}\\
+a^{49}\bmod5&=(a^{12*(5-1)+1})\bmod5=a\bmod5&&\text{by FLT}\\
+a^{49}\bmod7&=(a^{8*(7-1)+1})\bmod7=a\bmod7&&\text{by FLT}
+\end{aligned}$$
+By CRT, we have
+$$a^{49}\bmod3\times5=a\bmod15.$$
+Applying CRT again we get
+$$a^{49}\bmod15\times7=a\bmod105.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $a^{49}\equiv a\pmod{105}$.
 
 **Derivation/proof.** For $r=3,5,7$, the hypothesis gives $\gcd(a,r)=1$, so $a^{r-1}\equiv1\pmod r$. Since $48=24\cdot2=12\cdot4=8\cdot6$, $a^{49}=a(a^{r-1})^{48/(r-1)}\equiv a\pmod r$. The pairwise coprime moduli multiply to 105; CRT therefore makes the two residues equal modulo 105.
 
-### 中文解答
-
-**推导。** a 不被三个素数整除，所以在各模数 r=3、5、7 下均有 $\gcd(a,r)=1$，可用费马小定理 $a^{r-1}\equiv1\pmod r$。因为 $48=24\cdot2=12\cdot4=8\cdot6$，故 $a^{49}=a(a^{r-1})^{48/(r-1)}\equiv a\pmod r$。三个模数两两互素，乘积105，CRT 说明满足这三个余数的模105类唯一。因此 $a^{49}\equiv a\pmod{105}$，两边标准余数相等。
-
-## Common Mistakes
-
-- 直接对合数 105 使用素数版本的费马小定理。
-- 只证明其中一个素数模数的同余就下最终结论。
+CRT uniqueness makes the two standard remainders equal modulo the product $105$.
 
 ## Connections
 

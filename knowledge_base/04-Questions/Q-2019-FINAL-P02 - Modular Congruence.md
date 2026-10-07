@@ -38,30 +38,19 @@ Solve the following system of linear congruences by the Chinese remainder theore
 
 $$\begin{cases}x\equiv4\pmod9\\x\equiv8\pmod{14}\\x\equiv3\pmod5.\end{cases}$$
 
-## 中文解析
+## Official Answer
 
-先确认三个模数两两互质，再用总乘积除以各模数得到部分乘积。每个部分乘积都需要在对应模数下取逆，构造出仅对该方程贡献指定余数的项，最后相加并约模六百三十。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+Let $m=9\cdot14\cdot5=630$. $M_1=14\cdot5=70,M_2=9\cdot5=45,M_3=9\cdot14=126$. By the extended Eucildean algorithm, we find that $4$ is an inverse of $M_1\pmod9$, $5$ is an inverse of $M_2\pmod{14}$ and $1$ is an inverse of $M_3\pmod5$. Hence, $x=4\cdot70\cdot4+8\cdot45\cdot5+3\cdot126\cdot1=3298\equiv148\pmod{630}$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $x\equiv148\pmod{630}$.
 
 **Derivation/proof.** The moduli 9,14,5 are pairwise coprime and have product $M=630$. Partial products are $M_1=70,M_2=45,M_3=126$. Their respective inverses are 4,5,1 because $70\cdot4\equiv1\pmod9$, $45\cdot5\equiv1\pmod{14}$, and $126\equiv1\pmod5$. CRT gives $x\equiv4\cdot70\cdot4+8\cdot45\cdot5+3\cdot126=3298\equiv148\pmod{630}$. Check $148=16\cdot9+4=10\cdot14+8=29\cdot5+3$. CRT ensures uniqueness modulo 630.
 
-### 中文解答
-
-**推导。** 模数 $9,14,5$ 两两互素，总模数 $M=9\cdot14\cdot5=630$。部分乘积是 $M_1=70,M_2=45,M_3=126$。分别求逆可取 $b_1=4,b_2=5,b_3=1$，因为 $70\cdot4=280\equiv1\pmod9$、$45\cdot5=225\equiv1\pmod{14}$、$126\equiv1\pmod5$。中国剩余定理给
-
-$$x\equiv4\cdot70\cdot4+8\cdot45\cdot5+3\cdot126\cdot1=3298\equiv148\pmod{630}.$$
-
-回代核对 $148=16\cdot9+4=10\cdot14+8=29\cdot5+3$，三个余数全部正确。全部整数解为 $148+630k$，$k\in\mathbb Z$；两两互素保证模 $630$ 唯一。
-
-## Common Mistakes
-
-- 在总模数下求部分乘积的逆元。
-- 把最终解的周期写成三个模数的和。
+The full integer solution set is $148+630k$, $k\in\mathbb Z$.
 
 ## Connections
 

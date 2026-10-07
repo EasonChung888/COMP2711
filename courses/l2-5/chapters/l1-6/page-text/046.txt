@@ -1,0 +1,32 @@
+Exercise
+ on Equation Solutions
+How many solutions does the equation
+have, where 
+ and 
+ are nonnegative integers?
+Equivalent problem: 
+Suppose that a cookie shop has 
+3 different kinds of cookies
+. In how many different ways can 
+5
+ cookies be chosen? 
+Solution
+Each solution corresponds to a way to select 
+5
+ items with repetition from 3 element types; 
+ items of type 1, 
+ of type 2, and 
+ of type 3.
+Equivalently: I wish to select 
+5 indistinguishable 
+objects from 
+3
+ 
+distinguishable
+ boxes 
+ and 
+.  
+By the previous theorem, it follows that there are 
+solutions.
+ 
+46

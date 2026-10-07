@@ -1,0 +1,21 @@
+Poker
+ Exercises 1
+A poker hand contains 5 out of 52 cards. The cards are 13 
+kinds
+ (1-Ace, 2,..,10,J,Q,K) and 4 
+suites
+ (spades, hearts, clubs, diamonds)
+What is the total number of poker hands?
+C(52,5)
+How many hands contain 5 different kinds?
+There are C(13,5) ways to choose the 5 kinds. For each card there are 4 choices of suit: 4
+5
+
+C(13,5)
+How many hands contain the Ace of Spades and the King of Spades?
+Since these 2 cards are fixed, I have C(50,3) choices for the remaining 3 cards.   
+How many hands contain exactly 1 Ace?
+There are 4 ways to choose the Ace. Once the Ace is selected, there are C(48,4) ways to choose the remaining four cards: 4
+
+C(48,4)
+25

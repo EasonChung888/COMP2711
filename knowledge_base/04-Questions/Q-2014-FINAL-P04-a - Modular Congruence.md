@@ -38,26 +38,23 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-互素模数的两个同余有唯一模 $240$ 的解。代回检验：$50\bmod15=5$、$50\bmod16=2$。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=7|PDF physical page 7]].
 
-## Detailed Solution
+(a) In this case, $m$ and $n$ are relatively prime. So,there is a solution. To find the solution, first compute multiplicative inverses:
+$$\bar m\text{ s.t. }m\cdot\bar m=1\bmod n,$$
+$$\bar n\text{ s.t. }n\cdot\bar n=1\bmod m.$$
+It turns out that $\bar m=15$ and $\bar n=1$. Now we can find the solution:
+$$\begin{aligned}x&=(an\bar n+bm\bar m)\bmod mn\\&=(5\cdot16\cdot1+2\cdot15\cdot15)\bmod15\cdot16\\&=50\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Yes, $x=50$.
 
 **Derivation/proof.** Since $15,16$ are coprime, CRT applies. Inverses are $15^{-1}\equiv15\pmod{16}$ and $16^{-1}\equiv1\pmod{15}$. Thus $x\equiv5\cdot16\cdot1+2\cdot15\cdot15=530\equiv50\pmod{240}$.
 
-### 中文解答
-
-**推导。** 模数 15 与 16 互素，由 CRT 存在唯一模 $240$ 的解。模 15 下 $16^{-1}\equiv1$，模 16 下 $15^{-1}\equiv15$。因此 $x\equiv5\cdot16\cdot1+2\cdot15\cdot15=530\equiv50\pmod{240}$。取 $x=50$ 落在 $0\le x<240$，并且 $50\bmod15=5$、$50\bmod16=2$，检验通过。
-
-## Common Mistakes
-
-- 未把 530 再模 240。
-- 把 15 在模 16 下的逆元写成 1。
+The representative $50$ lies in $0\le x<240$, with $50\bmod15=5$ and $50\bmod16=2$.
 
 ## Connections
 

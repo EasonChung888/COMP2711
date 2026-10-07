@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每一位都能独立选择字母或数字，共三十六种。题目没有禁止重复，因此七位的选择数相乘，而不是逐位减少选项。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(a) $36^7$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $36^7$.
 
 **Derivation/proof.** There are $26+10=36$ choices for each of seven positions. Applying the product rule gives $\prod_{i=1}^7 36=36^7$.
 
-### 中文解答
-
-**推导。** 每个字符可选二十六个大写字母或十个数字，合计 $26+10=36$。七个有顺序的位置均没有禁止重复的限制，所以每个位置始终有36种选择。乘法原理给 $36\cdot36\cdot36\cdot36\cdot36\cdot36\cdot36=36^7$。
-
-## Common Mistakes
-
-- 把字符类别字母和数字当成只有两种实际字符。
-- 擅自加入不重复限制。
+The number of options stays at 36 at every position; their sevenfold product is $36^7$.
 
 ## Connections
 

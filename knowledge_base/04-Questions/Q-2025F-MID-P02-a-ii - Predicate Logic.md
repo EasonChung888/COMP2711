@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (ii) $x$ is a perfect square number. (a perfect square number $x$ can be written as $x=y^2$ for an integer $y$)
 
-## 中文解析
+## Official Answer
 
-乘方不在允许的运算列表中，平方需写成同一个变量相乘。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (ii) $\exists y$ s.t. $y\cdot y=x$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists y(y\times y=x)$.
 
-**答案。** $\exists y(y\times y=x)$。
-
-**推导。** 如果自然数 $x$ 是某整数 $z$ 的平方，则把根的符号去掉，取 $y=|z|$，其值非负且 $y\times y=x$。若课程的自然数从一开始，$x>0$ 使这个根也为正，因此同一翻译仍成立。反过来，任何满足 $y\times y=x$ 的自然数见证本身也是整数，说明 $x$ 是整数平方。故存在式与英文定义等价，并只使用允许的乘法而非额外幂运算符。
-
-## Common Mistakes
-
-- 两个因子必须是同一个变量，任意两数的乘积不一定是完全平方。
-- 负整数平方根不需要另设整数域变量，因为其绝对值给出相同平方。
+**Derivation/proof.** If the natural number $x$ is the square of an integer $z$, take $y=|z|$. This root is nonnegative and $y\times y=x$. If the convention starts the natural numbers at one, $x>0$ also makes the root positive. Conversely, a natural-number witness satisfying this equation is itself an integer root. Thus the formula is equivalent to the definition and uses only the permitted multiplication operation.
 
 ## Connections
 

@@ -40,26 +40,20 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2013-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-题目只限制选出五个不同的蛋，颜色没有额外条件，因此对象是从十二个带编号物品中选五个的组合，而不是排列。
+Source: [[knowledge_base/past_paper/2013-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(a) There are totally 12 eggs. The child chooses 5 of them. The number of different ways he can do that is:
+$$\binom{12}{5}.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{12}{5}=792$.
 
 **Derivation/proof.** A selection is an unordered 5-subset of the twelve labelled eggs, so the binomial rule gives $\binom{12}{5}=792$.
 
-### 中文解答
-
-**推导。** 十二个蛋均有不同编号，选择不计顺序。故每次选择对应十二元素集合的一个五元素子集，数量为 $\binom{12}{5}=12\cdot11\cdot10\cdot9\cdot8/(5\cdot4\cdot3\cdot2\cdot1)=792$。除以 $5!$ 正是消去同一组蛋的重复排列。
-
-## Common Mistakes
-
-- 把不计顺序的选择误写成 $12^5$。
-- 把颜色分组后重复计数。
+$\binom{12}{5}=12\cdot11\cdot10\cdot9\cdot8/(5\cdot4\cdot3\cdot2\cdot1)=792$. Dividing by $5!$ removes the different orderings of the same selected set.
 
 ## Connections
 

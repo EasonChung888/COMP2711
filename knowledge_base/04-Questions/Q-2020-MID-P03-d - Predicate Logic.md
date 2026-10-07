@@ -37,26 +37,19 @@ $\exists y\forall x(x=2y+3)$
 
 Shared context: [[STEM-2020-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-存在量词在外面表示先固定一个 y，再要求所有实数 x 都等于同一个值。对任何候选 y，取 x=2y+4 就立即违反等式，因此找不到这样的固定见证。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+False. For every $y$, there exists an $x\ne2y+3$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** False.
 
 **Derivation/proof.** For any proposed real y, choose $x=2y+4$. This is a real number but differs from $2y+3$ by one. Thus no fixed y can satisfy the inner universal condition. Equivalently x=0 and x=1 would force the same expression $2y+3$ to have two distinct values.
 
-### 中文解答
-
-**推导。** 判为假。对任何先选的实数 $y$，总能取实数 $x=2y+4$，而它与要求的 $2y+3$ 相差 $1$，所以 $x\ne2y+3$。因此每个候选 $y$ 都遇到反例 $x$，不存在能满足内部全称量词的固定见证。
-
-## Common Mistakes
-
-- 把量词交换后套用上一题答案。
-- 只展示一个满足等式的 x 就认为全称成立。
+For every candidate $y$, choose $x=2y+4$. Then $x\ne2y+3$, so each candidate fails the universal requirement; a single fixed $y$ cannot serve all $x$.
 
 ## Connections
 

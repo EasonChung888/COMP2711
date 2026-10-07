@@ -41,24 +41,17 @@ Printed discrepant/incomplete material: [[knowledge_base/past_paper/COMP2711_F20
 
 Shared printed context: ![[STEM-2024F-FINAL-P09-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-$A/B=\log n/(2n)\to0$，因为任意固定底数大于一的对数都比一次幂慢。通过该比值识别本题所有成立的渐近关系，并逐一排除不成立的标签。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=24|physical PDF page 24]].
 
-## Detailed Solution
+> Answer: (a) (i) $O,\Omega$ and $\Theta$
 
-Provenance: independently derived; any supplied answer discrepancy is documented in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $O$ only.
 
-**答案。** $O$ only.
-
-**推导。** $A/B=\log n/(2n)\to0$，因为任意固定底数大于一的对数都比一次幂慢。因此存在常数上界使 A 最终不超过 B 的倍数，故 $A=O(B)$；但比值趋零，不可能有正的最终下界，所以 $A\ne\Omega(B)$，也就不是 $\Theta(B)$。源文 B 是 $2n$，二不是指数底数。
-
-## Common Mistakes
-
-- 本题比值没有正的有限极限，不能同时给出 O、Omega、Theta 三个标签。
-- B=2n 是线性项而非二的 n 次幂，转录时必须保留这一差别。
+**Derivation/proof.** $A/B=\log n/(2n)\to0$, because a logarithm of any fixed base greater than one grows slower than a linear function. Thus a fixed upper bound eventually gives $A=O(B)$. The ratio has no positive eventual lower bound, so $A\ne\Omega(B)$ and is not $\Theta(B)$. The printed $B=2n$ is linear, not exponential.
 
 ## Connections
 

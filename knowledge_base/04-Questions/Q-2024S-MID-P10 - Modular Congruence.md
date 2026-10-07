@@ -40,24 +40,25 @@ Find all the solutions in the set of integers to the following system of equatio
 $$x\equiv2\pmod3,\qquad x\equiv4\pmod5,\qquad x\equiv3\pmod7.$$
 Show all your calculations. You may use any facts and theorems taught in class.
 
-## 中文解析
+## Official Answer
 
-三个模数两两互素，所以 CRT 保证模乘积唯一。构造每个模数对应的权重，让它在本模数为一，在另外两个模数为零。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+> Answer.
+> We can use the Chinese remainder theorem (CRT) to solve this problem.
+> $$m=\prod_{i=1}^3m_i=3\times5\times7=105.$$
+> $$M_1=\frac m{m_1}=\frac{105}3=35,\qquad M_2=\frac m{m_2}=\frac{105}5=21,\qquad M_3=\frac m{m_3}=\frac{105}7=15.$$
+> $$y_1\equiv(M_1)^{-1}\equiv(35)^{-1}\equiv2^{-1}\equiv2\pmod3,$$
+> $$y_2\equiv(M_2)^{-1}\equiv(21)^{-1}\equiv1^{-1}\equiv1\pmod5,$$
+> $$y_3\equiv(M_3)^{-1}\equiv(15)^{-1}\equiv1^{-1}\equiv1\pmod7.$$
+> $$\begin{aligned}x&\equiv\sum_{i=1}^3a_iM_iy_i\pmod m\\&\equiv2\times35\times2+4\times21\times1+3\times15\times1\pmod{105}\\&\equiv140+84+45\pmod{105}\\&\equiv269\pmod{105}\\&\equiv59\pmod{105}.\end{aligned}$$
+> Therefore, the solutions are $x=105n+59\ (n\in\mathbb Z)$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $x=59+105k$, $k\in\mathbb Z$.
 
-**答案。** $x=59+105k$，$k\in\mathbb Z$。
-
-**推导。** 总模数 $M=3\cdot5\cdot7=105$，部分乘积为 $M_1=35,M_2=21,M_3=15$。它们在模 $3,5,7$ 下的逆元分别为 $2,1,1$，因为 $35\cdot2\equiv1\pmod3$，$21\equiv1\pmod5$，$15\equiv1\pmod7$。故 $x\equiv2\cdot35\cdot2+4\cdot21+3\cdot15=269\equiv59\pmod{105}$。验算 $59$ 模三余二、模五余四、模七余三。CRT 的唯一性说明所有解且仅有 $59+105k$，允许任意正负整数 $k$。
-
-## Common Mistakes
-
-- 只给 $59$ 会遗漏无限多个整数解，必须写完整剩余类。
-- 模运算里的除法必须通过相应逆元完成，不能直接除部分乘积。
+**Derivation/proof.** The full modulus is $M=3\cdot5\cdot7=105$, and $M_1=35,M_2=21,M_3=15$. Their inverses modulo $3,5,7$ are respectively $2,1,1$, since $35\cdot2\equiv1\pmod3$, $21\equiv1\pmod5$, and $15\equiv1\pmod7$. Therefore $x\equiv2\cdot35\cdot2+4\cdot21+3\cdot15=269\equiv59\pmod{105}$. Checking $59$ gives residues two, four and three as requested. CRT uniqueness shows that all and only the solutions are $59+105k$, allowing every positive, negative or zero integer $k$.
 
 ## Connections
 

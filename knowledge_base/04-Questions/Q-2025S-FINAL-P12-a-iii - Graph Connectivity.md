@@ -39,24 +39,19 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (iii) $4,4,4,2,1,1$
 
-## 中文解析
+## Official Answer
 
-三个度四顶点各自在另外四个非低度顶点中找不够邻点，必须耗用低度顶点的容量。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=16|physical PDF page 16]].
 
-## Detailed Solution
+(iii) Note that each of those nodes with degree 4, must be connected to at least one of the nodes with degree 1. (Why?)
 
-Provenance: published official answer, independently checked and expanded below.
+So there are at least 3 edges going to those two nodes. So its not possible to have degree 1 for both.
 
-### 中文解答
+## Supplementary Explanation
 
-**答案。** 不可能。
+**Answer.** Impossible.
 
-**推导。** 设三个度四顶点为 $u_1,u_2,u_3$，度二顶点为 $w$，另两个顶点为 $v_1,v_2$。每个 $u_i$ 在 $\{u_1,u_2,u_3,w\}$ 内最多连接另外三个顶点，故为达到度四，必须至少有一条边接到 $\{v_1,v_2\}$。三个 $u_i$ 因而至少向该两点发出三条边；但 $\deg(v_1)+\deg(v_2)=2$，最多容纳两条，矛盾。简写为三行即是“每个度四点至少连一个度一点，共需三条而总容量仅二”。
-
-## Common Mistakes
-
-- 度数和十六为偶数不能证明序列可实现，还要满足邻接容量限制。
-- 三个高程度顶点向同一低度顶点连边仍分别占用它的度数，不能合并计数。
+**Derivation/proof.** Let the degree-four vertices be $u_1,u_2,u_3$, the degree-two vertex be w, and the remaining vertices be $v_1,v_2$. Each $u_i$ can have at most three neighbors inside $\{u_1,u_2,u_3,w\}$, so it needs at least one edge to $\{v_1,v_2\}$. The three high-degree vertices therefore send at least three edges to those two vertices. But $\deg(v_1)+\deg(v_2)=2$ provides capacity for at most two, a contradiction. The short answer is: each of three degree-four vertices requires a low-degree neighbor, demanding three incidences from capacity two.
 
 ## Connections
 

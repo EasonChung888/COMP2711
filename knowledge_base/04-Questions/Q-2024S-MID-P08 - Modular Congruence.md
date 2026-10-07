@@ -38,24 +38,20 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 The professor gave a mathematics exam to five students. The marks that the five students received (listed in increasing order) were 71, 76, 80, 82, and 91. The professor entered the scores in random order into a spreadsheet, which recalculated the class average after each score was entered. The professor noticed that after each score was entered, the average was always an integer. Based on this information, you need to determine the last score entered by the professor. Justify your answer fully.
 
-## 中文解析
+## Official Answer
 
-整数平均数转成前缀和的整除条件。前三项之和被三整除约束最强，先确定前三项集合，再利用四项平均数确定第四项，余下就是答案。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> Answer.
+> We assign variables $a=71,b=76,c=80,d=82,e=91$. Let $x_i$ denote the $i$-th score entered into the spreadsheet, for $1\le i\le5$. We know that $x_1+x_2\equiv0\pmod2$, $x_1+x_2+x_3\equiv0\pmod3$, and $x_1+x_2+x_3+x_4\equiv0\pmod4$. There are several approaches to find the last number.
+> Solution 1: First, observe that there are two odd numbers and three even numbers. Since the sum of the first 4 numbers is divisible by 4, it follows that both odd numbers must exist among the first 4 numbers. The sum of these two odd numbers modulo 4 is 2. So the other two even numbers cannot be 76 and 80 (since these are both 0 modulo 4). It follows that the last number has to be either 76 or 80. Now notice that the first two numbers either have to be both odd or both even. But they cannot be both odd because in that case, the sum of first three numbers cannot be divisible by 3 (since the sum of two available odd numbers is divisible by 3 and none of the even numbers is a multiple of 3). So the first two numbers have to be even such that 82 is among them. So in the first three numbers, one is 82, another is an odd number and another is an even number such that each has a remainder 1 mod 3. So the only options will be 76 and 91. So the last number $x_5$ has to be 80.
+> Solution 2: There exists an alternative argument that is simpler. The sequence of numbers $a,,b,c,d,e$ modulo 3 is $2,1,2,1,1$. Thus, there is only way to choose 3 numbers out of this set whose sum is $0\pmod3$, namely, by choosing the three numbers $b,d,e$. Next observe that this same sequence of numbers modulo 4 is $3,0,0,2,3$. Note that $b+d+e\pmod4$ is $5\equiv1$. Since the sum of the first 4 numbers is $0\pmod4$, it follows that the 4th number selected must be $a$ (since $a\equiv3\pmod4$). Thus, the last number selected must be $c$, namely 80.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The last score is $80$.
 
-**答案。** 最后输入 $80$。
-
-**推导。** 五个分数模三分别为 $2,1,2,1,1$。三个数的模三和为零只可能取三个余一或三个余二（混合分别余一或余二）；但余二仅两个，所以前三项集合必为 $\{76,82,91\}$，和为 $249\equiv1\pmod4$。第四项必须模四余三以使前四项和被四整除。余下 $71\equiv3\pmod4$、$80\equiv0\pmod4$，故第四项是 71，末项是 80。可行序列 $76,82,91,71,80$ 的前缀平均数为 $76,79,83,80,80$，均为整数，验证条件一致且答案可实现。
-
-## Common Mistakes
-
-- 总平均数为整数不足以决定顺序，必须用前三与前四项条件。
-- 确定前三项集合后还应检查存在前两项平均数为整数的排列。
+**Derivation/proof.** The five residues modulo three are $2,1,2,1,1$. A triple summing to zero modulo three must consist of three ones or three twos; either mixed triple has residue one or two. Only two twos exist, so the first three scores must be $\{76,82,91\}$, with sum $249\equiv1\pmod4$. The fourth score must have residue three modulo four. Of those remaining, $71\equiv3\pmod4$ and $80\equiv0\pmod4$, so the fourth is $71$ and the last is $80$. The sequence $76,82,91,71,80$ has prefix averages $76,79,83,80,80$, all integral, verifying feasibility.
 
 ## Connections
 

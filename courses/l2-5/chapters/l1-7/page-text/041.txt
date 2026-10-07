@@ -1,0 +1,24 @@
+Exercise 2
+ on Combinatorial Proof
+The following formula reduces to the one of the previous slide when 
+: 
+, 1≤ 
+ ≤ 
+ ≤ 
+Show by combinatorial proof that both sides count the same number in different ways. Hint: You can use the same reasoning as previous slide, but now there are 
+ chairpersons.
+LHS: counts the number of ways of selecting a subset with 
+ (
+) out of 
+ elements, and marking 
+ elements among the 
+ selected. Using the terminology of the previous slide, the committee has 
+ chairpersons and any other number of members between zero and 
+.
+RHS: counts the number of ways of marking 
+ elements out of 
+ (i.e., chairpersons) and choosing 
+ among the remaining 
+ elements (to form the rest of the committee).
+ 
+41

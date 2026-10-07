@@ -1,0 +1,10 @@
+Example
+How many ways are there to select a first-prize winner, a second-prize winner, and a third-prize winner from 100 different people who have entered a contest?
+Solution:
+The order matters as it matters which person wins which prize. Therefore, the number of ways to pick three prize winners is the number of 
+ordered
+ selections of three elements from a set of 100 elements, i.e., the number of 3-permutations of a set of 100 elements.   
+           
+ ways.
+ 
+7

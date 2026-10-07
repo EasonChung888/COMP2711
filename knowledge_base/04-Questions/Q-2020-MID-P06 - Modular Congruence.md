@@ -36,32 +36,24 @@ Published solution material: ![[knowledge_base/past_paper/2020-midterm.pdf#page=
 
 Use the extended Euclid algorithm to find the inverse of $53\pmod{180}$. Show the steps of the algorithm.
 
-## 中文解析
+## Official Answer
 
-欧几里得算法先确认最大公因数为一，再回代把一写成五十三与一百八十的线性组合。五十三的系数十七就是模逆元，最后乘积余一可独立检验回代符号。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=3|physical PDF page 3]]; [[knowledge_base/past_paper/2020-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+Calculate $\gcd(180,53)$ using euclidean algorithm.
+$$\begin{aligned}180&=53\cdot3+21\\53&=21\cdot2+11\\21&=11\cdot1+10\\11&=10\cdot1+1\\10&=1\cdot10+0.\end{aligned}$$
+So $\gcd(180,53)=1$.
+Rewriting:
+$$\begin{aligned}21&=180-53\cdot3\\11&=53-21\cdot2\\10&=21-11\cdot1\\1&=11-10\cdot1.\end{aligned}$$
+Substituting:
+$$\begin{aligned}1&=11-10\cdot1\\1&=11-(21-11\cdot1)\cdot1\\1&=21\cdot(-1)+11\cdot2\\1&=21\cdot(-1)+(53-21\cdot2)\cdot2\\1&=53\cdot2+21\cdot(-5)\\1&=53\cdot2+(180-53\cdot3)\cdot(-5)\\1&=180\cdot(-5)+53\cdot17.\end{aligned}$$
+So $17$ is the modular inverse of $53\pmod{180}$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $53^{-1}\equiv17\pmod{180}$.
 
 **Derivation/proof.** Euclidean divisions: $180=3\cdot53+21$, $53=2\cdot21+11$, $21=11+10$, $11=10+1$, $10=10\cdot1$. Back substitution gives $1=11-10=2\cdot11-21=2\cdot53-5\cdot21=17\cdot53-5\cdot180$. Thus the coefficient of 53 is the inverse. Check $53\cdot17=901=5\cdot180+1$.
-
-### 中文解答
-
-**推导。** 欧几里得除法依次为 $180=3\cdot53+21$，$53=2\cdot21+11$，$21=11+10$，$11=10+1$，$10=10\cdot1+0$，故最大公因数为 $1$。回代：
-
-$$1=11-10=11-(21-11)=2\cdot11-21$$
-$$=2(53-2\cdot21)-21=2\cdot53-5\cdot21$$
-$$=2\cdot53-5(180-3\cdot53)=17\cdot53-5\cdot180.$$
-
-所以 $53^{-1}\equiv17\pmod{180}$。乘回核对 $53\cdot17=901=5\cdot180+1$，正确余一。原题要求的除法和回代各步均已展示。
-
-## Common Mistakes
-
-- 读取一百八十的系数负五作为答案。
-- 只算 gcd 而没有回代求逆元。
 
 ## Connections
 

@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (iii) There is a bijection between all the real numbers of $[0,1]$ and all the real numbers of $[0,1)$.
 
-## 中文解析
+## Official Answer
 
-删除一个端点不会改变无限区间的基数；可把一列分数整体后移腾出端点。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(a) iii) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True.
 
-**答案。** True。
-
-**推导。** 定义 $f(1/n)=1/(n+1)$，其中 $n=1,2,\ldots$；对 $[0,1]$ 中其余 $x$ 定义 $f(x)=x$。特别地一被送到二分之一，零保持零，故所有像都落在 $[0,1)$。序列中的像互异且仍是该序列的非首项，其余点不在这个序列上，因此不会碰撞，$f$ 单射。任取目标 $y$：若 $y=1/m$ 且 $m\ge2$，其原像为 $1/(m-1)$；否则原像为 $y$ 本身。故 $f$ 满射，是所需 bijection。
-
-## Common Mistakes
-
-- 把一直接送到零而其他点不动会让零有两个原像。
-- 不能只证明两个区间都不可数，就宣称任意两不可数集合都有双射。
+**Derivation/proof.** Define $f(1/n)=1/(n+1)$ for $n=1,2,\ldots$, and set $f(x)=x$ for all other $x\in[0,1]$. In particular, 1 goes to 1/2 and 0 stays 0, so the image is contained in $[0,1)$. The shifted reciprocal values are distinct, while unchanged points lie outside that sequence, so no images collide and f is injective. For a target $y=1/m$ with $m\ge2$, the preimage is $1/(m-1)$; every other target is its own preimage. Thus f is surjective and is the required bijection.
 
 ## Connections
 

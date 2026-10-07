@@ -41,24 +41,21 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 
 Shared printed context: ![[STEM-2024F-FINAL-P08 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-这次指数与欧拉函数互素，扩展欧几里得可把一写成二者线性组合。所得负系数要转成同一剩余类的正代表作为 d。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=21|physical PDF page 21]].
 
-## Detailed Solution
+> (b)
+> $$72=3\cdot23+3,\qquad23=7\cdot3+2,\qquad3=1\cdot2+1,\qquad2=2\cdot1+0.$$
+> $$\begin{aligned}1&=3-1\cdot2\\&=3-1\cdot(23-7\cdot3)\\&=8\cdot3-1\cdot23\\&=8\cdot(72-3\cdot23)-1\cdot23\\&=8\cdot72-25\cdot23.\end{aligned}$$
+> Thus, $d\equiv-25\pmod{72}$.
+> Since $d$ must be positive, we add 72 to -25: $d=72-25=47$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $d=47$.
 
-**答案。** $d=47$。
-
-**推导。** $\varphi(95)=72$，所以解 $23d\equiv1\pmod{72}$。除法链为 $72=3\cdot23+3$，$23=7\cdot3+2$，$3=1\cdot2+1$，$2=2\cdot1$。回代得到 $1=3-2=3-(23-7\cdot3)=8\cdot3-23=8(72-3\cdot23)-23=8\cdot72-25\cdot23$。故 $d\equiv-25\equiv47\pmod{72}$。验算 $23\cdot47=1081=15\cdot72+1$，因此取正解密指数 47。
-
-## Common Mistakes
-
-- 回代的 $-25$ 与 $47$ 同余，不能把负号忽略直接取二十五。
-- 题目要求扩展欧几里得步骤，直接试出四十七不满足指定方法。
+**Derivation/proof.** $\varphi(95)=72$, so solve $23d\equiv1\pmod{72}$. Euclidean division gives $72=3\cdot23+3$, $23=7\cdot3+2$, $3=1\cdot2+1$, and $2=2\cdot1$. Back-substitution yields $1=3-2=3-(23-7\cdot3)=8\cdot3-23=8(72-3\cdot23)-23=8\cdot72-25\cdot23$. Hence $d\equiv-25\equiv47\pmod{72}$. Direct verification gives $23\cdot47=1081=15\cdot72+1$, so the positive decryption exponent is 47.
 
 ## Connections
 

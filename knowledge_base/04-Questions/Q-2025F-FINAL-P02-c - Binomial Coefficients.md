@@ -39,24 +39,30 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 (c) [4 points] Use combinatorial argument to prove:
 $$\binom nk P(k,r)=\binom{n-r}{k-r}P(n,r)$$
 
-## 中文解析
+## Official Answer
 
-先选整个委员会或先选职位人选，两种顺序应该得到同一组对象。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=5|physical PDF page 5]], [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(c) From a group of $n$ distinct people, choose an ordered committee of $r$ people (positions matter) and also choose an unordered group of $k$ people who will be the full selection committee (ther ordered members are part of these $k$).
 
-Provenance: published official answer, independently checked and expanded below.
+Left-hand side:
+- First choose the $k$ members of the full selection committee: $\binom nk$ ways.
+- Then choose $r$ ordered positions (e.g., chairperson, vice-chair, etc.) from these $k$ people: $P(k,r)$ ways.
+Total: $\binom nk\cdot P(k,r)$.
 
-### 中文解答
+Right-hand side:
+- First choose the $r$ people who will hold the $r$ ordered positions, in order: $P(n,r)$ ways.
+- Now we still need to choose the remaining $k-r$ members of the full (unordered) committee. These must come from the remaining $n-r$ people (excluding the $r$ already chosen for the ordered roles): $\binom{n-r}{k-r}$ ways.
+Total: $\binom{n-r}{k-r}\cdot P(n,r)$.
 
-**答案。** 两边都计数一个 $k$ 人委员会及其中 $r$ 个有序职位的安排。
+Both sides count the same thing, so
+$$\binom nk\cdot P(k,r)=\binom{n-r}{k-r}\cdot P(n,r).$$
 
-**推导。** 在排列组合有定义的通常范围 $0\le r\le k\le n$，对象是从 $n$ 人中选出的 $k$ 人委员会，并指定其中不同的 $r$ 人按顺序担任职位。第一种顺序先选委员会，有 $\binom nk$ 种，再从中安排职位，有 $P(k,r)$ 种，得到左式。第二种顺序先从所有人中安排 $r$ 个职位，有 $P(n,r)$ 种；再从其余 $n-r$ 人中选 $k-r$ 人补足委员会，有 $\binom{n-r}{k-r}$ 种，得到右式。两过程都与同一对象一一对应，所以恒等式成立。
+## Supplementary Explanation
 
-## Common Mistakes
+**Answer.** Both sides count a $k$-person committee with $r$ ordered offices assigned to distinct committee members.
 
-- 职位有顺序，不能把 P(k,r) 换成组合数而丢掉职位安排。
-- 先选职位后，补足委员会必须从未入选的人中选，否则会重复人数。
+**Derivation/proof.** In the usual defined range $0\le r\le k\le n$, first choose the full committee from $n$ people in $\binom nk$ ways, and then assign the offices in $P(k,r)$ ways. This gives the left side. Alternatively, assign the $r$ offices from all $n$ people in $P(n,r)$ ways, then choose $k-r$ additional members from the remaining $n-r$ people in $\binom{n-r}{k-r}$ ways. Both constructions are in one-to-one correspondence with the same objects, so their counts agree.
 
 ## Connections
 

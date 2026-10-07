@@ -1,0 +1,10 @@
+{
+  "topic": "Logic",
+  "slug": "Logic",
+  "prefix": "L",
+  "groupNames": [
+    "Propositional Logic",
+    "Predicate Logic",
+    "Inference and Proofs"
+  ]
+}

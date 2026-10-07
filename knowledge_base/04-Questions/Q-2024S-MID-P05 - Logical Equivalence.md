@@ -46,24 +46,27 @@ Let $p,q,r,s,t,u$ denote five propositions. You are given the following set of p
 
 Using rules of inference for propositional logic, show that the truth of the above premises implies that the conclusion $p$ is true. You do not need to write the names of the rules you are using; instead, you can just number each statement and write down from which statement(s) a new statement is derived.
 
-## 中文解析
+## Official Answer
 
-沿结论的反方向看，若能排除 r，就能排除第一前件。第三、四条可先排除 s 与 t，再用第二条获得所需的否定。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> Answer.
+> 5. from 1 $\neg(\neg p\lor q)\lor r$
+> 6. from 5 $(p\land\neg q)\lor r$
+> 7. from 2 $\neg r\lor s\lor t$
+> 8. from 3 $\neg s$
+> 9. from 3 $\neg u$
+> 10. from 7 and 8 $\neg r\lor t$
+> 11. from 4 and 9 $\neg t$
+> 12. from 10 and 11 $\neg r$
+> 13. from 6 and 12 $p\land\neg q$
+> 14. from 13 $p$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The premises imply $p$.
 
-**答案。** 前提推出 $p$。
-
-**推导。** 5. 由 3 的合取消去得 $\neg s$。6. 同理由 3 得 $\neg u$。7. 由 4、6 用 modus ponens 得 $\neg t$。8. 由 5、7 得 $\neg s\land\neg t$，即 $\neg(s\lor t)$。9. 由 2、8 用 modus tollens 得 $\neg r$。10. 由 1、9 再用 modus tollens 得 $\neg(\neg p\lor q)$。11. 用 De Morgan 和双重否定得 $p\land\neg q$。12. 合取消去得到 $p$。每一步都引用已知前提或先前推得的式子，所以结论成立。
-
-## Common Mistakes
-
-- 不能由 $r\to(s\lor t)$ 和 $\neg s$ 单独推出 $\neg r$，还需要 $\neg t$。
-- 源文写 five 却列六个字母是笔误，不应删除参与前提的 $u$。
+**Derivation/proof.** 5. From 3, conjunction elimination gives $\neg s$. 6. From 3 likewise obtain $\neg u$. 7. From 4 and 6, modus ponens gives $\neg t$. 8. From 5 and 7 obtain $\neg s\land\neg t$, equivalently $\neg(s\lor t)$. 9. From 2 and 8, modus tollens gives $\neg r$. 10. From 1 and 9, modus tollens gives $\neg(\neg p\lor q)$. 11. De Morgan's law and double negation give $p\land\neg q$. 12. Conjunction elimination gives $p$. Every step follows from a premise or an earlier step.
 
 ## Connections
 

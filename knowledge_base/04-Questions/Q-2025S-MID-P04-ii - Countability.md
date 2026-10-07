@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 
 (ii) The set of all polynomials with integer coefficients and the degree is at most 5.
 
-## 中文解析
+## Official Answer
 
-次数至多五对应六个整数系数，有限维可数积仍可数。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(ii) Countably infinite.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Countably infinite.
 
-**答案。** Countably infinite。
-
-**推导。** 把每个次数至多五的多项式唯一写为 $a_0+a_1x+\cdots+a_5x^5$，不足次数的系数补零。这样它对应 $\mathbb Z^6$ 中的六元组；六个整数可以按绝对值之和分层枚举，每层有限，故集合可数。常数多项式 $f(x)=j$ 随整数 $j$ 变化已给出无限子集，因此是可数无限。
-
-## Common Mistakes
-
-- 次数至多五不是只有六个多项式，而是每个多项式只有六个系数位置。
-- 高次缺项须补零，才能用同样长度的元组给出统一编码。
+**Derivation/proof.** Write each polynomial uniquely as $a_0+a_1x+\cdots+a_5x^5$, filling unused coefficients with zero. It corresponds to a tuple in $\mathbb Z^6$. Enumerate the tuples by the sum of the absolute values of their coordinates; each layer is finite, hence the collection is countable. Constants $f(x)=j$ for integer $j$ give an infinite subset, so it is countably infinite.
 
 ## Connections
 

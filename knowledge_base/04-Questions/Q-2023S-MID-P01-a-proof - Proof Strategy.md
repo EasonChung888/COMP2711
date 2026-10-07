@@ -44,25 +44,25 @@ Then use rules of inference to prove the conclusion “it rains”. For each ste
 
 Shared printed context: ![[STEM-2023S-MID-P01-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-先由没有颁奖和比赛会导致颁奖推出比赛没有举行。这样后件中的 conjunction 为假，利用原天气蕴含式的 contrapositive 可知两个天气否定均为假，最后取出下雨的结论。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) We are given premises $(\neg r\lor\neg f)\to(s\land l)$, $s\to t$, and $\neg t$. We want to conclude $r$.
+>
+> | Step | Reason |
+> | --- | --- |
+> | 1. $\neg t$ | Premise |
+> | 2. $s\to t$ | Premise |
+> | 3. $\neg s$ | Modus tollens using (1) and (2) |
+> | 4. $(\neg r\lor\neg f)\to(s\land l)$ | Premise |
+> | 5. $(\neg(s\land l))\to\neg(\neg r\lor\neg f)$ | Contrapositive of (4) |
+> | 6. $(\neg s\lor\neg l)\to(r\land f)$ | Simplification using (5) |
+> | 7. $\neg s\lor\neg l$ | Simplification using (2) |
+> | 8. $r\land f$ | Modus ponens using (6,7) |
+> | 9. $r$ | Simplification from (8) |
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 可以推出 $r$，即“it rains”。
-
-**推导。**
-
-1. 把三条已翻译前提编号为① $(\neg r\lor\neg f)\to(s\land l)$，② $s\to t$，③ $\neg t$。由②③用 modus tollens 得④ $\neg s$。
-2. 由④使用 addition 得⑤ $\neg s\lor\neg l$，再由 De Morgan 得⑥ $\neg(s\land l)$。⑤只需已知 $\neg s$ 就成立，并没有推断 $\neg l$ 单独为真；这里不能照抄原解答的错误前提引用。
-3. 由①⑥再次用 modus tollens 得⑦ $\neg(\neg r\lor\neg f)$。对⑦使用 De Morgan 与 double negation，得⑧ $r\land f$；最后由⑧ simplification 得⑨ $r$。每一步都来自已列前提或较早结论，没有把待证的下雨预先当成事实。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $r$.
 
@@ -78,10 +78,7 @@ Provenance: published official answer, independently checked and expanded below.
 
 Every step cites existing premises or earlier conclusions; none assumes the desired conclusion.
 
-## Common Mistakes
-
-- 从没有比赛直接推没有救生示范并无依据。 / Only the conjunction needs to fail.
-- 把原答案第 7 步错误引用的 (2) 照抄会破坏推导。 / Addition uses the established $\neg s$.
+Addition proves the disjunction without establishing $\neg l$ individually. Step 9 concludes $r$.
 
 ## Connections
 

@@ -40,24 +40,18 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (b) [3 points] Given A is taller than B, what is the probability that A is the third tallest?
 
-## 中文解析
+## Official Answer
 
-A 第三时 B 只能在其后十一处，其他十二人的次序仍任意。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+(b) Given $A>B$. If $A$ is rank 3, $B$ must be in ranks $4,\ldots,14$: 11 choices. Then arrange remaining 12 players: $12!$.
+$$\Pr(A\text{ rank }3\mid A>B)=\frac{11\cdot12!}{14!/2}=\frac{11\cdot2}{14\cdot13}=\frac{11}{91}.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $11/91$.
 
-**答案。** $11/91$。
-
-**推导。** 条件 A 高于 B 仍对应 $14!/2$ 个等可能排名。固定 A 第三，B 可占第四至第十四名，共 $14-3=11$ 种。选定 B 位置后，其余十二人填余位有 $12!$ 种，所以有利排名数为 $11\cdot12!$。相除得到 $11\cdot12!/(14!/2)=22/(14\cdot13)=11/91$。A 前方两位不能给 B，否则违反条件。
-
-## Common Mistakes
-
-- B 的可选位置从第四开始，不能把 A 的第三位置也算进去。
-- 固定 A、B 两人的位置后剩十二人，而不是十三人可排列。
+**Derivation/proof.** The condition $A>B$ leaves $14!/2$ equally likely rankings. Fix $A$ in third place. Then $B$ can occupy ranks 4 through 14, giving $14-3=11$ choices. After fixing both positions, the remaining 12 players have $12!$ arrangements, so there are $11\cdot12!$ favorable rankings. Division gives $11\cdot12!/(14!/2)=22/(14\cdot13)=11/91$. Neither position above $A$ may be given to $B$.
 
 ## Connections
 

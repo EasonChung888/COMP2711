@@ -36,26 +36,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 (b) For each number in $Z_8$, state if it has a multiplicative inverse mod 8, and if it has, state its inverse. There is no need to explain your answer.
 
-## 中文解析
+## Official Answer
 
-模 $8$ 中可逆当且仅当与 $8$ 互素。所有奇数剩余类可逆，而且此处每个可逆元恰好都是自己的逆元。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(b) 0 has no inverse; 1's inverse is 1; 2 has no inverse; 3's inverse is 3; 4 has no inverse; 5's inverse is 5; 6 has no inverse; 7's inverse is 7.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $1^{-1}=1$, $3^{-1}=3$, $5^{-1}=5$, $7^{-1}=7$; $0,2,4,6$ have none.
 
 **Derivation/proof.** A residue has an inverse modulo $8$ exactly when it is coprime to $8$. The odd residues are coprime; direct products $1^2,3^2,5^2,7^2$ are all $1\pmod8$.
 
-### 中文解答
-
-**推导。** 可逆的充要条件是与 8 互素。偶数 $0,2,4,6$ 与 8 的最大公因数大于一，故无逆元。奇数 $1,3,5,7$ 的平方分别为 $1,9,25,49$，模八均余一，故四者的逆元依次是 $1,3,5,7$，每个都是自身。
-
-## Common Mistakes
-
-- 把 $0$ 说成自己的逆元。
-- 只检查乘积等于 1 而没有取模。
+The even residues $0,2,4,6$ have gcd greater than one with $8$. The odd squares are $1,9,25,49$, all congruent to one modulo eight.
 
 ## Connections
 

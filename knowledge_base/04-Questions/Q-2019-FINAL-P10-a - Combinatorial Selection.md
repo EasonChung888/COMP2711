@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-非负整数允许某些变量为零，因此用二十颗星与两个隔板表示三项数值，隔板可以相邻或在两端。选二十二个位置中的两个作为隔板，并算出具体数值二百三十一，满足题目要求。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+$C(3+20-1,3-1)=C(22,2)=231$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $231$.
 
 **Derivation/proof.** By stars and bars, solutions of $x_1+x_2+x_3=20$ correspond to twenty stars and two separators. Choose the separator positions among 22: $\binom{22}{2}=22\cdot21/2=231$. Adjacent separators and endpoint separators account for zero coordinates.
 
-### 中文解答
-
-**推导。** 三个变量非负，相当于把二十颗相同星分入三个有标签组，用两条隔板表示分界。星板序列长 $20+2=22$，选两处放隔板，得 $\binom{22}{2}=22\cdot21/2=231$。隔板可相邻或在两端，正对应允许某个变量为零。
-
-## Common Mistakes
-
-- 错误地要求三个变量都正。
-- 只给组合表达式而未给精确数值。
+The bars may be adjacent, which represents a zero occupancy between them. This is why ordinary stars and bars counts the nonnegative solutions including empty boxes.
 
 ## Connections
 

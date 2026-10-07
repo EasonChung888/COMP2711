@@ -39,26 +39,24 @@ Source correction: PDF page13 prints 10+14+35−2−5−7+1=36 and then70−36=2
 
 (a) How many elements in $\mathbb Z_{70}$ have multiplicative inverses? Explain your answer.
 
-## 中文解析
+## Official Answer
 
-可逆当且仅当与七十互质。把二、五、七的倍数作为坏集合，用容斥得到四十六个不可逆元素，再从七十中扣除。来源中间算成三十六是算术笔误，其最终二十四的答案才正确。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+We can write $70=2\cdot5\cdot7$.
+$$M_7=\{0,7,14,21,28,35,42,49,56,63\}$$
+$$M_5=\{0,5,10,15,20,\ldots,65\}$$
+$$M_2=\{0,2,4,6,\ldots,68\}.$$
+The integers that do not have an inverse are those that are not relatively prime with $70$, i.e., all the multiples of $7,5,2$, i.e., $M_7\cup M_5\cup M_2$. Note that $\lvert M_7\rvert=10,\lvert M_5\rvert=14,\lvert M_2\rvert=35$. Moreover, $\lvert M_7\cap M_5\rvert=2,\lvert M_7\cap M_2\rvert=5$, and $\lvert M_5\cap M_2\rvert=7$. Finally, $\lvert M_7\cap M_5\cap M_2\rvert=1$.
+By the inclusion exclusion principle, $\lvert M_7\cup M_5\cup M_2\rvert=10+14+35-2-5-7+1=36$. Therefore, the number of elements that have an inverse is $70-36=24$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $24$.
 
 **Derivation/proof.** An element is invertible exactly when coprime to $70=2\cdot5\cdot7$. Among residues 0 through 69, counts of multiples of 2,5,7 are 35,14,10; pairwise intersections have sizes 7,5,2 and the triple intersection has size 1. Thus nonunits number $35+14+10-7-5-2+1=46$, and units number $70-46=24$. The independent totient product $70(1-1/2)(1-1/5)(1-1/7)=24$ agrees.
 
-### 中文解答
-
-**推导。** 模 $70=2\cdot5\cdot7$ 的元素可逆当且仅当与模数互素。在 $0,\ldots,69$ 中，$2,5,7$ 倍数各有 $35,14,10$ 个；两两交集即 $10,14,35$ 倍数，各 $7,5,2$ 个；三重交集只有零，共一。故不可逆者数 $35+14+10-7-5-2+1=46$，可逆者 $70-46=24$。也可核对欧拉函数 $70(1-1/2)(1-1/5)(1-1/7)=24$。印本误把中间 $46$ 写成 $36$，但最终 $24$ 是正确结论。
-
-## Common Mistakes
-
-- 把零从倍数交集中漏掉。
-- 沿用来源 70-36=24 的错误算术。
+As an independent arithmetic check, $70(1-1/2)(1-1/5)(1-1/7)=24$.
 
 ## Connections
 

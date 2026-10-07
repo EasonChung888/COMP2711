@@ -41,24 +41,17 @@ Printed discrepant/incomplete material: [[knowledge_base/past_paper/COMP2711_F20
 
 Shared printed context: ![[STEM-2024F-FINAL-P09-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-约去共同因子 $n\log n$ 得 $A/B=n/(\log n)^5$。通过该比值识别本题所有成立的渐近关系，并逐一排除不成立的标签。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=24|physical PDF page 24]].
 
-## Detailed Solution
+> (iv) $A=O(B)$
 
-Provenance: independently derived; any supplied answer discrepancy is documented in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\Omega$ only.
 
-**答案。** $\Omega$ only.
-
-**推导。** 约去共同因子 $n\log n$ 得 $A/B=n/(\log n)^5$。固定次对数幂比任何正幂 n 慢，因此该比值趋无穷，A 最终至少为 B 的常数倍，$A=\Omega(B)$；但不能被 B 的固定常数倍压住，所以不属于 $O(B)$，也不属于 $\Theta(B)$。
-
-## Common Mistakes
-
-- 本题比值没有正的有限极限，不能同时给出 O、Omega、Theta 三个标签。
-- log 的六次幂位于分母比较中，不能因此忽略 A 多出的一次 n。
+**Derivation/proof.** Cancelling $n\log n$ gives $A/B=n/(\log n)^5$. A fixed logarithmic power grows more slowly than every positive power of $n$, so this ratio tends to infinity. Hence $A$ eventually exceeds a positive constant multiple of $B$ and $A=\Omega(B)$. No constant multiple of $B$ can upper-bound $A$, so neither $O(B)$ nor $\Theta(B)$ holds.
 
 ## Connections
 

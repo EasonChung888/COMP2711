@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (ii) There exists a countably infinite set $X$ with $\mathcal P(X)$ also countably infinite.
 
-## 中文解析
+## Official Answer
 
-要否定“存在”，需说明任意可数无限 $X$ 都不可能有可数幂集。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(a) ii) F
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** False.
 
-**答案。** False。
-
-**推导。** 任取可数无限 $X=\{x_0,x_1,\ldots\}$。反设其幂集也能列为 $B_0,B_1,\ldots$，令 $E=\{x_j:x_j\notin B_j\}$。$E\subseteq X$，但对每个索引 $j$，它在 $x_j$ 的成员资格上与 $B_j$ 相反，因此 $E$ 不在列表中。这一矛盾适用于每个这样的 $X$，故没有符合题意的集合，答案为假。
-
-## Common Mistakes
-
-- 仅举一个幂集不可数的例子不足以否定所有可能的存在见证。
-- 列表允许包含有限子集和无限子集，仍会被对角子集遗漏。
+**Derivation/proof.** Let $X=\{x_0,x_1,\ldots\}$ be any countably infinite set. If its power set had a list $B_0,B_1,\ldots$, form $E=\{x_j:x_j\notin B_j\}$. This subset of X disagrees with each $B_j$ at element $x_j$, so it is absent from the list. The contradiction applies to every countably infinite X. Hence no set satisfies the proposed existence claim.
 
 ## Connections
 

@@ -44,26 +44,19 @@ A directed graph with 5 vertices, $v_1,v_2,v_3,v_4$ and $v_5$.
 
 Shared context: [[STEM-2021-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每条有向边有一个起点、一个终点，因此入度总和和出度总和必须相等。题目给出的总和分别九与八，直接矛盾；就算允许自环或重边，这个计数恒等式也不能被破坏。
+Source: [[knowledge_base/past_paper/2021-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (d) None. The sum of in-degrees is different with the sum of out-degrees.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No such directed graph exists.
 
 **Derivation/proof.** Each directed edge contributes exactly one to total outdegree and exactly one to total indegree, including a loop if loops were allowed. Here indegrees sum to 1+2+3+1+2=9, but outdegrees sum to 3+1+2+1+1=8. They would both have to equal the number of edges, so the incompatible totals rule out every graph convention.
 
-### 中文解答
-
-**推导。** 不存在这样的有向图。每条有向边给总出度贡献一，同时给总入度贡献一，所以两总和都必须等于边数。题列总入度为 $1+2+3+1+2=9$，总出度为 $3+1+2+1+1=8$，两者不等，矛盾。这条计数恒等式即使允许自环或重边也成立，因而不能通过改变这些图约定实现给定序列。
-
-## Common Mistakes
-
-- 只检查两种总和是否偶数。
-- 企图添加自环来修复两种总和之差。
+The contradiction is that both totals must equal the number of edges.
 
 ## Connections
 

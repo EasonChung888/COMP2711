@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (ii) The set of ternary strings (i.e., they are made of $\{0,1,2\}$) of infinite length.
 
-## 中文解析
+## Official Answer
 
-三进制无限串至少包含所有二进制无限串，也能直接使用对角法。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+(ii) Uncountable
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Uncountable.
 
-**答案。** Uncountable。
-
-**推导。** 反设所有三进制无限串能列成 $s_1,s_2,\ldots$。令新串的第 $n$ 位为 $d_n=(s_n(n)+1)\bmod3$。每个位都在 $\{0,1,2\}$ 内，且 $d_n\ne s_n(n)$，所以新串与第 $n$ 个候选至少在第 $n$ 位不同。它没有出现在列表中，矛盾。因此该集合不可数。
-
-## Common Mistakes
-
-- 三种字符不代表只有三个字符串，字符数和无限序列数是不同层次。
-- 对角改变要仍落在字母表内，模三加一确保合法。
+**Derivation/proof.** Suppose all infinite ternary strings can be listed as $s_1,s_2,\ldots$. Define the $n$th digit of a new string by $d_n=(s_n(n)+1)\bmod3$. Every digit remains in $\{0,1,2\}$, while $d_n\ne s_n(n)$. The new string therefore differs from the $n$th listed string at position $n$, for every $n$. It is absent from the proposed complete list, a contradiction. Hence the set is uncountable.
 
 ## Connections
 

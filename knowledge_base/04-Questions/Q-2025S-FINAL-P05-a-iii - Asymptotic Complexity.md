@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (iii) $A=n^3+n^2(\log n)^4,\quad B=2^{\sqrt n}$
 
-## 中文解析
+## Official Answer
 
-用 $t=\sqrt n$ 改写，分母就成为二的 $t$ 次幂。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(a) iii) $O$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Only $O$.
 
-**答案。** 只有 $O$。
-
-**推导。** 先有 $(\log n)^4=o(n)$，所以 $A=\Theta(n^3)$。令 $t=\sqrt n$，则 $n=t^2$，$n^3=t^6$。于是 $A/B=\Theta(t^6/2^t)\to0$，因为指数函数快于任意固定次幂。故 $A=O(B)$，但不能用正的常数倍 $B$ 从下方约束 $A$，所以没有 $\Omega$，也没有 $\Theta$。
-
-## Common Mistakes
-
-- $2^{\sqrt n}$ 的根号位于指数内，不能读成 $2\sqrt n$。
-- 对数四次方乘 $n^2$ 最终低于 $n^3$，不能凭有限数值判断主导项。
+**Derivation/proof.** Since $(\log n)^4=o(n)$, $A=\Theta(n^3)$. Put $t=\sqrt n$, so $n=t^2$ and $n^3=t^6$. Then $A/B=\Theta(t^6/2^t)\to0$, because an exponential outgrows every fixed polynomial. Thus $A=O(B)$, but A has no positive constant lower bound in terms of B, excluding $\Omega$ and therefore $\Theta$.
 
 ## Connections
 

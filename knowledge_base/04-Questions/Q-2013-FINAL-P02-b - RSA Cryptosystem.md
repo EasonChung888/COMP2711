@@ -38,26 +38,35 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 Shared context: [[STEM-2013-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-私钥是 $e$ 对 $\varphi(n)$ 的乘法逆元。扩展欧几里得回代中的 $-77$ 可以化为同余的正代表元 $103$。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(b) The private key is given by
+$$d=e^{-1}\bmod(p-1)(q-1)=7^{-1}\bmod180.$$
+To find the multiplicative inverse of 7 in $Z_{180}$, we run the extended GCD algorithm:
+$$\begin{aligned}
+180&=7\times25+5,\text{ thus }\gcd(7,180)=\gcd(5,7),\\
+7&=5\times1+2,\text{ thus }\gcd(5,7)=\gcd(2,5),\\
+5&=2\times2+1,\text{ thus }\gcd(2,5)=\gcd(1,2)=1.\\
+2&=1\times2+0,\text{ thus }\gcd(1,2)=1.
+\end{aligned}$$
+Now working backward, we get:
+$$\begin{aligned}
+1&=1\times1+2\times0\\
+ &=5-2\times2\\
+ &=5-2\times(7-5\times1)=3\times5-2\times7\\
+ &=3\times(180-25\times7)-2\times7=3\times180-77\times7.
+\end{aligned}$$
+Thus $d=-77\bmod180=103$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $d=103$.
 
 **Derivation/proof.** Here $\varphi(n)=(11-1)(19-1)=180$. Euclid gives $180=25\cdot7+5$, $7=1\cdot5+2$, $5=2\cdot2+1$; back substitution gives $1=3\cdot180-77\cdot7$. Thus $7^{-1}\equiv-77\equiv103\pmod{180}$.
 
-### 中文解答
-
-**推导。** 先算 $\varphi(n)=(11-1)(19-1)=180$，要求 $7d\equiv1\pmod{180}$。欧几里得算法给 $180=25\cdot7+5$、$7=5+2$、$5=2\cdot2+1$。回代得 $1=5-2(7-5)=3(180-25\cdot7)-2\cdot7=3\cdot180-77\cdot7$。故 $d\equiv-77\equiv103\pmod{180}$，取 $d=103$；验算 $7\cdot103=721=4\cdot180+1$。
-
-## Common Mistakes
-
-- 在模 $209$ 下求 $7$ 的逆。
-- 将 $d$ 写成 $77$ 而忽略负号和取模。
+Check: $7\cdot103=721=4\cdot180+1$.
 
 ## Connections
 

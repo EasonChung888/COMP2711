@@ -40,26 +40,18 @@ Explain your answers.
 
 Shared context: [[STEM-2014-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-重复字母 a 出现两次，交换两个 a 不产生新排列，因此要除以 $2!$。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(a) This is the same as the number of ways to label 4 positions according to the following rules: Label 2 positions with 'a', 1 positions with 'j', and 1 position with 'v'. So, the answer is:
+$$\frac{4!}{2!1!1!}=12.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $4!/2!=12$.
 
 **Derivation/proof.** There are four positions with two indistinguishable a's. Divide the $4!$ permutations of labelled letters by the $2!$ swaps that do not change the word.
-
-### 中文解答
-
-**推导。** java 有四个字母，两个 a 相同，j 与 v 各一个。若先把四个字母都标成不同对象，有 $4!$ 个排列；交换两个 a 不改变单词，使每个实际排列被数 $2!$ 次。因此不同排列数是 $4!/2!=12$。
-
-## Common Mistakes
-
-- 把两个 a 当作不同而答 $24$。
-- 误除以所有四个字母的阶乘。
 
 ## Connections
 

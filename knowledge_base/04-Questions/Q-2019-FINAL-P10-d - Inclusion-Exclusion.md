@@ -38,26 +38,22 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-上界小于九等于最多八。用容斥扣掉至少一个变量达到九的解，并加回两个变量同时达到九的交集；三个都达到九不可能。再用八减各变量的变换得到总和四，能独立验证十五这一答案。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+We use $S_\phi$ to denote the set of solutions subject to condition $\phi$. By the inclusion-exclusion principle, we have
+$$\begin{aligned}\lvert S_{x_1\ge9\lor x_2\ge9\lor x_3\ge9}\rvert&=3\cdot\lvert S_{x_1\ge9}\rvert-3\cdot\lvert S_{x_1\ge9\land x_2\ge9}\rvert+\lvert S_{x_1\ge9\land x_2\ge9\land x_3\ge9}\rvert\\&=3\cdot78-3\cdot6+0=216.\end{aligned}$$
+So, $\lvert S_{x_1<9\land x_2<9\land x_3<9}\rvert=\lvert S\rvert-\lvert S_{x_1\ge9\lor x_2\ge9\lor x_3\ge9}\rvert=231-216=15$.
+Alternative solution: Write $y_1=8-x_1,y_2=8-x_2,y_3=8-x_3$. Then the equation becomes $24-y_1-y_2-y_3=20$, or $y_1+y_2+y_3=4$, which has $C(4+3-1,3-1)=C(6,2)=15$ solutions.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $15$.
 
 **Derivation/proof.** Let $A_i$ be solutions with $x_i\ge9$. The unrestricted count is 231; each $A_i$ has 78 solutions and each pair intersection has 6. The triple intersection is empty because $27>20$. Thus the desired count is $231-3\cdot78+3\cdot6=15$. Independently set $y_i=8-x_i\ge0$: then $y_1+y_2+y_3=4$, whose $\binom62=15$ solutions automatically have $y_i\le4\le8$, giving a bijection back.
 
-### 中文解答
-
-**推导。** 设坏事件 $A_i$ 为 $x_i\ge9$。总数是 $231$，每个 $A_i$ 有 $78$ 解，每个两两交集有 $6$ 解，三个同时至少九则总和至少 $27>20$，故三重交集为空。容斥后合法数为 $231-3\cdot78+3\cdot6=15$。独立核对可令 $y_i=8-x_i$，得到 $y_1+y_2+y_3=4$，有 $\binom62=15$ 解；每个 $y_i\le4\le8$ 自动保证反向 $x_i\ge0$，所以这个补量代换确为双射。
-
-## Common Mistakes
-
-- 把坏事件写成变量大于九而漏掉九。
-- 在三重交集已经为空时仍套有负数的组合数。
+In the complementary-variable check, each $y_i\le4\le8$, so the inverse $x_i=8-y_i$ is automatically nonnegative and the transformation is a bijection.
 
 ## Connections
 

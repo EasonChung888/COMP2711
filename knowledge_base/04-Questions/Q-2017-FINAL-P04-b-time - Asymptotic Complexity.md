@@ -37,26 +37,17 @@ What is the worst case running time of your algorithm in terms of $T$ for a sing
 
 Shared context: [[STEM-2017-FINAL-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-相隔两轮的余数至少缩小一半，因此从 T 降到一需要对数数量的轮次。斐波那契相邻项是慢例子，说明这一数量级不能一般改成常数。这里按试卷的每次整数运算常数成本来计。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=6|physical PDF page 6]]; [[knowledge_base/past_paper/2017-final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+It is the Euclidean algorithm to find gcd: start with $\gcd(T,d)$, and the recursive step is to change $\gcd(a,b)$ into $\gcd(b,a\bmod b)$. It was shown in class that this takes $O(\log T)$ steps for the worst case of the Fibonacci numbers.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6, 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $O(\log T)$ arithmetic operations under the exam's unit-cost model.
 
 **Derivation/proof.** For successive positive remainders $a>b>r$, write $a=qb+r$ with $q\ge1$ and $r<b$. Hence $a\ge b+r>2r$: after two remainder steps the value more than halves. Starting below or at $T$ gives at most $2\log_2T+O(1)$ steps. Consecutive Fibonacci numbers make the quotient repeatedly one and require logarithmically many steps, so this is the worst-case order.
-
-### 中文解答
-
-**推导。** 考虑连续的正余数 $a>b>r$，其中 $a=qb+r,q\ge1$。因为 $b>r$，有 $a\ge b+r>2r$，所以跨两次余数更新后规模至少减半。初始数不大于 $T$，故最多 $2\log_2T+O(1)$ 次更新，每次按算术操作模型计常数，得到 $O(\log T)$。连续斐波那契数使商反复为一并给出对数次数，说明这一最坏阶确实可达；此处不把大整数位运算冒充同一成本模型。
-
-## Common Mistakes
-
-- 把循环次数误写成 T。
-- 把位运算成本与题目采用的算术操作模型混淆。
 
 ## Connections
 

@@ -38,24 +38,34 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 A man is known to tell the truth with probability $\frac34$ (independent of the event outcome) and can only respond with “YES” or “NO”. He rolls a fair six-sided die and is then asked whether the die landed on 6. He responds, “YES”! What is the probability that the die actually landed on 6? Justify your answer.
 
-## 中文解析
+## Official Answer
 
-听到 YES 后需更新六点概率；说谎时非六点也会产生同样回答。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+There are two scenarios in which the man responds YES: either he is being truthful, or he is not. Note that his truthfulness is independent of the die's outcome.
 
-Provenance: published official answer, independently checked and expanded below.
+Let $S$ be the event of rolling a six, $P(S)=\frac16$.
 
-### 中文解答
+Let $\overline S$ be the event of not rolling a six, $P(\overline S)=\frac56$.
 
-**答案。** $3/8$。
+Let $T$ be the event that the man tells the truth, regardless of the outcome, $P(T)=\frac34$.
 
-**推导。** 令 $S$ 为掷出六点，$M$ 为回答 YES。题目明确真假回答与点数独立，故 $P(S)=1/6$、$P(M\mid S)=3/4$、$P(M\mid\overline S)=1/4$。两种 YES 来源互斥且穷尽，所以 $P(M)=\frac16\frac34+\frac56\frac14=8/24$。其中掷出六点并回答 YES 的概率为 $P(S\cap M)=3/24$。因此 $P(S\mid M)=(3/24)/(8/24)=3/8$，该值低于可信率四分之三，因为非六点的先验较高。
+Let $\overline T$ be the event that the man does not tell the truth, regardless of the outcome, $P(\overline T)=\frac14$.
 
-## Common Mistakes
+Let $M$ be the event that the man responds "YES" when asked if the die landed on 6. We want to find $P(S\mid M)$.
 
-- 四分之三是给定点数后说真话的概率，不是给定 YES 后点数为六的概率。
-- 他说谎且只许二选一，非六点时必答 YES，不能另设未知回答机制。
+First Solution: Using the Bayes' theorem:
+$$P(S\mid M)=\frac{P(M\mid S)P(S)}{P(M\mid S)P(S)+P(M\mid\overline S)P(\overline S)}=\frac{\frac34\cdot\frac16}{\frac34\cdot\frac16+\frac14\cdot\frac56}=\frac38.$$
+Second Solution:
+$$P(M)=P(S\cap T)+P(\overline S\cap\overline T)=\frac16\cdot\frac34+\frac56\cdot\frac14=\frac8{24}$$
+$$P(S\cap M)=\frac34\cdot\frac16=\frac3{24}$$
+$$P(S\mid M)=\frac{P(S\cap M)}{P(M)}=\frac{3/24}{8/24}=\frac38$$
+
+## Supplementary Explanation
+
+**Answer.** $3/8$.
+
+**Derivation/proof.** Let S mean a six and M mean YES. Truthfulness is explicitly independent of the outcome, so $P(S)=1/6$, $P(M\mid S)=3/4$, and $P(M\mid\overline S)=1/4$. The disjoint, exhaustive sources of YES give $P(M)=\frac16\frac34+\frac56\frac14=8/24$. Rolling a six and saying YES has probability $P(S\cap M)=3/24$. Thus $P(S\mid M)=(3/24)/(8/24)=3/8$. This is lower than the truthfulness rate because the prior probability of a non-six is much larger.
 
 ## Connections
 

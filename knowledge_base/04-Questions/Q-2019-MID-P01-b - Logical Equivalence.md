@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-英文 A if B 的条件是 if 后面的 B，方向应从 B 指向 A。这里不冷是条件，下雨是结果，因此是非 c 推出 r；原句没有说下雨必定不冷，不能颠倒箭头。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+$\neg c\to r$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\neg c\to r$.
 
 **Derivation/proof.** A sentence “A if B” means “if B, then A.” Taking A as rainy and B as not cold places $\neg c$ in the antecedent and $r$ in the consequent. It makes no claim about rain when it is cold.
 
-### 中文解答
-
-**推导。** “A if B” 由 B 推出 A。这里条件 B 为“不冷” $\neg c$，结果 A 为“下雨” $r$，所以命题为 $\neg c\to r$。它只排除不冷且不下雨的组合，并不声称下雨必须不冷。
-
-## Common Mistakes
-
-- 写成 r 推出非 c。
-- 加上没有给出的逆方向。
+The only falsifying case is not cold and not rainy: $\neg c$ is then true while $r$ is false. This confirms the direction of the implication $\neg c\to r$.
 
 ## Connections
 

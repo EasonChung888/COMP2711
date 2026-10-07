@@ -40,26 +40,22 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2014-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-‘至少三名 A’受 A 组只有四人的限制，只分成选三名或选四名两种情况。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(b) We partition this into two cases: choosing either 3 or 4, from group A and, respectively, 2 or 1 candidates from the combination of groups B and C. This is
+$$\binom43\binom52+\binom44\binom51=4\cdot10+1\cdot5=45.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom43\binom52+\binom44\binom51=45$.
 
 **Derivation/proof.** The possible Group-A counts are three or four. Select the A candidates and fill the remaining places from the five candidates not in A; the cases are disjoint.
 
-### 中文解答
+The cases contribute $40$ and $5$, giving $40+5=45$.
 
-**推导。** A 组只有四人，至少选三人只可能选三名或四名。选三名 A 后从其余五人选两名，共 $\binom43\binom52=40$；选四名 A 后从其余五人选一名，共 $\binom44\binom51=5$。两类互斥，所以总数 $40+5=45$。
-
-## Common Mistakes
-
-- 遗漏选四名 A 的情况。
-- 剩余席位仍从九人而非非 A 的五人中选。
+The three-A case alone contributes $\binom43\binom52=40$.
 
 ## Connections
 

@@ -36,26 +36,24 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-2.pdf#
 
 Let $A$ and $B$ be two events. It is known that $p(A)=0.7$, $p(B)=0.6$, $p(A\cap B)=0.5$, what is $p(B\mid A\cup\overline B)$?
 
-## 中文解析
+## Official Answer
 
-条件事件里 B 上方有补集横线，不能忽略。与 B 相交后只剩 A 与 B 的交集；分母可用补集求得，排除“属于 B 但不属于 A”的一成，剩九成，所以答案为九分之五。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+$$p(B\mid A\cup\overline B)=\frac{p(B\cap(A\cup\overline B))}{p(A\cup\overline B)}.$$
+Since $B\cap(A\cup\overline B)=(B\cap A)\cup(B\cap\overline B)=(B\cap A)\cup\varnothing=B\cap A$,
+$$p(B\cap(A\cup\overline B))=p(B\cap A)=0.5.$$
+$$p(A\cup\overline B)=1-p(\overline A\cap B)=1-(p(B)-p(A\cap B))=0.9.$$
+The final result is,
+$$p(B\mid A\cup\overline B)=\frac{p(B\cap(A\cup\overline B))}{p(A\cup\overline B)}=\frac59.$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $5/9$.
 
 **Derivation/proof.** The conditional numerator is $p(B\cap(A\cup\overline B))=p(A\cap B)=.5$, since $B\cap\overline B=\varnothing$. The conditioning event excludes exactly $\overline A\cap B$, of probability $.6-.5=.1$. Its probability is therefore .9. Dividing gives $.5/.9=5/9$. The bar over B is visible in the printed prompt and materially changes both event calculations.
 
-### 中文解答
-
-**推导。** 条件事件是 $A\cup\overline B$，必须保留 $B$ 上的补集横线。分子由分配律得 $B\cap(A\cup\overline B)=(A\cap B)\cup(B\cap\overline B)=A\cap B$，所以概率 $0.5$。分母可取补集：$\overline{A\cup\overline B}=\overline A\cap B$，概率为 $P(B)-P(A\cap B)=0.6-0.5=0.1$，故条件事件概率 $0.9$。于是 $P(B\mid A\cup\overline B)=0.5/0.9=5/9$。
-
-## Common Mistakes
-
-- 丢掉 B 上的横线而算成普通并集。
-- 把条件概率分母误用 p(A)。
+The probability of the excluded event is $0.6-0.5=0.1$, leaving conditioning probability $0.9$. The conditional numerator is $0.5$, hence the quotient is $0.5/0.9=5/9$.
 
 ## Connections
 

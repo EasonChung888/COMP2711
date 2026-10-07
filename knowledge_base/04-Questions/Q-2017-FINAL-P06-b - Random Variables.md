@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-一行同面有全正和全反两种情况，因此成功概率是一百二十八分之一。不同的行由不同硬币组成而相互独立。恰好一行成功时，要先选择是哪一行，再让其余七行失败。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+For any given row, the chance it is homogeneous is $(1/2)^8\cdot2=(1/2)^7$ (all heads or all tails). The chance that it is not homogeneous is $(1-(1/2)^7)$. Overall, seven rows must not be homogeneous and one row must be homogeneous, so $p(X=1)=8(1/2)^7(1-(1/2)^7)^7$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $8(1/128)(127/128)^7$.
 
 **Derivation/proof.** A given row is homogeneous in two of its $2^8$ equally likely configurations, so its probability is $q=2/2^8=1/128$. Distinct rows use disjoint independent coins. Choose which of the eight rows succeeds, multiply by $q$ for it and $(1-q)^7$ for the failures. The eight choices are disjoint, giving $8q(1-q)^7$.
 
-### 中文解答
+Randomly arranging the coins without observing their faces preserves the independent fair distribution at all sixty-four positions.
 
-**推导。** 由题设独立公平掷币，一行全正面或全反面为互斥事件，故齐同行概率 $q=2(1/2)^8=1/128$。不同的行使用不相交的独立币集合，行指标相互独立。恰好一行成功有八种互斥位置，每种概率 $q(1-q)^7$，所以 $P(X=1)=8(1/128)(127/128)^7$。随机且不看结果的摆放不改变六十四个位置的独立公平分布。
-
-## Common Mistakes
-
-- 只算全正而漏掉全反。
-- 没有乘选择成功行的八种方式。
+A row is homogeneous with probability $q=2(1/2)^8=1/128$, since either all eight coins are heads or all are tails. The independent eight rows then give $P(X=1)=8(1/128)(127/128)^7$ by selecting its unique homogeneous row.
 
 ## Connections
 

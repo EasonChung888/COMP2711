@@ -36,30 +36,29 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-1.pdf#
 
 Prove that for any $n\in\mathbb N$, there exists an $n$-digit number $A_n$ such that all its digits are either 1 or 2, and $2^n\mid A_n$. [Hint: Use induction.]
 
-## 中文解析
+## Official Answer
 
-归纳构造是在左边添一位，不是把原数乘一或二。原数除以二的 k 次方后的商只有奇偶两种情况，按商的奇偶选择前导数字一或二，就让新的商变成偶数，多获得一个因子二。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=1|physical PDF page 1]]; [[knowledge_base/past_paper/2020-final-part-1.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+We use induction on $n$.
+Base case: $n=1$. We can set $A_1=2$, $2^1\mid A_1$.
+Induction hypothesis: Assume it is correct for $n=k$, which means that there exists $A_k$ such that $2^k\mid A_k$.
+Now consider $n=k+1$: As $2^k\mid A_k$, there are two possibilities for the remainder of $A_k$ dividing $2^{k+1}$. $A_k=2^k\cdot l$, where $l$ is even, which means $A_k\equiv0\pmod{2^{k+1}}$, or $A_k=2^k\cdot(1+l')$, where $l'$ is even, which means $A_k\equiv2^k\pmod{2^{k+1}}$.
+1. $A_k\equiv0\pmod{2^{k+1}}$. In this scenario we add the digit $2$ to the left side of $A_k$. So $A_{k+1}=\overline{2A_k}$. We show that $2^{k+1}\mid A_{k+1}$.
+$A_{k+1}=2\cdot10^k+A_k=2\cdot2^k\cdot5^k+A_k=2^{k+1}\cdot5^k+A_k$. And we know that $2^{k+1}\cdot5^k\equiv0\pmod{2^{k+1}}$ and $A_k\equiv0\pmod{2^{k+1}}$. So $A_{k+1}\equiv0\pmod{2^{k+1}}$.
+2. $A_k\equiv2^k\pmod{2^{k+1}}$. In this scenario we add the digit $1$ to the left side of $A_k$. So $A_{k+1}=\overline{1A_k}$. We show that $2^{k+1}\mid A_{k+1}$.
+$A_{k+1}=1\cdot10^k+A_k=2^k\cdot5^k+A_k$. And we know that $A_k\equiv2^k\pmod{2^{k+1}}$. So $A_{k+1}\equiv2^k+2^k\cdot5^k\equiv2^k\cdot(1+5^k)\pmod{2^{k+1}}$.
+$1+5^k$ is an even number so $A_{k+1}\equiv0\pmod{2^{k+1}}$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Such a number exists for every positive digit length n.
 
 **Derivation/proof.** Base n=1: take A1=2. Suppose Ak has k digits in {1,2} and $A_k=2^k t$. Choose a leading digit d∈{1,2} with d+t even: d=2 when t is even and d=1 when t is odd. Set $A_{k+1}=d10^k+A_k=2^k(d5^k+t)$. Because $5^k$ is odd, the parenthesis is even by the choice of d. Hence $2^{k+1}\mid A_{k+1}$. Adding a nonzero leading digit creates exactly k+1 digits without changing the allowed suffix digits, completing induction.
 
-### 中文解答
+The source notation $\overline{2A_k}$ and $\overline{1A_k}$ denotes digit concatenation, not multiplication.
 
-**推导。** 对正的位数 $n$ 归纳。基例 $n=1$ 取 $A_1=2$，只有允许的数字且 $2\mid2$。假设已有 $k$ 位的 $A_k=2^kt$，各位仅为一或二。若 $t$ 偶，取新首位 $d=2$；若 $t$ 奇，取 $d=1$，两种情况都使 $d+t$ 为偶。定义
-
-$$A_{k+1}=d10^k+A_k=2^k(d5^k+t).$$
-
-因为 $5^k$ 为奇数，括号与 $d+t$ 同奇偶，所以为偶，得到 $2^{k+1}\mid A_{k+1}$。新首位非零且属于一、二，原后缀保持不变，故恰有 $k+1$ 位且每位允许。归纳完成。印本带横线的 $\overline{2A_k},\overline{1A_k}$ 表示接上首位，不是普通乘法。
-
-## Common Mistakes
-
-- 把前缀数字与数值乘法混淆。
-- 只证明整除而漏掉新数恰有 n 位且数字合法。
+The initial value is $A_1=2$. If $A_k=2^kt$ with integer $t$, the recurrence supplies one more factor of two in the next term; this establishes the divisibility induction.
 
 ## Connections
 

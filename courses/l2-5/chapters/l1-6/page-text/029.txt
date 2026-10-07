@@ -1,0 +1,17 @@
+Combinatorial Proof and Bijection Principle
+Definition
+A 
+combinatorial proof
+ of an identity is a proof that uses counting arguments to prove that both sides of the identity count the same objects but in different ways.
+Bijection principle (type of combinatorial proof)
+Two sets 
+ and 
+ have the same size, i.e., 
+, if and only if there is a bijection function 
+  from 
+ to
+ 
+ 
+(i.e., one-to-one and onto)
+ 
+29

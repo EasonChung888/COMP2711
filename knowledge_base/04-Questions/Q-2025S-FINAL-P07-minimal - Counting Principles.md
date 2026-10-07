@@ -43,24 +43,17 @@ Prerequisite context (editorial): [[Q-2025S-FINAL-P07-N - Counting Principles]].
 
 while $n-1$ socks are not enough.
 
-## 中文解析
+## Official Answer
 
-必要性只需构造一个库存允许、总数二十二但不足十对的分配。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+On the other hand, 22 will not do: if the numbers of red, green, blue, and black socks are $5,5,5,7$, then four are unpaired, leaving 9 pairs. Thus 23 is the minimum.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Twenty-two socks do not guarantee ten pairs.
 
-**答案。** 22 只不能保证 10 对。
-
-**推导。** 导入 $n=23$，所以检查 $n-1=22$。选择五只红袜、五只绿袜、五只蓝袜和七只黑袜，总数 $5+5+5+7=22$，每色都低于给定库存。各色最多形成 $\lfloor5/2\rfloor=2$、二、二以及 $\lfloor7/2\rfloor=3$ 对，总共九对；四只孤袜颜色不同，不能再组成同色对。因此存在合法的二十二只选择未达十对，这便证明二十二不充分。
-
-## Common Mistakes
-
-- 反例必须遵守各色库存，不能虚构不存在的颜色或过量袜子。
-- 四只剩余袜子互不同色，不能随意把它们再凑成两对。
+**Derivation/proof.** With $n=23$, test $n-1=22$. Choose five red, five green, five blue and seven black socks: $5+5+5+7=22$, within every inventory bound. The maximum disjoint pairs by color are $\lfloor5/2\rfloor=2$, two, two, and $\lfloor7/2\rfloor=3$, giving nine pairs in total. The remaining four socks all have different colors, so no further pair is possible. This valid counterexample disproves sufficiency of twenty-two.
 
 ## Connections
 

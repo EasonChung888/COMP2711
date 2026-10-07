@@ -1,0 +1,29 @@
+Combinations with Repetition 
+(bars and stars)
+The 
+bars and stars
+ problem is the same as 
+selecting 
+r
+ out of 
+n
+ elements of a set, provided that you can select the same element multiple times
+. 
+Theorem
+The number of 
+-combinations from a set with 
+ elements when repetition of elements is allowed is
+ = 
+Proof
+: Each such 
+-combination can be represented by a list of 
+ 
+bars and 
+ stars. The bars mark the 
+ cells, each corresponding to a distinct element. The stars between two bars correspond to the repetitions of an element. 
+The list has 
+ positions, and we choose 
+ of them to place the stars. Or equivalently, we choose 
+ positions to place the bars.
+ 
+43

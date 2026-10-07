@@ -39,26 +39,24 @@ There is exactly one $i$ such that $A[i]=i$.
 
 Shared context: [[STEM-2020-FINAL2-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-恰有一个固定点，先选这个点有十种。剩下九位必须全部错排，不能随意排列，否则会产生额外固定点。每个符合条件的排列唯一确定那个固定点，因此乘法计数不重复。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=4|physical PDF page 4]]; [[knowledge_base/past_paper/2020-final-part-2.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+$D_n$ is the number of derangements of a set with $n$ elements,
+$$D_n=n!\left[1-\frac1{1!}+\frac1{2!}-\cdots+(-1)^n\frac1{n!}\right].$$
+Exactly $1$ digit appears in its index position means that, we randomly select $1$ digit and put it in its index position and dearrange the remaining $9$ digits. So the answer is,
+$$\binom{10}1D_9=10\cdot D_9.$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $10D_9$.
 
 **Derivation/proof.** Choose the unique fixed index in 10 ways and put that digit there. The remaining nine digits must avoid their own nine positions, otherwise there would be more than one fixed point. They form a derangement counted by D9. Each permutation has one unique chosen fixed point, so the product 10D9 has no duplication.
 
-### 中文解答
+The final expression uses the explicitly allowed derangement number and contains no summation sign.
 
-**推导。** 先选唯一固定点的位置 $i$，有十种选择，并放入同值数字 $A[i]=i$。剩余九个数字与九个对应位置必须全部错位，否则会产生第二固定点，所以有 $D_9$ 种。每个满足题意的排列决定唯一的固定点，故乘法计数无重复，答案 $10D_9$。题目允许用错排数作最终表达，不需留下求和号。
-
-## Common Mistakes
-
-- 用 9! 代替 D9。
-- 忘记选择唯一固定点的位置。
+The condition $A[i]=i$ is a fixed point. After choosing its unique index, the remaining positions must be deranged to exclude a second fixed point, which explains the factor $D_9$.
 
 ## Connections
 

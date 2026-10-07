@@ -1,0 +1,38 @@
+Exercise
+ on Coin Flipping
+How many ways are there to repeatedly flip a coin 
+until the number of tails is more than the number of heads
+ or 
+the coin is flipped for five times
+?  
+Example 1
+: The first flip is head, the second flip is tail and the third flip is tail. No fourth flip. 
+Example 2
+: All the five flips are head. 
+Solution: 
+There are 2
+5
+ =32 bit-strings of length 5. Let 1 denote tails. 
+If the first flip is a tail you stop the experiment – i.e., you exclude 2
+4
+ bit-strings that start with 
+1
+.
+The only other outcome where you stop the experiment before 5 flips is when the first 3 flips are HTT (i.e., 
+011
+). In this case, you exclude 01100, 01101, 01110, 01111. Thus, the total number of ways is: 2
+5
+-2
+4
+-4=12. 
+Add the two cases of early termination (1 and 011), the total is 12+2=14 ways.
+Specifically, the possible strings are: 
+1
+, 
+011
+, 00000, 00001, 00010, 00011, 00100, 00101, 00110, 
+00111
+, 01000, 01001, 01010, 
+01011
+.  
+33

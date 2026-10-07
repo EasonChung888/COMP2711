@@ -41,26 +41,19 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先选六种颜色，再从每种颜色对应的一对手套中选左手或右手。六次二选一互相独立，故在颜色组合数上乘 $2^6$。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+(c) These 6 gloves have different colors means these gloves are from different pairs. Firstly you pick 6 pairs of gloves out of 12 pairs. There are $\binom{12}{6}$ possibilities. Then you choose only one glove from each pair. So there are $\binom{12}{6}\cdot2^6$ cases in total.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{12}{6}2^6=59136$.
 
 **Derivation/proof.** A valid selection identifies a unique six-color subset, with $\binom{12}{6}$ choices. For each selected color exactly one of its left/right gloves is taken, giving $2^6$ selections per subset. Multiplication yields the result.
 
-### 中文解答
-
-**推导。** 六只颜色各异，先从十二种颜色中选六种，有 $\binom{12}{6}$ 种。每色恰拿一只，而该色有左右手两只可选，六色各自二选一，共 $2^6$。总数为 $\binom{12}{6}2^6=59136$。顺序不计入取出的集合，因此不再乘六的阶乘。
-
-## Common Mistakes
-
-- 只计颜色而漏掉每种颜色的左右手区别。
-- 乘 $6!$，把拿到的无序手套集合错误当作抽取顺序。
+No ordering of the selected gloves is counted, so no factor of $6!$ belongs in the answer.
 
 ## Connections
 

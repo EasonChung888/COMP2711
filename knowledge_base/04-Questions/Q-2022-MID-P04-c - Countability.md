@@ -37,26 +37,19 @@ Uncountable
 
 Shared context: [[STEM-2022-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-减去的区间不包含二，所以二应留在差集内。剩下从二到三的完整区间，其内部与 (0,1) 同基数，仍不可数；不能仅用“无限”作为不可数的证明。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (c) $A=[1,3],B=[1,2)\implies A-B=[2,3]$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $A=[1,3],B=[1,2)$, so $A-B=[2,3]$.
 
 **Derivation/proof.** Both A and B contain a nondegenerate real interval, so both are uncountable. Removing [1,2) deletes 1 and all points below2 but leaves2 itself, together with all points through 3. The remaining interval [2,3] contains an affine copy of (0,1), hence is uncountable.
 
-### 中文解答
-
-**推导。** 取 $A=[1,3]$、$B=[1,2)$，两者都包含非退化实区间，所以都不可数。删掉 $[1,2)$ 后，二本身并没有被删，三也保留，故 $A-B=[2,3]$。该差集包含 $(2,3)$，与 $(0,1)$ 通过平移双射，因而不可数，绝不是仅仅证明“无限”就结束。
-
-## Common Mistakes
-
-- 把差集左端写成开区间。
-- 把不可数与无限混为一谈。
+The open interval $(2,3)$ is in bijection with $(0,1)$ by translation.
 
 ## Connections
 

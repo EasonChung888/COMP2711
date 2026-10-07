@@ -42,24 +42,22 @@ Editorial atomic split: expectation only. The printed 2 points cover expectation
 
 (i) [2 points] What are $E(X_1)$?
 
-## 中文解析
+## Official Answer
 
-此项把同一句中可独立求出的期望与方差分开；这里先求期望。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=22|physical PDF page 22]].
 
-## Detailed Solution
+> (a) (i) For a fair die, each outcome $X_1$ is uniformly distributed over $\{1,2,3,4,5,6\}$. The expected value is:
+> $$E(X_1)=\frac{1+2+3+4+5+6}{6}=\frac{21}{6}=3.5.$$
+> The variance is:
+> $$\operatorname{var}(X_1)=E(X_1^2)-[E(X_1)]^2$$
+> where $E(X_1^2)=\frac{1^2+2^2+3^2+4^2+5^2+6^2}{6}=\frac{91}{6}$, so:
+> $$\operatorname{var}(X_1)=\frac{91}{6}-(3.5)^2=\frac{91}{6}-\frac{12.25}{1}=\frac{91}{6}-\frac{73.5}{6}=\frac{17.5}{6}\approx2.9167.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $E(X_1)=7/2$.
 
-**答案。** 本原子项求 $E(X_1)=7/2$。
-
-**推导。** 由公平骰子的定义，$X_1$ 的每个取值 $j=1,\ldots,6$ 的概率都是 $1/6$。按离散期望定义，$E(X_1)=\sum_{j=1}^6j/6=(1+2+3+4+5+6)/6=21/6=7/2$。也可以配对一与六、二与五、三与四，每对和七，因此平均数为三点五。一个骰子的均值不需要用到不同投掷之间的独立性。
-
-## Common Mistakes
-
-- 期望可以不是实际可能掷出的整数，三点五并不表示骰子有这个面。
-- 六个面概率都为六分之一，不能再用一百次投掷总数作分母。
+**Derivation/proof.** Each value j=1,...,6 has probability 1/6. The discrete expectation is $E(X_1)=\sum_{j=1}^6j/6=(1+2+3+4+5+6)/6=21/6=7/2$. Alternatively pair one with six, two with five, and three with four: each pair sums to seven, giving mean 3.5. Independence of different rolls is not needed for this single-die mean.
 
 ## Connections
 

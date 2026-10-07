@@ -1,0 +1,7 @@
+Coefficient  of
+ = 
+number of length-3 lists having y in 
+2
+ places.
+4
+Binomial Expression Expansion

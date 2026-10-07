@@ -42,24 +42,17 @@ Hint: Any six different digits give you a unique number with strictly decreasing
 
 Shared printed context: ![[STEM-2024F-MID-P06 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-严格递减要求六位数字互不相同。从十个数字零至九选六个，有 $\binom{10}6$ 种；选定后按降序排列得到唯一数字。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> Answer: (a) By choosing any 6 digits from $\{0,1,2,\cdots,9\}$ we can form a unique 6 digit number that its digits is strictly decreasing from left to right. so the answer is $\binom{10}6$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{10}6=210$.
 
-**答案。** $\binom{10}6=210$。
-
-**推导。** 严格递减要求六位数字互不相同。从十个数字零至九选六个，有 $\binom{10}6$ 种；选定后按降序排列得到唯一数字。最大的一位在最左；六个不同数字不可能全部为零，所以首位一定非零。每个严格递减六位数反过来也确定唯一六元数字集合，因此总数为 $\binom{10}6=210$。
-
-## Common Mistakes
-
-- 零可以出现在严格降序数字的末尾，因此候选数字共有十种。
-- 选六个互异数字后顺序唯一，不应再乘六的阶乘。
+**Derivation/proof.** Strict decrease requires six distinct digits. Choose them from zero through nine in $\binom{10}6$ ways, then sort them in decreasing order. The largest digit is first; six distinct digits cannot all be zero, so the first digit is nonzero. Conversely, every strictly decreasing six-digit number determines one six-element digit set. Hence the count is $\binom{10}6=210$.
 
 ## Connections
 

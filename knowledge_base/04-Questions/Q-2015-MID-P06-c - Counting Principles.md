@@ -41,26 +41,17 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-补集分成零个数字和恰好一个数字，两类互斥。只有后七位能放那个唯一数字，数字有十种，其余七位均为字母，所以恰好一位数字的数目为 $7\cdot10\cdot26^7$。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+(c) $26\times36^7-26^8-7\times10\times26^7$. The are $26^8$ passwords without digits. The number of passwords with exactly 1 digit is: $7\times10\times26^7$, because there are 7 possible positions for the digit, the digit has 10 possibilities, and the other 7 characters must be letters.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $26\cdot36^7-26^8-7\cdot10\cdot26^7$.
 
 **Derivation/proof.** Start from $26\cdot36^7$. Subtract the $26^8$ all-letter strings. For exactly one digit, choose its position among positions 2–8 (7 ways), its value (10 ways), and all seven letters ($26^7$ ways). These two excluded cases are disjoint and exhaust passwords with fewer than two digits.
-
-### 中文解答
-
-**推导。** 从首字母密码全集 $26\cdot36^7$ 减去零数字和恰一数字，两类互斥。零数字有 $26^8$。恰一数字的位置只能在后七位，有七种；该位十种数字，其余七位各二十六种字母，计 $7\cdot10\cdot26^7$。所以答案 $26\cdot36^7-26^8-7\cdot10\cdot26^7$。
-
-## Common Mistakes
-
-- 给唯一数字八个可选位置，允许其占据必须为字母的首位。
-- 将“至少两个”误当作“恰好两个”。
 
 ## Connections
 

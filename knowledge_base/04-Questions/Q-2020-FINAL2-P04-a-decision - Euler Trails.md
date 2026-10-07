@@ -38,26 +38,19 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-2.pdf#
 
 Shared context: [[STEM-2020-FINAL2-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-图连通，但四个边中点 E、F、G、H 的度数都是三，为奇数。欧拉回路要求所有顶点度数为偶数，因此已被否定；中心度数四和角点度数二都不构成障碍。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+It is not an Euler circuit, since $E,H,G,F$ have odd degree.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No.
 
 **Derivation/proof.** The graph is connected. Its four corners A,B,C,D have degree 2, its center I has degree 4, and E,F,G,H each have degree 3. A connected undirected graph has an Euler cycle exactly when every vertex has even degree. The four odd degrees therefore rule out an Euler cycle.
 
-### 中文解答
-
-**推导。** 图一为连通九点格图。四角 $A,B,C,D$ 各度数 $2$，中心 $I$ 度数 $4$，四个边中点 $E,F,G,H$ 各度数 $3$。无向连通图有欧拉回路当且仅当所有顶点偶度；这里四个奇度点违反必要条件，所以没有欧拉回路。
-
-## Common Mistakes
-
-- 把中心交点 I 当成无顶点的线交叉。
-- 认为连通就足够有欧拉回路。
+There are four odd-degree vertices, namely the four degree-three midpoints. The Euler-cycle criterion requires no odd-degree vertices, so the graph fails it despite being connected.
 
 ## Connections
 

@@ -1,3 +1,4 @@
+import {checkWorkedProof, translatedCheckpoints, workedSolution} from './answer-proof-helpers.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync,statSync,existsSync} from 'node:fs';
@@ -46,29 +47,25 @@ test('Task 9 every source label, one-based page, explicit-only mark, prompt and 
   if(!r.note_path)continue;const t=read(r.id),p=prop(r.id);
   assert.deepEqual(validateQuestionProperties(p),[],r.id);assert.equal(p.source_page,f.page);assert.equal(p.question_number,f.label);assert.equal(p.marks??null,f.marks);assert.deepEqual(p.solution_page??null,f.solution_page);assert.equal(p.answer_source,f.answer_source);assert.equal(r.answer_source,p.answer_source);assert.deepEqual(p.subtopics,f.subtopics);
   assert.equal(hash(section(t,'Question')),f.prompt_sha256,r.id+' prompt');assert.ok(section(t,'Source').includes(`![[${r.source_pdf}#page=${f.page}]]`));
-  if(p.answer_source==='derived'){assert.equal(p.solution_page,undefined);assert.match(section(t,'Detailed Solution'),/independently derived/);assert.ok(r.source_correction.length>100);assert.ok(section(t,'Source').includes(r.source_correction));}
+  if(p.answer_source==='derived'){assert.equal(p.solution_page,undefined);assert.equal(p.answer_source,'derived');assert.ok(r.source_correction.length>100);assert.ok(section(t,'Source').includes(r.source_correction));}
   else {assert.ok(p.solution_page.length);for(const page of p.solution_page)assert.ok(section(t,'Source').includes(`![[${r.source_pdf}#page=${page}]]`));}
  }
 });
 
-function verifyProof(id,w){
- assert.match(w,/### 中文解答/);assert.match(w,/\*\*答案。\*\*/);const derivation=w.split('**推导。**')[1];assert.ok(derivation,id);
- assert.ok((derivation.match(/[\u3400-\u9fff]/g)||[]).length>=40,id+' Chinese worked proof');
- for(const token of fixture.questions[id].checkpoints)assert.ok(derivation.includes(token),id+' lacks '+token);
-}
-test('Task 9 all admitted complete Chinese derivations, specific teaching warnings and controlled metadata',()=>{
- const works=new Set(),mistakes=new Set();
- for(const r of admitted){const t=read(r.id),p=prop(r.id),w=section(t,'Detailed Solution'),m=section(t,'Common Mistakes');
-  assert.deepEqual([...t.matchAll(/^## (.+)$/gm)].map(m=>m[1]),['Source','Question','中文解析','Detailed Solution','Common Mistakes','Connections']);verifyProof(r.id,w);
-  assert.ok(!works.has(w));works.add(w);assert.ok(!mistakes.has(m));mistakes.add(m);assert.ok((m.match(/[\u3400-\u9fff]/g)||[]).length>=25,r.id);assert.equal((m.match(/^- /gm)||[]).length,2);
+function verifyProof(id,w){checkWorkedProof(w,translatedCheckpoints(id,fixture.questions[id].checkpoints),id);}
+test('Task 9 all admitted complete retained English derivations and controlled metadata',()=>{
+ const works=new Set();
+ for(const r of admitted){const t=read(r.id),p=prop(r.id),w=section(t,'Supplementary Explanation');
+  assert.deepEqual([...t.matchAll(/^## (.+)$/gm)].map(m=>m[1]),['Source','Question','Official Answer','Supplementary Explanation','Connections']);verifyProof(r.id,w);
+  assert.ok(!works.has(w));works.add(w);
   assert.ok(!controls.test(t),r.id);assert.doesNotMatch(t,/\bTODO\b|\bTBD\b|placeholder|\(cid:\d+\)/);assert.equal(p.syllabus_status,'in-scope');assert.equal(p.syllabus_version,'COMP2711-2026-27-fall');assert.equal(p.verification_status,'verified');assert.ok(p.difficulty_basis.length>=45,r.id);
   for(const e of r.syllabus_evidence)assert.ok(r.verification.scope.includes(e));assert.match(r.verification.solution,/Independent check:/);assert.ok(r.verification.transcription.includes(String(r.source_page)));
  }
 });
 test('Task 9 negative controls reject an approach-only paragraph and every omitted proof checkpoint',()=>{
- for(const r of admitted){const w=section(read(r.id),'Detailed Solution');
-  assert.throws(()=>verifyProof(r.id,'### 中文解答\n\n**答案。** 待求结果。\n\n**推导。** 应先分析题目条件，选择适当定义和公式，再按照顺序逐步计算或证明，最后检查边界和结论是否符合题意。'),undefined,r.id);
-  for(const token of fixture.questions[r.id].checkpoints)assert.throws(()=>verifyProof(r.id,w.replaceAll(token,'[removed]')),undefined,r.id+' '+token);
+ for(const r of admitted){const w=section(read(r.id),'Supplementary Explanation');
+  assert.throws(()=>verifyProof(r.id,'**Answer.** Pending.\n\n**Derivation/proof.** Analyze the assumptions and then choose definitions and formulas to verify the result.'),undefined,r.id);
+  for(const token of translatedCheckpoints(r.id,fixture.questions[r.id].checkpoints))assert.throws(()=>verifyProof(r.id,w.replaceAll(token,'[removed]')),undefined,r.id+' '+token);
  }
 });
 
@@ -194,7 +191,7 @@ function checkFermatMapping(id,p,r,body,f){
 }
 test('Task 9 fix 1 both Fermat solutions retain the essential GCDs and Congruences mapping',()=>{
  for(const part of ['a','b']){const id='Q-2025S-MID-P06-'+part,p=prop(id),r=byId.get(id),t=read(id),f=fixture.questions[id];
-  checkFermatMapping(id,p,r,t,f);assert.equal(p.answer_source,'official');assert.equal(r.status,'in-scope');assert.match(section(t,'Detailed Solution'),/Fermat|费马小定理/);
+  checkFermatMapping(id,p,r,t,f);assert.equal(p.answer_source,'official');assert.equal(r.status,'in-scope');assert.match(section(t,'Supplementary Explanation'),/Fermat|费马小定理/);
   assert.throws(()=>checkFermatMapping(id,{...p,subtopics:p.subtopics.slice(0,1)},r,t,f));
   assert.throws(()=>checkFermatMapping(id,p,{...r,syllabus_evidence:r.syllabus_evidence.slice(0,1)},t,f));
   assert.throws(()=>checkFermatMapping(id,p,r,t.replaceAll('[[Subtopic - GCDs and Congruences - 最大公因数与同余]]','[removed]'),f));

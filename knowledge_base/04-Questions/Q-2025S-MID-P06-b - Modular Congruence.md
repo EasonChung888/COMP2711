@@ -37,24 +37,21 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 
 (b) Calculate $47^{37^{27}}\bmod11$?
 
-## 中文解析
+## Official Answer
 
-先把底数模十一化简，再计算指数模十；两个阶段的模数不可混用。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+(b) $47\equiv3\pmod{11}$. We also know that $3^{10}\equiv1\pmod{11}$ (based on little Fermat theorem).
 
-Provenance: published official answer, independently checked and expanded below.
+We need to calculate $37^{27}\pmod{10}$.
+$$37^{27}\equiv7^{27}\equiv7\cdot7^{26}\equiv7\cdot49^{13}\equiv7\cdot9^{13}\equiv7\cdot9\equiv63\equiv3\pmod{10}$$
+$$3^{37^{27}}\equiv3^{10k+3}\equiv27\cdot(3^{10})^k\equiv27\equiv5\pmod{11}$$
 
-### 中文解答
+## Supplementary Explanation
 
-**答案。** $5$。
+**Answer.** $5$.
 
-**推导。** 十一是素数，三与十一互素，故可用费马小定理；这一步把外层幂的指数周期转成十，再单独计算内层幂的余数。由于 $47\equiv3\pmod{11}$ 且 $3^{10}\equiv1\pmod{11}$，只需知道 $37^{27}\bmod10$。模十下 $37\equiv7$，$7^2\equiv9$、$7^4\equiv1$，所以 $7^{27}=(7^4)^6\cdot7^3\equiv343\equiv3\pmod{10}$。令 $37^{27}=10k+3$，则 $47^{37^{27}}\equiv3^{10k+3}\equiv(3^{10})^k3^3\equiv27\equiv5\pmod{11}$。中间余数三对应指数，最终余数五对应整座幂。
-
-## Common Mistakes
-
-- 指数是 $37^{27}$，不能误排版为 $37\cdot27$ 或 $473727$。
-- 模十不能直接对底数七套素数版 Fermat，应计算四步幂周期。
+**Derivation/proof.** The prime 11 is coprime to 3, so Fermat's Little Theorem gives $3^{10}\equiv1\pmod{11}$. Since $47\equiv3\pmod{11}$, compute $37^{27}\bmod10$ separately. Modulo ten, $37\equiv7$, $7^2\equiv9$ and $7^4\equiv1$, hence $7^{27}=(7^4)^6\cdot7^3\equiv343\equiv3\pmod{10}$. Write $37^{27}=10k+3$. Therefore $47^{37^{27}}\equiv3^{10k+3}\equiv(3^{10})^k3^3\equiv27\equiv5\pmod{11}$. The intermediate residue three belongs to the exponent; the final residue five belongs to the entire power.
 
 ## Connections
 

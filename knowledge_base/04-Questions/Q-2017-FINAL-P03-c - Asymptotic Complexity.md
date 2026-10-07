@@ -41,26 +41,19 @@ while $n>1$
 
 Shared context: [[STEM-2017-FINAL-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每轮不是减四，而是除四取整，因此参数以几何速度缩小。经过 k 轮大约剩 n 除以四的 k 次方，让它降到一附近需要对数轮数；每轮恰好打印一次。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+$\log n$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $O(\log n)$ (in fact $\Theta(\log n)$).
 
 **Derivation/proof.** After $k$ iterations the value is $\lfloor n/4^k\rfloor$. The loop ends when this is at most one, which occurs after a number of iterations within a constant of $\log_4 n$. Every iteration prints once, so the count is logarithmic; changing the logarithm base only changes a constant factor.
 
-### 中文解答
-
-**推导。** 把初值记为 $n_0$。执行 $k$ 次后，整数除法的嵌套取整给出当前值 $\lfloor n_0/4^k\rfloor$，每次恰打印一次。停止条件是该值不超过 $1$，等价于 $n_0/4^k<2$；因此最小 $k$ 与 $\log_4 n_0$ 至多差常数。打印次数为 $\Theta(\log n_0)$，选择 $O(\log n)$，而不是把除四误当成减四得到线性次数。
-
-## Common Mistakes
-
-- 把除四误当减四，得出线性复杂度。
-- 把对数底四当作不同的渐近类别。
+Writing the starting value as $n_0$, the stopping condition $\lfloor n_0/4^k\rfloor\le1$ is equivalent to $n_0/4^k<2$.
 
 ## Connections
 

@@ -37,26 +37,21 @@ What is the expectation of $X$?
 
 Shared context: [[STEM-2022-FINAL2-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-简单无向图有 n 选二个潜在边，每条边的指示变量期望为 p，全部相加就是总边数期望。独立性可进一步说明二项分布，但计算期望本身只用线性性。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) $X_e$ is the indicator random variable that indicates the event of a pair of vertices $e=(u,v)$ having an edge. $X_e$ is a Bernoulli trial, thus $E(X_e)=p$, $V(X_e)=p(1-p)$.
+>
+> There are $\binom n2$ pairs of vertices in total. Thus $E(X)=\binom n2p$ and $V(X)=\binom n2p(1-p)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $E[X]=\binom n2p$.
 
 **Derivation/proof.** Index the unordered pairs by e and define I_e=1 for an existing edge and 0 otherwise. The edge count is X=∑I_e. Each I_e has mean p. Summing by linearity over N=n(n−1)/2 pairs gives E[X]=Np. This matches the binomial mean for X distributed as Binomial(N,p); linearity alone already suffices for this calculation.
 
-### 中文解答
-
-**推导。** 简单无向图的潜在边是无序不同顶点对，共 $N=\binom n2$ 个。为每对 $e$ 定义存在指示变量 $I_e$，则总边数 $X=\sum_e I_e$，而 $E[I_e]=1\cdot p+0\cdot(1-p)=p$。由期望线性性，$E[X]=\sum_e p=Np=\binom n2p$。这里线性性本身不需独立；题目明确给的独立性还可用于完整二项分布与下一原子问的方差，不能把两种作用混为一谈。
-
-## Common Mistakes
-
-- 把自环加入潜在边。
-- 把期望边数四舍五入成整数。
+Write $X=\sum_e I_e$. Since $E[I_e]=1\cdot p+0\cdot(1-p)=p$, $$E[X]=\sum_e p=Np=\binom n2p.$$ Linearity itself does not require independence.
 
 ## Connections
 

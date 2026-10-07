@@ -39,26 +39,23 @@ If $G$ has exactly $k$ connected components, what is the minimum possible value 
 
 Shared context: [[STEM-2020-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每个连通分量至少要“顶点数减一”条边，树恰好达到。把 k 个分量相加时顶点总数为 n，每个分量各减一，所以得到 n-k；孤立顶点也算一个分量并贡献零条边。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+Suppose that the $k$ connected components are $C_1,C_2,\ldots,C_k$. Since $C_i$ is a connected component with $v_i$ vertices, the minimum number of edges to connect them is $v_i-1$, which is a tree.
+The minimum of $X$ is equal to all components reach minimal the same time.
+$$\min(X)=\min_{C_i}\sum_{i=1}^k\min(C_i)=\min_{C_i}\sum_{i=1}^k(v_i-1)=n-k.$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $n-k$.
 
 **Derivation/proof.** Let component i have v_i vertices. Connectivity requires at least v_i−1 edges: starting at one vertex, each additional vertex in a spanning traversal needs an edge to the reached set. Summing gives at least $\sum(v_i-1)=n-k$. Attain this with a tree on each component, including isolated vertices as one-vertex trees. Thus the lower bound is exact.
 
-### 中文解答
+The component lower bound follows by growing a connected reached set: each newly reached vertex needs a connecting edge. Taking a tree in every component attains all bounds simultaneously.
 
-**推导。** 设第 $i$ 个连通分量有 $v_i$ 个顶点，全部顶点数满足 $\sum_i v_i=n$。每个分量连通，至少要 $v_i-1$ 条边，因为从一个已到达顶点扩展，每纳入一个新顶点至少需一条连接边。各分量相加，边数至少 $\sum_i(v_i-1)=n-k$。每个分量都取一棵树便同时达到此下界，单点分量取零边也符合。因此最小值恰 $n-k$。
-
-## Common Mistakes
-
-- 把答案写成 n-1 而忽略多个分量。
-- 认为每个连通分量都必须有环。
+The component sizes satisfy $\sum_i v_i=n$. A tree in component $i$ uses $v_i-1$ edges, so the total minimum is $\sum_i(v_i-1)=n-k$.
 
 ## Connections
 

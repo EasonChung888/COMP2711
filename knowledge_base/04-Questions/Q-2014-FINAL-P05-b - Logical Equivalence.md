@@ -38,26 +38,23 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-两式的存在量词作用范围不同。右式只需找一个让蕴含为真的对象，前件为假时即可；左式却要求从整体存在性推出另一整体存在性。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(b) Not equivalent. Counterexample:
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+- $U$: All animals; $p(x)$: $x$ can fly; $q(x)$: $x$ can fly airplane.
+- LHS is false because there are animals that can fly, but no animal can fly airplane.
+- RHS is true because there are animals that cannot fly and hence $p(x)\Rightarrow q(x)$ is true.
+
+## Supplementary Explanation
 
 **Answer.** No.
 
 **Derivation/proof.** Let $U$ be animals, $p(x)$ mean ‘$x$ can fly’, and $q(x)$ mean ‘$x$ can fly an airplane’. The left implication is false (some animal flies but none flies an airplane), while the right is true because any non-flying animal makes $p(x)\Rightarrow q(x)$ true.
 
-### 中文解答
-
-**推导。** 两式不等价。将原解答的会飞/不会飞反例明确为二元素域 $U=\{u,v\}$：令 $p(u)=T,p(v)=F$，且 $q(u)=q(v)=F$。左式按题目外层蕴含读取，前件 $\exists x\,p(x)$ 真、后件 $\exists x\,q(x)$ 假，故为假。右式取见证 v，则 $p(v)\Rightarrow q(v)=F\Rightarrow F=T$，故存在式真。具体赋值消除了自然语言中动物类别的歧义。
-
-## Common Mistakes
-
-- 把两个 $\exists x$ 当作同一个见证而未检验。
-- 反例中让两式都为真。
+To remove ambiguity in the informal animal example, take $U=\{u,v\}$, $p(u)=T,p(v)=F$, and $q(u)=q(v)=F$. On the left, $\exists x\,p(x)$ is true and $\exists x\,q(x)$ is false. On the right, $v$ witnesses $p(v)\Rightarrow q(v)=F\Rightarrow F=T$.
 
 ## Connections
 

@@ -1,0 +1,18 @@
+Exercise 
+on Paths 1
+In the following picture, starting from A we wish to reach B, by taking edges Up or Right. How many different paths (two paths are different if they differ in at least one edge) exist from A to B such that. 
+50
+(
+i
+)
+There are no restrictions. 
+Hint
+: Any path from A to B is a combination of Up and Right moves for a total of 10.
+Each path from A to B contains 10 edges, 4 of which must go up. Finding a specific path is just a matter of deciding when to take the up moves out of the 10 total available moves: C(10, 4) ways. The rest must go right. 
+(ii) 
+You have to pass from CD edge. 
+6 (ways from A to C) x 3 (ways from D to B) = 18  
+(iii) 
+You can not pass from CD edge. 
+C(10, 4) -
+ 18  

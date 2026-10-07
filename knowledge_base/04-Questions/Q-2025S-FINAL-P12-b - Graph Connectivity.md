@@ -38,24 +38,20 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (b) [4 pts] How many distinct simple undirected graphs exist on 7 labeled vertices $\{a,b,c,d,e,f,g\}$ such that $\deg(a)\ge4$?
 
-## 中文解析
+## Official Answer
 
-先选择 $a$ 的邻居，其他六顶点间的边都可独立决定是否出现。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=16|physical PDF page 16]], [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+(b) First Solution: There are $2^{21}$ possible graphs in total. Among these, exactly $\binom63\times2^{15}$ graphs satisfy $\deg(a)=3$; the remaining $2^{21}-\binom63\times2^{15}$ graphs are split equally between those with $\deg(a)\ge4$ and those with $\deg(a)\le2$. This symmetry is due to each graph with $\deg(a)\ge4$ has a complement graph with $\deg(a)\le2$. So, the answer to the question is:
+$$\frac{2^{21}-\binom63\times2^{15}}2=720896$$
+Second Solution: We can count the number of graphs with $\deg(a)=4$, $\deg(a)=5$ and $\deg(a)=6$ directly:
+$$\left(\binom64+\binom65+\binom66\right)\cdot2^{15}=720896$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\bigl(\binom64+\binom65+\binom66\bigr)2^{15}=720896$.
 
-**答案。** $\bigl(\binom64+\binom65+\binom66\bigr)2^{15}=720896$。
-
-**推导。** 若 $\deg(a)=d$，其中 $d=4,5,6$，从其余六顶点选择邻居有 $\binom6d$ 种。这六条可能的关联边便已确定。其余六顶点之间共有 $\binom62=15$ 条可能边，每条可有可无，所以每组邻居对应 $2^{15}$ 张图。三种度数情形互斥，故总数为 $(15+6+1)2^{15}=22\cdot32768=720896$。顶点有标签，因此不同邻居集合确实是不同图，不需除以同构对称。
-
-## Common Mistakes
-
-- 仅选择邻居会漏掉其他六顶点之间的十五条可选边。
-- 有标签图按边集区分，不能再除以七的阶乘。
+**Derivation/proof.** If $\deg(a)=d$ for $d=4,5,6$, choose its neighbors from the other six vertices in $\binom6d$ ways. This fixes all potential edges incident to a. Among the remaining six vertices there are $\binom62=15$ possible edges, each independently present or absent, yielding $2^{15}$ graphs for each neighbor set. The three degree cases are disjoint, giving $(15+6+1)2^{15}=22\cdot32768=720896$. Vertices are labeled, so distinct neighbor sets or edge sets are distinct graphs without division by isomorphism symmetries.
 
 ## Connections
 

@@ -36,26 +36,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 An enemy tank is moving at a constant speed along a road. You can imagine the road as the infinite number line, where every position is identified by a number. The tank starts at time 0 at an unknown location $x$ and moves at an unknown speed of $y$ meters a minute, but we know that $x$ and $y$ are both positive integers. We can fire a cannon every minute at a specific location, but cannot see the tank. Can you design a strategy that guarantees to hit the tank eventually?
 
-## 中文解析
+## Official Answer
 
-关键不是猜位置，而是枚举起点和速度组成的整数对。按两坐标之和递增列举，能保证每一对在有限步出现；到第 i 分钟试这一对时，炮口必须瞄准其当前预测位置 x 加 i 倍 y，而不是初始位置。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+The Cartesian product $\mathbb Z^+\times\mathbb Z^+$ is countable, and we can enumerate the pairs $(x,y)\in\mathbb Z^+\times\mathbb Z^+$ one by one. At time $i$, we use the $i$-th pair $(x,y)$ in this enumeration to decide the firing location. Note that if $(x,y)$ are correct, the tank will be at position $x+y\cdot i$, so we fire at this location. Because every pair $(x,y)$ will eventually be enumerated, we are guaranteed to hit the tank.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 15. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Enumerate all positive integer pairs $(x_i,y_i)$; at minute $i$, fire at $x_i+i y_i$.
 
 **Derivation/proof.** Enumerate pairs by increasing sum $x+y$, and within each finite diagonal by increasing x: $(1,1),(1,2),(2,1),\ldots$. Every positive integer pair occurs at a finite index because only finitely many pairs have smaller sum. If the true parameters occur at index $i$, the tank's position at that minute is exactly $x_i+i y_i$, the chosen firing point. Hence a hit occurs no later than that finite minute. This is a deterministic exhaustive strategy, not a claim of a uniform time bound over all parameters.
 
-### 中文解答
-
-**推导。** 把所有可能参数对 $\mathbb Z^+\times\mathbb Z^+$ 按 $x+y=2,3,4,\ldots$ 的对角线枚举，每条线上按 $x$ 递增排列，得到 $(x_1,y_1),(x_2,y_2),\ldots$。第 $i$ 分钟只发一炮，瞄准 $x_i+i y_i$。真实参数 $(x,y)$ 所在的对角线之前只有有限多个参数对，因此必在某个有限序号 $j$ 出现。第 $j$ 分钟坦克实际位置为 $x+jy=x_j+jy_j$，恰与瞄准位置相同，于是必被击中。关键是枚举参数而不是固定位置；目标随时间移动已被 $iy_i$ 计入。
-
-## Common Mistakes
-
-- 按字典序无限列第一行，永远轮不到其他起点。
-- 枚举正确参数后仍只瞄准其时间零位置。
+Use the diagonals $x+y=2,3,4,\ldots$, each of which contains finitely many positive pairs. When the true pair is enumerated as $(x_j,y_j)$, the tank at time $j$ is at $x+jy=x_j+jy_j$, precisely the chosen firing location.
 
 ## Connections
 

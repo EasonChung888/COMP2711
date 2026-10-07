@@ -40,24 +40,23 @@ You have a set of $n$ biased coins. For each $m=1,2,\ldots,n$, the $m$-th coin h
 Show that the probability of obtaining an odd number of heads after tossing all the $n$ coins is equal to $\frac n{2n+1}$.
 Hint: One possible approach is to think in a recursive way.
 
-## 中文解析
+## Official Answer
 
-最后一枚出现正面时奇偶性翻转，出现反面时保留。题目明确独立，所以两种情况可用概率相乘；适当乘分母后递推变成每步加一。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> Solution: Let $P_n$ be the probability of obtaining an odd number of heads when tossing these $n$ coins. In order to compute $P_{n+1}$, we need to consider two cases:
+> Case 1: The $(n+1)$-th coin lands head and we have an even number of heads in the first $n$ coins.
+> Case 2: The $(n+1)$-th coin lands tail and we have an odd number of heads in the first $n$ coins.
+> Thus:
+> $$P_{n+1}=\left(\frac1{2n+3}\right)(1-P_n)+\left(1-\frac1{2n+3}\right)P_n=\left(1-\frac2{2n+3}\right)P_n+\frac1{2n+3}.$$
+> Multiplying both sides by $(2n+3)$ we obtain $(2n+3)P_{n+1}=(2n+1)P_n+1$.
+> Substituting $A_n=(2n+1)P_n$, we can express this as $A_{n+1}=A_n+1$. We know that $A_0=0$ because $P_0=0$. This implies that $A_n=n$, which in turn implies that $P_n=\frac n{2n+1}$, as desired.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $P_n=n/(2n+1)$.
 
-**答案。** 奇数个正面的概率为 $P_n=n/(2n+1)$。
-
-**推导。** 令 $P_n$ 为前 $n$ 枚产生奇数个正面的概率，$P_0=0$。第 $n+1$ 枚的正面概率为 $1/(2n+3)$。奇数总数由“此前偶数且末枚正面”或“此前奇数且末枚反面”组成，二者互斥；独立性给出 $P_{n+1}=\frac1{2n+3}(1-P_n)+\frac{2n+2}{2n+3}P_n$。化简为 $(2n+3)P_{n+1}=(2n+1)P_n+1$。设 $A_n=(2n+1)P_n$，则 $A_{n+1}=A_n+1,A_0=0$，所以 $A_n=n$，即 $P_n=n/(2n+1)$。代入 $n=1$ 得 $1/3$，符合第一枚硬币。
-
-## Common Mistakes
-
-- 第 n+1 枚分母是 $2n+3$，不能继续写 $2n+1$。
-- 末枚正面要搭配此前偶数，不是此前奇数，否则总数变偶。
+**Derivation/proof.** Let $P_n$ denote the odd-head probability for the first $n$ coins, with $P_0=0$. Coin $n+1$ has head probability $1/(2n+3)$. An odd total comes from an even previous total and a head, or an odd previous total and a tail. These cases are mutually exclusive, and independence gives $P_{n+1}=\frac1{2n+3}(1-P_n)+\frac{2n+2}{2n+3}P_n$. Hence $(2n+3)P_{n+1}=(2n+1)P_n+1$. Set $A_n=(2n+1)P_n$. Then $A_{n+1}=A_n+1,A_0=0$, so $A_n=n$ and $P_n=n/(2n+1)$. At $n=1$ this gives $1/3$, as required.
 
 ## Connections
 

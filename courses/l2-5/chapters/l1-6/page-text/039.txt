@@ -1,0 +1,49 @@
+Distributing Objects into Boxes
+Theorem
+The number of ways to distribute 
+n
+ 
+distinguishable
+ objects into 
+k
+ 
+distinguishable
+ boxes so that 
+ objects are placed into box 
+i
+, where
+ n
+1
++
+n
+2
++..
+ 
++
+n
+k
+ 
+= 
+m 
+< 
+n
+, is equal to:
+Special Case
+When 
+n
+1
++
+n
+2
++..
+ 
++
+n
+k
+ 
+= 
+n
+ the above formula becomes:
+Same formula as “Permutations with Indistinguishable Object”
+ 
+39

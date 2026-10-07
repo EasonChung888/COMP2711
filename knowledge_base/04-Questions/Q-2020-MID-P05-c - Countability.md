@@ -40,26 +40,19 @@ $P(P(\mathbb N))$
 
 Shared context: [[STEM-2020-MID-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把每个自然数子集 S 变成只含 S 的单元素集合，就把第一层幂集单射进第二层。第一层已经不可数，所以第二层不可能变回可数；注意单元素集合的元素本身也是集合。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+Uncountable.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Uncountable.
 
 **Derivation/proof.** The map $S\mapsto\{S\}$ injects $P(\mathbb N)$ into its power set. Cantor's diagonal argument shows $P(\mathbb N)$ is uncountable. If $P(P(\mathbb N))$ were countable, every subset, including that singleton image, would be countable; its bijection with $P(\mathbb N)$ would give a contradiction.
 
-### 中文解答
-
-**推导。** 判为不可数。已知 $P(\mathbb N)$ 不可数；把每个子集 $S\subseteq\mathbb N$ 送到单元素集合 $\{S\}$，得到从 $P(\mathbb N)$ 到 $P(P(\mathbb N))$ 的单射，因为 $\{S\}=\{T\}$ 必推出 $S=T$。若后者可数，其子集即这个单射像也可数，再由像与 $P(\mathbb N)$ 的双射会推出前者可数，矛盾。所以二重幂集仍不可数。
-
-## Common Mistakes
-
-- 把外层集合只有一个元素的情况误当成整个幂集。
-- 认为做两次幂集会抵消。
+If $\{S\}=\{T\}$, equality of the unique elements gives $S=T$. Hence the singleton map is injective, and its injective image is an uncountable subset of the target power set.
 
 ## Connections
 

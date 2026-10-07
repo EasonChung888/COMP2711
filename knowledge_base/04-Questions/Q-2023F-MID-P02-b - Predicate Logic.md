@@ -44,33 +44,19 @@ Two numbers $a$ and $b$ are co-prime if and only if any integer can be expressed
 
 Note: you are only allowed to use quantifiers, addition, multiplication, equality, and the $CoPrime$ predicate.
 
-## 中文解析
+## Official Answer
 
-这里要翻译 any integer 的统一要求，而不是证明 Bézout 定理。对每个目标整数 c，线性组合的两个系数都可以重新选择；因此先全称量化 c，再存在量化系数 x 和 y。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (b) $\forall a\forall b(CoPrime(a,b)\Longleftrightarrow\forall c\exists x\exists y(c=ax+by))$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $\forall a\forall b\bigl(CoPrime(a,b)\leftrightarrow\forall c\exists x\exists y(c=ax+by)\bigr)$。
-
-**推导。**
-
-1. 原句对任意整数对 $a,b$ 作陈述，故最外面用 $\forall a\forall b$；“if and only if”要求双向，翻译成 biconditional $\leftrightarrow$，一侧正是允许使用的谓词 $CoPrime(a,b)$。
-2. 另一侧“any integer”引入 $\forall c$。对这个已经固定的目标整数，“can be expressed”允许选择整数系数 $x,y$，所以随后是 $\exists x\exists y(c=ax+by)$。系数可依赖 $a,b,c$，不能移到 $\forall c$ 前要求所有目标共用一对系数。表达式只用了规定的量词、加乘、等号和谓词；任务是翻译，并不要求额外证明数论定理。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $\forall a\forall b\bigl(CoPrime(a,b)\leftrightarrow\forall c\exists x\exists y(c=ax+by)\bigr)$.
 
 **Derivation/proof.** The outer $\forall a\forall b$ covers every pair of integers named in the sentence. “If and only if” becomes the biconditional. “Any integer” introduces $\forall c$; “can be expressed” then introduces integer coefficients $\exists x\exists y$. The equation $c=ax+by$ uses only the allowed arithmetic operations and equality. The order permits the coefficients to depend on a, b, and the target c, exactly as required.
 
-## Common Mistakes
-
-- 把系数的存在量词放在 ∀c 前会要求同一对系数表示所有整数。 / Coefficients may depend on c.
-- 只翻译一个方向会丢失 if and only if。 / Keep the biconditional.
+The coefficients may depend on $a,b,c$.
 
 ## Connections
 

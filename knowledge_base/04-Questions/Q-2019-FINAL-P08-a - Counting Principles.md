@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-含有 a 是至少一次，不是恰好一次。总字符串数减去完全不含 a 的字符串就能一次覆盖所有重复次数，不需要按 a 的出现位置重复选取，从而避免多个 a 的字符串被多计。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+The only reasonable way to do this is by subtracting from the number of strings with no restrictions the number of strings that do not contain the letter $a$. The answer is $26^6-25^6$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $26^6-25^6$.
 
 **Derivation/proof.** There are $26^6$ unrestricted length-six strings. A string with no a has 25 choices independently at each position, giving $25^6$. The complement of no a is at least one a, so subtracting counts every desired string exactly once, including those with several occurrences of a.
 
-### 中文解答
-
-**推导。** 全部长度六的小写字符串共有 $26^6$ 个。其补集是不含 $a$ 的串，每一位置只能从另二十五字母选择，故有 $25^6$ 个。所求至少出现一次 $a$，正是从全集扣除这一补集，答案 $26^6-25^6$。重复出现多个 $a$ 的串也被恰计一次。
-
-## Common Mistakes
-
-- 用六乘二十五的五次方只算恰好一个 a。
-- 按指定 a 的位置选择而重复计多 a 字符串。
+The requested letter needs at least one occurrence; subtracting strings with none avoids having to split into every possible number of occurrences.
 
 ## Connections
 

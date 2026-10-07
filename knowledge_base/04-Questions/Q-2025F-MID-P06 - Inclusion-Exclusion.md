@@ -39,24 +39,33 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 Use inclusion-exclusion principle to solve the following problem. No other methods are allowed. You do not need to calculate the final value.
 In how many 6-digit numbers do all three digits 1, 2, and 3 appear at least once? Note that the leftmost digit can not be equal to 0.
 
-## 中文解析
+## Official Answer
 
-令坏事件为缺少某个指定数字，首位始终另数非零可选数字。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+> Assume $S$ to be the set of all $6$-digit numbers.
+> $$|S|=9\times10^5.$$
+> Let $A_1$ be the set of $6$-digit numbers missing digit $1$, $A_2$ be the set of $6$-digit numbers missing digit $2$ and $A_3$ be the set of $6$-digit numbers missing digit $3$. We need the number of $6$-digit numbers where digits $1,2$ and $3$ appear, which is the total minus the numbers missing at least one of $1$ or $2$ or $3$:
+> $$S-(A_1\cup A_2\cup A_3).$$
+> By inclusion-exclusion:
+> $$|A_1\cup A_2\cup A_3|=|A_1|+|A_2|+|A_3|-|A_1\cap A_2|-|A_1\cap A_3|-|A_2\cap A_3|+|A_1\cap A_2\cap A_3|.$$
+> – $|A_1|$: Numbers with no $1$. First digit has $8$ choices ($2$ to $9$), other digits have $9$ choices ($0,2$ to $9$):
+> $$|A_1|=8\times9^5.$$
+> Similarly, $|A_1|=|A_2|=|A_3|=8\times9^5$.
+> – $|A_1\cap A_2|$: Numbers with no $1$ and no $2$. First digit has $7$ choices ($3$ to $9$), other digits have $8$ choices ($0,3$ to $9$):
+> $$|A_1\cap A_2|=7\times8^5.$$
+> Similarly, $|A_2\cap A_3|=|A_1\cap A_3|=|A_1\cap A_2|=7\times8^5$.
+> – $|A_1\cap A_2\cap A_3|$: Numbers with no $1$ and no $2$ and no $3$. First digit has $6$ choices ($4$ to $9$), other digits have $7$ choices ($0,4$ to $9$):
+> $$|A_1\cap A_2\cap A_3|=6\times7^5.$$
+> Now compute:
+> $$|A_1\cup A_2\cup A_3|=3\times(8\times9^5)-3\times(7\times8^5)+6\times7^5.$$
+> So the answer is $|S|-|A_1\cup A_2\cup A_3|=9\times10^5-3\times(8\times9^5)+3\times(7\times8^5)-6\times7^5$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $9\cdot10^5-3\cdot8\cdot9^5+3\cdot7\cdot8^5-6\cdot7^5$.
 
-**答案。** $9\cdot10^5-3\cdot8\cdot9^5+3\cdot7\cdot8^5-6\cdot7^5$。
-
-**推导。** 全集是六位数，$|S|=9\cdot10^5$。令 $A_i$ 为缺少数字 $i$ 的数，其中 $i=1,2,3$。缺少一个指定非零数字时，首位八种、余位各九种，故 $|A_i|=8\cdot9^5$。缺少两个时首位七种、余位各八种，每个两两交集为 $7\cdot8^5$。三个都缺少时首位六种、余位各七种，三重交集为 $6\cdot7^5$。由 inclusion-exclusion，所求补集大小为 $9\cdot10^5-3(8\cdot9^5)+3(7\cdot8^5)-6\cdot7^5$，每个系数分别对应三个单事件、三个双事件及一个三事件。
-
-## Common Mistakes
-
-- 首位不能为零，缺数字后的首位选择数始终比其他位置少一。
-- 最终算补集会使容斥符号变为减单项、加双项、减三项。
+**Derivation/proof.** The universe of six-digit numbers has $|S|=9\cdot10^5$ elements. Let $A_i$ be the numbers missing digit i, for i=1,2,3. Missing one specified nonzero digit leaves eight leading choices and nine for each other position, so $|A_i|=8\cdot9^5$. Missing two leaves seven leading choices and eight later choices, giving $7\cdot8^5$ per pairwise intersection. Missing all three gives $6\cdot7^5$. Inclusion-exclusion subtracts the three single-event counts, adds the three pairwise intersections, and subtracts the one triple intersection from the universe. This gives the stated expression.
 
 ## Connections
 

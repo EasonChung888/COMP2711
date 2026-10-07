@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 (a) Assume $a$ to be an even integer. What are the possible values for $a^2\pmod8$?
 Hint: Assume $a=4k$ or $a=4k+2$.
 
-## 中文解析
+## Official Answer
 
-本题只讨论偶数。按提示将偶数分为模四余零、余二两类，平方后分别模八约化，再给出实现两个余数的例子，确认没有遗漏。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+> Answer: (a) If $a=4k$ then $a^2=16k^2\implies a^2\equiv0\pmod8$ If $a=4k+2$ then $a^2=16k^2+16k+4\implies a^2\equiv4\pmod8$. So if $a$ is even then the possible remainder of $a^2\pmod8$ is either $\{0,4\}$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\{0,4\}$.
 
-**答案。** $\{0,4\}$。
-
-**推导。** 任意偶数模四只能余零或二。若 $a=4k$，则 $a^2=16k^2\equiv0\pmod8$；若 $a=4k+2$，则 $a^2=16k^2+16k+4\equiv4\pmod8$。两类覆盖所有正负偶数；取 $a=0$ 与 $a=2$ 分别实现零和四，所以可能余数恰为 $\{0,4\}$，而非只给一个包含它们的上界。
-
-## Common Mistakes
-
-- 偶数平方不一定被八整除，例如 $2^2=4$；必须分别处理 $a=4k$ 与 $a=4k+2$。
-- 只证明余数属于 $\{0,4\}$ 还需说明两者均可实现，取 $a=0$ 与 $a=2$ 即可。
+**Derivation/proof.** Every even integer has residue zero or two modulo four. If $a=4k$, then $a^2=16k^2\equiv0\pmod8$. If $a=4k+2$, then $a^2=16k^2+16k+4\equiv4\pmod8$. The cases cover positive and negative even integers. Taking $a=0$ and $a=2$ realizes zero and four respectively, proving these are exactly the possible residues.
 
 ## Connections
 

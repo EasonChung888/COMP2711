@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-锁的五个拨轮有固定位置，每个都可以为零到九的任何数字。它不是五位整数，最左拨轮也能是零；数字允许重复，所以五个位置各有十种选择，直接相乘。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+All $10$ digits are possible for each of the $5$ dials, hence $10^5$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $10^5=100000$.
 
 **Derivation/proof.** Each of the five labeled dial positions has ten choices. With repetition allowed and no leading-zero restriction on a lock, the product rule gives $10\cdot10\cdot10\cdot10\cdot10=10^5$. Different ordered digit lists are different settings.
 
-### 中文解答
-
-**推导。** 锁有五个有顺序的转盘，每个可独立设为 $0$ 至 $9$ 的十种数字。全部设置对应五元有序数字组，因此乘法原理给 $10\cdot10\cdot10\cdot10\cdot10=10^5=100000$。这是锁码而非五位整数，首位为零也计入。
-
-## Common Mistakes
-
-- 去掉首位为零的设置。
-- 误用无重复排列数。
+A leading zero is permitted because these are lock settings rather than three-digit positive integers; therefore the first dial has ten choices as well.
 
 ## Connections
 

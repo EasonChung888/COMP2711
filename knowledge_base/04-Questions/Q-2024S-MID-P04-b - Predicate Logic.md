@@ -40,24 +40,18 @@ Prerequisite context (editorial): [[Q-2024S-MID-P04-a - Predicate Logic]]. Use t
 
 (b) Express the negation of your statement in (a), such that the symbol $\neg$ does not appear in your statement. (As an example if you want to say $\neg(a=b)$ you must use $a\ne b$, and if you want to say $\neg(a\mid b)$ you must use $a\nmid b$)
 
-## 中文解析
+## Official Answer
 
-否定“每个倍数存在一种表示”得到“存在一个倍数，无论怎样选两个底数都不能表示”。整除条件保留为肯定，等式改为不等式。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> (b) possible solution 1: $\exists x\forall a\forall b(4x\ne a^2-b^2)$;
+> possible solution 2: $\exists x(4\mid x\land\forall a\forall b(x\ne a^2-b^2))$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists x(4\mid x\land\forall a\forall b(x\ne a^2-b^2))$.
 
-**答案。** $\exists x(4\mid x\land\forall a\forall b(x\ne a^2-b^2))$。
-
-**推导。** 从 (a) 导入的公式开始：$\neg\forall x(4\mid x\to\exists a\exists b(x=a^2-b^2))$。全称取反变存在，再用 $\neg(A\to B)\equiv A\land\neg B$，得 $\exists x(4\mid x\land\neg\exists a\exists b(x=a^2-b^2))$。将两个存在量词取反，得到两个全称，最后把 $\neg(x=a^2-b^2)$ 写成 $x\ne a^2-b^2$。结果为上式，其中不再出现 $\neg$，完全符合题目限制。
-
-## Common Mistakes
-
-- 否定蕴含不是把整除关系取反；应保留 $4\mid x$。
-- 不能只改等号不改量词，原来的存在底数必须变为所有底数。
+**Derivation/proof.** Start from $\neg\forall x(4\mid x\to\exists a\exists b(x=a^2-b^2))$. Negating the universal quantifier gives an existential one. Using $\neg(A\to B)\equiv A\land\neg B$ then gives $\exists x(4\mid x\land\neg\exists a\exists b(x=a^2-b^2))$. Negating the two existential quantifiers produces two universal quantifiers; replace $\neg(x=a^2-b^2)$ with $x\ne a^2-b^2$. The resulting answer contains no negation symbol, as required.
 
 ## Connections
 

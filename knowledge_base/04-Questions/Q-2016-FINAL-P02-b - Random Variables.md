@@ -39,26 +39,26 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-括号内先平方，故函数值是 $an^2+b$，不是 $(an+b)^2$。由方差公式得到二阶矩 $E[n^2]=v+m^2$，再用线性期望代入。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=5|PDF physical page 5]].
 
-## Detailed Solution
+Assume that $S$ is the sample space of $n$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+(b) Expectation of $f(n^2)$:
+$$\begin{aligned}
+E(f(n^2))&=\sum_{x:x\in S}p(x)(ax^2+b)\\
+&=a\sum_{x:x\in S}p(x)\cdot x^2+\sum_{x:x\in S}p(x)\cdot b\\
+&=a\sum_{x:x\in S}p(x)\cdot x^2+b
+\end{aligned}$$
+$$v=Var(n)=\left(\sum_{x:x\in S}p(x)x^2\right)-m^2$$
+$$E(f(n^2))=a(v+m^2)+b$$
+
+## Supplementary Explanation
 
 **Answer.** $E[f(n^2)]=a(v+m^2)+b$.
 
 **Derivation/proof.** From $v=E[n^2]-(E[n])^2$, obtain $E[n^2]=v+m^2$. Since $f(n^2)=an^2+b$, linearity yields $E[f(n^2)]=aE[n^2]+b=a(v+m^2)+b$.
-
-### 中文解答
-
-**推导。** 括号内先平方，所以 $f(n^2)=an^2+b$。已知方差 $v=E(n^2)-[E(n)]^2=E(n^2)-m^2$，移项得 $E(n^2)=v+m^2$。于是 $E(f(n^2))=aE(n^2)+b=a(v+m^2)+b$。这里没有函数外的平方，不能使用下一问的展开式。
-
-## Common Mistakes
-
-- 把 $f(n^2)$ 与 $f(n)^2$ 混为一谈。
-- 错误地使用 $E[n^2]=m^2$，遗漏方差。
 
 ## Connections
 

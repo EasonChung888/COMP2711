@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (i) $5,4,3,2,2,0$
 
-## 中文解析
+## Official Answer
 
-六顶点简单图中度数五意味着连接其余每个顶点，不能同时有孤立点。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=16|physical PDF page 16]].
 
-## Detailed Solution
+(a) (i) One node has a degree of 5 (means its connected to every other node) and one node has a degree of 0 (meanings not connected to anything) which is a contradiction.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Impossible.
 
-**答案。** 不可能。
-
-**推导。** 假设有这样的 simple undirected graph。取度数为五的顶点 $v$；图共有六个顶点且没有自环、重边，所以 $v$ 的五个邻点必是其余所有顶点。特别地，它与声称度数为零的顶点 $w$ 相邻，于是 $\deg(w)\ge1$，矛盾。压缩成原题三行内答案：度五顶点必须连到度零顶点，使后者不再孤立。
-
-## Common Mistakes
-
-- 度数总和为偶数只是必要条件，本例仍会被极端度数冲突排除。
-- 简单图的无重边条件保证五个邻点互异，不能把五条边连到同一个点。
+**Derivation/proof.** Suppose such a simple undirected graph exists and take a degree-five vertex v. There are six vertices and no loops or parallel edges, so its five neighbors are all the other vertices. In particular, it is adjacent to the asserted degree-zero vertex w, forcing $\deg(w)\ge1$, a contradiction. In the requested three-line form: a degree-five vertex must connect to the degree-zero vertex, which would cease to be isolated.
 
 ## Connections
 

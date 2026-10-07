@@ -42,24 +42,24 @@ Prerequisite context (editorial): [[Q-2024S-FINAL-P01-N - Mathematical Induction
 
 Prove that your result is correct using mathematical induction.
 
-## 中文解析
+## Official Answer
 
-证明对象是选定阈值之后的全部整数。归纳步不仅要把二的幂乘二，还要比较乘二后的平方项与下一整数的平方大小。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> Answer: We want to find an integer $N$ such that $2^n>3n^2$ for all $n>N$. We choose $N=7$. We will use induction to prove that $2^n>3n^2$ whenever $n\ge8$.
+> Base case: For $n=8$, we have $2^8>3(8)^2$, because $2^8=256$ and $3(8)^2=3\cdot64=192$.
+> Induction step: For the inductive hypothesis, suppose that $2^k>3k^2$ holds for some integer $k\ge8$. We want to show that $2^{k+1}>3(k+1)^2$.
+> Applying the inductive hypothesis, we get $2^{k+1}=2\cdot2^k>2\cdot3k^2$. Thus
+> $$2^{k+1}>2(3k^2)=3(2k^2)=3(k^2+k^2)\ge3(k^2+3k),$$
+> where in the last step we have used the fact that $k\ge3$ (recall that $k\ge8$). Thus
+> $$2^{k+1}\ge3(k^2+3k)=3(k^2+2k+k)\ge3(k^2+2k+1),$$
+> since $k\ge1$ (recall that $k\ge8$). Thus $2^{k+1}>3(k+1)^2$, which completes the inductive step. Therefore, we have shown that $N=7$ satisfies the condition that $2^n>3n^2$ for all $n>N$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2^n>3n^2$ for every integer $n\ge8$.
 
-**答案。** $2^n>3n^2$ 对所有整数 $n\ge8$ 成立。
-
-**推导。** 导入前一原子题的选择 $N=7$。基础步：$n=8$ 时 $2^8=256>192=3\cdot8^2$。归纳假设：对某个 $k\ge8$，$2^k>3k^2$。于是 $2^{k+1}=2\cdot2^k>6k^2$。因为 $k\ge8$，$2k^2-(k+1)^2=(k-1)^2-2\ge49-2>0$，所以 $6k^2>3(k+1)^2$。串联严格不等式得到下一项成立。由 mathematical induction，该结论对所有 $n\ge8$，即所有 $n>N$ 成立。
-
-## Common Mistakes
-
-- 归纳假设只可使用第 k 项，不能直接假定第 k+1 项成立。
-- 必须证明平方项的比较，不能仅写指数增长更快代替归纳步。
+**Derivation/proof.** Use the preceding choice $N=7$. Base case: at $n=8$, $2^8=256>192=3\cdot8^2$. Inductive hypothesis: suppose $2^k>3k^2$ for some $k\ge8$. Then $2^{k+1}=2\cdot2^k>6k^2$. Since $k\ge8$, $2k^2-(k+1)^2=(k-1)^2-2\ge49-2>0$, so $6k^2>3(k+1)^2$. Combining these strict inequalities proves the next case. Mathematical induction gives the result for all $n\ge8$, equivalently $n>N$.
 
 ## Connections
 

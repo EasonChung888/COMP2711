@@ -40,26 +40,19 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2014-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先把每个家庭压成一个区块，再恢复区块内部的排列；两层选择相乘。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(b) $n!(3!)^n$. Consider a family as a unit. There are $n!$ ways to arrange the $n$ units. In each unit there are $3!$ different seating orders.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $n!(3!)^n$.
 
 **Derivation/proof.** Treat each family as one block and arrange the $n$ blocks in $n!$ ways. Each block has $3!$ internal orders, independently.
 
-### 中文解答
-
-**推导。** 一家三人必须相邻，因此将每家缩成一个区块。n 个不同区块的顺序有 $n!$ 种；每个区块内部三人任排，有 $3!$ 种，且各家独立选择。展开区块与原座次一一对应，所以总数是 $n!(3!)^n$。
-
-## Common Mistakes
-
-- 只写 $n!$。
-- 把区块内部排列写成 $3n!$。
+Expanding each block uniquely recovers the seating, so no arrangement is duplicated.
 
 ## Connections
 

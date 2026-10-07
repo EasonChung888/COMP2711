@@ -41,24 +41,17 @@ Printed discrepant/incomplete material: [[knowledge_base/past_paper/COMP2711_F20
 
 Shared printed context: ![[STEM-2024F-FINAL-P09-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-将两边除以 $n^2$，有 $A/B=10/(2+10000/n+5\log n/n)\to10/2=5$。通过该比值识别本题所有成立的渐近关系，并逐一排除不成立的标签。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=24|physical PDF page 24]].
 
-## Detailed Solution
+> (ii) $A=O(B)$
 
-Provenance: independently derived; any supplied answer discrepancy is documented in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $O,\Omega,\Theta$.
 
-**答案。** $O,\Omega,\Theta$.
-
-**推导。** 将两边除以 $n^2$，有 $A/B=10/(2+10000/n+5\log n/n)\to10/2=5$。有限正极限给出最终正上下界，因此 $A=\Theta(B)$。由于 $\Theta$ 同时意味着大 O 与大 Omega，题目要求列全部关系，故三个 $O,\Omega,\Theta$ 都要列出。一万虽大，只影响有限范围，不改变极限阶。
-
-## Common Mistakes
-
-- 本题 $B=2n^2+10000n+5n\log n$，主项是 $2n^2$；不能误抄成上一题的线性项。比较时应得 $A/B\to5$，这个有限正极限同时给出上界与下界，不能因低阶项的系数一万很大就改变分类。
-- 原答案 (ii) 只列 $O$：该标签本身正确，但遗漏了同样成立的 $\Omega$ 与 $\Theta$。题目要求列出全部关系，所以必须补齐这两项，不能误称官方漏掉的是 $O$。
+**Derivation/proof.** Dividing by $n^2$ gives $A/B=10/(2+10000/n+5\log n/n)\to10/2=5$. The finite positive limit gives positive upper and lower bounds eventually, so $A=\Theta(B)$. Theta entails both big O and big Omega, and the question asks for all relations, so all three labels $O,\Omega,\Theta$ must be listed. The coefficient 10000 affects only a finite range, not the asymptotic order.
 
 ## Connections
 

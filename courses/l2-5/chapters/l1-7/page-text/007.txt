@@ -1,0 +1,18 @@
+Binomial Theorem
+Definition: 
+The number of 
+-combinations of a set with 
+ elements, denoted by 
+ or 
+, is also called a 
+binomial coefficient
+ because it occurs as a coefficient in the expansion of the power of a binomial expression such as 
+.
+Theorem (Binomial theorem)
+Let 
+ and 
+ 
+be variables and 
+ be a nonnegative integer. Then
+ 
+7

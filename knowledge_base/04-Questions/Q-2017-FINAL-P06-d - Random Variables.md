@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-方差相加与期望相加不同，需要检查协方差。这里各行用到互不相交的独立硬币，所以行指示变量相互独立，协方差为零；每一行的方差是一百二十八分之一乘其失败概率。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+As above, $V(X)=8V(X_1)=8(1/2)^7(1-(1/2)^7)$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $V(X)=8\frac1{128}\frac{127}{128}=\frac{127}{2048}$.
 
 **Derivation/proof.** For row indicator $I_i$, $I_i^2=I_i$, so $V(I_i)=E(I_i)-E(I_i)^2=q(1-q)$ with $q=1/128$. Disjoint row coin sets are independent, making all cross covariances zero. Therefore $V(X)=\sum_{i=1}^8V(I_i)=8q(1-q)=127/2048$.
 
-### 中文解答
-
-**推导。** 每个行指标 $I_i$ 服从参数 $q=1/128$ 的伯努利分布，且 $I_i^2=I_i$，故 $V(I_i)=q-q^2=q(1-q)$。不相交行使用独立的硬币，故所有 $\operatorname{Cov}(I_i,I_j)=0$（$i\ne j$）。因此 $V(X)=\sum_{i=1}^8V(I_i)=8\cdot\frac1{128}\cdot\frac{127}{128}=\frac{127}{2048}$；若没有独立性，方差不能这样直接相加。
-
-## Common Mistakes
-
-- 直接把方差写成期望。
-- 不检查独立性就套方差可加。
+Explicitly, $\operatorname{Cov}(I_i,I_j)=0$ for $i\ne j$.
 
 ## Connections
 

@@ -41,27 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2023_Midte
 
 Shared printed context: ![[STEM-2023S-MID-P07 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-RSA 的私钥指数是 e 模 φ(n) 的逆元，因此这里使用 1260 而不是 n=1333。通过 Euclid 回代得到负系数之后，需要加上模数得到常用正代表，并检查乘积余数为一。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+> (a) Find the inverse of $e=23$ in $\mathbb Z_{1260}$:
+> $$\begin{aligned}1260&=23\cdot54+18\\23&=18\cdot1+5\\18&=5\cdot3+3\\5&=3\cdot1+2\\3&=2\cdot1+1\end{aligned}$$
+> Hence we get:
+> $$\begin{aligned}1&=3-2\cdot1\\&=3-(5-3\cdot1)\cdot1\\&=3\cdot2-5\cdot1\\&=(18-5\cdot3)\cdot2-5\cdot1\\&=18\cdot2-5\cdot7\\&=18\cdot2-(23-18\cdot1)\cdot7\\&=18\cdot9-23\cdot7\\&=(1260-23\cdot54)\cdot9-23\cdot7\\&=1260\cdot9-23\cdot493\end{aligned}$$
+> The secret $d=-493\equiv767\pmod{1260}$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 私钥指数可取 $d=767$，即 $d\equiv767\pmod{1260}$。
-
-**推导。**
-
-1. RSA 要求 $23d\equiv1\pmod{\varphi(n)}$，这里 $\varphi(n)=(31-1)(43-1)=1260$。Euclidean algorithm 的除法链为 $1260=54\cdot23+18$，$23=18+5$，$18=3\cdot5+3$，$5=3+2$，$3=2+1$。
-2. 从最后一行回代：
-   $$1=3-2=2\cdot3-5=2\cdot18-7\cdot5=9\cdot18-7\cdot23=9\cdot1260-493\cdot23.$$
-   因此逆元是 $-493$，加一个模数得到 $d=767$。
-3. 检验 $23\cdot767=17641=14\cdot1260+1$，余数确为一。这里求逆所用的模数是 $\varphi(n)=1260$，不是用于消息运算的 $n=1333$。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $d=767\pmod{1260}$.
 
@@ -69,10 +59,7 @@ Provenance: published official answer, independently checked and expanded below.
 $$1=3-2=2\cdot3-5=2\cdot18-7\cdot5=9\cdot18-7\cdot23=9\cdot1260-493\cdot23.$$
 Thus $23^{-1}\equiv-493\equiv767\pmod{1260}$. The check $23\cdot767=17641=14\cdot1260+1$ confirms the private exponent.
 
-## Common Mistakes
-
-- 逆元应模 φ(n) 求，不是模 n。 / Invert e modulo 1260.
-- 把 −493 的符号丢掉会使乘积余数变为 −1。 / Normalize the signed coefficient correctly.
+The inverse equation is $23d\equiv1\pmod{\varphi(n)}$ with $\varphi(n)=(31-1)(43-1)=1260$.
 
 ## Connections
 

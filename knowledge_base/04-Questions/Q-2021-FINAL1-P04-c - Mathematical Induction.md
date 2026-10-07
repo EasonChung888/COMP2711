@@ -38,26 +38,19 @@ $P(1)$ is true; for all positive integers $n$, if $P(n)$ and $P(n+1)$ are true, 
 
 Shared context: [[STEM-2021-FINAL1-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-递推需要连续两个真命题作启动条件，但这里只给一个 P(1)。缺 P(2) 就无法推 P(3)，更不能继续。让 P 仅在一处为真可验证规则全都空真，因此只有一被保证。
+Source: [[knowledge_base/past_paper/2021-final-part-1.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (c) 1 only.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Only $n=1$.
 
 **Derivation/proof.** To infer P(3), the first possible rule instance requires both P(1) and P(2), but P(2) is absent. No other step has two established consecutive premises either. Define P true only at 1: then every antecedent P(n)∧P(n+1) is false, so all implications hold. This witnesses that every integer except 1 can remain false.
 
-### 中文解答
-
-**推导。** 只有 $n=1$ 必真。第一次可能推出 $P(3)$ 就需要 $P(1)$ 和 $P(2)$ 同时成立，但基础只给了前者；也没有任何其他已知的连续真值来启动规则。令 $P(n)\iff n=1$，则对每个正整数 $n$，$P(n)\land P(n+1)$ 都为假，全部递推蕴含都为真。这个反模型证明除了已给的一以外，没有其他整数被条件强制为真。
-
-## Common Mistakes
-
-- 照斐波那契式递推却漏第二个初值。
-- 把前件的 and 错当 or。
+Take $P(n)\iff n=1$. Then every $P(n)\land P(n+1)$ is false, so no other integer is forced.
 
 ## Connections
 

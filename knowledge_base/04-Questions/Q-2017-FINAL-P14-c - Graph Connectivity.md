@@ -40,26 +40,21 @@ Source verification: Part (b) has an omitted n>=2 condition and is separately un
 
 Shared context: [[STEM-2017-FINAL-P14 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-反证假设边数太少。连通且至少两点保证每点度数至少一，而总度数又小于顶点数的两倍，因此必有度一顶点。删除叶子不影响其余点连通，重复后会留下多个顶点却没有边，产生明确矛盾。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=18|physical PDF page 18]].
 
-## Detailed Solution
+Suppose in contradiction that $G$ is a connected graph that has $n$ vertices and $k$ edges where $k<n-1$. Then using part (b), we have a connected graph that has $n-1$ vertices and $k-1$ edges. We can repeat this process until we reach a connected graph with at least $2$ vertices and $0$ edges. This is a contradiction, as such a graph is clearly not connected.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 18. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Every connected $n$-vertex graph has at least $n-1$ edges.
 
 **Derivation/proof.** The $n=1$ case holds since edge counts are nonnegative. Suppose $n\ge2$ and a connected graph has $k<n-1$ edges. Connectivity gives every degree at least one. The degree sum $2k<2n$ ensures some vertex has degree one. Delete it and its incident edge; a simple path between remaining vertices cannot use a degree-one vertex internally, so connectivity is preserved. Repeat while edges remain. After $k$ deletions, at least $n-k>1$ vertices remain and no edges remain, impossible for a connected graph. The reduction is used only for at least two vertices, its valid domain.
 
-### 中文解答
+At each deletion, the difference between the vertex count and edge count stays $n-k>1$, so the reduction is invoked only within its valid range.
 
-**推导。** $n=1$ 时边数非负，结论直接成立。设 $n\ge2$ 且反设连通图只有 $k<n-1$ 条边。每个顶点度数至少一，而握手定理 $\sum\deg v=2k<2n$ 保证某点度数小于二，故有度一叶点。删去它及唯一关联边不会破坏剩余点的连通性，因为连接两剩余点的简单路径不能经过叶点内部。如此重复，每删一次顶点、边各少一，且当前顶点数减边数恒为 $n-k>1$。经过 $k$ 次后仍有 $n-k>1$ 个顶点，却零条边，不可能连通，矛盾。过程中只在至少两个顶点时使用叶点缩减，避开已隔离小题(b)的单顶点漏洞。
-
-## Common Mistakes
-
-- 把度数小于二直接说成一而未用连通性排除零。
-- 把源题缺少的小规模条件继续用于单顶点。
+If a graph with $n$ vertices and $k<n$ edges had every vertex of degree at least two, the handshake identity would instead give $\sum\deg v\ge2n$. But $\sum\deg v=2k<2n$, a contradiction; some vertex has degree at most one.
 
 ## Connections
 

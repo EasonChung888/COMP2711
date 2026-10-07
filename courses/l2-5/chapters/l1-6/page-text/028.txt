@@ -1,0 +1,29 @@
+Poker
+ 
+Exercises 4
+28
+How many hands contain 
+4-of a kind
+?
+Number of ways to select the kind of the 4-of a kind C(13,1).
+Number of ways to select the 5
+th
+ card: 48 (12 for the rank times 4 for the suit).
+Total number is: 13
+48
+How many hands contain a 
+full house
+?
+Number of ways to select the 2 kinds C(13,2).
+Number of ways to select the kind for the 3-of a kind C(2,1).
+Number of ways to select the suits for the 3-of a kind C(4,3)
+Number of ways to select the suits for the pair C(4,2).
+Total number is: C(13,2)
+
+C(2,1)
+
+C(4,3)
+ 
+C(2,2) 
+Poker Hands
+: Royal Flush > Straight Flush > 4-of a kind > Full house > Flush > Straight > 3-of a kind > 2 pairs > 1 pair

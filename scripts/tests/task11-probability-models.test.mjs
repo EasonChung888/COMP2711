@@ -84,7 +84,7 @@ test('2015 maxima and 2016 dice/wheel comparisons reverse under allowed fair/uni
 test('2016 mixed dice dependence remains true for every feasible conditional coupling',()=>{
  for(const t of [0,1/9,1/3]){const J=.5+t/2;assert.ok(J>4/9);close((2/3)+(2/3)-J,5/6-t/2);}
  const r=byId.get('Q-2016-FINAL-P03-e');assert.equal(r.status,'in-scope');assert.equal(r.answer_source,'derived');assert.match(r.source_correction,/Conditional independence[\s\S]*not printed/);
- assert.ok(text(r.id).includes('1/2>4/9'));assert.ok(text(r.id).includes('没有借用'));
+ assert.ok(text(r.id).includes('1/2>4/9'));assert.match(text(r.id),/does not borrow the quarantined exact values/);
  for(const s of ['a-1','a-2'])assert.equal(byId.get('Q-2016-FINAL-P03-'+s).answer_source,'official');
  for(const s of ['b','c','d'])assert.equal(byId.get('Q-2016-FINAL-P03-'+s).status,'needs-review');
 });

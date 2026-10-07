@@ -1,3 +1,4 @@
+import { answerStructureErrors } from "./answers.mjs";
 import {
   existsSync,
   readFileSync,
@@ -31,9 +32,8 @@ const REQUIRED_LINKS = Object.freeze({
 const REQUIRED_HEADINGS = Object.freeze([
   "Source",
   "Question",
-  "中文解析",
-  "Detailed Solution",
-  "Common Mistakes",
+  "Official Answer",
+  "Supplementary Explanation",
   "Connections"
 ]);
 
@@ -414,6 +414,9 @@ export function validateVault(root, options = {}) {
       errors.push(`${noteLabel(question)}: ${error}`);
     }
     validateQuestionPages(question, resolvedRoot, inventoryBySource, errors);
+    if (question.properties.verification_status === "verified") {
+      for (const error of answerStructureErrors(question.body, question.properties.answer_source, inventoryBySource)) errors.push(`${noteLabel(question)}: ${error}`);
+    }
     validateQuestionLinks(question, notesByBasename, errors);
     validateVerifiedBody(question, errors);
   }

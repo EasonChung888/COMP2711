@@ -40,37 +40,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2023_Midte
 
 Shared printed context: ![[STEM-2023S-MID-P02 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-先把否定推过存在量词，再对 conjunction 使用 De Morgan。实数条件 x>0 的否定是 x≤0，必须保留边界零；P 的否定则仍是一个独立谓词条件。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (c) Equivalent. $\neg(\exists x(x>0\land p(x)))\equiv\forall x(\neg(x>0)\lor\neg p(x))\equiv\forall x(x\le0\lor\neg p(x))$. (By De Morgan’s Law)
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 两式 equivalent。
-
-**推导。**
-
-1. 先使用 quantifier negation，把“不存在”变为“每个都不满足”：
-   $$\neg\exists x(x>0\land P(x))\equiv\forall x\neg(x>0\land P(x)).$$
-   这一步只移动最外层否定，并未改变 $x$ 的实数定义域。
-2. 对括号用 De Morgan，得到 $\forall x(\neg(x>0)\lor\neg P(x))$。实数中 $\neg(x>0)$ 恰是 $x\le0$，包含零点，故结果为 $\forall x(x\le0\lor\neg P(x))$，正是第二式。每一步都是双向等价，对任意谓词 $P$ 都有效；未出现的 $Q$ 不影响结论。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** Equivalent.
 
 **Derivation/proof.** Apply quantifier negation and De Morgan in order:
 $$\neg\exists x(x>0\land P(x))\equiv\forall x\neg(x>0\land P(x))\equiv\forall x(\neg(x>0)\lor\neg P(x))\equiv\forall x(x\le0\lor\neg P(x)).$$
 These are equivalences for every real $x$ and every interpretation of $P$. The predicate $Q$ mentioned in the general instructions is not used by either formula, so its interpretation is immaterial.
-
-## Common Mistakes
-
-- 否定存在量词后仍保留存在会错误改变含义。 / Negating ∃ produces ∀.
-- 将 x>0 的否定写为 x<0 漏掉零。 / The correct complement is x≤0.
 
 ## Connections
 

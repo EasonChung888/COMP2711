@@ -42,33 +42,19 @@ Write down Fermat's little theorem using quantifiers and the predicates given ab
 
 Shared printed context: ![[STEM-2023F-FINAL-P01 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-当 p 为 prime 时，a 不被 p 整除与二者 co-prime 等价，所以可以用给定 Q 谓词。把任意整数 p 和 a 都全称量化，再用 conjunction 集合两个假设，最后让 E 表示所需的同余式。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (b) $\forall x\forall y:(P(x)\land Q(y,x))\implies E(y^{x-1},1,x).
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $\forall p\forall a\bigl((P(p)\land Q(a,p))\to E(a^{p-1},1,p)\bigr)$。
-
-**推导。**
-
-1. 定义域是整数，原定理对每个 prime $p$ 和每个合格整数 $a$ 成立，故先写 $\forall p\forall a$。谓词 $P(p)$ 表示 $p$ 是素数；在此条件下，$p\nmid a$ 等价于 $\gcd(a,p)=1$，所以可用题设的 $Q(a,p)$ 表示第二个前提。
-2. 把两个必要假设以 conjunction 合并。结论 $a^{p-1}\equiv1\pmod p$ 按 $E$ 的三参数定义写成 $E(a^{p-1},1,p)$，再用 implication 从假设指向结论即得答案。这里是将题目已给的 Fermat's little theorem 翻译成允许的谓词，并没有在缺少素数条件时声称互素与不整除仍等价。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $\forall p\forall a\bigl((P(p)\land Q(a,p))\to E(a^{p-1},1,p)\bigr)$.
 
 **Derivation/proof.** The quantified variables p and a range over integers. $P(p)$ expresses that p is prime. Under this hypothesis, $p\nmid a$ is equivalent to $\gcd(a,p)=1$, namely $Q(a,p)$, since a prime has only the positive divisors 1 and p. The predicate $E(a^{p-1},1,p)$ encodes exactly the congruence in Fermat's theorem. Connecting the two hypotheses to that conclusion with implication yields the stated quantified translation.
 
-## Common Mistakes
-
-- 只使用 P(p) 会错误地包含 p 整除 a 的情况。 / Include coprimality.
-- E 的第三个参数是模数 p，不是指数 p−1。 / Preserve the predicate argument order.
+Using $p,a$ instead of $x,y$, the two necessary hypotheses are $P(p)$ and $Q(a,p)$; the conclusion is $E(a^{p-1},1,p)$. For prime $p$, coprimality is equivalent to $p\nmid a$.
 
 ## Connections
 

@@ -36,32 +36,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Express the negations of $\forall x(P(x)\land\exists y\forall z(Q(x,y)\to R(y,z)))$ so that all negation symbols immediately precede predicates.
 
-## 中文解析
+## Official Answer
 
-每穿过一个量词，必须交换全称与存在；每穿过合取，还要改成析取。最里面的蕴含否定是前件真且后件假，不是把两边都取否定。逐层处理可以保留正确的变量作用域。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+$$\begin{aligned}&\neg\forall x(P(x)\land\exists y\forall z(Q(x,y)\to R(y,z)))\\&\equiv\exists x\neg(P(x)\land\exists y\forall z(Q(x,y)\to R(y,z)))\\&\equiv\exists x(\neg P(x)\lor\neg\exists y\forall z(Q(x,y)\to R(y,z)))\\&\equiv\exists x(\neg P(x)\lor\forall y\neg\forall z(Q(x,y)\to R(y,z)))\\&\equiv\exists x(\neg P(x)\lor\forall y\exists z\neg(Q(x,y)\to R(y,z)))\\&\equiv\exists x(\neg P(x)\lor\forall y\exists z(Q(x,y)\land\neg R(y,z))).\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\exists x(\neg P(x)\lor\forall y\exists z(Q(x,y)\land\neg R(y,z)))$.
 
 **Derivation/proof.** Move the outer negation through $\forall x$ to get $\exists x\neg(P(x)\land\exists y\forall z(Q\to R))$. De Morgan gives $\exists x(\neg P(x)\lor\neg\exists y\forall z(Q\to R))$. Negating the inner quantifiers gives $\forall y\exists z\neg(Q\to R)$. Finally $\neg(Q\to R)\equiv Q\land\neg R$. Restoring all arguments yields the answer with negations only before $P,R$.
 
-### 中文解答
-
-**推导。** 先否定最外层全称，得到 $\exists x\neg(P(x)\land\exists y\forall z(Q(x,y)\to R(y,z)))$。用德摩根律及量词否定依次化为
-
-$$\exists x(\neg P(x)\lor\neg\exists y\forall z(Q(x,y)\to R(y,z)))$$
-$$\equiv\exists x(\neg P(x)\lor\forall y\exists z\neg(Q(x,y)\to R(y,z)))$$
-$$\equiv\exists x(\neg P(x)\lor\forall y\exists z(Q(x,y)\land\neg R(y,z))).$$
-
-最后一步用 $\neg(A\to B)\equiv A\land\neg B$。所有否定现在只紧贴谓词 $P$ 或 $R$，而且量词顺序仍为 $x,y,z$。
-
-## Common Mistakes
-
-- 漏掉内层全称 z 的交换。
-- 把否定蕴含写成非 Q 或非 R。
+For the contrapositive argument, expand the negation of an implication as $\neg(A\to B)\equiv A\land\neg B$. This identifies the precise case ruled out by the proof instead of replacing an implication by its converse.
 
 ## Connections
 

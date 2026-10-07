@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-选择区间的后半部分。其中任何较小元素已经大于 n，它的两倍超过二 n，所以另一个区间内的不同数不可能是它的倍数。这个构造对所有正整数 n 都成立，不只是举一个数值例子。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+$P=\{n+1,n+2,\ldots,2n\}$. Answer for a specific $n$ is not accepted. (2 marks) Other answers are possible.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $P=\{n+1,n+2,\ldots,2n\}$.
 
 **Derivation/proof.** This set contains exactly $2n-(n+1)+1=n$ elements. If $a<b$ belong to it and $a\mid b$, their distinct positive values imply $b\ge2a\ge2(n+1)>2n$, contradicting $b\le2n$. Also a larger positive integer cannot divide a smaller positive integer, so both ordered directions of the criterion hold.
 
-### 中文解答
-
-**推导。** 取 $P=\{n+1,n+2,\ldots,2n\}$，元素数 $2n-(n+1)+1=n$。若两不同元素 $a<b$ 满足 $a\mid b$，因正倍数且不相等，有 $b\ge2a\ge2(n+1)>2n$，与 $b\in S$ 矛盾。较大的正整数也不能整除较小的正整数，所以任一方向的不同元素整除都不发生；此集合满足所给条件。
-
-## Common Mistakes
-
-- 只给特定 n 的例子。
-- 忽略条件对每一对有序指标都要求成立。
+The set size is $2n-(n+1)+1=n$. A larger positive integer cannot divide a smaller positive integer either, so the ordered-pair criterion holds in both directions.
 
 ## Connections
 

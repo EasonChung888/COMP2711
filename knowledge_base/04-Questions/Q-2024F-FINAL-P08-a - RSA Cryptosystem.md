@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 
 Shared printed context: ![[STEM-2024F-FINAL-P08 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-RSA 的公钥指数必须在欧拉函数模数下可逆。指数小于模数并不够，必须检查与该欧拉函数值是否互素。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=21|physical PDF page 21]].
 
-## Detailed Solution
+> Answer: (a) Note that $n=95\ T=4\cdot18=72$. $e$ has to be co-prime with $T$ but it is not. So it cannot be chosen.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** We cannot choose $e=9$.
 
-**答案。** 不能选 $e=9$。
-
-**推导。** 给定 $p=5,q=19$，得到 $n=95$ 与 $\varphi(n)=(5-1)(19-1)=4\cdot18=72$。若选 $e=9$，解密指数应满足 $9d\equiv1\pmod{72}$。但 $\gcd(9,72)=9>1$，任何 $9d-72t$ 都被九整除，不可能等于一。所以不存在所需逆元，这个 e 不能作为该 RSA 系统的有效公钥指数。
-
-## Common Mistakes
-
-- 互素条件检查对象为七十二，而不是九十五。
-- 指数九小于 n 并不意味着可选，逆元存在性才是关键。
+**Derivation/proof.** From $p=5,q=19$, obtain $n=95$ and $\varphi(n)=(5-1)(19-1)=4\cdot18=72$. Choosing $e=9$ would require $9d\equiv1\pmod{72}$. But $\gcd(9,72)=9>1$ and every $9d-72t$ is divisible by nine, so it cannot equal one. No required inverse exists, and this exponent is invalid.
 
 ## Connections
 

@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (i) A simple graph is bipartite if and only if it contains at least one odd cycle.
 
-## 中文解析
+## Official Answer
 
-二分图每跨一条边都换到另一侧，闭合回路长度因此只能为偶数。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=19|physical PDF page 19]].
 
-## Detailed Solution
+(a) (i) False
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** False.
 
-**答案。** False。
-
-**推导。** 若图有 bipartition $V=L\cup R$，每条边连接不同侧。沿闭合 cycle 每一步交替左右，奇数步后位于出发点的另一侧，不能回到原点，所以二分图不可能含 odd cycle。题目却说有至少一个奇环才是二分图，方向条件错误。具体反例是单条边图：它显然二分，却没有任何环，更没有奇环；三角形则有奇环而不二分。
-
-## Common Mistakes
-
-- 正确判据是不含奇环，不能把“没有”误读为“至少一个”。
-- 无环图也可能二分，二分图不要求必须存在偶环。
+**Derivation/proof.** In a bipartition $V=L\cup R$, every edge joins opposite sides. Along a cycle, the side alternates at each step. After an odd number of steps one is on the opposite side from the start, so an odd cycle cannot return to its starting vertex. A bipartite graph therefore has no odd cycle, contrary to the printed statement's condition. A single-edge graph is a concrete counterexample: it is bipartite and has no cycle. Conversely, a triangle has an odd cycle and is not bipartite.
 
 ## Connections
 

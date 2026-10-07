@@ -1,0 +1,9 @@
+Pascal’s Triangle (1641) 
+Corollary
+Pascal's identity, together with the initial conditions 
+ for all integers 
+n
+, can be used to give a geometric arrangement of the binomial coefficients in a triangle, called Pascal's triangle, as follows:
+ 
+24
+ 

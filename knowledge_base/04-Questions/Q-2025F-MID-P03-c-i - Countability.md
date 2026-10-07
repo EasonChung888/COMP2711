@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (i) for any set $S\subset\mathbb N$, $\mathcal P(S)$ is uncountable infinite.
 
-## 中文解析
+## Official Answer
 
-用有限自然数子集反驳“任何子集的幂集都不可数”。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) (i) F
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** False.
 
-**答案。** False。
-
-**推导。** 取真子集 $S=\varnothing\subset\mathbb N$。其幂集 $\mathcal P(S)=\{\varnothing\}$ 只有一个元素，是有限集，绝非不可数无限。一个符合前提的反例已足以否定“for any set”。即使要求 $S$ 非空，也可取单元素集合，其幂集只有两个元素。
-
-## Common Mistakes
-
-- 自然数的子集可以有限，不能把自然数自身的无限性传给所有子集。
-- 幂集至少包含空集，所以空集的幂集不是空集。
+**Derivation/proof.** Take $S=\varnothing\subset\mathbb N$. Its power set $\mathcal P(S)=\{\varnothing\}$ has only one element and is finite, so it is not uncountably infinite. One valid counterexample disproves the universal claim. Even if S must be nonempty, a singleton has a two-element power set.
 
 ## Connections
 

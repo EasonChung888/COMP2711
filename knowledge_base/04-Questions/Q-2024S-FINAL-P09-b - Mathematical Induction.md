@@ -43,24 +43,19 @@ Prerequisite context (editorial): [[Q-2024S-FINAL-P09-a - Binomial Coefficients]
 Note: If you give the number-theoretic proof of Fermat’s Little Theorem presented in class, you will receive 0 marks.
 Hint: In your proof of part (b), you may find the claim given in part (a) useful. Note that in part (b), you are permitted to use this claim from part (a), even if you were unable to prove it.
 
-## 中文解析
+## Official Answer
 
-固定素数，对底数 a 归纳。二项式展开中间项的系数全部被 p 整除，而两个端点需要显式相消并留下归纳假设对应的差。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=11|physical PDF page 11]], [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+> (b) The base case is when $a=1$, in which case we have $a^p-a=1^p-1=0$, which is divisible by $p$, and hence the base case holds. Now supposing that the claim holds for an arbitrary $a$, i.e., $p\mid a^p-a$, we wish to show that it holds for $a+1$, i.e., $p\mid(a+1)^p-(a+1)$. Expanding $(a+1)^p-(a+1)$ using the binomial formula, we get
+> $$\begin{aligned}(a+1)^p-(a+1)&=\left(\sum_{i=0}^p\binom pi\cdot a^i\cdot1^{p-i}\right)-(a+1)\\&=\left(\sum_{i=0}^p\binom pi\cdot a^i\right)-(a+1)\\&=\left(\sum_{i=1}^{p-1}\binom pi\cdot a^i\right)+\binom p0\cdot a^0+\binom pp\cdot a^p-(a+1)\\&=\left(\sum_{i=1}^{p-1}\binom pi\cdot a^i\right)+1+a^p-(a+1)\\&=\left(\sum_{i=1}^{p-1}\underbrace{\binom pi}_{\text{divisible by }p\text{ from part (a)}}\cdot a^i\right)+\underbrace{a^p-a}_{\text{divisible by }p\text{ by IH}}.\end{aligned}$$
+> Thus, $(a+1)^p-(a+1)$ is equal to the sum of terms each of which is divisible by $p$, and therefore we have $p\mid(a+1)^p-(a+1)$, which completes our inductive proof.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $p\mid a^p-a$ for every positive integer $a$.
 
-**答案。** 对任意正整数 $a$，$p\mid a^p-a$。
-
-**推导。** 固定素数 p。基础步 $a=1$ 时 $1^p-1=0$，显然被 p 整除。假设 $p\mid a^p-a$。二项式定理给出 $(a+1)^p-(a+1)=(a^p-a)+\sum_{i=1}^{p-1}\binom pi a^i$：展开中的常数一与减去的一相消，$a^p$ 与减去的 a 组成第一项。由 (a)，中间下标 $1\le i\le p-1$ 的每个系数被 p 整除，故求和全部被 p 整除；第一项由归纳假设被 p 整除。因此 $p\mid(a+1)^p-(a+1)$。归纳完成，整个证明没有预先使用待证的费马定理。
-
-## Common Mistakes
-
-- 不能直接引用费马小定理证明本题，因为这正是要用归纳建立的结论。
-- 归纳变量是 a 而非素数 p；端点组合数必须单独处理。
+**Derivation/proof.** Fix the prime $p$. Base case: $a=1$ gives $1^p-1=0$, divisible by $p$. The inductive hypothesis is $p\mid a^p-a$. By the binomial theorem, $(a+1)^p-(a+1)=(a^p-a)+\sum_{i=1}^{p-1}\binom pi a^i$: the constant one cancels the subtracted one, and $a^p-a$ forms the first term. Part (a) makes every internal coefficient, $1\le i\le p-1$, divisible by $p$, so the entire sum is divisible by $p$. The first term is divisible by $p$ by the inductive hypothesis. Thus $p\mid(a+1)^p-(a+1)$, completing induction without assuming Fermat's theorem.
 
 ## Connections
 

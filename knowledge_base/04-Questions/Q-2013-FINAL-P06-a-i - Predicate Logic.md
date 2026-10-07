@@ -40,26 +40,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 Shared context: [[STEM-2013-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-全称句的限制对象放在蕴含左边：只有富人必须满足后面的两个条件。‘并且没有兼职’是合取中的否定谓词。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(a) (i) $\forall x\in U(R(x)\Rightarrow(F(x)\land\neg J(x)))$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\forall x\in U\,[R(x)\Rightarrow(F(x)\land\neg J(x))]$.
 
 **Derivation/proof.** The phrase ‘all rich people’ sets a universal implication with antecedent $R(x)$; the two claimed properties are conjoined in the consequent.
 
-### 中文解答
-
-**推导。** “All”表示对全体人 U 作全称量化；“rich people”是限制条件 $R(x)$，作为蕴含前件。结论是同一人同时有名牌产品且没有兼职，写成 $F(x)\land\neg J(x)$。合起来为 $\forall x\in U\,[R(x)\Rightarrow(F(x)\land\neg J(x))]$；非富人不受此句限制。
-
-## Common Mistakes
-
-- 写成 $\forall x(R(x)\land F(x)\land\neg J(x))$。
-- 把 ‘all’ 错用为存在量词。
+People who are not rich are not constrained by this statement.
 
 ## Connections
 

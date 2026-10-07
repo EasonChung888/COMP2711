@@ -38,26 +38,19 @@ $\exists x\forall y(y=x^2+2x+1)$
 
 Shared context: [[STEM-2021-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先固定 x 后，右边就是固定整数，而 y 可以任意取值。取右边加一作为 y 就必然不相等；这对每个 x 都成立，足以否定存在这样的 x。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> (a) False. For every $x$, there is always an integer $y=x^2+2x+2>x^2+2x+1$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** False.
 
 **Derivation/proof.** For each integer x, choose the integer $y=x^2+2x+2$. It differs from $x^2+2x+1$ by one, so the inner universal statement fails. Therefore no existential x works. The order requires a single x to serve every integer y, unlike choosing x after seeing y.
 
-### 中文解答
-
-**推导。** 判为假。任给整数 $x$，取整数 $y=x^2+2x+2$，就有 $y-(x^2+2x+1)=1\ne0$。因此每一个候选 $x$ 都不能满足内部的“对所有 $y$”，不存在一个同时服务全部整数 $y$ 的见证。这里 $y$ 可以依赖于要反驳的 $x$，正符合否定 $\exists x\forall y$ 所需的 $\forall x\exists y$。
-
-## Common Mistakes
-
-- 把固定 x 换成依赖 y 的值。
-- 只给一个满足等式的 y。
+The difference is $1\ne0$. The refuting $y$ may depend on $x$, exactly as allowed by the negation $\forall x\exists y$.
 
 ## Connections
 

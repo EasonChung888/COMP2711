@@ -1,0 +1,11 @@
+Pascal's Identity
+The binomial coefficients satisfy many different identities. One of the most important identities is discussed below.
+Theorem (Pascal's identity)
+Let 
+n
+ and 
+k
+ be integers with 
+. Then,
+ 
+17

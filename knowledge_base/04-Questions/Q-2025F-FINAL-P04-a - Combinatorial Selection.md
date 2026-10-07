@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (a) [3 points] Every teacher stands in front of all doctors (i.e., the last teacher is before the first doctor in the queue).
 
-## 中文解析
+## Official Answer
 
-删去工程师和学生后，教师医生子序列必须四名教师在前、六名医生在后。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+(a) $\binom{22}{12}\times12!\times6!\times4!$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{22}{12}\,12!\,6!\,4!$.
 
-**答案。** $\binom{22}{12}\,12!\,6!\,4!$。
-
-**推导。** 五名工程师加七名学生是十二个不受相对先后限制的人。先选他们在二十二位中的位置，有 $\binom{22}{12}$ 种，并以 $12!$ 种次序放置。剩下十个位置由教师与医生占据，条件迫使其中最前四位全是教师，最后六位全是医生。教师内部可排 $4!$ 种，医生内部可排 $6!$ 种。因此总数 $\binom{22}{12}12!4!6!$，没有使用求和。
-
-## Common Mistakes
-
-- 教师和医生之间允许夹着其他职业的人，不要求他们各自在原队列中连续。
-- 只确定职业次序不够，所有人都不同，仍须计组内阶乘。
+**Derivation/proof.** The five engineers and seven students form 12 people with unrestricted relative positions. Choose their positions among 22 in $\binom{22}{12}$ ways and arrange them in $12!$ ways. The remaining ten positions belong to teachers and doctors. Their earliest four positions must all be teachers, and the final six must all be doctors. The teachers can be ordered in $4!$ ways and the doctors in $6!$ ways. Thus the total is $\binom{22}{12}12!4!6!$, without a summation.
 
 ## Connections
 

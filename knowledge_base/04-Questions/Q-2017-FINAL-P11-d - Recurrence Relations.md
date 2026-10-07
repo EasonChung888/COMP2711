@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-递推每次除了翻倍还加二，可以把每项先整体加二，使新数列恰好翻倍。新数列第一项是四，求出等比通项后再减二；最后检查初值与代入递推，避免指数偏一。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+$$\begin{aligned}T(n)&=2T(n-1)+2\\&=2(2T(n-2)+2)+2\\&=2^2T(n-2)+2^2+2\\&\quad\cdots\\&=2^{n-1}T(n-(n-1))+2^{n-1}+\cdots+2^2+2^1\\&=2^{n-1}T(1)+2^{n-1}+\cdots+2^2+2^1\\&=2^n+2^{n-1}+\cdots+2^2+2^1\\&=2^{n+1}-2.\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 15. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=2^{n+1}-2$.
 
 **Derivation/proof.** From $T(n)=2T(n-1)+2$, set $U(n)=T(n)+2$. Then $U(n)=2U(n-1)$ and $U(1)=4$, hence $U(n)=4\cdot2^{n-1}=2^{n+1}$. Subtract two. Independently, $n=1$ gives 2, and substitution gives $2(2^n-2)+2=2^{n+1}-2$, verifying the initial value and recurrence for all $n\ge2$.
 
-### 中文解答
-
-**推导。** 递推为 $T(n)=2T(n-1)+2$。令 $U(n)=T(n)+2$，则 $U(n)=2U(n-1)$ 且 $U(1)=4$，从而 $U(n)=4\cdot2^{n-1}=2^{n+1}$，故 $T(n)=2^{n+1}-2$。独立代回：$n=1$ 给 $2$；$2(2^n-2)+2=2^{n+1}-2$，满足每一步递推。基础与递推唯一决定序列，因此闭式成立。
-
-## Common Mistakes
-
-- 忘记把平移的二减回去。
-- 把起点 n 为一当作 n 为零。
+The initial value and recurrence uniquely determine the sequence.
 
 ## Connections
 

@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (b) [5 pts] Determine the number of ordered pairs of positive integers $(a,b)$ such that the least common multiple of $a$ and $b$ is $2^3\cdot5^7\cdot11^{13}$. Briefly explain your answer.
 
-## 中文解析
+## Official Answer
 
-每个素因数单独满足“两个指数的最大值等于目标指数”，不同素因数独立选择。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+(b) Both $a$ and $b$ are divisors of $2^35^711^{13}$, and so $a=2^x5^y11^z$ and $b=2^s5^t11^u$ for some nonnegative integers $x,y,z,s,t,u$. Because $2^35^711^{13}$ is the least common multiple, $\max(x,s)=3$, $\max(y,t)=7$, and $\max(z,u)=13$. Hence $(x,s)$ can be equal to $(0,3),(1,3),(2,3),(3,3),(3,2),(3,1)$, or $(3,0)$, so there are 7 choices for $(x,s)$. Similarly, there are 15 and 27 choices for $(y,t)$ and $(z,u)$, respectively. By the product rule, there are $7\times15\times27=2835$ ordered pairs of positive integers $(a,b)$ having $2^35^711^{13}$ as their least common multiple.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2835$.
 
-**答案。** $2835$。
-
-**推导。** 因为 $a,b$ 都整除目标公倍数，可写 $a=2^u5^v11^w$、$b=2^s5^t11^z$，指数均非负。要求 $\max(u,s)=3$、$\max(v,t)=7$、$\max(w,z)=13$。对于目标指数 $e$，指数对共有 $(e+1)^2$ 个候选，扣除两指数都小于 $e$ 的 $e^2$ 个，剩 $(e+1)^2-e^2=2e+1$。因此三种素因数分别有七、十五、二十七种有序指数对，product rule 给出 $7\cdot15\cdot27=2835$。没有其他素因数可出现，否则 LCM 会超出目标。
-
-## Common Mistakes
-
-- 有序数对不能把 $(a,b)$ 和 $(b,a)$ 合并或再除以二。
-- 每个素数的最高次幂至少在一个数中达到，不能只要求指数不超过上限。
+**Derivation/proof.** Since both numbers divide the target, write $a=2^u5^v11^w$ and $b=2^s5^t11^z$ with nonnegative exponents. Require $\max(u,s)=3$, $\max(v,t)=7$ and $\max(w,z)=13$. For target exponent e, there are $(e+1)^2$ candidate pairs; subtract the $e^2$ pairs with both exponents smaller than e. This leaves $(e+1)^2-e^2=2e+1$. The three primes therefore contribute seven, fifteen and twenty-seven ordered choices, giving $7\cdot15\cdot27=2835$. No other prime may appear, since that would change the LCM.
 
 ## Connections
 

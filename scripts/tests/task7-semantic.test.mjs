@@ -1,3 +1,4 @@
+import {checkWorkedProof, translatedCheckpoints, workedSolution} from './answer-proof-helpers.mjs';
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {readFileSync,readdirSync,existsSync,statSync} from 'node:fs';
@@ -90,12 +91,12 @@ test('Task 7 all four immutable PDF hashes, Spring duplicate inventory and rende
  const text=readFileSync('knowledge_base/03-Papers/2023 Spring Midterm.md','utf8'),p=parseFrontmatter(text).properties;assert.deepEqual(p.source_aliases,[alias]);assert.equal(p.sha256,expected.COMP2711_S2023_Midterm);assert.equal(p.page_count,14);assert.match(text,/Both rendered first pages read “Spring 2023 Midterm Examination”/);assert.match(text,/zero extra questions/);
 });
 
-test('Task 7 verified notes have unique item-specific solutions, Chinese reasoning, mistakes and metadata',()=>{
- const works=new Set(),bases=new Set(),mistakes=new Set(),difficulties=new Set();
+test('Task 7 verified notes have unique item-specific solutions, English reasoning and metadata',()=>{
+ const works=new Set(),bases=new Set(),difficulties=new Set();
  for(const r of admitted){const t=read(r.id),p=props(r.id);assert.deepEqual(validateQuestionProperties(p),[],r.id);assert.equal(p.answer_source,derivedCorrections.has(r.id)?'derived':'official');assert.equal(p.verification_status,'verified');assert.equal(p.year,2023);assert.equal(p.source_pdf,r.source_pdf);assert.ok(!controls.test(t),r.id);assert.ok(!generic.test(t),r.id);
-  assert.deepEqual([...t.matchAll(/^## (.+)$/gm)].map(m=>m[1]),['Source','Question','中文解析','Detailed Solution','Common Mistakes','Connections']);
+  assert.deepEqual([...t.matchAll(/^## (.+)$/gm)].map(m=>m[1]),['Source','Question','Official Answer','Supplementary Explanation','Connections']);
   assert.ok(!t.includes('The dependent item imports the precise premise or result'),r.id);
-  const z=section(t,'中文解析'),w=section(t,'Detailed Solution'),m=section(t,'Common Mistakes');assert.ok((z.match(/[\u3400-\u9fff]/g)??[]).length>=40,r.id);assert.ok(w.length>=300,r.id);assert.match(w,/\*\*Answer\.\*\*/);assert.match(w,/\*\*Derivation\/proof\.\*\*/);assert.ok(!works.has(w),r.id);works.add(w);assert.ok(!mistakes.has(m),r.id);mistakes.add(m);assert.equal((m.match(/^- /gm)??[]).length,2,r.id);assert.ok((m.match(/[\u3400-\u9fff]/g)??[]).length>=20,r.id);
+  const w=section(t,'Supplementary Explanation');assert.ok(w.length>=300,r.id);assert.match(w,/\*\*Answer\.\*\*/);assert.match(w,/\*\*Derivation\/proof\.\*\*/);assert.ok(!works.has(w),r.id);works.add(w);
   assert.ok(p.difficulty_basis.length>45,r.id);assert.ok(!bases.has(p.difficulty_basis),r.id);bases.add(p.difficulty_basis);difficulties.add(p.difficulty);assert.ok(t.includes(`![[${r.source_pdf}#page=${r.source_page}]]`));assert.deepEqual(r.syllabus_evidence,p.subtopics.map(l=>l.slice(2,-2)));assert.ok(r.verification.transcription.includes(String(r.source_page)));assert.ok(r.verification.solution.includes('Independent check:')||r.verification.solution.startsWith('Task11 '));
  }
  assert.deepEqual([...difficulties].sort(),[1,2,3,4]);
@@ -106,7 +107,7 @@ test('Task 7 verified notes have unique item-specific solutions, Chinese reasoni
 
 test('Task 7 every atomic moment isolates its own request, while source context and joint marks stay explicit',()=>{
  for(const variable of ['X','Y'])for(const [kind,op] of [['expectation','E'],['variance','V']]){const id=`Q-2023F-MID-P09-${variable==='X'?'a':'b'}-${kind}`,t=read(id);assert.match(section(t,'Source'),/Atomic extraction: the original combined request/);assert.ok(section(t,'Question').includes(`$${op}(${variable})$`));assert.ok(!section(t,'Question').includes(`$${op==='E'?'V':'E'}(${variable})$`));assert.equal(props(id).marks,undefined);}
- const x=read('Q-2023F-MID-P09-d-i');assert.match(section(x,'Detailed Solution'),/any dependence structure/);assert.match(section(x,'Source'),/PMF.*unambiguously.*support/s);
+ const x=read('Q-2023F-MID-P09-d-i');assert.match(section(x,'Supplementary Explanation'),/any dependence structure/);assert.match(section(x,'Source'),/PMF.*unambiguously.*support/s);
 });
 
 test('Task 7 source-sensitive formulas and computed answers stay attached to the correct items',()=>{
@@ -186,7 +187,7 @@ test('Task 7 Stems, figures and teaching targets have no answers, contamination,
  assert.equal(scopedStems.length,10);const names=new Set(vault.map(p=>basename(p,'.md'))),targets=new Set();
  const resolveLinks=(t,label)=>{for(const m of t.matchAll(/\[\[([^\]|#]+)(?:[^\]]*)\]\]/g)){const dest=m[1];if(/\.(pdf|png|base)$/.test(dest))assert.ok(existsSync(dest),label+': '+dest);else assert.ok(names.has(basename(dest,'.md')),label+': '+dest);}};
  for(const r of admitted){const t=read(r.id);resolveLinks(t,r.id);for(const l of [...props(r.id).concepts,...props(r.id).methods])targets.add(vault.find(p=>basename(p,'.md')===l.slice(2,-2)));}
- for(const path of scopedStems){const t=readFileSync(path,'utf8'),p=parseFrontmatter(t).properties;assert.equal(p.note_type,'stem');assert.ok(sources.has(p.source_pdf));assert.ok(!controls.test(t));assert.ok(!generic.test(t));assert.ok(!/^## (?:Answer|Detailed Solution)|\*\*Answer\./m.test(t));assert.ok(admitted.some(r=>read(r.id).includes('[['+basename(path,'.md')+'#Shared printed wording]]')),path);resolveLinks(t,path);}
+ for(const path of scopedStems){const t=readFileSync(path,'utf8'),p=parseFrontmatter(t).properties;assert.equal(p.note_type,'stem');assert.ok(sources.has(p.source_pdf));assert.ok(!controls.test(t));assert.ok(!generic.test(t));assert.ok(!/^## (?:Answer|Official Answer|Supplementary Explanation|Detailed Solution)|\*\*Answer\./m.test(t));assert.ok(admitted.some(r=>read(r.id).includes('[['+basename(path,'.md')+'#Shared printed wording]]')),path);resolveLinks(t,path);}
  for(const path of targets){assert.ok(path);const t=readFileSync(path,'utf8');assert.ok(!controls.test(t),path);assert.ok(!generic.test(t),path);assert.ok(t.length>350,path);assert.ok(/[\u3400-\u9fff]/.test(t),path);resolveLinks(t,path);}
  const figures=vault.filter(p=>/Figures\/2023[SF]-/.test(p));assert.equal(figures.length,4);for(const p of figures){assert.ok(statSync(p).size>3000,p);assert.ok([...admitted.map(r=>read(r.id)),...scopedStems.map(p=>readFileSync(p,'utf8')),readFileSync('knowledge_base/03-Papers/2023 Fall Final.md','utf8')].some(t=>t.includes('[['+p+']]')),p);}
  const declared=new Set(admitted.map(r=>r.note_path));assert.deepEqual(vault.filter(p=>/\/Q-2023[SF]-/.test(p)).sort(),[...declared].sort());
@@ -238,7 +239,8 @@ test('Task 7 digit-deletion induction, affine recurrence and noncrossing recurre
 });
 
 // These checkpoints name each actual result, intermediate calculation, and proof mechanism.
-// They intentionally inspect the Chinese worked solution, not the English answer or approach section.
+// The historical obligations below are translated in english-answer-checkpoints.json.
+// Check authored reasoning, excluding the official quotation.
 const chineseCheckpoints = {
   "Q-2023S-MID-P01-a-1": [
     "\\neg r\\lor\\neg f",
@@ -558,31 +560,25 @@ const chineseCheckpoints = {
     "同一表达式也给出比较数上界"
   ],
 };
-function chineseWorkedBlock(t) {
- return section(t,'Detailed Solution').match(/### 中文解答\n\n([\s\S]*?)\n### English solution/)?.[1]??'';
+function englishWorkedBlock(t) { return workedSolution(t); }
+function englishWorkedErrors(id,t) {
+ try { checkWorkedProof(t, translatedCheckpoints(id,chineseCheckpoints[id]), id); return []; }
+ catch(error) { return [error.message]; }
 }
-function chineseWorkedErrors(id,t) {
- const z=chineseWorkedBlock(t),errors=[];
- if(!z.includes('**答案。**')||!z.includes('**推导。**'))errors.push('missing Chinese answer/derivation');
- if((z.match(/[\u3400-\u9fff]/g)??[]).length<60)errors.push('insufficient Chinese explanation');
- if((z.match(/^\d+\. /gm)??[]).length<2)errors.push('missing worked steps');
- for(const checkpoint of chineseCheckpoints[id]??[])if(!z.includes(checkpoint))errors.push('missing Chinese checkpoint: '+checkpoint);
- return errors;
-}
-test('Task 7 all admitted Chinese worked solutions retain their item-specific result, steps and proof checkpoints',()=>{
+test('Task 7 all admitted English worked solutions retain their item-specific result, steps and proof checkpoints',()=>{
  assert.deepEqual(Object.keys(chineseCheckpoints).sort(),admitted.map(r=>r.id).sort());
  const distinct=new Set();
- for(const r of admitted){const t=read(r.id),z=chineseWorkedBlock(t);assert.deepEqual(chineseWorkedErrors(r.id,t),[],r.id);assert.ok(!distinct.has(z),r.id);distinct.add(z);assert.ok(section(t,'Detailed Solution').includes('### English solution\n\n**Answer.**'),r.id);}
+ for(const r of admitted){const t=read(r.id),z=englishWorkedBlock(t);assert.deepEqual(englishWorkedErrors(r.id,t),[],r.id);assert.ok(!distinct.has(z),r.id);distinct.add(z);assert.ok(z.includes('**Answer.**'),r.id);}
 });
-test('Task 7 an approach-only Chinese paragraph or a missing mathematical checkpoint cannot pass',()=>{
+test('Task 7 an approach-only English paragraph or a missing mathematical checkpoint cannot pass',()=>{
  for(const r of admitted){
-  const t=read(r.id),z=chineseWorkedBlock(t),approach=section(t,'中文解析');
+  const t=read(r.id),z=englishWorkedBlock(t),approach='Identify the relevant definitions, substitute the assumptions, and check the result.';
   // Even with plausible headings and two numbered lines, duplicating the approach is not a worked answer.
-  const shallow=t.replace(z,'**答案。** 请见英文答案。\n\n**推导。**\n\n1. '+approach+'\n2. '+approach);
-  assert.ok(chineseWorkedErrors(r.id,shallow).length>0,r.id);
-  for(const checkpoint of chineseCheckpoints[r.id]){
-   const dropped=t.replace(z,z.replaceAll(checkpoint,'[omitted]'));
-   assert.ok(chineseWorkedErrors(r.id,dropped).some(e=>e.includes(checkpoint)),r.id+': '+checkpoint);
+  const shallow=t.replace(section(t,'Supplementary Explanation'),()=>'**Answer.** See the answer.\n\n**Derivation/proof.**\n\n1. '+approach+'\n2. '+approach);
+  assert.ok(englishWorkedErrors(r.id,shallow).length>0,r.id);
+  for(const checkpoint of translatedCheckpoints(r.id,chineseCheckpoints[r.id])){
+   const dropped=t.replace(section(t,'Supplementary Explanation'),()=>''+z.replaceAll(checkpoint,'[omitted]'));
+   assert.ok(englishWorkedErrors(r.id,dropped).some(e=>e.includes(checkpoint)),r.id+': '+checkpoint);
   }
  }
 });
@@ -591,8 +587,8 @@ test('Task 7 function classifications match the high-resolution official C,C,U k
   const id='Q-2023F-MID-P03-b-'+suffix,r=byId.get(id),t=read(id);
   assert.equal(r.answer_source,'official');assert.deepEqual(props(id).solution_page,[7]);assert.equal(r.source_correction,undefined);
   assert.match(section(t,'Source'),/complete printed key.*C, C, U/);assert.match(r.verification.transcription,/scale-to3200/);
-  assert.match(section(t,'Detailed Solution'),/^Provenance: published official answer/);
-  assert.ok(!t.includes('derived correction'));assert.ok(!t.includes('C, U, C'));assert.ok(section(t,'Detailed Solution').includes('**Answer.** '+result));
+  assert.ok(section(t,'Official Answer'));
+  assert.ok(!t.includes('derived correction'));assert.ok(!t.includes('C, U, C'));assert.ok(section(t,'Supplementary Explanation').includes('**Answer.** '+result));
  }
 });
 test('Task 7 Spring function-domain prompts preserve rendered natural-number symbols and visible set braces',()=>{

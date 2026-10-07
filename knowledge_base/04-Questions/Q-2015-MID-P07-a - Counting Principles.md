@@ -41,26 +41,21 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每个人拿一张，优惠券面值彼此不同，所以等价于把 $kn$ 张不同优惠券排列到 $kn$ 个有标签的位置。此问没有资历限制，不需要按等级分组。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=12|PDF physical page 12]].
 
-## Detailed Solution
+(a) $(kn)!$, the number of permutation of the $kn$ cash coupons.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $(kn)!$.
 
 **Derivation/proof.** Order the members once. The first can receive any of $kn$ coupons, the next any of $kn-1$, down to one choice for the last. Multiplying gives $(kn)!$.
 
-### 中文解答
+The product of successive choices is $(kn)(kn-1)\cdots1=(kn)!$.
 
-**推导。** kn 张券面值互异，kn 个成员也可区分，且每人恰收一张。固定成员次序后，第一人有 kn 种券可选，第二人有 kn−1 种，依次至最后一人一种。乘积 $(kn)(kn-1)\cdots1=(kn)!$。此问允许投诉，所以资历不限制排列。
-
-## Common Mistakes
-
-- 把面值不同的优惠券视为相同物品。
-- 提前加入下一小问的资历约束。
+Every coupon is distinct and each member receives exactly one, so an allocation is a bijection.
 
 ## Connections
 

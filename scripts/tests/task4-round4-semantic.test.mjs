@@ -3,6 +3,7 @@ import {existsSync, readFileSync, readdirSync} from 'node:fs';
 import {join, basename} from 'node:path';
 import test from 'node:test';
 import {parseFrontmatter} from '../knowledge-base/schema.mjs';
+import {workedSolution} from '../knowledge-base/answers.mjs';
 
 // Fixed source evidence from rendered 2015–2016 question/marking pages.
 // No expectation below depends on later-year files or a global vault count.
@@ -49,12 +50,10 @@ test('every rebuilt atomic note has a substantive prompt, answer, reasoning, and
   const text=read(r.id),p=props(r.id),prompt=section(text,'Question').split(/\n\nShared context:/)[0];
   assert.ok(prompt.length>=20,`${r.id}: empty or truncated atomic prompt`);
   assert.doesNotMatch(prompt,/^(?:What is P|No\. Let p|\$?∃x ∈ U p)\s*\$?$/);
-  assert.ok(section(text,'中文解析').length>=50,`${r.id}: Chinese explanation`);
-  const solution=section(text,'Detailed Solution');
+  const solution=section(text,'Supplementary Explanation');
   assert.match(solution,/^\*\*Answer\.\*\*\s+\S[\s\S]+\n\n\*\*Derivation\/proof\.\*\*\s+\S/m);
   const work=solution.split('**Derivation/proof.** ')[1];assert.ok(work.length>=80,`${r.id}: incomplete derivation`);
   assert.ok(!derivations.has(work),`${r.id}: duplicate generic solution`);derivations.add(work);
-  const mistakes=section(text,'Common Mistakes').split('\n').filter(s=>s.startsWith('- '));assert.ok(mistakes.length>=2);
   assert.equal(p.answer_source,r.answer_source??'official');assert.equal(p.verification_status,'verified');assert.equal(p.term,'fall');
   assert.ok(p.difficulty_basis.length>45,`${r.id}: missing factual difficulty basis`);
   assert.ok(!bases.has(p.difficulty_basis),`${r.id}: repeated default difficulty basis`);bases.add(p.difficulty_basis);
@@ -138,7 +137,7 @@ test('residual 2013–2014 types, mappings, factual bases, and exact recurrence 
 
 test('2015 repaired logic, expectation, inclusion-exclusion, and source corrections are explicit',()=>{
  for(const part of ['c','d']){const p=props(`Q-2015-MID-P01-${part}`);assert.deepEqual(p.question_types,['classification']);assert.ok(p.subtopics.some(x=>x.includes('Predicate Logic')));assert.ok(!p.methods.some(x=>x.includes('Translation')));}
- assert.match(section(read('Q-2015-MID-P01-a'),'Detailed Solution'),/\*\*Answer\.\*\* 1, 2, 4/);
+ assert.match(section(read('Q-2015-MID-P01-a'),'Supplementary Explanation'),/\*\*Answer\.\*\* 1, 2, 4/);
  assert.match(read('Q-2015-MID-P02-c'),/printed solution.*line 3.*line 2/);
  const indicator=byId.get('Q-2015-FINAL-P03-a');assert.equal(indicator.status,'needs-review');assert.match(indicator.verification.solution,/indicator expectations/);
  const inclusion=byId.get('Q-2015-FINAL-P03-b');assert.equal(inclusion.status,'needs-review');assert.match(inclusion.verification.solution,/inclusion–exclusion/);
@@ -151,7 +150,7 @@ test('2016 atomic formulas, keys, predicate counterexamples, and induction are s
  assert.match(read('Q-2016-MID-P06-b'),/set \$x=1\$/);assert.match(read('Q-2016-MID-P06-c'),/witness \$x=1\$/);
  for(const part of ['b','c'])assert.equal(byId.get(`Q-2016-MID-P07-${part}`).status,'needs-review');
  const p4i=section(read('Q-2016-FINAL-P04-b-i'),'Question'),p4ii=section(read('Q-2016-FINAL-P04-b-ii'),'Question');
- const truthTable=section(read('Q-2016-MID-P04-a'),'Detailed Solution');
+ const truthTable=workedSolution(read('Q-2016-MID-P04-a'));
  assert.ok(truthTable.includes('\n\n| $p$ | $q$ | $r$ |'), 'truth table header must start its own Markdown block');
  const truthRows=truthTable.split('\n').filter(line=>/^\| [TF] \|/.test(line));
  assert.equal(truthRows.length,8);
@@ -159,7 +158,7 @@ test('2016 atomic formulas, keys, predicate counterexamples, and induction are s
  assert.equal(byId.get('Q-2016-FINAL-P01-d').status,'needs-review');
  assert.match(byId.get('Q-2016-FINAL-P01-d').verification.solution,/65\/72[\s\S]*2\/3<100\/121/);
  assert.ok(p4i.includes('178^{88}'));assert.ok(p4i.includes('401^{3,243,554}'));assert.ok(p4ii.includes('21^{70}\\bmod71'));assert.ok(p4ii.includes('21^{71}\\bmod72'));assert.doesNotMatch(p4ii,/2\^\{170\}|2\^\{171\}|2170|2171/);assert.notEqual(p4i,p4ii);
- assert.match(section(read('Q-2016-FINAL-P05-a-raymond'),'Detailed Solution'),/d_R=31/);assert.match(section(read('Q-2016-FINAL-P05-a-kenneth'),'Detailed Solution'),/d_K=37/);
+ assert.match(section(read('Q-2016-FINAL-P05-a-raymond'),'Supplementary Explanation'),/d_R=31/);assert.match(section(read('Q-2016-FINAL-P05-a-kenneth'),'Supplementary Explanation'),/d_K=37/);
  assert.match(read('Q-2016-FINAL-P06-b'),/447693\+988027k/);
  const induction=byId.get('Q-2016-FINAL-P08');assert.equal(induction.status,'needs-review');assert.match(induction.verification.solution,/\(19\/2\)n²−\(5\/2\)n/);assert.match(induction.verification.solution,/−n³/);
  const modPow=(a,e,m)=>{let r=1n;for(a=BigInt(a),e=BigInt(e),m=BigInt(m);e;e>>=1n,a=a*a%m)if(e&1n)r=r*a%m;return r;};

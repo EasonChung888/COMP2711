@@ -42,34 +42,28 @@ Show all the steps.
 
 (Hint: You might want to get rid of the coefficients somehow first)
 
-## 中文解析
+## Official Answer
 
-先用三模十的逆元七、五模六的逆元五消去系数。得到两个模数十和六并不互质的条件，它们在模二下兼容；可以代入参数求解，最后周期是 lcm 三十，不能误写为六十。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> One approach is to simplify each equation first by multiplying each side by the inverse of the used coefficient.
+> In first equation the inverse of $3$ mod $10$ exists as they are relatively prime and the inverse is $7$.
+> In second equation the inverse of $5$ mod $6$ exists as they are relatively prime and the inverse is $5$. So the equation converts to:
+> $$x\equiv7\pmod{10},\qquad x\equiv3\pmod6.$$
+> Now we can not use CRT directly as $6,10$ are not relatively prime. So, we use the same idea as in homework to break them down them into separate cases that are pairwise relatively prime. Which means we need to solve:
+> $$x\equiv2\pmod5,\qquad x\equiv1\pmod2,\qquad x\equiv0\pmod3.$$
+> $$m=30\quad M_1=6\quad M_2=15\quad M_3=10.$$
+> $$y_1=1,\quad y_2=1,\quad y_3=1.$$
+> $$x=2\cdot6\cdot1+1\cdot15\cdot1+0\cdot10\cdot1=27.$$
+> $$x\equiv27\pmod{30}.$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $x\equiv27\pmod{30}$，即 $x=27+30t,\ t\in\mathbb Z$。
-
-**推导。**
-
-1. 模十分别乘 $3$ 的逆元七、模六乘 $5$ 的逆元五，得到 $x\equiv7\pmod{10}$、$x\equiv15\equiv3\pmod6$。因为模数十和六并不互素，不能直接套用乘积六十为周期的普通 CRT 结论。
-2. 令 $x=7+10k$，代入第二个同余式得 $4k\equiv2\pmod6$。整数整除形式为 $6\mid(4k-2)$，等价于 $3\mid(2k-1)$，所以 $2k\equiv1\pmod3$，即 $k\equiv2\pmod3$。
-3. 写 $k=2+3t$ 即得 $x=27+30t$。回代有 $3\cdot27\equiv1\pmod{10}$、$5\cdot27\equiv3\pmod6$，周期三十也同时保持两式。每个转化都等价，因此参数式包含全部解而不只是一个特解。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $x\equiv27\pmod{30}$.
 
 **Derivation/proof.** Because $3\cdot7\equiv1\pmod{10}$ and $5\cdot5\equiv1\pmod6$, the equations become $x\equiv7\pmod{10}$ and $x\equiv15\equiv3\pmod6$. Set $x=7+10k$. Then $7+10k\equiv3\pmod6$ gives $4k\equiv2\pmod6$, equivalently $2k\equiv1\pmod3$, so $k\equiv2\pmod3$. Thus $x=7+10(2+3t)=27+30t$. Check $3\cdot27\equiv1\pmod{10}$ and $5\cdot27\equiv3\pmod6$. The parameterization captures all integer solutions.
 
-## Common Mistakes
-
-- 模数十和六共享因子二，不能直接用乘积作最小周期。 / Use compatible generalized CRT.
-- 消去系数时必须乘逆元，不能普通除法后保留原模数。 / Normalize congruences correctly.
+Alternatively, substitute $x=7+10k$ to get $4k\equiv2\pmod6$. The equivalence $6\mid(4k-2)\iff3\mid(2k-1)$ gives $k=2+3t$ and therefore $x=27+30t$.
 
 ## Connections
 

@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 (a) Consider the set $\{1,2,\ldots,2n-1\}$. Show that the number of subsets with at most $n-1$ elements is equal to $\frac{2^{2n-1}}2$.
 Hint: Think about the size of any random subset and the size of its complement.
 
-## 中文解析
+## Official Answer
 
-母集合元素数为奇数，子集与补集大小和为奇数，无法同时等于一半。补集映射把小子集与大子集配成等量的两类。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+> Answer: For the first part note that the total number of subsets of $\{1,2,\cdots,2n-1\}$ is $2^{2n-1}$. For each subset with at most $n-1$ elements, there is a complementary subset with $n$ or more elements. Since the total number of subsets is $2^{2n-1}$ and they come in complementary pairs, exactly half, $\frac{2^{2n-1}}2$, have at most $n-1$ elements.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2^{2n-1}/2=2^{2n-2}$.
 
-**答案。** 数量为 $2^{2n-1}/2=2^{2n-2}$。
-
-**推导。** 设母集 U 有 $2n-1$ 个元素。每个子集 A 与补集 $U\setminus A$ 配对，两者大小和为 $2n-1$。若 $|A|\le n-1$，则补集至少 n 个；反之若 $|A|\ge n$，则补集至多 $n-1$ 个。补集映射做两次回到 A，而且 U 非空时没有子集等于其补集，所以所有 $2^{2n-1}$ 个子集分成不重复的二元对。每对恰一个小子集，故所需数量恰为一半。
-
-## Common Mistakes
-
-- 母集为奇数大小至关重要，偶数大小会有中间层需单独处理。
-- 配对的两成员是互补子集，不是任意两个同大小子集。
+**Derivation/proof.** Let $U$ have $2n-1$ elements. Pair each subset $A$ with its complement $U\setminus A$; their sizes sum to $2n-1$. If $|A|\le n-1$, the complement has at least $n$ elements, and conversely a subset of size at least $n$ has a complement of size at most $n-1$. Taking the complement twice returns $A$, and no subset equals its complement in a nonempty universe. Thus all $2^{2n-1}$ subsets form disjoint two-element pairs. Each pair contains exactly one small subset, giving half the total.
 
 ## Connections
 

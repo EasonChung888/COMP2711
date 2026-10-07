@@ -45,26 +45,25 @@ You can assume $n\ge1$ and $n$ is odd.
 
 [Hint: Consider bit strings with no consecutive 0s.]
 
-## 中文解析
+## Official Answer
 
-左边通过末尾是 1 或 10 的两种情况建立斐波那契递推，初值要按字符串长度零和一计算。右边先放 n-i 个一，再在两端及间隙中选 i 个位置放零，保证零不相邻；按零的个数分类相加便得到同一集合的两种计数。
+Source: [[knowledge_base/past_paper/2021-final-part-2.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> Let $S_n$ be the set of bit strings of length $n$ with no consecutive 0s. We will show that both sides are equal to $|S_n|$. Let $s_i$ denote any bit string in $S_i$.
+>
+> Left-hand side: For $n=0$, the empty string is the only string and it has no consecutive 0s. So, $F(0+2)=1=|S_0|$ bit string that have no consecutive 0s. For $n=1$, there are $F(1+2)=F(3)=F(2)+F(1)=2=|S_1|$ bit strings of length 1 that have no consecutive 0s. For $n>1$, a bit string of length $n$ that has no consecutive 0s can be obtained by appending a “1” to $s_{n-1}$ and appending a “10” to $s_{n-2}$. The two strings must be different and these two are the only possible cases. By induction, we have $|S_n|=F(n+2)$.
+>
+> Right-hand side: $\binom{n+1-i}{i}$ is counting the number of bit strings of length $n$ that has exactly $i$ 0s and no consecutive 0s. When a bit string of length $n$ that has more than $(n+1)/2$ 0s, there must be at least two consecutive 0s. So, the expression sums over all mutually disjoint cases, and thus it equals to $|S_n|$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Both sides count length-n bit strings without consecutive zeros.
 
 **Derivation/proof.** Let s_n count these strings. At length zero s0=1 and length one s1=2. For n≥2, a valid string ends either in 1 after a valid length-(n−1) prefix, or in 10 after a valid length-(n−2) prefix; these disjoint exhaustive cases give s_n=s_(n−1)+s_(n−2). Hence s_n=F(n+2). Independently fix i zeros. Arrange n−i ones; their n−i+1 gaps (including endpoints) can each contain at most one zero, giving C(n−i+1,i). Feasibility requires i≤(n+1)/2; summing disjoint zero counts proves the formula. The forward recurrence only needs Fibonacci indices ≥3; the printed boundary n≥2 is not used to evaluate an unspecified F(0).
 
-### 中文解答
+The gap condition is $i\le n-i+1$, equivalent to $i\le(n+1)/2$. The stipulated odd $n$ makes the upper limit integral. Both decompositions are unique and the final-block cases are disjoint and exhaustive.
 
-**推导。** 令 $S_n$ 为长度 $n$ 且没有连续零的位串集合。空串唯一，所以 $|S_0|=1=F(2)$；长度一有 $0,1$ 两串，所以 $|S_1|=2=F(3)$。对 $n\ge2$，以一结尾的串唯一分解为 $S_{n-1}$ 中串后接一；以零结尾时倒数第二位必须为一，唯一分解为 $S_{n-2}$ 中串后接 $10$。两类互斥且穷尽，故 $|S_n|=|S_{n-1}|+|S_{n-2}|$，结合初值得 $|S_n|=F(n+2)$。另一种计数固定零的个数 $i$：先排好 $n-i$ 个一，它们两端和内部共有 $n-i+1$ 个空隙，每隙最多放一个零，故有 $\binom{n-i+1}{i}$ 种。可行当且仅当 $i\le n-i+1$，即 $i\le(n+1)/2$；题给奇数 $n$ 使上界为整数。把互斥的零数类别相加就得到所需恒等式。证明只调用 $F(3)$ 及以后的向前递推，不用未明确给定的 $F(0)$。
-
-## Common Mistakes
-
-- 把可用间隙数写成 n-i 而漏一端。
-- 末尾为零时只删零而未保证前一位为一。
+The recurrence is $|S_n|=|S_{n-1}|+|S_{n-2}|$, and the fixed-zero count is $\binom{n-i+1}{i}$.
 
 ## Connections
 

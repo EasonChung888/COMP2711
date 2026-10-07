@@ -39,26 +39,21 @@ Source verification: The printed result is $\binom{35+4-1}{3}$. It incorrectly l
 
 Shared context: [[STEM-2017-MID-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-四个盒子各保留五颗，一共先用掉二十颗，因此剩下三十颗，而不是三十五颗。把每个盒子的数量减五后得到四个非负整数之和为三十，再用隔板法即可。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+$\binom{35+4-1}{3}$.
 
-Provenance: derived; independently derived correction; discrepant source material is retained in Source. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{33}{3}=5456$.
 
 **Derivation/proof.** Write each box count as $x_i=5+y_i$, where $y_i\ge0$. Then $y_1+y_2+y_3+y_4=50-4\cdot5=30$. Stars and bars gives $\binom{30+4-1}{3}=\binom{33}{3}=5456$. Independently, direct enumeration of nonnegative quadruples summing to 30 gives the same 5456; the bijection adds five to each coordinate.
 
-### 中文解答
+For the independent enumeration, let $y_1=0,\ldots,30$, $y_2=0,\ldots,30-y_1$, and $y_3=0,\ldots,30-y_1-y_2$; $y_4$ is determined by the sum. This counts $5456$ quadruples.
 
-**推导。** 先在四盒各放五颗，共使用 $4\cdot5=20$ 颗。令 $x_i=5+y_i$，则 $y_i\ge0$ 且 $y_1+y_2+y_3+y_4=50-20=30$；减五与加五建立合法分配和非负整数解的双射。隔板法给出 $\binom{30+4-1}{3}=\binom{33}{3}=33\cdot32\cdot31/6=5456$。独立逐次枚举 $y_1=0,\ldots,30$、$y_2=0,\ldots,30-y_1$、$y_3=0,\ldots,30-y_1-y_2$，第四个由和决定，同样得 $5456$。印本的 $35$ 不是实际剩余数，因此保留为来源错误而不采用。
-
-## Common Mistakes
-
-- 只减十五颗而漏掉一个盒子的保底。
-- 把至少五颗误当作恰好五颗。
+The four required allocations reserve twenty balls in total, leaving $50-20=30$ freely distributed balls. Apply stars and bars to those thirty, rather than to the printed thirty-five.
 
 ## Connections
 

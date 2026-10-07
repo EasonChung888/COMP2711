@@ -42,24 +42,19 @@ Printed answer (iii) explicitly computes Y and var(Y)=17.5; answer (ii) belongs 
 
 What are $var(Y)$?
 
-## 中文解析
+## Official Answer
 
-独立骰子方差相加，但系数负二要平方成为四。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=22|physical PDF page 22]].
 
-## Detailed Solution
+> (iii) For $Y=X_1-2X_2+X_3$, since $X_1,X_2,X_3$ are independent:
+> $$E(Y)=E(X_1)-2E(X_2)+E(X_3)=3.5-2\cdot3.5+3.5=0.$$
+> $$\operatorname{var}(Y)=\operatorname{var}(X_1)+(-2)^2\operatorname{var}(X_2)+\operatorname{var}(X_3)=\frac{17.5}{6}+4\cdot\frac{17.5}{6}+\frac{17.5}{6}=\frac{105}{6}=17.5.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\operatorname{var}(Y)=35/2$.
 
-**答案。** 本原子项求 $var(Y)=35/2$。
-
-**推导。** 各骰子的方差均为 $35/12$。题干明确三次投掷独立，所以协方差项为零。对 $Y=X_1-2X_2+X_3$ 有 $var(Y)=1^2var(X_1)+(-2)^2var(X_2)+1^2var(X_3)=(1+4+1)35/12=210/12=35/2$。结果为十七点五，而不是原答案另一个变量 $X_1-X_2$ 的 $35/6$；必须按题设变量配对答案。
-
-## Common Mistakes
-
-- 负系数不会产生负方差，系数必须先平方。
-- 答案页额外的两骰子差值不是本题 Y，不能按答案编号机械配对。
+**Derivation/proof.** Each die has variance 35/12. Independence makes all covariance terms zero. Thus $\operatorname{var}(Y)=1^2\operatorname{var}(X_1)+(-2)^2\operatorname{var}(X_2)+1^2\operatorname{var}(X_3)=(1+4+1)35/12=210/12=35/2$. This is 17.5, not 35/6, the variance of the extra two-die difference X appearing on the answer page. Match the answer by the defined variable rather than the shifted numbering.
 
 ## Connections
 

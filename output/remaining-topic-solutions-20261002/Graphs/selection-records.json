@@ -1,0 +1,2872 @@
+[
+  {
+    "id": "Q-2025S-FINAL-P12-a-ii",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P12-a-ii - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025S-FINAL-P12-a-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 16,
+      "question_number": "12(a)(ii)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Use the odd degree sum to violate the handshaking identity.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        16
+      ]
+    },
+    "sha256": "000469ab45731d25e74748ad327d3d3b2b04e2fc65e864d63b19154b85e82aaa"
+  },
+  {
+    "id": "Q-2024F-FINAL-P11-a",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P11-a - Graph Complements.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2024F-FINAL-P11-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 27,
+      "question_number": "11(a)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Complements - 图的补图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Apply the handshaking identity to the degree sum S of the supplied undirected graph.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        27
+      ],
+      "marks": 1,
+      "related_questions": [
+        "[[Q-2024F-FINAL-P11-c - Graph Complements]]"
+      ]
+    },
+    "sha256": "01dd2d2d227a2ceacb93321e12d87534c4bc31063eddc96d229298c007b6684d"
+  },
+  {
+    "id": "Q-2022-FINAL2-P05-a-ii",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P05-a-ii - Predicate Logic.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P05-a-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(a)(ii)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Logic - 逻辑]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Predicate Logic - 谓词逻辑]]",
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Predicate Translation Method - 谓词翻译方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "translation"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Every pair across the partition must satisfy adjacency, with no internal-edge prohibition.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2022-FINAL2-P05-c - Bipartite Graphs]]"
+      ]
+    },
+    "sha256": "80434aeccdf772e7ae7d5cb7d620373accfd4de7dc3eecc5b33ba3ecff88031f"
+  },
+  {
+    "id": "Q-2022-FINAL2-P05-b",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P05-b - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P05-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(b)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof",
+        "classification"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "The already supplied partition with only cross edges directly certifies bipartiteness.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2022-FINAL2-P05-a-i - Predicate Logic]]"
+      ]
+    },
+    "sha256": "58676ad51bb1e66d49de57dd78b6e5798f17d2c4ed41a4ee703991e7b8fb7e16"
+  },
+  {
+    "id": "Q-2021-FINAL2-P05-d",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-P05-d - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2021-FINAL2-P05-d",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 4,
+      "question_number": "5(d)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Total indegree nine differs from total outdegree eight, violating directed edge counting.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 2
+    },
+    "sha256": "f972479f22bf1e40dd5a8a51d8dd52c739a243db7e89af5bad58b78cdcaa54aa"
+  },
+  {
+    "id": "Q-2020-FINAL1-P01-a-iii",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P01-a-iii - Predicate Logic.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL1-P01-a-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "1(a)(iii)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Logic - 逻辑]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Predicate Logic - 谓词逻辑]]",
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Predicate Translation Method - 谓词翻译方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "translation"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Two restricted universal quantifiers assert every cross-part edge exists.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL1-P01-c - Bipartite Graphs]]"
+      ]
+    },
+    "sha256": "080ce0dfbdcea73b4887fd0a753a02e9a94c33f6a8dfe8c7a696b5977b20f392"
+  },
+  {
+    "id": "Q-2020-FINAL1-P01-b",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P01-b - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL1-P01-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "1(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "The stated edge restriction is the defining condition of a bipartition.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2020-FINAL1-P01-a-ii - Predicate Logic]]"
+      ]
+    },
+    "sha256": "feb22d1d465974cc667ae1b97cd9fb403534458da3e5cc402231b22ed3e7a577"
+  },
+  {
+    "id": "Q-2020-FINAL2-P04-c-decision",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P04-c-decision - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P04-c-decision",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "4(c)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "Every cube vertex has degree three and hence violates even degree.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL2-P04-c-insert - Euler Trails]]"
+      ]
+    },
+    "sha256": "53a35ca4a338246b2160c1a400603fdfc9d4e59fdfdc6756749bcf29271cb064"
+  },
+  {
+    "id": "Q-2020-FINAL2-P04-d-insert",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P04-d-insert - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P04-d-insert",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "4(d)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "A single absent edge between the only two odd vertices closes the Euler trail.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL2-P04-d-decision - Euler Trails]]"
+      ]
+    },
+    "sha256": "ec1c78ff4cd191d80e3126a7ed716851b293c0f534ae4f0f41adb34c6c9087c2"
+  },
+  {
+    "id": "Q-2018-FINAL-P04-c-basis",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P04-c-basis - Recursive Structures.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2018-FINAL-P04-c-basis",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(c)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "The singleton complete graph is the smallest positive-order starting object.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "1eedcc1cff0ecbcdc402e7449bdef2e5000179d1a88c9e6cb3f64105f9e82c3f"
+  },
+  {
+    "id": "Q-2017-FINAL-P14-a",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P14-a - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2017-FINAL-P14-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 18,
+      "solution_page": [
+        18
+      ],
+      "question_number": "14(a)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 1,
+      "difficulty_basis": "A path on n vertices provides a connected example with one fewer edge, including the singleton boundary.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 1
+    },
+    "sha256": "ce4a741e63fac89b2792cbf91c3bbb0dfe067c936638fd75938b3a9ea5a5161f"
+  },
+  {
+    "id": "Q-2025F-FINAL-P11-a-i",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P11-a-i - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025F-FINAL-P11-a-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 19,
+      "question_number": "11(a)(i)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Use alternation of bipartition classes around a cycle to reject an odd-cycle equivalence.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        19
+      ],
+      "marks": 1
+    },
+    "sha256": "258cca7a6f68fb90775fbf16547dd46504a07a1b226fd2efe95f1ec627d738ff"
+  },
+  {
+    "id": "Q-2025S-FINAL-P12-a-i",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P12-a-i - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025S-FINAL-P12-a-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 16,
+      "question_number": "12(a)(i)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Contrast a universal vertex with a simultaneously required isolated vertex.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        16
+      ]
+    },
+    "sha256": "f643edaa187a26e3456eeef686e5f1b78ea086d2e7344ae1a33be4975f2b0c68"
+  },
+  {
+    "id": "Q-2024F-FINAL-P11-b",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P11-b - Graph Complements.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2024F-FINAL-P11-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 27,
+      "question_number": "11(b)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Complements - 图的补图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Combine equal edge counts of isomorphic complements with per-vertex complementary degree sums n−1.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        27
+      ],
+      "marks": 3,
+      "related_questions": [
+        "[[Q-2024F-FINAL-P11-c - Graph Complements]]"
+      ]
+    },
+    "sha256": "eec4154966cc53690e4b83685ccda75967841705a3919ca12ed4a61742168104"
+  },
+  {
+    "id": "Q-2022-FINAL2-P05-a-i",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P05-a-i - Predicate Logic.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P05-a-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(a)(i)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Logic - 逻辑]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Predicate Logic - 谓词逻辑]]",
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Predicate Translation Method - 谓词翻译方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "translation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Forbidding every within-part edge is equivalent to the required cross-part endpoint condition.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2022-FINAL2-P05-b - Bipartite Graphs]]",
+        "[[Q-2020-FINAL1-P01-a-ii - Predicate Logic]]"
+      ]
+    },
+    "sha256": "61c10a730ab45491ffd4055fa9ee2c82fac2a39f0da2d8c418c9d367fa04498a"
+  },
+  {
+    "id": "Q-2022-FINAL2-P05-c",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P05-c - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P05-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(c)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "counterexample",
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The required cross edges coexist with an internal edge creating a triangle.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2022-FINAL2-P05-a-ii - Predicate Logic]]",
+        "[[Q-2020-FINAL1-P01-c - Bipartite Graphs]]"
+      ]
+    },
+    "sha256": "e2836330e964acd1ff50fbe3bc5ef52f9f00a443146e7f6588d843f7011724bc"
+  },
+  {
+    "id": "Q-2022-FINAL2-P06-a-expectation",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P06-a-expectation - Random Variables.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P06-a-expectation",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "6(a)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Random Variables - 随机变量]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Random-Variable Method - 随机变量方法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Each of n choose two potential edges contributes p to the mean.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ]
+    },
+    "sha256": "2b7ee2388c6dec269cf595ac66857315bc3a4d07949cf58ce4b470893ede3157"
+  },
+  {
+    "id": "Q-2022-FINAL2-P06-a-variance",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P06-a-variance - Random Variables.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P06-a-variance",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "6(a)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Random Variables - 随机变量]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Random-Variable Method - 随机变量方法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Independence makes binomial edge-count variance the sum of identical Bernoulli variances.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL2-P05-b-variance - Random Variables]]"
+      ]
+    },
+    "sha256": "8379c41d588885553cd46c63e114452717312ef6d95a9cf3b40855d0177e2237"
+  },
+  {
+    "id": "Q-2021-FINAL2-P05-a",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-P05-a - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2021-FINAL2-P05-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(a)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "A degree-nine vertex must touch the degree-zero vertex in a simple ten-vertex graph.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 2
+    },
+    "sha256": "cbd2f8dbac20747c61a351263ea9c6df4f6fe5dc4f20267c5425426be56b2814"
+  },
+  {
+    "id": "Q-2021-FINAL2-P05-b",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-P05-b - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2021-FINAL2-P05-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(b)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The multiplicities of degrees three and seven are reversed from those of K3,7.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 2
+    },
+    "sha256": "b9491f451b0a7f271a13fe03c0d0ef7365222b32afe5e6dc70b22d8c13b8b4dd"
+  },
+  {
+    "id": "Q-2021-FINAL2-P05-c",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-P05-c - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2021-FINAL2-P05-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(c)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "A zero indegree blocks every path into v4 from a different vertex.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 2
+    },
+    "sha256": "cdd71fc36f10777b58a1b8a3d95c875dfdee7653052e386b6400bd039de26870"
+  },
+  {
+    "id": "Q-2020-FINAL1-P01-a-ii",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P01-a-ii - Predicate Logic.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL1-P01-a-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "1(a)(ii)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Logic - 逻辑]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Predicate Logic - 谓词逻辑]]",
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Predicate Translation Method - 谓词翻译方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "translation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Edge endpoints must occupy opposite parts of the supplied vertex partition.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL1-P01-b - Bipartite Graphs]]",
+        "[[Q-2022-FINAL2-P05-a-i - Predicate Logic]]"
+      ]
+    },
+    "sha256": "15e7f3b04554fdaa315d92f25240f176ecb177e243eb16439a06ca4fed045a90"
+  },
+  {
+    "id": "Q-2020-FINAL1-P01-c",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P01-c - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL1-P01-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "1(c)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification",
+        "counterexample"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Cross-edge completeness alone permits a triangle through an additional internal edge.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2020-FINAL1-P01-a-iii - Predicate Logic]]",
+        "[[Q-2022-FINAL2-P05-c - Bipartite Graphs]]"
+      ]
+    },
+    "sha256": "8267e973b6fa6ca45ba25d04c2ba93a6dc753adcc6cac0aaeaa1ad9d2d892dd5"
+  },
+  {
+    "id": "Q-2020-FINAL2-P04-a-decision",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P04-a-decision - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P04-a-decision",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "4(a)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Four side-midpoint vertices of the grid have odd degree three.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL2-P04-a-insert - Euler Trails]]"
+      ]
+    },
+    "sha256": "0f8157b3a3192ccca4bdfc77127f3842e9e183fd215800fe4375355ffd6e7d13"
+  },
+  {
+    "id": "Q-2020-FINAL2-P04-a-insert",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P04-a-insert - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P04-a-insert",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "4(a)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Pair the four odd midpoint vertices with two previously absent diagonal edges.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL2-P04-a-decision - Euler Trails]]"
+      ]
+    },
+    "sha256": "0469c86a628226a3ed5d4032984b850dc51b0bd8ea35602b5c7a78d8810eca58"
+  },
+  {
+    "id": "Q-2020-FINAL2-P04-b",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P04-b - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P04-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "4(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The crossing vertices B and F are actual degree-four vertices, making every degree even.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "marks": 2
+    },
+    "sha256": "ba96e9dc0cbef0f2143b8786ccf41bfa8fe7e921278139876ccf09b2d0fefc70"
+  },
+  {
+    "id": "Q-2020-FINAL2-P04-c-insert",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P04-c-insert - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P04-c-insert",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "4(c)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Four face diagonals pair all eight odd cube vertices without parallel edges.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL2-P04-c-decision - Euler Trails]]"
+      ]
+    },
+    "sha256": "9b746c5149363c75fe37a56fcd8eebe7b44fcb52999077c3ceabe602d37c5e2a"
+  },
+  {
+    "id": "Q-2020-FINAL2-P04-d-decision",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P04-d-decision - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P04-d-decision",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "4(d)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The tree-like drawing has cycles but its top and bottom endpoints have odd degrees.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        3
+      ],
+      "related_questions": [
+        "[[Q-2020-FINAL2-P04-d-insert - Euler Trails]]"
+      ]
+    },
+    "sha256": "5df8e8d573d3b48678ecd7beb4e05fdeea53b9ef29edce789b1b8d1b1cbb2f5b"
+  },
+  {
+    "id": "Q-2020-FINAL2-P05-a",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P05-a - Conditional Probability.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P05-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(a)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Conditional Probability - 条件概率]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Conditional Probability - 条件概率]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Conditional-Probability Method - 条件概率方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Conditioning on the remaining graph leaves the incident edge trials independent.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 2
+    },
+    "sha256": "587b15ea9200cd0718b666557b8d300eb4af8f5db0440eebc77cd6f8db508b89"
+  },
+  {
+    "id": "Q-2020-FINAL2-P05-b-expectation",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P05-b-expectation - Random Variables.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P05-b-expectation",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Random Variables - 随机变量]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Random-Variable Method - 随机变量方法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Linearity adds one Bernoulli mean for each unordered vertex pair.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ]
+    },
+    "sha256": "558718b84c3baeaf6d105b88b746d47a4c03518f2c2910889e411727eadc78b8"
+  },
+  {
+    "id": "Q-2020-FINAL2-P05-b-variance",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P05-b-variance - Random Variables.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P05-b-variance",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(b)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Random Variables - 随机变量]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Random-Variable Method - 随机变量方法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Independent edge indicators eliminate covariance and each has variance p times one minus p.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "related_questions": [
+        "[[Q-2022-FINAL2-P06-a-variance - Random Variables]]"
+      ]
+    },
+    "sha256": "e90855573ae071eed2f86d4bed5bf23233eba284f715eac8f747865e0966af46"
+  },
+  {
+    "id": "Q-2020-FINAL2-P05-c",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P05-c - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P05-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "5(c)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Every connected component needs one fewer edge than its vertex count, attained by trees.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2020-FINAL2-P05-d - Probability Events]]"
+      ]
+    },
+    "sha256": "86c6c5d9a6feecad698e7c1ddb4265a96a7e6a5fe6699869fa15895abeeaea56"
+  },
+  {
+    "id": "Q-2019-FINAL-P13-a",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-P13-a - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2019-FINAL-P13-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "question_number": "13(a)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The connected intersecting-triangle drawing has six degree-two tips and six degree-four crossings.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 2
+    },
+    "sha256": "27c0c66b8ee6b32ed49e6c13d6bf869e9be11fc30b29d31aa936e53e6a2164bc"
+  },
+  {
+    "id": "Q-2019-FINAL-P13-b",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-P13-b - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2019-FINAL-P13-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "question_number": "13(b)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Three nested squares joined by a vertical line have two degree-one endpoints and only even internal vertices.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 2
+    },
+    "sha256": "4191d5984142f3f7c1cc5803df3f4130e14e49b9ff7beaa717cc01ffe09ff69e"
+  },
+  {
+    "id": "Q-2019-FINAL-P13-c",
+    "path": "knowledge_base/04-Questions/Q-2019-FINAL-P13-c - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2019-FINAL-P13-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2019 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2019-final.pdf",
+      "source_page": 16,
+      "solution_page": [
+        16
+      ],
+      "question_number": "13(c)",
+      "year": 2019,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The roof apex, chimney endpoint and two lower corners give four odd vertices despite even upper corners and crossing.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 2
+    },
+    "sha256": "52dc62f7fc3422882eaf7b78c7a53fedeacab6c13d4a625295c798ab44c025b8"
+  },
+  {
+    "id": "Q-2018-FINAL-P04-c-edges",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P04-c-edges - Recursive Structures.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2018-FINAL-P04-c-edges",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 6,
+      "solution_page": [
+        6
+      ],
+      "question_number": "4(c)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Recursion - 递归]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Recursive Structures - 递归结构]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Recursive Construction Method - 递归构造法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Preserving existing edges and connecting the new vertex to all old vertices produces the next complete graph.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "2c2624fc496ac3a7bbce229676f8c72dd758a109bde178d7d25ac1ba241a5d20"
+  },
+  {
+    "id": "Q-2018-FINAL-P05-a",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P05-a - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2018-FINAL-P05-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "question_number": "5(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "classification",
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The marking note explicitly allows the singleton boundary and triangles exclude all higher complete graphs.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "73a93b2ee077dbcf3c6336bee698bd9d58063643bd3cfa78218062fd1f0eebd7"
+  },
+  {
+    "id": "Q-2018-FINAL-P06-a",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P06-a - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2018-FINAL-P06-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        9
+      ],
+      "question_number": "6(a)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "counterexample"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The four-cycle meets the minimum-degree condition while containing no triangle.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "8f9e787f9a63aafff04c7c50f07fc1b4839740ccda0f9169dd47a5d64c986b6d"
+  },
+  {
+    "id": "Q-2017-FINAL-P13-a",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P13-a - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2017-FINAL-P13-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "13(a)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "classification",
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "The standard two-coloring definition includes the isolated singleton as well as the single edge.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 2
+    },
+    "sha256": "dd2d02f7254b56e88a70f74c6c82d5cba528c0b16ba86e05b51c9089bca92c86"
+  },
+  {
+    "id": "Q-2017-FINAL-P13-b",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P13-b - Bipartite Graphs.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2017-FINAL-P13-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "13(b)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Bipartite Graphs - 二分图]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "classification",
+        "proof"
+      ],
+      "difficulty": 2,
+      "difficulty_basis": "Alternating two colors around a cycle closes consistently exactly when its length is even.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 2
+    },
+    "sha256": "fa85867dfa03e728ff491393c678b4609b41a70ee0c27a33f534be5827fe8dcf"
+  },
+  {
+    "id": "Q-2025F-FINAL-P11-a-ii",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P11-a-ii - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025F-FINAL-P11-a-ii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 19,
+      "question_number": "11(a)(ii)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Derive and attain both extremes of isolated vertices with three edges on eight labeled vertices.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        19
+      ],
+      "marks": 1
+    },
+    "sha256": "3dfef05328e5b5471a8bafa92d4c4fd1a899e8d9ac48d055b8ac1594c4634e8b"
+  },
+  {
+    "id": "Q-2025F-FINAL-P11-a-iii",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P11-a-iii - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025F-FINAL-P11-a-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 19,
+      "question_number": "11(a)(iii)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Bound the number of edges in an acyclic finite graph and compare it with ten edges.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        19
+      ],
+      "marks": 1
+    },
+    "sha256": "90005e9eaa7615fa5a3b29d17d01e146bb06621ddbd86181e8e5c9328fb90a60"
+  },
+  {
+    "id": "Q-2025F-FINAL-P11-b",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P11-b - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025F-FINAL-P11-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 19,
+      "question_number": "11(b)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "construction"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Construct a labeled simple graph and independently count every vertex degree.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        20
+      ],
+      "marks": 4
+    },
+    "sha256": "85a0741ef98e72c76200960f5dde908c4255cbeadb0bbc3b48c2b6bd66b0ade9"
+  },
+  {
+    "id": "Q-2025S-FINAL-P12-a-iii",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P12-a-iii - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025S-FINAL-P12-a-iii",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 16,
+      "question_number": "12(a)(iii)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Count the minimum number of edges from high-degree vertices into two low-degree vertices.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        16
+      ]
+    },
+    "sha256": "dbfc4ecd78dcb7029bfc42eae959c7ebb6d29042c7fdd47bcfcdb3a6d0a22cb7"
+  },
+  {
+    "id": "Q-2025S-FINAL-P12-b",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P12-b - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025S-FINAL-P12-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 16,
+      "question_number": "12(b)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Separate edges incident to one labeled vertex from unrestricted edges on the other six.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        16,
+        17
+      ],
+      "marks": 4
+    },
+    "sha256": "2d81a1d580bdd9868100c9359ab6896df5f136cc15604697519f5a2181220f13"
+  },
+  {
+    "id": "Q-2025S-FINAL-P12-c",
+    "path": "knowledge_base/04-Questions/Q-2025S-FINAL-P12-c - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025S-FINAL-P12-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Spring Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_S2025_Final.pdf",
+      "source_page": 16,
+      "question_number": "12(c)",
+      "year": 2025,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Basic Counting - 基本计数]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Counting Principles - 计数原理]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Counting Method - 计数方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Count each ordered length-two path uniquely by its middle vertex and two distinct ordered neighbors.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        17
+      ],
+      "marks": 5
+    },
+    "sha256": "9a22b20f64a1957f1a090427d0ad8cb72a72f232f51b590ede2a2bb33ae80aba"
+  },
+  {
+    "id": "Q-2024F-FINAL-P11-c",
+    "path": "knowledge_base/04-Questions/Q-2024F-FINAL-P11-c - Graph Complements.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2024F-FINAL-P11-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2024 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2024_Final.pdf",
+      "source_page": 27,
+      "question_number": "11(c)",
+      "year": 2024,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Number Theory - 数论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Modular Arithmetic - 模运算]]"
+      ],
+      "concepts": [
+        "[[Graph Complements - 图的补图]]",
+        "[[Modular Congruence - 同余]]"
+      ],
+      "methods": [
+        "[[Modular Arithmetic Method - 模运算方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Combine even degree sum and 2S=n(n−1) then inspect the four residues of n modulo four.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        27
+      ],
+      "marks": 3,
+      "related_questions": [
+        "[[Q-2024F-FINAL-P11-a - Graph Complements]]",
+        "[[Q-2024F-FINAL-P11-b - Graph Complements]]"
+      ]
+    },
+    "sha256": "6f602eaaf0725d81f6a564719cf8397b1b93d14e9debb44dc273c1ebc5dd4062"
+  },
+  {
+    "id": "Q-2022-FINAL2-P06-b",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P06-b - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P06-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 3,
+      "question_number": "6(b)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Each fixed-size component is made complete, and edges cannot cross components.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 4
+    },
+    "sha256": "f1f32f51c827d19b3a7b22f481ccfb3b0d31c60d2feb95a5bbe32a2cb0038370"
+  },
+  {
+    "id": "Q-2022-FINAL2-P06-c",
+    "path": "knowledge_base/04-Questions/Q-2022-FINAL2-P06-c - Probability Events.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2022-FINAL2-P06-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2022 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2022-final-part-2.pdf",
+      "source_page": 4,
+      "question_number": "6(c)",
+      "year": 2022,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Probability Events - 概率事件]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Probability Calculation Method - 概率计算方法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "A disconnected three-edge simple graph on four labeled vertices must consist of a triangle and an isolate.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 4,
+      "related_questions": [
+        "[[Q-2020-FINAL2-P05-d - Probability Events]]"
+      ]
+    },
+    "sha256": "2533b642ed93a45c64e268eef10e6c41e3984f32828930b5d7c66588e267b68a"
+  },
+  {
+    "id": "Q-2021-FINAL2-BONUS-a",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-BONUS-a - Random Walk Hitting Times.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2021-FINAL2-BONUS-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 4,
+      "question_number": "Bonus(a)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Random Walk Hitting Times - 随机游走到达时间]]",
+        "[[Geometric Distribution - 几何分布]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[First-Step Expectation Method - 首步期望法]]",
+        "[[Random-Variable Method - 随机变量方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Every non-target vertex has the same one-step hitting probability in a complete graph.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 2,
+      "related_questions": [
+        "[[Q-2021-FINAL2-BONUS-b - Random Walk Hitting Times]]"
+      ]
+    },
+    "sha256": "761ee02c088ff4bab775cb86b874002c42cdaebe340c84ca77744d8deeee319e"
+  },
+  {
+    "id": "Q-2020-FINAL1-P01-a-i",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL1-P01-a-i - Predicate Logic.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL1-P01-a-i",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 1]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-1.pdf",
+      "source_page": 1,
+      "question_number": "1(a)(i)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Logic - 逻辑]]",
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Predicate Logic - 谓词逻辑]]",
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Predicate Logic - 谓词逻辑]]",
+        "[[Graph Connectivity - 图连通性]]"
+      ],
+      "methods": [
+        "[[Predicate Translation Method - 谓词翻译方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "translation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Exactly one neighbor requires existence and uniqueness for each vertex.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        1
+      ]
+    },
+    "sha256": "08c76eb23cc29f9d20652b81a111fc350ad707076e1b2da1daeb108171584ea4"
+  },
+  {
+    "id": "Q-2020-FINAL2-P05-d",
+    "path": "knowledge_base/04-Questions/Q-2020-FINAL2-P05-d - Probability Events.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2020-FINAL2-P05-d",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2020 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2020-final-part-2.pdf",
+      "source_page": 4,
+      "question_number": "5(d)",
+      "year": 2020,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Counting - 计数]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Introduction to Probability - 概率基础]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Permutations and Combinations - 排列与组合]]"
+      ],
+      "concepts": [
+        "[[Probability Events - 概率事件]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Combinatorial Selection - 组合选择]]"
+      ],
+      "methods": [
+        "[[Probability Calculation Method - 概率计算方法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Combinatorial Case Analysis - 组合分类法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Among twenty three-edge subsets of K4 only the four triangles are disconnected.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        4
+      ],
+      "marks": 3,
+      "related_questions": [
+        "[[Q-2020-FINAL2-P05-c - Graph Connectivity]]",
+        "[[Q-2022-FINAL2-P06-c - Probability Events]]"
+      ]
+    },
+    "sha256": "cdc0bade7034303064c9f3405c7112eecd8befb39ecb995c92da404024c741d6"
+  },
+  {
+    "id": "Q-2018-FINAL-P05-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P05-b - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2018-FINAL-P05-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 7,
+      "solution_page": [
+        7
+      ],
+      "question_number": "5(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]",
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification",
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Exhaustive parity analysis adds the single-edge case absent from the published formula.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "related_questions": [
+        "[[Q-2017-FINAL-P13-c - Euler Trails]]"
+      ]
+    },
+    "sha256": "0da82497466b9745da864431af8f7d289957e8eb04cbffb8d5c6dead261a2992"
+  },
+  {
+    "id": "Q-2018-FINAL-P06-b",
+    "path": "knowledge_base/04-Questions/Q-2018-FINAL-P06-b - Mathematical Induction.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2018-FINAL-P06-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2018 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2018-final.pdf",
+      "source_page": 8,
+      "solution_page": [
+        9
+      ],
+      "question_number": "6(b)",
+      "year": 2018,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Induction and Recursion - 归纳与递归]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Induction - 数学归纳法]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Mathematical Induction - 数学归纳法]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Induction Proof Method - 归纳证明法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "classification"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The construction preserves triangles but fails to cover every two-dense graph of the next order.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified"
+    },
+    "sha256": "db3cff6018865129ab509195b8e5f06f28478e2079950bc94bcfa1affed4423a"
+  },
+  {
+    "id": "Q-2017-FINAL-P13-c",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P13-c - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2017-FINAL-P13-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 17,
+      "solution_page": [
+        17
+      ],
+      "question_number": "13(c)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]",
+        "[[Bipartite Graphs - 二分图]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]",
+        "[[Graph Proof Method - 图论证明法]]"
+      ],
+      "question_types": [
+        "classification",
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Counting odd-degree vertices in all four parameter parity cases reveals the omitted single-edge family.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "derived",
+      "verification_status": "verified",
+      "marks": 3,
+      "related_questions": [
+        "[[Q-2018-FINAL-P05-b - Euler Trails]]"
+      ]
+    },
+    "sha256": "d54762d7f277bf00667f50a874b49b0e89bd62d9f8457ac431a665e3c6594804"
+  },
+  {
+    "id": "Q-2017-FINAL-P14-c",
+    "path": "knowledge_base/04-Questions/Q-2017-FINAL-P14-c - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2017-FINAL-P14-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2017 Final]]",
+      "source_pdf": "knowledge_base/past_paper/2017-final.pdf",
+      "source_page": 18,
+      "solution_page": [
+        18
+      ],
+      "question_number": "14(c)",
+      "year": 2017,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "Repeated removal of a degree-one vertex preserves connectivity until a positive-order graph would have too few edges.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "marks": 4
+    },
+    "sha256": "a1d100acf64c406c33f59e8d22ae9066167d5ebba3246d8cddea95a20d662da2"
+  },
+  {
+    "id": "Q-2016-MID-P05-a",
+    "path": "knowledge_base/04-Questions/Q-2016-MID-P05-a - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2016-MID-P05-a",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2016 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "question_number": "5(a)",
+      "year": 2016,
+      "term": "fall",
+      "exam_type": "midterm",
+      "marks": 5,
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The contrapositive constructs n minus one distinct edges by repeatedly reaching an unvisited vertex.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "f8e1df5f4dbc7ec016c6b96ebb90bd6b7e97acf56c913ad421fb68f8069fa195"
+  },
+  {
+    "id": "Q-2016-MID-P05-b",
+    "path": "knowledge_base/04-Questions/Q-2016-MID-P05-b - Graph Connectivity.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2016-MID-P05-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2016 Midterm]]",
+      "source_pdf": "knowledge_base/past_paper/2016-midterm.pdf",
+      "source_page": 9,
+      "solution_page": [
+        9
+      ],
+      "question_number": "5(b)",
+      "year": 2016,
+      "term": "fall",
+      "exam_type": "midterm",
+      "marks": 5,
+      "topics": [
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Logic - 逻辑]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Inference and Proofs - 推理与证明]]"
+      ],
+      "concepts": [
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Proof Strategy - 证明策略]]"
+      ],
+      "methods": [
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Proof Method - 证明方法]]"
+      ],
+      "question_types": [
+        "proof"
+      ],
+      "difficulty": 3,
+      "difficulty_basis": "The contradiction counts two endpoint incidences per cycle vertex and two per segment.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "related_questions": []
+    },
+    "sha256": "a89119674436051a663d8cd4a8b6038543fe61c61d198696ca09c127d66553b9"
+  },
+  {
+    "id": "Q-2025F-FINAL-P11-c",
+    "path": "knowledge_base/04-Questions/Q-2025F-FINAL-P11-c - Euler Trails.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2025F-FINAL-P11-c",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2025 Fall Final]]",
+      "source_pdf": "knowledge_base/past_paper/COMP2711_F2025_Final.pdf",
+      "source_page": 19,
+      "question_number": "11(c)",
+      "year": 2025,
+      "term": "fall",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Graphs - 图论]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Graphs - 图论基础]]"
+      ],
+      "concepts": [
+        "[[Euler Trails - 欧拉通路]]"
+      ],
+      "methods": [
+        "[[Euler Degree Method - 欧拉度数方法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "Use odd-degree parity to force a duplicated A–F path and prove the minimum by enumerating short candidates.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        20
+      ],
+      "marks": 5
+    },
+    "sha256": "a006fe4acf1732297784a1edf6e9b136813b58a16ee1b235defb40a75bfad8db"
+  },
+  {
+    "id": "Q-2021-FINAL2-BONUS-b",
+    "path": "knowledge_base/04-Questions/Q-2021-FINAL2-BONUS-b - Random Walk Hitting Times.md",
+    "group": "Graphs",
+    "meta": {
+      "id": "Q-2021-FINAL2-BONUS-b",
+      "note_type": "question",
+      "schema_version": 1,
+      "course": "COMP2711",
+      "source_paper": "[[2021 Final Part 2]]",
+      "source_pdf": "knowledge_base/past_paper/2021-final-part-2.pdf",
+      "source_page": 4,
+      "question_number": "Bonus(b)",
+      "year": 2021,
+      "term": "spring",
+      "exam_type": "final",
+      "topics": [
+        "[[Topic - Probability - 概率]]",
+        "[[Topic - Graphs - 图论]]",
+        "[[Topic - Induction and Recursion - 归纳与递归]]"
+      ],
+      "subtopics": [
+        "[[Subtopic - Random Variables - 随机变量]]",
+        "[[Subtopic - Graphs - 图论基础]]",
+        "[[Subtopic - Recursion - 递归]]"
+      ],
+      "concepts": [
+        "[[Random Walk Hitting Times - 随机游走到达时间]]",
+        "[[Graph Connectivity - 图连通性]]",
+        "[[Recurrence Relations - 递推关系]]"
+      ],
+      "methods": [
+        "[[First-Step Expectation Method - 首步期望法]]",
+        "[[Graph Proof Method - 图论证明法]]",
+        "[[Recurrence-Solving Method - 递推求解法]]"
+      ],
+      "question_types": [
+        "calculation"
+      ],
+      "difficulty": 4,
+      "difficulty_basis": "First-step equations on a path turn adjacent expected-time differences into consecutive odd integers.",
+      "syllabus_version": "COMP2711-2026-27-fall",
+      "syllabus_status": "in-scope",
+      "answer_source": "official",
+      "verification_status": "verified",
+      "solution_page": [
+        5
+      ],
+      "marks": 8,
+      "related_questions": [
+        "[[Q-2021-FINAL2-BONUS-a - Random Walk Hitting Times]]"
+      ]
+    },
+    "sha256": "c4f7faad4033941a062719b71f2ed00912fe4f1d9657d19e05f3f158fabf36cd"
+  }
+]

@@ -39,24 +39,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 (i) Let $\mathbb R$ be the set of real numbers. Provide an example for an infinite set $B$ such that $\mathbb R-B$ is countable infinite.
 
-## 中文解析
+## Official Answer
 
-选 $B=\mathbb R\setminus\mathbb N$。B 包含全部无理数，所以无限，满足题目对 B 的限制。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (b) (i) $B=R-N$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $B=\mathbb R\setminus\mathbb N$.
 
-**答案。** $B=\mathbb R\setminus\mathbb N$。
-
-**推导。** 选 $B=\mathbb R\setminus\mathbb N$。B 包含全部无理数，所以无限，满足题目对 B 的限制。按集合差定义，$\mathbb R\setminus B=\mathbb R\setminus(\mathbb R\setminus\mathbb N)=\mathbb N$，自然数可列举且无限。因此所得差集恰为题目所要求的可数无限集合，构造完成。
-
-## Common Mistakes
-
-- 所选 B 必须无限；取 B 为空虽然差集不可数，也不符合本小题目标。
-- 补集恢复的是自然数，不能把 R−(R−N) 错写成无理数。
+**Derivation/proof.** Choose $B=\mathbb R\setminus\mathbb N$. The set $B$ contains every irrational, so it is infinite as required. The difference is $\mathbb R\setminus B=\mathbb R\setminus(\mathbb R\setminus\mathbb N)=\mathbb N$, which is enumerable and infinite. Thus the construction meets both requirements.
 
 ## Connections
 

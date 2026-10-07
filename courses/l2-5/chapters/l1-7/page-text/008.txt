@@ -1,0 +1,22 @@
+Proof
+We give a combinatorial proof of the theorem. 
+When we expand the product 
+, the terms are of the form 
+ for 
+. 
+To
+ obtain a term
+ of the form 
+, it is necessary to choose 
+ 
+’
+s from the 
+ sums so that the other 
+ terms in the product are 
+’
+s. 
+Therefore, the coefficient of 
+ is 
+ 
+ 
+8

@@ -1,0 +1,11 @@
+Corollary
+Corollary
+Let 
+ be a positive integer. Then
+Proof
+Using the binomial theorem with 
+ and 
+, we can get
+This proves the corollary.
+ 
+16

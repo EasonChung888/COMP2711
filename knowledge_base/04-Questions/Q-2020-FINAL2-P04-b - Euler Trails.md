@@ -38,26 +38,20 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-2.pdf#
 
 Shared context: [[STEM-2020-FINAL2-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-B 与 F 标有顶点，不是单纯交叉的线。把这些点计入后，中间四点度数四，外侧四点度数二，且全图连通，所以满足欧拉回路判据，无需补边。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+It is an Euler circuit, since all vertices have even degree.
+The official answer drawing leaves Figure 2 unchanged.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Yes; no inserted edge is needed.
 
 **Derivation/proof.** Read the labeled crossing vertices as part of the graph: B,F,D,E each have degree 4 and A,C,G,H each have degree 2. The graph is connected through D,E and the crossing vertices. Thus every vertex has even degree and the connected Euler criterion guarantees an Euler cycle.
 
-### 中文解答
-
-**推导。** 图二交叉处有明确标记的顶点 $B,F$，须按连接点数边。$B,F,D,E$ 各度数 $4$，$A,C,G,H$ 各度数 $2$，所有点通过左右竖边和交叉点连成一体。因此图连通且全部顶点偶度，已有欧拉回路，无需加边，插入数为零。
-
-## Common Mistakes
-
-- 忽视有标记的交叉顶点。
-- 认为看见交叉线就不是合法欧拉图。
+Since the graph is already connected with all degrees even, zero insertions are necessary. This is both feasible and minimal.
 
 ## Connections
 

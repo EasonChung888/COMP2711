@@ -1,0 +1,92 @@
+{
+  "description": "Historical sections deleted at user request on 2026-09-30. These are archival regression inputs, never live answer requirements.",
+  "sections": {
+    "Q-2024F-FINAL-P09-a-ii": {
+      "Common Mistakes": "- Here $B=2n^2+10000n+5n\\log n$ has leading term $2n^2$; do not copy the preceding item's linear term. The ratio is $A/B\\to5$. This finite positive limit gives both an upper and a lower bound; the large coefficient 10000 on a lower-order term does not change the classification.\n- The official answer (ii) lists only $O$. That label is correct, but it omits the equally valid $\\Omega$ and $\\Theta$. Because all relations are requested, add both missing labels; do not claim that the official answer omitted $O$."
+    },
+    "Q-2024F-FINAL-P09-a-iii": {
+      "Common Mistakes": "- The entire exponent of five is $\\log_2 n$, so rewrite it as $n^{\\log_2 5}$. Since $\\log_2 5>2$, the ratio is $n^{2-\\log_2 5}\\to0$, not a positive constant. Only $O$ holds: there is no positive lower bound for $\\Omega$, and consequently no $\\Theta$.\n- The official answer (iii) writes $A=\\Omega(B)$. This label is wrong: it incorrectly asserts that $n^2$ grows at least as fast as $B$; actually $n^2=o(B)$. Do not apply the previous item's finite-positive-limit case here. Keep the correct $O$ and exclude $\\Omega$ and $\\Theta$."
+    }
+  },
+  "removed_proof_obligations": {
+    "Q-2017-FINAL-P04-c": {
+      "checkpoints": [
+        "2^r\\le\\prod_{i=1}^r\\ell_i\\le T<n",
+        "not of $n$"
+      ],
+      "correction": "Failed prime candidates are prime divisors of $T$, not of $n$. Also the printed strict inequality $\\prod2>n$ is not justified by a set of $\\log_2n$ factors. The valid bound is $2^r\\le\\prod_{i=1}^r\\ell_i\\le T<n$, whence at most $\\lfloor\\log_2T\\rfloor+1=O(\\log n)$ candidate tests.",
+      "snapshot_sha256": "26dc018e304897029686423e6454668efadf2ff3dca77d28125ddce9b0b444c0"
+    },
+    "Q-2020-FINAL1-P05-b": {
+      "checkpoints": [
+        "\\frac n4\\log n"
+      ],
+      "correction": "The printed lower sum assumes an even integer $n$ and the strict upper inequality is not valid at the smallest cases. For all integer $n\\ge4$, $\\frac n4\\log n\\le\\log(n!)\\le n\\log n$ supplies explicit bounds; finite small cases do not affect the asymptotic result.",
+      "snapshot_sha256": "992154615e184e8207b0e8e5b5bb3223ad7fc07b8a99ecc5f959eeb8744d6e37"
+    },
+    "Q-2016-FINAL-P06-a": {
+      "checkpoints": [
+        "x=733+6930k"
+      ],
+      "correction": "To justify that the displayed solution is the only one in the interval, put $q_1=7k$. Then $x=733+6930k$, and $0\\le x<3000$ forces $k=0$. This supplies the interval check omitted after the source's candidate calculation.",
+      "snapshot_sha256": "68d3f8aea28d2dba1f41faa3589bd82041110886ad2eff22b7efc480f91865c7"
+    },
+    "Q-2018-FINAL-P12-b": {
+      "checkpoints": [
+        "2^{2^x}\\to\\infty"
+      ],
+      "correction": "The printed $f(x)=2x,g(x)=x$ are not positive on the whole real domain. Take instead $g(x)=2^x,f(x)=2\\cdot2^x$; their exponential ratio is $2^{2^x}\\to\\infty$, verifying the same conclusion with a fully valid counterexample.",
+      "snapshot_sha256": "2fdf1af2b05f67c2e0a49d200b1a6ade988ef2126c4d178b3a233623dff449f2"
+    },
+    "Q-2015-FINAL-P08-b": {
+      "checkpoints": [
+        "transition from the sole base case $n=0$ to $n=1$"
+      ],
+      "correction": "The printed $n>1$ omits the transition from the sole base case $n=0$ to $n=1$. Use $n\\ge1$ in the induction step; its displayed algebra then proves every required transition.",
+      "snapshot_sha256": "ed2be095a529a8cd95e9daf66a3a1bbf99a5a8fe7fcb711b9f3d06fd2ffa50ab"
+    },
+    "Q-2017-MID-P04-a": {
+      "checkpoints": [
+        "1\\not\\equiv8\\pmod2"
+      ],
+      "correction": "The last printed comparison should be $1\\not\\equiv8\\pmod2$, since $b+c=3+5=8$. In fact $1\\equiv5\\pmod2$. The proposed values do correctly refute the statement.",
+      "snapshot_sha256": "6a85bd90cd939a03a7d4b42c1ce48f49e1ad2c1a2b524b1846f1a6930dfe14eb"
+    },
+    "Q-2015-FINAL-P10": {
+      "checkpoints": [
+        "new case $m=n$"
+      ],
+      "correction": "The printed induction step covers only $2\\le m\\le n-1$, the range supplied by $p(n-1)$. For the new case $m=n$, directly use $n\\mid n!=n(n-1)!$. Since $m\\ge2$, the resulting residue one is the standard remainder. Including both cases completes the induction without changing its valid old-modulus argument.",
+      "snapshot_sha256": "9c1a731e3960611c7ab2804fdb21f15da8d0cb2a44a5877037714e406ad157d7"
+    },
+    "Q-2018-FINAL-P04-a": {
+      "checkpoints": [
+        "\\{1,2,3\\}\\subseteq X"
+      ],
+      "correction": "The intended basis is $1,2,3\\in X$, equivalently $\\{1,2,3\\}\\subseteq X$. The printed $\\{1,2,3\\}\\in X$ instead describes a set-valued element and is not the intended integer basis.",
+      "snapshot_sha256": "f6303b41209a8986673df34f9ab6f57ce2c80675e2aebd30d3836397d03672be"
+    },
+    "Q-2015-MID-P02-c": {
+      "checkpoints": [
+        "$p$, which is line 2"
+      ],
+      "correction": "Printed line 5 cites lines (3,4). Modus ponens requires $p$, which is line 2, so the reference must be (2,4). The stated formula and conclusion are valid with that corrected citation.",
+      "snapshot_sha256": "248403c4a1a88523895c0dbbee75105a9af8249b919c6f414647a7f375b34a30"
+    },
+    "Q-2017-MID-P01-c": {
+      "checkpoints": [
+        "P(a)=T,Q(a)=F"
+      ],
+      "correction": "The printed condition that every $Q$ is false is insufficient alone. On the nonempty domain $\\{a\\}$ set $P(a)=T,Q(a)=F$; the antecedent is true and every inner implication is false. The non-tautology conclusion is correct.",
+      "snapshot_sha256": "7f380ed6d25c7f59386e1bd9744501dea27a4315288d242d6a5546daefb75f21"
+    },
+    "Q-2018-FINAL-P05-b": {
+      "checkpoints": [
+        "exactly two odd-degree vertices",
+        "(m,n)=(1,1)"
+      ],
+      "correction": "The printed answer omits $(m,n)=(1,1)$. This single-edge graph has exactly two odd-degree vertices and an open Euler trail, so it must be added.",
+      "snapshot_sha256": "4078659fd24aaea4611505c94f90edc7cd0df63c63e84ead2f7f038554b103bb"
+    }
+  }
+}

@@ -43,24 +43,25 @@ Page 10 marking scheme explicitly assigns 4 pts to correct n; the two separate p
 
 What is the smallest number of socks that must be selected to guarantee that the selection contains at least 10 pairs?
 
-## 中文解析
+## Official Answer
 
-四种颜色至多留下四只未配对袜子，奇数总数再把这一上界降到三。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+First Solution: For any selection, at most one sock of each color will be left unpaired, and this happens if and only if an odd number of socks of that color is selected. Thus 24 socks suffice: at most 4 will be unpaired, leaving at least 20 in pairs. However, 23 will do! Since 23 is not the sum of four odd numbers, at most 3 socks out of 23 will be unpaired. On the other hand, 22 will not do: if the numbers of red, green, blue, and black socks are $5,5,5,7$, then four are unpaired, leaving 9 pairs. Thus 23 is the minimum.
 
-Provenance: published official answer, independently checked and expanded below.
+Second Solution: Proceed inductively. If we require only one pair, then it suffices to select 5 socks. Moreover, selecting 4 socks doesn't guarantee a pair since we might select one sock of each color. If we require two pairs, then it suffices to select 7 socks: any set of 7 socks must contain a pair; if we remove this pair, then the remaining 5 socks will contain a second pair as shown above. On the other hand, 6 socks might contain 3 greens, 1 black, 1 red and 1 blue - hence only one pair. Thus 7 socks is the smallest number to guarantee two pairs. Similar reasoning shows that we must draw 9 socks to guarantee 3 pairs, and in general, $2p+3$ socks to guarantee $p$ pairs. This formula is easily proved by mathematical induction. Thus 23 socks are needed to guarantee 10 pairs.
 
-### 中文解答
+Marking Scheme
+- 4 pts for correct n
+- 1 pt for argument that n is sufficient
+- 1 pt for argument that n-1 is not sufficient
+- If n is wrong, 1-2 pts.
 
-**答案。** $n=23$。
+## Supplementary Explanation
 
-**推导。** 任意选出的袜子按颜色配对，设留下 $u$ 只孤袜，则每色至多一只，$u\le4$，并且 $u$ 与总数奇偶相同。选二十三只时 $u$ 为奇数，所以 $u\le3$，至少有 $(23-3)/2=10$ 对。二十二只却可能按红、绿、蓝、黑分为 $(5,5,5,7)$，只有 $2+2+2+3=9$ 对，且未超出库存。因此二十三保证达标，二十二不能保证，最小数为二十三。
+**Answer.** $n=23$.
 
-## Common Mistakes
-
-- 这里的配对不能重复使用同一只袜子，应按每色数量除二取整。
-- 仅给二十四这个充分数还不是最小阈值，二十三的奇偶性会改善上界。
+**Derivation/proof.** Pair the socks separately by color and let u be the number left over. Each color leaves at most one, so $u\le4$, with u having the same parity as the total. For twenty-three socks, u is odd, hence $u\le3$ and at least $(23-3)/2=10$ pairs exist. However, twenty-two socks may have color counts $(5,5,5,7)$, giving only $2+2+2+3=9$ pairs without exceeding any inventory. Thus twenty-three guarantees the target and twenty-two does not; the minimum is twenty-three.
 
 ## Connections
 

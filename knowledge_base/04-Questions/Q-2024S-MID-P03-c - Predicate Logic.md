@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P03 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-取论域 $\{0,1\}$，令 $P(x,y)$ 表示 $x=0$。选择 $x=0$ 时对每个 $y$ 都成立，所以前件真。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> Answer. (c) Not a tautology
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Not a tautology.
 
-**答案。** Not a tautology.
-
-**推导。** 取论域 $\{0,1\}$，令 $P(x,y)$ 表示 $x=0$。选择 $x=0$ 时对每个 $y$ 都成立，所以前件真。但是对 $x=1$，不论取何 $y$，$P(1,y)$ 都假，后件 $\forall x\exists yP(x,y)$ 为假。于是整个蕴含在此解释下为假，并非 tautology。
-
-## Common Mistakes
-
-- 这里后件是每个 x 有某个 y，不同于按 y 分类的另一小题。
-- 反例谓词应只在 x=0 时真，等号谓词会使本题后件也真而失去反例作用。
+**Derivation/proof.** Use domain $\{0,1\}$ and let $P(x,y)$ mean $x=0$. Choosing $x=0$ makes it true for every $y$, so the antecedent is true. For $x=1$, however, $P(1,y)$ is false for every $y$, making the consequent $\forall x\exists yP(x,y)$ false. Thus this interpretation falsifies the implication.
 
 ## Connections
 

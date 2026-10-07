@@ -42,24 +42,17 @@ Hint: Two isomorphic graphs have same number of edges.
 
 Shared printed context: ![[STEM-2024F-FINAL-P11 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-G 与补图具有相同边数，所以两图的度数和相同。另一方面每个顶点在两图里的邻居合起来恰是其他所有顶点，可按顶点求总和。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=27|physical PDF page 27]].
 
-## Detailed Solution
+> (b) Note that $G$ and $H$ are isomorphism, the sum of the degree of the nodes in these two graphs added is equal to $2S$. At the same time, note that for every node $v$, $d_v^G+d_v^H=n-1$. So the sum of the degree of all nodes together in both graph is equal to $n(n-1)$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2S=n(n-1)$.
 
-**答案。** $2S=n(n-1)$。
-
-**推导。** 由于 G 自补，$G\cong H$，因此两图边数相同。握手定理给出 $\sum_v\deg_H(v)=2|E(H)|=2|E(G)|=S$。固定顶点 v，其余 $n-1$ 个顶点与 v 的边在 G、H 中恰出现一次，所以 $\deg_G(v)+\deg_H(v)=n-1$。对 n 个顶点求和，左边为 $S+S=2S$，右边为 $n(n-1)$，故所需关系成立。
-
-## Common Mistakes
-
-- 补图中同名顶点的度数未必与 G 相同，相同的是全图度数和。
-- 每个顶点的潜在邻居是 n−1 个，不包括自身。
+**Derivation/proof.** Self-complementarity gives $G\cong H$, so the graphs have equal edge counts. The handshaking identity yields $\sum_v\deg_H(v)=2|E(H)|=2|E(G)|=S$. For fixed $v$, each of the other $n-1$ vertices is adjacent to it in exactly one graph, giving $\deg_G(v)+\deg_H(v)=n-1$. Summing over all $n$ vertices gives $S+S=2S$ on the left and $n(n-1)$ on the right.
 
 ## Connections
 

@@ -39,26 +39,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-初选概率最低的门反而有利于随后总是换门。只要初选错了，主持人排除另一个错误门后，剩下的未开门就必有奖；因此让初选尽量容易错，便能提高固定换门策略的胜率。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+We pick door 3 first, then always switch. The winning probability is $p(E)=p(W=1,M=2)+p(W=2,M=1)=0.5\cdot1+0.3\cdot1=0.8$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Initially choose door 3 and always switch to the remaining unopened door.
 
 **Derivation/proof.** Door 3 initially has the prize with probability 0.2. If that initial choice is wrong, Monty must reveal the other losing unchosen door, leaving the prize behind the remaining unopened door. Switching then wins. If the initial choice is right, switching loses. Thus this strategy wins exactly when $W\ne3$, an event of probability $0.5+0.3=0.8$, which exceeds the previous 0.55 and proves it is better.
 
-### 中文解答
+Since $0.8>0.55$, the strategy is strictly better as requested; no separate claim of global optimality is needed.
 
-**推导。** 可先选先验概率最小的门三，然后无论主持人开哪扇门都换到另一扇未开门。若奖在门一或门二，最初选择错了，主持人必须排除另一空门，换门便必胜；若奖在三，换门必输。因此获胜事件恰为 $W\ne3$，概率 $0.5+0.3=0.8$。由于 $0.8>0.55$，这个策略严格优于(c)，足以回答“更好”，无需另外声称所有策略的最优性。
-
-## Common Mistakes
-
-- 坚持初选最高先验门而认为无法改进。
-- 把“初选错误”当作策略已经失败。
+To maximize the probability of success by always switching, initially choose the door with the smallest prior probability of containing the prize. Switching succeeds exactly when the initial choice was wrong.
 
 ## Connections
 

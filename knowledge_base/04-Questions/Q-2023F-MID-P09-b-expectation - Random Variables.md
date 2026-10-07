@@ -42,33 +42,21 @@ Source discrepancy: the printed sentence says values from ℕ, but it explicitly
 
 Shared printed context: ![[STEM-2023F-MID-P09 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-本原子题取平移后 Y 的 expectation。X 的两个可能值分别变成零与负二，概率不变，因此可以直接按新分布计算，也可以用 expectation 的线性性质减去一。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=19|physical PDF page 19]].
 
-## Detailed Solution
+> (b)
+> $$E(Y)=E(X-1)=E(X)-1=-\frac23$$
+> $$V(Y)=V(X-1)=V(X)=\frac89$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $E(Y)=-2/3$。
-
-**推导。**
-
-1. 逐个变换 $Y=X-1$：当 $X=1$ 时 $Y=0$，概率 $2/3$；当 $X=-1$ 时 $Y=-2$，概率 $1/3$。确定性平移改变取值但不改变对应概率。
-2. 直接按新分布计算，$E(Y)=0\cdot(2/3)+(-2)\cdot(1/3)=-2/3$。也可先从原 PMF 得 $E(X)=2/3-1/3=1/3$，再用 linearity 得 $E(X-1)=E(X)-1=-2/3$。两种路径一致；负均值也落在 $Y$ 的取值区间 $[-2,0]$ 内，并不意味着概率为负。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $E(Y)=-2/3$.
 
 **Derivation/proof.** The atomic target is $E(Y)$. If $X=1$, then $Y=0$ with probability 2/3; if $X=-1$, then $Y=-2$ with probability 1/3. Hence $E(Y)=0(2/3)+(-2)(1/3)=-2/3$. Equivalently, recomputing $E(X)=1/3$ from the PMF gives $E(X-1)=E(X)-1=-2/3$. Both computations use only the one-step distribution.
 
-## Common Mistakes
-
-- X=−1 时 Y=−2，不是零；平移必须分别作用于两个取值。 / Apply the shift to both support values.
-- 不能把 E(X−1) 写为 E(X)；均值确实随常数平移。 / The mean decreases by one.
+The mean lies in the support interval $[-2,0]$; a negative mean is not a negative probability.
 
 ## Connections
 

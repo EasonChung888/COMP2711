@@ -38,26 +38,25 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-final.pdf
 (b) Use Part (a) to calculate
 $$4^{385}\bmod105.$$
 
-## 中文解析
+## Official Answer
 
-将三百八十五拆成七乘四十九加四十二，先把四的四十九次幂约成四，剩余指数恰好变为四十九，再用一次结论即可。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+(b) By the result of (a)
+$$\begin{aligned}
+4^{385}\bmod105&=4^{(7*49)+42}\bmod105\\
+&=((4^{7*49}\bmod105)\times4^{42})\bmod105\\
+&=((4^7\times4^{42})\bmod105\\
+&=4^{49}\bmod105=4\bmod105=4.
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $4$.
 
 **Derivation/proof.** The base 4 satisfies the coprimality condition. Since $385=7\cdot49+42$, $4^{385}=(4^{49})^7\cdot4^{42}\equiv4^7\cdot4^{42}=4^{49}\equiv4\pmod{105}$.
 
-### 中文解答
-
-**推导。** 底数四不被三、五、七整除，故前题给 $4^{49}\equiv4\pmod{105}$。分解 $385=7\cdot49+42$，于是 $4^{385}=(4^{49})^7\cdot4^{42}\equiv4^7\cdot4^{42}=4^{49}\equiv4\pmod{105}$。四已经位于零至104之间，所求余数为四。注意这里使用的是前题的49次幂关系，不是错误地把所有指数直接模49。
-
-## Common Mistakes
-
-- 未经依据直接把指数模 105。
-- 拆指数时把乘法 $7\cdot49$ 误写成加法。
+The base four is divisible by none of $3,5,7$. The final four is already the standard remainder; this argument does not reduce arbitrary exponents modulo 49.
 
 ## Connections
 

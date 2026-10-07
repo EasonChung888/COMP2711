@@ -43,24 +43,44 @@ Source correction: Page 15 prints log₄3≈1.584; the correct approximation is0
 $$T(n)=3T\left(\frac n4\right)+n^2\qquad T(1)=1$$
 You may assume $n$ is of form $4^k$ for some positive integer $k$.
 
-## 中文解析
+## Official Answer
 
-每层子问题数量乘三而平方成本除十六，展开后是一条公比三除十六的有限级数。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=14|physical PDF page 14]], [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+(a) We solve the recurrence
+$$T(n)=3T\left(\frac n4\right)+n^2,\qquad T(1)=1,$$
+where $n=4^k$ for some positive integer $k$.
 
-Provenance: published official answer, independently checked; the secondary source slip is retained above.
+Using the iteration (unrolling) method:
+$$\begin{aligned}
+T(n)&=3T\left(\frac n4\right)+n^2\\
+&=3\left[3T\left(\frac n{16}\right)+\left(\frac n4\right)^2\right]+n^2=3^2T\left(\frac n{16}\right)+\frac{3\cdot n^2}{16}+n^2\\
+&=3^3T\left(\frac n{64}\right)+\frac{3^2\cdot n^2}{16^2}+\frac{3\cdot n^2}{16}+n^2.
+\end{aligned}$$
+After $k$ iterations (until the argument becomes 1, because $n/4^k=4^k/4^k=1$),
+$$T(n)=3^kT(1)+n^2\sum_{i=0}^{k-1}3^i\cdot\left(\frac1{16}\right)^i.$$
+Since $T(1)=1$ and $n=4^k$, we have $3^k=(4^{\log_4 3})^k=n^{\log_4 3}$. The sum is a geometric series with ratio $r=3/16$:
+$$\sum_{i=0}^{k-1}3^i\cdot\frac1{16^i}=\sum_{i=0}^{k-1}\left(\frac3{16}\right)^i=\frac{1-(3/16)^k}{1-3/16}=\frac{1-(3/16)^k}{13/16}=\frac{16}{13}\left(1-\left(\frac3{16}\right)^k\right).$$
+Thus
+$$T(n)=3^k+n^2\cdot\frac{16}{13}\left(1-\left(\frac3{16}\right)^k\right).$$
+Substituting $3^k=n^{\log_4 3}$ and $(3/16)^k=3^k/16^k=3^k/n^2=n^{\log_4 3-2}$ (or directly $(3/16)^k=3^k/n^2$),
+$$T(n)=n^{\log_4 3}+\frac{16}{13}n^2\left(1-\frac{n^{\log_4 3}}{n^2}\right)=n^{\log_4 3}+\frac{16}{13}n^2-\frac{16}{13}n^{\log_4 3}.$$
+Combining the terms with the same exponent,
+$$T(n)=\left(1-\frac{16}{13}\right)n^{\log_4 3}+\frac{16}{13}n^2=-\frac3{13}n^{\log_4 3}+\frac{16}{13}n^2=\frac{16n^2-3n^{\log_4 3}}{13}.$$
+Because $\log_4 3\approx1.584<2$, the dominant term is $\frac{16}{13}n^2$, so $T(n)=\Theta(n^2)$. The exact closed form is
+$$\boxed{T(n)=\frac{16n^2-3n^{\log_4 3}}{13}}.$$
 
-### 中文解答
+## Supplementary Explanation
 
-**答案。** $T(n)=\dfrac{16n^2-3n^{\log_4 3}}{13}$。
+**Answer.** $T(n)=\dfrac{16n^2-3n^{\log_4 3}}{13}$.
 
-**推导。** 逐层代入得到 $T(n)=3^jT(n/4^j)+n^2\sum_{i=0}^{j-1}(3/16)^i$。取 $n=4^k$ 并令 $j=k$，便到达 $T(1)=1$，因此 $T(n)=3^k+n^2\frac{1-(3/16)^k}{1-3/16}$。由于 $16^k=n^2$，有 $n^2(3/16)^k=3^k$，化简得 $T(n)=3^k+\frac{16}{13}(n^2-3^k)=\frac{16n^2-3\cdot3^k}{13}$。再用 $3^k=n^{\log_4 3}$ 即得闭式。$n=4$ 时计算为十九，与 $3T(1)+16=19$ 一致。实际 $\log_4 3\approx0.79248$，并非答案页写的 1.584；但两者小于二的判断及所印闭式是正确的。
-
-## Common Mistakes
-
-- 层代价的公比是三除十六，不能只按子问题数量用公比三。
-- log₄3 约为零点七九二，原答案约一点五八四是换底数值错误。
+**Derivation/proof.** Successive substitutions give
+$$T(n)=3^jT(n/4^j)+n^2\sum_{i=0}^{j-1}(3/16)^i.$$
+Write $n=4^k$ and take $j=k$ to reach $T(1)=1$. Then
+$$T(n)=3^k+n^2\frac{1-(3/16)^k}{1-3/16}.$$
+Since $16^k=n^2$, we have $n^2(3/16)^k=3^k$. Consequently
+$$T(n)=3^k+\frac{16}{13}(n^2-3^k)=\frac{16n^2-3\cdot3^k}{13}.$$
+Use $3^k=n^{\log_4 3}$ to obtain the claimed formula. At $n=4$ it gives 19, agreeing with $3T(1)+16=19$. The actual value $\log_4 3\approx0.79248$ is below two, so the quadratic term dominates.
 
 ## Connections
 

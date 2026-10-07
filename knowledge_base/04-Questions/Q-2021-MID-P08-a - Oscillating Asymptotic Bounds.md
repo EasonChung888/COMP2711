@@ -38,26 +38,19 @@ $f(x)=\sin(x),g(x)=(\cos(x))^2$.
 
 Shared context: [[STEM-2021-MID-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-用两组趋向无穷的特殊点分别打破上下界。余弦为零时正弦绝对值为一，不能有 O 上界；正弦为零时余弦平方为一，不能有 Ω 下界，因此三个选项全不成立。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) None. When $x$ keeps increasing, $(\cos(x))^2$ periodically reaches zero. When $(\cos(x))^2$ is zero, $\sin(x)$ could be $-1$ or $1$. So, no constant $c$ that makes $f(x)\le c\cdot g(x)$ or $f(x)\ge c\cdot g(x)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** None.
 
 **Derivation/proof.** At $x=\pi/2+2k\pi$, |f(x)|=1 and g(x)=0, ruling out any eventual constant-factor upper bound |f|≤Cg. At x=kπ, |f(x)|=0 and g(x)=1, ruling out any positive lower bound |f|≥cg. Both sequences grow arbitrarily large. Therefore neither O nor Ω holds, and hence neither does Θ. The same counterexamples settle either signed or absolute-value comparison here.
 
-### 中文解答
-
-**推导。** 三个选项都不成立。先取任意大的 $x=\pi/2+2k\pi$，此时 $|f(x)|=1$ 而 $g(x)=0$，不可能满足 $|f(x)|\le Cg(x)$，故不是 $O(g)$。再取 $x=k\pi$，有 $|f(x)|=0$、$g(x)=1$，不可能满足任意正 $c$ 的 $|f(x)|\ge cg(x)$，故不是 $\Omega(g)$。没有上下界中的任一个，自然也不是 $\Theta(g)$。两组点都可超过任何给定阈值，有限起始区间不能挽救渐近界。
-
-## Common Mistakes
-
-- 只看函数都有限便判 Θ(1) 后互相等阶。
-- 只检查一种零点而漏掉另一方向。
+At $x=k\pi$, $|f(x)|=0$ while $g(x)=1$.
 
 ## Connections
 

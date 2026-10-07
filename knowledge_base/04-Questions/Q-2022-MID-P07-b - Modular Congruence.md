@@ -38,26 +38,19 @@ Source correction: Rendered PDF page3 Problem7(b) correctly asks for 3^2022 mod4
 
 Calculate $3^{3^{2022}}\bmod10$. Show your steps.
 
-## 中文解析
+## Official Answer
 
-外层三的幂模十周期为四，所以只需算内层指数模四。三模四为负一，偶数二零二二次幂为一，因此外层指数形如四 t 加一，结果为三。十不是素数，不能直接套费马小定理。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (b) We use a similar idea but can't use Fermat's Little Theorem since 10 is not a prime. But observe that $3^4\equiv81\equiv1\pmod{10}\implies3^{4t}\equiv1\pmod{10}$ for any integer $t$. So it suffices to find $3^{2022}\bmod4$. Since $3^2\equiv1\pmod4$, $3^{3022}\equiv1\pmod4$. Then $3^{3^{2022}}=3^{4t+1}\equiv3\pmod{10}$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $3$.
 
 **Derivation/proof.** Modulo10, 3^4=81≡1, so the outer exponent only needs its residue modulo 4. Since 3≡−1 mod 4 and 2022 is even, 3^2022≡(−1)^2022=1 mod 4. Thus the exponent is 4t+1 and 3^(3^2022)≡(3^4)^t·3≡3 mod 10. The exponent is a power tower, not 3·2022 or 3^2022 as the entire expression.
 
-### 中文解答
-
-**推导。** 模十不是质数模，不能直接套费马小定理，但可直接算 $3^4=81\equiv1\pmod{10}$。因此外层指数只需知道模四余数。因 $3\equiv-1\pmod4$ 且 $2022$ 为偶数，$3^{2022}\equiv(-1)^{2022}=1\pmod4$，写成 $3^{2022}=4t+1$。于是 $3^{3^{2022}}=(3^4)^t\cdot3\equiv3\pmod{10}$。印本中途的 $3^{3022}$ 应为 $3^{2022}$；这里保留题目正确指数完成计算，最终余数三不变。
-
-## Common Mistakes
-
-- 把幂塔读成两个指数相乘。
-- 对合数模十使用素数版费马定理。
+The actual inner exponent satisfies $3^{2022}\equiv(-1)^{2022}=1\pmod4$. Writing $3^{2022}=4t+1$ gives $3^{3^{2022}}=(3^4)^t\cdot3$.
 
 ## Connections
 

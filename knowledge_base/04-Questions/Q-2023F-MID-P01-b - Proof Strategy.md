@@ -45,24 +45,21 @@ Let $p,q,r,s,t$ denote five propositions. You are given the following set of pre
 
 Using rules of inference for propositional logic, show that the truth of the above premises implies that the conclusion $\neg r\to\neg t$ is true.
 
-## 中文解析
+## Official Answer
 
-从 p 或 s 与非 s 可以先确定 p；这时第一条前提才给出 q 到 r 的蕴含。把 t 到 q 接到前面得到 t 到 r，取 contrapositive 后正好是题目要求的方向。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (b)
+> 1. $\neg s$ — Premise
+> 2. $p\lor s$ — Premise
+> 3. $p$ — (1,2)
+> 4. $p\to(q\to r)$ — Premise
+> 5. $q\to r$ — (3,4)
+> 6. $t\to q$ — Premise
+> 7. $t\to r$ — (5,6)
+> 8. $\neg r\to\neg t$ — (7)
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 四条前提推出 $\neg r\to\neg t$。
-
-**推导。**
-
-1. 按题目次序把前提记作① $p\to(q\to r)$，② $p\lor s$，③ $t\to q$，④ $\neg s$。由②④使用 disjunctive syllogism 得⑤ $p$；再由①⑤使用 modus ponens 得⑥ $q\to r$。
-2. 将③的后件 $q$ 接到⑥的前件，使用 hypothetical syllogism 得⑦ $t\to r$。对⑦取 contrapositive，得到⑧ $\neg r\to\neg t$，正是结论。这里没有假设 $q,r,t$ 实际为真，也没有把 $r\to t$ 这个未经证明的逆命题混入推导。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $\neg r\to\neg t$.
 
@@ -77,10 +74,7 @@ Provenance: published official answer, independently checked and expanded below.
 
 The inference uses only the four premises; no truth value for q, r, or t is assumed.
 
-## Common Mistakes
-
-- 未先推出 p 就从第一条直接取 q→r 不合法。 / Discharge the outer antecedent first.
-- 把 t→r 的逆命题当成逆否命题会得出错误方向。 / Negate and reverse both sides for contraposition.
+In the supplementary numbering, step 5 gives $p$, step 6 gives $q\to r$, and step 8 gives $\neg r\to\neg t$.
 
 ## Connections
 

@@ -40,26 +40,19 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2013-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-函数从三个定义域元素出发；每个值都可独立地取 $n$ 个目标元素，所以使用乘法原理。
+Source: [[knowledge_base/past_paper/2013-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(a) To define $f$ are from $S_3$ to $S_n$, we need to specify $f(1)$, $f(2)$, and $f(3)$. Each of those values can be any of the $n$ elements in $S_n$. So, the answer is: $n^3$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $n^3$.
 
 **Derivation/proof.** A function is fixed by the independent choices of $f(1),f(2),f(3)$. Each has $n$ possible images, hence $n\cdot n\cdot n=n^3$.
 
-### 中文解答
-
-**推导。** 函数由三个像 $f(1),f(2),f(3)$ 唯一确定。每一个像都可以从 $S_n$ 的 n 个元素中任取，题目允许像重复，因此三个选择独立。乘法原理给 $n\cdot n\cdot n=n^3$；每组三个像恰对应一个函数。
-
-## Common Mistakes
-
-- 把函数数目写成 $3^n$，颠倒定义域与陪域。
-- 把允许相同函数值的情形排除。
+Repeated images are permitted. Each ordered triple of images determines exactly one function.
 
 ## Connections
 

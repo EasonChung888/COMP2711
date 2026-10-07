@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 
 (iii) The set of all polynomials with real coefficients.
 
-## 中文解析
+## Official Answer
 
-实系数多项式包含每个实常数，单是这个子集已经不可数。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(iii) Uncountable.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Uncountable.
 
-**答案。** Uncountable。
-
-**推导。** 每个实数 $t$ 都对应常数多项式 $f_t(x)=t$。若 $t\ne s$，两常数多项式不同，所以这是从 $\mathbb R$ 到该多项式集合的单射。若多项式集合可数，其常数子集也可数，便会令 $\mathbb R$ 可数，与实数不可数矛盾。因此不论还允许多高的次数，整个集合都不可数。
-
-## Common Mistakes
-
-- 证明不可数只需找到不可数子集，不必枚举所有次数的系数。
-- 变量符号 x 不是一种额外的自由系数，不能把它与实参数混同。
+**Derivation/proof.** Each real $t$ gives the constant polynomial $f_t(x)=t$. Distinct real parameters give distinct polynomials, defining an injection from $\mathbb R$ into this set. If the polynomial set were countable, its constant subset would be countable, contradicting the uncountability of $\mathbb R$. Allowing additional degrees cannot change this conclusion.
 
 ## Connections
 

@@ -1,0 +1,16 @@
+Permutation
+Definition
+A 
+permutation
+ of a set of distinct elements is an ordered arrangement of the elements of the set.
+Example
+Let 
+. The ordered arrangement 
+ is a permutation of 
+S
+ is a 
+different
+ permutation of 
+S
+ 
+4

@@ -1,0 +1,27 @@
+Combinatorial Proof
+Suppose that there are 
+m
+ elements in one set and
+ n 
+elements in a second set (the two sets are 
+disjoint
+). Then the total number of ways to choose 
+r
+ elements from the union of the two sets is 
+. 
+Another way to choose 
+r
+ elements from the union is to choose 
+r
+ – 
+k
+ elements from the first set and then 
+k
+ elements from the second set, where 
+k
+ is an integer with 
+. 
+By the product rule, this can be done in 
+ ways. Consequently,
+ 
+36

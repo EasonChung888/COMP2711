@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 (d) [2 point] We call a 5-digit number palindrome if it is of form $\overline{abcba}$. For example 11111 and 12421 are both palindromes. However, 21013 is not. How many 5-digit palindrome numbers exist?
 Note that the leftmost digit can not be 0.
 
-## 中文解析
+## Official Answer
 
-回文后两位由前两位决定，只需选择三个自由数字。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+> (d) $9\times10\times10$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $900$.
 
-**答案。** $900$。
-
-**推导。** 首位 $a$ 可为一至九，共九种。第二位 $b$ 与中间位 $c$ 可各为零至九，各十种。一旦选定 $a,b,c$，第四位必须等于 $b$，第五位必须等于 $a$，没有额外自由度。每组三数字唯一确定一个五位回文数，反之亦然，所以乘法原理给出 $9\cdot10\cdot10=900$。
-
-## Common Mistakes
-
-- 首位为零会变成不足五位的数，不能给 $a$ 十种选择。
-- 镜像位置不是新的独立数字，不能再乘两个十。
+**Derivation/proof.** The first digit a has nine choices, one through nine. The second digit b and middle digit c each have ten choices, zero through nine. The fourth digit must equal $b$, and the fifth must equal a, so these positions add no freedom. Each triple a,b,c determines exactly one five-digit palindrome and conversely. Therefore $9\cdot10\cdot10=900$.
 
 ## Connections
 

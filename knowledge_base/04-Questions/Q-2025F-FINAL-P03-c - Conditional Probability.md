@@ -40,24 +40,18 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (c) [3 points] Given A is taller than B and shorter than C, what is the probability that A is seventh tallest?
 
-## 中文解析
+## Official Answer
 
-条件是 C、A、B 的固定相对次序，占所有排名六分之一；A 第七时上下位置各自计数。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+(c) Given $C>A>B$. Permutations satisfying this: $14!/6$. If $A$ is rank 7, $C$ in ranks $1,\ldots,6$ (6 choices), $B$ in ranks $8,\ldots,14$ (7 choices), arrange remaining 11: $11!$.
+$$\Pr(A\text{ rank }7\mid C>A>B)=\frac{6\cdot7\cdot11!}{14!/6}=\frac{252}{14\cdot13\cdot12}=\frac3{26}.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $3/26$.
 
-**答案。** $3/26$。
-
-**推导。** 三个不同身高的人有 $3!=6$ 种等可能相对顺序，条件 $C>A>B$ 因而留下 $14!/6$ 个排名。固定 A 第七，C 可占第一至第六，共六种；B 可占第八至第十四，共七种。其余十一人可任意排列，共 $6\cdot7\cdot11!$ 个有利结果。条件概率为 $6\cdot7\cdot11!/(14!/6)=252/(14\cdot13\cdot12)=3/26$。两组选位互不重叠，乘法计数有效。
-
-## Common Mistakes
-
-- 条件不只是 A>B，加入 C>A 后分母应从一半改为六分之一。
-- C 与 B 的位置不能互换，它们分别被要求在 A 的前方与后方。
+**Derivation/proof.** The three distinct-height players have $3!=6$ equally likely relative orders, so $C>A>B$ leaves $14!/6$ rankings. Fix $A$ seventh. Player $C$ has six choices among ranks 1–6; player $B$ has seven choices among ranks 8–14. The other 11 players can be arbitrarily arranged, giving $6\cdot7\cdot11!$ favorable rankings. Hence the conditional probability is $6\cdot7\cdot11!/(14!/6)=252/(14\cdot13\cdot12)=3/26$. The position sets for $C$ and $B$ are disjoint, so multiplication does not create collisions.
 
 ## Connections
 

@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-要否定存在 x 对所有 y 成立，必须对每一个候选 x 都能构造失败的 y。取 y 为两倍 x 就令左边恒等于零，无法大于一，因此没有任何见证 x 可以成功。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+False. This is the negation of (c), which is true (shown below).
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** False.
 
 **Derivation/proof.** For any integer $x$ proposed as the existential witness, choose the integer $y=2x$. Then $2x-y=0$, which is not greater than 1. Thus no x works for all y. This proves the negation $\forall x\exists y(2x-y\le1)$, rather than merely testing one candidate x.
 
-### 中文解答
-
-**推导。** 断言为假。任取候选整数 $x$，都能在它之后选整数 $y=2x$，使 $2x-y=0\le1$。所以没有任何 $x$ 能对所有 $y$ 满足严格大于 $1$ 的条件。我们实际证明了完整否定 $\forall x\exists y(2x-y\le1)$，而非只否定一个候选见证。
-
-## Common Mistakes
-
-- 只试 x=0 而未排除其他候选。
-- 要求反例 y 不得依赖 x。
+With the chosen witness $y=2x$, the expression is $2x-y=0\le1$. This confirms the inequality for every real universal choice of $x$.
 
 ## Connections
 

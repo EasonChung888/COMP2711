@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P03 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-取论域 $\{0,1\}$，令 $P(x,y)$ 表示 $x=y$。对每个 $y$ 选 $x=y$，前件成立；但是 $x=0$ 不满足 $y=1$，$x=1$ 不满足 $y=0$，没有一个固定 $x$ 对所有 $y$ 有效。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> Answer. (b) Not a tautology
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Not a tautology.
 
-**答案。** Not a tautology.
-
-**推导。** 取论域 $\{0,1\}$，令 $P(x,y)$ 表示 $x=y$。对每个 $y$ 选 $x=y$，前件成立；但是 $x=0$ 不满足 $y=1$，$x=1$ 不满足 $y=0$，没有一个固定 $x$ 对所有 $y$ 有效。因此后件假，整个蕴含假，这个反模型证明它不是 tautology。
-
-## Common Mistakes
-
-- 等号谓词逐列有一个真值，却没有一行全真，恰好区分两个量词次序。
-- 把每个 y 各自的见证 x 合成一个共同 x 并无逻辑依据。
+**Derivation/proof.** Use domain $\{0,1\}$ and let $P(x,y)$ mean $x=y$. For each $y$ choose $x=y$, so the antecedent holds. But $x=0$ fails for $y=1$, and $x=1$ fails for $y=0$, so no fixed $x$ works for every $y$. The consequent is false and the implication is false in this countermodel.
 
 ## Connections
 

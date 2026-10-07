@@ -1,0 +1,177 @@
+Proof of Theorem
+The 
+n
+1
+ indistinguishable objects of type 1 can be placed among the 
+n
+ positions in C(
+n
+,
+n
+1
+)=
+n
+!/
+n
+1
+!
+(
+n
+-
+n
+1
+)!
+ ways.
+The 
+n
+2
+ indistinguishable objects of type 2 can be placed among the (
+n
+-
+n
+1
+) positions in C(
+n
+-
+n
+1
+,
+n
+2
+)=
+(
+n
+-
+n
+1
+)!
+/
+n
+2
+! 
+(
+n
+-
+n
+1
+-
+n
+2
+)!
+ ways.
+….
+The 
+n
+k
+-1
+ indistinguishable objects of type 
+k
+-1 can be placed among the (
+n
+-
+n
+1
+-…-
+n
+k
+-2
+) positions in C(
+n
+-
+n
+1
+-…-
+n
+k
+-2
+, 
+n
+k
+-1
+)= (
+n
+-
+n
+1
+-…-
+n
+k
+-2
+)!/
+ n
+k
+-1
+! (
+n
+-
+n
+1
+-
+n
+2
+ …-
+n
+k
+-2
+-
+n
+k
+-1
+)! ways.
+The 
+n
+k
+ indistinguishable objects of type 
+k
+ can be placed among the (
+n
+-
+n
+1
+-…-
+n
+k
+-1
+) positions in C(
+n
+-
+n
+1
+-…-
+n
+k
+-1
+, 
+n
+k
+)= (
+n
+-
+n
+1
+-…-
+n
+k
+-1
+)!/
+ 
+n
+k
+! (
+n
+-
+n
+1
+-
+n
+2
+ …-
+n
+k
+-1
+-
+n
+k
+)! ways.
+36
+ 

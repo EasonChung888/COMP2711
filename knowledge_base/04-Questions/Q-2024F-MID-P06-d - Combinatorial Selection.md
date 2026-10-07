@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P06 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-可重复的 increasing 表示非递减。若包含任意零，零必排在开头，违反六位数条件，故 $x_0=0$。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (d) Similar to part (c). However we should not pick any 0. This means $x_1+x_2+\cdots+x_9=6$ which has $\binom{14}8$ different non-negative integer solutions.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{14}8=3003$.
 
-**答案。** $\binom{14}8=3003$。
-
-**推导。** 可重复的 increasing 表示非递减。若包含任意零，零必排在开头，违反六位数条件，故 $x_0=0$。剩余频数满足 $x_1+\cdots+x_9=6$，每项非负，每个向量按升序排列得到唯一合法六位数。九种数字的非负分配数为 $\binom{6+9-1}{9-1}=\binom{14}8=3003$，无须再减全零，因为零已彻底排除。
-
-## Common Mistakes
-
-- 升序时任何零都会成为前导零，应直接只统计一至九的频数。
-- 九种数字分配六次，隔板数量是八，不是九或十。
+**Derivation/proof.** Allowing repetitions makes “increasing” mean nondecreasing. Any zero would appear first, so $x_0=0$. The remaining frequencies satisfy $x_1+\cdots+x_9=6$ with all entries nonnegative. Every vector gives one valid ascending six-digit number. Stars and bars yields $\binom{6+9-1}{9-1}=\binom{14}8=3003$. No all-zero case needs subtracting because zero was excluded altogether.
 
 ## Connections
 

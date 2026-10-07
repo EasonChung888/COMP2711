@@ -37,26 +37,26 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-第二轮要对上一轮三个新元素分别生成，再取并集。中间的一二和二二等会从不同路径得到，但集合不重复计元素；因此不是九个新元素，而是第二坐标为二的五个不同点。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+Second Application of Recursive step to $S$
+Omit the application of the Recursive step to $(0,0)$ again, since we already have those terms in $S$.
+Applying recursive step to $(0,1)$ gives $(0,2),(1,2),(2,2)$.
+Applying recursive step to $(1,1)$ gives $(1,2),(2,2),(3,2)$.
+Applying recursive step to $(2,1)$ gives $(2,2),(3,2),(4,2)$.
+So $S=\{(0,0),(0,1),(0,2),(1,1),(1,2),(2,1),(2,2),(3,2),(4,2)\}$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** The new elements are $(0,2),(1,2),(2,2),(3,2),(4,2)$.
 
 **Derivation/proof.** From $(0,1)$ obtain first coordinates $0,1,2$ at level two; from $(1,1)$ obtain $1,2,3$; from $(2,1)$ obtain $2,3,4$. Their union gives $0,1,2,3,4$, each paired with 2. The accumulated set is these five pairs together with $(0,0),(0,1),(1,1),(2,1)$. Reapplying the rules to $(0,0)$ adds no further elements.
 
-### 中文解答
+The accumulated set has nine distinct elements.
 
-**推导。** 对第一轮的 $(0,1)$ 应用规则得到 $(0,2),(1,2),(2,2)$；从 $(1,1)$ 得 $(1,2),(2,2),(3,2)$；从 $(2,1)$ 得 $(2,2),(3,2),(4,2)$。集合去重后新元素是 $(0,2),(1,2),(2,2),(3,2),(4,2)$。连同原有四个元素，累计集合为 $\{(0,0),(0,1),(1,1),(2,1),(0,2),(1,2),(2,2),(3,2),(4,2)\}$，共九个。再对基础元素应用只重获第一轮元素。
-
-## Common Mistakes
-
-- 把重复生成的点当成不同集合元素。
-- 只沿着一个上一轮元素继续生成。
+After composing the possible intermediate steps, remove duplicates: a relation is a set, so an ordered pair reached by several intermediate elements is included only once.
 
 ## Connections
 

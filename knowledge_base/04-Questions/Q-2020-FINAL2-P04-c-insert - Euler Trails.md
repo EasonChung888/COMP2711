@@ -40,26 +40,22 @@ Prerequisite context (editorial): [[Q-2020-FINAL2-P04-c-decision - Euler Trails]
 
 Shared context: [[STEM-2020-FINAL2-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-八个奇度点至少要四条边配对。选择两个侧面的对角线 A-H、B-E、D-G、C-F，每点恰好被用一次，度数从三变四；这些都是原图不存在的边，补边数达到下界。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+It is not an Euler circuit, since all vertices have odd degree.
+The official answer drawing adds $AH,BE,DG,CF$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Insert $AH,BE,DG,CF$; the minimum is 4 edges.
 
 **Derivation/proof.** All eight cube vertices have degree 3, so at least four inserted edges are needed to change eight odd parities. The four listed pairs are nonedges of the original cube and use every vertex once. They raise every degree to 4; connectivity is preserved. Thus the resulting graph has an Euler cycle, attaining the parity lower bound.
 
-### 中文解答
+The drawing is transcribed into edge names above; every vertex occurs in exactly one added pair.
 
-**推导。** 原立方体八点全为奇度，至少需 $8/2=4$ 条新增边。可加 $AH,BE,DG,CF$：这些都是原图没有的点对，且每个顶点恰出现一次。加入后每点度数从三变四，连通性保留，满足欧拉回路判据。构造正好四条，与奇度下界相同，因此最小数为四。
-
-## Common Mistakes
-
-- 遗漏后面的四个奇度点。
-- 重复使用同一点配对而让其他点保持奇度。
+The parity lower bound is $8/2=4$. In the four selected nonedges each vertex appears exactly once, increasing every degree from three to four, so four insertions suffice and are minimal.
 
 ## Connections
 

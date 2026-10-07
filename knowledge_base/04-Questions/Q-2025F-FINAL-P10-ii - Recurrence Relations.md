@@ -43,24 +43,36 @@ Prerequisite context (editorial): [[Q-2025F-FINAL-P10-i - Recurrence Relations]]
 
 (ii) [4 points] Find the closed-form formula for $a_n$ using the expansion method.
 
-## 中文解析
+## Official Answer
 
-每次损失的两条在较早步骤会被之后倍增，形成二的幂次损失和。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+(ii) We use the recurrence $a_n=2a_{n-1}-2$ and substitute repeatedly:
+$$\begin{aligned}
+a_n&=2a_{n-1}-2\\
+&=2(2a_{n-2}-2)-2=2^2a_{n-2}-2\cdot2-2\\
+&=2^2(2a_{n-3}-2)-2\cdot2-2=2^3a_{n-3}-2\cdot2^2-2\cdot2-2\\
+&\quad\vdots\\
+&=2^na_0-2(2^{n-1}+2^{n-2}+\cdots+2+1).
+\end{aligned}$$
+The sum in parentheses is a geometric series:
+$$2^{n-1}+2^{n-2}+\cdots+2+1=2^n-1.$$
+Thus,
+$$a_n=2^na_0-2(2^n-1)=2^n\cdot10-2\cdot2^n+2=10\cdot2^n-2^{n+1}+2.$$
+Simplifying:
+$$a_n=10\cdot2^n-2^{n+1}+2=(10-2)\cdot2^n+2=8\cdot2^n+2.$$
+Therefore the explicit formula is
+$$a_n=8\cdot2^n+2\quad\text{for all }n\ge0.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $a_n=8\cdot2^n+2$.
 
-**答案。** $a_n=8\cdot2^n+2$。
-
-**推导。** 导入 $a_n=2a_{n-1}-2,a_0=10$。展开两层为 $a_n=2^2a_{n-2}-2(2+1)$，三层为 $2^3a_{n-3}-2(2^2+2+1)$。继续至第零天，得到 $a_n=2^na_0-2\sum_{j=0}^{n-1}2^j$。有限几何级数为 $\sum_{j=0}^{n-1}2^j=2^n-1$，故 $a_n=10\cdot2^n-2(2^n-1)=8\cdot2^n+2$。$n=0$ 取空和为零，仍给十；$n=1$ 给十八，与第一天变化一致。
-
-## Common Mistakes
-
-- 累计损失不能直接写成两倍天数，因为早期损失影响后续倍增。
-- 最后常数项为正二，展开负号时不能漏掉减负一带来的正号。
+**Derivation/proof.** Start with $a_n=2a_{n-1}-2$ and $a_0=10$. Expanding twice gives $a_n=2^2a_{n-2}-2(2+1)$; three expansions give $2^3a_{n-3}-2(2^2+2+1)$. Continue to day zero:
+$$a_n=2^na_0-2\sum_{j=0}^{n-1}2^j.$$
+The finite geometric sum equals $2^n-1$, so
+$$a_n=10\cdot2^n-2(2^n-1)=8\cdot2^n+2.$$
+For $n=0$, the empty sum is zero and the formula gives ten. For $n=1$ it gives 18, consistent with the first day's update.
 
 ## Connections
 

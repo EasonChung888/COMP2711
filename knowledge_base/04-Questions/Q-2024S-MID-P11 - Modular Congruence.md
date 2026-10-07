@@ -43,24 +43,25 @@ Note: For example, in the special case $p=7$, note that 111111 is divisible by 7
 Hint 1: Express the number as the sum of powers of 10.
 Hint 2: You may find Fermat’s Little Theorem helpful.
 
-## 中文解析
+## Official Answer
 
-重复一组成的数乘九可化为十的幂减一。费马小定理作用于十，但最后仍需说明九在模素数下可以消去，不能省略互素条件。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=16|physical PDF page 16]], [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+> Answer.
+> Call the given number $S$. We want to prove that $p\mid S$. Following Hint 1, note that $S$ can be written as: $S=10^0+10^1\cdots+10^{p-2}$.
+> This is the sum of the first $p-1$ terms of a geometric series, for which we can apply the formula: $r^0+r^1\cdots+r^{n-1}=\frac{r^n-1}{r-1}$, where $r\ne1$. Substituting $r:=10,n:=p-1$, we obtain:
+> $$S=10^0+10^1\ldots10^{p-2}=\frac{10^{p-1}-1}{10-1}=\frac{10^{p-1}-1}9.$$
+> Rearranging, we get that: $9S=10^{p-1}-1$.
+> Taking this equation mod $p$, we get: $9S\equiv10^{p-1}-1\pmod p$. (*)
+> Since $p$ is a prime greater than or equal to 7, it follows that $p$ and 10 have no common factors. Following Hint 2, we note that Fermat's Little Theorem is applicable here, and we can use it to obtain $10^{p-1}\equiv1\pmod p$. (**)
+> Substituting from (??) into (??), we get: $9S\equiv10^{p-1}-1\equiv1-1\equiv0\pmod p$, which implies that $p\mid9S$.
+> Since $p$ is a prime and $p\mid9S$, it follows that either $p\mid9$ or $p\mid S$, but since $9=3\cdot3$ and $p\ge7$, it cannot be the case that $p\mid9$. Therefore, we conclude that $p\mid S$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $p$ divides the repunit with $p-1$ digits.
 
-**答案。** $p\mid\underbrace{111\cdots1}_{p-1\text{ digits}}$。
-
-**推导。** 令 $S=1+10+\cdots+10^{p-2}$，共有 $p-1$ 项。等比求和给出 $9S=10^{p-1}-1$。因为 $p\ge7$ 是素数，$p\nmid10$，Fermat's Little Theorem 给出 $10^{p-1}\equiv1\pmod p$，所以 $9S\equiv0\pmod p$。又 $p\nmid9$，由素数整除乘积性质，$p\mid9S$ 必推出 $p\mid S$。这里两个排除分别保证费马定理可用与九可消去，故目标成立。
-
-## Common Mistakes
-
-- 数字位数为 $p-1$，最高次幂为 $p-2$，不要多算一位。
-- 从 $9S\equiv0$ 到 $S\equiv0$ 必须说明 $p$ 不整除九。
+**Derivation/proof.** Let $S=1+10+\cdots+10^{p-2}$, with $p-1$ terms. Geometric summation gives $9S=10^{p-1}-1$. Since $p\ge7$ is prime, $p\nmid10$, and Fermat's Little Theorem gives $10^{p-1}\equiv1\pmod p$. Thus $9S\equiv0\pmod p$. Also $p\nmid9$, so the prime product property implies $p\mid S$ from $p\mid9S$. The two exclusions respectively justify applying Fermat and cancelling nine, completing the proof.
 
 ## Connections
 

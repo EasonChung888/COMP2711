@@ -69,13 +69,9 @@ test("2013–2014 atomic notes are source-complete and non-template", () => {
     assert.doesNotMatch(note, controls, `${record.id} contains an extraction control byte`);
     assert.doesNotMatch(note, /\(cid:\d+\)|Exact English source-page transcription|Official result and derivation are on the embedded/i);
     const prompt = section(note, "Question");
-    const chinese = section(note, "中文解析");
-    const solution = section(note, "Detailed Solution");
-    const mistakes = section(note, "Common Mistakes");
+    const solution = section(note, "Supplementary Explanation");
     assert.ok(prompt.length >= 30, `${record.id} has an empty or truncated atomic prompt`);
-    assert.ok(chinese.length >= 30, `${record.id} lacks a substantive Chinese explanation`);
     assert.match(solution, /^\*\*Answer\.\*\*\s+\S[\s\S]*?\n\n\*\*Derivation\/proof\.\*\*\s+\S/m, `${record.id} needs answer and derivation`);
-    assert.ok(mistakes.split("\n").filter((line) => line.startsWith("-")).length >= 2, `${record.id} needs concrete mistakes`);
     assert.doesNotMatch(solution, /从题设识别出|按 .*逐步处理|先写出定义或样本空间；再代入题中给出的限制/i, `${record.id} still has a generic derivation`);
     assert.match(note, /^source_page: [1-9]\d*$/m, `${record.id} needs a source page`);
     if (record.answer_source === 'derived') assert.ok(record.source_correction, `${record.id} needs explicit correction evidence`);

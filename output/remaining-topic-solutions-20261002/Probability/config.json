@@ -1,0 +1,10 @@
+{
+  "topic": "Probability",
+  "slug": "Probability",
+  "prefix": "P",
+  "groupNames": [
+    "Introduction to Probability",
+    "Conditional Probability",
+    "Random Variables"
+  ]
+}

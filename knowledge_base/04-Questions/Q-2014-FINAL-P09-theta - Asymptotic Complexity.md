@@ -38,26 +38,22 @@ Then simplify the closed-form expression using the big $\Theta$ notation.
 
 Shared context: [[STEM-2014-FINAL-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-比较指数而非只看两项系数。$\log_2 5\approx2.322$ 大于 2，因此递归树的叶子贡献主导。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+Let $n=2^i$. Iterating the recurrence, we get
+$$\begin{aligned}
+T(n)&=T(2^i)\\&=5T(2^{i-1})+2^{2i}\\&=5[5T(2^{i-2})+2^{2(i-1)}]+2^{2i}\\&=5^2T(2^{i-2})+\frac54 2^{2i}+2^{2i}\\&=5^3T(2^{i-3})+(\frac54)^2 2^{2i}+\frac54 2^{2i}+2^{2i}\\&\quad\vdots\\&=5^iT(2^{i-i})+(\frac54)^{i-1}2^{2i}+\ldots+\frac54 2^{2i}+2^{2i}\\&=5^i+2^{2i}\frac{(\frac54)^i-1}{\frac54-1}\\&=5\cdot5^i-4\cdot4^i\\&=5\cdot n^{\log_2 5}-4n^{\log_2 4}\\&=\Theta(n^{\log_2 5}).
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=\Theta(n^{\log_25})$.
 
 **Derivation/proof.** Since $\log_25>2$, the term $5n^{\log_25}$ dominates $4n^2$ in the closed form, leaving the stated tight order. Indeed, $n^{\log_2 5}\le5n^{\log_2 5}-4n^2\le5n^{\log_2 5}$ for $n\ge1$.
 
-### 中文解答
-
-**推导。** 闭式是 $T(n)=5n^{\log_2 5}-4n^2$。因为 $\log_2 5>2$，当 $n\ge1$ 时 $n^2\le n^{\log_2 5}$。故 $n^{\log_2 5}\le T(n)\le5n^{\log_2 5}$。上下界系数分别可取一与五，因此 $T(n)=\Theta(n^{\log_2 5})$。
-
-## Common Mistakes
-
-- 把结果写成 $\Theta(n^2)$。
-- 忽略负的低阶项便声称函数可能为负。
+Since $\log_2 5>2$, the upper estimate is $T(n)\le5n^{\log_2 5}$ and the lower estimate is $T(n)\ge n^{\log_2 5}$.
 
 ## Connections
 

@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-这次盒子无标签，要把四组的所有重新编号视为同一个分配。每组非空且包含不同杂志集合，所以恰好有四的阶乘种编号方式，没有对称导致的固定情况，因此可以统一除以四的阶乘。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+Each distribution into identical boxes gives rise to $4!=24$ distributions into labeled boxes, since once we have made the distribution into unlabeled boxes we can arbitrarily label the boxes. Therefore the answer is the same as the answer in part (a) divided by $24$, namely $(40!/10!^4)/4!$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\frac{40!}{(10!)^4\cdot4!}$.
 
 **Derivation/proof.** For labeled boxes, the count is $40!/(10!)^4$. Each unlabeled distribution consists of four distinct, nonempty sets of ten distinguishable issues. Assigning box labels to those sets can be done in exactly $4!$ ways, and no nontrivial label permutation fixes the distribution because the disjoint nonempty sets differ. Divide by $4!$ to count each unlabeled partition once.
 
-### 中文解答
+Every box has ten issues and is nonempty; allowing empty boxes would require rechecking this uniform-labeling argument.
 
-**推导。** 先用(a)的有标签计数 $40!/(10!)^4$。任一无标签分配包含四个不相交、非空的十期集合，它们必彼此不同。给这四个集合编号，恰有 $4!$ 种不同有标签分配，没有交换后不变的例外。因此每个无标签分配被算了相同的 $4!$ 次，答案为 $\frac{40!}{(10!)^4\,4!}$。若容许空箱就必须另审查这种除法，但本题每箱十期保证无空箱。
-
-## Common Mistakes
-
-- 只因盒子相同就把杂志也当相同。
-- 没有说明为何每种结果都恰好被重复计四的阶乘次。
+The forty people are pairwise distinct. Assigning them to four equal groups gives $\frac{40!}{(10!)^4\,4!}$ after division by the internal orders and then by the permutation of the four unlabeled groups.
 
 ## Connections
 

@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-四十九是七的平方，所以只乘一次十五仍剩一个七，要连续使用两次逆元。每次先取余能使数值较小；最后得到八十三，再代入原来的四十九系数方程验证。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+$$\begin{aligned}49x&\equiv11\pmod{104}\\\to15\cdot7\cdot7x&\equiv15\cdot11\pmod{104}\\\to7x&\equiv61\pmod{104}\\\to15\cdot7x&\equiv15\cdot61\pmod{104}\\\to x&\equiv83\pmod{104}.\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $x=83$.
 
 **Derivation/proof.** Write $49=7^2$. Multiplying once by 15 gives $7x\equiv165\equiv61\pmod{104}$. Multiplying again gives $x\equiv15\cdot61=915\equiv83\pmod{104}$. Check $49\cdot83=4067=39\cdot104+11$, confirming the result.
 
-### 中文解答
-
-**推导。** 因 $49=7^2$，可以连续两次乘逆元 $15$。第一次得 $7x\equiv165\equiv61\pmod{104}$；第二次得 $x\equiv15\cdot61=915\equiv83\pmod{104}$。于是 $x=83$。代回 $49\cdot83=4067=39\cdot104+11$，验证无误；每一步乘的是可逆元素，所以没有遗失或增加解。
-
-## Common Mistakes
-
-- 把十五直接当作四十九的逆元。
-- 做第二次乘法时用错第一次余数。
+Each multiplication uses an invertible residue, so no solutions are lost or introduced.
 
 ## Connections
 

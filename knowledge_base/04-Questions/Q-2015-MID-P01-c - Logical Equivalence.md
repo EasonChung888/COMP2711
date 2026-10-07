@@ -45,26 +45,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-第二项在每个对象上把 $\neg P\to Q$ 化为 $P\lor Q$，所以完全等价。其他选项改变了量词作用域：存在的两个见证未必是同一个对象，不能直接合并。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(c) 2
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** 2.
 
 **Derivation/proof.** For each $y$, $\neg P(y)\to Q(y)\equiv P(y)\lor Q(y)$, proving option 2. Option 1 is the target's negation. Option 3 is $(\exists xP(x))\land(\exists xQ(x))$; with $U=\{a,b\}$ and both predicates true only at $a$, it is true but the target fails at $b$. Option 4 equals $(\forall xP(x))\lor(\forall xQ(x))$; let $P$ hold only at $a$ and $Q$ only at $b$. Then the target is true but option 4 false.
 
-### 中文解答
-
-**推导。** 选项二逐点利用 $\neg P(y)\to Q(y)\equiv P(y)\lor Q(y)$，全称量词下仍等价。一恰为目标否定，取单元素域且 P 真即区分。三化成 $\exists xP(x)\land\exists xQ(x)$；取 $U=\{a,b\}$，P、Q 都只在 a 真，三真但目标在 b 失败。四化成 $\forall xP(x)\lor\forall xQ(x)$；让 P 只在 a 真、Q 只在 b 真，目标真而四假。因此唯一正确项是二。
-
-## Common Mistakes
-
-- 将“每个人至少满足一个谓词”误写成“某个谓词被所有人满足”。
-- 把两个存在量词的见证强行视为同一人。
+For option 1, a one-element domain where $P$ is true makes the target true and option 1 false.
 
 ## Connections
 

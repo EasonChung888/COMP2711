@@ -38,26 +38,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先算不合格候选数，再加一次成功抽取。模七百二十中的零也不互质，必须包括在倍数计数中。因为抽取不重复，最坏情况可以先抽完所有五百二十八个坏值，第五百二十九次才成功。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=6|physical PDF page 6]]; [[knowledge_base/past_paper/2017-final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+$p-1=2^2\cdot3,q-1=2^2\cdot3\cdot5$. So this is equivalent to finding the number of integers from $\{0,1,\cdots,(p-1)(q-1)-1=719\}$ that are relatively prime to $2,3,$ and $5$. Using the inclusion exclusion principle, we first find the number of integers that are multiples of $2:360,3:240,5:144,6:120,10:72,15:48,30:24$. The number of integers that are not relatively prime to $2,3,$ and $5$ would then be $360+240+144-120-72-48+24=528$. By the pigeonhole principle, in the worst case it will take $529$ tries to find a proper $d$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6, 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $529$ picks.
 
 **Derivation/proof.** Here $T=12\cdot60=720=2^4 3^2 5$. Bad candidates in $\{0,\ldots,719\}$ are multiples of 2, 3 or 5. Their union has size $360+240+144-120-72-48+24=528$ by inclusion-exclusion (zero is included in each set). All 528 may be picked first without replacement; the next pick is then good. This ordering also proves the bound is attainable.
-
-### 中文解答
-
-**推导。** 先得 $T=12\cdot60=720=2^4\cdot3^2\cdot5$。候选 $0,\ldots,719$ 中，与 $720$ 不互素者恰为 $2,3,5$ 的倍数。容斥计数 $360+240+144-120-72-48+24=528$，其中零包含在各倍数集中并被容斥正确计一次。不重复抽取时，最坏可先抽完全部 $528$ 个坏数，第 $529$ 次必互素；这样的排序可实现，故精确最坏次数为 $529$。
-
-## Common Mistakes
-
-- 只回答互质元素的个数。
-- 忘记最后成功的一次或漏算零。
 
 ## Connections
 

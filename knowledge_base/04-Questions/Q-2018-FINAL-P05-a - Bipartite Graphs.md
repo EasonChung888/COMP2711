@@ -37,26 +37,19 @@ Source verification: The main answer says n=2; its marking note explicitly accep
 
 (a) For what values of $n$ will a complete graph $K_n$ be bipartite? Explain your answers.
 
-## 中文解析
+## Official Answer
 
-一阶完全图没有边，也符合标准二分图定义；二阶完全图只需把两个端点分开。三阶及以上都含三角形，两个邻点被迫同色却互相有边，因此无法二着色。来源评分说明也接受单顶点情况。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+Only when $n=2$. If $n\ge3$, then consider any vertex colored blue; all of its neighbors will be colored red, and they are neighbors of each other, violating two-coloring. (We do not penalize saying $n=1$ is bipartite because it is an unclear edge case.)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $n=1$ or $n=2$, for $n\ge1$.
 
 **Derivation/proof.** For $K_1$, put the lone vertex in one part and let the other part be empty; no edge violates bipartition. For $K_2$, separate its endpoints. For $n\ge3$, three vertices form a triangle. If one is blue, both neighbors must be red, but their mutual edge then violates two-coloring. Hence there are no other cases.
 
-### 中文解答
-
-**推导。** $n=1$ 时把单顶点放一部，另一部空，没有边违背二分条件；$n=2$ 时把两个端点放不同部即可。若 $n\ge3$，三个顶点构成三角形，一点染蓝迫使另两点染红，但两红点相邻，矛盾。因此按通常允许空分部的定义，恰 $n=1,2$。印本主答案只列二，但评分说明明确接受 $n=1$，所以两边界均保留为官方认可答案。
-
-## Common Mistakes
-
-- 只抄“只有 n=2”而忽略评分补充。
-- 要求二分图两部分均非空。
+The small cases $n=1,2$ are both bipartite: a one-vertex graph has the other part empty, and the two-vertex graph places its endpoints in different parts. Here the grading note explicitly accepts the singleton case, which must not be lost when copying the printed main answer.
 
 ## Connections
 

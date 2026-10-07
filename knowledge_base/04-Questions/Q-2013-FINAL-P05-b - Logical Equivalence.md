@@ -38,26 +38,23 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 Shared context: [[STEM-2013-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-右式先把外层和内层蕴含各自改写成析取，结果与左式的标准析取形式完全一致。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=8|PDF physical page 8]].
 
-## Detailed Solution
+(b) Equivalent.
+$$\begin{aligned}
+\neg r\Rightarrow(p\Rightarrow\neg q)&\equiv r\lor(\neg p\lor\neg q)&&(s\Rightarrow t\equiv\neg s\lor t)\\
+&\equiv(p\land q)\Rightarrow r&&\text{(by part (a))}
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Yes.
 
 **Derivation/proof.** $\neg r\Rightarrow(p\Rightarrow\neg q)\equiv r\lor(\neg p\lor\neg q)=\neg p\lor\neg q\lor r$, which is the expression obtained from $(p\land q)\Rightarrow r$ in part (a).
 
-### 中文解答
-
-**推导。** 第二式两次消去蕴含：$\neg r\Rightarrow(p\Rightarrow\neg q)\equiv r\lor(\neg p\lor\neg q)$。由析取交换律，这等于 $\neg p\lor\neg q\lor r$。第一式也化为 $\neg(p\land q)\lor r\equiv\neg p\lor\neg q\lor r$，因此两式逻辑等价。
-
-## Common Mistakes
-
-- 把 $\neg r\Rightarrow s$ 化成 $\neg r\lor s$。
-- 漏掉内层 $p\Rightarrow\neg q$ 的否定 $\neg p$。
+The first expression also becomes $\neg(p\land q)\lor r\equiv\neg p\lor\neg q\lor r$.
 
 ## Connections
 

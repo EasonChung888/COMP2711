@@ -38,26 +38,25 @@ Source correction: PDF page4 final back-substitution line prints 1=23·(−1)+10
 
 Solve $10x+4\equiv0\pmod{23}$.
 
-## 中文解析
+## Official Answer
 
-先移项再用十的模二十三逆元七消去系数。负二十八需要加两个二十三化成十八；代回整除关系检验结果。求解同余方程应给整个同余类，而不只给一个普通等式。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+Solve $10x\equiv-4\pmod{23}$.
+As $\gcd(10,23)=1$ we can multiply both sides by the inverse of $10\pmod{23}$. We calculate the inverse of $10\pmod{23}$ using extended Euclidean algorithm.
+$$\begin{aligned}23&=10\cdot2+3\\10&=3\cdot3+1\\3&=1\cdot3+0.\end{aligned}$$
+Rewriting:
+$$3=23-10\cdot2,\qquad1=10-3\cdot3.$$
+Substituting:
+$$\begin{aligned}1&=10-3\cdot3\\1&=10-(23-10\cdot2)\cdot3\\1&=23\cdot(-1)+10\cdot7.\end{aligned}$$
+$7$ is the modular inverse of $10\pmod{23}$. We multiply both sides by $7$.
+$10x\equiv-4\pmod{23}\implies10x\cdot10^{-1}\equiv-4\cdot10^{-1}\implies x\equiv-4\cdot7\equiv-28\equiv18$. $x\equiv18\pmod{23}$ is the final answer.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $x\equiv18\pmod{23}$.
 
 **Derivation/proof.** Move the constant to get $10x\equiv-4$. Since $23=2\cdot10+3$ and $10=3\cdot3+1$, back substitution gives $1=7\cdot10-3\cdot23$. Therefore multiply by 7: $x\equiv-28\equiv18\pmod{23}$. Check $10\cdot18+4=184=8\cdot23$. Every solution is $18+23k$ for integer k.
-
-### 中文解答
-
-**推导。** 先移项 $10x\equiv-4\pmod{23}$。因 $23=2\cdot10+3$、$10=3\cdot3+1$，回代 $1=10-3(23-2\cdot10)=7\cdot10-3\cdot23$，所以 $10$ 的模逆为 $7$。两边乘逆元得到 $x\equiv-28\equiv18\pmod{23}$，即全部解 $x=18+23k$，$k\in\mathbb Z$。代回 $10\cdot18+4=184=8\cdot23$，验证原式。印本回代末行把 $23$ 的系数误印为 $-1$，正确系数为 $-3$；逆元 $7$ 和最终解 $18$ 并未受影响。
-
-## Common Mistakes
-
-- 把十做实数除法。
-- 把负二十八化余数时只加一个模数。
 
 ## Connections
 

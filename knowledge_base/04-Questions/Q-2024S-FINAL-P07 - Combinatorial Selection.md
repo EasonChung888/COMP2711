@@ -39,24 +39,21 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Final
 A binary string is a string consisting of 0s and 1s. A run is a maximal substring of consecutive 1s. For example, the binary string $\underline{11}0\underline{1}0\underline{111}0\underline{11}$ has 4 runs, which are underlined.
 Given positive integers $n,m$, and $k$, determine the number of binary strings that simultaneously satisfy all of the following three conditions: the string contains exactly $m$ 0s, the string contains exactly $n$ 1s, and the string has exactly $k$ runs of consecutive 1s.
 
-## 中文解析
+## Official Answer
 
-先固定零形成的空位，连续的一段一只能占据一个空位。选出非空空位后，长度必须为正，用正整数组成计数而不是任意非负分配。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> Solution: We first lay out all the $m$ 0s which are surrounded by boxes that will later hold 1s:
+> $$\underbrace{\square\ 0\ \square\ 0\ \cdots\ 0\ \square\ 0\ \square}_{m\text{ 0s and }m+1\text{ squares}}.$$
+> Note that we have boxes between 0s, as well as to the left of the leftmost 0 and to the right of the rightmost 0. We define a box to hold an arbitrary number of 1s. Observe the following: any string with $k$ runs chooses exactly $k$ out of the $m+1$ boxes and maps the $k$ runs to the $k$ boxes by putting at least one 1 in each such box while leaving the remaining $m+1-k$ boxes empty. Thus, we can choose the positions of runs with respect to the 0s in $\binom{m+1}k$ ways.
+> After choosing the $k$ boxes that hold the $k$ runs, it remains to distribute the $n$ 1s among the $k$ runs. We resolve this issue using the stars and bars kind of reasoning. By definition, each box must have at least one 1, and we want the sum of the number of 1s in the $k$ boxes to be $n$. The number of ways to distribute the $n$ 1s over the $k$ runs is, therefore, the same as the number of permutations of $n-k$ stars and $k-1$ bars, which is given by $\binom{(n-k)+(k-1)}{k-1}=\binom{n-1}{k-1}$.
+> Therefore, we conclude that the final answer is $\binom{m+1}k\cdot\binom{n-1}{k-1}$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{m+1}k\binom{n-1}{k-1}$ if $1\le k\le\min(n,m+1)$, and $0$ otherwise.
 
-**答案。** 若 $1\le k\le\min(n,m+1)$，答案为 $\binom{m+1}k\binom{n-1}{k-1}$；否则为 $0$。
-
-**推导。** 把 $m$ 个零排好，共有 $m+1$ 个空隙，包括两端。恰好 $k$ 段一意味着选择 $k$ 个不同空隙放非空串，因此有 $\binom{m+1}k$ 种位置选择。按从左到右顺序记各段长度 $r_1,\ldots,r_k\ge1$，满足和为 $n$；在排成行的 $n$ 个一之间的 $n-1$ 个缝中选 $k-1$ 个断点，得到 $\binom{n-1}{k-1}$ 种正长度。位置和长度唯一重构字符串，故相乘。若 $k>n$ 或 $k>m+1$，无法使每段非空或无法分隔足够多段，答案为零。
-
-## Common Mistakes
-
-- 一段必须非空，直接数非负解会把实际少于 k 段的字符串算入。
-- 零两端也能放一，所以空隙有 $m+1$ 个而非 $m-1$ 个。
+**Derivation/proof.** The $m$ zeros create $m+1$ gaps including both ends. Exactly $k$ runs means choosing $k$ distinct gaps for nonempty strings of ones, in $\binom{m+1}k$ ways. In left-to-right order their lengths are $r_1,\ldots,r_k\ge1$ with sum $n$. Choosing $k-1$ breakpoints from the $n-1$ spaces between a row of $n$ ones gives $\binom{n-1}{k-1}$ positive length assignments. Positions and lengths uniquely reconstruct the string, so multiply. If $k>n$ or $k>m+1$, there are insufficient ones or gaps and the count is zero.
 
 ## Connections
 

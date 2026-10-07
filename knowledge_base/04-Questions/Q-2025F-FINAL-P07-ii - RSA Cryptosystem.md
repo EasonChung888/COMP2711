@@ -40,24 +40,24 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (ii) [3 pts] Assume that Bob chooses $e=7$. Compute his private key $d$ by running the extended Euclidean algorithm.
 
-## 中文解析
+## Official Answer
 
-私钥指数满足七乘 d 模六十余一，需要展示完整欧几里得回代。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+(ii) Bob chooses $e=7$. Compute $d$ such that $7d\equiv1\pmod{60}$ using Extended Euclidean Algorithm:
+$$\begin{aligned}60&=8\cdot7+4\\7&=1\cdot4+3\\4&=1\cdot3+1\\3&=3\cdot1+0.\end{aligned}$$
+Back-substitute:
+$$1=4-1\cdot3\qquad3=7-1\cdot4\implies1=4-1\cdot(7-1\cdot4)=2\cdot4-1\cdot7$$
+$$4=60-8\cdot7\implies1=2\cdot(60-8\cdot7)-1\cdot7=2\cdot60-17\cdot7$$
+$$\implies-17\cdot7\equiv1\pmod{60}\implies d\equiv43\pmod{60}\qquad d=43.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $d=43$, or $d\equiv43\pmod{60}$.
 
-**答案。** $d=43$，即 $d\equiv43\pmod{60}$。
-
-**推导。** 公钥指数与欧拉函数值互素，所求私钥指数就是前者对后者的乘法逆元；用扩展欧几里得回代直接构造这个系数。除法链为 $60=8\cdot7+4$，$7=1\cdot4+3$，$4=1\cdot3+1$，$3=3\cdot1+0$。从最后非零余数回代：$1=4-3=4-(7-4)=2\cdot4-7=2(60-8\cdot7)-7=2\cdot60-17\cdot7$。因此 $7(-17)\equiv1\pmod{60}$，取正代表 $d=-17+60=43$。验证 $7\cdot43=301=5\cdot60+1$，满足所需逆元条件。
-
-## Common Mistakes
-
-- 私钥求逆所用模数是六十，不是公开模数七十七。
-- 回代系数为负不表示无解，添加六十可取得合法正代表。
+**Derivation/proof.** The public exponent is coprime to the totient, and the private exponent is its multiplicative inverse modulo that totient. Extended Euclidean back-substitution constructs the inverse coefficient. The divisions are $60=8\cdot7+4$, $7=1\cdot4+3$, $4=1\cdot3+1$ and $3=3\cdot1+0$. Starting from the last nonzero remainder,
+$$1=4-3=4-(7-4)=2\cdot4-7=2(60-8\cdot7)-7=2\cdot60-17\cdot7.$$
+Thus $7(-17)\equiv1\pmod{60}$. Add 60 to obtain the positive representative $d=-17+60=43$. Verification gives $7\cdot43=301=5\cdot60+1$, as required.
 
 ## Connections
 

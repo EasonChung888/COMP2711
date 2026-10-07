@@ -1,0 +1,10 @@
+{
+  "topic": "Number Theory",
+  "slug": "Number_Theory",
+  "prefix": "N",
+  "groupNames": [
+    "Modular Arithmetic",
+    "GCDs and Congruences",
+    "Cryptography"
+  ]
+}

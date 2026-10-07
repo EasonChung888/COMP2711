@@ -1,0 +1,77 @@
+Poker
+ Exercises 3
+A poker hand contains 5 out of 52 cards. The cards are 13 
+kinds
+ (1-Ace, 2,..,10,J,Q,K) and 4 
+suites
+ (spades, hearts, clubs, diamonds)
+How many hands are 
+flush
+, i.e., a flush consists of 5 card of the same suit, excluding the cases of royal and straight flush. 
+The flush is a combination of 5 out of 13 cards of the same suit. Thus, there are 4
+
+C(13,5) flushes. After excluding the straight and the royal flashes the number is 4
+
+C(13,5)-40
+How many hands contain 
+3-of a kind
+ (e.g., 3 aces - the 4
+th
+ and 5
+th
+ card must be different because otherwise we would have stronger hands, to be discussed later):
+Number of ways to select the kind of the 3-of a kind C(13,1).
+Number of ways to select the suites of the 3-of a kind C(4,3).
+Number of ways to select the kind of the 4
+th
+ and 5
+th
+ card: C(12,2).
+Number of ways to select the suit of the 4
+th
+ and 5
+th
+ card: C(4,1)
+
+C(4,1)
+Total number: C(13,1)
+
+C(4,3)
+
+C(12,2)
+
+ C(4,1)
+
+C(4,1)
+How many hands contain 
+2 pairs
+ (e.g., 2 aces and 2 kings - the 5
+th
+ card cannot be ace or king):
+Number of ways to select 2 pairs is C(13,2).
+Number of ways to select suites of the 2 pairs C(4,2)
+
+C(4,2).
+Number of ways to select fifth card: 52-
+8
+=
+44
+ (e.g., 5
+th
+ card different from 2 pairs). 
+Total number: C(13,2)
+
+C(4,2)
+
+C(4,2)
+
+44
+=C(13,2)
+
+C(4,2)
+
+C(4,2)
+
+C(11,1)
+4
+27

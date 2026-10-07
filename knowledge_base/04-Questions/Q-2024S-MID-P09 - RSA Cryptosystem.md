@@ -38,24 +38,25 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 We implement a “toy example” of the RSA cryptosystem by choosing two prime numbers $p=23$ and $q=37$. Assume that we use $(851,17)$ as the public key in this example. Compute the private decryption key. Show all your calculations.
 
-## 中文解析
+## Official Answer
 
-RSA 的解密指数需要在欧拉函数模数中求逆。先算两个素数减一的乘积，再以扩展欧几里得把一表示成该模数与公钥指数的线性组合。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+> Answer. $n=p\cdot q=23\times37=851$, $e=17$.
+> $t=\phi(n)=(p-1)(q-1)=(23-1)\times(37-1)=792$.
+> The private key $d$ satisfies $e\cdot d\equiv1\pmod t$, which means $d=(17)^{-1}\pmod{792}$.
+> Using the extended Euclidean algorithm.
+> $$\begin{array}{lll}\gcd(792,17)&792=46\times17+10&10=792-46\times17\quad(1)\\\gcd(17,10)&17=1\times10+7&7=17-1\times10\quad(2)\\\gcd(10,7)&10=1\times7+3&3=10-1\times7\quad(3)\\\gcd(7,3)&7=2\times3+1&1=7-2\times3\quad(4)\end{array}$$
+> Substituting:
+> $$\begin{aligned}1&=7-2\times3&&\text{(By (4))}\\&=7-2\times(10-1\times7)&&\text{(By (3))}\\&=(-2)\times10+3\times7\\&=(-2)\times10+3\times(17-1\times10)&&\text{(By (2))}\\&=3\times17+(-5)\times10\\&=3\times17+(-5)\times(792-46\times17)&&\text{(By (1))}\\&=(-5)\times792+233\times17.\end{aligned}$$
+> Therefore, the private key $d=233$.
+> Remark: $d$ must be a positive number. Considering that we are using $C^d\bmod n$ to compute the original message $M$, it is necessary to compute a positive multiplicative inverse.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $d=233$; the private key may be written $(851,233)$.
 
-**答案。** $d=233$，私钥可写 $(851,233)$。
-
-**推导。** $n=23\cdot37=851$，$\varphi(n)=22\cdot36=792$。要解 $17d\equiv1\pmod{792}$。欧几里得除法为 $792=46\cdot17+10$，$17=10+7$，$10=7+3$，$7=2\cdot3+1$。回代：$1=7-2(10-7)=3\cdot7-2\cdot10=3\cdot17-5\cdot10=233\cdot17-5\cdot792$。因此 $d\equiv233\pmod{792}$，取正代表 $233$。直接检查 $17\cdot233=3961=5\cdot792+1$，确为逆元。
-
-## Common Mistakes
-
-- 不要在模 $851$ 下求 $17$ 的逆元，指数逆元的模数是 $792$。
-- 回代所得系数应取在 $17$ 前面的数，不能把 $-5$ 当作解密指数。
+**Derivation/proof.** $n=23\cdot37=851$ and $\varphi(n)=22\cdot36=792$. Solve $17d\equiv1\pmod{792}$. The Euclidean divisions are $792=46\cdot17+10$, $17=10+7$, $10=7+3$, and $7=2\cdot3+1$. Back-substitution gives $1=7-2(10-7)=3\cdot7-2\cdot10=3\cdot17-5\cdot10=233\cdot17-5\cdot792$. Hence $d\equiv233\pmod{792}$ and we choose the positive representative $233$. Directly, $17\cdot233=3961=5\cdot792+1$, confirming the inverse.
 
 ## Connections
 

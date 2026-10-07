@@ -1,0 +1,5 @@
+Pascal’s Triangle 
+31
+Yang Hui triangle (12??)
+The numbers of distinct paths to each square by a rook, when only rightward and downward movements are considered.
+X

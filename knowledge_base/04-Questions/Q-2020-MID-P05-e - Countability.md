@@ -38,26 +38,21 @@ The set of all functions from $\{0,1\}$ to $\mathbb N$
 
 Shared context: [[STEM-2020-MID-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-函数的定义域只有零和一，所以整个函数由两个函数值确定，等同于自然数有序对。有限个可数选择的笛卡儿积仍可数；上一题的无限多个输入点才导致本质不同。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+Countable.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Countable.
 
 **Derivation/proof.** Each function corresponds bijectively to the ordered pair $(f(0),f(1))\in\mathbb N^2$. Pairs can be enumerated by increasing coordinate sum, with finitely many pairs at each sum. Thus this function space is countable; unlike an infinite-domain function, it contains only two independent output choices per object.
 
-### 中文解答
+Diagonal enumeration is one available proof of countability, not a required unique method.
 
-**推导。** 判为可数。定义域只有 $0,1$ 两个点，每个函数由两个值完全确定，所以 $f\mapsto(f(0),f(1))$ 是函数集到 $\mathbb N^2$ 的双射。可按 $f(0)+f(1)$ 的和逐级枚举，每一级只有有限对，所有有序对都会列到。因此函数集可数无限。这是一个可用的对角枚举方法，不是说证明可数性必须使用某一种固定方法。
-
-## Common Mistakes
-
-- 把有限定义域误读成自然数定义域。
-- 因值域无限便判断不可数。
+The map $f\mapsto(f(0),f(1))$ is a bijection. Ordering the pairs first by $f(0)+f(1)$ and then within each finite sum gives a valid diagonal enumeration, proving countability.
 
 ## Connections
 

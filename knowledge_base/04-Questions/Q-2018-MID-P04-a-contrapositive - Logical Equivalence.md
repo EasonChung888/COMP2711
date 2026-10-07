@@ -37,26 +37,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P04-a - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-逆否命题需要交换前后件并同时取否定。基数大于等于的否定是严格小于，而非小于等于；单射的否定是至少有两个不同输入具有相同输出。两处否定都不能省略。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+The contrapositive is “If $\lvert T\rvert<\lvert S\rvert$, then $f$ is not injective”. We can prove it by the pigeonhole principle. $f$ maps pigeons in $S$ to holes in $T$. Since $\lvert T\rvert<\lvert S\rvert$, there must be two pigeons that share a same hole, say $a,b\in S$. Then $a\ne b$ but $f(a)=f(b)$, so $f$ is not injective.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** If $|T|<|S|$, then $f$ is not injective.
 
 **Derivation/proof.** Write the original statement as $A\to B$, where $A$ is injectivity and $B$ is $|T|\ge|S|$. Its contrapositive is $\neg B\to\neg A$. For finite cardinalities, $\neg(|T|\ge|S|)$ is exactly $|T|<|S|$, yielding the stated sentence.
-
-### 中文解答
-
-**推导。** 记 $A$ 为“$f$ 单射”，$B$ 为“$|T|\ge|S|$”，原句为 $A\to B$。逆否命题须同时换向并否定，成为 $\neg B\to\neg A$。有限基数按通常整数次序比较，$\neg(|T|\ge|S|)$ 就是 $|T|<|S|$，因此答案为“若 $|T|<|S|$，则 $f$ 不是单射”。它不同于只调换前后件的逆命题。
-
-## Common Mistakes
-
-- 只交换前后件得到逆命题。
-- 把大于等于的否定写成小于等于。
 
 ## Connections
 

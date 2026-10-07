@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-final.pdf
 
 Shared context: [[STEM-2015-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-RSA 的公钥指数要对 $\varphi(n)=(17-1)(31-1)=480$ 可逆。二和五都与四百八十有公因数，只有七互素，所以只有七可以用。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+(a) p=17, q=31, so T=(17-1)*(31-1)=16*30, only 7 is relatively prime to T, we will be able to find the inverse only for 7, therefore e=7
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $e=7$.
 
 **Derivation/proof.** Compute $n=17\cdot31=527$ and $\varphi(n)=16\cdot30=480$. Then $\gcd(2,480)=2$, $\gcd(5,480)=5$, and $\gcd(7,480)=1$. Only 7 has an inverse modulo 480 and can serve as the exponent.
 
-### 中文解答
-
-**推导。** 给定 p=17、q=31，故 $n=527$、$\varphi(n)=(17-1)(31-1)=480$。RSA 需要 e 对 480 可逆。分别有 $\gcd(2,480)=2$、$\gcd(5,480)=5$、$\gcd(7,480)=1$，所以只有七与 480 互素，选择 $e=7$。检验对象是欧拉函数值，不是只检验 e 与 n。
-
-## Common Mistakes
-
-- 检查与 527 互素而非与 480 互素。
-- 以指数是素数为充分条件，错误保留 2 或 5。
+The inverse modulus is $\varphi(n)=(17-1)(31-1)=480$.
 
 ## Connections
 

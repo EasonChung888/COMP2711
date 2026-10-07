@@ -40,25 +40,13 @@ Is it possible to pair $p_1,p_5$ together for a handshake? Please explain why in
 
 Shared printed context: ![[STEM-2023F-FINAL-P09 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-这条弦把 p₂、p₃、p₄ 隔在一侧，三个人不能在侧内全部配成二人组。为了完成 perfect pairing，至少有人要连到另一侧，必然穿过 p₁ 与 p₅ 的弦，因此不允许。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+> (a) No, because then on their right side they have $\{p_2,p_3,p_4\}$ which one of them has be paired with someone from the other side and this cause cross arm.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 不可能；下面三行给出完整理由。
-
-**推导。**
-
-1. 固定弦 $p_1p_5$ 后，$p_2,p_3,p_4$ 这三人位于同一侧，而合法完整配对不允许留下任何人未握手。
-2. 三是奇数，这三人无法全部在该侧两两配完，因此至少一人必须与弦另一侧的人握手。
-3. 连接两侧的握手弦必与已固定的 $p_1p_5$ 相交，违反 noncrossing 条件，所以该伙伴选择不可能。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** No.
 
@@ -66,10 +54,7 @@ Provenance: published official answer, independently checked and expanded below.
 
 This three-sentence proof uses the full-pairing requirement in the shared prompt; allowing an unmatched person would be a different problem.
 
-## Common Mistakes
-
-- 仅说 p₅ 是奇数而不解释两侧人数无法证明结论。 / Explain the odd-side obstruction.
-- 允许一人不握手会违反总共分成 n 对的要求。 / Every person belongs to a pair.
+The side containing $p_2,p_3,p_4$ cannot be internally paired because three is odd. A pairing to the other side violates the noncrossing condition.
 
 ## Connections
 

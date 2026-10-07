@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-单次轮盘均匀取二到十二，平均值是首尾平均即七。五次总步数是五个随机变量之和，利用期望线性相加得三十五，不需要把五次结果假设为同一个数。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(b) $E(5x)=5E(x)=5\frac{2+3+4+5+6+7+8+9+10+11+12}{11}=35$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $35$ steps.
 
 **Derivation/proof.** For spin $X_i$, $E[X_i]=(2+3+\cdots+12)/11=7$. The total is $S=X_1+\cdots+X_5$, so $E[S]=\sum_{i=1}^{5}E[X_i]=5\cdot7=35$. Independence is not needed for this use of linearity.
 
-### 中文解答
-
-**推导。** 第i转步数 $X_i$ 均匀分布在2至12这11个整数，所以 $E(X_i)=(2+3+\cdots+12)/11=77/11=7$。总步数是五个变量的和，不是把每转当同一个随机变量。线性性给 $E(\sum_{i=1}^5X_i)=\sum_{i=1}^5E(X_i)=5\cdot7=35$。相加期望本身不需独立性。
-
-## Common Mistakes
-
-- 将五次相加误算成单次期望的五次方。
-- 忽略轮盘最小值为二而从一开始求平均。
+The single-spin sum is $77$, so its expectation is $77/11=7$. The total is a sum of five random variables, rather than five copies of the same realized spin.
 
 ## Connections
 

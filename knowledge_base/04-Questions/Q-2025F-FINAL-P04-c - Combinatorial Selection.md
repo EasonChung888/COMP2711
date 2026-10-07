@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (c) [3 points] The first teacher and first engineer are standing next to each other (By first teacher and first engineer we mean the earliest in the queue toward its front).
 
-## 中文解析
+## Official Answer
 
-先选最早教师与最早工程师并压成一块，这一块必须先于其他教师工程师出现。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+(c) $\binom{21}{13}\times13!\times(4\times5\times2)\times7!$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{21}{13}\,13!\,(4\times5\times2)\,7!$.
 
-**答案。** $\binom{21}{13}\,13!\,(4\times5\times2)\,7!$。
-
-**推导。** 最早教师有四种身份，最早工程师有五种身份，二人相邻的内部次序有二种，共 $4\cdot5\cdot2=40$ 种。压缩二人后有二十一个对象：十三名医生学生，以及这个区块与另外七名教师工程师。选择十三名外部人员的位置并排列，贡献 $\binom{21}{13}13!$。剩八个位置中最早一个必须是该区块，否则其中会出现更早教师或工程师；余七人自由排列，有 $7!$ 种。因此乘积即答案。展开区块唯一恢复原队列，保证两人实际相邻。
-
-## Common Mistakes
-
-- 普通相邻两人区块还不够，须强迫它早于所有其他教师和工程师。
-- 压缩后总对象数为二十一，不能仍从二十二个位置中选择十三。
+**Derivation/proof.** Choose the earliest teacher in four ways, the earliest engineer in five ways, and their internal adjacent order in two ways: $4\cdot5\cdot2=40$. Compression leaves 21 objects: 13 doctors and students, the block, and seven other teachers and engineers. Choose and fill the positions of the 13 unrestricted people in $\binom{21}{13}13!$ ways. Of the eight remaining positions, the earliest must contain the block, or some teacher or engineer would appear before the selected earliest pair. Arrange the remaining seven people in $7!$ ways. Expanding the block uniquely restores a queue with the selected pair actually adjacent, so the product counts every valid queue exactly once.
 
 ## Connections
 

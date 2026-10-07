@@ -40,34 +40,27 @@ The page-10 rubric assigns 1 mark for the three-case split plus 1 mark for each 
 
 Imagine having a $4\times4$ grid. We want to write either $+1$ or $-1$ in its cells such that the sum of every row is equal to 0. Similarly we want the sum of every column to be 0 also. How many distinct “valid” tables exist?
 
-## 中文解析
+## Official Answer
 
-每行和每列都要恰好两个正一。固定第一行后，第二行与它相同、相反、各有一半相同三类互斥且完备；第三四行的自由度取决于每列还缺多少个正一，不能把每一行当成独立选择。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=9|physical PDF page 9]], [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+> (c) The first row needs two $+1$ and two $-1$. So there are $\binom42$ different ways to complete the first row. For the second row there are 3 general cases:
+>
+> Case 1: The columns of the second row have the exact same values as row one. For example, if row one is $\{+1,+1,-1,-1\}$ then the second row is also $\{+1,+1,-1,-1\}$. This case happens only in one valid permutation of the second row. In this case row 3 and row 4 have only a unique filling.
+>
+> Case 2: All columns of the second row have different values with row one. For example, if row one is $\{+1,+1,-1,-1\}$ then the second row is $\{-1,-1,+1,+1\}$. This case happens only in one valid permutation of the second row. In this case row 3 can accept any valid input which has $\binom42$ different ways and the last row has a unique filling.
+>
+> Case 3: Half of the columns of the second row have different values with row one and half of them are the same. For example, the first row is $\{+1,+1,-1,-1\}$ and the second row is $\{-1,+1,+1,-1\}$. This case happens in four different permutations of the second row. In this case there are 2 ways to complete row 3 and row 4 (why?).
+>
+> So the total number of solutions will be $\binom42\cdot(1\cdot1+1\cdot6+4\cdot2)$.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $6(1+6+4\cdot2)=90$ 个有效表。
-
-**推导。**
-
-1. 每行四格和为零，必须有两个 $+1$ 和两个 $-1$。第一行正号位置有 $\binom42=6$ 种。固定第一行后，第二行分为与其相同、完全相反、正号位置恰重叠一个三类，数量分别为一、一、四。
-2. 若前两行相同，已有两个正号的列下方必须全负、已有两个负号的列下方必须全正，故仅一补法。若前两行相反，每列还缺一个正号，第三行任选两个正号位置有六种，第四行被列和唯一决定。
-3. 在四种混合情形中，一列已有两个正号、一列没有正号、另两列各有一个。第三行在前两类列中必须分别负、正，并从剩余两列选一列放另一个正号，所以有两补法；第四行随之确定。三类互斥且完备，总数为 $6(1\cdot1+1\cdot6+4\cdot2)=90$。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $\binom42(1\cdot1+1\cdot6+4\cdot2)=90$.
 
 **Derivation/proof.** Choose the two +1 positions in row 1 in six ways. For a fixed row 1, row 2 can match it (one choice), complement it (one choice), or overlap in exactly one +1 position (four choices). If rows 1–2 match, rows 3–4 must both complement them: one completion. If they complement, each column needs one further +1, so row 3 has six choices and row 4 is forced. In the mixed case, one column already has two +1s, one has none, and two have one; row 3 must put -1 in the first, +1 in the second, and select one of the two remaining columns for its other +1. This yields two completions, with row 4 forced. Thus the total is $6(1+6+8)=90$.
 
-## Common Mistakes
-
-- 对四行直接取 6⁴ 没有满足列限制。 / Row balance does not imply column balance.
-- 混合类有四种第二行，每种有两种补全，不能把两者混为一项。 / Count the row choice and completion separately.
+The second-row counts are one, one, and four, respectively. The third row controls the remaining freedom, and the fourth is forced. Thus $6(1\cdot1+1\cdot6+4\cdot2)=90$.
 
 ## Connections
 

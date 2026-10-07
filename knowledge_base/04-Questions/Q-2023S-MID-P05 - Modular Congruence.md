@@ -39,35 +39,32 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2023_Midte
 Solve this system of linear congruences:
 $$x\equiv1\pmod3,\qquad4x\equiv1\pmod7,\qquad3x\equiv1\pmod{11}.$$
 
-## 中文解析
+## Official Answer
 
-三个模数两两互质，但应用 CRT 前要先处理四和三的系数。分别求模逆后得到 x 的余数，再构造各自只在一个模数下起作用的项，最终应写整个同余类而非一个数。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> $$1^{-1}\equiv1\pmod3$$
+> $$4^{-1}\equiv2\pmod7$$
+> $$3^{-1}\equiv4\pmod{11}$$
+> Multiply the above inverse on the equation’s both sizes respectively:
+> $$1x\equiv1\pmod3\to x\equiv1\pmod3$$
+> $$4x\equiv1\pmod7\to x\equiv2\pmod7$$
+> $$3x\equiv1\pmod{11}\to x\equiv4\pmod{11}$$
+> Use Chinese Remainder Theorem:
+> $$M_1=77,\ M_2=33,\ M_3=21$$
+> $$y_1\equiv77^{-1}\equiv2\pmod3$$
+> $$y_2\equiv33^{-1}\equiv3\pmod7$$
+> $$y_3\equiv21^{-1}\equiv10\pmod{11}$$
+> We have:
+> $$x=1\cdot77\cdot2+2\cdot33\cdot3+4\cdot21\cdot10=1192\equiv37\pmod{231}.$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $x\equiv37\pmod{231}$，即 $x=37+231k,\ k\in\mathbb Z$。
-
-**推导。**
-
-1. 因 $4\cdot2\equiv1\pmod7$、$3\cdot4\equiv1\pmod{11}$，原系统等价于 $x\equiv1,2,4$ 分别模 $3,7,11$。模数两两互质，乘积 $M=231$，所以 CRT 给出模 $231$ 的唯一同余类。
-2. 三个辅助数为 $77,33,21$；它们在对应模数下的逆元分别是 $2,3,10$。因此
-   $$x\equiv1\cdot77\cdot2+2\cdot33\cdot3+4\cdot21\cdot10=1192\equiv37\pmod{231}.$$
-3. 回代原式：$37\equiv1\pmod3$，$4\cdot37=148\equiv1\pmod7$，$3\cdot37=111\equiv1\pmod{11}$。检验使用原来的带系数系统，且最终保留全部整数代表，而非只报一个解。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $x\equiv37\pmod{231}$, or $x=37+231k$ for $k\in\mathbb Z$.
 
 **Derivation/proof.** Because $4\cdot2\equiv1\pmod7$ and $3\cdot4\equiv1\pmod{11}$, the system is $x\equiv1,2,4$ modulo $3,7,11$, respectively. Let $M=231$ and use $M_i=77,33,21$ with inverses $2,3,10$ in the corresponding moduli. CRT gives $x\equiv77\cdot2+2\cdot33\cdot3+4\cdot21\cdot10=1192\equiv37\pmod{231}$. Check: $37\equiv1\pmod3$, $4\cdot37\equiv1\pmod7$, and $3\cdot37\equiv1\pmod{11}$.
 
-## Common Mistakes
-
-- 把 4x≡1 直接读成 x≡1 会改变原系统。 / Normalize coefficients with their inverses.
-- 只写 x=37 会漏掉所有相差 231 的解。 / State the full congruence class.
+The original-system checks include $4\cdot37=148\equiv1\pmod7$ and $3\cdot37=111\equiv1\pmod{11}$. CRT ensures uniqueness modulo the product $231$.
 
 ## Connections
 

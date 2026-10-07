@@ -37,26 +37,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-midterm
 
 Shared context: [[STEM-2017-MID-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-委员没有先后顺序，先从六位女性中选两位，再从九位男性中选三位。两项选择决定不同性别的成员，不会互相重叠或重复，因此直接相乘，不需要再排列五位委员。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+$\binom62\binom93$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom62\binom93$.
 
 **Derivation/proof.** Choose the two women from the six available in $\binom62$ ways and the three men from the nine in $\binom93$ ways. Each pair of choices gives a unique five-person committee, so multiply; no ordering of members is recorded.
 
-### 中文解答
+Numerically, $\binom62\binom93=15\cdot84=1260$.
 
-**推导。** 从六名女性中无序选两名有 $\binom62=15$ 种，从九名男性中无序选三名有 $\binom93=84$ 种。每对选择确定且唯一确定一个所需委员会，乘法原理给出 $\binom62\binom93=15\cdot84=1260$。委员没有职务或顺序，所以不再乘 $5!$。
-
-## Common Mistakes
-
-- 使用排列数而区分委员顺序。
-- 把男女两类选择数相加。
+The committee is selected without ordering: changing the order in which the same five people are selected produces the same committee, which is why the count uses a binomial coefficient.
 
 ## Connections
 

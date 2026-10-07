@@ -38,34 +38,23 @@ Source correction: PDF page1 expands the second sum as Σ_(i=1)^n n!/((i−2)!(n
 
 Prove that $\binom n1+2^2\binom n2+\ldots+n^2\binom nn=n(n+1)\cdot2^{n-2}$, where $n$ is a positive integer. [Hint: $i^2=i(i-1)+i$.]
 
-## 中文解析
+## Official Answer
 
-把 i 平方拆成 i(i-1) 与 i，两部分分别对应两个有序标记和一个标记。化简二项系数后用二项式定理求和；第二部分的下标必须从二开始，n=1 单独检查，避免出现负阶乘。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=1|physical PDF page 1]]; [[knowledge_base/past_paper/2020-final-part-2.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+$$\binom n1+2^2\cdot\binom n2+\cdots+n^2\cdot\binom nn=\sum_{i=1}^ni^2\cdot\binom ni=\sum_{i=1}^ni(i-1)\cdot\binom ni+\sum_{i=1}^ni\cdot\binom ni.$$
+We have proved $\sum_{i=1}^ni\cdot\binom ni=n\cdot2^{n-1}$ in tutorial 9,
+$$\begin{aligned}\sum_{i=1}^ni\cdot\binom ni&=\sum_{i=1}^ni\cdot\frac{n!}{i!(n-i)!}\\&=\sum_{i=1}^n\frac{n!}{(i-1)!(n-i)!}\\&=\sum_{i=1}^nn\cdot\frac{(n-1)!}{(i-1)!((n-1)-(i-1))!}\\&=n\cdot\sum_{i=0}^{n-1}\binom{n-1}i\\&=n\cdot2^{n-1}.\end{aligned}$$
+And we use the same method to calculate $\sum_{i=1}^ni(i-1)\cdot\binom ni$,
+$$\begin{aligned}\sum_{i=1}^ni(i-1)\cdot\binom ni&=\sum_{i=1}^ni(i-1)\cdot\frac{n!}{i!(n-i)!}\\&=\sum_{i=1}^n\frac{n!}{(i-2)!(n-i)!}\\&=\sum_{i=1}^nn(n-1)\cdot\frac{(n-2)!}{(i-2)!((n-2)-(i-2))!}\\&=n(n-1)\cdot2^{n-2}.\end{aligned}$$
+Combine the two terms together, we have,
+$$\begin{aligned}\binom n1+2^2\cdot\binom n2+\cdots+n^2\cdot\binom nn&=\sum_{i=1}^ni(i-1)\cdot\binom ni+\sum_{i=1}^ni\cdot\binom ni\\&=n\cdot2^{n-1}+n(n-1)\cdot2^{n-2}\\&=n(n+1)\cdot2^{n-2}.\end{aligned}$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** The identity holds for every positive n.
 
 **Derivation/proof.** For n≥2, use $i\binom ni=n\binom{n-1}{i-1}$ and $i(i-1)\binom ni=n(n-1)\binom{n-2}{i-2}$, starting the second sum at i=2. The binomial theorem gives $\sum_{i=1}^n i\binom ni=n2^{n-1}$ and $\sum_{i=2}^n i(i-1)\binom ni=n(n-1)2^{n-2}$. Add them using the hint to obtain $n[2+(n-1)]2^{n-2}=n(n+1)2^{n-2}$. At n=1 both sides equal 1, checked separately so no negative factorial occurs.
-
-### 中文解答
-
-**推导。** 先处理 $n=1$，两边都是 $1$。以下设 $n\ge2$，用提示 $i^2=i(i-1)+i$ 拆项。第一个和利用 $i\binom ni=n\binom{n-1}{i-1}$，由二项式定理得
-
-$$\sum_{i=1}^n i\binom ni=n\sum_{j=0}^{n-1}\binom{n-1}j=n2^{n-1}.$$
-
-另一个和的 $i=1$ 项为零，先去掉，才可约阶乘：$i(i-1)\binom ni=n(n-1)\binom{n-2}{i-2}$ 对 $i\ge2$ 成立。因此
-
-$$\sum_{i=2}^n i(i-1)\binom ni=n(n-1)\sum_{j=0}^{n-2}\binom{n-2}j=n(n-1)2^{n-2}.$$
-
-两和相加为 $n2^{n-1}+n(n-1)2^{n-2}=n(n+1)2^{n-2}$，最终答案无求和号。把第二和仍从一开始却出现 $(i-2)!$ 会产生未定义的 $(-1)!$，不能照抄印本该下界。
-
-## Common Mistakes
-
-- 让含 (i-2)! 的式子从 i=1 开始。
-- 漏掉单标记项 n·2^(n-1)。
 
 ## Connections
 

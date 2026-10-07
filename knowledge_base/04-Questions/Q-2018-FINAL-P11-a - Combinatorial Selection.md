@@ -37,26 +37,19 @@ a) All lines in the rectangle are possible?
 
 Shared context: [[STEM-2018-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-只准向右或向上意味着每条路都恰好五步右、三步上。不同路径对应八个位置中选择哪五个放右步；任意这样的排列都不会越界，因此可以直接用组合数计数。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=16|physical PDF page 16]].
 
-## Detailed Solution
+The distance from $A$ to $B$ is $8$ steps, $5$ right, and $3$ up. The answer is $C(8,5)=56$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 16. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom85=56$.
 
 **Derivation/proof.** Moving from $A$ to $B$ requires exactly five right steps and three up steps. Any ordering of these eight steps remains inside the rectangle because neither coordinate can exceed its final total before all such steps have been used. Choose the five right-step positions among eight, giving $\binom85=56$.
 
-### 中文解答
-
-**推导。** 由图 $A$ 到 $B$ 的横坐标增加五格、纵坐标增加三格，故每条上/右单调路径恰有五个右步与三个上步，总八步。任意排列这八步都不越界并到达终点；从八个位置选五个放右步，其余为上步，一一对应路径。总数 $\binom85=56$。
-
-## Common Mistakes
-
-- 把网格线数量当作步数。
-- 把相同方向的步视为可区分而用八的阶乘。
+Recording a path as five right steps and three up steps gives a one-to-one correspondence between paths and words with those fixed multiplicities. Choosing the three up-step positions counts every path once.
 
 ## Connections
 

@@ -38,24 +38,23 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 (a) Prove that the following expression is a tautology without using the truth table
 $$\neg(\neg p\to(q\land\neg r))\lor\neg(\neg p\land r)$$
 
-## 中文解析
+## Official Answer
 
-先消去蕴含，再把两个否定展开；共同的 $p$ 与 $\neg p$ 会产生恒真支路。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(a)
+$$\begin{aligned}
+&\neg(\neg P\to(Q\land\neg R))\lor\neg(\neg P\land R)\\
+&\equiv\neg(P\lor(Q\land\neg R))\lor\neg(\neg P\land R)\\
+&\equiv\neg((P\lor Q)\land(P\lor\neg R))\lor\neg(\neg P\land R)\\
+&\equiv\neg(P\lor Q)\lor\neg(P\lor\neg R)\lor(P\lor\neg R)\equiv\neg(P\lor Q)\lor T\equiv T.
+\end{aligned}$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $T$ (a tautology).
 
-**答案。** $T$（tautology）。
-
-**推导。** 先用蕴含等价式把内层的“若非 p 则 q 且非 r”改成析取，再用德摩根律分别展开外层否定。由蕴含律，原式等于 $\neg(p\lor(q\land\neg r))\lor(p\lor\neg r)$。德摩根律给出 $(\neg p\land(\neg q\lor r))\lor p\lor\neg r$。利用 $p\lor(\neg p\land X)\equiv p\lor X$，化为 $p\lor\neg q\lor r\lor\neg r$。由于 $r\lor\neg r=T$，整个析取式恒真。每一步是 命题逻辑律 的等价变形，没有使用 真值表。
-
-## Common Mistakes
-
-- 外层否定作用于整个蕴含式，不能只否定其前件。
-- 最后出现一对互补命题已足以使析取恒真，无须证明其他命题为真。
+**Derivation/proof.** Replacing the inner implication by a disjunction gives $\neg(p\lor(q\land\neg r))\lor(p\lor\neg r)$. De Morgan's laws give $(\neg p\land(\neg q\lor r))\lor p\lor\neg r$. Applying $p\lor(\neg p\land X)\equiv p\lor X$ yields $p\lor\neg q\lor r\lor\neg r$. Since $r\lor\neg r=T$, the whole disjunction is true. Every step is a propositional equivalence; no truth table is used.
 
 ## Connections
 

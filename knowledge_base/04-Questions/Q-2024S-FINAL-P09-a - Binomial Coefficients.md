@@ -39,24 +39,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Final
 
 (a) Let $p$ be a prime number and $k$ be an integer such that $1\le k\le p-1$. Prove that the binomial coefficient $\binom pk$ is divisible by $p$.
 
-## 中文解析
+## Official Answer
 
-阶乘公式的分子包含素数 p，分母的所有因子却都严格小于 p。利用组合数为整数和素数整除性质，证明分子中的 p 无法约掉。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> Solution: (a) Consider the binomial coefficient: $\binom pk=\frac{p!}{k!(p-k)!}$.
+> The numerator $p!$ can be written as $p\cdot(p-1)\cdots2\cdot1$, which is clearly divisible by $p$. The denominator is the product of two factorials, $k!$ and $(p-k)!$. Since $1\le k\le p-1$, both $k$ and $p-k$ are integers strictly less than $p$. Thus, the denominator $k!(p-k)!$ is the product of integers all of which are non-zero and strictly less than $p$. This means that neither $k!$ nor $(p-k)!$ is divisible by $p$.
+> Since $\binom pk$ is an integer, and it is expressed as a fraction where the numerator is divisible by $p$ but the denominator is not, we can conclude that $\binom pk$ itself must be divisible by $p$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $p\mid\binom pk$ for $1\le k\le p-1$.
 
-**答案。** $p\mid\binom pk$ 对 $1\le k\le p-1$ 成立。
-
-**推导。** 令 $C=\binom pk\in\mathbb Z$，则 $C\,k!(p-k)!=p!$。右侧被 p 整除。由于 $k,p-k<p$，分母中的所有正因子均介于一与 $p-1$，没有任何一个被 p 整除；素数整除乘积性质遂给出 $p\nmid k!(p-k)!$。再应用同一性质于 $C\,k!(p-k)!$，得 $p\mid C$。边界 $k=0,p$ 时组合数为一，说明题目排除这两值不可省略。
-
-## Common Mistakes
-
-- 分母中没有单个因子 p 的理由依赖 p 为素数，合数时不能直接照搬。
-- $\binom p0$ 与 $\binom pp$ 不被 p 整除，不能扩大下标范围。
+**Derivation/proof.** Let $C=\binom pk\in\mathbb Z$. Then $C\,k!(p-k)!=p!$, whose right side is divisible by $p$. Since $k,p-k<p$, every positive denominator factor lies between $1$ and $p-1$, so none is divisible by $p$. The prime product property gives $p\nmid k!(p-k)!$. Applying the same property to $C\,k!(p-k)!$ gives $p\mid C$. At $k=0,p$ the coefficient is one, showing why these endpoints must be excluded.
 
 ## Connections
 

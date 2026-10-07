@@ -1,0 +1,13 @@
+{
+  "checked_original_files": 2638,
+  "protected_question_boundaries": 715,
+  "question_boundary_changes": 0,
+  "pdf_files_checked": 181,
+  "pdf_changes": [],
+  "course_website_changes": [],
+  "historical_audit_unchanged": true,
+  "other_runtime_changes": [
+    ".obsidian/workspace.json"
+  ],
+  "guide_hub_changes": "Answer policy description and new audit navigation only; existing links preserved."
+}

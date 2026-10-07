@@ -41,26 +41,19 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-若每个等级都未达到 $2k$ 张，则每个等级最多 $2k-1$ 张，所有等级合计最多 $n(2k-1)$。再多发一张就必然有等级达到目标；而前一个数确实可平均塞到每组上限，说明答案最小。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=12|PDF physical page 12]].
 
-## Detailed Solution
+(c) $(2k-1)n+1$. This is the same as finding the minimum number $x$ of pigeons such that at least one of the $n$ pigeonholes contain at least $2k$ objects. By the pigeonhole principle, find the minimum $x$ such that $\lceil x/n\rceil=2k$. It is easy to see that this equality holds for $x\in\{(2k-1)n+1,\ldots,2kn\}$. Thus, the minimum value of $x=(2k-1)n+1$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $n(2k-1)+1$.
 
 **Derivation/proof.** A distribution with every $t_r\le2k-1$ contains at most $n(2k-1)$ coupons. Therefore $n(2k-1)+1$ forces some $t_r\ge2k$. Sharpness follows by giving exactly $2k-1$ coupons to each rank, which avoids the event using one fewer coupon.
 
-### 中文解答
-
-**推导。** 若所有等级均未达到 2k 张，则每个等级至多 $2k-1$，n 个等级合计至多 $n(2k-1)$。因此发 $n(2k-1)+1$ 张时鸽巢原理保证某等级达到 2k。为证最小，恰给每个等级 $2k-1$ 张，可由等级内一人全领，满足每人可领任意非负张数；总数少一张且仍没有等级达到目标。所以最小值正是 $n(2k-1)+1$。
-
-## Common Mistakes
-
-- 把成员数 $kn$ 当作抽屉数，题目目标按等级统计。
-- 仅证明足够，却没有说明少一张可以不满足目标。
+The sharpness construction is admissible because a single member of each rank may receive all $2k-1$ coupons; members are allowed any nonnegative number.
 
 ## Connections
 

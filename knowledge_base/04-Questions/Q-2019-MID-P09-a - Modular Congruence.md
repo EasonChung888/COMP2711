@@ -38,26 +38,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-同余可以相减，直接用给出的代表元十一减三得到八。八已经落在零到十八之间，所以就是题目要的唯一标准代表元；无需知道 a 与 b 的实际整数值。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+$8$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $c=8$.
 
 **Derivation/proof.** Congruence respects subtraction, so $a-b\equiv11-3=8\pmod{19}$. Since $8$ lies between 0 and 18, no further adjustment is necessary. Any other solution differs by a multiple of 19, so only this representative lies in the requested interval.
-
-### 中文解答
-
-**推导。** 同余对减法相容，故 $a-b\equiv11-3=8\pmod{19}$。$8$ 已处于指定范围 $0\le c\le18$，所以唯一所求代表元为 $c=8$。
-
-## Common Mistakes
-
-- 把减法方向写反。
-- 给出整个同余类而未选指定区间代表元。
 
 ## Connections
 

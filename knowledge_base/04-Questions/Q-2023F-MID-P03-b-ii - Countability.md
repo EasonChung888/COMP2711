@@ -43,33 +43,19 @@ Without the need for providing any explanation, determine if the following sets 
 
 (ii) The set of all functions from $\{1,2\}\to\mathbb N$
 
-## 中文解析
+## Official Answer
 
-先看 domain 只有两个元素，函数因此完全由两个输出决定。将两个输出按自然数有序对枚举即可列出所有函数，并且固定其中一个输出仍可得到无限多不同函数。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (b) C, C, U
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** C，infinitely countable，与第 7 页对应的官方分类一致。
-
-**推导。**
-
-1. 定义 $f\mapsto(f(1),f(2))$。因为定义域恰有两个输入，同一输出对决定同一个函数；反过来每个自然数对 $(a,b)$ 又定义唯一函数 $f(1)=a,f(2)=b$。因此函数集合与 $\mathbb N^2$ 存在 bijection。
-2. 按 $a+b$ 从小到大列出自然数对，每条 diagonal 有限，所有对最终都会出现，所以至多可数。固定第二输出、让第一输出取所有自然数可得无限多个不同函数，故是无限可数，分类为 C。原卷 3(b) 的整行 key 为 C, C, U，此项 C 与有限定义域的枚举结论一致。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** C: infinitely countable.
 
 **Derivation/proof.** The map $f\mapsto(f(1),f(2))$ is a bijection from the function set to $\mathbb N^2$: every ordered pair defines exactly one function on the two-element domain. Listing pairs along finite diagonals of increasing coordinate sum enumerates all functions. There are infinitely many choices for $f(1)$ even when $f(2)$ is fixed, so the set is infinite as well as countable.
 
-## Common Mistakes
-
-- 值域是无限集合并不自动导致函数集不可数。 / Finite domain size matters.
-- 无序二元素集合不能表示这两个带标签的输出。 / The output pair is ordered.
+The second entry of the printed key agrees with the official classification for this atomic item: it is infinitely countable. Thus the set is infinitely countable.
 
 ## Connections
 

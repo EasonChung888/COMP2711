@@ -50,35 +50,20 @@ Use strong induction on $a_0$ to prove that this process stops in finitely many 
 
 (Hint 2: If the rightmost digit of a number $a_n$ is larger than 5, what can we say about the possible values for the rightmost digit of $9\times a_n$?)
 
-## 中文解析
+## Official Answer
 
-单步并不总下降，因为末位大于五时会乘九。关键是下一步末位必落在一到四，于是再删除一位后数值小于原值；strong induction 可以跳到任何较小的起点，最后覆盖所有有效十进制非负整数。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+> (a) We use strong induction on the first element $a_0$. Obviously this process stops in $1$ step if $a_0=1$. Assume that this assumption is correct for all values between $1$ up to $k$. And now we prove it will be also correct for $k+1$.
+> If $K+1$ ends with a digit that is smaller or equal than $5$ then we just simply remove that digit and the result number is already smaller than $K+1$ so it will stop after finitely many steps. If $K+1$ ends with a digit that is bigger than $5$, then We get $9(k+1)$ as the next number that definitely ends with a digit smaller than $6$. So for its next step we need to remove the rightmost digit that will give us a number that is again smaller than $k+1$. (because $9(k+1)/10$ is smaller than $k+1$ for sure)
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 对每个非负整数起点，过程都在有限步后停止。
-
-**推导。**
-
-1. Base cases：起点为单个数字 $0,1,2,3,4,5$ 时，直接删去唯一数字便停止。作 strong induction，固定 $N\ge6$，假设所有比 $N$ 小的非负起点都能终止；现证从 $N$ 出发也会终止。
-2. 若 $N$ 末位不超过五，删掉它或者立即停止，或者留下 $\lfloor N/10\rfloor<N$。较小起点按 induction hypothesis 会停止，所以 $N$ 也会停止。
-3. 若末位 $r\in\{6,7,8,9\}$，第一步乘九，新的末位为 $10-r\in\{4,3,2,1\}$，下一步必定删末位。两步后得到 $\lfloor9N/10\rfloor<N$，再次适用归纳假设。这里要求严格小于当前 $N$ 即可，不需要来源 rubric 中错误的更强界。
-4. 两种末位情况穷尽所有 $N$，且只经过一或两步就进入有限步可终止的较小实例。因此归纳步成立，连同基例证明全部非负起点都终止；一时的乘九增大数值不妨碍两步宏操作严格下降。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** The process terminates for every nonnegative integer starting value.
 
 **Derivation/proof.** For the single-digit starts 0 through 5, deletion immediately removes the only digit and terminates. Use strong induction on a positive starting integer N; assume every smaller nonnegative starting value terminates. If N ends in a digit at most 5, deletion either stops immediately or leaves $\lfloor N/10\rfloor<N$, which terminates by the hypothesis. If its last digit is $r\in\{6,7,8,9\}$, the last digit of $9N$ is $10-r\in\{4,3,2,1\}$. The next step therefore deletes that digit and leaves $\lfloor9N/10\rfloor<N$. This smaller value terminates by the induction hypothesis. In both cases only one or two steps precede a terminating smaller instance, proving the result for N and hence for every allowed start.
 
-## Common Mistakes
-
-- 不能声称每一步都下降，因为乘九会增大数值。 / Group two transitions when necessary.
-- 删除唯一数字时是停止，而不是不断把零当作一位数重写。 / Respect the empty-digit stopping rule.
+Base cases $N=0,1,2,3,4,5$ terminate after deleting the only digit. For $N\ge6$, use the induction hypothesis for all smaller nonnegative starting values. If the last digit exceeds five, the two-step value is $\lfloor9N/10\rfloor<N$. Thus the induction step is complete.
 
 ## Connections
 

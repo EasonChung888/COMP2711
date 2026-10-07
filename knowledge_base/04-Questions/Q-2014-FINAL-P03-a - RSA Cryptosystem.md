@@ -38,26 +38,34 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-由于 $n$ 是素数，私钥在模 $n-1=250$ 下求逆。回代系数 73 验证为 $137\cdot73\equiv1\pmod{250}$。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=5|PDF physical page 5]].
 
-## Detailed Solution
+(a) Repeatedly using Euclid's Division Theorem, we get
+$$\begin{aligned}
+250&=1\cdot137+113\\137&=1\cdot113+24\\113&=4\cdot24+17\\24&=1\cdot17+7\\17&=2\cdot7+3\\7&=2\cdot3+1
+\end{aligned}$$
+Rolling back, we get
+$$\begin{aligned}
+1&=7-2\cdot3\\
+&=7-2\cdot(17-2\cdot7)=5\cdot7-2\cdot17\\
+&=5\cdot(24-17)-2\cdot17=5\cdot24-7\cdot17\\
+&=5\cdot24-7\cdot(113-4\cdot24)=33\cdot24-7\cdot113\\
+&=33\cdot(137-113)-7\cdot113=33\cdot137-40\cdot113\\
+&=33\cdot137-40\cdot(250-137)=73\cdot137-40\cdot250.
+\end{aligned}$$
+Therefore, $d=73$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $d=73$.
 
 **Derivation/proof.** Euclid gives $250=137+113$, $137=113+24$, $113=4\cdot24+17$, $24=17+7$, $17=2\cdot7+3$, $7=2\cdot3+1$. Back substitution gives $1=73\cdot137-40\cdot250$, so $137^{-1}\equiv73\pmod{250}$.
 
-### 中文解答
+Check: $137\cdot73=10001=40\cdot250+1$.
 
-**推导。** 因为模数 251 是素数，需要求 $137d\equiv1\pmod{250}$。除法链为 $250=137+113$、$137=113+24$、$113=4\cdot24+17$、$24=17+7$、$17=2\cdot7+3$、$7=2\cdot3+1$。回代：$1=7-2\cdot3=5\cdot7-2\cdot17=5\cdot24-7\cdot17=33\cdot24-7\cdot113=33\cdot137-40\cdot113=73\cdot137-40\cdot250$。故 $d=73$；$137\cdot73=10001=40\cdot250+1$ 验证所求逆元。
-
-## Common Mistakes
-
-- 在模 251 下求逆。
-- 只算到最大公因数为一但没有回代。
+The intermediate back-substitution stage is $1=33\cdot24-7\cdot113$, before replacing 24 and 113.
 
 ## Connections
 

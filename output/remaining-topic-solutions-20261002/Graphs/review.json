@@ -1,0 +1,39 @@
+{
+  "topic": "Graphs",
+  "status": "pass",
+  "pdfSha256": "6dd207d3713d95203c8942b109df2f36cdafda156f3279dea7ac5f9341611d51",
+  "questions": 60,
+  "pages": 70,
+  "content": {
+    "topic": "Graphs",
+    "count": 60,
+    "eligible": 60,
+    "figures": 42,
+    "stems": 54,
+    "errors": []
+  },
+  "browser": {
+    "images": 42,
+    "failedImages": [],
+    "badMath": [],
+    "links": 63
+  },
+  "marginOutliers": [],
+  "allPageContactsReviewed": true,
+  "fullsizePagesReviewed": [
+    39,
+    66,
+    67
+  ],
+  "resolvedIssues": [
+    "Restored missing 2019 P13 graph diagrams",
+    "Removed Markdown quote prefixes from rendered display math",
+    "Compacted G054 to keep solution together"
+  ],
+  "blankPages": [],
+  "orphanOnlyPages": [],
+  "remainingBlockers": [],
+  "minorObservations": [
+    "Figure4 textual label remains before page boundary in repeated shared multi-figure prompts; the actual image retains its embedded Figure4 caption and is fully visible on next page."
+  ]
+}

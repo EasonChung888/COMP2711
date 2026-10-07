@@ -40,26 +40,19 @@ Atomic focus [editorial]: $P(A_2)$; the first requested marginal is a separate a
 
 Shared context: [[STEM-2016-FINAL-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-虽然两次使用同一骰子会导致事件相关，但第二次的边缘分布与第一次相同。没有给定第一掷信息时，选中特殊骰的概率仍是一半，不能使用更新后的条件权重。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=7|PDF physical page 7]].
 
-## Detailed Solution
+(a) If a fair dice is picked, the probability that we get one or two dots on top is $\frac13$. If a special dice is picked, the probability that we get one or two dots on top is 1. Therefore, $P(A_1)=\frac12\cdot\frac13+\frac12\cdot1=\frac23$. By the same argument, $P(A_2)=\frac23$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $P(A_2)=2/3$.
 
 **Derivation/proof.** The choice of die is unchanged and unobserved. Conditional on the fair die, the second roll has probability $1/3$ of showing at most two; conditional on the special die that probability is 1. Thus $P(A_2)=\frac12\frac13+\frac12=\frac23$. Equality of the marginals does not establish independence of the events.
 
-### 中文解答
-
-**推导。** 第二次仍用所抽到的同一骰子，但此问未条件于第一掷信息。抽到F或S的边缘权重仍各1/2。给定F，第二掷≤2概率1/3；给定S概率一。故 $P(A_2)=(1/2)(1/3)+(1/2)(1)=2/3$。两个边缘概率相同并不意味着两事件独立；共享骰子类别会引入关联。
-
-## Common Mistakes
-
-- 误把 $P(A_2)$ 当成给定第一掷成功后的概率。
-- 由两个边缘概率相等就断言两事件独立。
+This question is not conditioned on the first roll. Thus $P(A_2)=(1/2)(1/3)+(1/2)(1)=2/3$ still uses the original die weights.
 
 ## Connections
 

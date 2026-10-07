@@ -37,26 +37,25 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-加密指数十一的二进制分解是八加二加一。先逐次平方并在模七百零三下化简，再只乘需要的三个幂。模数是两素数的乘积，不能拿欧拉函数值来替代。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+The encrypted ciphertext is computed as
+$$3^e\bmod pq=3^{11}\bmod703.$$
+To compute this, we first compute
+$$\begin{aligned}3^2\bmod703&=3\cdot3\bmod703=9\\3^4\bmod703&=9\cdot9\bmod703=81\\3^8\bmod703&=81\cdot81\bmod703=234.\end{aligned}$$
+It holds that $11=8+2+1$. Hence
+$$\begin{aligned}3^{11}\bmod703&=3^{1+2+8}\bmod703=3\cdot3^2\cdot3^8\bmod703\\&=3\cdot9\cdot234\bmod703=694.\end{aligned}$$
+No marks for this part if the answer is correct but there are no steps, because it is easy to obtain the answer using a calculator.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** The ciphertext is $694$.
 
 **Derivation/proof.** The modulus is $n=19\cdot37=703$ and $e=11$. Compute $3^2\equiv9$, $3^4\equiv81$, $3^8\equiv81^2=6561\equiv234\pmod{703}$. Since $11=8+2+1$, $3^{11}\equiv234\cdot9\cdot3=6318\equiv694\pmod{703}$. Direct powering agrees, and decrypting $694^{59}$ modulo 703 returns 3.
 
-### 中文解答
-
-**推导。** 模数 $n=19\cdot37=703$，指数 $e=11$。平方链：$3^2\equiv9$，$3^4\equiv81$，$3^8\equiv81^2=6561\equiv234\pmod{703}$。因 $11=8+2+1$，故 $3^{11}\equiv234\cdot9\cdot3=6318=8\cdot703+694\equiv694\pmod{703}$，密文为 $694$。另外计算 $694^{59}\bmod703=3$ 回到原文，可独立检查配套公私钥。
-
-## Common Mistakes
-
-- 遗漏指数分解中的一。
-- 只报计算器结果而不展示平方步骤。
+The final product satisfies $6318=8\cdot703+694$, and $694^{59}\bmod703=3$ checks decryption.
 
 ## Connections
 

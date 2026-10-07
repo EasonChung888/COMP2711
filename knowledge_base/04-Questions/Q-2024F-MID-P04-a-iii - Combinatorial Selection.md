@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P04-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-图中的所有路径由六次 Right、四次 Up 构成，数量 $\binom{10}4=210$。经过固定边 CD 的路径，先以五右一上到 C，再走 CD，最后以一右二上到 B，共 $\binom61\binom31=18$。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> (iii) $\binom{10}4-\binom61\cdot\binom31$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{10}4-\binom61\binom31=192$.
 
-**答案。** $\binom{10}4-\binom61\binom31=192$。
-
-**推导。** 图中的所有路径由六次 Right、四次 Up 构成，数量 $\binom{10}4=210$。经过固定边 CD 的路径，先以五右一上到 C，再走 CD，最后以一右二上到 B，共 $\binom61\binom31=18$。经过与不经过该边是互斥且穷尽的两类，因此不经过的数量为 $210-18=192$。这里禁止的是边，不是所有到达 C 或 D 的路径。
-
-## Common Mistakes
-
-- 禁止的是边 CD，某条路径可以经过 C 但绕别处上行，仍可能合法。
-- 应从全部二百一十条中减去十八条经过边的路径，不能把十八直接当答案。
+**Derivation/proof.** All paths use six right and four up moves, so there are $\binom{10}4=210$. Paths using $CD$ take five right and one up move to $C$, then $CD$, then one right and two up moves to $B$, giving $\binom61\binom31=18$. Using and avoiding the edge are disjoint exhaustive cases. Therefore the desired count is $210-18=192$. The forbidden object is the edge, not every path visiting $C$ or $D$.
 
 ## Connections
 

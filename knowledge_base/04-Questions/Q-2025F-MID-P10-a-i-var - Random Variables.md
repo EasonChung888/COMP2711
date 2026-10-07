@@ -42,24 +42,22 @@ Editorial atomic split: variance only; the shared 2 points are not apportioned. 
 
 (i) [2 points] What are $var(X_1)$?
 
-## 中文解析
+## Official Answer
 
-方差来自二阶矩减去均值平方，两个操作的先后不能颠倒。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=22|physical PDF page 22]].
 
-## Detailed Solution
+> (a) (i) For a fair die, each outcome $X_1$ is uniformly distributed over $\{1,2,3,4,5,6\}$. The expected value is:
+> $$E(X_1)=\frac{1+2+3+4+5+6}{6}=\frac{21}{6}=3.5.$$
+> The variance is:
+> $$\operatorname{var}(X_1)=E(X_1^2)-[E(X_1)]^2$$
+> where $E(X_1^2)=\frac{1^2+2^2+3^2+4^2+5^2+6^2}{6}=\frac{91}{6}$, so:
+> $$\operatorname{var}(X_1)=\frac{91}{6}-(3.5)^2=\frac{91}{6}-\frac{12.25}{1}=\frac{91}{6}-\frac{73.5}{6}=\frac{17.5}{6}\approx2.9167.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\operatorname{var}(X_1)=35/12$.
 
-**答案。** 本原子项求 $var(X_1)=35/12$。
-
-**推导。** 公平骰子的二阶矩为 $E(X_1^2)=(1^2+2^2+3^2+4^2+5^2+6^2)/6=91/6$，期望为 $E(X_1)=21/6=7/2$。于是 $var(X_1)=E(X_1^2)-[E(X_1)]^2=91/6-49/4=(182-147)/12=35/12$。结果严格正，符合六种不同点数的非退化分布；原答案的 $17.5/6$ 与此完全相同。
-
-## Common Mistakes
-
-- $E(X_1^2)$ 不等于 $[E(X_1)]^2$，二者之差正是方差。
-- 原答案的十七点五除六不是十七点五，必须保留分母。
+**Derivation/proof.** The second moment is $E(X_1^2)=(1^2+2^2+3^2+4^2+5^2+6^2)/6=91/6$, and $E(X_1)=21/6=7/2$. Hence $\operatorname{var}(X_1)=E(X_1^2)-[E(X_1)]^2=91/6-49/4=(182-147)/12=35/12$. This is positive, as expected for six distinct outcomes. The printed value 17.5/6 is exactly the same number.
 
 ## Connections
 

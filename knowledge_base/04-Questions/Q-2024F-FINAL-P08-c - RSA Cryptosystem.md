@@ -43,24 +43,23 @@ Prerequisite context (editorial): [[Q-2024F-FINAL-P08-b - RSA Cryptosystem]]. Pa
 
 Shared printed context: ![[STEM-2024F-FINAL-P08 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-加密使用前一小题给定的公钥指数二十三，而不是求出的私钥 d。把指数拆成二进制幂，连续平方并在每一步取模可保持数值较小。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=21|physical PDF page 21]].
 
-## Detailed Solution
+> (c)
+> $$3^2\equiv9\pmod{95}\equiv9$$
+> $$3^4\equiv9^2\pmod{95}\equiv81\pmod{95}\equiv81\equiv-14\pmod{95}$$
+> $$3^8\equiv81^2\pmod{95}\equiv14^2\pmod{95}\equiv196\pmod{95}\equiv6\pmod{95}$$
+> $$3^{16}\equiv6^2\pmod{95}\equiv36\pmod{95}\equiv36$$
+> Since $23=2^4+2^2+2^1+2^0$:
+> We need to calcualte $3^{2^4}\cdot3^{2^2}\cdot3^2\cdot3\equiv72$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The ciphertext is $C=72$.
 
-**答案。** 密文 $C=72$。
-
-**推导。** 导入同一系统的 $n=95,e=23$，加密为 $C\equiv3^{23}\pmod{95}$。连续平方：$3^2\equiv9$，$3^4\equiv81\equiv-14$，$3^8\equiv(-14)^2=196\equiv6$，$3^{16}\equiv6^2=36$。因 $23=16+4+2+1$，$3^{23}\equiv36\cdot81\cdot9\cdot3$。先 $36\cdot81=2916\equiv66$，再 $66\cdot9=594\equiv24$，最后 $24\cdot3=72$。故取标准密文代表 72，所有取模均在九十五下进行。
-
-## Common Mistakes
-
-- 加密指数为 e=23，d=47 用于解密，不应互换。
-- 二十三的二进制不含八位幂，虽算出 $3^8$，最后乘积不包含它。
+**Derivation/proof.** Use $n=95,e=23$, so $C\equiv3^{23}\pmod{95}$. Repeated squaring gives $3^2\equiv9$, $3^4\equiv81\equiv-14$, $3^8\equiv(-14)^2=196\equiv6$, and $3^{16}\equiv6^2=36$. Since $23=16+4+2+1$, $3^{23}\equiv36\cdot81\cdot9\cdot3$. Reduce $36\cdot81=2916\equiv66$, then $66\cdot9=594\equiv24$, then $24\cdot3=72$. Thus the standard ciphertext representative is 72, with every reduction modulo 95.
 
 ## Connections
 

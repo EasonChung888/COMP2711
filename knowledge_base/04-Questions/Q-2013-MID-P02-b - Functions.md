@@ -40,26 +40,21 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2013-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-限制只连结 $f(1)$ 与 $f(2)$；$f(3)$ 仍可等于其中任何一个，因此最后仍有 $n$ 种。
+Source: [[knowledge_base/past_paper/2013-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(b) We determine $f(1)$, $f(2)$ and $f(3)$ in order. There are $n$ possibilities for $f(1)$, $n-1$ possibilities for $f(2)$, and $n$ possibilities for $f(3)$. So, the answer is: $n^2(n-1)$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $n^2(n-1)$.
 
 **Derivation/proof.** Choose $f(1)$ in $n$ ways, $f(2)$ in $n-1$ ways different from it, and $f(3)$ freely in $n$ ways.
 
-### 中文解答
+The third image may equal either previous image, so the product is $n(n-1)n=n^2(n-1)$.
 
-**推导。** 先选 $f(1)$，有 n 种。随后 $f(2)$ 必须避开这个像，剩 n−1 种。$f(3)$ 不受限制，仍有 n 种，即使等于前两个像之一也合法。故函数总数为 $n(n-1)n=n^2(n-1)$。
-
-## Common Mistakes
-
-- 错误地把 $f(3)$ 也限制为不同。
-- 把两个受限值的选择顺序漏掉。
+There are n−1 choices for the second image after the first is fixed.
 
 ## Connections
 

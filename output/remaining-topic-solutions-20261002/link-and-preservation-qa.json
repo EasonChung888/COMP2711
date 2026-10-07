@@ -1,0 +1,54 @@
+{
+  "Algorithms": {
+    "pages": 69,
+    "questions": 68,
+    "localSourceLinks": 74,
+    "errors": [],
+    "missingQuestionIds": [],
+    "sha256": "43b34d6ab511db01da87046d280cdad4a09582a7c5aece0ac8cf56cad1d288fa"
+  },
+  "Graphs": {
+    "pages": 70,
+    "questions": 60,
+    "localSourceLinks": 63,
+    "errors": [],
+    "missingQuestionIds": [],
+    "sha256": "6dd207d3713d95203c8942b109df2f36cdafda156f3279dea7ac5f9341611d51"
+  },
+  "Induction_and_Recursion": {
+    "pages": 79,
+    "questions": 76,
+    "localSourceLinks": 83,
+    "errors": [],
+    "missingQuestionIds": [],
+    "sha256": "03f74b98b23c2bd1358a1f5f94e10c20cadd564153e5b36dad65864a1a9a0cc3"
+  },
+  "Logic": {
+    "pages": 175,
+    "questions": 202,
+    "localSourceLinks": 206,
+    "errors": [],
+    "missingQuestionIds": [],
+    "sha256": "e8f0e05933c2580be3113d9df5996a7fc855bee264782d4d14c6a29e12941787"
+  },
+  "Number_Theory": {
+    "pages": 131,
+    "questions": 143,
+    "localSourceLinks": 155,
+    "errors": [],
+    "missingQuestionIds": [],
+    "sha256": "4ea4b82e4cfcfbd9287fca09cc9053431a4bd4be16f32c93df057526a847ed94"
+  },
+  "Probability": {
+    "pages": 61,
+    "questions": 59,
+    "localSourceLinks": 67,
+    "errors": [],
+    "missingQuestionIds": [],
+    "sha256": "8581112fdeec84f790ea95b6b7cdebb8c1b411c43ad2630b17635ff712dd606e"
+  },
+  "protectedFiles": {
+    "count": 1093,
+    "changed": []
+  }
+}

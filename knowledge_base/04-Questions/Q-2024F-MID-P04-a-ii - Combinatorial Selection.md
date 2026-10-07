@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P04-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-以 A 为 $(0,0)$，图中 C 为 $(5,1)$，D 为 $(5,2)$，B 为 $(6,4)$。经过 CD 的路径唯一分为 A 到 C、固定向上边 CD、D 到 B 三段。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> (ii) $\binom61\cdot\binom31$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom61\binom31=18$.
 
-**答案。** $\binom61\binom31=18$。
-
-**推导。** 以 A 为 $(0,0)$，图中 C 为 $(5,1)$，D 为 $(5,2)$，B 为 $(6,4)$。经过 CD 的路径唯一分为 A 到 C、固定向上边 CD、D 到 B 三段。第一段五右一上有 $\binom61=6$ 条，末段一右二上有 $\binom31=3$ 条，固定边仅一种。乘法原理给出 $6\cdot1\cdot3=18$。
-
-## Common Mistakes
-
-- C 到 D 是固定的一条向上边，分段时先到 C、离开 D 才能保证经过该边。
-- A 到 C 需五右一上；D 到 B 需一右二上，不能交换 C 与 D。
+**Derivation/proof.** Taking $A=(0,0)$, the diagram gives $C=(5,1)$, $D=(5,2)$ and $B=(6,4)$. A path through $CD$ splits uniquely into $A$ to $C$, the fixed upward edge $CD$, and $D$ to $B$. The first segment has five right moves and one up, giving $\binom61=6$ choices. The last has one right and two up, giving $\binom31=3$ choices. The edge has one choice, so multiplication gives $6\cdot1\cdot3=18$.
 
 ## Connections
 

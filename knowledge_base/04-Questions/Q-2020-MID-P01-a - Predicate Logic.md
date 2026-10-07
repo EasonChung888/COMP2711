@@ -37,26 +37,19 @@ Any student absent from the Zoom meeting of midterm dry run gets some marks dedu
 
 Shared context: [[STEM-2020-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-“任何学生”要求全称量词，缺席就是没有参加会议。缺席是触发扣分的条件，所以非 Z 放在前件，D 放在后件；参加会议的学生是否扣分并未由这句话决定。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+$\forall x(\neg Z(x)\to D(x))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall x(\neg Z(x)\to D(x))$.
 
 **Derivation/proof.** “Any student” ranges over every member of the given student domain. Being absent is $\neg Z(x)$; the statement requires $D(x)$ whenever that condition holds. Thus use implication inside the universal quantifier. A student who attended is unconstrained by this sentence.
 
-### 中文解答
-
-**推导。** 论域已是所有修读学生，因此“Any student”用 $\forall x$。“缺席”是到场谓词的否定 $\neg Z(x)$，要求一旦缺席就有扣分 $D(x)$，故写 $\forall x(\neg Z(x)\to D(x))$。这只约束缺席者，不声称参加者是否扣分，也不是把全体学生都断言为缺席。
-
-## Common Mistakes
-
-- 把缺席误写成 Z。
-- 用合取断言所有学生都缺席。
+The universal conditional constrains only absent students. For a student who attended, its antecedent is false and the formula is true regardless of the deduction predicate.
 
 ## Connections
 

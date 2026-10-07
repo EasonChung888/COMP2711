@@ -45,13 +45,21 @@ Conclusion: $q$
 
 Shared context: [[STEM-2015-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先利用 $r$ 不成立对第三个前提作否定后件，得到 $p\lor q$。再用已知的 $\neg p$ 排除第一种可能，由析取三段论得到 $q$。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(a)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+| Step | Statement | Reason |
+| --- | --- | --- |
+| 1 | $\neg(p\lor q)\to r$ | Premise |
+| 2 | $\neg r$ | Premise |
+| 3 | $(p\lor q)$ | Modus tollens (1,2) |
+| 4 | $\neg p$ | Premise |
+| 5 | $q$ | Disjunctive syllogism (3,4) |
+
+## Supplementary Explanation
 
 **Answer.** $q$ follows.
 
@@ -61,15 +69,6 @@ Provenance: official; supplied source conclusion checked on PDF page(s) 6. The C
 4. $p\lor q$ (double negation, 3).
 5. $\neg p$ (premise).
 6. $q$ (disjunctive syllogism, 4–5).
-
-### 中文解答
-
-**推导。** 从前提 $\neg(p\lor q)\to r$ 与 $\neg r$ 用否定后件，得 $\neg\neg(p\lor q)$。双重否定律给 $p\lor q$。再和前提 $\neg p$ 用析取三段论，排除 p，得到 q。三步各自使用合法推理规则，故结论由全部给定前提推出。
-
-## Common Mistakes
-
-- 否定后件后漏掉双重否定。
-- 从 $p\lor q$ 单独直接断言 $q$。
 
 ## Connections
 

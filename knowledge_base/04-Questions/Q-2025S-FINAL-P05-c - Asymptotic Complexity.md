@@ -41,24 +41,30 @@ Source correction: Page 7 replaces the finite exponent sum by its infinite limit
 (c) [5 pts] Derive the tightest possible asymptotic upper bound for the following recurrence $T(n)$, assuming $n$ is a power of a power of 2. Do not use the master theorem. Show all your steps to receive full credit.
 $$T(2)=1,\qquad T(n)=\sqrt nT(\sqrt n)+n\quad\text{for }n>2.$$
 
-## 中文解析
+## Official Answer
 
-每一展开层贡献相同的 $n$，停止层数由连续开平方降到二决定。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+(c) By expansion:
+$$\begin{aligned}
+T(n)&=n^{1/2}T(n^{1/2})+n\\
+&=n^{1/2}(n^{1/4}T(n^{1/4})+n^{1/2})+n\\
+&=n^{1/2+1/4}T(n^{1/2^2})+2n\\
+&=n^{1/2+1/4+\cdots+1/2^k}T(n^{1/2^k})+kn\\
+&=n^{1/2+1/4+\cdots+1/2^k}(1)+kn\quad[\text{Set }n^{1/2^k}=2,\text{ we have }k=\log\log n]\\
+&=n^{\frac{1/2}{1-1/2}}+kn\\
+&=n+n\log\log n\\
+&=O(n\cdot\log\log n).
+\end{aligned}$$
+Solution: $O(n\cdot\log\log n)$
 
-Provenance: published official asymptotic answer, independently checked; the secondary exact-coefficient slip is retained in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $T(n)=n/2+n\log_2\log_2n$, so the tight upper bound is $O(n\log\log n)$.
 
-**答案。** $T(n)=n/2+n\log_2\log_2 n$，故最紧上界为 $O(n\log\log n)$。
-
-**推导。** 展开 $j$ 层得 $T(n)=n^{1/2+1/4+\cdots+1/2^j}T(n^{1/2^j})+jn$。这一式中每层新增项为 $n^{1-1/2^j}n^{1/2^j}=n$。令 $n=2^{2^k}$，则 $n^{1/2^k}=2$，所以 $k=\log_2\log_2 n$。指数和为 $1-1/2^k$，叶项系数为 $n^{1-1/2^k}=n/2$，乘 $T(2)=1$ 后得到 $T(n)=n/2+kn$。当 $k\to\infty$，这为 $\Theta(n\log\log n)$。例如 $n=4$ 时原递推给 $T(4)=2\cdot1+4=6$，修正式也给六；原答案的 $n+n\log\log n$ 则给八，揭示其常数项错误。
-
-## Common Mistakes
-
-- 每次规模开平方，深度是 log log n，不能当成普通二分递归的 log n。
-- 叶项为 $n/2$，不能把几何级数有限和误当成无限和后得到 $n$。
+**Derivation/proof.** After j expansions,
+$$T(n)=n^{1/2+1/4+\cdots+1/2^j}T(n^{1/2^j})+jn.$$
+Each new additive contribution is $n^{1-1/2^j}n^{1/2^j}=n$. Write $n=2^{2^k}$; then $n^{1/2^k}=2$ and $k=\log_2\log_2n$. The finite exponent sum is $1-1/2^k$, so the leaf coefficient is $n^{1-1/2^k}=n/2$. Using $T(2)=1$ gives $T(n)=n/2+kn$, which is $\Theta(n\log\log n)$ as k grows. At $n=4$, the recurrence gives $T(4)=2\cdot1+4=6$, agreeing with the corrected exact formula; the printed expression would give eight.
 
 ## Connections
 

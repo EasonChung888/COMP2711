@@ -37,26 +37,19 @@ Determine the worst-case running time using the $\Theta$ notation.
 
 Shared context: [[STEM-2022-MID-P10-c - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每次最坏保留约四分之三的区间，仍是固定比例缩小，所以层数是对数级。取比所有元素都大的目标可持续走较大右区间，证明对数下界；取整误差只影响常数，不改变阶。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (c) The best-case running time is $\Theta(1)$. Since each iteration reduces $j-i$ by $1/4$, the worst-case running time is $\Theta(\log_{3/4}\frac1n)=\Theta(\log n)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\Theta(\log n)$.
 
 **Derivation/proof.** For interval length L=j−i+1, m=i+floor((L−1)/4). The larger right remainder has length L−1−floor((L−1)/4), at most3L/4, so O(log n) iterations suffice. A target larger than every entry always takes this larger side, whose length is at least3(L−1)/4. Thus reaching constant size requires Ω(log n) iterations. Constant work per probe yields Θ(log n); the logarithm base4/3 affects only a constant.
 
-### 中文解答
-
-**推导。** 令当前区间长度 $L=j-i+1$，则探测点 $m=i+\lfloor(L-1)/4\rfloor$。左侧剩 $\lfloor(L-1)/4\rfloor$ 项，右侧剩 $L-1-\lfloor(L-1)/4\rfloor$ 项；后者较大且不超过 $3L/4$。每次未命中都以固定比例缩小，所以总轮数为 $O(\log n)$。为给匹配下界，取大于列表全部元素的目标，每次都走右侧，而右侧长度至少 $3(L-1)/4$。由 $L_{t+1}+3\ge\tfrac34(L_t+3)$，归纳得 $L_t+3\ge(3/4)^t(n+3)$；终止时 $L_t=0$，因此 $t\ge\log_{4/3}((n+3)/3)=\Omega(\log n)$。每轮工作为常数，故最坏时间 $\Theta(\log n)$。取整只改变常数边界，不能把它说成每次都精确删四分之一。
-
-## Common Mistakes
-
-- 认为只有一半分割才是对数时间。
-- 把保留四分之三误读为只减少固定四分之一个元素。
+For interval length $L=j-i+1$, the left remainder is $\lfloor(L-1)/4\rfloor$ and the larger right remainder is $L-1-\lfloor(L-1)/4\rfloor$. The latter is at most $3L/4$ and at least $3(L-1)/4$. Along right branches, $L_{t+1}+3\ge\tfrac34(L_t+3)$; induction gives $L_t+3\ge(3/4)^t(n+3)$. At termination $L_t=0$, so $t\ge\log_{4/3}((n+3)/3)=\Omega(\log n)$. Rounding affects only constants; each step does not remove exactly one quarter.
 
 ## Connections
 

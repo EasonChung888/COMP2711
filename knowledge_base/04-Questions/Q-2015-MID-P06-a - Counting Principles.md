@@ -41,26 +41,19 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-首位只能选二十六个小写字母。后面七个位置都可以选字母或数字，共三十六种，并且允许重复，逐位置相乘即可。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+(a) $26\times36^7$. There are 26 possibilities for the first character and 36 possibilities for each of the other characters.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $26\cdot36^7$.
 
 **Derivation/proof.** Choose the first letter in 26 ways. Each remaining position independently has $26+10=36$ choices, so the product rule gives $26\cdot36^7$.
 
-### 中文解答
-
-**推导。** 第一位必须是小写字母，有 26 种。其余七个位置各可放十个数字或二十六个字母，均有 $10+26=36$ 种；题目未禁重复，选择无需扣除已用字符。逐位置乘法原理得到 $26\cdot36^7$ 个不同八字符密码。
-
-## Common Mistakes
-
-- 误把首位也计作三十六种。
-- 用排列下降阶乘，擅自禁止字符重复。
+There are $10+26=36$ available characters in every unrestricted position.
 
 ## Connections
 

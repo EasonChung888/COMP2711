@@ -38,26 +38,19 @@ Source verification: The published answer omits m=n=1. The source gives no restr
 
 (b) For what values of $m,n$ will a complete bipartite graph $K_{m,n}$ have an Euler path but not an Euler circuit? Explain your answers.
 
-## 中文解析
+## Official Answer
 
-开放欧拉通路要求恰好两个奇度顶点。按 m 与 n 的四种奇偶情况逐一检查：一奇一偶给熟悉的“偶数那组等于二”，两者都奇则还可能两组各一人，形成单边。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+Only when one of $m$ or $n$ is $2$ and the other is odd. In a complete bipartite graph, each of the $m$ vertices have degree $n$ and each of the $n$ vertices have degree $m$, and we must have exactly two vertices of odd degree.
 
-Provenance: derived; independently derived correction; discrepant source material is retained in Source. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** For positive $m,n$: $m=2,n$ odd; $n=2,m$ odd; or $m=n=1$.
 
 **Derivation/proof.** Every vertex in the $m$-part has degree $n$ and every vertex in the $n$-part has degree $m$. Since this graph is connected, it needs exactly two odd vertices. Both even gives zero. If $n$ alone is odd, there are $m$ odd vertices, so $m=2$; the opposite case requires $n=2$. Both odd gives $m+n$ odd vertices, equaling two precisely at $(1,1)$. Directly, $K_{1,1}$ is one edge, an open Euler trail with no circuit.
 
-### 中文解答
-
-**推导。** 对正整数 $m,n$，图连通，左部 $m$ 点度数为 $n$，右部 $n$ 点度数为 $m$。开欧拉迹要求奇度点恰两个：若两参数皆偶，则为零，不合；若仅 $n$ 奇，则奇度点数为 $m$，须 $m=2$；若仅 $m$ 奇，则须 $n=2$；若两者皆奇，则奇度点为 $m+n$，须 $m=n=1$。故答案是 $m=2,n$ 奇，或 $n=2,m$ 奇，或 $(m,n)=(1,1)$。最后的 $K_{1,1}$ 是单边，显然可以走一次且不能形成回路，独立验证了印本遗漏的边界。
-
-## Common Mistakes
-
-- 漏掉 m=n=1。
-- 把欧拉通路误要求所有度数为偶数。
+The graph $K_{1,1}$ is a single edge and has an Euler trail. It must be included alongside the larger cases in which the odd-degree count is at most two.
 
 ## Connections
 

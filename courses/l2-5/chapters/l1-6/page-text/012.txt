@@ -1,0 +1,7 @@
+Exercise
+ on Parking Lots
+A parking lot has 10 parking spaces arranged in a row. There are 7 different cars parked in 7 of these parking spaces. How many ways are there to park the cars such that the three empty places are adjacent to each other?
+Solution
+ 
+The beginning of the 3 empty spaces can be at positions 1,2,…,8. For each of the 8 choices, there are 7! permutations of the 7 cars. Thus: 7!8=40320
+12

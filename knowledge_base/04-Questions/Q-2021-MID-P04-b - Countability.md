@@ -41,26 +41,21 @@ Is $\{S\mid S\subseteq\mathbb N,|S|\text{ is infinite}\}$ countable or uncountab
 
 Shared context: [[STEM-2021-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-所有自然数子集分成有限与无限两类。有限子集族可数，但完整幂集不可数；假设无限子集族也可数，两类合并仍可数，便矛盾。这里判断的是“集合的集合”的基数。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (b) Uncountable.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Uncountable.
 
 **Derivation/proof.** The full power set is uncountable by Cantor's diagonal argument. Its finite-subset subfamily is countable by enumeration using the maximum element. If its infinite-subset subfamily were also countable, the union of these two countable families would be countable, contradicting uncountability of the power set. Thus the infinite-subset family is uncountable.
 
-### 中文解答
+Writing the two families as $F$ and $I$ gives $P(\mathbb N)=F\cup I$. If both families were countable, interleaving their enumerations would enumerate the power set. A family is not uncountable merely because each member is infinite.
 
-**推导。** 设有限子集族为 $F$，无限子集族为 $I$，则 $P(\mathbb N)=F\cup I$。由(a)，$F$ 可数；完整幂集由康托尔对角线论证不可数。若 $I$ 也可数，交替枚举两个可数族便会使 $F\cup I$ 可数，矛盾。所以 $I$ 不可数。题目虽然不要求说明，这个论证给出了判断的依据，而不是把“每个成员无限”误当成整个族不可数的理由。
-
-## Common Mistakes
-
-- 把每个无限子集自身可数混同于子集族可数。
-- 认为从不可数集合中删掉可数个元素会变可数。
+If both families were countable, interleaving the enumerations would enumerate their union. Hence $I$ is uncountable.
 
 ## Connections
 

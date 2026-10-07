@@ -45,24 +45,17 @@ Prerequisite context (editorial): [[Q-2024F-FINAL-P05-b - Modular Congruence]]. 
 $$a^2+b^2-8c=6$$
 Hint: Try to use (a) and (b).
 
-## 中文解析
+## Official Answer
 
-模八保留了整数平方比模二更细的限制。分别考虑偶数与奇数的展开式，再把得到的余数集合用于检查方程是否可能，而不必求出变量具体值。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+> (c) $a^2+b^2=8c+6$ Which means $a^2+b^2\equiv6\pmod8$. From (a) and (b) we can see that the possible remainder of a square number mod 8 is $\{0,1,4\}$. So it is not possible to pick two values among this numbers such that the remainder mod 8 is equal to 6.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** There is no integer solution.
 
-**答案。** 没有整数解。
-
-**推导。** 如果有整数解，移项并模八化简得到 $a^2+b^2\equiv6\pmod8$。由前两题导入，任意整数平方模八只能属于 $\{0,1,4\}$。两平方和的无序可能为 $0+0\equiv0$、$0+1\equiv1$、$0+4\equiv4$、$1+1\equiv2$、$1+4\equiv5$、$4+4\equiv0$，所以和只可能余 $0,1,2,4,5$，不含六。与必要同余式矛盾，故所有整数 a,b,c 都不能满足原式。
-
-## Common Mistakes
-
-- 不能把“平方是非负数”当作模八的完整限制，关键是余数集合。
-- 模八余数中四加四为零，应先约化再判断可能性。
+**Derivation/proof.** If a solution existed, rearrangement modulo eight would give $a^2+b^2\equiv6\pmod8$. Parts (a) and (b) restrict all square residues to $\{0,1,4\}$. The unordered pair sums are $0+0\equiv0$, $0+1\equiv1$, $0+4\equiv4$, $1+1\equiv2$, $1+4\equiv5$, and $4+4\equiv0$. Thus sums can only have residues $0,1,2,4,5$, never six. This contradiction rules out every integer triple $a,b,c$.
 
 ## Connections
 

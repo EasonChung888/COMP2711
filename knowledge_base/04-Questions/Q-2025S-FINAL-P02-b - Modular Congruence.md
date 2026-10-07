@@ -42,24 +42,21 @@ Prerequisite context (editorial): [[Q-2025S-FINAL-P02-a - Modular Congruence]]. 
 (b) [3 pts] Use Fermat's Little Theorem to prove that 63 is not a prime number. Note that simply factorizing 63, e.g., as $3\times21$, is not a valid solution here. You must apply Fermat's Little Theorem explicitly.
 Hint: You might find part (a) useful here.
 
-## 中文解析
+## Official Answer
 
-把 Fermat's Little Theorem 的必要条件与已算出的余数四相矛盾。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+(b) We know that if $p$ is prime, Then $a^{p-1}\equiv1\pmod p$. (if $a$ is not a multiple of $p$)
 
-Provenance: published official answer, independently checked and expanded below.
+So we can conclude that $a^{p-1}\not\equiv1\pmod p\to p$ is not prime.
 
-### 中文解答
+As $2^{62}\not\equiv1\pmod{63}$ we can conclude that 63 is not prime!
 
-**答案。** 63 不是素数。
+## Supplementary Explanation
 
-**推导。** 由 (a) 导入 $2^{62}\equiv4\pmod{63}$。反设六十三是素数；由于 $63\nmid2$，Fermat's Little Theorem 强制 $2^{63-1}\equiv1\pmod{63}$。但一与四模六十三不同余，因为 $63\nmid(4-1)=3$。这与导入的计算矛盾，所以六十三不是素数。证明只用 Fermat 的必要条件及模运算，没有用因数分解替代指定方法。
+**Answer.** 63 is not prime.
 
-## Common Mistakes
-
-- 通过某个底数的 Fermat 检查不保证素数；本题用的是失败见证。
-- 必须检查底数不是模数的倍数，才能引用素数情形的定理。
+**Derivation/proof.** Part (a) gives $2^{62}\equiv4\pmod{63}$. Suppose 63 were prime. Since $63\nmid2$, Fermat's Little Theorem would force $2^{63-1}\equiv1\pmod{63}$. However one and four are not congruent modulo sixty-three, since $63\nmid(4-1)=3$. This contradicts the computed remainder. The proof explicitly uses the required theorem rather than replacing it with factorization.
 
 ## Connections
 

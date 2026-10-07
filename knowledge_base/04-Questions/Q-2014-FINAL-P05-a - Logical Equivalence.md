@@ -38,26 +38,20 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-后件 $r\land\neg r$ 恒假，蕴含式化为前件的否定；德摩根律后得到普通的 $p\Rightarrow q$。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(a) Equivalent.
+$$\begin{aligned}(p\land\neg q)\Rightarrow(r\land\neg r)&\equiv\neg(p\land\neg q)\lor(r\land\neg r)\\&\equiv\neg p\lor q\lor F\\&\equiv\neg p\lor q\\&\equiv p\Rightarrow q\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Yes.
 
 **Derivation/proof.** Because $r\land\neg r=F$, the first formula is $\neg(p\land\neg q)\lor F=\neg p\lor q$, which is exactly $p\Rightarrow q$.
 
-### 中文解答
-
-**推导。** 第一式消去蕴含为 $\neg(p\land\neg q)\lor(r\land\neg r)$。后面的矛盾式恒假，而德摩根律使前面化为 $\neg p\lor q$。因此整体等价于 $\neg p\lor q\lor F\equiv\neg p\lor q\equiv p\Rightarrow q$，与第二式一致。
-
-## Common Mistakes
-
-- 把矛盾式 $r\land\neg r$ 当成未知变量。
-- 把 $\neg(p\land\neg q)$ 化错。
+After De Morgan and the contradiction law, the intermediate disjunction is $\neg p\lor q\lor F$.
 
 ## Connections
 

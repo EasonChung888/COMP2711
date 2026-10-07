@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-midterm
 
 Shared context: [[STEM-2017-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每对夫妻必须相邻，所以把每对看成一块，先排列五个块。块内部两人的左右顺序仍有两种，而且五对夫妻分别独立选择，因此应乘二的五次方而不是仅乘二。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+$5!\cdot2^5$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $5!2^5$.
 
 **Derivation/proof.** Collapse each couple into a labeled block. Arrange the five blocks in $5!$ orders. Each couple independently chooses which partner occupies its left seat, giving $2^5$ internal choices. Every allowed seating has exactly one such decomposition.
 
-### 中文解答
-
-**推导。** 把每对相邻夫妻缩成一个带身份的块，五个块有 $5!$ 种左右排列。每块中的两个人又各有 $2$ 种先后次序，五块共 $2^5$ 种内部选择。任一合法座次可唯一缩块且展开可唯一还原，故答案为 $5!2^5$。
-
-## Common Mistakes
-
-- 遗漏夫妻内部左右顺序。
-- 把五对夫妻的块当作完全相同。
+There is a unique block decomposition for each admissible arrangement. Collapsing the required adjacent people to their blocks, and then expanding with their internal orders, are inverse operations, so the block count neither omits nor duplicates arrangements.
 
 ## Connections
 

@@ -6,7 +6,7 @@ course: "COMP2711"
 ---
 # COMP2711 Knowledge Hub
 
-Explore verified atomic past-paper questions against the [[knowledge_base/06-Audit/COMP2711 2026-27 Syllabus Baseline|Fall 2026–27 syllabus]]. Each Question preserves its English source and Chinese worked explanation, and can belong to several knowledge areas without duplicating its file. 原题可从主题、方法、题型、试卷和难度交叉查阅；排除或待审项目保留在审计中。
+Explore verified atomic past-paper questions against the [[knowledge_base/06-Audit/COMP2711 2026-27 Syllabus Baseline|Fall 2026–27 syllabus]]. Each Question preserves its original source and provides English answers in exactly two sections, Official Answer and Supplementary Explanation, and can belong to several knowledge areas without duplicating its file. 原题可从主题、方法、题型、试卷和难度交叉查阅；排除或待审项目保留在审计中。
 
 ## Browse｜浏览入口
 
@@ -49,3 +49,10 @@ Each Topic, Subtopic, Concept, and Method note embeds a static view of its verif
 - [[knowledge_base/06-Audit/source-inventory.json|Machine-readable source inventory]], [[knowledge_base/06-Audit/question-audit.json|atomic question audit]], and [[knowledge_base/06-Audit/source-overrides.json|source metadata overrides]].
 
 The original PDFs remain in `knowledge_base/past_paper/`. The Spring 2023 Final filename is an exact duplicate alias of the Spring Midterm and adds no second exam or question set. This vault is a reference and exploration system; mock generation and learner-progress tracking are outside its scope.
+
+- [[knowledge_base/06-Audit/English Answer Refresh - 2026-09-25|English Answer Refresh — 2026-09-25]] — completed English-answer and official-source alignment review.
+- [[knowledge_base/06-Audit/answer-refresh-2026-09-25.json|answer-refresh-2026-09-25.json]] — per-question checked pages, quotation/correction results and preservation hashes.
+- [[knowledge_base/06-Audit/Run Log|Run Log]] — batch progress and verification record.
+
+- [[knowledge_base/06-Audit/Two-Part Answer Format - 2026-09-30|Two-Part Answer Format - 2026-09-30]] — current answer structure and preservation checks.
+- [[knowledge_base/06-Audit/answer-format-2026-09-30.json|Answer format migration records]] — per-question hashes and retained content checks.

@@ -1,0 +1,25 @@
+Exercise
+ on Number of Subsets
+Prove that for each set 
+S
+ of 
+n
+ elements, the number of subsets that have even cardinality equals the number of subsets that have odd cardinality
+From previous slide:
+ 
+Therefore,
+The left side of the equation is the number of subsets with even cardinality.
+The right side of the equation is the number of subsets with odd cardinality.
+Out of the 2
+n
+ possible subsets: 2
+n
+/2=2
+n
+-1
+ have even, and 2
+n
+-1
+ have odd cardinality.
+ 
+15

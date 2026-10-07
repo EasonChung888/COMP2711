@@ -39,26 +39,21 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-首位有三十六种，之后每放一个字符都要排除已用字符。七个位次有顺序，故得到下降阶乘，不能只选一个无序七字符集合。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(b) $36^{\underline7}$ or $7!\binom{36}{7}$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $36\cdot35\cdot34\cdot33\cdot32\cdot31\cdot30=7!\binom{36}{7}$.
 
 **Derivation/proof.** After $i$ distinct characters have been used, the next position has $36-i$ options. Multiplying for $i=0,\ldots,6$ gives $36!/29!$, also equal to choosing seven characters and permuting them.
 
-### 中文解答
+The sequence of available counts is $36,35,34,33,32,31,30$. The repeated A in the source example violates the requirement.
 
-**推导。** 第一位36种，第二位不能重用第一位，35种，依次到第七位剩30种。故总数 $36\cdot35\cdot34\cdot33\cdot32\cdot31\cdot30=36!/29!$。等价地先选七个不同字符再排列，得 $\binom{36}{7}7!$。这不是无序集合计数，例子中的两个A会违反不同字符限制。
-
-## Common Mistakes
-
-- 只写 $\binom{36}{7}$，忽略顺序。
-- 只排除前一位，而没有排除全部已用字符。
+Choosing the seven distinct characters first and ordering them gives $\binom{36}{7}7!$.
 
 ## Connections
 

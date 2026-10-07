@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把 a 与 b 分别换成它们的模十九代表元，再进行同样的线性组合。得到八十六后减去四个十九余十，必须继续化简到指定区间，不能停留在八十六。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+$10$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $c=10$.
 
 **Derivation/proof.** Use the given congruences to obtain $7a+3b\equiv7\cdot11+3\cdot3=77+9=86$. Since $86=4\cdot19+10$, the remainder is 10. It belongs to the specified interval, so it is the unique requested value.
 
-### 中文解答
-
-**推导。** 先代入同余代表再计算：$7a+3b\equiv7\cdot11+3\cdot3=86\pmod{19}$。欧几里得除法 $86=4\cdot19+10$，余数 $10$ 在 $0$ 至 $18$ 内，因此 $c=10$。
-
-## Common Mistakes
-
-- 忘记第二项系数三。
-- 把八十六作为区间内答案。
+Substituting the known residues in the linear combination gives $7\cdot11+3\cdot3=86$. Reducing modulo nineteen gives $86=4\cdot19+10$, so the required least nonnegative residue is ten.
 
 ## Connections
 

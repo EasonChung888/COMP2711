@@ -1,0 +1,25 @@
+Permutations with Indistinguishable Objects
+Theorem
+The number of different permutations of 
+n
+ objects, where there are 
+ indistinguishable objects of type 1, 
+ indistinguishable objects of type 2, …, and 
+ indistinguishable objects of type 
+k
+, (
+n
+=
+n
+1
++
+n
+2
++..
+ 
++
+n
+k
+) is
+ 
+35

@@ -38,24 +38,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Prove that $\sqrt2+\sqrt3$ is irrational.
 
-## 中文解析
+## Official Answer
 
-平方根之和不能仅靠两个加数分别无理来判断。把和假设为有理后平方，可隔离根号六，再用最简分数的奇偶矛盾证明。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> Answer.
+> For the sake of contradiction, suppose that $\sqrt2+\sqrt3$ is rational, that is, $\sqrt2+\sqrt3=a/b$, where $a$ and $b$ are both integers. Squaring both sides, we obtain $5+2\sqrt6=a^2/b^2$, which implies that $\sqrt6=\frac12\left(\frac{a^2}{b^2}-5\right)=\frac{a^2-5b^2}{2b^2}$.
+> As $a^2-5b^2$ and $2b^2$ are both integers, it follows that $\sqrt6$ is rational. Thus, there exist integers $p$ and $q$ such that $\sqrt6=p/q$ and $\gcd(p,q)=1$. Hence $6=p^2/q^2$. It follows that $p^2=6q^2$, which implies that $p^2$ is even. It follows that $p$ is even, that is, there exists an integer $k$ such that $p=2k$. Substituting into the equation $p^2=6q^2$, we obtain $4k^2=6q^2$. This yields $2k^2=3q^2$. It follows that $q^2$ is even, which implies that $q$ is even. We have shown that both $p$ and $q$ are even, which contradicts our assumption that $\gcd(p,q)=1$. This proves that $\sqrt2+\sqrt3$ is irrational.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\sqrt2+\sqrt3$ is irrational.
 
-**答案。** $\sqrt2+\sqrt3$ 是无理数。
-
-**推导。** 反设 $\sqrt2+\sqrt3=a/b$，其中 $a,b$ 为整数且 $b\ne0$。平方得到 $5+2\sqrt6=a^2/b^2$，所以 $\sqrt6=(a^2-5b^2)/(2b^2)$ 为有理数。将其写为最简分数 $p/q$，$q\ne0,\gcd(p,q)=1$，则 $p^2=6q^2$。右侧偶数，故 $p$ 偶，写成 $p=2k$；代入得到 $2k^2=3q^2$。左侧偶而三为奇数，所以 $q^2$ 偶，$q$ 也偶。这与最简分数的互素条件矛盾，故原和不可能有理。
-
-## Common Mistakes
-
-- 两个无理数之和未必无理，例如 $\sqrt2-\sqrt2=0$。
-- 必须先约分到互素的 $p,q$，同时为偶数才能产生矛盾。
+**Derivation/proof.** Suppose $\sqrt2+\sqrt3=a/b$ with integers $a,b$ and $b\ne0$. Squaring gives $5+2\sqrt6=a^2/b^2$, hence $\sqrt6=(a^2-5b^2)/(2b^2)$ is rational. Write it in lowest terms as $p/q$, with $q\ne0$ and $\gcd(p,q)=1$. Then $p^2=6q^2$, so $p$ is even: write $p=2k$. Substitution gives $2k^2=3q^2$. The left side is even and three is odd, so $q^2$ is even and $q$ is also even. This contradicts coprimality in the lowest-terms fraction, disproving the original assumption.
 
 ## Connections
 

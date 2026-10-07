@@ -41,34 +41,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2023_Final
 
 Shared printed context: ![[STEM-2023F-FINAL-P01 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-现在前件明确限定 x 为 prime。若 x 已整除 a，结论直接成立；否则 x 与 a 互质，可以借助 Bézout 等式把 x 整除 ab 转换成 x 整除 b，这解释了 prime 条件的作用。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (ii) True
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** True。
-
-**推导。**
-
-1. 任取整数 $x,a,b$。若 $P(x)$ 为假，外层 implication 因前件假自动为真；若 $x$ 是素数但 $x\nmid ab$，内层 implication 也自动为真。所以只需考虑 $x$ 素且 $x\mid ab$ 的情形。
-2. 若 $x\mid a$，后件的析取已成立。否则素数 $x$ 与 $a$ 的 gcd 必为一，Bézout 给出整数 $u,v$ 满足 $ux+va=1$。两侧乘 $b$，得 $uxb+vab=b$。
-3. 左侧第一项显然被 $x$ 整除，第二项因 $x\mid ab$ 也被 $x$ 整除，故 $x\mid b$。于是剩余情形仍满足析取；全部情形都已覆盖，证明原全称式为真，而非只验证若干例子。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** True.
 
 **Derivation/proof.** If $P(x)$ is false, the outer implication is true. Suppose x is prime and $x\mid ab$. If $x\mid a$, the desired disjunction holds. Otherwise $\gcd(x,a)=1$, so integers u,v satisfy $ux+va=1$. Multiply by b to get $uxb+vab=b$. Both terms on the left are divisible by x, since $x\mid ab$; therefore $x\mid b$. This proves the assertion for all integer a and b.
 
-## Common Mistakes
-
-- 不能把 prime 条件省掉，否则上一小题的反例适用。 / Keep the hypothesis.
-- 当 x 不整除 a 时仍需解释 gcd(x,a)=1。 / Primality establishes coprimality.
+When $x$ is prime and $x\nmid a$, Bézout gives $ux+va=1$. Multiplication gives $uxb+vab=b$, so $x\mid b$ if $x\mid ab$. If $x$ is not prime, or if $x\nmid ab$, the corresponding implication is vacuously true.
 
 ## Connections
 

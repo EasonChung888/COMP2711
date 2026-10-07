@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-final.pdf
 
 Shared context: [[STEM-2015-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-模 $p$ 下，$p-1$ 与负一同余；平方后就是一。也可直接展开平方，含有 $p$ 因子的两项都消失。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(b) $(p-1)^2\bmod p=(p^2-2p+1)\bmod p=1\bmod p=1$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $(p-1)^2\equiv1\pmod p$.
 
 **Derivation/proof.** Expand $(p-1)^2=p^2-2p+1=p(p-2)+1$. The first term is divisible by $p$, leaving residue 1; therefore $p-1$ satisfies the definition of a square root of 1.
 
-### 中文解答
-
-**推导。** 由定义需检验平方的余数。展开 $(p-1)^2=p^2-2p+1=p(p-2)+1$，前项可被 p 整除，故 $(p-1)^2\equiv1\pmod p$。因为素数 p≥2，$p-1$ 在零至 p−1 的合法代表元范围内，所以它确为一的模 p 平方根。
-
-## Common Mistakes
-
-- 把 $p-1$ 的平方误写成 $p^2-1$。
-- 认为模意义下平方根只能选整数正平方根 1。
+As $p\ge2$, $p-1$ is an allowed representative in $\{0,\ldots,p-1\}$.
 
 ## Connections
 

@@ -37,26 +37,22 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-最大公因数是候选生成元，但仅算出它还不够。要沿欧几里得余数链证明七十八本身能由递归规则生成，再由倍数闭合得到一个包含方向；另一个方向用结构归纳说明生成过程始终保持被七十八整除。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+Part (a) shows that $4914s\in S$ and $3588t\in S$ for all $s,t$, so $\gcd(4914,3588)\in S$. Therefore
+$$\begin{aligned}\gcd(4914,3588)&=\gcd(3588,1326)=\gcd(1326,936)=\gcd(936,390)\\&=\gcd(390,156)=\gcd(156,78)=78\in S.\end{aligned}$$
+$A_{78}\subseteq S$: Using part (a) directly, since $78\in S$, then $78n\in S$ for any integer $n$.
+$S\subseteq A_{78}$: $4914$ and $3588$ are multiples of $78$. Suppose $x$ and $y$ are multiples of $78$. Then clearly $x-y$ is a multiple of $78$. By structural induction, $S\subseteq A_{78}$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $m=78$ is the positive generator, and $S=78\mathbb Z$ (also $A_{-78}=A_{78}$).
 
 **Derivation/proof.** Euclid gives $4914=3588+1326$, $3588=2\cdot1326+936$, $1326=936+390$, $936=2\cdot390+156$, $390=2\cdot156+78$, $156=2\cdot78$. Every remainder belongs to $S$: previous entries and their multiples belong by part (a), and differences are allowed. Thus $78\in S$, and part (a), together with $0\in S$, gives $78\mathbb Z\subseteq S$. Conversely $4914=63\cdot78$ and $3588=46\cdot78$. Differences of multiples of 78 remain multiples, so structural induction gives $S\subseteq78\mathbb Z$. Both inclusions prove equality.
 
-### 中文解答
-
-**推导。** 欧几里得除法为 $4914=3588+1326$，$3588=2\cdot1326+936$，$1326=936+390$，$936=2\cdot390+156$，$390=2\cdot156+78$，$156=2\cdot78$。基础两数在 $S$，由(a)倍数在 $S$，再逐步取差，故所有余数尤其 $78$ 都在 $S$。再由(a)和零元素，$78\mathbb Z\subseteq S$。反向，基础 $4914=63\cdot78$、$3588=46\cdot78$ 都是 $78$ 倍数，两个这样的数之差仍为倍数；按递归构造作结构归纳，得 $S\subseteq78\mathbb Z$。两包含合起来 $S=A_{78}$，可取 $m=78$；负生成元 $-78$ 给出同一集合。
-
-## Common Mistakes
-
-- 只证明 S 的元素都是七十八的倍数。
-- 直接宣布最大公因数属于 S 而未展示构造。
+The basis numbers satisfy $4914=63\cdot78$ and $3588=46\cdot78$. A generator $m=-78$ gives the same set as $m=78$.
 
 ## Connections
 

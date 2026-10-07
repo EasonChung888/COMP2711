@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (i) [1 point] $T_A(n)=\Theta(\sum_{i=1}^n n^2)\quad T_B(n)=\Theta(n^4)$
 
-## 中文解析
+## Official Answer
 
-求和有 n 项，每项是 n²，先化为三次量级后与四次量级比较。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+(i) A is faster
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** A is faster.
 
-**答案。** A is faster。
-
-**推导。** 求和变量是 $i$，但每项都是 $n^2$，所以 $\sum_{i=1}^n n^2=n\cdot n^2=n^3$。因此 $T_A=\Theta(n^3)$、$T_B=\Theta(n^4)$，两者之比在常数因子范围内为 $1/n\to0$。A 的增长率严格更低，故渐近更快。
-
-## Common Mistakes
-
-- 求和项印的是 n² 而非 i²，转录不能替换，尽管两者同阶。
-- 增长率较小对应更快的算法，不能把比较方向倒转。
+**Derivation/proof.** The summation index is $i$, but each term is $n^2$, so $\sum_{i=1}^n n^2=n\cdot n^2=n^3$. Consequently $T_A=\Theta(n^3)$ and $T_B=\Theta(n^4)$. Their ratio is bounded by constant multiples of $1/n\to0$. Algorithm A has a strictly smaller asymptotic growth rate and is therefore faster.
 
 ## Connections
 

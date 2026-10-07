@@ -38,26 +38,21 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-采用最简分数反证法。素数整除平方推出整除底数，最后得到分子分母同被 3 整除，与最简性矛盾。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(a) Suppose $\sqrt3$ is rational. Then there are integers $m$ and $n$ with no common factors so that $\sqrt3=m/n$. Squaring both sides gives $3=\frac{m^2}{n^2}$, or $m^2=3n^2$. This implies that 3 divides $m^2$. Together with the fact that 3 is prime, we have 3 divides $m$. Let $m=3k$ for some integer $k$. Substituting into $3n^2=m^2$, we have $3n^2=(3k)^2$, thus $n^2=3k^2$, which implies 3 divides $n^2$. Therefore, 3 divides $n$. Hence both $m$ and $n$ have a common factor of 3. But this contradicts the supposition that $m$ and $n$ have no common factors.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+Another way to argue for contradiction: $m^2$ has even number of factors in its prime factorization, while $3n^2$ has odd number of factors.Therefore, they cannot be equal.
+
+## Supplementary Explanation
 
 **Answer.** $\sqrt3$ is irrational.
 
 **Derivation/proof.** Assume $\sqrt3=m/n$ in lowest terms. Then $m^2=3n^2$, so the prime 3 divides $m^2$ and hence $m$; write $m=3k$. Substitution gives $n^2=3k^2$, so 3 also divides $n$, contradicting coprimality.
 
-### 中文解答
-
-**推导。** 反设 $\sqrt3=m/n$ 是最简分数，$n\ne0$，且 $\gcd(m,n)=1$。平方得 $m^2=3n^2$，因三是素数，$3\mid m^2$ 推出 $3\mid m$，写 $m=3k$。代回得 $9k^2=3n^2$，即 $n^2=3k^2$，同理 $3\mid n$。于是分子分母共有因子三，违反最简性，故根号三无理。
-
-## Common Mistakes
-
-- 从 $m^2=3n^2$ 直接断言 $m=n$。
-- 没有要求分数为最简形式。
+The denominator satisfies $n\ne0$, and lowest terms means $\gcd(m,n)=1$. In the alternative prime-factor argument, factors are counted with multiplicity; more specifically, the exponent of the prime $3$ is even in $m^2$ and odd in $3n^2$.
 
 ## Connections
 

@@ -41,24 +41,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (a) [2 pts] Let $x$ be a 7-safe number. What are the possible values of $x\bmod7$?
 
-## 中文解析
+## Official Answer
 
-余数不仅要离下一个倍数远，也要离前一个倍数远。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+(a) $3,4$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $3,4$.
 
-**答案。** $3,4$。
-
-**推导。** 写 $x=7q+r$，其中 $0\le r<7$。到下方倍数 $7q$ 的距离为 $r$，到上方倍数 $7(q+1)$ 的距离为 $7-r$。要求两者都大于二，得到 $r>2$ 且 $7-r>2$，故 $2<r<5$。整数余数只能是三或四，它们距任何更远倍数的距离只会更大，故两者都合法。
-
-## Common Mistakes
-
-- 只删去零、一、二会漏掉离下一个倍数很近的五和六。
-- “more than 2”是严格大于二，不能把余数二算进来。
+**Derivation/proof.** Write $x=7q+r$, $0\le r<7$. The distance to $7q$ is r and the distance to $7(q+1)$ is $7-r$. Both must exceed two: $r>2$ and $7-r>2$. Thus $2<r<5$, allowing exactly the integer residues three and four. Every more distant multiple is farther away, so both residues satisfy the full condition.
 
 ## Connections
 

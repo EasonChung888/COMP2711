@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P13 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-竖线把三个方形连接起来，内部交点度四，方形角度二，都为偶。只有竖线最上与最下端点各度一，恰好两个奇点，所以可以从一个端点走完全部边到另一个端点，但不能闭合成回路。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=16|physical PDF page 16]].
 
-## Detailed Solution
+There is an Euler path, but no Euler circuit because the graph has two vertices of odd drgree.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 16. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** It has an Euler path but no Euler circuit.
 
 **Derivation/proof.** The vertical line connects all three squares. Its upper and lower endpoints each have degree one. Each square corner has degree two, and each of the six line-square crossings has degree four. Thus the graph is connected and has exactly two odd-degree vertices. It admits an open Euler trail between the line endpoints, but an Euler circuit would require every degree even.
 
-### 中文解答
+The twelve square corners have degree two and the six line-square crossings have degree four. The vertical line makes the graph connected.
 
-**推导。** 沿穿过三个正方形的竖线，最上与最下自由端各度数 $1$；十二个正方形角各度数 $2$；竖线穿过各正方形上下边的六个交点各度数 $4$。采用印本相交处连接的解释，这条竖线连接全部三个方形，因此图连通。只有两个奇度点，故存在以上下自由端为起终点的开放欧拉路；因为并非所有度数偶数，不能有欧拉回路。
-
-## Common Mistakes
-
-- 把方形内部交叉处漏成不连接。
-- 认为有奇度顶点就任何欧拉通路都不存在。
+Include the twelve square corners and six crossings when counting degrees. There are only two odd-degree vertices, so a trail exists between those endpoints but cannot close to a circuit.
 
 ## Connections
 

@@ -41,26 +41,19 @@ If (a)(ii) is true, is $G$ necessarily a bipartite graph? Your answer should be 
 
 Shared context: [[STEM-2020-FINAL1-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-题设已经给出覆盖所有顶点且互不相交的两组，条件又保证每条边跨组，因此直接满足二分图定义。二分图不要求跨组边全部存在；缺少一些边不会影响这个结论。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+Yes.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Yes.
 
 **Derivation/proof.** The source gives disjoint parts V1,V2 whose union is V. Condition (a)(ii) ensures every edge has one endpoint in each part. That is precisely a bipartition of G, so G is bipartite. Missing some cross edges would affect completeness but not bipartiteness.
 
-### 中文解答
-
-**推导。** 答案 Yes。已给 $V_1\cup V_2=V$ 且 $V_1\cap V_2=\varnothing$，所以每个顶点恰在一个部分。条件(a)(ii)说每条边端点分属两部，等价于每部内部均无边。这两部本身就是合法二分划分，故 $G$ 必为二分图。即使少了某些跨部边，也只会影响“完全”，不影响“二分”。
-
-## Common Mistakes
-
-- 把二分图要求误解成完全二分图。
-- 忘记题设已保证两组覆盖且互斥。
+The sets must satisfy $V_1\cup V_2=V$ and $V_1\cap V_2=\varnothing$ as well as contain no internal edges. These conditions make the displayed partition a valid bipartition, rather than merely two independent subsets omitting some vertices.
 
 ## Connections
 

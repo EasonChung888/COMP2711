@@ -46,34 +46,19 @@ Recall the CSE Department with its light bulbs and switches again. Prove that it
 
 Shared printed context: ![[STEM-2023F-FINAL-P04 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-存在性问题允许我们自行选择一个方便的随机实验，所以这里可以明确让各开关独立公平选择。对任意灯，翻转一个与它连接的固定开关使亮灭配置一一对应；再利用 linearity 得平均亮灯数为 n/2，直接用有限配置的平均值推出上方见证。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (d) If we flip every switch with $50\%$ probability, then on expectation half of the light bulbs will be on. So based on (c) there exists a way for switches such that at least half of the light bulbs are on.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 存在某个开关配置使至少 $n/2$ 盏灯亮，即至少 $\lceil n/2\rceil$ 盏。
-
-**推导。**
-
-1. 为证明存在性，自行构造每个开关 independent、以 $1/2$ 概率选择是否翻转的实验，使全部 $2^m$ 个配置等可能；这是证明者的选择，不把独立性冒称为原题额外给定。
-2. 每盏灯至少连接一个开关。对灯 $i$ 固定其中一个相连开关，翻转这个开关的选择便把每个配置与另一个配置一一配对，且灯 $i$ 在配对前后亮灭相反，不论初始状态如何。因此 $E(X_i)=1/2$。
-3. 亮灯总数 $Y=\sum_iX_i$，由 linearity 得 $E(Y)=n/2$，这里不要求不同灯的指标独立。若每个配置都满足 $Y<n/2$，有限个值的均匀平均也严格小于 $n/2$，与刚算出的期望矛盾。因此某配置有 $Y\ge n/2$；这等价于对有限变量 $K=-Y$ 使用平均值下方见证，但已在本题内完整证明，不依赖隔离的 (a)、(b)、(c) 答案。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** There exists a switch configuration with at least $n/2$ bulbs ON (equivalently at least $\lceil n/2\rceil$).
 
 **Derivation/proof.** Choose independently for each of the m switches whether to flip it, with probability 1/2. This is a deliberately constructed uniform distribution on all $2^m$ configurations. For bulb i, select one incident switch; toggling just that choice pairs each configuration with another in which bulb i has the opposite final state. Thus $E(X_i)=1/2$ regardless of its initial state. Since $Y=\sum_iX_i$, linearity gives $E(Y)=n/2$, even though the bulb indicators may depend on one another. If every configuration had $Y<n/2$, their finite uniform average would be strictly below $n/2$, contradicting $E(Y)=n/2$. Therefore some configuration has $Y\ge n/2$. Equivalently, apply the finite-average lower-witness argument to $K=-Y$; that argument is proved locally, without importing the quarantined claim (c).
 
-## Common Mistakes
-
-- 不能直接引用 (c) 对任意随机变量的说法；本题的有限配置平均已经足够。 / Use the local finite-average argument.
-- 灯泡指标不必独立，但开关实验要明确构造。 / Do not confuse indicator dependence with the chosen switch distribution.
+The $2^m$ equally likely switch configurations admit a one-to-one pairing by toggling any chosen switch incident to a fixed bulb. Exactly one member of each pair leaves that bulb on. Linearity of expectation holds even when the bulb indicators are dependent. Apply part (c) to $K=-Y$ to obtain $Y\ge n/2$, hence at least $\lceil n/2\rceil$ lit bulbs.
 
 ## Connections
 

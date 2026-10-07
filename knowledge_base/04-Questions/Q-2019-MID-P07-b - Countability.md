@@ -39,26 +39,20 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-从实数集中去掉正整数得到 B，差集就恰好是正整数。还要检查 B 本身不可数：如果 B 可数，把可数的正整数加回来会使实数也可数，矛盾。这样两个输入及输出的要求才都验证完成。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+In each case, let us take $A$ to be the set of real numbers.
+We can let $B$ be the set of real numbers that are not positive integers; in symbols, $B=A-\mathbb Z^+$. Then, $A-B=\mathbb Z^+$, which is countably infinite.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $A=\mathbb R$, $B=\mathbb R\setminus\mathbb Z_{>0}$; then $A-B=\mathbb Z_{>0}$.
 
 **Derivation/proof.** The difference is exactly the positive integers, so it is countably infinite. The input $A$ is uncountable. If $B$ were countable, $\mathbb R=B\cup\mathbb Z_{>0}$ would be a union of two countable sets and therefore countable, a contradiction. Thus $B$ is also uncountable, verifying every requirement.
 
-### 中文解答
-
-**推导。** 取 $A=\mathbb R$、$B=\mathbb R\setminus\mathbb Z^+$。差集恰为 $A-B=\mathbb Z^+$，它由 $1,2,3,\ldots$ 枚举，故可数无限。还须核对 $B$ 不可数：若 $B$ 可数，则 $\mathbb R=B\cup\mathbb Z^+$ 是两个可数集合的并，也会可数，与实数不可数矛盾。因此两原集合确实都不可数。
-
-## Common Mistakes
-
-- 只验证差集可数而不验证 B 不可数。
-- 误把所有无限集合都称为不可数。
+For these sets, $A-B=\mathbb Z^+$, which is countable. If $B$ were countable too, $\mathbb R=B\cup\mathbb Z^+$ would be countable, contradicting the uncountability of the reals.
 
 ## Connections
 

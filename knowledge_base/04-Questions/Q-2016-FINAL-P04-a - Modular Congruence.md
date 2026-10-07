@@ -37,26 +37,33 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 (a) Evaluate $6^{1161}\bmod602$.
 
-## 中文解析
+## Official Answer
 
-把指数写成二进制幂的和，只需连续平方取模，不用算巨大整数。这里平方余数在三十六与九十二间交替，选取一千零二十四、一百二十八、八和一对应的因子相乘。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=8|PDF physical page 8]].
 
-## Detailed Solution
+(a)
+$$\lfloor\log_2 1161\rfloor=10$$
+$$\begin{aligned}
+R_1&=6^2\bmod602=6\times6\bmod602=36\\
+R_2&=6^4\bmod602=R_1\times R_1\bmod602=92\\
+R_3&=6^8\bmod602=R_2\times R_2\bmod602=36\\
+R_4&=6^{16}\bmod602=R_3\times R_3\bmod602=92\\
+R_5&=6^{32}\bmod602=R_4\times R_4\bmod602=36\\
+R_6&=6^{64}\bmod602=R_5\times R_5\bmod602=92\\
+R_7&=6^{128}\bmod602=R_6\times R_6\bmod602=36\\
+R_8&=6^{256}\bmod602=R_7\times R_7\bmod602=92\\
+R_9&=6^{512}\bmod602=R_8\times R_8\bmod602=36\\
+R_{10}&=6^{1024}\bmod602=R_9\times R_9\bmod602=92
+\end{aligned}$$
+$$\begin{aligned}
+6^{1161}\bmod602&=6^{1024+128+8+1}\bmod602\\&=6^{1024}\cdot6^{128}\cdot6^8\cdot6^1\bmod602\\&=92\cdot36\cdot36\cdot6\bmod602\\&=216
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $216$.
 
 **Derivation/proof.** Since $6^2\equiv36$, $6^4\equiv36^2\equiv92$, and $6^8\equiv92^2\equiv36\pmod{602}$, successive squarings alternate 36 and 92. As $1161=1024+128+8+1$, $6^{1161}\equiv92\cdot36\cdot36\cdot6\pmod{602}$. Reducing the products gives $92\cdot36\equiv302$, $302\cdot36\equiv36$, then $36\cdot6=216$.
-
-### 中文解答
-
-**推导。** 反复平方模602：$6^2\equiv36$，$6^4\equiv36^2\equiv92$，$6^8\equiv92^2\equiv36$，以后36与92交替。指数 $1161=1024+128+8+1$，对应因子为92、36、36、6。因此 $6^{1161}\equiv92\cdot36\cdot36\cdot6$。依次取模，$92\cdot36\equiv302$、$302\cdot36\equiv36$、$36\cdot6=216$，故答案216。
-
-## Common Mistakes
-
-- 在复合模数六百零二上直接使用费马小定理。
-- 把 $6^{1161}$ 抄成没有指数层级的整数。
 
 ## Connections
 

@@ -37,26 +37,19 @@ $\{x\in\mathbb R\mid x^2\in\mathbb Z\}$
 
 Shared context: [[STEM-2022-MID-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-实数平方若是整数，只能是非负整数，因此原集合可按零、正负根号一、正负根号二等依次列出。包含无理数不代表不可数，关键是这些无理数由可数整数索引。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (a) Countable
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Countable.
 
 **Derivation/proof.** A real square is nonnegative, so the set is exactly {0,±√1,±√2,±√3,…}. For each nonnegative integer there are at most two corresponding real roots. This explicitly enumerates the whole set, and the infinitely many positive square roots are distinct. The elements need not be rational for the set to be countable.
 
-### 中文解答
-
-**推导。** 实数平方非负，若 $x^2$ 是整数，就必为某个 $k\in\mathbb Z_{\ge0}$，而 $x=\pm\sqrt{k}$。因此整个集合可列成 $0,1,-1,\sqrt2,-\sqrt2,\sqrt3,-\sqrt3,\ldots$。每个非负整数至多对应两个实根，所以枚举没有漏掉元素；不同正整数的正平方根又互不相同，故集合无限。结论为可数无限，包含某些无理数并不使它不可数。
-
-## Common Mistakes
-
-- 把含无理数误判为不可数。
-- 给负整数也取实数平方根。
+Explicitly $x=\pm\sqrt{k}$ for an integer $k\ge0$, and an enumeration is $0,1,-1,\sqrt2,-\sqrt2,\ldots$. The positive roots are distinct, so the set is countably infinite.
 
 ## Connections
 

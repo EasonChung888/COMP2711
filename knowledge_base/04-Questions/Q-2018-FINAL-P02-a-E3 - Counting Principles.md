@@ -37,26 +37,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-三乘三的板第一次可以横放拼块。若出现一块竖块，它占满一列，横块便无法横贯三列，所以只能全部竖放；若没有竖块，则三行全部横放。两类各一种，总共两种。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$1,1,2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E_3=2$.
 
 **Derivation/proof.** If a vertical piece occurs, it fills a complete column. No horizontal piece can then cross all three columns, so the other columns must also be vertical. If no vertical piece occurs, each of the three rows must be one horizontal piece. These two disjoint cases are the all-vertical and all-horizontal tilings.
 
-### 中文解答
+The three printed values are respectively $E_1,E_2,E_3$; this atomic question asks for the third.
 
-**推导。** 在 $3\times3$ 棋盘上，若有一块竖砖，它占满一列，任何横砖都需穿过该列而冲突，故其余也只能竖放，形成全竖的一种铺法。若无竖砖，则每行由一块横砖占满，形成全横的另一种。两类互斥且穷尽，所以 $E_3=2$。
-
-## Common Mistakes
-
-- 把混合方向的不可行图案计入。
-- 把不同铺放先后顺序当作不同最终图案。
+On a three-column board the tiles are either all vertical or all horizontal. A horizontal tile forces the other two horizontal rows; otherwise all three columns are vertical, giving exactly two tilings.
 
 ## Connections
 

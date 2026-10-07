@@ -38,26 +38,19 @@ Published solution material: ![[knowledge_base/past_paper/2022-midterm.pdf#page=
 
 Shared context: [[STEM-2022-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-题目明确把颜色暗淡定义成不丰富，所以前后件都是否定谓词。不是食蜜者推出颜色不丰富；后续证明可以用逆否得到颜色丰富者食蜜，但不能使用未经支持的逆命题。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (3) $\forall x(\neg R(x)\to\neg S(x))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall x(\neg R(x)\to\neg S(x))$.
 
 **Derivation/proof.** The restrictive clause selects birds not living on honey, ¬R. The source explicitly equates dull color with not richly colored, ¬S. Universally imply the latter from the former. Its contrapositive S→R is equivalent, but the converse ¬S→¬R is not entailed.
 
-### 中文解答
-
-**推导。** 不食蜜对应 $\neg R(x)$；题目明确说明颜色暗淡就是不丰富，故后件是 $\neg S(x)$。对所有鸟量化得到 $\forall x(\neg R(x)\to\neg S(x))$。其等价逆否形式是 $\forall x(S(x)\to R(x))$，后续可由颜色丰富推出食蜜，但不能把箭头简单反转成“暗淡就不食蜜”。
-
-## Common Mistakes
-
-- 把 dull 写成 S。
-- 从颜色暗淡反推不食蜜。
+The equivalent contrapositive is $\forall x(S(x)\to R(x))$.
 
 ## Connections
 

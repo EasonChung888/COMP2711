@@ -38,26 +38,21 @@ Source verification: Published solution page 4 uses f(x)=(x,0), which is outside
 
 Prove $|(0,1)|=|(0,1)\times(0,1)|$.
 
-## 中文解析
+## Official Answer
 
-一方向取 (x,1/2) 即可，不能像原答案那样用零作为第二坐标，因为零不在开区间里。反方向交错两数的小数位，先排除无限九的重复表示，才能保证输出唯一解码出原来两数。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=4|physical PDF page 4]], [[knowledge_base/past_paper/2021-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> We need to construct an injection from $(0,1)$ to $(0,1)\times(0,1)$, as well as one the other way round. Then applying the Schröder-Bernstein theorem would complete the proof. An injection $f:(0,1)\to(0,1)\times(0,1)$ is trivial, e.g., $f(x)=(x,0)$. An injection $f:(0,1)\times(0,1)\to(0,1)$ can be defined as follows. For any $x,y\in(0,1)$, let $x=0.x_1x_2\cdots$ and $y=0.y_1y_2\cdots$ be their valid decimal representations (i.e., not ending with infinitely many 9's). Define $f(x,y)=0.x_1y_1x_2y_2\cdots$. Note that this must also be a valid decimal representation of some real number in $(0,1)$, because if it's not, $x=0.x_1x_2\cdots$ and $y=0.y_1y_2\cdots$ must end with infinitely many 9's. For any $(x,y)\ne(x',y')$, they must have at least one different digit, so $f(x,y)\ne f(x',y')$, hence $f$ is an injection.
 
-Provenance: independently derived answer; the published material is discussed in Source.
+## Supplementary Explanation
 
 **Answer.** The interval and its Cartesian square have equal cardinality.
 
 **Derivation/proof.** An injection into the square is f(x)=(x,1/2). For the reverse direction choose the unique decimal representations of x,y not eventually all 9s, and interleave their digits: g(x,y)=0.x1y1x2y2…. This number is positive because at least one input digit is positive, and less than one because the interleaving is not all 9s. It is not eventually all 9s, since that would force both input expansions eventually all 9s. Thus its canonical digits uniquely recover both inputs, proving injectivity. Cantor–Schröder–Bernstein now gives a bijection and equality of cardinalities.
 
-### 中文解答
+Equality of images under $f(x)=(x,1/2)$ forces equality of first coordinates. For the reverse map, odd-position digits recover $x$ and even-position digits recover $y$.
 
-**推导。** 先构造单射 $f:(0,1)\to(0,1)^2$，取 $f(x)=(x,1/2)$；其值确在开方形内，且相同像的第一坐标迫使 $x$ 相同。印本的 $(x,0)$ 不在目标集合，必须保留为源错误而不采用。反方向，对 $(x,y)$ 取各自唯一的不以无限九结尾的十进制展开 $x=0.x_1x_2\ldots$、$y=0.y_1y_2\ldots$，定义 $g(x,y)=0.x_1y_1x_2y_2\ldots$。至少一位非零，故输出大于零；它不可能全为九，故小于一。若交错串最终全九，则原来两个展开也最终全九，矛盾，所以输出本身就是规范展开。由其奇数位恢复 $x$、偶数位恢复 $y$，相同输出必有相同输入，证明单射。两个方向都有单射，康托尔–施罗德–伯恩斯坦定理推出两个集合等势。
-
-## Common Mistakes
-
-- 照抄 (x,0) 导致不在目标开正方形。
-- 不固定小数表示而失去单射证明。
+For $g(x,y)=0.x_1y_1x_2y_2\cdots$, odd positions recover $x$ and even positions recover $y$. If its digits were eventually all nines, both input expansions would also be eventually all nines, contrary to the canonical choice.
 
 ## Connections
 

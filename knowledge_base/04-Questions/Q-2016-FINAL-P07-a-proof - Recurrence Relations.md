@@ -40,26 +40,25 @@ Atomic focus [editorial]: prove the recurrence counts committees; defining it is
 
 Shared context: [[STEM-2016-FINAL-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-归纳命题应是递推值等于实际非空委员会数，而不只是代数等式。基例一人成立；假设旧规模计数正确后，把新委员会分为不含新人、含新人且含旧人、只含新人三类。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+(a) $T(1)=1$, and $T(n)=2T(n-1)+1$ for $n>1$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+The base case $T(1)$ is obviously true.
+
+Assume that $T(n-1)$ counts the number of committees that are formed from $n-1$ people correctly for $n>1$.
+
+When there are $n$ people, the number of possible committees that are formed without the $n$-th person is counted by $T(n-1)$. On the other hand, each committee without the $n$-th person union with the $n$-th person forms another possible committee. So, we have $2T(n-1)$ possible committees. There is only one case is missed, which is the committee that contains only the $n$-th person. Therefore, when there are $n$ people, $T(n)=2T(n-1)+1$ counts all possible committees with at least one member from $n$ people. By the principle of induction, we have proved that the recurrence equation is correct.
+
+## Supplementary Explanation
 
 **Answer.** The recurrence $T(1)=1$, $T(n)=2T(n-1)+1$ counts all allowed committees for every $n\ge1$.
 
 **Derivation/proof.** Base case: for one person, $\{1\}$ is the only nonempty committee, so $T(1)=1$. Inductive hypothesis: $T(n-1)$ correctly counts nonempty committees on the first $n-1$ people. At size $n$, committees excluding $n$ are counted by $T(n-1)$. Those containing $n$ and at least one old member correspond bijectively to a nonempty old committee and give another $T(n-1)$. The sole remaining committee is $\{n\}$. The disjoint cases exhaust all possibilities, so $2T(n-1)+1$ is correct. Induction completes the proof.
 
-### 中文解答
-
-**推导。** 归纳命题是递推值确实等于n人的非空委员会数。基例n=1只有集合{1}，与T(1)=1相合。设前n−1人的数目T(n−1)正确。n人时按是否含新人分：不含新人为T(n−1)；含新人且至少一个旧成员，删掉新人形成旧非空委员会，故也是T(n−1)；只含新人为一。三类互不相交且涵盖每个非空委员会，故总数 $2T(n-1)+1$，与递推吻合，归纳成立。
-
-## Common Mistakes
-
-- 只验证前两个数值而当成归纳证明。
-- 在含新人的类别中漏掉单人委员会或重复计它。
+Removing the new person gives an old nonempty committee whenever the original committee also contains an old member; adding that person back is the inverse map.
 
 ## Connections
 

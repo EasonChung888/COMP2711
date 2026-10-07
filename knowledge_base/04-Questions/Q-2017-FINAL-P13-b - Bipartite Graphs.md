@@ -40,26 +40,19 @@ Source correction: PDF page17 defines the named cycle C_n but writes consecutive
 
 Shared context: [[STEM-2017-FINAL-P13 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-沿环逐个交替涂色，前面的每条边都强制下一点换色。偶数个顶点走完时末点与起点不同色，可以闭合；奇数时末点与起点同色，最后一条边造成冲突。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+Yes, when $n$ is even. Using the colouring method, if vertex 1 is red, then 2 is blue, 3 is red, and so on. Vertex $n$ is blue if $n$ is even, in which case there is no contradiction (all red vertices have blue neighbours, all blue vertices have red neighbours). Vertex $n$ is red if $n$ is odd, but it is a neighbour of vertex 1, so there is a contradiction; no colouring is possible.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 17. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Exactly when $n$ is even ($n\ge4$ in this family).
 
 **Derivation/proof.** Color $v_1$ red and alternate along $v_1v_2\cdots v_n$. If $n$ is even, $v_n$ is blue, so its closing edge to red $v_1$ is valid and every edge crosses colors. If $n$ is odd, $v_n$ is red, making the closing edge monochromatic. The alternating requirement is forced by every preceding edge, so no other two-coloring can rescue an odd cycle.
 
-### 中文解答
-
-**推导。** 从 $v_1$ 红色开始，沿环相邻点必须交替蓝、红，因此偶数编号蓝、奇数编号红。若 $n$ 偶数，$v_n$ 蓝，与红色 $v_1$ 的闭合边合法，所有边均跨色，构成二分。若 $n$ 奇数，$v_n$ 红，与 $v_1$ 同色但相邻；此前交替颜色是强制的，所以无法换一种染色消除此矛盾。故恰当 $n$ 为偶数，结合题目 $n\ge3$ 即 $n\ge4$ 的偶数环。
-
-## Common Mistakes
-
-- 只构造偶环而未排除奇环。
-- 忘记本题环的定义要求至少三个顶点。
+Color the cycle alternately: odd-numbered vertices are red and even-numbered vertices are blue. The closing edge has differently colored ends exactly when the length is even.
 
 ## Connections
 

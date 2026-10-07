@@ -41,30 +41,27 @@ Satisfying any of the above conditions.
 
 Shared context: [[STEM-2020-FINAL2-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先删去不可能的九固定点事件。其他三组做容斥：恰一固定点与零一交换的交集为八种选择再错排七位，两个指定条件的交集固定四位为六阶乘；恰一固定点不可能同时满足两个指定固定点。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+We let $A,B,C,D$ denote the sets of permutations that satisfy the above conditions (a), (b), (c), (d), respectively. Obviously, $B=\varnothing$, and we want to calculate $\lvert A\cup B\cup C\cup D\rvert=\lvert A\cup C\cup D\rvert$.
+Considering set $A\cap C$, fixed the first two digits, and pick $1$ digit from $\{2,3,\ldots,9\}$ to put in the corresponding index position and then dearrange the remaining $7$ digits. Thus,
+$$\lvert A\cap C\rvert=8\cdot D_7.$$
+Considering set $C\cap D$, fix $4$ digits and randomly permute the remaining, thus,
+$$\lvert C\cap D\rvert=6!.$$
+Considering set $A\cap D$, middle two index is $4$ and $5$, so $A\cap D=\varnothing$. And $A\cap C\cap D=C\cap\varnothing=\varnothing$. So,
+$$\lvert A\cap D\rvert=\lvert A\cap C\cap D\rvert=0.$$
+By using inclusion-exclusion theorem,
+$$\begin{aligned}\lvert A\cup C\cup D\rvert&=\lvert A\rvert+\lvert C\rvert+\lvert D\rvert-\lvert A\cap C\rvert-\lvert A\cap D\rvert-\lvert C\cap D\rvert+\lvert A\cap C\cap D\rvert\\&=10\cdot D_9+2\cdot8!-8\cdot D_7-6!.\end{aligned}$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $10D_9+2\cdot8!-8D_7-6!$.
 
 **Derivation/proof.** Call the four condition sets A,B,C,D. B is empty because nine fixed points force ten. The single counts are |A|=10D9, |C|=|D|=8!. In A∩C, the first two digits are swapped; choose one fixed point among the other eight and derange the remaining seven, giving 8D7. C∩D fixes four named positions, giving 6!. A∩D and the triple intersection are empty because D forces at least two fixed points. Inclusion-exclusion now gives the displayed expression.
 
-### 中文解答
-
-**推导。** 以 $S_1,S_2,S_3,S_4$ 表示(a)–(d)四种条件的排列集。$S_2$ 为空，$|S_1|=10D_9$，$|S_3|=|S_4|=8!$。交集 $S_1\cap S_3$ 已交换零、一，两者均非固定点；从其他八位置选唯一固定点，再把余下七个错排，给 $8D_7$。$S_3\cap S_4$ 固定四个指定映射，余下六个任排，给 $6!$。$S_1\cap S_4$ 为空，因为四、五已是两个固定点，因此三重交集也为空。对三个非空候选集容斥，所求并集为
-
-$$10D_9+2\cdot8!-8D_7-6!.$$
-
-这包含任意一个条件成立的排列，并扣除了全部重复计数，符合最终答案不留求和的要求。
-
-## Common Mistakes
-
-- 把交集 A∩D 当非空。
-- 把 A∩C 的错排写成 D8，遗漏唯一固定点。
+Equivalently name the four condition sets $S_1,S_2,S_3,S_4$. In $S_1\cap S_3$, choose the unique fixed point from the eight positions outside the prescribed swap and derange the remaining seven, giving $8D_7$. In $S_3\cap S_4$, four positions are prescribed, leaving $6!$ possibilities. The other intersections involving $S_2$ are empty, and $S_1\cap S_4$ is empty because it forces two fixed points. Inclusion-exclusion therefore subtracts exactly these two nonzero intersections.
 
 ## Connections
 

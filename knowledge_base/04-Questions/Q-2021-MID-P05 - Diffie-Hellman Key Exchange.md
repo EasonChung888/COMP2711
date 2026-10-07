@@ -36,26 +36,39 @@ Published solution material: ![[knowledge_base/past_paper/2021-midterm.pdf#page=
 
 Alice and Bob share a key using the Diffie-Hellman key exchange algorithm with $a=17,p=31,k_1=34$ and $k_2=41$. What is the shared key? Note that the shared key must be in $\mathbb Z_p$. Use Fermat’s Little Theorem and the repeated squaring method to simplify the calculation. Show all the computational steps.
 
-## 中文解析
+## Official Answer
 
-共享密钥指数是两个私有指数的乘积。先在指数上模三十化简成十四，再把十四分成八加四加二，用逐次平方得到三个余数相乘。底数与素数模数互质，费马定理才适用。
+Source: [[knowledge_base/past_paper/2021-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> The shared key is $a^{k_1k_2}\bmod p=17^{34\cdot41}\bmod31$.
+>
+> By Fermat's Little Theorem, $17^{34\cdot41}\equiv17^{34\cdot41\bmod30}\equiv17^{4\cdot11\bmod30}\equiv17^{14}\pmod{31}$.
+>
+> We compute the shared key by repeated squaring method.
+>
+> $$\begin{aligned}
+> 17^{2^1}\bmod31&=10\\
+> 17^{2^2}\bmod31&=10^2\bmod31=7\\
+> 17^{2^3}\bmod31&=7^2\bmod31=18
+> \end{aligned}$$
+>
+> Note that $17^{14}=17^{2^1+2^2+2^3}$. So,
+>
+> $$\begin{aligned}
+> 17^{14}&\equiv17^{2^1}17^{2^2}17^{2^3}\\
+> &\equiv10\cdot7\cdot18\\
+> &\equiv20\pmod{31}.
+> \end{aligned}$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $20$.
 
 **Derivation/proof.** Both parties obtain $a^{k_1k_2}\bmod p$, here $17^{1394}\bmod31$. Since 31 is prime and 17 is nonzero modulo 31, Fermat gives period 30; 1394≡14 mod 30. Repeated squaring gives $17^2\equiv289\equiv10$, $17^4\equiv10^2\equiv7$, $17^8\equiv7^2\equiv18$ modulo 31. As 14=8+4+2, multiply $18\cdot7\cdot10=1260\equiv20$. This lies in the required residue range 0,…,30.
 
-### 中文解答
+Explicitly, $1394=46\cdot30+14$ and $17^{30}\equiv1\pmod{31}$. The base is coprime to the prime modulus, which is essential for Fermat reduction.
 
-**推导。** 两人交换公值后得到同一密钥 $a^{k_1k_2}\bmod p$，所以这里求 $17^{34\cdot41}=17^{1394}$ 模 $31$。$31$ 是质数且 $17$ 非零，费马小定理给 $17^{30}\equiv1\pmod{31}$，而 $1394=46\cdot30+14$，故只需指数 $14$。逐次平方：$17^2=289\equiv10$，$17^4\equiv100\equiv7$，$17^8\equiv49\equiv18$。再由 $14=8+4+2$，得到 $17^{14}\equiv18\cdot7\cdot10=1260\equiv20\pmod{31}$。因此共享密钥为 $20\in\mathbb Z_{31}$；化简的是指数模 $30$，不是模 $31$。
-
-## Common Mistakes
-
-- 把私钥指数相加。
-- 将指数模三十一而非三十。
+The final square and reduction are $17^8\equiv49\equiv18$ and $1260\equiv20\pmod{31}$.
 
 ## Connections
 

@@ -3,7 +3,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {root, esc, markdown} from './render.mjs';
 
-const chapterIds = ['l1-1', 'l1-2', 'l1-3', 'l1-4'];
+const chapterIds = ['l1-1', 'l1-2', 'l1-3', 'l1-4', 'l1-6', 'l1-7'];
 const idOf = page => String(page).padStart(3, '0');
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const sha256 = file => createHash('sha256').update(fs.readFileSync(file)).digest('hex');
@@ -17,8 +17,9 @@ export function chapter(id) {
 export function chapterShell(meta, title, body, depth = 2, lesson = '') {
   const up = '../'.repeat(depth);
   const chapterUp = depth === 2 ? '' : '../';
+  const countingStyle = ['l1-6','l1-7'].includes(meta.id) ? `<link rel="stylesheet" href="${up}assets/counting-courses.css">` : '';
   const lessonAttr = lesson ? ` data-lesson="${esc(lesson)}"` : '';
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · COMP2711</title><link rel="stylesheet" href="${up}assets/logic.css"><link rel="stylesheet" href="${up}assets/katex/katex.min.css"><link rel="stylesheet" href="${up}assets/site.css"><script defer src="${up}assets/site.js"></script></head><body data-storage-prefix="${esc(meta.storagePrefix)}" data-site-root="${up}"${lessonAttr}><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header"><div class="shell"><a class="brand" href="${up}index.html">COMP2711</a><nav class="utility-nav" aria-label="课程导航"><a href="${up}index.html#modules">课程模块</a><a href="${up}${esc(meta.moduleHref)}">${esc(meta.module)}</a><a href="${chapterUp}index.html">${esc(meta.label)} 目录</a></nav></div></header><main id="main-content" class="shell lesson">${body}</main><footer class="shell site-footer">COMP2711 · 按知识主题学习</footer></body></html>`;
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · COMP2711</title><link rel="stylesheet" href="${up}assets/logic.css"><link rel="stylesheet" href="${up}assets/katex/katex.min.css"><link rel="stylesheet" href="${up}assets/site.css">${countingStyle}<script defer src="${up}assets/site.js"></script></head><body data-storage-prefix="${esc(meta.storagePrefix)}" data-site-root="${up}"${lessonAttr}><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header"><div class="shell"><a class="brand" href="${up}index.html">COMP2711</a><nav class="utility-nav" aria-label="课程导航"><a href="${up}index.html#modules">课程模块</a><a href="${up}${esc(meta.moduleHref)}">${esc(meta.module)}</a><a href="${chapterUp}index.html">${esc(meta.label)} 目录</a></nav></div></header><main id="main-content" class="shell lesson">${body}</main><footer class="shell site-footer">COMP2711 · 按知识主题学习</footer></body></html>`;
 }
 
 export function pageBlock(meta, record, response) {
@@ -40,7 +41,7 @@ export function buildPage(id, page) {
   const configPath = path.join(dir, 'course.config.json');
   const topic = fs.existsSync(configPath) && record.topic ? readJson(configPath).topics.find(item => item.slug === record.topic) : null;
   const topicLink = topic ? ` / <a href="../lessons/${esc(topic.slug)}.html#slide-${idOf(page)}">${esc(topic.title)}</a>` : '';
-  const html = chapterShell(meta, `${meta.label} · 第 ${page} 页`, `<nav class="page-breadcrumb" aria-label="当前位置"><a href="../../../index.html">COMP2711</a> / <a href="../../../${esc(meta.moduleHref)}">${esc(meta.module)}</a> / <a href="../index.html">${esc(meta.label)}</a>${topicLink} / <span aria-current="page">第 ${page} 页</span></nav><p class="small-note"><a href="../${esc(meta.source)}#page=${page}">原始 PDF · 第 ${page} 页</a></p>${pageBlock(meta, record, response)}`, 3);
+  const html = chapterShell(meta, `${meta.label} · 第 ${page} 页`, `<nav class="page-breadcrumb" aria-label="当前位置"><a href="../../../index.html">COMP2711</a> / <a href="../../../${esc(meta.moduleHref)}">${esc(meta.module)}</a> / <a href="../index.html">${esc(meta.label)}</a>${topicLink} / <span aria-current="page">第 ${page} 页</span></nav><p class="small-note"><a href="../${esc(meta.source)}#page=${page}">${meta.source.endsWith('.pptx') ? '原始 PowerPoint' : `原始 PDF · 第 ${page} 页`}</a></p>${pageBlock(meta, record, response)}`, 3);
   const htmlPath = path.join(dir, record.html);
   fs.writeFileSync(htmlPath, html);
   if (!html.includes(markdown(response))) throw Error(`Rendered response missing from ${htmlPath}`);
@@ -72,11 +73,16 @@ export function buildIndex(id) {
     const keys = config.topics.map(topic => `${meta.storagePrefix}lesson-complete:${topic.slug}`);
     const cards = config.topics.map((topic, index) => `<a class="course-card" data-completion-key="${esc(keys[index])}" href="lessons/${esc(topic.slug)}.html"><strong>${String(index + 1).padStart(2, '0')} · ${esc(topic.title)}</strong><span>${esc(topic.description)}</span><small class="course-status" data-status>未学完</small></a>`).join('');
     content = `<p class="portal-meta" data-progress-keys="${esc(keys.join(' '))}">已学完 0 / ${keys.length} 课</p><section id="topics"><h2>本章课程</h2><div class="course-grid">${cards}</div></section><p><a href="source-map.html">按原课件页码查找讲解</a></p>`;
+    if (['l1-6','l1-7'].includes(id)) {
+      const paths = config.topics.map(t => `chapters/${id}/lessons/${t.slug}.html`);
+      const report = `sources/audit/${id}-question-review.md`;
+      content = `<div class="home-actions"><a class="button" href="lessons/${esc(config.topics[0].slug)}.html" data-resume data-resume-paths="${esc(paths.join(' '))}" data-resume-fallback="chapters/${id}/index.html" data-resume-default="${esc(paths[0])}">开始学习</a></div>${content}<p class="small-note"><a href="${report}">练习答案核验记录</a> · 题量不足的主题保留实际找到的原题数量。</p>`;
+    }
   } else {
     const links = written.map(page => `<li><a href="pages/${idOf(page.page)}.html">第 ${page.page} 页</a></li>`).join('');
     content = `<p class="portal-meta">已完成 ${written.length} / ${meta.pageCount} 页逐页讲解</p><section id="pages"><h2>逐页讲解</h2>${links ? `<ol>${links}</ol>` : '<p>本章讲解即将从第一页开始。</p>'}</section>`;
   }
-  const html = chapterShell(meta, meta.label, `<nav class="page-breadcrumb" aria-label="当前位置"><a href="../../index.html">COMP2711</a> / <a href="../../${esc(meta.moduleHref)}">${esc(meta.module)}</a> / <span aria-current="page">${esc(meta.label)}</span></nav><header class="home-header"><h1>${esc(meta.label)}</h1><p class="lead">${esc(meta.module)} · 按知识主题学习</p></header>${content}<section><h2>对照课件</h2><p><a href="${esc(meta.source)}">原始 PDF</a></p></section>`, 2);
+  const html = chapterShell(meta, meta.label, `<nav class="page-breadcrumb" aria-label="当前位置"><a href="../../index.html">COMP2711</a> / <a href="../../${esc(meta.moduleHref)}">${esc(meta.module)}</a> / <span aria-current="page">${esc(meta.label)}</span></nav><header class="home-header"><h1>${esc(meta.label)}</h1><p class="lead">${esc(meta.module)} · 按知识主题学习</p></header>${content}<section><h2>对照课件</h2><p><a href="${esc(meta.source)}">${meta.source.endsWith('.pptx') ? '原始 PowerPoint' : '原始 PDF'}</a></p></section>`, 2);
   fs.writeFileSync(path.join(dir, 'index.html'), html);
 }
 

@@ -38,26 +38,20 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-选择全部实数为 A、正实数为 B，剩下非正实数。B 包含一个不可数的开区间，差集也包含一个与它一一对应的负区间，所以两个输入与差集都不可数，且零应留在差集中。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+In each case, let us take $A$ to be the set of real numbers.
+We can let $B$ be the set of positive real numbers. Then $A-B$ is the set of negative real numbers and $0$, which is certainly uncountable.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $A=\mathbb R$, $B=(0,\infty)$; then $A-B=(-\infty,0]$.
 
 **Derivation/proof.** The positive real interval $B$ is uncountable: for instance $(0,1)\subseteq B$ is uncountable. The whole real line $A$ is uncountable. The difference contains the negative interval $(-1,0)$, which is in bijection with $(0,1)$ by negation and hence uncountable. Thus the difference has the required cardinality.
 
-### 中文解答
-
-**推导。** 取 $A=\mathbb R$、$B=(0,\infty)$。$B$ 含不可数区间 $(0,1)$，故不可数，而 $A-B=(-\infty,0]$ 含不可数区间 $(-1,0)$，亦不可数；$A$ 自然不可数。这样不仅给出差集，也分别核对题目要求的三个不可数性质。
-
-## Common Mistakes
-
-- 把零错误地放入正实数集合。
-- 仅说集合无限而未说明不可数。
+The intervals $(0,1)\subseteq B$ and $(-1,0)\subseteq A-B$ independently establish the two required uncountability claims.
 
 ## Connections
 

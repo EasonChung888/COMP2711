@@ -39,26 +39,27 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先减去均值 $am+b$，常数项完全抵消，偏差只剩 $a(n-m)$。方差是偏差平方的期望，因此缩放系数要平方，平移则不影响方差。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=5|PDF physical page 5]].
 
-## Detailed Solution
+Assume that $S$ is the sample space of $n$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+(a) Variance of $f(n)$, first need to find $E(f(n))$. By the linearity of expectation, $E(f(n))=am+b$.
+$$\begin{aligned}
+Var(f(n))&=\sum_{x:x\in S}p(x)(ax+b-E(f(n))^2\\
+&=\sum_{x:x\in S}p(x)(ax+b-am-b)^2\\
+&=\sum_{x:x\in S}p(x)a^2(x-m)^2\\
+&=a^2\sum_{x:x\in S}p(x)(x-m)^2=a^2v.
+\end{aligned}$$
+
+## Supplementary Explanation
 
 **Answer.** $\operatorname{Var}(f(n))=a^2v$.
 
 **Derivation/proof.** Linearity gives $E[f(n)]=am+b$. Therefore $\operatorname{Var}(f(n))=E[(an+b-(am+b))^2]=a^2E[(n-m)^2]=a^2v$. This also covers $a=0$, when $f(n)$ is constant.
 
-### 中文解答
-
-**推导。** 先用线性性得 $E(f(n))=am+b$。按方差定义减均值，$f(n)-E(f(n))=an+b-am-b=a(n-m)$，平移项b抵消。平方并取期望，$\operatorname{Var}(f(n))=E[a^2(n-m)^2]=a^2E[(n-m)^2]=a^2v$。a=0时函数恒定、方差零，也包含在公式内。
-
-## Common Mistakes
-
-- 在方差中保留加法常数 $b$。
-- 写成 $av$ 而没有把比例系数平方。
+The centered variable is $a(n-m)$ because the shift cancels.
 
 ## Connections
 

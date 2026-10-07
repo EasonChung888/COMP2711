@@ -36,26 +36,19 @@ Published solution material: ![[knowledge_base/past_paper/2022-midterm.pdf#page=
 
 Calculate $2^{542}\bmod109$. Show your steps.
 
-## 中文解析
+## Official Answer
 
-素数模数一百零九给出指数周期一百零八。五百四十二等于五个一百零八加二，因此只剩二的平方。指数取余与底数取余使用不同模数，不能混淆。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> (a) 109 is a prime number. By using Fermat's Little Theorem: $2^{108}\equiv1\pmod{109}\implies(2^{108})^5\equiv1^5\implies2^{540}\equiv1\pmod{109}$. So $2^{542}=2^2\cdot2^{540}\equiv2^2\equiv4\pmod{109}$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $4$.
 
 **Derivation/proof.** 109 is prime and 2 is coprime to it, so 2^108≡1 mod 109. Divide the exponent: 542=5·108+2. Then 2^542=(2^108)^5·2²≡1·4≡4 mod 109. The representative4 already lies between0 and 108.
 
-### 中文解答
-
-**推导。** 因为 $109$ 是质数且与二互质，费马小定理给 $2^{108}\equiv1\pmod{109}$。指数分解为 $542=5\cdot108+2$，故 $2^{542}=(2^{108})^5\cdot2^2\equiv1^5\cdot4=4\pmod{109}$。答案取标准余数四；指数的周期用 $108$，不是把指数模 $109$。
-
-## Common Mistakes
-
-- 把指数模一百零九。
-- 误算五百四十二除一百零八的余数。
+Specifically $542=5\cdot108+2$ and $2^{542}=(2^{108})^5\cdot2^2$.
 
 ## Connections
 

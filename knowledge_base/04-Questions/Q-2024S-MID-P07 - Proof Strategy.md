@@ -42,24 +42,25 @@ $$\frac13+\frac13+\frac15+\frac17,$$
 which is not equal to 1. In this problem, you need to show that no matter how we pick the $k$ odd integers, where $k$ is an arbitrary even integer, the sum of the reciprocals of these $k$ odd integers cannot equal 1.
 Hint: Try to prove this by contradiction.
 
-## 中文解析
+## Official Answer
 
-分母都是奇数，因此乘全部分母后，每一个分子仍是奇数。偶数个奇数之和为偶数，与等号右侧奇数乘积冲突；分母可重复或为负。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> Answer.
+> Fix an even integer $k$. Suppose for the sake of contradiction that there exist $k$ odd integers $a_1,a_2,\ldots,a_k$ where $\frac1{a_1}+\frac1{a_2}+\cdots+\frac1{a_k}=1$.
+> Fractions seem to complicate the problem, so let's eliminate them by multiplying both sides by the product $a_1\cdot a_2\cdots a_k$:
+> $$\frac{a_1\cdots a_k}{a_1}+\frac{a_1\cdots a_k}{a_2}+\cdots+\frac{a_1\cdots a_k}{a_k}=a_1\cdot a_2\cdots a_k.\quad(*)$$
+> Note that every term on the LHS is an integer because the denominator is always present in the numerator, and is therefore cancelled out. We can use the fact that $k$ is even and that each $a_i$ is odd to observe the following:
+> (a) The RHS of (??) is the product of odd numbers, which must be odd.
+> (b.1) Each term in the LHS is of the form $\frac{a_1\cdots a_k}{a_i}=a_1\cdots a_{i-1}\cdot a_{i+1}\cdots a_k$, which is the product of odd integers, and hence must be odd.
+> (b.2) The LHS is the sum of $k$ terms, each of which is odd by the previous observation. Since $k$ is even, that sum must be even.
+> Observation (a) tells us that the RHS of (??) is odd, but observation (b.2) tells us that the LHS is even. This contradicts the fact that LHS and RHS are equal. Therefore, we conclude that our hypothesis was wrong and that such $k$ integers $a_1,\ldots,a_k$ do not exist.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The reciprocals of any even number of odd integers cannot sum to $1$.
 
-**答案。** 任何偶数个奇整数的倒数之和都不等于 $1$。
-
-**推导。** 反设存在奇整数 $a_1,\ldots,a_k$ 使 $\sum_i1/a_i=1$。奇数不为零，因此可乘 $D=\prod_i a_i$，得 $\sum_i(D/a_i)=D$。每个 $D/a_i=\prod_{j\ne i}a_j$ 都是奇整数；共有偶数 $k$ 项，所以左侧偶。右侧 $D$ 为奇数，不能相等，矛盾。负奇数和重复分母不影响奇偶论证。$k=0$ 的空和为零而非一；负 $k$ 不能描述一个有负数个项的和，因此也没有所要求的表示。
-
-## Common Mistakes
-
-- 不要假定奇分母互素；乘积清分母对重复分母同样有效。
-- 论证要使用 $k$ 为偶数，奇数个奇项的和不会给出相同矛盾。
+**Derivation/proof.** Suppose odd integers $a_1,\ldots,a_k$ satisfy $\sum_i1/a_i=1$. Odd integers are nonzero, so multiply by $D=\prod_i a_i$ to obtain $\sum_i(D/a_i)=D$. Every $D/a_i=\prod_{j\ne i}a_j$ is odd. There are an even number $k$ of terms, so the left side is even, while the right side $D$ is odd: a contradiction. Negative odd integers and repeated denominators do not change the parity argument. For $k=0$ the empty sum is zero, not one; a negative $k$ cannot describe a number of terms and yields no such representation either.
 
 ## Connections
 

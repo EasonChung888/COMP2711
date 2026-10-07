@@ -1,0 +1,17 @@
+Counting bit strings
+Theorem
+Let 
+n
+ and 
+r
+ be integers with 
+. Then
+Recall:
+ We can prove combinatorial identities by counting bit strings with different properties!
+LHS is the number of bitstrings of length (
+n
++1) that contain exactly (
+r
++1) ones. 
+ 
+38

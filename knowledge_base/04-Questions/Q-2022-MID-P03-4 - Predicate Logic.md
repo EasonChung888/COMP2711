@@ -38,26 +38,19 @@ Published solution material: ![[knowledge_base/past_paper/2022-midterm.pdf#page=
 
 Shared context: [[STEM-2022-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-题设允许把小鸟等同于不大，因此结论是 P 推出非 Q。全称句并不承诺蜂鸟存在，即使没有蜂鸟也空真；不要把它改成存在一个小蜂鸟。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (4) $\forall x(P(x)\to\neg Q(x))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall x(P(x)\to\neg Q(x))$.
 
 **Derivation/proof.** A bird being a hummingbird is P(x), and the source's explicit convention makes small equal to ¬Q(x). The statement applies to every bird satisfying P, so universally quantify an implication. No existence of hummingbirds is asserted; if there were none, the universal implication would still be true.
 
-### 中文解答
-
-**推导。** 蜂鸟为 $P(x)$，小按题给约定等于不大，即 $\neg Q(x)$。所以结论翻译为 $\forall x(P(x)\to\neg Q(x))$。这个全称蕴含不额外断言蜂鸟存在：若没有蜂鸟，它仍因所有前件为假而成立；改为存在量词会加入原句没有的存在性。
-
-## Common Mistakes
-
-- 把 small 当成新谓词而忽略给定定义。
-- 给全称句擅自加入存在性。
+The formula does not additionally assert that hummingbirds exist.
 
 ## Connections
 

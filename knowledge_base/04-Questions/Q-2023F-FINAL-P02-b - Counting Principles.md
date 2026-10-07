@@ -38,34 +38,19 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2023_Final
 
 How many 4-digit positive integers $a$ exists such that both $a$ and $2\times a$ have only even digits? For example, 2004 is a valid number, but $a=4282$ is not because $2a=2\cdot4282=8564$ which contains the odd digit “5”. (Notice that the leftmost digit in a 4-digit number cannot be 0)
 
-## 中文解析
+## Official Answer
 
-a 的每位都必须是偶数，但六或八乘二会向左产生进位。下一位的偶数翻倍后再加一将变成奇数，最高位进位也会产生奇数一，因此合法数字中所有位只能选零、二、四。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=4|physical PDF page 4]], [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (b) Notice that when we have a carryover thing it changes the oddity of the next digit. So for example if we have a valid number $a$ like $a=2822$. When we multiply it by $2$ we get the invalid number $5644$ and that is because we got a carryover when multiplying $8$ by $2$. So in order to have a valid number $a$ such that $2a$ is also valid, they should not produce any carryover value. Which means they can be either $0,2,4$. So the number $abcd$ can have $2\times3\times3\times3=54$ possible options.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $2\cdot3^3=54$ 个四位正整数。
-
-**推导。**
-
-1. $a$ 的每位先须属于 $\{0,2,4,6,8\}$。若某位为六或八，乘二就产生进位一；该进位进入下一位时，“两倍偶数加一”必为奇数，留下奇数数字。若进位越过最高位，会形成奇数首位一，同样不合法。
-2. 因而不能出现六或八，每一位只能从 $\{0,2,4\}$ 选择。反过来，这三个数字乘二都不产生进位，结果仍是偶数数字，所以该限制既必要又充分，不只是部分候选。
-3. 最高位不能为零，有二、四两种；其余三位各有零、二、四三种独立选择。乘法原理给出 $2\cdot3\cdot3\cdot3=54$。四位性已通过首位限制处理，不能把最高位也算成三种。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $2\cdot3^3=54$.
 
 **Derivation/proof.** Each digit of a is in $\{0,2,4,6,8\}$. If any digit is 6 or 8, doubling generates a carry of 1. At the next position, twice an even digit plus this carry is odd; if the carry exits the leading position, it becomes the odd leading digit 1. Hence no carry is allowed, so all four digits must lie in $\{0,2,4\}$. Conversely, these digits generate no carries and double to even digits. The leading digit has two choices, 2 or 4; each remaining digit has three, giving 54.
 
-## Common Mistakes
-
-- 只要求 a 的数字偶数会误计含六和八的数。 / Check the digits of twice a too.
-- 首位零会把数变为不足四位。 / Exclude zero only in the leading position.
+A carry of one makes the next doubled digit odd; if it exits the leading position it creates the odd leading digit $1$. Hence every digit belongs to $\{0,2,4\}$, with only $2,4$ allowed first, giving $2\cdot3\cdot3\cdot3=54$. Conversely, these choices never generate a carry and both numbers have only even digits.
 
 ## Connections
 

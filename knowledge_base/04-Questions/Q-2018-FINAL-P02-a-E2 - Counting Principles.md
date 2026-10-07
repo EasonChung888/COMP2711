@@ -37,26 +37,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-宽度二仍放不下横向长度三的拼块，因此每一列都只能竖着放。两列的竖块位置完全确定；交换两块相同拼块的名字不会构成新的铺法。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$1,1,2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E_2=1$.
 
 **Derivation/proof.** A horizontal piece requires three columns but this board has only two. Thus both columns must be filled vertically, one piece per column. Those two placements cover every cell and there is no choice about their positions, so only one tiling exists.
 
-### 中文解答
+The three printed values are respectively $E_1,E_2,E_3$; this atomic question asks for the second.
 
-**推导。** $3$ 行 $2$ 列仍不足以横放长三格的砖，因此每一列只能由一块竖砖覆盖。两列各自放竖砖的位置唯一，二者覆盖所有六格且不重叠，故只有这一种铺法，$E_2=1$。
-
-## Common Mistakes
-
-- 把两块的交换顺序计为不同铺法。
-- 误认为面积六就能任意选两块方向。
+In a two-column board, each of the two columns must be covered vertically: a horizontal tile would need three columns. These two tiles cover its six cells uniquely.
 
 ## Connections
 

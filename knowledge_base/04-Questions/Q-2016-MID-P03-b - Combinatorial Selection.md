@@ -39,26 +39,22 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-从右边展开组合数，注意 $(n-1)-(k-1)=n-k$。将 $n(n-1)!$ 合并为 $n!$，并把 $k(k-1)!$ 合并为 $k!$，就回到左边定义。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(b)
+$$\begin{aligned}
+RHS&=\frac nk\binom{n-1}{k-1}\\&=\frac nk\cdot\frac{(n-1)!}{(k-1)!((n-1)-(k-1))!}\\&=\frac nk\cdot\frac{(n-1)!}{(k-1)!(n-k)!}\\&=\frac{n!}{k!(n-k)!}\\&=\binom nk\\&=LHS
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\frac nk\binom{n-1}{k-1}=\binom nk$.
 
 **Derivation/proof.** $\displaystyle\frac nk\binom{n-1}{k-1}=\frac{n(n-1)!}{k(k-1)!((n-1)-(k-1))!}=\frac{n!}{k!(n-k)!}=\binom nk$. The specified $0<k\le n$ ensures division by $k$ and all factorials are valid.
 
-### 中文解答
-
-**推导。** 从右边展开组合数定义：$\frac nk\binom{n-1}{k-1}=\frac{n(n-1)!}{k(k-1)!((n-1)-(k-1))!}$。因 $(n-1)-(k-1)=n-k$，且 $n(n-1)!=n!$、$k(k-1)!=k!$，化为 $n!/[k!(n-k)!]=\binom nk$，恰为左边。源题 $0<k\le n$ 保证除数k非零且所有阶乘自变量非负。
-
-## Common Mistakes
-
-- 将分母的 $(n-k)!$ 错写成 $(n-k-1)!$。
-- 不检查 $k>0$ 就进行除法。
+The final factorial ratio is $n!/[k!(n-k)!]$.
 
 ## Connections
 

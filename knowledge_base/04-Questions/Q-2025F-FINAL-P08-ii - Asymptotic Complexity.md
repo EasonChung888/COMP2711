@@ -40,24 +40,19 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (ii) [1 point] $T_A(n)=O(\sum_{i=1}^n n^2)\quad T_B(n)=\Omega(n^{3+\epsilon})\quad(\epsilon>0)$
 
-## 中文解析
+## Official Answer
 
-A 的三次上界已经低于 B 的三加 epsilon 次下界，已有信息足够。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+(ii) A is faster
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** A is faster.
 
-**答案。** A is faster。
-
-**推导。** 先得 $\sum_{i=1}^n n^2=n^3$。由 $O$ 与 $\Omega$ 定义，存在正数 $C,c$，对足够大 $n$ 有 $T_A(n)\le Cn^3$、$T_B(n)\ge cn^{3+\epsilon}$。因此 $T_A/T_B\le(C/c)n^{-\epsilon}\to0$，因为 $\epsilon>0$。即使 A 的具体运行时间低于其上界，仍只会更快；所以已有界足够判断 A 更快。
-
-## Common Mistakes
-
-- 上下界给在有利方向上，不能一见 O 与 Omega 就答无法判断。
-- epsilon 必须严格为正；若为零，上下界不能推出严格更快。
+**Derivation/proof.** First, $\sum_{i=1}^n n^2=n^3$. By the definitions of $O$ and $\Omega$, positive constants $C,c$ exist such that, for sufficiently large $n$, $T_A(n)\le Cn^3$ and $T_B(n)\ge cn^{3+\epsilon}$. Therefore
+$$\frac{T_A(n)}{T_B(n)}\le\frac Cc n^{-\epsilon}\to0,$$
+because $\epsilon>0$. Even if A's actual running time is below its upper bound, it can only be faster. Thus these bounds suffice to establish that A is asymptotically faster.
 
 ## Connections
 

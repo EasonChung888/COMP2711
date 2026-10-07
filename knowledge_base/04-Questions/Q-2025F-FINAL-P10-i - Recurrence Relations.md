@@ -41,24 +41,18 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (i) [2 points] Write the recurrence relation for $a_n$.
 
-## 中文解析
+## Official Answer
 
-每天先翻倍，再掉两条，次序直接决定递推式的括号位置。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+(i) The recurrence relation is
+$$a_n=2a_{n-1}-2\quad(n\ge1),\qquad a_0=10.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $a_0=10$ and $a_n=2a_{n-1}-2$ for $n\ge1$.
 
-**答案。** $a_0=10,\quad a_n=2a_{n-1}-2\ (n\ge1)$。
-
-**推导。** 第 $n-1$ 天结束后有 $a_{n-1}$ 条腿。第 $n$ 天先每条分裂成两条，因此瞬间变为 $2a_{n-1}$ 条；接着恰好掉两条，所以该天结束时 $a_n=2a_{n-1}-2$。这一更新从第一天开始适用，故 $n\ge1$，初值按题设为 $a_0=10$。核验第一天得到 $a_1=20-2=18$，符合“先倍增后损失”。
-
-## Common Mistakes
-
-- 若写成 $2(a_{n-1}-2)$ 就把掉腿安排在倍增前，改变了事件顺序。
-- 初始十条属于第零天，不应写成第一天有十条。
+**Derivation/proof.** At the end of day $n-1$ there are $a_{n-1}$ legs. On day $n$, each splits into two, giving $2a_{n-1}$ legs; exactly two then fall off. Hence $a_n=2a_{n-1}-2$. This update starts on day one, so $n\ge1$, while the given initial value is $a_0=10$. On the first day, $a_1=20-2=18$, agreeing with the stated order of events.
 
 ## Connections
 

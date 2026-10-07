@@ -1,0 +1,24 @@
+Proof
+LHS is the number of bitstrings of length (
+n
++1) that contain exactly (
+r
++1) 1's. 
+RHS: Consider the possible locations of the final 
+ in a string with 
+ 1’s. This final 1 must occur at location 
+ . . . , or 
+. Furthermore, when the last 1 is the 
+th bit (
+ there must be 
+ 1s among the first 
+ locations. Consequently, there are 
+ 
+such bit strings. Summing over 
+k
+, the number of bit strings of length 
+ containing exactly 
+ ones is:
+Because both sides of the identity count the same objects, they must be equal. This completes the proof.
+ 
+39

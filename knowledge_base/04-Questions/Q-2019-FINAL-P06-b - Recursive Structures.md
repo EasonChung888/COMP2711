@@ -38,31 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-固定 s，只对 t 的构造归纳。把 t 写成较短前缀 w 加末位 x，利用拼接结合律让末位规则能直接应用；然后在 sw 上使用归纳假设，再把 w 与末位的计数合回 t。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+We prove by induction on the length of $t$. The basis step is when $t=\lambda$, in which case we have $\operatorname{ones}(s\lambda)=\operatorname{ones}(s)=\operatorname{ones}(s)+0=\operatorname{ones}(s)+\operatorname{ones}(\lambda)$.
+For the inductive step, write $t=wx$, where $w$ is a bit string and $x$ is a bit. Then we have
+$$\begin{aligned}\operatorname{ones}(s(wx))&=\operatorname{ones}((sw)x)\\&=x+\operatorname{ones}(sw)&&\text{(by definition)}\\&=x+\operatorname{ones}(s)+\operatorname{ones}(w)&&\text{(by the inductive hypothesis)}\\&=\operatorname{ones}(s)+(x+\operatorname{ones}(w))\\&=\operatorname{ones}(s)+\operatorname{ones}(wx)&&\text{(by definition)}\\&=\operatorname{ones}(s)+\operatorname{ones}(t).\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** The identity holds for all finite bit strings s,t.
 
 **Derivation/proof.** Fix any s and induct structurally on t. For $t=\lambda$, $s\lambda=s$ and $\operatorname{ones}(\lambda)=0$, proving the base. Assume the identity for a prefix w and append a bit x. Then $\operatorname{ones}(s(wx))=\operatorname{ones}((sw)x)=\operatorname{ones}(sw)+x=\operatorname{ones}(s)+\operatorname{ones}(w)+x=\operatorname{ones}(s)+\operatorname{ones}(wx)$. The middle equality uses the induction hypothesis for w; the other count equalities use the recursive definition. Thus the constructor preserves the identity.
 
-### 中文解答
-
-**推导。** 固定任意位串 $s$，对 $t$ 的递归结构归纳。基例 $t=\lambda$：$\operatorname{ones}(s\lambda)=\operatorname{ones}(s)=\operatorname{ones}(s)+\operatorname{ones}(\lambda)$。归纳假设是对前缀 $w$ 有 $\operatorname{ones}(sw)=\operatorname{ones}(s)+\operatorname{ones}(w)$。对任一末位 $x\in\{0,1\}$，
-
-$$\operatorname{ones}(s(wx))=\operatorname{ones}((sw)x)=\operatorname{ones}(sw)+x$$
-$$=\operatorname{ones}(s)+\operatorname{ones}(w)+x=\operatorname{ones}(s)+\operatorname{ones}(wx).$$
-
-第一步用串连接结合律，第二及最后一步用递归定义，中间一步用关于 $w$ 的归纳假设。因此两个构造器追加 $0$、追加 $1$ 都保留命题，所有有限位串均满足结论。
-
-## Common Mistakes
-
-- 同时随意改变两个字符串而未说明归纳对象。
-- 对完整 t 使用待证结论造成循环。
+For the structural-induction basis, $\lambda$ is the empty string and $\operatorname{ones}(s\lambda)=\operatorname{ones}(s)=\operatorname{ones}(s)+\operatorname{ones}(\lambda)$. Appending the empty string changes neither the string nor the number of ones.
 
 ## Connections
 

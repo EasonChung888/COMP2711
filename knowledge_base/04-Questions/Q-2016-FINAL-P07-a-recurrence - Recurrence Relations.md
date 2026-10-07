@@ -40,26 +40,23 @@ Atomic focus [editorial]: define the recurrence; its induction proof is a separa
 
 Shared context: [[STEM-2016-FINAL-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每个旧的非空委员会可保留原样或加入新成员，产生两份。但是仅包含新成员的单人委员会没有来自旧非空委员会的对应项，须另外加一，并给出一人的初值。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=13|PDF physical page 13]].
 
-## Detailed Solution
+(a) $T(1)=1$, and $T(n)=2T(n-1)+1$ for $n>1$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+The base case $T(1)$ is obviously true.
+
+Assume that $T(n-1)$ counts the number of committees that are formed from $n-1$ people correctly for $n>1$.
+
+When there are $n$ people, the number of possible committees that are formed without the $n$-th person is counted by $T(n-1)$. On the other hand, each committee without the $n$-th person union with the $n$-th person forms another possible committee. So, we have $2T(n-1)$ possible committees. There is only one case is missed, which is the committee that contains only the $n$-th person. Therefore, when there are $n$ people, $T(n)=2T(n-1)+1$ counts all possible committees with at least one member from $n$ people. By the principle of induction, we have proved that the recurrence equation is correct.
+
+## Supplementary Explanation
 
 **Answer.** $T(1)=1$ and $T(n)=2T(n-1)+1$ for $n>1$.
 
 **Derivation/proof.** With one person there is exactly one allowed committee. For $n>1$, old nonempty committees contribute $T(n-1)$ without person $n$ and another $T(n-1)$ with person $n$ added. The remaining allowed committee is $\{n\}$, giving the recurrence. These cases are disjoint and exhaustive.
-
-### 中文解答
-
-**推导。** 一人时只有包含该人的非空委员会，$T(1)=1$。增加第n人时，不含他且非空的委员会有T(n−1)个；含他且还含旧人的，与旧非空委员会一一对应，又有T(n−1)个。另有只含新人的单人委员会一个。三类互斥穷尽，所以 $T(n)=2T(n-1)+1$，用于n>1。额外加一避免漏掉新人独自成会。
-
-## Common Mistakes
-
-- 漏掉仅包含第 $n$ 人的委员会。
-- 写出递推式但没有初始条件。
 
 ## Connections
 

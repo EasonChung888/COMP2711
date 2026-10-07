@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (a) [1 pt] Assume $x=2^3\cdot5^6$ and $y=2^4\cdot5^3$. What is the least common multiple of $x$ and $y$?
 
-## 中文解析
+## Official Answer
 
-公共倍数的每个素因数指数必须至少达到两个原数指数中的最大值。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+(a) Their LCM is $2^{\max(3,4)}\cdot5^{\max(6,3)}=2^4\cdot5^6$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $2^4\cdot5^6$.
 
-**答案。** $2^4\cdot5^6$。
-
-**推导。** 要同时被 $x$ 和 $y$ 整除，二的指数至少为 $\max(3,4)=4$，五的指数至少为 $\max(6,3)=6$。取这两个最小允许指数得到 $2^4\cdot5^6$；它除以 $x$ 为二，除以 $y$ 为 $5^3$，因此确是公共倍数。任意别的正公共倍数都含这些指数，故不可能更小。
-
-## Common Mistakes
-
-- 最小公倍数取最大指数，取最小指数得到的是最大公因数。
-- 不应把指数相加，那只给出乘积而未保证最小。
+**Derivation/proof.** Divisibility by both x and y requires the exponent of two to be at least $\max(3,4)=4$ and that of five at least $\max(6,3)=6$. Using these least permitted exponents gives $2^4\cdot5^6$. Its quotient by x is two and by y is $5^3$, verifying it is a common multiple. Every positive common multiple contains these prime powers, so none can be smaller.
 
 ## Connections
 

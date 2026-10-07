@@ -38,24 +38,28 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 A 3-by-3 unit-square grid is to be colored such that each unit square is independently colored red or blue with equal probability. What is the probability that the grid does not contain any 2-by-2 red square? Justify your answer.
 
-## 中文解析
+## Official Answer
 
-四个可能的红方块重叠方式不同，容斥中相邻对与对角对必须分开数。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+Since each of the 9 unit squares of the 3-by-3 square can take one of two colors, in total there are $2^9$ different ways of coloring the 3-by-3 square.
 
-Provenance: published official answer, independently checked and expanded below.
+Let us count now the colorings that form a 2-by-2 red square. This red square can be formed in the upper left, upper right, bottom left or bottom right corner of the 3-by-3 square. Let $A,B,C,D$ be, respectively, the sets of the four types of colorings listed above that produce a 2-by-2 red square. Since the other 5 squares of the 3-by-3 square can have any color, we have $|A|=|B|=|C|=|D|=2^5$. These sets are however not disjoint, so we must apply inclusion-exclusion:
+$$\begin{aligned}
+|A\cup B\cup C\cup D|&=|A|+|B|+|C|+|D|\\
+&\quad-|A\cap B|-|A\cap C|-|A\cap D|-|B\cap C|-|B\cap D|-|C\cap D|\\
+&\quad+|A\cap B\cap C|+|A\cap B\cap D|+|A\cap C\cap D|+|B\cap C\cap D|\\
+&\quad-|A\cap B\cap C\cap D|.
+\end{aligned}$$
+As $A\cap B$ represents the set of the colorings having the first two rows red (and the 3 squares of the lowest row free to take any of the two colors), we have $|A\cap B|=2^3$. Similarly, $|A\cap C|=2^3$, $|B\cap D|=2^3$ and $|C\cap D|=2^3$. We have a different situation for $A\cap D$ and $B\cap C$: if two opposing 2-by-2 squares are red, this leaves uncertain only the colors of the two remaining 1-by-1 corners, therefore $|A\cap D|=|B\cap C|=2^2$. The intersections of 3 of the sets leaves undecided only the color of one square, therefore each of these intersections has 2 elements. Finally, the intersection of all the four sets contains only the square completely colored in red, that is, one element. We obtain:
+$$|A\cup B\cup C\cup D|=4\cdot2^5-(4\cdot2^3+2\cdot2^2)+4\cdot2-1=95.$$
+So from the 512 possible colorings, $512-95=417$ do not contain any 2-by-2 red square, so the probability of not having a 2-by-2 red square is $\frac{417}{512}$.
 
-### 中文解答
+## Supplementary Explanation
 
-**答案。** $417/512$。
+**Answer.** $417/512$.
 
-**推导。** 九格独立且等概率着色，共 $2^9=512$ 个等可能结果。令 $A,B,C,D$ 对应左上、右上、左下、右下的 $2\times2$ 格全红事件。每个事件固定四格，故有 $2^5=32$ 个着色。六个两两交集中，四对相邻方块固定六格，各余 $2^3=8$ 种；两对对角方块固定七格，各余 $2^2=4$ 种。任取三个方块固定八格，四个三重交集各有二种；四重交集只有全红的一种。于是至少一个红方块的数为 $4\cdot32-(4\cdot8+2\cdot4)+4\cdot2-1=95$。补事件有 $512-95=417$ 种，所求概率为 $417/512$。
-
-## Common Mistakes
-
-- 把六对交集都看成相邻重叠会错误估算对角方块固定的格数。
-- 求得九十五后还须取补事件，题目问的是没有红方块。
+**Derivation/proof.** The nine independent fair colors give $2^9=512$ equally likely outcomes. Events A,B,C,D require the top-left, top-right, bottom-left and bottom-right $2\times2$ squares to be all red. Each fixes four cells and permits $2^5=32$ colorings. Of the six pair intersections, four adjacent pairs fix six cells and permit eight colorings each; two diagonal pairs fix seven and permit four each. Any three events fix eight cells, yielding two colorings for each of four triple intersections. All four events require the unique all-red grid. Inclusion-exclusion gives $4\cdot32-(4\cdot8+2\cdot4)+4\cdot2-1=95$ colorings with a red square. The complement has $512-95=417$, giving probability $417/512$.
 
 ## Connections
 

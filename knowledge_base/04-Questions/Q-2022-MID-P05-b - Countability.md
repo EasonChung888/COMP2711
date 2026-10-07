@@ -38,26 +38,19 @@ $\{x\in\mathbb R\mid\text{there is a decimal expansion of }x\text{ with only eve
 
 Shared context: [[STEM-2022-MID-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-只用偶数字零和二就已经能编码所有无限二进制串。第一次不同小数位的差大于后面所有位可能补偿的差，因此编码是单射，也避开无限九造成的双表示问题；这足以证明完整集合不可数。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (b) Uncountable
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Uncountable.
 
 **Derivation/proof.** For every infinite binary sequence b1,b2,… map it to decimal 0.(2b1)(2b2)…. All its digits are 0 or2 and hence even. If two sequences first differ at place k, the leading difference is 2·10^(−k), while the maximum possible tail difference is 2∑_(j>k)10^(−j)=(2/9)10^(−k), smaller. Thus the map is injective. Binary sequences are uncountable by diagonalization, so this subset and hence the source set are uncountable.
 
-### 中文解答
-
-**推导。** 只考察小数位取零或二的子集就足够。对每个无限二进制串 $(b_i)$，定义实数 $x=\sum_{i\ge1}2b_i10^{-i}$，所有十进制位都是偶数。若两串首次在第 $k$ 位不同，首个差的大小是 $2\cdot10^{-k}$，而后续位最多抵消 $2\sum_{j>k}10^{-j}=\tfrac29 10^{-k}$，严格较小，因此所得实数仍不同。这给无限二进制串集合到题目集合的单射。前者由对角论证不可数，故这个子集及整个题目集合均不可数；只用零和二也避开无限九的表示重合。
-
-## Common Mistakes
-
-- 只数有限小数而漏掉无限展开。
-- 未经唯一性检查就直接说不同数字串代表不同实数。
+The injection is $x=\sum_{i\ge1}2b_i10^{-i}$. A first difference $2\cdot10^{-k}$ exceeds the largest tail difference $\tfrac29 10^{-k}$, so the resulting real numbers are still different.
 
 ## Connections
 

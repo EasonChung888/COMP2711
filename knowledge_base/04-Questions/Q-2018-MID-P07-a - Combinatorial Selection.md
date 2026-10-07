@@ -37,26 +37,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-委员会没有职务顺序，因此从二十人中选五人就是一个五元素子集。也可以先按顺序选人再除以五的阶乘，因为同一组五人无论怎样排列，都仍然是同一个委员会。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+This is simply $C(20,5)=15504$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{20}{5}=15504$.
 
 **Derivation/proof.** Choose five of the twenty employees without ordering them. There are $20\cdot19\cdot18\cdot17\cdot16$ ordered selections, and each committee appears in $5!$ orders. Dividing by $5!$ gives $\binom{20}{5}=15504$.
-
-### 中文解答
-
-**推导。** 二十名员工各不相同，委员会选五人且无职位或先后顺序。先作有序选择有 $20\cdot19\cdot18\cdot17\cdot16$ 种，每个成员集合被按 $5!$ 种顺序重复，因此除以 $5!$，得到 $\binom{20}{5}=15504$。无性别限制，无需再分类男性或女性。
-
-## Common Mistakes
-
-- 把五个委员当成有序职位。
-- 分别按性别选择却没有题目要求的固定人数。
 
 ## Connections
 

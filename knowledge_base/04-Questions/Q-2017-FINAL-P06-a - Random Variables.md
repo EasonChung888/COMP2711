@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-X 数的是满足条件的行数，不是正面硬币数。全部六十四枚都是正面时，每一行都满足八枚同面的条件，而总共只有八行，因此随机变量取最大值八。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+$8$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $X=8$.
 
 **Derivation/proof.** Each row consists of eight heads and therefore satisfies the definition of homogeneous. There are eight rows, so exactly eight row indicators equal one and their sum $X$ is eight, not sixty-four.
 
-### 中文解答
-
-**推导。** 所有六十四枚均为正面时，每一行的八枚币都显示同一符号，因此每行都满足 homogeneous 的定义。全块有八行，行指标 $I_1=\cdots=I_8=1$，所以 $X=\sum_{i=1}^8I_i=8$。$X$ 数的是齐同行数，不是正面币数 $64$。
-
-## Common Mistakes
-
-- 回答正面硬币数六十四。
-- 把一整块同面只算作一行。
+In indicator notation, $I_1=\cdots=I_8=1$ and $X=\sum_{i=1}^8I_i=8$.
 
 ## Connections
 

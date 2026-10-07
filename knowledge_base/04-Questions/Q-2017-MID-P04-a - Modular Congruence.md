@@ -41,26 +41,17 @@ Source correction (official conclusion retained): PDF page 6 uses a=1,b=3,c=5,m=
 
 Shared context: [[STEM-2017-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-两个与 a 同余的数相加，只能得到与两倍 a 同余。选取模二的奇数会让这一差别最明显：两个奇数之和为偶数，而 a 仍为奇数，前提成立却结论不成立。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+False. Set $a=1,b=3,c=5,m=2$ as a counter example. We have $1\equiv3\pmod2$, $1\equiv5\pmod2$, but $1\not\equiv5\pmod2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** False; $a=1,b=3,c=5,m=2$ is a counterexample.
 
 **Derivation/proof.** Here $1\equiv3\equiv5\pmod2$, so both hypotheses hold. But $b+c=8\equiv0\pmod2$, while $a\equiv1\pmod2$. The two residues differ, so the conclusion fails. In general the hypotheses give $b+c\equiv2a$, not $a$.
-
-### 中文解答
-
-**推导。** 命题为假。沿用印本的 $a=1,b=3,c=5,m=2$，有 $1-3=-2$ 及 $1-5=-4$ 均被 $2$ 整除，两前提成立。可是 $b+c=8$，$a-(b+c)=-7$ 不被 $2$ 整除，所以 $1\not\equiv8\pmod2$。印本最后误写 $1\not\equiv5$；反例要比较的是和 $8$，不是单独的 $c=5$。
-
-## Common Mistakes
-
-- 把两个同余式相加后左边仍写 a。
-- 照抄印刷解的 1 不同余 5，而没有计算 b 加 c。
 
 ## Connections
 

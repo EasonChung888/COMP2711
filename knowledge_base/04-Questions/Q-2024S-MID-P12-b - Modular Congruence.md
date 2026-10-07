@@ -41,24 +41,17 @@ Prerequisite context (editorial): [[Q-2024S-MID-P12-a - Modular Congruence]]. Pa
 
 (b) Let $a$ and $m$ be positive integers. Use the fact given in part (a) to prove that if $\gcd(a,m)>1$, then $a$ does not have a multiplicative inverse modulo $m$.
 
-## 中文解析
+## Official Answer
 
-逆元的定义把一写成 a 与 m 的整数线性组合。当最大公因数大于一时，这正落在上一小题禁止的正整数范围中。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=18|physical PDF page 18]].
 
-## Detailed Solution
+> (b) Assume that $a$ has a multiplicative inverse modulo $m$. Let us denote it $a^{-1}$. By definition, $aa^{-1}\equiv1\pmod m$. It follows that $aa^{-1}-mk=1$ for some integer $k$. In other words, 1 can be obtained as an integer linear combination of $a$ and $m$. But 1 is smaller than $\gcd(a,m)$, which contradicts part (a). This completes the proof.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** If $\gcd(a,m)>1$, then $a$ has no multiplicative inverse modulo $m$.
 
-**答案。** 若 $\gcd(a,m)>1$，则 $a$ 模 $m$ 无乘法逆元。
-
-**推导。** 令 $d=\gcd(a,m)>1$，反设存在整数 $b$ 为逆元，即 $ab\equiv1\pmod m$。同余定义意味着某个整数 $t$ 满足 $ab-1=tm$，即 $1=ba-tm$。这是 $a,m$ 的整数线性组合，系数分别是 $b,-t$。由导入的 (a)，任何正的此类组合不能小于 $d$，但 $0<1<d$，矛盾。所以这样的 $b$ 不存在，$a$ 模 $m$ 没有乘法逆元。
-
-## Common Mistakes
-
-- 不能把 $ab\equiv1\pmod m$ 当成普通等式 $ab=1$。
-- 需要用 $d>1$ 比较一与最大公因数，互素时该矛盾并不存在。
+**Derivation/proof.** Let $d=\gcd(a,m)>1$ and suppose an inverse $b$ exists, so $ab\equiv1\pmod m$. The congruence means $ab-1=tm$ for some integer $t$, hence $1=ba-tm$. This is a linear combination of $a,m$ with integer coefficients $b,-t$. By part (a), any positive such combination is at least $d$, whereas $0<1<d$. This contradiction shows no such $b$ exists.
 
 ## Connections
 

@@ -38,24 +38,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 
 (b) [6 pts] How many 6-digit natural numbers (from 100000 to 999999) have digits that sum to 11? For example, the number 100019 sums to $1+0+0+0+1+9=11$ and would be counted. Briefly explain why.
 
-## 中文解析
+## Official Answer
 
-首位至少一先扣掉一，再从无上界的非负整数解中扣除超过数字上限的情况。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+Let the 6-digit number be $\overline{a_1a_2a_3a_4a_5a_6}$, where $a_1+a_2+\cdots+a_6=11$ and $a_1\ge1$. Substitute $a_1=a'_1+1$, so $a'_1+a_2+\cdots+a_6=10$, with $a'_1,a_2,\ldots,a_6\ge0$. The number of non-negative solutions is $\binom{15}{5}$. Subtract invalid cases: 5 cases where any of $a_2,\ldots,a_6=10$, and 6 cases where $a'_1=9$ or 10. Total valid numbers: $\binom{15}{5}-11=2992$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom{15}5-11=2992$.
 
-**答案。** $\binom{15}5-11=2992$。
-
-**推导。** 设六位数字为 $a_1,\ldots,a_6$，令 $b_1=a_1-1$，则 $b_1+a_2+\cdots+a_6=10$。暂不设上限，stars and bars 给出 $\binom{15}5=3003$ 个解。真实限制是 $b_1\le8$、其余 $a_i\le9$。若 $b_1\ge9$，减去九后剩余总和一，六个位置共有 $\binom65=6$ 种；若某个 $a_i\ge10$，减十后全零，每个 $i=2,\ldots,6$ 各一解，共五种。这些违例不能同时发生，因为总和仅十。故合法数为 $3003-6-5=2992$。
-
-## Common Mistakes
-
-- 首位减一后上界是八而非九，漏掉这个变化会少扣五个解。
-- 其他位置可以为零，不能把六个原数字都设为正整数。
+**Derivation/proof.** Put $b_1=a_1-1$. The digit sum becomes $b_1+a_2+\cdots+a_6=10$. Without upper bounds, stars and bars gives $\binom{15}5=3003$ solutions. The actual bounds are $b_1\le8$ and $a_i\le9$ for the other digits. When $b_1\ge9$, subtract nine to leave total one over six positions, yielding six invalid solutions. When any other digit is at least ten, it must be ten and every other position zero; this gives five invalid solutions. No two violations can overlap because the total is only ten. The valid count is $3003-6-5=2992$.
 
 ## Connections
 

@@ -35,7 +35,8 @@
     const globalLast=read(siteLastKey);
     const oldLast=read('comp2711:l2-5:lastLesson');
     const last=[globalLast,oldLast].find(value=>paths.includes(value));
-    resume.href=last||resume.dataset.resumeDefault||paths[0]||resume.dataset.resumeFallback;
+    const target=last||resume.dataset.resumeDefault||paths[0]||resume.dataset.resumeFallback;
+    resume.href=(document.body.dataset.siteRoot||'')+target;
     resume.textContent=last?'继续学习':'开始学习';
    }else{
     const paths=words(resume.dataset.resumeTopics).map(id=>`lessons/${id}.html`);

@@ -43,26 +43,18 @@ Prerequisite context (editorial): [[Q-2023S-MID-P07-a - RSA Cryptosystem]]. Part
 
 Shared printed context: ![[STEM-2023S-MID-P07 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-本题明确使用 private key，所以指数是前项所得的 d，不是公钥 e。先列出逐次平方的模 n 余数，再按 767 的二进制分解相乘，每一步都取模可以避免巨大的中间整数。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (b) $p\cdot q=1333$
+> $$\begin{aligned}
+> 2^{2^0}\bmod1333&=2\\2^{2^1}\bmod1333&=2^2\bmod1333=4\\2^{2^2}\bmod1333&=4^2\bmod1333=16\\2^{2^3}\bmod1333&=16^2\bmod1333=256\\2^{2^4}\bmod1333&=256^2\bmod1333=219\\2^{2^5}\bmod1333&=219^2\bmod1333=-27\\2^{2^6}\bmod1333&=(-27)^2\bmod1333=729\\2^{2^7}\bmod1333&=729^2\bmod1333=907\\2^{2^8}\bmod1333&=907^2\bmod1333=188\\2^{2^9}\bmod1333&=188^2\bmod1333=686
+> \end{aligned}$$
+> $$767=2^9+2^7+2^6+2^5+2^4+2^3+2^2+2^1+2^0$$
+> $$\begin{aligned}2^{767}&\equiv2^{2^9}\cdot2^{2^7}\cdot2^{2^6}\cdot2^{2^5}\cdot2^{2^4}\cdot2^{2^3}\cdot2^{2^2}\cdot2^{2^1}\cdot2^{2^0}\\&\equiv686\cdot907\cdot729\cdot(-27)\cdot219\cdot256\cdot16\cdot4\cdot2\\&\equiv(686\cdot907\cdot729\bmod1333)\cdot(-27\cdot219\cdot256\bmod1333)\\&\qquad\cdot(16\cdot4\cdot2\bmod1333)\\&\equiv16\cdot560\cdot128\\&\equiv500\pmod{1333}.\end{aligned}$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 按题目要求使用 private key 编码，$x=500\pmod{1333}$。
-
-**推导。**
-
-1. 从 (a) 取 $d=767$，而 $n=31\cdot43=1333$。指数分解为 $767=512+128+64+32+16+8+4+2+1$，所以只需要这些二次幂位置；其中没有 $256$ 项。
-2. 对 $2$ 逐次平方且每步模 $1333$，得到指数 $1,2,4,8,16,32,64,128,256,512$ 的余数依次为 $2,4,16,256,219,-27,729,907,188,686$。依指数分解选取并相乘：
-   $$2^{767}\equiv686\cdot907\cdot729\cdot(-27)\cdot219\cdot256\cdot16\cdot4\cdot2\equiv16\cdot560\cdot128\equiv500\pmod{1333}.$$
-3. 独立模素数检查：$500\equiv4\pmod{31}$、$500\equiv27\pmod{43}$，分别与 $2^{767}$ 在两个模数下的结果一致。运算指数遵循原题的 $d$，没有替换为公钥 $e=23$。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $x=500\pmod{1333}$.
 
@@ -72,10 +64,7 @@ Multiply the entries for the binary expansion of 767:
 $$2^{767}\equiv686\cdot907\cdot729\cdot(-27)\cdot219\cdot256\cdot16\cdot4\cdot2\equiv16\cdot560\cdot128\equiv500\pmod{1333}.$$
 An independent CRT check gives $500\equiv4\pmod{31}$ and $500\equiv27\pmod{43}$, agreeing with $2^{767}$ in each prime modulus.
 
-## Common Mistakes
-
-- 把题中 private key 改成公钥 e=23 会算另一个操作。 / Follow the explicitly requested exponent d.
-- 相乘时不要包含 256 对应的指数位，因为 767 的该位是零。 / Use only the nonzero binary positions.
+The negative value $-27$ is a convenient congruent representative; its least nonnegative residue is $1306$.
 
 ## Connections
 

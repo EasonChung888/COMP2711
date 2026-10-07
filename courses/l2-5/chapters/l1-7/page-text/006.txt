@@ -1,0 +1,12 @@
+Coefficient  of
+ = 
+number of length-3 lists having y in 
+2
+ places.
+You can think of x as 0 and y as 1 in a bitstring
+The equivalent question is how many bit strings have exactly 2 1's: 
+C(3,2)
+.
+ 
+6
+Binomial Expression Expansion

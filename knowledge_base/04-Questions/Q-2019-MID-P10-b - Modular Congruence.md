@@ -38,26 +38,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先把四十一移到右边，得到负二十三，再乘十五的逆元七。结果负一百六十一需要加两个模数，变成四十七。逆元关系是对称的，但不能在移项前遗漏常数。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+$$\begin{aligned}15x+41&\equiv18\pmod{104}\\\to15x&\equiv-23\pmod{104}\\\to7\cdot15x&\equiv7(-23)\pmod{104}\\\to x&\equiv7(-23)\pmod{104}\\\to x&\equiv47\pmod{104}.\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $x=47$.
 
 **Derivation/proof.** Subtract 41 to get $15x\equiv-23\pmod{104}$. Since 7 is inverse to 15, $x\equiv7(-23)=-161\equiv47\pmod{104}$. Check $15\cdot47+41=746=7\cdot104+18$. Thus 47 is the allowed representative.
-
-### 中文解答
-
-**推导。** 先移项 $15x\equiv-23\pmod{104}$。由于 $7$ 是 $15$ 的模逆，乘 $7$ 得 $x\equiv-161\equiv47\pmod{104}$，故范围内解为 $47$。核对 $15\cdot47+41=746=7\cdot104+18$，余数正好是题目的 $18$。
-
-## Common Mistakes
-
-- 把七与十五的逆元关系只当单向。
-- 返回负一百六十一而不规范化。
 
 ## Connections
 

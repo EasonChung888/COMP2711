@@ -38,26 +38,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 Shared context: [[STEM-2013-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-反例必须让两式真假不同。令 $q$ 为假会使右式的前件为假而自动为真，同时 $p\Rightarrow r$ 可以为假。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=8|PDF physical page 8]].
 
-## Detailed Solution
+(c) Not equivalent. Counter example: $p=T$, $q=F$, $r=F$. The first statement is false, while the second statement is true.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** No; take $p=T,q=F,r=F$.
 
 **Derivation/proof.** At $p=T,q=F,r=F$, the first conjunction is $(T\Rightarrow F)\land(F\Rightarrow F)=F$, whereas $(p\land q)\Rightarrow r=F\Rightarrow F=T$. The differing truth values disprove equivalence.
 
-### 中文解答
-
-**推导。** 取反例 $p=T,q=F,r=F$。第一式为 $(T\Rightarrow F)\land(F\Rightarrow F)=F\land T=F$；第二式的前件 $p\land q=F$，所以其值为 $F\Rightarrow F=T$。同一赋值令两式真假不同，故不等价。
-
-## Common Mistakes
-
-- 只选两式都为假的赋值。
-- 把一个反例误当成等价的证据。
+Explicitly, the first expression is $F\land T=F$, whereas the second is $F\Rightarrow F=T$.
 
 ## Connections
 

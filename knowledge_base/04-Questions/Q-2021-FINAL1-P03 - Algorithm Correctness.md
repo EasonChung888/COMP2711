@@ -38,26 +38,33 @@ Consider a company with $n>0$ workers. A worker is a famous-solo-worker if she o
 
 Note that there can be at most one famous-solo-worker.
 
-## 中文解析
+## Official Answer
 
-每问一次至少排除一名候选：若 c 认识 j，则 c 不合格；若不认识，则 j 不被所有人认识。这样 n-1 次留下唯一可能者，再逐人核实两个方向的认识关系。验证失败也能宣布不存在，因为其他人已有明确排除证据。
+Source: [[knowledge_base/past_paper/2021-final-part-1.pdf#page=2|physical PDF page 2]], [[knowledge_base/past_paper/2021-final-part-1.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> We prove this by induction.
+>
+> **Basis step:**
+> When $n=1$, the only worker must be a famous-solo-worker, and no questions are needed, which equals to $3(1-1)=0$.
+>
+> **Inductive step:**
+> The inductive hypothesis is that if there are $k\ge1$ workers, then we can determine whether there is a famous-solo-worker with at most $3(k-1)$ questions.
+>
+> Suppose there are $k+1$ workers. Let $i$ and $j$ be any two workers among them. We ask whether $i$ knows $j$, this takes one question. If $i$ knows $j$, then $i$ is not a famous-solo-worker. If $i$ doesn't know $j$, then $j$ is not a famous-solo-worker. Without loss of generality, assume that $i$ is not a famous-solo-worker. Excluding $i$ from the $k+1$ workers, there are $k$ workers (including $j$) remaining. By the inductive hypothesis, we can use $3(k-1)$ questions for our checking.
+>
+> If there is no famous-solo-worker among these $k$ workers, then we know that there is no famous-solo-worker, and the number of questions used is $1+3(k-1)=3k-2\le3k$.
+>
+> If there is a famous-solo-worker $s$ among these $k$ workers, then we ask whether $s$ knows $i$ and whether $i$ knows $s$. This takes two more questions. If $i$ knows $s$ and $s$ doesn't know $i$, then $s$ is still a famous-solo-worker, otherwise $s$ is not a famous-solo-worker (thus no famous-solo-worker). In this case, we used a total of $1+3(k-1)+2=3k$ questions.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Eliminate candidates with $n-1$ questions, then verify the survivor using at most $2(n-1)$ more.
 
 **Derivation/proof.** Start with any candidate c. For each other worker j ask whether c knows j. If yes, c is disqualified and replace c by j; if no, j is disqualified because c does not know j. An induction over comparisons shows any genuine famous-solo-worker remains among the candidates, so n−1 questions leave only c possible. Ask c whether they know each other worker and ask each other worker whether they know c, using at most 2(n−1) questions. Accept c iff all first answers are no and all second answers yes; otherwise nobody qualifies, since all others were already disqualified. For n=1 both conditions are vacuous and zero questions suffice.
 
-### 中文解答
+The iterative proof below uses at most $(n-1)+2(n-1)=3(n-1)$ questions. Each eliminated person has a concrete disqualifying answer, so failure of final verification establishes nonexistence rather than merely failure of the candidate.
 
-**推导。** 先任取候选 $c$，逐个与尚未处理的员工 $j$ 比较，只问 $c$ 是否认识 $j$。若认识，则 $c$ 不符合“不认识别人”，排除 $c$ 并改选 $j$；若不认识，则 $j$ 不符合“人人认识他”，排除 $j$。每次都排除一个确实不合格的人，绝不会排除真正的 famous-solo-worker。经过 $n-1$ 问，只剩 $c$ 可能合格。再对每个其他员工 $j$ 问两个方向：$c$ 是否认识 $j$，以及 $j$ 是否认识 $c$，至多 $2(n-1)$ 问。仅当第一方向全否、第二方向全是才接受 $c$；否则 $c$ 也不合格，而其余人已有排除证据，所以宣布不存在。总数至多 $(n-1)+2(n-1)=3(n-1)$。$n=1$ 时两个要求都空真，不问就返回唯一员工，仍符合零次上界。
-
-## Common Mistakes
-
-- 只筛选候选却不做最后验证。
-- 把认识关系误当对称关系。
+Elimination never eliminates a genuine famous-solo-worker. Accept the final candidate exactly when all first-direction answers are no and all reverse-direction answers are yes.
 
 ## Connections
 

@@ -41,26 +41,19 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先排好六个字母，在相邻字母之间和最后各留一个空位，共六个可用间隙。选择两个不同间隙放数字，保证数字不相邻，同时没有首字母之前的间隙，保证首位是字母。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+(d) Let us create a password in two steps. (1) Choose 6 letters, and arrange them on a line such that there is a space between each pair and there is a space at the end:
+$$L-L-L-L-L-L-$$
+(2) Choose two digits, place them in two of the spaces, and remove the remaining spaces. There are $26^6$ possibilities for step 1, and $10^2\times\binom62$ possibilities for step 2. Hence the total number of passwords is $26^6\times10^2\times\binom62$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $26^6\cdot10^2\binom62$.
 
 **Derivation/proof.** Choose the ordered sequence of six letters in $26^6$ ways. Its five internal gaps and one trailing gap are eligible; the leading gap is forbidden. Choose two of these six gaps and put one digit in each, in $10^2$ ways. Deleting the digits recovers the letter sequence and chosen gaps uniquely, so no password is double counted. As a check, choosing two nonconsecutive positions from 2–8 gives $\binom72-6=15=\binom62$.
-
-### 中文解答
-
-**推导。** 先选择并排列六个字母，计 $26^6$。六字母之间有五个间隙，末尾再有一个，首字母之前不可用，故有六个可用间隙。选两个不同间隙，各放一个数字，计 $\binom62\cdot10^2$。这样必不相邻，且删去数字可唯一还原六字母与间隙，所以无重计。总数 $26^6\cdot10^2\binom62$；另验后七位选非相邻两位，$\binom72-6=15=\binom62$。
-
-## Common Mistakes
-
-- 把最前面的间隙也计入，导致首位为数字。
-- 在同一个间隙放两个数字，违反不相邻条件。
 
 ## Connections
 

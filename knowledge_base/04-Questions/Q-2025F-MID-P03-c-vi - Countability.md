@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (vi) The set of binary strings of infinite length is uncountable.
 
-## 中文解析
+## Official Answer
 
-无限二进制串可逐位翻转对角线，抵抗任何声称完整的可数列表。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) (vi) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True.
 
-**答案。** True。
-
-**推导。** 若这些无限字符串能列成 $s_1,s_2,\ldots$，定义新串的第 $n$ 位 $d_n=1-s_n(n)$，即翻转第 $n$ 行的第 $n$ 位。每个 $d_n$ 仍为零或一，故得到合法无限二进制串；它与任意 $s_n$ 至少在第 $n$ 位不同，因此不在列表中。这违反可数枚举的完整性，证明该集合不可数。
-
-## Common Mistakes
-
-- 有限长度二进制串的可数并证明不能直接用于无限长度串。
-- 对角构造需保留无限位，不能截断后再声称遗漏所有行。
+**Derivation/proof.** If the infinite strings were listed as $s_1,s_2,\ldots$, define the nth bit of a new string by $d_n=1-s_n(n)$. Each bit is still zero or one, so this is a valid infinite binary string. It differs at position $n$ from $s_n$, for every n, and therefore is missing from the list. This contradicts complete enumeration and proves uncountability.
 
 ## Connections
 

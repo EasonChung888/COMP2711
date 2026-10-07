@@ -38,26 +38,19 @@ A complete bipartite undirected graph with 10 vertices, whose degrees are $3,3,3
 
 Shared context: [[STEM-2021-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-完全二分图一边的度数等于另一边人数。若两种度数是三和七，两边人数就必须三与七，导致七个度三、三个度七；题目恰好反过来，因此不可实现。
+Source: [[knowledge_base/past_paper/2021-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (b) None. In a complete bipartite graph, we can partition the vertices into two sets $V_1,V_2$ so that there is an edge from every vertex in $V_1$ to every vertex in $V_2$. So, the degree of every vertex in $V_1$ should be $|V_2|$ and the degree of every vertex in $V_2$ should be $|V_1|$. When the two possible degrees are 3 and 7, we need 7 vertices with degree 3 and 3 vertices with degree 7 to make a complete bipartite graph. The given degrees are not in this case.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No such graph exists.
 
 **Derivation/proof.** In a complete bipartite graph K_(a,b), each of the a vertices has degree b and each of the b vertices degree a. The only displayed degrees are 3 and 7, so the part sizes would have to be 3 and 7. Then there must be three degree-7 vertices and seven degree-3 vertices. The supplied sequence has the opposite multiplicities, so it cannot be the required graph.
 
-### 中文解答
-
-**推导。** 不存在这样的完全二分图。若两部大小为 $a,b$，$K_{a,b}$ 中 $a$ 个顶点各有度 $b$，$b$ 个顶点各有度 $a$。既然给出的两种度是三和七，两部大小只能为三与七，因此应有三个度七顶点、七个度三顶点。题目却给三个度三顶点、七个度七顶点，重数相反，矛盾。不能把某一部的人数误当成该部顶点自己的度数。
-
-## Common Mistakes
-
-- 把本组人数当成本组顶点度数。
-- 只看存在两种度数就认为是完全二分图。
+The required sequence has three degree-seven vertices and seven degree-three vertices, but the printed sequence has three degree-three vertices and seven degree-seven vertices: the multiplicities are reversed.
 
 ## Connections
 

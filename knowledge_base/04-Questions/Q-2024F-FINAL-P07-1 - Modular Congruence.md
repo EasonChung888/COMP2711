@@ -42,24 +42,21 @@ Atomic extraction of printed step 1. Problem 7 carries 10 aggregate points with 
 
 Shared printed context: ![[STEM-2024F-FINAL-P07 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-CRT 要先得到 x 的单位系数剩余类。两个三分别处于不同模数，要各自求逆；它们并不是普通实数除法中的三分之一。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=19|physical PDF page 19]].
 
-## Detailed Solution
+> Answer: Note that the first step is to remove the coefficients.
+> Note that the inverse of 3 (mod 5) is 2. So if we multiply 2 by both sides of the first equation we have: $2\cdot3x\equiv2\cdot4\implies x\equiv3\pmod5$.
+> Note that as $\gcd(3,7)=1$ we can simply divide both sides by 3 which gives us $x\equiv2\pmod7$. So we need to solve the following system of congruences:
+> $$x\equiv3\pmod5,\qquad x\equiv2\pmod4,\qquad x\equiv2\pmod7.$$
+> As all the modulos are coprime with each other. We can simply use chinese remainder theorem to find the solutions $x$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $x\equiv3\pmod5,\quad x\equiv2\pmod4,\quad x\equiv2\pmod7$.
 
-**答案。** $x\equiv3\pmod5,\quad x\equiv2\pmod4,\quad x\equiv2\pmod7$。
-
-**推导。** 模五下 $3\cdot2=6\equiv1$，故第一式两边乘二：$x\equiv8\equiv3\pmod5$。第二式系数已为一，保留 $x\equiv2\pmod4$。模七下 $3\cdot5=15\equiv1$，故第三式两边乘五：$x\equiv30\equiv2\pmod7$。两个乘法均可逆，因为三分别与五和七互素，所以规范化系统与原系统完全等价，并未增删任何整数解。
-
-## Common Mistakes
-
-- 同一系数三在模五和模七的逆元不同，不能都乘二。
-- 无分开的原子分值，整题十分不能任意分给两个步骤。
+**Derivation/proof.** Modulo five, $3\cdot2=6\equiv1$, so multiply the first congruence by two to obtain $x\equiv8\equiv3\pmod5$. The second already has unit coefficient and remains $x\equiv2\pmod4$. Modulo seven, $3\cdot5=15\equiv1$, so multiplying the third by five gives $x\equiv30\equiv2\pmod7$. Both multiplications are invertible because three is coprime to each modulus. The normalized system is completely equivalent to the original, with no solutions gained or lost.
 
 ## Connections
 

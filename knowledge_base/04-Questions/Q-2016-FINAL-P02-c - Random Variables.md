@@ -39,26 +39,22 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-这里平方在函数外，须先展开 $(an+b)^2$，保留交叉项。二次项用 $v+m^2$，一次项用 $m$，常数项不变，最后逐项求期望。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(c) Expectation of $f(n)^2$:
+$$\begin{aligned}
+E(f(n)^2)&=\sum_{x:x\in S}p(x)(ax+b)^2\\
+&=\sum_{x:x\in S}p(x)(a^2x^2+2abx+b^2)\\
+&=a^2(v+m^2)+2abm+b^2
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E[f(n)^2]=a^2(v+m^2)+2abm+b^2$.
 
 **Derivation/proof.** Expand $f(n)^2=a^2n^2+2abn+b^2$. Taking expectations and using $E[n]=m$, $E[n^2]=v+m^2$ gives the result. As a check, subtract $(am+b)^2$ to recover $a^2v$, the variance from part (a).
-
-### 中文解答
-
-**推导。** 先展开函数值的平方：$f(n)^2=(an+b)^2=a^2n^2+2abn+b^2$。逐项取期望，代入 $E(n)=m$、$E(n^2)=v+m^2$，得 $E(f(n)^2)=a^2(v+m^2)+2abm+b^2$。验算从它减去 $(am+b)^2$，余下 $a^2v$，与上一问方差一致。
-
-## Common Mistakes
-
-- 展开平方时丢掉 $2abn$。
-- 把 $E[f(n)^2]$ 替换成 $(E[f(n)])^2$。
 
 ## Connections
 

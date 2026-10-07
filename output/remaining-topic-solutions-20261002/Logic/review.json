@@ -1,0 +1,31 @@
+{
+  "topic": "Logic",
+  "questions": 202,
+  "expected": 202,
+  "stems": 150,
+  "figures": 0,
+  "issues": [],
+  "pdf_sha256": "e8f0e05933c2580be3113d9df5996a7fc855bee264782d4d14c6a29e12941787",
+  "pages": 175,
+  "all_pages_visually_reviewed": true,
+  "visual_review_note": "All pages reviewed after first rendering fixes; final four pagination refinements reviewed at full-size with adjacent pages.",
+  "margin_outliers": [],
+  "blank_pages": [],
+  "answer_heading_counts": {
+    "Official Answer": 202,
+    "Supplementary Explanation": 202
+  },
+  "full_size_review_pages": [
+    28,
+    36,
+    37,
+    112,
+    113
+  ],
+  "resolved": [
+    "Quote-prefix artifacts removed from multiline display math",
+    "Short answer continuations now kept with their questions"
+  ],
+  "pending_fixes": [],
+  "status": "pass"
+}

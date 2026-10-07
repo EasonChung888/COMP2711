@@ -39,24 +39,18 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 (a) Let $a$ and $m$ be positive integers. Prove that no positive integer smaller than $\gcd(a,m)$ can be expressed as an integer linear combination of $a$ and $m$.
 
-## 中文解析
+## Official Answer
 
-最大公因数整除两个系数，所以也整除任何整数线性组合。正的倍数至少是最大公因数本身；这个下界不依赖两个线性系数的符号。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=18|physical PDF page 18]].
 
-## Detailed Solution
+> Answer.
+> (a) Let $d=\gcd(a,m)$. Let $y$ be a positive integer that is an integer linear combination of $a$ and $m$, that is, $y=ak+mk'$, for some integers $k$ and $k'$. By definition of gcd, we have $d\mid a$ and $d\mid m$. It follows that $d\mid ak+mk'$. Since $y=ak+mk'$ is a positive integer, it cannot be smaller than $d$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Every positive integer linear combination is at least $\gcd(a,m)$.
 
-**答案。** 正的整数线性组合均至少为 $\gcd(a,m)$。
-
-**推导。** 设 $d=\gcd(a,m)>0$。按公因数定义，存在整数 $u,v$ 使 $a=du,m=dv$。任取整数线性组合 $y=ra+sm$，其中 $r,s\in\mathbb Z$，则 $y=d(ru+sv)$，所以 $d\mid y$。若 $y>0$，整数 $ru+sv$ 必至少为一，故 $y\ge d$。因此不可能得到满足 $0<y<d$ 的整数，这正是待证结论。
-
-## Common Mistakes
-
-- 线性组合允许负系数；证明不能假定所有项均正。
-- 结论限制正整数，零确实可以由 $0a+0m$ 表示。
+**Derivation/proof.** Let $d=\gcd(a,m)>0$. There are integers $u,v$ with $a=du,m=dv$. For any integer linear combination $y=ra+sm$, with $r,s\in\mathbb Z$, we have $y=d(ru+sv)$, hence $d\mid y$. If $y>0$, the integer $ru+sv$ is at least one, giving $y\ge d$. Thus no integer with $0<y<d$ can be represented, as claimed.
 
 ## Connections
 

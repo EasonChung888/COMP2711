@@ -39,26 +39,22 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-独立随机变量经过各自的确定函数后仍然独立，因此乘积期望能分解。相同分布只用于令两个均值相同；若仅有相同分布而没有独立性，就不能直接相乘。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(d) By expected product of independent random variables, mean of $f(n)f(p)=E(f(n))E(f(p))$. Thus,
+$$\begin{aligned}
+E(f(n)f(p))&=E(f(n))E(f(p))\\&=E(f(n))E(f(n))\\&=(am+b)^2
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $E[f(n)f(p)]=(am+b)^2$.
 
 **Derivation/proof.** Independence implies $E[np]=E[n]E[p]=m^2$. Expand $(an+b)(ap+b)=a^2np+abn+abp+b^2$ and take expectations: $a^2m^2+2abm+b^2=(am+b)^2$. Equivalently, $f(n)$ and $f(p)$ are independent and each has expectation $am+b$.
 
-### 中文解答
-
-**推导。** 独立性给 $E(np)=E(n)E(p)$，同分布给二者均值皆m，所以 $E(np)=m^2$。展开 $f(n)f(p)=a^2np+abn+abp+b^2$，取期望得到 $a^2m^2+abm+abm+b^2=(am+b)^2$。这里独立性用于乘积期望分解，同分布只用于均值相同；只有后者不足以推出答案。
-
-## Common Mistakes
-
-- 只凭相同分布就把乘积期望拆开。
-- 把独立的 $p$ 当成同一个 $n$，从而多出 $a^2v$。
+Independence and equal means give $E(np)=m^2$, so the expanded expectation is $a^2m^2+abm+abm+b^2=(am+b)^2$.
 
 ## Connections
 

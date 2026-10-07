@@ -42,24 +42,18 @@ Page 12 contains a complete Solution 1 and an empty “Solution 2” heading; on
 Assume that there are 5 processing jobs that must be assigned to 3 servers.
 Use Inclusion-Exclusion to calculate how many assignments exist such that each server is assigned to at least one job? Briefly explain why.
 
-## 中文解析
+## Official Answer
 
-每个工作选一个服务器，总分配是函数；要求每台至少收到一项工作即满射。定义空服务器事件后使用容斥，避免重复删去只用一台的分配。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+> Answer: Solution 1: This is the number of onto functions from a set of 5 elements to a set of 3 elements: $3^5-\binom312^5+\binom321^5$
+> Solution 2:
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $3^5-\binom312^5+\binom321^5=150$.
 
-**答案。** $3^5-\binom312^5+\binom321^5=150$。
-
-**推导。** 五个工作各有三台服务器选择，共 $3^5=243$ 个函数。令 $A_i$ 为服务器 i 为空的分配集，则 $|A_i|=2^5$；指定两台为空时全部工作进入剩下的一台，交集大小为 $1^5=1$。三台都空不可能分配五个工作，交集为零。容斥得到满射数 $243-3\cdot32+3\cdot1=150$。每个工作与服务器都有自己的身份，所以这里数的是带标签分配而非无序分组。
-
-## Common Mistakes
-
-- 服务器有身份，不能把答案再除以三的阶乘。
-- 单独减去三个空服务器事件会重复删去双空情况，要加回来。
+**Derivation/proof.** Each of five jobs has three choices, giving $3^5=243$ functions. Let $A_i$ consist of assignments leaving server $i$ empty; then $|A_i|=2^5$. If two specified servers are empty, all jobs go to the remaining server, so the intersection has size $1^5=1$. The triple intersection is empty because five jobs cannot use no server. Inclusion-exclusion gives $243-3\cdot32+3\cdot1=150$. Jobs and servers have identities, so these are labelled assignments, not unordered partitions.
 
 ## Connections
 

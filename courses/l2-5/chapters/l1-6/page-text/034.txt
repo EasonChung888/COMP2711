@@ -1,0 +1,14 @@
+Permutations with 
+Indistinguishable
+ Objects
+How many different strings can be made by reordering the letters of the word 
+SUCCESS
+?
+Solution:
+Since some of the letters repeat in SUCCESS, so the number of permutations for 7 distinct letters is not the correct answer here. SUCCESS contains 3 S’s, 2 C’s, 1 E and 1 U. The three 
+indistinguishable
+ S’s can be placed among the 7 positions in 
+ different ways, leaving 4 positions free. Then, the two C’s can be placed in 
+ ways, leaving 2 free positions. … By the product rule, the number of different ways is 
+ 
+34

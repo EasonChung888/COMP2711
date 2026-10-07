@@ -40,38 +40,35 @@ Let the first three statements be premises and the fourth be the conclusion. Sho
 
 Shared context: [[STEM-2022-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-对任意鸟 a 临时假设它是蜂鸟，再依次推出颜色丰富、食蜜、不大。中间两次用逆否而非逆命题。最后撤销蜂鸟假设得到蕴含，并因 a 任意而做全称推广，每步注明依赖编号。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (1) $\forall x(P(x)\to S(x))$.
+> (2) $\neg\exists x(Q(x)\land R(x))$.
+> (3) $\forall x(\neg R(x)\to\neg S(x))$.
+> (4) $\forall x(P(x)\to\neg Q(x))$.
+>
+> | Step | Reason |
+> | --- | --- |
+> | (5) $\forall x(\neg Q(x)\lor\neg R(x))$ | (2) equivalence |
+> | (6) $\forall x(\neg P(x)\lor S(x))$ | (1) equivalence |
+> | (7) $\forall x(R(x)\lor\neg S(x))$ | (3) equivalence |
+> | (8) $R(a)\lor\neg S(a)$ for arbitrary $a$ | Universal instantiation using (7) |
+> | (9) $\neg P(a)\lor S(a)$ | Universal instantiation using (6) |
+> | (10) $\neg P(a)\lor R(a)$ | Resolution using (8) and (9) |
+> | (11) $\neg Q(a)\lor\neg R(a)$ | Universal instantiation using (5) |
+> | (12) $\neg P(a)\lor\neg Q(a)$ | Resolution using (10) and (11) |
+> | (13) $P(a)\to\neg Q(a)$ | (12) equivalence |
+> | (14) $\forall x(P(x)\to\neg Q(x))$ | Universal generalization using (13) |
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall x(P(x)\to\neg Q(x))$ follows.
 
 **Derivation/proof.** 1. ∀x(P(x)→S(x)) (premise). 2. ∀x(Q(x)→¬R(x)) (premise 2 by equivalence). 3. ∀x(¬R(x)→¬S(x)) (premise). 4. Take arbitrary bird a and assume P(a). 5. S(a) (1,4). 6. R(a) (3 instantiated at a, then contrapositive and 5). 7. ¬Q(a) (2 instantiated, contrapositive with 6). 8. P(a)→¬Q(a) (4–7, discharge assumption). 9. ∀x(P(x)→¬Q(x)) (8, universal generalization). The arbitrary bird a has no extra assumptions after step8.
 
-### 中文解答
-
-**推导。** 保留题目要求的依赖编号，逐步证明：
-
-1. $\forall x(P(x)\to S(x))$，前提(1)。
-2. $\forall x(Q(x)\to\neg R(x))$，前提(2)的等价式。
-3. $\forall x(\neg R(x)\to\neg S(x))$，前提(3)。
-4. 任取鸟 $a$，暂时假设 $P(a)$。
-5. $S(a)$，由(1)在 $a$ 实例化，再与(4)肯定前件。
-6. $R(a)$，由(3)实例化的逆否式 $S(a)\to R(a)$ 与(5)。
-7. $\neg Q(a)$，由(2)实例化的逆否式 $R(a)\to\neg Q(a)$ 与(6)。
-8. $P(a)\to\neg Q(a)$，解除(4)的假设，由(4)–(7)条件证明。
-9. $\forall x(P(x)\to\neg Q(x))$，由(8)全称推广。
-
-第(8)步后没有针对任意对象 $a$ 的额外未解除假设，所以最后推广合法。两次用的是等价逆否，不是未经支持的逆命题。
-
-## Common Mistakes
-
-- 把 ¬R→¬S 的逆命题当成 R→S。
-- 没有撤销个体假设就直接全称推广。
+In the supplementary proof, instantiate (1) at $a$ and use the assumption $P(a)$ to obtain $S(a)$. The next two implications are $S(a)\to R(a)$ and $R(a)\to\neg Q(a)$. After discharging the temporary assumption, apply universal generalization to (8). No undischarged special assumption about $a$ remains.
 
 ## Connections
 

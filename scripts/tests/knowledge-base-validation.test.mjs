@@ -87,14 +87,13 @@ function questionNote(overrides = {}, bodyOverride) {
 ## Question
 Show that the two propositions are equivalent.
 
-## 中文解析
-使用逻辑等价律逐步化简。
-
-## Detailed Solution
+## Official Answer
 Apply De Morgan's law and simplify both sides.
 
-## Common Mistakes
-Do not reverse an implication without justification.
+[[${values.source_pdf}#page=${values.source_page}]]
+
+## Supplementary Explanation
+Apply logical equivalence laws one step at a time. Do not reverse an implication without justification.
 
 ## Connections
 This exercise applies the standard equivalence-law method.`;

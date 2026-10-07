@@ -1,0 +1,19 @@
+Exercise
+ on Earring Selection
+Mary has 
+9 different earrings
+. Mary 
+must wear at least one earring
+. 
+Each ear has two piercings
+ for wearing an earring. It is not necessary for her to wear all the 4 earrings on her ears, e.g. she can wear one earring and leave the other 3 piercings empty. How many possible ways for Mary to wear her 9 earrings 
+if the position of the earrings matters
+? 
+Solution
+: 
+If Mary wears 4 earrings there are 9x8x7x6 permutations. 
+If Mary wears 3 earrings we must select the 3 piercings in C(4,3) ways, and permute the earrings in 9x8x7 ways. 
+If Mary wears 2 earrings we must select the 2 piercings in C(4,2) ways, and permute the earrings in 9x8 ways. 
+If Mary wears 1 earring we must select the 1 piercing in C(4,1) ways, and permute the earrings in 9 ways.
+Sum of all ways is:  C(4,3)x9x8x7 + C(4,2)x9x8 + C(4,1)x9 = 5508
+22

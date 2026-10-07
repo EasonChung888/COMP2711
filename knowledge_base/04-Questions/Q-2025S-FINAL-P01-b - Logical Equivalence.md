@@ -39,24 +39,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Fin
 (b) [2 pts] Prove or disprove the following statement. In order to prove, you must use propositional laws. In order to disprove, you need to come up with values that this statement is false.
 $$ (x\lor y\lor\neg z)\land(\neg x\lor y\lor z)\equiv\neg y\to(x\leftrightarrow z) $$
 
-## 中文解析
+## Official Answer
 
-两边都可以化为 $y\lor(x\leftrightarrow z)$，关键是先提出公共的 $y$。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Final.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(b) $(x\lor y\lor\neg z)\land(\neg x\lor y\lor z)\equiv y\lor((x\lor\neg z)\land(\neg x\lor z))\equiv y\lor((z\to x)\land(x\to z))\equiv y\lor(x\leftrightarrow z)\equiv\neg y\to(x\leftrightarrow z)$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** The equivalence holds.
 
-**答案。** 等价成立。
-
-**推导。** 利用交换律与分配律，左式化为 $y\lor((x\lor\neg z)\land(\neg x\lor z))$。其中 $x\lor\neg z\equiv z\to x$，$\neg x\lor z\equiv x\to z$，两蕴含合取即 $x\leftrightarrow z$，故左式为 $y\lor(x\leftrightarrow z)$。右式用 implication law 为 $\neg(\neg y)\lor(x\leftrightarrow z)=y\lor(x\leftrightarrow z)$。两式经逻辑律变成相同式子，因此等价。
-
-## Common Mistakes
-
-- 不能把双条件当作单向蕴含，否则会遗漏其中一个限制。
-- 右边前件已经是否定 $y$，消去蕴含后得到正的 $y$。
+**Derivation/proof.** Commutativity and distributivity transform the left side into $y\lor((x\lor\neg z)\land(\neg x\lor z))$. Here $x\lor\neg z\equiv z\to x$ and $\neg x\lor z\equiv x\to z$; their conjunction is the biconditional, giving $y\lor(x\leftrightarrow z)$. By the implication law the right side is $\neg(\neg y)\lor(x\leftrightarrow z)=y\lor(x\leftrightarrow z)$. Both sides therefore have the same expression by propositional laws.
 
 ## Connections
 

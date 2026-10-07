@@ -38,30 +38,23 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-BONUS - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-若只假设不超过 C 乘二的 n 次方，递推额外加 n 会超出目标。加强为减去 $n+2$ 的形式后，负的一次项恰好吸收新增成本；这里甚至可证明精确通项，再用固定常数二得到大 O。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+We will show that $f(n)\le2\cdot2^n-n-2$.
+Base case: When $n=1$, $f(n)=1\le2\cdot2^1-1-2$.
+Induction step: Assuming $f_{n-1}\le2\cdot2^{n-1}-(n-1)-2$, we will prove $f_n\le2\cdot2^n-n-2$:
+$$\begin{aligned}f_n&=2f_{n-1}+n\\&\le2(2\cdot2^{n-1}-(n-1)-2)+n\quad\text{(induction hypothesis)}\\&=2\cdot2^n-n-2.\end{aligned}$$
+Comment: It is impossible to prove $f_n\le c\cdot2^n$ by induction, no matter how you choose the constant $c$. Interestingly, and somehow counter-intuitively, it is possible to prove the stronger claim $f(n)\le c\cdot2^n-n-2$. Fundamentally, this is because a stronger claim will also make the induction hypothesis stronger, which sometimes makes the induction step easier to go through. This technique is known as “strengthening the induction hypothesis”.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 17. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $f_n=2^{n+1}-n-2\le2\cdot2^n$, so $f_n=O(2^n)$.
 
 **Derivation/proof.** Prove the stronger exact identity by induction. At n=1, $2^2-1-2=1=f_1$. Assume $f_{n-1}=2^n-(n-1)-2$. Then $f_n=2[2^n-(n-1)-2]+n=2^{n+1}-n-2$. Thus the identity holds for all $n\ge1$, and immediately gives the fixed bound $f_n\le2\cdot2^n$. Equivalently, the source's strengthened inequality $f_n\le2\cdot2^n-n-2$ propagates by the same algebra. Directly iterating the recurrence verifies its first values $1,4,11,26$, matching the formula.
 
-### 中文解答
-
-**推导。** 强化为精确恒等式 $f_n=2^{n+1}-n-2$ 并归纳。基例 $n=1$ 时右边 $4-1-2=1=f_1$。假设 $f_{n-1}=2^n-(n-1)-2$，则
-
-$$f_n=2f_{n-1}+n=2(2^n-(n-1)-2)+n=2^{n+1}-n-2.$$
-
-因此对所有 $n\ge1$ 恒等式成立。递推产生的 $f_n$ 为正，且 $f_n\le2\cdot2^n$，于是用固定常数 $C=2$、阈值 $n_0=1$ 得 $f(n)=O(2^n)$。同样代数也证明印本的强化不等式。前四值 $1,4,11,26$ 同时吻合递推与公式，作额外核对。
-
-## Common Mistakes
-
-- 使用未加强的归纳假设后把多出的 n 丢掉。
-- 把常数 C 随着 n 改变而仍称为固定界。
+The first four values $1,4,11,26$ satisfy both the recurrence and formula. Positivity together with $f_n\le2\cdot2^n$ gives fixed constant $C=2$ and threshold $n_0=1$.
 
 ## Connections
 

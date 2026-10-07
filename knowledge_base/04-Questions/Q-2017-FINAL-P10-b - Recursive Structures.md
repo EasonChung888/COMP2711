@@ -38,26 +38,28 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-性质应沿所有生成方式保持。基例零零成立后，把三条规则统一写成第一坐标增加 j，其中 j 为零到二；第一坐标最多加二，右边因为第二坐标加一也增加二，所以不等式保持。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+Inductive Hypothesis: $P(a,b):a\le2b$ whenever $(a,b)\in S$.
+Basis Step: $P(0,0):0\le0$.
+Recursive Step:
+$a\le2b$ (inductive hypothesis).
+$a\le2b\le2b+2\le2(b+1)$.
+$P(a,b+1)$ is true.
+$a\le2b$ (inductive hypothesis).
+$a+1\le a+2\le2b+2\le2(b+1)$.
+$P(a+1,b+1)$ is true.
+$a\le2b$ (inductive hypothesis).
+$a+2\le2b+2\le2(b+1)$.
+$P(a+2,b+1)$ is true.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Every generated pair satisfies $a\le2b$.
 
 **Derivation/proof.** The basis pair satisfies $0\le2\cdot0$. Suppose $(a,b)$ satisfies $a\le2b$. Every constructor produces $(a+j,b+1)$ for $j\in\{0,1,2\}$. Then $a+j\le2b+2=2(b+1)$. Thus every constructor preserves the invariant. Since $S$ contains only pairs finitely generated from the basis, structural induction proves the claim.
-
-### 中文解答
-
-**推导。** 基础 $(0,0)$ 满足 $0\le2\cdot0$。设已生成的 $(a,b)$ 满足 $a\le2b$，三种构造结果统一写为 $(a+j,b+1)$，其中 $j\in\{0,1,2\}$。则 $a+j\le2b+2=2(b+1)$，因此每条规则都保留性质。由于 $S$ 只含从基础有限次应用这些规则产生的元素，结构归纳证明每个 $(a,b)\in S$ 均有 $a\le2b$。
-
-## Common Mistakes
-
-- 只验证增加二的具体数值例子而未给一般归纳。
-- 假设所有整数对都来自递归集合。
 
 ## Connections
 

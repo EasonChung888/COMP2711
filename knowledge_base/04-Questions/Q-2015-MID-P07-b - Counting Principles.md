@@ -41,26 +41,19 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-将所有券按面值排序后，最低资历等级必须拿最小的 $k$ 张，下一等级拿接下来的 $k$ 张。每个等级获得哪一组券已经确定，只剩等级内部成员之间的分配。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=12|PDF physical page 12]].
 
-## Detailed Solution
+(b) $(k!)^n$. The value of each cash coupon given to a person at the lowest rank should be less than the value of any cash coupon given to a person in the second lowest rank, and so on. Therefore, once sorted, the $k$ coupons distributed to each rank are fixed. Within each rank, there are $k!$ ways to distribute the $k$ cash coupons to the $k$ members. By the product principle, the answer is $(k!)^n$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $(k!)^n$.
 
 **Derivation/proof.** If a lower rank received a coupon above any coupon at a higher rank, a complaint would occur. Hence the sorted coupons must split into $n$ consecutive blocks of $k$, assigned in rank order. Each block can be bijected to its $k$ distinct members in $k!$ ways. Multiply across ranks.
 
-### 中文解答
-
-**推导。** 将券按价值递增排序。无投诉要求低资历的任何券都小于高资历的任何券；若两个等级有逆序券，那个较资深成员立即投诉。因此最低等级必须取得最小 k 张，下一等级取接着 k 张，依次确定 n 个连续块。每块内部可任意分给该等级 k 个不同成员，有 $k!$ 种。各等级乘积为 $(k!)^n$。
-
-## Common Mistakes
-
-- 再乘 $n!$，使已被资历固定的券组顺序重复变化。
-- 误要求同一等级内部也按某种顺序分配。
+The lowest rank must receive the smallest $k$ coupons; repeating this argument fixes every later block.
 
 ## Connections
 

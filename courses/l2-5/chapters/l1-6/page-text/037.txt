@@ -1,0 +1,58 @@
+Distributing Objects into Boxes
+Many counting problems can be solved by enumerating the different ways objects can be placed into boxes where the order these objects are placed into the boxes does not matter.
+The objects and the boxes can be either 
+Distinguishable
+ (labeled) or 
+Indistinguishable
+ 
+(unlabeled).
+Examples: 
+D
+-
+D
+: How many ways to place 
+n
+ 
+labeled objects
+ in 
+m
+ 
+labeled
+ 
+boxes
+D
+-
+I
+: How many ways to place 
+n
+ 
+labeled objects
+ in 
+m
+ 
+unlabeled boxes
+I
+-
+D
+: How many ways to place 
+n
+ 
+unlabeled objects
+ in 
+m
+ 
+labeled boxes
+I
+-
+I
+: How many ways to place 
+n
+ 
+unlabeled objects
+ in 
+m
+ 
+unlabeled
+ 
+boxes
+37

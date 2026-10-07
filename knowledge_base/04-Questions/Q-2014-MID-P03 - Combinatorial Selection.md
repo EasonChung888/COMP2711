@@ -39,26 +39,23 @@ Give a combinatorial proof of the identity, for all $n\ge13$.
 $$\binom n4\binom{n-4}6\binom{n-10}3=\binom n6\binom{n-6}3\binom{n-9}4.$$
 Note: An algebraic proof of this identity will not be accepted as a solution.
 
-## 中文解析
+## Official Answer
 
-组合证明要定义一个共同的被计数集合。本题不同的选择顺序只是构造同一四色标记的方法不同。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=5|PDF physical page 5]].
 
-## Detailed Solution
+Consider the problem of “how to color $n$ items so that 4 are red, 6 are green, 3 are blue and the remaining $n-13$ are yellow.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+The left hand side of the inequality obviously counts this. Notice that the problem is the same if we change the order in which we ask the question.
+
+Consider the problem of how to color $n$ items so that 6 are green, 3 are blue, 4 are red and the remaining $n-13$ are yellow. This is what the right hand side of the equation is counting, so the two sides are the same.
+
+## Supplementary Explanation
 
 **Answer.** Both sides count colourings with 4 red, 6 green, 3 blue, and $n-13$ yellow items.
 
 **Derivation/proof.** On the left choose red then green then blue; on the right choose green then blue then red. Each procedure selects exactly the same labelled colour assignment, so the counts agree.
 
-### 中文解答
-
-**推导。** 共同计数对象是 n 个不同物品的着色：四个红、六个绿、三个蓝，其余 n−13 个黄。先选红再选绿最后选蓝时，数目为 $\binom n4\binom{n-4}6\binom{n-10}3$。若改为先绿、再蓝、最后红，则为 $\binom n6\binom{n-6}3\binom{n-9}4$。每个最终着色在两种过程各出现恰一次，故两边相等；$n\ge13$ 保证所有组容量合法。
-
-## Common Mistakes
-
-- 把剩余的 $n-13$ 个物品遗漏而没有说明黄色。
-- 使用阶乘展开，这不满足组合证明要求。
+The two orders give $\binom n4\binom{n-4}6\binom{n-10}3$ and $\binom n6\binom{n-6}3\binom{n-9}4$. Every final colouring occurs exactly once in each process; $n\ge13$ ensures all selections are possible.
 
 ## Connections
 

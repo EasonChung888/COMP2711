@@ -41,24 +41,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (ii) The set of functions from $\mathbb N\to\mathbb N$ is uncountable infinite.
 
-## 中文解析
+## Official Answer
 
-假设函数可以逐个列出，在对角输入上把输出加一制造遗漏函数。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (c) (ii) T
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** True.
 
-**答案。** True。
-
-**推导。** 反设所有函数可列为 $f_0,f_1,\ldots$，构造 $g(n)=f_n(n)+1$。由于自然数对后继封闭，$g$ 仍是自然数到自然数的函数；但对每个 $n$，有 $g(n)\ne f_n(n)$，故 $g\ne f_n$。它遗漏在声称完整的列表之外，产生矛盾。因此该函数集合不可数无限。
-
-## Common Mistakes
-
-- 定义域和值域各自可数不表示函数集合可数，函数需无限多个取值。
-- 对角函数的每个输出必须仍在自然数域内，使用加一保证这一点。
+**Derivation/proof.** Suppose all functions can be listed as $f_0,f_1,\ldots$. Define $g(n)=f_n(n)+1$. Successor closure ensures g is still a function from natural numbers to natural numbers, but $g(n)\ne f_n(n)$ for each n, so $g\ne f_n$. Thus g is absent from the supposedly complete list, a contradiction.
 
 ## Connections
 

@@ -35,26 +35,22 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 a) Let $f_1(x),f_2(x),g(x)$ be functions from the set of real numbers to the set of positive real numbers. If $f_1(x)$ and $f_2(x)$ are both $\Theta(g(x))$, then $f_1(x)+f_2(x)$ is also $\Theta(g(x))$.
 
-## 中文解析
+## Official Answer
 
-Theta 同时要求上下界。分别写出两函数与 g 的上下夹逼，在两个阈值都满足之后把对应不等式相加，便得到新的正数上下界常数；这里函数为正，避免了相互抵消。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+This is true. There exist positive constraints $C_1,C'_1,C_2,C'_2,k_1,k'_1,k_2,k'_2$, such that $f_1(x)\ge C_1g(x)$ for all $x>k_1$, $f_1(x)\le C'_1g(x)$ for all $x>k'_1$, $f_2(x)\ge C_2g(x)$ for all $x>k_2$, and $f_2(x)\le C'_2g(x)$ for all $x>k'_2$.
+Adding the first and third inequality, we get that $f_1(x)+f_2(x)\ge(C_1+C_2)g(x)$ for all $x>\max\{k_1,k_2\}$.
+Adding the second and fourth inequality, we get that $f_1(x)+f_2(x)\le(C'_1+C'_2)g(x)$ for all $x>\max\{k'_1,k'_2\}$.
+Hence $f_1(x)+f_2(x)$ is $\Theta(g(x))$ with constraints $(C_1+C_2),(C'_1+C'_2),\max\{k_1,k_2\},\max\{k'_1,k'_2\}$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 17. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** True.
 
 **Derivation/proof.** There are positive constants $a_i,b_i$ and thresholds $N_i$ with $a_ig(x)\le f_i(x)\le b_ig(x)$ for $x\ge N_i$, for $i=1,2$. For $x\ge\max(N_1,N_2)$, addition yields $(a_1+a_2)g(x)\le f_1(x)+f_2(x)\le(b_1+b_2)g(x)$. Both new constants are positive and independent of $x$, proving the required $\Theta$ bound.
 
-### 中文解答
-
-**推导。** 命题为真。由两项分别为 $\Theta(g)$，存在正数 $a_i,b_i$ 及阈值 $N_i$，使 $x\ge N_i$ 时 $a_i g(x)\le f_i(x)\le b_i g(x)$（$i=1,2$）。取共同阈值 $N=\max(N_1,N_2)$ 后同时相加，得 $(a_1+a_2)g(x)\le f_1(x)+f_2(x)\le(b_1+b_2)g(x)$。两个新常数皆正且不依赖 $x$，所以符合 $\Theta$ 的上下界定义。正值条件也排除了正负相消问题。
-
-## Common Mistakes
-
-- 只给大 O 上界却声称已证 Theta。
-- 用依赖 x 的量作常数。
+Choose $N=\max(N_1,N_2)$ so that both asymptotic inequalities hold simultaneously. Beyond that threshold their constants can be combined to prove the asserted bound.
 
 ## Connections
 

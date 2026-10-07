@@ -38,26 +38,21 @@ Show that the number of weightings is at most $2\log_3n$.
 
 Shared context: [[STEM-2021-FINAL1-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-每层最多称两次，并且只在含异常币的三分之一组里继续，不会递归三个组。n 是三的幂，所以缩小到一恰好经过 log₃n 层；每层两次给出上界。还需说明比较结果为何能正确定位那个组。
+Source: [[knowledge_base/past_paper/2021-final-part-1.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> In each recursive call, it takes at most 2 comparisons and the input size are reduced to one-third of the parent. So, the number of comparisons is at most $2\log_3n=O(\log n)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** At most $2\log_3n$ weighings.
 
 **Derivation/proof.** At a nontrivial call, at most two balance comparisons determine the unique group containing the odd coin. Equal A,B means C contains it; unequal A,B and equal B,C means A; if both comparisons differ, B contains it. Only that group, of size |S|/3, is recursed into. For n=3^k there are exactly k nontrivial size levels before size one, whose case uses no weighing. Hence total comparisons ≤2k=2log3 n. This also establishes why only one branch is followed.
 
-### 中文解答
+If both comparisons differ, the odd coin is in $B$: an odd coin in $A$ would leave $B,C$ balanced, and an odd coin in $C$ would leave $A,B$ balanced. This reasoning does not require knowing whether the coin is heavier or lighter. The successive sizes are $3^k,3^{k-1},\ldots,3,1$.
 
-**推导。** 在含唯一异常币的当前集合中，三个等大小组若 $A,B$ 平衡，异常币必在 $C$；否则若 $B,C$ 平衡，它必在 $A$；若两次比较都不平衡，则它只能在两次都参与的 $B$，因为异常在 $A$ 会令 $B,C$ 平衡，异常在 $C$ 会令 $A,B$ 平衡。这不需预知异常币偏重还是偏轻。每个非终止调用至多称两次，然后只递归一个大小为原来三分之一的组。写 $n=3^k$，大小依次为 $3^k,3^{k-1},\ldots,3,1$，恰有 $k$ 个非终止层；单币层不称重。所以总次数至多 $2k=2\log_3n$，而不是因三分组就递归三个分支。
-
-## Common Mistakes
-
-- 把三组都递归导致错误乘三。
-- 把终止的单币层也加两次称量。
+Thus the weighing bound is $2k=2\log_3n$.
 
 ## Connections
 

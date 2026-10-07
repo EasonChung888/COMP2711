@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 $$\exists y[P(y)\to\forall xQ(x)]$$
 $$\exists yP(y)\to\forall xQ(x)$$
 
-## 中文解析
+## Official Answer
 
-第一式可选择一个不满足 P 的元素，使蕴含为真。第二式的前件只要有一个满足 P 的元素就为真，因此真假分布混合的两点论域能区分它们。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> (c) These two statements are obviously not equivalent. Consider this scenario, Imagine having $\{a,b\}$ in our domain. Assume $P(a)=T,P(b)=F,Q(a)=T,Q(b)=F$. The top statement is True. Because $P(b)=F$ which makes the top statement True. However the bottom statement becomes False.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Not equivalent.
 
-**答案。** 不等价。
-
-**推导。** 取论域 $\{a,b\}$，规定 $P(a)=T,P(b)=F,Q(a)=T,Q(b)=F$。由于 $Q(b)=F$，$\forall xQ(x)=F$。第一式可选 $y=b$，此时 $P(b)\to\forall xQ(x)=F\to F=T$，所以存在式真。第二式因为 $P(a)=T$ 而有 $\exists yP(y)=T$，于是整个蕴含为 $T\to F=F$。同一解释给出不同真值，故两式不等价。
-
-## Common Mistakes
-
-- 不能把量词越过蕴含前件时原样保留；这会改变命题意义。
-- 需要同时存在 P 的真例与假例，单元素论域不能展示这里的区别。
+**Derivation/proof.** Use domain $\{a,b\}$ with $P(a)=T,P(b)=F,Q(a)=T,Q(b)=F$. Since $Q(b)=F$, $\forall xQ(x)=F$. For the first expression choose $y=b$, giving $P(b)\to\forall xQ(x)=F\to F=T$, so its existential claim is true. In the second, $P(a)=T$ makes $\exists yP(y)=T$, and the implication is $T\to F=F$. One interpretation gives different truth values, proving non-equivalence.
 
 ## Connections
 

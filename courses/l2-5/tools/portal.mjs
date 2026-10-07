@@ -40,29 +40,40 @@ function moduleCard(m) {
 }
 
 // Counting's URLs, key names and visible L1.5 chapter label remain unchanged.
-export function buildPortal(config, questionCount, pageCount) {
+export function buildPortal(config, questionCount, pageCount, {onlyCounting=false}={}) {
   const modules=catalog.map(m=>({...m,chapters:m.chapters.map(chapterData)}));
   const chapters=modules.flatMap(m=>m.chapters);
   const oldIds=config.topics.map(t=>t.slug).join(' ');
   const oldPaths=config.topics.map(t=>`lessons/${t.slug}.html`);
   const oldKeys=config.topics.map(t=>`comp2711:l2-5:lesson-complete:${t.slug}`);
+  const countingChapters = [['l1-6','L1.6',51],['l1-7','L1.7',41]]
+    .filter(([id]) => fs.existsSync(path.join(root,'chapters',id,'course.config.json')))
+    .map(chapterData);
+  const countingPaths = [...oldPaths,...countingChapters.flatMap(c=>c.paths)];
+  const countingKeys = [...oldKeys,...countingChapters.flatMap(c=>c.keys)];
+  const extraQuestions = countingChapters.reduce((n,c)=>{
+    const file=path.join(root,'chapters',c.id,'practice.json');
+    return n+(fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).length:0);
+  },0);
   const newPaths=chapters.flatMap(c=>c.paths);
-  const allPaths=[...newPaths,...oldPaths];
-  const allKeys=[...chapters.flatMap(c=>c.keys),...oldKeys];
+  const allPaths=[...newPaths,...countingPaths];
+  const allKeys=[...chapters.flatMap(c=>c.keys),...countingKeys];
   const counts=`${pageCount} 页讲解 · ${config.topics.length} 课 · ${questionCount} 道真题`;
-  const countingCard=a('counting.html',`<div><h3>Counting</h3><p>计数</p><p class="module-description">从基础计数法则到鸽巢原理，逐步理解如何计数与证明。</p><p class="portal-meta">1 个章节 · ${counts}</p></div><span class="entry-action">进入模块 <span aria-hidden="true">→</span></span>`,' class="module-entry"');
+  const countingCounts=`${pageCount+countingChapters.reduce((n,c)=>n+c.pages,0)} 页讲解 · ${countingKeys.length} 课 · ${questionCount+extraQuestions} 道真题`;
+  const countingCard=a('counting.html',`<div><h3>Counting</h3><p>计数</p><p class="module-description">学习计数法则、排列组合、分配模型与组合恒等式。</p><p class="portal-meta">${1+countingChapters.length} 个章节 · ${countingCounts}</p></div><span class="entry-action">进入模块 <span aria-hidden="true">→</span></span>`,' class="module-entry"');
   const home=`<header class="home-header"><h1>COMP2711</h1><p class="lead">按模块学习离散数学。<br>从课件讲解到真题练习，在这里继续你的课程。</p><div class="home-actions">${resume(allPaths,chapters[0].href,oldIds,newPaths[0]||chapters[0].href)}<a href="#modules">浏览课程模块</a></div><p class="portal-meta">${progress(allKeys,oldIds)}</p></header><section id="modules" aria-labelledby="modules-heading"><h2 id="modules-heading">课程模块</h2>${modules.map(moduleCard).join('')}${countingCard}</section>`;
   fs.writeFileSync(path.join(root,'index.html'),shell('COMP2711',home,0,'site'));
 
   for(const m of modules) {
+    if (onlyCounting) continue;
     const paths=m.chapters.flatMap(c=>c.paths), keys=m.chapters.flatMap(c=>c.keys);
     const body=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="index.html">COMP2711</a><span aria-hidden="true"> / </span><span aria-current="page">${m.name}</span></nav><header class="home-header"><h1>${m.name}</h1><p class="lead">${m.description}</p><div class="home-actions">${resume(paths,m.chapters[0].href)}<a href="#chapters">浏览章节</a></div><p class="portal-meta">${progress(keys)}</p></header><section id="chapters" aria-labelledby="chapters-heading"><h2 id="chapters-heading">学习章节</h2>${m.chapters.map(chapterCard).join('')}</section>`;
     fs.writeFileSync(path.join(root,m.file),shell(m.name,body,0,'module',{href:m.file,label:m.name}));
   }
 
-  const oldResume=a(oldPaths[0],'开始学习',` class="button" data-resume data-resume-topics="${esc(oldIds)}"`);
-  const oldProgress=`<span data-progress-topics="${esc(oldIds)}">已学完 0 / ${config.topics.length} 课</span>`;
+  const oldResume=resume(countingPaths,'counting.html',oldIds,oldPaths[0]);
+  const oldProgress=progress(countingKeys,oldIds);
   const counting=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="index.html">COMP2711</a><span aria-hidden="true"> / </span><span aria-current="page">Counting</span></nav><header class="home-header"><h1>Counting</h1><p class="lead">计数：从“有多少种可能”，到“为什么一定存在”。</p><div class="home-actions">${oldResume}<a href="#chapters">浏览章节</a></div><p class="portal-meta">${oldProgress}</p></header>
-<section id="chapters" aria-labelledby="chapters-heading"><h2 id="chapters-heading">学习章节</h2><a class="module-entry" href="l2-5.html"><div><h3>L1.5 · 计数基础</h3><p class="module-description">Basics of Counting</p><p>乘法与加法法则、函数与子集、补集计数、树形图与鸽巢原理。</p><p class="portal-meta">${counts}</p></div><span class="entry-action">进入章节 <span aria-hidden="true">→</span></span></a></section>`;
+<section id="chapters" aria-labelledby="chapters-heading"><h2 id="chapters-heading">学习章节</h2><a class="module-entry" href="l2-5.html"><div><h3>L1.5 · 计数基础</h3><p class="module-description">Basics of Counting</p><p>乘法与加法法则、函数与子集、补集计数、树形图与鸽巢原理。</p><p class="portal-meta">${counts}</p></div><span class="entry-action">进入章节 <span aria-hidden="true">→</span></span></a>${countingChapters.map(chapterCard).join('')}</section>`;
   fs.writeFileSync(path.join(root,'counting.html'),shell('Counting',counting,0,'module'));
 }

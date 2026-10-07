@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P02 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-若前两个双条件都真，就有 $p,q,r$ 的真值全部相同，因而 $p\leftrightarrow r$ 为真；最后的否定反而为假。若前两个双条件有一个假，整个合取也假。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> Answer. (d) F
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** F.
 
-**答案。** F
-
-**推导。** 若前两个双条件都真，就有 $p,q,r$ 的真值全部相同，因而 $p\leftrightarrow r$ 为真；最后的否定反而为假。若前两个双条件有一个假，整个合取也假。两类情况穷尽全部赋值，因此公式恒假，分类为 $F$。
-
-## Common Mistakes
-
-- 前两个双条件强迫 p 与 r 同真值，第三条件要求相反，不能同时满足。
-- 同一次赋值里三个条件互相制约，不能为每个条件单独挑选不同取值。
+**Derivation/proof.** If the first two biconditionals hold, $p,q,r$ all have the same truth value. Then $p\leftrightarrow r$ is true, and the final negation is false. If either of the first two biconditionals is false, the whole conjunction is false already. These two cases exhaust all assignments, so the formula is always false and is classified $F$.
 
 ## Connections
 

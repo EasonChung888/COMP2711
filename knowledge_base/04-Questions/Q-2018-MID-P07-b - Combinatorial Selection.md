@@ -37,26 +37,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-至少一男一女的反面是全男或全女。因为委员会有五个人，全男与全女不可能同时发生，所以这两个坏情况互斥；从全部委员会中分别减去即可，不需要额外加回交集。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+There are $C(11,5)=462$ ways to form a committee entirely from men and $C(9,5)=126$ ways to form a committee entirely from women. Note that no committee can consist entirely of women and entirely of men at the same time. Therefore the correct answer is $C(20,5)-C(11,5)-C(9,5)=14916$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\binom{20}{5}-\binom{11}{5}-\binom95=14916$.
 
 **Derivation/proof.** Among all 15504 committees, the forbidden ones are all male, counted by $\binom{11}{5}=462$, or all female, counted by $\binom95=126$. No nonempty committee belongs to both forbidden cases. Therefore subtract each once: $15504-462-126=14916$.
-
-### 中文解答
-
-**推导。** 从所有 $\binom{20}{5}=15504$ 个委员会中减去全男性与全女性。全男性有 $\binom{11}{5}=462$，全女性有 $\binom95=126$；五人委员会非空，不能同时属于两类，所以二者互斥。所求为 $15504-462-126=14916$，即 $\binom{20}{5}-\binom{11}{5}-\binom95$。余下恰好每种性别至少一人。
-
-## Common Mistakes
-
-- 只减全男而漏掉全女。
-- 先指定一男一女造成同一委员会重复计数。
 
 ## Connections
 

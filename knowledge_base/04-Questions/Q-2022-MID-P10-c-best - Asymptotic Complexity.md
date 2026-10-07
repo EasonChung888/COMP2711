@@ -37,26 +37,19 @@ Determine the best-case running time using the $\Theta$ notation.
 
 Shared context: [[STEM-2022-MID-P10-c - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把目标设成第一次四分位探测的位置，立即匹配并返回，所需操作数与 n 无关。探测点不是中位数只影响持续搜索时的缩小比例，不影响一次就命中的最好情况。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (c) The best-case running time is $\Theta(1)$. Since each iteration reduces $j-i$ by $1/4$, the worst-case running time is $\Theta(\log_{3/4}\frac1n)=\Theta(\log n)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\Theta(1)$.
 
 **Derivation/proof.** The first probe is m=floor(3/4+n/4) with i=1,j=n. Choose x=a_m. The equality branch returns at that first iteration, after only constant initialization and arithmetic. The position being a quartile rather than the median does not prevent an immediate successful match, so the best case is constant.
 
-### 中文解答
-
-**推导。** 初始 $i=1,j=n$，第一次探测下标为 $m=\lfloor3/4+n/4\rfloor$。在有序列表中选目标 $x=a_m$，相等判断立即返回，只执行常数次初始化、下标运算和比较。因此最好时间为 $\Theta(1)$。四分位而非中位数的选择影响后续递归比例，不影响这次立即命中的合法最好输入。
-
-## Common Mistakes
-
-- 把四分位探测误判为至少四次比较。
-- 忽略相等分支的立即返回。
+The first probe is $m=\lfloor3/4+n/4\rfloor$; choose $x=a_m$.
 
 ## Connections
 

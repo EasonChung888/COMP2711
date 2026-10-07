@@ -38,26 +38,24 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-带余除法的两层表示可直接合并；第一层的 $mn$ 项当然也被 $n$ 整除。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(a) This is true. According to Euclid's Division Theorem, there exist $q_1$ and $r_1$ such that
+$$a=q_1mn+r_1,\quad0\le r_1<mn,$$
+where $r_1=(a\bmod mn)$. Similarly, there exist $q_2$ and $r_2$ such that
+$$r_1=q_2n+r_2,\quad0\le r_2<n,$$
+where $r_2=r_1\bmod n=(a\bmod mn)\bmod n$. Combining the two equations, we get
+$$a=(q_1m+q_2)n+r_2,\quad0\le r_2<n.$$
+Hence, $a\bmod n=r_2$. Consequently,
+$$(a\bmod mn)\bmod n=r_2=a\bmod n.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** True.
 
 **Derivation/proof.** Write $a=q_1mn+r_1$ with $r_1=a\bmod mn$, then $r_1=q_2n+r_2$ with $r_2=r_1\bmod n$. Thus $a=(q_1m+q_2)n+r_2$ and $0\le r_2<n$, so $r_2=a\bmod n$.
-
-### 中文解答
-
-**推导。** 由带余除法，令 $a=q_1mn+r_1$，再令 $r_1=q_2n+r_2$，其中 $0\le r_2<n$。代入得 $a=(q_1m+q_2)n+r_2$。此式中 r₂ 已落在合法余数区间，因此 $a\bmod n=r_2=(a\bmod mn)\bmod n$，原命题为真。
-
-## Common Mistakes
-
-- 认为需 $m,n$ 互素。
-- 不检查第二个余数范围。
 
 ## Connections
 

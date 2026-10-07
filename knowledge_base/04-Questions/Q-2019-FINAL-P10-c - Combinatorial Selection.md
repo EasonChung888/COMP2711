@@ -38,26 +38,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-两个变量各预留九，总共用十八，剩两单位可分给三个非负变量。隔板法给六；也可把两单位集中在一项或分散到两项，分别三种，独立核对总数。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+Same concept as part (b). The answer is $C(2+3-1,3-1)=C(4,2)=6$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $6$.
 
 **Derivation/proof.** Write $y_1=x_1-9,y_2=x_2-9$. Then $y_1+y_2+x_3=20-18=2$ with all variables nonnegative. Its number of solutions is $\binom42=6$. Equivalently the possibilities distribute two units as one coordinate 2 (three choices) or two coordinates 1 (three choices).
 
-### 中文解答
+As a separate enumeration, two units may both occupy one coordinate in three ways or occupy two distinct coordinates in three ways, giving six.
 
-**推导。** 设 $y_1=x_1-9$、$y_2=x_2-9$，则三变量非负且满足 $y_1+y_2+x_3=20-18=2$。解数为 $\binom{2+3-1}{3-1}=\binom42=6$。也可核对：把两单位都给某一坐标有三种，把一单位分别给两个坐标也有三种，共六种。
-
-## Common Mistakes
-
-- 把两个下界只减一次九。
-- 把剩余第三变量也要求至少九。
+The allowed residual cases give six possibilities. Enumerating those cases separately is valid because the cases have different occupancy vectors and therefore do not overlap.
 
 ## Connections
 

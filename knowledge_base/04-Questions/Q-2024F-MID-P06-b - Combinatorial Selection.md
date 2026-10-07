@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P06 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-严格递增要求六个不同数字按升序排列。如果包含零，它作为最小数字一定位于最左，与六位数首位不能零冲突，因此只能使用一至九。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+> (b) Similar to part (a), but we cant pick 0 because then it has to be the leftmost digit which is impossible. So the answer is $\binom96$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom96=84$.
 
-**答案。** $\binom96=84$。
-
-**推导。** 严格递增要求六个不同数字按升序排列。如果包含零，它作为最小数字一定位于最左，与六位数首位不能零冲突，因此只能使用一至九。从九个非零数字选六个，有 $\binom96=84$ 种。每个选集恰有一种严格升序排列，且全部首位非零，所以无需再乘六的阶乘。
-
-## Common Mistakes
-
-- 只要选零它就被迫成为首位，因此所有选集必须来自一至九。
-- 严格递增不允许重复，不能用带重复组合的隔板公式。
+**Derivation/proof.** Strict increase requires six distinct digits in ascending order. If zero were selected, it would be the smallest digit and therefore the leading digit, which is forbidden. Thus choose six digits from one through nine, in $\binom96=84$ ways. Each chosen set has exactly one increasing arrangement and a nonzero first digit, so no factorial multiplier is needed.
 
 ## Connections
 

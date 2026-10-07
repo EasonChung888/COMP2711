@@ -1,0 +1,31 @@
+Exercise
+ on Group Selection
+There are 
+7
+ boys and 
+5
+ girls in a class. We want to form a 
+4
+-person group from these 12 people, so that there is 
+at least 1 girl
+ in the group. In how many ways can the 4-person group be chosen?
+Solution:
+Select without any constraint C(12,4)=495.
+Select only boys C(7,4)=35. 
+Select at least one girl: C(12,4)- C(7,4)=460.
+Alternative
+ 
+Solution:
+ The group may contain:
+4 girls in C(5,4)=5 ways, or 
+3 girls and 1 boy in C(5,3)
+xC
+(7,1)=10x7=70 ways, or
+2 girls and 2 boys in C(5,2)
+xC
+(7,2)=10x210=210 ways, or
+1 girl and 3 boys in C(5,1)
+xC
+(7,3) = 5x35 = 175 ways. 
+The sum of all ways is 460.
+20

@@ -1,0 +1,16 @@
+Example
+What is the 
+constant
+ term in the expansion of 
+?
+Solution:
+We need the Binomial expansion term 
+ to produce a constant. We rewrite as: 
+ 
+For the power of 
+ to be 0 in the constant term it must: 
+Therefore, the constant is 
+.
+    
+ 
+11

@@ -40,26 +40,22 @@ Prerequisite context (editorial): [[Q-2020-FINAL2-P04-a-decision - Euler Trails]
 
 Shared context: [[STEM-2020-FINAL2-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-四个奇度点至少需要两条边，因为一条边只能改变两个端点的奇偶性。加入 H-F 与 E-G 恰好两两配对奇点，且不会产生重边；所有度数变偶数后，原本的连通性仍保留。
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+It is not an Euler circuit, since $E,H,G,F$ have odd degree.
+The official answer drawing adds $HF$ and $EG$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** Insert $HF$ and $EG$; the minimum is 2 edges.
 
 **Derivation/proof.** The odd vertices are E,F,G,H. Each inserted edge changes parity at at most two vertices, so at least four divided by two, or two edges, are necessary. HF and EG are absent in the original grid and pair all four odd vertices. After adding them all degrees are even and the graph remains connected, so the Euler criterion proves sufficiency and minimality.
 
-### 中文解答
+The drawing is transcribed into edge names above; the original figure is on the cited physical page. Each odd midpoint changes from degree three to degree four.
 
-**推导。** 原图的奇度顶点是 $E,F,G,H$ 共四个。加一条边至多改变两个端点的奇偶，所以至少要 $4/2=2$ 条。加源图中原本不存在的 $HF$ 和 $EG$，恰给每个奇度点增加一度，使它们从三变四；其他点不变。原连通性保持，全部度数偶，因此得到欧拉回路。两条构造达到下界，故最少就是两条。
-
-## Common Mistakes
-
-- 只添一条边就认为全部奇度已消除。
-- 配对偶度顶点，产生新的奇点。
+An inserted edge can correct at most two odd degrees, so $4/2=2$ edges are necessary. The chosen pairs each raise their endpoint degrees from three to four and together attain this lower bound.
 
 ## Connections
 

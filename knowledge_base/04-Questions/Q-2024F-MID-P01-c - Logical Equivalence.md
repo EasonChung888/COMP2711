@@ -47,24 +47,29 @@ Printed discrepant/incomplete material: [[knowledge_base/past_paper/COMP2711_F20
 Using rules of inference for propositional logic, show that the truth of the above premises implies that the conclusion $(\neg p\land\neg t)$ is true.
 Hint: Start by combining premises 4 and 2.
 
-## 中文解析
+## Official Answer
 
-若 p 成立会同时得到 q 与非 r，但第四条使 q 推出 r。排除 p 后，通过第三条排除 s，再从第一析取式得到非 t。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (c)
+> 1. $s\lor\neg t$
+> 2. $p\to(q\land\neg r)$
+> 3. $s\to p$
+> 4. $q\to r$
+> 5. $\neg q\lor r$ from 4
+> 6. $\neg(q\land\neg r)$ from 5
+> 7. $\neg(q\land\neg r)\to\neg p$ from 2
+> 8. $\neg p$ from 7,2
+> 9. $\neg p\to\neg s$ from 3
+> 10. $\neg s$ from 9,8
+> 11. $\neg t$ from 10,1
+> 12. $\neg p\land\neg t$ from 11,8
 
-Provenance: published official answer, independently checked and expanded below; the secondary line-reference correction is documented in Source.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\neg p\land\neg t$.
 
-**答案。** $\neg p\land\neg t$。
-
-**推导。** 5. 由 4 消去蕴含，得 $\neg q\lor r$。6. 由 5 用 De Morgan 得 $\neg(q\land\neg r)$。7. 由 2 取逆否，得 $\neg(q\land\neg r)\to\neg p$。8. 由 6、7 用 modus ponens，得 $\neg p$。9. 由 3 取逆否，得 $\neg p\to\neg s$。10. 由 8、9 得 $\neg s$。11. 由 1、10 析取三段论得 $\neg t$。12. 由 8、11 合取引入，得 $\neg p\land\neg t$。修正后的每个引用都只使用已证的对应前件。
-
-## Common Mistakes
-
-- 原答案第八步引用 7,2 并不提供第七步所需前件，应引用 6,7。
-- 从 $s\to p$ 和 $\neg p$ 可推出 $\neg s$，不能反用成肯定后件。
+**Derivation/proof.** 5. Eliminate implication in 4 to obtain $\neg q\lor r$. 6. De Morgan gives $\neg(q\land\neg r)$. 7. Contrapose 2 to obtain $\neg(q\land\neg r)\to\neg p$. 8. From 6 and 7, modus ponens yields $\neg p$. 9. Contrapose 3 to obtain $\neg p\to\neg s$. 10. From 8 and 9 obtain $\neg s$. 11. From 1 and 10, disjunctive syllogism yields $\neg t$. 12. Conjoin 8 and 11 to obtain $\neg p\land\neg t$. Every corrected reference supplies a previously established antecedent.
 
 ## Connections
 

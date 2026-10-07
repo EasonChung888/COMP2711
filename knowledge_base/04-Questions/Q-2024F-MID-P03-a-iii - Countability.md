@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 Shared printed context: ![[STEM-2024F-MID-P03-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-有理数可列成 $q_1,q_2,\ldots$。每个点写成 $(q_i,q_j)$，按 $i+j=2,3,4,\ldots$ 的对角线顺序列举；每条对角线只有有限个索引对，而所有正整数索引对都会出现。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (iii) Countable
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Countable.
 
-**答案。** Countable.
-
-**推导。** 有理数可列成 $q_1,q_2,\ldots$。每个点写成 $(q_i,q_j)$，按 $i+j=2,3,4,\ldots$ 的对角线顺序列举；每条对角线只有有限个索引对，而所有正整数索引对都会出现。因此 $\mathbb Q\times\mathbb Q$ 至多可数。它包含所有 $(q_i,0)$，所以无限，结论为可数无限。
-
-## Common Mistakes
-
-- 两个可数无限集的笛卡尔积仍可数，不能套用实数平面不可数的结论。
-- 逐行永远列第一行会漏掉其他行，应按有限对角线列举。
+**Derivation/proof.** Enumerate the rationals as $q_1,q_2,\ldots$. Every point is $(q_i,q_j)$. Enumerate by diagonals $i+j=2,3,4,\ldots$; each diagonal contains finitely many index pairs and every positive pair occurs. Thus $\mathbb Q\times\mathbb Q$ is at most countable. It contains all points $(q_i,0)$ and is infinite, so it is countably infinite.
 
 ## Connections
 

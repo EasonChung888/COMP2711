@@ -38,26 +38,21 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-互素与同余于 1 是不同条件。所有与模数互素的剩余类可逆，但不必都是 1。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(d) This is false. For example, $\gcd(5,3)=1$, but $5\bmod3=2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** False: $\gcd(5,3)=1$ but $5\bmod3=2$.
 
 **Derivation/proof.** Coprimality only guarantees that $a$ is invertible modulo $n$; it does not say that its residue equals one. The displayed pair is a counterexample.
 
-### 中文解答
+Take the unused parameter $m=2$. All domain restrictions then hold and the implication has a true antecedent and false consequent.
 
-**推导。** 取 $a=5,n=3$（其余未用参数 m 可取二），满足全部正整数限制。欧几里得算法给 $\gcd(5,3)=1$，但 $5\bmod3=2\ne1$，故蕴含前件真而后件假。互素只保证余数可逆，不保证余数是一。
-
-## Common Mistakes
-
-- 把有逆元误当成余数为一。
-- 选取 $a=1$ 作为不能反驳命题的例子。
+For this counterexample, the actual residue is $2\ne1$.
 
 ## Connections
 

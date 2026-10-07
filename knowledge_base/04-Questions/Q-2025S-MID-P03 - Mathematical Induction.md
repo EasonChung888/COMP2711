@@ -38,26 +38,30 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 
 Take the natural numbers $\mathbb N$ as the domain. Recall that in Peano's axiomatic system, addition is defined as follows: (i) $x+0=x$; (ii) $x+S(y)=S(x+y)$. We can further define the predicate $x\le y$ as $\exists k(x+k=y)$. Prove that for any $x,y\in\mathbb N$, either $x\le y$ or $y\le x$ is true. You are only allowed to use Peano's axioms (including induction), definitions, and the commutative law of addition.
 
-## 中文解析
+## Official Answer
 
-归纳命题必须对所有 $y$ 同时成立，才能在后继步把 $y$ 换成其前驱。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+Proof. We will use induction on $x$ to prove the statement.
 
-Provenance: published official answer, independently checked and expanded below.
+Base case $x=0$: we will show that for any $y\in\mathbb N$, $0\le y$. By the definition of $\le$, $0\le y$ means $\exists k(0+k=y)$. Taking $k=y$, we have $0+y=y+0=y$, so this is true.
 
-### 中文解答
+Inductive step: Assume that for some $x\in\mathbb N$, the statement holds, i.e., for any $y\in\mathbb N$, either $x\le y$ or $y\le x$. We will prove that the statement also holds for $S(x)$, i.e., for any $y\in\mathbb N$, either $S(x)\le y$ or $y\le S(x)$.
 
-**答案。** $\forall x\forall y(x\le y\lor y\le x)$。
+Case 1: $y=0$: In this case, we can show that $y\le S(x)$ following the same argument as above.
 
-**推导。** 先以 induction 得到每个自然数不是零就是某个后继：零满足该析取，任意 $S(z)$ 自己就是后继，因此归纳完成。再对 $x$ 归纳。基础步 $x=0$：任取 $y$，由交换律及加法定义 $0+y=y+0=y$，取 $k=y$ 得 $0\le y$。
+Case 2: $y\ne0$: Since $y\ne0$, $y=S(y')$ for some $y'\in\mathbb N$ (by Peano's axioms). By the inductive hypothesis, either $x\le y'$ or $y'\le x$.
 
-归纳假设：对每个 $y$ 都有 $x\le y$ 或 $y\le x$。考察 $S(x)$ 与任意 $y$。若 $y=0$，取 $k=S(x)$ 得 $0\le S(x)$。否则写 $y=S(y')$，将归纳假设用于 $y'$。若 $x+k=y'$，则 $S(x)+k=k+S(x)=S(k+x)=S(x+k)=S(y')=y$，故 $S(x)\le y$。若 $y'+k=x$，同理 $S(y')+k=S(y'+k)=S(x)$，故 $y\le S(x)$。所有 $y$ 情形均覆盖，数学归纳得到结论，未引用事先成立的全序律。
+- If $x\le y'$, then $\exists k(x+k=y')$. Applying $S$ to both sides gives $S(x+k)=S(y')$. By the commutative law and the definition of addition, $S(x+k)=S(k+x)=k+S(x)=S(x)+k$. This means $S(x)\le S(y')$, i.e., $S(x)\le y$.
+- If $y'\le x$, then $\exists k(y'+k=x)$. Applying $S$ to both sides gives $S(y'+k)=S(x)$. By the commutative law and the definition of addition, $S(y'+k)=S(k+y')=k+S(y')=S(y')+k$. This means $S(y')\le S(x)$, i.e., $y\le S(x)$.
 
-## Common Mistakes
+## Supplementary Explanation
 
-- 若归纳假设只对固定 $y$ 成立，就不能改用它处理 $y′$。
-- 不能直接引用自然数的三歧性，它包含本题正在证明的可比较性。
+**Answer.** $\forall x\forall y(x\le y\lor y\le x)$.
+
+**Derivation/proof.** First, induction shows that every natural number is zero or a successor: zero satisfies the disjunction, and any $S(z)$ is itself a successor. Now induct on $x$. For $x=0$, arbitrary $y$ satisfies $0+y=y+0=y$, so $k=y$ witnesses $0\le y$.
+
+Assume that for every $y$ we have $x\le y$ or $y\le x$. Compare $S(x)$ with arbitrary $y$. If $y=0$, choose $k=S(x)$ to obtain $0\le S(x)$. Otherwise write $y=S(y')$ and apply the hypothesis to $y'$. If $x+k=y'$, then $S(x)+k=k+S(x)=S(k+x)=S(x+k)=S(y')=y$, so $S(x)\le y$. If $y'+k=x$, the same identities give $S(y')+k=S(y'+k)=S(x)$, so $y\le S(x)$. All cases are covered, establishing the claim by induction without assuming a preexisting total order.
 
 ## Connections
 

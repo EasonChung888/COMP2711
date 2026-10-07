@@ -1,0 +1,35 @@
+Solution
+Some possible ways of placing the five bills:
+# of ways to select 
+5
+ bills from 
+7
+ denominations
+= # 
+permutations (
+with indistinguishable objects
+)
+ for 
+6
+ 
+B
+ars
+ and 
+5
+ 
+S
+tars
+.
+ 
+How many different strings of length 
+11
+ can be made by reordering 6 
+B
+s
+ 
+and 5 
+S
+s
+? How many bitstrings of length 11 contain 6 1s? 
+ 
+41

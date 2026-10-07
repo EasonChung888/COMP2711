@@ -1,0 +1,31 @@
+Example by Bijection Principle
+How many bit strings of length 
+n
+, contain exactly 
+k
+ 1s?
+Solution
+. 
+How many subsets of a set S with 
+n
+ elements, contain exactly 
+k
+ elements?
+Solution
+We have already seen that there is a 1:1 correspondence between the 
+subsets of 
+k
+ elements of a set 
+S
+ with cardinality 
+n
+, with the 
+bit strings of length 
+n
+ that contain exactly 
+k
+ 1s
+. Thus, the answer is the same as the first question 
+.
+ 
+31

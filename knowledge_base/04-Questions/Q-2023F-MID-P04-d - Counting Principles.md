@@ -40,34 +40,23 @@ The published solution on page 10 explicitly excludes points on the original bor
 
 Imagine having an equilateral triangle with each side being 3 cm. Prove that for all possible ways that you can place 10 points inside this equilateral triangle, there exist at least two points with their distance being less than 1 cm.
 
-## 中文解析
+## Official Answer
 
-把各边三等分并画平行线会得到九个边长一的小等边三角形。抽屉原理给出同一小三角形中的两点，但还要解释距离等于一只能发生在小三角形的两个顶点，而原题的 inside 排除了外边界。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+> (d) We split the equilateral triangle of sides 3 into 9 equilateral triangles of side 1cm as follows:
+>
+> ![[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=10]]
+>
+> Now we want to put 10 points inside this triangle. Which means at least two points will be either inside one of the $1\times1\times1$ triangle cells (based on pigeonhole principle and that there are 10 points and 9 triangles) which means their distance is less than 1. Also it is possible for both points to be on the internal lines (not on the border lines though) but even in that case the results remains the same because the distance between any two points on the internal lines (and not on the border lines) are still less than 1 and also if one point is one the internal line and another point is completely inside the $1\times1\times1$ related triangle, their distance is still less than 1cm.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 十个内部点中必有两点距离严格小于一厘米。
-
-**推导。**
-
-1. 将边长三的等边三角形各边三等分，过分点画平行线，划成九个边长一的小等边三角形。共享小边上的点约定只分配给一个相邻小格，使每个点恰属一个格；pigeonhole principle 使十点中至少两点落在同一格。
-2. 单位等边三角形直径为一，但距离恰等于一只可能是两个不同顶点。这个九格划分中，严格位于原三角形内部的网格顶点仅有一个，其余网格顶点都在原外边界上。因此两个允许的内部点不可能同时组成这样的顶点对，距离只能严格小于一。
-3. 这里采用原答案明确排除外边界的 inside 解释。若允许外边界，十个网格顶点会构成反例；所以必须分析等号情形，不能只从小格直径不超过一就跳到严格结论。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** Some pair of the ten interior points has distance strictly less than $1$ cm.
 
 **Derivation/proof.** Subdivide the side-3 triangle into nine equilateral triangles of side 1 by drawing parallels through the trisection points. Assign each point on a shared edge to one adjacent cell, so every point belongs to exactly one of nine cells. Ten points force two into the same cell. A unit equilateral triangle has diameter 1, and equality is possible only between two distinct vertices. In this subdivision only one lattice vertex lies strictly inside the original triangle; every other small-triangle vertex is on the original boundary. Consequently two allowed interior points cannot be such a distinct vertex pair. Their distance is therefore strictly less than 1.
 
-## Common Mistakes
-
-- 只证明直径不超过一不能推出题目的严格小于。 / Analyze the equality case.
-- 若允许原三角形边界上的点，十个网格顶点就是反例。 / The published solution explicitly excludes border points.
+There are nine side-one triangles. Only one grid vertex lies strictly inside the original triangle, so the distance must be strictly less than one for the selected pair. If the outer boundary were allowed, the ten grid vertices would be a counterexample.
 
 ## Connections
 

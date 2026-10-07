@@ -39,26 +39,22 @@ find a closed-form expression for it,
 
 Shared context: [[STEM-2015-FINAL-P09 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-令 $n=2^j$。第 $i$ 层共有 $4^i$ 个子问题，每个合并成本为 $cn/2^i$，所以层成本为 $cn2^i$。将所有内部层与 $n^2$ 个单位叶子合计。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=16|PDF physical page 16]].
 
-## Detailed Solution
+According to the above expression of $A\cdot B$,
+$$T(n)=4T(\frac n2)+cn$$
+Iterating the recurrence, we get:
+$$\begin{aligned}
+T(n)&=T(2^j)\\&=4T(2^{j-1})+2^jc\\&=4(4T(2^{j-2})+2^{j-1}c)+2^jc\\&=4^2T(2^{j-2})+2\cdot2^jc+2^jc\\&=4^2(4T(2^{j-3})+2^{j-2}c)+2\cdot2^jc+2^jc\\&=4^3T(2^{j-3})+2^2\cdot2^jc+2\cdot2^jc+2^jc\\&\quad\vdots\\&=4^jT(1)+2^{j-1}\cdot2^jc+\ldots+2\cdot2^jc+2^jc\\&=4^j+2^jc(2^j-1)\\&=(1+c)n^2-cn\\&=\Theta(n^2)
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 16. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=(1+c)n^2-cn$.
 
 **Derivation/proof.** For $j=\log_2n$, iteration gives $T(n)=4^jT(1)+cn\sum_{i=0}^{j-1}2^i=n^2+cn(n-1)=(1+c)n^2-cn$. Substitution into $4T(n/2)+cn$ reproduces the expression, and at $n=1$ it equals 1.
-
-### 中文解答
-
-**推导。** 令 $j=\log_2n$。第 i 层有 $4^i$ 个问题，每个非递归成本 $cn/2^i$，故层总成本 $cn2^i$。内部层 i=0 至 j−1，叶子共有 $4^j=n^2$ 个，每个成本一。相加 $T(n)=n^2+cn\sum_{i=0}^{j-1}2^i=n^2+cn(n-1)=(1+c)n^2-cn$。n=1 时等于一，代回原递推也吻合。
-
-## Common Mistakes
-
-- 遗漏递归叶子总成本 $4^j$。
-- 误把每层成本当成相同的 $cn$ 而得到对数项。
 
 ## Connections
 

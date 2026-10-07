@@ -36,26 +36,24 @@ Published solution material: ![[knowledge_base/past_paper/2022-midterm.pdf#page=
 
 Given the statement $(a\lor b)\land(\neg b\lor c)$, express its equivalent statement using only NOT ($\neg$) and Implication ($\to$).
 
-## 中文解析
+## Official Answer
 
-先各自改写两个析取，但这样仍剩一个合取，需要再用 X且Y=非(X推出非Y) 消去。嵌套否定较多，分两层处理并回展开检查，比直接猜长公式可靠。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> (b)
+> $$\begin{aligned}
+> (a\lor b)\land(\neg b\lor c)&\equiv(\neg a\to b)\land(b\to c)\\
+> &\equiv\neg(\neg(\neg a\to b)\lor\neg(b\to c))\\
+> &\equiv\neg((\neg a\to b)\to\neg(b\to c)).
+> \end{aligned}$$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\neg((\neg a\to b)\to\neg(b\to c))$.
 
 **Derivation/proof.** Set X=(¬a→b), equivalent to a∨b, and Y=(b→c), equivalent to ¬b∨c. Their conjunction satisfies X∧Y≡¬(¬X∨¬Y)≡¬(X→¬Y). Substitute the two subexpressions to obtain the answer. Expanding its outer negated implication recovers X∧Y and then the original two clauses.
 
-### 中文解答
-
-**推导。** 先分别改写两子句：$a\lor b\equiv\neg a\to b$，$\neg b\lor c\equiv b\to c$。记这两个新子句为 $X,Y$，还要消去它们之间的 AND。用 $X\land Y\equiv\neg(\neg X\lor\neg Y)\equiv\neg(X\to\neg Y)$，代回得 $\neg((\neg a\to b)\to\neg(b\to c))$。这个式子只有 NOT 与蕴含；展开外层否定蕴含恢复 $X\land Y$，再展开两子句就恢复原题。
-
-## Common Mistakes
-
-- 只改写两个析取却保留合取。
-- 遗漏 Y 前的内层否定。
+The full intermediate identity is $X\land Y\equiv\neg(\neg X\lor\neg Y)\equiv\neg(X\to\neg Y)$.
 
 ## Connections
 

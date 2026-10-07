@@ -1,0 +1,7 @@
+Example
+Suppose a saleswoman has to visit eight different cities. She must begin her trip in a specified city, but she can visit the other seven cities in any order she wants. How many possible orders can the saleswoman use when visiting these cities?
+Solution:
+Each travel order gives a different trip schedule, so order matters here. Since the first city has been fixed, so she only needs to choose the order for the remaining 7 cities, which is 
+possible orders.
+ 
+8

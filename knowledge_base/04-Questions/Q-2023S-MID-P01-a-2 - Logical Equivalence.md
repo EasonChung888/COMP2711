@@ -42,33 +42,19 @@ First translate the following hypotheses into propositional logic statements:
 
 Shared printed context: ![[STEM-2023S-MID-P01-a - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-题目只说举行比赛足以保证颁奖，因此方向从 s 指向 t。它并没有说明颁奖一定来自比赛，也没有说明比赛实际举行；翻译时要保留这个单向条件。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) We are given premises $(\neg r\lor\neg f)\to(s\land l)$, $s\to t$, and $\neg t$. We want to conclude $r$.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $s\to t$。
-
-**推导。**
-
-1. 根据共享符号定义，sailing race 举行为 $s$，trophy 被颁发为 $t$。句型“If A, then B”把 A 放在前件、B 放在后件，故从比赛指向颁奖，得到 $s\to t$。
-2. 用唯一的否定情形核对方向：只有 $s$ 真且 $t$ 假，也就是比赛举行但没有颁奖，才违反本句。颁奖而没有比赛并不被原句禁止，因此不能倒写为 $t\to s$，也不能强化为 $s\leftrightarrow t$；本次翻译没有断言比赛必定举行。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $s\to t$.
 
 **Derivation/proof.** By the definitions in the shared context, “the sailing race is held” is $s$ and “the trophy will be awarded” is $t$. The English construction “If A, then B” translates to $A\to B$, so the formula is $s\to t$. Its only falsifying case is a held race together with no trophy award. A trophy without the race is not prohibited by this hypothesis.
 
-## Common Mistakes
-
-- 把方向写成 $t\to s$ 是逆命题而非原句。 / Reversing the arrow changes the sufficient condition.
-- 写成 $s\land t$ 会把条件句变成两件事均发生。 / A conditional does not assert either event.
+The only falsifying case is a race with no trophy; a trophy without a race is allowed. Thus the statement cannot be strengthened to $s\leftrightarrow t$.
 
 ## Connections
 

@@ -37,26 +37,19 @@ In this case, should you switch to door 2?
 
 Shared context: [[STEM-2019-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-开三号门后，二号门的后验胜率比原来选的一号门高，因此应换到二号。这个结果与开二号门时保持选择并不矛盾：主持人打开哪扇门携带不同信息，策略可以依观察结果变化。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=13|physical PDF page 13]]; [[knowledge_base/past_paper/2019-final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+Same as above, but with $p(M=3\mid W=1)=1/2,p(M=3\mid W=2)=1,p(M=3\mid W=3)=0$. Plugging in these numbers, we obtain $p(M=3)=0.55$ and $p(W=1\mid M=3)=5/11,p(W=2\mid M=3)=6/11$. So, we should switch to door 2. This time, the probability that our initial guess is correct has decreased.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13, 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Yes; switch to door 2.
 
 **Derivation/proof.** For the observation $M=3$, the posterior probabilities are $P(W=1\mid M=3)=0.25/0.55=5/11$ and $P(W=2\mid M=3)=0.3/0.55=6/11$. Switching therefore raises the conditional win probability from $5/11$ to $6/11$. The optimal response differs from the response when door 2 is opened.
 
-### 中文解答
-
-**推导。** 给定开三，留在门一的胜率是 $(0.5/2)/0.55=5/11$，换到门二的胜率是 $0.3/0.55=6/11$。因 $6/11>5/11$，应换到门二。这次最优动作与开二时相反，因为主持人所开门的概率取决于奖门位置。
-
-## Common Mistakes
-
-- 为了让策略形式一致而忽略两种观察的不同概率。
-- 把条件胜率和整体胜率混淆。
+Keeping the initial door wins with probability $(0.5/2)/0.55=5/11$. Since $6/11>5/11$, switching to door two is better after this opening.
 
 ## Connections
 

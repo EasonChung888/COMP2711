@@ -1,0 +1,28 @@
+k
+-Permutation
+Definition
+A 
+k
+-permutation
+ (or 
+k
+-element permutation
+) of a set of 
+ distinct elements is an ordered arrangement of 
+ elements of the set.
+Example
+Let 
+. The ordered arrangement 
+ is a 2-permutation of 
+S
+.
+ 
+ is a different 2-permutation.
+Definition
+A 
+n
+-permutation
+ of a set of 
+ distinct elements is simply called a permutation of the set. 
+ 
+5

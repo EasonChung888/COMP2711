@@ -36,26 +36,20 @@ Official answer or marking material: ![[knowledge_base/past_paper/2013-final.pdf
 
 (a) Let $m$ and $n$ be two positive integers such that $m$ divides $n$, i.e., $n=sm$ for some other integer $s$. Show that, for any integer $x$, $(x\bmod n)\bmod m=x\bmod m$.
 
-## 中文解析
+## Official Answer
 
-先把两次取模都写成带余除法。$m\mid n$ 使第一步的商项仍是 $m$ 的倍数，从而第二次余数就是 $x$ 模 $m$ 的余数。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(a) Let $x\bmod n=r_1$. Then $x=q_1n+r_1$ for some integer $q_1$. Further let $r_1\bmod m=r_2$. Then $r_1=q_2m+r_2$ for some integer $q_2$. Hence,
+$$x=q_1n+q_2m+r_2=q_1sm+q_2m+r_2=(q_1s+q_2)m+r_2,$$
+where $0\le r_2<m$. Consequently,
+$$x\bmod m=r_2=(x\bmod n)\bmod m.$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** The two remainders are equal.
 
 **Derivation/proof.** Let $r_1=x\bmod n$, so $x=q_1n+r_1$. Let $r_2=r_1\bmod m$, so $r_1=q_2m+r_2$ with $0\le r_2<m$. Since $n=sm$, $x=(q_1s+q_2)m+r_2$; uniqueness of the remainder modulo $m$ gives $x\bmod m=r_2$.
-
-### 中文解答
-
-**推导。** 令 $r_1=x\bmod n$、$r_2=r_1\bmod m$。由带余除法，$x=q_1n+r_1$、$r_1=q_2m+r_2$，且 $0\le r_2<m$。代入 $n=sm$ 得 $x=(q_1s+q_2)m+r_2$。因此 $r_2$ 是 x 除以 m 的合法余数；余数唯一性给出 $x\bmod m=r_2=(x\bmod n)\bmod m$。
-
-## Common Mistakes
-
-- 把 $m\mid n$ 错换为 $n\mid m$。
-- 没有验证 $r_2$ 落在 $[0,m)$。
 
 ## Connections
 

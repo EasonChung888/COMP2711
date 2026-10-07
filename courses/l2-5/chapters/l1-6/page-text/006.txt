@@ -1,0 +1,17 @@
+Number of 
+k
+-Permutations
+Theorem
+Let 
+ and 
+ be integers with 
+. The number of 
+k
+-permutations of a set with 
+ distinct elements, denoted by 
+, is equal to
+Comment: 
+0!
+=1
+ 
+6

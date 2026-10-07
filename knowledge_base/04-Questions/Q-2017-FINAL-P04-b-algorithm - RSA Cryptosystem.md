@@ -37,26 +37,21 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-final.p
 
 Shared context: [[STEM-2017-FINAL-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-判断互质不需要先分解两个数，只要用欧几里得算法求最大公因数是否为一。每次用余数替换保持公因数集合不变；结束时第二项为零，第一项就是所需的最大公因数。
+Source: [[knowledge_base/past_paper/2017-final.pdf#page=6|physical PDF page 6]]; [[knowledge_base/past_paper/2017-final.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+It is the Euclidean algorithm to find gcd: start with $\gcd(T,d)$, and the recursive step is to change $\gcd(a,b)$ into $\gcd(b,a\bmod b)$. It was shown in class that this takes $O(\log T)$ steps for the worst case of the Fibonacci numbers.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6, 7. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Run Euclid on $(T,d)$ and accept exactly when its returned gcd is 1.
 
 **Derivation/proof.** Set $a=T,b=d$. While $b\ne0$, replace $(a,b)$ by $(b,a\bmod b)$. Return whether $a=1$. A common divisor of $a,b$ also divides $a-qb$, and conversely a common divisor of $b,a-qb$ divides $a$. Thus every iteration preserves the gcd, and at termination $\gcd(a,0)=a$ gives the correct test.
 
-### 中文解答
+Nonzero remainders strictly decrease, guaranteeing termination at $(g,0)$ with $g=\gcd(T,d)$. The procedure also correctly handles $d=0$.
 
-**推导。** 置 $a=T,b=d$，反复在 $b\ne0$ 时更新 $(a,b)\leftarrow(b,a\bmod b)$，结束后返回布尔值 $a=1$。若 $a=qb+r$，一个数整除 $a,b$ 当且仅当它整除 $b,r$，所以每次保持最大公因数。非零余数严格下降，循环终止于 $(g,0)$；此时 $g=\gcd(T,d)$，故恰在 $g=1$ 时判为互素，也正确处理 $d=0$。
-
-## Common Mistakes
-
-- 只检查 d 为素数就接受。
-- 把余数为一前的商误当最大公因数。
+Each Euclidean iteration replaces the current pair by $(a,b)\leftarrow(b,a\bmod b)$. The gcd is invariant and the second nonnegative entry strictly decreases until it is zero; the remaining first entry is the gcd.
 
 ## Connections
 

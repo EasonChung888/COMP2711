@@ -46,34 +46,19 @@ As an example, Figure 1b shows a valid coloring as you will reach to the top rig
 
 Figure 1: R/B denote the red/blue colors of the cells
 
-## 中文解析
+## Official Answer
 
-成功路线必须走两次向右和两次向上。每一条路线会固定其四个出发格的颜色，而其余四个非终点格任意涂色；同一个涂色只会产生一条确定路线，因此不同路线的计数不会重复。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> (b) Notice that if you consider any path, the coloring of that path is unique. We have $\binom42$ different paths from bottom left to top right with a unique coloring. There will be 4 cells left that can accept any color and it does not effect. So the final answer is $\binom42\cdot2^4$.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $\binom42\,2^4=96$ 种着色。
-
-**推导。**
-
-1. 从左下格到右上星号格必须右移两次、上移两次，所以四步成功路径有 $\binom42=6$ 条。固定其中一条路径后，每个出发格颜色由下一步唯一决定：向右必须 Red，向上必须 Blue。
-2. 四次移动恰好固定四个非终点格的颜色。总共有八个需要着色的格，所以剩下四格各有两种自由颜色，给出 $2^4=16$ 个扩充。乘法原理得 $6\cdot16=96$。
-3. 还需排除跨路径重计：完整着色使每个访问格的下一步唯一，因此从起点产生唯一轨迹。同一个成功着色不可能同时属于两条不同路径的计数，所以上述乘积确实数的是不同着色。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $\binom42\,2^4=96$.
 
 **Derivation/proof.** There are $\binom42$ monotone paths of four moves from the bottom-left cell to the top-right cell. On a chosen path, each of its four nonterminal cells has its color forced by the next move: R for right or B for up. Exactly four of the eight colored cells are not departure cells of this path, and each has two free colors. Multiply to get $6\cdot16=96$. A coloring determines a unique trajectory, so two different successful paths cannot count the same coloring.
 
-## Common Mistakes
-
-- 把终点也涂色会多乘一个二。 / The star cell is explicitly uncolored.
-- 把路径数相加前必须说明不会重复计数。 / Determinism makes different paths disjoint.
+There are $\binom42=6$ paths, with $2^4=16$ color extensions each. One coloring cannot belong to two distinct successful paths.
 
 ## Connections
 

@@ -42,24 +42,19 @@ The actual Z variance is printed under answer (iv) on page 22. No separate mark 
 
 What are $var(Z)$?
 
-## 中文解析
+## Official Answer
 
-均值抵消不代表方差抵消；独立和的每个系数平方均为一。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=22|physical PDF page 22]].
 
-## Detailed Solution
+> (iv) For $Z=X_1-X_2+X_3-\cdots+X_{99}-X_{100}$, there are $50$ positive terms and $50$ negative terms:
+> $$E(Z)=\sum_{i=1}^{50}E(X_{2i-1})-\sum_{i=1}^{50}E(X_{2i})=50\cdot3.5-50\cdot3.5=0.$$
+> $$\operatorname{var}(Z)=\sum_{i=1}^{50}\operatorname{var}(X_{2i-1})+\sum_{i=1}^{50}\operatorname{var}(X_{2i})=50\cdot\frac{17.5}{6}+50\cdot\frac{17.5}{6}=100\cdot\frac{17.5}{6}=\frac{1750}{6}.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\operatorname{var}(Z)=875/3$.
 
-**答案。** 本原子项求 $var(Z)=875/3$。
-
-**推导。** 一百个骰子变量相互独立，每个方差 $35/12$。在 $Z$ 中各系数为 $+1$ 或 $-1$，平方后都为一，交叉协方差又全部为零，故 $var(Z)=100\cdot35/12=3500/12=875/3$。原答案写 $1750/6$，约分同样得到 $875/3$。虽然 $E(Z)=0$，其方差仍随一百项的波动累加而明显为正。
-
-## Common Mistakes
-
-- 不能把方差像均值一样按正负号相减，负号在平方后消失。
-- 一百项共有一百个方差贡献，而不是只算五十个正号项。
+**Derivation/proof.** The hundred die variables are mutually independent and each has variance 35/12. Every coefficient is +1 or −1, so every squared coefficient is one and all cross-covariance terms vanish. Consequently $\operatorname{var}(Z)=100\cdot35/12=3500/12=875/3$. The printed 1750/6 reduces to the same 875/3. Although the mean is zero, all hundred variance contributions accumulate.
 
 ## Connections
 

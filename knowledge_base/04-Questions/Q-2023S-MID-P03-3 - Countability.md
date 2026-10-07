@@ -41,33 +41,19 @@ Printed prompt uses numerical labels 1–5; the answer switches to (a)–(e). Th
 
 Shared printed context: ![[STEM-2023S-MID-P03 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-函数的输入只有两个，所以只需记录 f(0) 和 f(1) 两个自然数就完全确定函数。函数集合与自然数有序对一一对应，不能因为值域无限就直接判断函数集合不可数。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> (c) Countable
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 从 $\{0,1\}$ 到 $\mathbb N$ 的全部函数构成 countably infinite 集合。
-
-**推导。**
-
-1. 定义对应 $f\mapsto(f(0),f(1))$。函数只有两个输入，所以这个有序对记录了全部函数值；两个函数对应相同有序对，就在每个输入处相等，因而是同一个函数。
-2. 反过来，任何 $(a,b)\in\mathbb N^2$ 都给出唯一函数 $f(0)=a,f(1)=b$，故对应是 bijection。自然数有序对可按 $a+b$ 的对角线枚举，且有无限多个，所以函数集合无限可数。关键是定义域只有两个元素；值域无限本身并不迫使函数集合不可数。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** Countable.
 
 **Derivation/proof.** Associate each function $f$ with the ordered pair $(f(0),f(1))$. This assignment is injective because equal pairs mean equal values at every input, and surjective because any pair of naturals defines such a function. The pairs can be enumerated by increasing sum of their coordinates, so this bijection proves the function set is countably infinite.
 
-## Common Mistakes
-
-- 函数由 f(0)、f(1) 两个有序输出决定，不能把它们当无序组合。 / Inputs remain labeled.
-- 值域无限不代表这两个输出形成的函数集不可数。 / A finite tuple of naturals is countable.
+The correspondence $f\mapsto(f(0),f(1))$ is a bijection: $(a,b)$ has the inverse function $f(0)=a,f(1)=b$. Therefore the function set is countably infinite.
 
 ## Connections
 

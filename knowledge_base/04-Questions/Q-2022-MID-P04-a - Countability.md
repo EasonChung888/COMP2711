@@ -37,26 +37,17 @@ Finite
 
 Shared context: [[STEM-2022-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-用两个只差一个端点的区间，输入集合都含不可数的开区间，差集却只有一个点。检查右端点二在两边都不包括，避免把差集误写成两个端点。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (a) $A=[1,2),B=(1,2)\implies A-B=\{1\}$
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $A=[1,2),B=(1,2)$, so $A-B=\{1\}$.
 
 **Derivation/proof.** Both intervals contain the open interval (1,2), which is uncountable by an affine bijection with (0,1). Their only membership difference is the endpoint 1, included in A and excluded from B; the endpoint 2 is in neither. Hence A−B is exactly the finite singleton {1}.
-
-### 中文解答
-
-**推导。** 取 $A=[1,2)$、$B=(1,2)$。两者都包含不可数开区间 $(1,2)$，所以都是不可数集合。它们只在端点一的成员资格上不同：一属于 $A$ 不属于 $B$；二两边都不属于。于是 $A-B=\{1\}$，是有限单元素集，满足要求。
-
-## Common Mistakes
-
-- 把二也加进差集。
-- 选择一个输入为有限集，违反两者不可数。
 
 ## Connections
 

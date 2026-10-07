@@ -40,26 +40,22 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2014-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先列出每组人数的可行正整数分配，再在每组独立选择。这样既保证每组至少一人，也避免遗漏容量限制。
+Source: [[knowledge_base/past_paper/2014-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(c) In this case we need to partition into all the possible scenarios of choosing from $(A,B,C)$, which are $(1,2,2),(1,3,1),(2,1,2),(2,2,1),(3,1,1)$. This gives
+$$\binom41\binom32\binom22+\binom41\binom33\binom21+\binom42\binom31\binom22+\binom42\binom32\binom21+\binom43\binom31\binom21$$
+or
+$$4\cdot3\cdot1+4\cdot1\cdot2+6\cdot3\cdot1+6\cdot3\cdot2+4\cdot3\cdot2=98$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $98$.
 
 **Derivation/proof.** The positive triples $(A,B,C)$ summing to five within capacities $(4,3,2)$ are $(1,2,2),(1,3,1),(2,1,2),(2,2,1),(3,1,1)$. Summing the corresponding products of binomial coefficients gives $12+8+18+36+24=98$.
 
-### 中文解答
-
-**推导。** 设三组选取人数为 (a,b,c)，要求三者均正、和为五，且容量分别为 4、3、2。可行情况只有 $(1,2,2),(1,3,1),(2,1,2),(2,2,1),(3,1,1)$。每类分别按 $\binom4a\binom3b\binom2c$ 计数，得到 $12,8,18,36,24$；互斥相加为 $12+8+18+36+24=98$。
-
-## Common Mistakes
-
-- 把 $(3,2,0)$ 加入。
-- 把同一人数三元组的组别顺序任意交换而重复计算。
+For a triple $(a,b,c)$, the count is $\binom4a\binom3b\binom2c$. The five cases are mutually exclusive and cover all choices.
 
 ## Connections
 

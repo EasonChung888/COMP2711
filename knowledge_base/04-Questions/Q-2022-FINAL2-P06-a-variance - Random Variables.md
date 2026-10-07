@@ -38,26 +38,21 @@ What is the variance of $X$?
 
 Shared context: [[STEM-2022-FINAL2-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-单边方差为 p-p²，所有边独立时总方差就是各边方差相加。用 p=0 或 p=1 检查会得到零，因为此时边数固定；这能帮助发现漏乘 (1-p) 的错误。
+Source: [[knowledge_base/past_paper/2022-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) $X_e$ is the indicator random variable that indicates the event of a pair of vertices $e=(u,v)$ having an edge. $X_e$ is a Bernoulli trial, thus $E(X_e)=p$, $V(X_e)=p(1-p)$.
+>
+> There are $\binom n2$ pairs of vertices in total. Thus $E(X)=\binom n2p$ and $V(X)=\binom n2p(1-p)$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\operatorname{Var}(X)=\binom n2p(1-p)$.
 
 **Derivation/proof.** For one edge indicator I, E[I²]=E[I]=p, so Var(I)=p−p². In the stated random graph distinct edge indicators are independent, giving covariance zero for every distinct pair. The variance of their sum is therefore N(p−p²), with N=C(n,2). At p=0 or1 the answer is zero, correctly reflecting a deterministic graph.
 
-### 中文解答
-
-**推导。** 单条边的指示变量满足 $I_e^2=I_e$，所以 $\operatorname{Var}(I_e)=E[I_e^2]-E[I_e]^2=p-p^2=p(1-p)$。题目明确说所有边独立，因此不同边间协方差为零。展开和的方差后，交叉协方差项全部消失，剩 $\operatorname{Var}(X)=\sum_e\operatorname{Var}(I_e)=\binom n2p(1-p)$。当 $p=0$ 或 $p=1$ 时边数固定，公式给零，符合检查；不能只凭边际概率相同就省去协方差。
-
-## Common Mistakes
-
-- 把 E[X²] 写成 E[X]²。
-- 忘记边间独立才可直接加方差。
+Because $I_e^2=I_e$, its variance is $p-p^2=p(1-p)$. Independence makes the covariance zero for each distinct pair; hence $$\operatorname{Var}(X)=\sum_e\operatorname{Var}(I_e)=\binom n2p(1-p).$$ Equal marginal probabilities alone would not justify dropping covariance terms.
 
 ## Connections
 

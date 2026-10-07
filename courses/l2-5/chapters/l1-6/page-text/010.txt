@@ -1,0 +1,14 @@
+Exercise
+ on Seating Arrangement
+n
+ 
+people sit down at a round table with 
+n
+ chairs. We consider two seating arrangements 
+equivalent, if each person has the same neighbor to the right in both arrangements
+. How many different arrangements are equivalent to a given arrangement of 
+n
+ people?
+n
+-1
+10

@@ -38,30 +38,19 @@ Published solution material: ![[knowledge_base/past_paper/2020-final-part-1.pdf#
 
 Shared context: [[STEM-2020-FINAL1-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-“每条边”用有边作为蕴含前件，后件要求两个端点分属两边。无向图需要允许两种书写方向；这条条件禁止内部边，却没有要求每一对跨组顶点都必须相连。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+$(\forall u\in V_1\forall v\in V_1(\neg E(u,v)))\land(\forall u\in V_2\forall v\in V_2(\neg E(u,v)))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall u,v\in V(E(u,v)\to((u\in V_1\land v\in V_2)\lor(u\in V_2\land v\in V_1)))$.
 
 **Derivation/proof.** Universally consider both endpoints of an edge. Because the graph is undirected either orientation of the two parts is possible, so the consequent is a disjunction of the two opposite-part assignments. The given partition covers V and is disjoint, making this equivalent to forbidding edges within each part.
 
-### 中文解答
-
-**推导。** 由于 $V_1,V_2$ 是覆盖 $V$ 的不相交两部分，“每边跨两部分”等价于两部分内部都没有边。因此可直接用印本形式
-
-$$ (\forall u\in V_1\forall v\in V_1\neg E(u,v))\land(\forall u\in V_2\forall v\in V_2\neg E(u,v)).$$
-
-也可对任一边写 $E(u,v)\to((u\in V_1\land v\in V_2)\lor(u\in V_2\land v\in V_1))$，再把 $u,v$ 在 $V$ 上全称量化。两个方向都列出是因为边无向，不能只允许一种端点命名顺序。
-
-## Common Mistakes
-
-- 只允许端点的一种方向。
-- 把仅允许跨组边误写成所有跨组边都存在。
+The two within-part restrictions are $\forall u\in V_1\forall v\in V_1\neg E(u,v)$ and $\forall u\in V_2\forall v\in V_2\neg E(u,v)$. These forbid every internal edge because the edge is undirected; this holds regardless of which endpoint is written first.
 
 ## Connections
 

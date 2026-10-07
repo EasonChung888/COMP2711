@@ -38,24 +38,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Midte
 
 (ii) Let $\mathbb R$ be the set of real numbers. Provide an example for an infinite set $B$ such that $\mathbb R-B$ is uncountable.
 
-## 中文解析
+## Official Answer
 
-选开区间 $B=(0,1)$，它含无限多个实数，故满足 B 无限的要求。差集 $\mathbb R\setminus B=(-\infty,0]\cup[1,\infty)$ 包含区间 $[1,2]$。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=7|physical PDF page 7]].
 
-## Detailed Solution
+> (ii) $B=(0,1)$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $B=(0,1)$.
 
-**答案。** $B=(0,1)$。
-
-**推导。** 选开区间 $B=(0,1)$，它含无限多个实数，故满足 B 无限的要求。差集 $\mathbb R\setminus B=(-\infty,0]\cup[1,\infty)$ 包含区间 $[1,2]$。任何非退化实数区间都不可数，且不可数集合的超集不可数，所以该差集不可数。这里仅需一个例子，不必列出所有可用的 B。
-
-## Common Mistakes
-
-- B=(0,1) 是无限集，不能只给一个删除有限点的例子忽略题设。
-- 剩余区间包含 [1,2]，应使用不可数区间的事实而非仅说剩下很多点。
+**Derivation/proof.** Choose $B=(0,1)$, which contains infinitely many real numbers. Its complement $\mathbb R\setminus B=(-\infty,0]\cup[1,\infty)$ contains $[1,2]$. Every nondegenerate real interval is uncountable, and a superset of an uncountable set is uncountable. Hence the difference is uncountable. One example suffices; a classification of all possible $B$ is unnecessary.
 
 ## Connections
 

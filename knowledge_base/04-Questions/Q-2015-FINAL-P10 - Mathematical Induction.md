@@ -40,26 +40,31 @@ for all integer $n>1$ and for any $m\in\{2,3,\cdots,n\}$.
 
 Note: No marks will be awarded if you do not use the principle of induction.
 
-## 中文解析
+## Official Answer
 
-归纳命题必须同时覆盖当前所有模数。由 $n-1$ 推到 $n$ 时，原来的模数可用归纳假设再乘 $n$；新增加的模数 $m=n$ 则直接利用 $n\mid n!$。这一新模数不能误用尚未覆盖它的归纳假设。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=17|PDF physical page 17]].
 
-## Detailed Solution
+Let $p(n)$ denotes $(n(n-1)\cdots(2)(1)+1)\bmod m=1$.
 
-Provenance: derived; independently derived correction; discrepant source material is retained in Source. The Chinese derivation expands the reasoning.
+Base case $(n=2)$: $(2+1)\bmod2=1$, so $p(2)$ is true.
+
+Inductive hypothesis: Assume $p(n-1)$ is true for $n-1>1$.
+$$((n-1)\cdots(2)(1)+1)\bmod m=1$$
+Inductive step (for $n>2$):
+$$\begin{aligned}
+&((n-1)\cdots(2)(1)+1)\bmod m=1\\
+\to\;&(n(n-1)\cdots(2)(1)+n)\bmod m=n\bmod m\\
+\to\;&(n(n-1)\cdots(2)(1)+1+(n-1))\bmod m=n\bmod m\\
+\to\;&(n(n-1)\cdots(2)(1)+1)\bmod m=(n-(n-1))\bmod m\\
+\to\;&(n(n-1)\cdots(2)(1)+1)\bmod m=1
+\end{aligned}$$
+Inductive conclusion: By the principle of mathematical induction, $p(n)$ is true for all integers $n>1$.
+
+## Supplementary Explanation
 
 **Answer.** $(n!+1)\bmod m=1$ for all the specified $n,m$.
 
 **Derivation/proof.** Let $P(n)$ assert the statement for all $2\le m\le n$. Base $n=2$: $3\bmod2=1$. Assume $P(n-1)$ for $n>2$. If $2\le m\le n-1$, the hypothesis implies $(n-1)!\equiv0\pmod m$, hence $n!\equiv0\pmod m$. For the newly allowed $m=n$, $n!=n(n-1)!$ is directly divisible by $n$. In both cases $n!+1\equiv1\pmod m$, and $m\ge2$ makes 1 the actual remainder. This fills the new-modulus case left implicit in the printed proof.
-
-### 中文解答
-
-**推导。** 令 P(n) 同时断言所有 $2\le m\le n$ 的模数结论。基础 n=2 时只有m=2，$(2!+1)\bmod2=1$。对 n>2 假设 P(n−1)。当 $2\le m\le n-1$ 时，假设给 $(n-1)!\equiv0\pmod m$，乘 n 得 $n!\equiv0\pmod m$。新加入的模数 m=n 不在假设范围，必须单独用 $n!=n(n-1)!$ 得 n 整除 n!。两类都推出 $n!+1\equiv1\pmod m$，而 m≥2 保证一是合法余数，归纳完成。源证明未分开新模数，不能直接在 m=n 上使用 P(n−1)。
-
-## Common Mistakes
-
-- 对 $m=n$ 套用仅适用于 $m\le n-1$ 的归纳假设。
-- 只用“阶乘含有所有因子”的直接证明，未遵守题目要求的归纳形式。
 
 ## Connections
 

@@ -37,26 +37,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-midterm
 
 Shared context: [[STEM-2017-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-要让整个析取式为假，必须让每个分项同时为假。令 q 与 r 都假，再令 p 真，就能使蕴含也为假。找到一次反例便足以否定恒真性，不需要所有情况都为假。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+Not a tautology. It is false when $p$ is true, $q$ is false and $r$ is false. (No counter example required)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** It is not a tautology.
 
 **Derivation/proof.** Take $p=T,q=F,r=F$. The implication $p\to q$ is false, so the whole expression is $F\lor F\lor F=F$. This additional check verifies the classification even though a counterexample is not required in the exam.
-
-### 中文解答
-
-**推导。** 题目只要求判定，结论为非恒真式。为独立核实，取 $p=T,q=F,r=F$，则 $p\to q=F$，整个析取式为 $F\lor F\lor F=F$。恒真式必须对每个赋值都真，这一个赋值已否定恒真性。
-
-## Common Mistakes
-
-- 把蕴含当作双条件。
-- 只找到使公式为真的赋值。
 
 ## Connections
 

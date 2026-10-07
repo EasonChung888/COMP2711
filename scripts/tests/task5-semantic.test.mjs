@@ -113,13 +113,11 @@ test('all Task 5 atoms have substantial unique explanations, derivations, and fa
   const text=read(r.id),p=props(r.id),prompt=section(text,'Question').split(/\n\nShared context:/)[0];
   const restoredShortAtom=prompt.length>0&&r.transcription_correction&&r.verification?.transcription&&section(text,'Question').includes('Shared context: [[STEM-');
   assert.ok(prompt.length>=15||/^Find \$T\([123]\)\$\.$/.test(prompt)||restoredShortAtom,r.id);assert.doesNotMatch(prompt,/[\u3400-\u9FFF]|Solution:|Grading scheme:/,r.id);
-  assert.ok(section(text,'中文解析').length>=50,`${r.id}: Chinese reasoning`);
-  const solution=section(text,'Detailed Solution');
+  const solution=section(text,'Supplementary Explanation');
   assert.match(solution,/^\*\*Answer\.\*\*\s+\S[\s\S]+\n\n\*\*Derivation\/proof\.\*\*\s+\S/m,r.id);
   const work=solution.split('**Derivation/proof.** ')[1];assert.ok(work.length>=90,r.id);
   assert.ok(!works.has(work),`${r.id}: generic duplicate derivation`);works.add(work);
   assert.ok(p.difficulty_basis.length>45,r.id);assert.ok(!bases.has(p.difficulty_basis),r.id);bases.add(p.difficulty_basis);
-  assert.ok(section(text,'Common Mistakes').split('\n').filter(s=>s.startsWith('- ')).length>=2,r.id);
   assert.equal(p.verification_status,'verified');assert.equal(p.term,p.year===2019?'spring':'fall');
   for(const page of [p.source_page,...p.solution_page])assert.ok(section(text,'Source').includes(`![[${r.source_pdf}#page=${page}]]`),r.id);
   assert.doesNotMatch(text,controls,r.id);assert.doesNotMatch(text,generic,r.id);
@@ -176,18 +174,18 @@ test('derived provenance and independent candy / graph boundary checks agree',()
  assert.equal(props('Q-2018-FINAL-P05-a').answer_source,'official');assert.match(read('Q-2018-FINAL-P05-a'),/marking note explicitly accepts n=1/);
 });
 
-test('2017 Final 5(a) bilingual posterior probability keeps numerator and denominator aligned',()=>{
- const text=read('Q-2017-FINAL-P05-a'),zh=section(text,'中文解析');
- assert.match(zh,/十三分之八/);
- assert.doesNotMatch(zh,/八分之十三|13\s*\/\s*8/);
- assert.match(section(text,'Detailed Solution'),/^\*\*Answer\.\*\* \$8\/13\$/m);
+test('2017 Final 5(a) English posterior probability keeps numerator and denominator aligned',()=>{
+ const text=read('Q-2017-FINAL-P05-a'),zh=section(text,'Supplementary Explanation');
+ assert.match(zh,/8\s*\/\s*13|eight thirteenths/i);
+ assert.doesNotMatch(zh,/13\s*\/\s*8/);
+ assert.match(section(text,'Supplementary Explanation'),/^\*\*Answer\.\*\* \$8\/13\$/m);
 });
 
-test('2019 Final Bonus (b) bilingual strengthened bound subtracts both n and two',()=>{
- const text=read('Q-2019-FINAL-BONUS-b'),zh=section(text,'中文解析');
- assert.ok(zh.includes('减去 $n+2$'));
- assert.doesNotMatch(zh,/再减 n 加二|-n\s*\+\s*2/);
- assert.ok(section(text,'Detailed Solution').includes('2\\cdot2^n-n-2'));
+test('2019 Final Bonus (b) English strengthened bound subtracts both n and two',()=>{
+ const text=read('Q-2019-FINAL-BONUS-b'),zh=section(text,'Supplementary Explanation');
+ assert.match(zh,/-n-2/);
+ assert.doesNotMatch(zh,/-n\s*\+\s*2/);
+ assert.ok(section(text,'Supplementary Explanation').includes('2\\cdot2^n-n-2'));
 });
 
 test('2017 inclusion-exclusion, posterior coin probability, and recursive invariants recompute',()=>{
@@ -250,7 +248,7 @@ test('solution-driven mappings distinguish construction, inference, counting, an
  has('Q-2018-FINAL-P03-b','subtopics','GCDs and Congruences');has('Q-2018-FINAL-P03-b','methods','Structural Induction');
  has('Q-2018-FINAL-P10-a','methods','Algorithm Trace');assert.ok(!props('Q-2018-FINAL-P10-a').concepts.some(s=>s.includes('Asymptotic')));
  has('Q-2019-MID-P04','methods','Proof Method');assert.ok(!props('Q-2019-MID-P04').methods.some(s=>s.includes('Translation')));
- assert.match(section(read('Q-2019-MID-P04'),'Detailed Solution'),/numbered inference\.\n\n1\. /);
+ assert.match(section(read('Q-2019-MID-P04'),'Supplementary Explanation'),/numbered inference\.\n\n1\. /);
  has('Q-2019-MID-BONUS','methods','Enumeration and Cardinality');
  has('Q-2019-FINAL-P06-a','methods','Recursive Construction');has('Q-2019-FINAL-P06-b','methods','Structural Induction');
  has('Q-2019-FINAL-P07','subtopics','Basic Counting');has('Q-2019-FINAL-P07','subtopics','Modular Arithmetic');

@@ -1,0 +1,35 @@
+Example of Combinations with Repetition
+Suppose that a cookie shop has 
+4 different kinds of cookies
+. In how many different ways can 
+6
+ cookies be chosen? There are no constraints on how many cookies of each kind are chosen (e.g., all 6 may be of the same kind)
+Solution
+Equivalently, I wish to distribute 
+6 indistinguishable
+ cookies (
+stars
+) to 
+4
+ 
+distinguishable
+ cookie boxes (
+bars
+). 
+By previous theorem, the number of such combinations is
+Is the solution still correct if some cookie box contains fewer than 6 cookies? (Equivalently, the cookie shop does not have 6 cookies for some cookie kind(s)). 
+No. We cannot place 6 stars in that box. 
+Solution later … 
+ 
+Equivalent problem: 
+Find the number of (
+nonnegative integer
+) solutions for equation: 
+, 
+where 
+  indicates the chosen number of cookies of type 
+i
+. 
+The number of solutions is 
+ 
+45

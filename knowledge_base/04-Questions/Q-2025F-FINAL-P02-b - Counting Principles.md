@@ -38,24 +38,21 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (b) [5 points] Consider $A=\{1,2,3,4,5\}$. Imagine picking 17 different subsets from $A$ at random. Prove that at least two of them are disjoint.
 
-## 中文解析
+## Official Answer
 
-把三十二个子集按互补关系分成十六对，选十七个必同时命中一对。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+(b) The power set of $A$ has $2^5=32$ subsets. For each subset $S\subseteq A$, its complement $S^c$ is disjoint with $S$ (i.e., $S\cap S^c=\varnothing$).
 
-Provenance: published official answer, independently checked and expanded below.
+Also the complement of any subset is unique (i.e., there is a bijection between any subset and its complement).
 
-### 中文解答
+Thus, these 32 subsets can be paired into 16 groups of (subsets and their complement). Based on pigeonhole principle, if we choose 17 subsets, two of them will be from the same pair which means they are disjoint.
 
-**答案。** 十七个不同子集中必有两个不相交。
+## Supplementary Explanation
 
-**推导。** $A$ 的幂集有 $2^5=32$ 个子集。每个 $S\subseteq A$ 与唯一补集 $A\setminus S$ 配成一对，两者交集为空，且不可能相同：否则元素一既属于又不属于同一集合。取补两次返回原集合，所以三十二个子集恰分为十六个互不重叠的二元组。选十七个不同子集，pigeonhole principle 保证某组中两个都被选中，它们互补，因而不相交。随机选择的分布不影响这个确定性结论。
+**Answer.** Among the 17 distinct subsets, at least two are disjoint.
 
-## Common Mistakes
-
-- 补集配对不能把 S 与其补集又各算一次，否则会错误地得到三十二对。
-- 选择必须是不同子集，重复抽到同一个子集不能用此鸽巢论证。
+**Derivation/proof.** The power set of $A$ has $2^5=32$ subsets. Pair each $S\subseteq A$ with its unique complement $A\setminus S$. They are disjoint and cannot be equal: otherwise element 1 would belong and not belong to the same set. Taking the complement twice returns $S$, so these subsets partition into exactly 16 disjoint pairs. Selecting 17 distinct subsets forces both members of some pair to be selected, by the pigeonhole principle. They are complements and hence disjoint. The random selection distribution has no effect on this deterministic conclusion.
 
 ## Connections
 

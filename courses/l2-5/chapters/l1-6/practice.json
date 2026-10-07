@@ -1,0 +1,803 @@
+[
+  {
+    "id": "Q-2014-MID-P02-a",
+    "topic": "permutations",
+    "sourceNote": "sources/notes/Q-2014-MID-P02-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "5b2408ef361527867e3026284ab5f2f196d6c0cce58edef807c1535a83323128",
+    "stems": [
+      "STEM-2014-MID-P02 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Midterm",
+    "pdf": "sources/papers/2014-midterm.pdf",
+    "pdfSha256": "5ade2facf0869598044eee36243999a991276980e9f97ee7a55954faf3e5a87e",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "There are $n$ families joining a party. Each family consists of 3 people, a mother, a father and a child. In the party, there are $3n$ seats placed in a line.\n\n(a) Suppose everyone is allowed to sit anywhere. How many different seating arrangements are there?\n\nExplain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $(3n)!$.\n\n**Derivation/proof.** All $3n$ people are distinct and every permutation of them in the $3n$ seats is allowed.\n\nThe sequential choices are $3n,3n-1,\\ldots,1$, whose product is $(3n)!$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "3n 个不同人物依次填入直线座位，乘积为 (3n)!。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2025F-MID-P04-a-i",
+    "topic": "permutations",
+    "sourceNote": "sources/notes/Q-2025F-MID-P04-a-i - Combinatorial Selection.md",
+    "sourceNoteSha256": "e0fc614c7e5380a9f1cc3dcb9a3665158edad89b23cc6e64dc430c62f8cad4bb",
+    "stems": [
+      "STEM-2025F-MID-P04-a - Shared Problem Prompt"
+    ],
+    "paper": "2025 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2025_Midterm.pdf",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "page": 12,
+    "solutionPages": [
+      13
+    ],
+    "number": "4(a)(i)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Answer the following questions. You can leave your answer in a combinatorial form without calculating the final answer. For example something like $5!\\times2^3\\times P(5,3)\\times2^7\\times\\binom{20}2$ is totally fine. No explanations is needed.\nYou are NOT allowed to use $\\sum$.\n\n(a) [8 points, 2 pt each] Assume having 6 distinct teachers and 5 distinct students.\n\n(i) In how many ways they can stand in a line?",
+    "solutionMarkdown": "**Answer.** $11!$.\n\n**Derivation/proof.** There are $6+5=11$ distinct people, with a fixed direction along the line. Choose the first person in eleven ways, the second in ten ways, and continue to the last position. The product rule gives $11\\cdot10\\cdots1=11!$. Every permutation describes exactly one line and vice versa. No occupational grouping constraint is imposed.",
+    "mistakesMarkdown": "",
+    "independentVerification": "6+5=11 个不同人物，直线排列为 11!。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2025F-MID-P04-c-i",
+    "topic": "permutations",
+    "sourceNote": "sources/notes/Q-2025F-MID-P04-c-i - Combinatorial Selection.md",
+    "sourceNoteSha256": "760bf53ea237d1b8d7e15d2fcfb0c057ba199bdc6ca90b6799829a8095f9e9bf",
+    "stems": [
+      "STEM-2025F-MID-P04-c - Shared Problem Prompt"
+    ],
+    "paper": "2025 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2025_Midterm.pdf",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "page": 13,
+    "solutionPages": [
+      13
+    ],
+    "number": "4(c)(i)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "(c) [4 point, 2 pts each]\nImagine there are two sets $A=\\{a_1,a_2,\\cdots,a_7\\}$ and $B=\\{b_1,b_2,\\cdots,b_{10}\\}$. Answer the following questions:\n\n(i) In how many ways we can have 7 unordered pairs (e.g., $(a_1,b_1)$ is the same as $(b_1,a_1)$) such that each pair contains an element from $A$ and an element from $B$ while the elements can not be reused?",
+    "solutionMarkdown": "**Answer.** $10!/3!$.\n\n**Derivation/proof.** Seven pairs use all seven A elements. In fixed label order, choose the partner for $a_1$ in ten ways, for $a_2$ in nine ways, and continue through four choices for $a_7$. The product is $10\\cdot9\\cdots4=10!/3!$. This label order only encodes the set of pairs and does not introduce an ordering of the pairs themselves. Each pair has a distinguishable A member and B member, so there is no need to divide by $2^7$ or $7!$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "按 A 的标签依次选不同 B 配偶，10×9×…×4=P(10,7)；不再除 7! 或 2^7。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2013-MID-P01-a",
+    "topic": "combinations",
+    "sourceNote": "sources/notes/Q-2013-MID-P01-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "277dbbc27a165d9853168dbb5b7d65724ff16f0cc1afe9204372ff19ca18b83a",
+    "stems": [
+      "STEM-2013-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2013 Midterm",
+    "pdf": "sources/papers/2013-midterm.pdf",
+    "pdfSha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Twelve Easter eggs are numbered $1,2,\\ldots,12$. Eggs 1 to 4 are colored red, eggs 5 to 8 are colored green, and eggs 9 to 12 are colored purple. A child is allowed to choose 5 of the eggs.\n\n(a) In how many different ways can the child choose 5 eggs?\n\nExplain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $\\binom{12}{5}=792$.\n\n**Derivation/proof.** A selection is an unordered 5-subset of the twelve labelled eggs, so the binomial rule gives $\\binom{12}{5}=792$.\n\n$\\binom{12}{5}=12\\cdot11\\cdot10\\cdot9\\cdot8/(5\\cdot4\\cdot3\\cdot2\\cdot1)=792$. Dividing by $5!$ removes the different orderings of the same selected set.",
+    "mistakesMarkdown": "",
+    "independentVerification": "12 个编号鸡蛋选 5 个，C(12,5)=792；颜色不影响此小题。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2014-MID-P01-a",
+    "topic": "combinations",
+    "sourceNote": "sources/notes/Q-2014-MID-P01-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "414a6931e79312ef37c10c0fd87a63cc3a70c1a5481c05999a8b33f5c0337c19",
+    "stems": [
+      "STEM-2014-MID-P01 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Midterm",
+    "pdf": "sources/papers/2014-midterm.pdf",
+    "pdfSha256": "5ade2facf0869598044eee36243999a991276980e9f97ee7a55954faf3e5a87e",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "A by-election is being held to fill 5 seats in a council that have recently become vacant. A total of 9 candidates have registered to run in the election. The candidates are divided into 3 groups based on their political affiliations with: 4 in Group A, 3 in Group B, and 2 in Group C.\n\n(a) In how many ways can a voter choose 5 candidates?\n\nExplain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $\\binom95=126$.\n\n**Derivation/proof.** The ballot is an unordered selection of five of the nine distinct candidates, so it has $\\binom95$ possibilities.\n\n$\\binom95=9!/(5!4!)=126$. There is no additional factor $5!$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "9 个不同候选人选 5 个无序成员，C(9,5)=126。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2018-MID-P07-a",
+    "topic": "combinations",
+    "sourceNote": "sources/notes/Q-2018-MID-P07-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "15eb7885a76e994d75e4d328eb082823c40e3569570f38895816cd64cb6f9f48",
+    "stems": [
+      "STEM-2018-MID-P07 - Shared Problem Prompt"
+    ],
+    "paper": "2018 Midterm",
+    "pdf": "sources/papers/2018-midterm.pdf",
+    "pdfSha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+    "page": 9,
+    "solutionPages": [
+      9
+    ],
+    "number": "7(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "A committee of 5 members needs to be formed in order to represent the employees in an office. There are 20 employees, 11 men and 9 women.\n\nBriefly justify your answers.\n\n(a) How many ways are there to form the committee if there are no restrictions in the gender of the members?",
+    "solutionMarkdown": "**Answer.** $\\binom{20}{5}=15504$.\n\n**Derivation/proof.** Choose five of the twenty employees without ordering them. There are $20\\cdot19\\cdot18\\cdot17\\cdot16$ ordered selections, and each committee appears in $5!$ orders. Dividing by $5!$ gives $\\binom{20}{5}=15504$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "20 位员工选 5 人，C(20,5)=15504。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2014-MID-P02-b",
+    "topic": "restricted-permutations",
+    "sourceNote": "sources/notes/Q-2014-MID-P02-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "41929874f21732e42c9463db5fb49e4d67aa0251a9dee0a62a9654b7012a59f0",
+    "stems": [
+      "STEM-2014-MID-P02 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Midterm",
+    "pdf": "sources/papers/2014-midterm.pdf",
+    "pdfSha256": "5ade2facf0869598044eee36243999a991276980e9f97ee7a55954faf3e5a87e",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "There are $n$ families joining a party. Each family consists of 3 people, a mother, a father and a child. In the party, there are $3n$ seats placed in a line.\n\n(b) Suppose the three people in each family must sit together. How many different seating arrangement are there?\n\nExplain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $n!(3!)^n$.\n\n**Derivation/proof.** Treat each family as one block and arrange the $n$ blocks in $n!$ ways. Each block has $3!$ internal orders, independently.\n\nExpanding each block uniquely recovers the seating, so no arrangement is duplicated.",
+    "mistakesMarkdown": "",
+    "independentVerification": "n 个家庭块外排 n!，各块 3! 内排，乘积 n!(3!)^n；n=2 穷举交叉核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2014-MID-P02-d",
+    "topic": "restricted-permutations",
+    "sourceNote": "sources/notes/Q-2014-MID-P02-d - Combinatorial Selection.md",
+    "sourceNoteSha256": "438429cc83d73f678fe2b05e52e6a2600bee347cfd9d833c63bdfc30b107283c",
+    "stems": [
+      "STEM-2014-MID-P02 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Midterm",
+    "pdf": "sources/papers/2014-midterm.pdf",
+    "pdfSha256": "5ade2facf0869598044eee36243999a991276980e9f97ee7a55954faf3e5a87e",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(d)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "There are $n$ families joining a party. Each family consists of 3 people, a mother, a father and a child. In the party, there are $3n$ seats placed in a line.\n\n(d) Suppose each child must sit next to his/her mother. How many different seating arrangements are there?\n\nExplain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $(2n)!2^n$.\n\n**Derivation/proof.** Make each mother–child pair a block and keep each father as a singleton: $2n$ units arrange in $(2n)!$ ways. Every pair has two internal orders.\n\nThe two orders are mother-left/child-right and child-left/mother-right. Fathers need not sit near their families.",
+    "mistakesMarkdown": "",
+    "independentVerification": "n 个母子块加 n 位父亲共 2n 单位，每块两种方向，(2n)!2^n；n=2 穷举交叉核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2025F-MID-P04-a-iv",
+    "topic": "restricted-permutations",
+    "sourceNote": "sources/notes/Q-2025F-MID-P04-a-iv - Combinatorial Selection.md",
+    "sourceNoteSha256": "8636706a752e4caa2d0d916b8783cfd4626506087bf816fbfc06cfd9ad79a633",
+    "stems": [
+      "STEM-2025F-MID-P04-a - Shared Problem Prompt"
+    ],
+    "paper": "2025 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2025_Midterm.pdf",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "page": 12,
+    "solutionPages": [
+      13
+    ],
+    "number": "4(a)(iv)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Answer the following questions. You can leave your answer in a combinatorial form without calculating the final answer. For example something like $5!\\times2^3\\times P(5,3)\\times2^7\\times\\binom{20}2$ is totally fine. No explanations is needed.\nYou are NOT allowed to use $\\sum$.\n\n(a) [8 points, 2 pt each] Assume having 6 distinct teachers and 5 distinct students.\n\n(iv) In how many ways, no two teacher stand next to each other.",
+    "solutionMarkdown": "**Answer.** $6!\\times5!$.\n\n**Derivation/proof.** First arrange the students in $5!$ ways. There are six gaps, including both ends. At most one teacher may occupy each gap, and six teachers must fill all six gaps. Assigning the distinct teachers takes $6!$ ways, giving $5!\\cdot6!$. The occupation pattern is necessarily TSTSTSTSTST.",
+    "mistakesMarkdown": "",
+    "independentVerification": "5 学生创造 6 个间隙，6 教师恰好各占一隙，5!6!；职业序列穷举仅 TSTSTSTSTST 合法。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2017-MID-P09-a",
+    "topic": "combination-applications",
+    "sourceNote": "sources/notes/Q-2017-MID-P09-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "9be4e66a18315f130a0ee0b42b2691f16dd273d7f2b9a8fc103fc6dd67a51175",
+    "stems": [
+      "STEM-2017-MID-P09 - Shared Problem Prompt"
+    ],
+    "paper": "2017 Midterm",
+    "pdf": "sources/papers/2017-midterm.pdf",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "9(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Six women and nine men are on the faculty of a department. The department needs to form a committee of five members.\n\n(a) How many committees are possible if the committee must have two women and three men?",
+    "solutionMarkdown": "**Answer.** $\\binom62\\binom93$.\n\n**Derivation/proof.** Choose the two women from the six available in $\\binom62$ ways and the three men from the nine in $\\binom93$ ways. Each pair of choices gives a unique five-person committee, so multiply; no ordering of members is recorded.\n\nNumerically, $\\binom62\\binom93=15\\cdot84=1260$.\n\nThe committee is selected without ordering: changing the order in which the same five people are selected produces the same committee, which is why the count uses a binomial coefficient.",
+    "mistakesMarkdown": "",
+    "independentVerification": "从 6 女选 2、9 男选 3，15×84=1260；成员集合唯一分解。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2017-MID-P09-b",
+    "topic": "combination-applications",
+    "sourceNote": "sources/notes/Q-2017-MID-P09-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "0548db2b0f3f3b5259e32a3621fd2029aa845cb7aa87d5517a15d26ba68fa85d",
+    "stems": [
+      "STEM-2017-MID-P09 - Shared Problem Prompt"
+    ],
+    "paper": "2017 Midterm",
+    "pdf": "sources/papers/2017-midterm.pdf",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "9(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Six women and nine men are on the faculty of a department. The department needs to form a committee of five members.\n\n(b) How many committees are possible if the committee must have at least two women?",
+    "solutionMarkdown": "**Answer.** $\\binom62\\binom93+\\binom63\\binom92+\\binom64\\binom91+\\binom65\\binom90$.\n\n**Derivation/proof.** Classify a committee by its number $k$ of women. The allowed values are $k=2,3,4,5$. For each, choose $k$ of the six women and $5-k$ of the nine men, giving $\\binom6k\\binom9{5-k}$. The four cases are disjoint and exhaustive, so sum them.\n\nNumerically, the four cases give $1260+720+135+6=2121$.\n\nPartition committees by the exact number $k$ chosen from the six-person group. The disjoint cases sum to $\\sum_{k=2}^{5}\\binom6k\\binom9{5-k}$, equivalent to subtracting the zero- and one-member cases from all committees.",
+    "mistakesMarkdown": "",
+    "independentVerification": "女数精确为 2/3/4/5，互斥类别合计 1260+720+135+6=2121。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2024F-MID-P06-b",
+    "topic": "combination-applications",
+    "sourceNote": "sources/notes/Q-2024F-MID-P06-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "49917b179dc75f15a6869acd1894a89b742a1e97dea9f1a1db660e6f4c1926b0",
+    "stems": [
+      "STEM-2024F-MID-P06 - Shared Problem Prompt"
+    ],
+    "paper": "2024 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2024_Midterm.pdf",
+    "pdfSha256": "a2c7c1624898971f48fd6a5cf143df67db1fe4f9a8bd59cdfc880c8a3120458c",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "6(b)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Assume that in any decimal number the leftmost digit cannot be 0. How many 6-digit numbers exist such that their digits from left to right:\n\n(b) Are strictly increasing (e.g., 136789). Briefly explain why.",
+    "solutionMarkdown": "**Answer.** $\\binom96=84$.\n\n**Derivation/proof.** Strict increase requires six distinct digits in ascending order. If zero were selected, it would be the smallest digit and therefore the leading digit, which is forbidden. Thus choose six digits from one through nine, in $\\binom96=84$ ways. Each chosen set has exactly one increasing arrangement and a nonzero first digit, so no factorial multiplier is needed.",
+    "mistakesMarkdown": "",
+    "independentVerification": "严格递增的六位数不能含 0，选 1…9 的六元素集合即唯一数字，C(9,6)=84。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2015-MID-P08-a",
+    "topic": "categorized-selections",
+    "sourceNote": "sources/notes/Q-2015-MID-P08-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "387b9451b05aca82abdad6bd80c3ac6ffa3fbf91e1dff3ae842670ae700e1a08",
+    "stems": [
+      "STEM-2015-MID-P08 - Shared Problem Prompt"
+    ],
+    "paper": "2015 Midterm",
+    "pdf": "sources/papers/2015-midterm.pdf",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6",
+    "page": 13,
+    "solutionPages": [
+      13
+    ],
+    "number": "8(a)",
+    "marks": 5,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "A shopping bag contains 12 pair of gloves. Each pair consists of two different gloves, one for the left hand and another for the right hand, and the two gloves are in the same color. Moreover, different pairs are in different colors. You blindly take 6 gloves (not 6 pairs of gloves) from the bag. How many possible ways are there if\n\n(a) the number of colors of these 6 gloves is 3?\n\nBriefly explain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $\\binom{12}{3}=220$.\n\n**Derivation/proof.** If the three selected colors contribute $g_1,g_2,g_3\\le2$ gloves each and sum to six, all $g_i=2$. Choose those three colors from twelve; their gloves are then fixed.\n\nThe constraints $g_1+g_2+g_3=6$ and $g_i\\le2$ force all three values to be two.",
+    "mistakesMarkdown": "",
+    "independentVerification": "六只手套三颜色、每色至多二只强制每色二只，C(12,3)=220；穷举24只中选6核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2015-MID-P08-b",
+    "topic": "categorized-selections",
+    "sourceNote": "sources/notes/Q-2015-MID-P08-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "f188e0d648e186bbc7b3ffe122f86305133062ea97a8228048b2c411af1690e6",
+    "stems": [
+      "STEM-2015-MID-P08 - Shared Problem Prompt"
+    ],
+    "paper": "2015 Midterm",
+    "pdf": "sources/papers/2015-midterm.pdf",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6",
+    "page": 13,
+    "solutionPages": [
+      13
+    ],
+    "number": "8(b)",
+    "marks": 5,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "A shopping bag contains 12 pair of gloves. Each pair consists of two different gloves, one for the left hand and another for the right hand, and the two gloves are in the same color. Moreover, different pairs are in different colors. You blindly take 6 gloves (not 6 pairs of gloves) from the bag. How many possible ways are there if\n\n(b) the number of colors of these 6 gloves is 4?\n\nBriefly explain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $\\binom{12}{2}\\binom{10}{2}2^2=11880$.\n\n**Derivation/proof.** Let $d$ be the number of doubled colors and $s$ singleton colors. Then $d+s=4$ and $2d+s=6$, so $d=s=2$. Choose doubled colors in $\\binom{12}{2}$ ways, singleton colors from the rest in $\\binom{10}{2}$ ways, then each singleton glove in two ways. This decomposition is unique.\n\nSubtracting $d+s=4$ from $2d+s=6$ gives $d=2,s=2$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "六只四色强制二双二单，C(12,2)C(10,2)2^2=11880；穷举核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2015-MID-P08-c",
+    "topic": "categorized-selections",
+    "sourceNote": "sources/notes/Q-2015-MID-P08-c - Combinatorial Selection.md",
+    "sourceNoteSha256": "ec945d80ca66ecf377a7fd19e7399648517f4ebb4db20490d77fb2845703a676",
+    "stems": [
+      "STEM-2015-MID-P08 - Shared Problem Prompt"
+    ],
+    "paper": "2015 Midterm",
+    "pdf": "sources/papers/2015-midterm.pdf",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6",
+    "page": 13,
+    "solutionPages": [
+      13
+    ],
+    "number": "8(c)",
+    "marks": 5,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "A shopping bag contains 12 pair of gloves. Each pair consists of two different gloves, one for the left hand and another for the right hand, and the two gloves are in the same color. Moreover, different pairs are in different colors. You blindly take 6 gloves (not 6 pairs of gloves) from the bag. How many possible ways are there if\n\n(c) these 6 gloves have different colors?\n\nBriefly explain how your answers are derived.",
+    "solutionMarkdown": "**Answer.** $\\binom{12}{6}2^6=59136$.\n\n**Derivation/proof.** A valid selection identifies a unique six-color subset, with $\\binom{12}{6}$ choices. For each selected color exactly one of its left/right gloves is taken, giving $2^6$ selections per subset. Multiplication yields the result.\n\nNo ordering of the selected gloves is counted, so no factor of $6!$ belongs in the answer.",
+    "mistakesMarkdown": "",
+    "independentVerification": "六只六色，C(12,6)2^6=59136；穷举核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2013-MID-P03",
+    "topic": "bijections",
+    "sourceNote": "sources/notes/Q-2013-MID-P03 - Combinatorial Selection.md",
+    "sourceNoteSha256": "c7f2cb757363933ad698651f763d38944da6797acf859bb9cd6bbdebba6a37d6",
+    "stems": [],
+    "paper": "2013 Midterm",
+    "pdf": "sources/papers/2013-midterm.pdf",
+    "pdfSha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d",
+    "page": 5,
+    "solutionPages": [
+      5
+    ],
+    "number": "3",
+    "marks": 10,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Let $n$ be a positive integer. Give a combinatorial proof of the following equation:\n$$\\binom{2n}{2}=2\\binom n2+n^2.$$\nNote: An algebraic proof will not be accepted as a correct solution.",
+    "solutionMarkdown": "**Answer.** Both sides count 2-element selections from two labelled groups of $n$ objects.\n\n**Derivation/proof.** Partition $2n$ objects into left and right groups of size $n$. A pair lies wholly left ($\\binom n2$ choices), wholly right ($\\binom n2$ choices), or has one object in each group ($n^2$ choices). These cases are exhaustive and disjoint, proving the identity.\n\nDirect counting gives $\\binom{2n}{2}$, so $\\binom{2n}{2}=2\\binom n2+n^2$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "两组各 n 人，二人组或同组(两类各C(n,2))或跨组(n²)，分类互斥穷尽；n=1亦成立。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2016-MID-P03-a",
+    "topic": "bijections",
+    "sourceNote": "sources/notes/Q-2016-MID-P03-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "f49b004fb9f8e3c664b161b21e72bb949f798f1003754495da51651707146f97",
+    "stems": [
+      "STEM-2016-MID-P03 - Shared Problem Prompt"
+    ],
+    "paper": "2016 Midterm",
+    "pdf": "sources/papers/2016-midterm.pdf",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c",
+    "page": 5,
+    "solutionPages": [
+      5
+    ],
+    "number": "3(a)",
+    "marks": 9,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Consider the following identity. For any two integers $n$ and $k$ where $0<k\\le n$,\n$$\\binom nk=\\frac nk\\binom{n-1}{k-1}.$$\n\n(a) Prove the identity above by means of a combinatorial proof.",
+    "solutionMarkdown": "**Answer.** $k\\binom nk=n\\binom{n-1}{k-1}$, hence the required identity.\n\n**Derivation/proof.** Count pairs $(S,s)$ with $S\\subseteq\\{1,\\ldots,n\\}$, $|S|=k$, and $s\\in S$. Choosing $S$ then $s$ gives $\\binom nk k$. Choosing $s$ first gives $n$ choices and then $\\binom{n-1}{k-1}$ choices for the other members. Equate the counts and divide by the positive integer $k$.\n\nThe distinguished member, the other selected members, and the unselected objects correspond exactly to the source's three buckets of sizes $1,k-1,n-k$. Since $k>0$, division by $k$ is legitimate.",
+    "mistakesMarkdown": "",
+    "independentVerification": "计数(S,s)，|S|=k且s∈S；先S再s得kC(n,k)，先s再余人得nC(n-1,k-1)，k>0可除。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2016-MID-P03-b",
+    "topic": "bijections",
+    "sourceNote": "sources/notes/Q-2016-MID-P03-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "19654ae70f513a0d3f63660a49772c18cd533aa28c7777ba050288eca449e07f",
+    "stems": [
+      "STEM-2016-MID-P03 - Shared Problem Prompt"
+    ],
+    "paper": "2016 Midterm",
+    "pdf": "sources/papers/2016-midterm.pdf",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c",
+    "page": 5,
+    "solutionPages": [
+      6
+    ],
+    "number": "3(b)",
+    "marks": 6,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Consider the following identity. For any two integers $n$ and $k$ where $0<k\\le n$,\n$$\\binom nk=\\frac nk\\binom{n-1}{k-1}.$$\n\n(b) Prove the identity above by means of an algebraic proof.",
+    "solutionMarkdown": "**Answer.** $\\frac nk\\binom{n-1}{k-1}=\\binom nk$.\n\n**Derivation/proof.** $\\displaystyle\\frac nk\\binom{n-1}{k-1}=\\frac{n(n-1)!}{k(k-1)!((n-1)-(k-1))!}=\\frac{n!}{k!(n-k)!}=\\binom nk$. The specified $0<k\\le n$ ensures division by $k$ and all factorials are valid.\n\nThe final factorial ratio is $n!/[k!(n-k)!]$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "n/k × (n-1)!/[(k-1)!(n-k)!] = n!/[k!(n-k)!]，0<k≤n。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2014-MID-P04-a",
+    "topic": "multiset-permutations",
+    "sourceNote": "sources/notes/Q-2014-MID-P04-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "78c233c9ac634816b13a50853daa0e75ea458132017e803ae35823b7476994dc",
+    "stems": [
+      "STEM-2014-MID-P04 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Midterm",
+    "pdf": "sources/papers/2014-midterm.pdf",
+    "pdfSha256": "5ade2facf0869598044eee36243999a991276980e9f97ee7a55954faf3e5a87e",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "4(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "An anagram is a distinct ordering of the letters. For example, the word “eat” has six anagrams “eat”, “eta”, “ate”, “aet”, “tea” and “tae”, while the word “too” has only three anagrams “too”, “oto” and “oot”.\n\n(a) How many anagrams does the word “java” have?\n\nExplain your answers.",
+    "solutionMarkdown": "**Answer.** $4!/2!=12$.\n\n**Derivation/proof.** There are four positions with two indistinguishable a's. Divide the $4!$ permutations of labelled letters by the $2!$ swaps that do not change the word.",
+    "mistakesMarkdown": "",
+    "independentVerification": "java 有 a×2，4!/2!=12；实际生成不同排列核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2014-MID-P04-b",
+    "topic": "multiset-permutations",
+    "sourceNote": "sources/notes/Q-2014-MID-P04-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "729849a992d0907bb145dc9a569a5038e69ce48c96c87e4a1f8480b5042ac89d",
+    "stems": [
+      "STEM-2014-MID-P04 - Shared Problem Prompt"
+    ],
+    "paper": "2014 Midterm",
+    "pdf": "sources/papers/2014-midterm.pdf",
+    "pdfSha256": "5ade2facf0869598044eee36243999a991276980e9f97ee7a55954faf3e5a87e",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "4(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "An anagram is a distinct ordering of the letters. For example, the word “eat” has six anagrams “eat”, “eta”, “ate”, “aet”, “tea” and “tae”, while the word “too” has only three anagrams “too”, “oto” and “oot”.\n\n(b) How many anagrams does the word “lollapalooza” have?\n\nExplain your answers.",
+    "solutionMarkdown": "**Answer.** $12!/(4!3!3!)=554400$.\n\n**Derivation/proof.** The twelve letters have multiplicities $l:4$, $a:3$, $o:3$, $p:1$, $z:1$. Divide $12!$ by factorials of repeated-letter multiplicities.\n\nTemporarily labelling repeated letters gives $12!$ permutations. Removing the labels identifies $4!3!3!$ permutations for each word, giving $12!/(4!3!3!)=554400$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "lollapalooza 长12，l×4,a×3,o×3,p×1,z×1，12!/(4!3!3!)=554400；独立字母频次检查。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2019-FINAL-P09-a",
+    "topic": "object-distributions",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P09-a - Combinatorial Selection.md",
+    "sourceNoteSha256": "1582a8dde2d4b9bf146bad809bee602b40d210162cdd10236904ad07f327afb5",
+    "stems": [
+      "STEM-2019-FINAL-P09 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "9(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "A professor packs her collection of 40 (distinguishable) issues of a mathematics journal in four boxes with 10 issues per box. How many ways can she distribute the journals if\n\n(a) each box is numbered, so that they are distinguishable?",
+    "solutionMarkdown": "**Answer.** $\\frac{40!}{(10!)^4}$.\n\n**Derivation/proof.** Choose ten issues for box 1, then ten of the remaining thirty for box 2, then ten of the remaining twenty for box 3; the last ten go to box 4. This gives $\\binom{40}{10}\\binom{30}{10}\\binom{20}{10}\\binom{10}{10}=40!/(10!)^4$. Order within a box does not matter, but box labels distinguish the four groups.",
+    "mistakesMarkdown": "",
+    "independentVerification": "40 不同杂志固定四个有标签盒各10本，依次选10的乘积=40!/(10!)⁴。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2019-FINAL-P09-b",
+    "topic": "object-distributions",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P09-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "e212b92e2301b17ca94f272f900268ee3abea91702a9ab8f26481210f7f1c5f4",
+    "stems": [
+      "STEM-2019-FINAL-P09 - Shared Problem Prompt"
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "9(b)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "A professor packs her collection of 40 (distinguishable) issues of a mathematics journal in four boxes with 10 issues per box. How many ways can she distribute the journals if\n\n(b) the boxes are identical, so that they cannot be distinguished?",
+    "solutionMarkdown": "**Answer.** $\\frac{40!}{(10!)^4\\cdot4!}$.\n\n**Derivation/proof.** For labeled boxes, the count is $40!/(10!)^4$. Each unlabeled distribution consists of four distinct, nonempty sets of ten distinguishable issues. Assigning box labels to those sets can be done in exactly $4!$ ways, and no nontrivial label permutation fixes the distribution because the disjoint nonempty sets differ. Divide by $4!$ to count each unlabeled partition once.\n\nEvery box has ten issues and is nonempty; allowing empty boxes would require rechecking this uniform-labeling argument.\n\nThe forty people are pairwise distinct. Assigning them to four equal groups gives $\\frac{40!}{(10!)^4\\,4!}$ after division by the internal orders and then by the permutation of the four unlabeled groups.",
+    "mistakesMarkdown": "",
+    "independentVerification": "四个盒均非空且内容互异，每个无标签分组恰有4!个加标签版本，再除4!；无固定点。",
+    "verificationNote": "知识库解析末句提到“forty people”；本原题的对象是 40 本不同杂志，计数公式不变。"
+  },
+  {
+    "id": "Q-2018-MID-P08-c",
+    "topic": "repeated-combinations",
+    "sourceNote": "sources/notes/Q-2018-MID-P08-c - Combinatorial Selection.md",
+    "sourceNoteSha256": "9e7ffc4f6b6bb50514960690782777191bd342775a290062595775b0f111bba8",
+    "stems": [
+      "STEM-2018-MID-P08 - Shared Problem Prompt"
+    ],
+    "paper": "2018 Midterm",
+    "pdf": "sources/papers/2018-midterm.pdf",
+    "pdfSha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "8(c)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "You are given a suitcase that has a combination lock. It consists of five dials, each of which can be rotated to take a value from 0–9. The suitcase only opens if you guess the correct 5-digit solution.\n\nBriefly justify your answers.\n\n(c) Assume that the lock has a weird flaw: The exact order in which you put the digits does not matter. In this case how many different solutions are there?\n(Note that all permuted versions of a given combination still counts as one solution. For example, if the correct solution is 12345, then 34125,51243,23145,etc., all count as the same solution.)",
+    "solutionMarkdown": "**Answer.** $\\binom{14}{5}=2002$.\n\n**Derivation/proof.** For each digit $d=0,\\ldots,9$, let $x_d$ be its multiplicity. An unordered setting is uniquely described by $x_0+\\cdots+x_9=5$ with each $x_d\\ge0$. Five stars and nine bars encode these ten counts. Thus there are $\\binom{14}{9}=\\binom{14}{5}=2002$ settings. Part (b)'s adjacency restriction is not carried into this separate part.",
+    "mistakesMarkdown": "",
+    "independentVerification": "十种数字无序重复取5，十维非负频次和5，C(14,5)=2002；前小题限制不继承。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2024F-MID-P06-c",
+    "topic": "repeated-combinations",
+    "sourceNote": "sources/notes/Q-2024F-MID-P06-c - Combinatorial Selection.md",
+    "sourceNoteSha256": "1b6e225dd421764a87f0f451c5e3ae1b0b59fcc00b4211c8be78ea87fec5d167",
+    "stems": [
+      "STEM-2024F-MID-P06 - Shared Problem Prompt"
+    ],
+    "paper": "2024 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2024_Midterm.pdf",
+    "pdfSha256": "a2c7c1624898971f48fd6a5cf143df67db1fe4f9a8bd59cdfc880c8a3120458c",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "6(c)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Assume that in any decimal number the leftmost digit cannot be 0. How many 6-digit numbers exist such that their digits from left to right:\n\n(c) Are deceasing, but potentially contain repeated digits (e.g., 997770). Briefly explain why.\nHint: Only the number of occurrences of each digit is important.",
+    "solutionMarkdown": "**Answer.** $\\binom{15}9-1=5004$.\n\n**Derivation/proof.** With repetition, “deceasing” means nonincreasing as illustrated. Let $x_i$ be the frequency of digit $i$, so $x_0+\\cdots+x_9=6$ and all $x_i\\ge0$. Each frequency vector gives one descending arrangement. Stars and bars gives $\\binom{6+10-1}{10-1}=\\binom{15}9=5005$ nonnegative solutions. Only $x_0=6$ with all other entries zero is invalid, producing 000000. Any nonzero digit becomes the leading digit. Thus $5005-1=5004$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "六位非增数对应十种数字频次和6；仅全0失效，C(15,9)-1=5004；实际生成5005个多重集合核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2024F-MID-P06-d",
+    "topic": "repeated-combinations",
+    "sourceNote": "sources/notes/Q-2024F-MID-P06-d - Combinatorial Selection.md",
+    "sourceNoteSha256": "1fcea15bdc2d0635d4a983cafaed9513d32473aeaac3a33acdf82814aa2a67e4",
+    "stems": [
+      "STEM-2024F-MID-P06 - Shared Problem Prompt"
+    ],
+    "paper": "2024 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2024_Midterm.pdf",
+    "pdfSha256": "a2c7c1624898971f48fd6a5cf143df67db1fe4f9a8bd59cdfc880c8a3120458c",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "6(d)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Assume that in any decimal number the leftmost digit cannot be 0. How many 6-digit numbers exist such that their digits from left to right:\n\n(d) Are increasing, but potentially contain repeated digits (e.g., 111144). Briefly explain why.",
+    "solutionMarkdown": "**Answer.** $\\binom{14}8=3003$.\n\n**Derivation/proof.** Allowing repetitions makes “increasing” mean nondecreasing. Any zero would appear first, so $x_0=0$. The remaining frequencies satisfy $x_1+\\cdots+x_9=6$ with all entries nonnegative. Every vector gives one valid ascending six-digit number. Stars and bars yields $\\binom{6+9-1}{9-1}=\\binom{14}8=3003$. No all-zero case needs subtracting because zero was excluded altogether.",
+    "mistakesMarkdown": "",
+    "independentVerification": "六位非减数不能含0，九种数字重复取6，C(14,8)=3003；生成核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2013-MID-P08",
+    "topic": "integer-solutions",
+    "sourceNote": "sources/notes/Q-2013-MID-P08 - Combinatorial Selection.md",
+    "sourceNoteSha256": "e2e92c370a7e0c96bd6177498531c073fdb4ee213dd07d7f6a021b017554c92d",
+    "stems": [],
+    "paper": "2013 Midterm",
+    "pdf": "sources/papers/2013-midterm.pdf",
+    "pdfSha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d",
+    "page": 13,
+    "solutionPages": [
+      13
+    ],
+    "number": "8",
+    "marks": 12,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "In how many different ways can we write 100 as the sum of three non-negative integers? In other words, how many lists $x_1x_2x_3$ of three non-negative integers $x_1$, $x_2$ and $x_3$ are there such that $x_1+x_2+x_3=100$?\n\nYou might need to use the Bijection principle for this question. Clearly state the two sets involved, and the function between the two sets.",
+    "solutionMarkdown": "**Answer.** $\\binom{102}{2}=5151$.\n\n**Derivation/proof.** Map a triple to 100 stars separated into blocks of sizes $x_1,x_2,x_3$ by two bars, allowing adjacent bars and end bars. This is a bijection with placements of two bars among 102 positions, hence $\\binom{102}{2}$.\n\nExplicitly, $S$ is the set of ordered nonnegative triples of sum $100$, and $T$ is the set of length-$102$ strings with $100$ identical stars and two identical bars. Counting stars in the three blocks inverts the map, proving bijectivity. Thus $|S|=|T|=\\binom{102}{2}=5151$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "三元非负有序解和100对应100星2隔板，C(102,2)=5151；双重循环枚举核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2017-MID-P10-b",
+    "topic": "integer-solutions",
+    "sourceNote": "sources/notes/Q-2017-MID-P10-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "8c032ec1b15f3a4c59191a7a53443c6a5bdf9bd0b77f7f8d41eabd409e8e186c",
+    "stems": [
+      "STEM-2017-MID-P10 - Shared Problem Prompt"
+    ],
+    "paper": "2017 Midterm",
+    "pdf": "sources/papers/2017-midterm.pdf",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+    "page": 12,
+    "solutionPages": [
+      12
+    ],
+    "number": "10(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Assume you have 50 candies and four boxes, labeled $A,B,C$, and $D$.\n\n(b) How many ways can you put the candies in the boxes, assuming that the candies are identical?",
+    "solutionMarkdown": "**Answer.** $\\binom{53}{3}$.\n\n**Derivation/proof.** Let $x_A,x_B,x_C,x_D$ be nonnegative box counts, with sum $50$. Represent a distribution by fifty stars and three separators; the numbers of stars before and between separators specify the labeled boxes. Choosing the three separator positions among 53 gives $\\binom{53}{3}$.\n\nWrite the occupancies as nonnegative integers satisfying $x_A+x_B+x_C+x_D=50$. A stars-and-bars arrangement and its occupancy vector determine each other, establishing a one-to-one correspondence even when some boxes are empty.",
+    "mistakesMarkdown": "",
+    "independentVerification": "50相同糖、四标签盒，50星3板，C(53,3)=23426；盒计数枚举核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2017-MID-P10-c",
+    "topic": "integer-solutions",
+    "sourceNote": "sources/notes/Q-2017-MID-P10-c - Combinatorial Selection.md",
+    "sourceNoteSha256": "de6f61a7550b875d973e429753ef5c6e128f45a12ab5dddba83913ff3835b67b",
+    "stems": [
+      "STEM-2017-MID-P10 - Shared Problem Prompt"
+    ],
+    "paper": "2017 Midterm",
+    "pdf": "sources/papers/2017-midterm.pdf",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+    "page": 12,
+    "solutionPages": [
+      12
+    ],
+    "number": "10(c)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "derived",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "Assume you have 50 candies and four boxes, labeled $A,B,C$, and $D$.\n\n(c) How many ways can you put the candies in the boxes, assuming that the candies are identical and each box must have at least five candies put into it?",
+    "solutionMarkdown": "**Answer.** $\\binom{33}{3}=5456$.\n\n**Derivation/proof.** Write each box count as $x_i=5+y_i$, where $y_i\\ge0$. Then $y_1+y_2+y_3+y_4=50-4\\cdot5=30$. Stars and bars gives $\\binom{30+4-1}{3}=\\binom{33}{3}=5456$. Independently, direct enumeration of nonnegative quadruples summing to 30 gives the same 5456; the bijection adds five to each coordinate.\n\nFor the independent enumeration, let $y_1=0,\\ldots,30$, $y_2=0,\\ldots,30-y_1$, and $y_3=0,\\ldots,30-y_1-y_2$; $y_4$ is determined by the sum. This counts $5456$ quadruples.\n\nThe four required allocations reserve twenty balls in total, leaving $50-20=30$ freely distributed balls. Apply stars and bars to those thirty, rather than to the printed thirty-five.",
+    "mistakesMarkdown": "",
+    "independentVerification": "每盒先给5共20，剩30星3板，C(33,3)=5456；不使用官方印刷的35，枚举核验。",
+    "verificationNote": "印刷答案错误地剩下 35 颗糖；四盒各预留 5 颗共 20 颗，正确剩余为 30。此处使用知识库中经独立推导和枚举核验的更正答案 C(33,3)=5456。"
+  },
+  {
+    "id": "Q-2018-FINAL-P11-b",
+    "topic": "restricted-paths",
+    "sourceNote": "sources/notes/Q-2018-FINAL-P11-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "187efdb6bf785bb4929ba9cfdac1333ab8c929e62df568a8704b5a16bdf342c7",
+    "stems": [
+      "STEM-2018-FINAL-P11 - Shared Problem Prompt"
+    ],
+    "paper": "2018 Final",
+    "pdf": "sources/papers/2018-final.pdf",
+    "pdfSha256": "4107217a4179737cc7e7aedd960d091d0d74288516b45cd1fc64322b72474ce9",
+    "page": 16,
+    "solutionPages": [
+      16
+    ],
+    "number": "11(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "In the following shape, consider paths that start from $A$ and finish at $B$ following the lines. Every path may only have steps going up or right. E.g., one path would be $\\{\\uparrow,\\uparrow,\\uparrow,\\rightarrow,\\rightarrow,\\rightarrow,\\rightarrow,\\rightarrow\\}$. How many distinct such paths are there if:\n\n![原题图示](../sources/figures/2018-FINAL-P11-grid.png)\n\nb) The line from C to D (the dashed line in the figure below) is missing, so paths cannot pass between C and D?",
+    "solutionMarkdown": "**Answer.** $56-6\\cdot1\\cdot3=38$.\n\n**Derivation/proof.** Count paths using the missing edge and subtract. Reaching $C$ requires two right and two up steps, giving $\\binom42=6$ prefixes. The step $C\\to D$ is forced. From $D$ to $B$, two right and one up step give $\\binom32=3$ suffixes. Every forbidden path has this unique decomposition and cannot use the edge twice, so there are 18 forbidden paths. Subtracting from 56 gives 38; a grid dynamic-programming count independently agrees.\n\nA monotone path cannot traverse the forbidden edge twice, so the prefix-edge-suffix count has no duplicate paths.\n\nEvery path through the forbidden point splits uniquely into a prefix reaching it and a suffix leaving it. Subtracting those eighteen paths from all fifty-six gives $56-18=38$ valid paths.",
+    "mistakesMarkdown": "",
+    "independentVerification": "5右3上共56；缺边C(2,2)→D(3,2)，禁行6×1×3=18，答案38；原图查看并独立DP核验。",
+    "verificationNote": "知识库解析最后一句使用“forbidden point”一词；本原题实际禁止的是 C→D 边。按前缀、该边、后缀计算的 18 条与答案 38 均正确。"
+  },
+  {
+    "id": "Q-2020-FINAL1-P03-b",
+    "topic": "restricted-paths",
+    "sourceNote": "sources/notes/Q-2020-FINAL1-P03-b - Combinatorial Selection.md",
+    "sourceNoteSha256": "a65b7b3a9dd64696a6df0dc833f269ce5379f5006be9388f240b496856261c1c",
+    "stems": [
+      "STEM-2020-FINAL1-P03 - Shared Problem Prompt"
+    ],
+    "paper": "2020 Final Part 1",
+    "pdf": "sources/papers/2020-final-part-1.pdf",
+    "pdfSha256": "dab6603922032b927f7dae8fdeae6b915f29522539c6d392cc8d83d7394a2306",
+    "page": 2,
+    "solutionPages": [
+      2
+    ],
+    "number": "3(b)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "You are staying on point A and you are allowed to walk either up or to the right. Answer these questions:\n\n![原题图示](../sources/figures/2020-FINAL1-P03-grid.png)\n\nIn how many ways you can go to point B without passing through point C?",
+    "solutionMarkdown": "**Answer.** $\\binom{11}{5}-\\binom{6}{3}\\binom{5}{3}=262$.\n\n**Derivation/proof.** There are $\\binom{11}{5}=462$ unrestricted paths. From A to C the figure requires three right and three up moves, giving $\\binom63=20$ prefixes. From C to B it requires three right and two up moves, giving $\\binom53=10$ suffixes. A path through C uniquely decomposes into one prefix and one suffix, so exactly 200 pass through C. Subtracting leaves 262.\n\nAll paths number 462, and the forbidden-point paths number 200 by the unique prefix/suffix split. Their difference is $462-200=262$.",
+    "mistakesMarkdown": "",
+    "independentVerification": "6右5上共462；必经C(3,3)20×10=200，避开262；原图查看并独立DP核验。",
+    "verificationNote": ""
+  },
+  {
+    "id": "Q-2024S-FINAL-P04",
+    "topic": "restricted-paths",
+    "sourceNote": "sources/notes/Q-2024S-FINAL-P04 - Combinatorial Selection.md",
+    "sourceNoteSha256": "31b647fc54320995ce0bab671114cfda5ebb5de022e44c402e0be7f3c2859fe9",
+    "stems": [],
+    "paper": "2024 Spring Final",
+    "pdf": "sources/papers/COMP2711_S2024_Final.pdf",
+    "pdfSha256": "c3c98022a98dd9586cb2eff94c5e7d78bda69b0cb0fb4f4ecf5401241615779d",
+    "page": 4,
+    "solutionPages": [
+      4,
+      5
+    ],
+    "number": "4",
+    "marks": 10,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "solutionSection": "Supplementary Explanation",
+    "questionMarkdown": "You want to walk from the point $(0,0)$ to the point $(8,8)$ on a square grid, where each point on the grid has integer coordinates. In each step, you can move from a point $(i,j)$ to either $(i+1,j)$ or $(i,j+1)$, which means you can move one unit in the positive x-direction or one unit in the positive y-direction, respectively. The walk will take exactly 16 unit steps in total. Additionally, your path must include the grid position $(2,3)$ and you must avoid the grid position $(6,5)$. How many different paths can you take from $(0,0)$ to $(8,8)$ while satisfying these conditions?",
+    "solutionMarkdown": "**Answer.** $\\binom52[\\binom{11}6-\\binom64\\binom52]=3120$.\n\n**Derivation/proof.** From $(0,0)$ to $(2,3)$ there are two right steps and three up steps, giving $\\binom52=10$ paths. From there to $(8,8)$ there are six right steps and five up steps, giving $\\binom{11}6=462$ paths. A bad continuation through $(6,5)$ consists of four right and two up steps, then two right and three up steps. Their counts are $\\binom64=15$ and $\\binom52=10$, so there are $150$ bad continuations. There are $462-150=312$ permissible continuations and $10\\cdot312=3120$ complete paths. The unique decomposition at each specified point prevents duplication or omission.",
+    "mistakesMarkdown": "",
+    "independentVerification": "必经(2,3)前缀10，后续462减经(6,5)的15×10，10×312=3120；带访问标记DP核验。",
+    "verificationNote": ""
+  }
+]

@@ -39,24 +39,34 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 (b) [4 points] Express the negations of each of these statements so that all negation symbols immediately precede predicates.
 $$\forall x\bigl(p(x)\lor\exists y(p(y)\to\forall z\,q(x,z))\bigr)$$
 
-## 中文解析
+## Official Answer
 
-最外层全称翻成存在；否定蕴含保留前件为真，并否定全称后件。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=7|physical PDF page 7]], [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> (b)
+> $$\neg\forall x(p(x)\lor\exists y(p(y)\to\forall z\,q(x,z)))=\exists x\neg(p(x)\lor\exists y(p(y)\to\forall z\,q(x,z))).$$
+> Apply De Morgan’s law to the disjunction:
+> $$\neg(p(x)\lor\exists y(p(y)\to\forall z\,q(x,z)))=\neg p(x)\land\neg\exists y(p(y)\to\forall z\,q(x,z)).$$
+> Negate the existential quantifier:
+> $$\neg\exists y(p(y)\to\forall z\,q(x,z))=\forall y\neg(p(y)\to\forall z\,q(x,z)).$$
+> Rewrite the implication $p(y)\to\forall z\,q(x,z)=\neg p(y)\lor\forall z\,q(x,z)$, so:
+> $$\neg(p(y)\to\forall z\,q(x,z))=\neg(\neg p(y)\lor\forall z\,q(x,z))=p(y)\land\neg\forall z\,q(x,z).$$
+> Negate the universal quantifier:
+> $$\neg\forall z\,q(x,z)=\exists z\neg q(x,z).$$
+> Thus:
+> $$\neg(p(y)\to\forall z\,q(x,z))=p(y)\land\exists z\neg q(x,z).$$
+> So:
+> $$\neg\exists y(p(y)\to\forall z\,q(x,z))=\forall y(p(y)\land\exists z\neg q(x,z)).$$
+> Combine:
+> $$\exists x(\neg p(x)\land\forall y(p(y)\land\exists z\neg q(x,z))).$$
+> This expression has all negation symbols immediately preceding predicates ($\neg p(x)$ and $\neg q(x,z)$).
+> $$\boxed{\exists x(\neg p(x)\land\forall y(p(y)\land\exists z\neg q(x,z)))}.$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists x(\neg p(x)\land\forall y(p(y)\land\exists z\neg q(x,z)))$.
 
-**答案。** $\exists x(\neg p(x)\land\forall y(p(y)\land\exists z\neg q(x,z)))$。
-
-**推导。** 先把否定移过外层量词：$\exists x\neg(p(x)\lor\exists y(p(y)\to\forall zq(x,z)))$。De Morgan 与量词否定得到 $\exists x(\neg p(x)\land\forall y\neg(p(y)\to\forall zq(x,z)))$。再用 $\neg(A\to B)\equiv A\land\neg B$，得到 $\exists x(\neg p(x)\land\forall y(p(y)\land\neg\forall zq(x,z)))$。最后 $\neg\forall zq(x,z)\equiv\exists z\neg q(x,z)$，即答案。这里 $z$ 可以随 $x,y$ 选择，所有否定都直接作用在 $p,q$ 上。
-
-## Common Mistakes
-
-- 否定蕴含后前件仍为 $p(y)$，不能错误地改为 $\neg p(y)$。
-- 翻转量词不能改变 $q(x,z)$ 的变量次序或把它写成 $q(y,z)$。
+**Derivation/proof.** First negate the outer universal to obtain $\exists x\neg(p(x)\lor\exists y(p(y)\to\forall zq(x,z)))$. De Morgan’s law and quantifier negation give $\exists x(\neg p(x)\land\forall y\neg(p(y)\to\forall zq(x,z)))$. Use $\neg(A\to B)\equiv A\land\neg B$ to get $\exists x(\neg p(x)\land\forall y(p(y)\land\neg\forall zq(x,z)))$. Finally replace the last negated universal by $\exists z\neg q(x,z)$. The witness z may depend on x and y, and every negation now immediately precedes p or q.
 
 ## Connections
 

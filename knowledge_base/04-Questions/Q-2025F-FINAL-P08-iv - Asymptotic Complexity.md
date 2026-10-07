@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Fin
 
 (iv) [1 point] $T_A(n)=\Omega(n^2)\quad T_B(n)=\Omega(n\log^2 n)$
 
-## 中文解析
+## Official Answer
 
-两个条件都只有下界，构造两组相反增长关系即可证明信息不足。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+(iv) undetermind.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Undetermined.
 
-**答案。** undetermined。
-
-**推导。** 两项都只给下界。取 $T_A=n^2,T_B=n^3$，满足原界且 A 更快，因为 $n^2/n^3\to0$。另一组取 $T_A=n^3,T_B=n^2$，也满足原界，其中 $n^2=\Omega(n\log^2 n)$，但这次 B 更快。既有两种合法实现产生相反比较结果，就不能从给定下界判定谁更快。
-
-## Common Mistakes
-
-- 两个下界之间的大小不等于两个实际时间之间的大小。
-- Omega 没有限制函数增长得多快，它可以远高于写出的下界。
+**Derivation/proof.** Both constraints give only lower bounds. Choose $T_A=n^2,T_B=n^3$. This satisfies the given bounds, and A is faster because $n^2/n^3\to0$. Alternatively choose $T_A=n^3,T_B=n^2$. These also satisfy the bounds, including $n^2=\Omega(n\log^2 n)$, but now B is faster. Two allowed implementations give opposite comparison results, so the lower bounds cannot determine which algorithm is faster.
 
 ## Connections
 

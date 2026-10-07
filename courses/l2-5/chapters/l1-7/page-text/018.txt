@@ -1,0 +1,47 @@
+Let X = {A, B, C, D, 
+E
+}
+S = 2-combinations of X
+   =
+ {those containing 
+E
+}  U  {those without 
+E
+}
+   = S
+1
+ U S
+2
+ 
+ 
+S
+1
+ = { {A,
+E
+}, 
+{B,
+E
+}, {C,
+E
+}, {D,
+E
+}
+ }
+        i.e., 1-combinations from {A,B,C,D}
+          |S
+1
+| = 
+S
+2 
+= {{A,B}, {A,C}, {A,D}, {B,C}, {B,D}, {C,D}}  
+        i.e., 2-combinations from {A, B, C, D}
+          
+	|S
+2
+| = 
+Example of Pascal's Identity for 
+n
+=5, 
+k
+=2
+18

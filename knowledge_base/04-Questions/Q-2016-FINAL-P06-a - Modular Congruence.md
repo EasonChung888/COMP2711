@@ -42,26 +42,36 @@ Does there exist a solution for $x\in Z_{3000}$ such that $x$ satisfies the abov
 
 Shared context: [[STEM-2016-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先从第一式写出 $x=733+990t$。代入第二式后得到七整除 $t$，故全部整数解间距六千九百三十。最后必须套上零到二千九百九十九的范围，只留下七百三十三。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+(a) Yes.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+Based on the two modular equations, we express them as follows.
+$$x=990q_1+733\ldots\ldots\ldots(*)$$
+$$x=693q_2+40\ldots\ldots\ldots(**)$$
+where $q_1$ and $q_2$ are two integers.
+
+We derive as follows.
+$$\begin{aligned}
+990q_1+733&=693q_2+40\\693&=693q_2-990q_1\\99\cdot7&=99\cdot7q_2-99\cdot10q_1\\7&=7q_2-10q_1\\7q_2&=7+10q_1\\q_2&=1+\frac{10}7q_1
+\end{aligned}$$
+Since both $q_1$ and $q_2$ are integers, we derive that $q_1$ is a multiple of 7.
+
+Consider (*).
+
+When $q_1=0$, $x=990\cdot0+733=733$.
+
+Thus, all solution in $Z_{3000}$ is 733.
+
+## Supplementary Explanation
 
 **Answer.** The only solution in $\mathbb Z_{3000}$ is $x=733$.
 
 **Derivation/proof.** Write $x=733+990t$. Since $733\equiv40\pmod{693}$, the second condition is $990t\equiv0\pmod{693}$. Dividing by $\gcd(990,693)=99$ gives $10t\equiv0\pmod7$, hence $t\equiv0\pmod7$. All integer solutions are $733+6930k$. Only $k=0$ lies in $[0,2999]$. Check: $733\bmod990=733$ and $733\bmod693=40$.
 
-### 中文解答
-
-**推导。** 第一式给 $x=733+990t$，t整数。因为733模693为40，第二式等价 $990t\equiv0\pmod{693}$。两模数最大公因数99，约去它得 $10t\equiv0\pmod7$，十与七互素，故t=7k。因此全部整数解 $x=733+6930k$。限制0≤x<3000时只可k=0，唯一解733。直接验证733模990为733、模693为40。
-
-## Common Mistakes
-
-- 因模数不互素就断言没有解。
-- 给出一般同余类后不筛选指定的有限范围。
+After enforcing the interval, the only solution is $733$.
 
 ## Connections
 

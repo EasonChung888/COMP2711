@@ -45,35 +45,19 @@ Show the recursive relation of $a_{2n}$. You do not have to represent it in clos
 
 Shared printed context: ![[STEM-2023F-FINAL-P09 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-每个完整配对都给 p₁ 一个唯一伙伴，按偶数伙伴编号分类互不重叠。每类用上一项两侧计数相乘，再把所有偶数编号求和；a₀=1 代表空配对，保证两端伙伴的边界情况被正确计入。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+> (d) We just need to calculate the summation in which the first person is paired with $p_2,p_4,p_6,\cdots,p_{2n}$.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $a_0=1$，且对 $n\ge1$，
-$$a_{2n}=\sum_{k=1}^{n}a_{2k-2}a_{2n-2k}.$$
-
-**推导。**
-
-1. 根据 (b)，第一人只能与偶数编号 $p_{2k}$ 配对，其中 $1\le k\le n$。对这个固定伙伴，(c) 给出两侧人数 $2k-2$ 与 $2n-2k$ 的乘积 $a_{2k-2}a_{2n-2k}$。
-2. 不同伙伴的类别互斥，每个完整配对又必定为第一人选了某个伙伴，所以对这些乘积求和既不重计也不漏计。空侧只有一个“不做任何配对”的方案，即 $a_0=1$；若误设为零，会丢失端点伙伴的有效方案。
-3. 用小例核对：$a_2=1$，$a_4=1+1=2$，$a_6=2+1+2=5$。递推连同初值已经满足题目要求，无须额外求 closed form。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $a_0=1$, and $\displaystyle a_{2n}=\sum_{k=1}^{n}a_{2k-2}a_{2n-2k}$ for $n\ge1$.
 
 **Derivation/proof.** The feasible partners of $p_1$ are exactly $p_{2k}$ with $1\le k\le n$. For this fixed partner, the two blocks have $2k-2$ and $2n-2k$ people, so part (c) supplies the product $a_{2k-2}a_{2n-2k}$. Summing these disjoint and exhaustive classes gives the recurrence. The empty pairing counts as one, so $a_0=1$. Checks: $a_2=1$, $a_4=1+1=2$, and $a_6=2+1+2=5$. No closed form is needed.
 
-## Common Mistakes
-
-- 令 a₀=0 会错误删除所有含空侧的合法配对。 / The empty structure has one pairing.
-- 对所有 j 求和而不限制偶数会引用未定义的奇数人数计数。 / Sum over even partners only.
+The recurrence is $a_{2n}=\sum_{k=1}^{n}a_{2k-2}a_{2n-2k}$ with $a_0=1$. It gives $a_2=1$, $a_4=2$, and $a_6=2+1+2=5$.
 
 ## Connections
 

@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-final.p
 
 Shared context: [[STEM-2018-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-四边形环的每个点都连接两个邻点，满足最小度数二，也有至少三个点。但没有对角线，任意三点都无法两两相连，所以没有三角形，是完整检验前提与结论的反例。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+Any cycle $C_n$ with $n\ge4$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $C_4$ is a counterexample.
 
 **Derivation/proof.** Take vertices $1,2,3,4$ and edges $12,23,34,41$. This graph is simple, has four vertices, and each vertex has degree two, satisfying the two-dense definition. Any three selected vertices miss at least one edge because there are no diagonals, so there is no triangle. Thus every hypothesis holds while the conclusion fails.
 
-### 中文解答
-
-**推导。** 取四环 $C_4$，顶点 $1,2,3,4$，边 $12,23,34,41$。它是简单图，有四个顶点，每点度数恰二，所以满足 two-dense 的全部条件。任取三个顶点，总有一对是未连接的对角点，因为没有边 $13$ 或 $24$；因此没有三角形子图。这是满足前提却不满足结论的反例，否定“所有 two-dense 图都有三角形”。
-
-## Common Mistakes
-
-- 给出的反例有度一顶点而不满足题设。
-- 把四边形内部没画出的对角线也当成边。
+The example lacks edges $13$ or $24$; every vertex has degree two in its four-cycle. Degree at least two therefore does not force completeness, since nonadjacent pairs remain.
 
 ## Connections
 

@@ -1,0 +1,24 @@
+{
+  "questions": 68,
+  "expected": 68,
+  "exactAnswerSections": 136,
+  "stems": 52,
+  "figures": 0,
+  "errors": [],
+  "pages": 69,
+  "sha256": "43b34d6ab511db01da87046d280cdad4a09582a7c5aece0ac8cf56cad1d288fa",
+  "marginOutliers": [],
+  "shortPages": [],
+  "status": "passed",
+  "all_pages_visually_reviewed": true,
+  "review_method": "All contact-sheet pages reviewed after global rendering fixes; final localized compact-style change verified on full-size affected pages and successors. Full PDF glyph bounds rechecked.",
+  "full_size_pages": [
+    31,
+    46,
+    55,
+    56,
+    59,
+    60
+  ],
+  "issues": []
+}

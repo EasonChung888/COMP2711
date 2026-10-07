@@ -41,24 +41,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2024_Final
 
 Shared printed context: ![[STEM-2024F-FINAL-P11 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-每条无向边在度数和中被两个端点各数一次，所以度数和总为偶数。自补性质不是本小题偶性结论的必要条件，但将在下一部分使用。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Final.pdf#page=27|physical PDF page 27]].
 
-## Detailed Solution
+> Answer: (a) Even
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Even.
 
-**答案。** Even.
-
-**推导。** 令 G 的边集为 E。对所有顶点相加度数时，一条普通无向边在它的两个不同端点各贡献一，总共贡献二；题给补图使用不同顶点的邻接关系，没有自环参与。因此 handshaking identity 为 $S=\sum_{v\in V(G)}\deg_G(v)=2|E(G)|$。边数是整数，故 S 被二整除，即偶数，包含无边时 S=0 的情况。
-
-## Common Mistakes
-
-- “自补”并不意味着每个顶点度数都偶，只有总和必偶。
-- 不能只数每条边一次，度数和对无向边计两次。
+**Derivation/proof.** Let $E(G)$ be the edge set. Each ordinary undirected edge contributes one to each of its two distinct endpoints, hence two to the degree sum. The complement definition uses adjacency between distinct vertices, so loops do not enter. The handshaking identity is $S=\sum_{v\in V(G)}\deg_G(v)=2|E(G)|$. Since the number of edges is an integer, $S$ is even, including the edgeless case $S=0$.
 
 ## Connections
 

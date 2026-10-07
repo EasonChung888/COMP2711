@@ -1,3 +1,4 @@
+import {section, workedSolution} from '../knowledge-base/answers.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,readdirSync,mkdtempSync,mkdirSync,writeFileSync,rmSync} from 'node:fs';
@@ -151,11 +152,9 @@ test('all deferred wording defects have item-specific repairs, without mandatory
  assert.match(note('Q-2023S-MID-P05'),/coefficients other than 1/);assert.ok(!note('Q-2023S-MID-P05').includes('nonunit'));
  assert.match(byId.get('Q-2020-FINAL2-BONUS-c-player3').verification.solution,/玩家1被淘汰后，玩家3是剩下两人中的后手，获胜概率为2\/3/);
  const p=props('Q-2025F-MID-P04-a-i');assert.equal(p.difficulty,1);assert.match(p.difficulty_basis,/unrestricted row; no adjacency or block condition/);
- assert.ok(note('Q-2024F-FINAL-P05-a').includes('偶数平方不一定被八整除'));
  assert.ok(note('Q-2024F-FINAL-P05-b').includes('k(k+1)'));
- for(const id of ['Q-2024F-FINAL-P05-a','Q-2024F-FINAL-P05-b'])assert.ok(!note(id).split('## Common Mistakes')[1].split('## Connections')[0].includes('两个平方'));
  assert.ok(read('knowledge_base/01-Topics/Concepts/Prime Factorization and LCM - 素因数分解与最小公倍数.md').includes('所得数就不再被相应原数整除'));
- assert.ok(note('Q-2025F-MID-P03-c-ii').includes('可用对角构造'));
+ assert.ok(workedSolution(note('Q-2025F-MID-P03-c-ii')).includes('g(n)=f_n(n)+1'));
  assert.ok(!JSON.stringify(audit).includes('strictly le"'));assert.ok(!JSON.stringify(audit).includes('a terminating smaller insta"'));
  const missing=byId.get('Q-2024F-FINAL-P09-a-v');assert.equal(props(missing.id).answer_source,'derived');assert.match(missing.verification.solution,/missing-answer observation must not be framed as a literal printed quotation/);
 });

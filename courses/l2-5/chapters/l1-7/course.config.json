@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "title": "二项式定理与组合恒等式",
+  "subtitle": "Binomial Theorem and Combinatorial Identities",
+  "language": "zh-CN",
+  "storagePrefix": "comp2711:l1-7:",
+  "topics": [
+    {
+      "slug": "binomial-theorem",
+      "title": "二项式定理与系数提取",
+      "description": "从逐项选择理解展开式，并确定指定幂次的系数。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "questions": [
+        "Q-2017-MID-P08-a",
+        "Q-2017-MID-P08-b"
+      ]
+    },
+    {
+      "slug": "binomial-sums",
+      "title": "组合数求和与子集",
+      "description": "用代入与组合解释计算组合数和、交错和及奇偶子集。",
+      "pages": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "questions": [
+        "Q-2019-FINAL-P05",
+        "Q-2024F-MID-P09-a",
+        "Q-2024F-MID-P09-b"
+      ]
+    },
+    {
+      "slug": "pascal-and-paths",
+      "title": "帕斯卡恒等式、三角形与路径",
+      "description": "从含或不含指定元素的分类到三角形递推与棋盘路径。",
+      "pages": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "questions": [
+        "Q-2018-FINAL-P11-a",
+        "Q-2020-FINAL1-P03-a",
+        "Q-2025F-MID-P05"
+      ]
+    },
+    {
+      "slug": "combinatorial-identities",
+      "title": "范德蒙德恒等式与组合证明",
+      "description": "按组选择、按最后一个 1 分类，并用标记成员解释加权求和。",
+      "pages": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "questions": [
+        "Q-2023F-MID-P05",
+        "Q-2017-MID-P11",
+        "Q-2025S-FINAL-P09"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Corollary
+Let 
+n
+ be a nonnegative integer. Then
+Proof
+Using 
+Vandermonde's
+ identity with 
+, we can get
+ 
+37

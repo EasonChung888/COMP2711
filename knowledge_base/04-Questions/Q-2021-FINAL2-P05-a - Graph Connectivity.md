@@ -38,26 +38,19 @@ A simple undirected graph with 10 vertices, whose degrees are $2,1,0,3,8,9,7,2,1
 
 Shared context: [[STEM-2021-FINAL2-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-十点简单图中度数九表示连接所有其他顶点，其中必然包括度数零的点。但孤点不能有任何边，两个要求直接矛盾。只检查度数和是否为偶数是不够的。
+Source: [[knowledge_base/past_paper/2021-final-part-2.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+> (a) None. It is not possible to have both a vertex of degree 9 and a vertex of degree 0.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** No such graph exists.
 
 **Derivation/proof.** A degree-9 vertex in a simple graph on ten vertices is adjacent to all nine other vertices. In particular it must be adjacent to the listed degree-0 vertex. But a degree-0 vertex has no incident edges, contradicting that adjacency. This local contradiction suffices even without testing the entire degree sequence.
 
-### 中文解答
-
-**推导。** 不存在这样的图。在十个顶点的简单无向图中，一个顶点度九，就必须连接其余全部九个顶点，特别是题列度零的那个顶点。然而度零表示它没有任何关联边，与刚才被迫存在的那条边矛盾。因此这个度数序列不可能实现；仅检查度数和的奇偶性不足以发现这种局部冲突。
-
-## Common Mistakes
-
-- 认为度数和为偶数就一定可实现。
-- 允许自环来凑度数而违反简单图条件。
+The degree-nine vertex reaches every other vertex; in particular, the listed degree-zero vertex must be adjacent to it. That vertex having no incident edge contradicts the forced edge.
 
 ## Connections
 

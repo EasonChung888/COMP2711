@@ -39,26 +39,23 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-final.pdf
 
 Shared context: [[STEM-2016-FINAL-P07 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-这次归纳目标是显式公式。先验证一人时等于一，再假设前一规模是二的幂减一，代入已建立的递推关系，化简常数项即可得到当前规模公式。
+Source: [[knowledge_base/past_paper/2016-final.pdf#page=13|PDF physical page 13]]; [[knowledge_base/past_paper/2016-final.pdf#page=14|PDF physical page 14]].
 
-## Detailed Solution
+(c) Base case $(n=1)$: $T(1)=1=2^1-1$, so the base case is true.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13, 14. The Chinese derivation expands the reasoning.
+Assume that $T(n-1)=2^{n-1}-1$ is true for $n>1$,
+$$\begin{aligned}T(n)&=2T(n-1)+1\\&=2(2^{n-1}-1)+1\\&=2^n-2+1=2^n-1\end{aligned}$$
+By the principle of mathematical induction, we have proved that $T(n)=2^n-1$ is true for $n\ge1$.
+
+## Supplementary Explanation
 
 **Answer.** For every $n\ge1$, $T(n)=2^n-1$.
 
 **Derivation/proof.** Base case: $T(1)=1=2^1-1$. Assume $T(n-1)=2^{n-1}-1$ for $n>1$. Then $T(n)=2T(n-1)+1=2(2^{n-1}-1)+1=2^n-1$. By induction the formula holds for all positive integers.
 
-### 中文解答
-
-**推导。** 基础n=1时 $T(1)=1=2^1-1$。设对n>1的前一项成立，即 $T(n-1)=2^{n-1}-1$。用已建立的递推，$T(n)=2T(n-1)+1=2(2^{n-1}-1)+1=2^n-2+1=2^n-1$。所以从基础逐项推出所有正整数n的公式。此处验证的是闭式，与(a)证明计数递推的归纳目标不同。
-
-## Common Mistakes
-
-- 把待证明的 $T(n)$ 公式直接作为归纳假设。
-- 用空委员会也允许的 $2^n$ 作为结论。
+The constant simplification is $2^n-2+1=2^n-1$. This induction verifies the closed form, whereas part (a) justified the combinatorial recurrence.
 
 ## Connections
 

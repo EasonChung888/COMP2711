@@ -36,26 +36,25 @@ Published solution material: ![[knowledge_base/past_paper/2020-midterm.pdf#page=
 
 Solve $3^{5x-2}\equiv9\pmod{23}$. The solution is not unique, any solution is acceptable. [Hint: Use Fermat’s Little Theorem.]
 
-## 中文解析
+## Official Answer
 
-费马小定理给出周期二十二，只需让指数与二同余即可保证结果为九。把这个要求变成模二十二的线性同余，求出 x=14，再直接代指数验证。题目允许任一解，不必把充分条件误称为完整解集。
+Source: [[knowledge_base/past_paper/2020-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+Multiplying $3^{-2}$ (inverse taken with modulo $23$) on both sides, we obtain:
+$$3^{5x-4}\equiv1\pmod{23}.$$
+By Fermat's Little Theorem, if $5x-4$ is a multiple of $22$, then this congruence will hold, namely $5x-4\equiv0\pmod{22}$, i.e.,
+$$5x\equiv4\pmod{22}.$$
+The inverse of $5$ is $9\pmod{22}$, so $x\equiv4\cdot9\equiv36\equiv14\pmod{22}$. So $x=22k+14$ for any natural number $k$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** One solution is $x=14$; indeed every $x=14+22k$ with $k\ge0$ works.
 
 **Derivation/proof.** Because 23 is prime and coprime to 3, $3^{22}\equiv1\pmod{23}$. It suffices to make $5x-2\equiv2\pmod{22}$, or $5x\equiv4\pmod{22}$. The inverse of 5 modulo 22 is 9, since $5\cdot9=45\equiv1$. Hence $x\equiv36\equiv14$. At x=14 the exponent is 68=3·22+2, so $3^{68}\equiv3^2=9$. This constructs acceptable solutions without claiming that Fermat's period is minimal.
 
-### 中文解答
+For $x=14$, $5x-2=68=3\cdot22+2$ and hence $3^{68}\equiv(3^{22})^3\cdot3^2\equiv9\pmod{23}$.
 
-**推导。** 因 $23$ 为质数且 $\gcd(3,23)=1$，费马小定理给 $3^{22}\equiv1\pmod{23}$。要使 $3^{5x-2}\equiv3^2$，只需令 $5x-2\equiv2\pmod{22}$，即 $5x\equiv4\pmod{22}$。$5\cdot9=45\equiv1\pmod{22}$，故 $x\equiv36\equiv14\pmod{22}$。取 $x=14$，指数 $68=3\cdot22+2$，所以 $3^{68}\equiv(3^{22})^3\cdot3^2\equiv9\pmod{23}$。题目任一解即可，这已足够；$14+22k$ 也给一族合法解，但不声称 $22$ 是 $3$ 的最小周期。
-
-## Common Mistakes
-
-- 把指数模数用成二十三。
-- 未经阶的计算就声称周期二十二是最小周期。
+Using Fermat's exponent twenty-two is not a claim of the least period. It is a sufficient period, and constructing one compatible exponent class suffices for the requested solution.
 
 ## Connections
 

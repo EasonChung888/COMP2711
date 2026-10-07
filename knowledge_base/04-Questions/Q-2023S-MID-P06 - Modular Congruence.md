@@ -38,25 +38,20 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2023_Midte
 
 Calculate $\gcd(2^{100}-1,2^{65}-1)$.
 
-## 中文解析
+## Official Answer
 
-直接展开两个巨大整数没有必要。用 Euclidean algorithm 把较大指数减去较小指数，关键是解释 2ⁿ 与 2ⁿ−1 互质，所以可以从公因数计算中消去该幂次因子。
+Source: [[knowledge_base/past_paper/COMP2711_S2023_Midterm.pdf#page=9|physical PDF page 9]].
 
-## Detailed Solution
+> In fact, for any $a,m,n$, we can apply the Euclidean algorithm:
+> $$\gcd(a^m-1,a^n-1)=\gcd(a^m-a^n,a^n-1)=\gcd(a^n(a^{m-n}-1),a^n-1)$$
+> Writing $a^m-a^n$ as $a^n(a^{m-n}$, we have
+> $$\gcd(a^m-1,a^n-1)=\gcd(a^n(a^{m-n}-1),a^n-1)$$
+> Since $\gcd(a^n,a^n-1)=1$, we get:
+> $$\gcd(a^m-1,a^n-1)=\gcd(a^{m-n}-1,a^n-1).$$
+> We can now use this rule iteratively, in a way similar to the original Euclidean algorithm:
+> $$\begin{aligned}\gcd(2^{100}-1,2^{65}-1)&=\gcd(2^{65}-1,2^{35}-1)\\&=\gcd(2^{35}-1,2^{30}-1)\\&=\gcd(2^{30}-1,2^5-1)\\&=\gcd(2^{25}-1,2^5-1)\\&=\cdots=\gcd(2^5-1,2^5-1)=2^5-1=31.\end{aligned}$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $\gcd(2^{100}-1,2^{65}-1)=31$。
-
-**推导。**
-
-1. 对 $m>n$，两个数相减得 $(2^m-1)-(2^n-1)=2^n(2^{m-n}-1)$。由 Euclidean algorithm 可用这个差替换第一数；又因 $\gcd(2^n,2^n-1)=1$，幂次因子不会贡献公因子，故
-   $$\gcd(2^m-1,2^n-1)=\gcd(2^{m-n}-1,2^n-1).$$
-2. 对指数重复这种减法并交换大小，相当于计算 $\gcd(100,65)$：$(100,65)\to(65,35)\to(35,30)\to(30,5)\to(5,0)$。于是原 gcd 化成 $\gcd(2^5-1,0)=31$。两个原指数也都被五整除，故 $2^5-1$ 确实整除两数，与结果一致。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $31$.
 
@@ -64,10 +59,7 @@ Provenance: published official answer, independently checked and expanded below.
 $$\gcd(2^m-1,2^n-1)=\gcd(2^{m-n}-1,2^n-1).$$
 The Euclidean reductions of exponents are $(100,65)\to(65,35)\to(35,30)\to(30,5)\to(5,0)$. Hence the gcd is $2^5-1=31$. Both original exponents are multiples of 5, consistent with divisibility by 31.
 
-## Common Mistakes
-
-- 未经证明就把 gcd 移入指数只是在引用结论。 / Justify the exponent reduction.
-- 将 gcd(100,65) 错算为 35 会把一次余数当最终 gcd。 / Continue Euclid to 5.
+The final form is $\gcd(2^5-1,0)=31$.
 
 ## Connections
 

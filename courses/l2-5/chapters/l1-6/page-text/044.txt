@@ -1,0 +1,75 @@
+Combinations with Repetition - Cookies
+Suppose that a cookie shop has 
+n
+ different kinds of cookies
+. In how many different ways can 
+r
+ cookies be chosen? There are no constraints on how many cookies of each kind are chosen (e.g., all may be of the same kind)
+Solution
+Equivalently, I wish to distribute 
+r
+ indistinguishable
+ cookies to 
+n
+ 
+distinguishable
+ cookie boxes. 
+I indicate cookies with 
+r 
+stars
+. Instead of 
+n
+ boxes, I use 
+n
+-1
+ 
+bars
+ to indicate their boundaries. 
+A selection corresponds to a bars and stars arrangement
+Example: **|*|*|** (2 cookies from first and fourth kind, 1 from the rest).
+# of arrangements = # combinations with repetition = 
+= #
+ strings of length 
+(
+r
++
+n
+-1)
+ 
+by reordering 
+r 
+stars
+ 
+and 
+n
+-1
+ 
+bars
+ = 
+#
+ select positions of 
+r 
+stars
+ 
+and 
+among possible (
+r
++
+n
+-1) positions
+C(
+r
++
+n
+-1,
+r
+)=(
+r
++
+n
+-1)!/
+r
+!(
+n
+-1)!.
+44

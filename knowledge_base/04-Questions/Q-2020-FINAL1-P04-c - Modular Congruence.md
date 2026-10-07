@@ -40,26 +40,24 @@ $n$ is divisible by 9 but it has no digit 9?
 
 Shared context: [[STEM-2020-FINAL1-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-补前导零把所有小于一千的数统一成三位，不会违反“不含九”。模九时整数与数位和同余；前两位任选九个合法数字后，第三位有唯一的模九代表元，因此是九乘九。
+Source: [[knowledge_base/past_paper/2020-final-part-1.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+Let $n=100x_1+10x_2+x_3$, i.e. $n$ is represented by $3$ digits $\overline{x_1x_2x_3}$. Then $x_i\in\{0,1,\cdots,8\}$ for $i=0,1,2$, and $9\mid100x_1+10x_2+x_3$, or equivalently $9\mid x_1+x_2+x_3$. Since $0\le x_1+x_2+x_3\le24$, we have $x_1+x_2+x_3=0,9$ or $18$.
+(1) $x_1+x_2+x_3=0$. There is only one solution: $x_1=x_2=x_3=0$.
+(2) $x_1+x_2+x_3=9$. By the combinations with repetition theorem, there are $\binom{9+3-1}{3-1}=55$ non-negative solutions to this equation. However we need to exclude three solutions $(9,0,0),(0,9,0)$ and $(0,0,9)$. Therefore the number of solutions is $52$.
+(3) $x_1+x_2+x_3=18$. First note that there is no solution when $x_3=0$ or $1$. Suppose $x_3=i$ where $i\in\{2,3,\cdots,8\}$, the solutions to the equation $x_1+x_2=18-i$ are $(j,18-i-j)$ where $j\in\{10-i,11-i,\cdots,8\}$, i.e. there are $i-1$ solutions to this equation. Therefore the number of solutions to $x_1+x_2+x_3=18$ is $\sum_{i=2}^8(i-1)=28$.
+Therefore we conclude that the answer is $1+52+28=81$.
+Alternative Solution: We also find the number of solutions to $9\mid x_1+x_2+x_3$ where $x_i\in\{0,1,\cdots,8\}$ for $i=1,2,3$. For any $x_1$ and $x_2$, $9\mid x_1+x_2+x_3$ is equivalent to $x_3\equiv9-x_1-x_2\pmod9$, which has exactly one solution in $\{0,1,\cdots,8\}$. Therefore the number of solutions is $9\times9=81$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $81$.
 
 **Derivation/proof.** Represent each integer uniquely as a three-digit string $abc$ with leading zeros allowed. This does not introduce any digit 9. Each digit lies in {0,…,8}. Since $100\equiv10\equiv1\pmod9$, divisibility is $a+b+c\equiv0$. For each of the 9² choices of a,b there is exactly one c in {0,…,8} satisfying this congruence. Therefore 81 strings, including 000, qualify.
 
-### 中文解答
-
-**推导。** 把区间内整数唯一补成三位十进制串 $x_1x_2x_3$，允许前导零。没有数字九就是每位在 $\{0,1,\ldots,8\}$，而 $100\equiv10\equiv1\pmod9$，所以九整除该数等价于 $x_1+x_2+x_3\equiv0\pmod9$。前两位有 $9\cdot9$ 种选择；每选定一对，第三位须满足 $x_3\equiv-x_1-x_2\pmod9$，在 $0$ 至 $8$ 中恰有唯一解。因此共有 $9^2=81$ 个，包括 $000$ 对应的零。补前导零不引入数字九，所以没有改变原条件。
-
-## Common Mistakes
-
-- 排除前导零或零本身。
-- 误认为第三位还有九个独立选择。
+After choosing the first two residues, the third must satisfy $x_3\equiv-x_1-x_2\pmod9$. Each residue has one representative in the allowed range, so there are $9^2=81$ choices in total.
 
 ## Connections
 

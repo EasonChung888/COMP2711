@@ -39,24 +39,30 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Final
 Let $n$ be a positive integer such that $n=p^2q^4r^2$, where $p,q$, and $r$ are three distinct prime numbers. Prove that the number of integers from 1 to $n$ that are relatively prime with $n$ is given by the expression:
 $$n\left(1-\frac1p\right)\left(1-\frac1q\right)\left(1-\frac1r\right).$$
 
-## 中文解析
+## Official Answer
 
-与 n 互素等价于不被三个不同素因子中的任何一个整除。容斥的交集对应同时被这些互素素数整除，可直接用它们的乘积计算。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=9|physical PDF page 9]], [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+> Solution: To find the number of integers from 1 to $n$ that are relatively prime to $n$, we need to count the number of integers from 1 to $n$ that are not divisible by $p$, $q$, or $r$. Let $\phi(n)$ denote this quantity.
+> Let $S=\{1,2,\ldots,n\}$. Define:
+> $A_p$ as the set of integers in $S$ divisible by $p$,
+> $A_q$ as the set of integers in $S$ divisible by $q$,
+> $A_r$ as the set of integers in $S$ divisible by $r$.
+> Using the principle of inclusion-exclusion, the number of integers in $S$ that are divisible by $p$, $q$, or $r$ is given by:
+> $$|A_p\cup A_q\cup A_r|=|A_p|+|A_q|+|A_r|-|A_p\cap A_q|-|A_p\cap A_r|-|A_q\cap A_r|+|A_p\cap A_q\cap A_r|.$$
+> We need to determine the size of each of these sets:
+> $$|A_p|=\frac np,\quad|A_q|=\frac nq,\quad|A_r|=\frac nr,\quad|A_p\cap A_q|=\frac n{pq},\quad|A_p\cap A_r|=\frac n{pr},\quad|A_q\cap A_r|=\frac n{qr},\quad|A_p\cap A_q\cap A_r|=\frac n{pqr}.$$
+> Substituting these values, we get:
+> $$|A_p\cup A_q\cup A_r|=\frac np+\frac nq+\frac nr-\frac n{pq}-\frac n{pr}-\frac n{qr}+\frac n{pqr}.$$
+> The number of integers in $S$ that are relatively prime to $n$ is: $\phi(n)=n-|A_p\cup A_q\cup A_r|$.
+> Substituting the expression for $|A_p\cup A_q\cup A_r|$, and simplifying, we get:
+> $$\begin{aligned}\phi(n)&=n-\left(\frac np+\frac nq+\frac nr-\frac n{pq}-\frac n{pr}-\frac n{qr}+\frac n{pqr}\right)\\&=n\left(1-\left(\frac1p+\frac1q+\frac1r-\frac1{pq}-\frac1{pr}-\frac1{qr}+\frac1{pqr}\right)\right)\\&=n\left(1-\frac1p-\frac1q-\frac1r+\frac1{pq}+\frac1{pr}+\frac1{qr}-\frac1{pqr}\right)\\&=n\left(1-\frac1p\right)\left(1-\frac1q\right)\left(1-\frac1r\right).\end{aligned}$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $n(1-1/p)(1-1/q)(1-1/r)$.
 
-**答案。** 互素整数数量为 $n(1-1/p)(1-1/q)(1-1/r)$。
-
-**推导。** 在 $S=\{1,\ldots,n\}$ 中令 $A_p,A_q,A_r$ 为分别被三个素数整除的集合。只有这三个素数能成为与 n 的公因子，因此目标是 $n-|A_p\cup A_q\cup A_r|$。各集合大小为 $n/p,n/q,n/r$；两两交集大小为 $n/(pq),n/(pr),n/(qr)$，三重交集为 $n/(pqr)$，因为所有这些乘积整除 n。容斥给出目标为 $n-n/p-n/q-n/r+n/(pq)+n/(pr)+n/(qr)-n/(pqr)$。提出 n 后恰是三个因子 $(1-1/p)(1-1/q)(1-1/r)$ 的展开，完成证明。
-
-## Common Mistakes
-
-- 素因子的次数只影响 n，不会在容斥中产生四次减去 q 的项目。
-- 两重交集需要加回，三重交集最后减去，符号不能全部相同。
+**Derivation/proof.** Within $S=\{1,\ldots,n\}$, let $A_p,A_q,A_r$ be the multiples of the three respective primes. Only these primes can divide both an integer and $n$, so the target is $n-|A_p\cup A_q\cup A_r|$. The individual sizes are $n/p,n/q,n/r$; pairwise intersections have sizes $n/(pq),n/(pr),n/(qr)$ and the triple intersection has size $n/(pqr)$, since each product divides $n$. Inclusion-exclusion gives $n-n/p-n/q-n/r+n/(pq)+n/(pr)+n/(qr)-n/(pqr)$. Factor out $n$ to obtain exactly the expansion of $(1-1/p)(1-1/q)(1-1/r)$.
 
 ## Connections
 

@@ -40,24 +40,17 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 (ii) In how many ways we can have 5 unordered pairs (e.g., $(a_1,b_1)$ is the same as $(b_1,a_1)$) such that each pair contains an element from $A$ and an element from $B$ while the elements can not be reused?
 
-## 中文解析
+## Official Answer
 
-这次不使用全部 $A$，先选双方参与元素，再决定一一配对。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+> (ii) $\binom75\times\binom{10}5\times5!$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\binom75\binom{10}5\,5!$.
 
-**答案。** $\binom75\binom{10}5\,5!$。
-
-**推导。** 先从七个 $A$ 元素选出五个，得 $\binom75$ 种；再从十个 $B$ 元素选出五个，得 $\binom{10}5$ 种。将所选 $A$ 按标签顺序排列，五个所选 $B$ 可通过 $5!$ 个排列分别匹配到它们。每个合法配对集合唯一确定双方所选子集和这个双射，故总数为 $\binom75\binom{10}5\,5!$，没有重复使用元素。
-
-## Common Mistakes
-
-- 只选择两边的子集还没有确定谁和谁配对，必须乘五的阶乘。
-- 若已经用排列数分配 B 伙伴，就不能再乘一次五的阶乘。
+**Derivation/proof.** Choose the five participating A elements in $\binom75$ ways and five B elements in $\binom{10}5$ ways. Put the chosen A elements in label order and assign the chosen B elements by one of $5!$ permutations. Every pairing uniquely determines both selected subsets and the bijection between them, so the product counts each pairing once with no reused element.
 
 ## Connections
 

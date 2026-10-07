@@ -38,26 +38,33 @@ Iterate the recurrence or use a recursion tree to find a closed-form expression 
 
 Shared context: [[STEM-2013-FINAL-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-令 $n=2^j$ 可使递归深度清楚。每层合并代价形成公比 $3/4$ 的有限等比和，最后再代回 $j=\log_2n$。
+Source: [[knowledge_base/past_paper/2013-final.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+Iterating the recurrence, we get:
+$$\begin{aligned}
+T(n)&=T(2^j)\\
+&=3T(2^{j-1})+2^{2j}\\
+&=3(3T(2^{j-2})+2^{2(j-1)})+2^{2j}\\
+&=3^2T(2^{j-2})+\frac34 2^{2j}+2^{2j}\\
+&=3^2(3T(2^{j-3})+2^{2(j-2)})+\frac34 2^{2j}+2^{2j}\\
+&=3^3T(2^{j-3})+(\frac34)^2 2^{2j}+\frac34 2^{2j}+2^{2j}\\
+&\quad\vdots\\
+&=3^jT(1)+(\frac34)^{j-1}2^{2j}+\cdots+\frac34 2^{2j}+2^{2j}\\
+&=3^j+2^{2j}\frac{1-(3/4)^j}{1-3/4}\\
+&=3^j+4\cdot2^{2j}-4\cdot3^j=4\cdot2^{2j}-3\cdot3^j\\
+&=4n^2-3n^{\log_2 3}\\
+&=\Theta(n^2).
+\end{aligned}$$
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $T(n)=4n^2-3n^{\log_2 3}$.
 
 **Derivation/proof.** Write $n=2^j$. Expansion gives $T(2^j)=3^j+2^{2j}\sum_{i=0}^{j-1}(3/4)^i=3^j+4\cdot2^{2j}-4\cdot3^j=4n^2-3n^{\log_2 3}$.
 
-### 中文解答
-
-**推导。** 设 $n=2^j$，展开到基础点 $T(1)=1$。第 i 层共有 $3^i$ 个规模 $n/2^i$ 的子问题，故该层代价是 $n^2(3/4)^i$，叶子贡献 $3^j$。所以 $T(n)=3^j+n^2\sum_{i=0}^{j-1}(3/4)^i=3^j+4n^2[1-(3/4)^j]$。由 $n^2(3/4)^j=3^j$ 得 $T(n)=4n^2-3\cdot3^j=4n^2-3n^{\log_2 3}$。$j=0$ 时有限和为空，公式给一，与基础值一致。
-
-## Common Mistakes
-
-- 把等比和的首项或项数写错。
-- 将 $3^j$ 错换为 $n^3$。
+At level $i$, the $3^i$ subproblems each cost $(n/2^i)^2$, giving $n^2(3/4)^i$. At $j=0$, the sum is empty and the formula gives $T(1)=1$.
 
 ## Connections
 

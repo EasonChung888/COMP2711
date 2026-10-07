@@ -39,26 +39,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-反设少于 $n$ 条边能够形成经过全部点的环。环上每个点有两次边端点关联，共需要 $2n$ 次；但少于 $n$ 条边最多提供少于 $2n$ 次，产生矛盾。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(b) Assume that it is possible to draw a loop with smaller than $n$ line segments for $n$ dots. Since each dot needs to be connected with exactly two line segments in a loop, we count the total number of connections between a line segment and a dot, there are $2n$ connections. If the loop has smaller than $n$ line segment, say, there are only $k$ line segments where $k<n$, and thus each line segment on average needs to connect $2n/k$ dots (more than 2 dots). However, each line segment can exactly connect two dots. By contradiction, it requires at least $n$ line segments to draw a loop that connects $n$ dots.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** At least $n$ line segments are needed.
 
 **Derivation/proof.** Suppose such a loop has $m<n$ segments. Every one of the $n$ cycle vertices has two incident loop edges, so there are $2n$ endpoint incidences. Each segment has exactly two endpoints and contributes two incidences, giving only $2m<2n$. This contradiction establishes the bound (a simple cycle has exactly $n$ edges).
 
-### 中文解答
-
-**推导。** 反设用m<n条线段形成经过全部n点的环。环的每个点有两个相邻环边，所以点与边的端点关联总数为2n。每条线段恰有两个端点，m条只能提供2m个关联。于是 $2n=2m<2n$，矛盾。因此至少n条线段。这里只数环本身的边；图中即使有额外弦，也不减少环需要的边数。
-
-## Common Mistakes
-
-- 把一个闭合路径误解为图论中的单条自环边。
-- 计每个顶点的两次关联时忘记同一条边也被两端分别计数。
+Equivalently, $2n=2m<2n$ is impossible. Count the loop's own edges; extra chords do not reduce how many edges its loop needs.
 
 ## Connections
 

@@ -1,0 +1,13 @@
+Corollary
+Let 
+n
+ and 
+k
+ be integers with 
+. Then
+Proof
+From the previous theorem, it follows that
+Hence, 
+.
+ 
+18

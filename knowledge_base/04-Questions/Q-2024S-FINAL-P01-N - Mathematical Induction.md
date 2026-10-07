@@ -41,24 +41,24 @@ Atomic extraction: Problem 1 combines finding N and an induction proof. The page
 
 Find an integer $N$ such that $2^n>3n^2$ whenever $n$ is greater than $N$.
 
-## 中文解析
+## Official Answer
 
-题目要求一个有效阈值而非唯一最小值。先试验相邻幂的数值，找到开始成立的位置，再以对应归纳题证明以后不会失效。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Final.pdf#page=1|physical PDF page 1]].
 
-## Detailed Solution
+> Answer: We want to find an integer $N$ such that $2^n>3n^2$ for all $n>N$. We choose $N=7$. We will use induction to prove that $2^n>3n^2$ whenever $n\ge8$.
+> Base case: For $n=8$, we have $2^8>3(8)^2$, because $2^8=256$ and $3(8)^2=3\cdot64=192$.
+> Induction step: For the inductive hypothesis, suppose that $2^k>3k^2$ holds for some integer $k\ge8$. We want to show that $2^{k+1}>3(k+1)^2$.
+> Applying the inductive hypothesis, we get $2^{k+1}=2\cdot2^k>2\cdot3k^2$. Thus
+> $$2^{k+1}>2(3k^2)=3(2k^2)=3(k^2+k^2)\ge3(k^2+3k),$$
+> where in the last step we have used the fact that $k\ge3$ (recall that $k\ge8$). Thus
+> $$2^{k+1}\ge3(k^2+3k)=3(k^2+2k+k)\ge3(k^2+2k+1),$$
+> since $k\ge1$ (recall that $k\ge8$). Thus $2^{k+1}>3(k+1)^2$, which completes the inductive step. Therefore, we have shown that $N=7$ satisfies the condition that $2^n>3n^2$ for all $n>N$.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Take $N=7$.
 
-**答案。** 可取 $N=7$。
-
-**推导。** $2^7=128<147=3\cdot7^2$，而 $2^8=256>192=3\cdot8^2$，因此选阈值 $N=7$，使需证明的起点为 $n=8$。为确认之后都有效，对 $k\ge8$ 有 $2k^2-(k+1)^2=k^2-2k-1>0$；若 $2^k>3k^2$，则 $2^{k+1}>6k^2>3(k+1)^2$。由起点反复应用这一步即可覆盖每个 $n>7$。这里 $N=7$ 是有效选择，任何更大整数也有效。
-
-## Common Mistakes
-
-- 阈值条件是 $n>N$，起点八对应 $N=7$ 而不是八。
-- 只试算八不能保证所有更大的整数，必须说明不等式如何持续。
+**Derivation/proof.** $2^7=128<147=3\cdot7^2$, whereas $2^8=256>192=3\cdot8^2$, so choosing $N=7$ makes $n=8$ the starting case. For $k\ge8$, $2k^2-(k+1)^2=k^2-2k-1>0$. Thus, if $2^k>3k^2$, then $2^{k+1}>6k^2>3(k+1)^2$. Repeated application from the starting case covers every $n>7$. Any larger integer threshold also works.
 
 ## Connections
 

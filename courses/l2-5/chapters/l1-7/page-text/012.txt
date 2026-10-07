@@ -1,0 +1,8 @@
+Corollary
+Let 
+ be a nonnegative integer. Then
+Proof
+Using the binomial theorem with 
+, we can get
+ 
+12

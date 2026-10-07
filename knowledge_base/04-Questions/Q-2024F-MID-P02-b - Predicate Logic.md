@@ -43,24 +43,22 @@ Prerequisite context (editorial): [[Q-2024F-MID-P02-a - Predicate Logic]]. Negat
 
 Shared printed context: ![[STEM-2024F-MID-P02-ab - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-否定全称蕴含产生一个满足前件的反例。对所有素数候选，必须至少有一个不是素数或其和不等于这个偶数，不能保留外层否定。
+Source: [[knowledge_base/past_paper/COMP2711_F2024_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+> (b) The statement in part (a) can be also written like this:
+> $$\forall x(\neg(Even(x)\land x>2)\lor\exists y\exists z(Prime(y)\land Prime(z)\land y+z=x)).$$
+> Here is the negation of this statement:
+> $$\exists x((Even(x)\land x>2)\land\forall y\forall z\neg(Prime(y)\land Prime(z)\land y+z=x)).$$
+> Which also can be written as:
+> $$\exists x((Even(x)\land x>2)\land\forall y\forall z(\neg Prime(y)\lor\neg Prime(z)\lor y+z\ne x)).$$
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists x((Even(x)\land x>2)\land\forall y\forall z(\neg Prime(y)\lor\neg Prime(z)\lor y+z\ne x))$.
 
-**答案。** $\exists x((Even(x)\land x>2)\land\forall y\forall z(\neg Prime(y)\lor\neg Prime(z)\lor y+z\ne x))$。
-
-**推导。** 把原式记作 $\forall x(A(x)\to\exists y\exists zB(x,y,z))$。取反得到 $\exists x(A(x)\land\forall y\forall z\neg B(x,y,z))$。代入 $A=Even(x)\land x>2$，对 $B=Prime(y)\land Prime(z)\land(y+z=x)$ 使用 De Morgan，得 $\neg Prime(y)\lor\neg Prime(z)\lor(y+z\ne x)$。最终就是上式，否定符号仅紧邻 $Prime$ 谓词，等式的否定由 $\ne$ 表达，符合题目要求。
-
-## Common Mistakes
-
-- 反例 x 仍要是大于二的偶数，不能把前件也否定。
-- 两个存在素数变成两个全称候选后，内部三个条件要由合取变析取。
+**Derivation/proof.** Write the original as $\forall x(A(x)\to\exists y\exists zB(x,y,z))$. Its negation is $\exists x(A(x)\land\forall y\forall z\neg B(x,y,z))$. Substitute $A=Even(x)\land x>2$. Applying De Morgan to $B=Prime(y)\land Prime(z)\land(y+z=x)$ gives $\neg Prime(y)\lor\neg Prime(z)\lor(y+z\ne x)$. This yields the displayed answer: negation signs immediately precede the $Prime$ predicates, and $\ne$ expresses the negated equality.
 
 ## Connections
 

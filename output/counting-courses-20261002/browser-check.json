@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "protocol": "file://",
+  "network": "offline",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 900
+    }
+  ],
+  "lessons": 15,
+  "pages": 92,
+  "questions": 42,
+  "formulas": "no KaTeX errors",
+  "originalImages": "all decoded offline",
+  "answers": "folded initially; expansion tested per lesson",
+  "horizontalOverflow": "none after display-layer correction",
+  "drafts": "restored after reload in both chapters",
+  "completion": "check, reload, uncheck, reload in both chapters",
+  "aggregates": "chapter, Counting and site homepage checked",
+  "resume": "chapter/Counting/home URL and navigation checked",
+  "legacy": "existing course progress and draft retained",
+  "log": "output/playwright/counting-courses/browser-check.log",
+  "script": "output/playwright/counting-courses/browser-check.js"
+}

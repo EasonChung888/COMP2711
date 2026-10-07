@@ -36,31 +36,32 @@ Published solution material: ![[knowledge_base/past_paper/2022-final-part-1.pdf#
 
 Use induction to prove that, for any integer $n\ge1$, $5^n+2\cdot11^n$ is divisible by 3.
 
-## 中文解析
+## Official Answer
 
-归纳步骤把下一阶拆成五倍上一阶，再加十二倍十一的 k 次方。前者由归纳假设是三的倍数，后者显然也是，因而新一阶成立。按要求用归纳，不能只给一个未注明方法的同余观察。
+Source: [[knowledge_base/past_paper/2022-final-part-1.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+> Base case: When $n=1$, we have $5^1+2\cdot11^1=27$, which is divisible by 3. So, the statement is true for $n=1$.
+>
+> Induction hypothesis: Now let $n>1$. Assume the statement is true for $n-1$, i.e. $5^{n-1}+2\cdot11^{n-1}$ is divisible by 3.
+>
+> Induction step: Consider the case of $n$:
+>
+> $$\begin{aligned}
+> 5^n+2\cdot11^n&=5^{n-1}+4\cdot5^{n-1}+2\cdot11^{n-1}+20\cdot11^{n-1}\\
+> &=5^{n-1}+2\cdot11^{n-1}+4(5^{n-1}+5\cdot11^{n-1})\\
+> &=5^{n-1}+2\cdot11^{n-1}+4(5^{n-1}+2\cdot11^{n-1}+3\cdot11^{n-1})\\
+> &=3y+4(3y+3\cdot11^{n-1})\\
+> &=3(5y+4\cdot11^{n-1})
+> \end{aligned}$$
+> which is divisible by 3.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $3\mid(5^n+2\cdot11^n)$ for all integers $n\ge1$.
 
 **Derivation/proof.** Base n=1:5+2·11=27, divisible by 3. Assume 5^k+2·11^k=3t for some integer t. Then $5^{k+1}+2\cdot11^{k+1}=5(5^k+2\cdot11^k)+12\cdot11^k=15t+12\cdot11^k=3(5t+4\cdot11^k)$. The final parenthesis is an integer, proving the next instance. Ordinary induction completes the required divisibility proof.
 
-### 中文解答
-
-**推导。** 按题意用归纳法。基础 $n=1$ 时 $5+2\cdot11=27=3\cdot9$，命题成立。归纳假设对某个 $k\ge1$ 有 $5^k+2\cdot11^k=3t$，其中 $t$ 为整数。下一项拆为
-
-$$5^{k+1}+2\cdot11^{k+1}=5(5^k+2\cdot11^k)+12\cdot11^k$$
-$$=15t+12\cdot11^k=3(5t+4\cdot11^k).$$
-
-括号内是整数，所以它也被三整除，完成 $k$ 到 $k+1$ 的推导。由数学归纳法，命题对所有整数 $n\ge1$ 成立。此分解明确使用归纳假设，不能只写模三观察代替题目指定的证明方法。
-
-## Common Mistakes
-
-- 只列几个 n 的检验值。
-- 把剩余系数错写成六而非十二。
+The base is $27=3\cdot9$. The supplementary step is $5(5^k+2\cdot11^k)+12\cdot11^k=3(5t+4\cdot11^k)$ with an integer in parentheses, explicitly using the induction hypothesis.
 
 ## Connections
 

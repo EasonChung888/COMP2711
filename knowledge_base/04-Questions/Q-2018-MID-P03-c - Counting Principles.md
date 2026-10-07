@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-抽屉不是原来的二 n 个整数，而是其中 n 个可能的奇数部分。超过 n 个元素必有两个落在同一个抽屉；上一部分说明同抽屉意味着整除关系，所以这样的集合无法满足限制。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+Let each hole be an odd number in $S$. The largest odd number in $S$ is $2n-1$, so the holes are $\{1,3,5,\ldots,2n-1\}$, so there are $n$ holes, and the odd factor of each number in $P'$ fits into one of these holes. Therefore, there are $n+1$ numbers for $n$ holes, and by the pigeonhole principle, there exists two different $p_i,p_j\in P'$ in the same hole, i.e. $c_i=c_j$. But we know that this is impossible from (b), giving a contradiction. (2 marks)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Every such subset has size at most $n$.
 
 **Derivation/proof.** There are exactly $n$ possible odd parts in $S$, namely $1,3,\ldots,2n-1$. If $P'$ had more than $n$ elements, pigeonhole principle would place two distinct elements in the same odd-part class. Writing them as $c2^r,c2^s$ makes the smaller divide the larger, contradicting the criterion. Thus $|P'|\le n$.
 
-### 中文解答
-
-**推导。** 所有元素的奇部必为 $S$ 中的奇数，故可能鸽巢恰 $1,3,\ldots,2n-1$ 共 $n$ 个。若合条件的 $P'$ 有超过 $n$ 个元素，任选其中 $n+1$ 个，按奇部分入这 $n$ 个巢。鸽巢原理强迫两个不同数同奇部；设为 $c2^r,c2^s$ 且 $r<s$，前者整除后者，违反条件。因此 $|P'|\le n$，不存在所述更大的集合。
-
-## Common Mistakes
-
-- 用二 n 个抽屉而得不到所需界。
-- 引用抽屉原理但未说明同抽屉为何矛盾。
+If there are more than $n$ elements, select any $n+1$ of them before applying pigeonhole principle.
 
 ## Connections
 

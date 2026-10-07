@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-题目只要求表达式，不需要重复平方计算。RSA 加密使用收信人的公开指数与乘积模数，因此把消息七百二十作为底，五十三作为指数，九百八十九作为模数直接代入即可。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+The encrypted message $c=720^{53}\bmod989$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $c=720^{53}\bmod989$.
 
 **Derivation/proof.** RSA encryption maps a message representative $m$ to $m^e\bmod n$, using the recipient's public key. Substitute $m=720,e=53,n=989$. The message is already in $\mathbb Z_{989}$, so the expression is valid without first reducing it. The private exponent is not used for this encryption request.
 
-### 中文解答
-
-**推导。** RSA 加密把明文 $m$ 提升到接收者公钥指数 $e$ 次方，再对公钥模数 $n$ 取余。这里 $m=720,e=53,n=989$，所以 $c=720^{53}\bmod989$。题目明确无需求数值，因此保留这个模幂表达式就是完整答案；$401$ 是私钥解密指数，不能在此取代 $53$。
-
-## Common Mistakes
-
-- 用私钥指数四百零一来加密。
-- 把欧拉函数值九百二十四放到模数位置。
+The private decryption exponent $401$ must not replace the public exponent $53$.
 
 ## Connections
 

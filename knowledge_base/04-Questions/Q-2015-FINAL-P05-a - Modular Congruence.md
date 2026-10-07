@@ -39,26 +39,21 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-final.pdf
 
 Shared context: [[STEM-2015-FINAL-P05 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-对零至十逐个平方取模，注意正负互为相反数的两个根会产生相同余数。答案应列出不同的余数，而不是把所有根都当作不同答案。
+Source: [[knowledge_base/past_paper/2015-final.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(a) $0\ (y=0),\ 1\ (y=1,10),\ 3\ (y=5,6),\ 4\ (y=2,9),\ 5\ (y=4,7),\ 9\ (y=3,8)$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+(Note on grading: Only the value of $x$ is required.)
+
+## Supplementary Explanation
 
 **Answer.** $\{0,1,3,4,5,9\}$.
 
 **Derivation/proof.** Squaring $y=0,1,2,3,4,5$ gives residues $0,1,4,9,5,3$. The remaining roots $6,7,8,9,10$ are congruent to $-5,-4,-3,-2,-1$ and repeat the same squares. This covers every residue class.
 
-### 中文解答
-
-**推导。** 先平方代表元零至五，所得余数依次 $0^2,1^2,2^2,3^2,4^2,5^2\bmod11=0,1,4,9,5,3$。其余六至十分别与 −5 至 −1 同余，平方重复刚才的非零余数。因此全部不同二次剩余为 $\{0,1,3,4,5,9\}$。源题的定义允许根零，所以答案包括零。
-
-## Common Mistakes
-
-- 遗漏 $y=0$ 对应的二次剩余 0。
-- 把 6 至 10 的根当作新增二次剩余。
+The source definition permits the root zero, so zero belongs in the answer.
 
 ## Connections
 

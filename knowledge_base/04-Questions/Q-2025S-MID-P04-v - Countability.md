@@ -41,24 +41,19 @@ Page 6 labels the final answer “(iv) Finite.” a second time; its fifth posit
 
 (v) The set of real roots of $1-2x+3x^2-4x^3+5x^4$.
 
-## 中文解析
+## Official Answer
 
-对象是一个固定四次多项式的实根集，可用有限根数或正定配方核查。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+(iv) Finite.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Finite.
 
-**答案。** Finite。
-
-**推导。** 令 $f(x)=1-2x+3x^2-4x^3+5x^4$。这是首项系数为五的非零四次多项式，至多有四个不同实根。也可直接配方：$f(x)=x^2(5x^2-4x+1)+(2x^2-2x+1)$，其中 $5x^2-4x+1=5(x-2/5)^2+1/5>0$，且 $2x^2-2x+1=2(x-1/2)^2+1/2>0$。故实际没有实根，根集是空集，当然有限。这里配方只是独立核查，不要求把代数求根方法视为新的课程主题。
-
-## Common Mistakes
-
-- 这里问根的集合，不是所有实系数四次多项式的集合。
-- 实数域无限不代表这个具体方程有无限多个根，非零多项式的限制仍须使用。
+**Derivation/proof.** Let $f(x)=1-2x+3x^2-4x^3+5x^4$. A nonzero quartic has at most four distinct real roots. More strongly,
+$$f(x)=x^2(5x^2-4x+1)+(2x^2-2x+1),$$
+where $5x^2-4x+1=5(x-2/5)^2+1/5>0$ and $2x^2-2x+1=2(x-1/2)^2+1/2>0$. Hence there are no real roots: the set is empty and therefore finite. This calculation is an independent check, not an expansion of the course taxonomy.
 
 ## Connections
 

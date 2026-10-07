@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P08 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-限制只针对相邻拨轮，不要求五个数字全部不同。第一位有十种选择，往后每位只排除前一位的数字，始终有九种；更早位置的数字仍可重新使用。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+$10\cdot9^4$. All digits are possible for the first dial. For each subsequent dial, the digit chosen in the previous dial is not a valid option.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $10\cdot9^4$.
 
 **Derivation/proof.** Choose the first digit in ten ways. For each of the next four dials, precisely one digit is forbidden: the digit on the immediately previous dial. Thus each has nine choices, even if it repeats a nonadjacent digit. Multiplication gives $10\cdot9^4$.
 
-### 中文解答
-
-**推导。** 第一盘任选五位码的首位，有 $10$ 种；第二盘只禁与第一盘相同，剩 $9$ 种。往后每盘同样只禁前一盘那一个数字，所以第三至第五盘仍各有 $9$ 种。乘积为 $10\cdot9^4$。例如第一盘数字可在第三盘再用，故不是所有数字互异的下降乘积。
-
-## Common Mistakes
-
-- 写成十乘九乘八乘七乘六。
-- 把首尾两位也视为相邻。
+One may reuse the first digit on the third dial: only the preceding digit is forbidden. The last two positions consequently each have nine choices, not nine followed by eight.
 
 ## Connections
 

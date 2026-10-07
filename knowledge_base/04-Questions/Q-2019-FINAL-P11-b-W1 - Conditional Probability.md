@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-开三号门的总概率与开二号门不同，因为二号门的先验奖品概率更高。初选一号正确时仍只有一半机会开三号，所以分子仍是零点二五，但分母变为零点五五，后验下降。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=13|physical PDF page 13]]; [[knowledge_base/past_paper/2019-final.pdf#page=14|physical PDF page 14]].
 
-## Detailed Solution
+Same as above, but with $p(M=3\mid W=1)=1/2,p(M=3\mid W=2)=1,p(M=3\mid W=3)=0$. Plugging in these numbers, we obtain $p(M=3)=0.55$ and $p(W=1\mid M=3)=5/11,p(W=2\mid M=3)=6/11$. So, we should switch to door 2. This time, the probability that our initial guess is correct has decreased.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13, 14. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $5/11$.
 
 **Derivation/proof.** Here $P(M=3\mid W=1)=1/2$, $P(M=3\mid W=2)=1$, and $P(M=3\mid W=3)=0$. Hence $P(M=3)=0.5(1/2)+0.3=0.55$. The joint mass $P(W=1,M=3)=0.25$, giving posterior $0.25/0.55=5/11$.
 
-### 中文解答
-
-**推导。** 奖在门一时主持人以 $1/2$ 概率开三，奖在门二时必开三，奖在门三时不能开三。故 $P(M=3)=0.5(1/2)+0.3(1)+0.2(0)=0.55$。奖在一且开三的联合质量为 $0.25$，因此 $P(W=1\mid M=3)=0.25/0.55=5/11$。这个观测使原选择的胜率从 $1/2$ 降至 $5/11$。
-
-## Common Mistakes
-
-- 把上一问零点四五的分母直接沿用。
-- 认为一号门概率不受打开哪一门影响。
+The total probability of the observed opening is $0.5(1/2)+0.3(1)+0.2(0)=0.55$. These terms condition on the three mutually exclusive prize locations.
 
 ## Connections
 

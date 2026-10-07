@@ -40,26 +40,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P11 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先计算 T 为九百二十四，分解后可直接检验四个选项。二十一、七、十一都与 T 共享素因子，只有二十五互质；加密指数不必自身是素数，合数二十五也可以合法。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=13|physical PDF page 13]].
 
-## Detailed Solution
+(iii). We have $T=(p-1)(q-1)=42\cdot22=924$. Bob can use $25$ as this is the only choice such that $\gcd(25,924)=1$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 13. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Only (iii), $e=25$.
 
 **Derivation/proof.** The totient is $T=42\cdot22=924=2^2\cdot3\cdot7\cdot11$. A valid $e$ must be coprime to 924. Candidate 21 shares factors 3 and 7, 7 shares 7, and 11 shares 11. Candidate 25 has only prime factor 5, which does not divide 924, so its gcd is one and it is valid.
 
-### 中文解答
-
-**推导。** RSA 指数须与 $T=(43-1)(23-1)=924=2^2\cdot3\cdot7\cdot11$ 互素。$21$ 含公因子 $3,7$，$7$ 与 $11$ 本身也整除 $924$，都不能作为可逆指数。$25=5^2$ 没有这些质因子，所以 $\gcd(25,924)=1$。唯一选择是 (iii) $e=25$。
-
-## Common Mistakes
-
-- 认为只有素数才能作为 RSA 指数。
-- 检查候选与 n 而非 T 的互质性。
+Since the only prime divisor of twenty-five is five and five does not divide 924, $\gcd(25,924)=1$. This is the RSA admissibility condition, even though twenty-five is composite.
 
 ## Connections
 

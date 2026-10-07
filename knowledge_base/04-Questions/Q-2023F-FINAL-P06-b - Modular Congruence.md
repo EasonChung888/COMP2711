@@ -38,26 +38,13 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2023_Final
 
 What is the remainder of $17^{2023}\bmod14$?
 
-## 中文解析
+## Official Answer
 
-先将底数十七约化成三，再观察三次方模十四等于负一。指数 2023 分成三乘 674 再加一，其中 674 是偶数，因此这一大块的余数为一，只留下一个三。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Final.pdf#page=10|physical PDF page 10]].
 
-## Detailed Solution
+> (b) $17\equiv3\pmod{14}$ So we have: $3^3\equiv27\equiv-1\pmod{14}$. $(3^3)^{674}\equiv3^{2022}\equiv(-1)^{674}\equiv1\pmod{14}$ $3^{2023}\equiv3\cdot3^{2022}\equiv3\cdot1\equiv3$.
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** 余数为三。
-
-**推导。**
-
-1. 先化简底数 $17\equiv3\pmod{14}$，并观察短周期 $3^3=27\equiv-1\pmod{14}$。将指数分解为 $2023=3\cdot674+1$，可以直接使用这个立方余数。
-2. 因此
-   $$17^{2023}\equiv(3^3)^{674}\cdot3\equiv(-1)^{674}\cdot3=3\pmod{14}.$$
-   这里 $674$ 是偶数，故负一的幂为正一。结果三已在零到十三的标准余数范围内；另由 $3^6\equiv1$ 且 $2023\equiv1\pmod6$ 也得到相同结果，不必展开大整数。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $3$.
 
@@ -65,10 +52,7 @@ Provenance: published official answer, independently checked and expanded below.
 $$17^{2023}\equiv3^{2023}=(3^3)^{674}\cdot3\equiv(-1)^{674}\cdot3=3\pmod{14}.$$
 The residue 3 is already between 0 and 13, so it is the requested remainder. Equivalently, $3^6\equiv1$ and $2023\equiv1\pmod6$, confirming the same cycle calculation.
 
-## Common Mistakes
-
-- 费马小定理不能把合数模十四当作素数模数。 / Use the explicit cycle.
-- 计算 2023 除三的余数时要保留末尾的一个三。 / The leftover exponent is one.
+Because $2023=3\cdot674+1$, the remaining expression is $(-1)^{674}\cdot3=3$. This is already in the standard remainder range $0\le r<14$.
 
 ## Connections
 

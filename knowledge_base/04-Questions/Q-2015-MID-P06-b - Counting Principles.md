@@ -41,26 +41,17 @@ Briefly explain how your answers are derived.
 
 Shared context: [[STEM-2015-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-先计算首位为字母的所有密码，再排除八个位置全是字母的情况。补集只有零个数字这一类，因此一次相减就得到答案。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=11|PDF physical page 11]].
 
-## Detailed Solution
+(b) $26\times36^7-26^8$. There are $26^8$ passwords without digits.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $26\cdot36^7-26^8$.
 
 **Derivation/proof.** The unrestricted first-letter count is $26\cdot36^7$. A password in this set violates the digit requirement exactly when all eight characters are letters, giving $26^8$ bad strings. Subtraction gives the answer.
-
-### 中文解答
-
-**推导。** 首位为字母的全部密码有 $26\cdot36^7$ 个。不满足“至少一个数字”恰好是八位全为字母，共 $26^8$ 个，且它们都属于前一集合。用补集相减得 $26\cdot36^7-26^8$，没有其他被排除情形。
-
-## Common Mistakes
-
-- 把全字母密码数写成 $26^7$，漏算首位。
-- 按“指定某个数字位置”直接相加，使多数字密码重复计数。
 
 ## Connections
 

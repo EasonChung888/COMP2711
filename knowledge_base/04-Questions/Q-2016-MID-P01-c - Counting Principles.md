@@ -39,26 +39,21 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-首位必须是数字，只有十种。每个后续位置只需避开紧邻的前一个字符，所以始终有三十五种，较早出现过的字符仍可以再用。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=3|PDF physical page 3]].
 
-## Detailed Solution
+(c) $10\cdot35^6$. The leftmost character has 10 choices, then the second leftmost character has 35 choices because it cannot be the same as it's adjacent character, and so on.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $10\cdot35^6$.
 
 **Derivation/proof.** Choose the leading digit in ten ways. At each of the remaining six positions, exactly one of 36 characters equals its predecessor and is excluded. The multiplication rule thus gives $10\cdot35^6$.
 
-### 中文解答
+Earlier nonadjacent characters may recur, as the A and 3 do in the valid example.
 
-**推导。** 最左位必须是数字，有十种。以后每一位只排除紧邻上一位的那一个字符，从36种减去一种，始终有35种；此前更远位置出现过的字符可以重复，如例子的A或3。六个后续位置相乘得到 $10\cdot35^6$。不能误用每步继续递减的排列数。
-
-## Common Mistakes
-
-- 使用下降阶乘，误把不相邻也不能重复加入题设。
-- 将每个后续位置限制成只有数字。
+After the first position there are always 35 choices, because only one immediate predecessor is excluded.
 
 ## Connections
 

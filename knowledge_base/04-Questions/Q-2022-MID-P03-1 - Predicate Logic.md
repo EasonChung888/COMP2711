@@ -38,26 +38,19 @@ Published solution material: ![[knowledge_base/past_paper/2022-midterm.pdf#page=
 
 Shared context: [[STEM-2022-MID-P03 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-论域已经是鸟，只需把蜂鸟身份 P 当条件，颜色丰富 S 当结论，并对每只鸟全称量化。非蜂鸟不受这句话约束，不能用合取把所有鸟都说成蜂鸟。
+Source: [[knowledge_base/past_paper/2022-midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+> (1) $\forall x(P(x)\to S(x))$.
 
-Provenance: published official answer, independently checked by the derivation below.
+## Supplementary Explanation
 
 **Answer.** $\forall x(P(x)\to S(x))$.
 
 **Derivation/proof.** The domain already includes only birds. For any such x, the sentence makes being a hummingbird sufficient for rich color. Thus P is the antecedent and S the consequent under ∀x. It places no color requirement on birds that are not hummingbirds and does not assert every richly colored bird is a hummingbird.
 
-### 中文解答
-
-**推导。** 论域已经限定为鸟；$P(x)$ 表示蜂鸟，$S(x)$ 表示颜色丰富。因此“所有蜂鸟”写成全称条件句 $\forall x(P(x)\to S(x))$。非蜂鸟的前件为假，不受颜色结论限制，正符合原句只谈蜂鸟的范围。不能改用全称合取，否则会误说所有鸟都是蜂鸟。
-
-## Common Mistakes
-
-- 把所有鸟都断言为蜂鸟。
-- 颠倒 P 与 S 的蕴含方向。
+For a non-hummingbird the antecedent is false.
 
 ## Connections
 

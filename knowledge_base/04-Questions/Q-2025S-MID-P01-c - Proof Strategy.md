@@ -43,31 +43,36 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 
 Using rules of inference for propositional logic, show that the truth of the above premises implies that the conclusion $\neg s\land p$ is true.
 
-## 中文解析
+## Official Answer
 
-由 $\neg q$ 可令两个以 $q$ 为前件的蕴含为真，再分别取得 $\neg s$ 和 $p\lor s$。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=2|physical PDF page 2]].
 
-## Detailed Solution
+(c)
+1. $\neg q$ — Premise
+2. $\neg q\lor s$ — From (1)
+3. $(q\to s)$ — Equivalent of (2)
+4. $(q\to s)\to(p\lor s)$ — Premise
+5. $(p\lor s)$ — From (3) and (4)
+6. $\neg q\lor r$ — From (1)
+7. $q\to r$ — Equivalent of (6)
+8. $\neg s\leftrightarrow(q\to r)$ — Premise
+9. $\neg s$ — From (7) and (8)
+10. $p$ — From (5) and (9)
+11. $p\land\neg s$ — From (9) and (10)
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\neg s\land p$.
 
-**答案。** $\neg s\land p$。
-
-**推导。** 1. $\neg q$，前提 2。
-2. $\neg q\lor r$，由 1 用 附加律，故 $q\to r$。
-3. $(q\to r)\to\neg s$，由 前提 1 的 双条件消去律。
-4. $\neg s$，由 2、3 用 肯定前件式。
-5. $\neg q\lor s$，由 1 用 附加律，故 $q\to s$。
-6. $p\lor s$，由 5 与 前提 3 用 肯定前件式。
-7. $p$，由 6、4 用 析取三段论。
-8. $\neg s\land p$，由 4、7 用 合取规则。原答案最后写 $p\land\neg s$；用交换律即为所要求顺序。
-
-## Common Mistakes
-
-- 不能由双条件的一侧为真直接取得两侧以外的命题，应明确取出所用方向。
-- 析取三段论消去的是已知为假的 $s$，不能误消去 $p$。
+**Derivation/proof.**
+1. $\neg q$, premise 2.
+2. $\neg q\lor r$, by addition from 1, hence $q\to r$.
+3. $(q\to r)\to\neg s$, by eliminating the biconditional in premise 1.
+4. $\neg s$, from 2 and 3 by modus ponens.
+5. $\neg q\lor s$, by addition from 1, hence $q\to s$.
+6. $p\lor s$, from 5 and premise 3 by modus ponens.
+7. $p$, from 6 and 4 by disjunctive syllogism.
+8. $\neg s\land p$, from 4 and 7 by conjunction. The printed answer ends with $p\land\neg s$; commutativity gives the requested order.
 
 ## Connections
 

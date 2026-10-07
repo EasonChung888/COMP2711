@@ -38,24 +38,21 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_S2025_Mid
 
 Prove that for any odd natural number $a$, $8\mid a^2-1$.
 
-## 中文解析
+## Official Answer
 
-奇数左右相邻的两个偶数提供四的因数，剩余的连续整数再提供一个二。
+Source: [[knowledge_base/past_paper/COMP2711_S2025_Midterm.pdf#page=11|physical PDF page 11]].
 
-## Detailed Solution
+We need to prove $(a-1)(a+1)$ is divisible by 8.
 
-Provenance: published official answer, independently checked and expanded below.
+Note that $a=2k+1$ So we know that $a-1=2k$ and $a+1=2k+2$.
 
-### 中文解答
+$(a-1)(a+1)=2k\cdot(2k+2)=4k^2+4k=4\cdot k\cdot(k+1)$. Note that $2\mid k\cdot(k+1)$ as $k$ and $k+1$ are two consecutive numbers. So $(a-1)(a+1)=4\cdot2k'=8k'$ and this completes the proof.
 
-**答案。** $8\mid a^2-1$。
+## Supplementary Explanation
 
-**推导。** 任取奇自然数 $a$，可写 $a=2k+1$。于是 $a^2-1=(a-1)(a+1)=2k(2k+2)=4k(k+1)$。连续整数 $k,k+1$ 必有一个偶数，所以存在整数 $t$ 使 $k(k+1)=2t$。代回得 $a^2-1=8t$，这正是八整除该差的定义。$a=1$ 时 $k=0$，结果为零而八也整除零，边界没有例外。
+**Answer.** $8\mid a^2-1$.
 
-## Common Mistakes
-
-- 两个偶数的乘积只立即保证四整除，还须说明其中有额外的二因数。
-- 整除零是合法的，不能排除最小奇数一。
+**Derivation/proof.** An odd natural number has the form $a=2k+1$. Thus $a^2-1=(a-1)(a+1)=2k(2k+2)=4k(k+1)$. One of the consecutive integers $k,k+1$ is even, so $k(k+1)=2t$ for some integer $t$. Substitution gives $a^2-1=8t$, exactly the divisibility claim. At $a=1$, $k=0$ and the difference is zero; eight divides zero, so there is no boundary exception.
 
 ## Connections
 

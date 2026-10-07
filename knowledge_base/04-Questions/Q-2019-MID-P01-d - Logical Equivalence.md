@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-only if 后面给必要条件，这个条件又要求风和冷同时成立。因此下雨时要同时满足 w 与 c，把二者放在同一个合取后件内；不能改成只需有风或冷其中一种。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+$r\to(w\land c)$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $r\to(w\land c)$.
 
 **Derivation/proof.** “A only if B” makes B necessary for A. Here B itself consists of two simultaneous requirements, windy and cold. Therefore rain implies both $w$ and $c$, expressed as a conjunction inside the consequent. The claim says nothing requiring rain whenever those two conditions hold.
 
-### 中文解答
-
-**推导。** “rainy only if ...” 把 only if 后的整句作为必要条件。“windy and cold”为 $w\land c$，因此答案为 $r\to(w\land c)$。等价写法是 $(r\to w)\land(r\to c)$：下雨时两项都要真，非下雨时本句不对二者施加要求。
-
-## Common Mistakes
-
-- 把 and 写成 or。
-- 把 only if 的蕴含方向写反。
+Equivalently, $(r\to w)\land(r\to c)$. When it is not rainy, the sentence imposes no condition on wind or cold.
 
 ## Connections
 

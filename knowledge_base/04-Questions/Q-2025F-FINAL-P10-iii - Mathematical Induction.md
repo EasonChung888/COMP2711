@@ -45,24 +45,35 @@ Prerequisite context (editorial): [[Q-2025F-FINAL-P10-ii - Recurrence Relations]
 
 (iii) [4 points] Prove that your closed-form formula is correct using mathematical induction.
 
-## 中文解析
+## Official Answer
 
-把候选式代入一天的更新，并证明结果仍有同样的指数形式。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Final.pdf#page=18|physical PDF page 18]].
 
-## Detailed Solution
+(iii) Proof by mathematical induction.
 
-Provenance: published official answer, independently checked and expanded below.
+**Base case ($n=0$):**
+$$8\cdot2^0+2=8\cdot1+2=10=a_0\quad\checkmark$$
+**Inductive hypothesis:** Assume that for some integer $k\ge0$, $a_k=8\cdot2^k+2$.
 
-### 中文解答
+**Inductive step:** Using the recurrence,
+$$\begin{aligned}
+a_{k+1}&=2a_k-2&&(1)\\
+&=2(8\cdot2^k+2)-2&&(2)\\
+&=16\cdot2^k+4-2&&(3)\\
+&=16\cdot2^k+2&&(4)\\
+&=8\cdot2^{k+1}+2.&&(5)
+\end{aligned}$$
+This is exactly the formula for $n=k+1$.
 
-**答案。** $a_n=8\cdot2^n+2$ 对全部 $n\ge0$ 成立。
+By mathematical induction, $a_n=8\cdot2^n+2$ holds for all integers $n\ge0$.
 
-**推导。** 导入 $a_0=10,a_{n+1}=2a_n-2$ 与候选 $a_n=8\cdot2^n+2$。基础步 $n=0$：$8\cdot2^0+2=10=a_0$。归纳假设对某 $k\ge0$ 有 $a_k=8\cdot2^k+2$。由递推，$a_{k+1}=2a_k-2=2(8\cdot2^k+2)-2=16\cdot2^k+2=8\cdot2^{k+1}+2$，恰为下一项候选式。因此由 mathematical induction，公式对所有非负整数天数都成立。
+## Supplementary Explanation
 
-## Common Mistakes
+**Answer.** $a_n=8\cdot2^n+2$ for every integer $n\ge0$.
 
-- 证明中只能把归纳假设用于第 k 天，不能直接假设第 k+1 天公式。
-- 基础步应包含第零天，不能只从第一天验证而遗漏给定初值。
+**Derivation/proof.** Use $a_0=10$ and $a_{n+1}=2a_n-2$. The base case is $8\cdot2^0+2=10=a_0$. Assume $a_k=8\cdot2^k+2$ for some $k\ge0$. By the recurrence,
+$$a_{k+1}=2a_k-2=2(8\cdot2^k+2)-2=16\cdot2^k+2=8\cdot2^{k+1}+2.$$
+This is precisely the proposed expression for day $k+1$. Mathematical induction therefore establishes the formula for every nonnegative integer day.
 
 ## Connections
 

@@ -43,29 +43,34 @@ Published official answer pages: ![[knowledge_base/past_paper/COMP2711_F2025_Mid
 
 Using rules of inference for propositional logic, show that the truth of the above premises implies that the conclusion “$\neg r\land t$” is true.
 
-## 中文解析
+## Official Answer
 
-先由第三条取得 $q\lor p$ 与 $t$，再用 $\neg q$ 连续排除两种可能。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (c)
+> | | Statement | Reason |
+> |---|---|---|
+> |1|$p\to(r\to q)$|premise|
+> |2|$\neg q$|premise|
+> |3|$(q\lor p)\land t$|premise|
+> |4|$t$|from 3|
+> |5|$q\lor p$|from 3|
+> |6|$p$|from 5, 2|
+> |7|$r\to q$|from 6, 1|
+> |8|$\neg r\lor q$|from 7|
+> |9|$\neg r$|from 8, 2|
+> |10|$t\land\neg r$|from 9,4|
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\neg r\land t$.
 
-**答案。** $\neg r\land t$。
-
-**推导。** 1. $q\lor p$ 与 $t$，由 premise 3 用 simplification。
-2. $p$，由 1 的析取与 premise 2 的 $\neg q$ 用 disjunctive syllogism。
-3. $r\to q$，由 2 与 premise 1 用 modus ponens。
-4. $\neg r$，由 3 与 $\neg q$ 用 modus tollens。
-5. $\neg r\land t$，由 4 与 1 的 $t$ 用 conjunction。
-每个结论均来自前提或已得公式，且最后顺序正是题目要求。原答案写相反的合取顺序，可由交换律调整。
-
-## Common Mistakes
-
-- 不能由 $p\to(r\to q)$ 直接断言 $r\to q$，须先得到 $p$。
-- 否定后件推出否定前件是 modus tollens，不能错误地否定结论 $t$。
+**Derivation/proof.** 1. Obtain $q\lor p$ and $t$ from premise 3 by simplification.
+2. Obtain $p$ from the disjunction in step 1 and premise 2, $\neg q$, by disjunctive syllogism.
+3. Obtain $r\to q$ from step 2 and premise 1 by modus ponens.
+4. Obtain $\neg r$ from step 3 and $\neg q$ by modus tollens.
+5. Obtain $\neg r\land t$ from step 4 and the $t$ in step 1 by conjunction.
+Every result follows from a premise or earlier formula. The printed final conjunction is in reverse order; commutativity gives exactly the requested conclusion.
 
 ## Connections
 

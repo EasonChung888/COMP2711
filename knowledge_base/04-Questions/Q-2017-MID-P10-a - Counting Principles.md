@@ -37,26 +37,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2017-midterm
 
 Shared context: [[STEM-2017-MID-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-糖果互不相同，意味着需要分别决定每颗糖果去哪一个盒子。四个盒子带标签，选 A 与选 B 是不同结果；题目没有要求盒子非空，每颗糖都有四种选择。
+Source: [[knowledge_base/past_paper/2017-midterm.pdf#page=12|physical PDF page 12]].
 
-## Detailed Solution
+$4^{50}$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $4^{50}$.
 
 **Derivation/proof.** A distribution is a function from the set of fifty candies to the four labeled boxes. Each candy has four possible images, without any capacity or nonempty-box condition. The product rule therefore gives fifty factors of four.
 
-### 中文解答
-
-**推导。** 给每颗有身份的糖果指定一个目标盒子，选择为 $A,B,C,D$ 共四种。五十颗分别作选择后唯一确定一种分配，也允许空盒，所以乘法原理给出 $\underbrace{4\cdot4\cdots4}_{50\text{ 个}}=4^{50}$。无需把盒内糖果排序，因为记录的是归属而非排列。
-
-## Common Mistakes
-
-- 用相同糖果的隔板法。
-- 额外要求每个盒子必须有糖。
+The labels $A,B,C,D$ distinguish the four boxes. Since empty boxes are allowed, each ball can choose any label independently, with no surjectivity restriction.
 
 ## Connections
 

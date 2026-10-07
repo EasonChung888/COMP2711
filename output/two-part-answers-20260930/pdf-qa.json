@@ -1,0 +1,13 @@
+{
+  "pages": 47,
+  "questions": 68,
+  "matching_practice_order": true,
+  "question_prompts_unchanged": true,
+  "exact_retained_answer_sections": true,
+  "english_only": true,
+  "official_answers": 68,
+  "supplementary_explanations": 68,
+  "rendered_formulas": 739,
+  "margin_outliers": [],
+  "pdf_sha256": "a87eff9819ded10d3ba2adeb76ba73082e9e5a3e26855bada26dccab798b6fd9"
+}

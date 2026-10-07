@@ -1,0 +1,18 @@
+Proof
+The 
+k
+-permutations
+ of the set can be obtained by 
+forming the 
+ k
+-combinations of the set
+, and then 
+ordering the elements in each 
+k
+-combination
+, which can be done in 
+ (i.e., 
+) ways. Consequently,
+This implies that
+ 
+16
