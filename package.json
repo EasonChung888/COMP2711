@@ -1,0 +1,8 @@
+{
+  "name": "comp2711-study-site",
+  "private": true,
+  "packageManager": "pnpm",
+  "scripts": {
+    "build": "node .openai/build-static.mjs"
+  }
+}
