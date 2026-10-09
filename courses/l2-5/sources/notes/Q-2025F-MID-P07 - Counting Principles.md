@@ -40,24 +40,19 @@ Consider an $8\times8$ grid of $1\times1$ cells. If 17 cells are colored red at 
 
 ![[knowledge_base/06-Audit/figures/2025F-MID-P07-grid.png]]
 
-## 中文解析
+## Official Answer
 
-把棋盘分为十六块 $2\times2$，同块任意两格都含该块中心角点。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=17|physical PDF page 17]].
 
-## Detailed Solution
+> We split the $8\times8$ grid into $16$ $2\times2$ grids as follows:
+> ![[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=17]]
+> Note that any two cells from a $2\times2$ Grid contains a shared common corner. If we color $17$ $1\times1$ cells, it means we color at least two cells from one $2\times2$ grid which have a shared common corner.
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Two red cells must share a corner.
 
-**答案。** 必有两红格共享角点。
-
-**推导。** 将行分为相邻的四对，列也分为相邻的四对，得到 $4\cdot4=16$ 个互不重叠的 $2\times2$ 方块。十七个红格分配到这十六个方块，根据 pigeonhole principle 至少一块含两个红格。一个 $2\times2$ 块中的四个单格都包含它的中心网格点，所以该块任意两个不同红格共享此角点。于是题目结论对所有十七格选择成立，“at random”不需要再计算概率。
-
-## Common Mistakes
-
-- 按八行分组只能保证同一行有三红格，不能保证它们相邻或共角。
-- 对角接触也算共同角点，不要求红格共用整条边。
+**Derivation/proof.** Pair adjacent rows into four groups and adjacent columns into four groups, producing $4\cdot4=16$ disjoint 2-by-2 blocks. Seventeen red cells distributed among sixteen blocks force at least one block to contain two red cells. All four cells in a block contain its central grid point, so any two distinct red cells within it share that corner. This proves the claim for every selection of seventeen cells; “at random” does not require a probability calculation.
 
 ## Connections
 

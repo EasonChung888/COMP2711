@@ -1,0 +1,1664 @@
+{
+  "mode": "write",
+  "exerciseOccurrences": 118,
+  "answerParts": 120,
+  "uniquePrimaryIds": 117,
+  "staleExercises": 118,
+  "filesToUpdate": 119,
+  "audit": [
+    {
+      "id": "Q-2017-MID-P06-a",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2017-MID-P06-a - Combinatorial Selection.md",
+      "sourceSha256": "66937058f8d1b537620cdaf8e239f4f8c48c9bf11716b22c3f678dffc40177a8",
+      "officialSourceSha256": "c0c3fa7f47674157c696f087c98852782143fcf36425cf00dceb055820eafe1f",
+      "supplementarySourceSha256": "3a56e106b7c4050431b4dd077469389f0aa61193687b307bb8cb5aa8a5745f6c",
+      "parts": [
+        "Q-2017-MID-P06-a"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P01-d",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2016-MID-P01-d - Counting Principles.md",
+      "sourceSha256": "b0a3b4cf07048fe8b9df5e3911b0b7bf6abeb5f640e2e1fbe885b76f4b0b3fef",
+      "officialSourceSha256": "fe20513c1e7752afaf86606d28d3c0d93ead0b44f289420d86bc9fa694da377d",
+      "supplementarySourceSha256": "0f3ad43a120bda0f84caa33b4a9255b0137ca74c6d88ebe822a8e476cb6fac5f",
+      "parts": [
+        "Q-2016-MID-P01-d"
+      ]
+    },
+    {
+      "id": "Q-2013-MID-P02-a",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2013-MID-P02-a - Functions.md",
+      "sourceSha256": "d171191910a923c523bf11a2fefd72bd1630cfeac1f224877e8e093b3e26395a",
+      "officialSourceSha256": "e3e55863c3b99c42228bd1c91b1846e8f412edcd9863b55d2d5ad202e2653ef2",
+      "supplementarySourceSha256": "28709bebe2009f0af58e5f5dc11d399483254c38a8e4040bf1a296ea5ace0f74",
+      "parts": [
+        "Q-2013-MID-P02-a"
+      ]
+    },
+    {
+      "id": "Q-2013-MID-P02-b",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2013-MID-P02-b - Functions.md",
+      "sourceSha256": "f9172462c33721c1cdf0eff7e61c993887f0135aa59e7653a77c711b09a29c0e",
+      "officialSourceSha256": "c1807ea36cf50369e5a8034341bf9f30461986f1a929d5d4a04a9588f342bf81",
+      "supplementarySourceSha256": "1612e93f6065cf19a2d28030b9b7a1bab6d10f86547765ceec347b3f69705d38",
+      "parts": [
+        "Q-2013-MID-P02-b"
+      ]
+    },
+    {
+      "id": "Q-2013-MID-P02-c",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2013-MID-P02-c - Functions.md",
+      "sourceSha256": "31622685a694d0cea7668790155f447eff8574c80d6450ca54c5734d2d5ab8a5",
+      "officialSourceSha256": "5a63a9f6d866f3476427d91cf34eeefab349a22cab2b6a06f899ab0187d0408b",
+      "supplementarySourceSha256": "abb92030ef3bc85473c1fbe09f2d4afa6a9102abcfd264d02ddea7ee8ebd7178",
+      "parts": [
+        "Q-2013-MID-P02-c"
+      ]
+    },
+    {
+      "id": "Q-2018-FINAL-P10-c",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2018-FINAL-P10-c - Asymptotic Complexity.md",
+      "sourceSha256": "18d073b314960e0ffe027042b616714e55bc8964649f3bed85406d85dedcb6a3",
+      "officialSourceSha256": "72478920a613d55a69299875385b5e395bbb66ab8f9f967523e919f8b4ecde14",
+      "supplementarySourceSha256": "abb8f37d3b9028525ce29be6b64cc9a6e5ae3c6e4c8add15a94872429770cae1",
+      "parts": [
+        "Q-2018-FINAL-P10-c"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P06-a",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P06-a - Counting Principles.md",
+      "sourceSha256": "57cf39bec2f5c18c23ee395c33878e5d3d7cd2ead6eece3604c5bccf19bce9fe",
+      "officialSourceSha256": "9af4bef0bc4d6d2ec797b5e0823e376ae314261819608bd7f1873f4d35cf7f4b",
+      "supplementarySourceSha256": "329e6c63683fd2b8ff20b8357555ba342c376dbdb0405bd80a305d63504e9da9",
+      "parts": [
+        "Q-2015-MID-P06-a"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P01-b",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2016-MID-P01-b - Counting Principles.md",
+      "sourceSha256": "b1778e601dfe82405c9f143b1c76aa342365ab4f0fe349629bfda5cdd58520c3",
+      "officialSourceSha256": "8095591232bdf887ffb9345538c73f78e1b8e204f364e3e2453b7151b349fdd8",
+      "supplementarySourceSha256": "48b18af040e16ca7cc5811f0cd4282e412736123e49170f7c74f9be1dcace4cd",
+      "parts": [
+        "Q-2016-MID-P01-b"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P01-c",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2016-MID-P01-c - Counting Principles.md",
+      "sourceSha256": "2dcbff859aa8b39ec1ec9a9b9be8d79c576e236304b7242cb7e452cf3f3bb279",
+      "officialSourceSha256": "66522317cbc8847906f8f18af758f5c6f902a950d812673d74651045b37642e7",
+      "supplementarySourceSha256": "09b5a81d59fd21df0c7986d8823f5a5379e85c25c89ca7e9ded020ccc024ae55",
+      "parts": [
+        "Q-2016-MID-P01-c"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P06-b",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P06-b - Counting Principles.md",
+      "sourceSha256": "86a08b9d3ad559d0a6a856871bae6018e0b7039150189fca0aff7d25cd8aa672",
+      "officialSourceSha256": "cd023b222e3633849c115dab3795a2e5be31a25d83db24267fa30f418fef68e0",
+      "supplementarySourceSha256": "882c4f789a051651bd7e6b9bca162e37e550c07b5cec98292a70f7017aa9ef2e",
+      "parts": [
+        "Q-2015-MID-P06-b"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P06-c",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P06-c - Counting Principles.md",
+      "sourceSha256": "157ff908b1197f88d27e8080813bf99544e9ea9956ecdd1746846aeea87d5d74",
+      "officialSourceSha256": "423082c4aa58d7460f73b87996cd552822b0307ff3df4757b8d88227edc8ce2e",
+      "supplementarySourceSha256": "cb0d7a5d65ced14ae470f4cf8bbb1e26352b02a40a332fe32af07a55201e7f04",
+      "parts": [
+        "Q-2015-MID-P06-c"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P07",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2025F-MID-P07 - Counting Principles.md",
+      "sourceSha256": "03e445793384ff1d50134eb274b78a11299455056d271cb55c2edcaf84204c90",
+      "officialSourceSha256": "5dc67eb3d21e4a7fd0f41c5a24c052b41cfe48b7e13eb11325ffbb423f548180",
+      "supplementarySourceSha256": "f0a850fde6e13ea10cb90cb93eb256394b0c5e62fbff2916b042dadece612e0e",
+      "parts": [
+        "Q-2025F-MID-P07"
+      ]
+    },
+    {
+      "id": "Q-2025F-FINAL-P02-b",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2025F-FINAL-P02-b - Counting Principles.md",
+      "sourceSha256": "f86d1468dd38499526cf481745052c7b790eec6e481b46ff06fa5f5e21648bf5",
+      "officialSourceSha256": "ac4b749787edd909a0be5bf706d449ea1e4c9d3ee817766c3a114639d547b9e4",
+      "supplementarySourceSha256": "00c77a653b297fff668317f92622bcc396a55053e76abb0484302bae7615970a",
+      "parts": [
+        "Q-2025F-FINAL-P02-b"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P07",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-FINAL-P07 - Counting Principles.md",
+      "sourceSha256": "361f87c8ff96041b497a41a3202ecd21ef0e532462ad34180c3372cafb4241f9",
+      "officialSourceSha256": "53aafe3b19b94cedf80c555a936c12b620e29e6952c3069b82c58515fc81e219",
+      "supplementarySourceSha256": "22684d0d8cba36b9155b79b90050443f46735369df13bcec930f6595afa73653",
+      "parts": [
+        "Q-2019-FINAL-P07"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P07",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2017-MID-P07 - Counting Principles.md",
+      "sourceSha256": "e2fbc10ba8dcf5d27d723390707066366460081cb4c2d463a6edccdfc32566f6",
+      "officialSourceSha256": "b2435ebf31bbcd7fbfc8632f75ddd888a1ec72bbef123c3add73e5119568da9f",
+      "supplementarySourceSha256": "bdce4c30863c59567c46194708e98b2b554bd9415810404a72420c573defd9cc",
+      "parts": [
+        "Q-2017-MID-P07"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P07-c",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P07-c - Counting Principles.md",
+      "sourceSha256": "5933bf1759c80fef0891669ccff6eb048836c46a6278e52be79ea2d876e1eaf8",
+      "officialSourceSha256": "7291b5bf908aa6826661ee38b026fd1bec1b1bec2e79c871822e7583856123d2",
+      "supplementarySourceSha256": "d536dc302be9dd5ab98abcd30ab5e9490a97108b69d06f6ed41700b2b4683d44",
+      "parts": [
+        "Q-2015-MID-P07-c"
+      ]
+    },
+    {
+      "id": "Q-2025S-FINAL-P07-N",
+      "practiceFile": "courses/l2-5/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2025S-FINAL-P07-N - Counting Principles.md",
+      "sourceSha256": "24bed8714ca73e7eea38eefa6547810942a1f5311e3cb4fd2b335bfdeabd55bb",
+      "officialSourceSha256": "0c889fef2ccd96eff90058b9328dd4cbbc7300ac862062f6f439033abe8724a4",
+      "supplementarySourceSha256": "af31393ad490f081f46aa3fdb258182413347850f2dac0815016fb9ea648579d",
+      "parts": [
+        "Q-2025S-FINAL-P07-N",
+        "Q-2025S-FINAL-P07-sufficient",
+        "Q-2025S-FINAL-P07-minimal"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P04-a",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2016-MID-P04-a - Logical Equivalence.md",
+      "sourceSha256": "a35c46d6e636aec6038488cd14abe68097cfe5617e23ffe7ce26bf28c199fc25",
+      "officialSourceSha256": "41e8edac39e61f6907b2aec4726591d67e8efa06ca7219ad5c51f0aa3b94322d",
+      "supplementarySourceSha256": "3aefe2a6bf805f8a27aad39b715becfa8fdeda1d7995eebcd8ac988caebed59b",
+      "parts": [
+        "Q-2016-MID-P04-a"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P01-a - Logical Equivalence.md",
+      "sourceSha256": "48425ed6579fd6c4bc4fb6bc101cec43ec24d26840c4f55c9cf918b84440fb25",
+      "officialSourceSha256": "230656c9ca311a75fa4bbc3ddb16e746a24e7052d2bd90707f5cd7beb281a141",
+      "supplementarySourceSha256": "66738076ed83f916e5f692635db722bdf4d7aa55a1932d8e16bd3fbab7304131",
+      "parts": [
+        "Q-2019-MID-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P01-b",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P01-b - Logical Equivalence.md",
+      "sourceSha256": "e073ad4cf3ee13d1af905bced84758fa996bc43ed7fcbb7e6f77ee85ccb2915c",
+      "officialSourceSha256": "402798048fb50abc93d5b8b36953c02b0261e3e3b66a57842371982178c0ab04",
+      "supplementarySourceSha256": "d6ab0f3ed033a3a4e043de66f60f0b65caedcc10f4d2344aed41544e0ad2b8d0",
+      "parts": [
+        "Q-2019-MID-P01-b"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P01-c",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P01-c - Logical Equivalence.md",
+      "sourceSha256": "8dededf98abad9f0bc182859346f73a5ce5a3ee1b58df60ab5ff78920d3978d0",
+      "officialSourceSha256": "7eac80b88946500d625631b733e4320e0bfded90e829568a70cb8836f838535c",
+      "supplementarySourceSha256": "7425c0bf70a450574d9da3a9d9ed37a428d5f08823f7951f19931e987b879647",
+      "parts": [
+        "Q-2019-MID-P01-c"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P01-d",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P01-d - Logical Equivalence.md",
+      "sourceSha256": "2be5c97adf6cb889b7d66e79c9b7bca92292537558962c3cdd72ffb55ecc5bba",
+      "officialSourceSha256": "32c15176f7aba4573bb42405b3abbe91c0912598535ce8540a3e11a6fc017416",
+      "supplementarySourceSha256": "59e8e6307f28e25b7e837dec7becd363aa716c07d44d3af92dbd9952bec9660b",
+      "parts": [
+        "Q-2019-MID-P01-d"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P01-a - Logical Equivalence.md",
+      "sourceSha256": "e9a0598bfdfaed4017ff9231109b1570726f0f019818d4da065a511a0e0189fc",
+      "officialSourceSha256": "3accb824ae95b075e8c0f142ec187e43f683c753d7eb0a86bcfe12725b682363",
+      "supplementarySourceSha256": "d44015105e60e89df8ac790ffd4d341622a69a9e5df4a87a3384e980bc68e4a3",
+      "parts": [
+        "Q-2015-MID-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2023F-MID-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2023F-MID-P01-a - Logical Equivalence.md",
+      "sourceSha256": "0c4e481acb92d5136dfa6f58bb5e18eab61ff78e4fc90bee9de944f4cdd5cc98",
+      "officialSourceSha256": "731385b742b94ed7f838414fb5832001c46c3ef914a546fecd9f7e714f78c1cd",
+      "supplementarySourceSha256": "9b573f6e689f8da7f98abde032ede131b814003dcf3b5aaff01fdad9da08080c",
+      "parts": [
+        "Q-2023F-MID-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2024F-FINAL-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2024F-FINAL-P01-a - Logical Equivalence.md",
+      "sourceSha256": "13545888a1cf270f70613787b7f851e7f6e907da48fe3cf73bc59ae180131af9",
+      "officialSourceSha256": "bbd9dce95edbd4edc8be938d28c65d12e0c9ed60146d13911fff5ade5378495b",
+      "supplementarySourceSha256": "5ccefe94ec1750fe1fb6318b9ef6b95880c8d07a7dca37ef5a7287a0f0fc25f0",
+      "parts": [
+        "Q-2024F-FINAL-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2018-MID-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2018-MID-P01-a - Logical Equivalence.md",
+      "sourceSha256": "04c3fd2dc512a8c57821bb0d924832c776634eb4c9b310c9591c91faf8916394",
+      "officialSourceSha256": "1d6210ffd4597928bf0bcadad968aaaaa08da81de65c626986937f1896784676",
+      "supplementarySourceSha256": "619ae88f19161b20616535c76691f9afbaebe27b80f9d88de3635e76b844843d",
+      "parts": [
+        "Q-2018-MID-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2018-MID-P01-b",
+      "practiceFile": "courses/l2-5/chapters/l1-1/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2018-MID-P01-b - Logical Equivalence.md",
+      "sourceSha256": "ba3566cf875adfa69d9e685091da91c8ea61620e4f5be0a46ce51194a0a88488",
+      "officialSourceSha256": "494be0560f5760f80af96661d1671bcd00e3ad7f62c5bb52e950511c506be70b",
+      "supplementarySourceSha256": "e4466aba6ba3c9694eb37c2283f7a90d6e8eae2021fc90245ea1abd0b2933335",
+      "parts": [
+        "Q-2018-MID-P01-b"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P02-a",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P02-a - Predicate Logic.md",
+      "sourceSha256": "12418a6904dc69eb17436f628355cfd328d98b1cead0afb7714d86959771545b",
+      "officialSourceSha256": "97076565ade6983195f2f3009f60addc2b1498d0a00f7a17aee3afcb71258d4a",
+      "supplementarySourceSha256": "c35436503215e616359d839dfc394d412f52166edd5770382ad854eabecd6d3e",
+      "parts": [
+        "Q-2019-MID-P02-a"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P02-b",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P02-b - Predicate Logic.md",
+      "sourceSha256": "27d168046b44e7689f4f64ca7aae885b1c3c88f7596703682528aa12cdff440b",
+      "officialSourceSha256": "54536f6183f743ab73f282acd845a22b05f0ba316a8d245327efb8ff4555cbd1",
+      "supplementarySourceSha256": "ba8dc3186bcf51b570f519c54d0ec1a30f8a5b54e328053741a80a727efc3891",
+      "parts": [
+        "Q-2019-MID-P02-b"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P02-c",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P02-c - Predicate Logic.md",
+      "sourceSha256": "164820ac11ad24704db616b52cd0a36131f6fbb3b1d8a980de1b6270222f1549",
+      "officialSourceSha256": "6e3e1bd9561b030de823508e3e1f7c2f50ff983ded0eec03f0d4699d556f96ce",
+      "supplementarySourceSha256": "821cd8744590f403f6e889ae3210b4ab5ab846df30e816c39ae4a890a99edafa",
+      "parts": [
+        "Q-2019-MID-P02-c"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P06-a",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2016-MID-P06-a - Predicate Logic.md",
+      "sourceSha256": "538f64f66c1324ac79cc9e81b8edbd1cbaf169220d03273888b8b27fcdfe8f3a",
+      "officialSourceSha256": "54c05e3a3b1ed0b13d362ec2574b1ebd8bfcd53b5235ec8307349db089274cb5",
+      "supplementarySourceSha256": "62f8ae11fb3d01de6d63b0c9e502aef6176c4c6f8df4570c300f41fc90c88961",
+      "parts": [
+        "Q-2016-MID-P06-a"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P06-d",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2016-MID-P06-d - Predicate Logic.md",
+      "sourceSha256": "9b9952532a0741f30199fc3933a39bbbb946392ce544957e783be484d0de0a93",
+      "officialSourceSha256": "31de70d09cef054f542c18f986f9b074d5ebb7db55da8ed66675d3dd50564398",
+      "supplementarySourceSha256": "84db4626291796f1264a8cf58d7eb6146aa2179105b61358c55d23d11406e608",
+      "parts": [
+        "Q-2016-MID-P06-d"
+      ]
+    },
+    {
+      "id": "Q-2020-MID-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2020-MID-P01-a - Predicate Logic.md",
+      "sourceSha256": "dbe45e039b770354f70350b1ecabdec1c1642e91297dfecf615d07d6c148b8eb",
+      "officialSourceSha256": "7aa5be562b5165e886c9b9f33fa60f415f237b3af95beb89f84fe47b68d5160e",
+      "supplementarySourceSha256": "b2cbd5ead60b876319a0cb51f17894ae9bbe41030a8f9b4f5513a67fde9d5e0a",
+      "parts": [
+        "Q-2020-MID-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2014-FINAL-P05-b",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2014-FINAL-P05-b - Logical Equivalence.md",
+      "sourceSha256": "af405c7c3de5c4d35d224199b04f3a926391e1adbb4be9a095a78dfc3c849ed4",
+      "officialSourceSha256": "10d822bf238bd77d6c29e0fc1b5ca72be8c5e07d88e9a733c1e755fe83e89d82",
+      "supplementarySourceSha256": "faf6f67ff50cde695884ace9685b462229e333232ca6c18a7f870bef46b58ded",
+      "parts": [
+        "Q-2014-FINAL-P05-b"
+      ]
+    },
+    {
+      "id": "Q-2014-FINAL-P05-c",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2014-FINAL-P05-c - Logical Equivalence.md",
+      "sourceSha256": "c73726cfa466a7dae015ee70b36af77beaf58ff92b63e1b87349af8976804e82",
+      "officialSourceSha256": "8d1e19ff6addb3c14037b695db08b04f59366dbde34798bb949975258bd1ac38",
+      "supplementarySourceSha256": "32c2021e89019bc16a7a98636155924e86024734d39ff52bf881e67286643d5c",
+      "parts": [
+        "Q-2014-FINAL-P05-c"
+      ]
+    },
+    {
+      "id": "Q-2024S-MID-P03-a",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2024S-MID-P03-a - Predicate Logic.md",
+      "sourceSha256": "f8f60cd0c33a45002af6b3ce9f9d0e847ceae79797090301ddde75f103380de8",
+      "officialSourceSha256": "d2c78cd8620d84726429c15babfd9a1e271a6f033b1a019c995c736808536aab",
+      "supplementarySourceSha256": "25c49726dbb0da6eabed3be1dac2b57498228084e5227ebcd778deba33ff088a",
+      "parts": [
+        "Q-2024S-MID-P03-a"
+      ]
+    },
+    {
+      "id": "Q-2023F-MID-P02-a",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2023F-MID-P02-a - Predicate Logic.md",
+      "sourceSha256": "a24955464da43eeefa9cf3433f2cb9a521d4f4e6e714520c2393303d9add32c5",
+      "officialSourceSha256": "094f13b7380989ed5dda4ae533999402bfbc72b74e3d941b856b30739d886556",
+      "supplementarySourceSha256": "0e3f91176ee394e013fbedc51496c22e7c98a544a73e49fcce69652493695c35",
+      "parts": [
+        "Q-2023F-MID-P02-a"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P02-b",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2025F-MID-P02-b - Predicate Logic.md",
+      "sourceSha256": "54f7cf4bf91fa12fe1f12fb8449032443b310203249552926f9507a20e656f1a",
+      "officialSourceSha256": "ee1afa64b004a129d6ec23c5255563795827f488ba52f8a0a86572092a678595",
+      "supplementarySourceSha256": "c64d1597b6df8afa77e878c066cee68504e1f407fc5a1e47435548a30dbea702",
+      "parts": [
+        "Q-2025F-MID-P02-b"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-FINAL-P01-a - Predicate Logic.md",
+      "sourceSha256": "533619abb5848931a1a457dfab213daa06cce4fdb394febb485f6affc38a196a",
+      "officialSourceSha256": "3fa991da2342419a822e5938b2de9b1b81c6faa1927f3a039ed2c46700f3b751",
+      "supplementarySourceSha256": "76ae67330eb96ec2c72ea899bb12a41c167d1f407d7f974cd1f43d46aae646f2",
+      "parts": [
+        "Q-2019-FINAL-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P01-c",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-FINAL-P01-c - Predicate Logic.md",
+      "sourceSha256": "0e447103ba6e6ba5f6bdc0fc5441cfedfb2b91b88f0eedb6a2fa3125fa66cee3",
+      "officialSourceSha256": "265d15aa0d921ddddb843656d6bccd3405be73c2847aceae14138cfb6f937ffc",
+      "supplementarySourceSha256": "c3ea7ea4188063ed7ce818c94cf8a2cbb1561ce884ded8d9ab4125f3814bf8cc",
+      "parts": [
+        "Q-2019-FINAL-P01-c"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P01-d",
+      "practiceFile": "courses/l2-5/chapters/l1-2/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-FINAL-P01-d - Predicate Logic.md",
+      "sourceSha256": "3032907c455a9204d38d8dd4e1b5507d10a3c048d49b236d544a1b181a2d4d25",
+      "officialSourceSha256": "054cc48265d4e5127d8cef59dd06b33c877221ecf8e570b138419a4c1dbf29bd",
+      "supplementarySourceSha256": "f3856072ab01ddec6b187b1e9a6a51249f3cd14879316ae8c25b48eb8ef4cad9",
+      "parts": [
+        "Q-2019-FINAL-P01-d"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P02-a",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P02-a - Proof Strategy.md",
+      "sourceSha256": "b94093ae88cbca1fc06ec6f5bc002cba895830daea15346f647d6dcd9af4a6cb",
+      "officialSourceSha256": "5f5584c4986edf2195c743e14591f065b363f878be52ab98fdde033f80f9e11b",
+      "supplementarySourceSha256": "ed8f6c02b4f466e23b3d4509d0db64c1dde1fb0b9076922eda665d3b07deb400",
+      "parts": [
+        "Q-2015-MID-P02-a"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P02-b",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P02-b - Proof Strategy.md",
+      "sourceSha256": "9ddb6481528a6e1e6ed913d85e6efbc15a8775e1769a61ca07676891d2aaa6d4",
+      "officialSourceSha256": "6ce70de1440956e30e5e193a7f672de1625a0c5e4f08bab305f41f9b60c7115e",
+      "supplementarySourceSha256": "1708bfbb83da0507fb019c3469b2c47aeebdad054c88eee7a694fa88a2df4bcf",
+      "parts": [
+        "Q-2015-MID-P02-b"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P02-c",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P02-c - Proof Strategy.md",
+      "sourceSha256": "f47f504668015b1bcddab5f4e48e8338ef06f6181a4d690575a396d05e0e587d",
+      "officialSourceSha256": "b57c3287297bab51ef4b67a9b7493e6f0f74fcc61f531220d4b1f25d3c59805d",
+      "supplementarySourceSha256": "5342687e750a320425429879bd195effef31a76ea28e832a031c0b0baf1bfa5f",
+      "parts": [
+        "Q-2015-MID-P02-c"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P04",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P04 - Predicate Logic.md",
+      "sourceSha256": "ef48d69bf7ab5e811211b9a09ee5a7cc26e750a89b1199741e813bec09678a5a",
+      "officialSourceSha256": "581dc21c48dbb7c7166762b8e18634ab94fad92f0b625f8a2d581d59644a08a8",
+      "supplementarySourceSha256": "65df0be3e96608cabf2dc9ec42c25352a4847004b63f16464660bd09895669a9",
+      "parts": [
+        "Q-2019-MID-P04"
+      ]
+    },
+    {
+      "id": "Q-2013-FINAL-P06-b",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2013-FINAL-P06-b - Predicate Logic.md",
+      "sourceSha256": "efd468e31ca967f590324b9c2abb93d47265891848dc697d9aef61b6ec9ae67b",
+      "officialSourceSha256": "6de84d73e6f47deb55a919b48a929ef35bfe2c7cb973b92731872f9596412ac3",
+      "supplementarySourceSha256": "3afdc2f87a2a77915090e40e8019f5e9f1048f3802b78350b3d1a52798f5f003",
+      "parts": [
+        "Q-2013-FINAL-P06-b"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P02-c-proof",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2025F-MID-P02-c-proof - Proof Strategy.md",
+      "sourceSha256": "9052deeb60cecebaa1f0d73e6b3f0cd1a3fd689b99daddf40d7518c966fb57b5",
+      "officialSourceSha256": "b94be5fde350e7645d044b9c2a31cecb14b1e4cc089c0f77eb7ddb36f744a8eb",
+      "supplementarySourceSha256": "d309943487de95b38d59ab22450a48d8107965e6c099bbdb947fb63dc7cf6ef6",
+      "parts": [
+        "Q-2025F-MID-P02-c-proof"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P04-a",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P04-a - Proof Strategy.md",
+      "sourceSha256": "ecf7dc7996b7cdd5238c11f9447633c27331027702d44b9ab3bbefb51e78ae6c",
+      "officialSourceSha256": "051799677ec2339c20de78c8ff4775d748f1becf3fec4f1c264dfd1599141d6f",
+      "supplementarySourceSha256": "5f43dcda2e57b9826573b09b27e15c6418fb6eb81f6f6655f3e208328b88def9",
+      "parts": [
+        "Q-2015-MID-P04-a"
+      ]
+    },
+    {
+      "id": "Q-2020-MID-P03-b",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2020-MID-P03-b - Predicate Logic.md",
+      "sourceSha256": "238b2586f7ca4e6bc0a74d5eecb2ffbfac79fb505dd28ff037be090078cdc69d",
+      "officialSourceSha256": "7ba28bb9e3cfed1d90db4fd974c1d5aad59a0e708f47133d89c2f8b4b19ce299",
+      "supplementarySourceSha256": "57a7a17058ac72aeb8f4c99ecf72104bb05ef320c9e080ef3fdd2d549f25e625",
+      "parts": [
+        "Q-2020-MID-P03-b"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P04-b",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P04-b - Proof Strategy.md",
+      "sourceSha256": "a8d81ca4f5c996ce4c6ed41ce3045346b658830eb2a0400c772c6465e58899a0",
+      "officialSourceSha256": "fa8e7c93b6b5077d697955886a9d2d62347734ef2850e71156b4f40b65867090",
+      "supplementarySourceSha256": "8d379bc95b0aa6ce036dc3be1154467edf2c439dcb319b844ec5678067679df4",
+      "parts": [
+        "Q-2015-MID-P04-b"
+      ]
+    },
+    {
+      "id": "Q-2014-FINAL-P06-b",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2014-FINAL-P06-b - Proof Strategy.md",
+      "sourceSha256": "99ac3e6702fa7c29315692d074c3e13ebe42a14392ceee5a54aa88a2a45818db",
+      "officialSourceSha256": "6682018d346b512b1cd95dcc95358ec3f4da3bc0046692c51e662ac7dd853527",
+      "supplementarySourceSha256": "7e29370c61150b71a8cac2b181191afc97d2a0ff7f346cd8947b6884bc45dfb0",
+      "parts": [
+        "Q-2014-FINAL-P06-b"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P03-b",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2017-MID-P03-b - Proof Strategy.md",
+      "sourceSha256": "1f10a2734350d7700408917046266a7d21330ed17a4e92bab5e021257030812f",
+      "officialSourceSha256": "55ed610792631fb1011ba88c6ec898ccba13aa0f7b038c11171b47d30ca415d0",
+      "supplementarySourceSha256": "f7775b448b910addd52ccb9fe8a1d3293928d1c597a761307b99a1a2691de83c",
+      "parts": [
+        "Q-2017-MID-P03-b"
+      ]
+    },
+    {
+      "id": "Q-2014-FINAL-P06-a",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2014-FINAL-P06-a - Proof Strategy.md",
+      "sourceSha256": "65659c2f1a91aba49dd54576b03893d52f95ed9a427e86881a82053b505fb95d",
+      "officialSourceSha256": "f9bf00c1510bcc540e7a70593a5423d59afe0d1a4cc80303a824bb7f7b28c1f4",
+      "supplementarySourceSha256": "9a0b931048dafc17af4a2c005a2f972d63b7914b0c2849ea3f367792c045050b",
+      "parts": [
+        "Q-2014-FINAL-P06-a"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P04-c",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2015-MID-P04-c - Proof Strategy.md",
+      "sourceSha256": "77763af61fb9f54601375a1ca1bb9f877bcbfcd2e0abce2d6f919f346279c169",
+      "officialSourceSha256": "a47f581da1f3d82ad148b900209d8170414438341464f2218da15843415ea01f",
+      "supplementarySourceSha256": "e584ca9b138beeea62a66254ff0023b1d7d4e694d35b041e7de01988e1455c89",
+      "parts": [
+        "Q-2015-MID-P04-c"
+      ]
+    },
+    {
+      "id": "Q-2019-MID-P08",
+      "practiceFile": "courses/l2-5/chapters/l1-3/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-MID-P08 - Proof Strategy.md",
+      "sourceSha256": "cb10ec0f4aa3665b113d55388e5df03b87b3787d20b223fffc0e64484bdf9810",
+      "officialSourceSha256": "3d23ef1b4fb60593b671a56dc7e7eda1e8959636b5da27a4073246dc543c03ea",
+      "supplementarySourceSha256": "1d35147cbc53ffee4dbe5eea2843b64e60092dc9f079902fc5c3cbaab38e7e3c",
+      "parts": [
+        "Q-2019-MID-P08"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P03-a",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2025F-MID-P03-a - Set Operations.md",
+      "sourceSha256": "aeeca6725e907d5cac7d1ecf65dab93e2320c797a81690c8042586600bccf49d",
+      "officialSourceSha256": "792a9ff157467fc7be840725b40c310d8430aaafefc788200ae36ede5b415ed6",
+      "supplementarySourceSha256": "a0d9ba9c088aea14c4dc92ce039f5b326518924c9949f09193ba6ae387135508",
+      "parts": [
+        "Q-2025F-MID-P03-a"
+      ]
+    },
+    {
+      "id": "Q-2024F-FINAL-P02-a",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2024F-FINAL-P02-a - Set Operations.md",
+      "sourceSha256": "ca62dcd7685f67183e0a75207cc08d81dbc89aaf95e0dc872de5e5d65dcfd1f0",
+      "officialSourceSha256": "07efc1acade828ca2a70e2d6d0c0c4ff1b17e8db06d08c0d33b4f2590c49616d",
+      "supplementarySourceSha256": "b863428e4acb9ba5444793790c9cec523866dcfc30bc1a62bb0066e111eee6d8",
+      "parts": [
+        "Q-2024F-FINAL-P02-a"
+      ]
+    },
+    {
+      "id": "Q-2024F-MID-P03-c",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2024F-MID-P03-c - Set Operations.md",
+      "sourceSha256": "3089b168792de69e1af821fa6bf41b9fce08e57c16e06f4f38de48a3e9cac47f",
+      "officialSourceSha256": "b90ba755b7f096c898455bc40b842d245b0f0ef92958055b21742da1744a73e0",
+      "supplementarySourceSha256": "92c1393effb7b7ce2deb109926bf7d46534dea5a3c205fd92db20850c64eb059",
+      "parts": [
+        "Q-2024F-MID-P03-c"
+      ]
+    },
+    {
+      "id": "Q-2023F-MID-P03-a",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2023F-MID-P03-a - Set Operations.md",
+      "sourceSha256": "2992e40c96ff3e83c8104409a7ceb23d18570962a5b1676d61973062d54026b5",
+      "officialSourceSha256": "0f0b66b41ab23bae732ffe4d226f0c9c662f04b338980614d65b9bea9f57d546",
+      "supplementarySourceSha256": "9759f7e8a31d98c48b093820c0dda7280b58bcb9b2226cb5e0a1900f8c6c8c70",
+      "parts": [
+        "Q-2023F-MID-P03-a"
+      ]
+    },
+    {
+      "id": "Q-2013-MID-P02-a",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2013-MID-P02-a - Functions.md",
+      "sourceSha256": "d171191910a923c523bf11a2fefd72bd1630cfeac1f224877e8e093b3e26395a",
+      "officialSourceSha256": "e3e55863c3b99c42228bd1c91b1846e8f412edcd9863b55d2d5ad202e2653ef2",
+      "supplementarySourceSha256": "28709bebe2009f0af58e5f5dc11d399483254c38a8e4040bf1a296ea5ace0f74",
+      "parts": [
+        "Q-2013-MID-P02-a"
+      ]
+    },
+    {
+      "id": "Q-2018-MID-P04-a-proof",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2018-MID-P04-a-proof - Functions.md",
+      "sourceSha256": "5408d517b9fbbd1a7d3205779b4b7134c1153d31423e4a60c48a6f1400df5261",
+      "officialSourceSha256": "d7a4e03ed02651c2fa8773f3984acf99761152c86450da078d92492401059212",
+      "supplementarySourceSha256": "63468e20e44e9279ece7e35adb136e56b10bde460ccf127dbcf1ebc02062db36",
+      "parts": [
+        "Q-2018-MID-P04-a-proof"
+      ]
+    },
+    {
+      "id": "Q-2018-MID-P04-b",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2018-MID-P04-b - Functions.md",
+      "sourceSha256": "1bf955420036a1e24b89ff5cc4b0a6f603bd78c66847828ac49b2e3e0b605edd",
+      "officialSourceSha256": "a1b92d0bd7866f07cc18699e72851ac4aebc3cf45f1b773225d0122b1b2a0337",
+      "supplementarySourceSha256": "5a7aa2a1aca0ff6fdcd59c2cfe68c0c907c204325180c5da5d787e04f12692b0",
+      "parts": [
+        "Q-2018-MID-P04-b"
+      ]
+    },
+    {
+      "id": "Q-2023S-MID-P03-1",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2023S-MID-P03-1 - Countability.md",
+      "sourceSha256": "9ddd8e6f1cf4102d7fa633e358f02f889f5dc1ffd4dc8bf1632cb1a00001c257",
+      "officialSourceSha256": "f942d99f28aedd661a8eaad39355d71498a5a34f6db94bccaf1fe1e722fda608",
+      "supplementarySourceSha256": "72af91869ce6adc7ffde17e36a836d33fe65afdad30f362b5e8a991d6c54f392",
+      "parts": [
+        "Q-2023S-MID-P03-1"
+      ]
+    },
+    {
+      "id": "Q-2023S-MID-P03-2",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2023S-MID-P03-2 - Countability.md",
+      "sourceSha256": "7289ab66b93f3d5fd6be092c8e5bd7416ac2f60bd4992fc8d0ebcb28e3ab59e4",
+      "officialSourceSha256": "ac7f45563239de410437564d1e8a7579926b915f7d7eea0f59941328996b42de",
+      "supplementarySourceSha256": "c41bb783eb9479fb95e8686d57ac15ec36fe67a5e2c559cac3cb79140eb5041d",
+      "parts": [
+        "Q-2023S-MID-P03-2"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P03-c-ii",
+      "practiceFile": "courses/l2-5/chapters/l1-4/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2025F-MID-P03-c-ii - Countability.md",
+      "sourceSha256": "86703638aa235a05f1abbdbf377434b0a44367fe1545e185ef7a843976550bbe",
+      "officialSourceSha256": "3127215980562db2693371df9dbf1440f05c8af22037bd9b58c61e22a7faefee",
+      "supplementarySourceSha256": "e819a392b8acaae10331ca8e49b6eafa482b598fe8a0425ad25da5abc997b3c1",
+      "parts": [
+        "Q-2025F-MID-P03-c-ii"
+      ]
+    },
+    {
+      "id": "Q-2014-MID-P02-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2014-MID-P02-a - Combinatorial Selection.md",
+      "sourceSha256": "5b2408ef361527867e3026284ab5f2f196d6c0cce58edef807c1535a83323128",
+      "officialSourceSha256": "ade620f3cb16197bc95a814a79e66a94a7f455fa168cc7df0726262b5d460ae6",
+      "supplementarySourceSha256": "d24f58d11975cc28abf14ae3e53d051569f0ddc2195fdcddb0274a1f3a07bb9f",
+      "parts": [
+        "Q-2014-MID-P02-a"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P04-a-i",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2025F-MID-P04-a-i - Combinatorial Selection.md",
+      "sourceSha256": "e0fc614c7e5380a9f1cc3dcb9a3665158edad89b23cc6e64dc430c62f8cad4bb",
+      "officialSourceSha256": "1a2c6a9940751565c7b672ac134b03f1fe30e8553787e7f505345c864a70b750",
+      "supplementarySourceSha256": "c73c89ec19a67a377989b491fc51209fb2e1d38cc510c4bfa631d2067bf30cf3",
+      "parts": [
+        "Q-2025F-MID-P04-a-i"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P04-c-i",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2025F-MID-P04-c-i - Combinatorial Selection.md",
+      "sourceSha256": "760bf53ea237d1b8d7e15d2fcfb0c057ba199bdc6ca90b6799829a8095f9e9bf",
+      "officialSourceSha256": "3e1346089ef36b1d8f5157850cf0d3a63a9e33443eebd92cba738defe4587ff6",
+      "supplementarySourceSha256": "1287e3eb9043b1554a27d9503a62e5782a7414a9ddaf26f51075965731c91701",
+      "parts": [
+        "Q-2025F-MID-P04-c-i"
+      ]
+    },
+    {
+      "id": "Q-2013-MID-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2013-MID-P01-a - Combinatorial Selection.md",
+      "sourceSha256": "277dbbc27a165d9853168dbb5b7d65724ff16f0cc1afe9204372ff19ca18b83a",
+      "officialSourceSha256": "df70f98fa939cf6ba722f86115800df3209653793c6548e936e7ec0d16cf331c",
+      "supplementarySourceSha256": "f97748ac992edaeee3ef7e9654e740e76d9df4d70c2c5ec38ead7d85ec92cd42",
+      "parts": [
+        "Q-2013-MID-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2014-MID-P01-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2014-MID-P01-a - Combinatorial Selection.md",
+      "sourceSha256": "414a6931e79312ef37c10c0fd87a63cc3a70c1a5481c05999a8b33f5c0337c19",
+      "officialSourceSha256": "bb38d6317fc60ddf36db592d309398d93daab750392ed5a9ab07df3c91385b2e",
+      "supplementarySourceSha256": "107ba65e15ef1f3810c0f1a5d36109fc3ed18a6560eda364f52040d2af416980",
+      "parts": [
+        "Q-2014-MID-P01-a"
+      ]
+    },
+    {
+      "id": "Q-2018-MID-P07-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2018-MID-P07-a - Combinatorial Selection.md",
+      "sourceSha256": "15eb7885a76e994d75e4d328eb082823c40e3569570f38895816cd64cb6f9f48",
+      "officialSourceSha256": "ba95457af123ce7277a0e504b175544ff7c480e83602bb1796dff13f057cb87f",
+      "supplementarySourceSha256": "481bda7b6b4150848e54b2cc0a4acc5cecc4cef336787ec7f2575549a0600ba8",
+      "parts": [
+        "Q-2018-MID-P07-a"
+      ]
+    },
+    {
+      "id": "Q-2014-MID-P02-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2014-MID-P02-b - Combinatorial Selection.md",
+      "sourceSha256": "41929874f21732e42c9463db5fb49e4d67aa0251a9dee0a62a9654b7012a59f0",
+      "officialSourceSha256": "b7fe6ba1db6434d6637387b11fb7b8986890f764e710d4f97e930b22b77d51ac",
+      "supplementarySourceSha256": "0606cbf1ad56faaa87c7cd03470901ff079de61e6efffad3d63d10bc730db6bd",
+      "parts": [
+        "Q-2014-MID-P02-b"
+      ]
+    },
+    {
+      "id": "Q-2014-MID-P02-d",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2014-MID-P02-d - Combinatorial Selection.md",
+      "sourceSha256": "438429cc83d73f678fe2b05e52e6a2600bee347cfd9d833c63bdfc30b107283c",
+      "officialSourceSha256": "f2c6b883fac92688936f0a2891628a1bf9dbcddc2a7a472b6302eea7e6bc0d26",
+      "supplementarySourceSha256": "dee7ca28e08b908b289c33ed45f850c188f83acea548167afebaccfc4167c3d1",
+      "parts": [
+        "Q-2014-MID-P02-d"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P04-a-iv",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2025F-MID-P04-a-iv - Combinatorial Selection.md",
+      "sourceSha256": "8636706a752e4caa2d0d916b8783cfd4626506087bf816fbfc06cfd9ad79a633",
+      "officialSourceSha256": "1d4966a88c7c2c993c7aecb94035bf570756e383124d97b010de7092498de466",
+      "supplementarySourceSha256": "30411dd7c1f39b56c6c698932636faa6df6e3c820006b7a416921d3767ae5b3e",
+      "parts": [
+        "Q-2025F-MID-P04-a-iv"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P09-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2017-MID-P09-a - Combinatorial Selection.md",
+      "sourceSha256": "9be4e66a18315f130a0ee0b42b2691f16dd273d7f2b9a8fc103fc6dd67a51175",
+      "officialSourceSha256": "0469635e8044900f2f3885c62b2aaea4ccb2b628b348169b9cb6313ac6633af0",
+      "supplementarySourceSha256": "1115f5baf282927bf36a1455b56f6febe955e048626a7cc5b7e825718af21ddb",
+      "parts": [
+        "Q-2017-MID-P09-a"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P09-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2017-MID-P09-b - Combinatorial Selection.md",
+      "sourceSha256": "0548db2b0f3f3b5259e32a3621fd2029aa845cb7aa87d5517a15d26ba68fa85d",
+      "officialSourceSha256": "836ac106495007b86d909149448eab81695a2af099475eaf792b28cc0b0592f8",
+      "supplementarySourceSha256": "89d270526bc90e36d6ce493c28210d41218abc271a97fdadcd01ddd65180fef3",
+      "parts": [
+        "Q-2017-MID-P09-b"
+      ]
+    },
+    {
+      "id": "Q-2024F-MID-P06-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2024F-MID-P06-b - Combinatorial Selection.md",
+      "sourceSha256": "49917b179dc75f15a6869acd1894a89b742a1e97dea9f1a1db660e6f4c1926b0",
+      "officialSourceSha256": "44b571192c01e126b763ca761fb862cf0611486056531a673753d80ff21ec9f4",
+      "supplementarySourceSha256": "448b95bf6d5eba639ddaf3cef6188ed351b46c99b45cc807235125adfaef0909",
+      "parts": [
+        "Q-2024F-MID-P06-b"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P08-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2015-MID-P08-a - Combinatorial Selection.md",
+      "sourceSha256": "387b9451b05aca82abdad6bd80c3ac6ffa3fbf91e1dff3ae842670ae700e1a08",
+      "officialSourceSha256": "2843a145ae6ca9e13ab4410cea73ad5c4b5ae159541748da196fb6431eb404a5",
+      "supplementarySourceSha256": "87bfeedf6d60b3a3378dc2203d48e247bbf322626cd1cf69621d76097efe870d",
+      "parts": [
+        "Q-2015-MID-P08-a"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P08-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2015-MID-P08-b - Combinatorial Selection.md",
+      "sourceSha256": "f188e0d648e186bbc7b3ffe122f86305133062ea97a8228048b2c411af1690e6",
+      "officialSourceSha256": "81417d1f14f8a64db5c465b8266795d21ce0e6a730b9bddb72e62bb5519ee8ad",
+      "supplementarySourceSha256": "4fda9b10c90a5a91ad866eb1fb90844775d0b01a20b003ae4d63e473372fcaa3",
+      "parts": [
+        "Q-2015-MID-P08-b"
+      ]
+    },
+    {
+      "id": "Q-2015-MID-P08-c",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2015-MID-P08-c - Combinatorial Selection.md",
+      "sourceSha256": "ec945d80ca66ecf377a7fd19e7399648517f4ebb4db20490d77fb2845703a676",
+      "officialSourceSha256": "9a23c42240d94361045e8823a8d19e7af868c18b5e5caf6edc8a770ddf27a071",
+      "supplementarySourceSha256": "18fdaa4143c86f0f503c1e59809ef94b033c9c67750d3430938a3ce6fd04bb61",
+      "parts": [
+        "Q-2015-MID-P08-c"
+      ]
+    },
+    {
+      "id": "Q-2013-MID-P03",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2013-MID-P03 - Combinatorial Selection.md",
+      "sourceSha256": "c7f2cb757363933ad698651f763d38944da6797acf859bb9cd6bbdebba6a37d6",
+      "officialSourceSha256": "bd5496bd76e6f62924c2bf75e95ee276c286b6783adebafcb15d4853cb4af711",
+      "supplementarySourceSha256": "b0e1d1f961a6ce85273ff5b351c1dc6d97724824121a8b660e3f32620ba6b19c",
+      "parts": [
+        "Q-2013-MID-P03"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P03-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2016-MID-P03-a - Combinatorial Selection.md",
+      "sourceSha256": "f49b004fb9f8e3c664b161b21e72bb949f798f1003754495da51651707146f97",
+      "officialSourceSha256": "ff248d3258d65b0186f24cd048f20d46e7d8a121aad5d50ca64816b46860c512",
+      "supplementarySourceSha256": "50080c7ec8da20ca1dbecc0c2347ffb1258859fe53e3e693646505232d831cba",
+      "parts": [
+        "Q-2016-MID-P03-a"
+      ]
+    },
+    {
+      "id": "Q-2016-MID-P03-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2016-MID-P03-b - Combinatorial Selection.md",
+      "sourceSha256": "19654ae70f513a0d3f63660a49772c18cd533aa28c7777ba050288eca449e07f",
+      "officialSourceSha256": "ad1dc5283eee47f57437ffce228ca9922c9e4b960cfbc4186b2d131f0359b168",
+      "supplementarySourceSha256": "0158ba54eec760ef0f11a370d6ba7450a4fc7698f0b6c035f650603df6581fca",
+      "parts": [
+        "Q-2016-MID-P03-b"
+      ]
+    },
+    {
+      "id": "Q-2014-MID-P04-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2014-MID-P04-a - Combinatorial Selection.md",
+      "sourceSha256": "78c233c9ac634816b13a50853daa0e75ea458132017e803ae35823b7476994dc",
+      "officialSourceSha256": "c530e7da4b16badb1d97346c65582c2727980a0576b05f3faf41764a3ed556bb",
+      "supplementarySourceSha256": "406ae47c43af13c144031223869fe86a72be20033a3a9a80f897e3bf66157ce3",
+      "parts": [
+        "Q-2014-MID-P04-a"
+      ]
+    },
+    {
+      "id": "Q-2014-MID-P04-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2014-MID-P04-b - Combinatorial Selection.md",
+      "sourceSha256": "729849a992d0907bb145dc9a569a5038e69ce48c96c87e4a1f8480b5042ac89d",
+      "officialSourceSha256": "1f25f5aa5415beb11f4673be928d107fc3a0bbaca42126222e3e229fc702bfba",
+      "supplementarySourceSha256": "8bcab1825132e0dd0a9bd51645e97dc7e557c37dc0008ac040d4d806f713d2e6",
+      "parts": [
+        "Q-2014-MID-P04-b"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P09-a",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2019-FINAL-P09-a - Combinatorial Selection.md",
+      "sourceSha256": "1582a8dde2d4b9bf146bad809bee602b40d210162cdd10236904ad07f327afb5",
+      "officialSourceSha256": "696094801d5a0b6cd8e67f561b6529f08051c55d673ea5925c7871ec6cc5e72c",
+      "supplementarySourceSha256": "ba1b988f836e7a212ed2d87cd3e4e2b1ad359e270dd16feec6b1681c34416f93",
+      "parts": [
+        "Q-2019-FINAL-P09-a"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P09-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2019-FINAL-P09-b - Combinatorial Selection.md",
+      "sourceSha256": "e212b92e2301b17ca94f272f900268ee3abea91702a9ab8f26481210f7f1c5f4",
+      "officialSourceSha256": "a6db760e7c35440ea8aab6dd322cdc786f0a8ae5324cc5b42861a5dc89fc61d8",
+      "supplementarySourceSha256": "8fa02046beac2ce6c2151c93c2c698719aada861914782c9e5db717b1117c143",
+      "parts": [
+        "Q-2019-FINAL-P09-b"
+      ]
+    },
+    {
+      "id": "Q-2018-MID-P08-c",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2018-MID-P08-c - Combinatorial Selection.md",
+      "sourceSha256": "9e7ffc4f6b6bb50514960690782777191bd342775a290062595775b0f111bba8",
+      "officialSourceSha256": "72deb47ff38b6db9abad6d00281818d99b693d681e3763508566feaf439c15a6",
+      "supplementarySourceSha256": "d80ae0850de6586a43547a5c68374df6ebadb8f7ca79e0eb63a894991bb2d93e",
+      "parts": [
+        "Q-2018-MID-P08-c"
+      ]
+    },
+    {
+      "id": "Q-2024F-MID-P06-c",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2024F-MID-P06-c - Combinatorial Selection.md",
+      "sourceSha256": "1b6e225dd421764a87f0f451c5e3ae1b0b59fcc00b4211c8be78ea87fec5d167",
+      "officialSourceSha256": "96ec920d5acd787d3215b6bc8cb9cc44b6aec16b1fd8e7959c7cfc7b9c74a4ea",
+      "supplementarySourceSha256": "59bf7e3d4ec285482797d5de261ef2ef33443ba76136579659a251c97efb0a94",
+      "parts": [
+        "Q-2024F-MID-P06-c"
+      ]
+    },
+    {
+      "id": "Q-2024F-MID-P06-d",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2024F-MID-P06-d - Combinatorial Selection.md",
+      "sourceSha256": "1fcea15bdc2d0635d4a983cafaed9513d32473aeaac3a33acdf82814aa2a67e4",
+      "officialSourceSha256": "3dbde074557a9118a36ccd0b9effa75a9d9cc904cee13e6652e1788b5f0e26a1",
+      "supplementarySourceSha256": "dc53c9e9e9e063c5e918f8eabc9c6f6eaeb217a7f9809a584322d39f65a3a655",
+      "parts": [
+        "Q-2024F-MID-P06-d"
+      ]
+    },
+    {
+      "id": "Q-2013-MID-P08",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2013-MID-P08 - Combinatorial Selection.md",
+      "sourceSha256": "e2e92c370a7e0c96bd6177498531c073fdb4ee213dd07d7f6a021b017554c92d",
+      "officialSourceSha256": "2b60eaee3a38567c7b9637e9196dde37adba1931164de1e7d7c0587f769ee0fd",
+      "supplementarySourceSha256": "69dc964722d1a9fe64201dea78977bf67b6befeea7a04ba42f30caf479ff0def",
+      "parts": [
+        "Q-2013-MID-P08"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P10-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2017-MID-P10-b - Combinatorial Selection.md",
+      "sourceSha256": "8c032ec1b15f3a4c59191a7a53443c6a5bdf9bd0b77f7f8d41eabd409e8e186c",
+      "officialSourceSha256": "059bacf559b8a6c5e3214bdcb2fdc2aafbf6383cfae209fd2410181f1011bf61",
+      "supplementarySourceSha256": "94777b27f5d1c8a2726fb02ca7dcc5f8658399a6e3783a9e276b4d5b37e63dc2",
+      "parts": [
+        "Q-2017-MID-P10-b"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P10-c",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2017-MID-P10-c - Combinatorial Selection.md",
+      "sourceSha256": "de6f61a7550b875d973e429753ef5c6e128f45a12ab5dddba83913ff3835b67b",
+      "officialSourceSha256": "273058082ba4a417215bcade4c696ee929d9d55ed2868cc82be925be82078de7",
+      "supplementarySourceSha256": "9a29901829d1131bc942f029ee56e88a14ea8cd3de5c30ae5dd9efcadc1af370",
+      "parts": [
+        "Q-2017-MID-P10-c"
+      ]
+    },
+    {
+      "id": "Q-2018-FINAL-P11-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2018-FINAL-P11-b - Combinatorial Selection.md",
+      "sourceSha256": "187efdb6bf785bb4929ba9cfdac1333ab8c929e62df568a8704b5a16bdf342c7",
+      "officialSourceSha256": "b65d8bd84297a1549ad13977bc78c78114082c9f9c5b476cd7dc92668d74252e",
+      "supplementarySourceSha256": "6e7a102e508ffead86263577a07ccf51b852074167383636b74f31e0a95afccc",
+      "parts": [
+        "Q-2018-FINAL-P11-b"
+      ]
+    },
+    {
+      "id": "Q-2020-FINAL1-P03-b",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2020-FINAL1-P03-b - Combinatorial Selection.md",
+      "sourceSha256": "a65b7b3a9dd64696a6df0dc833f269ce5379f5006be9388f240b496856261c1c",
+      "officialSourceSha256": "7f2e11db35dd554d4b3f08491ef46493f148b53e68a17e45e0051718da88bb8a",
+      "supplementarySourceSha256": "d00a8a42b9ef7ca055012ec8e793072db0457b14c8b0190204c7978ef9c0821f",
+      "parts": [
+        "Q-2020-FINAL1-P03-b"
+      ]
+    },
+    {
+      "id": "Q-2024S-FINAL-P04",
+      "practiceFile": "courses/l2-5/chapters/l1-6/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2024S-FINAL-P04 - Combinatorial Selection.md",
+      "sourceSha256": "31b647fc54320995ce0bab671114cfda5ebb5de022e44c402e0be7f3c2859fe9",
+      "officialSourceSha256": "010766be4fc5cd439924eb38845bdfa19a8cc1b570c4331a8564a59276ef3e78",
+      "supplementarySourceSha256": "f599c700fa994812d29f8d9e5ea5cbf3e6927cf3b4d4ffabb664dcc20b0e443f",
+      "parts": [
+        "Q-2024S-FINAL-P04"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P08-a",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2017-MID-P08-a - Binomial Coefficients.md",
+      "sourceSha256": "4da8698ff62efc41ee65c9f49fe8f7ff74574f51b141e4e5f2e89d6d7fd95d05",
+      "officialSourceSha256": "7be3dd5a3544788e5d5047484079c93fa1b0b7109e83c1662269aecf7fa7b2fd",
+      "supplementarySourceSha256": "bf102644a16f9689ffab5512314ef7040b6980091d5b7f2a771cec6b2bc15da7",
+      "parts": [
+        "Q-2017-MID-P08-a"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P08-b",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": true,
+      "primarySource": "sources/notes/Q-2017-MID-P08-b - Binomial Coefficients.md",
+      "sourceSha256": "082d7f02825db997ecebcd6f11aa96d07ddc3ec927542b80ec32c7d1460949df",
+      "officialSourceSha256": "011d01ff1af4f6ed0093c0fff2e021e9e5a5eed2444695588bbc52795205214a",
+      "supplementarySourceSha256": "2e29e1146b6dcd4bd81244124779fdefc0102f3e2c0ad5ae7e6538c8d06e867c",
+      "parts": [
+        "Q-2017-MID-P08-b"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P05",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2019-FINAL-P05 - Binomial Coefficients.md",
+      "sourceSha256": "af68e863b7cb5fdb0cbb474bd6479160e2997f00266523039874a67032dc24ca",
+      "officialSourceSha256": "04aa70cf6001221608929fb5c4591115cf3c3602023381c4b463afa5c791a0e1",
+      "supplementarySourceSha256": "060e084932081dcb53c1eaa67c9518cc904b038a4daa6234c12e9b186fe7ddb8",
+      "parts": [
+        "Q-2019-FINAL-P05"
+      ]
+    },
+    {
+      "id": "Q-2024F-MID-P09-a",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2024F-MID-P09-a - Combinatorial Selection.md",
+      "sourceSha256": "48182de6573e5bc43ac1730dbf9e3f60ca1fc3eb0e46ca287504cc3f6edd3062",
+      "officialSourceSha256": "a6af63d98226d30cbe37b552e50d0f16f8aa72f55b56a7b23966821bc40ace63",
+      "supplementarySourceSha256": "850c40acf22d39f445f1e74a8dd039e7b681c619bdc1a55ed2d4d3b352e0dc9d",
+      "parts": [
+        "Q-2024F-MID-P09-a"
+      ]
+    },
+    {
+      "id": "Q-2024F-MID-P09-b",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2024F-MID-P09-b - Binomial Coefficients.md",
+      "sourceSha256": "f008939d5579c69054967a915f034363e09513d9f74e08021b8b76d08d570c6c",
+      "officialSourceSha256": "a109dc42f9904f940d6ef001c25328e652097514021c8e55e1a56c35b401c0c6",
+      "supplementarySourceSha256": "e40b8ecfb13cedbca5444816e3116c4cafc29ff41535081992a30b175a4cb31a",
+      "parts": [
+        "Q-2024F-MID-P09-b"
+      ]
+    },
+    {
+      "id": "Q-2018-FINAL-P11-a",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2018-FINAL-P11-a - Combinatorial Selection.md",
+      "sourceSha256": "c2e805d42c4d23c7e89aefc594721b4138a99c1bc8d6e7b0ec226af398733037",
+      "officialSourceSha256": "742ec1f1bb39527420b4a732f1777a6a8392e71bf5f2df3e7d5701923e6e07ad",
+      "supplementarySourceSha256": "5731d7e83bd5f642bc827859af5bf0ada441560a32ff22bbe9c71d99e23b61a0",
+      "parts": [
+        "Q-2018-FINAL-P11-a"
+      ]
+    },
+    {
+      "id": "Q-2020-FINAL1-P03-a",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2020-FINAL1-P03-a - Combinatorial Selection.md",
+      "sourceSha256": "8fe5f93993b09d613da9d5a406f9e5976a0addb0dadef374004d13a9e8f8df02",
+      "officialSourceSha256": "bce08a72ddb8c909d96d97880d5871e5b480b8bea70d6e13a612710bbf4c1aae",
+      "supplementarySourceSha256": "e5f16b2b9c41b5a69bc4c6d7ac7d283afd105d0f00f9325cbf4fd9ddcf732abf",
+      "parts": [
+        "Q-2020-FINAL1-P03-a"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P05",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2025F-MID-P05 - Binomial Coefficients.md",
+      "sourceSha256": "78474944fd68a5b51246756239b5063e8ac5f99615e6cecf6c02811d05431f57",
+      "officialSourceSha256": "ab07abaaf36266463eba74dfb24a1e0dc75e2b03884ceff70eb14b8e59f07e4e",
+      "supplementarySourceSha256": "ea817a02aa7238ddc474c61a754c8b171cde47a72ac87149312e64e977ae0b23",
+      "parts": [
+        "Q-2025F-MID-P05"
+      ]
+    },
+    {
+      "id": "Q-2023F-MID-P05",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2023F-MID-P05 - Binomial Coefficients.md",
+      "sourceSha256": "c63bbc6a28f16e33d9f08b294ab5d40100753a95b1274629c714e3723ce2b447",
+      "officialSourceSha256": "0a166ad61491ed7e6b45d421d8f0c6aefc5492273c69143e62fab71a137fcf4a",
+      "supplementarySourceSha256": "e71d5103d203ae9f3e91e5509be43faa8ddcd28c35d8f9cba614ad5d2b315c54",
+      "parts": [
+        "Q-2023F-MID-P05"
+      ]
+    },
+    {
+      "id": "Q-2017-MID-P11",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2017-MID-P11 - Binomial Coefficients.md",
+      "sourceSha256": "6d00fc6ceb6eafaa37317a3ff3ce0a78c5c759b6d8bf8175d9f73a7eae55c7fe",
+      "officialSourceSha256": "e51e8c2f7fa2218efbb680a73dc9ec3e295023b72137998165cb1e99086aec25",
+      "supplementarySourceSha256": "738e53afbfe22d4aa4223715b4760d2c40e5efca490244478089ea17f152d60c",
+      "parts": [
+        "Q-2017-MID-P11"
+      ]
+    },
+    {
+      "id": "Q-2025S-FINAL-P09",
+      "practiceFile": "courses/l2-5/chapters/l1-7/practice.json",
+      "changed": true,
+      "oldOfficialPresent": false,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2025S-FINAL-P09 - Binomial Coefficients.md",
+      "sourceSha256": "a0862d0216173b0055c0973a980e41e3ee3295e509c87e0dd014f99d6342ddb4",
+      "officialSourceSha256": "a0f367ac7135af85740dff741f25b49b767f2a239135b4380e5ba4d4ada69b69",
+      "supplementarySourceSha256": "b2c0f6dd802a55e888a3ed0dbe0f74e73ba463c2f72011615726354baa93fe6d",
+      "parts": [
+        "Q-2025S-FINAL-P09"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P08-b",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2019-FINAL-P08-b - Inclusion-Exclusion.md",
+      "sourceSha256": "b3946a56b4f680454baee26199d6018fa5242030527f1cfaac13f153d56be5dc",
+      "officialSourceSha256": "a298f2e7831c85485e2125dea633052500c19c0c838202786e1516659e63844b",
+      "supplementarySourceSha256": "134871c883d487d348512ccd76a07c93b48396abf4aa351e2c698a58633f1131",
+      "parts": [
+        "Q-2019-FINAL-P08-b"
+      ]
+    },
+    {
+      "id": "Q-2020-FINAL1-P04-a",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2020-FINAL1-P04-a - Inclusion-Exclusion.md",
+      "sourceSha256": "af3faa308d1a555f61f441384543413207cb733eab32fb5a64b1f4e02f5e02d2",
+      "officialSourceSha256": "ce09bf6f31a948e0fd5b49a7404b0f2399208bc8f56e3c828c629bed6cbd0da8",
+      "supplementarySourceSha256": "a70a96f4c90075c22ed888447e47102d69fc9b8145b5fd0d4757305cecee228d",
+      "parts": [
+        "Q-2020-FINAL1-P04-a"
+      ]
+    },
+    {
+      "id": "Q-2025F-MID-P06",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2025F-MID-P06 - Inclusion-Exclusion.md",
+      "sourceSha256": "ebec72cc132ba5af478e8dbe2cdd92cb5c694a385d20f5667384999f648728d0",
+      "officialSourceSha256": "cf85e0c88703fb68c47b8d6e21adea04b7550e51137a50ad133918c6c773f743",
+      "supplementarySourceSha256": "2eca9b1497db046ec7597451a39c5d088e7b1a6ec48104a904f608aef154615a",
+      "parts": [
+        "Q-2025F-MID-P06"
+      ]
+    },
+    {
+      "id": "Q-2024F-MID-P07",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2024F-MID-P07 - Inclusion-Exclusion.md",
+      "sourceSha256": "53619c270eb13ca4304fd66dc1493737872f23adb0f1dcb6ddb537df14f3b283",
+      "officialSourceSha256": "33ca2d46431769aa1d52ecb98e256a0d28ef6fdc66bcdb3264de346a17d0b371",
+      "supplementarySourceSha256": "e7bc041702a49fcbcf724ecff5f58d6fbc7bd29d39843032a8b9db6212ae9215",
+      "parts": [
+        "Q-2024F-MID-P07"
+      ]
+    },
+    {
+      "id": "Q-2017-FINAL-P01",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2017-FINAL-P01 - Inclusion-Exclusion.md",
+      "sourceSha256": "fad086499c95403c736dc1a23fba16331d62b659421815fa80dc98bde1e9d2bc",
+      "officialSourceSha256": "766f4660b821e52965483ee019577bf441403bcb0d94c899e82e82416004fe1a",
+      "supplementarySourceSha256": "7d8139a9653a4cf8f2b045be7170311082a0934d8ce68c3d39f349dfaa66c999",
+      "parts": [
+        "Q-2017-FINAL-P01"
+      ]
+    },
+    {
+      "id": "Q-2020-FINAL2-P06-a",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2020-FINAL2-P06-a - Derangements.md",
+      "sourceSha256": "63d5143f32a179afbd95cdc8d1d1d1e76aaa96420df5d16e4bfa81124a8c3d7b",
+      "officialSourceSha256": "07ecb3efca60e96c49dd84eb28cdd57dfa8c90ad0f1b09bdc22c772ac4e66f78",
+      "supplementarySourceSha256": "30ecb6989418e2e44ff6f44c9eaf02e98e3704e6dfd3226fadaff467221ea197",
+      "parts": [
+        "Q-2020-FINAL2-P06-a"
+      ]
+    },
+    {
+      "id": "Q-2020-FINAL2-P06-b",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2020-FINAL2-P06-b - Combinatorial Selection.md",
+      "sourceSha256": "b36ca02fcb9e29560d1ee96aba27e8c58b82487c345da73f7e9a27400357d11b",
+      "officialSourceSha256": "a770253985828146fdc7aaf4530a578d8006d9e7604b21110be5231ff979d02b",
+      "supplementarySourceSha256": "0c83fc4b8922f14d77d2f6462059459e87bc469fe4b5a1463a2bc7cd76869804",
+      "parts": [
+        "Q-2020-FINAL2-P06-b"
+      ]
+    },
+    {
+      "id": "Q-2020-FINAL2-P06-d",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2020-FINAL2-P06-d - Combinatorial Selection.md",
+      "sourceSha256": "f4642343fe70e43ab5e779f32b9ab0fc73476f5784e88ad76b1ba0b8066ae23b",
+      "officialSourceSha256": "d9714444ffde1c7b1fb8a7877fcae795ed637190e92db968896832bad1d5f35a",
+      "supplementarySourceSha256": "aeaecb1c05fee8efffd91e88cc2240166ee5e6654fdbfa7e4cde0621db92d1ee",
+      "parts": [
+        "Q-2020-FINAL2-P06-d"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P10-b",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2019-FINAL-P10-b - Combinatorial Selection.md",
+      "sourceSha256": "c897793f60f725eceaad2e44be211bb94a5a7aa6c6d155e4c205f21896ff3176",
+      "officialSourceSha256": "7a638422a1999d9f01a2f3b5c56cfdc4329229de1e548df7fdbf7e5e78fc05a0",
+      "supplementarySourceSha256": "35aa78cdab864390fa38308ff0f92b25b0220ae4c0896228ec719a102158bf8b",
+      "parts": [
+        "Q-2019-FINAL-P10-b"
+      ]
+    },
+    {
+      "id": "Q-2019-FINAL-P10-d",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2019-FINAL-P10-d - Inclusion-Exclusion.md",
+      "sourceSha256": "d5956357d423f07ab76d1f24ac49221fd57294aa43fee22faa6976f72b89d96f",
+      "officialSourceSha256": "9036cf2774b5c1450a17108c12108c4c377a5f6edfa67429e72e51f9604b6724",
+      "supplementarySourceSha256": "4240c34299b6e3a5eb7c75078855e1c0b72f3f64f0d572d6b630b194e984f16e",
+      "parts": [
+        "Q-2019-FINAL-P10-d"
+      ]
+    },
+    {
+      "id": "Q-2023F-MID-P06",
+      "practiceFile": "courses/l2-5/chapters/l1-8/practice.json",
+      "changed": true,
+      "oldOfficialPresent": true,
+      "oldExtraBlocks": false,
+      "primarySource": "sources/notes/Q-2023F-MID-P06 - Inclusion-Exclusion.md",
+      "sourceSha256": "9dfac29bf70432ad9b7553679abf346621f75363dbe696cacc8385e797eb849f",
+      "officialSourceSha256": "a4b570923e7b586c9ca2da00ae8be3a87f36ba93684a9316286d2dedf5ae5ba4",
+      "supplementarySourceSha256": "2c08e3702f5bb8d6456fbf7601ac957371cd7a3c2767562fd3bd3dc42dae33f4",
+      "parts": [
+        "Q-2023F-MID-P06"
+      ]
+    }
+  ]
+}

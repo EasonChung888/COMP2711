@@ -1,10 +1,10 @@
+from practice_answers import answer_fields, metadata_fields
 """Snapshot verified, original past-paper questions for L1.1–L1.4."""
 from pathlib import Path
 import hashlib
 import json
 import re
 import shutil
-import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
@@ -80,12 +80,11 @@ def main():
                 assert len(matches) == 1, question_id
                 source = matches[0]
                 text = source.read_text()
-                meta = yaml.safe_load(text.split('---', 2)[1])
+                meta = metadata_fields(text)
                 assert meta['verification_status'] == 'verified', question_id
                 assert meta['answer_source'] == 'official', question_id
                 question, stems = printed_question(text, chapter)
-                solution = section(text, 'Detailed Solution')
-                assert solution and '[[' not in solution, question_id
+                answers = answer_fields(text)
                 paper = REPO / meta['source_pdf']
                 assert paper.is_file(), paper
                 results.append({
@@ -98,8 +97,7 @@ def main():
                     'number': meta['question_number'], 'marks': meta.get('marks'),
                     'verificationStatus': meta['verification_status'],
                     'answerSource': meta['answer_source'],
-                    'questionMarkdown': question, 'solutionMarkdown': solution,
-                    'mistakesMarkdown': section(text, 'Common Mistakes')
+                    'questionMarkdown': question, **answers
                 })
         (chapter / 'practice.json').write_text(json.dumps(results, ensure_ascii=False, indent=2) + '\n')
         print(f'{chapter_id}: {len(results)} verified original questions')

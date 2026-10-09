@@ -45,26 +45,21 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-双条件命题要求两边真值相同。第一项就是定义；第二项交换两条蕴含的逆否命题，仍等价；第四项直接列出同真、同假。第三项要求同时真和假，永远不成立。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(a) 1, 2, 4
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** 1, 2, 4.
 
 **Derivation/proof.** Option 1 is the definition of the biconditional. Contraposition changes its two implications to the two factors in option 2. The true rows of $p\leftrightarrow q$ are $(T,T)$ and $(F,F)$, exactly option 4. Option 3 is always false, so it fails on both those rows; consequently option 5 is false.
 
-### 中文解答
+Option 2 uses $\neg p\to\neg q\equiv q\to p$ and $\neg q\to\neg p\equiv p\to q$. Option 3 requires both $p$ and $\neg p$, so it is false even on the target's true rows.
 
-**推导。** 双条件 $p\leftrightarrow q$ 在 $(T,T),(F,F)$ 两行真，在另两行假。选项一是定义式；由逆否等价，$\neg p\to\neg q$ 等价于 $q\to p$，另一因子等价于 $p\to q$，所以二也成立。四恰好列出同真或同假的两行，也等价。三要求 p 与非 p 同时真，恒假，在同真行与目标不同。因此选择 1、2、4，五不选。
-
-## Common Mistakes
-
-- 把第三项中的合取看成析取，会误把矛盾式当作双条件。
-- 只选定义式而漏掉逆否和真值展开形式。
+The two true rows of the biconditional are $(T,T),(F,F)$.
 
 ## Connections
 

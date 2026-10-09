@@ -35,26 +35,17 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 (b) For functions on finite sets $f:S\to T,g:T\to U$, if $f$ is injective, and $g$ is surjective, is it true that $g\circ f$ must be injective? Prove it.
 
-## 中文解析
+## Official Answer
 
-后面的满射可以把多个中间值压成同一个结果，所以前面单射不保证复合单射。选择两个元素的恒等映射，再接到单元素集合的常值映射，便能同时满足两个前提并使结论失败。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+False. Students can provide any counterexample such that $f$ is injective, $g$ is surjective, and $g\circ f$ is not injective. For example: $S=T=\{a,b\},U=\{0\},f(x)=x,g(y)=0$, then $g(f(x))=0$. It is not injective because $g(f(a))=g(f(b))=0$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** No. Let $S=T=\{a,b\},U=\{0\}$, $f$ be the identity and $g$ be constant zero.
 
 **Derivation/proof.** The identity sends distinct inputs to distinct elements, so $f$ is injective. The image of $g$ is all of the singleton $U$, so $g$ is surjective. Yet $g(f(a))=0=g(f(b))$ with $a\ne b$, hence the composite is not injective. Every required premise is satisfied by this counterexample.
-
-### 中文解答
-
-**推导。** 不一定。取 $S=T=\{a,b\}$、$U=\{0\}$，定义 $f(a)=a,f(b)=b$，以及 $g(a)=g(b)=0$。$f$ 为恒等映射所以单射，$g$ 的像为整个 $U$ 所以满射；但 $g(f(a))=0=g(f(b))$ 且 $a\ne b$，复合映射非单射。反例满足全部有限集合及单满射前提，故足以否定断言。
-
-## Common Mistakes
-
-- 把 g 的满射当成单射。
-- 反例没有检验两函数的定义域和值域相接。
 
 ## Connections
 

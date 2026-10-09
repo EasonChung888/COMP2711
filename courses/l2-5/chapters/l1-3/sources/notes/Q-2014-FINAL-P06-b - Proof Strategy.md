@@ -38,26 +38,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2014-final.pdf
 
 Shared context: [[STEM-2014-FINAL-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-结论含‘或’时常用逆否：两个数都不是偶数即都为奇数，乘积仍为奇数，正好反驳原条件。
+Source: [[knowledge_base/past_paper/2014-final.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(b) Suppose $m$ and $n$ are both odd. $m=2k+1$ for some integer $k$ and $n=2h+1$ for some integer $h$. Then $mn=(2k+1)(2h+1)=2(2kh+k+h)+1$, which is odd.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** The statement follows by contraposition.
 
 **Derivation/proof.** Assume $m,n$ are both odd: $m=2k+1$, $n=2h+1$. Then $mn=4kh+2k+2h+1=2(2kh+k+h)+1$, odd. Thus if $mn$ is even, they cannot both be odd, so at least one is even.
 
-### 中文解答
-
-**推导。** 证明逆否命题：若 m、n 都不是偶数，则两者均为奇数。写 $m=2k+1,n=2h+1$，其中 k、h 为整数。相乘得 $mn=4kh+2k+2h+1=2(2kh+k+h)+1$，仍为奇数。所以 mn 若为偶数，两因子不可能同时奇数，即至少一个为偶数。
-
-## Common Mistakes
-
-- 从 $mn$ 偶直接说两个因子都偶。
-- 反证中把奇数乘积展开成偶数。
+The odd representations are $m=2k+1,n=2h+1$ with integer $k,h$.
 
 ## Connections
 

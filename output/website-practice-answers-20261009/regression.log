@@ -1,0 +1,28 @@
+✔ portal orders modules and chapter links without changing Counting URLs (1.3195ms)
+✔ module utility navigation points to the current module (0.2315ms)
+✔ homepage aggregates chapter keys and resumes the latest available lesson (0.686458ms)
+✔ new lessons save into their own namespace while Counting records remain valid (0.329959ms)
+✔ legacy Counting progress and resume use the original keys (0.243292ms)
+✔ printed error remains official and verified derived result remains separate (12.892875ms)
+✔ shared parser preserves fenced H2 comments rather than truncating the retained answer (0.318958ms)
+✔ joined socks exercise includes both companion proofs without extra answer sections (4.436625ms)
+✔ outdated snapshots stop a rebuild instead of silently restoring a single answer block (0.058292ms)
+✔ two-part contract accepts official, marking-scheme and derived provenance without changing quotations (1.85775ms)
+✔ two-part contract rejects extra, duplicate, nested, empty and out-of-order answer sections (0.37225ms)
+✔ English contract and source bounds reject missing, invented and non-live citation evidence (0.364458ms)
+✔ official-absence statement is derived, exact, source-checked, and cannot be mixed with a fabricated quotation (0.26675ms)
+✔ proof checks inspect only retained Supplementary Explanation, excluding the official quotation (0.065583ms)
+✔ all migrated answers retain exact audited official and supplementary bodies with no discarded sections (88.317166ms)
+✔ historical audit records the 13 deliberately retired current proof obligations (2.330916ms)
+✔ absence evidence forbids extra raw content even when fenced or inline code (0.210917ms)
+✔ code-aware section boundaries retain fenced H2 comments and validate their original English content (0.284416ms)
+✔ actual nested headings at every Markdown level are rejected while fenced headings remain code (0.264875ms)
+✔ one valid page citation cannot conceal another invalid or unlisted PDF anchor (0.189834ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 131.113375

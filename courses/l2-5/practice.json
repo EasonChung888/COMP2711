@@ -3,7 +3,7 @@
     "id": "Q-2017-MID-P06-a",
     "topic": "counting-rules",
     "sourceNote": "sources/notes/Q-2017-MID-P06-a - Combinatorial Selection.md",
-    "sourceNoteSha256": "40e67db72b295a5e5684ad3a90cc2ce64174506adf12ffc4ea2c9e8d68e7bcaf",
+    "sourceNoteSha256": "66937058f8d1b537620cdaf8e239f4f8c48c9bf11716b22c3f678dffc40177a8",
     "stems": [
       "STEM-2017-MID-P06 - Shared Problem Prompt"
     ],
@@ -19,14 +19,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Five couples go to the movies together and sit in a row of ten seats. In how many ways can the 10 people be arranged if\n\n(a) They may sit in any order.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 8. The Chinese derivation expands the reasoning.\n\n**Answer.** $10!$.\n\n**Derivation/proof.** There are ten choices for the first seat, nine for the second, and successively one for the last. The product $10\\cdot9\\cdots1=10!$ counts each seating once because its ordered occupants identify it uniquely.\n\n### 中文解答\n\n**推导。** 从左至右填十个有序座位，第一座可选 $10$ 人，第二座剩 $9$ 人，直到末座剩 $1$ 人。乘法原理给出 $10\\cdot9\\cdots1=10!$。每种座位安排对应唯一一个选择序列，所以没有重复计数；本小题不限制夫妻是否相邻。",
-    "mistakesMarkdown": "- 把座位当成无序集合。\n- 误把夫妻视为不可分开的整体。"
+    "solutionMarkdown": "**Answer.** $10!$.\n\n**Derivation/proof.** There are ten choices for the first seat, nine for the second, and successively one for the last. The product $10\\cdot9\\cdots1=10!$ counts each seating once because its ordered occupants identify it uniquely.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 8](../sources/papers/2017-midterm.pdf#page=8).\n\n$10!$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "c0c3fa7f47674157c696f087c98852782143fcf36425cf00dceb055820eafe1f",
+    "supplementarySourceSha256": "3a56e106b7c4050431b4dd077469389f0aa61193687b307bb8cb5aa8a5745f6c",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3"
   },
   {
     "id": "Q-2016-MID-P01-d",
     "topic": "counting-rules",
     "sourceNote": "sources/notes/Q-2016-MID-P01-d - Counting Principles.md",
-    "sourceNoteSha256": "18000268fcdaa7b7946f65ac24d54cf74fbcab4a366aaf9c75743ea10f4bc6c8",
+    "sourceNoteSha256": "b0a3b4cf07048fe8b9df5e3911b0b7bf6abeb5f640e2e1fbe885b76f4b0b3fef",
     "stems": [
       "STEM-2016-MID-P01 - Shared Problem Prompt"
     ],
@@ -42,14 +47,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider a web system for online shopping that generates an order id for each business. The order id is a sequence of 7 characters where each character could be either one of the 26 Upper Case English Alphabets (A to Z) or one of the 10 digits (0 to 9).\n\n(d) How many possible order id’s are there if the order id is alternative between alphabet and digit? (E.g., A3R4B7Q and 4V7X3V7 are valid, B7XB4Q3 is invalid)",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $26^4 10^3+10^4 26^3$.\n\n**Derivation/proof.** Pattern L-D-L-D-L-D-L gives $26^4 10^3$ possibilities; pattern D-L-D-L-D-L-D gives $10^4 26^3$. Repetition within a category is allowed. The patterns cannot overlap, so add the two counts.\n\n### 中文解答\n\n**推导。** 交替七位只有两种类别模式。字母开头时为 L-D-L-D-L-D-L，有四字母三数字，计 $26^4 10^3$；数字开头时为 D-L-D-L-D-L-D，计 $10^4 26^3$。两种模式首位类别不同而互斥，合计 $26^4 10^3+10^4 26^3$，每一类别内部仍可重用字符。",
-    "mistakesMarkdown": "- 只考虑字母开头。\n- 把非相邻同类字符禁止重复，尽管例子明确允许。"
+    "solutionMarkdown": "**Answer.** $26^4 10^3+10^4 26^3$.\n\n**Derivation/proof.** Pattern L-D-L-D-L-D-L gives $26^4 10^3$ possibilities; pattern D-L-D-L-D-L-D gives $10^4 26^3$. Repetition within a category is allowed. The patterns cannot overlap, so add the two counts.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 3](../sources/papers/2016-midterm.pdf#page=3).\n\n(d) $10^4\\cdot26^3+10^3\\cdot26^4$. It can either be four digits and three alphabets or three digits and four alphabets. The position of digits and alphabets are fixed in either case.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "fe20513c1e7752afaf86606d28d3c0d93ead0b44f289420d86bc9fa694da377d",
+    "supplementarySourceSha256": "0f3ad43a120bda0f84caa33b4a9255b0137ca74c6d88ebe822a8e476cb6fac5f",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c"
   },
   {
     "id": "Q-2013-MID-P02-a",
     "topic": "functions-and-subsets",
     "sourceNote": "sources/notes/Q-2013-MID-P02-a - Functions.md",
-    "sourceNoteSha256": "e97cd8fbfe58523651e16a4e4e274c29698266d8b95760631429cef2140b95bc",
+    "sourceNoteSha256": "d171191910a923c523bf11a2fefd72bd1630cfeac1f224877e8e093b3e26395a",
     "stems": [
       "STEM-2013-MID-P02 - Shared Problem Prompt"
     ],
@@ -65,14 +75,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider $S_3=\\{1,2,3\\}$ and $S_n=\\{1,2,\\ldots,n\\}$, where $n>3$.\n\n(a) How many different functions $f$ are there from $S_3$ to $S_n$?\n\nExplain how your answers are derived.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** $n^3$.\n\n**Derivation/proof.** A function is fixed by the independent choices of $f(1),f(2),f(3)$. Each has $n$ possible images, hence $n\\cdot n\\cdot n=n^3$.\n\n### 中文解答\n\n**推导。** 函数由三个像 $f(1),f(2),f(3)$ 唯一确定。每一个像都可以从 $S_n$ 的 n 个元素中任取，题目允许像重复，因此三个选择独立。乘法原理给 $n\\cdot n\\cdot n=n^3$；每组三个像恰对应一个函数。",
-    "mistakesMarkdown": "- 把函数数目写成 $3^n$，颠倒定义域与陪域。\n- 把允许相同函数值的情形排除。"
+    "solutionMarkdown": "**Answer.** $n^3$.\n\n**Derivation/proof.** A function is fixed by the independent choices of $f(1),f(2),f(3)$. Each has $n$ possible images, hence $n\\cdot n\\cdot n=n^3$.\n\nRepeated images are permitted. Each ordered triple of images determines exactly one function.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 4](../sources/papers/2013-midterm.pdf#page=4).\n\n(a) To define $f$ are from $S_3$ to $S_n$, we need to specify $f(1)$, $f(2)$, and $f(3)$. Each of those values can be any of the $n$ elements in $S_n$. So, the answer is: $n^3$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "e3e55863c3b99c42228bd1c91b1846e8f412edcd9863b55d2d5ad202e2653ef2",
+    "supplementarySourceSha256": "28709bebe2009f0af58e5f5dc11d399483254c38a8e4040bf1a296ea5ace0f74",
+    "pdfSha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d"
   },
   {
     "id": "Q-2013-MID-P02-b",
     "topic": "functions-and-subsets",
     "sourceNote": "sources/notes/Q-2013-MID-P02-b - Functions.md",
-    "sourceNoteSha256": "85cee3ae8a9ad5b096881405077b8774ef4e615fa8ceed64686a8c2d64bc0135",
+    "sourceNoteSha256": "f9172462c33721c1cdf0eff7e61c993887f0135aa59e7653a77c711b09a29c0e",
     "stems": [
       "STEM-2013-MID-P02 - Shared Problem Prompt"
     ],
@@ -88,14 +103,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider $S_3=\\{1,2,3\\}$ and $S_n=\\{1,2,\\ldots,n\\}$, where $n>3$.\n\n(b) How many different functions $f$ are there from $S_3$ to $S_n$ such that $f(1)\\ne f(2)$?\n\nExplain how your answers are derived.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** $n^2(n-1)$.\n\n**Derivation/proof.** Choose $f(1)$ in $n$ ways, $f(2)$ in $n-1$ ways different from it, and $f(3)$ freely in $n$ ways.\n\n### 中文解答\n\n**推导。** 先选 $f(1)$，有 n 种。随后 $f(2)$ 必须避开这个像，剩 n−1 种。$f(3)$ 不受限制，仍有 n 种，即使等于前两个像之一也合法。故函数总数为 $n(n-1)n=n^2(n-1)$。",
-    "mistakesMarkdown": "- 错误地把 $f(3)$ 也限制为不同。\n- 把两个受限值的选择顺序漏掉。"
+    "solutionMarkdown": "**Answer.** $n^2(n-1)$.\n\n**Derivation/proof.** Choose $f(1)$ in $n$ ways, $f(2)$ in $n-1$ ways different from it, and $f(3)$ freely in $n$ ways.\n\nThe third image may equal either previous image, so the product is $n(n-1)n=n^2(n-1)$.\n\nThere are n−1 choices for the second image after the first is fixed.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 4](../sources/papers/2013-midterm.pdf#page=4).\n\n(b) We determine $f(1)$, $f(2)$ and $f(3)$ in order. There are $n$ possibilities for $f(1)$, $n-1$ possibilities for $f(2)$, and $n$ possibilities for $f(3)$. So, the answer is: $n^2(n-1)$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "c1807ea36cf50369e5a8034341bf9f30461986f1a929d5d4a04a9588f342bf81",
+    "supplementarySourceSha256": "1612e93f6065cf19a2d28030b9b7a1bab6d10f86547765ceec347b3f69705d38",
+    "pdfSha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d"
   },
   {
     "id": "Q-2013-MID-P02-c",
     "topic": "functions-and-subsets",
     "sourceNote": "sources/notes/Q-2013-MID-P02-c - Functions.md",
-    "sourceNoteSha256": "5a47cbea88fb1982ae8534e9453aa23b71a98075a0274e8c8ba6cd4eef43ab42",
+    "sourceNoteSha256": "31622685a694d0cea7668790155f447eff8574c80d6450ca54c5734d2d5ab8a5",
     "stems": [
       "STEM-2013-MID-P02 - Shared Problem Prompt"
     ],
@@ -111,14 +131,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider $S_3=\\{1,2,3\\}$ and $S_n=\\{1,2,\\ldots,n\\}$, where $n>3$.\n\n(c) How many different functions $f$ are there from $S_3$ to $S_n$ such that $f(1)\\ne f(2)$ and $f(2)\\ne f(3)$?\n\nExplain how your answers are derived.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.\n\n**Answer.** $n(n-1)^2$.\n\n**Derivation/proof.** Choose the middle value $f(2)$ first ($n$ choices). Each endpoint must avoid it, independently giving $(n-1)^2$ choices; $f(1)$ and $f(3)$ may coincide.\n\n### 中文解答\n\n**推导。** 先固定中间的 $f(2)$，有 n 种选择。两端各自只需避开它，所以 $f(1)$ 有 n−1 种，$f(3)$ 也有 n−1 种。题目没有要求两端互异，故这些选择可以相乘，得到 $n(n-1)^2$。",
-    "mistakesMarkdown": "- 错误增加 $f(1)\\ne f(3)$。\n- 把结果写成 $n(n-1)(n-2)$。"
+    "solutionMarkdown": "**Answer.** $n(n-1)^2$.\n\n**Derivation/proof.** Choose the middle value $f(2)$ first ($n$ choices). Each endpoint must avoid it, independently giving $(n-1)^2$ choices; $f(1)$ and $f(3)$ may coincide.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 4](../sources/papers/2013-midterm.pdf#page=4).\n\n(c) We determine $f(2)$, $f(1)$ and $f(3)$ in order. There are $n$ possibilities for $f(2)$, $n-1$ possibilities for $f(1)$, and $n-1$ possibilities for $f(3)$. So, the answer is: $n(n-1)^2$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "5a63a9f6d866f3476427d91cf34eeefab349a22cab2b6a06f899ab0187d0408b",
+    "supplementarySourceSha256": "abb92030ef3bc85473c1fbe09f2d4afa6a9102abcfd264d02ddea7ee8ebd7178",
+    "pdfSha256": "f0a70d2936fa4a2ec704b2995a9b6a7e8c4337584f5eb0feeb6bf3e79846b64d"
   },
   {
     "id": "Q-2018-FINAL-P10-c",
     "topic": "algorithm-operations",
     "sourceNote": "sources/notes/Q-2018-FINAL-P10-c - Asymptotic Complexity.md",
-    "sourceNoteSha256": "f3d2387f8ab6763437a5f7ffb42a5e4626e9ffff8b89d05bb8732306a95e3d3f",
+    "sourceNoteSha256": "18d073b314960e0ffe027042b616714e55bc8964649f3bed85406d85dedcb6a3",
     "stems": [
       "STEM-2018-FINAL-P10 - Shared Problem Prompt"
     ],
@@ -134,14 +159,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Given a $n\\times p$ matrix $A$ and a $p\\times m$ matrix $B$, the following algorithm computes the $n\\times m$ product matrix $C=A\\cdot B$.\n\nMatrix-Mult(A,B)\n\n    for i = 1 to n do\n        for j = 1 to m do\n            C[i,j] = 0\n            for k = 1 to p do\n                C[i,j] = C[i,j] + A[i,k] · B[k,j]\n            end for\n        end for\n    end for\n    return C\n\nc) Express the total number of multiplications that the algorithm does, expressed as a function of $n,m,p$.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 15. The Chinese derivation expands the reasoning.\n\n**Answer.** $nmp$.\n\n**Derivation/proof.** For each of $n$ rows and $m$ columns, the algorithm runs the inner loop $p$ times. Every inner iteration contains exactly one scalar multiplication $A[i,k]B[k,j]$. Hence the exact multiplication count is $n\\cdot m\\cdot p$. Initializing to zero and adding do not contribute to the requested multiplication count.\n\n### 中文解答\n\n**推导。** 外层遍历 $n$ 行，中层遍历 $m$ 列，所以共 $nm$ 个输出元素。每个输出的内层执行 $p$ 次，每次恰乘一次 $A[i,k]\\cdot B[k,j]$。因此精确乘法数 $nm\\cdot p=nmp$。清零和加法不计入所问乘法次数，所以没有额外常数项。",
-    "mistakesMarkdown": "- 把加法一起计入乘法数量。\n- 把维度 p 与输出列数 m 混淆。"
+    "solutionMarkdown": "**Answer.** $nmp$.\n\n**Derivation/proof.** For each of $n$ rows and $m$ columns, the algorithm runs the inner loop $p$ times. Every inner iteration contains exactly one scalar multiplication $A[i,k]B[k,j]$. Hence the exact multiplication count is $n\\cdot m\\cdot p$. Initializing to zero and adding do not contribute to the requested multiplication count.\n\nFor each output entry, sum the terms $A[i,k]\\cdot B[k,j]$ over the common inner dimension. The output row is indexed by $i$ and its column by $j$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 15](../sources/papers/2018-final.pdf#page=15).\n\nThe first loop is executed $n$ times, therefore the second is executed $nm$ times, and the third $nmp$ times. At every iteration of the innermost loop a multiplication is executed, therefore the answer is $nmp$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "72478920a613d55a69299875385b5e395bbb66ab8f9f967523e919f8b4ecde14",
+    "supplementarySourceSha256": "abb8f37d3b9028525ce29be6b64cc9a6e5ae3c6e4c8add15a94872429770cae1",
+    "pdfSha256": "4107217a4179737cc7e7aedd960d091d0d74288516b45cd1fc64322b72474ce9"
   },
   {
     "id": "Q-2015-MID-P06-a",
     "topic": "restricted-strings",
     "sourceNote": "sources/notes/Q-2015-MID-P06-a - Counting Principles.md",
-    "sourceNoteSha256": "6467a7b68e2e7bf306b3bba91d7b4075906d1f22dbbaf01096bfcb4bc887bc22",
+    "sourceNoteSha256": "57cf39bec2f5c18c23ee395c33878e5d3d7cd2ead6eece3604c5bccf19bce9fe",
     "stems": [
       "STEM-2015-MID-P06 - Shared Problem Prompt"
     ],
@@ -157,14 +187,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "In a computer system, a password is a string of 8 characters, where each character is either a digit or a lowercase letter from the English alphabet. How many possible passwords are there under each of the following conditions?\n\n(a) The first character must be a letter.\n\nBriefly explain how your answers are derived.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.\n\n**Answer.** $26\\cdot36^7$.\n\n**Derivation/proof.** Choose the first letter in 26 ways. Each remaining position independently has $26+10=36$ choices, so the product rule gives $26\\cdot36^7$.\n\n### 中文解答\n\n**推导。** 第一位必须是小写字母，有 26 种。其余七个位置各可放十个数字或二十六个字母，均有 $10+26=36$ 种；题目未禁重复，选择无需扣除已用字符。逐位置乘法原理得到 $26\\cdot36^7$ 个不同八字符密码。",
-    "mistakesMarkdown": "- 误把首位也计作三十六种。\n- 用排列下降阶乘，擅自禁止字符重复。"
+    "solutionMarkdown": "**Answer.** $26\\cdot36^7$.\n\n**Derivation/proof.** Choose the first letter in 26 ways. Each remaining position independently has $26+10=36$ choices, so the product rule gives $26\\cdot36^7$.\n\nThere are $10+26=36$ available characters in every unrestricted position.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 11](../sources/papers/2015-midterm.pdf#page=11).\n\n(a) $26\\times36^7$. There are 26 possibilities for the first character and 36 possibilities for each of the other characters.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "9af4bef0bc4d6d2ec797b5e0823e376ae314261819608bd7f1873f4d35cf7f4b",
+    "supplementarySourceSha256": "329e6c63683fd2b8ff20b8357555ba342c376dbdb0405bd80a305d63504e9da9",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6"
   },
   {
     "id": "Q-2016-MID-P01-b",
     "topic": "restricted-strings",
     "sourceNote": "sources/notes/Q-2016-MID-P01-b - Counting Principles.md",
-    "sourceNoteSha256": "ee1acc663b083da5506158e0dcbbc8e01c2828cb74f6ae022e0e60c1bf274e54",
+    "sourceNoteSha256": "b1778e601dfe82405c9f143b1c76aa342365ab4f0fe349629bfda5cdd58520c3",
     "stems": [
       "STEM-2016-MID-P01 - Shared Problem Prompt"
     ],
@@ -180,14 +215,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider a web system for online shopping that generates an order id for each business. The order id is a sequence of 7 characters where each character could be either one of the 26 Upper Case English Alphabets (A to Z) or one of the 10 digits (0 to 9).\n\n(b) How many possible order id’s are there if no two characters are the same? (E.g., A034NXD is valid and A034NAD is invalid)",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $36\\cdot35\\cdot34\\cdot33\\cdot32\\cdot31\\cdot30=7!\\binom{36}{7}$.\n\n**Derivation/proof.** After $i$ distinct characters have been used, the next position has $36-i$ options. Multiplying for $i=0,\\ldots,6$ gives $36!/29!$, also equal to choosing seven characters and permuting them.\n\n### 中文解答\n\n**推导。** 第一位36种，第二位不能重用第一位，35种，依次到第七位剩30种。故总数 $36\\cdot35\\cdot34\\cdot33\\cdot32\\cdot31\\cdot30=36!/29!$。等价地先选七个不同字符再排列，得 $\\binom{36}{7}7!$。这不是无序集合计数，例子中的两个A会违反不同字符限制。",
-    "mistakesMarkdown": "- 只写 $\\binom{36}{7}$，忽略顺序。\n- 只排除前一位，而没有排除全部已用字符。"
+    "solutionMarkdown": "**Answer.** $36\\cdot35\\cdot34\\cdot33\\cdot32\\cdot31\\cdot30=7!\\binom{36}{7}$.\n\n**Derivation/proof.** After $i$ distinct characters have been used, the next position has $36-i$ options. Multiplying for $i=0,\\ldots,6$ gives $36!/29!$, also equal to choosing seven characters and permuting them.\n\nThe sequence of available counts is $36,35,34,33,32,31,30$. The repeated A in the source example violates the requirement.\n\nChoosing the seven distinct characters first and ordering them gives $\\binom{36}{7}7!$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 3](../sources/papers/2016-midterm.pdf#page=3).\n\n(b) $36^{\\underline7}$ or $7!\\binom{36}{7}$",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "8095591232bdf887ffb9345538c73f78e1b8e204f364e3e2453b7151b349fdd8",
+    "supplementarySourceSha256": "48b18af040e16ca7cc5811f0cd4282e412736123e49170f7c74f9be1dcace4cd",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c"
   },
   {
     "id": "Q-2016-MID-P01-c",
     "topic": "restricted-strings",
     "sourceNote": "sources/notes/Q-2016-MID-P01-c - Counting Principles.md",
-    "sourceNoteSha256": "a40521ba1cef2f4479060666c6e03c94d4f85ae3adb39900a63d00ca7258fb19",
+    "sourceNoteSha256": "2dcbff859aa8b39ec1ec9a9b9be8d79c576e236304b7242cb7e452cf3f3bb279",
     "stems": [
       "STEM-2016-MID-P01 - Shared Problem Prompt"
     ],
@@ -203,14 +243,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider a web system for online shopping that generates an order id for each business. The order id is a sequence of 7 characters where each character could be either one of the 26 Upper Case English Alphabets (A to Z) or one of the 10 digits (0 to 9).\n\n(c) How many possible order id’s are there if the leftmost character must be a digit and no two consecutive characters are the same? (E.g., 3ABA3C6 is valid. C3ARX7B and 3ARRX7B are invalid)",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.\n\n**Answer.** $10\\cdot35^6$.\n\n**Derivation/proof.** Choose the leading digit in ten ways. At each of the remaining six positions, exactly one of 36 characters equals its predecessor and is excluded. The multiplication rule thus gives $10\\cdot35^6$.\n\n### 中文解答\n\n**推导。** 最左位必须是数字，有十种。以后每一位只排除紧邻上一位的那一个字符，从36种减去一种，始终有35种；此前更远位置出现过的字符可以重复，如例子的A或3。六个后续位置相乘得到 $10\\cdot35^6$。不能误用每步继续递减的排列数。",
-    "mistakesMarkdown": "- 使用下降阶乘，误把不相邻也不能重复加入题设。\n- 将每个后续位置限制成只有数字。"
+    "solutionMarkdown": "**Answer.** $10\\cdot35^6$.\n\n**Derivation/proof.** Choose the leading digit in ten ways. At each of the remaining six positions, exactly one of 36 characters equals its predecessor and is excluded. The multiplication rule thus gives $10\\cdot35^6$.\n\nEarlier nonadjacent characters may recur, as the A and 3 do in the valid example.\n\nAfter the first position there are always 35 choices, because only one immediate predecessor is excluded.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 3](../sources/papers/2016-midterm.pdf#page=3).\n\n(c) $10\\cdot35^6$. The leftmost character has 10 choices, then the second leftmost character has 35 choices because it cannot be the same as it's adjacent character, and so on.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "66522317cbc8847906f8f18af758f5c6f902a950d812673d74651045b37642e7",
+    "supplementarySourceSha256": "09b5a81d59fd21df0c7986d8823f5a5379e85c25c89ca7e9ded020ccc024ae55",
+    "pdfSha256": "0b5f7178f4165da45c0f68cad5d57334618d8761f4e69d43eac34e9215c47c4c"
   },
   {
     "id": "Q-2015-MID-P06-b",
     "topic": "complement-counting",
     "sourceNote": "sources/notes/Q-2015-MID-P06-b - Counting Principles.md",
-    "sourceNoteSha256": "617d60470aff222759e4035d67c91d66e257951326bcaa765ec10f6e2b76ae77",
+    "sourceNoteSha256": "86a08b9d3ad559d0a6a856871bae6018e0b7039150189fca0aff7d25cd8aa672",
     "stems": [
       "STEM-2015-MID-P06 - Shared Problem Prompt"
     ],
@@ -226,14 +271,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "In a computer system, a password is a string of 8 characters, where each character is either a digit or a lowercase letter from the English alphabet. How many possible passwords are there under each of the following conditions?\n\n(b) The first character must be a letter, and there must be at least one digit.\n\nBriefly explain how your answers are derived.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.\n\n**Answer.** $26\\cdot36^7-26^8$.\n\n**Derivation/proof.** The unrestricted first-letter count is $26\\cdot36^7$. A password in this set violates the digit requirement exactly when all eight characters are letters, giving $26^8$ bad strings. Subtraction gives the answer.\n\n### 中文解答\n\n**推导。** 首位为字母的全部密码有 $26\\cdot36^7$ 个。不满足“至少一个数字”恰好是八位全为字母，共 $26^8$ 个，且它们都属于前一集合。用补集相减得 $26\\cdot36^7-26^8$，没有其他被排除情形。",
-    "mistakesMarkdown": "- 把全字母密码数写成 $26^7$，漏算首位。\n- 按“指定某个数字位置”直接相加，使多数字密码重复计数。"
+    "solutionMarkdown": "**Answer.** $26\\cdot36^7-26^8$.\n\n**Derivation/proof.** The unrestricted first-letter count is $26\\cdot36^7$. A password in this set violates the digit requirement exactly when all eight characters are letters, giving $26^8$ bad strings. Subtraction gives the answer.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 11](../sources/papers/2015-midterm.pdf#page=11).\n\n(b) $26\\times36^7-26^8$. There are $26^8$ passwords without digits.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "cd023b222e3633849c115dab3795a2e5be31a25d83db24267fa30f418fef68e0",
+    "supplementarySourceSha256": "882c4f789a051651bd7e6b9bca162e37e550c07b5cec98292a70f7017aa9ef2e",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6"
   },
   {
     "id": "Q-2015-MID-P06-c",
     "topic": "complement-counting",
     "sourceNote": "sources/notes/Q-2015-MID-P06-c - Counting Principles.md",
-    "sourceNoteSha256": "88d33e82d3d537e1102d3827a1846d9776e954b6fdb2e71df38f03517689cd50",
+    "sourceNoteSha256": "157ff908b1197f88d27e8080813bf99544e9ea9956ecdd1746846aeea87d5d74",
     "stems": [
       "STEM-2015-MID-P06 - Shared Problem Prompt"
     ],
@@ -249,14 +299,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "In a computer system, a password is a string of 8 characters, where each character is either a digit or a lowercase letter from the English alphabet. How many possible passwords are there under each of the following conditions?\n\n(c) The first character must be a letter, and there must be at least two digits.\n\nBriefly explain how your answers are derived.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 11. The Chinese derivation expands the reasoning.\n\n**Answer.** $26\\cdot36^7-26^8-7\\cdot10\\cdot26^7$.\n\n**Derivation/proof.** Start from $26\\cdot36^7$. Subtract the $26^8$ all-letter strings. For exactly one digit, choose its position among positions 2–8 (7 ways), its value (10 ways), and all seven letters ($26^7$ ways). These two excluded cases are disjoint and exhaust passwords with fewer than two digits.\n\n### 中文解答\n\n**推导。** 从首字母密码全集 $26\\cdot36^7$ 减去零数字和恰一数字，两类互斥。零数字有 $26^8$。恰一数字的位置只能在后七位，有七种；该位十种数字，其余七位各二十六种字母，计 $7\\cdot10\\cdot26^7$。所以答案 $26\\cdot36^7-26^8-7\\cdot10\\cdot26^7$。",
-    "mistakesMarkdown": "- 给唯一数字八个可选位置，允许其占据必须为字母的首位。\n- 将“至少两个”误当作“恰好两个”。"
+    "solutionMarkdown": "**Answer.** $26\\cdot36^7-26^8-7\\cdot10\\cdot26^7$.\n\n**Derivation/proof.** Start from $26\\cdot36^7$. Subtract the $26^8$ all-letter strings. For exactly one digit, choose its position among positions 2–8 (7 ways), its value (10 ways), and all seven letters ($26^7$ ways). These two excluded cases are disjoint and exhaust passwords with fewer than two digits.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 11](../sources/papers/2015-midterm.pdf#page=11).\n\n(c) $26\\times36^7-26^8-7\\times10\\times26^7$. The are $26^8$ passwords without digits. The number of passwords with exactly 1 digit is: $7\\times10\\times26^7$, because there are 7 possible positions for the digit, the digit has 10 possibilities, and the other 7 characters must be letters.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "423082c4aa58d7460f73b87996cd552822b0307ff3df4757b8d88227edc8ce2e",
+    "supplementarySourceSha256": "cb0d7a5d65ced14ae470f4cf8bbb1e26352b02a40a332fe32af07a55201e7f04",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6"
   },
   {
     "id": "Q-2025F-MID-P07",
     "topic": "pigeonhole-proofs",
     "sourceNote": "sources/notes/Q-2025F-MID-P07 - Counting Principles.md",
-    "sourceNoteSha256": "6d06b1419dedb1950ce8dda685974c02610dd5d4b8d6f94d348e2919ccb8d07f",
+    "sourceNoteSha256": "03e445793384ff1d50134eb274b78a11299455056d271cb55c2edcaf84204c90",
     "stems": [],
     "companionNotes": [],
     "paper": "2025 Fall Midterm",
@@ -270,14 +325,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider an $8\\times8$ grid of $1\\times1$ cells. If 17 cells are colored red at random, prove that there exist at least two red cells that share a common corner.\n\n![原题图示](../sources/figures/2025F-MID-P07-grid.png)",
-    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** 必有两红格共享角点。\n\n**推导。** 将行分为相邻的四对，列也分为相邻的四对，得到 $4\\cdot4=16$ 个互不重叠的 $2\\times2$ 方块。十七个红格分配到这十六个方块，根据 pigeonhole principle 至少一块含两个红格。一个 $2\\times2$ 块中的四个单格都包含它的中心网格点，所以该块任意两个不同红格共享此角点。于是题目结论对所有十七格选择成立，“at random”不需要再计算概率。",
-    "mistakesMarkdown": "- 按八行分组只能保证同一行有三红格，不能保证它们相邻或共角。\n- 对角接触也算共同角点，不要求红格共用整条边。"
+    "solutionMarkdown": "**Answer.** Two red cells must share a corner.\n\n**Derivation/proof.** Pair adjacent rows into four groups and adjacent columns into four groups, producing $4\\cdot4=16$ disjoint 2-by-2 blocks. Seventeen red cells distributed among sixteen blocks force at least one block to contain two red cells. All four cells in a block contain its central grid point, so any two distinct red cells within it share that corner. This proves the claim for every selection of seventeen cells; “at random” does not require a probability calculation.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 17](../sources/papers/COMP2711_F2025_Midterm.pdf#page=17).\n\n> We split the $8\\times8$ grid into $16$ $2\\times2$ grids as follows:\n> [knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=17](../sources/papers/COMP2711_F2025_Midterm.pdf#page=17)\n> Note that any two cells from a $2\\times2$ Grid contains a shared common corner. If we color $17$ $1\\times1$ cells, it means we color at least two cells from one $2\\times2$ grid which have a shared common corner.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "5dc67eb3d21e4a7fd0f41c5a24c052b41cfe48b7e13eb11325ffbb423f548180",
+    "supplementarySourceSha256": "f0a850fde6e13ea10cb90cb93eb256394b0c5e62fbff2916b042dadece612e0e",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e"
   },
   {
     "id": "Q-2025F-FINAL-P02-b",
     "topic": "pigeonhole-proofs",
     "sourceNote": "sources/notes/Q-2025F-FINAL-P02-b - Counting Principles.md",
-    "sourceNoteSha256": "fbd2690a90dcd68d25fca495f9715d8ce297517916e0b9df73cee8313e97344a",
+    "sourceNoteSha256": "f86d1468dd38499526cf481745052c7b790eec6e481b46ff06fa5f5e21648bf5",
     "stems": [],
     "companionNotes": [],
     "paper": "2025 Fall Final",
@@ -291,14 +351,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "(b) [5 points] Consider $A=\\{1,2,3,4,5\\}$. Imagine picking 17 different subsets from $A$ at random. Prove that at least two of them are disjoint.",
-    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** 十七个不同子集中必有两个不相交。\n\n**推导。** $A$ 的幂集有 $2^5=32$ 个子集。每个 $S\\subseteq A$ 与唯一补集 $A\\setminus S$ 配成一对，两者交集为空，且不可能相同：否则元素一既属于又不属于同一集合。取补两次返回原集合，所以三十二个子集恰分为十六个互不重叠的二元组。选十七个不同子集，pigeonhole principle 保证某组中两个都被选中，它们互补，因而不相交。随机选择的分布不影响这个确定性结论。",
-    "mistakesMarkdown": "- 补集配对不能把 S 与其补集又各算一次，否则会错误地得到三十二对。\n- 选择必须是不同子集，重复抽到同一个子集不能用此鸽巢论证。"
+    "solutionMarkdown": "**Answer.** Among the 17 distinct subsets, at least two are disjoint.\n\n**Derivation/proof.** The power set of $A$ has $2^5=32$ subsets. Pair each $S\\subseteq A$ with its unique complement $A\\setminus S$. They are disjoint and cannot be equal: otherwise element 1 would belong and not belong to the same set. Taking the complement twice returns $S$, so these subsets partition into exactly 16 disjoint pairs. Selecting 17 distinct subsets forces both members of some pair to be selected, by the pigeonhole principle. They are complements and hence disjoint. The random selection distribution has no effect on this deterministic conclusion.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 5](../sources/papers/COMP2711_F2025_Final.pdf#page=5).\n\n(b) The power set of $A$ has $2^5=32$ subsets. For each subset $S\\subseteq A$, its complement $S^c$ is disjoint with $S$ (i.e., $S\\cap S^c=\\varnothing$).\n\nAlso the complement of any subset is unique (i.e., there is a bijection between any subset and its complement).\n\nThus, these 32 subsets can be paired into 16 groups of (subsets and their complement). Based on pigeonhole principle, if we choose 17 subsets, two of them will be from the same pair which means they are disjoint.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "ac4b749787edd909a0be5bf706d449ea1e4c9d3ee817766c3a114639d547b9e4",
+    "supplementarySourceSha256": "00c77a653b297fff668317f92622bcc396a55053e76abb0484302bae7615970a",
+    "pdfSha256": "8c99ca5ef7b1426d42aedc27023a61333a17cef4f9133a2e253803604384388f"
   },
   {
     "id": "Q-2019-FINAL-P07",
     "topic": "pigeonhole-proofs",
     "sourceNote": "sources/notes/Q-2019-FINAL-P07 - Counting Principles.md",
-    "sourceNoteSha256": "3525226b27d2f80328d95ada4f635cd9ed5693bc8feecc6cba5234189d3a0e57",
+    "sourceNoteSha256": "361f87c8ff96041b497a41a3202ecd21ef0e532462ad34180c3372cafb4241f9",
     "stems": [],
     "companionNotes": [],
     "paper": "2019 Final",
@@ -312,14 +377,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Let $P$ be a set of 5 distinct points in the plane with integer coordinates. Draw a line segment between every two points of $P$ (note that a total of 10 line segments will be drawn). Show that at least one of these line segments has its midpoint with integer coordinates.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** At least one of the ten segments has an integer-coordinate midpoint.\n\n**Derivation/proof.** Classify a point $(a,b)$ by $(a\\bmod2,b\\bmod2)$. There are four classes: $(0,0),(0,1),(1,0),(1,1)$. Five points force two distinct points $(a,b),(c,d)$ in one class by pigeonhole principle. Then a+c and b+d are even, so the midpoint $((a+c)/2,(b+d)/2)$ has both coordinates integral. The required segment is present because every pair is joined.\n\n### 中文解答\n\n**推导。** 把每个整数点 $(a,b)$ 按两个坐标的奇偶分进四个鸽巢 $(0,0),(0,1),(1,0),(1,1)$，其中分量表示模 $2$ 的余数。五个不同点多于四个巢，鸽巢原理保证某两个不同点 $(a,b),(c,d)$ 同巢，即 $a\\equiv c\\pmod2$ 且 $b\\equiv d\\pmod2$。所以 $a+c$、$b+d$ 都是偶数，连接它们的中点 $((a+c)/2,(b+d)/2)$ 两坐标均为整数。题目画出了每一对点的线段，因此这条所需线段确实在十条之中。",
-    "mistakesMarkdown": "- 只按一个坐标的奇偶分组。\n- 把中点坐标写成两个端点坐标的差。"
+    "solutionMarkdown": "**Answer.** At least one of the ten segments has an integer-coordinate midpoint.\n\n**Derivation/proof.** Classify a point $(a,b)$ by $(a\\bmod2,b\\bmod2)$. There are four classes: $(0,0),(0,1),(1,0),(1,1)$. Five points force two distinct points $(a,b),(c,d)$ in one class by pigeonhole principle. Then a+c and b+d are even, so the midpoint $((a+c)/2,(b+d)/2)$ has both coordinates integral. The required segment is present because every pair is joined.\n\nEvery pair of points is joined in the question, so the guaranteed same-parity pair supplies one of the ten drawn segments.\n\nIf $a\\equiv b\\pmod2$ and $b\\equiv c\\pmod2$, then adding the two even differences gives $a\\equiv c\\pmod2$. This verifies transitivity of the parity relation.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 9](../sources/papers/2019-final.pdf#page=9).\n\nThe midpoint of the segment whose endpoints are $(a,b)$ and $(c,d)$ is $((a+c)/2,(b+d)/2)$. We are concerned only with integer values of the original coordinates. Clearly the coordinates of these fractions will be integers as well if and only if $a$ and $c$ have the same parity (both odd or both even) and $b$ and $d$ have the same parity. Thus what matters in this problem is the parities of the coordinates. There are four possible pairs of parities: (odd, odd), (odd, even), (even, odd), and (even, even). Since we are given five points, the pigeonhole principle guarantees that at least two of them will have the same pair of parities. The midpoint of the segment joining these two points will therefore have integer coordinates.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "53aafe3b19b94cedf80c555a936c12b620e29e6952c3069b82c58515fc81e219",
+    "supplementarySourceSha256": "22684d0d8cba36b9155b79b90050443f46735369df13bcec930f6595afa73653",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7"
   },
   {
     "id": "Q-2017-MID-P07",
     "topic": "minimum-guarantees",
     "sourceNote": "sources/notes/Q-2017-MID-P07 - Counting Principles.md",
-    "sourceNoteSha256": "e6a5a1b8fb600dd9ec37ae4f67159742c84230dad466caf1391f18be06e2723a",
+    "sourceNoteSha256": "e2fbc10ba8dcf5d27d723390707066366460081cb4c2d463a6edccdfc32566f6",
     "stems": [],
     "companionNotes": [],
     "paper": "2017 Midterm",
@@ -333,14 +403,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "A computer randomly prints three-digit codes, with no repeated digits in any code (for example, 387, 072, 760). What is the minimum number of codes that must be printed in order to guarantee that at least six of the codes are identical?",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** $3601$.\n\n**Derivation/proof.** There are $10\\cdot9\\cdot8=720$ code types because a leading zero is allowed. With at most five copies of each type, at most $5\\cdot720=3600$ codes can be printed. Thus the next code forces a sixth copy. Conversely, printing exactly five copies of every type shows 3600 does not suffice.\n\n### 中文解答\n\n**推导。** 示例 $072$ 表明首位可为零，不重复三位编码共 $10\\cdot9\\cdot8=720$ 种。若每种至多出现五次，总共至多 $5\\cdot720=3600$ 个；因此打印 $3601$ 个必有一种至少六次。反过来，每种各打印五次可达 $3600$ 而仍无六个相同者，所以 $3601$ 不仅充分，而且最小。随机性不改变这一最坏情况保证。",
-    "mistakesMarkdown": "- 把首位选项错算为九个。\n- 只给上界而未证明最小性。"
+    "solutionMarkdown": "**Answer.** $3601$.\n\n**Derivation/proof.** There are $10\\cdot9\\cdot8=720$ code types because a leading zero is allowed. With at most five copies of each type, at most $5\\cdot720=3600$ codes can be printed. Thus the next code forces a sixth copy. Conversely, printing exactly five copies of every type shows 3600 does not suffice.\n\nThe random generation does not change this worst-case guarantee.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 9](../sources/papers/2017-midterm.pdf#page=9).\n\nThere are $10\\cdot9\\cdot8=720$ different codes. By the generalized pigeonhole principle, to guarantee that at least six identical codes will be printed, the minimum number $n$ of printed codes is such that $\\lceil n/720\\rceil=6$, which is $n=5\\cdot720+1=3601$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "b2435ebf31bbcd7fbfc8632f75ddd888a1ec72bbef123c3add73e5119568da9f",
+    "supplementarySourceSha256": "bdce4c30863c59567c46194708e98b2b554bd9415810404a72420c573defd9cc",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3"
   },
   {
     "id": "Q-2015-MID-P07-c",
     "topic": "minimum-guarantees",
     "sourceNote": "sources/notes/Q-2015-MID-P07-c - Counting Principles.md",
-    "sourceNoteSha256": "8ad649f47e6824e7a5d0c9b44690705682a0d36b165a7f5154113198bd0b24e0",
+    "sourceNoteSha256": "5933bf1759c80fef0891669ccff6eb048836c46a6278e52be79ea2d876e1eaf8",
     "stems": [
       "STEM-2015-MID-P07 - Shared Problem Prompt"
     ],
@@ -356,14 +431,19 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "You are going to distribute $kn$ cash coupons to $kn$ members in your company such that each member will get one cash coupon, where $k,n\\ge1$. The values of the $kn$ cash coupons are distinct. Suppose there are $n$ ranks of seniority in the company, and there are exactly $k$ members at each rank. If a more senior member receives a cash coupon worth less than the cash coupon given to a more junior member, you will receive a complaint.\n\n(c) Suppose you have an unlimited number of cash coupons, instead of $kn$ cash coupons. Each member may receive 0 or more cash coupons, and you distribute the cash coupons randomly. For each rank $r$, let $t_r$ be the total number of coupons members at the rank receive altogether. What is the minimum number of cash coupons you will need to distribute so that there is at least one rank $r$ for which $t_r\\ge2k$?\n\nBriefly explain how your answers are derived.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 12. The Chinese derivation expands the reasoning.\n\n**Answer.** $n(2k-1)+1$.\n\n**Derivation/proof.** A distribution with every $t_r\\le2k-1$ contains at most $n(2k-1)$ coupons. Therefore $n(2k-1)+1$ forces some $t_r\\ge2k$. Sharpness follows by giving exactly $2k-1$ coupons to each rank, which avoids the event using one fewer coupon.\n\n### 中文解答\n\n**推导。** 若所有等级均未达到 2k 张，则每个等级至多 $2k-1$，n 个等级合计至多 $n(2k-1)$。因此发 $n(2k-1)+1$ 张时鸽巢原理保证某等级达到 2k。为证最小，恰给每个等级 $2k-1$ 张，可由等级内一人全领，满足每人可领任意非负张数；总数少一张且仍没有等级达到目标。所以最小值正是 $n(2k-1)+1$。",
-    "mistakesMarkdown": "- 把成员数 $kn$ 当作抽屉数，题目目标按等级统计。\n- 仅证明足够，却没有说明少一张可以不满足目标。"
+    "solutionMarkdown": "**Answer.** $n(2k-1)+1$.\n\n**Derivation/proof.** A distribution with every $t_r\\le2k-1$ contains at most $n(2k-1)$ coupons. Therefore $n(2k-1)+1$ forces some $t_r\\ge2k$. Sharpness follows by giving exactly $2k-1$ coupons to each rank, which avoids the event using one fewer coupon.\n\nThe sharpness construction is admissible because a single member of each rank may receive all $2k-1$ coupons; members are allowed any nonnegative number.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 12](../sources/papers/2015-midterm.pdf#page=12).\n\n(c) $(2k-1)n+1$. This is the same as finding the minimum number $x$ of pigeons such that at least one of the $n$ pigeonholes contain at least $2k$ objects. By the pigeonhole principle, find the minimum $x$ such that $\\lceil x/n\\rceil=2k$. It is easy to see that this equality holds for $x\\in\\{(2k-1)n+1,\\ldots,2kn\\}$. Thus, the minimum value of $x=(2k-1)n+1$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "7291b5bf908aa6826661ee38b026fd1bec1b1bec2e79c871822e7583856123d2",
+    "supplementarySourceSha256": "d536dc302be9dd5ab98abcd30ab5e9490a97108b69d06f6ed41700b2b4683d44",
+    "pdfSha256": "ed0fc930f5a5eec77cc4e2444087d19196540285c587cf7552d51b7c3d2f32d6"
   },
   {
     "id": "Q-2025S-FINAL-P07-N",
     "topic": "minimum-guarantees",
     "sourceNote": "sources/notes/Q-2025S-FINAL-P07-N - Counting Principles.md",
-    "sourceNoteSha256": "a4c4bb35e5dc44feb6860f6dc00dc8854e3e2ce673a853da1011a7ee59a86a56",
+    "sourceNoteSha256": "24bed8714ca73e7eea38eefa6547810942a1f5311e3cb4fd2b335bfdeabd55bb",
     "stems": [
       "STEM-2025S-FINAL-P07 - Shared Problem Prompt"
     ],
@@ -382,7 +462,50 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "A drawer in a dark room contains 100 red socks, 80 green socks, 60 blue socks and 40 black socks. A youngster selects socks one at a time from the drawer but is unable to see the color of the socks drawn. (A pair of socks is two socks of the same color. No sock may be counted in more than one pair.) Suppose your answer is $n$.\n\nWhat is the smallest number of socks that must be selected to guarantee that the selection contains at least 10 pairs?\n\nYou need to argue that $n$ socks guarantee at least 10 pairs, while $n-1$ socks are not enough.",
-    "solutionMarkdown": "Provenance: published official answer, independently checked and expanded below.\n\n### 中文解答\n\n**答案。** $n=23$。\n\n**推导。** 任意选出的袜子按颜色配对，设留下 $u$ 只孤袜，则每色至多一只，$u\\le4$，并且 $u$ 与总数奇偶相同。选二十三只时 $u$ 为奇数，所以 $u\\le3$，至少有 $(23-3)/2=10$ 对。二十二只却可能按红、绿、蓝、黑分为 $(5,5,5,7)$，只有 $2+2+2+3=9$ 对，且未超出库存。因此二十三保证达标，二十二不能保证，最小数为二十三。",
-    "mistakesMarkdown": "- 这里的配对不能重复使用同一只袜子，应按每色数量除二取整。\n- 仅给二十四这个充分数还不是最小阈值，二十三的奇偶性会改善上界。"
+    "solutionMarkdown": "**Answer.** $n=23$.\n\n**Derivation/proof.** Pair the socks separately by color and let u be the number left over. Each color leaves at most one, so $u\\le4$, with u having the same parity as the total. For twenty-three socks, u is odd, hence $u\\le3$ and at least $(23-3)/2=10$ pairs exist. However, twenty-two socks may have color counts $(5,5,5,7)$, giving only $2+2+2+3=9$ pairs without exceeding any inventory. Thus twenty-three guarantees the target and twenty-two does not; the minimum is twenty-three.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/COMP2711_S2025_Final.pdf#page=10).\n\nFirst Solution: For any selection, at most one sock of each color will be left unpaired, and this happens if and only if an odd number of socks of that color is selected. Thus 24 socks suffice: at most 4 will be unpaired, leaving at least 20 in pairs. However, 23 will do! Since 23 is not the sum of four odd numbers, at most 3 socks out of 23 will be unpaired. On the other hand, 22 will not do: if the numbers of red, green, blue, and black socks are $5,5,5,7$, then four are unpaired, leaving 9 pairs. Thus 23 is the minimum.\n\nSecond Solution: Proceed inductively. If we require only one pair, then it suffices to select 5 socks. Moreover, selecting 4 socks doesn't guarantee a pair since we might select one sock of each color. If we require two pairs, then it suffices to select 7 socks: any set of 7 socks must contain a pair; if we remove this pair, then the remaining 5 socks will contain a second pair as shown above. On the other hand, 6 socks might contain 3 greens, 1 black, 1 red and 1 blue - hence only one pair. Thus 7 socks is the smallest number to guarantee two pairs. Similar reasoning shows that we must draw 9 socks to guarantee 3 pairs, and in general, $2p+3$ socks to guarantee $p$ pairs. This formula is easily proved by mathematical induction. Thus 23 socks are needed to guarantee 10 pairs.\n\nMarking Scheme\n- 4 pts for correct n\n- 1 pt for argument that n is sufficient\n- 1 pt for argument that n-1 is not sufficient\n- If n is wrong, 1-2 pts.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "0c889fef2ccd96eff90058b9328dd4cbbc7300ac862062f6f439033abe8724a4",
+    "supplementarySourceSha256": "af31393ad490f081f46aa3fdb258182413347850f2dac0815016fb9ea648579d",
+    "pdfSha256": "15b253986652a8a846ad56904c0d61c46450bcc4b8369299e36002d2bdba647a",
+    "answerParts": [
+      {
+        "id": "Q-2025S-FINAL-P07-N",
+        "sourceNote": "sources/notes/Q-2025S-FINAL-P07-N - Counting Principles.md",
+        "sourceNoteSha256": "24bed8714ca73e7eea38eefa6547810942a1f5311e3cb4fd2b335bfdeabd55bb",
+        "answerSource": "official",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/COMP2711_S2025_Final.pdf#page=10).\n\nFirst Solution: For any selection, at most one sock of each color will be left unpaired, and this happens if and only if an odd number of socks of that color is selected. Thus 24 socks suffice: at most 4 will be unpaired, leaving at least 20 in pairs. However, 23 will do! Since 23 is not the sum of four odd numbers, at most 3 socks out of 23 will be unpaired. On the other hand, 22 will not do: if the numbers of red, green, blue, and black socks are $5,5,5,7$, then four are unpaired, leaving 9 pairs. Thus 23 is the minimum.\n\nSecond Solution: Proceed inductively. If we require only one pair, then it suffices to select 5 socks. Moreover, selecting 4 socks doesn't guarantee a pair since we might select one sock of each color. If we require two pairs, then it suffices to select 7 socks: any set of 7 socks must contain a pair; if we remove this pair, then the remaining 5 socks will contain a second pair as shown above. On the other hand, 6 socks might contain 3 greens, 1 black, 1 red and 1 blue - hence only one pair. Thus 7 socks is the smallest number to guarantee two pairs. Similar reasoning shows that we must draw 9 socks to guarantee 3 pairs, and in general, $2p+3$ socks to guarantee $p$ pairs. This formula is easily proved by mathematical induction. Thus 23 socks are needed to guarantee 10 pairs.\n\nMarking Scheme\n- 4 pts for correct n\n- 1 pt for argument that n is sufficient\n- 1 pt for argument that n-1 is not sufficient\n- If n is wrong, 1-2 pts.",
+        "solutionMarkdown": "**Answer.** $n=23$.\n\n**Derivation/proof.** Pair the socks separately by color and let u be the number left over. Each color leaves at most one, so $u\\le4$, with u having the same parity as the total. For twenty-three socks, u is odd, hence $u\\le3$ and at least $(23-3)/2=10$ pairs exist. However, twenty-two socks may have color counts $(5,5,5,7)$, giving only $2+2+2+3=9$ pairs without exceeding any inventory. Thus twenty-three guarantees the target and twenty-two does not; the minimum is twenty-three.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "0c889fef2ccd96eff90058b9328dd4cbbc7300ac862062f6f439033abe8724a4",
+        "supplementarySourceSha256": "af31393ad490f081f46aa3fdb258182413347850f2dac0815016fb9ea648579d"
+      },
+      {
+        "id": "Q-2025S-FINAL-P07-sufficient",
+        "sourceNote": "sources/notes/Q-2025S-FINAL-P07-sufficient - Counting Principles.md",
+        "sourceNoteSha256": "80eb7635fc197a1605e613df3cff9221e467e25c0bab917cc2873f9b17b330cb",
+        "answerSource": "official",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/COMP2711_S2025_Final.pdf#page=10).\n\nFor any selection, at most one sock of each color will be left unpaired, and this happens if and only if an odd number of socks of that color is selected. Thus 24 socks suffice: at most 4 will be unpaired, leaving at least 20 in pairs. However, 23 will do! Since 23 is not the sum of four odd numbers, at most 3 socks out of 23 will be unpaired.",
+        "solutionMarkdown": "**Answer.** Twenty-three socks always contain at least ten pairs.\n\n**Derivation/proof.** Use $n=23$. Let the color counts be r,g,b,k. After pairing within colors, the number left over is $u=(r\\bmod2)+(g\\bmod2)+(b\\bmod2)+(k\\bmod2)\\le4$. Since $23-u$ is even, u is odd, hence at most three. The number of disjoint same-color pairs is $\\sum\\lfloor\\text{color count}/2\\rfloor=(23-u)/2\\ge10$. This holds for every permitted distribution, establishing sufficiency.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "b328dfc352b224e8943bec5bf44aa2dce249c5889dd93488e3f82dfd41e6a548",
+        "supplementarySourceSha256": "c530469487ba91e234180e8626381fd715df94fb5951b1a6480dfe873141434f"
+      },
+      {
+        "id": "Q-2025S-FINAL-P07-minimal",
+        "sourceNote": "sources/notes/Q-2025S-FINAL-P07-minimal - Counting Principles.md",
+        "sourceNoteSha256": "04bb8f1b642a7e68dc88d880b88c375af5f7ac83a5325e8cbf502e97d839191e",
+        "answerSource": "official",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/COMP2711_S2025_Final.pdf#page=10).\n\nOn the other hand, 22 will not do: if the numbers of red, green, blue, and black socks are $5,5,5,7$, then four are unpaired, leaving 9 pairs. Thus 23 is the minimum.",
+        "solutionMarkdown": "**Answer.** Twenty-two socks do not guarantee ten pairs.\n\n**Derivation/proof.** With $n=23$, test $n-1=22$. Choose five red, five green, five blue and seven black socks: $5+5+5+7=22$, within every inventory bound. The maximum disjoint pairs by color are $\\lfloor5/2\\rfloor=2$, two, two, and $\\lfloor7/2\\rfloor=3$, giving nine pairs in total. The remaining four socks all have different colors, so no further pair is possible. This valid counterexample disproves sufficiency of twenty-two.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "e5e1c8c25ef4d4a4e12602de2d97c3b3d38b2848f81ceec40e864afcb86e87a0",
+        "supplementarySourceSha256": "efbef3173d488239e0518671b941fa2dc3550192ec822568ed591ee0f6d3cdcb"
+      }
+    ]
   }
 ]

@@ -37,26 +37,19 @@ c) Express the total number of multiplications that the algorithm does, expresse
 
 Shared context: [[STEM-2018-FINAL-P10 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-精确计数要区分运算种类。每个 i、j、k 三元组恰好对应一次标量乘法，选择三元组的数量是 nmp。加法、赋值及循环控制虽然也消耗时间，但题目只问乘法次数。
+Source: [[knowledge_base/past_paper/2018-final.pdf#page=15|physical PDF page 15]].
 
-## Detailed Solution
+The first loop is executed $n$ times, therefore the second is executed $nm$ times, and the third $nmp$ times. At every iteration of the innermost loop a multiplication is executed, therefore the answer is $nmp$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 15. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $nmp$.
 
 **Derivation/proof.** For each of $n$ rows and $m$ columns, the algorithm runs the inner loop $p$ times. Every inner iteration contains exactly one scalar multiplication $A[i,k]B[k,j]$. Hence the exact multiplication count is $n\cdot m\cdot p$. Initializing to zero and adding do not contribute to the requested multiplication count.
 
-### 中文解答
-
-**推导。** 外层遍历 $n$ 行，中层遍历 $m$ 列，所以共 $nm$ 个输出元素。每个输出的内层执行 $p$ 次，每次恰乘一次 $A[i,k]\cdot B[k,j]$。因此精确乘法数 $nm\cdot p=nmp$。清零和加法不计入所问乘法次数，所以没有额外常数项。
-
-## Common Mistakes
-
-- 把加法一起计入乘法数量。
-- 把维度 p 与输出列数 m 混淆。
+For each output entry, sum the terms $A[i,k]\cdot B[k,j]$ over the common inner dimension. The output row is indexed by $i$ and its column by $j$.
 
 ## Connections
 

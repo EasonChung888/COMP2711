@@ -1,0 +1,733 @@
+diff --git a/courses/l2-5/tools/build.mjs b/courses/l2-5/tools/build.mjs
+index 1c09309..091e86b 100644
+--- a/courses/l2-5/tools/build.mjs
++++ b/courses/l2-5/tools/build.mjs
+@@ -1,3 +1,4 @@
++import {answerBlock} from './practice-answers.mjs';
+ import fs from 'node:fs';
+ import path from 'node:path';
+ import {createHash} from 'node:crypto';
+@@ -10,14 +11,14 @@ if(manifest.pages.length!==39||manifest.pages.some(p=>p.status!=='written'))thro
+ for(const p of manifest.pages){const sha=createHash('sha256').update(fs.readFileSync(path.join(root,p.response))).digest('hex');if(sha!==p.responseSha256)throw Error(`Response ${p.page} changed`);}
+ const headings=new Map(manifest.pages.map(p=>[p.page,fs.readFileSync(path.join(root,p.response),'utf8').split('\n')[0].replace(/^# /,'')]));
+ function questionBlock(q,i){
+- const pages=Array.isArray(q.solutionPages)?q.solutionPages:[q.solutionPages];
+- return `<article class="practice-item" id="${q.id}" data-question-id="${q.id}"><h3>练习 ${i+1} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks?`${q.marks} 分 · `:''}<a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label for="attempt-${q.id}" class="attempt-label">我的解题过程</label><textarea id="attempt-${q.id}" data-attempt="${q.id}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea><details class="answer"><summary>查看答案与解析</summary>${markdown(q.solutionMarkdown)}${q.mistakesMarkdown?'<h4>容易出错的地方</h4>'+markdown(q.mistakesMarkdown):''}<p class="small-note">答案来源：已核对的官方答案 · <a href="../${esc(q.pdf)}#page=${pages[0]||q.page}">查看答案页</a> · <a href="../${esc(q.sourceNote)}">知识库原始记录</a></p></details></article>`;
++
++ return `<article class="practice-item" id="${q.id}" data-question-id="${q.id}"><h3>练习 ${i+1} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks?`${q.marks} 分 · `:''}<a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label for="attempt-${q.id}" class="attempt-label">我的解题过程</label><textarea id="attempt-${q.id}" data-attempt="${q.id}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea>${answerBlock(q)}</article>`;
+ }
+ const allPages=config.topics.flatMap(t=>t.pages);if(new Set(allPages).size!==39||allPages.length!==39)throw Error('Topic coverage is not exact.');
+ for(const [i,topic] of config.topics.entries()){
+  const practice=questions.filter(q=>q.topic===topic.slug);
+  const toc=topic.pages.map(n=>`<li><a href="#slide-${String(n).padStart(2,'0')}">第 ${n} 页</a></li>`).join('');
+- const body=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="../index.html">COMP2711</a> / <a href="../counting.html">Counting</a> / <a href="../l2-5.html">L2.5 · 计数基础</a> / <span aria-current="page">${esc(topic.title)}</span></nav><header class="lesson-header"><div><h1>${esc(topic.title)}</h1><p class="lead">${esc(topic.description)}</p></div><div class="lesson-meta">${topic.pages.length} 页讲解<br>${practice.length} 道练习</div></header><nav aria-label="本课页码"><ul class="topic-toc">${toc}<li><a href="#practice">课后练习</a></li></ul></nav>${topic.pages.map(slideBlock).join('\n')}<section class="practice-section" id="practice"><h2>课后练习</h2>${practice.length?'<p>先独立尝试，再展开解析核对。原题保留英文，解析含中文。</p>'+practice.map(questionBlock).join('\n'):'<p>知识库中暂未找到只依赖本课知识的对应题目。你可以先遮住讲解中的结果，重新画出第 28、29 页的树形图，检查每条分支和停止条件。</p>'}</section><label class="read-toggle"><input type="checkbox" data-lesson-complete="${topic.slug}"> 我已学完这课</label><nav class="lesson-nav" aria-label="课程顺序">${i?`<a rel="prev" href="${config.topics[i-1].slug}.html">上一课：${esc(config.topics[i-1].title)}</a>`:'<a href="../l2-5.html">返回本章目录</a>'}${i+1<config.topics.length?`<a rel="next" href="${config.topics[i+1].slug}.html">下一课：${esc(config.topics[i+1].title)}</a>`:'<a href="../l2-5.html">回顾本章课程</a>'}</nav>`;
++ const body=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="../index.html">COMP2711</a> / <a href="../counting.html">Counting</a> / <a href="../l2-5.html">L2.5 · 计数基础</a> / <span aria-current="page">${esc(topic.title)}</span></nav><header class="lesson-header"><div><h1>${esc(topic.title)}</h1><p class="lead">${esc(topic.description)}</p></div><div class="lesson-meta">${topic.pages.length} 页讲解<br>${practice.length} 道练习</div></header><nav aria-label="本课页码"><ul class="topic-toc">${toc}<li><a href="#practice">课后练习</a></li></ul></nav>${topic.pages.map(slideBlock).join('\n')}<section class="practice-section" id="practice"><h2>课后练习</h2>${practice.length?'<p>先独立尝试，再展开解析核对。原题、官方答案与补充解析保留英文。</p>'+practice.map(questionBlock).join('\n'):'<p>知识库中暂未找到只依赖本课知识的对应题目。你可以先遮住讲解中的结果，重新画出第 28、29 页的树形图，检查每条分支和停止条件。</p>'}</section><label class="read-toggle"><input type="checkbox" data-lesson-complete="${topic.slug}"> 我已学完这课</label><nav class="lesson-nav" aria-label="课程顺序">${i?`<a rel="prev" href="${config.topics[i-1].slug}.html">上一课：${esc(config.topics[i-1].title)}</a>`:'<a href="../l2-5.html">返回本章目录</a>'}${i+1<config.topics.length?`<a rel="next" href="${config.topics[i+1].slug}.html">下一课：${esc(config.topics[i+1].title)}</a>`:'<a href="../l2-5.html">回顾本章课程</a>'}</nav>`;
+  let html=shell(topic.title,body).replace('<body data-storage-prefix=',`<body data-lesson="lessons/${topic.slug}.html" data-storage-prefix=`);
+  fs.writeFileSync(path.join(root,'lessons',topic.slug+'.html'),html);
+  for(const n of topic.pages){manifest.pages.find(p=>p.page===n).topic=topic.slug;const id=String(n).padStart(2,'0');fs.writeFileSync(path.join(root,'pages',id+'.html'),shell(`课件第 ${n} 页`,`<p class="page-breadcrumb"><a href="../lessons/${topic.slug}.html#slide-${id}">返回本课：${esc(topic.title)}</a></p>${slideBlock(n)}`));}
+diff --git a/courses/l2-5/tools/chapter-lessons.mjs b/courses/l2-5/tools/chapter-lessons.mjs
+index 5a934c7..0290db6 100644
+--- a/courses/l2-5/tools/chapter-lessons.mjs
++++ b/courses/l2-5/tools/chapter-lessons.mjs
+@@ -1,3 +1,4 @@
++import {answerBlock} from './practice-answers.mjs';
+ import fs from 'node:fs';
+ import path from 'node:path';
+ import {createHash} from 'node:crypto';
+@@ -42,9 +43,9 @@ function checkChapter(c) {
+ }
+ 
+ function questionBlock(q, number) {
+-  const pages = Array.isArray(q.solutionPages) ? q.solutionPages : [q.solutionPages];
+-  const answerPage = pages[0] || q.page;
+-  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea><details class="answer"><summary>查看答案与解析</summary>${markdown(q.solutionMarkdown)}${q.mistakesMarkdown ? `<h4>容易出错的地方</h4>${markdown(q.mistakesMarkdown)}` : ''}<p class="small-note">答案来源：已核对的官方答案 · <a href="../${esc(q.pdf)}#page=${answerPage}">查看答案页</a> · <a href="../${esc(q.sourceNote)}">知识库原始记录</a></p></details></article>`;
++
++
++  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea>${answerBlock(q)}</article>`;
+ }
+ 
+ function lesson(c, t, index) {
+diff --git a/courses/l2-5/tools/chapter-practice.py b/courses/l2-5/tools/chapter-practice.py
+index 8210f04..fa532bc 100644
+--- a/courses/l2-5/tools/chapter-practice.py
++++ b/courses/l2-5/tools/chapter-practice.py
+@@ -1,10 +1,10 @@
++from practice_answers import answer_fields, metadata_fields
+ """Snapshot verified, original past-paper questions for L1.1–L1.4."""
+ from pathlib import Path
+ import hashlib
+ import json
+ import re
+ import shutil
+-import yaml
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ REPO = ROOT.parents[1]
+@@ -80,12 +80,11 @@ def main():
+                 assert len(matches) == 1, question_id
+                 source = matches[0]
+                 text = source.read_text()
+-                meta = yaml.safe_load(text.split('---', 2)[1])
++                meta = metadata_fields(text)
+                 assert meta['verification_status'] == 'verified', question_id
+                 assert meta['answer_source'] == 'official', question_id
+                 question, stems = printed_question(text, chapter)
+-                solution = section(text, 'Detailed Solution')
+-                assert solution and '[[' not in solution, question_id
++                answers = answer_fields(text)
+                 paper = REPO / meta['source_pdf']
+                 assert paper.is_file(), paper
+                 results.append({
+@@ -98,8 +97,7 @@ def main():
+                     'number': meta['question_number'], 'marks': meta.get('marks'),
+                     'verificationStatus': meta['verification_status'],
+                     'answerSource': meta['answer_source'],
+-                    'questionMarkdown': question, 'solutionMarkdown': solution,
+-                    'mistakesMarkdown': section(text, 'Common Mistakes')
++                    'questionMarkdown': question, **answers
+                 })
+         (chapter / 'practice.json').write_text(json.dumps(results, ensure_ascii=False, indent=2) + '\n')
+         print(f'{chapter_id}: {len(results)} verified original questions')
+diff --git a/courses/l2-5/tools/counting-lessons.mjs b/courses/l2-5/tools/counting-lessons.mjs
+index fc37a40..9c1d047 100644
+--- a/courses/l2-5/tools/counting-lessons.mjs
++++ b/courses/l2-5/tools/counting-lessons.mjs
+@@ -1,3 +1,4 @@
++import {answerBlock} from './practice-answers.mjs';
+ import fs from 'node:fs';
+ import path from 'node:path';
+ import {createHash} from 'node:crypto';
+@@ -32,7 +33,7 @@ function checkChapter(c) {
+   }
+   if (new Set(practice.map(q => q.id)).size !== practice.length) throw Error(`${id}: duplicate question`);
+   for (const q of practice) {
+-    if (q.verificationStatus !== 'verified' || !q.independentVerification || !(q.answerSource === 'official' || (q.id === 'Q-2017-MID-P10-c' && q.answerSource === 'derived' && q.verificationNote))) throw Error(`${id}/${q.id}: unverified answer`);
++    if (q.verificationStatus !== 'verified' || !q.independentVerification || !(q.answerSource === 'official' || (q.id === 'Q-2017-MID-P10-c' && q.answerSource === 'derived' && q.officialMarkdown))) throw Error(`${id}/${q.id}: unverified answer`);
+     if (sha(path.join(dir, q.sourceNote)) !== q.sourceNoteSha256 || sha(path.join(dir, q.pdf)) !== q.pdfSha256) throw Error(`${id}/${q.id}: source hash mismatch`);
+     if (!q.questionMarkdown || !q.solutionMarkdown) throw Error(`${id}/${q.id}: empty question/solution`);
+   }
+@@ -42,10 +43,10 @@ function checkChapter(c) {
+ }
+ 
+ function questionBlock(q, number) {
+-  const pages = Array.isArray(q.solutionPages) ? q.solutionPages : [q.solutionPages];
+-  const answerPage = pages[0] || q.page;
+-  const provenance = q.answerSource === 'derived' ? '独立核验的更正答案' : '官方答案与知识库补充解析，已独立核验';
+-  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<span>${esc(q.id)}</span> · <a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea><details class="answer"><summary>查看答案与解析</summary>${markdown(q.solutionMarkdown)}${q.verificationNote ? `<aside class="small-note"><strong>核验说明：</strong>${esc(q.verificationNote)}</aside>` : ''}${q.mistakesMarkdown ? `<h4>容易出错的地方</h4>${markdown(q.mistakesMarkdown)}` : ''}<p class="small-note">答案来源：${provenance} · <a href="../${esc(q.pdf)}#page=${answerPage}">查看印刷答案页</a> · <a href="../${esc(q.sourceNote)}">知识库原始记录</a></p></details></article>`;
++
++
++
++  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<span>${esc(q.id)}</span> · <a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea>${answerBlock(q)}</article>`;
+ }
+ 
+ function lesson(c, t, index) {
+diff --git a/courses/l2-5/tools/counting-practice.py b/courses/l2-5/tools/counting-practice.py
+index 54384f8..9de5140 100644
+--- a/courses/l2-5/tools/counting-practice.py
++++ b/courses/l2-5/tools/counting-practice.py
+@@ -1,3 +1,4 @@
++from practice_answers import answer_fields, metadata_fields
+ """Snapshot original questions only after every new explanation is written."""
+ from pathlib import Path
+ from collections import Counter
+@@ -6,7 +7,6 @@ from math import comb, factorial
+ import importlib.util
+ import json
+ import re
+-import yaml
+ 
+ spec = importlib.util.spec_from_file_location('chapter_practice', Path(__file__).with_name('chapter-practice.py'))
+ shared = importlib.util.module_from_spec(spec)
+@@ -46,12 +46,7 @@ REVIEW = {
+  'Q-2020-FINAL1-P03-b': '6右5上共462；必经C(3,3)20×10=200，避开262；原图查看并独立DP核验。',
+  'Q-2024S-FINAL-P04': '必经(2,3)前缀10，后续462减经(6,5)的15×10，10×312=3120；带访问标记DP核验。',
+ }
+-NOTES = {
+- 'Q-2017-MID-P10-c': '印刷答案错误地剩下 35 颗糖；四盒各预留 5 颗共 20 颗，正确剩余为 30。此处使用知识库中经独立推导和枚举核验的更正答案 C(33,3)=5456。',
+- 'Q-2018-FINAL-P11-b': '知识库解析最后一句使用“forbidden point”一词；本原题实际禁止的是 C→D 边。按前缀、该边、后缀计算的 18 条与答案 38 均正确。',
+- 'Q-2019-FINAL-P09-b': '知识库解析末句提到“forty people”；本原题的对象是 40 本不同杂志，计数公式不变。',
+- 'Q-2017-MID-P08-b': '本题只问展开后的不同项数，答案为 16。知识库解析末段提及指定 b 的指数，与本小题无关。',
+-}
++
+ 
+ def local_media(text, chapter):
+     def replace(match):
+@@ -121,7 +116,7 @@ def main():
+                 matches=list(KB.glob(question_id+' - *.md'))
+                 assert len(matches)==1
+                 source=matches[0]; text=source.read_text()
+-                meta=yaml.safe_load(text.split('---',2)[1])
++                meta=metadata_fields(text)
+                 assert meta['verification_status']=='verified'
+                 assert meta['answer_source']=='official' or (
+                     question_id=='Q-2017-MID-P10-c' and meta['answer_source']=='derived')
+@@ -131,9 +126,7 @@ def main():
+                     assert f'### {question_id}' in report_text
+                     independent='独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。'
+                 question,stems=shared.printed_question(text,chapter)
+-                section='Detailed Solution' if shared.section(text,'Detailed Solution') else 'Supplementary Explanation'
+-                solution=shared.section(text,section)
+-                assert solution and '[[' not in solution
++                answers=answer_fields(text)
+                 paper=REPO/meta['source_pdf']
+                 assert paper.is_file()
+                 results.append(dict(
+@@ -144,9 +137,8 @@ def main():
+                     page=meta['source_page'],solutionPages=meta.get('solution_page',[]),
+                     number=meta['question_number'],marks=meta.get('marks'),
+                     verificationStatus=meta['verification_status'],answerSource=meta['answer_source'],
+-                    solutionSection=section,questionMarkdown=question,solutionMarkdown=solution,
+-                    mistakesMarkdown=shared.section(text,'Common Mistakes'),
+-                    independentVerification=independent,verificationNote=NOTES.get(question_id,'')
++                    questionMarkdown=question,**answers,
++                    independentVerification=independent
+                 ))
+         (chapter/'practice.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
+         if ident=='l1-7':
+diff --git a/courses/l2-5/tools/l1-8-lessons.mjs b/courses/l2-5/tools/l1-8-lessons.mjs
+index d0d941f..1db96f5 100644
+--- a/courses/l2-5/tools/l1-8-lessons.mjs
++++ b/courses/l2-5/tools/l1-8-lessons.mjs
+@@ -1,3 +1,4 @@
++import {answerBlock} from './practice-answers.mjs';
+ import fs from 'node:fs';
+ import path from 'node:path';
+ import {createHash} from 'node:crypto';
+@@ -42,10 +43,10 @@ function checkChapter(c) {
+ }
+ 
+ function questionBlock(q, number) {
+-  const pages = Array.isArray(q.solutionPages) ? q.solutionPages : [q.solutionPages];
+-  const answerPage = pages[0] || q.page;
+-  const provenance = '官方答案与知识库补充解析，已独立核验';
+-  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<span>${esc(q.id)}</span> · <a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a>${(q.stemPages || []).filter(n => n !== q.page).map(n => ` · <a href="../${esc(q.pdf)}#page=${n}">共享题干 · 第 ${n} 页</a>`).join('')}</p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea><details class="answer"><summary>查看答案与解析</summary><h4>官方答案</h4>${markdown(q.officialMarkdown)}<h4>补充解析</h4>${markdown(q.solutionMarkdown)}${q.verificationNote ? `<aside class="small-note"><strong>核验说明：</strong>${esc(q.verificationNote)}</aside>` : ''}${q.mistakesMarkdown ? `<h4>容易出错的地方</h4>${markdown(q.mistakesMarkdown)}` : ''}<p class="small-note">答案来源：${provenance} · <a href="../${esc(q.pdf)}#page=${answerPage}">查看印刷答案页</a> · <a href="../${esc(q.sourceNote)}">知识库原始记录</a></p></details></article>`;
++
++
++
++  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<span>${esc(q.id)}</span> · <a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a>${(q.stemPages || []).filter(n => n !== q.page).map(n => ` · <a href="../${esc(q.pdf)}#page=${n}">共享题干 · 第 ${n} 页</a>`).join('')}</p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea>${answerBlock(q)}</article>`;
+ }
+ 
+ function lesson(c, t, index) {
+diff --git a/courses/l2-5/tools/l1-8-practice.py b/courses/l2-5/tools/l1-8-practice.py
+index 41ec3f0..6c49b60 100644
+--- a/courses/l2-5/tools/l1-8-practice.py
++++ b/courses/l2-5/tools/l1-8-practice.py
+@@ -1,3 +1,4 @@
++from practice_answers import answer_fields, metadata_fields
+ """Preserve selected original questions after all 22 explanations are committed."""
+ from pathlib import Path
+ from math import comb, factorial
+@@ -5,7 +6,6 @@ from itertools import product, permutations
+ import importlib.util
+ import json
+ import re
+-import yaml
+ 
+ spec = importlib.util.spec_from_file_location('practice', Path(__file__).with_name('chapter-practice.py'))
+ shared = importlib.util.module_from_spec(spec)
+@@ -68,24 +68,19 @@ if __name__ == '__main__':
+             assert len(matches) == 1
+             source = matches[0]
+             text = source.read_text()
+-            meta = yaml.safe_load(text.split('---',2)[1])
++            meta = metadata_fields(text)
+             assert meta['verification_status'] == 'verified' and meta['answer_source'] == 'official'
+             question, stems = shared.printed_question(text, chapter)
+             paper = shared.REPO / meta['source_pdf']
+             pdf = shared.snapshot(paper, chapter, 'papers')
+-            official = shared.section(text, 'Official Answer')
+-            # Convert Obsidian source links to local links without changing answer wording.
+-            official = re.sub(r'\[\[knowledge_base/past_paper/([^\]#]+)#page=(\d+)\|([^\]]+)\]\]',
+-                              lambda m: f'[{m[3]}](../sources/papers/{m[1]}#page={m[2]})', official)
+-            assert '[[' not in official
+-            stem_pages = [yaml.safe_load((shared.KB/'Stems'/f'{stem}.md').read_text().split('---',2)[1])['source_page'] for stem in stems]
++            answers = answer_fields(text)
++            stem_pages = [metadata_fields((shared.KB/'Stems'/f'{stem}.md').read_text())['source_page'] for stem in stems]
+             results.append(dict(id=ident,topic=topic['slug'],sourceNote=shared.snapshot(source,chapter,'notes'),
+                 sourceNoteSha256=shared.sha(source),stems=stems,stemPages=stem_pages,
+                 paper=meta['source_paper'].replace('[[','').replace(']]',''),pdf=pdf,pdfSha256=shared.sha(paper),
+                 page=meta['source_page'],solutionPages=meta.get('solution_page',[]),number=meta['question_number'],marks=meta.get('marks'),
+-                verificationStatus='verified',answerSource='official',solutionSection='Supplementary Explanation',
+-                questionMarkdown=question,officialMarkdown=official,solutionMarkdown=shared.section(text,'Supplementary Explanation'),
+-                mistakesMarkdown='',independentVerification=REVIEW[ident],verificationNote=''))
++                verificationStatus='verified',answerSource='official',
++                questionMarkdown=question,**answers,independentVerification=REVIEW[ident]))
+     (chapter/'practice.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
+     audit = chapter/'sources/audit'
+     audit.mkdir(exist_ok=True)
+diff --git a/courses/l2-5/tools/practice.py b/courses/l2-5/tools/practice.py
+index bec2c83..829a02d 100644
+--- a/courses/l2-5/tools/practice.py
++++ b/courses/l2-5/tools/practice.py
+@@ -1,14 +1,14 @@
++from practice_answers import answer_fields, metadata_fields
+ """Copy verified source questions and stems without rewriting their wording."""
+ from pathlib import Path
+ import json,re,shutil,hashlib
+ from datetime import datetime,timezone
+-import yaml
+ 
+ ROOT=Path(__file__).resolve().parents[1]
+ REPO=ROOT.parents[1]
+ KB=REPO/'knowledge_base'
+ def parse(p):
+- text=p.read_text(); metadata=yaml.safe_load(text.split('---',2)[1])
++ text=p.read_text(); metadata=metadata_fields(text)
+  return metadata,text
+ def section(text,name):
+  match=re.search(r'^## '+re.escape(name)+r'\s*\n(.*?)(?=^## |\Z)',text,re.M|re.S)
+@@ -54,10 +54,16 @@ for topic in config['topics']:
+     cm,ct=parse(cp);assert cm['verification_status']=='verified';companions.append(snapshot(cp));marks+=cm['marks']
+     part=re.sub(r'!?\[\[STEM-[^\]]+\]\]','',section(ct,'Question')).strip();clauses.append(part)
+    q+='\n\n'+clauses[0]+' '+clauses[1]
+-  solution=section(text,'Detailed Solution');assert solution
++  answers=answer_fields(text)
+   source=REPO/meta['source_pdf'];pdfout=ROOT/'sources/papers'/source.name;pdfout.parent.mkdir(exist_ok=True,parents=True)
+   if not pdfout.exists():shutil.copy2(source,pdfout)
+-  results.append({'id':qid,'topic':topic['slug'],'sourceNote':snapshot(p),'sourceNoteSha256':hashlib.sha256(p.read_bytes()).hexdigest(),'stems':stems,'companionNotes':companions,'paper':meta['source_paper'].replace('[[','').replace(']]',''),'pdf':'sources/papers/'+source.name,'page':meta['source_page'],'solutionPages':meta.get('solution_page',[]),'number':meta['question_number'],'marks':marks,'verificationStatus':meta['verification_status'],'answerSource':meta['answer_source'],'questionMarkdown':q,'solutionMarkdown':solution,'mistakesMarkdown':section(text,'Common Mistakes')})
++  results.append({'id':qid,'topic':topic['slug'],'sourceNote':snapshot(p),'sourceNoteSha256':hashlib.sha256(p.read_bytes()).hexdigest(),'stems':stems,'companionNotes':companions,'paper':meta['source_paper'].replace('[[','').replace(']]',''),'pdf':'sources/papers/'+source.name,'pdfSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'page':meta['source_page'],'solutionPages':meta.get('solution_page',[]),'number':meta['question_number'],'marks':marks,'verificationStatus':meta['verification_status'],'answerSource':meta['answer_source'],'questionMarkdown':q,**answers})
++  if companions:
++   current=results[-1]
++   current['answerParts']=[{'id':qid,'sourceNote':current['sourceNote'],'sourceNoteSha256':current['sourceNoteSha256'],'answerSource':current['answerSource'],**answers}]
++   for companion in companions:
++    cm,ct=parse(ROOT/companion)
++    current['answerParts'].append({'id':cm['id'],'sourceNote':companion,'sourceNoteSha256':hashlib.sha256((ROOT/companion).read_bytes()).hexdigest(),'answerSource':cm['answer_source'],**answer_fields(ct)})
+ (ROOT/'practice.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
+ with (ROOT/'events.jsonl').open('a') as f:f.write(json.dumps({'time':datetime.now(timezone.utc).isoformat(),'event':'practice_selected','questionCount':len(results)})+'\n')
+ print(f'Copied {len(results)} verified questions with original stems, solutions and local PDFs.')
+
+NEW FILE courses/l2-5/tools/practice-answers.mjs
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import {esc, markdown} from './render.mjs';
+import {ANSWER_HEADINGS, NON_ENGLISH, section, visibleAnswerText} from '../../../scripts/knowledge-base/answers.mjs';
+
+import {parseFrontmatter} from '../../../scripts/knowledge-base/schema.mjs';
+
+export const ANSWER_FORMAT_VERSION=2;
+export const shaText=text=>createHash('sha256').update(text,'utf8').digest('hex');
+
+export function localizeAnswer(source) {
+  return source.replace(/!?\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g,(_,target,alias)=>{
+    if(!/^knowledge_base\/past_paper\/[^#]+\.pdf#page=[1-9]\d*$/.test(target)){
+      throw Error('Unsupported answer reference: '+target);
+    }
+    const local='../sources/papers/'+target.slice('knowledge_base/past_paper/'.length);
+    return '['+(alias||target)+']('+local+')';
+  });
+}
+
+export function answerFields(text) {
+  const bodies=ANSWER_HEADINGS.map(name=>section(text,name));
+  for(let i=0;i<bodies.length;i++){
+    if(!bodies[i])throw Error('Missing '+ANSWER_HEADINGS[i]);
+    if(NON_ENGLISH.test(visibleAnswerText(bodies[i])))throw Error('Non-English '+ANSWER_HEADINGS[i]);
+  }
+  return {
+    answerFormatVersion:ANSWER_FORMAT_VERSION,
+    officialMarkdown:localizeAnswer(bodies[0]),
+    solutionMarkdown:localizeAnswer(bodies[1]),
+    solutionSection:'Supplementary Explanation',
+    officialSourceSha256:shaText(bodies[0]),
+    supplementarySourceSha256:shaText(bodies[1])
+  };
+}
+
+export function answerBlock(q) {
+  const parts=q.answerParts||[q];
+  for(const part of parts){
+    if(part.answerFormatVersion!==ANSWER_FORMAT_VERSION||!part.officialMarkdown||!part.solutionMarkdown){
+      throw Error('Refresh the two-part answer snapshot before building: '+part.id);
+    }
+  }
+  const body=(key)=>parts.map(part=>
+    (parts.length>1?'<p class="small-note" lang="en">'+esc(part.id)+'</p>':'')+
+    '<div class="answer-part" data-answer-source-id="'+esc(part.id)+'" lang="en">'+markdown(part[key])+'</div>'
+  ).join('');
+  const pages=Array.isArray(q.solutionPages)?q.solutionPages:[q.solutionPages];
+  // These links are provenance metadata; authored legacy answer blocks are absent.
+  const sourceLinks=parts.map(part=>'<a href="../'+esc(part.sourceNote||q.sourceNote)+'">'+esc(part.id)+'</a>').join(' · ');
+  const provenance=q.answerSource==='derived'?'印刷原文与知识库独立推导；保留来源标记':'知识库保留的官方原文与补充解析';
+  return '<details class="answer" data-answer-format="two-part"><summary>查看答案与解析</summary>'+
+    '<h4>Official Answer</h4><div class="official-answer" lang="en">'+body('officialMarkdown')+'</div>'+
+    '<h4>Supplementary Explanation</h4><div class="supplementary-explanation" lang="en">'+body('solutionMarkdown')+'</div>'+
+    '<p class="small-note">答案来源：'+provenance+' · <a href="../'+esc(q.pdf)+'#page='+(pages[0]||q.page)+'">查看印刷答案页</a> · 知识库原始记录：'+sourceLinks+'</p></details>';
+}
+
+// Python snapshot producers use this exact parser/display conversion as well.
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
+  if(!['fields','metadata'].includes(process.argv[2]))throw Error('Usage: practice-answers.mjs fields|metadata');
+  let input='';
+  for await(const chunk of process.stdin)input+=chunk;
+  process.stdout.write(JSON.stringify(process.argv[2]==='metadata'?parseFrontmatter(input).properties:answerFields(input)));
+}
+
+NEW FILE courses/l2-5/tools/practice_answers.py
+"""Use the shared, code-aware two-section answer parser from Python builders."""
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+
+def _read_fields(text, mode):
+    node=os.environ.get('CODEX_NODE') or shutil.which('node')
+    if not node:
+        candidate=Path.home()/'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node'
+        if candidate.is_file():
+            node=str(candidate)
+    if not node:
+        raise RuntimeError('Node runtime is required for the shared answer parser')
+    script=Path(__file__).with_name('practice-answers.mjs')
+    result=subprocess.run([node,str(script),mode],input=text,text=True,
+                          capture_output=True,check=True)
+    return json.loads(result.stdout)
+
+
+def answer_fields(text):
+    return _read_fields(text, 'fields')
+
+
+def metadata_fields(text):
+    return _read_fields(text, 'metadata')
+
+NEW FILE courses/l2-5/tools/sync-practice-answers.mjs
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {root} from './render.mjs';
+import {answerFields,answerBlock} from './practice-answers.mjs';
+import {parseFrontmatter} from '../../../scripts/knowledge-base/schema.mjs';
+
+const repo=path.resolve(root,'../..');
+const kb=path.join(repo,'knowledge_base/04-Questions');
+const sha=value=>createHash('sha256').update(value).digest('hex');
+const index=new Map();
+for(const file of fs.readdirSync(kb).filter(n=>n.startsWith('Q-')&&n.endsWith('.md'))){
+  const id=file.split(' - ')[0];
+  assert.ok(!index.has(id),'Duplicate knowledge-base ID '+id);
+  index.set(id,path.join(kb,file));
+}
+export const practiceFiles=[path.join(root,'practice.json'),...fs.readdirSync(path.join(root,'chapters'))
+  .map(id=>path.join(root,'chapters',id,'practice.json')).filter(fs.existsSync).sort()];
+const write=process.argv.includes('--write');
+const changes=new Map(),audit=[];
+let stale=0,occurrences=0,partsCount=0;
+function stage(file,bytes){
+  if(!fs.existsSync(file)||!fs.readFileSync(file).equals(Buffer.from(bytes))){
+    changes.set(file,bytes);
+  }
+}
+function source(id,directory,sourceNote){
+  assert.ok(index.has(id),'Missing current source '+id);
+  const file=index.get(id),bytes=fs.readFileSync(file),text=bytes.toString('utf8');
+  const meta=parseFrontmatter(text).properties;
+  assert.equal(meta.verification_status,'verified',id);
+  const target=sourceNote||'sources/notes/'+path.basename(file);
+  stage(path.join(directory,target),bytes);
+  const fields={id,sourceNote:target,sourceNoteSha256:sha(bytes),answerSource:meta.answer_source,...answerFields(text)};
+  // Every reference in either retained answer must resolve to the exact local PDF.
+  const refs=new Set([meta.source_pdf,...[...text.matchAll(/\[\[(knowledge_base\/past_paper\/[^#\]]+\.pdf)#page=/g)].map(m=>m[1])]);
+  for(const reference of refs){
+    const original=path.join(repo,reference);
+    assert.ok(fs.existsSync(original),'Missing PDF '+original);
+    const local=path.join(directory,'sources/papers',path.basename(reference));
+    if(fs.existsSync(local))assert.equal(sha(fs.readFileSync(local)),sha(fs.readFileSync(original)),'PDF snapshot differs '+local);
+    else stage(local,fs.readFileSync(original));
+  }
+  partsCount++;
+  return {fields,meta};
+}
+for(const file of practiceFiles){
+  const directory=path.dirname(file);
+  const before=JSON.parse(fs.readFileSync(file,'utf8'));
+  const after=before.map(old=>{
+    const q={...old};
+    const primary=source(q.id,directory,q.sourceNote);
+    Object.assign(q,primary.fields,{verificationStatus:primary.meta.verification_status});
+    q.pdfSha256=sha(fs.readFileSync(path.join(repo,primary.meta.source_pdf)));
+    delete q.mistakesMarkdown;
+    delete q.verificationNote;
+    delete q.answerParts;
+    if(q.companionNotes?.length){
+      q.answerParts=[{...primary.fields}];
+      for(const companion of q.companionNotes){
+        const id=path.basename(companion).split(' - ')[0];
+        q.answerParts.push(source(id,directory,companion).fields);
+      }
+    }
+    const changed=JSON.stringify(q)!==JSON.stringify(old);
+    if(changed)stale++;
+    audit.push({id:q.id,practiceFile:path.relative(repo,file),changed,
+      oldOfficialPresent:!!old.officialMarkdown,oldExtraBlocks:!!old.mistakesMarkdown||!!old.verificationNote,
+      primarySource:q.sourceNote,sourceSha256:q.sourceNoteSha256,
+      officialSourceSha256:q.officialSourceSha256,supplementarySourceSha256:q.supplementarySourceSha256,
+      parts:(q.answerParts||[q]).map(p=>p.id)});
+    occurrences++;
+    return q;
+  });
+  stage(file,JSON.stringify(after,null,2)+'\n');
+  const config=JSON.parse(fs.readFileSync(path.join(directory,'course.config.json'),'utf8'));
+  for(const topic of config.topics){
+    const lessonFile=path.join(directory,'lessons',topic.slug+'.html');
+    const original=fs.readFileSync(lessonFile,'utf8');
+    // Exactly replace answer details inside each exercise; preserve lecture/details/IDs.
+    let matched=0;
+    const updated=original.replace(/(<article\b[^>]*data-question-id="([^"]+)"[^>]*>)([\s\S]*?)(<\/article>)/g,
+      (whole,start,id,inside,end)=>{
+        const q=after.find(q=>q.id===id&&q.topic===topic.slug);
+        assert.ok(q,'Unexpected exercise '+id+' in '+lessonFile);
+        const answers=[...inside.matchAll(/<details\b[^>]*class="answer"[^>]*>[\s\S]*?<\/details>/g)];
+        assert.equal(answers.length,1,'Expected one exercise answer '+id);
+        matched++;
+        return start+inside.replace(answers[0][0],answerBlock(q))+end;
+      });
+    assert.equal(matched,topic.questions.length,'Rendered question coverage mismatch '+lessonFile);
+    const outdatedCopy='原题保留英文，解析含中文。';
+    const finalHtml=updated.replaceAll(outdatedCopy,'原题、官方答案与补充解析保留英文。');
+    stage(lessonFile,finalHtml);
+  }
+}
+const result={mode:write?'write':'check',exerciseOccurrences:occurrences,answerParts:partsCount,
+  uniquePrimaryIds:new Set(audit.map(q=>q.id)).size,staleExercises:stale,filesToUpdate:changes.size,audit};
+if(write){
+  for(const [file,bytes]of changes){
+    fs.mkdirSync(path.dirname(file),{recursive:true});
+    const temporary=file+'.answer-sync.tmp';fs.writeFileSync(temporary,bytes);fs.renameSync(temporary,file);
+  }
+  const out=path.join(repo,'output/website-practice-answers-20261009');
+  fs.mkdirSync(out,{recursive:true});
+  fs.writeFileSync(path.join(out,'sync-report.json'),JSON.stringify(result,null,2)+'\n');
+}
+console.log(JSON.stringify({...result,audit:undefined},null,2));
+if(!write&&changes.size)process.exitCode=1;
+
+NEW FILE courses/l2-5/tools/verify-practice-answers.mjs
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import {root,markdown} from './render.mjs';
+import {answerBlock,localizeAnswer,shaText} from './practice-answers.mjs';
+import {section,answerStructureErrors,NON_ENGLISH,visibleAnswerText} from '../../../scripts/knowledge-base/answers.mjs';
+import {parseFrontmatter} from '../../../scripts/knowledge-base/schema.mjs';
+
+const repo=path.resolve(root,'../..');
+const output=path.join(repo,'output/website-practice-answers-20261009');
+const baseline=JSON.parse(fs.readFileSync(path.join(output,'baseline.json'),'utf8'));
+const sha=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const kb=path.join(repo,'knowledge_base/04-Questions');
+const sources=new Map(fs.readdirSync(kb).filter(n=>n.startsWith('Q-')&&n.endsWith('.md')).map(n=>[n.split(' - ')[0],path.join(kb,n)]));
+const inventory=[root,...fs.readdirSync(path.join(root,'chapters')).map(id=>path.join(root,'chapters',id))]
+  .filter(dir=>fs.existsSync(path.join(dir,'practice.json')));
+const allowed=new Set(),unique=new Set(),lessonPaths=[];
+let exercises=0,partsCount=0,lessons=0,math=0,links=0;
+function normalize(html){
+  return html.replace(/(<article\b[^>]*data-question-id="[^"]+"[^>]*>)([\s\S]*?)(<\/article>)/g,
+    (_,start,inside,end)=>start+inside.replace(/<details\b[^>]*class="answer"[^>]*>[\s\S]*?<\/details>/g,'ANSWER')+end)
+    .replaceAll('原题保留英文，解析含中文。','原题、官方答案与补充解析保留英文。');
+}
+for(const dir of inventory){
+  const practicePath=path.join(dir,'practice.json');
+  const relative=path.relative(repo,practicePath);
+  allowed.add(relative);
+  const old=JSON.parse(execFileSync('git',['show','HEAD:'+relative],{cwd:repo,encoding:'utf8'}));
+  const current=JSON.parse(fs.readFileSync(practicePath,'utf8'));
+  assert.deepEqual(current.map(q=>q.id),old.map(q=>q.id));
+  const config=JSON.parse(fs.readFileSync(path.join(dir,'course.config.json'),'utf8'));
+  for(const q of current){
+    const before=old.find(p=>p.id===q.id);
+    for(const key of ['id','topic','questionMarkdown','stems','companionNotes','paper','pdf','page','solutionPages','number','marks']){
+      assert.deepEqual(q[key],before[key],q.id+' protected '+key);
+    }
+    assert.ok(!('mistakesMarkdown' in q)&&!('verificationNote' in q),'Obsolete answer blocks '+q.id);
+    const parts=q.answerParts||[q];
+    assert.deepEqual(parts.map(p=>p.id),[q.id,...(q.companionNotes||[]).map(n=>path.basename(n).split(' - ')[0])]);
+    for(const part of parts){
+      const canonical=sources.get(part.id);
+      assert.ok(canonical);
+      const source=fs.readFileSync(canonical,'utf8');
+      const meta=parseFrontmatter(source).properties;
+      assert.deepEqual(answerStructureErrors(source,meta.answer_source),[],part.id+' source structure');
+      const snapshot=path.join(dir,part.sourceNote);
+      allowed.add(path.relative(repo,snapshot));
+      assert.equal(fs.readFileSync(snapshot,'utf8'),source,'Stale source snapshot '+part.id);
+      assert.equal(sha(snapshot),part.sourceNoteSha256);
+      assert.equal(part.answerSource,meta.answer_source);
+      assert.equal(part.answerFormatVersion,2);
+      const official=section(source,'Official Answer'),supplement=section(source,'Supplementary Explanation');
+      assert.equal(part.officialSourceSha256,shaText(official));
+      assert.equal(part.supplementarySourceSha256,shaText(supplement));
+      assert.equal(part.officialMarkdown,localizeAnswer(official));
+      assert.equal(part.solutionMarkdown,localizeAnswer(supplement));
+      for(const text of [part.officialMarkdown,part.solutionMarkdown]){
+        assert.ok(!NON_ENGLISH.test(visibleAnswerText(text)),part.id+' English');
+        assert.ok(!text.includes('[['),part.id+' local links');
+        const rendered=markdown(text);
+        math+=(rendered.match(/class="katex"/g)||[]).length;
+      }
+      partsCount++;
+    }
+    exercises++;unique.add(q.id);
+  }
+  for(const topic of config.topics){
+    const file=path.join(dir,'lessons',topic.slug+'.html');
+    const rel=path.relative(repo,file);
+    const before=execFileSync('git',['show','HEAD:'+rel],{cwd:repo,encoding:'utf8',maxBuffer:20*1024*1024});
+    const html=fs.readFileSync(file,'utf8');
+    assert.equal(normalize(html),normalize(before),'Lecture/question/navigation changed '+rel);
+    allowed.add(rel);lessonPaths.push(path.relative(root,file));
+    const articles=[...html.matchAll(/<article\b[^>]*data-question-id="([^"]+)"[^>]*>([\s\S]*?)<\/article>/g)];
+    assert.deepEqual(articles.map(m=>m[1]),topic.questions);
+    for(const [,id,inside] of articles){
+      const q=current.find(q=>q.id===id);
+      assert.ok(inside.includes(answerBlock(q)),id+' answer HTML differs from source display');
+      const answer=inside.match(/<details\b[^>]*class="answer"[^>]*>([\s\S]*?)<\/details>/)[1];
+      const headings=[...answer.matchAll(/<h4>(.*?)<\/h4>/g)].map(m=>m[1]);
+      assert.deepEqual(headings,['Official Answer','Supplementary Explanation'],id+' only two answer parts');
+      assert.ok(!/容易出错的地方|核验说明|Detailed Solution|Correction \/ Completion|Common Mistakes/.test(answer),id+' deleted block');
+    }
+    for(const [,target]of html.matchAll(/(?:href|src)="([^"]+)"/g)){
+      const cleaned=target.replaceAll('&amp;','&');
+      if(/^(data:|https?:)/.test(cleaned))continue;
+      const [name,fragment]=cleaned.split('#');
+      const actual=name?path.resolve(path.dirname(file),decodeURIComponent(name)):file;
+      assert.ok(fs.existsSync(actual),'Missing local link '+actual);
+      if(fragment&&actual.endsWith('.html'))assert.ok(fs.readFileSync(actual,'utf8').includes('id="'+fragment+'"'));
+      links++;
+    }
+    lessons++;
+  }
+}
+const protectedChanged=[];
+for(const [file,digest] of Object.entries(baseline)){
+  if(sha(path.join(repo,file))!==digest&&!allowed.has(file)){
+    // Only the four source producers and four course builders are implementation changes.
+    const implementation=['practice.py','chapter-practice.py','counting-practice.py','l1-8-practice.py',
+      'build.mjs','chapter-lessons.mjs','counting-lessons.mjs','l1-8-lessons.mjs'].map(n=>'courses/l2-5/tools/'+n);
+    if(!implementation.includes(file))protectedChanged.push(file);
+  }
+}
+assert.deepEqual(protectedChanged,[],'Unrelated baseline files changed');
+assert.equal(exercises,118);assert.equal(partsCount,120);assert.equal(unique.size,117);
+const result={status:'passed',exercises,uniquePrimaryIds:unique.size,sourceAnswerPairs:partsCount,
+  lessons,mathExpressions:math,localReferences:links,protectedFiles:Object.keys(baseline).length,
+  sourceBodiesExact:true,questionsAndLecturesUnchanged:true,knowledgeBaseAndPDFsUnchanged:true,lessonPaths};
+fs.writeFileSync(path.join(output,'verification.json'),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({...result,lessonPaths:undefined},null,2));
+
+NEW FILE courses/l2-5/tools/practice-answers.test.mjs
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {root} from './render.mjs';
+import {answerFields,answerBlock} from './practice-answers.mjs';
+
+test('printed error remains official and verified derived result remains separate',()=>{
+  const text=fs.readFileSync(path.resolve(root,'../../knowledge_base/04-Questions/Q-2017-MID-P10-c - Combinatorial Selection.md'),'utf8');
+  const fields=answerFields(text);
+  assert.ok(fields.officialMarkdown.includes('\\binom{35+4-1}{3}'));
+  assert.ok(!fields.officialMarkdown.includes('5456'));
+  assert.ok(fields.solutionMarkdown.includes('\\binom{33}{3}=5456'));
+  const html=answerBlock({id:'Q-2017-MID-P10-c',sourceNote:'source.md',pdf:'paper.pdf',page:12,answerSource:'derived',...fields});
+  assert.ok(html.includes('印刷原文与知识库独立推导'));
+  assert.deepEqual([...html.matchAll(/<h4>([^<]+)<\/h4>/g)].map(m=>m[1]),['Official Answer','Supplementary Explanation']);
+});
+test('shared parser preserves fenced H2 comments rather than truncating the retained answer',()=>{
+  const source='## Official Answer\n\nPrinted answer.\n\n## Supplementary Explanation\n\n```python\n## English code comment\nprint(1)\n```\n\nRetained ending.\n\n## Common Mistakes\n\nDiscard this legacy prose.\n';
+  const fields=answerFields(source);
+  assert.ok(fields.solutionMarkdown.includes('## English code comment'));
+  assert.ok(fields.solutionMarkdown.endsWith('Retained ending.'));
+  assert.ok(!fields.solutionMarkdown.includes('Discard'));
+  assert.throws(()=>answerFields(source.replace('English code comment','中文代码注释')),/Non-English/);
+});
+test('joined socks exercise includes both companion proofs without extra answer sections',()=>{
+  const q=JSON.parse(fs.readFileSync(path.join(root,'practice.json'),'utf8')).find(q=>q.id==='Q-2025S-FINAL-P07-N');
+  assert.deepEqual(q.answerParts.map(p=>p.id),['Q-2025S-FINAL-P07-N','Q-2025S-FINAL-P07-sufficient','Q-2025S-FINAL-P07-minimal']);
+  const html=answerBlock(q);
+  assert.deepEqual([...html.matchAll(/<h4>([^<]+)<\/h4>/g)].map(m=>m[1]),['Official Answer','Supplementary Explanation']);
+  assert.equal((html.match(/data-answer-source-id=/g)||[]).length,6);
+  assert.ok(html.includes('This valid counterexample disproves sufficiency'));
+});
+test('outdated snapshots stop a rebuild instead of silently restoring a single answer block',()=>{
+  assert.throws(()=>answerBlock({id:'old',solutionMarkdown:'Old worked answer.'}),/Refresh the two-part answer snapshot/);
+});
+
+NEW FILE courses/l2-5/tools/check-answer-producers.py
+"""Run all four legacy producers/builders in an isolated, source-backed copy."""
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import tempfile
+
+ROOT=Path(__file__).resolve().parents[1]
+REPO=ROOT.parents[1]
+NODE=Path.home()/'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node'
+SCRIPTS=['practice.py','chapter-practice.py','counting-practice.py','l1-8-practice.py']
+BUILDERS=['build.mjs','chapter-lessons.mjs','counting-lessons.mjs','l1-8-lessons.mjs']
+
+with tempfile.TemporaryDirectory(prefix='comp2711-answer-producers-') as temporary:
+    clone=Path(temporary)/'repo'
+    clone.mkdir()
+    (clone/'knowledge_base').symlink_to(REPO/'knowledge_base',target_is_directory=True)
+    site=clone/'courses/l2-5'
+    tools=site/'tools'
+    tools.mkdir(parents=True)
+    for file in (ROOT/'tools').iterdir():
+        if file.suffix in ('.py','.mjs','.json'):
+            shutil.copy2(file,tools/file.name)
+    (tools/'node_modules').symlink_to(ROOT/'tools/node_modules',target_is_directory=True)
+    (clone/'scripts/knowledge-base').mkdir(parents=True)
+    for name in ('answers.mjs','schema.mjs'):
+        shutil.copy2(REPO/'scripts/knowledge-base'/name,clone/'scripts/knowledge-base'/name)
+    for original in [ROOT,*sorted((ROOT/'chapters').iterdir())]:
+        if not (original/'practice.json').exists():
+            continue
+        destination=site/original.relative_to(ROOT)
+        destination.mkdir(parents=True,exist_ok=True)
+        for name in ('course.config.json','manifest.json','chapter.meta.json','events.jsonl'):
+            if (original/name).exists():
+                shutil.copy2(original/name,destination/name)
+        for folder in ('sources','lessons','pages'):
+            (destination/folder).mkdir(exist_ok=True)
+        for folder in ('responses','slides','errata','notes'):
+            if (original/folder).is_dir():
+                (destination/folder).symlink_to(original/folder,target_is_directory=True)
+    old_review=REPO/'output/counting-courses-20261002/l1-7-question-review.md'
+    target=clone/'output/counting-courses-20261002'
+    target.mkdir(parents=True)
+    shutil.copy2(old_review,target/old_review.name)
+    logs=[]
+    for script in SCRIPTS:
+        result=subprocess.run([shutil.which('python3'),str(tools/script)],cwd=clone,text=True,capture_output=True)
+        assert result.returncode==0,(script,result.stdout,result.stderr)
+        logs.append({'script':script,'stdout':result.stdout.strip(),'status':'passed'})
+    exercises=0
+    for generated in [site/'practice.json',*sorted((site/'chapters').glob('*/practice.json'))]:
+        original=ROOT/generated.relative_to(site)
+        expected=json.loads(original.read_text())
+        current=json.loads(generated.read_text())
+        assert [q['id'] for q in current]==[q['id'] for q in expected]
+        for q,old in zip(current,expected):
+            for key in ('questionMarkdown','officialMarkdown','solutionMarkdown','officialSourceSha256','supplementarySourceSha256','answerFormatVersion','pdfSha256'):
+                assert q[key]==old[key],(generated,q['id'],key)
+            assert not q.get('mistakesMarkdown') and not q.get('verificationNote')
+            assert q.get('answerParts')==old.get('answerParts'),(generated,q['id'],'companions')
+            exercises+=1
+    for script in BUILDERS:
+        result=subprocess.run([str(NODE),str(tools/script)],cwd=clone,text=True,capture_output=True)
+        assert result.returncode==0,(script,result.stdout,result.stderr)
+        logs.append({'script':script,'stdout':result.stdout.strip(),'status':'passed'})
+    actual=0
+    for html in [*sorted((site/'lessons').glob('*.html')),*sorted((site/'chapters').glob('*/lessons/*.html'))]:
+        actual+=html.read_text().count('data-answer-format="two-part"')
+        assert '容易出错的地方' not in html.read_text()
+    assert actual==exercises==118
+    output=REPO/'output/website-practice-answers-20261009/producer-check.json'
+    output.write_text(json.dumps({'status':'passed','isolation':'temporary copy','exercises':exercises,'scripts':logs},ensure_ascii=False,indent=2)+'\n')
+    print(json.dumps({'status':'passed','exercises':exercises,'producers':len(SCRIPTS),'builders':len(BUILDERS)},indent=2))

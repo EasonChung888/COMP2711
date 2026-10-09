@@ -41,26 +41,19 @@ Official answer or marking material: ![[knowledge_base/past_paper/2016-midterm.p
 
 Shared context: [[STEM-2016-MID-P06 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-第二句要求找到同一个整数，同时满足偶数条件与 $p$。这正是从偶数集合中找到满足 $p$ 的元素，因此两个存在见证可以直接互相使用。
+Source: [[knowledge_base/past_paper/2016-midterm.pdf#page=10|PDF physical page 10]].
 
-## Detailed Solution
+(d) Yes.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** Equivalent.
 
 **Derivation/proof.** A witness $x\in E$ for (i) is an integer with $q(x)$ and $p(x)$, hence witnesses (ii). Conversely, a witness of $q(x)\land p(x)$ is even by $q(x)$, so belongs to $E$ and witnesses (i).
 
-### 中文解答
-
-**推导。** 若(i)有见证u，则u偶且p(u)真；作为整数u又满足q(u)，所以 $q(u)\land p(u)$ 真，可直接用u作(ii)见证。反之若(ii)有见证v，合取消去给q(v)与p(v)，q(v)说明v偶，即v∈E，因此v也作(i)见证。见证双向转用，故两式等价。
-
-## Common Mistakes
-
-- 用两个不同整数分别满足偶数与 $p$，违反同一见证要求。
-- 把合取改成蕴含，重新引入奇数的空真见证。
+If (i) has witness $u$, then $q(u)\land p(u)$ witnesses (ii). Conversely, conjunction elimination for witness $v$ yields $q(v)$ and $p(v)$, so $v\in E$ and it witnesses (i).
 
 ## Connections
 

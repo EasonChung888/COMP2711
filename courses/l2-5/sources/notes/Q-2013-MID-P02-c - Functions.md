@@ -40,26 +40,17 @@ Explain how your answers are derived.
 
 Shared context: [[STEM-2013-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-两个不等式没有要求 $f(1)\ne f(3)$。先固定中间值能清楚看到两端各自只排除一个值。
+Source: [[knowledge_base/past_paper/2013-midterm.pdf#page=4|PDF physical page 4]].
 
-## Detailed Solution
+(c) We determine $f(2)$, $f(1)$ and $f(3)$ in order. There are $n$ possibilities for $f(2)$, $n-1$ possibilities for $f(1)$, and $n-1$ possibilities for $f(3)$. So, the answer is: $n(n-1)^2$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $n(n-1)^2$.
 
 **Derivation/proof.** Choose the middle value $f(2)$ first ($n$ choices). Each endpoint must avoid it, independently giving $(n-1)^2$ choices; $f(1)$ and $f(3)$ may coincide.
-
-### 中文解答
-
-**推导。** 先固定中间的 $f(2)$，有 n 种选择。两端各自只需避开它，所以 $f(1)$ 有 n−1 种，$f(3)$ 也有 n−1 种。题目没有要求两端互异，故这些选择可以相乘，得到 $n(n-1)^2$。
-
-## Common Mistakes
-
-- 错误增加 $f(1)\ne f(3)$。
-- 把结果写成 $n(n-1)(n-2)$。
 
 ## Connections
 

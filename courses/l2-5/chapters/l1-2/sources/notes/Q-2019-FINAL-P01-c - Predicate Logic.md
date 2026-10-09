@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-final.p
 
 Shared context: [[STEM-2019-FINAL-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-全称 x 在前，存在 y 在后，表示可以看见 x 后再选择 y。取两倍 x 就让表达式为零，总能小于等于一，而且 y 仍是整数，所以对每个 x 都找到合法见证。
+Source: [[knowledge_base/past_paper/2019-final.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+True. For any $x$, setting $y=2x$ makes the proposition true.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** True.
 
 **Derivation/proof.** Let $x$ be an arbitrary integer and choose $y=2x$, which is also an integer. Then $2x-y=0\le1$. This constructs a valid witness for every allowed x, proving the quantified statement. The witness is selected after x, as required by the quantifier order.
 
-### 中文解答
-
-**推导。** 断言为真。给定任意整数 $x$，选整数 $y=2x$，于是 $2x-y=2x-2x=0\le1$。这个构造对每个 $x$ 都有效，而且存在见证是在 $x$ 给定后才选择，正符合 $\forall x\exists y$ 的顺序。
-
-## Common Mistakes
-
-- 交换量词后仍声称同一个证明成立。
-- 选择非整数 y 却没有检查论域。
+For the order $\forall x\exists y$, the witness may depend on $x$. Taking $y=2x$ yields $2x-2x=0\le1$, which validates that quantifier order directly.
 
 ## Connections
 

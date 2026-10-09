@@ -45,13 +45,25 @@ Conclusion: $\neg s$
 
 Shared context: [[STEM-2015-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-合取前提给出 $p$ 和 $q$。利用 $p$ 推出并非 $q,r$ 同真；因为 $q$ 已真，所以 $r$ 必假。最后由 $s\to r$ 否定后件，得到 $\neg s$。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(c)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+| Step | Statement | Reason |
+| --- | --- | --- |
+| 1 | $p\land q$ | Premise |
+| 2 | $p$ | Simplification |
+| 3 | $q$ | Simplification |
+| 4 | $p\to\neg(q\land r)$ | Premise |
+| 5 | $\neg(q\land r)$ | Modus Ponens (3,4) |
+| 6 | $\neg q\lor\neg r$ | DeMorgan's law, 5 |
+| 7 | $\neg r$ | Disjunctive syllogism (3,6) |
+| 8 | $s\to r$ | Premise |
+| 9 | $\neg s$ | Modus tollens (7,8) |
+
+## Supplementary Explanation
 
 **Answer.** $\neg s$ follows.
 
@@ -62,15 +74,6 @@ Provenance: official; supplied source conclusion checked on PDF page(s) 6. The C
 5. $\neg s$ (modus tollens using $s\to r$, 4).
 
 The printed solution's step 5 cites its line 3 ($q$) where line 2 ($p$) is needed; the derivation above uses the correct premise.
-
-### 中文解答
-
-**推导。** 由 $p\land q$ 分别作合取消去得 p、q。用 p 和第三前提作肯定前件，得 $\neg(q\land r)$；德摩根律化为 $\neg q\lor\neg r$。因为 q 已成立，析取三段论给 $\neg r$。最后与 $s\to r$ 用否定后件，得 $\neg s$。源页第五行误引第三行 q，实际必须引用第二行 p；这是行号引用错误，结论及上述公式均可逐步验证。
-
-## Common Mistakes
-
-- 把 $\neg(q\land r)$ 误变成 $\neg q\land\neg r$。
-- 使用 $p\to\neg(q\land r)$ 时引用 $q$，而非其实际前件 $p$。
 
 ## Connections
 

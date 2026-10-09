@@ -37,26 +37,19 @@ Then, prove the contrapositive directly.
 
 Shared context: [[STEM-2018-MID-P04-a - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-把定义域元素视为物件，把陪域元素视为盒子，函数值决定放进哪个盒子。物件比盒子多时必有碰撞，即两个不同输入同像；这直接给出非单射，而不用再绕一次反证。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=6|physical PDF page 6]].
 
-## Detailed Solution
+The contrapositive is “If $\lvert T\rvert<\lvert S\rvert$, then $f$ is not injective”. We can prove it by the pigeonhole principle. $f$ maps pigeons in $S$ to holes in $T$. Since $\lvert T\rvert<\lvert S\rvert$, there must be two pigeons that share a same hole, say $a,b\in S$. Then $a\ne b$ but $f(a)=f(b)$, so $f$ is not injective.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** If $|T|<|S|$, the function $f$ is not injective.
 
 **Derivation/proof.** Assume $|S|>|T|$. Regard the elements of $S$ as pigeons and the elements of $T$ as holes, sending $s$ to hole $f(s)$. By pigeonhole principle, two distinct elements $a,b\in S$ share an image: $f(a)=f(b)$. This is precisely failure of injectivity.
 
-### 中文解答
-
-**推导。** 设 $|S|>|T|$。把有限集合 $S$ 的元素当作鸽子，把 $T$ 的元素当作鸽巢，并将每个 $s$ 放入由函数值 $f(s)$ 指定的巢。鸽子多于巢，由鸽巢原理存在 $a,b\in S$，$a\ne b$ 而 $f(a)=f(b)$。这正是否定单射的见证，直接证明“若 $|T|<|S|$，则 $f$ 非单射”。
-
-## Common Mistakes
-
-- 只说输出少却没有联系单射定义。
-- 错误认为满射可以避免输入碰撞。
+To show failure of injectivity, the two inputs must satisfy $a\ne b$ while their outputs agree; equality of outputs for the same input would prove nothing.
 
 ## Connections
 

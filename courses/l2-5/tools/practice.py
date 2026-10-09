@@ -1,14 +1,14 @@
+from practice_answers import answer_fields, metadata_fields
 """Copy verified source questions and stems without rewriting their wording."""
 from pathlib import Path
 import json,re,shutil,hashlib
 from datetime import datetime,timezone
-import yaml
 
 ROOT=Path(__file__).resolve().parents[1]
 REPO=ROOT.parents[1]
 KB=REPO/'knowledge_base'
 def parse(p):
- text=p.read_text(); metadata=yaml.safe_load(text.split('---',2)[1])
+ text=p.read_text(); metadata=metadata_fields(text)
  return metadata,text
 def section(text,name):
  match=re.search(r'^## '+re.escape(name)+r'\s*\n(.*?)(?=^## |\Z)',text,re.M|re.S)
@@ -54,10 +54,16 @@ for topic in config['topics']:
     cm,ct=parse(cp);assert cm['verification_status']=='verified';companions.append(snapshot(cp));marks+=cm['marks']
     part=re.sub(r'!?\[\[STEM-[^\]]+\]\]','',section(ct,'Question')).strip();clauses.append(part)
    q+='\n\n'+clauses[0]+' '+clauses[1]
-  solution=section(text,'Detailed Solution');assert solution
+  answers=answer_fields(text)
   source=REPO/meta['source_pdf'];pdfout=ROOT/'sources/papers'/source.name;pdfout.parent.mkdir(exist_ok=True,parents=True)
   if not pdfout.exists():shutil.copy2(source,pdfout)
-  results.append({'id':qid,'topic':topic['slug'],'sourceNote':snapshot(p),'sourceNoteSha256':hashlib.sha256(p.read_bytes()).hexdigest(),'stems':stems,'companionNotes':companions,'paper':meta['source_paper'].replace('[[','').replace(']]',''),'pdf':'sources/papers/'+source.name,'page':meta['source_page'],'solutionPages':meta.get('solution_page',[]),'number':meta['question_number'],'marks':marks,'verificationStatus':meta['verification_status'],'answerSource':meta['answer_source'],'questionMarkdown':q,'solutionMarkdown':solution,'mistakesMarkdown':section(text,'Common Mistakes')})
+  results.append({'id':qid,'topic':topic['slug'],'sourceNote':snapshot(p),'sourceNoteSha256':hashlib.sha256(p.read_bytes()).hexdigest(),'stems':stems,'companionNotes':companions,'paper':meta['source_paper'].replace('[[','').replace(']]',''),'pdf':'sources/papers/'+source.name,'pdfSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'page':meta['source_page'],'solutionPages':meta.get('solution_page',[]),'number':meta['question_number'],'marks':marks,'verificationStatus':meta['verification_status'],'answerSource':meta['answer_source'],'questionMarkdown':q,**answers})
+  if companions:
+   current=results[-1]
+   current['answerParts']=[{'id':qid,'sourceNote':current['sourceNote'],'sourceNoteSha256':current['sourceNoteSha256'],'answerSource':current['answerSource'],**answers}]
+   for companion in companions:
+    cm,ct=parse(ROOT/companion)
+    current['answerParts'].append({'id':cm['id'],'sourceNote':companion,'sourceNoteSha256':hashlib.sha256((ROOT/companion).read_bytes()).hexdigest(),'answerSource':cm['answer_source'],**answer_fields(ct)})
 (ROOT/'practice.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
 with (ROOT/'events.jsonl').open('a') as f:f.write(json.dumps({'time':datetime.now(timezone.utc).isoformat(),'event':'practice_selected','questionCount':len(results)})+'\n')
 print(f'Copied {len(results)} verified questions with original stems, solutions and local PDFs.')

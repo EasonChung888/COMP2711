@@ -3,7 +3,7 @@
     "id": "Q-2015-MID-P02-a",
     "topic": "propositional-inference",
     "sourceNote": "sources/notes/Q-2015-MID-P02-a - Proof Strategy.md",
-    "sourceNoteSha256": "7ccac14706bdf087230aa527a91c308d0769803054ff7f73910a931b1f42d161",
+    "sourceNoteSha256": "b94093ae88cbca1fc06ec6f5bc002cba895830daea15346f647d6dcd9af4a6cb",
     "stems": [
       "STEM-2015-MID-P02 - Shared Problem Prompt"
     ],
@@ -19,14 +19,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "In this question, $p$, $q$, $r$ and $s$ are logic propositions. In each part, a set of premises and a conclusion are given. You are asked to derive the conclusion from the premises using the rules of inference that you have learned in class. Show all steps of your derivations, and state clearly the assumption or the inference rule used in each step.\n\n(a) Premises:\n\n1. $\\neg p$\n2. $\\neg r$\n3. $\\neg(p\\lor q)\\to r$\n\nConclusion: $q$",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.\n\n**Answer.** $q$ follows.\n\n**Derivation/proof.** 1. $\\neg(p\\lor q)\\to r$ (premise).\n2. $\\neg r$ (premise).\n3. $\\neg\\neg(p\\lor q)$ (modus tollens, 1–2).\n4. $p\\lor q$ (double negation, 3).\n5. $\\neg p$ (premise).\n6. $q$ (disjunctive syllogism, 4–5).\n\n### 中文解答\n\n**推导。** 从前提 $\\neg(p\\lor q)\\to r$ 与 $\\neg r$ 用否定后件，得 $\\neg\\neg(p\\lor q)$。双重否定律给 $p\\lor q$。再和前提 $\\neg p$ 用析取三段论，排除 p，得到 q。三步各自使用合法推理规则，故结论由全部给定前提推出。",
-    "mistakesMarkdown": "- 否定后件后漏掉双重否定。\n- 从 $p\\lor q$ 单独直接断言 $q$。"
+    "solutionMarkdown": "**Answer.** $q$ follows.\n\n**Derivation/proof.** 1. $\\neg(p\\lor q)\\to r$ (premise).\n2. $\\neg r$ (premise).\n3. $\\neg\\neg(p\\lor q)$ (modus tollens, 1–2).\n4. $p\\lor q$ (double negation, 3).\n5. $\\neg p$ (premise).\n6. $q$ (disjunctive syllogism, 4–5).",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 6](../sources/papers/2015-midterm.pdf#page=6).\n\n(a)\n\n| Step | Statement | Reason |\n| --- | --- | --- |\n| 1 | $\\neg(p\\lor q)\\to r$ | Premise |\n| 2 | $\\neg r$ | Premise |\n| 3 | $(p\\lor q)$ | Modus tollens (1,2) |\n| 4 | $\\neg p$ | Premise |\n| 5 | $q$ | Disjunctive syllogism (3,4) |",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "5f5584c4986edf2195c743e14591f065b363f878be52ab98fdde033f80f9e11b",
+    "supplementarySourceSha256": "ed8f6c02b4f466e23b3d4509d0db64c1dde1fb0b9076922eda665d3b07deb400"
   },
   {
     "id": "Q-2015-MID-P02-b",
     "topic": "propositional-inference",
     "sourceNote": "sources/notes/Q-2015-MID-P02-b - Proof Strategy.md",
-    "sourceNoteSha256": "3a504a80b0cf8b8373a89015a6b0035ecb1f98de50e3b0d133fcce443200aaec",
+    "sourceNoteSha256": "9ddb6481528a6e1e6ed913d85e6efbc15a8775e1769a61ca07676891d2aaa6d4",
     "stems": [
       "STEM-2015-MID-P02 - Shared Problem Prompt"
     ],
@@ -42,14 +46,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "In this question, $p$, $q$, $r$ and $s$ are logic propositions. In each part, a set of premises and a conclusion are given. You are asked to derive the conclusion from the premises using the rules of inference that you have learned in class. Show all steps of your derivations, and state clearly the assumption or the inference rule used in each step.\n\n(b) Premises:\n\n1. $\\neg q$\n2. $p\\to q$\n3. $\\neg p\\to(r\\land s)$\n\nConclusion: $r$",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.\n\n**Answer.** $r$ follows.\n\n**Derivation/proof.** 1. $\\neg q$ and $p\\to q$ (premises).\n2. $\\neg p$ (modus tollens, 1).\n3. $\\neg p\\to(r\\land s)$ (premise).\n4. $r\\land s$ (modus ponens, 2–3).\n5. $r$ (simplification, 4).\n\n### 中文解答\n\n**推导。** 由前提 $p\\to q$ 和 $\\neg q$ 用否定后件得 $\\neg p$。将它代入第三个前提 $\\neg p\\to(r\\land s)$，用肯定前件得 $r\\land s$。最后用合取消去得到 r。顺序是先得到第三前提所需的条件，再取出目标分量。",
-    "mistakesMarkdown": "- 错误地从 $\\neg q$ 推出 $p$。\n- 只写 $r\\land s$ 而未给出最终的合取消去规则。"
+    "solutionMarkdown": "**Answer.** $r$ follows.\n\n**Derivation/proof.** 1. $\\neg q$ and $p\\to q$ (premises).\n2. $\\neg p$ (modus tollens, 1).\n3. $\\neg p\\to(r\\land s)$ (premise).\n4. $r\\land s$ (modus ponens, 2–3).\n5. $r$ (simplification, 4).",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 6](../sources/papers/2015-midterm.pdf#page=6).\n\n(b)\n\n| Step | Statement | Reason |\n| --- | --- | --- |\n| 1 | $p\\to q$ | Premise |\n| 2 | $\\neg q$ | Premise |\n| 3 | $\\neg p$ | Modus tollens (1,2) |\n| 4 | $\\neg p\\to(r\\land s)$ | Premise |\n| 5 | $(r\\land s)$ | Modus Ponens (3,4) |\n| 6 | $r$ | Simplification (5) |",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "6ce70de1440956e30e5e193a7f672de1625a0c5e4f08bab305f41f9b60c7115e",
+    "supplementarySourceSha256": "1708bfbb83da0507fb019c3469b2c47aeebdad054c88eee7a694fa88a2df4bcf"
   },
   {
     "id": "Q-2015-MID-P02-c",
     "topic": "propositional-inference",
     "sourceNote": "sources/notes/Q-2015-MID-P02-c - Proof Strategy.md",
-    "sourceNoteSha256": "75480e277f6ae33f5f30e907cce28515fc93be7604aa41ad6712abd6f462fe08",
+    "sourceNoteSha256": "f47f504668015b1bcddab5f4e48e8338ef06f6181a4d690575a396d05e0e587d",
     "stems": [
       "STEM-2015-MID-P02 - Shared Problem Prompt"
     ],
@@ -65,14 +73,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "In this question, $p$, $q$, $r$ and $s$ are logic propositions. In each part, a set of premises and a conclusion are given. You are asked to derive the conclusion from the premises using the rules of inference that you have learned in class. Show all steps of your derivations, and state clearly the assumption or the inference rule used in each step.\n\n(c) Premises:\n\n1. $s\\to r$\n2. $p\\land q$\n3. $p\\to\\neg(q\\land r)$\n\nConclusion: $\\neg s$",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.\n\n**Answer.** $\\neg s$ follows.\n\n**Derivation/proof.** 1. $p,q$ (simplification of the premise $p\\land q$).\n2. $\\neg(q\\land r)$ (modus ponens with $p\\to\\neg(q\\land r)$ and $p$).\n3. $\\neg q\\lor\\neg r$ (De Morgan, 2).\n4. $\\neg r$ (disjunctive syllogism using $q$, 3).\n5. $\\neg s$ (modus tollens using $s\\to r$, 4).\n\nThe printed solution's step 5 cites its line 3 ($q$) where line 2 ($p$) is needed; the derivation above uses the correct premise.\n\n### 中文解答\n\n**推导。** 由 $p\\land q$ 分别作合取消去得 p、q。用 p 和第三前提作肯定前件，得 $\\neg(q\\land r)$；德摩根律化为 $\\neg q\\lor\\neg r$。因为 q 已成立，析取三段论给 $\\neg r$。最后与 $s\\to r$ 用否定后件，得 $\\neg s$。源页第五行误引第三行 q，实际必须引用第二行 p；这是行号引用错误，结论及上述公式均可逐步验证。",
-    "mistakesMarkdown": "- 把 $\\neg(q\\land r)$ 误变成 $\\neg q\\land\\neg r$。\n- 使用 $p\\to\\neg(q\\land r)$ 时引用 $q$，而非其实际前件 $p$。"
+    "solutionMarkdown": "**Answer.** $\\neg s$ follows.\n\n**Derivation/proof.** 1. $p,q$ (simplification of the premise $p\\land q$).\n2. $\\neg(q\\land r)$ (modus ponens with $p\\to\\neg(q\\land r)$ and $p$).\n3. $\\neg q\\lor\\neg r$ (De Morgan, 2).\n4. $\\neg r$ (disjunctive syllogism using $q$, 3).\n5. $\\neg s$ (modus tollens using $s\\to r$, 4).\n\nThe printed solution's step 5 cites its line 3 ($q$) where line 2 ($p$) is needed; the derivation above uses the correct premise.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 6](../sources/papers/2015-midterm.pdf#page=6).\n\n(c)\n\n| Step | Statement | Reason |\n| --- | --- | --- |\n| 1 | $p\\land q$ | Premise |\n| 2 | $p$ | Simplification |\n| 3 | $q$ | Simplification |\n| 4 | $p\\to\\neg(q\\land r)$ | Premise |\n| 5 | $\\neg(q\\land r)$ | Modus Ponens (3,4) |\n| 6 | $\\neg q\\lor\\neg r$ | DeMorgan's law, 5 |\n| 7 | $\\neg r$ | Disjunctive syllogism (3,6) |\n| 8 | $s\\to r$ | Premise |\n| 9 | $\\neg s$ | Modus tollens (7,8) |",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "b57c3287297bab51ef4b67a9b7493e6f0f74fcc61f531220d4b1f25d3c59805d",
+    "supplementarySourceSha256": "5342687e750a320425429879bd195effef31a76ea28e832a031c0b0baf1bfa5f"
   },
   {
     "id": "Q-2019-MID-P04",
     "topic": "predicate-inference",
     "sourceNote": "sources/notes/Q-2019-MID-P04 - Predicate Logic.md",
-    "sourceNoteSha256": "23df23d8fc136dd624936fdfee46fa815342bff678ad0067a1bac96f1ffed6bb",
+    "sourceNoteSha256": "ef48d69bf7ab5e811211b9a09ee5a7cc26e750a89b1199741e813bec09678a5a",
     "stems": [],
     "paper": "2019 Midterm",
     "pdf": "sources/papers/2019-midterm.pdf",
@@ -86,14 +98,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider the following argument:\n\nPremise 1: $\\exists xP(x)$.\n\nPremise 2: $\\forall x(P(x)\\to Q(x))$.\n\nPremise 3: $\\forall x(P(x)\\to R(x))$.\n\nConclusion: $\\exists x(Q(x)\\land R(x))$.\n\nShow that the argument is valid. Number your steps and refer to those numbers in the reason you give for each step, but it is not necessary to give the name of the inference rule.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.\n\n**Answer.** The argument is valid.\n\n**Derivation/proof.** Use one fresh witness throughout the numbered inference.\n\n1. $\\exists xP(x)$ (premise).\n2. Let $c$ be a fresh witness with $P(c)$ (1).\n3. $\\forall x(P(x)\\to Q(x))$ (premise).\n4. $P(c)\\to Q(c)$ (3, instantiate at $c$).\n5. $\\forall x(P(x)\\to R(x))$ (premise).\n6. $P(c)\\to R(c)$ (5, instantiate at $c$).\n7. $Q(c)$ (2,4).\n8. $R(c)$ (2,6).\n9. $Q(c)\\land R(c)$ (7,8).\n10. $\\exists x(Q(x)\\land R(x))$ (9, existential generalization; discharge the fresh witness).\n\n### 中文解答\n\n**推导。** 使用同一个新见证 $c$，避免把两个不同对象的性质错误合并。\n\n1. $\\exists xP(x)$，前提 1。\n2. $P(c)$，由(1)存在实例化，$c$ 是新取的见证。\n3. $\\forall x(P(x)\\to Q(x))$，前提 2。\n4. $P(c)\\to Q(c)$，由(3)全称实例化。\n5. $\\forall x(P(x)\\to R(x))$，前提 3。\n6. $P(c)\\to R(c)$，由(5)全称实例化。\n7. $Q(c)$，由(2)、(4)肯定前件。\n8. $R(c)$，由(2)、(6)肯定前件。\n9. $Q(c)\\land R(c)$，由(7)、(8)合取。\n10. $\\exists x(Q(x)\\land R(x))$，由(9)存在推广。\n\n最后一行两个谓词的自变量须一同量化成 $x$；印本误写的 $R(w)$ 没有来自任何前提。",
-    "mistakesMarkdown": "- 对 Q 与 R 使用不同存在见证。\n- 照抄源解最后的 R(w)，留下未量化的自由变量。"
+    "solutionMarkdown": "**Answer.** The argument is valid.\n\n**Derivation/proof.** Use one fresh witness throughout the numbered inference.\n\n1. $\\exists xP(x)$ (premise).\n2. Let $c$ be a fresh witness with $P(c)$ (1).\n3. $\\forall x(P(x)\\to Q(x))$ (premise).\n4. $P(c)\\to Q(c)$ (3, instantiate at $c$).\n5. $\\forall x(P(x)\\to R(x))$ (premise).\n6. $P(c)\\to R(c)$ (5, instantiate at $c$).\n7. $Q(c)$ (2,4).\n8. $R(c)$ (2,6).\n9. $Q(c)\\land R(c)$ (7,8).\n10. $\\exists x(Q(x)\\land R(x))$ (9, existential generalization; discharge the fresh witness).\n\nThe modus ponens step yielding $Q(c)$ follows from (2) and (4), and the one yielding $R(c)$ follows from (2) and (6). Both conclusions concern the same fresh witness, which is why conjunction and then existential generalization are valid.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 6](../sources/papers/2019-midterm.pdf#page=6).\n\nStep — Reason\n1. $\\exists xP(x)$ — Hypothesis\n2. $P(c)$ — (1), Existential instantiation\n3. $\\forall x(P(x)\\to Q(x))$ — Hypothesis\n4. $P(c)\\to Q(c)$ — (3), Universal instantiation\n5. $\\forall x(P(x)\\to R(x))$ — Hypothesis\n6. $P(c)\\to R(c)$ — (5), Universal instantiation\n7. $Q(c)$ — (2) and (4), Modus ponens\n8. $R(c)$ — (2) and (6), Modus ponens\n9. $Q(c)\\land R(c)$ — (7) and (8), Conjunction\n10. $\\exists x(Q(x)\\land R(w))$ — (9), Existential generalization",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "581dc21c48dbb7c7166762b8e18634ab94fad92f0b625f8a2d581d59644a08a8",
+    "supplementarySourceSha256": "65df0be3e96608cabf2dc9ec42c25352a4847004b63f16464660bd09895669a9"
   },
   {
     "id": "Q-2013-FINAL-P06-b",
     "topic": "predicate-inference",
     "sourceNote": "sources/notes/Q-2013-FINAL-P06-b - Predicate Logic.md",
-    "sourceNoteSha256": "3bc525c31afa3120fd2c70745ee04fb38027593056ddd8d4cde604c04ae9ffee",
+    "sourceNoteSha256": "efd468e31ca967f590324b9c2abb93d47265891848dc697d9aef61b6ec9ae67b",
     "stems": [
       "STEM-2013-FINAL-P06 - Shared Problem Prompt"
     ],
@@ -109,14 +125,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Consider the following three statements:\n\n- (i) All rich people have famous-brand products and don't have part-time jobs.\n- (ii) Some students with part-time jobs have famous-brand products.\n- (iii) All students with part-time jobs are not rich.\n\nLet $U$ be the universe of all people and define the following predicates:\n\n- $R(x)$: x is a rich person\n- $F(x)$: x has famous-brand products\n- $S(x)$: x is a student\n- $J(x)$: x has part-time jobs.\n\n(b) Does (i) logically imply (iii)? If yes, give a proof. Clearly state the logic inference rule that you use at each step. If no, explain why not.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** Yes, (i) implies (iii).\n\n**Derivation/proof.** From (i), simplify to $\\forall x(R(x)\\Rightarrow\\neg J(x))$. By contraposition, $\\forall x(J(x)\\Rightarrow\\neg R(x))$. For arbitrary $x$, $(S(x)\\land J(x))\\Rightarrow J(x)$; transitivity yields $(S(x)\\land J(x))\\Rightarrow\\neg R(x)$. Universally generalize.\n\n### 中文解答\n\n**推导。** 答案是可以。取任意人 x，由 (i) 全称实例化并简化后件，得 $R(x)\\Rightarrow\\neg J(x)$。逆否律给 $J(x)\\Rightarrow\\neg R(x)$。若 $S(x)\\land J(x)$，由合取消去得到 $J(x)$，再由肯定前件得到 $\\neg R(x)$。所以 $(S(x)\\land J(x))\\Rightarrow\\neg R(x)$；x 任意，作全称推广便是 (iii)。",
-    "mistakesMarkdown": "- 把逆否命题写成 $\\neg R\\Rightarrow J$。\n- 声称 $S(x)$ 单独能推出 $\\neg R(x)$。"
+    "solutionMarkdown": "**Answer.** Yes, (i) implies (iii).\n\n**Derivation/proof.** From (i), simplify to $\\forall x(R(x)\\Rightarrow\\neg J(x))$. By contraposition, $\\forall x(J(x)\\Rightarrow\\neg R(x))$. For arbitrary $x$, $(S(x)\\land J(x))\\Rightarrow J(x)$; transitivity yields $(S(x)\\land J(x))\\Rightarrow\\neg R(x)$. Universally generalize.\n\nUniversal instantiation gives the premise for an arbitrary $x$; conjunction elimination supplies $J(x)$, and modus ponens supplies $\\neg R(x)$. Since $x$ was arbitrary, universal generalization is valid.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 9](../sources/papers/2013-final.pdf#page=9).\n\n(b) Yes, (i) does imply (iii).\n\n**Proof:** Statement (i) can be broken up into the following two statements:\n$$\\forall x\\in U(R(x)\\Rightarrow F(x))$$\n$$\\forall x\\in U(R(x)\\Rightarrow\\neg J(x))$$\nThe contrapositive of the second rule is:\n$$\\forall x\\in U(J(x)\\Rightarrow\\neg R(x))$$\nLet $x$ be a generic element in $U$. We have\n$$\\begin{aligned}S(x)\\land J(x)&\\Rightarrow J(x)\\\\J(x)&\\Rightarrow\\neg R(x)\\end{aligned}$$\nBy transitivity of logic implication, we get:\n$$S(x)\\land J(x)\\Rightarrow\\neg R(x)$$\nBy the rule of Universal Generalization, we obtain:\n$$\\forall x\\in U(S(x)\\land J(x)\\Rightarrow\\neg R(x)).$$\nQ.E.D",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "6de84d73e6f47deb55a919b48a929ef35bfe2c7cb973b92731872f9596412ac3",
+    "supplementarySourceSha256": "3afdc2f87a2a77915090e40e8019f5e9f1048f3802b78350b3d1a52798f5f003"
   },
   {
     "id": "Q-2025F-MID-P02-c-proof",
     "topic": "predicate-inference",
     "sourceNote": "sources/notes/Q-2025F-MID-P02-c-proof - Proof Strategy.md",
-    "sourceNoteSha256": "51680f6bc1a0a4f189c4a04a512473bc80c4bde8b9f2d7cef02ad31127419f42",
+    "sourceNoteSha256": "9052deeb60cecebaa1f0d73e6b3f0cd1a3fd689b99daddf40d7518c966fb57b5",
     "stems": [
       "STEM-2025F-MID-P02-c - Shared Problem Prompt"
     ],
@@ -132,14 +152,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "(c) [5 points] Consider the following predicates.\n\n$S(x)$ be “$x$ is a satisfactory”\n\n$C(x)$ be “$x$ is a clear explanation”\n\n$E(x)$ be “$x$ is an excuse”\n\nAssume the following premises:\n\nPremise 1: All clear explanations are satisfactory\n\nPremise 2: Some excuses are unsatisfactory\n\nthen write a formal proof for the following statement:\n\nSome excuses are not clear explanations.",
-    "solutionMarkdown": "Provenance: published official answer, independently checked; the source grouping clarification is retained above.\n\n### 中文解答\n\n**答案。** $\\exists x(E(x)\\land\\neg C(x))$。\n\n**推导。** 导入两前提 $\\forall x(C(x)\\to S(x))$ 与 $\\exists x(E(x)\\land\\neg S(x))$。由 existential instantiation 取新见证 $a$，有 $E(a)\\land\\neg S(a)$，simplification 得 $E(a)$ 和 $\\neg S(a)$。把全称前提实例化到 $a$ 得 $C(a)\\to S(a)$；与 $\\neg S(a)$ 用 modus tollens 得 $\\neg C(a)$。再 conjunction 得 $E(a)\\land\\neg C(a)$，用 existential generalization 得 $\\exists x(E(x)\\land\\neg C(x))$。由于 $a$ 是新见证且最后已被存在推广消去，没有错误地断言所有借口都不清楚。",
-    "mistakesMarkdown": "- 新见证只代表某个存在对象，不能把结论提升为全称命题。\n- 最后推广必须同时绑定两个性质的变量，不能只绑定 $E(x)$。"
+    "solutionMarkdown": "**Answer.** $\\exists x(E(x)\\land\\neg C(x))$.\n\n**Derivation/proof.** Use premises $\\forall x(C(x)\\to S(x))$ and $\\exists x(E(x)\\land\\neg S(x))$. Existential instantiation introduces a fresh witness a with $E(a)\\land\\neg S(a)$. Simplification gives E(a) and $\\neg S(a)$. Universal instantiation gives $C(a)\\to S(a)$; modus tollens then gives $\\neg C(a)$. Conjunction yields $E(a)\\land\\neg C(a)$, and existential generalization yields the required formula. The fresh witness is eliminated by the final generalization, and no claim about all excuses is made.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 8](../sources/papers/COMP2711_F2025_Midterm.pdf#page=8).\n\n> While conclusion is $\\exists x\\,E(x)\\land\\neg C(x)$.\n> The proof goes as follows:\n> 1. $\\exists x\\,E(x)\\land\\neg S(x)$ (premise)\n> 2. $E(x_0)\\land\\neg S(x_0)$ (for some $x_0$, by existential specification of 1))\n> 3. $\\forall x(C(x)\\to S(x))$ (premise)\n> 4. $C(x_0)\\to S(x_0)$ (by universal specification of 3))\n> 5. $\\neg S(x_0)$ (by simplification of 2))\n> 6. $\\neg C(x_0)$ (Modus Tollens of 4) and 5))\n> 7. $E(x_0)$ (by simplification of 2))\n> 8. $E(x_0)\\land\\neg C(x_0)$ (conjunction of 6) and 7))\n> 9. $\\exists x\\,E(x)\\land\\neg C(x)$ (existential generalization of 8))",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "b94be5fde350e7645d044b9c2a31cecb14b1e4cc089c0f77eb7ddb36f744a8eb",
+    "supplementarySourceSha256": "d309943487de95b38d59ab22450a48d8107965e6c099bbdb947fb63dc7cf6ef6"
   },
   {
     "id": "Q-2015-MID-P04-a",
     "topic": "direct-proofs",
     "sourceNote": "sources/notes/Q-2015-MID-P04-a - Proof Strategy.md",
-    "sourceNoteSha256": "6ff524baa672c62ec64a80c163d2b11fa60fdc4712eed4fe59c38e68248e8ac6",
+    "sourceNoteSha256": "ecf7dc7996b7cdd5238c11f9447633c27331027702d44b9ab3bbefb51e78ae6c",
     "stems": [
       "STEM-2015-MID-P04 - Shared Problem Prompt"
     ],
@@ -155,14 +179,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "A real number is rational if and only if it can be written as $a/b$, where $a$ and $b$ are integers. Let $x$ and $y$ be two real numbers such that $xy\\ne0$.\n\n(a) Show, by direct proof, that if $x$ and $y$ are rational, then the product $xy$ is also rational.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** $xy$ is rational.\n\n**Derivation/proof.** Write $x=a/b$ and $y=c/d$ with integers $a,b,c,d$ and $b,d\\ne0$. Then $xy=ac/(bd)$. Closure of integers under multiplication gives integer $ac,bd$, and $bd\\ne0$. This is a rational representation of $xy$.\n\n### 中文解答\n\n**推导。** 由有理数定义写 $x=a/b,y=c/d$，其中 a、b、c、d 为整数，$b,d\\ne0$。相乘得 $xy=ac/(bd)$。整数乘法封闭使 ac、bd 都是整数，且两个非零实数之积非零，所以 $bd\\ne0$。这给出 xy 的合法整数比表示，直接证明它有理。",
-    "mistakesMarkdown": "- 未说明分母乘积非零。\n- 把证明目标本身“有理数乘法封闭”直接当作未经说明的前提。"
+    "solutionMarkdown": "**Answer.** $xy$ is rational.\n\n**Derivation/proof.** Write $x=a/b$ and $y=c/d$ with integers $a,b,c,d$ and $b,d\\ne0$. Then $xy=ac/(bd)$. Closure of integers under multiplication gives integer $ac,bd$, and $bd\\ne0$. This is a rational representation of $xy$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 9](../sources/papers/2015-midterm.pdf#page=9).\n\n(a) Since $x$ and $y$ are rational, they can be written as $x=\\frac{a_1}{b_1}$ and $y=\\frac{a_2}{b_2}$, where $a_1,b_1,a_1$ and $b_2$ are integers. Then we have $xy=\\frac{a_1a_2}{b_1b_2}$. Since integers are closed under multiplication operations, $a_1a_2$ and $b_1b_2$ are both integers. Therefore $xy$ is rational.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "051799677ec2339c20de78c8ff4775d748f1becf3fec4f1c264dfd1599141d6f",
+    "supplementarySourceSha256": "5f43dcda2e57b9826573b09b27e15c6418fb6eb81f6f6655f3e208328b88def9"
   },
   {
     "id": "Q-2020-MID-P03-b",
     "topic": "direct-proofs",
     "sourceNote": "sources/notes/Q-2020-MID-P03-b - Predicate Logic.md",
-    "sourceNoteSha256": "8fc9a98c6362145dfbdc0ef0f86b0b720421b317618e85dad8469ae32f2416fb",
+    "sourceNoteSha256": "238b2586f7ca4e6bc0a74d5eecb2ffbfac79fb505dd28ff037be090078cdc69d",
     "stems": [
       "STEM-2020-MID-P03 - Shared Problem Prompt"
     ],
@@ -178,14 +206,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "For each of the following statement, determine it is true or false. Justification is not required. The domain is the set of real numbers.\n\n$\\forall x\\forall y((x>2\\land y>2)\\to(xy>x+y))$",
-    "solutionMarkdown": "Provenance: published official answer, independently checked by the derivation below.\n\n**Answer.** True.\n\n**Derivation/proof.** If either hypothesis fails the implication is true. Otherwise $x-1>1$ and $y-1>1$, so $(x-1)(y-1)>1$. Expanding gives $xy-x-y+1>1$, hence $xy>x+y$. The strict inequalities ensure a strict final result, including values arbitrarily close to 2.\n\n### 中文解答\n\n**推导。** 判为真。若 $x>2$ 或 $y>2$ 的任一条件不满足，蕴含因前件假而真。若两个条件同时满足，则 $x-1>1,y-1>1$，相乘有 $(x-1)(y-1)>1$。展开为 $xy-x-y+1>1$，即 $xy>x+y$，得到后件。两个分支覆盖所有实数输入。",
-    "mistakesMarkdown": "- 错误把 x=2 当作允许的反例。\n- 从乘积大于四直接推和的上界。"
+    "solutionMarkdown": "**Answer.** True.\n\n**Derivation/proof.** If either hypothesis fails the implication is true. Otherwise $x-1>1$ and $y-1>1$, so $(x-1)(y-1)>1$. Expanding gives $xy-x-y+1>1$, hence $xy>x+y$. The strict inequalities ensure a strict final result, including values arbitrarily close to 2.\n\nUnder the two hypotheses, $x-1>1,y-1>1$. Their product is greater than one, and expansion and subtraction then give $xy>x+y$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 2](../sources/papers/2020-midterm.pdf#page=2).\n\nTrue. When $y>2$, $y/(y-1)<2$. So, $x>y/(y-1)$. This implies $x(y-1)>y$, and thus $xy>x+y$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "7ba28bb9e3cfed1d90db4fd974c1d5aad59a0e708f47133d89c2f8b4b19ce299",
+    "supplementarySourceSha256": "57a7a17058ac72aeb8f4c99ecf72104bb05ef320c9e080ef3fdd2d549f25e625"
   },
   {
     "id": "Q-2015-MID-P04-b",
     "topic": "contraposition",
     "sourceNote": "sources/notes/Q-2015-MID-P04-b - Proof Strategy.md",
-    "sourceNoteSha256": "0e81df4cbcf4c38bc8202f9765c32b156cce0ce07f46a0bdc4c6157043921604",
+    "sourceNoteSha256": "a8d81ca4f5c996ce4c6ed41ce3045346b658830eb2a0400c772c6465e58899a0",
     "stems": [
       "STEM-2015-MID-P04 - Shared Problem Prompt"
     ],
@@ -201,14 +233,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "A real number is rational if and only if it can be written as $a/b$, where $a$ and $b$ are integers. Let $x$ and $y$ be two real numbers such that $xy\\ne0$.\n\n(b) Show, by contraposition, that if $x$ is irrational, then $x^{1/5}$ is irrational.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** An irrational real $x$ has irrational real fifth root.\n\n**Derivation/proof.** Prove the contrapositive. Suppose $x^{1/5}=a/b$ with integers $a,b$ and $b\\ne0$. Then $x=(a/b)^5=a^5/b^5$ is rational. Thus $x$ irrational implies $x^{1/5}$ irrational. The odd root exists for every real $x$.\n\n### 中文解答\n\n**推导。** 证明逆否命题：假设实数五次方根有理，写 $x^{1/5}=a/b$，a、b 整数且 $b\\ne0$。两边五次方得 $x=a^5/b^5$；a⁵、b⁵ 为整数且分母非零，故 x 有理。逆否等价推出 x 无理时其五次方根无理。奇次实根对负数也存在，不需加 x 正的限制。",
-    "mistakesMarkdown": "- 将 $x^{1/5}$ 误读为 $1/x$ 或 $x/5$。\n- 证明“原数有理推出根有理”，那是原命题的逆命题而非逆否命题。"
+    "solutionMarkdown": "**Answer.** An irrational real $x$ has irrational real fifth root.\n\n**Derivation/proof.** Prove the contrapositive. Suppose $x^{1/5}=a/b$ with integers $a,b$ and $b\\ne0$. Then $x=(a/b)^5=a^5/b^5$ is rational. Thus $x$ irrational implies $x^{1/5}$ irrational. The odd root exists for every real $x$.\n\nTaking fifth powers gives $x=a^5/b^5$, a ratio of integers with nonzero denominator.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 9](../sources/papers/2015-midterm.pdf#page=9).\n\n(b) Assume $x^{1/5}$ were rational. By part (a), $x=x^{1/5}x^{1/5}x^{1/5}x^{1/5}x^{1/5}$ must also be rational, which contradicts the premise of the statement. Therefore if $x$ is irrational, then $x^{1/5}$ is irrational.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "fa8e7c93b6b5077d697955886a9d2d62347734ef2850e71156b4f40b65867090",
+    "supplementarySourceSha256": "8d379bc95b0aa6ce036dc3be1154467edf2c439dcb319b844ec5678067679df4"
   },
   {
     "id": "Q-2014-FINAL-P06-b",
     "topic": "contraposition",
     "sourceNote": "sources/notes/Q-2014-FINAL-P06-b - Proof Strategy.md",
-    "sourceNoteSha256": "439c25c1ea44a1a83ba387f4dc58a280c5b9b63d01b9c0ddeca098cb16dd0568",
+    "sourceNoteSha256": "99ac3e6702fa7c29315692d074c3e13ebe42a14392ceee5a54aa88a2a45818db",
     "stems": [
       "STEM-2014-FINAL-P06 - Shared Problem Prompt"
     ],
@@ -224,14 +260,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Prove the following statements. You may use a direct proof, a proof by contraposition or a proof by contradiction as appropriate.\n\n(b) If $m$ and $n$ are integers such that $mn$ is even, then $m$ is even or $n$ is even.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.\n\n**Answer.** The statement follows by contraposition.\n\n**Derivation/proof.** Assume $m,n$ are both odd: $m=2k+1$, $n=2h+1$. Then $mn=4kh+2k+2h+1=2(2kh+k+h)+1$, odd. Thus if $mn$ is even, they cannot both be odd, so at least one is even.\n\n### 中文解答\n\n**推导。** 证明逆否命题：若 m、n 都不是偶数，则两者均为奇数。写 $m=2k+1,n=2h+1$，其中 k、h 为整数。相乘得 $mn=4kh+2k+2h+1=2(2kh+k+h)+1$，仍为奇数。所以 mn 若为偶数，两因子不可能同时奇数，即至少一个为偶数。",
-    "mistakesMarkdown": "- 从 $mn$ 偶直接说两个因子都偶。\n- 反证中把奇数乘积展开成偶数。"
+    "solutionMarkdown": "**Answer.** The statement follows by contraposition.\n\n**Derivation/proof.** Assume $m,n$ are both odd: $m=2k+1$, $n=2h+1$. Then $mn=4kh+2k+2h+1=2(2kh+k+h)+1$, odd. Thus if $mn$ is even, they cannot both be odd, so at least one is even.\n\nThe odd representations are $m=2k+1,n=2h+1$ with integer $k,h$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 10](../sources/papers/2014-final.pdf#page=10).\n\n(b) Suppose $m$ and $n$ are both odd. $m=2k+1$ for some integer $k$ and $n=2h+1$ for some integer $h$. Then $mn=(2k+1)(2h+1)=2(2kh+k+h)+1$, which is odd.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "6682018d346b512b1cd95dcc95358ec3f4da3bc0046692c51e662ac7dd853527",
+    "supplementarySourceSha256": "7e29370c61150b71a8cac2b181191afc97d2a0ff7f346cd8947b6884bc45dfb0"
   },
   {
     "id": "Q-2017-MID-P03-b",
     "topic": "contraposition",
     "sourceNote": "sources/notes/Q-2017-MID-P03-b - Proof Strategy.md",
-    "sourceNoteSha256": "225d81b451d45810599ee6fd5849015fd7b3d11e2355b9137aa53338fef01d98",
+    "sourceNoteSha256": "1f10a2734350d7700408917046266a7d21330ed17a4e92bab5e021257030812f",
     "stems": [
       "STEM-2017-MID-P03 - Shared Problem Prompt"
     ],
@@ -247,14 +287,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Assuming that any number that is not rational is an irrational number, prove the following:\n\n(b) If $x^2$ is irrational, then $x$ is irrational.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 5. The Chinese derivation expands the reasoning.\n\n**Answer.** The implication is true.\n\n**Derivation/proof.** Prove its contrapositive. If $x$ is rational, write $x=a/b$ for integers $a,b$ with $b\\ne0$. Then $x^2=a^2/b^2$ is rational, because $a^2,b^2$ are integers and $b^2\\ne0$. Hence an irrational square cannot have a rational base.\n\n### 中文解答\n\n**推导。** 证明逆否命题：若 $x$ 有理，则 $x^2$ 有理。由 $x=a/b$，其中 $a,b\\in\\mathbb Z,b\\ne0$，平方得 $x^2=a^2/b^2$；$a^2,b^2$ 都是整数且 $b^2\\ne0$，故平方有理。逆否命题与原命题等价，结论成立。印本中间写成 $x=(\\sqrt x)^2=(a/b)^2$ 是等式笔误，正确运算是对 $x=a/b$ 两边平方，不能宣称 $x=x^2$。",
-    "mistakesMarkdown": "- 误证“无理数的平方必无理”。\n- 沿用印刷解中的 x 等于自身平方的笔误。"
+    "solutionMarkdown": "**Answer.** The implication is true.\n\n**Derivation/proof.** Prove its contrapositive. If $x$ is rational, write $x=a/b$ for integers $a,b$ with $b\\ne0$. Then $x^2=a^2/b^2$ is rational, because $a^2,b^2$ are integers and $b^2\\ne0$. Hence an irrational square cannot have a rational base.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 5](../sources/papers/2017-midterm.pdf#page=5).\n\nWe use a proof by contraposition to show that if $x$ is rational, then $x^2$ is rational. Since $x$ is rational, let $x=\\frac ab$ for some integers $a$ and $b$. $x=(\\sqrt x)^2=(\\frac ab)^2=\\frac{a^2}{b^2}$; both $a^2$ and $b^2$ are integers. Thus $x^2$ is rational.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "55ed610792631fb1011ba88c6ec898ccba13aa0f7b038c11171b47d30ca415d0",
+    "supplementarySourceSha256": "f7775b448b910addd52ccb9fe8a1d3293928d1c597a761307b99a1a2691de83c"
   },
   {
     "id": "Q-2014-FINAL-P06-a",
     "topic": "contradiction",
     "sourceNote": "sources/notes/Q-2014-FINAL-P06-a - Proof Strategy.md",
-    "sourceNoteSha256": "b95499341c29aff2f936153c1a0d2effed9dfed07b4024672a47b3ed89218c8d",
+    "sourceNoteSha256": "65659c2f1a91aba49dd54576b03893d52f95ed9a427e86881a82053b505fb95d",
     "stems": [
       "STEM-2014-FINAL-P06 - Shared Problem Prompt"
     ],
@@ -270,14 +314,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Prove the following statements. You may use a direct proof, a proof by contraposition or a proof by contradiction as appropriate.\n\n(a) $\\sqrt3$ is an irrational number.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.\n\n**Answer.** $\\sqrt3$ is irrational.\n\n**Derivation/proof.** Assume $\\sqrt3=m/n$ in lowest terms. Then $m^2=3n^2$, so the prime 3 divides $m^2$ and hence $m$; write $m=3k$. Substitution gives $n^2=3k^2$, so 3 also divides $n$, contradicting coprimality.\n\n### 中文解答\n\n**推导。** 反设 $\\sqrt3=m/n$ 是最简分数，$n\\ne0$，且 $\\gcd(m,n)=1$。平方得 $m^2=3n^2$，因三是素数，$3\\mid m^2$ 推出 $3\\mid m$，写 $m=3k$。代回得 $9k^2=3n^2$，即 $n^2=3k^2$，同理 $3\\mid n$。于是分子分母共有因子三，违反最简性，故根号三无理。",
-    "mistakesMarkdown": "- 从 $m^2=3n^2$ 直接断言 $m=n$。\n- 没有要求分数为最简形式。"
+    "solutionMarkdown": "**Answer.** $\\sqrt3$ is irrational.\n\n**Derivation/proof.** Assume $\\sqrt3=m/n$ in lowest terms. Then $m^2=3n^2$, so the prime 3 divides $m^2$ and hence $m$; write $m=3k$. Substitution gives $n^2=3k^2$, so 3 also divides $n$, contradicting coprimality.\n\nThe denominator satisfies $n\\ne0$, and lowest terms means $\\gcd(m,n)=1$. In the alternative prime-factor argument, factors are counted with multiplicity; more specifically, the exponent of the prime $3$ is even in $m^2$ and odd in $3n^2$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 10](../sources/papers/2014-final.pdf#page=10).\n\n(a) Suppose $\\sqrt3$ is rational. Then there are integers $m$ and $n$ with no common factors so that $\\sqrt3=m/n$. Squaring both sides gives $3=\\frac{m^2}{n^2}$, or $m^2=3n^2$. This implies that 3 divides $m^2$. Together with the fact that 3 is prime, we have 3 divides $m$. Let $m=3k$ for some integer $k$. Substituting into $3n^2=m^2$, we have $3n^2=(3k)^2$, thus $n^2=3k^2$, which implies 3 divides $n^2$. Therefore, 3 divides $n$. Hence both $m$ and $n$ have a common factor of 3. But this contradicts the supposition that $m$ and $n$ have no common factors.\n\nAnother way to argue for contradiction: $m^2$ has even number of factors in its prime factorization, while $3n^2$ has odd number of factors.Therefore, they cannot be equal.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "f9bf00c1510bcc540e7a70593a5423d59afe0d1a4cc80303a824bb7f7b28c1f4",
+    "supplementarySourceSha256": "9a0b931048dafc17af4a2c005a2f972d63b7914b0c2849ea3f367792c045050b"
   },
   {
     "id": "Q-2015-MID-P04-c",
     "topic": "contradiction",
     "sourceNote": "sources/notes/Q-2015-MID-P04-c - Proof Strategy.md",
-    "sourceNoteSha256": "07f6ffe67e4a519d29d670d08da3222e68181dadae692f54409c95c920b55e03",
+    "sourceNoteSha256": "77763af61fb9f54601375a1ca1bb9f877bcbfcd2e0abce2d6f919f346279c169",
     "stems": [
       "STEM-2015-MID-P04 - Shared Problem Prompt"
     ],
@@ -293,14 +341,18 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "A real number is rational if and only if it can be written as $a/b$, where $a$ and $b$ are integers. Let $x$ and $y$ be two real numbers such that $xy\\ne0$.\n\n(c) Show, by contradiction, that if $x$ is irrational and $xy$ is rational, then $y$ is irrational.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.\n\n**Answer.** $y$ must be irrational.\n\n**Derivation/proof.** Assume $x$ irrational, $xy$ rational, and $y$ rational. Write $xy=a/b$ and $y=c/d$ with nonzero $b,d,c$; $c\\ne0$ follows from $y\\ne0$. Then $x=(a/b)/(c/d)=ad/(bc)$ is rational, contradicting the premise. Therefore $y$ is irrational.\n\n### 中文解答\n\n**推导。** 反设 y 有理，同时保留 x 无理和 xy 有理。公共题干已给 $xy\\ne0$，故 $y\\ne0$。写 $xy=a/b,y=c/d$，分母 b、d 非零，且 c 非零。于是 $x=(a/b)/(c/d)=ad/(bc)$，分子分母是整数且 $bc\\ne0$，所以 x 有理，与假设矛盾。因此 y 必为无理数。非零条件来自源题，不是证明中自行补充。",
-    "mistakesMarkdown": "- 忽略 $y\\ne0$ 就使用其倒数。\n- 误声称所有两个无理数的乘积都无理，本题并不支持此结论。"
+    "solutionMarkdown": "**Answer.** $y$ must be irrational.\n\n**Derivation/proof.** Assume $x$ irrational, $xy$ rational, and $y$ rational. Write $xy=a/b$ and $y=c/d$ with nonzero $b,d,c$; $c\\ne0$ follows from $y\\ne0$. Then $x=(a/b)/(c/d)=ad/(bc)$ is rational, contradicting the premise. Therefore $y$ is irrational.\n\nThe shared source condition $xy\\ne0$ supplies $y\\ne0$, hence $c\\ne0$ in the displayed supplementary ratio. The nonzero condition is part of the problem, not an added assumption.\n\nThe nonzero factors $b$ and $c$ ensure $bc\\ne0$, making the rational representation valid.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 9](../sources/papers/2015-midterm.pdf#page=9).\n\n(c) Assume $x$ is irrational and $xy$ is rational, and $y$ were rational.\n\nLet $y=\\frac{a_2}{b_2}$. Then $\\frac1y=\\frac{b_2}{a_2}$, and hence would be rational. By part (1), $xy\\frac1y=x$ would also be rational, which contradicts the assumption that $x$ is irrational. Therefore, if $x$ is irrational and $xy$ is rational, then $y$ is irrational.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "a47f581da1f3d82ad148b900209d8170414438341464f2218da15843415ea01f",
+    "supplementarySourceSha256": "e584ca9b138beeea62a66254ff0023b1d7d4e694d35b041e7de01988e1455c89"
   },
   {
     "id": "Q-2019-MID-P08",
     "topic": "contradiction",
     "sourceNote": "sources/notes/Q-2019-MID-P08 - Proof Strategy.md",
-    "sourceNoteSha256": "dda8ac6b59f7f970b1ce913e23d5954e02644c021fd7c37ad764621f99b51b2b",
+    "sourceNoteSha256": "cb10ec0f4aa3665b113d55388e5df03b87b3787d20b223fffc0e64484bdf9810",
     "stems": [],
     "paper": "2019 Midterm",
     "pdf": "sources/papers/2019-midterm.pdf",
@@ -314,7 +366,11 @@
     "verificationStatus": "verified",
     "answerSource": "official",
     "questionMarkdown": "Prove the following statement by contradiction.\n\n“For any non-zero real number $x$, if $x+\\frac1x<2$, then $x<0$”.",
-    "solutionMarkdown": "Provenance: official; supplied source conclusion checked on PDF page(s) 10. The Chinese derivation expands the reasoning.\n\n**Answer.** The implication is true.\n\n**Derivation/proof.** Assume $x\\ne0$ and $x+1/x<2$, but deny the conclusion: $x\\ge0$. Nonzero then gives $x>0$. Multiplication by this positive $x$ yields $x^2+1<2x$, so $(x-1)^2=x^2-2x+1<0$. A real square is nonnegative, a contradiction. Therefore $x<0$.\n\n### 中文解答\n\n**推导。** 反设存在非零实数 $x$ 满足前件 $x+1/x<2$，却不满足结论，亦即 $x\\ge0$。结合非零得到 $x>0$，所以乘以 $x$ 不改变不等号方向，得 $x^2+1<2x$。移项即 $(x-1)^2=x^2-2x+1<0$，与实数平方总非负矛盾。反设不成立，因此满足前件的非零实数必有 $x<0$。",
-    "mistakesMarkdown": "- 直接乘未知符号的 x。\n- 否定 x<0 时漏掉 x=0，未引用非零前提。"
+    "solutionMarkdown": "**Answer.** The implication is true.\n\n**Derivation/proof.** Assume $x\\ne0$ and $x+1/x<2$, but deny the conclusion: $x\\ge0$. Nonzero then gives $x>0$. Multiplication by this positive $x$ yields $x^2+1<2x$, so $(x-1)^2=x^2-2x+1<0$. A real square is nonnegative, a contradiction. Therefore $x<0$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2019-midterm.pdf#page=10).\n\nAssume $x+1/x<2$ and $x>0$. We have\n$$\\begin{aligned}x+\\frac1x<2&\\to\\frac{x^2+1}{x}<2\\\\&\\to x^2+1<2x\\quad\\text{since }x>0\\\\&\\to x^2-2x+1<0\\\\&\\to(x-1)^2<0.\\end{aligned}$$\nThis contradicts with the fact that $(x-1)^2\\ge0$, completing the proof.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "3d23ef1b4fb60593b671a56dc7e7eda1e8959636b5da27a4073246dc543c03ea",
+    "supplementarySourceSha256": "1d35147cbc53ffee4dbe5eea2843b64e60092dc9f079902fc5c3cbaab38e7e3c"
   }
 ]

@@ -40,24 +40,17 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_S2024_Midte
 
 Shared printed context: ![[STEM-2024S-MID-P03 - Shared Problem Prompt#Shared printed wording]]
 
-## 中文解析
+## Official Answer
 
-如果前件成立，存在某个固定 $x_0$ 使每个 $y$ 都满足 $P(x_0,y)$。现在任取 $y$，同一个 $x_0$ 就能作为 $\exists xP(x,y)$ 的见证，故后件成立。本题的具体展开与结论如下。
+Source: [[knowledge_base/past_paper/COMP2711_S2024_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> Answer. (a) Tautology
 
-Provenance: published official answer, independently checked and expanded below.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** Tautology.
 
-**答案。** Tautology.
-
-**推导。** 如果前件成立，存在某个固定 $x_0$ 使每个 $y$ 都满足 $P(x_0,y)$。现在任取 $y$，同一个 $x_0$ 就能作为 $\exists xP(x,y)$ 的见证，故后件成立。前件为假时蕴含自动为真。即使论域为空，前件也假。因此该式对所有解释为真，是 tautology。
-
-## Common Mistakes
-
-- 固定的 x 见证可重复用于每个 y，不能误以为每个 y 必须对应不同 x。
-- 要证明恒真需说明前件成立时如何给出后件见证，不能只举一个谓词例子。
+**Derivation/proof.** If the antecedent holds, there is a fixed $x_0$ such that $P(x_0,y)$ holds for every $y$. For an arbitrary $y$, the same $x_0$ witnesses $\exists xP(x,y)$, proving the consequent. When the antecedent is false, the implication is true automatically; an empty domain also makes the antecedent false. The implication therefore holds in every interpretation.
 
 ## Connections
 

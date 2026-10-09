@@ -1,3 +1,4 @@
+from practice_answers import answer_fields, metadata_fields
 """Snapshot original questions only after every new explanation is written."""
 from pathlib import Path
 from collections import Counter
@@ -6,7 +7,6 @@ from math import comb, factorial
 import importlib.util
 import json
 import re
-import yaml
 
 spec = importlib.util.spec_from_file_location('chapter_practice', Path(__file__).with_name('chapter-practice.py'))
 shared = importlib.util.module_from_spec(spec)
@@ -46,12 +46,7 @@ REVIEW = {
  'Q-2020-FINAL1-P03-b': '6右5上共462；必经C(3,3)20×10=200，避开262；原图查看并独立DP核验。',
  'Q-2024S-FINAL-P04': '必经(2,3)前缀10，后续462减经(6,5)的15×10，10×312=3120；带访问标记DP核验。',
 }
-NOTES = {
- 'Q-2017-MID-P10-c': '印刷答案错误地剩下 35 颗糖；四盒各预留 5 颗共 20 颗，正确剩余为 30。此处使用知识库中经独立推导和枚举核验的更正答案 C(33,3)=5456。',
- 'Q-2018-FINAL-P11-b': '知识库解析最后一句使用“forbidden point”一词；本原题实际禁止的是 C→D 边。按前缀、该边、后缀计算的 18 条与答案 38 均正确。',
- 'Q-2019-FINAL-P09-b': '知识库解析末句提到“forty people”；本原题的对象是 40 本不同杂志，计数公式不变。',
- 'Q-2017-MID-P08-b': '本题只问展开后的不同项数，答案为 16。知识库解析末段提及指定 b 的指数，与本小题无关。',
-}
+
 
 def local_media(text, chapter):
     def replace(match):
@@ -121,7 +116,7 @@ def main():
                 matches=list(KB.glob(question_id+' - *.md'))
                 assert len(matches)==1
                 source=matches[0]; text=source.read_text()
-                meta=yaml.safe_load(text.split('---',2)[1])
+                meta=metadata_fields(text)
                 assert meta['verification_status']=='verified'
                 assert meta['answer_source']=='official' or (
                     question_id=='Q-2017-MID-P10-c' and meta['answer_source']=='derived')
@@ -131,9 +126,7 @@ def main():
                     assert f'### {question_id}' in report_text
                     independent='独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。'
                 question,stems=shared.printed_question(text,chapter)
-                section='Detailed Solution' if shared.section(text,'Detailed Solution') else 'Supplementary Explanation'
-                solution=shared.section(text,section)
-                assert solution and '[[' not in solution
+                answers=answer_fields(text)
                 paper=REPO/meta['source_pdf']
                 assert paper.is_file()
                 results.append(dict(
@@ -144,9 +137,8 @@ def main():
                     page=meta['source_page'],solutionPages=meta.get('solution_page',[]),
                     number=meta['question_number'],marks=meta.get('marks'),
                     verificationStatus=meta['verification_status'],answerSource=meta['answer_source'],
-                    solutionSection=section,questionMarkdown=question,solutionMarkdown=solution,
-                    mistakesMarkdown=shared.section(text,'Common Mistakes'),
-                    independentVerification=independent,verificationNote=NOTES.get(question_id,'')
+                    questionMarkdown=question,**answers,
+                    independentVerification=independent
                 ))
         (chapter/'practice.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
         if ident=='l1-7':

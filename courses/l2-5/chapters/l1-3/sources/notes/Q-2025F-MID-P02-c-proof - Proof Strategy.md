@@ -48,24 +48,27 @@ then write a formal proof for the following statement:
 
 Some excuses are not clear explanations.
 
-## 中文解析
+## Official Answer
 
-选出第二前提的同一个见证，并把第一前提实例化到该对象，便可否定它的清楚解释性质。
+Source: [[knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf#page=8|physical PDF page 8]].
 
-## Detailed Solution
+> While conclusion is $\exists x\,E(x)\land\neg C(x)$.
+> The proof goes as follows:
+> 1. $\exists x\,E(x)\land\neg S(x)$ (premise)
+> 2. $E(x_0)\land\neg S(x_0)$ (for some $x_0$, by existential specification of 1))
+> 3. $\forall x(C(x)\to S(x))$ (premise)
+> 4. $C(x_0)\to S(x_0)$ (by universal specification of 3))
+> 5. $\neg S(x_0)$ (by simplification of 2))
+> 6. $\neg C(x_0)$ (Modus Tollens of 4) and 5))
+> 7. $E(x_0)$ (by simplification of 2))
+> 8. $E(x_0)\land\neg C(x_0)$ (conjunction of 6) and 7))
+> 9. $\exists x\,E(x)\land\neg C(x)$ (existential generalization of 8))
 
-Provenance: published official answer, independently checked; the source grouping clarification is retained above.
+## Supplementary Explanation
 
-### 中文解答
+**Answer.** $\exists x(E(x)\land\neg C(x))$.
 
-**答案。** $\exists x(E(x)\land\neg C(x))$。
-
-**推导。** 导入两前提 $\forall x(C(x)\to S(x))$ 与 $\exists x(E(x)\land\neg S(x))$。由 existential instantiation 取新见证 $a$，有 $E(a)\land\neg S(a)$，simplification 得 $E(a)$ 和 $\neg S(a)$。把全称前提实例化到 $a$ 得 $C(a)\to S(a)$；与 $\neg S(a)$ 用 modus tollens 得 $\neg C(a)$。再 conjunction 得 $E(a)\land\neg C(a)$，用 existential generalization 得 $\exists x(E(x)\land\neg C(x))$。由于 $a$ 是新见证且最后已被存在推广消去，没有错误地断言所有借口都不清楚。
-
-## Common Mistakes
-
-- 新见证只代表某个存在对象，不能把结论提升为全称命题。
-- 最后推广必须同时绑定两个性质的变量，不能只绑定 $E(x)$。
+**Derivation/proof.** Use premises $\forall x(C(x)\to S(x))$ and $\exists x(E(x)\land\neg S(x))$. Existential instantiation introduces a fresh witness a with $E(a)\land\neg S(a)$. Simplification gives E(a) and $\neg S(a)$. Universal instantiation gives $C(a)\to S(a)$; modus tollens then gives $\neg C(a)$. Conjunction yields $E(a)\land\neg C(a)$, and existential generalization yields the required formula. The fresh witness is eliminated by the final generalization, and no claim about all excuses is made.
 
 ## Connections
 

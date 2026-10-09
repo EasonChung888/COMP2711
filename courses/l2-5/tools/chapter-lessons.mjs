@@ -1,3 +1,4 @@
+import {answerBlock} from './practice-answers.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
@@ -42,9 +43,9 @@ function checkChapter(c) {
 }
 
 function questionBlock(q, number) {
-  const pages = Array.isArray(q.solutionPages) ? q.solutionPages : [q.solutionPages];
-  const answerPage = pages[0] || q.page;
-  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea><details class="answer"><summary>查看答案与解析</summary>${markdown(q.solutionMarkdown)}${q.mistakesMarkdown ? `<h4>容易出错的地方</h4>${markdown(q.mistakesMarkdown)}` : ''}<p class="small-note">答案来源：已核对的官方答案 · <a href="../${esc(q.pdf)}#page=${answerPage}">查看答案页</a> · <a href="../${esc(q.sourceNote)}">知识库原始记录</a></p></details></article>`;
+
+
+  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea>${answerBlock(q)}</article>`;
 }
 
 function lesson(c, t, index) {

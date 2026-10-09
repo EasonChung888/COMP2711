@@ -39,27 +39,21 @@ Published answer/rubric pages: ![[knowledge_base/past_paper/COMP2711_F2023_Midte
 Express the negation of the following statement so that all negation operators immediately precede the predicates:
 $$\exists x(P(x)\to\forall y(Q(y)\to(R(y)\lor S(y)))).$$
 
-## 中文解析
+## Official Answer
 
-从最外层逐步推进否定比一次猜答案可靠。否定 implication 产生前件真且后件假，量词也必须交换；最终 Q 保持正向，而 R 和 S 分别取否定，不要漏掉它们之间的 and。
+Source: [[knowledge_base/past_paper/COMP2711_F2023_Midterm.pdf#page=5|physical PDF page 5]].
 
-## Detailed Solution
+> (a)
+> $$\begin{aligned}
+> &\neg\exists x(P(x)\to\forall y(Q(y)\to(R(y)\lor S(y))))\\
+> &\equiv\forall x\neg(\neg P(x)\lor\forall y(\neg Q(y)\lor(R(y)\lor S(y))))\\
+> &\equiv\forall x(P(x)\land\neg\forall y(\neg Q(y)\lor R(y)\lor S(y)))\\
+> &\equiv\forall x(P(x)\land\exists y\neg(\neg Q(y)\lor R(y)\lor S(y)))\\
+> &\equiv\forall x(P(x)\land\exists y(Q(y)\land\neg R(y)\land\neg S(y)))\\
+> &\equiv\forall xP(x)\land\exists y(Q(y)\land\neg R(y)\land\neg S(y)).
+> \end{aligned}$$
 
-Provenance: published official answer, independently checked and expanded below.
-
-### 中文解答
-
-**答案。** $\forall x\bigl(P(x)\land\exists y(Q(y)\land\neg R(y)\land\neg S(y))\bigr)$。
-
-**推导。**
-
-1. 先否定整个存在式，并用 $\neg(A\to B)\equiv A\land\neg B$：
-   $$\neg\exists x(P(x)\to\forall y(Q(y)\to(R(y)\lor S(y))))
-   \equiv\forall x(P(x)\land\neg\forall y(Q(y)\to(R(y)\lor S(y)))).$$
-   因此 $P$ 保持正向，外层量词变为全称。
-2. 再把 $\neg\forall y$ 化为 $\exists y\neg$，否定内层 implication 得 $Q(y)\land\neg(R(y)\lor S(y))$。最后用 De Morgan 将末项化为 $\neg R(y)\land\neg S(y)$，即答案。保留所有原量词作用域，不把依赖定义域条件的量词任意外提；最终否定符只紧靠谓词 $R,S$。
-
-### English solution
+## Supplementary Explanation
 
 **Answer.** $\forall x\bigl(P(x)\land\exists y(Q(y)\land\neg R(y)\land\neg S(y))\bigr)$.
 
@@ -72,10 +66,7 @@ $$\begin{aligned}
 \end{aligned}$$
 All remaining negations are immediately before R or S. Keeping the quantifier scopes explicit also avoids any unnecessary domain-dependent extraction of a quantifier.
 
-## Common Mistakes
-
-- 将 ¬(A→B) 写为 ¬A→¬B 不是等价变换；应写成前件真且后件假。 / Negated implication is A∧¬B.
-- 把 ¬(R∨S) 化成 ¬R∨¬S 错用了 De Morgan，否定后两个条件必须同时满足。 / The resulting connective is conjunction.
+The quantifier-negation step is $\neg\forall y F(y)\equiv\exists y\neg F(y)$. Keeping the final existential inside its original scope avoids relying on an unstated nonempty-domain convention when extracting it.
 
 ## Connections
 

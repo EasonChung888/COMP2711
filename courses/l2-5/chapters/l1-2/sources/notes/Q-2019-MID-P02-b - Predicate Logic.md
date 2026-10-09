@@ -38,26 +38,19 @@ Published answer and marking material: ![[knowledge_base/past_paper/2019-midterm
 
 Shared context: [[STEM-2019-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-题目要求翻译而不是判断数学事实。即使“每个整数都是偶数”本身是假，也必须忠实用整数身份作为条件，偶数作为结果。因为论域是所有实数，不能直接对每个实数断言其为整数且偶数。
+Source: [[knowledge_base/past_paper/2019-midterm.pdf#page=4|physical PDF page 4]].
 
-## Detailed Solution
+$\forall x(Q(x)\to P(x))$.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 4. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $\forall x(Q(x)\to P(x))$.
 
 **Derivation/proof.** For every real $x$, only the case in which $Q(x)$ holds is constrained. In that case the sentence requires $P(x)$. Thus the correct translation is a universally quantified implication. Translating a false English statement does not license changing it into a true one.
 
-### 中文解答
-
-**推导。** 遍历实数时，只要求整数满足偶数性质，故对每个 $x$ 写条件蕴含 $Q(x)\to P(x)$，再用全称量词得到 $\forall x(Q(x)\to P(x))$。原自然语言在通常整数中虽为假，翻译仍须忠实表达它，不能为使句子为真而改换量词。
-
-## Common Mistakes
-
-- 为了让句子为真而改成存在量词。
-- 写合取导致所有实数都必须是整数。
+A formula can be a proposition although the statement is false: a proposition needs a definite truth value, not necessarily truth.
 
 ## Connections
 

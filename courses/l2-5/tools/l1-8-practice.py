@@ -1,3 +1,4 @@
+from practice_answers import answer_fields, metadata_fields
 """Preserve selected original questions after all 22 explanations are committed."""
 from pathlib import Path
 from math import comb, factorial
@@ -5,7 +6,6 @@ from itertools import product, permutations
 import importlib.util
 import json
 import re
-import yaml
 
 spec = importlib.util.spec_from_file_location('practice', Path(__file__).with_name('chapter-practice.py'))
 shared = importlib.util.module_from_spec(spec)
@@ -68,24 +68,19 @@ if __name__ == '__main__':
             assert len(matches) == 1
             source = matches[0]
             text = source.read_text()
-            meta = yaml.safe_load(text.split('---',2)[1])
+            meta = metadata_fields(text)
             assert meta['verification_status'] == 'verified' and meta['answer_source'] == 'official'
             question, stems = shared.printed_question(text, chapter)
             paper = shared.REPO / meta['source_pdf']
             pdf = shared.snapshot(paper, chapter, 'papers')
-            official = shared.section(text, 'Official Answer')
-            # Convert Obsidian source links to local links without changing answer wording.
-            official = re.sub(r'\[\[knowledge_base/past_paper/([^\]#]+)#page=(\d+)\|([^\]]+)\]\]',
-                              lambda m: f'[{m[3]}](../sources/papers/{m[1]}#page={m[2]})', official)
-            assert '[[' not in official
-            stem_pages = [yaml.safe_load((shared.KB/'Stems'/f'{stem}.md').read_text().split('---',2)[1])['source_page'] for stem in stems]
+            answers = answer_fields(text)
+            stem_pages = [metadata_fields((shared.KB/'Stems'/f'{stem}.md').read_text())['source_page'] for stem in stems]
             results.append(dict(id=ident,topic=topic['slug'],sourceNote=shared.snapshot(source,chapter,'notes'),
                 sourceNoteSha256=shared.sha(source),stems=stems,stemPages=stem_pages,
                 paper=meta['source_paper'].replace('[[','').replace(']]',''),pdf=pdf,pdfSha256=shared.sha(paper),
                 page=meta['source_page'],solutionPages=meta.get('solution_page',[]),number=meta['question_number'],marks=meta.get('marks'),
-                verificationStatus='verified',answerSource='official',solutionSection='Supplementary Explanation',
-                questionMarkdown=question,officialMarkdown=official,solutionMarkdown=shared.section(text,'Supplementary Explanation'),
-                mistakesMarkdown='',independentVerification=REVIEW[ident],verificationNote=''))
+                verificationStatus='verified',answerSource='official',
+                questionMarkdown=question,**answers,independentVerification=REVIEW[ident]))
     (chapter/'practice.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
     audit = chapter/'sources/audit'
     audit.mkdir(exist_ok=True)

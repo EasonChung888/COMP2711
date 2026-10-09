@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "isolation": "temporary copy",
+  "exercises": 118,
+  "scripts": [
+    {
+      "script": "practice.py",
+      "stdout": "Copied 17 verified questions with original stems, solutions and local PDFs.",
+      "status": "passed"
+    },
+    {
+      "script": "chapter-practice.py",
+      "stdout": "l1-1: 10 verified original questions\nl1-2: 14 verified original questions\nl1-3: 14 verified original questions\nl1-4: 10 verified original questions\nTotal: 48",
+      "status": "passed"
+    },
+    {
+      "script": "counting-practice.py",
+      "stdout": "l1-6: 31 verified original questions\nl1-7: 11 verified original questions",
+      "status": "passed"
+    },
+    {
+      "script": "l1-8-practice.py",
+      "stdout": "11 original questions verified and snapshotted",
+      "status": "passed"
+    },
+    {
+      "script": "build.mjs",
+      "stdout": "Built 8 lessons, 39 source pages and 17 questions.",
+      "status": "passed"
+    },
+    {
+      "script": "chapter-lessons.mjs",
+      "stdout": "Built 22 topic lessons, 189 audited page links and 48 verified original questions.",
+      "status": "passed"
+    },
+    {
+      "script": "counting-lessons.mjs",
+      "stdout": "Built 15 topic lessons, 92 audited page links and 42 verified original questions.",
+      "status": "passed"
+    },
+    {
+      "script": "l1-8-lessons.mjs",
+      "stdout": "Built 4 topic lessons, 22 audited page links and 11 verified original questions.",
+      "status": "passed"
+    }
+  ]
+}

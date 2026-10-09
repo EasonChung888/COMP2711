@@ -37,26 +37,20 @@ Published answer and marking material: ![[knowledge_base/past_paper/2018-midterm
 
 Shared context: [[STEM-2018-MID-P01 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-要同时表达骑士说真话和骗子说假话，身份必须与所说整句话的真假等价。爱丽丝的话是非 q，鲍勃的话是两人都为骗子；把两人的双条件合取，才包含所有信息。
+Source: [[knowledge_base/past_paper/2018-midterm.pdf#page=3|physical PDF page 3]].
 
-## Detailed Solution
+$((p\land\neg q)\lor(\neg p\land q))\land((q\land(\neg q\land\neg p))\lor(\neg q\land(p\lor q)))$.
+(XOR can be used to connect Alice's two cases and Bob's two cases. Some other answers are possible. Using implication is generally not correct.)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 3. The Chinese derivation expands the reasoning.
+## Supplementary Explanation
 
 **Answer.** $(p\leftrightarrow\neg q)\land(q\leftrightarrow(\neg p\land\neg q))$.
 
 **Derivation/proof.** Alice's statement has truth value $\neg q$. Being a knight means that statement is true, and being a knave means it is false, giving $p\leftrightarrow\neg q$. Bob's whole statement is $\neg p\land\neg q$, giving $q\leftrightarrow(\neg p\land\neg q)$. Both conversations occurred, so conjoin the constraints. Expanding each biconditional produces the source's two-case expression.
 
-### 中文解答
-
-**推导。** Alice 的陈述“Bob 是骗子”为 $\neg q$。骑士陈述真、骗子陈述假，故她的身份真值恰等于陈述真值，即 $p\leftrightarrow\neg q$。Bob 的整句“我和 Alice 都是骗子”为 $\neg p\land\neg q$，同理有 $q\leftrightarrow(\neg p\land\neg q)$。两人话语同时成立，答案为 $(p\leftrightarrow\neg q)\land(q\leftrightarrow(\neg p\land\neg q))$。把第一个双条件展开成 $(p\land\neg q)\lor(\neg p\land q)$，第二个展开成 $(q\land\neg p\land\neg q)\lor(\neg q\land(p\lor q))$，正是印本的两种身份分类。
-
-## Common Mistakes
-
-- 仅写骑士推出真话而漏掉骗子情况。
-- 把鲍勃的两人都为骗子误写成析取。
+Expanded explicitly, the first constraint is $(p\land\neg q)\lor(\neg p\land q)$ and the second is $(q\land\neg p\land\neg q)\lor(\neg q\land(p\lor q))$. Parenthesis balancing in the official display above is a typography repair; its two-case method is unchanged.
 
 ## Connections
 

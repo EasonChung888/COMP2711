@@ -45,13 +45,22 @@ Conclusion: $r$
 
 Shared context: [[STEM-2015-MID-P02 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-由 $p\to q$ 和 $\neg q$ 得到 $\neg p$；这恰好是第三个前提的前件，可推出 $r\land s$。最后用合取消去取出所需的 $r$。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=6|PDF physical page 6]].
 
-## Detailed Solution
+(b)
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 6. The Chinese derivation expands the reasoning.
+| Step | Statement | Reason |
+| --- | --- | --- |
+| 1 | $p\to q$ | Premise |
+| 2 | $\neg q$ | Premise |
+| 3 | $\neg p$ | Modus tollens (1,2) |
+| 4 | $\neg p\to(r\land s)$ | Premise |
+| 5 | $(r\land s)$ | Modus Ponens (3,4) |
+| 6 | $r$ | Simplification (5) |
+
+## Supplementary Explanation
 
 **Answer.** $r$ follows.
 
@@ -60,15 +69,6 @@ Provenance: official; supplied source conclusion checked on PDF page(s) 6. The C
 3. $\neg p\to(r\land s)$ (premise).
 4. $r\land s$ (modus ponens, 2–3).
 5. $r$ (simplification, 4).
-
-### 中文解答
-
-**推导。** 由前提 $p\to q$ 和 $\neg q$ 用否定后件得 $\neg p$。将它代入第三个前提 $\neg p\to(r\land s)$，用肯定前件得 $r\land s$。最后用合取消去得到 r。顺序是先得到第三前提所需的条件，再取出目标分量。
-
-## Common Mistakes
-
-- 错误地从 $\neg q$ 推出 $p$。
-- 只写 $r\land s$ 而未给出最终的合取消去规则。
 
 ## Connections
 

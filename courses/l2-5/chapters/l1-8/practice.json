@@ -25,9 +25,10 @@
     "questionMarkdown": "How many strings of six lowercase letters from the English alphabet contain\n\n(b) the letters a and b?",
     "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2019-final.pdf#page=10).\n\nWe use $W_a$ to denote the set of words containing $a$, and similarly $W_b,W_{a\\land b},W_{a\\lor b}$. By the inclusion-exclusion rule, we have $\\lvert W_{a\\lor b}\\rvert=\\lvert W_a\\rvert+\\lvert W_b\\rvert-\\lvert W_{a\\land b}\\rvert$.\nFrom (a), we know $\\lvert W_a\\rvert=\\lvert W_b\\rvert=26^6-25^6$. Similarly, $\\lvert W_{a\\lor b}\\rvert=26^6-24^6$. So\n$$\\lvert W_{a\\land b}\\rvert=\\lvert W_a\\rvert+\\lvert W_b\\rvert-\\lvert W_{a\\lor b}\\rvert=2(26^6-25^6)-(26^6-24^6)=26^6-2\\cdot25^6+24^6.$$",
     "solutionMarkdown": "**Answer.** $26^6-2\\cdot25^6+24^6$.\n\n**Derivation/proof.** Let A be strings missing a and B strings missing b. Their sizes are $25^6$ each, and their intersection misses both, with $24^6$ strings. The strings containing both are outside $A\\cup B$. Inclusion-exclusion gives $26^6-(25^6+25^6-24^6)$, which simplifies to the answer.\n\nThe intersection omits both named letters, leaving twenty-four choices at each position, so $|A\\cap B|=24^6$. Inclusion-exclusion adds this intersection back after the two subtractions.",
-    "mistakesMarkdown": "",
     "independentVerification": "六位小写字母串允许重复。缺 a、缺 b 各有 25^6，二者都缺有 24^6；补集得到 26^6−2×25^6+24^6。另以四状态动态规划逐位统计是否出现 a/b 核验。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "a298f2e7831c85485e2125dea633052500c19c0c838202786e1516659e63844b",
+    "supplementarySourceSha256": "134871c883d487d348512ccd76a07c93b48396abf4aa351e2c698a58633f1131"
   },
   {
     "id": "Q-2020-FINAL1-P04-a",
@@ -55,9 +56,10 @@
     "questionMarkdown": "How many integers $0\\le n<1000$ are there such that\n\n$n$ is divisible by 2, 3 or 5?",
     "officialMarkdown": "Source: [physical PDF page 3](../sources/papers/2020-final-part-1.pdf#page=3).\n\nLet $f(k)$ be the number of integers $0\\le n<1000$ that are divided by $k$, then $f(k)=1+\\lfloor999/k\\rfloor$. We have $f(2)=500,f(3)=334,f(5)=200,f(6)=167,f(10)=100,f(15)=67$ and $f(30)=34$. By inclusion-exclusion principle, the answer is $f(2)+f(3)+f(5)-f(6)-f(10)-f(15)+f(30)=734$.",
     "solutionMarkdown": "**Answer.** $734$.\n\n**Derivation/proof.** For d>0 the number of multiples in [0,999] is $f(d)=1+\\lfloor999/d\\rfloor$, including zero. The counts for 2,3,5 are 500,334,200; pairwise intersections use 6,10,15 and give 167,100,67; the triple uses 30 and gives 34. Inclusion-exclusion yields $500+334+200-167-100-67+34=734$. Zero is counted once after cancellation.\n\nThe coefficient of zero in inclusion-exclusion is $3-3+1=1$.",
-    "mistakesMarkdown": "",
     "independentVerification": "范围包含 0，不含 1000。三个整除集合的两两交集使用 lcm=6,10,15，三重使用 30，结果 734；逐个枚举 0…999 核验。共享题干在 PDF 第 2 页，小题及答案在第 3 页。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "ce09bf6f31a948e0fd5b49a7404b0f2399208bc8f56e3c828c629bed6cbd0da8",
+    "supplementarySourceSha256": "a70a96f4c90075c22ed888447e47102d69fc9b8145b5fd0d4757305cecee228d"
   },
   {
     "id": "Q-2025F-MID-P06",
@@ -81,9 +83,10 @@
     "questionMarkdown": "Use inclusion-exclusion principle to solve the following problem. No other methods are allowed. You do not need to calculate the final value.\nIn how many 6-digit numbers do all three digits 1, 2, and 3 appear at least once? Note that the leftmost digit can not be equal to 0.",
     "officialMarkdown": "Source: [physical PDF page 15](../sources/papers/COMP2711_F2025_Midterm.pdf#page=15).\n\n> Assume $S$ to be the set of all $6$-digit numbers.\n> $$|S|=9\\times10^5.$$\n> Let $A_1$ be the set of $6$-digit numbers missing digit $1$, $A_2$ be the set of $6$-digit numbers missing digit $2$ and $A_3$ be the set of $6$-digit numbers missing digit $3$. We need the number of $6$-digit numbers where digits $1,2$ and $3$ appear, which is the total minus the numbers missing at least one of $1$ or $2$ or $3$:\n> $$S-(A_1\\cup A_2\\cup A_3).$$\n> By inclusion-exclusion:\n> $$|A_1\\cup A_2\\cup A_3|=|A_1|+|A_2|+|A_3|-|A_1\\cap A_2|-|A_1\\cap A_3|-|A_2\\cap A_3|+|A_1\\cap A_2\\cap A_3|.$$\n> – $|A_1|$: Numbers with no $1$. First digit has $8$ choices ($2$ to $9$), other digits have $9$ choices ($0,2$ to $9$):\n> $$|A_1|=8\\times9^5.$$\n> Similarly, $|A_1|=|A_2|=|A_3|=8\\times9^5$.\n> – $|A_1\\cap A_2|$: Numbers with no $1$ and no $2$. First digit has $7$ choices ($3$ to $9$), other digits have $8$ choices ($0,3$ to $9$):\n> $$|A_1\\cap A_2|=7\\times8^5.$$\n> Similarly, $|A_2\\cap A_3|=|A_1\\cap A_3|=|A_1\\cap A_2|=7\\times8^5$.\n> – $|A_1\\cap A_2\\cap A_3|$: Numbers with no $1$ and no $2$ and no $3$. First digit has $6$ choices ($4$ to $9$), other digits have $7$ choices ($0,4$ to $9$):\n> $$|A_1\\cap A_2\\cap A_3|=6\\times7^5.$$\n> Now compute:\n> $$|A_1\\cup A_2\\cup A_3|=3\\times(8\\times9^5)-3\\times(7\\times8^5)+6\\times7^5.$$\n> So the answer is $|S|-|A_1\\cup A_2\\cup A_3|=9\\times10^5-3\\times(8\\times9^5)+3\\times(7\\times8^5)-6\\times7^5$.",
     "solutionMarkdown": "**Answer.** $9\\cdot10^5-3\\cdot8\\cdot9^5+3\\cdot7\\cdot8^5-6\\cdot7^5$.\n\n**Derivation/proof.** The universe of six-digit numbers has $|S|=9\\cdot10^5$ elements. Let $A_i$ be the numbers missing digit i, for i=1,2,3. Missing one specified nonzero digit leaves eight leading choices and nine for each other position, so $|A_i|=8\\cdot9^5$. Missing two leaves seven leading choices and eight later choices, giving $7\\cdot8^5$ per pairwise intersection. Missing all three gives $6\\cdot7^5$. Inclusion-exclusion subtracts the three single-event counts, adds the three pairwise intersections, and subtracts the one triple intersection from the universe. This gives the stated expression.",
-    "mistakesMarkdown": "",
     "independentVerification": "六位数首位不能为 0。禁用 r 个指定非零数字时首位 9−r 种、后五位各 10−r 种，容斥为 9×10^5−3×8×9^5+3×7×8^5−6×7^5；枚举全部六位数核验，保留原题允许不计算最终数值的要求。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "cf85e0c88703fb68c47b8d6e21adea04b7550e51137a50ad133918c6c773f743",
+    "supplementarySourceSha256": "2eca9b1497db046ec7597451a39c5d088e7b1a6ec48104a904f608aef154615a"
   },
   {
     "id": "Q-2024F-MID-P07",
@@ -107,9 +110,10 @@
     "questionMarkdown": "Assume that there are 5 processing jobs that must be assigned to 3 servers.\nUse Inclusion-Exclusion to calculate how many assignments exist such that each server is assigned to at least one job? Briefly explain why.",
     "officialMarkdown": "Source: [physical PDF page 12](../sources/papers/COMP2711_F2024_Midterm.pdf#page=12).\n\n> Answer: Solution 1: This is the number of onto functions from a set of 5 elements to a set of 3 elements: $3^5-\\binom312^5+\\binom321^5$\n> Solution 2:",
     "solutionMarkdown": "**Answer.** $3^5-\\binom312^5+\\binom321^5=150$.\n\n**Derivation/proof.** Each of five jobs has three choices, giving $3^5=243$ functions. Let $A_i$ consist of assignments leaving server $i$ empty; then $|A_i|=2^5$. If two specified servers are empty, all jobs go to the remaining server, so the intersection has size $1^5=1$. The triple intersection is empty because five jobs cannot use no server. Inclusion-exclusion gives $243-3\\cdot32+3\\cdot1=150$. Jobs and servers have identities, so these are labelled assignments, not unordered partitions.",
-    "mistakesMarkdown": "",
     "independentVerification": "五个带身份任务到三台带身份服务器的满射。3^5−3×2^5+3=150；枚举全部 243 个函数核验。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "33ca2d46431769aa1d52ecb98e256a0d28ef6fdc66bcdb3264de346a17d0b371",
+    "supplementarySourceSha256": "e7bc041702a49fcbcf724ecff5f58d6fbc7bd29d39843032a8b9db6212ae9215"
   },
   {
     "id": "Q-2017-FINAL-P01",
@@ -133,9 +137,10 @@
     "questionMarkdown": "An office manager has four employees and nine reports to be done. In how many ways can the reports be assigned to the employees so that each employee has at least one report to do?",
     "officialMarkdown": "Source: [physical PDF page 3](../sources/papers/2017-final.pdf#page=3).\n\n$4^9-\\binom413^9+\\binom422^9-\\binom431^9$.",
     "solutionMarkdown": "**Answer.** $4^9-\\binom413^9+\\binom422^9-\\binom431^9=186480$.\n\n**Derivation/proof.** There are $4^9$ unrestricted assignments. For each employee, define the bad event that they receive no report. If a specified set of $j$ employees is omitted, each report has $4-j$ choices, giving $(4-j)^9$ assignments. Inclusion-exclusion gives $\\sum_{j=0}^4(-1)^j\\binom4j(4-j)^9$, whose last term is zero. Evaluating yields 186480.\n\nEvaluation gives $262144-78732+3072-4=186480$. Each nonempty assignment survives inclusion-exclusion exactly once.",
-    "mistakesMarkdown": "",
     "independentVerification": "九份不同报告到四位员工的满射。4^9−4×3^9+6×2^9−4=186480；枚举全部 262144 个函数核验。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "766f4660b821e52965483ee019577bf441403bcb0d94c899e82e82416004fe1a",
+    "supplementarySourceSha256": "7d8139a9653a4cf8f2b045be7170311082a0934d8ce68c3d39f349dfaa66c999"
   },
   {
     "id": "Q-2020-FINAL2-P06-a",
@@ -164,9 +169,10 @@
     "questionMarkdown": "Consider the permutations of the 10 digits (0–9). We denote a permutation as $A$, whose elements are $A[0],A[1],\\ldots,A[9]$. Calculate the number of permutations that satisfy each of the following conditions:\n\n(a) There is exactly one $i$ such that $A[i]=i$.\n(b) There are exactly nine $i$’s such that $A[i]=i$.\n(c) $A[0]=1,A[1]=0$.\n(d) $A[4]=4,A[5]=5$.\n\nYou can express your answers using binomial coefficients, factorials, and $D_n$ (derangement number). However, you should not have summation $\\sum$ in your final answers.\n\nThere is exactly one $i$ such that $A[i]=i$.",
     "officialMarkdown": "Source: [physical PDF page 4](../sources/papers/2020-final-part-2.pdf#page=4); [physical PDF page 5](../sources/papers/2020-final-part-2.pdf#page=5).\n\n$D_n$ is the number of derangements of a set with $n$ elements,\n$$D_n=n!\\left[1-\\frac1{1!}+\\frac1{2!}-\\cdots+(-1)^n\\frac1{n!}\\right].$$\nExactly $1$ digit appears in its index position means that, we randomly select $1$ digit and put it in its index position and dearrange the remaining $9$ digits. So the answer is,\n$$\\binom{10}1D_9=10\\cdot D_9.$$",
     "solutionMarkdown": "**Answer.** $10D_9$.\n\n**Derivation/proof.** Choose the unique fixed index in 10 ways and put that digit there. The remaining nine digits must avoid their own nine positions, otherwise there would be more than one fixed point. They form a derangement counted by D9. Each permutation has one unique chosen fixed point, so the product 10D9 has no duplication.\n\nThe final expression uses the explicitly allowed derangement number and contains no summation sign.\n\nThe condition $A[i]=i$ is a fixed point. After choosing its unique index, the remaining positions must be deranged to exclude a second fixed point, which explains the factor $D_9$.",
-    "mistakesMarkdown": "",
     "independentVerification": "十种数字的排列允许 0 在首位。先选唯一固定位置，再错排其余九个，10D9=1334960；枚举九个元素的全部排列计算 D9，并与递推和阶乘交替和交叉核验。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "07ecb3efca60e96c49dd84eb28cdd57dfa8c90ad0f1b09bdc22c772ac4e66f78",
+    "supplementarySourceSha256": "30ecb6989418e2e44ff6f44c9eaf02e98e3704e6dfd3226fadaff467221ea197"
   },
   {
     "id": "Q-2020-FINAL2-P06-b",
@@ -194,9 +200,10 @@
     "questionMarkdown": "Consider the permutations of the 10 digits (0–9). We denote a permutation as $A$, whose elements are $A[0],A[1],\\ldots,A[9]$. Calculate the number of permutations that satisfy each of the following conditions:\n\n(a) There is exactly one $i$ such that $A[i]=i$.\n(b) There are exactly nine $i$’s such that $A[i]=i$.\n(c) $A[0]=1,A[1]=0$.\n(d) $A[4]=4,A[5]=5$.\n\nYou can express your answers using binomial coefficients, factorials, and $D_n$ (derangement number). However, you should not have summation $\\sum$ in your final answers.\n\nThere are exactly nine $i$’s such that $A[i]=i$.",
     "officialMarkdown": "Source: [physical PDF page 5](../sources/papers/2020-final-part-2.pdf#page=5).\n\nIf $9$ digits appear in their corresponding index positions, the remaining one digit must also appear in its index position, so the answer is $0$.",
     "solutionMarkdown": "**Answer.** $0$.\n\n**Derivation/proof.** If nine positions contain their own digits, exactly one digit and one position remain unused. Because all other digits are already at their matching positions, the remaining digit is the label of that remaining position. It too must be fixed, producing ten fixed points rather than exactly nine. Hence no such permutation exists.\n\nIf $j$ is the sole unused position, all other digits already match their positions. At the empty position $j$ the remaining digit must be $j$, producing ten rather than nine fixed points. Hence the answer is $0$.",
-    "mistakesMarkdown": "",
     "independentVerification": "九个固定位置确定以后，最后一个位置必然也固定，恰好九个固定点不可能，答案 0。等价 C(10,9)D1=0。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "a770253985828146fdc7aaf4530a578d8006d9e7604b21110be5231ff979d02b",
+    "supplementarySourceSha256": "0c83fc4b8922f14d77d2f6462059459e87bc469fe4b5a1463a2bc7cd76869804"
   },
   {
     "id": "Q-2020-FINAL2-P06-d",
@@ -224,9 +231,10 @@
     "questionMarkdown": "Consider the permutations of the 10 digits (0–9). We denote a permutation as $A$, whose elements are $A[0],A[1],\\ldots,A[9]$. Calculate the number of permutations that satisfy each of the following conditions:\n\n(a) There is exactly one $i$ such that $A[i]=i$.\n(b) There are exactly nine $i$’s such that $A[i]=i$.\n(c) $A[0]=1,A[1]=0$.\n(d) $A[4]=4,A[5]=5$.\n\nYou can express your answers using binomial coefficients, factorials, and $D_n$ (derangement number). However, you should not have summation $\\sum$ in your final answers.\n\n$A[4]=4,A[5]=5$.",
     "officialMarkdown": "Source: [physical PDF page 5](../sources/papers/2020-final-part-2.pdf#page=5).\n\nFix the middle two digits, and the remaining $8$ digits are randomly permuted, so the answer is $8!$.",
     "solutionMarkdown": "**Answer.** $8!$.\n\n**Derivation/proof.** Positions 4 and 5 are already occupied by digits 4 and 5. Delete those two positions and digits; any bijection between the eight remaining positions and eight remaining digits extends uniquely to a valid permutation. There are 8! such bijections. Other fixed points are permitted because the condition does not say exactly two.\n\nEvery bijection of the eight remaining digits to the eight remaining positions has a unique extension after placing four and five in their prescribed positions. This establishes the count $8!$ without overcounting.",
-    "mistakesMarkdown": "",
     "independentVerification": "仅要求两个指定位置固定，允许更多固定点，删除这两位置与两数字后是任意八元素排列，8!=40320。不可误用 D8。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "d9714444ffde1c7b1fb8a7877fcae795ed637190e92db968896832bad1d5f35a",
+    "supplementarySourceSha256": "aeaecb1c05fee8efffd91e88cc2240166ee5e6654fdbfa7e4cde0621db92d1ee"
   },
   {
     "id": "Q-2019-FINAL-P10-b",
@@ -254,9 +262,10 @@
     "questionMarkdown": "Consider the equation $x_1+x_2+x_3=20$ where $x_1,x_2$, and $x_3$ are nonnegative integers.\n\nFor this question, give exact numbers as the solution.\n\n(b) How many solutions are there so that $x_1\\ge9$?",
     "officialMarkdown": "Source: [physical PDF page 12](../sources/papers/2019-final.pdf#page=12).\n\nLet $x'_1=x_1-9$. The problem becomes the number of solutions to the equation $x'_1+x_2+x_3=11$, which is $C(11+3-1,3-1)=C(13,2)=78$.",
     "solutionMarkdown": "**Answer.** $78$.\n\n**Derivation/proof.** Set $y_1=x_1-9\\ge0$. The equation becomes $y_1+x_2+x_3=11$, a bijective change of variables with inverse $x_1=y_1+9$. Stars and bars gives $\\binom{13}{2}=13\\cdot12/2=78$.\n\nAfter reserving the required minimum allocations, stars and bars gives $\\binom{13}{2}=78$ arrangements of the remainder.",
-    "mistakesMarkdown": "",
     "independentVerification": "x1≥9，平移后总量 11、三变量非负，C(13,2)=78；枚举原方程非负解核验。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "7a638422a1999d9f01a2f3b5c56cfdc4329229de1e548df7fdbf7e5e78fc05a0",
+    "supplementarySourceSha256": "35aa78cdab864390fa38308ff0f92b25b0220ae4c0896228ec719a102158bf8b"
   },
   {
     "id": "Q-2019-FINAL-P10-d",
@@ -284,9 +293,10 @@
     "questionMarkdown": "Consider the equation $x_1+x_2+x_3=20$ where $x_1,x_2$, and $x_3$ are nonnegative integers.\n\nFor this question, give exact numbers as the solution.\n\n(d) How many solutions are there so that $x_1,x_2$ and $x_3$ are less than 9?",
     "officialMarkdown": "Source: [physical PDF page 12](../sources/papers/2019-final.pdf#page=12).\n\nWe use $S_\\phi$ to denote the set of solutions subject to condition $\\phi$. By the inclusion-exclusion principle, we have\n$$\\begin{aligned}\\lvert S_{x_1\\ge9\\lor x_2\\ge9\\lor x_3\\ge9}\\rvert&=3\\cdot\\lvert S_{x_1\\ge9}\\rvert-3\\cdot\\lvert S_{x_1\\ge9\\land x_2\\ge9}\\rvert+\\lvert S_{x_1\\ge9\\land x_2\\ge9\\land x_3\\ge9}\\rvert\\\\&=3\\cdot78-3\\cdot6+0=216.\\end{aligned}$$\nSo, $\\lvert S_{x_1<9\\land x_2<9\\land x_3<9}\\rvert=\\lvert S\\rvert-\\lvert S_{x_1\\ge9\\lor x_2\\ge9\\lor x_3\\ge9}\\rvert=231-216=15$.\nAlternative solution: Write $y_1=8-x_1,y_2=8-x_2,y_3=8-x_3$. Then the equation becomes $24-y_1-y_2-y_3=20$, or $y_1+y_2+y_3=4$, which has $C(4+3-1,3-1)=C(6,2)=15$ solutions.",
     "solutionMarkdown": "**Answer.** $15$.\n\n**Derivation/proof.** Let $A_i$ be solutions with $x_i\\ge9$. The unrestricted count is 231; each $A_i$ has 78 solutions and each pair intersection has 6. The triple intersection is empty because $27>20$. Thus the desired count is $231-3\\cdot78+3\\cdot6=15$. Independently set $y_i=8-x_i\\ge0$: then $y_1+y_2+y_3=4$, whose $\\binom62=15$ solutions automatically have $y_i\\le4\\le8$, giving a bijection back.\n\nIn the complementary-variable check, each $y_i\\le4\\le8$, so the inverse $x_i=8-y_i$ is automatically nonnegative and the transformation is a bijection.",
-    "mistakesMarkdown": "",
     "independentVerification": "各变量小于 9 即至多 8，坏事件阈值为 9。231−3×78+3×6=15；枚举三变量并独立使用 y_i=8−x_i 的双射核验。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "9036cf2774b5c1450a17108c12108c4c377a5f6edfa67429e72e51f9604b6724",
+    "supplementarySourceSha256": "4240c34299b6e3a5eb7c75078855e1c0b72f3f64f0d572d6b630b194e984f16e"
   },
   {
     "id": "Q-2023F-MID-P06",
@@ -311,8 +321,9 @@
     "questionMarkdown": "How many solutions are there for the equation $a+b+c=13$, where $a,b,c$ are nonnegative integers and $a\\le4$, $b\\le5$, $c\\le6$. Use the inclusion-exclusion principle to calculate the result instead of enumerating the values of possible solutions.",
     "officialMarkdown": "Source: [physical PDF page 13](../sources/papers/COMP2711_F2023_Midterm.pdf#page=13), [physical PDF page 14](../sources/papers/COMP2711_F2023_Midterm.pdf#page=14).\n\n> $$U=\\{(a,b,c)\\mid a+b+c=13,a,b,c\\ge0\\}$$\n> $$A=\\{(a,b,c)\\mid a+b+c=13,a>4,b,c\\ge0\\}$$\n> $$B=\\{(a,b,c)\\mid a+b+c=13,b>5,a,c\\ge0\\}$$\n> $$C=\\{(a,b,c)\\mid a+b+c=13,c>6,a,b\\ge0\\}$$\n> So the result of our question is $|\\overline A\\cap\\overline B\\cap\\overline C|=|U|-|A\\cup B\\cup C|$. And we use inclusion-exclusion to count $|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$.\n> We know that the number of $r$-combinations from a set with $n$ elements when repetition of elements is allowed is $\\binom{n+r-1}r$, which means that the number of solutions of $a+b+c=n$, where $a,b,c\\ge0$, is $\\binom{n+2}2$.\n> $$|U|=\\binom{15}2=105$$\n> Since we can rewrite the set $A$ to be\n> $$A=\\{(a,b,c)\\mid a+b+c=13,a>4,b,c\\ge0\\}=\\{(a'+5,b,c)\\mid a'+b+c=8,a',b,c\\ge0\\}$$\n> $$|A|=\\binom{10}2=45$$\n> In the same way, we can calculate the sizes of $B,C$ as well as their intersections.\n> $$|B|=\\binom92=36,\\quad|C|=\\binom82=28$$\n> $$|A\\cap B|=\\binom42=6,\\quad|A\\cap C|=\\binom32=3,\\quad|B\\cap C|=\\binom22=1$$\n> While the set $A\\cap B\\cap C$ should satisfy $a+b+c=13$ where $a>4,b>5,c>6$, there is no solution for this equation. So we have,\n> $$|A\\cap B\\cap C|=0$$\n> In all, the result is,\n> $$\\begin{aligned}|\\overline A\\cap\\overline B\\cap\\overline C|&=|U|-(|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|)\\\\&=105-(45+36+28-6-3-1+0)\\\\&=6.\\end{aligned}$$",
     "solutionMarkdown": "**Answer.** $6$.\n\n**Derivation/proof.** Let U be all nonnegative solutions and A, B, C the violations $a\\ge5$, $b\\ge6$, $c\\ge7$. Stars and bars gives $|U|=\\binom{15}2$. Shifting the violating variables gives $|A|=\\binom{10}2$, $|B|=\\binom92$, $|C|=\\binom82$. The double shifts give $|A\\cap B|=\\binom42$, $|A\\cap C|=\\binom32$, and $|B\\cap C|=\\binom22$. The triple shift would leave total $13-5-6-7<0$, so its count is zero. Inclusion-exclusion therefore gives $105-45-36-28+6+3+1=6$, with all forbidden overlaps accounted for.\n\nThe thresholds are $A:a\\ge5$, $B:b\\ge6$, and $C:c\\ge7$. The triple intersection is empty, and explicitly $105-45-36-28+6+3+1-0=6$. Legal boundary values remain included.",
-    "mistakesMarkdown": "",
     "independentVerification": "坏阈值为 5、6、7。单交集为45,36,28，双交集为6,3,1，三交集空。105−45−36−28+6+3+1=6；枚举仅用于独立核验，网页原题解析保留要求的容斥法。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialSourceSha256": "a4b570923e7b586c9ca2da00ae8be3a87f36ba93684a9316286d2dedf5ae5ba4",
+    "supplementarySourceSha256": "2c08e3702f5bb8d6456fbf7601ac957371cd7a3c2767562fd3bd3dc42dae33f4"
   }
 ]

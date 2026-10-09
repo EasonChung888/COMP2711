@@ -1,3 +1,4 @@
+import {answerBlock} from './practice-answers.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
@@ -32,7 +33,7 @@ function checkChapter(c) {
   }
   if (new Set(practice.map(q => q.id)).size !== practice.length) throw Error(`${id}: duplicate question`);
   for (const q of practice) {
-    if (q.verificationStatus !== 'verified' || !q.independentVerification || !(q.answerSource === 'official' || (q.id === 'Q-2017-MID-P10-c' && q.answerSource === 'derived' && q.verificationNote))) throw Error(`${id}/${q.id}: unverified answer`);
+    if (q.verificationStatus !== 'verified' || !q.independentVerification || !(q.answerSource === 'official' || (q.id === 'Q-2017-MID-P10-c' && q.answerSource === 'derived' && q.officialMarkdown))) throw Error(`${id}/${q.id}: unverified answer`);
     if (sha(path.join(dir, q.sourceNote)) !== q.sourceNoteSha256 || sha(path.join(dir, q.pdf)) !== q.pdfSha256) throw Error(`${id}/${q.id}: source hash mismatch`);
     if (!q.questionMarkdown || !q.solutionMarkdown) throw Error(`${id}/${q.id}: empty question/solution`);
   }
@@ -42,10 +43,10 @@ function checkChapter(c) {
 }
 
 function questionBlock(q, number) {
-  const pages = Array.isArray(q.solutionPages) ? q.solutionPages : [q.solutionPages];
-  const answerPage = pages[0] || q.page;
-  const provenance = q.answerSource === 'derived' ? '独立核验的更正答案' : '官方答案与知识库补充解析，已独立核验';
-  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<span>${esc(q.id)}</span> · <a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea><details class="answer"><summary>查看答案与解析</summary>${markdown(q.solutionMarkdown)}${q.verificationNote ? `<aside class="small-note"><strong>核验说明：</strong>${esc(q.verificationNote)}</aside>` : ''}${q.mistakesMarkdown ? `<h4>容易出错的地方</h4>${markdown(q.mistakesMarkdown)}` : ''}<p class="small-note">答案来源：${provenance} · <a href="../${esc(q.pdf)}#page=${answerPage}">查看印刷答案页</a> · <a href="../${esc(q.sourceNote)}">知识库原始记录</a></p></details></article>`;
+
+
+
+  return `<article class="practice-item" id="${esc(q.id)}" data-question-id="${esc(q.id)}"><h3>练习 ${number} · ${esc(q.paper)} ${esc(q.number)}</h3><p class="small-note">${q.marks ? `${q.marks} 分 · ` : ''}<span>${esc(q.id)}</span> · <a href="../${esc(q.pdf)}#page=${q.page}">原题 PDF · 第 ${q.page} 页</a></p><div class="question-body" lang="en">${markdown(q.questionMarkdown)}</div><label class="attempt-label" for="attempt-${esc(q.id)}">我的解题过程</label><textarea id="attempt-${esc(q.id)}" data-attempt="${esc(q.id)}" placeholder="先写下思路，再展开答案。输入会自动保存。"></textarea>${answerBlock(q)}</article>`;
 }
 
 function lesson(c, t, index) {

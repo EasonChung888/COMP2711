@@ -39,26 +39,23 @@ Official answer or marking material: ![[knowledge_base/past_paper/2015-midterm.p
 
 Shared context: [[STEM-2015-MID-P04 - Shared Problem Prompt]].
 
-## 中文解析
+## Official Answer
 
-假设结论不成立，即 $y$ 有理。由于 $xy\ne0$，可以除以 $y$；有理的乘积除以非零有理数仍有理，于是得到 $x$ 有理，与前提冲突。
+Source: [[knowledge_base/past_paper/2015-midterm.pdf#page=9|PDF physical page 9]].
 
-## Detailed Solution
+(c) Assume $x$ is irrational and $xy$ is rational, and $y$ were rational.
 
-Provenance: official; supplied source conclusion checked on PDF page(s) 9. The Chinese derivation expands the reasoning.
+Let $y=\frac{a_2}{b_2}$. Then $\frac1y=\frac{b_2}{a_2}$, and hence would be rational. By part (1), $xy\frac1y=x$ would also be rational, which contradicts the assumption that $x$ is irrational. Therefore, if $x$ is irrational and $xy$ is rational, then $y$ is irrational.
+
+## Supplementary Explanation
 
 **Answer.** $y$ must be irrational.
 
 **Derivation/proof.** Assume $x$ irrational, $xy$ rational, and $y$ rational. Write $xy=a/b$ and $y=c/d$ with nonzero $b,d,c$; $c\ne0$ follows from $y\ne0$. Then $x=(a/b)/(c/d)=ad/(bc)$ is rational, contradicting the premise. Therefore $y$ is irrational.
 
-### 中文解答
+The shared source condition $xy\ne0$ supplies $y\ne0$, hence $c\ne0$ in the displayed supplementary ratio. The nonzero condition is part of the problem, not an added assumption.
 
-**推导。** 反设 y 有理，同时保留 x 无理和 xy 有理。公共题干已给 $xy\ne0$，故 $y\ne0$。写 $xy=a/b,y=c/d$，分母 b、d 非零，且 c 非零。于是 $x=(a/b)/(c/d)=ad/(bc)$，分子分母是整数且 $bc\ne0$，所以 x 有理，与假设矛盾。因此 y 必为无理数。非零条件来自源题，不是证明中自行补充。
-
-## Common Mistakes
-
-- 忽略 $y\ne0$ 就使用其倒数。
-- 误声称所有两个无理数的乘积都无理，本题并不支持此结论。
+The nonzero factors $b$ and $c$ ensure $bc\ne0$, making the rational representation valid.
 
 ## Connections
 

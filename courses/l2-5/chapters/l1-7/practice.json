@@ -19,9 +19,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "(a) Find the coefficient of $x^7y^5$ in the expansion of $(3x-y)^{12}$.",
     "solutionMarkdown": "**Answer.** $-\\binom{12}{7}3^7$.\n\n**Derivation/proof.** To obtain $x^7y^5$, choose $3x$ from seven of the twelve factors and $-y$ from the other five. There are $\\binom{12}{7}$ choices of the seven positions. Their scalar contribution is $3^7(-1)^5=-3^7$, giving the stated coefficient.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2017-midterm.pdf#page=10).\n\n$-\\binom{12}{7}3^7$.",
+    "officialSourceSha256": "7be3dd5a3544788e5d5047484079c93fa1b0b7109e83c1662269aecf7fa7b2fd",
+    "supplementarySourceSha256": "bf102644a16f9689ffab5512314ef7040b6980091d5b7f2a771cec6b2bc15da7"
   },
   {
     "id": "Q-2017-MID-P08-b",
@@ -43,9 +45,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "(b) Find the number of terms in the expansion of $(5a+8b)^{15}$.",
     "solutionMarkdown": "**Answer.** $16$.\n\n**Derivation/proof.** The terms are $\\binom{15}{k}(5a)^{15-k}(8b)^k$ for $k=0,1,\\ldots,15$. Every coefficient is nonzero and each exponent pair $(15-k,k)$ is different, so no terms combine. The inclusive range has sixteen integers.\n\nIn the binomial expansion the term indexed by $k$ is $\\binom{15}{k}5^{15-k}8^ka^{15-k}b^k$. Matching the requested exponent of $b$ fixes $k$ and therefore its coefficient uniquely.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": "本题只问展开后的不同项数，答案为 16。知识库解析末段提及指定 b 的指数，与本小题无关。"
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2017-midterm.pdf#page=10).\n\n$16$.",
+    "officialSourceSha256": "011d01ff1af4f6ed0093c0fff2e021e9e5a5eed2444695588bbc52795205214a",
+    "supplementarySourceSha256": "2e29e1146b6dcd4bd81244124779fdefc0102f3e2c0ad5ae7e6538c8d06e867c"
   },
   {
     "id": "Q-2019-FINAL-P05",
@@ -67,9 +71,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "Give a combinatorial proof to the following identity:\n\n$$\\sum_{i=0}^n\\binom ni\\sum_{j=0}^{n-i}\\binom{n-i}j=3^n.$$",
     "solutionMarkdown": "**Answer.** Both sides count assignments of n distinct elements to three labeled groups A, B and C.\n\n**Derivation/proof.** Each element independently chooses one of A,B,C, giving $3^n$. Alternatively fix i elements for A in $\\binom ni$ ways. From the remaining n-i elements choose j for B in $\\binom{n-i}j$ ways, and assign every remaining element to C. Sum over $0\\le j\\le n-i$ and then $0\\le i\\le n$. These possibilities are disjoint by the actual groups and exhaust every assignment, proving the identity. Empty groups are allowed on both sides.\n\nThe construction allows a group to have size zero: empty groups are allowed. Consequently the count concerns all functions to the labeled groups, rather than only surjective functions.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 7](../sources/papers/2019-final.pdf#page=7).\n\nThe right side is easier to interpret, so we start with that. We take a set of size $n$, and partition them into $3$ sets $A,B$ and $C$. The RHS is the number of ways to split. For the left side, suppose we already know that we want $i$ elements in $A$ and $j$ elements in $B$. Then, we have $\\binom ni$ ways to choose the elements of $A$, and $\\binom{n-i}j$ ways to choose the elements of $B$ once we have already chosen the elements of $A$. After we have chosen the elements of $A$ and $B$, the rest of the elements go to set $C$. Finally, we have to sum over all of the possible values of $i$ and $j$.",
+    "officialSourceSha256": "04aa70cf6001221608929fb5c4591115cf3c3602023381c4b463afa5c791a0e1",
+    "supplementarySourceSha256": "060e084932081dcb53c1eaa67c9518cc904b038a4daa6234c12e9b186fe7ddb8"
   },
   {
     "id": "Q-2024F-MID-P09-a",
@@ -91,9 +97,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "(a) Consider the set $\\{1,2,\\ldots,2n-1\\}$. Show that the number of subsets with at most $n-1$ elements is equal to $\\frac{2^{2n-1}}2$.\nHint: Think about the size of any random subset and the size of its complement.",
     "solutionMarkdown": "**Answer.** $2^{2n-1}/2=2^{2n-2}$.\n\n**Derivation/proof.** Let $U$ have $2n-1$ elements. Pair each subset $A$ with its complement $U\\setminus A$; their sizes sum to $2n-1$. If $|A|\\le n-1$, the complement has at least $n$ elements, and conversely a subset of size at least $n$ has a complement of size at most $n-1$. Taking the complement twice returns $A$, and no subset equals its complement in a nonempty universe. Thus all $2^{2n-1}$ subsets form disjoint two-element pairs. Each pair contains exactly one small subset, giving half the total.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 14](../sources/papers/COMP2711_F2024_Midterm.pdf#page=14).\n\n> Answer: For the first part note that the total number of subsets of $\\{1,2,\\cdots,2n-1\\}$ is $2^{2n-1}$. For each subset with at most $n-1$ elements, there is a complementary subset with $n$ or more elements. Since the total number of subsets is $2^{2n-1}$ and they come in complementary pairs, exactly half, $\\frac{2^{2n-1}}2$, have at most $n-1$ elements.",
+    "officialSourceSha256": "a6af63d98226d30cbe37b552e50d0f16f8aa72f55b56a7b23966821bc40ace63",
+    "supplementarySourceSha256": "850c40acf22d39f445f1e74a8dd039e7b681c619bdc1a55ed2d4d3b352e0dc9d"
   },
   {
     "id": "Q-2024F-MID-P09-b",
@@ -115,9 +123,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "(b) Use combinatorial argument to prove:\n$$2^{2n-2}=\\sum_{r=0}^{n-1}\\binom{2n-1}r.$$\nHint: You may use part (a), even if you do not manage to prove it.",
     "solutionMarkdown": "**Answer.** $2^{2n-2}=\\sum_{r=0}^{n-1}\\binom{2n-1}r$.\n\n**Derivation/proof.** Consider subsets of $U=\\{1,\\ldots,2n-1\\}$ with at most $n-1$ elements. Part (a), which may be used directly, counts them as $2^{2n-1}/2=2^{2n-2}$, the left side. For fixed size $r$, choosing $r$ of the $2n-1$ elements gives $\\binom{2n-1}r$. These size classes are disjoint, and $r=0,\\ldots,n-1$ covers all desired subsets. Adding gives the right side. Both methods count the same collection of subsets exactly once, proving the identity.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 14](../sources/papers/COMP2711_F2024_Midterm.pdf#page=14).\n\n> For the second part, the LHS is the number of subsets of $\\{1,2,3,\\cdots,2n-1\\}$ with at most $n-1$ elements. The RHS counts the number of subsets that have exactly 0 elements, 1 element, 2 elements, $\\cdots$, $n-1$ elements separately and adds them together.",
+    "officialSourceSha256": "a109dc42f9904f940d6ef001c25328e652097514021c8e55e1a56c35b401c0c6",
+    "supplementarySourceSha256": "e40b8ecfb13cedbca5444816e3116c4cafc29ff41535081992a30b175a4cb31a"
   },
   {
     "id": "Q-2018-FINAL-P11-a",
@@ -141,9 +151,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "In the following shape, consider paths that start from $A$ and finish at $B$ following the lines. Every path may only have steps going up or right. E.g., one path would be $\\{\\uparrow,\\uparrow,\\uparrow,\\rightarrow,\\rightarrow,\\rightarrow,\\rightarrow,\\rightarrow\\}$. How many distinct such paths are there if:\n\n![原题图示](../sources/figures/2018-FINAL-P11-grid.png)\n\na) All lines in the rectangle are possible?",
     "solutionMarkdown": "**Answer.** $\\binom85=56$.\n\n**Derivation/proof.** Moving from $A$ to $B$ requires exactly five right steps and three up steps. Any ordering of these eight steps remains inside the rectangle because neither coordinate can exceed its final total before all such steps have been used. Choose the five right-step positions among eight, giving $\\binom85=56$.\n\nRecording a path as five right steps and three up steps gives a one-to-one correspondence between paths and words with those fixed multiplicities. Choosing the three up-step positions counts every path once.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 16](../sources/papers/2018-final.pdf#page=16).\n\nThe distance from $A$ to $B$ is $8$ steps, $5$ right, and $3$ up. The answer is $C(8,5)=56$.",
+    "officialSourceSha256": "742ec1f1bb39527420b4a732f1777a6a8392e71bf5f2df3e7d5701923e6e07ad",
+    "supplementarySourceSha256": "5731d7e83bd5f642bc827859af5bf0ada441560a32ff22bbe9c71d99e23b61a0"
   },
   {
     "id": "Q-2020-FINAL1-P03-a",
@@ -167,9 +179,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "You are staying on point A and you are allowed to walk either up or to the right. Answer these questions:\n\n![原题图示](../sources/figures/2020-FINAL1-P03-grid.png)\n\nIn how many ways you can go to point B?",
     "solutionMarkdown": "**Answer.** $\\binom{11}{5}=462$.\n\n**Derivation/proof.** The figure has six columns and five rows between A and B. Every allowed path therefore has exactly six right steps and five up steps, in an eleven-step sequence. Choosing the five positions for up steps uniquely specifies the path, so there are $\\binom{11}{5}$ paths. No other move is permitted.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 2](../sources/papers/2020-final-part-1.pdf#page=2).\n\n$\\binom{11}{5}$.",
+    "officialSourceSha256": "bce08a72ddb8c909d96d97880d5871e5b480b8bea70d6e13a612710bbf4c1aae",
+    "supplementarySourceSha256": "e5f16b2b9c41b5a69bc4c6d7ac7d283afd105d0f00f9325cbf4fd9ddcf732abf"
   },
   {
     "id": "Q-2025F-MID-P05",
@@ -191,9 +205,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "Use combinatorial reasoning to prove the identity.\n$$\\binom nk-\\binom{n-3}k=\\binom{n-1}{k-1}+\\binom{n-2}{k-1}+\\binom{n-3}{k-1}.$$",
     "solutionMarkdown": "**Answer.** Both sides count the k-element subsets containing at least one of three designated elements.\n\n**Derivation/proof.** In the range where the binomial coefficients have their usual combinatorial meaning, take an n-element set S with distinct elements a,b,c. From all $\\binom nk$ k-subsets, remove the $\\binom{n-3}k$ containing none of these elements. Partition the remainder into subsets containing a; subsets not containing $a$ but containing $b$; and subsets not containing $a,b$ but containing $c$. The counts are respectively $\\binom{n-1}{k-1}$, $\\binom{n-2}{k-1}$, and $\\binom{n-3}{k-1}$, obtained by choosing the remaining k−1 elements from the allowed pool. The three classes are disjoint and exhaustive, so their sum is the right side and proves the identity. Impossible boundary selections count as zero.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 14](../sources/papers/COMP2711_F2025_Midterm.pdf#page=14).\n\n> Let $S$ be a set of $n$ elements, and let $a,b,c$ be distinct elements of $S$. The number of $k$-subsets of $S$ is $\\binom nk$, and the number of $k$-subsets of $S-\\{a,b,c\\}$ is $\\binom{n-3}k$. Then the LHS is the number of $k$-subsets of $S$ that contain at least one of the elements of $\\{a,b,c\\}$. Such $k$-subsets can be divided into $3$ types: (1) the $k$-subsets that contain the element $a$; (2) the $k$-subsets that do not contain $a$ but contain $b$; and (3) the $k$-subsets that do not contain $a,b$ but contain $c$. The numbers $k$-subsets of type (1), type (2), type (3) are\n> $$\\binom{n-1}{k-1},\\quad\\binom{n-2}{k-1},\\quad\\binom{n-3}{k-1}$$\n> respectively. The sum of these numbers is exactly the RHS.",
+    "officialSourceSha256": "ab07abaaf36266463eba74dfb24a1e0dc75e2b03884ceff70eb14b8e59f07e4e",
+    "supplementarySourceSha256": "ea817a02aa7238ddc474c61a754c8b171cde47a72ac87149312e64e977ae0b23"
   },
   {
     "id": "Q-2023F-MID-P05",
@@ -215,9 +231,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "Prove the following identity using combinatorial arguments:\n$$\\sum_{i=0}^n\\binom ni^2=\\binom{2n}{n}.$$",
     "solutionMarkdown": "**Answer.** Both sides count the same $n$-element subsets of a fixed $2n$-element set.\n\n**Derivation/proof.** Split a fixed set of $2n$ distinct elements into disjoint labeled groups A and B, each of size n. Directly choosing an n-element subset gives $\\binom{2n}{n}$. Alternatively, classify a chosen subset by $i=|S\\cap A|$. There are $\\binom ni$ choices from A and $\\binom n{n-i}$ from B. The classes $i=0,\\ldots,n$ are disjoint and exhaustive, and $\\binom n{n-i}=\\binom ni$. Summing yields the left side. Every subset appears once in each counting method, proving the identity.\n\nFor fixed $i$, multiply the two choices. The classes are disjoint and cover every selection.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 12](../sources/papers/COMP2711_F2023_Midterm.pdf#page=12).\n\n> It is equivalent to proving the identity $\\sum_{i=0}^n\\binom ni\\cdot\\binom n{n-i}=\\binom{2n}n$.\n> Let us consider a set of $2n$ elements, and we want to select $n$ elements from this set. The right-hand side (RHS) of the equation directly gives us the total number of ways to do this, which is $\\binom{2n}n$.\n> Now, let us focus on the left-hand side (LHS). We divide the set into two parts, each containing $n$ items. We then select items for each part. If we select $i$ items for the first part, we must select $n-i$ items for the second part. Therefore, there are $\\binom ni\\cdot\\binom n{n-i}$ ways to make these selections.\n> To consider all possible values of $i$, we sum up these quantities for $i$ ranging from 0 to $n$. This gives us the sum $\\sum_{i=0}^n\\binom ni\\cdot\\binom n{n-i}$.\n> Hence, both the RHS and LHS represent the number of ways to select $n$ elements from a set of $2n$ elements, and thus, the equation holds true.",
+    "officialSourceSha256": "0a166ad61491ed7e6b45d421d8f0c6aefc5492273c69143e62fab71a137fcf4a",
+    "supplementarySourceSha256": "e71d5103d203ae9f3e91e5509be43faa8ddcd28c35d8f9cba614ad5d2b315c54"
   },
   {
     "id": "Q-2017-MID-P11",
@@ -239,9 +257,11 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "Give a combinatorial proof of $\\binom nk\\binom k1=\\binom n1\\binom{n-1}{k-1}$.",
     "solutionMarkdown": "**Answer.** Both sides count a $k$-person club with one leader chosen from its members.\n\n**Derivation/proof.** For $1\\le k\\le n$, first choose the club in $\\binom nk$ ways and then its leader in $\\binom k1$ ways. Alternatively, choose the leader first in $\\binom n1$ ways and the remaining $k-1$ members from the other $n-1$ people in $\\binom{n-1}{k-1}$ ways. Both constructions give every club-leader pair exactly once, proving equality.\n\nCount a committee with one distinguished member in two orders. Choosing the committee and then its distinguished member, or that member and then the remaining committee, gives $\\binom nk\\binom k1=\\binom n1\\binom{n-1}{k-1}$.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 13](../sources/papers/2017-midterm.pdf#page=13).\n\n$\\binom nk\\binom k1$: $\\binom nk$ is the number of ways to select $k$ people into a club from $n$ people. $\\binom k1$ is the number of ways to select a leader from the $k$ people club. Therefore, this is the number of ways to form a $k$ people club and assign one of them to be club leader.\n$\\binom n1\\binom{n-1}{k-1}$: $\\binom n1$ is the number of ways to select a person into a club and acts as club leader from $n$ people. $\\binom{n-1}{k-1}$ is the number of ways to select $k-1$ people into the club.\nTherefore, both expression counts the number of ways to form a $k$ people club and assign one of them to be club leader.",
+    "officialSourceSha256": "e51e8c2f7fa2218efbb680a73dc9ec3e295023b72137998165cb1e99086aec25",
+    "supplementarySourceSha256": "738e53afbfe22d4aa4223715b4760d2c40e5efca490244478089ea17f152d60c"
   },
   {
     "id": "Q-2025S-FINAL-P09",
@@ -263,8 +283,10 @@
     "solutionSection": "Supplementary Explanation",
     "questionMarkdown": "Consider all 1000-element subsets of the set $\\{1,2,3,\\ldots,2022\\}$. From each such subset, choose the least element. Find the sum of all these least elements.\nHint: You can use the Hockey Stick Identity introduced in class without proving it:\n$$\\binom{n+1}{r+1}=\\sum_{j=r}^n\\binom jr$$",
     "solutionMarkdown": "**Answer.** $\\binom{2023}{1001}$.\n\n**Derivation/proof.** If the minimum is m, select the other 999 elements from $m+1,\\ldots,2022$, in $\\binom{2022-m}{999}$ ways. The possible minimum satisfies $1\\le m\\le1023$. The required weighted sum is $\\sum_{m=1}^{1023}m\\binom{2022-m}{999}$. Substituting $m=\\sum_{t=1}^m1$ and interchanging finite sums gives $\\sum_{t=1}^{1023}\\sum_{m=t}^{1023}\\binom{2022-m}{999}$. The inner hockey-stick sum is $\\binom{2023-t}{1000}$. Summing the outer terms, whose upper indices run from 1000 to 2022, applies the identity again and yields $\\binom{2023}{1001}$. Every subset contributes once in each of its first m layers, retaining its full weight.",
-    "mistakesMarkdown": "",
     "independentVerification": "独立推导及交叉核验见随课程保存的 L1.7 原题核验报告。",
-    "verificationNote": ""
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 12](../sources/papers/COMP2711_S2025_Final.pdf#page=12).\n\n- Number of subsets with 1 as the least element: $C(2021,999)$\n- Number of subsets with 2 as the least element: $C(2020,999)$\n- ...\n- Number of subsets with 1023 as the least element: $C(999,999)$\n\nSum of all least elements equals:\n$$C(2021,999)+2\\cdot C(2020,999)+\\ldots+1023\\cdot C(999,999).$$\nWe can group the sum into columns, where each column can be computed using the Hockey Stick Identity:\n$$\\begin{array}{lllll}\nC(2021,999)+&&&&\\\\\nC(2020,999)+&C(2020,999)+&&&\\\\\nC(2019,999)+&C(2019,999)+&C(2019,999)+&&\\\\\n\\ldots&&&&\\\\\nC(999,999)+&C(999,999)+&C(999,999)+&C(999,999)+&\\ldots\n\\end{array}$$\n- 1st column sums to $C(2022,1000)$\n- 2nd column sums to $C(2021,1000)$\n- ...\n- 1023rd column sums to $C(1000,1000)$\n\nWe can again apply the Hockey Stick identity to the sum of all columns. This gives us $C(2023,1001)$.",
+    "officialSourceSha256": "a0f367ac7135af85740dff741f25b49b767f2a239135b4380e5ba4d4ada69b69",
+    "supplementarySourceSha256": "b2c0f6dd802a55e888a3ed0dbe0f74e73ba463c2f72011615726354baa93fe6d"
   }
 ]
