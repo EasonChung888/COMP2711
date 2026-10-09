@@ -1,0 +1,2215 @@
+{
+  "papers": [
+    {
+      "number": 1,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "Sampling and events",
+          "stem": "Six distinct tokens are labelled $R_1,R_2,R_3,B_1,B_2,G$. Draw three in order without replacement; every ordered triple of distinct tokens is equally likely. Let $E$ and $F$ mean that the first and second tokens, respectively, are red.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Describe the sample space and its size.",
+              "solution": "$S$ consists of the ordered triples of distinct labels; $|S|=6\\cdot5\\cdot4=120$.",
+              "rubric": "1 mark for the ordered distinct triples and 120.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P((R_1,B_1,G))$.",
+              "solution": "The specified triple is one outcome, so its probability is $1/120$.",
+              "rubric": "1 mark for 1/120.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(E\\cap F)$.",
+              "solution": "$P(E\\cap F)=(3/6)(2/5)=1/5$.",
+              "rubric": "1 mark for 1/5.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find the probability of no red token.",
+              "solution": "$\\binom33/\\binom63=1/20$.",
+              "rubric": "1 mark for 1/20.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70",
+                "A71"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Are $E,F$ independent? Are they disjoint? Justify both.",
+              "solution": "Both marginals are $1/2$, but $P(E\\cap F)=1/5\\ne1/4$, so they are dependent. Their intersection has positive probability, so they are not disjoint.",
+              "rubric": "1 mark for the product comparison; 1 for the disjointness conclusion with reason.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A73"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "A noisy inspection",
+          "stem": "A randomly selected component is defective with probability $1/10$. An alarm sounds with probability $4/5$ for a defective component and $1/5$ for a good one. The outcomes are the defect status and alarm status with these conditional probabilities.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Find the probability that the alarm sounds.",
+              "solution": "Writing $D$ for defect and $A$ for alarm, the disjoint partition $D,D^c$ gives $P(A)=(1/10)(4/5)+(9/10)(1/5)=13/50$.",
+              "rubric": "1 mark for the partition; 1 for the weighted sum; 1 for 13/50.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A77"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Find the probability of a defect given an alarm, and given no alarm.",
+              "solution": "$P(D\\mid A)=(4/50)/(13/50)=4/13$. Also $P(A^c)=37/50$ and $P(D\\cap A^c)=(1/10)(1/5)=1/50$, so $P(D\\mid A^c)=1/37$. Both conditioning events have positive mass.",
+              "rubric": "2 marks for each correct posterior with joint/conditioning denominator.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A79"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Moments and repeated measurements",
+          "stem": "$D$ takes $0,1,2$ with probabilities $1/4,1/2,1/4$. All copies of $D$ mentioned below are mutually independent and have this law.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Find $E(D)$ and $V(D)$.",
+              "solution": "$E(D)=1$ and $E(D^2)=3/2$, so $V(D)=3/2-1=1/2$.",
+              "rubric": "1 mark for the mean; 1 for the variance.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A93"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "For $Y=3-2D$, find $E(Y)$ and $V(Y)$.",
+              "solution": "$E(Y)=3-2=1$ and $V(Y)=(-2)^2(1/2)=2$.",
+              "rubric": "1 mark for each result with correct coefficient handling.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A93"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "For an independent copy $D^{\\prime}$, compare $E(DD^{\\prime})$ with $E(D^2)$.",
+              "solution": "Independence gives $E(DD^{\\prime})=E(D)E(D^{\\prime})=1$, whereas $E(D^2)=3/2$. Squaring the same variable is not an independent product.",
+              "rubric": "1 mark for each moment and the independence distinction.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A92"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "Let $M=(D_1+D_2+D_3)/3$. Find its mean, variance and standard deviation, explaining the role of independence.",
+              "solution": "Linearity gives $E(M)=1$ without needing independence. Independence permits variance addition: $V(M)=(1/9)(3/2)=1/6$. Thus $\\sigma(M)=\\sqrt{1/6}$. Scaling contributes $1/9$, not $1/3$.",
+              "rubric": "1 mark for the mean; 2 for independent variance addition and scaling; 1 for the standard deviation.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A94",
+                "A95",
+                "A93"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation",
+            "Q-2023F-MID-P09-a-variance",
+            "Q-2023F-MID-P09-b-expectation",
+            "Q-2023F-MID-P09-b-variance",
+            "Q-2025F-MID-P10-a-ii-var"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "A nonuniform experiment",
+          "stem": "The outcomes are $S=\\{a,b,c,d\\}$, with masses $k,2k,3k,4k$ in that order. Define $X(a)=X(d)=0$, $X(b)=1$, $X(c)=2$. Let $E=\\{a,b\\}$ and $F=\\{a,c\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Find $k$ and verify that this is a probability mass function.",
+              "solution": "$10k=1$, so $k=1/10$; all four masses are nonnegative and sum to one.",
+              "rubric": "1 mark for k=1/10 and validity.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A72"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(E\\cup F)$.",
+              "solution": "The union is $\\{a,b,c\\}$, with mass $(1+2+3)/10=3/5$.",
+              "rubric": "1 mark for 3/5.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A72",
+                "A71"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(X=0)$.",
+              "solution": "The preimage is $\\{a,d\\}$, giving $P(X=0)=1/10+4/10=1/2$.",
+              "rubric": "1 mark for summing the two preimage masses.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A81"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Is $X$ a deterministic function on $S$? Explain.",
+              "solution": "Yes. Each outcome has one fixed assigned real value. The experiment is random; the mapping itself is fixed.",
+              "rubric": "1 mark for a fixed mapping explanation.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A81"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Are $E,F$ independent? Show the required comparison.",
+              "solution": "$P(E)=3/10$, $P(F)=2/5$, and $P(E\\cap F)=1/10$. Since $1/10\\ne(3/10)(2/5)=3/25$, they are dependent.",
+              "rubric": "1 mark for the marginals and joint mass; 1 for the comparison and conclusion.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A73"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Selection without replacement",
+          "stem": "Choose urn $A$ with probability $2/3$ and urn $B$ with probability $1/3$. $A$ contains two red and one blue labelled ball; $B$ contains one red and two blue labelled balls. Draw two balls uniformly in order without replacement.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Find the probability that both draws are red.",
+              "solution": "$P(RR\\mid A)=(2/3)(1/2)=1/3$, whereas $P(RR\\mid B)=0$. Total probability gives $P(RR)=(2/3)(1/3)=2/9$.",
+              "rubric": "1 mark for each urn likelihood; 1 for the weighted total.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A76",
+                "A77"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Given exactly one red draw, find the probability that $A$ was selected. Is this observation independent of the urn-selection event?",
+              "solution": "Writing $O$ for exactly one red, both urn likelihoods are $2/3$. Thus $P(O)=2/3>0$ and $P(A\\mid O)=[(2/3)(2/3)]/(2/3)=2/3=P(A)$. The unchanged conditional probability establishes independence.",
+              "rubric": "2 marks for the two equal likelihoods and denominator; 1 for the posterior; 1 for positive-mass independence reasoning.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A78",
+                "A79"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Random hat returns",
+          "stem": "For $n\\ge2$, return $n$ distinct hats to their owners using a uniformly random permutation. Let $I_i$ indicate that owner $i$ gets the correct hat, and let $H=\\sum_{i=1}^n I_i$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Find $P(I_i=1)$ and $E(I_i)$.",
+              "solution": "Exactly $(n-1)!$ of $n!$ assignments fix owner $i$, so $P(I_i=1)=1/n$. An indicator has mean equal to its success probability, hence $E(I_i)=1/n$.",
+              "rubric": "1 mark for the counting probability; 1 for the indicator mean.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A87"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Find $E(H)$. Does this step require independent indicators?",
+              "solution": "$E(H)=\\sum_i E(I_i)=n(1/n)=1$. Linearity requires no independence.",
+              "rubric": "1 mark for the sum and value; 1 for the independence statement.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A87"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "For $i\\ne j$, find $P(I_i=I_j=1)$ and test independence.",
+              "solution": "$P(I_i=I_j=1)=(n-2)!/n!=1/[n(n-1)]\\ne1/n^2$. Thus the indicators are dependent.",
+              "rubric": "1 mark for the joint probability; 1 for comparison with the product.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A87",
+                "A92"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "For arbitrary finite-space random variables $U,V$ and real $a,b$, prove $E(aU+bV)=aE(U)+bE(V)$ directly from the definition.",
+              "solution": "If the outcome masses are $p(s)$, then\\[\\begin{aligned}E(aU+bV)&=\\sum_s p(s)[aU(s)+bV(s)]\\\\&=a\\sum_s p(s)U(s)+b\\sum_s p(s)V(s)\\\\&=aE(U)+bE(V).\\end{aligned}\\]The same outcome sum handles any dependence between $U,V$.",
+              "rubric": "1 mark for the definition; 2 for distributing and separating finite sums; 1 for the result and absence of an independence requirement.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A86"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P10-a-ii-E"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "Three events on four outcomes",
+          "stem": "Two independent fair bits $U,V$ give the four equally likely outcomes in $\\{0,1\\}^2$. Let $A=\\{U=1\\}$, $B=\\{V=1\\}$, and $C=\\{U\\ne V\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Find $P(A),P(B),P(C)$.",
+              "solution": "Each event contains two of the four outcomes, so all three probabilities are $1/2$.",
+              "rubric": "1 mark for the three marginals.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70",
+                "A74"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(A\\cap B)$.",
+              "solution": "Only $(1,1)$ qualifies, so $P(A\\cap B)=1/4$.",
+              "rubric": "1 mark for 1/4.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A74"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(A\\cap C)$.",
+              "solution": "Only $(1,0)$ qualifies, so $P(A\\cap C)=1/4$.",
+              "rubric": "1 mark for 1/4.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A74"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find $P(B\\cap C)$.",
+              "solution": "Only $(0,1)$ qualifies, so $P(B\\cap C)=1/4$.",
+              "rubric": "1 mark for 1/4.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A74"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Are these events pairwise independent? Mutually independent? Check the remaining required intersection.",
+              "solution": "Every pairwise intersection has probability $1/4=(1/2)(1/2)$, so they are pairwise independent. The triple intersection is empty: $P(A\\cap B\\cap C)=0\\ne(1/2)^3$. Thus they are not mutually independent.",
+              "rubric": "1 mark for pairwise verification; 1 for the triple test and mutual conclusion.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A74"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "A biased host",
+          "stem": "A prize is uniformly placed behind doors $1,2,3$; you initially choose door 1. The host always opens an unchosen goat door. If the prize is behind door 1, he opens door 2 with probability $3/4$ and door 3 otherwise; if your choice is wrong, his move is forced. Let $W$ be the prize door and $M$ the opened door.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Given $M=2$, find the probabilities of winning by staying and by switching.",
+              "solution": "The likelihoods for $W=1,2,3$ are $3/4,0,1$. Thus $P(M=2)=1/4+1/3=7/12$. The stay posterior is $(1/4)/(7/12)=3/7$; switching to door 3 wins with probability $4/7$.",
+              "rubric": "1 mark for host likelihoods; 1 for the denominator; 1 for the two posteriors.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A79",
+                "A80"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Given $M=3$, choose the better action. Find the overall success probability of the policy that chooses the better action after each possible opening.",
+              "solution": "$P(M=3)=1/12+1/3=5/12$. Staying has posterior $(1/12)/(5/12)=1/5$; switching to door 2 has posterior $4/5$. Switching is better after either opening. It wins exactly when the original choice was wrong, so its overall probability is $2/3$. Equivalently $(7/12)(4/7)+(5/12)(4/5)=2/3$.",
+              "rubric": "2 marks for the M=3 posteriors; 1 for the contingent action; 1 for the unconditional policy success.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A77",
+                "A80"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Record hires",
+          "stem": "$n\\ge4$ candidates with distinct quality ranks arrive in a uniformly random order. Hire the first candidate, then hire each candidate who is better than every previous candidate. Let $J_i$ indicate a hire at position $i$ and $H_n=\\sum_{i=1}^n1/i$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Find $E(J_1)$ and $E(J_3)$, with a reason.",
+              "solution": "$E(J_1)=1$. Among the first three distinct ranks, the best is equally likely in each position, so $E(J_3)=P(J_3=1)=1/3$.",
+              "rubric": "1 mark for each indicator mean; the second requires symmetry.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A88"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Find the expected total number of hires.",
+              "solution": "For each $i$, symmetry among the first $i$ positions gives $E(J_i)=1/i$. Linearity gives $\\sum_{i=1}^n1/i=H_n$.",
+              "rubric": "1 mark for the general indicator probability; 1 for the harmonic sum.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A88"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "When $n=4$, find the expected number of replacements of an already hired candidate.",
+              "solution": "The first hire is not a replacement. Thus the expected count is $H_4-1=1/2+1/3+1/4=13/12$.",
+              "rubric": "1 mark for excluding the initial hire; 1 for 13/12.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A88"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "Each interview costs $c$ and each hire costs $h$, including the first. Derive the expected total cost for general $n$. Explain whether linearity requires independence of the $J_i$.",
+              "solution": "The total cost is $C=cn+h\\sum_iJ_i$. Hence\\[E(C)=cn+h\\sum_iE(J_i)=cn+hH_n.\\]The indicator means follow from the uniform random permutation. Summing means uses linearity, which does not require the indicators to be independent.",
+              "rubric": "1 mark for the cost variable; 1 for symmetry probabilities; 1 for the expected cost; 1 for the independence explanation.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A85",
+                "A86",
+                "A88"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P10-a-ii-E"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "A fixed batch of trials",
+          "stem": "Four independent transmission attempts each succeed with probability $1/3$. The sample space is the four-symbol success/failure strings, with product masses. Let $X$ count successes; all four attempts are made.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "State the distribution of $X$, including its support.",
+              "solution": "$X\\sim\\operatorname{Bin}(4,1/3)$ on $\\{0,1,2,3,4\\}$.",
+              "rubric": "1 mark for the law, parameters and support.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A82"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(X=2)$.",
+              "solution": "$\\binom42(1/3)^2(2/3)^2=8/27$.",
+              "rubric": "1 mark for 8/27 or the equivalent exact expression.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A82"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(1\\le X\\le2)$.",
+              "solution": "$\\binom41(1/3)(2/3)^3+\\binom42(1/3)^2(2/3)^2=32/81+24/81=56/81$.",
+              "rubric": "1 mark for the correct interval sum.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A82",
+                "A71"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find $P(X\\ge1)$.",
+              "solution": "$1-P(X=0)=1-(2/3)^4=65/81$.",
+              "rubric": "1 mark for the complement probability.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71",
+                "A82"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Use the binomial theorem to verify that the pmf sums to one.",
+              "solution": "All terms are nonnegative and\\[\\sum_{k=0}^4\\binom4k(1/3)^k(2/3)^{4-k}=(1/3+2/3)^4=1.\\]",
+              "rubric": "1 mark for the complete mass sum; 1 for the theorem and value one.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A72",
+                "A82"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Birthday collisions",
+          "stem": "In a toy calendar there are six days. Each person independently has a uniformly distributed birthday on these six days. Outcomes for $n$ people are ordered $n$-tuples of days.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Use sequential conditional probabilities to find the probability of a shared birthday among three people.",
+              "solution": "Conditional on previous birthdays being distinct, the next birthday avoids them with probabilities $5/6$ and $4/6$. Thus $P(\\text{all distinct})=1(5/6)(4/6)=5/9$ and the collision probability is $4/9$.",
+              "rubric": "2 marks for the correct conditional chain; 1 for the complement.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A76",
+                "A71"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Find the smallest $n$ giving collision probability greater than $1/2$, and the smallest $n$ guaranteeing a collision. Justify both thresholds.",
+              "solution": "For four people the no-collision probability is $(5/6)(4/6)(3/6)=5/18$, giving $13/18>1/2$. For three it is $4/9<1/2$; collision probability is nondecreasing as people are added, so the first threshold is four. Seven people guarantee a collision among six days. Six distinct birthdays are still possible for six people, so the certainty threshold is seven.",
+              "rubric": "1 mark for the four-person product; 1 for minimality of four; 1 for seven; 1 for distinct-birthday possibility below certainty.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A76"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Average costs",
+          "stem": "An array contains $n\\ge2$ distinct keys in a uniformly random order. Linear search compares the target with successive keys, including the successful comparison. In (a),(b), the target is a fixed key present in the array.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Give the distribution and mean of the number $L$ of comparisons.",
+              "solution": "The target position is uniform on $\\{1,\\ldots,n\\}$, so $P(L=i)=1/n$ and $E(L)=(1/n)\\sum_{i=1}^ni=(n+1)/2$.",
+              "rubric": "1 mark for the uniform cost law; 1 for its mean.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A81",
+                "A85",
+                "A90"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "A machine charges two units per comparison and refunds one unit per search. Find the expected charge.",
+              "solution": "For charge $C=2L-1$, linearity gives $E(C)=2(n+1)/2-1=n$.",
+              "rubric": "1 mark for the cost expression; 1 for n.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A90"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "If the target is absent and all $n$ keys are compared, find the mean and variance of the comparison count.",
+              "solution": "The count is deterministically $n$, so its mean is $n$ and variance is zero.",
+              "rubric": "1 mark for each result with determinism.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A93",
+                "A90"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "Insertion sort instead receives a uniformly random permutation of $n$ distinct keys. Count only shifts of earlier keys one place right; do not count condition tests or final key placement. Derive the expected total shifts.",
+              "solution": "When inserting position $i$, its rank among the first $i$ keys is uniform on $1,\\ldots,i$. The number of earlier larger keys, hence shifts, is uniform on $0,\\ldots,i-1$, with mean $(i-1)/2$. Linearity gives\\[E(S)=\\sum_{i=2}^n\\frac{i-1}{2}=\\frac{n(n-1)}4.\\]No independence of insertion costs is required.",
+              "rubric": "1 mark for the uniform rank argument; 1 for the correct 0 through i-1 shift law; 1 for its mean; 1 for the summed expectation.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A86",
+                "A90"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P10-a-ii-E"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "Continuous and stopping models",
+          "stem": "$U$ has density $f(x)=1/2$ on $[0,2]$ and zero elsewhere. A separate variable $N$ has density $g(x)=e^{-x^2/2}/\\sqrt{2\\pi}$. Independently repeated Bernoulli trials with success probability $1/4$ stop at the first success; $T$ includes that trial.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Is $f(1)=1/2$ the probability $P(U=1)$? Give that probability.",
+              "solution": "No: a density value is not a point probability. $P(U=1)=0$.",
+              "rubric": "1 mark for the distinction and zero.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A83"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(1/2\\le U\\le3/2)$ by interval area.",
+              "solution": "The interval has length one, so its area is $1\\cdot(1/2)=1/2$.",
+              "rubric": "1 mark for the area probability.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A83"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Name the distribution represented by $g$; no integration is required.",
+              "solution": "It is the standard normal (Gaussian) distribution.",
+              "rubric": "1 mark for normal/Gaussian recognition.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A83"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find $P(T\\ge3)$.",
+              "solution": "The first two trials must fail, so $P(T\\ge3)=(3/4)^2=9/16$.",
+              "rubric": "1 mark for the two-failure tail.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A84"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "State the countable stopping-outcome space and pmf of $T$, and verify normalization by a geometric series.",
+              "solution": "Terminal outcomes are $S,F S,F F S,\\ldots$, identified with $T\\in\\{1,2,\\ldots\\}$. The mass is $P(T=k)=(3/4)^{k-1}/4$. Its sum is $(1/4)/(1-3/4)=1$. The never-success path has mass zero.",
+              "rubric": "1 mark for the positive-integer support and pmf; 1 for geometric-series normalization.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A84"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-d-i"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Knowledge and guessing",
+          "stem": "One test item is selected. A student knows its answer with probability $1/2$; with probability $1/3$ she only eliminates two of its four options; otherwise she has no information. She answers known items correctly and otherwise guesses uniformly among the remaining options.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Find the probability of a correct answer.",
+              "solution": "The three cases are disjoint and exhaustive. The correct-answer probability is $1/2+(1/3)(1/2)+(1/6)(1/4)=17/24$.",
+              "rubric": "1 mark for the exhaustive partition; 1 for its weighted correctness probabilities; 1 for 17/24.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A77"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Given a correct answer, find the posterior probabilities of all three knowledge states. Verify that they sum to one.",
+              "solution": "The unnormalized correct-and-state masses are $12/24,4/24,1/24$. Dividing by $17/24$ gives known $12/17$, elimination $4/17$, no information $1/17$. Their sum is $(12+4+1)/17=1$.",
+              "rubric": "1 mark for the joint masses; 2 for the three posteriors; 1 for normalization.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A79"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Collecting types",
+          "stem": "Each draw independently produces one of $n\\ge2$ coupon types uniformly. Continue until all types are collected. Let $G_i$ count the additional draws, including the new type, needed to move from $i$ distinct types to $i+1$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Find $E(G_0)$ and explain.",
+              "solution": "With no types collected, the first draw is certainly new. Thus $G_0=1$ and $E(G_0)=1$.",
+              "rubric": "1 mark for the certain success; 1 for the mean one.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A84",
+                "A91"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "For $0\\le i<n$, identify the distribution of $G_i$ and its mean.",
+              "solution": "There are $n-i$ unseen types, so each independent draw succeeds with probability $(n-i)/n$. Thus $G_i$ is geometric on positive integers and $E(G_i)=n/(n-i)$.",
+              "rubric": "1 mark for the success probability and geometric law; 1 for the mean.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A84",
+                "A91"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Find the expected draws needed to obtain two distinct types, starting with none.",
+              "solution": "The count is $G_0+G_1$, with mean $1+n/(n-1)$ by linearity.",
+              "rubric": "1 mark for the two stages; 1 for their summed mean.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A91"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "Derive the expected total draws needed for all $n$ types. Explain why each stage retains a fixed success probability until it ends.",
+              "solution": "Within stage $i$, repeated old types do not change the collected set; exactly $n-i$ types remain unseen. The stage ends at its first new type, and independent uniform draws give its geometric law. The total is $C=\\sum_{i=0}^{n-1}G_i$, so\\[E(C)=\\sum_{i=0}^{n-1}\\frac{n}{n-i}=n\\sum_{j=1}^n\\frac1j.\\]Linearity does not require independent stages.",
+              "rubric": "1 mark for the fixed unseen set during each stage; 1 for the geometric means; 1 for the total-stage decomposition; 1 for n times the harmonic sum.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A84",
+                "A86",
+                "A91"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P10-a-ii-E"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "A small lottery",
+          "stem": "A winning set is selected uniformly from the three-element subsets of $\\{1,\\ldots,8\\}$. You hold the fixed set $\\{1,2,3\\}$. Let $X$ count your matches.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Describe the equally likely sample space and its size.",
+              "solution": "The sample space consists of the unordered three-element subsets; its size is $\\binom83=56$.",
+              "rubric": "1 mark for the subsets and size.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(X=3)$.",
+              "solution": "Only the held set qualifies, so the probability is $1/56$.",
+              "rubric": "1 mark for 1/56.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(X=0)$.",
+              "solution": "Choose all three winners from the other five numbers: $\\binom53/\\binom83=5/28$.",
+              "rubric": "1 mark for the correct count ratio.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find $P(X\\ge1)$.",
+              "solution": "$1-P(X=0)=1-5/28=23/28$.",
+              "rubric": "1 mark for the complement.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Find $P(X=1\\text{ or }X=2)$ and explain why the two masses may be added.",
+              "solution": "The events are disjoint because $X$ has only one value on an outcome. Their probabilities sum to\\[\\frac{\\binom31\\binom52+\\binom32\\binom51}{\\binom83}=\\frac{45}{56}.\\]",
+              "rubric": "1 mark for the two match counts; 1 for the disjoint sum and value.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A70",
+                "A71",
+                "A81"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Three sources",
+          "stem": "A device comes from factories $A,B,C$ with probabilities $1/2,1/3,1/6$. Their respective defect probabilities are $1/20,1/10,1/5$. These factory and defect statuses specify the experiment.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Find the probability of a defect.",
+              "solution": "Using the exhaustive disjoint factory partition,\\[P(D)=\\frac12\\frac1{20}+\\frac13\\frac1{10}+\\frac16\\frac15=\\frac{11}{120}.\\]",
+              "rubric": "1 mark for the partition; 1 for weighting all three likelihoods; 1 for the total.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A77"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Given a defect, find the factory posteriors. Which factories are most likely, and why is this not determined by defect rate alone?",
+              "solution": "The defect-and-factory masses are $3/120,4/120,4/120$, giving posteriors $3/11,4/11,4/11$. Factories $B,C$ tie. The posterior depends on prior share times defect likelihood, not on the defect likelihood alone.",
+              "rubric": "2 marks for correctly normalized posteriors; 1 for the tie; 1 for the prior-times-likelihood explanation.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A79"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Empty bins",
+          "stem": "$m\\ge1$ labelled balls independently choose uniformly among $n\\ge2$ labelled bins. Let $I_j$ indicate that bin $j$ is empty, and let $Z=\\sum_{j=1}^n I_j$. Write $q=((n-1)/n)^m$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Derive $P(I_j=1)$ and $E(I_j)$.",
+              "solution": "Each ball avoids the specified bin with probability $(n-1)/n$. Independent placements give $P(I_j=1)=((n-1)/n)^m=q$. As an indicator, $E(I_j)=q$.",
+              "rubric": "1 mark for the avoidance product; 1 for the indicator mean.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A89"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Find the expected number of empty bins.",
+              "solution": "Linearity gives $E(Z)=\\sum_j E(I_j)=nq$.",
+              "rubric": "1 mark for linearity; 1 for nq.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A89"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Find the expected number of occupied bins.",
+              "solution": "The occupied-bin count is $n-Z$, so its mean is $n-nq=n(1-q)$.",
+              "rubric": "1 mark for the complement count; 1 for its mean.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A89"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "For distinct $j,k$, find $P(I_j=I_k=1)$ and test independence. Then obtain $V(Z)$ by expanding $Z^2$.",
+              "solution": "Put $r=((n-2)/n)^m$. Both bins are empty exactly when every ball avoids both, so the joint probability is $r$. Since $(n-2)/n<((n-1)/n)^2$, $r<q^2$ and the indicators are dependent. Using $I_j^2=I_j$,\\[E(Z^2)=nq+n(n-1)r,\\qquad V(Z)=nq+n(n-1)r-n^2q^2.\\]This uses direct finite moments rather than independent-variance addition.",
+              "rubric": "1 mark for r; 1 for the dependence comparison; 1 for expanding the square and second moment; 1 for the variance.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A89",
+                "A92",
+                "A93"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P10-a-ii-E",
+            "Q-2023F-MID-P09-a-expectation",
+            "Q-2023F-MID-P09-a-variance"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "Unions of divisibility events",
+          "stem": "Choose an integer uniformly from $S=\\{1,\\ldots,60\\}$. Let $A,B,C$ be divisibility by $2,3,5$, respectively.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Find $P(A),P(B),P(C)$.",
+              "solution": "The counts are $30,20,12$, so the probabilities are $1/2,1/3,1/5$.",
+              "rubric": "1 mark for all three probabilities.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(A\\cap B)$ and test independence of $A,B$.",
+              "solution": "Ten multiples of six give $P(A\\cap B)=1/6=(1/2)(1/3)$; the events are independent.",
+              "rubric": "1 mark for the joint mass and independence comparison.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A73"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(A\\cap C)$ and $P(B\\cap C)$.",
+              "solution": "The counts are six multiples of ten and four multiples of fifteen, giving $1/10$ and $1/15$.",
+              "rubric": "1 mark for both joint probabilities.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find $P(A\\cap B\\cap C)$.",
+              "solution": "Two multiples of thirty give $2/60=1/30$.",
+              "rubric": "1 mark for 1/30.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Use inclusion--exclusion to find the probability of divisibility by at least one of $2,3,5$.",
+              "solution": "The probability is\\[\\frac{30+20+12-10-6-4+2}{60}=\\frac{11}{15}.\\]Singletons are added, pair intersections subtracted, and the triple intersection restored.",
+              "rubric": "1 mark for correct inclusion-exclusion signs/counts; 1 for 11/15.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A71"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Nonuniform prize locations",
+          "stem": "A prize is behind doors $1,2,3$ with probabilities $1/2,1/3,1/6$. You pick door 1. The host always opens an unchosen goat door, uniformly if both are goats and otherwise the unique legal door. Let $M$ denote the opening.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Given $M=2$, find the stay/switch posteriors and choose the better action.",
+              "solution": "Opening-2 likelihoods under prize doors $1,2,3$ are $1/2,0,1$. Hence $P(M=2)=1/4+1/6=5/12$. Staying wins with posterior $3/5$, and switching with $2/5$. Stay is better.",
+              "rubric": "1 mark for likelihoods and denominator; 1 for posteriors; 1 for the action.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A79",
+                "A80"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Choose the better action given $M=3$, and find the overall success probability of the policy using both optimal actions.",
+              "solution": "$P(M=3)=1/4+1/3=7/12$. Staying wins with posterior $3/7$ and switching with $4/7$, so switch to door 2. The combined policy wins on the disjoint cases prize 1 and opening 2, or prize 2 and opening 3:\\[P(\\text{win})=(1/2)(1/2)+(1/3)(1)=7/12.\\]",
+              "rubric": "2 marks for opening-3 posteriors; 1 for switching; 1 for the overall joint-event sum.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A77",
+                "A80"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Pairwise independence suffices",
+          "stem": "Independent fair bits $U,V$ give four equiprobable outcomes. Define $A=U$, $B=V$, and $C=1$ if $U\\ne V$, otherwise $0$. These are numerical indicators.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Give the distribution, mean and variance of $C$.",
+              "solution": "$C=0,1$ each with probability $1/2$, so $E(C)=1/2$ and $V(C)=1/2-(1/2)^2=1/4$.",
+              "rubric": "1 mark for the induced law; 1 for both moments.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A81",
+                "A85",
+                "A93"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Check independence of $A,B$ using all joint-value probabilities.",
+              "solution": "For every $a,b\\in\\{0,1\\}$, $P(A=a,B=b)=1/4=(1/2)(1/2)$. All other joint masses and corresponding marginal products are zero. Thus the random variables are independent.",
+              "rubric": "1 mark for the four nonzero joint masses; 1 for factorization for all values.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A92"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Check that $A,C$ and $B,C$ are independent. Are all three mutually independent?",
+              "solution": "For either pair the four binary joint values occur once each, with mass $1/4$, so both pairs are independent. But $P(A=1,B=1,C=1)=0\\ne1/8$, so the three are not mutually independent.",
+              "rubric": "1 mark for both pairwise joint laws; 1 for the failing triple factorization.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A92",
+                "A74"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "Find $E(A+B-C)$ and $V(A+B-C)$. Explain why the weaker independence established above is sufficient for the variance calculation.",
+              "solution": "Linearity gives $E(A+B-C)=1/2$. Pairwise independence makes every cross-product expectation equal to the product of the corresponding means; this is exactly what the expansion of the centered square needs. Variance addition with squared coefficients gives\\[V(A+B-C)=1/4+1/4+(-1)^2/4=3/4.\\]The values on $(0,0),(0,1),(1,0),(1,1)$ are $0,0,0,2$, verifying mean $1/2$ and variance $1-1/4=3/4$.",
+              "rubric": "1 mark for the mean; 1 for squared-coefficient variance; 2 for why pairwise factorization suffices (or an explicit centered-square derivation).",
+              "space_cm": 4.5,
+              "concepts": [
+                "A86",
+                "A94"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P10-a-ii-E",
+            "Q-2025F-MID-P10-a-ii-var"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "Unequal success probabilities",
+          "stem": "Three sensors independently pass a check with probabilities $1/2,1/3,1/4$, respectively. All sensors are checked once; outcomes are the three-symbol pass/fail strings with product masses. Let $X$ be the number that pass.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Find $P(X=3)$.",
+              "solution": "$P(X=3)=(1/2)(1/3)(1/4)=1/24$.",
+              "rubric": "1 mark for 1/24.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A72"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(X=0)$.",
+              "solution": "$P(X=0)=(1/2)(2/3)(3/4)=1/4$.",
+              "rubric": "1 mark for 1/4.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A72"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(X=1)$.",
+              "solution": "The disjoint choices of the sole passing sensor give $1/4+1/8+1/12=11/24$.",
+              "rubric": "1 mark for the three-case sum.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71",
+                "A72"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find $P(X\\ge1)$.",
+              "solution": "$P(X\\ge1)=1-P(X=0)=3/4$.",
+              "rubric": "1 mark for the complement.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Is the taught binomial formula justified by this trial model? State both model requirements and identify which one fails.",
+              "solution": "A binomial count requires independent Bernoulli trials with the same success probability. Independence is given, but $1/2,1/3,1/4$ differ, so the equal-probability binomial formula is not justified.",
+              "rubric": "1 mark for both requirements; 1 for identifying the failed equal-p condition.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A82"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Message evidence",
+          "stem": "An archive contains 360 spam and 240 legitimate messages. A word $W$ appears in 90 spam and 12 legitimate messages. Choose a message uniformly. A second marker $V$ has conditional probabilities $2/5$ in spam and $1/6$ in legitimate messages; $W,V$ are independent conditional on each message type.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Find $P(W)$ and $P(\\text{spam}\\mid W)$.",
+              "solution": "The priors are $3/5,2/5$ and W-likelihoods $1/4,1/20$. Thus $P(W)=(3/5)(1/4)+(2/5)(1/20)=17/100$. Bayes gives $(3/20)/(17/100)=15/17$.",
+              "rubric": "1 mark for priors/likelihoods; 1 for the total; 1 for the posterior.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A77",
+                "A79"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Given that both markers occur, find the spam posterior. Explain which independence permits multiplying the marker likelihoods.",
+              "solution": "Within each type, conditional independence gives likelihoods $(1/4)(2/5)=1/10$ and $(1/20)(1/6)=1/120$. The joint type-and-evidence masses are $3/50$ and $1/300$, so\\[P(\\text{spam}\\mid W\\cap V)=\\frac{3/50}{3/50+1/300}=\\frac{18}{19}.\\]It is independence conditional on type that permits these likelihood products; unconditional marker independence was not supplied.",
+              "rubric": "1 mark for conditional independence; 1 for the two likelihoods; 1 for the evidence denominator; 1 for 18/19.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A76",
+                "A79"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Dependent counts and products",
+          "stem": "A coin is tossed $n\\ge1$ times independently, with heads probability $2/3$. Let $H,T$ count heads and tails. For part (d), $H^{\\prime}$ counts heads in a separate independent batch of $n$ tosses with the same law.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Find $E(H)$ and $E(T)$.",
+              "solution": "By summing trial indicators, $E(H)=2n/3$ and $E(T)=n/3$.",
+              "rubric": "1 mark for each mean with an indicator/binomial argument.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A86"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Find $E(HT)$ using $T=n-H$.",
+              "solution": "$H$ has variance $2n/9$ and mean $2n/3$, so $E(H^2)=2n/9+4n^2/9$. Therefore\\[E(HT)=nE(H)-E(H^2)=\\frac{2n(n-1)}9.\\]",
+              "rubric": "1 mark for the required second moment; 1 for the correct product expectation.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A92",
+                "A94"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Find $E(H+T)$ and $V(H+T)$.",
+              "solution": "$H+T=n$ on every outcome, hence its expectation is $n$ and variance is zero.",
+              "rubric": "1 mark for each deterministic result.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A93"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "Show that $H,T$ are dependent. Find $E(HH^{\\prime})$, and justify product-expectation factorization from the joint-mass definition for finite independent variables.",
+              "solution": "$P(H=n,T=n)=0$, but $P(H=n)P(T=n)=(2/3)^n(1/3)^n>0$, so $H,T$ are dependent. For independent finite $X,Y$,\\[\\begin{aligned}E(XY)&=\\sum_x\\sum_yxyP(X=x,Y=y)\\\\&=\\sum_x\\sum_yxyP(X=x)P(Y=y)\\\\&=\\left(\\sum_xxP(X=x)\\right)\\left(\\sum_yyP(Y=y)\\right)=E(X)E(Y).\\end{aligned}\\]Thus $E(HH^{\\prime})=(2n/3)^2=4n^2/9$.",
+              "rubric": "1 mark for the dependence witness; 2 for factorization using all joint masses; 1 for the independent product value.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A92"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P10-a-ii-E",
+            "Q-2023F-MID-P09-c",
+            "Q-2025F-MID-P10-a-ii-var"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "Replacing a sampled token",
+          "stem": "Four distinct tokens, two red and two blue, are drawn twice. Each draw uniformly selects a token, and the first is replaced before the second; the draws are independent. Let $E,F$ denote red on the first and second draw.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Describe the sample space and its size.",
+              "solution": "All ordered token pairs, including repeats, form the equally likely space of size $4^2=16$.",
+              "rubric": "1 mark for ordered pairs with repeats and 16.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find the probability that the same token is drawn twice.",
+              "solution": "Four diagonal pairs qualify among sixteen, giving $1/4$.",
+              "rubric": "1 mark for 1/4.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A70"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(E\\cap F)$.",
+              "solution": "$P(E\\cap F)=(1/2)^2=1/4$.",
+              "rubric": "1 mark for 1/4.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A73"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find the probability of exactly one red draw.",
+              "solution": "The disjoint orders red--blue and blue--red each have mass $1/4$, giving $1/2$.",
+              "rubric": "1 mark for the disjoint two-case sum.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "If the draws instead are uniform without replacement, find $P(E\\cap F)$ and test independence of $E,F$.",
+              "solution": "The joint probability becomes $(2/4)(1/3)=1/6$. Both marginals remain $1/2$, so $1/6\\ne1/4$ establishes dependence.",
+              "rubric": "1 mark for the without-replacement probability; 1 for the independence comparison.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A70",
+                "A73"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Repeated evidence from one device",
+          "stem": "Choose uniformly one of three devices with success probabilities $1,1/2,1/4$. Use the same device throughout. Conditional on that choice, its trials are independent with the stated fixed probability. Let $R$ be success on the first three trials.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Find $P(R)$ and the three device posteriors given $R$.",
+              "solution": "The likelihoods are $1,1/8,1/64$. Their prior-weighted sum is $P(R)=(1+1/8+1/64)/3=73/192$. Normalizing the weights $64,8,1$ gives posteriors $64/73,8/73,1/73$.",
+              "rubric": "1 mark for the conditional likelihoods; 1 for the total; 1 for all normalized posteriors.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A76",
+                "A77",
+                "A79"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Given $R$, find the probability that trial four succeeds. Compare it with the success probability before any observations.",
+              "solution": "Given the device, the fourth trial remains independent of its first three. Total probability with the updated device partition yields\\[P(S_4\\mid R)=\\frac{64}{73}\\cdot1+\\frac8{73}\\cdot\\frac12+\\frac1{73}\\cdot\\frac14=\\frac{273}{292}.\\]Before observations the success probability is $(1+1/2+1/4)/3=7/12$, smaller than $273/292$. Evidence shifts mass toward more reliable devices.",
+              "rubric": "1 mark for conditional independence on device; 1 for the posterior-weighted sum; 1 for 273/292; 1 for the prior comparison.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A77",
+                "A79"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Transforms of a finite variable",
+          "stem": "A fair four-sided die has equally likely labels $0,1,2,3$. Let $X$ be its label and let $Y=X^2$; both are functions of the same roll.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Find $E(X)$ and $V(X)$.",
+              "solution": "$E(X)=6/4=3/2$ and $E(X^2)=14/4=7/2$, so $V(X)=7/2-9/4=5/4$.",
+              "rubric": "1 mark for the mean; 1 for the variance.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A93"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Find $E(Y)$ and compare it with $E(X)^2$.",
+              "solution": "$E(Y)=E(X^2)=7/2$, whereas $E(X)^2=9/4$. Their difference is $5/4$, the variance.",
+              "rubric": "1 mark for each quantity and their distinction.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A93"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Find $E[X(X-1)]$ in two ways: by values and by linearity.",
+              "solution": "The values are $0,0,2,6$, so the mean is $8/4=2$. Independently, $E(X^2-X)=7/2-3/2=2$. The factors are dependent, so their expectations should not be multiplied.",
+              "rubric": "1 mark for the outcome average; 1 for the linearity computation.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A86",
+                "A92"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "From the centered-square definition, prove $V(aX+b)=a^2V(X)$ for real $a,b$. Then find $V(X-Y)$ directly.",
+              "solution": "Since $E(aX+b)=aE(X)+b$,\\[V(aX+b)=E\\bigl([aX+b-aE(X)-b]^2\\bigr)=a^2E\\bigl([X-E(X)]^2\\bigr)=a^2V(X).\\]For $X-Y$, the four values are $0,0,-2,-6$, so its mean is $-2$ and second moment is $10$. Its variance is $10-(-2)^2=6$.",
+              "rubric": "2 marks for centered deviations and squared scaling; 1 for the transformed moments; 1 for variance 6.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A93"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation",
+            "Q-2023F-MID-P09-a-variance",
+            "Q-2023F-MID-P09-b-expectation",
+            "Q-2023F-MID-P09-b-variance",
+            "Q-2023F-MID-P09-c"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "problems": [
+        {
+          "number": 8,
+          "points": 6,
+          "title": "Joint masses and event rules",
+          "stem": "An outcome is an ordered bit pair. Its probabilities are $P(00)=1/2$, $P(01)=1/4$, $P(10)=1/8$, $P(11)=1/8$. Let $A$ mean first bit one and $B$ mean second bit one.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 1,
+              "question": "Find $P(A)$ and $P(B)$.",
+              "solution": "$P(A)=1/8+1/8=1/4$ and $P(B)=1/4+1/8=3/8$.",
+              "rubric": "1 mark for both marginal sums.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A72"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 1,
+              "question": "Find $P(A\\cap B)$.",
+              "solution": "The intersection is $\\{11\\}$, with mass $1/8$.",
+              "rubric": "1 mark for 1/8.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A72"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 1,
+              "question": "Find $P(A\\cup B)$.",
+              "solution": "$P(A\\cup B)=1/4+3/8-1/8=1/2$.",
+              "rubric": "1 mark for the union mass.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 1,
+              "question": "Find $P(A^c\\cap B^c)$.",
+              "solution": "By De Morgan, $A^c\\cap B^c=(A\\cup B)^c=\\{00\\}$, so its probability is $1/2$.",
+              "rubric": "1 mark for the complementary event mass.",
+              "space_cm": 1.2,
+              "concepts": [
+                "A71"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Justify the two-event union rule by a disjoint-set decomposition, and test independence of $A,B$.",
+              "solution": "$A\\cup B$ is the disjoint union of $A\\setminus B$, $B\\setminus A$, and $A\\cap B$. Adding their masses gives $P(A)+P(B)-P(A\\cap B)$. Here $P(A)P(B)=3/32\\ne1/8=P(A\\cap B)$, so the events are dependent.",
+              "rubric": "1 mark for a valid disjoint decomposition and union identity; 1 for the independence comparison.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A71",
+                "A73"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation"
+          ]
+        },
+        {
+          "number": 9,
+          "points": 7,
+          "title": "Restricted bit strings",
+          "stem": "Choose uniformly among the sixteen bit strings of length four. Let $E$ mean first bit one, $F$ mean exactly two ones, and $G$ mean that the two ones are consecutive (so $G\\subseteq F$).",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Find $P(E\\mid F)$ and $P(G\\mid F)$ using the restricted sample space.",
+              "solution": "The conditioning event contains $\\binom42=6$ strings. Three put a one first, giving $P(E\\mid F)=3/6=1/2$. The three adjacent placements $(1,2),(2,3),(3,4)$ give $P(G\\mid F)=3/6=1/2$.",
+              "rubric": "1 mark for the six-outcome restricted space; 1 for each correct favorable count/probability.",
+              "space_cm": 3.5,
+              "concepts": [
+                "A75"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Find $P(F\\mid E)$ and use it to test independence of $E,F$. State the positivity requirement for this conditional test.",
+              "solution": "$E$ has eight strings, of which $\\binom31=3$ contain exactly two ones. Hence $P(F\\mid E)=3/8=P(F)$, establishing independence. The test $P(F\\mid E)=P(F)$ is equivalent to joint factorization only when $P(E)>0$; here $P(E)=1/2$. If $P(E)=0$, the conditional quotient is undefined.",
+              "rubric": "1 mark for restricted-space counting; 1 for equality with the marginal; 1 for the independence conclusion; 1 for the positive-denominator requirement.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A75",
+                "A78"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P08"
+          ]
+        },
+        {
+          "number": 10,
+          "points": 10,
+          "title": "Bernoulli sums and variance proofs",
+          "stem": "Let $I_1,\\ldots,I_n$ be independent Bernoulli indicators with success probability $p$, where $n\\ge1$ and $0<p<1$. Put $S=\\sum_i I_i$ and $M=S/n$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Compute $E(I_i)$ and $V(I_i)$ from its two possible values.",
+              "solution": "$E(I_i)=p$ and $E(I_i^2)=p$, so $V(I_i)=p-p^2=p(1-p)$.",
+              "rubric": "1 mark for the mean; 1 for the second-moment variance.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A85",
+                "A93"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Find $E(S)$ and $V(S)$, identifying where independence is used.",
+              "solution": "Linearity gives $E(S)=np$. Independent variance addition gives $V(S)=np(1-p)$. Only the latter addition requires the stated independence.",
+              "rubric": "1 mark for each result with the correct independence role.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A86",
+                "A94"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Find $E(M)$ and $V(M)$.",
+              "solution": "$E(M)=np/n=p$ and $V(M)=np(1-p)/n^2=p(1-p)/n$. The mean is preserved while the variance is divided by n.",
+              "rubric": "1 mark for each result with correct scaling.",
+              "space_cm": 2.0,
+              "concepts": [
+                "A95"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 4,
+              "question": "Derive $V(X)=E(X^2)-E(X)^2$ for a finite random variable. Then prove $V(X+Y)=V(X)+V(Y)$ when $X,Y$ are independent finite variables.",
+              "solution": "Put $\\mu=E(X)$. Expanding centered squares gives\\[V(X)=E(X^2-2\\mu X+\\mu^2)=E(X^2)-2\\mu^2+\\mu^2=E(X^2)-\\mu^2.\\]With $\\nu=E(Y)$, independence gives $E[(X-\\mu)(Y-\\nu)]=E(X-\\mu)E(Y-\\nu)=0$. Thus\\[\\begin{aligned}V(X+Y)&=E\\bigl([(X-\\mu)+(Y-\\nu)]^2\\bigr)\\\\&=V(X)+2\\cdot0+V(Y)=V(X)+V(Y).\\end{aligned}\\]",
+              "rubric": "2 marks for the centered-square expansion and variance identity; 2 for the vanishing centered cross-product and addition proof.",
+              "space_cm": 4.5,
+              "concepts": [
+                "A93",
+                "A94"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P09-a-expectation",
+            "Q-2023F-MID-P09-a-variance",
+            "Q-2025F-MID-P10-a-ii-E",
+            "Q-2025F-MID-P10-a-ii-var"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "A70",
+      "lecture": "L15-Probability-Probability.pdf",
+      "pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "knowledge_point": "Finite sample spaces and uniform ordered/unordered sampling",
+      "assessed_at": [
+        "01.8.a",
+        "01.8.b",
+        "01.8.c",
+        "01.8.d",
+        "03.8.a",
+        "06.8.a",
+        "06.8.b",
+        "06.8.c",
+        "06.8.e",
+        "07.8.a",
+        "09.8.a",
+        "09.8.b",
+        "09.8.e"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A71",
+      "lecture": "L15-Probability-Probability.pdf",
+      "pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "knowledge_point": "Complement, inclusion-exclusion and disjoint probability sums",
+      "assessed_at": [
+        "01.8.d",
+        "02.8.b",
+        "04.8.c",
+        "04.8.d",
+        "04.9.a",
+        "06.8.d",
+        "06.8.e",
+        "07.8.c",
+        "07.8.d",
+        "07.8.e",
+        "08.8.c",
+        "08.8.d",
+        "09.8.d",
+        "10.8.c",
+        "10.8.d",
+        "10.8.e"
+      ],
+      "depth": "application and justification"
+    },
+    {
+      "id": "A72",
+      "lecture": "L15-Probability-Probability.pdf",
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "knowledge_point": "Nonuniform discrete probability mass functions and event masses",
+      "assessed_at": [
+        "02.8.a",
+        "02.8.b",
+        "04.8.e",
+        "08.8.a",
+        "08.8.b",
+        "08.8.c",
+        "10.8.a",
+        "10.8.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A73",
+      "lecture": "L15-Probability-Probability.pdf",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "knowledge_point": "Event independence versus disjointness",
+      "assessed_at": [
+        "01.8.e",
+        "02.8.e",
+        "07.8.b",
+        "09.8.c",
+        "09.8.e",
+        "10.8.e"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A74",
+      "lecture": "L15-Probability-Probability.pdf",
+      "pages": [
+        22,
+        23
+      ],
+      "knowledge_point": "Pairwise versus mutual event independence",
+      "assessed_at": [
+        "03.8.a",
+        "03.8.b",
+        "03.8.c",
+        "03.8.d",
+        "03.8.e",
+        "07.10.c"
+      ],
+      "depth": "verification and counterexample"
+    },
+    {
+      "id": "A75",
+      "lecture": "L16-Probability-Cond.pdf",
+      "pages": [
+        2,
+        3
+      ],
+      "knowledge_point": "Conditional probability on a restricted sample space",
+      "assessed_at": [
+        "01.9.b",
+        "02.9.b",
+        "03.9.b",
+        "05.9.b",
+        "06.9.b",
+        "07.9.b",
+        "08.9.b",
+        "09.9.b",
+        "10.9.a",
+        "10.9.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A76",
+      "lecture": "L16-Probability-Cond.pdf",
+      "pages": [
+        2,
+        5,
+        6
+      ],
+      "knowledge_point": "Conditional chain rule and birthday collision threshold versus certainty",
+      "assessed_at": [
+        "02.9.a",
+        "04.9.a",
+        "04.9.b",
+        "08.9.b",
+        "09.9.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A77",
+      "lecture": "L16-Probability-Cond.pdf",
+      "pages": [
+        4,
+        18
+      ],
+      "knowledge_point": "Total probability over an exhaustive disjoint partition",
+      "assessed_at": [
+        "01.9.a",
+        "02.9.a",
+        "03.9.b",
+        "05.9.a",
+        "06.9.a",
+        "07.9.b",
+        "08.9.a",
+        "09.9.a",
+        "09.9.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A78",
+      "lecture": "L16-Probability-Cond.pdf",
+      "pages": [
+        7,
+        8
+      ],
+      "knowledge_point": "Independence as unchanged conditional probability with positive denominator",
+      "assessed_at": [
+        "02.9.b",
+        "10.9.b"
+      ],
+      "depth": "verification"
+    },
+    {
+      "id": "A79",
+      "lecture": "L16-Probability-Cond.pdf",
+      "pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "knowledge_point": "Ordinary/generalized Bayes with prior and observation likelihood",
+      "assessed_at": [
+        "01.9.b",
+        "02.9.b",
+        "03.9.a",
+        "05.9.b",
+        "06.9.b",
+        "07.9.a",
+        "08.9.a",
+        "08.9.b",
+        "09.9.a",
+        "09.9.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A80",
+      "lecture": "L16-Probability-Cond.pdf",
+      "pages": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "knowledge_point": "Monty Hall host likelihoods, posteriors and policy success",
+      "assessed_at": [
+        "03.9.a",
+        "03.9.b",
+        "07.9.a",
+        "07.9.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A81",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        2,
+        3
+      ],
+      "knowledge_point": "Random variable as a deterministic function and induced distribution",
+      "assessed_at": [
+        "02.8.c",
+        "02.8.d",
+        "04.10.a",
+        "06.8.e",
+        "07.10.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A82",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        4,
+        5,
+        6
+      ],
+      "knowledge_point": "Bernoulli/binomial model, exact/interval probabilities and normalization",
+      "assessed_at": [
+        "04.8.a",
+        "04.8.b",
+        "04.8.c",
+        "04.8.d",
+        "04.8.e",
+        "08.8.e"
+      ],
+      "depth": "application and justification"
+    },
+    {
+      "id": "A83",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        7
+      ],
+      "knowledge_point": "Density, point probability and interval area",
+      "assessed_at": [
+        "05.8.a",
+        "05.8.b",
+        "05.8.c"
+      ],
+      "depth": "interpretation"
+    },
+    {
+      "id": "A84",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        8,
+        9,
+        25
+      ],
+      "knowledge_point": "Geometric stopping law on positive integers, normalization, tails and mean",
+      "assessed_at": [
+        "05.8.d",
+        "05.8.e",
+        "05.10.a",
+        "05.10.b",
+        "05.10.d"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A85",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "knowledge_point": "Expected values by outcomes/distribution and binomial mean",
+      "assessed_at": [
+        "01.10.a",
+        "03.10.d",
+        "04.10.a",
+        "04.10.c",
+        "07.10.a",
+        "08.10.a",
+        "08.10.b",
+        "09.10.a",
+        "09.10.b",
+        "09.10.c",
+        "10.10.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A86",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        14,
+        15,
+        16
+      ],
+      "knowledge_point": "Linearity, affine expectation and indicators without independence",
+      "assessed_at": [
+        "01.10.b",
+        "02.10.a",
+        "02.10.b",
+        "02.10.d",
+        "03.10.a",
+        "03.10.b",
+        "03.10.c",
+        "03.10.d",
+        "04.10.b",
+        "04.10.d",
+        "05.10.c",
+        "05.10.d",
+        "06.10.a",
+        "06.10.b",
+        "06.10.c",
+        "07.10.d",
+        "08.10.a",
+        "08.10.c",
+        "09.10.c",
+        "10.10.b"
+      ],
+      "depth": "proof and application"
+    },
+    {
+      "id": "A87",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        17
+      ],
+      "knowledge_point": "Hatcheck fixed-point indicators with dependent assignments",
+      "assessed_at": [
+        "02.10.a",
+        "02.10.b",
+        "02.10.c"
+      ],
+      "depth": "derivation"
+    },
+    {
+      "id": "A88",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        18,
+        19
+      ],
+      "knowledge_point": "Hiring via record indicators under a uniform permutation",
+      "assessed_at": [
+        "03.10.a",
+        "03.10.b",
+        "03.10.c",
+        "03.10.d"
+      ],
+      "depth": "derivation"
+    },
+    {
+      "id": "A89",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        20
+      ],
+      "knowledge_point": "Empty bins via independent ball placements and dependent bin indicators",
+      "assessed_at": [
+        "06.10.a",
+        "06.10.b",
+        "06.10.c",
+        "06.10.d"
+      ],
+      "depth": "derivation"
+    },
+    {
+      "id": "A90",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "knowledge_point": "Average-case linear search and explicitly counted insertion-sort shifts",
+      "assessed_at": [
+        "04.10.a",
+        "04.10.b",
+        "04.10.c",
+        "04.10.d"
+      ],
+      "depth": "derivation"
+    },
+    {
+      "id": "A91",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        26,
+        27
+      ],
+      "knowledge_point": "Coupon collection via geometric stages",
+      "assessed_at": [
+        "05.10.a",
+        "05.10.b",
+        "05.10.c",
+        "05.10.d"
+      ],
+      "depth": "derivation"
+    },
+    {
+      "id": "A92",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        28,
+        29,
+        30
+      ],
+      "knowledge_point": "Joint-mass independence and product expectation versus dependent counts",
+      "assessed_at": [
+        "01.10.c",
+        "02.10.c",
+        "06.10.d",
+        "07.10.b",
+        "07.10.c",
+        "08.10.b",
+        "08.10.d",
+        "09.10.c"
+      ],
+      "depth": "proof and application"
+    },
+    {
+      "id": "A93",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        31,
+        32,
+        33
+      ],
+      "knowledge_point": "Variance identity, standard deviation and affine variance scaling",
+      "assessed_at": [
+        "01.10.a",
+        "01.10.b",
+        "01.10.d",
+        "04.10.c",
+        "06.10.d",
+        "07.10.a",
+        "08.10.c",
+        "09.10.a",
+        "09.10.b",
+        "09.10.d",
+        "10.10.a",
+        "10.10.d"
+      ],
+      "depth": "proof and application"
+    },
+    {
+      "id": "A94",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        34,
+        35,
+        36
+      ],
+      "knowledge_point": "Pairwise-independent variance addition, weighted sums and binomial variance",
+      "assessed_at": [
+        "01.10.d",
+        "07.10.d",
+        "08.10.b",
+        "10.10.b",
+        "10.10.d"
+      ],
+      "depth": "proof and application"
+    },
+    {
+      "id": "A95",
+      "lecture": "L17-Probability-RV.pdf",
+      "pages": [
+        37
+      ],
+      "knowledge_point": "Expectation and variance of independent repeated-measurement means",
+      "assessed_at": [
+        "01.10.d",
+        "10.10.c"
+      ],
+      "depth": "derivation"
+    }
+  ]
+}

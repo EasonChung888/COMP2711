@@ -1,0 +1,19 @@
+   Derangement
+
+
+▪ A derangement is a permutation of objects that leaves
+  no object in its original position.
+▪ Example
+  The permutation 21453 is a derangement of 12345
+  because no number is left in its original position.
+  However, 21543 is not a derangement of 12345
+  because this permutation leaves 4 unchanged.
+▪ Theorem
+  The number of derangements of a set with           𝑛 elements
+  is
+            𝐷   = 𝑛! 1 −  1 +  1 −  1 + ⋯   −1  𝑛 1
+              𝑛           1!   2!  3!             𝑛!
+
+
+
+                                                                 16

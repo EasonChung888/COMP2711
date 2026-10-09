@@ -1,0 +1,1245 @@
+{
+  "source_workspace": "/Users/eason/Documents/ChatGPT/COMP2711",
+  "lectures": [
+    {
+      "file": "L01-Logic-Propositional-Logic.pdf",
+      "sha256": "13085a0deba31090accf4bf74671d2f026d5f47a0743d3a537151c3517df7adb",
+      "pages": 36
+    },
+    {
+      "file": "L02-Logic-Predicate-Logic.pdf",
+      "sha256": "e3c8843263168986be6f74f42c7894d3b9bba51297b21cafd9c4a5fa455427df",
+      "pages": 49
+    },
+    {
+      "file": "L03-Logic-Inference.pdf",
+      "sha256": "bd1208bf60b94fdccb6c3a6bcd8aaf1768f25c64b4724c97f797b1c47e9a0eae",
+      "pages": 43
+    },
+    {
+      "file": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "sha256": "32ef91e4da8f407cb7878eb0a9c1ac3ff4c8e8391b7e3906d1e795b52de9c98d",
+      "pages": 43
+    },
+    {
+      "file": "L11-Counting-Counting.pdf",
+      "sha256": "ddf852cfe125210306f4c6b2fee55566335e909233686372b34cf9e9fb570f44",
+      "pages": 36
+    },
+    {
+      "file": "L12-Counting-Combinations.pdf",
+      "sha256": "1a49d004cb7274dd741b65161b226da486f2492afb9828df596d24c86f59c16b",
+      "pages": 33
+    },
+    {
+      "file": "L13-Counting-Binomial.pdf",
+      "sha256": "0b376b97abd7652c44fd2ebf0bafb5428d09808fa6417773e7d470651e7f870a",
+      "pages": 26
+    },
+    {
+      "file": "L14-Counting-IE.pdf",
+      "sha256": "52838eb6278c12579ccb79ea21f1bbe131f8805979df1743ff7ab468c56a0d4f",
+      "pages": 16
+    },
+    {
+      "file": "L15-Probability-Probability.pdf",
+      "sha256": "146e81435b122fc30621172a30a59b38b85be5f06c0e80e82bb1a598d570aa8c",
+      "pages": 23
+    },
+    {
+      "file": "L16-Probability-Cond.pdf",
+      "sha256": "4b0b01a161b4de44f772cde4e184b8e0f1a6291bd8fcacc32f2beff13ff87fd6",
+      "pages": 25
+    },
+    {
+      "file": "L17-Probability-RV.pdf",
+      "sha256": "b754e2cfc93932bde510e395c10c7ccf9684f401173f6a807b115098e507ba15",
+      "pages": 37
+    }
+  ],
+  "source_paper": {
+    "file": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+    "sha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "pages": 26,
+    "fonts": {
+      "/HXRKHV+CMR12": {
+        "basefont": "/HXRKHV+CMR12",
+        "subtype": "/Type1"
+      },
+      "/EQBYUV+CMBX12": {
+        "basefont": "/EQBYUV+CMBX12",
+        "subtype": "/Type1"
+      },
+      "/DLNUEP+CMR8": {
+        "basefont": "/DLNUEP+CMR8",
+        "subtype": "/Type1"
+      },
+      "/UBSJYV+CMMI12": {
+        "basefont": "/UBSJYV+CMMI12",
+        "subtype": "/Type1"
+      },
+      "/WMKVHL+CMMI8": {
+        "basefont": "/WMKVHL+CMMI8",
+        "subtype": "/Type1"
+      },
+      "/LDVZCP+CMEX10": {
+        "basefont": "/LDVZCP+CMEX10",
+        "subtype": "/Type1"
+      },
+      "/TWWQBJ+SFRM1200": {
+        "basefont": "/TWWQBJ+SFRM1200",
+        "subtype": "/Type1"
+      },
+      "/OZQGWH+CMR17": {
+        "basefont": "/OZQGWH+CMR17",
+        "subtype": "/Type1"
+      },
+      "/SCRWUL+CMTT12": {
+        "basefont": "/SCRWUL+CMTT12",
+        "subtype": "/Type1"
+      },
+      "/GGFGQJ+CMSY10": {
+        "basefont": "/GGFGQJ+CMSY10",
+        "subtype": "/Type1"
+      },
+      "/LZWPRA+MSBM10": {
+        "basefont": "/LZWPRA+MSBM10",
+        "subtype": "/Type1"
+      },
+      "/DGBKAO+CMTI12": {
+        "basefont": "/DGBKAO+CMTI12",
+        "subtype": "/Type1"
+      },
+      "/TMCDBM+CMSY8": {
+        "basefont": "/TMCDBM+CMSY8",
+        "subtype": "/Type1"
+      },
+      "/RPYIIR+CMR6": {
+        "basefont": "/RPYIIR+CMR6",
+        "subtype": "/Type1"
+      }
+    },
+    "page_profiles": [
+      {
+        "page": 1,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F55": {
+            "basefont": "/WMKVHL+CMMI8",
+            "subtype": "/Type1"
+          },
+          "/F60": {
+            "basefont": "/LDVZCP+CMEX10",
+            "subtype": "/Type1"
+          },
+          "/F69": {
+            "basefont": "/TWWQBJ+SFRM1200",
+            "subtype": "/Type1"
+          },
+          "/F70": {
+            "basefont": "/OZQGWH+CMR17",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 915,
+          "14.346": 59,
+          "7.97": 8,
+          "17.215": 54
+        },
+        "visible_text_bbox_top_origin_pt": [
+          86.4,
+          75.18,
+          534.47,
+          633.3
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 776,
+          "14.346": 55,
+          "7.97": 8,
+          "17.215": 54
+        }
+      },
+      {
+        "page": 2,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F77": {
+            "basefont": "/SCRWUL+CMTT12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 344,
+          "14.346": 237
+        },
+        "visible_text_bbox_top_origin_pt": [
+          86.4,
+          120.48,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 292,
+          "14.346": 208
+        }
+      },
+      {
+        "page": 3,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 425
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          112.5,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 372
+        }
+      },
+      {
+        "page": 4,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 750
+        },
+        "visible_text_bbox_top_origin_pt": [
+          62.17,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 659
+        }
+      },
+      {
+        "page": 5,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 141
+        },
+        "visible_text_bbox_top_origin_pt": [
+          121.26,
+          75.18,
+          389.53,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 123
+        }
+      },
+      {
+        "page": 6,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F66": {
+            "basefont": "/LZWPRA+MSBM10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 456,
+          "7.97": 1
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 397,
+          "7.97": 1
+        }
+      },
+      {
+        "page": 7,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 956
+        },
+        "visible_text_bbox_top_origin_pt": [
+          62.17,
+          75.18,
+          513.88,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 822
+        }
+      },
+      {
+        "page": 8,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 679,
+          "7.97": 10
+        },
+        "visible_text_bbox_top_origin_pt": [
+          121.26,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 595,
+          "7.97": 10
+        }
+      },
+      {
+        "page": 9,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 1
+        },
+        "visible_text_bbox_top_origin_pt": [
+          288.67,
+          711.79,
+          294.53,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 1
+        }
+      },
+      {
+        "page": 10,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 244
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 216
+        }
+      },
+      {
+        "page": 11,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F66": {
+            "basefont": "/LZWPRA+MSBM10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 1031
+        },
+        "visible_text_bbox_top_origin_pt": [
+          62.17,
+          75.18,
+          496.81,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 890
+        }
+      },
+      {
+        "page": 12,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F60": {
+            "basefont": "/LDVZCP+CMEX10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 723,
+          "7.97": 5
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 604,
+          "7.97": 5
+        }
+      },
+      {
+        "page": 13,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F60": {
+            "basefont": "/LDVZCP+CMEX10",
+            "subtype": "/Type1"
+          },
+          "/F80": {
+            "basefont": "/DGBKAO+CMTI12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 828,
+          "7.97": 20
+        },
+        "visible_text_bbox_top_origin_pt": [
+          62.17,
+          75.18,
+          508.2,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 698,
+          "7.97": 20
+        }
+      },
+      {
+        "page": 14,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F55": {
+            "basefont": "/WMKVHL+CMMI8",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F58": {
+            "basefont": "/TMCDBM+CMSY8",
+            "subtype": "/Type1"
+          },
+          "/F60": {
+            "basefont": "/LDVZCP+CMEX10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 713,
+          "7.97": 6
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 619,
+          "7.97": 6
+        }
+      },
+      {
+        "page": 15,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 1264,
+          "7.97": 61
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          75.18,
+          501.41,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 1069,
+          "7.97": 61
+        }
+      },
+      {
+        "page": 16,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 2
+        },
+        "visible_text_bbox_top_origin_pt": [
+          285.75,
+          711.79,
+          297.45,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 2
+        }
+      },
+      {
+        "page": 17,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 434
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 357
+        }
+      },
+      {
+        "page": 18,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 726,
+          "7.97": 2
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          73.69,
+          496.81,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 615,
+          "7.97": 2
+        }
+      },
+      {
+        "page": 19,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F53": {
+            "basefont": "/RPYIIR+CMR6",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F60": {
+            "basefont": "/LDVZCP+CMEX10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 292,
+          "7.97": 30,
+          "5.978": 3
+        },
+        "visible_text_bbox_top_origin_pt": [
+          62.17,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 247,
+          "7.97": 30,
+          "5.978": 3
+        }
+      },
+      {
+        "page": 20,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F60": {
+            "basefont": "/LDVZCP+CMEX10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 968,
+          "7.97": 14
+        },
+        "visible_text_bbox_top_origin_pt": [
+          44.91,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 821,
+          "7.97": 14
+        }
+      },
+      {
+        "page": 21,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F66": {
+            "basefont": "/LZWPRA+MSBM10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 338,
+          "7.97": 19
+        },
+        "visible_text_bbox_top_origin_pt": [
+          38.18,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 290,
+          "7.97": 19
+        }
+      },
+      {
+        "page": 22,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          },
+          "/F52": {
+            "basefont": "/DLNUEP+CMR8",
+            "subtype": "/Type1"
+          },
+          "/F53": {
+            "basefont": "/RPYIIR+CMR6",
+            "subtype": "/Type1"
+          },
+          "/F54": {
+            "basefont": "/UBSJYV+CMMI12",
+            "subtype": "/Type1"
+          },
+          "/F55": {
+            "basefont": "/WMKVHL+CMMI8",
+            "subtype": "/Type1"
+          },
+          "/F57": {
+            "basefont": "/GGFGQJ+CMSY10",
+            "subtype": "/Type1"
+          },
+          "/F58": {
+            "basefont": "/TMCDBM+CMSY8",
+            "subtype": "/Type1"
+          },
+          "/F60": {
+            "basefont": "/LDVZCP+CMEX10",
+            "subtype": "/Type1"
+          },
+          "/F66": {
+            "basefont": "/LZWPRA+MSBM10",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 1394,
+          "7.97": 93,
+          "5.978": 6
+        },
+        "visible_text_bbox_top_origin_pt": [
+          62.17,
+          75.18,
+          564.13,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 1183,
+          "7.97": 93,
+          "5.978": 6
+        }
+      },
+      {
+        "page": 23,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 270
+        },
+        "visible_text_bbox_top_origin_pt": [
+          121.26,
+          75.18,
+          496.8,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 221
+        }
+      },
+      {
+        "page": 24,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 13
+        },
+        "visible_text_bbox_top_origin_pt": [
+          115.67,
+          75.18,
+          297.45,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 12
+        }
+      },
+      {
+        "page": 25,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 13
+        },
+        "visible_text_bbox_top_origin_pt": [
+          115.67,
+          75.18,
+          297.45,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 12
+        }
+      },
+      {
+        "page": 26,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "fonts": {
+          "/F37": {
+            "basefont": "/HXRKHV+CMR12",
+            "subtype": "/Type1"
+          },
+          "/F40": {
+            "basefont": "/EQBYUV+CMBX12",
+            "subtype": "/Type1"
+          }
+        },
+        "font_size_character_counts": {
+          "11.955": 13
+        },
+        "visible_text_bbox_top_origin_pt": [
+          115.67,
+          75.18,
+          297.45,
+          723.75
+        ],
+        "actual_character_font_sizes_pt": {
+          "11.955": 12
+        }
+      }
+    ]
+  },
+  "earlier_verified_records": [
+    {
+      "file": "knowledge_base/04-Questions/Q-2024F-MID-P01-a - Logical Equivalence.md",
+      "sha256": "33b974b88842e91b41ac5175b86441ea872c6d0475efbfaf0adb5aa5066fbcb7",
+      "id": "\"Q-2024F-MID-P01-a\"",
+      "source_page": "3",
+      "marks": "2",
+      "verification_status": "\"verified\"",
+      "syllabus_status": "\"in-scope\"",
+      "exam_type": "\"midterm\"",
+      "question_types": "[\"proof\"]",
+      "form_note": "Symbolic proof/counterexample/inference"
+    },
+    {
+      "file": "knowledge_base/04-Questions/Q-2024F-MID-P01-b - Logical Equivalence.md",
+      "sha256": "223fffe7116ff2bbe2778b71cedad38ba9ddafee529de89f2ccc2f54ba312f43",
+      "id": "\"Q-2024F-MID-P01-b\"",
+      "source_page": "3",
+      "marks": "4",
+      "verification_status": "\"verified\"",
+      "syllabus_status": "\"in-scope\"",
+      "exam_type": "\"midterm\"",
+      "question_types": "[\"counterexample\"]",
+      "form_note": "Symbolic proof/counterexample/inference"
+    },
+    {
+      "file": "knowledge_base/04-Questions/Q-2024F-MID-P01-c - Logical Equivalence.md",
+      "sha256": "9ba8d9cf1888c607bd929b573d3895a234fe66fce0f74891d189560c0ebbd896",
+      "id": "\"Q-2024F-MID-P01-c\"",
+      "source_page": "3",
+      "marks": "6",
+      "verification_status": "\"verified\"",
+      "syllabus_status": "\"in-scope\"",
+      "exam_type": "\"midterm\"",
+      "question_types": "[\"proof\"]",
+      "form_note": "Symbolic proof/counterexample/inference"
+    },
+    {
+      "file": "knowledge_base/04-Questions/Q-2022-MID-P04-a - Countability.md",
+      "sha256": "b2032414b11b7ae06dd713931ed14a7e366e0a601aaae68bbf453c8c27b5aec4",
+      "id": "\"Q-2022-MID-P04-a\"",
+      "source_page": "2",
+      "verification_status": "\"verified\"",
+      "syllabus_status": "\"in-scope\"",
+      "exam_type": "\"midterm\"",
+      "question_types": "[\"construction\"]",
+      "form_note": "Construct examples with finite, countable or uncountable set difference"
+    },
+    {
+      "file": "knowledge_base/04-Questions/Q-2022-MID-P04-b - Countability.md",
+      "sha256": "b5bf7903697cef344821dc0ff5ce1c16acf61315117955a47ed1527b00b9a960",
+      "id": "\"Q-2022-MID-P04-b\"",
+      "source_page": "2",
+      "verification_status": "\"verified\"",
+      "syllabus_status": "\"in-scope\"",
+      "exam_type": "\"midterm\"",
+      "question_types": "[\"construction\"]",
+      "form_note": "Construct examples with finite, countable or uncountable set difference"
+    },
+    {
+      "file": "knowledge_base/04-Questions/Q-2022-MID-P04-c - Countability.md",
+      "sha256": "fa6f1db6e690eadffd6ba0e058170600183955327edb5a0abde0039792da3188",
+      "id": "\"Q-2022-MID-P04-c\"",
+      "source_page": "2",
+      "verification_status": "\"verified\"",
+      "syllabus_status": "\"in-scope\"",
+      "exam_type": "\"midterm\"",
+      "question_types": "[\"construction\"]",
+      "form_note": "Construct examples with finite, countable or uncountable set difference"
+    }
+  ],
+  "layout_measurement": {
+    "paper_pt": [
+      612,
+      792
+    ],
+    "body_region_note": "Visible bounding boxes measured with pdfplumber: cover text/table x=86.4..534.47pt; usual indented question stems/parts x=115.66..496.80pt; problem headings project left to x=44.91pt. Common top baseline is 707.18pt. Body is 11.955 PDF pt, equivalent to LaTeX 12pt.",
+    "template_geometry": "US Letter; 1.25in side margins (90pt), top 1.05in, bottom 0.8in; 12pt Computer Modern; headings project to left by 0.625in (45pt).",
+    "source_structure": {
+      "problems": 10,
+      "points": [
+        10,
+        13,
+        12,
+        16,
+        10,
+        9,
+        7,
+        6,
+        7,
+        10
+      ],
+      "total": 100,
+      "minutes": 120,
+      "cover_pages": [
+        1,
+        2
+      ],
+      "question_start_pages": [
+        3,
+        6,
+        10,
+        12,
+        14,
+        15,
+        17,
+        18,
+        20,
+        21
+      ],
+      "draft_pages": [
+        24,
+        25,
+        26
+      ]
+    },
+    "visual_review": "All 26 pages rendered at scale-to 800 and viewed in three contact sheets on 2026-10-08; cover and question structure inspected. Original includes answer and stray draft material, which formal mocks do not reproduce.",
+    "template_comparison": {
+      "score_table_font": "CMR17",
+      "score_table_glyph_bbox_top_origin_pt": [
+        91.99,
+        571.39,
+        519.97,
+        633.23
+      ],
+      "problem_heading_left_top_bottom_top_origin_pt": [
+        45.0,
+        112.75,
+        124.71
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+   Number of Permutations that are not Derangements - 2
+
+▪  Assuming permutations of n numbers 1,2,..,i,..,n, we will count the
+   number of permutations |P1P2… Pn| that are not derangements, by
+   inclusion - exclusion.
+▪   𝑃1∪ 𝑃2 ∪ ⋯ ∪ 𝑃𝑛  =
+
+
+
+
+       =   𝑛  𝑛 − 1  !−  𝑛   𝑛 − 2 !+ ⋯  +  −1  𝑛+1 𝑛   𝑛 − 𝑛  !
+           1 𝑛!          2        𝑛!                𝑛             𝑛!
+       =             𝑛 − 1 !−             𝑛 − 2 !+ ⋯  +  −1  𝑛+1     0!
+         1!  𝑛−  1 !          2!  𝑛−  2 !                       𝑛! 0!
+       = 𝑛!  1 −  1 + ⋯ +  −1  𝑛+1 1
+             1!  2!                𝑛!
+
+  Number of derangements:
+  𝐷  =  𝑛!−  𝑛! 1 −  1 + ⋯ +  −1  𝑛+1 1  =  𝑛! 1 − 1 +  1 − 1  + ⋯  −1  𝑛 1
+    𝑛           1!  2!                𝑛!           1!   2!  3!           𝑛!
+
+
+                                                                                 18

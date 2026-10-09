@@ -1,0 +1,38 @@
+{
+  "fixed_scores": [
+    10,
+    13,
+    12,
+    16,
+    10,
+    9,
+    7,
+    6,
+    7,
+    10
+  ],
+  "total_each": 100,
+  "minutes_each": 120,
+  "papers": 10,
+  "problems": 100,
+  "labelled_or_unsplit_parts": 319,
+  "all_four_domains_each": true,
+  "english_content": true,
+  "ten_distinct_complete_prompts_per_slot": true,
+  "source_cluster_count": 95,
+  "lecture_pages": 367,
+  "substantive_or_repeated_example_pages": 325,
+  "background_pages": 42,
+  "content_sha256": {
+    "counting.json": "963270456d4bf6ff97447200157e5b34c64148163fab36c82e828ce29ec63427",
+    "logic.json": "2d00f1bf4c5890a85dcbe3d33054c92a47118b06923830f475b564ef8e1596d4",
+    "probability.json": "f4d9099355bf26159b849b3f6cb4d3db58c03769eb2238580063980a19c8c4a6"
+  },
+  "review_sha256": {
+    "counting-review.md": "7019b2bf3dee7b17f18ec026b9904c5e18d08940d98af308995e7320f9ed143b",
+    "logic-review.md": "c26abf34279d5b8de408739080663bb7127920f99e2118d4958831d88034e712",
+    "pipeline-review.md": "1d7cb09deaf65596b3e36cff9c070334f64628468a12d46a4fda5e0f8619260b",
+    "probability-review.md": "c2a025ed0081b9acc1dd607873b1d3954eaf0ee7cfeaac8b8f26475ddd959651"
+  },
+  "distinct_prompt_limit": "Exact duplicate rejection supplements independently reviewed substantive variation; it does not prove uniqueness after changing only numbers."
+}

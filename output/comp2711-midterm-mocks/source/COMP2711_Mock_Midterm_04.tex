@@ -1,0 +1,213 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 04}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Classify each formula as a tautology, contradiction, or contingency, with brief justification: (i) $(p\land q)\to p$; (ii) $(p\to q)\land p\land\neg q$; (iii) $p\leftrightarrow\neg q$. Each is worth 1 point.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Each of A and B is either a knight (always truthful) or a knave (always lying). A says, \emph{B is a knight}. B says, \emph{We are of different types}. Determine both types and justify.
+\examspace{3}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} From $\neg t\land u$, $r\to t$, $\neg r\to s$, and $s\to v$, derive $v\land u$ using named rules of inference.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} In $(\forall x(P(x,y)\to\exists y\,R(x,y)))\land Q(y)$, identify every free and bound variable occurrence and each quantifier\textquotesingle s scope (3 points). Rename the inner bound variable to remove the repeated name, preserving meaning (1 point).
+\examspace{4}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} All domains are nonempty. Rewrite $(\forall xP(x))\to(\exists yQ(y))$ with all quantifiers at the front (2 points). Show it is not equivalent to $\forall x\exists y(P(x)\to Q(y))$ by a countermodel (2 points).
+\examspace{5}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Prove formally that $\forall x\forall y(R(x,y)\to S(x,y))$ and $\exists x\forall yR(x,y)$ imply $\exists x\forall yS(x,y)$. Explain the use of a particular witness and an arbitrary variable.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Let $A=\{0,1\}$, $B=\{a\}$. List $A\times B$ and give a relation from $A$ to $B$ which is not a function $A\to B$.
+\examspace{3}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} Use the Schr\"oder--Bernstein theorem to show $|(0,1)|=|[0,1]|$. State the theorem and exhibit both injections; do not prove the theorem.
+\examspace{4}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item $A\cap(A\cup B)=A$ for all sets $A,B$.\item $U\setminus(A\cup B)=(U\setminus A)\cup(U\setminus B)$ for all $A,B\subseteq U$.\item If finite $A,B$ are disjoint, then $|A\cup B|=|A|+|B|$.\item $(a,b)=(b,a)$ for all objects $a,b$.\item If $A\subseteq B$, then $A\setminus B=\varnothing$.\item A one-to-one correspondence means a function that is both injective and surjective.\item An injection from $A$ to $B$ and one from $B$ to $A$ force $|A|=|B|$.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Count subsets of $\{1,\ldots,8\}$ that contain 1 and do not contain 2.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Count injective functions $f:\{1,2,3\}\to\{a,b,c,d,e\}$ with $f(1)\ne a$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Count length-five palindromic strings over $\{0,1,2\}$ whose first symbol is nonzero. Repetition is allowed.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} Count length-four strings over $\{A,B,0,1\}$ with exactly two digit positions. Repetition is allowed.
+\examspace{1.5}
+\Needspace{\dimexpr 5.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Draw a branching tree for bit strings of length four with no consecutive ones, and count its leaves.
+\examspace{5.0}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} From ten distinct files, assign two to labelled folder $A$, three to labelled folder $B$, and leave the other five outside. A specified file $Z$ must not enter $A$. Within-folder order does not matter. Count the assignments.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} Count nonnegative integer solutions to $x_1+x_2+x_3+x_4=8$ in which $x_1$ is even.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} A row of Pascal's triangle is $1,4,6,4,1$. Give the next row, stating how boundary and interior entries are obtained.
+\examspace{1.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} For $1\le r\le t\le n$, prove combinatorially that\[\sum_{j=t}^{n}\binom{j-1}{r-1}=\binom nr-\binom{t-1}{r}.\]
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} For $n\ge2$, use inclusion--exclusion on fixed-point events to derive the number $D_n$ of permutations of $\{1,\ldots,n\}$ with no fixed point.
+\examspace{5}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} All $n!$ permutations are equally likely. Express the probability of no fixed point, and state the constant it approaches as $n$ grows. No limit proof is required.
+\examspace{3}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Prove that placing $N\ge1$ objects in $k\ge1$ labelled boxes forces one box to contain at least $\lceil N/k\rceil$ objects. Then suppose 22 files are placed in eight folders, each holding at most four files. Prove that at least three folders hold at least three files.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: A fixed batch of trials [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Four independent transmission attempts each succeed with probability $1/3$. The sample space is the four-symbol success/failure strings, with product masses. Let $X$ count successes; all four attempts are made.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} State the distribution of $X$, including its support.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find $P(X=2)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Find $P(1\le X\le2)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Find $P(X\ge1)$.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Use the binomial theorem to verify that the pmf sums to one.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: Birthday collisions [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+In a toy calendar there are six days. Each person independently has a uniformly distributed birthday on these six days. Outcomes for $n$ people are ordered $n$-tuples of days.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Use sequential conditional probabilities to find the probability of a shared birthday among three people.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Find the smallest $n$ giving collision probability greater than $1/2$, and the smallest $n$ guaranteeing a collision. Justify both thresholds.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Average costs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+An array contains $n\ge2$ distinct keys in a uniformly random order. Linear search compares the target with successive keys, including the successful comparison. In (a),(b), the target is a fixed key present in the array.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Give the distribution and mean of the number $L$ of comparisons.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} A machine charges two units per comparison and refunds one unit per search. Find the expected charge.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} If the target is absent and all $n$ keys are compared, find the mean and variance of the comparison count.
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} Insertion sort instead receives a uniformly random permutation of $n$ distinct keys. Count only shifts of earlier keys one place right; do not count condition tests or final key placement. Derive the expected total shifts.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

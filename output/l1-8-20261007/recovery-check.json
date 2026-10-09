@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "actualRenderer": true,
+  "isolatedTemporaryCopy": true,
+  "savedResponseResumedUnchanged": true,
+  "noDuplicateSave": true,
+  "pendingPageBlocksPrefetch": true,
+  "committedPageAdvancesToNext": true,
+  "duplicateCommitBlocked": true,
+  "skipPageBlocked": true,
+  "savedAndCommittedResponseTamperingBlocked": true,
+  "sourceTamperingBlocked": true
+}

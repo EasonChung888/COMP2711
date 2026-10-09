@@ -1,0 +1,23 @@
+Number of Onto Functions(special case-cont)
+
+▪   # of functions 𝑃𝑖 that do not have 𝑏𝑖 in their range:       𝑃1  =  𝑃2  =  𝑃3  = 26
+▪   I need to use inclusion-exclusion, to compute         𝑃1 ∪ 𝑃2 ∪ 𝑃3 . Inclusion-
+    exclusion for 3 sets:    𝑃1 ∪ 𝑃2 ∪ 𝑃3 =  𝑃1  +  𝑃2 +  𝑃3   − 𝑃1 ∩ 𝑃2  −  𝑃2 ∩ 𝑃3  −
+     𝑃1∩  𝑃3 +   𝑃1∩  𝑃2∩  𝑃3
+▪   Give an example of a function that belongs to (𝑃1        ∩  𝑃2)
+▪   A function that maps all elements of A to 𝑏3.
+▪   What is the value of    𝑃1 ∩ 𝑃2 , 𝑃2 ∩ 𝑃3 ,𝑃1 ∩ 𝑃3 ?
+▪    𝑃1∩  𝑃2 =   𝑃2∩  𝑃3 =   𝑃1∩  𝑃3 =  1 - There is 1 choice for each element of      A.
+▪   What is the value of    𝑃1 ∩ 𝑃2 ∩ 𝑃3 ?
+▪    𝑃1∩  𝑃2∩  𝑃3 =  0 - There is 0 choice for each element of A.
+▪   Thus,   𝑃1 ∪ 𝑃2 ∪ 𝑃3 = 326 − 31=189 non-surjective functions.
+▪   The number of surjective functions is 729-189=540
+
+
+
+
+
+
+
+
+                                                                                      13

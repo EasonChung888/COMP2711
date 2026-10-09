@@ -1,0 +1,24 @@
+    Exercise on Employees and Tasks
+▪   How many ways are there to assign 6 different tasks to 3 different employees if every
+    employee is assigned at least one task?
+▪   How many assignments would be possible if there were no constraint?
+▪   36=729, 3 options for 1st task, 3 options for 2nd,…(permutations with repetition)
+▪   Wrong Solution for constrained version:
+1.   Step 1: Choose the first 3 tasks (C(6,3)) and assign them to 3 different employees:
+     C(6,3)3!=P(6,3). Each employee is assigned a task
+2.   Step 2: Assign the remaining 3 tasks to any employee: 33
+▪   Total number of ways:  C(6,3)3!33=20627=3240
+▪   Mistake: Overcounting. The correct solution should be less than 729.
+▪   Assume that in an assignment x, Step 1 one assigns task 1 to employee 1 and Step 2
+    assigns task 2 to employee 1.
+▪   Assume another assignment x', which is identical to x (all tasks are assigned to the
+    same employees), but task 2 is assigned to employee 1 at Step 1, and task 1 is
+    assigned to employee 1 at Step 2.
+▪    x and x' are counted as distinct solutions, whereas they are equivalent.
+
+
+
+
+
+
+                                                                                                   11

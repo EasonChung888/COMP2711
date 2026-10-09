@@ -1,0 +1,8 @@
+tools/cache/
+tools/__pycache__/
+tmp/
+audit/source-renders/
+audit/final-renders/
+audit/visual-contact-sheets/
+audit/lecture-text.txt
+audit/source-paper-text.txt

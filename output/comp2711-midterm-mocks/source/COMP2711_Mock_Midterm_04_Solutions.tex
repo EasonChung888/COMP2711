@@ -1,0 +1,193 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 04}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} (i) Tautology: a true conjunction has $p$ true, and a false antecedent makes the implication true. (ii) Contradiction: $p\land\neg q$ makes $p\to q$ false. (iii) Contingency: true at $p=T,q=F$, false at $p=q=T$.
+\par\textit{Marking:} 1 each correct classification supported by valid reasoning.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Let $p,q$ mean that A,B are knights. Consistency requires $p\leftrightarrow q$ and $q\leftrightarrow(p\oplus q)$. The first forces $p=q$, making the XOR false; hence $q=F$ and $p=F$. Both are knaves; both assertions are false.
+\par\textit{Marking:} 1 consistent equations/reasoning; 1 unique types with verification.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} \begin{enumerate}\item $\neg t$ and $u$ by simplification of the first premise.\item $\neg r$ from $r\to t$ and $\neg t$ by modus tollens.\item $s$ from $\neg r\to s$ and line 2 by modus ponens.\item $v$ from $s\to v$ and line 3 by modus ponens.\item $v\land u$ from lines 4 and 1 by conjunction.\end{enumerate}
+\par\textit{Marking:} 1 simplifications; 1 modus tollens; 1 each modus ponens; 1 conjunction with correct citations.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} Both occurrences of $x$ in $P,R$ are bound by $\forall x$, whose scope is the whole implication. The $y$ in $P(x,y)$ and in $Q(y)$ are free; the $y$ in $R(x,y)$ is bound by $\exists y$, whose scope is $R(x,y)$. Thus this is open in $y$. A renaming is $(\forall x(P(x,y)\to\exists z\,R(x,z)))\land Q(y)$, with fresh $z$.
+\par\textit{Marking:} 1 x occurrences/scope; 1 y bound occurrence/scope; 1 free occurrences/open status; 1 capture-free renaming.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[(\forall xP(x))\to(\exists yQ(y))\equiv(\exists x\neg P(x))\lor(\exists yQ(y))\equiv\exists x\exists y(P(x)\to Q(y)).\] For inequivalence use $D=\{a,b\}$, $P(a)=T,P(b)=F$, and $Q$ false everywhere. The original is true because its antecedent is false. The proposed universal formula fails at $x=a$ for every $y$.
+\par\textit{Marking:} 1 antecedent negation/polarity flip; 1 correctly moved quantifiers; 1 countermodel; 1 both formula values.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} Choose fresh $a$ with $\forall yR(a,y)$ by existential instantiation. Let $b$ be arbitrary. Universal instantiation gives $R(a,b)$ and $R(a,b)\to S(a,b)$; modus ponens yields $S(a,b)$. Since $b$ is arbitrary, generalize to $\forall yS(a,y)$. Finally existentially generalize in the first coordinate. The witness $a$ is particular and is never universally generalized.
+\par\textit{Marking:} 1 fresh a; 1 arbitrary b; 1 instantiations/MP; 1 valid universal generalization of b; 1 existential generalization of a.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $A\times B=\{(0,a),(1,a)\}$. For example $R=\{(0,a)\}$ is a subset of this product and hence a relation, but it assigns no output to 1, so it is not a function on $A$.
+\par\textit{Marking:} 1 correct product; 1 valid relation with missing-output explanation.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} The theorem says that injections $A\to B$ and $B\to A$ imply equal cardinality. Inclusion injects $(0,1)$ into $[0,1]$. The map $x\mapsto(x+1)/3$ injects $[0,1]$ into $(0,1)$, since its values lie in $[1/3,2/3]$ and equal outputs force equal inputs. Apply the theorem.
+\par\textit{Marking:} 1 theorem; 1 inclusion; 1 valid reverse injection and conclusion.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{T}. This is absorption; membership requires and is implied by membership in $A$.\item \textbf{F}. The correct operation on the right is intersection; take $U=\{0\}$, $A=U$, $B=\varnothing$.\item \textbf{T}. The intersection term in the two-set union identity is zero.\item \textbf{F}. Ordered pairs agree only coordinatewise; distinct $a,b$ refute it.\item \textbf{T}. Every element of $A$ already belongs to $B$.\item \textbf{T}. This is the definition of a bijection.\item \textbf{T}. This is precisely the Schr\"oder--Bernstein conclusion.\end{enumerate}
+\par\textit{Marking:} Award 1 point per correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Each of the other six membership bits is free, giving $2^6=64$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} The successive choice counts are $4,4,3$, giving $48$. The value $a$ becomes available to the later inputs.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} A string is determined by its first three symbols; there are $2\cdot3\cdot3=18$ choices.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} Choose the two digit positions, then choose each symbol from its two-symbol type: $\binom42 2^4=96$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{\dimexpr 84.96mm+7\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} \begin{center}
+\setlength{\unitlength}{0.72mm}
+\begin{picture}(195,118)
+\qbezier(97.5,99)(78.75,92)(60,85)
+\qbezier(60,77)(48.75,70)(37.5,63)
+\qbezier(37.5,55)(30,48)(22.5,41)
+\qbezier(22.5,33)(18.75,26)(15,19)
+\qbezier(22.5,33)(26.25,26)(30,19)
+\qbezier(37.5,55)(45,48)(52.5,41)
+\qbezier(52.5,33)(48.75,26)(45,19)
+\qbezier(52.5,33)(56.25,26)(60,19)
+\qbezier(60,77)(75,70)(90,63)
+\qbezier(90,55)(86.25,48)(82.5,41)
+\qbezier(82.5,33)(78.75,26)(75,19)
+\qbezier(82.5,33)(86.25,26)(90,19)
+\qbezier(90,55)(97.5,48)(105,41)
+\qbezier(97.5,99)(123.75,92)(150,85)
+\qbezier(150,77)(146.25,70)(142.5,63)
+\qbezier(142.5,55)(135,48)(127.5,41)
+\qbezier(127.5,33)(123.75,26)(120,19)
+\qbezier(127.5,33)(131.25,26)(135,19)
+\qbezier(142.5,55)(150,48)(157.5,41)
+\qbezier(157.5,33)(153.75,26)(150,19)
+\qbezier(157.5,33)(161.25,26)(165,19)
+\qbezier(150,77)(165,70)(180,63)
+\put(97.5,103){\makebox(0,0){$ \varepsilon $}}
+\put(60,81){\makebox(0,0){$ 0 $}}
+\put(37.5,59){\makebox(0,0){$ 00 $}}
+\put(22.5,37){\makebox(0,0){$ 000 $}}
+\put(15,15){\makebox(0,0){$ \underline{0000} $}}
+\put(30,15){\makebox(0,0){$ \underline{0001} $}}
+\put(52.5,37){\makebox(0,0){$ 001 $}}
+\put(45,15){\makebox(0,0){$ \underline{0010} $}}
+\put(60,15){\makebox(0,0){$ \times $}}
+\put(90,59){\makebox(0,0){$ 01 $}}
+\put(82.5,37){\makebox(0,0){$ 010 $}}
+\put(75,15){\makebox(0,0){$ \underline{0100} $}}
+\put(90,15){\makebox(0,0){$ \underline{0101} $}}
+\put(105,37){\makebox(0,0){$ \times $}}
+\put(150,81){\makebox(0,0){$ 1 $}}
+\put(142.5,59){\makebox(0,0){$ 10 $}}
+\put(127.5,37){\makebox(0,0){$ 100 $}}
+\put(120,15){\makebox(0,0){$ \underline{1000} $}}
+\put(135,15){\makebox(0,0){$ \underline{1001} $}}
+\put(157.5,37){\makebox(0,0){$ 101 $}}
+\put(150,15){\makebox(0,0){$ \underline{1010} $}}
+\put(165,15){\makebox(0,0){$ \times $}}
+\put(180,59){\makebox(0,0){$ \times $}}
+\end{picture}
+\end{center}
+Here $\varepsilon$ is the root. Each cross marks a forbidden extension by 1 after 1; underlined strings are legal terminal leaves. The eight legal leaves are\[0000,0001,0010,0100,0101,1000,1001,1010.\] A branch ending in 1 may extend only by 0. Thus there are eight legal leaves; crosses are excluded extensions and are not counted.
+\par\textit{Marking:} 1 mark for a tree with exactly the legal branches; 1 mark for eight.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} Choose the two $A$-files from the nine files other than $Z$. Then choose the three $B$-files from the eight remaining files, which may include $Z$. The answer is $\binom92\binom83=2016$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} Write $x_1=2t$ for $0\le t\le4$. Sum the other three-variable counts: $\sum_{t=0}^4\binom{10-2t}{2}=95$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} The next row is $1,5,10,10,5,1$. Its boundary entries are 1; each interior entry is the sum of its two parents.
+\par\textit{Marking:} 1 mark for the row; 1 mark for the boundary and parent-sum rules.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} Count $r$-element subsets of $\{1,\ldots,n\}$ whose largest element is at least $t$. Subtracting those entirely in $\{1,\ldots,t-1\}$ gives $\binom nr-\binom{t-1}{r}$. Alternatively, if the largest element is $j$, include $j$ and choose the other $r-1$ elements from $\{1,\ldots,j-1\}$, giving $\binom{j-1}{r-1}$. The largest-element classes $j=t,\ldots,n$ are disjoint and cover precisely the desired subsets. Summing proves the identity.
+\par\textit{Marking:} 2 marks for the restricted subset collection; 3 for the subtraction count; 3 for the maximum-label count; 2 for disjoint and exhaustive classes.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Let $F_i$ contain permutations fixing $i$. Fixing a specified set of $j$ positions leaves $(n-j)!$ permutations. There are $\binom nj$ such intersections. Taking the complement of the union by IE gives\[D_n=\sum_{j=0}^n(-1)^j\binom nj(n-j)!=n!\sum_{j=0}^n\frac{(-1)^j}{j!}.\]
+\par\textit{Marking:} 1 mark for events and universe; 2 for intersection sizes; 1 for the number of intersections; 2 for the IE sum and simplification.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} The probability is $D_n/n!=\sum_{j=0}^n(-1)^j/j!$. As stated in the lecture, it approaches $1/e$.
+\par\textit{Marking:} 1 mark for dividing by $n!$; 1 for the exact finite sum; 1 for $1/e$.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Put $q=\lceil N/k\rceil$. If every box contained at most $q-1$ objects, the total would be at most $k(q-1)<N$, since $q-1<N/k$, a contradiction. Thus some box has at least $q$ objects. For the restricted folders, if at most two held at least three files, those two could hold at most four each and the other six at most two each. The total would then be at most $2\cdot4+6\cdot2=20<22$, a contradiction. Hence at least three folders meet the requirement.
+\par\textit{Marking:} 2 marks for the contrary occupancy bound; 1 for the strict ceiling inequality; 1 for the contradiction; 2 for the restricted capacity bound of twenty; 1 for concluding three qualifying folders.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} $X\sim\operatorname{Bin}(4,1/3)$ on $\{0,1,2,3,4\}$.
+\par\textit{Marking:} 1 mark for the law, parameters and support.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} $\binom42(1/3)^2(2/3)^2=8/27$.
+\par\textit{Marking:} 1 mark for 8/27 or the equivalent exact expression.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} $\binom41(1/3)(2/3)^3+\binom42(1/3)^2(2/3)^2=32/81+24/81=56/81$.
+\par\textit{Marking:} 1 mark for the correct interval sum.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} $1-P(X=0)=1-(2/3)^4=65/81$.
+\par\textit{Marking:} 1 mark for the complement probability.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} All terms are nonnegative and\[\sum_{k=0}^4\binom4k(1/3)^k(2/3)^{4-k}=(1/3+2/3)^4=1.\]
+\par\textit{Marking:} 1 mark for the complete mass sum; 1 for the theorem and value one.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Conditional on previous birthdays being distinct, the next birthday avoids them with probabilities $5/6$ and $4/6$. Thus $P(\text{all distinct})=1(5/6)(4/6)=5/9$ and the collision probability is $4/9$.
+\par\textit{Marking:} 2 marks for the correct conditional chain; 1 for the complement.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} For four people the no-collision probability is $(5/6)(4/6)(3/6)=5/18$, giving $13/18>1/2$. For three it is $4/9<1/2$; collision probability is nondecreasing as people are added, so the first threshold is four. Seven people guarantee a collision among six days. Six distinct birthdays are still possible for six people, so the certainty threshold is seven.
+\par\textit{Marking:} 1 mark for the four-person product; 1 for minimality of four; 1 for seven; 1 for distinct-birthday possibility below certainty.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The target position is uniform on $\{1,\ldots,n\}$, so $P(L=i)=1/n$ and $E(L)=(1/n)\sum_{i=1}^ni=(n+1)/2$.
+\par\textit{Marking:} 1 mark for the uniform cost law; 1 for its mean.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} For charge $C=2L-1$, linearity gives $E(C)=2(n+1)/2-1=n$.
+\par\textit{Marking:} 1 mark for the cost expression; 1 for n.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The count is deterministically $n$, so its mean is $n$ and variance is zero.
+\par\textit{Marking:} 1 mark for each result with determinism.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} When inserting position $i$, its rank among the first $i$ keys is uniform on $1,\ldots,i$. The number of earlier larger keys, hence shifts, is uniform on $0,\ldots,i-1$, with mean $(i-1)/2$. Linearity gives\[E(S)=\sum_{i=2}^n\frac{i-1}{2}=\frac{n(n-1)}4.\]No independence of insertion costs is required.
+\par\textit{Marking:} 1 mark for the uniform rank argument; 1 for the correct 0 through i-1 shift law; 1 for its mean; 1 for the summed expectation.
+\end{description}
+\end{document}

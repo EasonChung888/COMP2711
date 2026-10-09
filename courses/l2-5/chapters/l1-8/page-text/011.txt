@@ -1,0 +1,21 @@
+    Number of Onto Functions (special case)
+
+▪  Exercise: How many ways are there to assign 6 different tasks to 3 different
+   employees if every employee is assigned at least one job?
+▪  Equivalent Problem: How many surjective (or onto) functions are there from
+   a set A with 6 elements to a set B with 3 elements?
+▪  Correct Solution
+▪  What is the total number of functions (without any constraint) from A to B?
+▪  Every element of A is mapped to any element in B: 36=729. But I have to
+   remove non-surjective functions.
+Let 𝐵 =   𝑏1,𝑏2, 𝑏3 . Let 𝑃𝑖 be the set of functions that do not have 𝑏𝑖in their
+range; e.g, 𝑃1 is the set of functions that do not map to          𝑏1. The functions of 𝑃𝑖
+are not onto and should be removed from the 36 solutions.
+▪  What is the value of      𝑃1 , 𝑃2 ,  𝑃3 ?
+▪   𝑃1  =  𝑃2  =   𝑃3 =  26 - There are 2 choices to map each element of A.
+▪  Is the number of onto functions 36- 326 =537?
+▪  No. Some functions in 𝑃1 may also belong to 𝑃2 or 𝑃3. I need to use
+   inclusion-exclusion, to compute the number of non-surjective functions
+    𝑃1 ∪ 𝑃2 ∪ 𝑃3  .
+
+                                                                                         12

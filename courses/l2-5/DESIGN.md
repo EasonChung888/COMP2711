@@ -169,3 +169,11 @@ Documentation follows the delivered Read mode. Independent finish review passed;
 - Don't replace the reading layout with a dashboard or day-based organization.
 - Don't require downloaded fonts, remote math rendering or network access.
 - Don't rewrite saved explanations as a visual-design change.
+
+## 逐页笔记
+
+每页 PPT 讲解旁提供独立笔记输入区，沿用现有纸色、近白表面、蓝色强调及系统无衬线字体。有笔记的阅读容器最大宽度为 1280px；桌面采用讲解与笔记两列，笔记列宽 16–19rem，列间距 2.5rem，以左侧细线分隔。笔记区在当前页讲解范围内保持粘性定位，距视口顶部 1.5rem。视口不超过 900px 时改为上下排列，笔记位于讲解之后，取消粘性定位并改用顶部细线分隔。
+
+笔记标签与输入文字均为 1rem，提示及状态为 0.8rem。输入框沿用 8px 圆角、近白底色和细边框，可垂直调整大小；桌面最小高度为 12rem，窄屏为 10rem，最大高度为 60vh。键盘焦点使用蓝色边框与外轮廓，保持清晰可见。
+
+输入后立即保存至当前浏览器；同一章节、同一原页的课内讲解与独立页面共用笔记。状态区显示“输入后自动保存”“已保存到此浏览器”或“笔记已清空”，读取或保存失败时使用既有错误色并给出复制备份提示。标签关联输入框，提示及状态通过辅助描述关联，状态变化可由辅助技术读取。打印时隐藏整个笔记区，讲解恢复单列。

@@ -1,0 +1,146 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 06}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Parenthesize as $[(p\lor(p\land q))\land(q\lor\neg q)]\lor(r\land F)$. Absorption gives $p\lor(p\land q)\equiv p$; negation gives $q\lor\neg q\equiv T$; domination gives $r\land F\equiv F$. Identity laws yield $(p\land T)\lor F\equiv\boxed p$.
+\par\textit{Marking:} 1 absorption; 1 negation/domination; 1 identities and final result.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Invalid: $p=q=F,r=T$ makes both implications and $r$ true, but $p\lor q$ false.
+\par\textit{Marking:} 1 assignment; 1 checking all premise and conclusion values.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} Suppose $u+v$ is rational. Write $u=a/b$ and $u+v=c/d$ with integer numerators and nonzero integer denominators. Then $v=(u+v)-u=(bc-ad)/(bd)$ has integer numerator and nonzero integer denominator, so $v$ is rational. This contradicts the given irrationality of $v$, so the assumption was false.
+\par\textit{Marking:} 1 negated conclusion assumption; 1 two rational representations; 1 valid difference; 1 integer/nonzero conditions; 1 explicit rational/irrational contradiction and conclusion.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} (i) $\forall x(T(x)\lor\exists y(C(x,y)\land T(y)))$. (ii)\[\exists x\forall y\forall z\bigl((C(x,y)\land C(x,z)\land y\ne z)\to(\neg K(y,z)\lor\neg K(z,y))\bigr).\] Mutual knowing requires both $K(y,z)$ and $K(z,y)$, so the consequent negates their conjunction. No symmetry of the directed predicate $K$ is assumed.
+\par\textit{Marking:} (i) 1 correct universal/existential dependencies, 1 trained-colleague condition; (ii) 1 staff witness and universal distinct-colleague restrictions, 1 negation of mutual knowledge using both K(y,z) and K(z,y). Equivalent negated-conjunction form accepted.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} If some $a$ satisfies $P(a)$, choose it for every $y$ and both statements are true. If no element satisfies $P$, both statements reduce to $\forall yQ(y)$: the left can choose any $x$ because the domain is nonempty, and the right has a witness exactly when $Q(y)$ is true. Thus both have the same truth value. Separation of $P(x)$ from $Q(y)$ makes this a special swap, not a rule for arbitrary binary predicates.
+\par\textit{Marking:} 1 case with a P witness; 2 case with no P witness and nonempty-domain use; 1 correct explanation of restricted swap.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} Let $a$ be arbitrary. Universal instantiation gives $P(a)\to Q(a)$ and $Q(a)\to\exists yR(a,y)$. Hypothetical syllogism produces $P(a)\to\exists yR(a,y)$. Since $a$ was arbitrary, universal generalization produces the required conclusion. No common $y$ for all $a$ has been claimed.
+\par\textit{Marking:} 1 arbitrary a; 2 instantiated implications; 1 syllogism; 1 valid universal generalization.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The range is $\{a,b\}$; the preimages of $b$ are 1 and 2. It is not onto because $c$ has no preimage.
+\par\textit{Marking:} 1 range and preimages; 1 surjectivity decision with missing output.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} Finite programs are finite strings over a finite alphabet and can be listed by length, so there are at most countably many programs and computable functions. Each binary-valued function corresponds bijectively to the subset $\{n:f(n)=1\}$ of $\mathbb N$; there are uncountably many such subsets by Cantor\textquotesingle s theorem. Countably many programs cannot compute all these functions, so some are uncomputable.
+\par\textit{Marking:} 1 countability of finite programs; 1 characteristic-function correspondence/uncountability; 1 cardinality comparison and conclusion.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{F}. There are uncountably many such functions and at most countably many programs.\item \textbf{T}. This is its named example; no undecidability reduction is needed.\item \textbf{F}. It equals $\{\varnothing\}$ because the empty set has one subset.\item \textbf{T}. No element of $A$ is removed.\item \textbf{T}. Inclusion one way and $x\mapsto x/2$ the other are injections; use Schr\"oder--Bernstein.\item \textbf{F}. The finite function in part (a) misses $c$.\item \textbf{T}. For example $n\mapsto1/(n+2)$ takes distinct natural inputs to distinct interval values.\end{enumerate}
+\par\textit{Marking:} Award 1 point per correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The first value is fixed, the second has three choices, and the others have four each: $3\cdot4^3=192$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Choose the unordered $k$-element set in $\binom nk$ ways, then order its members in $k!$ ways. Each ordered selection has one underlying set and one order, so it is counted exactly once. If $k=0$, there is one empty selection and one empty ordering, giving $P(n,0)=\binom n0 0!=1$.
+\par\textit{Marking:} 1 mark for selecting the unordered set; 1 mark for its $k!$ orders and the unique representation, including the empty case.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The two blocks and $E,F$ are four distinct units. Only the CD block has two internal orders, giving $2\cdot4!=48$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} The three players and the undealt pile are labelled categories. Their sizes give\[\frac{9!}{2!2!2!3!}=7560.\]
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Zero would have to lead, so it is forbidden altogether. Count frequency vectors for five digits of types $1,2,3,4$: $\binom83=56$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} The four frequencies have total six, giving $\binom93$ vectors. Only the all-zero string is invalid, so the count is $\binom93-1=83$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} The parity-matched index pairs number $2\cdot4+2\cdot3=14$: odd/odd or even/even. Two scalar multiplications per entry give $2\cdot14=28$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} After the first up step, arrange three right and two up steps: $\binom52=10$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[5 points]} In a fixed order of the $n$ elements, record 1 for membership and 0 otherwise. This is a bijection between subsets and length-$n$ bit strings, of which there are $2^n$. There are $\binom nk$ subsets of size $k$; these size classes are disjoint and exhaustive. Summing their sizes gives $2^n$. For $n=0$, both count the one empty subset.
+\par\textit{Marking:} 2 marks for the explicit bijection; 1 for the bit-string count; 2 for the size partition including the empty case.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[5 points]} Count subsets whose selected elements are each coloured red or blue. Choosing a $k$-element subset and then colouring it gives $\binom nk2^k$; sum over $k$. Alternatively each ground-set element has three states: absent, red or blue. The independent states give $3^n$. These are two encodings of the same objects, including the empty coloured subset.
+\par\textit{Marking:} 2 marks for the coloured-subset model; 1 for the size-class count; 1 for three independent states; 1 for matching the objects.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Let the bad sets be multiples of 2, 3 and 5. Their sizes are $90,60,36$; pairwise intersections are multiples of $6,10,15$, with sizes $30,18,12$; the triple intersection has six multiples of 30. Subtracting the union from 180 gives\[180-90-60-36+30+18+12-6=48.\]
+\par\textit{Marking:} 1 mark for bad sets; 2 for singleton sizes; 2 for intersection sizes; 1 for IE and the answer.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} It occurs in exactly $\binom rj$ intersections of $j$ sets, so its contribution is $\sum_{j=1}^r(-1)^{j+1}\binom rj$. Since $\sum_{j=0}^r(-1)^j\binom rj=(1-1)^r=0$ and the $j=0$ term is one, the contribution is one.
+\par\textit{Marking:} 1 mark for intersection multiplicities; 1 for the alternating binomial identity; 1 for the total contribution.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} For every factor to be odd, each odd value would have to occupy an even-indexed position. There are $m+1$ odd values but only $m$ such positions. Distinct values occupy distinct positions, so this placement is impossible by PHP. Thus some value and its index have the same parity, making one factor even and the entire integer product even (including a zero product). For even size, use $a_{2j-1}=2j$, $a_{2j}=2j-1$ for $j=1,\ldots,m$. The factors alternate $1,-1$, so their product is $(-1)^m$, which is odd.
+\par\textit{Marking:} 2 marks for odd-difference parity requirement; 2 for the unequal PHP counts; 1 for the even-product conclusion; 2 for a valid even-size counterconstruction.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} The sample space consists of the unordered three-element subsets; its size is $\binom83=56$.
+\par\textit{Marking:} 1 mark for the subsets and size.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} Only the held set qualifies, so the probability is $1/56$.
+\par\textit{Marking:} 1 mark for 1/56.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} Choose all three winners from the other five numbers: $\binom53/\binom83=5/28$.
+\par\textit{Marking:} 1 mark for the correct count ratio.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} $1-P(X=0)=1-5/28=23/28$.
+\par\textit{Marking:} 1 mark for the complement.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} The events are disjoint because $X$ has only one value on an outcome. Their probabilities sum to\[\frac{\binom31\binom52+\binom32\binom51}{\binom83}=\frac{45}{56}.\]
+\par\textit{Marking:} 1 mark for the two match counts; 1 for the disjoint sum and value.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Using the exhaustive disjoint factory partition,\[P(D)=\frac12\frac1{20}+\frac13\frac1{10}+\frac16\frac15=\frac{11}{120}.\]
+\par\textit{Marking:} 1 mark for the partition; 1 for weighting all three likelihoods; 1 for the total.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} The defect-and-factory masses are $3/120,4/120,4/120$, giving posteriors $3/11,4/11,4/11$. Factories $B,C$ tie. The posterior depends on prior share times defect likelihood, not on the defect likelihood alone.
+\par\textit{Marking:} 2 marks for correctly normalized posteriors; 1 for the tie; 1 for the prior-times-likelihood explanation.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Each ball avoids the specified bin with probability $(n-1)/n$. Independent placements give $P(I_j=1)=((n-1)/n)^m=q$. As an indicator, $E(I_j)=q$.
+\par\textit{Marking:} 1 mark for the avoidance product; 1 for the indicator mean.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Linearity gives $E(Z)=\sum_j E(I_j)=nq$.
+\par\textit{Marking:} 1 mark for linearity; 1 for nq.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The occupied-bin count is $n-Z$, so its mean is $n-nq=n(1-q)$.
+\par\textit{Marking:} 1 mark for the complement count; 1 for its mean.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} Put $r=((n-2)/n)^m$. Both bins are empty exactly when every ball avoids both, so the joint probability is $r$. Since $(n-2)/n<((n-1)/n)^2$, $r<q^2$ and the indicators are dependent. Using $I_j^2=I_j$,\[E(Z^2)=nq+n(n-1)r,\qquad V(Z)=nq+n(n-1)r-n^2q^2.\]This uses direct finite moments rather than independent-variance addition.
+\par\textit{Marking:} 1 mark for r; 1 for the dependence comparison; 1 for expanding the square and second moment; 1 for the variance.
+\end{description}
+\end{document}

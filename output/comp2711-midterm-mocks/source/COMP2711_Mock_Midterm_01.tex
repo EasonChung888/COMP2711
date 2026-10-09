@@ -1,0 +1,211 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 01}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Use propositional laws, without a truth table, to simplify the following to a single literal:\[\neg((p\lor q)\land(p\lor\neg q)).\]
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Is the argument $p\to q,\ q\ \therefore p$ valid? Justify using the definition of validity.
+\examspace{3}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} From $p\lor q$, $\neg p\lor r$, $q\to s$, $r\to s$, and $s\to t$, derive $t$. Give a formal derivation naming the rules.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} The domain is all people. $S(x)$ means student and $R(x,y)$ means $x$ reviewed $y$\textquotesingle s report. Translate: (i) every student reviewed some student\textquotesingle s report; (ii) some student\textquotesingle s report was reviewed by no student. Each translation is worth 2 points.
+\examspace{4}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Negate $\forall x(A(x)\to\exists y(B(y)\land\forall z\,C(x,y,z)))$, placing every negation immediately before a predicate.
+\examspace{4}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Over a nonempty domain, prove formally that $\forall x(P(x)\to Q(x))$, $\forall x(Q(x)\to\neg R(x))$, and $\exists x(P(x)\land S(x))$ imply $\exists x(S(x)\land\neg R(x))$.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Use $\mathbb N=\{0,1,2,\ldots\}$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For sets $A,B,C$, prove $(A\setminus B)\cap C=A\cap(C\setminus B)$ by element membership.
+\examspace{3}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} Let $O=\{2k+1:k\in\mathbb Z\}$ and $f:\mathbb Z\to O$, $f(k)=2k+1$. Prove $f$ is bijective and give its inverse with domain and codomain.
+\examspace{4}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item $\varnothing\in\{\varnothing\}$.\item $\{\varnothing\}\subseteq\varnothing$.\item $|\mathcal P(\{a,b\})|=4$ when $a\ne b$.\item $\{(1,a),(1,b),(2,a)\}$ is a relation from $\{1,2\}$ to $\{a,b\}$.\item An injective function must be onto its stated codomain.\item The set of all finite binary strings is countably infinite.\item The set of all infinite binary sequences is countable.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Three distinct tasks are placed in an ordered schedule, chosen without reuse from six distinct tasks. How many schedules include task $T$?
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Let $U=\{1,2,3,4\}$ and $V=\{a,b,c\}$. Count (i) functions $f:U\to V$ with $f(1)=f(2)$; (ii) injective functions $U\to V$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Encode $S=\{1,3,5\}\subseteq\{1,2,3,4,5\}$ by its membership bit string in label order. Use this encoding to count all subsets of $\{1,2,3,4,5\}$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} The standard triple-loop algorithm computes $AB$ for a $3\times4$ matrix $A$ and a $4\times5$ matrix $B$, using four scalar multiplications per output entry. How many scalar multiplications occur?
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} A code has length two or three over $\{A,B,C,0,1\}$, begins with a letter, and contains at least one digit. Repetition is allowed. Count the codes.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} Arrange the seven distinct letters $A,B,C,D,E,F,G$ in a row, with $A,B,C$ together in any internal order. Count the arrangements.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} Six distinct people sit around a circular table with $A$ and $B$ adjacent. Rotations are equivalent; reflections are different. Count the seatings.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} Find the coefficient of $x^4$ in $(2x-1)^7$.
+\examspace{1.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} For $2\le r\le n$, prove combinatorially that\[r(r-1)\binom nr=n(n-1)\binom{n-2}{r-2}.\]
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Use inclusion--exclusion to count integer solutions of $x+y+z=12$ with $1\le x\le5$, $0\le y\le4$, and $2\le z\le7$.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Any sixteen distinct integers selected from $\{1,2,\ldots,30\}$ include a pair with sum 31 and a pair with difference 15. The pairs may differ. Prove both claims and show that sixteen is the smallest number guaranteeing both.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: Sampling and events [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Six distinct tokens are labelled $R_1,R_2,R_3,B_1,B_2,G$. Draw three in order without replacement; every ordered triple of distinct tokens is equally likely. Let $E$ and $F$ mean that the first and second tokens, respectively, are red.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Describe the sample space and its size.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find $P((R_1,B_1,G))$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Find $P(E\cap F)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Find the probability of no red token.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Are $E,F$ independent? Are they disjoint? Justify both.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: A noisy inspection [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+A randomly selected component is defective with probability $1/10$. An alarm sounds with probability $4/5$ for a defective component and $1/5$ for a good one. The outcomes are the defect status and alarm status with these conditional probabilities.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Find the probability that the alarm sounds.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Find the probability of a defect given an alarm, and given no alarm.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Moments and repeated measurements [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+$D$ takes $0,1,2$ with probabilities $1/4,1/2,1/4$. All copies of $D$ mentioned below are mutually independent and have this law.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Find $E(D)$ and $V(D)$.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} For $Y=3-2D$, find $E(Y)$ and $V(Y)$.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} For an independent copy $D^{\prime}$, compare $E(DD^{\prime})$ with $E(D^2)$.
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} Let $M=(D_1+D_2+D_3)/3$. Find its mean, variance and standard deviation, explaining the role of independence.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

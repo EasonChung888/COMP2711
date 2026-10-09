@@ -1,0 +1,17 @@
+   Proof
+▪  We will prove the formula by showing that an element in the union
+   is counted exactly once by the right-hand side of the equation.
+▪  Suppose 𝑎 is a member of exactly 𝑟 (1≤𝑟≤𝑛) of the sets
+    ▪  Example: 𝑎 belongs to 𝑟       =  3 sets 𝐴1,𝐴2 and 𝐴3)
+▪  This element is counted:
+▪  𝐶(𝑟, 1) times by ∑    𝐴𝑖
+    ▪  if 𝑟=  3, 𝐶  3,1  =  3 times in 𝐴1,𝐴2 and 𝐴3
+▪  𝐶(𝑟, 2) times by ∑    𝐴𝑖 ∩ 𝐴𝑗
+    ▪  if 𝑟=  3, 𝐶  3,2  =  3 times in 𝐴1   ∩ 𝐴2, 𝐴1 ∩  𝐴3 and 𝐴2  ∩  𝐴3
+▪  𝐶(𝑟, 3) times by ∑    𝐴𝑖 ∩ 𝐴𝑗 ∩  𝐴𝑗
+    ▪  if 𝑟=  3, 𝐶  3,3  =  1 time in 𝐴1   ∩ 𝐴2 ∩  𝐴3
+▪  In general, the element is counted 𝐶(𝑟,         𝑚) times by each 𝑠𝑢𝑚
+   involving 𝑚 sets.
+▪  Thus, 𝑎 is counted exactly
+                𝐶  𝑟,1  − 𝐶  𝑟,2  +  𝐶 𝑟, 3  − ⋯  +   −1  𝑟+1𝐶  𝑟, 𝑟
+   times. We must prove that this is equal to 1

@@ -1,0 +1,19 @@
+  Example with 3 Finite Sets
+
+▪  1232 students have taken a course in Spanish;
+▪  879 have taken a course in French;
+▪  114 have taken a course in Russian;
+▪  103 have taken courses in both Spanish and French;
+▪  23 have taken courses in both Spanish and Russian;
+▪  14 have taken courses in both French and Russian;
+▪  2092 students have taken a course in at least one of Spanish
+   French and Russian.
+▪  How many students have taken all          3 languages?
+▪  Solutions:
+   |S∪F∪R| = |S|+ |F|+ |R| − |S∩F| − |S∩R| − |F∩R| + |S∩F∩R|,
+      we obtain 2092 = 1232 + 879 + 114 −103 −23 −14 + |S∩F∩R|.
+       Solving for |S∩F∩R| yields 7.
+
+
+
+                                                                                7

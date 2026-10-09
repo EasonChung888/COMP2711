@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "title": "容斥原理及其应用",
+  "subtitle": "The Inclusion-Exclusion Principle",
+  "language": "zh-CN",
+  "storagePrefix": "comp2711:l1-8:",
+  "topics": [
+    {
+      "slug": "inclusion-exclusion",
+      "title": "容斥原理与证明",
+      "description": "从两集合、三集合图示到一般公式与二项式证明。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "questions": [
+        "Q-2019-FINAL-P08-b",
+        "Q-2020-FINAL1-P04-a",
+        "Q-2025F-MID-P06"
+      ]
+    },
+    {
+      "slug": "onto-functions",
+      "title": "满射与任务分配",
+      "description": "用空接收者作为坏集合，比较直接计数与重复计数。",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        21
+      ],
+      "questions": [
+        "Q-2024F-MID-P07",
+        "Q-2017-FINAL-P01"
+      ]
+    },
+    {
+      "slug": "derangements",
+      "title": "错排与固定点",
+      "description": "用容斥推导错排数，区分恰好固定与指定固定。",
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "questions": [
+        "Q-2020-FINAL2-P06-a",
+        "Q-2020-FINAL2-P06-b",
+        "Q-2020-FINAL2-P06-d"
+      ]
+    },
+    {
+      "slug": "bounded-solutions",
+      "title": "整数解与不可区分分配",
+      "description": "平移下界、容斥排除上界，并区分相同和不同任务。",
+      "pages": [
+        19,
+        20,
+        22
+      ],
+      "questions": [
+        "Q-2019-FINAL-P10-b",
+        "Q-2019-FINAL-P10-d",
+        "Q-2023F-MID-P06"
+      ]
+    }
+  ]
+}

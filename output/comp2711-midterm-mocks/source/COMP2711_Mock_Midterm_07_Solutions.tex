@@ -1,0 +1,143 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 07}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} \[\begin{array}{cc|cc|cc}p&q&p\to q&q\to p&(p\to q)\oplus(q\to p)&p\oplus q\\\hline T&T&T&T&F&F\\T&F&F&T&T&T\\F&T&T&F&T&T\\F&F&T&T&F&F\end{array}\] The last two columns agree on every assignment, establishing equivalence.
+\par\textit{Marking:} 1 all rows and implication columns; 1 both XOR columns; 1 correct equivalence conclusion.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} No. For $p=F,q=T$, the original $p\to q$ is T and the converse $q\to p$ is F. The inverse $\neg p\to\neg q$ is also F, as expected because inverse and converse are equivalent.
+\par\textit{Marking:} 1 separating assignment with original/converse values; 1 correct inverse and value.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} \begin{enumerate}\item $p$ and $q$ by simplification of $p\land q$.\item $p\lor r$ from $p$ by addition.\item $s$ from line 2 and the second premise by modus ponens.\item $t$ from $q$ and the third premise by modus ponens.\item $s\land t$ by conjunction of lines 3 and 4.\end{enumerate}
+\par\textit{Marking:} 1 simplifications; 1 addition; 1 each modus ponens; 1 conjunction and rule citations.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} For $D$, the expansions are $P(-1)\land P(0)\land P(1)=T\land F\land T=F$ and $P(-1)\lor P(0)\lor P(1)=T\lor F\lor T=T$. On the empty domain the universal statement is true because there is no counterexample; the existential is false because there is no witness.
+\par\textit{Marking:} 1 each finite expansion/value; 1 each empty-domain value with reason.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[\exists x\forall y\exists z\bigl((\neg P(x,y)\land\neg Q(z))\lor\neg R(x,y,z)\bigr).\] Each quantifier changes type; negate the conjunction first, then the inner disjunction.
+\par\textit{Marking:} 2 all quantifier changes; 1 outer De Morgan; 1 inner De Morgan/scopes.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} A renaming is $(\forall uP(u))\lor(\exists vQ(v))$. For the inference, existential instantiation gives a fresh $a$ with $\neg Q(a)$. Universal instantiation gives $P(a)\to Q(a)$. Modus tollens yields $\neg P(a)$, and existential generalization yields $\exists x\neg P(x)$.
+\par\textit{Marking:} 1 capture-free renaming; 1 each of fresh witness, universal instantiation, modus tollens and existential generalization.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The union is $\{0,1,2,3\}$. The intersection is $\varnothing$: $A_0=\{0,1\}$ and $A_2=\{2,3\}$ already have no common element.
+\par\textit{Marking:} 1 union; 1 intersection.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} If $g(f(a))=g(f(b))$, injectivity of $g$ gives $f(a)=f(b)$ and injectivity of $f$ gives $a=b$. Thus the composition is injective. The converse claim about $g$ fails: take $A=\{0\}$, $B=\{0,1\}$, $C=\{0\}$, $f(0)=0$, and $g(0)=g(1)=0$. The composition on the singleton domain is injective but $g$ is not.
+\par\textit{Marking:} 2 two cancellations and arbitrary inputs; 1 correct counterexample with compatible domains.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{F}. For $A=\{0\}$ and $B=\{1\}$, the subset $\{0,1\}$ belongs only to the left side.\item \textbf{T}. A set is a subset of the intersection exactly when it is a subset of both sets.\item \textbf{T}. Every finite length has finitely many strings; list by length.\item \textbf{T}. Encode each by the finite tuple of one-positions; for zero ones it is a singleton.\item \textbf{F}. List triples by their coordinate sum; each layer is finite.\item \textbf{T}. Equal f-outputs give equal composite outputs, hence equal inputs.\item \textbf{F}. Exactly one output per input is part of the function definition.\end{enumerate}
+\par\textit{Marking:} Award 1 point per correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Arrange the four remaining cities between the fixed endpoints: $4!$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Choose the three image values, then use each at least once: $\binom53(3^4-3\cdot2^4+3)=360$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The zero-one-count cases are disjoint: one all-zero string plus eight single-one positions, giving $1+8=9$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} After fixing the endpoints, the five free positions hold three reds and two blues: $5!/(3!2!)=10$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Treat the prescribed triple as one circular unit. Five units give $(5-1)!=4!$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} Add the uniquely determined slack $w=6-x-y-z\ge0$. The four-variable sum has $\binom93=84$ solutions.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} If $k$ factors contribute $x^3$, the exponent is $3k-2(10-k)=5k-20$. Thus $k=4$, giving $\binom{10}{4}2^6=13440$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} Choose which of $X,Y$ is outside in two ways, then choose its two outside companions from the other six files. Of the five files left inside, choose three for $A$; the other two go to $B$. Thus $2\binom62\binom53=300$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Fix an element $a$ of an $n$-element set. Its $r$-element subsets split into those containing $a$ and those not containing $a$. In the first class, choose the other $r-1$ elements from the remaining $n-1$, giving $\binom{n-1}{r-1}$. The second class has $\binom{n-1}{r}$ subsets. The classes are disjoint and exhaustive, so their sum is $\binom nr$.
+\par\textit{Marking:} 1 mark for fixing an element; 2 for each class count; 1 for the disjoint exhaustive conclusion.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} For $a,b\ge1$, the last step comes from $(a-1,b)$ or $(a,b-1)$, so $p(a,b)=p(a-1,b)+p(a,b-1)$. On either axis there is exactly one path, so $p(a,0)=p(0,b)=1$. Unrestricted paths to $(4,3)$ total $\binom73=35$. Those through $(2,1)$ split uniquely into $\binom31\binom42=18$ paths, leaving $35-18=17$.
+\par\textit{Marking:} 1 mark for the last-step recurrence; 1 for boundary values; 1 for total and forbidden-path counts; 1 for subtraction and answer.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} With an alphabet of size $m$, endpoint inequality gives $m(m-1)$ endpoint choices and $m^4$ internal choices, so $(m-1)m^5$ strings. Let $E_A,E_B,E_C$ be the missing-symbol events. Missing a specified set of $j$ required symbols leaves $m=4-j$. IE therefore gives\[3\cdot4^5-\binom31 2\cdot3^5+\binom32 1\cdot2^5-0\cdot1^5=1710.\]The triple intersection is empty because the one remaining symbol cannot make unequal endpoints.
+\par\textit{Marking:} 2 marks for the endpoint-constrained universe; 2 for the missing events; 3 for all intersection counts including the empty triple; 2 for the IE expression and answer.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Map each string to its six-bit prefix; there are $2^6=64$ prefix boxes. Sixty-five strings force two with one prefix. Their strings are distinct, so their last bits must differ. For sharpness, take all 64 six-bit prefixes and append 0 to each. These strings have distinct prefixes, so no forced pair occurs.
+\par\textit{Marking:} 2 marks for the prefix map and box count; 2 for PHP; 1 for distinctness forcing the last-bit difference; 2 for the sharp construction.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} The counts are $30,20,12$, so the probabilities are $1/2,1/3,1/5$.
+\par\textit{Marking:} 1 mark for all three probabilities.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} Ten multiples of six give $P(A\cap B)=1/6=(1/2)(1/3)$; the events are independent.
+\par\textit{Marking:} 1 mark for the joint mass and independence comparison.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} The counts are six multiples of ten and four multiples of fifteen, giving $1/10$ and $1/15$.
+\par\textit{Marking:} 1 mark for both joint probabilities.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} Two multiples of thirty give $2/60=1/30$.
+\par\textit{Marking:} 1 mark for 1/30.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} The probability is\[\frac{30+20+12-10-6-4+2}{60}=\frac{11}{15}.\]Singletons are added, pair intersections subtracted, and the triple intersection restored.
+\par\textit{Marking:} 1 mark for correct inclusion-exclusion signs/counts; 1 for 11/15.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Opening-2 likelihoods under prize doors $1,2,3$ are $1/2,0,1$. Hence $P(M=2)=1/4+1/6=5/12$. Staying wins with posterior $3/5$, and switching with $2/5$. Stay is better.
+\par\textit{Marking:} 1 mark for likelihoods and denominator; 1 for posteriors; 1 for the action.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} $P(M=3)=1/4+1/3=7/12$. Staying wins with posterior $3/7$ and switching with $4/7$, so switch to door 2. The combined policy wins on the disjoint cases prize 1 and opening 2, or prize 2 and opening 3:\[P(\text{win})=(1/2)(1/2)+(1/3)(1)=7/12.\]
+\par\textit{Marking:} 2 marks for opening-3 posteriors; 1 for switching; 1 for the overall joint-event sum.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $C=0,1$ each with probability $1/2$, so $E(C)=1/2$ and $V(C)=1/2-(1/2)^2=1/4$.
+\par\textit{Marking:} 1 mark for the induced law; 1 for both moments.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} For every $a,b\in\{0,1\}$, $P(A=a,B=b)=1/4=(1/2)(1/2)$. All other joint masses and corresponding marginal products are zero. Thus the random variables are independent.
+\par\textit{Marking:} 1 mark for the four nonzero joint masses; 1 for factorization for all values.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} For either pair the four binary joint values occur once each, with mass $1/4$, so both pairs are independent. But $P(A=1,B=1,C=1)=0\ne1/8$, so the three are not mutually independent.
+\par\textit{Marking:} 1 mark for both pairwise joint laws; 1 for the failing triple factorization.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} Linearity gives $E(A+B-C)=1/2$. Pairwise independence makes every cross-product expectation equal to the product of the corresponding means; this is exactly what the expansion of the centered square needs. Variance addition with squared coefficients gives\[V(A+B-C)=1/4+1/4+(-1)^2/4=3/4.\]The values on $(0,0),(0,1),(1,0),(1,1)$ are $0,0,0,2$, verifying mean $1/2$ and variance $1-1/4=3/4$.
+\par\textit{Marking:} 1 mark for the mean; 1 for squared-coefficient variance; 2 for why pairwise factorization suffices (or an explicit centered-square derivation).
+\end{description}
+\end{document}

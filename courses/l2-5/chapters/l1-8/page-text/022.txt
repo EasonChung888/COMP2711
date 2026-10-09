@@ -1,0 +1,21 @@
+    Exercise on Employees and Tasks 2
+
+▪  Assume that the 5 tasks are identical. How many ways are there to
+   assign 5 indistinguishable tasks to 4 different people such that
+   every person has at least one task assigned?
+▪  Solution 1: Since all 5 tasks are identical, and each person will be
+   assigned at least 1, you only need to select the person that will be
+   assigned 2 tasks in C(4,1)=4 ways.
+▪  Solution 2: You can assume that each task corresponds to a
+   cookie and you want to distribute them to 4 persons, so that each
+   person receives at least one cookie.
+▪  Equivalent equation: 𝑥1     + 𝑥2 + 𝑥3 + 𝑥4 =  5  with 𝑥1≥1,𝑥2≥1,𝑥3≥1,
+   𝑥4≥1.
+▪  𝑥1 + 𝑥2 + 𝑥3 + 𝑥4 =  1 in unconstrained version.
+▪  C(4+1-1,1)=C(4,1)=4
+
+
+
+
+
+                                                                                23

@@ -1,0 +1,143 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 09}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} \[((p\to q)\to p)\equiv\neg(\neg p\lor q)\lor p\equiv(p\land\neg q)\lor p\equiv p.\] The laws are implication, De Morgan/double negation, and absorption. Therefore the biconditional reduces to $p\leftrightarrow p$, always T.
+\par\textit{Marking:} 1 implication expansion; 1 De Morgan/absorption; 1 distinction between equivalence and tautological biconditional.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Let $p,q$ mean A,B are knights. Then $p\leftrightarrow\neg q$ and $q\leftrightarrow(p\lor q)$. If $q=F$, the first gives $p=T$, making B\textquotesingle s assertion true, impossible for a knave. Thus $q=T,p=F$. A\textquotesingle s assertion is false and B\textquotesingle s is true, so A is a knave and B a knight.
+\par\textit{Marking:} 1 consistency reasoning; 1 unique assignment and verification.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} \begin{enumerate}\item $p\to r$ from the first two premises by hypothetical syllogism.\item $p$ from $p\lor t$ and $\neg t$ by disjunctive syllogism.\item $r$ from lines 1 and 2 by modus ponens.\item $r\to s$ from $\neg r\lor s$ by implication equivalence.\item $s$ from lines 3 and 4 by modus ponens.\end{enumerate}
+\par\textit{Marking:} 1 per valid derived line and rule citation.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} (i) $\forall d\exists t(D(t,d)\land\forall xA(x,t))$. (ii) $\exists x\forall d\exists t(A(x,t)\land D(t,d))$. The first gives a shared test for a given device; the second gives a shared technician across devices.
+\par\textit{Marking:} 2 each: 1 quantifier dependency; 1 correctly scoped predicates.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[\forall x\bigl(\neg P(x)\lor\exists y(\neg Q(y)\land\forall z\neg R(x,y,z))\bigr).\] Negation changes the outer conjunction to disjunction and the inner disjunction to conjunction while reversing quantifier types.
+\par\textit{Marking:} 1 x; 1 outer De Morgan; 1 y and inner De Morgan; 1 z and correct atomic form.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} For the refutation use $D=\{0,1\}$ and $R(x,y)$ iff $x=y$. Each $x$ has itself as witness, but no $y$ equals both 0 and 1. For the valid conclusion take an element $a$ (possible because the domain is nonempty), instantiate to $\exists yR(a,y)$, and choose fresh witness $b$ with $R(a,b)$. Existentially generalize first to $\exists xR(x,b)$ and then to $\exists y\exists xR(x,y)$.
+\par\textit{Marking:} 2 countermodel and values; 1 nonempty-domain selection/UI; 1 fresh existential witness; 1 two existential generalizations.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For $x\in U$, $x\notin A\cap B$ iff not both memberships hold, iff $x\notin A$ or $x\notin B$, iff $x$ belongs to the right side. Elements outside $U$ belong to neither side. Thus membership agrees everywhere.
+\par\textit{Marking:} 1 correct De Morgan membership equivalence; 1 universe restriction and equality.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} Set $h=f^{-1}\circ g^{-1}:C\to A$. For $a\in A$, $h(g(f(a)))=f^{-1}(g^{-1}(g(f(a))))=a$. For $c\in C$, $g(f(h(c)))=g(f(f^{-1}(g^{-1}(c))))=c$. Thus $h$ is the two-sided inverse; the inverse order is reversed.
+\par\textit{Marking:} 1 correctly typed candidate; 1 each order identity.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{T}. The bijection is $n\mapsto2(n+1)$.\item \textbf{F}. Its power set has $2^5=32$ elements.\item \textbf{T}. Countable includes finite sets and countably infinite sets.\item \textbf{T}. List by the last possible one-position; each layer has finitely many sequences.\item \textbf{F}. Uncountability alone says nothing about the nonexistence of intermediate cardinalities; the lecture states CH is independent of ZFC.\item \textbf{T}. The diagonal proof holds for every set, including the empty set.\item \textbf{F}. Take $A=\{0\}$, $B=\{0,1\}$; an injection exists but no bijection does.\end{enumerate}
+\par\textit{Marking:} Award 1 point per correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The first two choices have $3\cdot5$ possibilities; six symbols then remain, followed by five: $3\cdot5\cdot6\cdot5=450$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Choose the common value in four ways and the different third value in three: $4\cdot3=12$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The unique three-one block may start at positions 1 through 8, giving 8 strings.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} The unrestricted count is $11!/(4!4!2!)=34650$. Compressing an adjacent PP pair into one block gives $10!/(4!4!)=6300$ forbidden strings. Subtracting yields $34650-6300=28350$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Subtract assignments using only shelves 2 and 3: $3^7-2^7=2059$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} Shift the first two variables down by their lower bounds. The residual total is five, giving $\binom72=21$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} The coefficient is $\binom85-\binom75=\binom74=35$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} Fix the winner. The final game is its third win; choose its other two wins among the previous $\ell-1$ games. Thus the counts are $2\binom22=2$, $2\binom32=6$, $2\binom42=12$, totaling 20. No earlier third win is possible in such a prefix.
+\par\textit{Marking:} 1 mark for correct stopping-aware counts by length; 1 for total 20.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Count ordered pairs $(R,S)$ of disjoint subsets of a fixed $n$-element set, with sizes $r,s$. Choose $R$ first and then $S$ from the remaining elements, giving the left side. Alternatively choose the union $U=R\cup S$ of size $r+s$, then choose the $r$ members of $R$ inside it; $S=U\setminus R$ is forced. This gives the right side. The assignments are inverse descriptions of each ordered pair, even if a group is empty.
+\par\textit{Marking:} 1 mark for disjoint labelled groups; 2 for the first count; 2 for the union-and-split count; 1 for the inverse correspondence/boundaries.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} Label the ground-set elements $1,\ldots,n$. At position $i$, write $R$ if $i\in R$, $S$ if $i\in S$, and $U$ otherwise. The disjointness makes the symbol well defined. Conversely the symbol positions recover both sets, so this is a bijection. Equal symbols are indistinguishable, and the common count is\[\frac{n!}{r!s!(n-r-s)!}.\]This also counts allocation of $n$ distinct labelled objects into the three labelled categories of these sizes.
+\par\textit{Marking:} 2 marks for the explicit encoding and inverse; 1 for indistinguishable symbol interpretation; 1 for the factorial formula.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Use four bad events: $A$ in seat 1, $A$ in seat 2, $B$ in seat 3, and $C$ in seat 4. Each has $5!$ seatings. The two A-events cannot overlap. Of the six pairs of events, the other five have compatible distinct people and seats, each giving $4!$. Of the four triples, only the two formed by one A-event and both B,C events are compatible, each giving $3!$. The quadruple is empty. IE gives\[6!-4\cdot5!+5\cdot4!-2\cdot3!=348.\]
+\par\textit{Marking:} 2 marks for four bad events; 1 for singleton counts; 3 for compatible and incompatible pair/triple counts; 1 for empty quadruple; 2 for IE and answer.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Pair consecutive coordinates in each of the three directions, partitioning the 64 unit cubes into $2\cdot2\cdot2=8$ disjoint $2\times2\times2$ blocks. Nine selected unit cubes force two in one block. All eight unit cubes of that block have its central point as a vertex; in particular the two selected cubes share that vertex.
+\par\textit{Marking:} 3 marks for the eight-block partition; 2 for objects/boxes and PHP; 2 for verifying the shared central vertex.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} All ordered token pairs, including repeats, form the equally likely space of size $4^2=16$.
+\par\textit{Marking:} 1 mark for ordered pairs with repeats and 16.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} Four diagonal pairs qualify among sixteen, giving $1/4$.
+\par\textit{Marking:} 1 mark for 1/4.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} $P(E\cap F)=(1/2)^2=1/4$.
+\par\textit{Marking:} 1 mark for 1/4.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} The disjoint orders red--blue and blue--red each have mass $1/4$, giving $1/2$.
+\par\textit{Marking:} 1 mark for the disjoint two-case sum.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} The joint probability becomes $(2/4)(1/3)=1/6$. Both marginals remain $1/2$, so $1/6\ne1/4$ establishes dependence.
+\par\textit{Marking:} 1 mark for the without-replacement probability; 1 for the independence comparison.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} The likelihoods are $1,1/8,1/64$. Their prior-weighted sum is $P(R)=(1+1/8+1/64)/3=73/192$. Normalizing the weights $64,8,1$ gives posteriors $64/73,8/73,1/73$.
+\par\textit{Marking:} 1 mark for the conditional likelihoods; 1 for the total; 1 for all normalized posteriors.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} Given the device, the fourth trial remains independent of its first three. Total probability with the updated device partition yields\[P(S_4\mid R)=\frac{64}{73}\cdot1+\frac8{73}\cdot\frac12+\frac1{73}\cdot\frac14=\frac{273}{292}.\]Before observations the success probability is $(1+1/2+1/4)/3=7/12$, smaller than $273/292$. Evidence shifts mass toward more reliable devices.
+\par\textit{Marking:} 1 mark for conditional independence on device; 1 for the posterior-weighted sum; 1 for 273/292; 1 for the prior comparison.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $E(X)=6/4=3/2$ and $E(X^2)=14/4=7/2$, so $V(X)=7/2-9/4=5/4$.
+\par\textit{Marking:} 1 mark for the mean; 1 for the variance.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} $E(Y)=E(X^2)=7/2$, whereas $E(X)^2=9/4$. Their difference is $5/4$, the variance.
+\par\textit{Marking:} 1 mark for each quantity and their distinction.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The values are $0,0,2,6$, so the mean is $8/4=2$. Independently, $E(X^2-X)=7/2-3/2=2$. The factors are dependent, so their expectations should not be multiplied.
+\par\textit{Marking:} 1 mark for the outcome average; 1 for the linearity computation.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} Since $E(aX+b)=aE(X)+b$,\[V(aX+b)=E\bigl([aX+b-aE(X)-b]^2\bigr)=a^2E\bigl([X-E(X)]^2\bigr)=a^2V(X).\]For $X-Y$, the four values are $0,0,-2,-6$, so its mean is $-2$ and second moment is $10$. Its variance is $10-(-2)^2=6$.
+\par\textit{Marking:} 2 marks for centered deviations and squared scaling; 1 for the transformed moments; 1 for variance 6.
+\end{description}
+\end{document}

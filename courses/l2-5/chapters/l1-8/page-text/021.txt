@@ -1,0 +1,20 @@
+    Exercise on Employees and Tasks
+▪  How many ways are there to assign 5 distinct tasks to 4 different
+   people such that every person has at least one task assigned?
+▪  Solution 1: This is the number of surjective functions from a set of
+   5 elements to a set of 4 elements: 45-C(4,1)35 + C(4,2)25 - C(4,3)15
+   =1024-972+192-4 = 240
+▪  Solution 2: A person must be assigned 2 tasks, and the rest 1 task
+   each. Select 2 tasks and assign them to some person in
+   C(5,2)x4=40 ways. Then assign the remaining tasks to 3 persons
+   in 3!=6 ways. Total is C(5,2)x4 x3!=240
+▪  Solution 3: Select 4 tasks and assign them to 4 persons in
+   C(5,4)x4!=5x24=120 ways. Then, we assign the remaining task to
+   one of the 4 users in 4 ways. This solution (C(5,4)x4!x4=480)
+   double counts for the user that has 2 tasks (e.g., (task1, task2)
+   and (task2,task1) are counted as 2 assignments). To avoid this
+   problem we divide by 2, to get the answer C(5,4)x4!x2=240.
+
+
+
+                                                                                22

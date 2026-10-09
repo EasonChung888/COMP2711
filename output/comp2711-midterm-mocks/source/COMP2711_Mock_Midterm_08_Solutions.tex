@@ -1,0 +1,143 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 08}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} \[\begin{aligned}(p\leftrightarrow q)\land p&\equiv[(p\land q)\lor(\neg p\land\neg q)]\land p\\&\equiv(p\land q\land p)\lor(\neg p\land\neg q\land p)\\&\equiv(p\land q)\lor F\equiv p\land q.\end{aligned}\] These steps use biconditional equivalence, distribution, idempotence, negation and identity.
+\par\textit{Marking:} 1 biconditional expansion; 1 distribution; 1 correct simplification and conclusion.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} (i) Proposition, T. (ii) Not a proposition; it is an open formula until $x$ is assigned or quantified. (iii) Not a proposition; it is a command. (iv) Not a proposition; it is a question.
+\par\textit{Marking:} 1/2 each correct classification, including T for the declarative arithmetic statement.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} (I)$\Rightarrow$(II): $n=2k+1$ gives $n+1=2(k+1)$. (II)$\Rightarrow$(III): $n+1=2h$ gives $n=2(h-1)+1$, whose square is $2(2(h-1)^2+2(h-1))+1$. (III)$\Rightarrow$(I): by contraposition, if $n=2t$ is even, then $n^2=2(2t^2)$ is even. The cycle reaches every statement from every other statement, proving equivalence.
+\par\textit{Marking:} 1 first implication; 2 second implication and integer witnesses; 1 third implication; 1 cycle justifies equivalence.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} (i) $\forall x(x\ne0\to\exists y(xy=1))$. (ii) $\exists x(x<0\land x^2=x)$. The correct second formula is false: $x^2=x$ has only roots 0 and 1. The existential implication is true, since $x=2$ makes its antecedent false. It therefore fails to express the required negative-root existence; restricted existence requires a conjunction.
+\par\textit{Marking:} 1 inverse translation; 1 negative-root translation; 1 false-premise witness for wrong formula; 1 correct-formula falsehood and restriction explanation.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[\exists x\forall y\bigl(\neg P(x,y)\lor\exists z(Q(y,z)\land\neg R(x,z))\bigr).\] The conjunction fails either through $P$ or through a counterexample to the inner universally quantified implication.
+\par\textit{Marking:} 1 outer x; 1 y and conjunction; 1 z; 1 implication negation/scopes.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} The existential witness is particular, not arbitrary. Let $D=\{a,b\}$ with $P$ true only at $a$; existence holds and universality fails. For the valid derivation choose arbitrary $c$, instantiate the universal premise to $P(c)$, use addition to get $P(c)\lor Q(c)$, then universally generalize.
+\par\textit{Marking:} 2 particular/arbitrary distinction and countermodel; 1 universal instantiation on arbitrary c; 1 addition; 1 justified universal generalization.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $\mathcal P(\varnothing)=\{\varnothing\}$ and $\mathcal P(\mathcal P(\varnothing))=\{\varnothing,\{\varnothing\}\}$. Their cardinalities are 1 and 2 respectively.
+\par\textit{Marking:} 1 each correct power set with nesting.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} Suppose the list is $r_i=0.d_{i1}d_{i2}\cdots$ for $i=1,2,\ldots$. Define $s=0.e_1e_2\cdots$, where $e_i=5$ if $d_{ii}=4$ and $e_i=4$ otherwise. Then $s\in(0,1)$ and differs from row $i$ at position $i$. The expansion of $s$, using only 4 and 5, neither terminates nor has an eventual tail of 9s; thus no alternative decimal expansion can invalidate the difference from a canonical row. The missing real contradicts completeness of the list.
+\par\textit{Marking:} 1 construction and interval membership; 1 every row differs; 1 decimal ambiguity and contradiction.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{T}. This is the taught elementary definition.\item \textbf{T}. A proof supplies a valid argument establishing its truth.\item \textbf{T}. Its supporting role explains the terminology.\item \textbf{T}. This is the defining relationship.\item \textbf{F}. A conjecture is proposed as true and may later be proved or refuted.\item \textbf{T}. Its premises and rules justify the conclusion.\item \textbf{F}. It does not have a consistent single truth value; the lecture presents the liar paradox as a non-proposition.\end{enumerate}
+\par\textit{Marking:} Award 1 point per correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The two formats are disjoint: $3\cdot4\cdot3+3\cdot2\cdot4=60$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Choose the position of $A$ in four ways, then fill the others from six allowable people without reuse: $4\cdot6\cdot5\cdot4=480$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} Of $7!$ lines, $2\cdot6!$ have the adjacent pair in either order. Thus $7!-2\cdot6!=3600$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} Fix $A$ to remove rotations and fix $B$ in its opposite place. The other four people have $4!$ orders.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Choose the four one positions from the first seven: $\binom74=35$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} Reserve two As and three Bs, then distribute the remaining five among the six labelled types, allowing zero further pieces of any type. Stars and bars gives $\binom{5+6-1}{5}=\binom{10}{5}=252$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} Choose the two $3x$ factors: $\binom62 3^2(-1)^4=135$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} The two portions have counts $\binom31$ and $\binom53$, so the answer is $3\cdot10=30$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[7 points]} To form one term from the product of $n$ factors, choose either $x$ or $y$ from each labelled factor. If $y$ is chosen in exactly $k$ factors, the resulting monomial is $x^{n-k}y^k$. There are $\binom nk$ choices of those factors, so this is its coefficient. The values $k=0,\ldots,n$ exhaust the possibilities and yield distinct exponent pairs. Summing all coefficients times their monomials proves the expansion. For $n=0$, the empty product and the single $k=0$ term are both 1.
+\par\textit{Marking:} 2 marks for factor-choice model; 2 for binomial coefficient count; 2 for grouping all terms by exponent pair; 1 for the empty-product case.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} Substitute $x^2$ and $-3y$ into the expansion. Exactly $r$ factors contribute $-3y$, giving coefficient $\binom nr(-3)^r$; the other $n-r$ contribute $x^2$, yielding the stated $x$ exponent.
+\par\textit{Marking:} 1 mark for matching $r$ factors to the $y$ exponent; 1 for the power $(-3)^r$; 1 for the binomial coefficient and final answer.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Let $E_i$ contain five-element subsets including both members of specified pair $i$. The universe has $\binom95$ subsets. A specified complete pair leaves three elements to choose among seven, giving $|E_i|=\binom73$. Two complete pairs leave one choice among five, giving $|E_i\cap E_j|=\binom51$. All three pairs require six distinct elements, so their intersection is empty. The result is\[\binom95-3\binom73+3\binom51=36.\]
+\par\textit{Marking:} 2 marks for the universe and complete-pair bad events; 2 for singleton counts; 2 for pairwise counts; 1 for empty triple; 2 for IE and answer.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} A selection avoiding all three outcomes has at most five red, three blue and two green, hence at most $5+3+2=10$ tokens. Thus any eleven force at least one outcome by the capacity form of PHP. All these avoidance capacities are available in the collection, so selecting exactly five red, three blue and two green realizes ten without success. Therefore eleven is the minimum.
+\par\textit{Marking:} 3 marks for the three avoidance capacities; 2 for the eleven-token forcing argument; 2 for the attainable ten-token sharp construction.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} $P(X=3)=(1/2)(1/3)(1/4)=1/24$.
+\par\textit{Marking:} 1 mark for 1/24.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} $P(X=0)=(1/2)(2/3)(3/4)=1/4$.
+\par\textit{Marking:} 1 mark for 1/4.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} The disjoint choices of the sole passing sensor give $1/4+1/8+1/12=11/24$.
+\par\textit{Marking:} 1 mark for the three-case sum.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} $P(X\ge1)=1-P(X=0)=3/4$.
+\par\textit{Marking:} 1 mark for the complement.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} A binomial count requires independent Bernoulli trials with the same success probability. Independence is given, but $1/2,1/3,1/4$ differ, so the equal-probability binomial formula is not justified.
+\par\textit{Marking:} 1 mark for both requirements; 1 for identifying the failed equal-p condition.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} The priors are $3/5,2/5$ and W-likelihoods $1/4,1/20$. Thus $P(W)=(3/5)(1/4)+(2/5)(1/20)=17/100$. Bayes gives $(3/20)/(17/100)=15/17$.
+\par\textit{Marking:} 1 mark for priors/likelihoods; 1 for the total; 1 for the posterior.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} Within each type, conditional independence gives likelihoods $(1/4)(2/5)=1/10$ and $(1/20)(1/6)=1/120$. The joint type-and-evidence masses are $3/50$ and $1/300$, so\[P(\text{spam}\mid W\cap V)=\frac{3/50}{3/50+1/300}=\frac{18}{19}.\]It is independence conditional on type that permits these likelihood products; unconditional marker independence was not supplied.
+\par\textit{Marking:} 1 mark for conditional independence; 1 for the two likelihoods; 1 for the evidence denominator; 1 for 18/19.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} By summing trial indicators, $E(H)=2n/3$ and $E(T)=n/3$.
+\par\textit{Marking:} 1 mark for each mean with an indicator/binomial argument.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} $H$ has variance $2n/9$ and mean $2n/3$, so $E(H^2)=2n/9+4n^2/9$. Therefore\[E(HT)=nE(H)-E(H^2)=\frac{2n(n-1)}9.\]
+\par\textit{Marking:} 1 mark for the required second moment; 1 for the correct product expectation.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} $H+T=n$ on every outcome, hence its expectation is $n$ and variance is zero.
+\par\textit{Marking:} 1 mark for each deterministic result.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} $P(H=n,T=n)=0$, but $P(H=n)P(T=n)=(2/3)^n(1/3)^n>0$, so $H,T$ are dependent. For independent finite $X,Y$,\[\begin{aligned}E(XY)&=\sum_x\sum_yxyP(X=x,Y=y)\\&=\sum_x\sum_yxyP(X=x)P(Y=y)\\&=\left(\sum_xxP(X=x)\right)\left(\sum_yyP(Y=y)\right)=E(X)E(Y).\end{aligned}\]Thus $E(HH^{\prime})=(2n/3)^2=4n^2/9$.
+\par\textit{Marking:} 1 mark for the dependence witness; 2 for factorization using all joint masses; 1 for the independent product value.
+\end{description}
+\end{document}

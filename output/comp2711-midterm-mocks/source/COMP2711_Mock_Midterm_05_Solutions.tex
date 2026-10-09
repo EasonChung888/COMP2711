@@ -1,0 +1,146 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 05}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} \[\begin{aligned}\neg(p\leftrightarrow q)&\equiv\neg((p\to q)\land(q\to p))\\&\equiv(p\land\neg q)\lor(q\land\neg p).\end{aligned}\] Also $(p\lor q)\land(\neg p\lor\neg q)$ distributes into $(p\land\neg q)\lor(q\land\neg p)$ after the contradictory terms vanish. De Morgan converts $\neg(p\land q)$ to $\neg p\lor\neg q$. Both sides therefore agree.
+\par\textit{Marking:} 1 biconditional and negated implication; 1 De Morgan/distribution on right; 1 elimination of contradictions/common form.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Both translations are $c\to w$. They do not rule out $w=T,c=F$: the implication has a false premise and is true. Neither statement supplies the converse.
+\par\textit{Marking:} 1 both translations; 1 correct false-premise interpretation.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} Write $m=2h+1$ with $h\in\mathbb Z$. If $n=2k+1$, then $n+m=2(k+h+1)$ is even. Conversely, if $n+m=2t$, then $n=2t-(2h+1)=2(t-h-1)+1$ is odd. Each displayed witness is an integer, and both implications establish the biconditional.
+\par\textit{Marking:} 1 fixed odd representation; 2 forward definition/witness; 2 reverse definition/witness.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} (i) True: choose $y=x+1$ for each $x$. (ii) False: for any proposed $y$, take $x=y$, which fails $y>x$. The two universal formulas are equivalent: each requires $P$ at every ordered pair $(x,y)$, so changing traversal order changes no requirement.
+\par\textit{Marking:} 1 witness; 1 counterexample depending on candidate y; 2 equal-type-order justification.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[\exists x\bigl(x>0\land\forall y(y\le0\lor\exists z(z>y\land\neg P(x,y,z)))\bigr).\] The restricted outer universal fails at a positive $x$. For every positive $y$, there must then be a larger $z$ where the predicate fails.
+\par\textit{Marking:} 1 outer restriction and quantifier; 1 existential-y negation; 1 inner implication and z; 1 correct atomic form/scopes.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} (i) A witness satisfying $P\lor Q$ satisfies at least one predicate, giving the corresponding existential statement. Conversely, a witness for either existential satisfies the disjunction. (ii) If every element satisfies both predicates, each holds universally. Conversely, if both hold universally, an arbitrary element satisfies both, so their conjunction holds universally.
+\par\textit{Marking:} (i) 1 forward witness/case reasoning, 2 reverse reasoning and both directions; (ii) 1 each direction with arbitrary elements.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For arbitrary $x$, if $x\in A\cup B$, either $x\in A$, or $x\in B\setminus A$ when $x\notin A$; hence $x$ is in the left set. Conversely, every left-set element lies in $A$ or $B$. Thus both contain the same elements.
+\par\textit{Marking:} 1 each inclusion.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} List positive integer pairs $(a,b)$ by increasing $a+b$, breaking ties by $a$. Output $a/b$ only if that value has not appeared earlier. Every positive rational has a positive numerator/denominator representation, whose pair appears in a finite layer, so the rational eventually appears; first-occurrence filtering removes duplicates. The positive integers are distinct positive rationals, so the set is infinite and therefore countably infinite.
+\par\textit{Marking:} 1 finite diagonal layers; 1 duplicate removal and exhaustive argument; 1 infinitude/classification.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{T}. Equal outputs imply equal integers after division by 2.\item \textbf{F}. No integer input maps to 1.\item \textbf{T}. Every even integer is $2k$, and injection is unchanged.\item \textbf{F}. For $f(x)=x+1,g(x)=-x$ on integers the two orders yield $1-x$ and $-x-1$.\item \textbf{T}. Each assigned output must lie in the stated codomain.\item \textbf{F}. This additional requirement characterizes functions; relations are arbitrary subsets of $A\times B$.\item \textbf{T}. Equal cardinality is defined by existence of a bijection.\end{enumerate}
+\par\textit{Marking:} Award 1 point per correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} After fixing $A$, all $6!$ lines are possible, except $5!$ having $B$ last. Hence $6!-5!=600$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Choose the team and then its captain: $4\binom94=504$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} Fix the two endpoint Ts. The eight free positions contain three Ss, two Is, one T, one A and one C. Hence the count is $8!/(3!2!)=3360$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} Fix $A$. Of $7!$ seatings, $6!$ put $B$ in the forbidden position. The answer is $7!-6!$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} The remaining five positions contain three ones, giving $\binom53=10$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} The six remaining cookies use the four non-A types: $\binom{6+4-1}{3}=\binom93=84$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} Exactly three factors contribute $x^2$, giving $\binom53 2^2=40$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} The disjoint length cases give $3\cdot4+3\cdot4^2=60$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Fix one ground-set element $a$. Map each subset $S$ to the subset obtained by toggling membership of $a$: remove $a$ if present and add it if absent. Size changes by one, so parity changes. Toggling twice returns $S$, giving an inverse and hence a bijection between even and odd subsets.
+\par\textit{Marking:} 2 marks for a well-defined toggle; 2 for parity change; 2 for the inverse argument.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} The $2^n$ membership strings encode all subsets bijectively. Partitioning these subsets by their size gives the first sum. The second sum is the number of even-sized subsets minus the number of odd-sized subsets, which is zero by part (a). Thus each parity class contains $2^{n-1}$ subsets.
+\par\textit{Marking:} 2 marks for all-subset count partitioned by size; 2 for the signed sum as the difference of equal parity counts.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Choose the fixed labels in $\binom72$ ways. No other label may be fixed. For the five remaining labels, an intersection specifying $j$ additional fixed labels has $(5-j)!$ permutations. IE therefore gives\[\binom72\sum_{j=0}^{5}(-1)^j\binom5j(5-j)!=\binom72D_5=21\cdot44=924.\]Each permutation has exactly one chosen fixed-label set, so no overcount occurs.
+\par\textit{Marking:} 1 mark for selecting fixed labels; 2 for the remaining fixed-point events/intersections; 2 for the IE formula; 1 for correct evaluation and no overcount.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} The count is zero. If six labels are fixed, bijectivity forces the only remaining label into its own position, so there are seven fixed points. Equivalently the remainder would require $D_1=0$.
+\par\textit{Marking:} 1 mark for zero; 2 for the forced seventh fixed point (or explained $D_1$).
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Let $w,d$ be the numbers of wins and draws, so $w,d\ge0$ and $w+d\le3$. If $w=0$, there is no bonus, and the possible totals are $0,1,2,3$. If $w=1$, the total is $3+d+1$, giving $4,5,6$. If $w=2$, it is $6+d+1$, giving $7,8$. If $w=3$, it is $9+1=10$. Thus every score lies in the ten-element set $\{0,1,\ldots,8,10\}$. Eleven records in these ten score boxes force at least two equal scores by PHP.
+\par\textit{Marking:} 2 marks for distinguishing the zero-win and positive-win bonus cases; 3 for the ten-score bound with correct win/draw restrictions; 2 for PHP records, boxes and conclusion.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} No: a density value is not a point probability. $P(U=1)=0$.
+\par\textit{Marking:} 1 mark for the distinction and zero.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} The interval has length one, so its area is $1\cdot(1/2)=1/2$.
+\par\textit{Marking:} 1 mark for the area probability.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} It is the standard normal (Gaussian) distribution.
+\par\textit{Marking:} 1 mark for normal/Gaussian recognition.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} The first two trials must fail, so $P(T\ge3)=(3/4)^2=9/16$.
+\par\textit{Marking:} 1 mark for the two-failure tail.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Terminal outcomes are $S,F S,F F S,\ldots$, identified with $T\in\{1,2,\ldots\}$. The mass is $P(T=k)=(3/4)^{k-1}/4$. Its sum is $(1/4)/(1-3/4)=1$. The never-success path has mass zero.
+\par\textit{Marking:} 1 mark for the positive-integer support and pmf; 1 for geometric-series normalization.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} The three cases are disjoint and exhaustive. The correct-answer probability is $1/2+(1/3)(1/2)+(1/6)(1/4)=17/24$.
+\par\textit{Marking:} 1 mark for the exhaustive partition; 1 for its weighted correctness probabilities; 1 for 17/24.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} The unnormalized correct-and-state masses are $12/24,4/24,1/24$. Dividing by $17/24$ gives known $12/17$, elimination $4/17$, no information $1/17$. Their sum is $(12+4+1)/17=1$.
+\par\textit{Marking:} 1 mark for the joint masses; 2 for the three posteriors; 1 for normalization.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} With no types collected, the first draw is certainly new. Thus $G_0=1$ and $E(G_0)=1$.
+\par\textit{Marking:} 1 mark for the certain success; 1 for the mean one.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} There are $n-i$ unseen types, so each independent draw succeeds with probability $(n-i)/n$. Thus $G_i$ is geometric on positive integers and $E(G_i)=n/(n-i)$.
+\par\textit{Marking:} 1 mark for the success probability and geometric law; 1 for the mean.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The count is $G_0+G_1$, with mean $1+n/(n-1)$ by linearity.
+\par\textit{Marking:} 1 mark for the two stages; 1 for their summed mean.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} Within stage $i$, repeated old types do not change the collected set; exactly $n-i$ types remain unseen. The stage ends at its first new type, and independent uniform draws give its geometric law. The total is $C=\sum_{i=0}^{n-1}G_i$, so\[E(C)=\sum_{i=0}^{n-1}\frac{n}{n-i}=n\sum_{j=1}^n\frac1j.\]Linearity does not require independent stages.
+\par\textit{Marking:} 1 mark for the fixed unseen set during each stage; 1 for the geometric means; 1 for the total-stage decomposition; 1 for n times the harmonic sum.
+\end{description}
+\end{document}

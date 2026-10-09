@@ -1,0 +1,2331 @@
+{
+  "papers": [
+    {
+      "number": 1,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Use propositional laws, without a truth table, to simplify the following to a single literal:\\[\\neg((p\\lor q)\\land(p\\lor\\neg q)).\\]",
+              "solution": "By distribution, $(p\\lor q)\\land(p\\lor\\neg q)\\equiv p\\lor(q\\land\\neg q)\\equiv p\\lor F\\equiv p$. Negating gives $\\boxed{\\neg p}$. The steps use distributive, negation and identity laws.",
+              "rubric": "1 distribution; 1 contradiction/identity simplification; 1 final negation.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Is the argument $p\\to q,\\ q\\ \\therefore p$ valid? Justify using the definition of validity.",
+              "solution": "Invalid. Take $p=F,q=T$. Then $p\\to q=T$ and $q=T$, but $p=F$. Thus all premises can be true while the conclusion is false.",
+              "rubric": "1 separating assignment; 1 verification of all premises and conclusion.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L03-A19-validity"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "From $p\\lor q$, $\\neg p\\lor r$, $q\\to s$, $r\\to s$, and $s\\to t$, derive $t$. Give a formal derivation naming the rules.",
+              "solution": "\\begin{enumerate}\\item $q\\lor r$ from the first two premises by resolution.\\item $\\neg q\\lor s$ from $q\\to s$ by implication equivalence.\\item $r\\lor s$ from lines 1 and 2 by resolution.\\item $\\neg r\\lor s$ from $r\\to s$ by equivalence.\\item $s\\lor s$, hence $s$, from lines 3 and 4 by resolution and idempotence.\\item $t$ from line 5 and $s\\to t$ by modus ponens.\\end{enumerate}",
+              "rubric": "1 first resolution; 1 implication conversion; 1 second resolution; 1 obtaining s; 1 final modus ponens with rule citations.",
+              "space_cm": 6,
+              "concepts": [
+                "L01-A07-equivalence",
+                "L03-A20-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "The domain is all people. $S(x)$ means student and $R(x,y)$ means $x$ reviewed $y$\\textquotesingle s report. Translate: (i) every student reviewed some student\\textquotesingle s report; (ii) some student\\textquotesingle s report was reviewed by no student. Each translation is worth 2 points.",
+              "solution": "(i) $\\forall x(S(x)\\to\\exists y(S(y)\\land R(x,y)))$. (ii) $\\exists y(S(y)\\land\\forall x(S(x)\\to\\neg R(x,y)))$. The reviewer is the first argument; the report owner is the second.",
+              "rubric": "2 each: 1 correct quantifiers/argument order; 1 correct student restrictions.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A10-restrictions",
+                "L02-A15-translation"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Negate $\\forall x(A(x)\\to\\exists y(B(y)\\land\\forall z\\,C(x,y,z)))$, placing every negation immediately before a predicate.",
+              "solution": "\\[\\exists x\\bigl(A(x)\\land\\forall y(\\neg B(y)\\lor\\exists z\\neg C(x,y,z))\\bigr).\\] Negation switches each quantifier, turns the outer implication into a conjunction, and turns the inner conjunction into a disjunction.",
+              "rubric": "1 outer quantifier; 1 implication; 1 remaining quantifiers; 1 inner De Morgan step and scopes.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A13-negation",
+                "L02-A18-nested-negation"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Over a nonempty domain, prove formally that $\\forall x(P(x)\\to Q(x))$, $\\forall x(Q(x)\\to\\neg R(x))$, and $\\exists x(P(x)\\land S(x))$ imply $\\exists x(S(x)\\land\\neg R(x))$.",
+              "solution": "\\begin{enumerate}\\item Choose a fresh witness $a$ with $P(a)\\land S(a)$ by existential instantiation.\\item Obtain $P(a)$ and $S(a)$ by simplification.\\item Instantiate the two universal premises to $P(a)\\to Q(a)$ and $Q(a)\\to\\neg R(a)$.\\item Obtain $Q(a)$ and then $\\neg R(a)$ by modus ponens.\\item Conjoin $S(a)\\land\\neg R(a)$ and use existential generalization.\\end{enumerate}",
+              "rubric": "1 fresh witness; 1 simplification; 1 universal instantiation; 1 implication chain; 1 conjunction/existential generalization.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "Use $\\mathbb N=\\{0,1,2,\\ldots\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "For sets $A,B,C$, prove $(A\\setminus B)\\cap C=A\\cap(C\\setminus B)$ by element membership.",
+              "solution": "For any $x$, $x\\in(A\\setminus B)\\cap C$ iff $x\\in A$, $x\\notin B$, and $x\\in C$; these are exactly the conditions for $x\\in A\\cap(C\\setminus B)$. Thus the sets have the same elements.",
+              "rubric": "1 correct membership conditions; 1 both directions/equality.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A30-operations",
+                "L04-A31-set-identities"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "Let $O=\\{2k+1:k\\in\\mathbb Z\\}$ and $f:\\mathbb Z\\to O$, $f(k)=2k+1$. Prove $f$ is bijective and give its inverse with domain and codomain.",
+              "solution": "If $2a+1=2b+1$, then $a=b$, so $f$ is injective. Every $y\\in O$ has the form $2k+1$, so $f(k)=y$; hence $f$ is onto. Its inverse is $f^{-1}:O\\to\\mathbb Z$, $f^{-1}(y)=(y-1)/2$, which is an integer for all $y\\in O$.",
+              "rubric": "1 injection; 1 surjection; 1 inverse and correct domains.",
+              "space_cm": 4,
+              "concepts": [
+                "L04-A32-function-data",
+                "L04-A33-bijections",
+                "L04-A34-inverse"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item $\\varnothing\\in\\{\\varnothing\\}$.\\item $\\{\\varnothing\\}\\subseteq\\varnothing$.\\item $|\\mathcal P(\\{a,b\\})|=4$ when $a\\ne b$.\\item $\\{(1,a),(1,b),(2,a)\\}$ is a relation from $\\{1,2\\}$ to $\\{a,b\\}$.\\item An injective function must be onto its stated codomain.\\item The set of all finite binary strings is countably infinite.\\item The set of all infinite binary sequences is countable.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{T}. The singleton contains the empty set as its sole element.\\item \\textbf{F}. Its element $\\varnothing$ is not an element of the empty set.\\item \\textbf{T}. A two-element set has $2^2$ subsets.\\item \\textbf{T}. Every listed pair belongs to the Cartesian product.\\item \\textbf{F}. The map $n\\mapsto n+1$ from $\\mathbb N$ to $\\mathbb N$ misses 0.\\item \\textbf{T}. Order by length, then lexicographically; each length layer is finite.\\item \\textbf{F}. It is in bijection with $\\mathcal P(\\mathbb N)$ by the set of one-positions, and is uncountable.\\end{enumerate}",
+              "rubric": "Award 1 point for each correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A27-set-notation",
+                "L04-A28-power-sets",
+                "L04-A29-products-relations",
+                "L04-A33-bijections",
+                "L04-A37-enumeration",
+                "L04-A38-real-diagonal",
+                "L04-A41-cantor-power-set"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Construct a complete truth table for $(p\\oplus q)\\leftrightarrow\\neg(p\\leftrightarrow q)$. Classify it as a tautology, contradiction, or contingency.",
+              "solution": "\\[\\begin{array}{cc|cc|c}p&q&p\\oplus q&\\neg(p\\leftrightarrow q)&\\text{whole formula}\\\\\\hline T&T&F&F&T\\\\T&F&T&T&T\\\\F&T&T&T&T\\\\F&F&F&F&T\\end{array}\\] All four final entries are T, so it is a tautology.",
+              "rubric": "1 four assignments; 1 connective columns; 1 final column and classification.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A06-classification",
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "For $p\\to q$, write its converse, inverse and contrapositive. Which of these is always equivalent to the original?",
+              "solution": "Converse: $q\\to p$. Inverse: $\\neg p\\to\\neg q$. Contrapositive: $\\neg q\\to\\neg p$. Only the contrapositive is always equivalent to the original; the converse and inverse are equivalent to each other.",
+              "rubric": "1 three correctly formed expressions; 1 correct equivalence identification.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A04-converse"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Use contraposition to prove: for positive real numbers $a,b,c$, if $ab\\le c^2$, then $a\\le c$ or $b\\le c$. State the contrapositive explicitly.",
+              "solution": "The contrapositive is: if $a>c$ and $b>c$, then $ab>c^2$. Assuming both inequalities, positivity gives $ab>cb>c^2$. This proves the contrapositive and therefore the original implication. Negating the disjunction requires both strict inequalities.",
+              "rubric": "2 correct contrapositive including conjunction; 2 product inequalities using positivity; 1 conclusion via contraposition.",
+              "space_cm": 5,
+              "concepts": [
+                "L03-A24-contraposition"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "The domain is all employees. $M(x,y)$ means $y$ mentors $x$. Translate: (i) every employee has exactly one mentor; (ii) there is exactly one employee who mentors everyone. Each is worth 2 points.",
+              "solution": "(i) $\\forall x\\exists y(M(x,y)\\land\\forall z(M(x,z)\\to z=y))$. (ii) $\\exists y(\\forall x M(x,y)\\land\\forall z((\\forall x M(x,z))\\to z=y))$. The first permits different unique mentors for different employees; the second identifies one unique universal mentor.",
+              "rubric": "2 each: existence and intended quantifier order (1), uniqueness with correct predicate (1).",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A15-translation",
+                "L02-A17-uniqueness"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Prove $(\\forall x P(x))\\lor(\\forall x Q(x))\\Rightarrow\\forall x(P(x)\\lor Q(x))$. Give a two-element countermodel to the reverse implication.",
+              "solution": "If all elements satisfy $P$, every element satisfies $P\\lor Q$; the same holds if all satisfy $Q$. For the reverse take $D=\\{a,b\\}$ with $P(a)=T,P(b)=F,Q(a)=F,Q(b)=T$. Every element satisfies the disjunction, but neither predicate holds universally.",
+              "rubric": "2 valid forward reasoning; 1 predicate table; 1 checking reverse premise true/conclusion false.",
+              "space_cm": 5,
+              "concepts": [
+                "L02-A12-distribution",
+                "L03-A19-validity"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "From $\\forall x(P(x)\\to Q(x))$ and $\\forall x(Q(x)\\to R(x))$, derive $\\forall x(P(x)\\to R(x))$. Name the inference rules and explain why generalization is allowed.",
+              "solution": "Let $a$ be arbitrary. Universal instantiation yields $P(a)\\to Q(a)$ and $Q(a)\\to R(a)$. Hypothetical syllogism gives $P(a)\\to R(a)$. Since $a$ was arbitrary and no premise singles it out, universal generalization yields the conclusion.",
+              "rubric": "1 arbitrary element; 2 universal instantiations; 1 hypothetical syllogism; 1 justified universal generalization.",
+              "space_cm": 5,
+              "concepts": [
+                "L03-A20-inference",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "Use $\\mathbb N=\\{0,1,2,\\ldots\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Let $S=\\{\\varnothing,\\{1\\}\\}$. List $\\mathcal P(S)$ and find its cardinality.",
+              "solution": "\\[\\mathcal P(S)=\\{\\varnothing,\\{\\varnothing\\},\\{\\{1\\}\\},\\{\\varnothing,\\{1\\}\\}\\}.\\] There are four subsets. The two elements of $S$ are themselves distinct sets.",
+              "rubric": "1 complete correct roster; 1 cardinality and correct nesting.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A27-set-notation",
+                "L04-A28-power-sets"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "Let $f,g:\\mathbb Z\\to\\mathbb Z$ satisfy $f(x)=x+1$ and $g(x)=-x$. Compute $f\\circ g$ and $g\\circ f$, and determine whether the two compositions are equal.",
+              "solution": "$(f\\circ g)(x)=1-x$ and $(g\\circ f)(x)=-x-1$. Their values differ by 2 for every integer input, so the functions are unequal. Both have domain and codomain $\\mathbb Z$.",
+              "rubric": "1 each composition; 1 non-equality with a valid comparison.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A35-composition"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item $\\mathbb N\\times\\mathbb N$ is countably infinite.\\item The set of infinite binary sequences with exactly two ones is uncountable.\\item The set of binary strings of length at most 8 is finite.\\item $\\mathbb Z$ and the positive even integers have equal cardinality.\\item Every proper subset of an infinite set has smaller cardinality.\\item $[0,1]$ is uncountable.\\item If $f:A\\to B$ is a bijection, then $f^{-1}:B\\to A$ is a function.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{T}. Enumerate pairs by increasing sum, then by first coordinate; the pairs $(n,0)$ show infinitude.\\item \\textbf{F}. Each is determined by two positions; enumerate by the larger position.\\item \\textbf{T}. It has $\\sum_{j=0}^8 2^j$ elements.\\item \\textbf{T}. Both have explicit enumerations indexed by $\\mathbb N$.\\item \\textbf{F}. The proper subset of even natural numbers is in bijection with $\\mathbb N$.\\item \\textbf{T}. It contains the uncountable subset $(0,1)$.\\item \\textbf{T}. Existence and uniqueness of each preimage follow from onto and injective properties.\\end{enumerate}",
+              "rubric": "Award 1 point for each correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A34-inverse",
+                "L04-A36-countable-basic",
+                "L04-A37-enumeration",
+                "L04-A38-real-diagonal"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Using propositional laws, prove $((p\\to q)\\land(p\\to r))\\equiv(p\\to(q\\land r))$.",
+              "solution": "\\[((\\neg p\\lor q)\\land(\\neg p\\lor r))\\equiv\\neg p\\lor(q\\land r)\\equiv p\\to(q\\land r).\\] The first and last steps use implication equivalence; the middle uses distribution.",
+              "rubric": "1 implication expansion; 1 distribution; 1 final implication.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Using the usual operator precedence, fully parenthesize $\\neg p\\lor q\\land r\\to s$ and evaluate it at $p=F,q=F,r=T,s=F$.",
+              "solution": "The grouping is $(\\neg p\\lor(q\\land r))\\to s$. The antecedent is $T\\lor(F\\land T)=T$, so the implication is $T\\to F=F$.",
+              "rubric": "1 correct grouping; 1 correct evaluation.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A05-precedence"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Give direct proofs: (i) the product of two rational numbers is rational (3 points); (ii) the product of two integer perfect squares is a perfect square (2 points). Use the definitions.",
+              "solution": "(i) Write $u=a/b$ and $v=c/d$ with integers $a,b,c,d$ and $b,d\\ne0$. Then $uv=ac/(bd)$; $ac,bd$ are integers and $bd\\ne0$, so the product is rational. (ii) Write $m=h^2$ and $n=k^2$ with integers $h,k$. Then $mn=(hk)^2$ and $hk\\in\\mathbb Z$, so the product is an integer perfect square.",
+              "rubric": "(i) 1 rational representations, 1 product expression, 1 integer/nonzero checks; (ii) 1 square representations, 1 integer square witness.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A23-direct-proof"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "The domains are researchers $x$, journals $j$, and papers $t$. $W(x,t)$ means $x$ wrote $t$ and $J(t,j)$ means $t$ appeared in $j$. Translate: (i) some researcher has written, for each journal, a paper in that journal, with the paper allowed to depend on the journal; (ii) every journal contains a paper written by at least two distinct researchers. Each is worth 2 points.",
+              "solution": "(i) $\\exists x\\forall j\\exists t(W(x,t)\\land J(t,j))$. (ii) $\\forall j\\exists t\\exists x\\exists y(J(t,j)\\land W(x,t)\\land W(y,t)\\land x\\ne y)$, with $x,y$ ranging over researchers.",
+              "rubric": "2 each: correct dependency/quantifier order (1), complete predicate conditions including distinctness where needed (1).",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A14-order",
+                "L02-A15-translation"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Negate $\\exists x\\forall y\\exists z((P(x,y)\\land Q(z))\\to R(y,z))$ so that negations precede only predicates.",
+              "solution": "\\[\\forall x\\exists y\\forall z\\bigl(P(x,y)\\land Q(z)\\land\\neg R(y,z)\\bigr).\\] Quantifier negation gives $\\forall x\\exists y\\forall z$; a false implication has true antecedent and false consequent.",
+              "rubric": "2 correct three quantifier changes; 1 implication negation; 1 fully correct scope and atomic negation.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A13-negation",
+                "L02-A18-nested-negation"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "A proposed argument uses $\\exists x P(x)$ and $\\exists x Q(x)$ to conclude $\\exists x(P(x)\\land Q(x))$. Refute it (2 points). Then prove the valid implication in the reverse direction using inference rules (3 points).",
+              "solution": "For the refutation let $D=\\{a,b\\}$, with $P$ true only at $a$ and $Q$ true only at $b$. Both existential premises hold, but their conjunction has no common witness. For the reverse choose fresh $c$ with $P(c)\\land Q(c)$ by existential instantiation. Simplification yields each predicate; existential generalization gives $\\exists xP(x)$ and $\\exists xQ(x)$, which can be conjoined.",
+              "rubric": "2 countermodel and verification; 1 fresh common witness; 1 simplification/generalizations; 1 final conjunction with named rules.",
+              "space_cm": 6,
+              "concepts": [
+                "L02-A12-distribution",
+                "L03-A19-validity",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "Use $\\mathbb N=\\{0,1,2,\\ldots\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "For $f:\\mathbb R\\to[0,\\infty)$, $f(x)=x^2$, determine whether an inverse function on the stated codomain exists. Explain.",
+              "solution": "No. It is onto $[0,\\infty)$, since $y\\ge0$ has preimage $\\sqrt y$, but it is not injective: $f(1)=f(-1)=1$. An inverse would have to return two different preimages for 1, violating uniqueness.",
+              "rubric": "1 correct noninjectivity example; 1 no inverse and uniqueness explanation.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A32-function-data",
+                "L04-A33-bijections",
+                "L04-A34-inverse"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "For any set $S$, show that no function $h:S\\to\\mathcal P(S)$ is onto, using $D=\\{x\\in S:x\\notin h(x)\\}$. Deduce $|S|<|\\mathcal P(S)|$.",
+              "solution": "$D\\subseteq S$, so $D\\in\\mathcal P(S)$. If $h(a)=D$, then $a\\in D$ iff $a\\notin h(a)$ iff $a\\notin D$, a contradiction. Thus $D$ is missed. The singleton map $x\\mapsto\\{x\\}$ is injective, but no bijection exists because no map $S\\to\\mathcal P(S)$ is onto. Hence the strict inequality.",
+              "rubric": "1 diagonal subset lies in codomain; 1 contradiction for any proposed preimage; 1 singleton injection and strict inequality.",
+              "space_cm": 5,
+              "concepts": [
+                "L04-A41-cantor-power-set"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item For every set $S$, $|S|=|\\mathcal P(S)|$.\\item $\\mathcal P(\\mathbb N)$ is uncountable.\\item The continuum hypothesis asserts that a cardinality exists strictly between $|\\mathbb N|$ and $|\\mathbb R|$.\\item According to the lecture, the continuum hypothesis can be proved in ZFC.\\item The set of all functions $\\mathbb N\\to\\{0,1\\}$ is uncountable.\\item The set of positive rational numbers is countably infinite.\\item The set of finite strings over $\\{a,b,c\\}$ is uncountable.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{F}. Cantor\\textquotesingle s diagonal argument shows strict inequality.\\item \\textbf{T}. A countable listing would be a surjection from $\\mathbb N$, contradicting Cantor\\textquotesingle s theorem.\\item \\textbf{F}. It asserts that no such intermediate cardinality exists.\\item \\textbf{F}. The lecture states that it cannot be proved or disproved in ZFC.\\item \\textbf{T}. Characteristic functions correspond bijectively to subsets of $\\mathbb N$.\\item \\textbf{T}. List numerator/denominator pairs diagonally, retaining only the first occurrence of each rational.\\item \\textbf{F}. Order by length and then lexicographically; each length layer is finite.\\end{enumerate}",
+              "rubric": "Award 1 point for each correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A37-enumeration",
+                "L04-A39-continuum-hypothesis",
+                "L04-A41-cantor-power-set",
+                "L04-A42-uncomputable"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof",
+            "Q-2024F-MID-P03-a-iv"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Classify each formula as a tautology, contradiction, or contingency, with brief justification: (i) $(p\\land q)\\to p$; (ii) $(p\\to q)\\land p\\land\\neg q$; (iii) $p\\leftrightarrow\\neg q$. Each is worth 1 point.",
+              "solution": "(i) Tautology: a true conjunction has $p$ true, and a false antecedent makes the implication true. (ii) Contradiction: $p\\land\\neg q$ makes $p\\to q$ false. (iii) Contingency: true at $p=T,q=F$, false at $p=q=T$.",
+              "rubric": "1 each correct classification supported by valid reasoning.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A06-classification",
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Each of A and B is either a knight (always truthful) or a knave (always lying). A says, \\emph{B is a knight}. B says, \\emph{We are of different types}. Determine both types and justify.",
+              "solution": "Let $p,q$ mean that A,B are knights. Consistency requires $p\\leftrightarrow q$ and $q\\leftrightarrow(p\\oplus q)$. The first forces $p=q$, making the XOR false; hence $q=F$ and $p=F$. Both are knaves; both assertions are false.",
+              "rubric": "1 consistent equations/reasoning; 1 unique types with verification.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A08-knights"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "From $\\neg t\\land u$, $r\\to t$, $\\neg r\\to s$, and $s\\to v$, derive $v\\land u$ using named rules of inference.",
+              "solution": "\\begin{enumerate}\\item $\\neg t$ and $u$ by simplification of the first premise.\\item $\\neg r$ from $r\\to t$ and $\\neg t$ by modus tollens.\\item $s$ from $\\neg r\\to s$ and line 2 by modus ponens.\\item $v$ from $s\\to v$ and line 3 by modus ponens.\\item $v\\land u$ from lines 4 and 1 by conjunction.\\end{enumerate}",
+              "rubric": "1 simplifications; 1 modus tollens; 1 each modus ponens; 1 conjunction with correct citations.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A20-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "In $(\\forall x(P(x,y)\\to\\exists y\\,R(x,y)))\\land Q(y)$, identify every free and bound variable occurrence and each quantifier\\textquotesingle s scope (3 points). Rename the inner bound variable to remove the repeated name, preserving meaning (1 point).",
+              "solution": "Both occurrences of $x$ in $P,R$ are bound by $\\forall x$, whose scope is the whole implication. The $y$ in $P(x,y)$ and in $Q(y)$ are free; the $y$ in $R(x,y)$ is bound by $\\exists y$, whose scope is $R(x,y)$. Thus this is open in $y$. A renaming is $(\\forall x(P(x,y)\\to\\exists z\\,R(x,z)))\\land Q(y)$, with fresh $z$.",
+              "rubric": "1 x occurrences/scope; 1 y bound occurrence/scope; 1 free occurrences/open status; 1 capture-free renaming.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A11-scope",
+                "L02-A16-null-quantification"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "All domains are nonempty. Rewrite $(\\forall xP(x))\\to(\\exists yQ(y))$ with all quantifiers at the front (2 points). Show it is not equivalent to $\\forall x\\exists y(P(x)\\to Q(y))$ by a countermodel (2 points).",
+              "solution": "\\[(\\forall xP(x))\\to(\\exists yQ(y))\\equiv(\\exists x\\neg P(x))\\lor(\\exists yQ(y))\\equiv\\exists x\\exists y(P(x)\\to Q(y)).\\] For inequivalence use $D=\\{a,b\\}$, $P(a)=T,P(b)=F$, and $Q$ false everywhere. The original is true because its antecedent is false. The proposed universal formula fails at $x=a$ for every $y$.",
+              "rubric": "1 antecedent negation/polarity flip; 1 correctly moved quantifiers; 1 countermodel; 1 both formula values.",
+              "space_cm": 5,
+              "concepts": [
+                "L02-A13-negation",
+                "L02-A16-null-quantification",
+                "L03-A19-validity"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Prove formally that $\\forall x\\forall y(R(x,y)\\to S(x,y))$ and $\\exists x\\forall yR(x,y)$ imply $\\exists x\\forall yS(x,y)$. Explain the use of a particular witness and an arbitrary variable.",
+              "solution": "Choose fresh $a$ with $\\forall yR(a,y)$ by existential instantiation. Let $b$ be arbitrary. Universal instantiation gives $R(a,b)$ and $R(a,b)\\to S(a,b)$; modus ponens yields $S(a,b)$. Since $b$ is arbitrary, generalize to $\\forall yS(a,y)$. Finally existentially generalize in the first coordinate. The witness $a$ is particular and is never universally generalized.",
+              "rubric": "1 fresh a; 1 arbitrary b; 1 instantiations/MP; 1 valid universal generalization of b; 1 existential generalization of a.",
+              "space_cm": 6,
+              "concepts": [
+                "L02-A14-order",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Let $A=\\{0,1\\}$, $B=\\{a\\}$. List $A\\times B$ and give a relation from $A$ to $B$ which is not a function $A\\to B$.",
+              "solution": "$A\\times B=\\{(0,a),(1,a)\\}$. For example $R=\\{(0,a)\\}$ is a subset of this product and hence a relation, but it assigns no output to 1, so it is not a function on $A$.",
+              "rubric": "1 correct product; 1 valid relation with missing-output explanation.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A29-products-relations",
+                "L04-A32-function-data"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "Use the Schr\\\"oder--Bernstein theorem to show $|(0,1)|=|[0,1]|$. State the theorem and exhibit both injections; do not prove the theorem.",
+              "solution": "The theorem says that injections $A\\to B$ and $B\\to A$ imply equal cardinality. Inclusion injects $(0,1)$ into $[0,1]$. The map $x\\mapsto(x+1)/3$ injects $[0,1]$ into $(0,1)$, since its values lie in $[1/3,2/3]$ and equal outputs force equal inputs. Apply the theorem.",
+              "rubric": "1 theorem; 1 inclusion; 1 valid reverse injection and conclusion.",
+              "space_cm": 4,
+              "concepts": [
+                "L04-A40-schroder-bernstein"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item $A\\cap(A\\cup B)=A$ for all sets $A,B$.\\item $U\\setminus(A\\cup B)=(U\\setminus A)\\cup(U\\setminus B)$ for all $A,B\\subseteq U$.\\item If finite $A,B$ are disjoint, then $|A\\cup B|=|A|+|B|$.\\item $(a,b)=(b,a)$ for all objects $a,b$.\\item If $A\\subseteq B$, then $A\\setminus B=\\varnothing$.\\item A one-to-one correspondence means a function that is both injective and surjective.\\item An injection from $A$ to $B$ and one from $B$ to $A$ force $|A|=|B|$.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{T}. This is absorption; membership requires and is implied by membership in $A$.\\item \\textbf{F}. The correct operation on the right is intersection; take $U=\\{0\\}$, $A=U$, $B=\\varnothing$.\\item \\textbf{T}. The intersection term in the two-set union identity is zero.\\item \\textbf{F}. Ordered pairs agree only coordinatewise; distinct $a,b$ refute it.\\item \\textbf{T}. Every element of $A$ already belongs to $B$.\\item \\textbf{T}. This is the definition of a bijection.\\item \\textbf{T}. This is precisely the Schr\\\"oder--Bernstein conclusion.\\end{enumerate}",
+              "rubric": "Award 1 point per correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A27-set-notation",
+                "L04-A29-products-relations",
+                "L04-A30-operations",
+                "L04-A31-set-identities",
+                "L04-A33-bijections",
+                "L04-A40-schroder-bernstein"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2021-MID-BONUS"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Use logical equivalences to prove $\\neg(p\\leftrightarrow q)\\equiv(p\\lor q)\\land\\neg(p\\land q)$.",
+              "solution": "\\[\\begin{aligned}\\neg(p\\leftrightarrow q)&\\equiv\\neg((p\\to q)\\land(q\\to p))\\\\&\\equiv(p\\land\\neg q)\\lor(q\\land\\neg p).\\end{aligned}\\] Also $(p\\lor q)\\land(\\neg p\\lor\\neg q)$ distributes into $(p\\land\\neg q)\\lor(q\\land\\neg p)$ after the contradictory terms vanish. De Morgan converts $\\neg(p\\land q)$ to $\\neg p\\lor\\neg q$. Both sides therefore agree.",
+              "rubric": "1 biconditional and negated implication; 1 De Morgan/distribution on right; 1 elimination of contradictions/common form.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Let $c$ mean \\emph{the battery is charged} and $w$ mean \\emph{the device works}. Translate \\emph{charging the battery is sufficient for the device to work} and \\emph{working is necessary for being charged}. Do these statements rule out $w=T,c=F$?",
+              "solution": "Both translations are $c\\to w$. They do not rule out $w=T,c=F$: the implication has a false premise and is true. Neither statement supplies the converse.",
+              "rubric": "1 both translations; 1 correct false-premise interpretation.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A03-conditions"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Let $m$ be a fixed odd integer. Prove that for every integer $n$, $n+m$ is even if and only if $n$ is odd. Prove both directions from the definitions.",
+              "solution": "Write $m=2h+1$ with $h\\in\\mathbb Z$. If $n=2k+1$, then $n+m=2(k+h+1)$ is even. Conversely, if $n+m=2t$, then $n=2t-(2h+1)=2(t-h-1)+1$ is odd. Each displayed witness is an integer, and both implications establish the biconditional.",
+              "rubric": "1 fixed odd representation; 2 forward definition/witness; 2 reverse definition/witness.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A23-direct-proof",
+                "L03-A26-biconditional-proof"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "Over $\\mathbb R$, evaluate with justification: (i) $\\forall x\\exists y(y>x)$; (ii) $\\exists y\\forall x(y>x)$ (1 point each). Explain whether $\\forall x\\forall yP(x,y)$ and $\\forall y\\forall xP(x,y)$ are always equivalent (2 points).",
+              "solution": "(i) True: choose $y=x+1$ for each $x$. (ii) False: for any proposed $y$, take $x=y$, which fails $y>x$. The two universal formulas are equivalent: each requires $P$ at every ordered pair $(x,y)$, so changing traversal order changes no requirement.",
+              "rubric": "1 witness; 1 counterexample depending on candidate y; 2 equal-type-order justification.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A09-domains",
+                "L02-A14-order"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "All variables range over $\\mathbb R$. Negate $\\forall x(x>0\\to\\exists y(y>0\\land\\forall z(z>y\\to P(x,y,z))))$. Leave no negation before a quantifier or compound formula.",
+              "solution": "\\[\\exists x\\bigl(x>0\\land\\forall y(y\\le0\\lor\\exists z(z>y\\land\\neg P(x,y,z)))\\bigr).\\] The restricted outer universal fails at a positive $x$. For every positive $y$, there must then be a larger $z$ where the predicate fails.",
+              "rubric": "1 outer restriction and quantifier; 1 existential-y negation; 1 inner implication and z; 1 correct atomic form/scopes.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A10-restrictions",
+                "L02-A13-negation",
+                "L02-A18-nested-negation"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Prove both equivalences by witness/arbitrary-element reasoning: (i) $\\exists x(P(x)\\lor Q(x))\\equiv(\\exists xP(x))\\lor(\\exists xQ(x))$ (3 points); (ii) $\\forall x(P(x)\\land Q(x))\\equiv(\\forall xP(x))\\land(\\forall xQ(x))$ (2 points).",
+              "solution": "(i) A witness satisfying $P\\lor Q$ satisfies at least one predicate, giving the corresponding existential statement. Conversely, a witness for either existential satisfies the disjunction. (ii) If every element satisfies both predicates, each holds universally. Conversely, if both hold universally, an arbitrary element satisfies both, so their conjunction holds universally.",
+              "rubric": "(i) 1 forward witness/case reasoning, 2 reverse reasoning and both directions; (ii) 1 each direction with arbitrary elements.",
+              "space_cm": 6,
+              "concepts": [
+                "L02-A12-distribution",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Prove $A\\cup(B\\setminus A)=A\\cup B$ by membership or set laws.",
+              "solution": "For arbitrary $x$, if $x\\in A\\cup B$, either $x\\in A$, or $x\\in B\\setminus A$ when $x\\notin A$; hence $x$ is in the left set. Conversely, every left-set element lies in $A$ or $B$. Thus both contain the same elements.",
+              "rubric": "1 each inclusion.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A30-operations",
+                "L04-A31-set-identities"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "Describe an enumeration of all positive rationals that lists each rational exactly once. Explain why it reaches every rational and why the set is infinite.",
+              "solution": "List positive integer pairs $(a,b)$ by increasing $a+b$, breaking ties by $a$. Output $a/b$ only if that value has not appeared earlier. Every positive rational has a positive numerator/denominator representation, whose pair appears in a finite layer, so the rational eventually appears; first-occurrence filtering removes duplicates. The positive integers are distinct positive rationals, so the set is infinite and therefore countably infinite.",
+              "rubric": "1 finite diagonal layers; 1 duplicate removal and exhaustive argument; 1 infinitude/classification.",
+              "space_cm": 5,
+              "concepts": [
+                "L04-A36-countable-basic",
+                "L04-A37-enumeration"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item $f:\\mathbb Z\\to\\mathbb Z$, $f(x)=2x$, is injective.\\item The same function is surjective.\\item Changing that function\\textquotesingle s codomain to the even integers makes it bijective.\\item For arbitrary compatible functions, $f\\circ g=g\\circ f$.\\item A function\\textquotesingle s range is always a subset of its codomain.\\item A relation from $A$ to $B$ must give exactly one output for each element of $A$.\\item Every bijection gives equal cardinalities for its domain and codomain.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{T}. Equal outputs imply equal integers after division by 2.\\item \\textbf{F}. No integer input maps to 1.\\item \\textbf{T}. Every even integer is $2k$, and injection is unchanged.\\item \\textbf{F}. For $f(x)=x+1,g(x)=-x$ on integers the two orders yield $1-x$ and $-x-1$.\\item \\textbf{T}. Each assigned output must lie in the stated codomain.\\item \\textbf{F}. This additional requirement characterizes functions; relations are arbitrary subsets of $A\\times B$.\\item \\textbf{T}. Equal cardinality is defined by existence of a bijection.\\end{enumerate}",
+              "rubric": "Award 1 point per correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A29-products-relations",
+                "L04-A32-function-data",
+                "L04-A33-bijections",
+                "L04-A35-composition",
+                "L04-A36-countable-basic"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Simplify $(p\\lor(p\\land q))\\land(q\\lor\\neg q)\\lor(r\\land F)$, using the usual precedence. Name the laws used.",
+              "solution": "Parenthesize as $[(p\\lor(p\\land q))\\land(q\\lor\\neg q)]\\lor(r\\land F)$. Absorption gives $p\\lor(p\\land q)\\equiv p$; negation gives $q\\lor\\neg q\\equiv T$; domination gives $r\\land F\\equiv F$. Identity laws yield $(p\\land T)\\lor F\\equiv\\boxed p$.",
+              "rubric": "1 absorption; 1 negation/domination; 1 identities and final result.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A05-precedence",
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Is $p\\to r$, $q\\to r$, $r$ $\\therefore p\\lor q$ valid? Give a separating truth assignment if it is invalid.",
+              "solution": "Invalid: $p=q=F,r=T$ makes both implications and $r$ true, but $p\\lor q$ false.",
+              "rubric": "1 assignment; 1 checking all premise and conclusion values.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L03-A19-validity"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Let $u$ be rational and $v$ irrational. Prove by contradiction that $u+v$ is irrational. Identify the contradictory conclusions.",
+              "solution": "Suppose $u+v$ is rational. Write $u=a/b$ and $u+v=c/d$ with integer numerators and nonzero integer denominators. Then $v=(u+v)-u=(bc-ad)/(bd)$ has integer numerator and nonzero integer denominator, so $v$ is rational. This contradicts the given irrationality of $v$, so the assumption was false.",
+              "rubric": "1 negated conclusion assumption; 1 two rational representations; 1 valid difference; 1 integer/nonzero conditions; 1 explicit rational/irrational contradiction and conclusion.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A23-direct-proof",
+                "L03-A25-contradiction"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "Domain: all staff. $T(x)$ means trained, $C(x,y)$ means colleagues, and $K(x,y)$ means $x$ knows $y$. Translate: (i) every staff member is trained or has a trained colleague; (ii) some staff member has no two distinct colleagues who know each other. Each is worth 2 points.",
+              "solution": "(i) $\\forall x(T(x)\\lor\\exists y(C(x,y)\\land T(y)))$. (ii)\\[\\exists x\\forall y\\forall z\\bigl((C(x,y)\\land C(x,z)\\land y\\ne z)\\to(\\neg K(y,z)\\lor\\neg K(z,y))\\bigr).\\] Mutual knowing requires both $K(y,z)$ and $K(z,y)$, so the consequent negates their conjunction. No symmetry of the directed predicate $K$ is assumed.",
+              "rubric": "(i) 1 correct universal/existential dependencies, 1 trained-colleague condition; (ii) 1 staff witness and universal distinct-colleague restrictions, 1 negation of mutual knowledge using both K(y,z) and K(z,y). Equivalent negated-conjunction form accepted.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A15-translation"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Over a nonempty common domain, prove $\\exists x\\forall y(P(x)\\lor Q(y))\\equiv\\forall y\\exists x(P(x)\\lor Q(y))$. Explain why this swap works here.",
+              "solution": "If some $a$ satisfies $P(a)$, choose it for every $y$ and both statements are true. If no element satisfies $P$, both statements reduce to $\\forall yQ(y)$: the left can choose any $x$ because the domain is nonempty, and the right has a witness exactly when $Q(y)$ is true. Thus both have the same truth value. Separation of $P(x)$ from $Q(y)$ makes this a special swap, not a rule for arbitrary binary predicates.",
+              "rubric": "1 case with a P witness; 2 case with no P witness and nonempty-domain use; 1 correct explanation of restricted swap.",
+              "space_cm": 5,
+              "concepts": [
+                "L02-A16-null-quantification"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "From $\\forall x(P(x)\\to Q(x))$ and $\\forall x(Q(x)\\to\\exists yR(x,y))$, derive $\\forall x(P(x)\\to\\exists yR(x,y))$. Give named inference steps.",
+              "solution": "Let $a$ be arbitrary. Universal instantiation gives $P(a)\\to Q(a)$ and $Q(a)\\to\\exists yR(a,y)$. Hypothetical syllogism produces $P(a)\\to\\exists yR(a,y)$. Since $a$ was arbitrary, universal generalization produces the required conclusion. No common $y$ for all $a$ has been claimed.",
+              "rubric": "1 arbitrary a; 2 instantiated implications; 1 syllogism; 1 valid universal generalization.",
+              "space_cm": 5,
+              "concepts": [
+                "L03-A20-inference",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "Use $\\mathbb N=\\{0,1,2,\\ldots\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "For $f:\\{0,1,2,3\\}\\to\\{a,b,c\\}$ given by $f(0)=a$, $f(1)=f(2)=b$, $f(3)=a$, state the range and all preimages of $b$. Is $f$ onto?",
+              "solution": "The range is $\\{a,b\\}$; the preimages of $b$ are 1 and 2. It is not onto because $c$ has no preimage.",
+              "rubric": "1 range and preimages; 1 surjectivity decision with missing output.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A32-function-data",
+                "L04-A33-bijections"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "A function $\\mathbb N\\to\\{0,1\\}$ is computable if a finite program returns its value and terminates on every input. Explain why uncomputable functions of this type must exist.",
+              "solution": "Finite programs are finite strings over a finite alphabet and can be listed by length, so there are at most countably many programs and computable functions. Each binary-valued function corresponds bijectively to the subset $\\{n:f(n)=1\\}$ of $\\mathbb N$; there are uncountably many such subsets by Cantor\\textquotesingle s theorem. Countably many programs cannot compute all these functions, so some are uncomputable.",
+              "rubric": "1 countability of finite programs; 1 characteristic-function correspondence/uncountability; 1 cardinality comparison and conclusion.",
+              "space_cm": 5,
+              "concepts": [
+                "L04-A37-enumeration",
+                "L04-A41-cantor-power-set",
+                "L04-A42-uncomputable"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item Every function $\\mathbb N\\to\\{0,1\\}$ can be computed by a finite program.\\item The lecture names the halting problem as an example associated with an uncomputable function.\\item $\\mathcal P(\\varnothing)=\\varnothing$.\\item If $A\\cap B=\\varnothing$, then $A\\setminus B=A$.\\item $|(0,1)|=|(0,1]|$.\\item The range and codomain of a function must be identical.\\item There is an injection $\\mathbb N\\to(0,1)$.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{F}. There are uncountably many such functions and at most countably many programs.\\item \\textbf{T}. This is its named example; no undecidability reduction is needed.\\item \\textbf{F}. It equals $\\{\\varnothing\\}$ because the empty set has one subset.\\item \\textbf{T}. No element of $A$ is removed.\\item \\textbf{T}. Inclusion one way and $x\\mapsto x/2$ the other are injections; use Schr\\\"oder--Bernstein.\\item \\textbf{F}. The finite function in part (a) misses $c$.\\item \\textbf{T}. For example $n\\mapsto1/(n+2)$ takes distinct natural inputs to distinct interval values.\\end{enumerate}",
+              "rubric": "Award 1 point per correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A28-power-sets",
+                "L04-A30-operations",
+                "L04-A32-function-data",
+                "L04-A38-real-diagonal",
+                "L04-A40-schroder-bernstein",
+                "L04-A42-uncomputable"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Construct a complete truth table to decide whether $(p\\to q)\\oplus(q\\to p)$ and $p\\oplus q$ are logically equivalent.",
+              "solution": "\\[\\begin{array}{cc|cc|cc}p&q&p\\to q&q\\to p&(p\\to q)\\oplus(q\\to p)&p\\oplus q\\\\\\hline T&T&T&T&F&F\\\\T&F&F&T&T&T\\\\F&T&T&F&T&T\\\\F&F&T&T&F&F\\end{array}\\] The last two columns agree on every assignment, establishing equivalence.",
+              "rubric": "1 all rows and implication columns; 1 both XOR columns; 1 correct equivalence conclusion.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Are $p\\to q$ and its converse always equivalent? Give an assignment showing your answer and also evaluate the inverse at that assignment.",
+              "solution": "No. For $p=F,q=T$, the original $p\\to q$ is T and the converse $q\\to p$ is F. The inverse $\\neg p\\to\\neg q$ is also F, as expected because inverse and converse are equivalent.",
+              "rubric": "1 separating assignment with original/converse values; 1 correct inverse and value.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A04-converse"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "From $p\\land q$, $(p\\lor r)\\to s$, and $q\\to t$, derive $s\\land t$ using named inference rules. Your proof must explicitly use addition.",
+              "solution": "\\begin{enumerate}\\item $p$ and $q$ by simplification of $p\\land q$.\\item $p\\lor r$ from $p$ by addition.\\item $s$ from line 2 and the second premise by modus ponens.\\item $t$ from $q$ and the third premise by modus ponens.\\item $s\\land t$ by conjunction of lines 3 and 4.\\end{enumerate}",
+              "rubric": "1 simplifications; 1 addition; 1 each modus ponens; 1 conjunction and rule citations.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A20-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "Let $D=\\{-1,0,1\\}$ and $P(x)$ mean $x^2=1$. Expand $\\forall x\\in D\\,P(x)$ and $\\exists x\\in D\\,P(x)$ as propositional conjunction/disjunction and give their truth values (2 points). Give both truth values when the domain is empty, with justification (2 points).",
+              "solution": "For $D$, the expansions are $P(-1)\\land P(0)\\land P(1)=T\\land F\\land T=F$ and $P(-1)\\lor P(0)\\lor P(1)=T\\lor F\\lor T=T$. On the empty domain the universal statement is true because there is no counterexample; the existential is false because there is no witness.",
+              "rubric": "1 each finite expansion/value; 1 each empty-domain value with reason.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A09-domains"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Negate $\\forall x\\exists y\\forall z((P(x,y)\\lor Q(z))\\land R(x,y,z))$, with negations immediately before predicates only.",
+              "solution": "\\[\\exists x\\forall y\\exists z\\bigl((\\neg P(x,y)\\land\\neg Q(z))\\lor\\neg R(x,y,z)\\bigr).\\] Each quantifier changes type; negate the conjunction first, then the inner disjunction.",
+              "rubric": "2 all quantifier changes; 1 outer De Morgan; 1 inner De Morgan/scopes.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A13-negation",
+                "L02-A18-nested-negation"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Rename the bound variables in $(\\forall xP(x))\\lor(\\exists xQ(x))$ so the quantifiers use different names (1 point). Then prove that $\\forall x(P(x)\\to Q(x))$ and $\\exists x\\neg Q(x)$ imply $\\exists x\\neg P(x)$ (4 points).",
+              "solution": "A renaming is $(\\forall uP(u))\\lor(\\exists vQ(v))$. For the inference, existential instantiation gives a fresh $a$ with $\\neg Q(a)$. Universal instantiation gives $P(a)\\to Q(a)$. Modus tollens yields $\\neg P(a)$, and existential generalization yields $\\exists x\\neg P(x)$.",
+              "rubric": "1 capture-free renaming; 1 each of fresh witness, universal instantiation, modus tollens and existential generalization.",
+              "space_cm": 5,
+              "concepts": [
+                "L02-A16-null-quantification",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "For $i=0,1,2$ let $A_i=\\{i,i+1\\}$. Compute $\\bigcup_{i=0}^2A_i$ and $\\bigcap_{i=0}^2A_i$.",
+              "solution": "The union is $\\{0,1,2,3\\}$. The intersection is $\\varnothing$: $A_0=\\{0,1\\}$ and $A_2=\\{2,3\\}$ already have no common element.",
+              "rubric": "1 union; 1 intersection.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A30-operations"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "If $f:A\\to B$ and $g:B\\to C$ are injective, prove $g\\circ f$ is injective (2 points). Does injectivity of $g\\circ f$ alone force $g$ to be injective? Give a counterexample if not (1 point).",
+              "solution": "If $g(f(a))=g(f(b))$, injectivity of $g$ gives $f(a)=f(b)$ and injectivity of $f$ gives $a=b$. Thus the composition is injective. The converse claim about $g$ fails: take $A=\\{0\\}$, $B=\\{0,1\\}$, $C=\\{0\\}$, $f(0)=0$, and $g(0)=g(1)=0$. The composition on the singleton domain is injective but $g$ is not.",
+              "rubric": "2 two cancellations and arbitrary inputs; 1 correct counterexample with compatible domains.",
+              "space_cm": 5,
+              "concepts": [
+                "L04-A33-bijections",
+                "L04-A35-composition"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item $\\mathcal P(A\\cup B)=\\mathcal P(A)\\cup\\mathcal P(B)$ for all sets $A,B$.\\item $\\mathcal P(A\\cap B)=\\mathcal P(A)\\cap\\mathcal P(B)$.\\item The set of finite strings over a finite nonempty alphabet is countable.\\item The set of infinite binary sequences with a fixed finite number of ones is countable.\\item $\\mathbb N^3$ is uncountable.\\item If $g\\circ f$ is injective, then $f$ is injective.\\item A function $A\\to B$ may assign two different outputs in $B$ to one input in $A$.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{F}. For $A=\\{0\\}$ and $B=\\{1\\}$, the subset $\\{0,1\\}$ belongs only to the left side.\\item \\textbf{T}. A set is a subset of the intersection exactly when it is a subset of both sets.\\item \\textbf{T}. Every finite length has finitely many strings; list by length.\\item \\textbf{T}. Encode each by the finite tuple of one-positions; for zero ones it is a singleton.\\item \\textbf{F}. List triples by their coordinate sum; each layer is finite.\\item \\textbf{T}. Equal f-outputs give equal composite outputs, hence equal inputs.\\item \\textbf{F}. Exactly one output per input is part of the function definition.\\end{enumerate}",
+              "rubric": "Award 1 point per correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A28-power-sets",
+                "L04-A32-function-data",
+                "L04-A33-bijections",
+                "L04-A37-enumeration",
+                "L04-A38-real-diagonal"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Using propositional laws, prove $(p\\leftrightarrow q)\\land p\\equiv p\\land q$.",
+              "solution": "\\[\\begin{aligned}(p\\leftrightarrow q)\\land p&\\equiv[(p\\land q)\\lor(\\neg p\\land\\neg q)]\\land p\\\\&\\equiv(p\\land q\\land p)\\lor(\\neg p\\land\\neg q\\land p)\\\\&\\equiv(p\\land q)\\lor F\\equiv p\\land q.\\end{aligned}\\] These steps use biconditional equivalence, distribution, idempotence, negation and identity.",
+              "rubric": "1 biconditional expansion; 1 distribution; 1 correct simplification and conclusion.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Classify each as a proposition or not: (i) $2+3=5$; (ii) $x+3=5$ with unassigned $x$; (iii) \\emph{Close the door}; (iv) \\emph{Is the door closed?} Give the truth value whenever meaningful. Each is worth $1/2$ point.",
+              "solution": "(i) Proposition, T. (ii) Not a proposition; it is an open formula until $x$ is assigned or quantified. (iii) Not a proposition; it is a command. (iv) Not a proposition; it is a question.",
+              "rubric": "1/2 each correct classification, including T for the declarative arithmetic statement.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A01-propositions"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "For an integer $n$, prove by a cycle of implications that the following are equivalent: (I) $n$ is odd; (II) $n+1$ is even; (III) $n^2$ is odd.",
+              "solution": "(I)$\\Rightarrow$(II): $n=2k+1$ gives $n+1=2(k+1)$. (II)$\\Rightarrow$(III): $n+1=2h$ gives $n=2(h-1)+1$, whose square is $2(2(h-1)^2+2(h-1))+1$. (III)$\\Rightarrow$(I): by contraposition, if $n=2t$ is even, then $n^2=2(2t^2)$ is even. The cycle reaches every statement from every other statement, proving equivalence.",
+              "rubric": "1 first implication; 2 second implication and integer witnesses; 1 third implication; 1 cycle justifies equivalence.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A23-direct-proof",
+                "L03-A24-contraposition",
+                "L03-A26-biconditional-proof"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "Variables range over $\\mathbb R$. Translate (i) every nonzero real has a real multiplicative inverse; (ii) some negative real has a square equal to itself. Use unrestricted quantifiers. Then explain why $\\exists x(x<0\\to x^2=x)$ is an incorrect translation of (ii).",
+              "solution": "(i) $\\forall x(x\\ne0\\to\\exists y(xy=1))$. (ii) $\\exists x(x<0\\land x^2=x)$. The correct second formula is false: $x^2=x$ has only roots 0 and 1. The existential implication is true, since $x=2$ makes its antecedent false. It therefore fails to express the required negative-root existence; restricted existence requires a conjunction.",
+              "rubric": "1 inverse translation; 1 negative-root translation; 1 false-premise witness for wrong formula; 1 correct-formula falsehood and restriction explanation.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A10-restrictions",
+                "L02-A15-translation"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Negate $\\forall x\\exists y(P(x,y)\\land\\forall z(Q(y,z)\\to R(x,z)))$, placing negations immediately before predicates only.",
+              "solution": "\\[\\exists x\\forall y\\bigl(\\neg P(x,y)\\lor\\exists z(Q(y,z)\\land\\neg R(x,z))\\bigr).\\] The conjunction fails either through $P$ or through a counterexample to the inner universally quantified implication.",
+              "rubric": "1 outer x; 1 y and conjunction; 1 z; 1 implication negation/scopes.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A13-negation",
+                "L02-A18-nested-negation"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Explain why instantiating $\\exists xP(x)$ to $P(a)$ and then universally generalizing to $\\forall xP(x)$ is invalid, using a countermodel (2 points). Give a valid formal derivation of $\\forall x(P(x)\\lor Q(x))$ from $\\forall xP(x)$ (3 points).",
+              "solution": "The existential witness is particular, not arbitrary. Let $D=\\{a,b\\}$ with $P$ true only at $a$; existence holds and universality fails. For the valid derivation choose arbitrary $c$, instantiate the universal premise to $P(c)$, use addition to get $P(c)\\lor Q(c)$, then universally generalize.",
+              "rubric": "2 particular/arbitrary distinction and countermodel; 1 universal instantiation on arbitrary c; 1 addition; 1 justified universal generalization.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A19-validity",
+                "L03-A20-inference",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "List $\\mathcal P(\\varnothing)$ and $\\mathcal P(\\mathcal P(\\varnothing))$, keeping all braces explicit.",
+              "solution": "$\\mathcal P(\\varnothing)=\\{\\varnothing\\}$ and $\\mathcal P(\\mathcal P(\\varnothing))=\\{\\varnothing,\\{\\varnothing\\}\\}$. Their cardinalities are 1 and 2 respectively.",
+              "rubric": "1 each correct power set with nesting.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A27-set-notation",
+                "L04-A28-power-sets"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "Prove $(0,1)$ is uncountable by diagonalizing against an alleged list of its canonical decimal expansions, chosen not to end in repeating 9s. Use only digits 4 and 5 in the new number and address decimal ambiguity.",
+              "solution": "Suppose the list is $r_i=0.d_{i1}d_{i2}\\cdots$ for $i=1,2,\\ldots$. Define $s=0.e_1e_2\\cdots$, where $e_i=5$ if $d_{ii}=4$ and $e_i=4$ otherwise. Then $s\\in(0,1)$ and differs from row $i$ at position $i$. The expansion of $s$, using only 4 and 5, neither terminates nor has an eventual tail of 9s; thus no alternative decimal expansion can invalidate the difference from a canonical row. The missing real contradicts completeness of the list.",
+              "rubric": "1 construction and interval membership; 1 every row differs; 1 decimal ambiguity and contradiction.",
+              "space_cm": 5,
+              "concepts": [
+                "L03-A25-contradiction",
+                "L04-A38-real-diagonal"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item An axiom is a statement assumed to be true.\\item A theorem is a statement established by proof.\\item A lemma is a theorem used to help prove other theorems.\\item A corollary follows directly from a previously proved theorem.\\item Every conjecture already has a proof.\\item A proof is a valid argument establishing a theorem.\\item The self-referential sentence \\emph{This sentence is false} is a proposition in the classical definition used here.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{T}. This is the taught elementary definition.\\item \\textbf{T}. A proof supplies a valid argument establishing its truth.\\item \\textbf{T}. Its supporting role explains the terminology.\\item \\textbf{T}. This is the defining relationship.\\item \\textbf{F}. A conjecture is proposed as true and may later be proved or refuted.\\item \\textbf{T}. Its premises and rules justify the conclusion.\\item \\textbf{F}. It does not have a consistent single truth value; the lecture presents the liar paradox as a non-proposition.\\end{enumerate}",
+              "rubric": "Award 1 point per correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L01-A01-propositions",
+                "L03-A22-terminology"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Use logical laws to simplify $((p\\to q)\\to p)$, and explain whether $((p\\to q)\\to p)\\leftrightarrow p$ is a tautology.",
+              "solution": "\\[((p\\to q)\\to p)\\equiv\\neg(\\neg p\\lor q)\\lor p\\equiv(p\\land\\neg q)\\lor p\\equiv p.\\] The laws are implication, De Morgan/double negation, and absorption. Therefore the biconditional reduces to $p\\leftrightarrow p$, always T.",
+              "rubric": "1 implication expansion; 1 De Morgan/absorption; 1 distinction between equivalence and tautological biconditional.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A06-classification",
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "A and B are knights or knaves. A says, \\emph{B is a knave}. B says, \\emph{At least one of us is a knight}. Determine both types and justify.",
+              "solution": "Let $p,q$ mean A,B are knights. Then $p\\leftrightarrow\\neg q$ and $q\\leftrightarrow(p\\lor q)$. If $q=F$, the first gives $p=T$, making B\\textquotesingle s assertion true, impossible for a knave. Thus $q=T,p=F$. A\\textquotesingle s assertion is false and B\\textquotesingle s is true, so A is a knave and B a knight.",
+              "rubric": "1 consistency reasoning; 1 unique assignment and verification.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A08-knights"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "From $p\\to q$, $q\\to r$, $\\neg r\\lor s$, $p\\lor t$, and $\\neg t$, derive $s$, using named inference rules.",
+              "solution": "\\begin{enumerate}\\item $p\\to r$ from the first two premises by hypothetical syllogism.\\item $p$ from $p\\lor t$ and $\\neg t$ by disjunctive syllogism.\\item $r$ from lines 1 and 2 by modus ponens.\\item $r\\to s$ from $\\neg r\\lor s$ by implication equivalence.\\item $s$ from lines 3 and 4 by modus ponens.\\end{enumerate}",
+              "rubric": "1 per valid derived line and rule citation.",
+              "space_cm": 6,
+              "concepts": [
+                "L01-A07-equivalence",
+                "L03-A20-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "Domains: technicians $x$, devices $d$, tests $t$. $A(x,t)$ means $x$ performs $t$ and $D(t,d)$ means $t$ tests $d$. Translate (i) every device has a test performed by every technician; (ii) some technician, for each device, performs at least one test of that device, with the test allowed to depend on the device. Each is worth 2 points.",
+              "solution": "(i) $\\forall d\\exists t(D(t,d)\\land\\forall xA(x,t))$. (ii) $\\exists x\\forall d\\exists t(A(x,t)\\land D(t,d))$. The first gives a shared test for a given device; the second gives a shared technician across devices.",
+              "rubric": "2 each: 1 quantifier dependency; 1 correctly scoped predicates.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A14-order",
+                "L02-A15-translation"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Negate $\\exists x(P(x)\\land\\forall y(Q(y)\\lor\\exists zR(x,y,z)))$, placing negations immediately before predicates only.",
+              "solution": "\\[\\forall x\\bigl(\\neg P(x)\\lor\\exists y(\\neg Q(y)\\land\\forall z\\neg R(x,y,z))\\bigr).\\] Negation changes the outer conjunction to disjunction and the inner disjunction to conjunction while reversing quantifier types.",
+              "rubric": "1 x; 1 outer De Morgan; 1 y and inner De Morgan; 1 z and correct atomic form.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A13-negation",
+                "L02-A18-nested-negation"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Over a nonempty domain, refute $\\forall x\\exists yR(x,y)\\Rightarrow\\exists y\\forall xR(x,y)$ using a two-element model (2 points). Then derive $\\exists y\\exists xR(x,y)$ from the premise using inference rules (3 points).",
+              "solution": "For the refutation use $D=\\{0,1\\}$ and $R(x,y)$ iff $x=y$. Each $x$ has itself as witness, but no $y$ equals both 0 and 1. For the valid conclusion take an element $a$ (possible because the domain is nonempty), instantiate to $\\exists yR(a,y)$, and choose fresh witness $b$ with $R(a,b)$. Existentially generalize first to $\\exists xR(x,b)$ and then to $\\exists y\\exists xR(x,y)$.",
+              "rubric": "2 countermodel and values; 1 nonempty-domain selection/UI; 1 fresh existential witness; 1 two existential generalizations.",
+              "space_cm": 6,
+              "concepts": [
+                "L02-A09-domains",
+                "L02-A14-order",
+                "L03-A19-validity",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "Use $\\mathbb N=\\{0,1,2,\\ldots\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "For $A,B\\subseteq U$, prove $U\\setminus(A\\cap B)=(U\\setminus A)\\cup(U\\setminus B)$ by membership.",
+              "solution": "For $x\\in U$, $x\\notin A\\cap B$ iff not both memberships hold, iff $x\\notin A$ or $x\\notin B$, iff $x$ belongs to the right side. Elements outside $U$ belong to neither side. Thus membership agrees everywhere.",
+              "rubric": "1 correct De Morgan membership equivalence; 1 universe restriction and equality.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A30-operations",
+                "L04-A31-set-identities"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "Let $f:A\\to B$ and $g:B\\to C$ be bijections. Construct the inverse of $g\\circ f$ and verify it in both orders.",
+              "solution": "Set $h=f^{-1}\\circ g^{-1}:C\\to A$. For $a\\in A$, $h(g(f(a)))=f^{-1}(g^{-1}(g(f(a))))=a$. For $c\\in C$, $g(f(h(c)))=g(f(f^{-1}(g^{-1}(c))))=c$. Thus $h$ is the two-sided inverse; the inverse order is reversed.",
+              "rubric": "1 correctly typed candidate; 1 each order identity.",
+              "space_cm": 5,
+              "concepts": [
+                "L04-A33-bijections",
+                "L04-A34-inverse",
+                "L04-A35-composition"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item The positive even integers and $\\mathbb N$ have the same cardinality.\\item A set of size 5 has a power set of size 10.\\item Every finite set is countable.\\item The set of all infinite binary sequences that are eventually zero is countable.\\item The continuum hypothesis follows from the fact that $\\mathbb R$ is uncountable.\\item Cantor\\textquotesingle s theorem applies to finite as well as infinite sets.\\item An injection $A\\to B$ by itself guarantees equal cardinality.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{T}. The bijection is $n\\mapsto2(n+1)$.\\item \\textbf{F}. Its power set has $2^5=32$ elements.\\item \\textbf{T}. Countable includes finite sets and countably infinite sets.\\item \\textbf{T}. List by the last possible one-position; each layer has finitely many sequences.\\item \\textbf{F}. Uncountability alone says nothing about the nonexistence of intermediate cardinalities; the lecture states CH is independent of ZFC.\\item \\textbf{T}. The diagonal proof holds for every set, including the empty set.\\item \\textbf{F}. Take $A=\\{0\\}$, $B=\\{0,1\\}$; an injection exists but no bijection does.\\end{enumerate}",
+              "rubric": "Award 1 point per correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A28-power-sets",
+                "L04-A36-countable-basic",
+                "L04-A37-enumeration",
+                "L04-A39-continuum-hypothesis",
+                "L04-A40-schroder-bernstein",
+                "L04-A41-cantor-power-set"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "problems": [
+        {
+          "number": 1,
+          "points": 10,
+          "title": "Propositional logic and proofs",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "Classify with a logical-law justification: (i) $(p\\to q)\\lor(q\\to p)$; (ii) $(p\\leftrightarrow q)\\land(p\\oplus q)$; (iii) $(p\\to q)\\land\\neg q$. Each is worth 1 point.",
+              "solution": "(i) Tautology: $(\\neg p\\lor q)\\lor(\\neg q\\lor p)$ contains complementary pairs. (ii) Contradiction, using the XOR/negated-biconditional equivalence and negation law:\\[(p\\leftrightarrow q)\\land(p\\oplus q)\\equiv(p\\leftrightarrow q)\\land\\neg(p\\leftrightarrow q)\\equiv F.\\] (iii) Contingency: it simplifies to $\\neg p\\land\\neg q$, true when both are F and false when both are T.",
+              "rubric": "1 each correct class with justification. A correct semantic justification also earns the classification mark.",
+              "space_cm": 4,
+              "concepts": [
+                "L01-A02-truth-tables",
+                "L01-A06-classification",
+                "L01-A07-equivalence"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Is the liar sentence \\emph{This sentence is false} a proposition under the classical definition used in the lecture (1 point)? If $p\\to q$ is given, does that logically assert \\emph{$q$ only if $p$} (1 point)? Explain briefly.",
+              "solution": "The liar sentence is not a proposition: assigning either truth value makes its own assertion inconsistent. The second claim is also false: $q$ only if $p$ means $q\\to p$, the converse. $p=F,q=T$ satisfies the given implication but refutes that converse.",
+              "rubric": "1 paradox classification/reason; 1 only-if direction and counterassignment.",
+              "space_cm": 3,
+              "concepts": [
+                "L01-A01-propositions",
+                "L01-A03-conditions",
+                "L01-A04-converse"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "Give direct proofs: (i) if $u,v$ are rational and $v\\ne0$, then $u/v$ is rational (3 points); (ii) if an integer $n$ is odd, then $n(n+2)$ is odd (2 points).",
+              "solution": "(i) Write $u=a/b$, $v=c/d$ with integer numerators and $b,d\\ne0$. Since $v\\ne0$, $c\\ne0$. Thus $u/v=ad/(bc)$ is a ratio of integers with nonzero denominator. (ii) Write $n=2k+1$. Then $n(n+2)=(2k+1)(2k+3)=2(2k^2+4k+1)+1$, with integer witness $2k^2+4k+1$, so the product is odd.",
+              "rubric": "(i) 1 representations, 1 quotient, 1 c/nonzero denominator checks; (ii) 1 expansion, 1 odd integer witness.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A23-direct-proof"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P01-a",
+            "Q-2025F-MID-P01-b",
+            "Q-2025F-MID-P01-c"
+          ]
+        },
+        {
+          "number": 2,
+          "points": 13,
+          "title": "Predicate logic",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 4,
+              "question": "In $\\forall xP(x)\\lor Q(x)$, use quantifier precedence to insert parentheses, identify free occurrences and decide whether it is a proposition (2 points). Translate \\emph{some real is at least every real} and give its truth value with justification (2 points).",
+              "solution": "The grouping is $(\\forall xP(x))\\lor Q(x)$. The $x$ in $P$ is bound and the $x$ in $Q$ is free, so the expression is open and not yet a proposition. The translation is $\\exists y\\in\\mathbb R\\,\\forall x\\in\\mathbb R(x\\le y)$, false since $x=y+1$ defeats any candidate $y$.",
+              "rubric": "2 grouping and free/open status; 1 translation; 1 candidate-dependent counterexample.",
+              "space_cm": 4,
+              "concepts": [
+                "L02-A09-domains",
+                "L02-A11-scope",
+                "L02-A14-order",
+                "L02-A15-translation"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Let $A$ be a proposition with no free $x$, and first assume the domain is nonempty. Prove $\\forall x(P(x)\\to A)\\equiv((\\exists xP(x))\\to A)$ (2 points). Now let the domain be empty: give a truth value of $A$ showing that $\\forall x(A\\land P(x))\\equiv A\\land\\forall xP(x)$ need not hold (2 points).",
+              "solution": "\\[\\forall x(\\neg P(x)\\lor A)\\equiv(\\forall x\\neg P(x))\\lor A\\equiv\\neg\\exists xP(x)\\lor A\\equiv(\\exists xP(x))\\to A.\\] The steps use implication, null quantification and quantifier negation; moving the antecedent quantifier reverses its type. On the empty domain take $A=F$: the left universal is vacuously T, whereas the right is $F\\land T=F$.",
+              "rubric": "2 valid equivalence derivation/polarity; 1 empty-domain choice; 1 both side values.",
+              "space_cm": 5,
+              "concepts": [
+                "L02-A09-domains",
+                "L02-A13-negation",
+                "L02-A16-null-quantification"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 5,
+              "question": "From $\\forall x(P(x)\\to Q(x))$, $\\forall x(R(x)\\to\\neg Q(x))$, and $\\exists x(R(x)\\land S(x))$, prove $\\exists x(S(x)\\land\\neg P(x))$ using inference rules.",
+              "solution": "Choose fresh $a$ satisfying $R(a)\\land S(a)$ by existential instantiation. Simplify to $R(a),S(a)$. Instantiate $R(a)\\to\\neg Q(a)$ and use modus ponens to get $\\neg Q(a)$. Instantiate $P(a)\\to Q(a)$ and use modus tollens to get $\\neg P(a)$. Conjoin $S(a)\\land\\neg P(a)$ and existentially generalize.",
+              "rubric": "1 fresh witness/simplification; 1 first UI and MP; 1 second UI; 1 modus tollens; 1 conjunction/EG.",
+              "space_cm": 6,
+              "concepts": [
+                "L03-A20-inference",
+                "L03-A21-predicate-inference"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P02-a-i",
+            "Q-2025F-MID-P02-b",
+            "Q-2025F-MID-P02-c-proof"
+          ]
+        },
+        {
+          "number": 3,
+          "points": 12,
+          "title": "Sets and functions",
+          "stem": "Use $\\mathbb N=\\{0,1,2,\\ldots\\}$.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Within $U=\\{0,1,2,3,4,5\\}$, let $A=\\{0,2,4\\}$ and $B=\\{2,3,4\\}$. Find $A\\setminus B$, $U\\setminus(A\\cup B)$, and $|A\\cup B|$, verifying the last value by the two-set identity.",
+              "solution": "$A\\setminus B=\\{0\\}$ and $U\\setminus(A\\cup B)=\\{1,5\\}$. Since $A\\cap B=\\{2,4\\}$, the union size is $3+3-2=4$, agreeing with the roster $\\{0,2,3,4\\}$.",
+              "rubric": "1 both difference/complement rosters; 1 union size with intersection identity.",
+              "space_cm": 3,
+              "concepts": [
+                "L04-A27-set-notation",
+                "L04-A30-operations"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "Construct an explicit bijection $h:\\mathbb N\\to\\mathbb Z$ by assigning nonnegative integers to even inputs and negative integers to odd inputs. Prove injectivity and surjectivity.",
+              "solution": "\\[h(n)=\\begin{cases}n/2,&n\\text{ even},\\\\-(n+1)/2,&n\\text{ odd}.\\end{cases}\\] Each branch is injective, and the branch ranges are disjoint, so $h$ is injective. Every $z\\ge0$ has preimage $2z$, and every $z<0$ has preimage $-2z-1\\in\\mathbb N$, so it is onto.",
+              "rubric": "1 formula and integer outputs; 1 injection including disjoint ranges; 1 preimages for all integers.",
+              "space_cm": 5,
+              "concepts": [
+                "L04-A33-bijections",
+                "L04-A36-countable-basic"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 7,
+              "question": "Write T or F for each statement. No justification is required. Each item is worth 1 point.\\begin{enumerate}[label=(\\roman*)]\\item $\\mathbb N=\\{0,1,2,\\ldots\\}$ is finite.\\item The nonnegative even integers are countably infinite.\\item The set of binary sequences with exactly six ones is countably infinite.\\item $\\mathbb Q\\cap(0,1)$ is countably infinite.\\item Every proper subset of a finite set has smaller cardinality.\\item An uncountable set can be listed by the natural numbers with no omissions.\\item The set of all finite computer programs is uncountable.\\end{enumerate}",
+              "solution": "\\begin{enumerate}[label=(\\roman*)]\\item \\textbf{F}. No finite natural-number list contains every natural number.\\item \\textbf{T}. The map $n\\mapsto2n$ is a bijection from $\\mathbb N$.\\item \\textbf{T}. Encode by six increasing positions and enumerate finite layers; varying the last position gives infinitely many sequences.\\item \\textbf{T}. Filter an enumeration of rationals; $1/(n+2)$ gives infinitely many members.\\item \\textbf{T}. A proper subset omits at least one distinct element of the finite set.\\item \\textbf{F}. Such a listing would make it countable.\\item \\textbf{F}. Programs are finite strings over a finite alphabet and can be ordered by length.\\end{enumerate}",
+              "rubric": "Award 1 point per correct T/F choice (7 total); reasons are included here for checking.",
+              "space_cm": 1,
+              "concepts": [
+                "L04-A27-set-notation",
+                "L04-A36-countable-basic",
+                "L04-A37-enumeration",
+                "L04-A38-real-diagonal",
+                "L04-A42-uncomputable"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P03-a",
+            "Q-2025F-MID-P03-c-vii",
+            "Q-2018-MID-P04-a-proof"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "L01-A01-propositions",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        4,
+        5,
+        6
+      ],
+      "knowledge_point": "Propositions and open statements",
+      "assessed_at": [
+        "08.1.b",
+        "08.3.c",
+        "10.1.b"
+      ],
+      "depth": "recognition"
+    },
+    {
+      "id": "L01-A02-truth-tables",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        18
+      ],
+      "knowledge_point": "Logical connectives and truth tables",
+      "assessed_at": [
+        "01.1.b",
+        "02.1.a",
+        "03.1.b",
+        "04.1.a",
+        "04.1.b",
+        "05.1.a",
+        "05.1.b",
+        "06.1.b",
+        "07.1.a",
+        "07.1.b",
+        "10.1.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L01-A03-conditions",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        15,
+        16,
+        19
+      ],
+      "knowledge_point": "Necessary and sufficient conditions",
+      "assessed_at": [
+        "05.1.b",
+        "10.1.b"
+      ],
+      "depth": "translation"
+    },
+    {
+      "id": "L01-A04-converse",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        17
+      ],
+      "knowledge_point": "Converse, inverse, contrapositive",
+      "assessed_at": [
+        "02.1.b",
+        "07.1.b",
+        "10.1.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L01-A05-precedence",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        20
+      ],
+      "knowledge_point": "Operator precedence",
+      "assessed_at": [
+        "03.1.b",
+        "06.1.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L01-A06-classification",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        22,
+        23
+      ],
+      "knowledge_point": "Tautology, contradiction, contingency",
+      "assessed_at": [
+        "02.1.a",
+        "04.1.a",
+        "09.1.a",
+        "10.1.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L01-A07-equivalence",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "knowledge_point": "Logical equivalence and propositional laws",
+      "assessed_at": [
+        "01.1.a",
+        "01.1.c",
+        "02.1.a",
+        "03.1.a",
+        "04.1.a",
+        "05.1.a",
+        "06.1.a",
+        "07.1.a",
+        "08.1.a",
+        "09.1.a",
+        "09.1.c",
+        "10.1.a"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "L01-A08-knights",
+      "lecture": "L01-Logic-Propositional-Logic.pdf",
+      "pages": [
+        36
+      ],
+      "knowledge_point": "Knight and knave assertions",
+      "assessed_at": [
+        "04.1.b",
+        "09.1.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L02-A09-domains",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "knowledge_point": "Domains, witnesses, finite and empty quantification",
+      "assessed_at": [
+        "05.2.a",
+        "07.2.a",
+        "09.2.c",
+        "10.2.a",
+        "10.2.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L02-A10-restrictions",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "knowledge_point": "Restricted quantification",
+      "assessed_at": [
+        "01.2.a",
+        "05.2.b",
+        "08.2.a"
+      ],
+      "depth": "translation"
+    },
+    {
+      "id": "L02-A11-scope",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        19,
+        20
+      ],
+      "knowledge_point": "Free and bound variables; scopes",
+      "assessed_at": [
+        "04.2.a",
+        "10.2.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L02-A12-distribution",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "knowledge_point": "Quantifier distribution and failed converses",
+      "assessed_at": [
+        "02.2.b",
+        "03.2.c",
+        "05.2.c"
+      ],
+      "depth": "proof and countermodel"
+    },
+    {
+      "id": "L02-A13-negation",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "knowledge_point": "Quantifier De Morgan laws",
+      "assessed_at": [
+        "01.2.b",
+        "03.2.b",
+        "04.2.b",
+        "05.2.b",
+        "07.2.b",
+        "08.2.b",
+        "09.2.b",
+        "10.2.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L02-A14-order",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "knowledge_point": "Nested quantifier order",
+      "assessed_at": [
+        "03.2.a",
+        "04.2.c",
+        "05.2.a",
+        "09.2.a",
+        "09.2.c",
+        "10.2.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L02-A15-translation",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        40,
+        41,
+        42,
+        43,
+        49
+      ],
+      "knowledge_point": "Relational and mathematical translation",
+      "assessed_at": [
+        "01.2.a",
+        "02.2.a",
+        "03.2.a",
+        "06.2.a",
+        "08.2.a",
+        "09.2.a",
+        "10.2.a"
+      ],
+      "depth": "translation"
+    },
+    {
+      "id": "L02-A16-null-quantification",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        44,
+        45,
+        46
+      ],
+      "knowledge_point": "Null quantification, renaming, special swaps and polarity",
+      "assessed_at": [
+        "04.2.a",
+        "04.2.b",
+        "06.2.b",
+        "07.2.c",
+        "10.2.b"
+      ],
+      "depth": "proof and countermodel"
+    },
+    {
+      "id": "L02-A17-uniqueness",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        47
+      ],
+      "knowledge_point": "Exactly one witness",
+      "assessed_at": [
+        "02.2.a"
+      ],
+      "depth": "translation"
+    },
+    {
+      "id": "L02-A18-nested-negation",
+      "lecture": "L02-Logic-Predicate-Logic.pdf",
+      "pages": [
+        48,
+        49
+      ],
+      "knowledge_point": "Negating nested quantifiers",
+      "assessed_at": [
+        "01.2.b",
+        "03.2.b",
+        "05.2.b",
+        "07.2.b",
+        "08.2.b",
+        "09.2.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L03-A19-validity",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        2,
+        4,
+        5,
+        12
+      ],
+      "knowledge_point": "Validity and counterassignments",
+      "assessed_at": [
+        "01.1.b",
+        "02.2.b",
+        "03.2.c",
+        "04.2.b",
+        "06.1.b",
+        "08.2.c",
+        "09.2.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L03-A20-inference",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "knowledge_point": "Named propositional inference rules",
+      "assessed_at": [
+        "01.1.c",
+        "02.2.c",
+        "04.1.c",
+        "06.2.c",
+        "07.1.c",
+        "08.2.c",
+        "09.1.c",
+        "10.2.c"
+      ],
+      "depth": "formal proof"
+    },
+    {
+      "id": "L03-A21-predicate-inference",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "knowledge_point": "Predicate inference and arbitrary/fresh witnesses",
+      "assessed_at": [
+        "01.2.c",
+        "02.2.c",
+        "03.2.c",
+        "04.2.c",
+        "05.2.c",
+        "06.2.c",
+        "07.2.c",
+        "08.2.c",
+        "09.2.c",
+        "10.2.c"
+      ],
+      "depth": "formal proof"
+    },
+    {
+      "id": "L03-A22-terminology",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        20,
+        21
+      ],
+      "knowledge_point": "Axiom, theorem, lemma, corollary, conjecture, proof",
+      "assessed_at": [
+        "08.3.c"
+      ],
+      "depth": "recognition"
+    },
+    {
+      "id": "L03-A23-direct-proof",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "knowledge_point": "Direct proofs using arithmetic definitions",
+      "assessed_at": [
+        "03.1.c",
+        "05.1.c",
+        "06.1.c",
+        "08.1.c",
+        "10.1.c"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "L03-A24-contraposition",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        29,
+        30,
+        31
+      ],
+      "knowledge_point": "Contraposition and disjunctive conclusions",
+      "assessed_at": [
+        "02.1.c",
+        "08.1.c"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "L03-A25-contradiction",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "knowledge_point": "Contradiction proofs",
+      "assessed_at": [
+        "06.1.c",
+        "08.3.b"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "L03-A26-biconditional-proof",
+      "lecture": "L03-Logic-Inference.pdf",
+      "pages": [
+        40,
+        41
+      ],
+      "knowledge_point": "Biconditional and cycles of implications",
+      "assessed_at": [
+        "05.1.c",
+        "08.1.c"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "L04-A27-set-notation",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "knowledge_point": "Set notation, membership, subsets and cardinality",
+      "assessed_at": [
+        "01.3.c",
+        "02.3.a",
+        "04.3.c",
+        "08.3.a",
+        "10.3.a",
+        "10.3.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A28-power-sets",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        10
+      ],
+      "knowledge_point": "Finite power sets and empty-set edge cases",
+      "assessed_at": [
+        "01.3.c",
+        "02.3.a",
+        "06.3.c",
+        "07.3.c",
+        "08.3.a",
+        "09.3.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A29-products-relations",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "knowledge_point": "Ordered tuples, products and relations",
+      "assessed_at": [
+        "01.3.c",
+        "04.3.a",
+        "04.3.c",
+        "05.3.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A30-operations",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "knowledge_point": "Finite/indexed set operations and union size",
+      "assessed_at": [
+        "01.3.a",
+        "04.3.c",
+        "05.3.a",
+        "06.3.c",
+        "07.3.a",
+        "09.3.a",
+        "10.3.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A31-set-identities",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "knowledge_point": "Set identities by membership and logic",
+      "assessed_at": [
+        "01.3.a",
+        "04.3.c",
+        "05.3.a",
+        "09.3.a"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "L04-A32-function-data",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        23,
+        24
+      ],
+      "knowledge_point": "Functions, domain/codomain, range, image and preimage",
+      "assessed_at": [
+        "01.3.b",
+        "03.3.a",
+        "04.3.a",
+        "05.3.c",
+        "06.3.a",
+        "06.3.c",
+        "07.3.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A33-bijections",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "knowledge_point": "Injective, surjective and bijective functions",
+      "assessed_at": [
+        "01.3.b",
+        "01.3.c",
+        "03.3.a",
+        "04.3.c",
+        "05.3.c",
+        "06.3.a",
+        "07.3.b",
+        "07.3.c",
+        "09.3.b",
+        "10.3.b"
+      ],
+      "depth": "proof and counterexample"
+    },
+    {
+      "id": "L04-A34-inverse",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        28,
+        29
+      ],
+      "knowledge_point": "Inverse functions and invertibility",
+      "assessed_at": [
+        "01.3.b",
+        "02.3.c",
+        "03.3.a",
+        "09.3.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A35-composition",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        30,
+        31
+      ],
+      "knowledge_point": "Composition and its order",
+      "assessed_at": [
+        "02.3.b",
+        "05.3.c",
+        "07.3.b",
+        "09.3.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A36-countable-basic",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        33,
+        34,
+        35
+      ],
+      "knowledge_point": "Bijections and basic infinite cardinalities",
+      "assessed_at": [
+        "02.3.c",
+        "05.3.b",
+        "05.3.c",
+        "09.3.c",
+        "10.3.b",
+        "10.3.c"
+      ],
+      "depth": "construction"
+    },
+    {
+      "id": "L04-A37-enumeration",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        36,
+        37
+      ],
+      "knowledge_point": "Rationals, finite strings and finite products",
+      "assessed_at": [
+        "01.3.c",
+        "02.3.c",
+        "03.3.c",
+        "05.3.b",
+        "06.3.b",
+        "07.3.c",
+        "09.3.c",
+        "10.3.c"
+      ],
+      "depth": "construction"
+    },
+    {
+      "id": "L04-A38-real-diagonal",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        38,
+        39
+      ],
+      "knowledge_point": "Uncountability, real diagonal and infinite sequences",
+      "assessed_at": [
+        "01.3.c",
+        "02.3.c",
+        "06.3.c",
+        "07.3.c",
+        "08.3.b",
+        "10.3.c"
+      ],
+      "depth": "proof and classification"
+    },
+    {
+      "id": "L04-A39-continuum-hypothesis",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        40
+      ],
+      "knowledge_point": "Continuum hypothesis at recognition depth",
+      "assessed_at": [
+        "03.3.c",
+        "09.3.c"
+      ],
+      "depth": "recognition"
+    },
+    {
+      "id": "L04-A40-schroder-bernstein",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        41
+      ],
+      "knowledge_point": "Schroder-Bernstein application",
+      "assessed_at": [
+        "04.3.b",
+        "04.3.c",
+        "06.3.c",
+        "09.3.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "L04-A41-cantor-power-set",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        42
+      ],
+      "knowledge_point": "Cantor power-set inequality",
+      "assessed_at": [
+        "01.3.c",
+        "03.3.b",
+        "03.3.c",
+        "06.3.b",
+        "09.3.c"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "L04-A42-uncomputable",
+      "lecture": "L04-Sets-and-functions-Sets-Functions.pdf",
+      "pages": [
+        43
+      ],
+      "knowledge_point": "Existence of uncomputable functions",
+      "assessed_at": [
+        "03.3.c",
+        "06.3.b",
+        "06.3.c",
+        "10.3.c"
+      ],
+      "depth": "proof"
+    }
+  ]
+}

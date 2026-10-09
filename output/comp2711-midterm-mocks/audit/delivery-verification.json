@@ -1,0 +1,597 @@
+{
+  "destination": "/Users/eason/Documents/ChatGPT/COMP2711",
+  "files": [
+    {
+      "file": "output/comp2711-midterm-mocks/.gitignore",
+      "sha256": "15bede1eda2f37a3094978bd24171c7c43ef948e513264a663860ffc5a45bc4b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/COMP2711_Mock_Midterms_10_Papers_and_Solutions.zip",
+      "sha256": "779548c6dca637853038b96d2c969d453c55ea6be8a041b3e6d5c722f9aa9805"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_01.log",
+      "sha256": "777362fc597b4197f3e69ca8311ce54c8c3a354886a01787198deea3780c4648"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_01.tex.log",
+      "sha256": "83056a57d98151ace9ff014b6df6948d6ef658030825a4603a520810b336084a"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_01_Solutions.log",
+      "sha256": "fa5d4412bc98cb723e9d8c83c160c75548296a495aee00922ca5eaa93d21f821"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_01_Solutions.tex.log",
+      "sha256": "ca8c55687db7368fbc31377ef3d2c86f14734f2dbf32c0d0502e4215b1983946"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_02.log",
+      "sha256": "09186f993329c7227f047eafdc58b899b3a1e6bb0a41d17abb2906ba57ea8856"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_02.tex.log",
+      "sha256": "d67b2cf9989930d7c1afb4b5d133cf38f1d6770ca62cfc2be3ed0b9bed5e3198"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_02_Solutions.log",
+      "sha256": "d4f50bb2eae425a0646141a43abc9bcfb16276d1195799b4d006a28821a787da"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_02_Solutions.tex.log",
+      "sha256": "1e8e595b33e23df9323d032d57f0036af83c80a7090ad8fefad9a5f57fcb04b5"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_03.log",
+      "sha256": "649df9659ffee06415d69d30edfdeee97b29251a72cf62e97c34c5505abb4fd8"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_03.tex.log",
+      "sha256": "ecdc5e51ae14c8a773e07c4aba2714945162c197a83978a0f1893d660827fb1b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_03_Solutions.log",
+      "sha256": "67cc84eda635faeffd35fb42cb9f7c335acfd47e8c8eb92abd3ee365a2bde16e"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_03_Solutions.tex.log",
+      "sha256": "27cbe469f9845f0b40da69d4789c84645c40d47bc6031d9026d0a415ca1aa628"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_04.log",
+      "sha256": "35d8aa2507133ad4e9a21ede741df053489be538b16307abdde4458d593f4fa2"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_04.tex.log",
+      "sha256": "3552e658ca75f1c2e1058d9eb637e7b6af7ba2939e72965d83bc82638fb7c3bd"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_04_Solutions.log",
+      "sha256": "18066658338f46d0aaa539ee6705b6f94d298e822f9afe14492a0f825ae9f021"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_04_Solutions.tex.log",
+      "sha256": "869b8326be1ad7da94989738cd3d32d3ea7a3a0208a88abfed3a97e5ad61a1cf"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_05.log",
+      "sha256": "f6affc06fd4ccd0d16146858f81cacca7a3bfa306589c7c6207940bf3817fd48"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_05.tex.log",
+      "sha256": "065869fdc0eae6976c5a526475976088105cbc6f5a01a6480ccbd94b0052e96c"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_05_Solutions.log",
+      "sha256": "b35bfb77f45aef576e9e3334bc9359dc80131bb94dd4db4dd2cf96488b7b9fe1"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_05_Solutions.tex.log",
+      "sha256": "c1331cfc831985b4bf120abf3aac3c64f8af0f8a1e93cdbe659837d54b6cfd3f"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_06.log",
+      "sha256": "95347d7e2f7d914f631344190785e35c6e0ccbde9ff3ebf2b00e57d2a919d07c"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_06.tex.log",
+      "sha256": "dec67785414e26c6a44581f594b46cd9b61eff837bd8fc7a8ec60d022b73e405"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_06_Solutions.log",
+      "sha256": "9c8e893db2fcf78744d4c80b8b231df55cdb832b7b3a7c373023950dd6d51a8f"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_06_Solutions.tex.log",
+      "sha256": "7cef138e27f9d75836a372a94fc13af78fc55a2dcbf9eefa6209c965310342f4"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_07.log",
+      "sha256": "8cf2806b231fdc3c482ba451897402a0960081784ded2c3bbc0b42d72a89c40f"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_07.tex.log",
+      "sha256": "1deb4a8c3b9b1e7a59639e9c581cb0daf80641e615ad7349ec0dca5eeca87d89"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_07_Solutions.log",
+      "sha256": "004db932a0d8c6bd397821468a9418a9280feac0c7f3cd51ed77f0b5c095136c"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_07_Solutions.tex.log",
+      "sha256": "c2300ab36c68f4ef9c635481bd69cbfcfb75e46ed8b5928a5112237495a14937"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_08.log",
+      "sha256": "c81ac0c5aceb2f8ec223b75d2f5ed9bf970f7ef9dac46113e2179a7585ea939b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_08.tex.log",
+      "sha256": "7d1027e715f6203f61d452ec0cc4a26157fdb405fdbe3b5abd65092a12d66174"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_08_Solutions.log",
+      "sha256": "442a0c2e0bd4a2ff9ae9a55fd744e4a94632e07277ef7c73314cb6349c735f6f"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_08_Solutions.tex.log",
+      "sha256": "6a84c6988c594636131f46e34dfeefdbef084ee8453d15a40dd8d2664a7a3134"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_09.log",
+      "sha256": "46bef3610efa19486ca525d15981f53156b15cfb9b6034d5a8d03849c59fd452"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_09.tex.log",
+      "sha256": "5c8ec98c3ba60de15878ef8077570b87a48f6bd25dede22607e1887f1cc4d702"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_09_Solutions.log",
+      "sha256": "ee3adb982e7b8ebceeeeaab614d1bf10464e7526e4b95a87787a939116c8a36b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_09_Solutions.tex.log",
+      "sha256": "4738d6cffd3824a541de2b5776a9fbc7a4869c9816eb724afcfb8d6e2e89e4e1"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_10.log",
+      "sha256": "016089be54a2399d13ec75109fb4119c683e6819cf1de872546d3463704aca57"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_10.tex.log",
+      "sha256": "c31f53fcd8bb9817b1857efe37b3f972860fdec95aa5bacb9d5ad385ccb13dce"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_10_Solutions.log",
+      "sha256": "89946639318b2932bdca32ef79a5c66815da556fa2567b0ca6c2551f3dcc0c5b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-logs/COMP2711_Mock_Midterm_10_Solutions.tex.log",
+      "sha256": "4dd4fae957d510266bf50a9ff5f6ecfd29017ee549339a9c0122eaff47eef1c6"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/build-manifest.json",
+      "sha256": "1d8f3c48c7ef283916e8b75d4f9d9f57780a9e37b494bbe59e8761911a8b6760"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/counting-checks.md",
+      "sha256": "9e438835833cfb35b1935921bb73d0c2719213506c02aec6d35fc205b89fdffa"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/counting-preview-compilation.json",
+      "sha256": "688d70991387d9e0fad857a19b125485cffa860836829027bffe000530c419e8"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/counting-review.md",
+      "sha256": "7019b2bf3dee7b17f18ec026b9904c5e18d08940d98af308995e7320f9ed143b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/coverage.csv",
+      "sha256": "394bc4b195e34720cd7e92f517a49f65488b070fb41965584b9fdc2c984666e1"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/density.csv",
+      "sha256": "4fccf4643fc46dec530d9eb8d7cf939d3eee265b28d84158a8c13a3c882527ff"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/early-layout-check.md",
+      "sha256": "3af7f513229b1c722c2ddc2acb7669310ca95e9a0c1f832d67de25fc7c0f6adb"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/final-manifest.json",
+      "sha256": "a638b0805de9533d4497d3764f0c0f6074226ffd044a06d85c5fda80c11ae0fe"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/final-review.md",
+      "sha256": "84b2bddc851f85b41d62c1e2a88e88e44ce7774269356702efe566d91b634ba9"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/independent-source-coverage.md",
+      "sha256": "0597c6512698900f2f4f372bc0179371d968b7656d8b64f78e98b6624ad5f85b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/integration-checks.json",
+      "sha256": "0d4d54a566b2ece318381e6a135dd64d4eb35f124dd5b7f95f594d74d908519f"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/integration-review.md",
+      "sha256": "0fbff72cecb818614eb87bb55bd33da87e522a17807a1e53775876c54664c59c"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/lecture-page-inventory.csv",
+      "sha256": "1f07c0229f9e934b155d041cf8b9634ac33b8dfdee704e32b148b8e03bfc1fa6"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/logic-checks.md",
+      "sha256": "b656e43a6a19c4e83a6ac33a62342beaf33c76f4d12554a938e69d3447e01242"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/logic-preview-compilation.json",
+      "sha256": "54739e6dfe32e6ec149cc41003c7bdd2bbe9d9110d7fe2df326b7020586a57cd"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/logic-review.md",
+      "sha256": "c26abf34279d5b8de408739080663bb7127920f99e2118d4958831d88034e712"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/math-checks.json",
+      "sha256": "9477c2517b0b5205eb2f110b54c785ca5f7672bdc852a0e539b08818b42626de"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/package-verification.json",
+      "sha256": "a5d2f717bee94735f674c921a7b23ce711bb7032afd22ccab887fbb6beff24e8"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/pipeline-review.md",
+      "sha256": "1d7cb09deaf65596b3e36cff9c070334f64628468a12d46a4fda5e0f8619260b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/pipeline-test-results.json",
+      "sha256": "213d4a5da43f69c2bbcd5acc3bfaa12bf49e0f48bd20b02f2e89b26f38f37ce3"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/probability-checks.md",
+      "sha256": "3257ce79b3c2beee231d2f6a224052103dc0294e7f6d306d8ea66109562be522"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/probability-preview-compilation.json",
+      "sha256": "fdd744027cd8aad4729891b94167d4586a6d850bcaf75eaffc4545aef31cbab2"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/probability-review.md",
+      "sha256": "c2a025ed0081b9acc1dd607873b1d3954eaf0ee7cfeaac8b8f26475ddd959651"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/progress.md",
+      "sha256": "b20f939b65fafc8b2b83ba3c5aefc6855b3bc20a67c156fffb11c89ee691547f"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/provenance.csv",
+      "sha256": "d485a472c68e5be7643aff75915e9b9f2d31da849b9ddc606ad1cb8d57e11272"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/source-profile.json",
+      "sha256": "f867b5bdab19a39108ed0f3f44d6213775d836f5aa5b436677c386c5050acc9b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/source-provenance.json",
+      "sha256": "58ca8d16d10bc2e831fd32fb424805cafeada48c8449a6d7dc726202455c30ac"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/validation.json",
+      "sha256": "f344daa0c2fc5fac8b0acc4217415f867d0a50f70907a7910a96fe93bc3ed409"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/verification.md",
+      "sha256": "86e139177bcf73b1de2cf05eac124b07ebad914760f61d7b8fae863cd5c83c42"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/visual-review-01-05.md",
+      "sha256": "d0bb96e7cf82709d50e31af5333dcd1afe6b6b6a206ad228be915a7cf20f8686"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/visual-review-06-10.md",
+      "sha256": "1eccdc7fa9ebcaff561407dd91265f594cda6df16f9a9634ff8d1333424225cc"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/visual-review.md",
+      "sha256": "974bb41dea38fe62bf83e5c41391abf01c65def468e8c3ac605d46ad65d83265"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/audit/visual-verification.json",
+      "sha256": "0c16c49c9e8617ad56b63888e11fad14c7807bae65b98900b34e097a950cf129"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/content/counting.json",
+      "sha256": "963270456d4bf6ff97447200157e5b34c64148163fab36c82e828ce29ec63427"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/content/counting_checks.py",
+      "sha256": "566747e656f15b14613e69c80a7974587f3aac335faf6ff9153315f4514665e2"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/content/logic.json",
+      "sha256": "2d00f1bf4c5890a85dcbe3d33054c92a47118b06923830f475b564ef8e1596d4"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/content/logic_checks.py",
+      "sha256": "d900e8023b2e9065b231ad757942cb9050b71591aa358cf6367140b44b1b62fe"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/content/probability.json",
+      "sha256": "f4d9099355bf26159b849b3f6cb4d3db58c03769eb2238580063980a19c8c4a6"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/content/probability_checks.py",
+      "sha256": "f5772c01a6b9a06f9870b28f4752b0b26db9a87c8cb855feaea67274b7d51416"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_01.pdf",
+      "sha256": "7bcc674d06850c3c4814c43a9ee171cdd334ddc36a8462f8c9eab968c816e142"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_01_Solutions.pdf",
+      "sha256": "4c62a81cbfdf5ca2767fa45aaff48f2a41467d1a520e2553093086f760c947b9"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_02.pdf",
+      "sha256": "0eb887279dfe4816db3b8452f80fe4086159c3c35b5de0798fc4017bec6daaff"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_02_Solutions.pdf",
+      "sha256": "c9ee65221cf248693da1bd3417e9a3a757e510984610b4011b7f96f9148dac07"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_03.pdf",
+      "sha256": "f043d40f52a54651e6623dd2fa952fdae929a32e2064db4f1b340d973cf019e0"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_03_Solutions.pdf",
+      "sha256": "37ff4500621ae73565eff8f66f3b037aef620cc1b5cab973fb8e5ae12b3f62b9"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_04.pdf",
+      "sha256": "af9c20fbdf777bc4d0f94db509d60c237f8e742ef08dd8979da7cbd8e2735b1e"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_04_Solutions.pdf",
+      "sha256": "2fe136a294eb8e3d907543e4626869887b3c05d1fdb73a6ac506b03244155983"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_05.pdf",
+      "sha256": "af0af5cc2f9306235f1be3d3932b89b108248c109ca43071b1b01660ca403df8"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_05_Solutions.pdf",
+      "sha256": "3912d074a6401ed83bee3cd5fe6e73a7a7bd53d5faaa89fe8bd13372a70095ac"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_06.pdf",
+      "sha256": "f8723c85cb82f6a27b9cef3da19e2acb50f0aa0ede282e66a94978ef72488776"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_06_Solutions.pdf",
+      "sha256": "9b906e919e6cbad8f4e8fe131f44be7382bf9959c7644e85c7b245f191164506"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_07.pdf",
+      "sha256": "3acba288ac1158964caaf5d19c7d9b9db0bfc76901a383a5c26826757edf1543"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_07_Solutions.pdf",
+      "sha256": "afde7cd6c5a9ad25aa77e5d1d9ba338d0c606c9cbad148403e12b6aa66b7d252"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_08.pdf",
+      "sha256": "b9271f5d55b56947556308437ae81c3b082434e4f2479ec9b2399b7bd3754387"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_08_Solutions.pdf",
+      "sha256": "bc322f268653bf290e981c2fe92ba44b4e9e78dba4ecccd5a543064581534623"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_09.pdf",
+      "sha256": "021179f620010cfac4c316ca835f636a9536e3cef77deae411da775ad132aabf"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_09_Solutions.pdf",
+      "sha256": "d05193bcbb93d16e8fb99f5bdec5eea4b9f5f0ab648a48d8ffea9e1780ff1bea"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_10.pdf",
+      "sha256": "0ef424d5a5aeb1f181eadc51c624a7e7492d489fa18abdb717ce032afc63bf2e"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/pdf/COMP2711_Mock_Midterm_10_Solutions.pdf",
+      "sha256": "5a020bce17aa0c33f76b7106c999363c8e10b98bdce8167c7b3becc212434cda"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_01.tex",
+      "sha256": "6cccc9d349e6ebc33c985063c5f302e705558cce71cbb6faab64cfbf2db19ffd"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_01_Solutions.tex",
+      "sha256": "02b0db872b8183ab40e2f77b9f298c71155452004662547a02f36b1ca858c742"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_02.tex",
+      "sha256": "eae86252186a823e342c692bc06f4a74546f233f9eb8a96ccab23e74aed2d7ad"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_02_Solutions.tex",
+      "sha256": "a67b295f833899c478af9d4d4036a75ab490e736c5d378e03355c6ce7d3a030b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_03.tex",
+      "sha256": "f5695b1008aa906bbd2b7d4a1b451f5496a534404bc94214135686d76991bf33"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_03_Solutions.tex",
+      "sha256": "43de7056821ab2d57529fb410d7d6e4581cff695c0e5f716eba608e4529f61a5"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_04.tex",
+      "sha256": "aacbae662e47a3a505465660f14445428946751eb408745761559de6e66782b7"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_04_Solutions.tex",
+      "sha256": "441c9e49c1a2806e3609f2be4f81093ef3bd51a46976166f63b63ab87530950c"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_05.tex",
+      "sha256": "d8ba8ecc6521d94367e670ad15c0bd4dcacc2cb067b5ecf94d8b7ad928f420a0"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_05_Solutions.tex",
+      "sha256": "412f347b5397fed1e0c5a22b7e412c60c41ebbc014f020bd26afafc8dae805b7"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_06.tex",
+      "sha256": "5c5ada51610f75724fac0253da407f8c2a159dc413bbb2325c4bda37444d29ce"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_06_Solutions.tex",
+      "sha256": "77c999f9b1f02dfbda2af740121bf650224804fca6ad1982b77cbc6d45ddc63b"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_07.tex",
+      "sha256": "1980bab6120efbd5af2191131c61b7575e5c6eab109d60e6eb1a9364c79fe655"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_07_Solutions.tex",
+      "sha256": "f0d9a20a535a2b419caf495578ac9cdb1926213ce6a6a26224e19ddcf2df2a11"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_08.tex",
+      "sha256": "50560fc2ebf9444e1db2888fe92e6c0e807c4d47b4cd38b7a99a5408a1fb9a5f"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_08_Solutions.tex",
+      "sha256": "c488ea6545b1e749b6eafe6f120f875c1de37a423564a2935485f3328b9bfc32"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_09.tex",
+      "sha256": "572fba118cf9cbd7ce66d0eee71a6976107ccea589c69ed1958e0cb480720c02"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_09_Solutions.tex",
+      "sha256": "d115502e11edcb34862f59f7d48a3d0a824b1be6d063b06b2320900f950123d2"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_10.tex",
+      "sha256": "2f7de43b8a2fcd927d5afd63364181740a7b2ffe9583ce98a2f1a37f8f4a7094"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/source/COMP2711_Mock_Midterm_10_Solutions.tex",
+      "sha256": "3f4a36b397424d31d7715072cf5347d9a96e229c64bd16de93f68ee8c5ebd825"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/README.md",
+      "sha256": "1e789b1329d7225d25e0fc3e3fd93740cfe015bc51f2704d8818afbb257ab926"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/build.py",
+      "sha256": "9f5fdf07f1510b0f3dd715840adb1774902bd33208ed9b03066fa0fc39de5d80"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/check_math.py",
+      "sha256": "71d1a57475df3bf62679a9b568a41a8dfd8f331e0bddb496128edda2f201afd3"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/deliver.py",
+      "sha256": "dd0eb11c5b065bea0070689a9abbbf0373786c98f57cd40740c5fb5cd77ffb5c"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/final_audit.py",
+      "sha256": "d04d57fe2d57daa647a49d02f89029d93cbcc11632ae326dda0bb2e147c22e22"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/template.tex",
+      "sha256": "2e8e4cde1d095636c59b82a5c67768df64daf67e2708ed78084cedd171c533d4"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/test_pipeline.py",
+      "sha256": "0427ad59f7be13a330bf937233bc6423d4bba98a62e0d880160fd5ac7864d1d5"
+    },
+    {
+      "file": "output/comp2711-midterm-mocks/tools/validate.py",
+      "sha256": "1ff4a4f73754ee90a7db2e706d873178c0e01bc92f681cd8b9dfebcaa233b010"
+    },
+    {
+      "file": "docs/superpowers/plans/2026-10-08-comp2711-midterm-mocks.md",
+      "sha256": "a49151f1149a5dd77819ff6adcb2a80c0e2713711a5fbb191076506103e7bfc1"
+    },
+    {
+      "file": "docs/superpowers/specs/2026-10-08-comp2711-midterm-mock-exams-design.md",
+      "sha256": "f54b83431bfaad6579160233a945b7bafe5a467a26e5a1d6f8f711d51170cf85"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/final-review-brief.md",
+      "sha256": "ec6618907732673ce3fa1b17db826ced15318200b3f69107387499b5a56dba1a"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/progress.md",
+      "sha256": "6c21f50d34a75e9cb33efcdcde075c094d2b60739aa81b46ab42d54925f0f208"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/shared-requirements.md",
+      "sha256": "33a50343df40dfc295365f9d615b29963de6e3645ac3c675ff4cbb1014f54592"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/subject-review-contract.md",
+      "sha256": "2e6918301362df4248b577527a221fa27002ad1c52b0f785c6d4613936c409ac"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-1-brief.md",
+      "sha256": "26d138894dc0f0eee7e01fab1c308446151286fa575a4107bb4a5f8ee933a044"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-1-report.md",
+      "sha256": "174a8b493c37208fddad5f4043d15d2085c1a0f25742b07ea1737164fb3d84f3"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-2-brief.md",
+      "sha256": "2d7ce9cc12c5cc4804f2f61f16892a521e8257a728c8c19f7b03f714ee7b61d4"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-2-report.md",
+      "sha256": "6c63bd9886b20edb17905e3c4107ce40ea79443cc530d5f942dc5ddee6622581"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-3-brief.md",
+      "sha256": "7ef76965ec83b00cc004c27d100094e098d926084103e3f410e6b2cdddc613c4"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-3-report.md",
+      "sha256": "afb526013a7cf16c91f788c24d8649b75581fcf607d34de49cccb671f96d9116"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-4-brief.md",
+      "sha256": "afbc741a46e167481c82ecc870e594750ed63bfcd503620d641cf67639a9b32b"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-4-report.md",
+      "sha256": "e77fc3093456bdccc3bccdd34f6d723c4bd7c6aa293f3fe0126d28fd4f6bce0a"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-5-brief.md",
+      "sha256": "219a1869ff1db429e50cfab75d1be67b111a992d07a2b0be32f74bb23d580b93"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/task-5-report.md",
+      "sha256": "ccb9142733545bb6cd7ed49d772412b8a7cc713ab46d516b511c51ae20b126ee"
+    },
+    {
+      "file": ".superpowers/sdd/2026-10-08-comp2711-midterm-mocks/visual-review-contract.md",
+      "sha256": "30e887889c18fc9c34f90f762f8aa33419ba25a55a9c97a50bc34d31e691f513"
+    }
+  ],
+  "all_sha256_match": true,
+  "excluded": [
+    "tmp previews",
+    "caches and compiler binary",
+    "raster evidence",
+    "raw source extraction",
+    "unrelated workspace files"
+  ]
+}

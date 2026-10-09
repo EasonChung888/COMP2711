@@ -1,0 +1,214 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 03}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Using propositional laws, prove $((p\to q)\land(p\to r))\equiv(p\to(q\land r))$.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Using the usual operator precedence, fully parenthesize $\neg p\lor q\land r\to s$ and evaluate it at $p=F,q=F,r=T,s=F$.
+\examspace{3}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Give direct proofs: (i) the product of two rational numbers is rational (3 points); (ii) the product of two integer perfect squares is a perfect square (2 points). Use the definitions.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} The domains are researchers $x$, journals $j$, and papers $t$. $W(x,t)$ means $x$ wrote $t$ and $J(t,j)$ means $t$ appeared in $j$. Translate: (i) some researcher has written, for each journal, a paper in that journal, with the paper allowed to depend on the journal; (ii) every journal contains a paper written by at least two distinct researchers. Each is worth 2 points.
+\examspace{4}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Negate $\exists x\forall y\exists z((P(x,y)\land Q(z))\to R(y,z))$ so that negations precede only predicates.
+\examspace{4}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} A proposed argument uses $\exists x P(x)$ and $\exists x Q(x)$ to conclude $\exists x(P(x)\land Q(x))$. Refute it (2 points). Then prove the valid implication in the reverse direction using inference rules (3 points).
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Use $\mathbb N=\{0,1,2,\ldots\}$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For $f:\mathbb R\to[0,\infty)$, $f(x)=x^2$, determine whether an inverse function on the stated codomain exists. Explain.
+\examspace{3}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} For any set $S$, show that no function $h:S\to\mathcal P(S)$ is onto, using $D=\{x\in S:x\notin h(x)\}$. Deduce $|S|<|\mathcal P(S)|$.
+\examspace{5}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item For every set $S$, $|S|=|\mathcal P(S)|$.\item $\mathcal P(\mathbb N)$ is uncountable.\item The continuum hypothesis asserts that a cardinality exists strictly between $|\mathbb N|$ and $|\mathbb R|$.\item According to the lecture, the continuum hypothesis can be proved in ZFC.\item The set of all functions $\mathbb N\to\{0,1\}$ is uncountable.\item The set of positive rational numbers is countably infinite.\item The set of finite strings over $\{a,b,c\}$ is uncountable.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Four distinct prizes are awarded to different people among nine distinct entrants, and entrant $E$ must receive the first prize. Count the awards.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Five-digit base-ten numbers use distinct digits and end in an even digit. Count them; the leading digit is nonzero.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Arrange eight distinct books in a row, with a specified three-book sequence $ABC$ contiguous and in that order. Count the arrangements.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} Seven distinct people sit around a circular table with $B$ immediately clockwise from $A$. Rotations are equivalent; reflections are different. Count the seatings.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Count length-eight strings containing exactly three $R$s, three $S$s, and two $T$s; equal letters are indistinguishable.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} Choose six pastries from four unlimited types, with at least two of type $A$. Order does not matter and pastries of one type are identical. Count the choices.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} Find the coefficient of $x^3y^5$ in $(x-2y)^8$.
+\examspace{1.5}
+\Needspace{\dimexpr 4.0cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} A match ends as soon as one of two teams has won two games. Draw the branching tree of legal win sequences and count its leaves. No game is drawn.
+\examspace{4.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} For $n\ge1$, prove combinatorially that\[\sum_{k=0}^{n}k\binom nk^2=n\binom{2n-1}{n-1}.\]
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Use inclusion--exclusion to count five-digit base-ten numbers in which each of $0,1,2$ occurs at least once. Repetition is allowed, but the first digit is nonzero.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} A box contains seven tokens of each of five colours, one of which is red. Tokens are selected without replacement. What is the smallest number guaranteeing five of one colour? Justify both necessity and sufficiency.
+\examspace{3}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} What is the smallest number guaranteeing five red tokens from the same box? Justify both necessity and sufficiency.
+\examspace{4}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: Three events on four outcomes [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Two independent fair bits $U,V$ give the four equally likely outcomes in $\{0,1\}^2$. Let $A=\{U=1\}$, $B=\{V=1\}$, and $C=\{U\ne V\}$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Find $P(A),P(B),P(C)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find $P(A\cap B)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Find $P(A\cap C)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Find $P(B\cap C)$.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Are these events pairwise independent? Mutually independent? Check the remaining required intersection.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: A biased host [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+A prize is uniformly placed behind doors $1,2,3$; you initially choose door 1. The host always opens an unchosen goat door. If the prize is behind door 1, he opens door 2 with probability $3/4$ and door 3 otherwise; if your choice is wrong, his move is forced. Let $W$ be the prize door and $M$ the opened door.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Given $M=2$, find the probabilities of winning by staying and by switching.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Given $M=3$, choose the better action. Find the overall success probability of the policy that chooses the better action after each possible opening.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Record hires [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+$n\ge4$ candidates with distinct quality ranks arrive in a uniformly random order. Hire the first candidate, then hire each candidate who is better than every previous candidate. Let $J_i$ indicate a hire at position $i$ and $H_n=\sum_{i=1}^n1/i$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Find $E(J_1)$ and $E(J_3)$, with a reason.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Find the expected total number of hires.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} When $n=4$, find the expected number of replacements of an already hired candidate.
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} Each interview costs $c$ and each hire costs $h$, including the first. Derive the expected total cost for general $n$. Explain whether linearity requires independence of the $J_i$.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

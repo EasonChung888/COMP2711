@@ -1,0 +1,140 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 02}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} \[\begin{array}{cc|cc|c}p&q&p\oplus q&\neg(p\leftrightarrow q)&\text{whole formula}\\\hline T&T&F&F&T\\T&F&T&T&T\\F&T&T&T&T\\F&F&F&F&T\end{array}\] All four final entries are T, so it is a tautology.
+\par\textit{Marking:} 1 four assignments; 1 connective columns; 1 final column and classification.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Converse: $q\to p$. Inverse: $\neg p\to\neg q$. Contrapositive: $\neg q\to\neg p$. Only the contrapositive is always equivalent to the original; the converse and inverse are equivalent to each other.
+\par\textit{Marking:} 1 three correctly formed expressions; 1 correct equivalence identification.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} The contrapositive is: if $a>c$ and $b>c$, then $ab>c^2$. Assuming both inequalities, positivity gives $ab>cb>c^2$. This proves the contrapositive and therefore the original implication. Negating the disjunction requires both strict inequalities.
+\par\textit{Marking:} 2 correct contrapositive including conjunction; 2 product inequalities using positivity; 1 conclusion via contraposition.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} (i) $\forall x\exists y(M(x,y)\land\forall z(M(x,z)\to z=y))$. (ii) $\exists y(\forall x M(x,y)\land\forall z((\forall x M(x,z))\to z=y))$. The first permits different unique mentors for different employees; the second identifies one unique universal mentor.
+\par\textit{Marking:} 2 each: existence and intended quantifier order (1), uniqueness with correct predicate (1).
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} If all elements satisfy $P$, every element satisfies $P\lor Q$; the same holds if all satisfy $Q$. For the reverse take $D=\{a,b\}$ with $P(a)=T,P(b)=F,Q(a)=F,Q(b)=T$. Every element satisfies the disjunction, but neither predicate holds universally.
+\par\textit{Marking:} 2 valid forward reasoning; 1 predicate table; 1 checking reverse premise true/conclusion false.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} Let $a$ be arbitrary. Universal instantiation yields $P(a)\to Q(a)$ and $Q(a)\to R(a)$. Hypothetical syllogism gives $P(a)\to R(a)$. Since $a$ was arbitrary and no premise singles it out, universal generalization yields the conclusion.
+\par\textit{Marking:} 1 arbitrary element; 2 universal instantiations; 1 hypothetical syllogism; 1 justified universal generalization.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} \[\mathcal P(S)=\{\varnothing,\{\varnothing\},\{\{1\}\},\{\varnothing,\{1\}\}\}.\] There are four subsets. The two elements of $S$ are themselves distinct sets.
+\par\textit{Marking:} 1 complete correct roster; 1 cardinality and correct nesting.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} $(f\circ g)(x)=1-x$ and $(g\circ f)(x)=-x-1$. Their values differ by 2 for every integer input, so the functions are unequal. Both have domain and codomain $\mathbb Z$.
+\par\textit{Marking:} 1 each composition; 1 non-equality with a valid comparison.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{T}. Enumerate pairs by increasing sum, then by first coordinate; the pairs $(n,0)$ show infinitude.\item \textbf{F}. Each is determined by two positions; enumerate by the larger position.\item \textbf{T}. It has $\sum_{j=0}^8 2^j$ elements.\item \textbf{T}. Both have explicit enumerations indexed by $\mathbb N$.\item \textbf{F}. The proper subset of even natural numbers is in bijection with $\mathbb N$.\item \textbf{T}. It contains the uncountable subset $(0,1)$.\item \textbf{T}. Existence and uniqueness of each preimage follow from onto and injective properties.\end{enumerate}
+\par\textit{Marking:} Award 1 point for each correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The journey types are disjoint, so $3+2\cdot4=11$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Choose which endpoint is one in two ways, and choose two internal one positions: $2\binom52=20$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The two Ls and two Os repeat, so $7!/(2!2!)=1260$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} Choose the folder contents successively: $\binom82\binom63=8!/(2!3!3!)$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Give each box one token; distribute the remaining five freely: $\binom{5+4-1}{3}=\binom83=56$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} If $k$ factors contribute $2x^2$, the exponent is $2k-(9-k)=3k-9$. Thus $k=3$ and the constant is $\binom93 2^3(-1)^6=672$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} Total paths: $\binom94$. Paths through the forbidden vertex split uniquely into two portions: $\binom42\binom53$. Subtract to get $\binom94-\binom42\binom53=66$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} Independently choose two from each group: $\binom52\binom42=60$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} Take disjoint labelled groups of sizes $m$ and $n$, and count their $r$-element subsets. Direct selection gives $\binom{m+n}{r}$. Classify each subset by the number $k$ selected from the first group. This class has $\binom mk\binom n{r-k}$ subsets; impossible classes contribute zero by the convention. The classes $k=0,\ldots,r$ are disjoint and exhaustive. Their sum therefore equals the direct count, also when a group is empty or $r=0$.
+\par\textit{Marking:} 2 marks for the common objects; 2 for the direct count; 3 for each split count; 3 for disjointness, completeness and impossible splits.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} The universe has $2\cdot3^5$ assignments. Let $E_X$ mean server $X$ is unused. Then $|E_A|=|E_B|=2^5$ and $|E_C|=2\cdot2^5$. If both $A,B$ are unused, job 1 has no legal server, giving zero; if $A,C$ or $B,C$ are unused, exactly one assignment remains. The triple intersection is empty. Hence\[2\cdot3^5-(2^5+2^5+2\cdot2^5)+(0+1+1)=360.\]
+\par\textit{Marking:} 2 marks for the restricted universe and missing-server events; 3 for singleton counts; 2 for pair/triple intersections; 2 for correct IE and result.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Partition the rectangle into twelve $2\times2$ boxes, using four horizontal-coordinate intervals and three vertical-coordinate intervals. Use half-open intervals except that each last interval includes the outer endpoint, assigning every point exactly once. Thirteen points force two in one box. Their coordinate differences are at most two, so their distance is at most $\sqrt{2^2+2^2}=2\sqrt2$. For the second claim, use the four width-two vertical strips as boxes. Generalized PHP gives a strip with at least $\lceil13/4\rceil=4$ points.
+\par\textit{Marking:} 2 marks for the twelve-box partition with boundary convention; 1 for PHP; 1 for the distance bound; 2 for the four-strip partition; 1 for the ceiling bound and four-point conclusion.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} $10k=1$, so $k=1/10$; all four masses are nonnegative and sum to one.
+\par\textit{Marking:} 1 mark for k=1/10 and validity.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} The union is $\{a,b,c\}$, with mass $(1+2+3)/10=3/5$.
+\par\textit{Marking:} 1 mark for 3/5.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} The preimage is $\{a,d\}$, giving $P(X=0)=1/10+4/10=1/2$.
+\par\textit{Marking:} 1 mark for summing the two preimage masses.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} Yes. Each outcome has one fixed assigned real value. The experiment is random; the mapping itself is fixed.
+\par\textit{Marking:} 1 mark for a fixed mapping explanation.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} $P(E)=3/10$, $P(F)=2/5$, and $P(E\cap F)=1/10$. Since $1/10\ne(3/10)(2/5)=3/25$, they are dependent.
+\par\textit{Marking:} 1 mark for the marginals and joint mass; 1 for the comparison and conclusion.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} $P(RR\mid A)=(2/3)(1/2)=1/3$, whereas $P(RR\mid B)=0$. Total probability gives $P(RR)=(2/3)(1/3)=2/9$.
+\par\textit{Marking:} 1 mark for each urn likelihood; 1 for the weighted total.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} Writing $O$ for exactly one red, both urn likelihoods are $2/3$. Thus $P(O)=2/3>0$ and $P(A\mid O)=[(2/3)(2/3)]/(2/3)=2/3=P(A)$. The unchanged conditional probability establishes independence.
+\par\textit{Marking:} 2 marks for the two equal likelihoods and denominator; 1 for the posterior; 1 for positive-mass independence reasoning.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Exactly $(n-1)!$ of $n!$ assignments fix owner $i$, so $P(I_i=1)=1/n$. An indicator has mean equal to its success probability, hence $E(I_i)=1/n$.
+\par\textit{Marking:} 1 mark for the counting probability; 1 for the indicator mean.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} $E(H)=\sum_i E(I_i)=n(1/n)=1$. Linearity requires no independence.
+\par\textit{Marking:} 1 mark for the sum and value; 1 for the independence statement.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} $P(I_i=I_j=1)=(n-2)!/n!=1/[n(n-1)]\ne1/n^2$. Thus the indicators are dependent.
+\par\textit{Marking:} 1 mark for the joint probability; 1 for comparison with the product.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} If the outcome masses are $p(s)$, then\[\begin{aligned}E(aU+bV)&=\sum_s p(s)[aU(s)+bV(s)]\\&=a\sum_s p(s)U(s)+b\sum_s p(s)V(s)\\&=aE(U)+bE(V).\end{aligned}\]The same outcome sum handles any dependence between $U,V$.
+\par\textit{Marking:} 1 mark for the definition; 2 for distributing and separating finite sums; 1 for the result and absence of an independence requirement.
+\end{description}
+\end{document}

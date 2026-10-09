@@ -1,0 +1,169 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 03}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} \[((\neg p\lor q)\land(\neg p\lor r))\equiv\neg p\lor(q\land r)\equiv p\to(q\land r).\] The first and last steps use implication equivalence; the middle uses distribution.
+\par\textit{Marking:} 1 implication expansion; 1 distribution; 1 final implication.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} The grouping is $(\neg p\lor(q\land r))\to s$. The antecedent is $T\lor(F\land T)=T$, so the implication is $T\to F=F$.
+\par\textit{Marking:} 1 correct grouping; 1 correct evaluation.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} (i) Write $u=a/b$ and $v=c/d$ with integers $a,b,c,d$ and $b,d\ne0$. Then $uv=ac/(bd)$; $ac,bd$ are integers and $bd\ne0$, so the product is rational. (ii) Write $m=h^2$ and $n=k^2$ with integers $h,k$. Then $mn=(hk)^2$ and $hk\in\mathbb Z$, so the product is an integer perfect square.
+\par\textit{Marking:} (i) 1 rational representations, 1 product expression, 1 integer/nonzero checks; (ii) 1 square representations, 1 integer square witness.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} (i) $\exists x\forall j\exists t(W(x,t)\land J(t,j))$. (ii) $\forall j\exists t\exists x\exists y(J(t,j)\land W(x,t)\land W(y,t)\land x\ne y)$, with $x,y$ ranging over researchers.
+\par\textit{Marking:} 2 each: correct dependency/quantifier order (1), complete predicate conditions including distinctness where needed (1).
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[\forall x\exists y\forall z\bigl(P(x,y)\land Q(z)\land\neg R(y,z)\bigr).\] Quantifier negation gives $\forall x\exists y\forall z$; a false implication has true antecedent and false consequent.
+\par\textit{Marking:} 2 correct three quantifier changes; 1 implication negation; 1 fully correct scope and atomic negation.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} For the refutation let $D=\{a,b\}$, with $P$ true only at $a$ and $Q$ true only at $b$. Both existential premises hold, but their conjunction has no common witness. For the reverse choose fresh $c$ with $P(c)\land Q(c)$ by existential instantiation. Simplification yields each predicate; existential generalization gives $\exists xP(x)$ and $\exists xQ(x)$, which can be conjoined.
+\par\textit{Marking:} 2 countermodel and verification; 1 fresh common witness; 1 simplification/generalizations; 1 final conjunction with named rules.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} No. It is onto $[0,\infty)$, since $y\ge0$ has preimage $\sqrt y$, but it is not injective: $f(1)=f(-1)=1$. An inverse would have to return two different preimages for 1, violating uniqueness.
+\par\textit{Marking:} 1 correct noninjectivity example; 1 no inverse and uniqueness explanation.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} $D\subseteq S$, so $D\in\mathcal P(S)$. If $h(a)=D$, then $a\in D$ iff $a\notin h(a)$ iff $a\notin D$, a contradiction. Thus $D$ is missed. The singleton map $x\mapsto\{x\}$ is injective, but no bijection exists because no map $S\to\mathcal P(S)$ is onto. Hence the strict inequality.
+\par\textit{Marking:} 1 diagonal subset lies in codomain; 1 contradiction for any proposed preimage; 1 singleton injection and strict inequality.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{F}. Cantor\textquotesingle s diagonal argument shows strict inequality.\item \textbf{T}. A countable listing would be a surjection from $\mathbb N$, contradicting Cantor\textquotesingle s theorem.\item \textbf{F}. It asserts that no such intermediate cardinality exists.\item \textbf{F}. The lecture states that it cannot be proved or disproved in ZFC.\item \textbf{T}. Characteristic functions correspond bijectively to subsets of $\mathbb N$.\item \textbf{T}. List numerator/denominator pairs diagonally, retaining only the first occurrence of each rational.\item \textbf{F}. Order by length and then lexicographically; each length layer is finite.\end{enumerate}
+\par\textit{Marking:} Award 1 point for each correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Fix $E$ and assign the other three labelled prizes without reuse: $8\cdot7\cdot6=336$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} If the last digit is zero: $9\cdot8\cdot7\cdot6$. If it is one of $2,4,6,8$: $4\cdot8\cdot8\cdot7\cdot6$. The cases sum to $13776$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} Compress the fixed sequence to one unit: there are six distinct units, giving $6!$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} Fix $A$ to remove rotation and then fix $B$ in the specified neighbor position. The remaining people have $5!$ orders.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Choose the positions of the repeated types: $8!/(3!3!2!)=560$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} Reserve two As and choose four more by frequencies: $\binom{4+4-1}{3}=\binom73=35$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} Select five factors contributing $-2y$: $\binom85(-2)^5=-1792$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{\dimexpr 69.12mm+7\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} \begin{center}
+\setlength{\unitlength}{0.72mm}
+\begin{picture}(150,96)
+\qbezier(75,77)(57,70)(39,63)
+\qbezier(39,55)(27,48)(15,41)
+\qbezier(39,55)(45,48)(51,41)
+\qbezier(51,33)(45,26)(39,19)
+\qbezier(51,33)(57,26)(63,19)
+\qbezier(75,77)(93,70)(111,63)
+\qbezier(111,55)(105,48)(99,41)
+\qbezier(99,33)(93,26)(87,19)
+\qbezier(99,33)(105,26)(111,19)
+\qbezier(111,55)(123,48)(135,41)
+\put(75,81){\makebox(0,0){$ \varepsilon $}}
+\put(39,59){\makebox(0,0){$ A $}}
+\put(15,37){\makebox(0,0){$ \underline{AA} $}}
+\put(51,37){\makebox(0,0){$ AB $}}
+\put(39,15){\makebox(0,0){$ \underline{ABA} $}}
+\put(63,15){\makebox(0,0){$ \underline{ABB} $}}
+\put(111,59){\makebox(0,0){$ B $}}
+\put(99,37){\makebox(0,0){$ BA $}}
+\put(87,15){\makebox(0,0){$ \underline{BAA} $}}
+\put(111,15){\makebox(0,0){$ \underline{BAB} $}}
+\put(135,37){\makebox(0,0){$ \underline{BB} $}}
+\end{picture}
+\end{center}
+Here $\varepsilon$ is the root. Underlined nodes are terminal; no branch continues after a second win. The terminal sequences are $AA,ABA,ABB,BB,BAA,BAB$. The branches stop immediately at the second win, so the leaf count is $6$.
+\par\textit{Marking:} 1 mark for a correct tree stopping at the second win; 1 mark for six leaves.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} Take disjoint labelled groups $A,B$ of size $n$. Count pairs $(S,a)$ where $S$ is an $n$-element subset of $A\cup B$ and $a\in S\cap A$ is distinguished. If $|S\cap A|=k$, choose the $k$ A-elements and the $n-k$ B-elements, then the distinguished element, giving $k\binom nk\binom n{n-k}=k\binom nk^2$. Summing over $k$ gives the left side. Alternatively choose $a$ in $n$ ways, then choose the other $n-1$ elements from the remaining $2n-1$, giving the right side. The two procedures count every pair exactly once.
+\par\textit{Marking:} 2 marks for the marked selection model; 4 for the split count and symmetry; 3 for choosing the mark first; 1 for the exhaustive double-count conclusion.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Let $E_d$ mean digit $d$ is missing. The universe has $9\cdot10^4$ numbers. Missing zero gives $9^5$; missing 1 or 2 gives $8\cdot9^4$ each. Missing $\{0,1\}$ or $\{0,2\}$ gives $8^5$ each, while missing $\{1,2\}$ gives $7\cdot8^4$. Missing all three gives $7^5$. Thus\[9\cdot10^4-9^5-2\cdot8\cdot9^4+2\cdot8^5+7\cdot8^4-7^5=3376.\]
+\par\textit{Marking:} 1 mark for the universe and bad events; 3 for single intersections; 3 for pair/triple intersections with leading-zero handling; 2 for IE and the exact answer.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} At most $4\cdot5=20$ tokens can be selected while keeping every colour count at most four. Hence 21 force five of some colour. Four of each colour realizes 20 without the desired event, so 21 is minimal.
+\par\textit{Marking:} 2 marks for the capacity/PHP bound; 1 for the sharp example.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} The four nonred colours supply 28 tokens. A selection with at most four red therefore has size at most $28+4=32$. Thus 33 guarantee five red. Taking all 28 nonred tokens and four red shows that 32 do not suffice.
+\par\textit{Marking:} 2 marks for the specified-colour bound; 2 for a realizable sharp example and minimum.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Each event contains two of the four outcomes, so all three probabilities are $1/2$.
+\par\textit{Marking:} 1 mark for the three marginals.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} Only $(1,1)$ qualifies, so $P(A\cap B)=1/4$.
+\par\textit{Marking:} 1 mark for 1/4.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} Only $(1,0)$ qualifies, so $P(A\cap C)=1/4$.
+\par\textit{Marking:} 1 mark for 1/4.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} Only $(0,1)$ qualifies, so $P(B\cap C)=1/4$.
+\par\textit{Marking:} 1 mark for 1/4.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Every pairwise intersection has probability $1/4=(1/2)(1/2)$, so they are pairwise independent. The triple intersection is empty: $P(A\cap B\cap C)=0\ne(1/2)^3$. Thus they are not mutually independent.
+\par\textit{Marking:} 1 mark for pairwise verification; 1 for the triple test and mutual conclusion.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} The likelihoods for $W=1,2,3$ are $3/4,0,1$. Thus $P(M=2)=1/4+1/3=7/12$. The stay posterior is $(1/4)/(7/12)=3/7$; switching to door 3 wins with probability $4/7$.
+\par\textit{Marking:} 1 mark for host likelihoods; 1 for the denominator; 1 for the two posteriors.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} $P(M=3)=1/12+1/3=5/12$. Staying has posterior $(1/12)/(5/12)=1/5$; switching to door 2 has posterior $4/5$. Switching is better after either opening. It wins exactly when the original choice was wrong, so its overall probability is $2/3$. Equivalently $(7/12)(4/7)+(5/12)(4/5)=2/3$.
+\par\textit{Marking:} 2 marks for the M=3 posteriors; 1 for the contingent action; 1 for the unconditional policy success.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $E(J_1)=1$. Among the first three distinct ranks, the best is equally likely in each position, so $E(J_3)=P(J_3=1)=1/3$.
+\par\textit{Marking:} 1 mark for each indicator mean; the second requires symmetry.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} For each $i$, symmetry among the first $i$ positions gives $E(J_i)=1/i$. Linearity gives $\sum_{i=1}^n1/i=H_n$.
+\par\textit{Marking:} 1 mark for the general indicator probability; 1 for the harmonic sum.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The first hire is not a replacement. Thus the expected count is $H_4-1=1/2+1/3+1/4=13/12$.
+\par\textit{Marking:} 1 mark for excluding the initial hire; 1 for 13/12.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} The total cost is $C=cn+h\sum_iJ_i$. Hence\[E(C)=cn+h\sum_iE(J_i)=cn+hH_n.\]The indicator means follow from the uniform random permutation. Summing means uses linearity, which does not require the indicators to be independent.
+\par\textit{Marking:} 1 mark for the cost variable; 1 for symmetry probabilities; 1 for the expected cost; 1 for the independence explanation.
+\end{description}
+\end{document}

@@ -1,0 +1,14 @@
+{
+  "letterStrings": 11737502,
+  "multiples": 734,
+  "sixDigitNumbers": 70110,
+  "onto5to3": 150,
+  "onto9to4": 186480,
+  "D9": 133496,
+  "oneFixedPoint": 1334960,
+  "nineFixedPoints": 0,
+  "twoSpecifiedFixed": 40320,
+  "lowerBoundSolutions": 78,
+  "symmetricUpperBounds": 15,
+  "unequalUpperBounds": 6
+}

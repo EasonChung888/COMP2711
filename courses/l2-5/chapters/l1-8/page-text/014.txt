@@ -1,0 +1,24 @@
+Number of Onto Functions (general case-cont)
+
+
+
+
+▪  What is the value of each     𝑃𝑖 ∩ 𝑃𝑗 ?
+▪  (n-2)m because each element of A can be mapped to every element of B
+   except of 𝑏𝑖 and 𝑏𝑗.
+▪  What is the value of    𝑃1 ∩ 𝑃2 ∩ ⋯ ∩  𝑃𝑟 (and every intersection of r sets)?
+▪  (n-r)m because each element of A can be mapped to every element of B
+   except of 𝑏1, 𝑏2 … 𝑏𝑟.
+▪  What is the value of    𝑃1 ∩ 𝑃2 ∩ ⋯ ∩  𝑃𝑛
+▪  0
+▪  How many intersections of r sets are there?
+▪  C(n,r)
+▪  Thus, the above equation becomes:         𝑃1 ∪ 𝑃2 ∪ ⋯  ∪ 𝑃𝑛  =
+
+
+
+
+
+
+
+                                                                                     15

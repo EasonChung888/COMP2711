@@ -1,0 +1,217 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 06}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Simplify $(p\lor(p\land q))\land(q\lor\neg q)\lor(r\land F)$, using the usual precedence. Name the laws used.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Is $p\to r$, $q\to r$, $r$ $\therefore p\lor q$ valid? Give a separating truth assignment if it is invalid.
+\examspace{3}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Let $u$ be rational and $v$ irrational. Prove by contradiction that $u+v$ is irrational. Identify the contradictory conclusions.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} Domain: all staff. $T(x)$ means trained, $C(x,y)$ means colleagues, and $K(x,y)$ means $x$ knows $y$. Translate: (i) every staff member is trained or has a trained colleague; (ii) some staff member has no two distinct colleagues who know each other. Each is worth 2 points.
+\examspace{4}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Over a nonempty common domain, prove $\exists x\forall y(P(x)\lor Q(y))\equiv\forall y\exists x(P(x)\lor Q(y))$. Explain why this swap works here.
+\examspace{5}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} From $\forall x(P(x)\to Q(x))$ and $\forall x(Q(x)\to\exists yR(x,y))$, derive $\forall x(P(x)\to\exists yR(x,y))$. Give named inference steps.
+\examspace{5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Use $\mathbb N=\{0,1,2,\ldots\}$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For $f:\{0,1,2,3\}\to\{a,b,c\}$ given by $f(0)=a$, $f(1)=f(2)=b$, $f(3)=a$, state the range and all preimages of $b$. Is $f$ onto?
+\examspace{3}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} A function $\mathbb N\to\{0,1\}$ is computable if a finite program returns its value and terminates on every input. Explain why uncomputable functions of this type must exist.
+\examspace{5}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item Every function $\mathbb N\to\{0,1\}$ can be computed by a finite program.\item The lecture names the halting problem as an example associated with an uncomputable function.\item $\mathcal P(\varnothing)=\varnothing$.\item If $A\cap B=\varnothing$, then $A\setminus B=A$.\item $|(0,1)|=|(0,1]|$.\item The range and codomain of a function must be identical.\item There is an injection $\mathbb N\to(0,1)$.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Count functions $f:\{1,2,3,4,5\}\to\{A,B,C,D\}$ with $f(1)=A$ and $f(2)\ne A$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} For $0\le k\le n$, explain by choosing and then ordering why $P(n,k)=\binom nk k!$. Include the case $k=0$, using $0!=1$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Arrange $A,B,C,D,E,F$ in a row with $AB$ contiguous in that order and $C,D$ contiguous in either order. Count the arrangements.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} Deal unordered hands of two cards to each of three labelled players from nine distinct cards, leaving three undealt. Count the deals.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Count five-digit base-five numbers whose digits are nondecreasing from left to right. Digits are $0,1,2,3,4$, repetitions are allowed, and the leading digit is nonzero.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} Count length-six nonincreasing strings over $\{0,1,2,3\}$ whose first symbol is nonzero. Repetitions are allowed.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} For a $4\times2$ matrix $A$ and a $2\times7$ matrix $B$, compute only entries $C_{ij}$ of $AB$ with $i+j$ even, where $1\le i\le4$ and $1\le j\le7$. Each computed entry uses two scalar multiplications. Count the multiplications.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} Count right/up unit-step lattice paths from $(0,0)$ to $(3,3)$ whose first step is up.
+\examspace{1.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[5 points]} Use membership bit strings and a partition by subset size to prove $\sum_{k=0}^{n}\binom nk=2^n$ for $n\ge0$.
+\examspace{4}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[5 points]} Prove combinatorially that $\sum_{k=0}^{n}2^k\binom nk=3^n$.
+\examspace{4}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Use inclusion--exclusion to count integers in $\{1,\ldots,180\}$ divisible by none of $2,3,5$.
+\examspace{5}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} In the general inclusion--exclusion union formula, an element belongs to exactly $r\ge1$ of the sets. Explain why its total signed contribution is one.
+\examspace{3}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Let $a_1,\ldots,a_{2m+1}$ be a permutation of $1,\ldots,2m+1$, where $m\ge1$. Prove that $\prod_{i=1}^{2m+1}(a_i-i)$ is even. Show by a construction that the corresponding statement need not hold for a permutation of $1,\ldots,2m$.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: A small lottery [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+A winning set is selected uniformly from the three-element subsets of $\{1,\ldots,8\}$. You hold the fixed set $\{1,2,3\}$. Let $X$ count your matches.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Describe the equally likely sample space and its size.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find $P(X=3)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Find $P(X=0)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Find $P(X\ge1)$.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Find $P(X=1\text{ or }X=2)$ and explain why the two masses may be added.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: Three sources [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+A device comes from factories $A,B,C$ with probabilities $1/2,1/3,1/6$. Their respective defect probabilities are $1/20,1/10,1/5$. These factory and defect statuses specify the experiment.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Find the probability of a defect.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Given a defect, find the factory posteriors. Which factories are most likely, and why is this not determined by defect rate alone?
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Empty bins [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+$m\ge1$ labelled balls independently choose uniformly among $n\ge2$ labelled bins. Let $I_j$ indicate that bin $j$ is empty, and let $Z=\sum_{j=1}^n I_j$. Write $q=((n-1)/n)^m$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Derive $P(I_j=1)$ and $E(I_j)$.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Find the expected number of empty bins.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Find the expected number of occupied bins.
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} For distinct $j,k$, find $P(I_j=I_k=1)$ and test independence. Then obtain $V(Z)$ by expanding $Z^2$.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

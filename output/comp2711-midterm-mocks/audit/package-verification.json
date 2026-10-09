@@ -1,0 +1,27 @@
+{
+  "zip": "COMP2711_Mock_Midterms_10_Papers_and_Solutions.zip",
+  "sha256": "779548c6dca637853038b96d2c969d453c55ea6be8a041b3e6d5c722f9aa9805",
+  "members": [
+    "COMP2711_Mock_Midterm_01.pdf",
+    "COMP2711_Mock_Midterm_01_Solutions.pdf",
+    "COMP2711_Mock_Midterm_02.pdf",
+    "COMP2711_Mock_Midterm_02_Solutions.pdf",
+    "COMP2711_Mock_Midterm_03.pdf",
+    "COMP2711_Mock_Midterm_03_Solutions.pdf",
+    "COMP2711_Mock_Midterm_04.pdf",
+    "COMP2711_Mock_Midterm_04_Solutions.pdf",
+    "COMP2711_Mock_Midterm_05.pdf",
+    "COMP2711_Mock_Midterm_05_Solutions.pdf",
+    "COMP2711_Mock_Midterm_06.pdf",
+    "COMP2711_Mock_Midterm_06_Solutions.pdf",
+    "COMP2711_Mock_Midterm_07.pdf",
+    "COMP2711_Mock_Midterm_07_Solutions.pdf",
+    "COMP2711_Mock_Midterm_08.pdf",
+    "COMP2711_Mock_Midterm_08_Solutions.pdf",
+    "COMP2711_Mock_Midterm_09.pdf",
+    "COMP2711_Mock_Midterm_09_Solutions.pdf",
+    "COMP2711_Mock_Midterm_10.pdf",
+    "COMP2711_Mock_Midterm_10_Solutions.pdf"
+  ],
+  "member_sha256_match": true
+}

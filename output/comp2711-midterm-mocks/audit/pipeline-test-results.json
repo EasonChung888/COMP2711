@@ -1,0 +1,130 @@
+{
+  "unittest_count": 10,
+  "unittest_result": "PASS",
+  "rejections": [
+    "missing problem",
+    "duplicate problem",
+    "incorrect problem score",
+    "missing solution",
+    "missing rubric",
+    "mismatched coverage",
+    "undefined concept"
+  ],
+  "math_runner_tests": [
+    "exact Fraction suite passes",
+    "failed assertion propagates"
+  ],
+  "fixture_pdfs": [
+    {
+      "file": "fixture.pdf",
+      "pages": 13,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+MSBM10",
+        "/FKPJSN+CMMI8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/PVTTLK+CMTI12",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          4
+        ],
+        "4": [
+          5
+        ],
+        "5": [
+          6
+        ],
+        "6": [
+          7
+        ],
+        "7": [
+          8
+        ],
+        "8": [
+          9
+        ],
+        "9": [
+          10
+        ],
+        "10": [
+          11
+        ]
+      }
+    },
+    {
+      "file": "fixture_Solutions.pdf",
+      "pages": 4,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/TQTHRL+CMMI8",
+        "/VDVGTR+CMTI12",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          1
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          2
+        ],
+        "6": [
+          3
+        ],
+        "7": [
+          3
+        ],
+        "8": [
+          3
+        ],
+        "9": [
+          4
+        ],
+        "10": [
+          4
+        ]
+      }
+    }
+  ],
+  "visual_review": "All 13 exam pages and 4 solution pages rendered at scale-to 1000 and viewed; detailed cover, question and first solution page checked. Double identity frame, centered three-line title, low score table, left-projecting problem headings, generous writing gaps, centered footers, compact solutions and marking notes verified. No clipping, overfull boxes, missing glyphs or overlaps observed.",
+  "formal_content_created": false,
+  "fidelity_followup": {
+    "score_table_font": "CMR17",
+    "score_table_glyph_bbox_pt": [
+      91.99,
+      571.39,
+      519.97,
+      633.23
+    ],
+    "problem_heading_left_top_bottom_pt": [
+      45.0,
+      112.75,
+      124.71
+    ],
+    "review": "Recompiled final exam and solution; both passed all PDF checks. Viewed changed cover/first problem after matching measured table height and heading top. Solutions unchanged. No overfull or missing glyph logs."
+  }
+}

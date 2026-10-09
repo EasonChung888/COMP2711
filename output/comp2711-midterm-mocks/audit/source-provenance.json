@@ -1,0 +1,65 @@
+{
+  "source_root": "/Users/eason/Documents/ChatGPT/COMP2711",
+  "files": [
+    {
+      "file": "lecture/L01-Logic-Propositional-Logic.pdf",
+      "sha256": "13085a0deba31090accf4bf74671d2f026d5f47a0743d3a537151c3517df7adb",
+      "pages": 36
+    },
+    {
+      "file": "lecture/L02-Logic-Predicate-Logic.pdf",
+      "sha256": "e3c8843263168986be6f74f42c7894d3b9bba51297b21cafd9c4a5fa455427df",
+      "pages": 49
+    },
+    {
+      "file": "lecture/L03-Logic-Inference.pdf",
+      "sha256": "bd1208bf60b94fdccb6c3a6bcd8aaf1768f25c64b4724c97f797b1c47e9a0eae",
+      "pages": 43
+    },
+    {
+      "file": "lecture/L04-Sets-and-functions-Sets-Functions.pdf",
+      "sha256": "32ef91e4da8f407cb7878eb0a9c1ac3ff4c8e8391b7e3906d1e795b52de9c98d",
+      "pages": 43
+    },
+    {
+      "file": "lecture/L11-Counting-Counting.pdf",
+      "sha256": "ddf852cfe125210306f4c6b2fee55566335e909233686372b34cf9e9fb570f44",
+      "pages": 36
+    },
+    {
+      "file": "lecture/L12-Counting-Combinations.pdf",
+      "sha256": "1a49d004cb7274dd741b65161b226da486f2492afb9828df596d24c86f59c16b",
+      "pages": 33
+    },
+    {
+      "file": "lecture/L13-Counting-Binomial.pdf",
+      "sha256": "0b376b97abd7652c44fd2ebf0bafb5428d09808fa6417773e7d470651e7f870a",
+      "pages": 26
+    },
+    {
+      "file": "lecture/L14-Counting-IE.pdf",
+      "sha256": "52838eb6278c12579ccb79ea21f1bbe131f8805979df1743ff7ab468c56a0d4f",
+      "pages": 16
+    },
+    {
+      "file": "lecture/L15-Probability-Probability.pdf",
+      "sha256": "146e81435b122fc30621172a30a59b38b85be5f06c0e80e82bb1a598d570aa8c",
+      "pages": 23
+    },
+    {
+      "file": "lecture/L16-Probability-Cond.pdf",
+      "sha256": "4b0b01a161b4de44f772cde4e184b8e0f1a6291bd8fcacc32f2beff13ff87fd6",
+      "pages": 25
+    },
+    {
+      "file": "lecture/L17-Probability-RV.pdf",
+      "sha256": "b754e2cfc93932bde510e395c10c7ccf9684f401173f6a807b115098e507ba15",
+      "pages": 37
+    },
+    {
+      "file": "knowledge_base/past_paper/COMP2711_F2025_Midterm.pdf",
+      "sha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+      "pages": 26
+    }
+  ]
+}

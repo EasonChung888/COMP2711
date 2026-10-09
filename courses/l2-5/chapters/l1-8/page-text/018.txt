@@ -1,0 +1,17 @@
+   Exercise on Derangements
+
+
+▪ A machine that inserts letters into envelopes goes
+  haywire and inserts letters randomly into envelopes. In
+  a group of 100 letters, how many ways if
+a) No letter is put into the correct envelope?
+Answer: 𝐷100
+b) Exactly 1 letter is put into the correct envelope?
+Answer: C(100,1)∙𝐷99 ways to choose the letter correctly
+stuffed. 𝐷99 ways to insert the remaining 99 letters all
+incorrectly.
+c) Exactly 98 letters are put into the correct envelopes?
+Answer: C(100,98)=C(100,2). Choose two letters to be
+misplaced and there is only one way to misplace them.
+
+                                                                    19

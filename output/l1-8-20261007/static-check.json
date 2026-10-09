@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "pages": 22,
+  "lessons": 4,
+  "questions": 11,
+  "questionsPerLesson": [
+    {
+      "topic": "inclusion-exclusion",
+      "count": 3
+    },
+    {
+      "topic": "onto-functions",
+      "count": 2
+    },
+    {
+      "topic": "derangements",
+      "count": 3
+    },
+    {
+      "topic": "bounded-solutions",
+      "count": 3
+    }
+  ],
+  "serialLifecycleEvents": 88,
+  "localLinks": 721,
+  "protectedFiles": 3148,
+  "allowedChanges": [
+    "courses/l2-5/counting.html",
+    "courses/l2-5/index.html",
+    "courses/l2-5/tools/chapter-render.mjs",
+    "courses/l2-5/tools/portal.mjs"
+  ],
+  "originalResponsesPreserved": true
+}

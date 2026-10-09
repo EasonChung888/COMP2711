@@ -1,0 +1,140 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 10}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} (i) Tautology: $(\neg p\lor q)\lor(\neg q\lor p)$ contains complementary pairs. (ii) Contradiction, using the XOR/negated-biconditional equivalence and negation law:\[(p\leftrightarrow q)\land(p\oplus q)\equiv(p\leftrightarrow q)\land\neg(p\leftrightarrow q)\equiv F.\] (iii) Contingency: it simplifies to $\neg p\land\neg q$, true when both are F and false when both are T.
+\par\textit{Marking:} 1 each correct class with justification. A correct semantic justification also earns the classification mark.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} The liar sentence is not a proposition: assigning either truth value makes its own assertion inconsistent. The second claim is also false: $q$ only if $p$ means $q\to p$, the converse. $p=F,q=T$ satisfies the given implication but refutes that converse.
+\par\textit{Marking:} 1 paradox classification/reason; 1 only-if direction and counterassignment.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} (i) Write $u=a/b$, $v=c/d$ with integer numerators and $b,d\ne0$. Since $v\ne0$, $c\ne0$. Thus $u/v=ad/(bc)$ is a ratio of integers with nonzero denominator. (ii) Write $n=2k+1$. Then $n(n+2)=(2k+1)(2k+3)=2(2k^2+4k+1)+1$, with integer witness $2k^2+4k+1$, so the product is odd.
+\par\textit{Marking:} (i) 1 representations, 1 quotient, 1 c/nonzero denominator checks; (ii) 1 expansion, 1 odd integer witness.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} The grouping is $(\forall xP(x))\lor Q(x)$. The $x$ in $P$ is bound and the $x$ in $Q$ is free, so the expression is open and not yet a proposition. The translation is $\exists y\in\mathbb R\,\forall x\in\mathbb R(x\le y)$, false since $x=y+1$ defeats any candidate $y$.
+\par\textit{Marking:} 2 grouping and free/open status; 1 translation; 1 candidate-dependent counterexample.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[\forall x(\neg P(x)\lor A)\equiv(\forall x\neg P(x))\lor A\equiv\neg\exists xP(x)\lor A\equiv(\exists xP(x))\to A.\] The steps use implication, null quantification and quantifier negation; moving the antecedent quantifier reverses its type. On the empty domain take $A=F$: the left universal is vacuously T, whereas the right is $F\land T=F$.
+\par\textit{Marking:} 2 valid equivalence derivation/polarity; 1 empty-domain choice; 1 both side values.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} Choose fresh $a$ satisfying $R(a)\land S(a)$ by existential instantiation. Simplify to $R(a),S(a)$. Instantiate $R(a)\to\neg Q(a)$ and use modus ponens to get $\neg Q(a)$. Instantiate $P(a)\to Q(a)$ and use modus tollens to get $\neg P(a)$. Conjoin $S(a)\land\neg P(a)$ and existentially generalize.
+\par\textit{Marking:} 1 fresh witness/simplification; 1 first UI and MP; 1 second UI; 1 modus tollens; 1 conjunction/EG.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $A\setminus B=\{0\}$ and $U\setminus(A\cup B)=\{1,5\}$. Since $A\cap B=\{2,4\}$, the union size is $3+3-2=4$, agreeing with the roster $\{0,2,3,4\}$.
+\par\textit{Marking:} 1 both difference/complement rosters; 1 union size with intersection identity.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} \[h(n)=\begin{cases}n/2,&n\text{ even},\\-(n+1)/2,&n\text{ odd}.\end{cases}\] Each branch is injective, and the branch ranges are disjoint, so $h$ is injective. Every $z\ge0$ has preimage $2z$, and every $z<0$ has preimage $-2z-1\in\mathbb N$, so it is onto.
+\par\textit{Marking:} 1 formula and integer outputs; 1 injection including disjoint ranges; 1 preimages for all integers.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{F}. No finite natural-number list contains every natural number.\item \textbf{T}. The map $n\mapsto2n$ is a bijection from $\mathbb N$.\item \textbf{T}. Encode by six increasing positions and enumerate finite layers; varying the last position gives infinitely many sequences.\item \textbf{T}. Filter an enumeration of rationals; $1/(n+2)$ gives infinitely many members.\item \textbf{T}. A proper subset omits at least one distinct element of the finite set.\item \textbf{F}. Such a listing would make it countable.\item \textbf{F}. Programs are finite strings over a finite alphabet and can be ordered by length.\end{enumerate}
+\par\textit{Marking:} Award 1 point per correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} The square-sum identity gives $\sum_{k=0}^{6}\binom6k^2=\binom{12}{6}=924$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} The triple forms one of six circular units, whose orders number $5!$. Its internal orders number $3!$, giving $5!3!=720$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The unrestricted count is $6!/(2!2!2!)=90$. Compressing AA yields $5!/(2!2!)=30$ forbidden strings. Thus $90-30=60$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} Subtract committees containing the designated pair: $\binom{10}{6}-\binom84=140$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} If the A-count is $2t$, for $t=0,1,2,3$, the remaining B,C counts have $7-2t$ possibilities. Sum: $7+5+3+1=16$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} Choose four of each term to obtain exponent zero, giving $\binom84(-2)^4=1120$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} After fixing image 2, the first input can use only 3 or 4. The two remaining images are assigned in $2!$ ways, giving $2\cdot2!=4$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} Total paths are $\binom73$. A forbidden RR prefix leaves two right and three up steps, giving $\binom53$. Subtract to get $35-10=25$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} In a $2n$-element ground set, complementation is an inverse-to-itself bijection from subsets of size below $n$ to subsets of size above $n$, because complementary sizes add to $2n$. Exactly $\binom{2n}{n}$ subsets have size $n$; they map within the middle-size class rather than between the small and large classes. Remove them from all $2^{2n}$ subsets. The remaining two classes have equal size, so the small class contains $(2^{2n}-\binom{2n}{n})/2$ subsets. Partitioning that class by sizes $k=0,\ldots,n-1$ gives the sum on the left.
+\par\textit{Marking:} 3 marks for the complement bijection and inverse; 2 for the middle-size class and its separation; 3 for subtracting and halving; 2 for the disjoint size-class sum.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Let $A,B,C$ be the multiples of 2, 3 and 5. Apply IE to the three sets $A\cap B$, $A\cap C$, $B\cap C$. Their sizes are $30,18,12$. Every pairwise intersection and the triple intersection equals $A\cap B\cap C$, of size 6. Thus the count divisible by at least two is $30+18+12-3\cdot6+6=48$. Remove the six multiples divisible by all three, obtaining\[30+18+12-3\cdot6=42.\]Equivalently each exactly-two integer occurs once in the sum of pair counts, whereas a triple-divisible integer occurs three times and must be subtracted three times.
+\par\textit{Marking:} 2 marks for forming the three pair-intersection sets; 2 for their sizes; 2 for the IE union with common overlap; 2 for removing all-three integers exactly; 1 for 42.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} The one-count boxes are 0 through 8. Boxes 0 and 8 contain at most one distinct string each. If no box had three strings, the seven other boxes would hold at most two each, so at most $1+7\cdot2+1=16$ strings could be selected. Seventeen therefore force three equal-weight strings. To realize sixteen without a triple, take the unique weight-0 and weight-8 strings and two distinct strings of each weight 1 through 7. Each interior weight has at least two strings, for example ones in positions $1,\ldots,k$ or $2,\ldots,k+1$. Hence the construction is possible and the threshold is sharp.
+\par\textit{Marking:} 3 marks for recognizing endpoint capacities and the bound sixteen; 2 for the forcing conclusion; 2 for the explicit attainable sharp construction.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} $P(A)=1/8+1/8=1/4$ and $P(B)=1/4+1/8=3/8$.
+\par\textit{Marking:} 1 mark for both marginal sums.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} The intersection is $\{11\}$, with mass $1/8$.
+\par\textit{Marking:} 1 mark for 1/8.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} $P(A\cup B)=1/4+3/8-1/8=1/2$.
+\par\textit{Marking:} 1 mark for the union mass.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} By De Morgan, $A^c\cap B^c=(A\cup B)^c=\{00\}$, so its probability is $1/2$.
+\par\textit{Marking:} 1 mark for the complementary event mass.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} $A\cup B$ is the disjoint union of $A\setminus B$, $B\setminus A$, and $A\cap B$. Adding their masses gives $P(A)+P(B)-P(A\cap B)$. Here $P(A)P(B)=3/32\ne1/8=P(A\cap B)$, so the events are dependent.
+\par\textit{Marking:} 1 mark for a valid disjoint decomposition and union identity; 1 for the independence comparison.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} The conditioning event contains $\binom42=6$ strings. Three put a one first, giving $P(E\mid F)=3/6=1/2$. The three adjacent placements $(1,2),(2,3),(3,4)$ give $P(G\mid F)=3/6=1/2$.
+\par\textit{Marking:} 1 mark for the six-outcome restricted space; 1 for each correct favorable count/probability.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} $E$ has eight strings, of which $\binom31=3$ contain exactly two ones. Hence $P(F\mid E)=3/8=P(F)$, establishing independence. The test $P(F\mid E)=P(F)$ is equivalent to joint factorization only when $P(E)>0$; here $P(E)=1/2$. If $P(E)=0$, the conditional quotient is undefined.
+\par\textit{Marking:} 1 mark for restricted-space counting; 1 for equality with the marginal; 1 for the independence conclusion; 1 for the positive-denominator requirement.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $E(I_i)=p$ and $E(I_i^2)=p$, so $V(I_i)=p-p^2=p(1-p)$.
+\par\textit{Marking:} 1 mark for the mean; 1 for the second-moment variance.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Linearity gives $E(S)=np$. Independent variance addition gives $V(S)=np(1-p)$. Only the latter addition requires the stated independence.
+\par\textit{Marking:} 1 mark for each result with the correct independence role.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} $E(M)=np/n=p$ and $V(M)=np(1-p)/n^2=p(1-p)/n$. The mean is preserved while the variance is divided by n.
+\par\textit{Marking:} 1 mark for each result with correct scaling.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} Put $\mu=E(X)$. Expanding centered squares gives\[V(X)=E(X^2-2\mu X+\mu^2)=E(X^2)-2\mu^2+\mu^2=E(X^2)-\mu^2.\]With $\nu=E(Y)$, independence gives $E[(X-\mu)(Y-\nu)]=E(X-\mu)E(Y-\nu)=0$. Thus\[\begin{aligned}V(X+Y)&=E\bigl([(X-\mu)+(Y-\nu)]^2\bigr)\\&=V(X)+2\cdot0+V(Y)=V(X)+V(Y).\end{aligned}\]
+\par\textit{Marking:} 2 marks for the centered-square expansion and variance identity; 2 for the vanishing centered cross-product and addition proof.
+\end{description}
+\end{document}

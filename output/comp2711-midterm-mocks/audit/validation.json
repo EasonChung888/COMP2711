@@ -1,0 +1,984 @@
+{
+  "papers": 10,
+  "problems": 100,
+  "coverage_concepts": 95,
+  "pdfs": [
+    {
+      "file": "COMP2711_Mock_Midterm_01.pdf",
+      "pages": 14,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+MSAM10",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/JAGKKY+CMTI12",
+        "/PVTTLK+CMSY8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          4
+        ],
+        "4": [
+          5
+        ],
+        "5": [
+          7
+        ],
+        "6": [
+          8
+        ],
+        "7": [
+          9
+        ],
+        "8": [
+          10
+        ],
+        "9": [
+          11
+        ],
+        "10": [
+          12
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_01_Solutions.pdf",
+      "pages": 5,
+      "fonts": [
+        "/AKHCZK+CMEX10",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMR8",
+        "/DDIEWW+MSBM10",
+        "/FKPJSN+CMMI8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/TQTHRL+CMSY10",
+        "/VDVGTR+CMSY8",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          3
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          4
+        ],
+        "10": [
+          5
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_02.pdf",
+      "pages": 14,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+MSBM10",
+        "/FKPJSN+CMSY8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/JAGKKY+CMTI12",
+        "/PVTTLK+CMMI8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          4
+        ],
+        "4": [
+          5
+        ],
+        "5": [
+          7
+        ],
+        "6": [
+          8
+        ],
+        "7": [
+          9
+        ],
+        "8": [
+          10
+        ],
+        "9": [
+          11
+        ],
+        "10": [
+          12
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_02_Solutions.pdf",
+      "pages": 5,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMEX10",
+        "/DDIEWW+CMMI8",
+        "/FKPJSN+CMSY8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/TQTHRL+CMSY10",
+        "/VDVGTR+MSBM10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          3
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          4
+        ],
+        "10": [
+          5
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_03.pdf",
+      "pages": 15,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+MSBM10",
+        "/FKPJSN+CMMI8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/PVTTLK+CMTI12",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          5
+        ],
+        "4": [
+          6
+        ],
+        "5": [
+          8
+        ],
+        "6": [
+          9
+        ],
+        "7": [
+          10
+        ],
+        "8": [
+          11
+        ],
+        "9": [
+          12
+        ],
+        "10": [
+          13
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_03_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMEX10",
+        "/DDIEWW+SFRM1200",
+        "/FKPJSN+CMSY8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMSY10",
+        "/PVTTLK+CMMI8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+MSBM10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          4
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          5
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_04.pdf",
+      "pages": 15,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+CMTI12",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/PVTTLK+CMMI8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          5
+        ],
+        "4": [
+          6
+        ],
+        "5": [
+          8
+        ],
+        "6": [
+          9
+        ],
+        "7": [
+          10
+        ],
+        "8": [
+          11
+        ],
+        "9": [
+          12
+        ],
+        "10": [
+          13
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_04_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+MSBM10",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMEX10",
+        "/DDIEWW+CMMI8",
+        "/FKPJSN+CMSY8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/TQTHRL+CMSY10",
+        "/VDVGTR+CMR8",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          4
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          5
+        ],
+        "8": [
+          5
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          6
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_05.pdf",
+      "pages": 14,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+CMTI12",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/JAGKKY+CMSY8",
+        "/NOMARO+CMR6",
+        "/PVTTLK+CMMI8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          4
+        ],
+        "4": [
+          5
+        ],
+        "5": [
+          7
+        ],
+        "6": [
+          8
+        ],
+        "7": [
+          9
+        ],
+        "8": [
+          10
+        ],
+        "9": [
+          11
+        ],
+        "10": [
+          12
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_05_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+MSBM10",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMR8",
+        "/DDIEWW+CMSY8",
+        "/FKPJSN+CMMI8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMSY10",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMEX10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          3
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          5
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          5
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_06.pdf",
+      "pages": 14,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+MSAM10",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/JAGKKY+CMTI12",
+        "/PVTTLK+CMMI8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          4
+        ],
+        "4": [
+          5
+        ],
+        "5": [
+          7
+        ],
+        "6": [
+          8
+        ],
+        "7": [
+          9
+        ],
+        "8": [
+          10
+        ],
+        "9": [
+          11
+        ],
+        "10": [
+          12
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_06_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+CMEX10",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+SFRM1200",
+        "/DDIEWW+CMR8",
+        "/FKPJSN+CMMI8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/PVTTLK+CMSY8",
+        "/TQTHRL+CMSY10",
+        "/VDVGTR+MSBM10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          3
+        ],
+        "5": [
+          4
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          5
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          6
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_07.pdf",
+      "pages": 14,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+CMMI8",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/JAGKKY+CMTI12",
+        "/PVTTLK+CMSY8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          4
+        ],
+        "4": [
+          5
+        ],
+        "5": [
+          7
+        ],
+        "6": [
+          8
+        ],
+        "7": [
+          9
+        ],
+        "8": [
+          10
+        ],
+        "9": [
+          11
+        ],
+        "10": [
+          12
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_07_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+CMEX10",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMR8",
+        "/DDIEWW+CMMI8",
+        "/FKPJSN+CMSY8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/TQTHRL+CMSY10",
+        "/VDVGTR+MSBM10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          3
+        ],
+        "5": [
+          4
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          5
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          6
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_08.pdf",
+      "pages": 14,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+CMTI12",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/JAGKKY+CMSY8",
+        "/PVTTLK+CMMI8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          4
+        ],
+        "4": [
+          5
+        ],
+        "5": [
+          7
+        ],
+        "6": [
+          8
+        ],
+        "7": [
+          9
+        ],
+        "8": [
+          10
+        ],
+        "9": [
+          11
+        ],
+        "10": [
+          12
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_08_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+MSBM10",
+        "/DDIEWW+CMMI8",
+        "/FKPJSN+CMSY8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/TQTHRL+CMSY10",
+        "/VDVGTR+CMEX10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          5
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_09.pdf",
+      "pages": 15,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+CMTI12",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          5
+        ],
+        "4": [
+          6
+        ],
+        "5": [
+          8
+        ],
+        "6": [
+          9
+        ],
+        "7": [
+          10
+        ],
+        "8": [
+          11
+        ],
+        "9": [
+          12
+        ],
+        "10": [
+          13
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_09_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+SFRM1200",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY8",
+        "/DDIEWW+CMR8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMMI12",
+        "/TQTHRL+CMSY10",
+        "/VDVGTR+CMEX10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          5
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_10.pdf",
+      "pages": 15,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMSY10",
+        "/DDIEWW+CMTI12",
+        "/FKPJSN+MSBM10",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+SFRM1200",
+        "/JAGKKY+CMSY8",
+        "/PVTTLK+CMMI8",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+CMR17",
+        "/YEUUOC+CMEX10"
+      ],
+      "problem_start_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          5
+        ],
+        "4": [
+          6
+        ],
+        "5": [
+          8
+        ],
+        "6": [
+          9
+        ],
+        "7": [
+          10
+        ],
+        "8": [
+          11
+        ],
+        "9": [
+          12
+        ],
+        "10": [
+          13
+        ]
+      }
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_10_Solutions.pdf",
+      "pages": 6,
+      "fonts": [
+        "/AKHCZK+CMR8",
+        "/BZIVMZ+CMR12",
+        "/CAFSZL+CMEX10",
+        "/DDIEWW+CMMI8",
+        "/IHAIZV+CMBX12",
+        "/IXFAWU+CMSY10",
+        "/TQTHRL+CMMI12",
+        "/VDVGTR+MSBM10",
+        "/YEUUOC+CMTI12"
+      ],
+      "problem_start_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          3
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          5
+        ],
+        "10": [
+          5
+        ]
+      }
+    }
+  ]
+}

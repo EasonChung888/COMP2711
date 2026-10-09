@@ -1,0 +1,19 @@
+ Proof (cnt’d)
+
+
+▪ Recall from previous lecture that a corollary of the
+  binomial theorem states (the number of subsets that
+  have even cardinality equals the number of subsets
+ 𝑛that have odd cardinality):
+෍    𝑛  (−1)𝑘  =   𝑛   −  𝑛  +    𝑛  −  𝑛   +  𝑛  −   𝑛  + ⋯  = 0
+𝑘=0  𝑘             0      1       2      3     4      5
+Thus, setting 𝑛   = 𝑟:
+𝐶 𝑟,0  − 𝐶  𝑟,1  + 𝐶  𝑟,2  − 𝐶 𝑟,3  +  ⋯ +  −1   𝑟𝐶 𝑟,𝑟  =  0.
+▪  Hence,
+ 𝐶 𝑟,0  =  1 = 𝐶  𝑟,1  − 𝐶  𝑟,2  + 𝐶 𝑟,3  −  ⋯  +  −1  𝑟+1𝐶  𝑟,𝑟
+
+
+
+
+
+                                                               10

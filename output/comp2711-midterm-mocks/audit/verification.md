@@ -1,0 +1,39 @@
+# Final integration verification
+
+Integrated 2026-10-09 from subject-gate base `bd37bebe3836bb42769121080d7941d314934ea5` in the isolated worktree. Mathematics in all three reviewed JSON files was preserved.
+
+## Mathematical and source acceptance
+
+Read `logic-review.md`, including the independent re-review closing mutual-knowledge translation and law-justification findings; `counting-review.md`, including the re-review closing all five findings; and `probability-review.md`, whose full review found no actionable content issue. Their final subject verdicts are PASS. These reports independently work all 100 problems and 319 labelled/unsplit parts, including nested classifications and derivation requests. They are the evidence for general proofs and interpretation, rather than finite tests alone.
+
+The three exact suites passed: logic 153,804 assertions; counting 1,505 checks; probability 30 independent construction checks plus its structural contract. `math-checks.json` stores suite hashes, exit codes and exact output. These different counts are not combined into a count of independent mathematical proofs.
+
+`source-provenance.json` rehashes all eleven current original lecture PDFs (367 pages) and the 26-page Fall 2025 source paper against the reviewed profile. `provenance.csv` records the exact current path, SHA-256, verified/in-scope/midterm metadata and mock-problem association for each of 36 distinct cited notes. The original source files were authoritative and read-only. Historical sources calibrate format and method; the lecture capability inventory establishes scope. Known source ambiguities were excluded or explicitly repaired in newly written prompts, as the subject reviews explain.
+
+## Collective coverage and complete-paper calibration
+
+`coverage.csv` joins all 95 source clusters, their original page references, author concept IDs, assessment references, depth, capability and independent subject report. Primary original page ranges were reconciled with authored coverage and exact reciprocal tags; no cluster or substantive page range is absent. `lecture-page-inventory.csv` accounts for every physical page: 325 substantive/repeated-example pages and 42 background pages. Background dispositions identify titles/outlines/readings and the six specific motivation/commentary cases. The full source audit supplies the exclusions and shallow recognition boundaries, including CH, Schroder-Bernstein, density, average-case cost and uncomputable-function existence. Independent reviews checked substantive demands rather than counting supplied formulas or vocabulary as assessment.
+
+Every paper retains all four domains, the ten original slot roles, 120 minutes, the score vector 10/13/12/16/10/9/7/6/7/10, and 100 points. All part scores and marking notes reconcile. `integration-checks.json` records this, English content, 319 parts, complete-prompt duplicate rejection and content/review hashes. Exact distinctness supplements the subject reviews' construction-level variation; it does not by itself reject numerical reskins.
+
+The original's assessment anchors are retained: three Q1 parts, three Q2 parts, Q3(a,b) plus seven short classifications, eight quick Q4 responses, proof/IE/pigeonhole slots, five Q8 parts, two Q9 parts, and four Q10 responses. New papers have 31–33 comparable top-level parts versus 31 in the source when its eight Q4 micro-items are counted separately. Occasional Q5/Q6/Q7 splits scaffold the same fixed-score work. Nothing was added simply to increase the number of topics.
+
+`density.csv` gives all 100 slot comparisons using the same extracted alphabetic-token heuristic, source prompt pages cut before `Answer:`, and allocated writing spaces. Original total: 937 tokens; mocks: 579–770. Q4 original: 235; mocks: 149–198. Formula tokens, symbols and hyphenation make this a reading-density proxy, not a time measurement. Total allocated question writing space is 91.3–98.8 cm per paper plus two draft pages. The final exam files are 14–15 pages, compared with the original 26-page mixed question/answer/draft file.
+
+Combined workload remains within the source's response architecture and uses exact expressions rather than bulk arithmetic. Extra demand comes from proof choices, conditional models and conceptual distinctions. The ten Q10 constructions rotate measurements, hats, hiring, search/sort, coupons, bins, pairwise-only variance, dependent products, nonlinear transforms and variance proofs. The logic/counting reports likewise document materially different constructions and the few deliberately repeated short concepts. Paper 08's elementary terminology block is locally easier, balanced by its parity cycle, diagonal proof and later probability reasoning. These are editorial calibration judgments supported by independent content review; no student timed pilot was performed or claimed.
+
+## Final PDF and layout checks
+
+Seventeen pipeline tests passed, including focused first-item and native-picture reservation regressions. All 20 sources compiled through Tectonic. All native logs and compiler transcripts are retained under `build-logs/`; zero errors, emergency/fatal stops, overfull boxes or missing-character warnings. Full validation passed all 20 PDFs: exact filename/pair set, no other files in `pdf/`, 612 × 792 pt on every page, embedded CMR12 body with Computer Modern/CM-Super/AMS mathematics, usable extracted text, ten unique headings, distinct question-problem start pages, correct centered page numbers and body/footer separation. CM-Super is used for an accented name; it is a Computer Modern family, not a substituted office font.
+
+Bottom margin changed from 0.80 to 1.38 in. The final page-number bounds are top 711.8033 and bottom 723.7586 pt, matching original top 711.79/bottom 723.75 within 0.02 pt. Their physical center is 306 pt as approved; the original glyph center is 291.6 pt. Maximum body glyph bottom is 694.9590 pt, leaving at least 16.84 pt to the footer top. Cover score-table bottom remains 633.234 pt, and the original matched heading/table placement is preserved.
+
+Solution headings reserve heading plus first-part space as one decision; the first item has no later independent reservation that could strand its heading. Picture-bearing items reserve native picture height plus seven baselines before the label, localized to the two tree parts. All 100 solution headings have their first item on the same page. Root independently viewed the final cover/Q1 and both tree pages; 03.4(h) and 04.4(e) labels and diagrams stay together on solution page 3, with clear branches and terminal labels. This is a spotcheck; complete visual acceptance is recorded separately.
+
+`final-manifest.json` records SHA-256, per-document page counts, measured footer/body bounds and heading checks. All 202 final pages were rendered at 120 dpi in `final-renders/`. The two disjoint visual reports certify only their exact inspected PDF hashes; `visual-review.md` reconciles them before release. No old partial preview is a deliverable.
+
+## Packaging and delivery
+
+`deliver.py` packages exactly the 20 stable PDF basenames with Python zipfile, reopens the archive, verifies member set/count and CRC, and compares every decompressed member SHA-256 with the final PDF manifest. `package-verification.json` records ZIP SHA-256 and members. Source, audits and temporary material are excluded from the ZIP.
+
+The delivery copy includes this task's twenty PDFs, ZIP, source/content/tools excluding cached binaries, useful audits/logs, design, implementation plan and Markdown task reports. It excludes raw source extraction, raster evidence, previews, caches and unrelated files. `delivery-verification.json` records all copied relative paths and matching hashes. Raster evidence remains in the isolated worktree for final review. No merge or push is performed, and no original lecture, past paper, knowledge-base note or website is altered.

@@ -6,6 +6,73 @@
  const write=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));}catch{/* The pages remain readable without storage. */}};
  const get=key=>read(prefix+key);
  const set=(key,value)=>write(prefix+key,value);
+ // A slide keeps the same note in its lesson and its standalone page.
+ document.querySelectorAll('.slide-explanation[data-slide]').forEach((slide,index)=>{
+  const response=slide.querySelector('.response-body');
+  const page=Number(slide.dataset.slide);
+  if(!response||!Number.isInteger(page)||page<1)return;
+  const key=prefix+'slide-note:'+page;
+  const id='slide-note-'+index;
+  const layout=document.createElement('div');
+  layout.className='slide-study-layout';
+  const notes=document.createElement('aside');
+  notes.className='slide-notes';
+  notes.setAttribute('aria-label',`第 ${page} 页笔记`);
+  const label=document.createElement('label');
+  label.htmlFor=id;
+  label.textContent=`第 ${page} 页笔记`;
+  const hint=document.createElement('p');
+  hint.id=id+'-hint';
+  hint.className='slide-notes-hint';
+  hint.textContent='自动保存在当前浏览器，仅此设备可见。';
+  const input=document.createElement('textarea');
+  input.id=id;
+  input.rows=10;
+  input.placeholder='写下你的理解、疑问或例子…';
+  input.setAttribute('aria-describedby',hint.id+' '+id+'-status');
+  const status=document.createElement('p');
+  status.id=id+'-status';
+  status.className='slide-notes-status';
+  status.setAttribute('role','status');
+  let unsaved=false;
+  function showStatus(message,error=false){
+   status.textContent=message;
+   notes.classList.toggle('has-storage-error',error);
+  }
+  function restore(){
+   if(unsaved)return;
+   try{
+    const stored=localStorage.getItem(key);
+    const value=stored===null?'':JSON.parse(stored);
+    if(typeof value!=='string')throw new Error('Invalid note');
+    input.value=value;
+    showStatus(value?'已保存到此浏览器':'输入后自动保存');
+   }catch{
+    showStatus('无法读取已存笔记；新输入可能覆盖旧记录，请先复制备份。',true);
+   }
+  }
+  input.addEventListener('input',()=>{
+   unsaved=true;
+   try{
+    if(input.value)localStorage.setItem(key,JSON.stringify(input.value));
+    else localStorage.removeItem(key);
+    unsaved=false;
+    showStatus(input.value?'已保存到此浏览器':'笔记已清空');
+   }catch{
+    showStatus('未能保存，请先复制笔记备份，并检查浏览器存储设置。',true);
+   }
+  });
+  window.addEventListener('pageshow',restore);
+  window.addEventListener('storage',event=>{
+   if(event.key===key||event.key===null)restore();
+  });
+  notes.append(label,hint,input,status);
+  response.before(layout);
+  layout.append(response,notes);
+  const main=slide.closest('main');
+  if(main)main.classList.add('has-slide-notes');
+  restore();
+ });
  const words=value=>(value||'').split(' ').filter(Boolean);
  const sitePath=()=>{
   const brand=document.querySelector('a.brand');

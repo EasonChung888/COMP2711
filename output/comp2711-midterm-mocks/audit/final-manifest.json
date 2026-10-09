@@ -1,0 +1,2716 @@
+{
+  "outputs": [
+    {
+      "file": "COMP2711_Mock_Midterm_01.pdf",
+      "sha256": "7bcc674d06850c3c4814c43a9ee171cdd334ddc36a8462f8c9eab968c816e142",
+      "pages": 14,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99660857600014
+        },
+        {
+          "page": 3,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.99676857599974
+        },
+        {
+          "page": 4,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.99658857600014
+        },
+        {
+          "page": 5,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.99655857600027
+        },
+        {
+          "page": 6,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 7,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996578576
+        },
+        {
+          "page": 8,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99654857600007
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 10,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.99312715200006
+        },
+        {
+          "page": 11,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.993107152
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9931471519997
+        },
+        {
+          "page": 13,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 476.919512592
+        },
+        {
+          "page": 3,
+          "bottom": 495.801472592
+        },
+        {
+          "page": 4,
+          "bottom": 588.376532592
+        },
+        {
+          "page": 5,
+          "bottom": 616.808782592
+        },
+        {
+          "page": 6,
+          "bottom": 179.243692592
+        },
+        {
+          "page": 7,
+          "bottom": 202.36137259199995
+        },
+        {
+          "page": 8,
+          "bottom": 175.33119259199998
+        },
+        {
+          "page": 9,
+          "bottom": 204.22285259199998
+        },
+        {
+          "page": 10,
+          "bottom": 421.1945625919999
+        },
+        {
+          "page": 11,
+          "bottom": 359.363232592
+        },
+        {
+          "page": 12,
+          "bottom": 437.2530025919999
+        },
+        {
+          "page": 13,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_01",
+      "rendered_pages": 14
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_01_Solutions.pdf",
+      "sha256": "4c62a81cbfdf5ca2767fa45aaff48f2a41467d1a520e2553093086f760c947b9",
+      "pages": 5,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.803334592,
+          "bottom": 723.758502592,
+          "center": 305.99678857600003
+        },
+        {
+          "page": 2,
+          "top": 711.8033545920001,
+          "bottom": 723.7585225920001,
+          "center": 305.99663857599995
+        },
+        {
+          "page": 3,
+          "top": 711.8033745919996,
+          "bottom": 723.7585425919996,
+          "center": 305.9965185759997
+        },
+        {
+          "page": 4,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.996588576
+        },
+        {
+          "page": 5,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99656857599996
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 694.9589525920001
+        },
+        {
+          "page": 2,
+          "bottom": 674.7183125920001
+        },
+        {
+          "page": 3,
+          "bottom": 679.0257125919995
+        },
+        {
+          "page": 4,
+          "bottom": 599.438012592
+        },
+        {
+          "page": 5,
+          "bottom": 289.6255225919999
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 5,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_01_Solutions",
+      "rendered_pages": 5
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_02.pdf",
+      "sha256": "0eb887279dfe4816db3b8452f80fe4086159c3c35b5de0798fc4017bec6daaff",
+      "pages": 14,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99658857600014
+        },
+        {
+          "page": 3,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.9966985759998
+        },
+        {
+          "page": 4,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.9966285759999
+        },
+        {
+          "page": 5,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.99657857599993
+        },
+        {
+          "page": 6,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 7,
+          "top": 711.8033645920001,
+          "bottom": 723.758532592,
+          "center": 305.99654857600007
+        },
+        {
+          "page": 8,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99656857599996
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 10,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.99314715200023
+        },
+        {
+          "page": 11,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99309715199996
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.993187152
+        },
+        {
+          "page": 13,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 438.563352592
+        },
+        {
+          "page": 3,
+          "bottom": 524.147932592
+        },
+        {
+          "page": 4,
+          "bottom": 560.030072592
+        },
+        {
+          "page": 5,
+          "bottom": 602.3629525919999
+        },
+        {
+          "page": 6,
+          "bottom": 193.689522592
+        },
+        {
+          "page": 7,
+          "bottom": 234.50491172800002
+        },
+        {
+          "page": 8,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 9,
+          "bottom": 204.22285259199998
+        },
+        {
+          "page": 10,
+          "bottom": 406.7487325919999
+        },
+        {
+          "page": 11,
+          "bottom": 344.917402592
+        },
+        {
+          "page": 12,
+          "bottom": 451.698832592
+        },
+        {
+          "page": 13,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_02",
+      "rendered_pages": 14
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_02_Solutions.pdf",
+      "sha256": "c9ee65221cf248693da1bd3417e9a3a757e510984610b4011b7f96f9148dac07",
+      "pages": 5,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.9966485759997
+        },
+        {
+          "page": 2,
+          "top": 711.8033545919998,
+          "bottom": 723.7585225919997,
+          "center": 305.9965785760001
+        },
+        {
+          "page": 3,
+          "top": 711.8033845920003,
+          "bottom": 723.7585525920002,
+          "center": 305.99646857600004
+        },
+        {
+          "page": 4,
+          "top": 711.803384592,
+          "bottom": 723.758552592,
+          "center": 305.9965885759999
+        },
+        {
+          "page": 5,
+          "top": 711.8034045920001,
+          "bottom": 723.7585725920001,
+          "center": 305.99678857599963
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 673.0454125919999
+        },
+        {
+          "page": 2,
+          "bottom": 684.5190625919997
+        },
+        {
+          "page": 3,
+          "bottom": 684.5547525920002
+        },
+        {
+          "page": 4,
+          "bottom": 644.780242592
+        },
+        {
+          "page": 5,
+          "bottom": 481.975092592
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 5,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_02_Solutions",
+      "rendered_pages": 5
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_03.pdf",
+      "sha256": "f043d40f52a54651e6623dd2fa952fdae929a32e2064db4f1b340d973cf019e0",
+      "pages": 15,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9966085760001
+        },
+        {
+          "page": 3,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99663857599995
+        },
+        {
+          "page": 4,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965885759999
+        },
+        {
+          "page": 5,
+          "top": 711.8033545920001,
+          "bottom": 723.7585225920001,
+          "center": 305.996618576
+        },
+        {
+          "page": 6,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.99659857599994
+        },
+        {
+          "page": 7,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99656857599996
+        },
+        {
+          "page": 8,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.9965585759999
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 10,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.993107152
+        },
+        {
+          "page": 11,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.9931271520001
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.993117152
+        },
+        {
+          "page": 13,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.99312715200006
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 15,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 453.009182592
+        },
+        {
+          "page": 3,
+          "bottom": 364.457992592
+        },
+        {
+          "page": 4,
+          "bottom": 118.76636259199995
+        },
+        {
+          "page": 5,
+          "bottom": 645.6146525920001
+        },
+        {
+          "page": 6,
+          "bottom": 631.254612592
+        },
+        {
+          "page": 7,
+          "bottom": 179.243692592
+        },
+        {
+          "page": 8,
+          "bottom": 209.72635172800005
+        },
+        {
+          "page": 9,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 10,
+          "bottom": 307.219872592
+        },
+        {
+          "page": 11,
+          "bottom": 421.1945625919999
+        },
+        {
+          "page": 12,
+          "bottom": 388.254892592
+        },
+        {
+          "page": 13,
+          "bottom": 481.610651728
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 15,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_03",
+      "rendered_pages": 15
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_03_Solutions.pdf",
+      "sha256": "37ff4500621ae73565eff8f66f3b037aef620cc1b5cab973fb8e5ae12b3f62b9",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.8033745920001,
+          "bottom": 723.758542592,
+          "center": 305.99680857599975
+        },
+        {
+          "page": 2,
+          "top": 711.8033645920002,
+          "bottom": 723.7585325920002,
+          "center": 305.99662857599986
+        },
+        {
+          "page": 3,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996578576
+        },
+        {
+          "page": 4,
+          "top": 711.8034045920001,
+          "bottom": 723.7585725920001,
+          "center": 305.9965085760003
+        },
+        {
+          "page": 5,
+          "top": 711.803384592,
+          "bottom": 723.758552592,
+          "center": 305.9966285759995
+        },
+        {
+          "page": 6,
+          "top": 711.8033645920001,
+          "bottom": 723.758532592,
+          "center": 305.9965585759998
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 678.7273225920001
+        },
+        {
+          "page": 2,
+          "bottom": 690.4844425920002
+        },
+        {
+          "page": 3,
+          "bottom": 598.2338625919999
+        },
+        {
+          "page": 4,
+          "bottom": 660.593142592
+        },
+        {
+          "page": 5,
+          "bottom": 644.867762592
+        },
+        {
+          "page": 6,
+          "bottom": 198.489642592
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 5,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_03_Solutions",
+      "rendered_pages": 6
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_04.pdf",
+      "sha256": "af9c20fbdf777bc4d0f94db509d60c237f8e742ef08dd8979da7cbd8e2735b1e",
+      "pages": 15,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.8033745920001,
+          "bottom": 723.758542592,
+          "center": 305.99659857600017
+        },
+        {
+          "page": 3,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.996668576
+        },
+        {
+          "page": 4,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99659857599994
+        },
+        {
+          "page": 5,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965185760002
+        },
+        {
+          "page": 6,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.99657857600005
+        },
+        {
+          "page": 7,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99659857600005
+        },
+        {
+          "page": 8,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.9965585759999
+        },
+        {
+          "page": 9,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99658857599997
+        },
+        {
+          "page": 10,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9931071520001
+        },
+        {
+          "page": 11,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.993147152
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99312715199994
+        },
+        {
+          "page": 13,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.99313715200003
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 15,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 467.455012592
+        },
+        {
+          "page": 3,
+          "bottom": 364.457992592
+        },
+        {
+          "page": 4,
+          "bottom": 118.76636259199995
+        },
+        {
+          "page": 5,
+          "bottom": 579.2980625920001
+        },
+        {
+          "page": 6,
+          "bottom": 512.9939625919999
+        },
+        {
+          "page": 7,
+          "bottom": 268.61268259199994
+        },
+        {
+          "page": 8,
+          "bottom": 209.460481728
+        },
+        {
+          "page": 9,
+          "bottom": 363.91279259199996
+        },
+        {
+          "page": 10,
+          "bottom": 204.22285259199998
+        },
+        {
+          "page": 11,
+          "bottom": 421.1945625919999
+        },
+        {
+          "page": 12,
+          "bottom": 359.363232592
+        },
+        {
+          "page": 13,
+          "bottom": 509.4821525919999
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 15,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_04",
+      "rendered_pages": 15
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_04_Solutions.pdf",
+      "sha256": "2fe136a294eb8e3d907543e4626869887b3c05d1fdb73a6ac506b03244155983",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9968185759997
+        },
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9966485760002
+        },
+        {
+          "page": 3,
+          "top": 711.8033645919999,
+          "bottom": 723.7585325919998,
+          "center": 305.9965785760001
+        },
+        {
+          "page": 4,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965885760001
+        },
+        {
+          "page": 5,
+          "top": 711.803394592,
+          "bottom": 723.758562592,
+          "center": 305.99657857599976
+        },
+        {
+          "page": 6,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99656857599996
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 694.958982592
+        },
+        {
+          "page": 2,
+          "bottom": 660.085702592
+        },
+        {
+          "page": 3,
+          "bottom": 649.0873625919999
+        },
+        {
+          "page": 4,
+          "bottom": 634.786012592
+        },
+        {
+          "page": 5,
+          "bottom": 687.651802592
+        },
+        {
+          "page": 6,
+          "bottom": 410.276922592
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 6,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_04_Solutions",
+      "rendered_pages": 6
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_05.pdf",
+      "sha256": "af0af5cc2f9306235f1be3d3932b89b108248c109ca43071b1b01660ca403df8",
+      "pages": 14,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.8033745920001,
+          "bottom": 723.758542592,
+          "center": 305.99662857600003
+        },
+        {
+          "page": 3,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.99670857599966
+        },
+        {
+          "page": 4,
+          "top": 711.8033545920001,
+          "bottom": 723.7585225920001,
+          "center": 305.99660857599997
+        },
+        {
+          "page": 5,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.9965585760001
+        },
+        {
+          "page": 6,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 7,
+          "top": 711.8033745919998,
+          "bottom": 723.7585425919998,
+          "center": 305.996558576
+        },
+        {
+          "page": 8,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99654857599995
+        },
+        {
+          "page": 9,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 10,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.993107152
+        },
+        {
+          "page": 11,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.993107152
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99310715200005
+        },
+        {
+          "page": 13,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 467.455012592
+        },
+        {
+          "page": 3,
+          "bottom": 510.247302592
+        },
+        {
+          "page": 4,
+          "bottom": 622.090352592
+        },
+        {
+          "page": 5,
+          "bottom": 616.808782592
+        },
+        {
+          "page": 6,
+          "bottom": 179.243692592
+        },
+        {
+          "page": 7,
+          "bottom": 355.5156717279999
+        },
+        {
+          "page": 8,
+          "bottom": 349.46696259199996
+        },
+        {
+          "page": 9,
+          "bottom": 218.66868259199998
+        },
+        {
+          "page": 10,
+          "bottom": 450.0862225919999
+        },
+        {
+          "page": 11,
+          "bottom": 359.363232592
+        },
+        {
+          "page": 12,
+          "bottom": 466.1446625919999
+        },
+        {
+          "page": 13,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_05",
+      "rendered_pages": 14
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_05_Solutions.pdf",
+      "sha256": "3912d074a6401ed83bee3cd5fe6e73a7a7bd53d5faaa89fe8bd13372a70095ac",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.8033845919998,
+          "bottom": 723.7585525919998,
+          "center": 305.99673857600015
+        },
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99660857599997
+        },
+        {
+          "page": 3,
+          "top": 711.803384592,
+          "bottom": 723.758552592,
+          "center": 305.99652857600006
+        },
+        {
+          "page": 4,
+          "top": 711.8033945920001,
+          "bottom": 723.7585625920001,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 5,
+          "top": 711.8033845920002,
+          "bottom": 723.7585525920001,
+          "center": 305.99658857599974
+        },
+        {
+          "page": 6,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 685.7644825919998
+        },
+        {
+          "page": 2,
+          "bottom": 609.8120825919999
+        },
+        {
+          "page": 3,
+          "bottom": 671.754682592
+        },
+        {
+          "page": 4,
+          "bottom": 601.239672592
+        },
+        {
+          "page": 5,
+          "bottom": 646.2873325920001
+        },
+        {
+          "page": 6,
+          "bottom": 255.611532592
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 5,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_05_Solutions",
+      "rendered_pages": 6
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_06.pdf",
+      "sha256": "f8723c85cb82f6a27b9cef3da19e2acb50f0aa0ede282e66a94978ef72488776",
+      "pages": 14,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99661857600023
+        },
+        {
+          "page": 3,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.9967285759999
+        },
+        {
+          "page": 4,
+          "top": 711.8033545920001,
+          "bottom": 723.7585225920001,
+          "center": 305.996588576
+        },
+        {
+          "page": 5,
+          "top": 711.8033845920002,
+          "bottom": 723.7585525920001,
+          "center": 305.9965885760002
+        },
+        {
+          "page": 6,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 7,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.996568576
+        },
+        {
+          "page": 8,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99652857600006
+        },
+        {
+          "page": 10,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.9931171520001
+        },
+        {
+          "page": 11,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9931071519999
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9931771520001
+        },
+        {
+          "page": 13,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 438.563352592
+        },
+        {
+          "page": 3,
+          "bottom": 524.147932592
+        },
+        {
+          "page": 4,
+          "bottom": 645.6146525920001
+        },
+        {
+          "page": 5,
+          "bottom": 602.362952592
+        },
+        {
+          "page": 6,
+          "bottom": 193.689522592
+        },
+        {
+          "page": 7,
+          "bottom": 310.0242017280001
+        },
+        {
+          "page": 8,
+          "bottom": 363.91279259199996
+        },
+        {
+          "page": 9,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 10,
+          "bottom": 421.1945625919999
+        },
+        {
+          "page": 11,
+          "bottom": 344.917402592
+        },
+        {
+          "page": 12,
+          "bottom": 451.698832592
+        },
+        {
+          "page": 13,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_06",
+      "rendered_pages": 14
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_06_Solutions.pdf",
+      "sha256": "9b906e919e6cbad8f4e8fe131f44be7382bf9959c7644e85c7b245f191164506",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.8033845920002,
+          "bottom": 723.7585525920001,
+          "center": 305.9967185760001
+        },
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9966285759999
+        },
+        {
+          "page": 3,
+          "top": 711.8033645920001,
+          "bottom": 723.758532592,
+          "center": 305.996548576
+        },
+        {
+          "page": 4,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.996518576
+        },
+        {
+          "page": 5,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965585759999
+        },
+        {
+          "page": 6,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.9967585760001
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 678.0268225920001
+        },
+        {
+          "page": 2,
+          "bottom": 595.3662525919999
+        },
+        {
+          "page": 3,
+          "bottom": 637.451002592
+        },
+        {
+          "page": 4,
+          "bottom": 694.958992592
+        },
+        {
+          "page": 5,
+          "bottom": 627.2123825919999
+        },
+        {
+          "page": 6,
+          "bottom": 343.555682592
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 6,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_06_Solutions",
+      "rendered_pages": 6
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_07.pdf",
+      "sha256": "3acba288ac1158964caaf5d19c7d9b9db0bfc76901a383a5c26826757edf1543",
+      "pages": 14,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9966185760001
+        },
+        {
+          "page": 3,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.9967385759997
+        },
+        {
+          "page": 4,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965385760002
+        },
+        {
+          "page": 5,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.9965985759998
+        },
+        {
+          "page": 6,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965785759999
+        },
+        {
+          "page": 7,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.996578576
+        },
+        {
+          "page": 8,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99654857600007
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 10,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.99318715200013
+        },
+        {
+          "page": 11,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9931071519999
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.993107152
+        },
+        {
+          "page": 13,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 438.563352592
+        },
+        {
+          "page": 3,
+          "bottom": 510.247302592
+        },
+        {
+          "page": 4,
+          "bottom": 622.0903525919999
+        },
+        {
+          "page": 5,
+          "bottom": 602.3629525919999
+        },
+        {
+          "page": 6,
+          "bottom": 179.243692592
+        },
+        {
+          "page": 7,
+          "bottom": 367.24780259199997
+        },
+        {
+          "page": 8,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 9,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 10,
+          "bottom": 421.1945625919999
+        },
+        {
+          "page": 11,
+          "bottom": 359.363232592
+        },
+        {
+          "page": 12,
+          "bottom": 451.6988325919999
+        },
+        {
+          "page": 13,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_07",
+      "rendered_pages": 14
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_07_Solutions.pdf",
+      "sha256": "afde7cd6c5a9ad25aa77e5d1d9ba338d0c606c9cbad148403e12b6aa66b7d252",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99663857600007
+        },
+        {
+          "page": 2,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99662857599986
+        },
+        {
+          "page": 3,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.9965185760002
+        },
+        {
+          "page": 4,
+          "top": 711.8033945920001,
+          "bottom": 723.7585625920001,
+          "center": 305.9965585759999
+        },
+        {
+          "page": 5,
+          "top": 711.8033745920001,
+          "bottom": 723.758542592,
+          "center": 305.99657857600005
+        },
+        {
+          "page": 6,
+          "top": 711.8033745920001,
+          "bottom": 723.758542592,
+          "center": 305.9966285759996
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 665.872312592
+        },
+        {
+          "page": 2,
+          "bottom": 619.799612592
+        },
+        {
+          "page": 3,
+          "bottom": 592.5894025919999
+        },
+        {
+          "page": 4,
+          "bottom": 653.4543325920001
+        },
+        {
+          "page": 5,
+          "bottom": 590.923942592
+        },
+        {
+          "page": 6,
+          "bottom": 429.102502592
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 6,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_07_Solutions",
+      "rendered_pages": 6
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_08.pdf",
+      "sha256": "b9271f5d55b56947556308437ae81c3b082434e4f2479ec9b2399b7bd3754387",
+      "pages": 14,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9966185759999
+        },
+        {
+          "page": 3,
+          "top": 711.803374592,
+          "bottom": 723.7585425919999,
+          "center": 305.996668576
+        },
+        {
+          "page": 4,
+          "top": 711.8033545920001,
+          "bottom": 723.7585225920001,
+          "center": 305.9965685759999
+        },
+        {
+          "page": 5,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.9965585759999
+        },
+        {
+          "page": 6,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 7,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99656857599985
+        },
+        {
+          "page": 8,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 10,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.99314715199995
+        },
+        {
+          "page": 11,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99312715199994
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9931571520001
+        },
+        {
+          "page": 13,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 438.563352592
+        },
+        {
+          "page": 3,
+          "bottom": 510.247302592
+        },
+        {
+          "page": 4,
+          "bottom": 607.644522592
+        },
+        {
+          "page": 5,
+          "bottom": 645.700442592
+        },
+        {
+          "page": 6,
+          "bottom": 164.797862592
+        },
+        {
+          "page": 7,
+          "bottom": 375.712262592
+        },
+        {
+          "page": 8,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 9,
+          "bottom": 204.22285259199998
+        },
+        {
+          "page": 10,
+          "bottom": 435.6403925919999
+        },
+        {
+          "page": 11,
+          "bottom": 359.363232592
+        },
+        {
+          "page": 12,
+          "bottom": 466.1446625919999
+        },
+        {
+          "page": 13,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_08",
+      "rendered_pages": 14
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_08_Solutions.pdf",
+      "sha256": "bc322f268653bf290e981c2fe92ba44b4e9e78dba4ecccd5a543064581534623",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.8033745920002,
+          "bottom": 723.7585425920001,
+          "center": 305.9966985759998
+        },
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9965485760002
+        },
+        {
+          "page": 3,
+          "top": 711.8033745920001,
+          "bottom": 723.758542592,
+          "center": 305.996518576
+        },
+        {
+          "page": 4,
+          "top": 711.8033945920001,
+          "bottom": 723.7585625920001,
+          "center": 305.99654857599984
+        },
+        {
+          "page": 5,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 6,
+          "top": 711.8033945919999,
+          "bottom": 723.7585625919999,
+          "center": 305.9966785760001
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 685.1002725920001
+        },
+        {
+          "page": 2,
+          "bottom": 660.085702592
+        },
+        {
+          "page": 3,
+          "bottom": 637.931622592
+        },
+        {
+          "page": 4,
+          "bottom": 661.9934325920001
+        },
+        {
+          "page": 5,
+          "bottom": 644.185932592
+        },
+        {
+          "page": 6,
+          "bottom": 274.3935825919999
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 5,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_08_Solutions",
+      "rendered_pages": 6
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_09.pdf",
+      "sha256": "021179f620010cfac4c316ca835f636a9536e3cef77deae411da775ad132aabf",
+      "pages": 15,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.996618576
+        },
+        {
+          "page": 3,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99664857600004
+        },
+        {
+          "page": 4,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965685759998
+        },
+        {
+          "page": 5,
+          "top": 711.8033445920003,
+          "bottom": 723.7585125920002,
+          "center": 305.9966185760001
+        },
+        {
+          "page": 6,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.9966085760001
+        },
+        {
+          "page": 7,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9965485759997
+        },
+        {
+          "page": 8,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99658857599985
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 10,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 11,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.993157152
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9931371519999
+        },
+        {
+          "page": 13,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99315715200004
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 15,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 438.563352592
+        },
+        {
+          "page": 3,
+          "bottom": 364.457992592
+        },
+        {
+          "page": 4,
+          "bottom": 118.76636259199995
+        },
+        {
+          "page": 5,
+          "bottom": 631.1688225920002
+        },
+        {
+          "page": 6,
+          "bottom": 556.331452592
+        },
+        {
+          "page": 7,
+          "bottom": 254.16685259199994
+        },
+        {
+          "page": 8,
+          "bottom": 401.571842592
+        },
+        {
+          "page": 9,
+          "bottom": 204.22285259199998
+        },
+        {
+          "page": 10,
+          "bottom": 175.33119259199998
+        },
+        {
+          "page": 11,
+          "bottom": 435.6403925919999
+        },
+        {
+          "page": 12,
+          "bottom": 359.363232592
+        },
+        {
+          "page": 13,
+          "bottom": 437.2530025919999
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 15,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_09",
+      "rendered_pages": 15
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_09_Solutions.pdf",
+      "sha256": "d05193bcbb93d16e8fb99f5bdec5eea4b9f5f0ab648a48d8ffea9e1780ff1bea",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.8033645920002,
+          "bottom": 723.7585325920002,
+          "center": 305.9967485759999
+        },
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9966385759997
+        },
+        {
+          "page": 3,
+          "top": 711.803384592,
+          "bottom": 723.758552592,
+          "center": 305.99654857599995
+        },
+        {
+          "page": 4,
+          "top": 711.8034045920001,
+          "bottom": 723.7585725920001,
+          "center": 305.996538576
+        },
+        {
+          "page": 5,
+          "top": 711.8033645920001,
+          "bottom": 723.758532592,
+          "center": 305.99659857599994
+        },
+        {
+          "page": 6,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.99655857600004
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 691.0695925920002
+        },
+        {
+          "page": 2,
+          "bottom": 674.531532592
+        },
+        {
+          "page": 3,
+          "bottom": 639.107622592
+        },
+        {
+          "page": 4,
+          "bottom": 660.9690225920001
+        },
+        {
+          "page": 5,
+          "bottom": 644.7592925920001
+        },
+        {
+          "page": 6,
+          "bottom": 247.30931259199997
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 5,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_09_Solutions",
+      "rendered_pages": 6
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_10.pdf",
+      "sha256": "0ef424d5a5aeb1f181eadc51c624a7e7492d489fa18abdb717ce032afc63bf2e",
+      "pages": 15,
+      "footers": [
+        {
+          "page": 2,
+          "top": 711.8033745920001,
+          "bottom": 723.758542592,
+          "center": 305.99663857599984
+        },
+        {
+          "page": 3,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.99660857599997
+        },
+        {
+          "page": 4,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9966585759998
+        },
+        {
+          "page": 5,
+          "top": 711.803344592,
+          "bottom": 723.758512592,
+          "center": 305.996588576
+        },
+        {
+          "page": 6,
+          "top": 711.8033845919999,
+          "bottom": 723.7585525919999,
+          "center": 305.9965985759999
+        },
+        {
+          "page": 7,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.9965785760001
+        },
+        {
+          "page": 8,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.996568576
+        },
+        {
+          "page": 9,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.99655857600004
+        },
+        {
+          "page": 10,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 11,
+          "top": 711.8033445919999,
+          "bottom": 723.7585125919999,
+          "center": 305.9931371520001
+        },
+        {
+          "page": 12,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9931271520001
+        },
+        {
+          "page": 13,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.993207152
+        },
+        {
+          "page": 14,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        },
+        {
+          "page": 15,
+          "top": 711.803354592,
+          "bottom": 723.758522592,
+          "center": 305.993097152
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 633.233900995
+        },
+        {
+          "page": 2,
+          "bottom": 467.455012592
+        },
+        {
+          "page": 3,
+          "bottom": 378.903822592
+        },
+        {
+          "page": 4,
+          "bottom": 104.32053259199995
+        },
+        {
+          "page": 5,
+          "bottom": 654.503482592
+        },
+        {
+          "page": 6,
+          "bottom": 589.214802592
+        },
+        {
+          "page": 7,
+          "bottom": 179.243692592
+        },
+        {
+          "page": 8,
+          "bottom": 234.65330259199993
+        },
+        {
+          "page": 9,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 10,
+          "bottom": 189.77702259199998
+        },
+        {
+          "page": 11,
+          "bottom": 435.6403925919999
+        },
+        {
+          "page": 12,
+          "bottom": 344.917402592
+        },
+        {
+          "page": 13,
+          "bottom": 451.698832592
+        },
+        {
+          "page": 14,
+          "bottom": 109.588162592
+        },
+        {
+          "page": 15,
+          "bottom": 109.588162592
+        }
+      ],
+      "solution_headings": [],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_10",
+      "rendered_pages": 15
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_10_Solutions.pdf",
+      "sha256": "5a020bce17aa0c33f76b7106c999363c8e10b98bdce8167c7b3becc212434cda",
+      "pages": 6,
+      "footers": [
+        {
+          "page": 1,
+          "top": 711.803394592,
+          "bottom": 723.758562592,
+          "center": 305.9967785759997
+        },
+        {
+          "page": 2,
+          "top": 711.803364592,
+          "bottom": 723.7585325919999,
+          "center": 305.9966785760003
+        },
+        {
+          "page": 3,
+          "top": 711.803384592,
+          "bottom": 723.758552592,
+          "center": 305.9965385760003
+        },
+        {
+          "page": 4,
+          "top": 711.8034045920001,
+          "bottom": 723.7585725920001,
+          "center": 305.99654857599995
+        },
+        {
+          "page": 5,
+          "top": 711.8033745920002,
+          "bottom": 723.7585425920001,
+          "center": 305.9968185760001
+        },
+        {
+          "page": 6,
+          "top": 711.803334592,
+          "bottom": 723.758502592,
+          "center": 305.9965885759999
+        }
+      ],
+      "body_bounds": [
+        {
+          "page": 1,
+          "bottom": 694.959012592
+        },
+        {
+          "page": 2,
+          "bottom": 625.611492592
+        },
+        {
+          "page": 3,
+          "bottom": 689.338372592
+        },
+        {
+          "page": 4,
+          "bottom": 651.6545125920001
+        },
+        {
+          "page": 5,
+          "bottom": 694.9589925920002
+        },
+        {
+          "page": 6,
+          "bottom": 153.021292592
+        }
+      ],
+      "solution_headings": [
+        {
+          "problem": 1,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 2,
+          "page": 1,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 3,
+          "page": 2,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 4,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 5,
+          "page": 3,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 6,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 7,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 8,
+          "page": 4,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 9,
+          "page": 5,
+          "first_part_same_page": true
+        },
+        {
+          "problem": 10,
+          "page": 5,
+          "first_part_same_page": true
+        }
+      ],
+      "render_dir": "/Users/eason/.codex/worktrees/comp2711-midterm-mocks/COMP2711/output/comp2711-midterm-mocks/audit/final-renders/COMP2711_Mock_Midterm_10_Solutions",
+      "rendered_pages": 6
+    }
+  ],
+  "total_pages": 202,
+  "render_dpi": 120
+}

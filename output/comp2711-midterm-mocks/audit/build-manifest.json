@@ -1,0 +1,85 @@
+{
+  "outputs": [
+    {
+      "file": "COMP2711_Mock_Midterm_01.pdf",
+      "sha256": "7bcc674d06850c3c4814c43a9ee171cdd334ddc36a8462f8c9eab968c816e142"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_01_Solutions.pdf",
+      "sha256": "4c62a81cbfdf5ca2767fa45aaff48f2a41467d1a520e2553093086f760c947b9"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_02.pdf",
+      "sha256": "0eb887279dfe4816db3b8452f80fe4086159c3c35b5de0798fc4017bec6daaff"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_02_Solutions.pdf",
+      "sha256": "c9ee65221cf248693da1bd3417e9a3a757e510984610b4011b7f96f9148dac07"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_03.pdf",
+      "sha256": "f043d40f52a54651e6623dd2fa952fdae929a32e2064db4f1b340d973cf019e0"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_03_Solutions.pdf",
+      "sha256": "37ff4500621ae73565eff8f66f3b037aef620cc1b5cab973fb8e5ae12b3f62b9"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_04.pdf",
+      "sha256": "af9c20fbdf777bc4d0f94db509d60c237f8e742ef08dd8979da7cbd8e2735b1e"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_04_Solutions.pdf",
+      "sha256": "2fe136a294eb8e3d907543e4626869887b3c05d1fdb73a6ac506b03244155983"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_05.pdf",
+      "sha256": "af0af5cc2f9306235f1be3d3932b89b108248c109ca43071b1b01660ca403df8"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_05_Solutions.pdf",
+      "sha256": "3912d074a6401ed83bee3cd5fe6e73a7a7bd53d5faaa89fe8bd13372a70095ac"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_06.pdf",
+      "sha256": "f8723c85cb82f6a27b9cef3da19e2acb50f0aa0ede282e66a94978ef72488776"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_06_Solutions.pdf",
+      "sha256": "9b906e919e6cbad8f4e8fe131f44be7382bf9959c7644e85c7b245f191164506"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_07.pdf",
+      "sha256": "3acba288ac1158964caaf5d19c7d9b9db0bfc76901a383a5c26826757edf1543"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_07_Solutions.pdf",
+      "sha256": "afde7cd6c5a9ad25aa77e5d1d9ba338d0c606c9cbad148403e12b6aa66b7d252"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_08.pdf",
+      "sha256": "b9271f5d55b56947556308437ae81c3b082434e4f2479ec9b2399b7bd3754387"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_08_Solutions.pdf",
+      "sha256": "bc322f268653bf290e981c2fe92ba44b4e9e78dba4ecccd5a543064581534623"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_09.pdf",
+      "sha256": "021179f620010cfac4c316ca835f636a9536e3cef77deae411da775ad132aabf"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_09_Solutions.pdf",
+      "sha256": "d05193bcbb93d16e8fb99f5bdec5eea4b9f5f0ab648a48d8ffea9e1780ff1bea"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_10.pdf",
+      "sha256": "0ef424d5a5aeb1f181eadc51c624a7e7492d489fa18abdb717ce032afc63bf2e"
+    },
+    {
+      "file": "COMP2711_Mock_Midterm_10_Solutions.pdf",
+      "sha256": "5a020bce17aa0c33f76b7106c999363c8e10b98bdce8167c7b3becc212434cda"
+    }
+  ],
+  "coverage_concepts": 95
+}

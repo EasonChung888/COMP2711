@@ -1,0 +1,213 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 07}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Construct a complete truth table to decide whether $(p\to q)\oplus(q\to p)$ and $p\oplus q$ are logically equivalent.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Are $p\to q$ and its converse always equivalent? Give an assignment showing your answer and also evaluate the inverse at that assignment.
+\examspace{3}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} From $p\land q$, $(p\lor r)\to s$, and $q\to t$, derive $s\land t$ using named inference rules. Your proof must explicitly use addition.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} Let $D=\{-1,0,1\}$ and $P(x)$ mean $x^2=1$. Expand $\forall x\in D\,P(x)$ and $\exists x\in D\,P(x)$ as propositional conjunction/disjunction and give their truth values (2 points). Give both truth values when the domain is empty, with justification (2 points).
+\examspace{4}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Negate $\forall x\exists y\forall z((P(x,y)\lor Q(z))\land R(x,y,z))$, with negations immediately before predicates only.
+\examspace{4}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Rename the bound variables in $(\forall xP(x))\lor(\exists xQ(x))$ so the quantifiers use different names (1 point). Then prove that $\forall x(P(x)\to Q(x))$ and $\exists x\neg Q(x)$ imply $\exists x\neg P(x)$ (4 points).
+\examspace{5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For $i=0,1,2$ let $A_i=\{i,i+1\}$. Compute $\bigcup_{i=0}^2A_i$ and $\bigcap_{i=0}^2A_i$.
+\examspace{3}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} If $f:A\to B$ and $g:B\to C$ are injective, prove $g\circ f$ is injective (2 points). Does injectivity of $g\circ f$ alone force $g$ to be injective? Give a counterexample if not (1 point).
+\examspace{5}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item $\mathcal P(A\cup B)=\mathcal P(A)\cup\mathcal P(B)$ for all sets $A,B$.\item $\mathcal P(A\cap B)=\mathcal P(A)\cap\mathcal P(B)$.\item The set of finite strings over a finite nonempty alphabet is countable.\item The set of infinite binary sequences with a fixed finite number of ones is countable.\item $\mathbb N^3$ is uncountable.\item If $g\circ f$ is injective, then $f$ is injective.\item A function $A\to B$ may assign two different outputs in $B$ to one input in $A$.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} A visitor tours six distinct cities exactly once, beginning at a specified city $A$ and ending at a different specified city $B$. Count the visit orders.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Count functions from a labelled four-element set to a labelled five-element set whose range has exactly three elements.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Count length-eight bit strings with at most one 1.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} Arrange four identical red tokens and three identical blue tokens in a line, with red first and blue last. Count the colour strings.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Seven distinct people sit around a circle, and $A,B,C$ must occur consecutively in that clockwise order. Rotations are equivalent; reflections are different. Count the seatings.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} Count nonnegative integer triples $(x,y,z)$ satisfying $x+y+z\le6$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} Find the constant term in $(x^3+2x^{-2})^{10}$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} Eight distinct files enter labelled folders $A,B$ of sizes three and two, leaving three outside. Exactly one of the specified files $X,Y$ must be outside. Within-folder order does not matter. Count the assignments.
+\examspace{1.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} For $1\le r<n$, prove Pascal's identity by a disjoint partition of subsets:\[\binom nr=\binom{n-1}{r-1}+\binom{n-1}{r}.\]
+\examspace{4}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Let $p(a,b)$ count right/up unit-step paths from $(0,0)$ to $(a,b)$. Explain its Pascal recurrence and boundary values, then count paths to $(4,3)$ avoiding $(2,1)$.
+\examspace{4}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Strings have six positions, with symbols from $\{A,B,C,D\}$; repetition is allowed. Use inclusion--exclusion to count strings whose endpoints differ and in which each of $A,B,C$ appears at least once.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Among any 65 distinct bit strings of length seven, prove that two agree in their first six positions and differ only in the last position. Show that 64 strings do not suffice to force this.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: Unions of divisibility events [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Choose an integer uniformly from $S=\{1,\ldots,60\}$. Let $A,B,C$ be divisibility by $2,3,5$, respectively.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Find $P(A),P(B),P(C)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find $P(A\cap B)$ and test independence of $A,B$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Find $P(A\cap C)$ and $P(B\cap C)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Find $P(A\cap B\cap C)$.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Use inclusion--exclusion to find the probability of divisibility by at least one of $2,3,5$.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: Nonuniform prize locations [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+A prize is behind doors $1,2,3$ with probabilities $1/2,1/3,1/6$. You pick door 1. The host always opens an unchosen goat door, uniformly if both are goats and otherwise the unique legal door. Let $M$ denote the opening.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Given $M=2$, find the stay/switch posteriors and choose the better action.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Choose the better action given $M=3$, and find the overall success probability of the policy using both optimal actions.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Pairwise independence suffices [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Independent fair bits $U,V$ give four equiprobable outcomes. Define $A=U$, $B=V$, and $C=1$ if $U\ne V$, otherwise $0$. These are numerical indicators.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Give the distribution, mean and variance of $C$.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Check independence of $A,B$ using all joint-value probabilities.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Check that $A,C$ and $B,C$ are independent. Are all three mutually independent?
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} Find $E(A+B-C)$ and $V(A+B-C)$. Explain why the weaker independence established above is sufficient for the variance calculation.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

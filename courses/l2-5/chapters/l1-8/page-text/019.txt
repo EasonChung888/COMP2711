@@ -1,0 +1,19 @@
+  Exercise from previous class
+▪  How many solutions does the equation 𝑥1          + 𝑥2 + 𝑥3 = 5 have, where
+   𝑥1,𝑥2, and 𝑥3 are nonnegative integers? Equivalently, in how many
+   way I can select 5 cookies of 3 different kinds (combinations with
+   repetition).
+▪  𝐶 3 +  5−  1,5  = 𝐶  7,5 =  21
+▪  How many solutions does the equation          𝑥1 + 𝑥2 + 𝑥3 = 5 have, where
+   𝑥1,𝑥2, and 𝑥3 are nonnegative integers and 𝑥3≥3?
+▪  I rewrite the equation as follows:
+▪  𝑥1+  𝑥2 + (𝑥3 − 3) = 5 −  3 𝑥1  + 𝑥2 + 𝑥 =  2.
+▪  The number of solutions is: 𝐶      3 +  2−  1,2  = 𝐶  4,2  = 6
+▪  How many solutions does the equation 𝑥1          + 𝑥2 + 𝑥3 = 5 have, where
+   𝑥1,𝑥2, and 𝑥3 are nonnegative integers and 𝑥3≥3 and 𝑥1≥1?
+▪  Using the previous reasoning, I rewrite (𝑥1       − 1) + 𝑥2 + 𝑥 =  2 − 1.
+▪  The number of solutions is: 𝐶      3 +  1−  1,1  = 𝐶  3,1  = 3
+
+
+
+                                                                             20

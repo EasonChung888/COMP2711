@@ -1,0 +1,68 @@
+{
+  "offline": true,
+  "protocol": "file:",
+  "screens": [
+    "chapter-desktop.png",
+    "inclusion-exclusion-mobile.png",
+    "onto-functions-mobile.png",
+    "derangements-mobile.png",
+    "bounded-solutions-mobile.png",
+    "explanation-mobile.png",
+    "formula-desktop.png"
+  ],
+  "lessons": [
+    {
+      "slug": "inclusion-exclusion",
+      "pages": 9,
+      "questions": 3,
+      "displayFormulas": 36,
+      "images": 9,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "onto-functions",
+      "pages": 6,
+      "questions": 2,
+      "displayFormulas": 27,
+      "images": 6,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "derangements",
+      "pages": 4,
+      "questions": 3,
+      "displayFormulas": 21,
+      "images": 4,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "bounded-solutions",
+      "pages": 3,
+      "questions": 3,
+      "displayFormulas": 29,
+      "images": 3,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    }
+  ],
+  "progress": {
+    "check": true,
+    "uncheck": true,
+    "reload": true,
+    "chapterCount": true,
+    "homeCount": true,
+    "resume": true,
+    "legacyPageNotPromoted": true
+  },
+  "draft": true,
+  "oldProgressPreserved": true,
+  "narrowDirectories": true,
+  "longFormulaScroll": true,
+  "status": "passed",
+  "pageErrors": [],
+  "remoteRequests": [],
+  "multipleChoice": "No multiple-choice original questions selected; existing immediate-submit handler unchanged."
+}

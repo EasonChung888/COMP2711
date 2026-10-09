@@ -1,0 +1,214 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 09}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Use logical laws to simplify $((p\to q)\to p)$, and explain whether $((p\to q)\to p)\leftrightarrow p$ is a tautology.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} A and B are knights or knaves. A says, \emph{B is a knave}. B says, \emph{At least one of us is a knight}. Determine both types and justify.
+\examspace{3}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} From $p\to q$, $q\to r$, $\neg r\lor s$, $p\lor t$, and $\neg t$, derive $s$, using named inference rules.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} Domains: technicians $x$, devices $d$, tests $t$. $A(x,t)$ means $x$ performs $t$ and $D(t,d)$ means $t$ tests $d$. Translate (i) every device has a test performed by every technician; (ii) some technician, for each device, performs at least one test of that device, with the test allowed to depend on the device. Each is worth 2 points.
+\examspace{4}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Negate $\exists x(P(x)\land\forall y(Q(y)\lor\exists zR(x,y,z)))$, placing negations immediately before predicates only.
+\examspace{4}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Over a nonempty domain, refute $\forall x\exists yR(x,y)\Rightarrow\exists y\forall xR(x,y)$ using a two-element model (2 points). Then derive $\exists y\exists xR(x,y)$ from the premise using inference rules (3 points).
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Use $\mathbb N=\{0,1,2,\ldots\}$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For $A,B\subseteq U$, prove $U\setminus(A\cap B)=(U\setminus A)\cup(U\setminus B)$ by membership.
+\examspace{3}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} Let $f:A\to B$ and $g:B\to C$ be bijections. Construct the inverse of $g\circ f$ and verify it in both orders.
+\examspace{5}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item The positive even integers and $\mathbb N$ have the same cardinality.\item A set of size 5 has a power set of size 10.\item Every finite set is countable.\item The set of all infinite binary sequences that are eventually zero is countable.\item The continuum hypothesis follows from the fact that $\mathbb R$ is uncountable.\item Cantor\textquotesingle s theorem applies to finite as well as infinite sets.\item An injection $A\to B$ by itself guarantees equal cardinality.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} A password has four symbols, chosen without repetition from five distinct letters and three distinct digits. It starts with a digit and its second symbol is a letter. Count the passwords.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Count functions $f:\{1,2,3\}\to\{A,B,C,D\}$ with $f(1)=f(2)$ and $f(3)\ne f(1)$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Count length-ten bit strings containing exactly three ones, all consecutive.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} Count distinct strings formed by rearranging all letters of $\mathrm{MISSISSIPPI}$, with the two $P$s not adjacent. Equal letters are indistinguishable.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Seven distinct books are assigned to three labelled shelves; at least one book must go to shelf 1. Order on a shelf does not matter. Count the assignments.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} Count integer solutions of $x_1+x_2+x_3=10$ with $x_1\ge2$, $x_2\ge3$, $x_3\ge0$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} Find the coefficient of $x^5$ in $(x+1)^8-(x+1)^7$.
+\examspace{1.5}
+\Needspace{\dimexpr 2cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} Two teams play until one has three wins; no game is drawn. Count legal terminal win sequences separately by lengths three, four, and five, then give the total.
+\examspace{2}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} For nonnegative $r,s$ with $r+s\le n$, prove combinatorially that\[\binom nr\binom{n-r}{s}=\binom n{r+s}\binom{r+s}{r}.\]
+\examspace{5}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Explicitly relate these ordered pairs to length-$n$ strings with $r$ symbols $R$, $s$ symbols $S$, and $n-r-s$ symbols $U$. Deduce their common factorial count.
+\examspace{4}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Six distinct people $A,B,C,D,E,F$ occupy seats numbered 1 through 6, one per seat. $A$ may occupy neither seat 1 nor seat 2; $B$ may not occupy seat 3; $C$ may not occupy seat 4. Use inclusion--exclusion to count legal seatings.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} A $4\times4\times4$ cube is subdivided into 64 unit cubes. Nine different unit cubes are selected. Prove that two selected cubes share a vertex.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: Replacing a sampled token [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Four distinct tokens, two red and two blue, are drawn twice. Each draw uniformly selects a token, and the first is replaced before the second; the draws are independent. Let $E,F$ denote red on the first and second draw.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Describe the sample space and its size.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find the probability that the same token is drawn twice.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Find $P(E\cap F)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Find the probability of exactly one red draw.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} If the draws instead are uniform without replacement, find $P(E\cap F)$ and test independence of $E,F$.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: Repeated evidence from one device [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Choose uniformly one of three devices with success probabilities $1,1/2,1/4$. Use the same device throughout. Conditional on that choice, its trials are independent with the stated fixed probability. Let $R$ be success on the first three trials.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Find $P(R)$ and the three device posteriors given $R$.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Given $R$, find the probability that trial four succeeds. Compare it with the success probability before any observations.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Transforms of a finite variable [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+A fair four-sided die has equally likely labels $0,1,2,3$. Let $X$ be its label and let $Y=X^2$; both are functions of the same roll.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Find $E(X)$ and $V(X)$.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Find $E(Y)$ and compare it with $E(X)^2$.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Find $E[X(X-1)]$ in two ways: by values and by linearity.
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} From the centered-square definition, prove $V(aX+b)=a^2V(X)$ for real $a,b$. Then find $V(X-Y)$ directly.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

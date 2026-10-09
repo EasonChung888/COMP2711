@@ -1,0 +1,140 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\begin{center}\textbf{COMP 2711 -- Mock Midterm 01}\\{\large\bfseries Solutions and marking notes}\\Practice material -- not an official examination\end{center}\vspace{0.5em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 1 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} By distribution, $(p\lor q)\land(p\lor\neg q)\equiv p\lor(q\land\neg q)\equiv p\lor F\equiv p$. Negating gives $\boxed{\neg p}$. The steps use distributive, negation and identity laws.
+\par\textit{Marking:} 1 distribution; 1 contradiction/identity simplification; 1 final negation.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} Invalid. Take $p=F,q=T$. Then $p\to q=T$ and $q=T$, but $p=F$. Thus all premises can be true while the conclusion is false.
+\par\textit{Marking:} 1 separating assignment; 1 verification of all premises and conclusion.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} \begin{enumerate}\item $q\lor r$ from the first two premises by resolution.\item $\neg q\lor s$ from $q\to s$ by implication equivalence.\item $r\lor s$ from lines 1 and 2 by resolution.\item $\neg r\lor s$ from $r\to s$ by equivalence.\item $s\lor s$, hence $s$, from lines 3 and 4 by resolution and idempotence.\item $t$ from line 5 and $s\to t$ by modus ponens.\end{enumerate}
+\par\textit{Marking:} 1 first resolution; 1 implication conversion; 1 second resolution; 1 obtaining s; 1 final modus ponens with rule citations.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 2 [13 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} (i) $\forall x(S(x)\to\exists y(S(y)\land R(x,y)))$. (ii) $\exists y(S(y)\land\forall x(S(x)\to\neg R(x,y)))$. The reviewer is the first argument; the report owner is the second.
+\par\textit{Marking:} 2 each: 1 correct quantifiers/argument order; 1 correct student restrictions.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} \[\exists x\bigl(A(x)\land\forall y(\neg B(y)\lor\exists z\neg C(x,y,z))\bigr).\] Negation switches each quantifier, turns the outer implication into a conjunction, and turns the inner conjunction into a disjunction.
+\par\textit{Marking:} 1 outer quantifier; 1 implication; 1 remaining quantifiers; 1 inner De Morgan step and scopes.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[5 points]} \begin{enumerate}\item Choose a fresh witness $a$ with $P(a)\land S(a)$ by existential instantiation.\item Obtain $P(a)$ and $S(a)$ by simplification.\item Instantiate the two universal premises to $P(a)\to Q(a)$ and $Q(a)\to\neg R(a)$.\item Obtain $Q(a)$ and then $\neg R(a)$ by modus ponens.\item Conjoin $S(a)\land\neg R(a)$ and use existential generalization.\end{enumerate}
+\par\textit{Marking:} 1 fresh witness; 1 simplification; 1 universal instantiation; 1 implication chain; 1 conjunction/existential generalization.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 3 [12 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} For any $x$, $x\in(A\setminus B)\cap C$ iff $x\in A$, $x\notin B$, and $x\in C$; these are exactly the conditions for $x\in A\cap(C\setminus B)$. Thus the sets have the same elements.
+\par\textit{Marking:} 1 correct membership conditions; 1 both directions/equality.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[3 points]} If $2a+1=2b+1$, then $a=b$, so $f$ is injective. Every $y\in O$ has the form $2k+1$, so $f(k)=y$; hence $f$ is onto. Its inverse is $f^{-1}:O\to\mathbb Z$, $f^{-1}(y)=(y-1)/2$, which is an integer for all $y\in O$.
+\par\textit{Marking:} 1 injection; 1 surjection; 1 inverse and correct domains.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[7 points]} \begin{enumerate}[label=(\roman*)]\item \textbf{T}. The singleton contains the empty set as its sole element.\item \textbf{F}. Its element $\varnothing$ is not an element of the empty set.\item \textbf{T}. A two-element set has $2^2$ subsets.\item \textbf{T}. Every listed pair belongs to the Cartesian product.\item \textbf{F}. The map $n\mapsto n+1$ from $\mathbb N$ to $\mathbb N$ misses 0.\item \textbf{T}. Order by length, then lexicographically; each length layer is finite.\item \textbf{F}. It is in bijection with $\mathcal P(\mathbb N)$ by the set of one-positions, and is uncountable.\end{enumerate}
+\par\textit{Marking:} Award 1 point for each correct T/F choice (7 total); reasons are included here for checking.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 4 [16 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Choose the position of $T$, then fill the remaining positions: $3\cdot5\cdot4=60$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} (i) Choose the common value and the two remaining values independently: $3^3=27$. (ii) $0$, since four distinct inputs cannot have distinct images among three outputs.
+\par\textit{Marking:} 1 mark for each correct count.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} The string is $10101$. Each subset has a unique membership string and conversely each string gives a subset; five independent bits give $2^5=32$.
+\par\textit{Marking:} 1 mark for 10101; 1 mark for the bijective encoding and $2^5$.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[2 points]} There are $3\cdot5$ output entries and four multiplications in each: $3\cdot5\cdot4=60$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Split by length and subtract the all-letter codes: $3(5-3)+3(5^2-3^2)=54$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(f)] \textbf{[2 points]} Compress the three-letter block. Its five units have $5!$ orders and its internal order has $3!$ choices, giving $5!3!$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(g)] \textbf{[2 points]} Treat the adjacent pair as a circular block: $2(5-1)!=2\cdot4!$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\Needspace{4\baselineskip}
+\item[(h)] \textbf{[2 points]} Choose four factors contributing $2x$: $\binom74 2^4(-1)^3=-560$.
+\par\textit{Marking:} 1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 5 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} Count triples $(S,a,b)$ where $S$ is an $r$-element subset of a fixed $n$-element set and $a,b\in S$ are distinct, ordered distinguished members. Choosing $S$, then $a$ and $b$, gives $\binom nr r(r-1)$. Choosing the ordered pair first in $n(n-1)$ ways and then the other $r-2$ elements gives $n(n-1)\binom{n-2}{r-2}$. Every triple is produced exactly once by each procedure, including $r=2$ and $r=n$.
+\par\textit{Marking:} 2 marks for the counted objects and ordered distinction; 3 for the first count; 3 for the second; 2 for explaining the exact correspondence.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 6 [9 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Put $u=x-1$, $v=y$, $w=z-2$. Then $u+v+w=9$, with caps $4,4,5$. The unrestricted count is $\binom{11}{2}$. Let the bad events be $u\ge5$, $v\ge5$, $w\ge6$. Their sizes are $\binom62,\binom62,\binom52$ after shifting. Every pairwise intersection needs a total shift at least ten and is empty. Thus inclusion--exclusion gives\[\binom{11}{2}-2\binom62-\binom52=15.\]
+\par\textit{Marking:} 2 marks for shifting lower bounds and defining the universe; 2 for bad events; 3 for singleton counts; 1 for empty overlaps; 1 for the final IE expression.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 7 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} For the sum, partition the integers into fifteen pairs $\{i,31-i\}$ for $i=1,\ldots,15$. Sixteen selections force both members of one pair. For the difference, use the different partition $\{i,i+15\}$ for $i=1,\ldots,15$. Again sixteen selections force a complete pair. The fifteen-element selection $\{1,\ldots,15\}$ contains neither a sum-31 pair nor a difference-15 pair, so sixteen is minimal.
+\par\textit{Marking:} 3 marks for the sum partition and PHP; 3 for the difference partition and PHP; 1 for the sharp selection.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 8 [6 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} $S$ consists of the ordered triples of distinct labels; $|S|=6\cdot5\cdot4=120$.
+\par\textit{Marking:} 1 mark for the ordered distinct triples and 120.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[1 points]} The specified triple is one outcome, so its probability is $1/120$.
+\par\textit{Marking:} 1 mark for 1/120.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[1 points]} $P(E\cap F)=(3/6)(2/5)=1/5$.
+\par\textit{Marking:} 1 mark for 1/5.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[1 points]} $\binom33/\binom63=1/20$.
+\par\textit{Marking:} 1 mark for 1/20.
+\Needspace{4\baselineskip}
+\item[(e)] \textbf{[2 points]} Both marginals are $1/2$, but $P(E\cap F)=1/5\ne1/4$, so they are dependent. Their intersection has positive probability, so they are not disjoint.
+\par\textit{Marking:} 1 mark for the product comparison; 1 for the disjointness conclusion with reason.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 9 [7 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Writing $D$ for defect and $A$ for alarm, the disjoint partition $D,D^c$ gives $P(A)=(1/10)(4/5)+(9/10)(1/5)=13/50$.
+\par\textit{Marking:} 1 mark for the partition; 1 for the weighted sum; 1 for 13/50.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[4 points]} $P(D\mid A)=(4/50)/(13/50)=4/13$. Also $P(A^c)=37/50$ and $P(D\cap A^c)=(1/10)(1/5)=1/50$, so $P(D\mid A^c)=1/37$. Both conditioning events have positive mass.
+\par\textit{Marking:} 2 marks for each correct posterior with joint/conditioning denominator.
+\end{description}
+\vspace{0.65em}
+\problemheading[\dimexpr 3\baselineskip+4\baselineskip\relax]{Problem 10 [10 points]}
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} $E(D)=1$ and $E(D^2)=3/2$, so $V(D)=3/2-1=1/2$.
+\par\textit{Marking:} 1 mark for the mean; 1 for the variance.
+\Needspace{4\baselineskip}
+\item[(b)] \textbf{[2 points]} $E(Y)=3-2=1$ and $V(Y)=(-2)^2(1/2)=2$.
+\par\textit{Marking:} 1 mark for each result with correct coefficient handling.
+\Needspace{4\baselineskip}
+\item[(c)] \textbf{[2 points]} Independence gives $E(DD^{\prime})=E(D)E(D^{\prime})=1$, whereas $E(D^2)=3/2$. Squaring the same variable is not an independent product.
+\par\textit{Marking:} 1 mark for each moment and the independence distinction.
+\Needspace{4\baselineskip}
+\item[(d)] \textbf{[4 points]} Linearity gives $E(M)=1$ without needing independence. Independence permits variance addition: $V(M)=(1/9)(3/2)=1/6$. Thus $\sigma(M)=\sqrt{1/6}$. Scaling contributes $1/9$, not $1/3$.
+\par\textit{Marking:} 1 mark for the mean; 2 for independent variance addition and scaling; 1 for the standard deviation.
+\end{description}
+\end{document}

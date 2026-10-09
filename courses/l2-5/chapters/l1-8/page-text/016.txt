@@ -1,0 +1,20 @@
+    Number of Permutations that are not Derangements
+
+▪  Assuming permutations of n numbers 1,2,..,i,..,n, we will count the
+   number of permutations that are not derangements.
+▪  Let Pi be the set of permutations, where i remains in its initial position
+   (these permutations are not derangements).
+▪  What should I compute?
+▪  |P1P2…  Pi… Pn| by inclusion - exclusion
+▪  What is the value of |Pi|?
+▪  (n-1)! since i must remain in the same position, I can only permute the
+   remaining n-1 numbers.
+▪  Which permutations belong to Pi Pj?
+▪  Permutations that leave i and j in their original positions.
+▪  What is the value of |Pi Pj|?
+▪  (n-2)!
+▪  What is the value of |P1 P2...Pr| and every intersection of r sets?
+▪  (n-r)!
+▪  How many intersections of         r sets are there?
+▪  C(n,r)
+                                                                                          17

@@ -1,0 +1,211 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 02}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Construct a complete truth table for $(p\oplus q)\leftrightarrow\neg(p\leftrightarrow q)$. Classify it as a tautology, contradiction, or contingency.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} For $p\to q$, write its converse, inverse and contrapositive. Which of these is always equivalent to the original?
+\examspace{3}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Use contraposition to prove: for positive real numbers $a,b,c$, if $ab\le c^2$, then $a\le c$ or $b\le c$. State the contrapositive explicitly.
+\examspace{5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} The domain is all employees. $M(x,y)$ means $y$ mentors $x$. Translate: (i) every employee has exactly one mentor; (ii) there is exactly one employee who mentors everyone. Each is worth 2 points.
+\examspace{4}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Prove $(\forall x P(x))\lor(\forall x Q(x))\Rightarrow\forall x(P(x)\lor Q(x))$. Give a two-element countermodel to the reverse implication.
+\examspace{5}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} From $\forall x(P(x)\to Q(x))$ and $\forall x(Q(x)\to R(x))$, derive $\forall x(P(x)\to R(x))$. Name the inference rules and explain why generalization is allowed.
+\examspace{5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Use $\mathbb N=\{0,1,2,\ldots\}$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Let $S=\{\varnothing,\{1\}\}$. List $\mathcal P(S)$ and find its cardinality.
+\examspace{3}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} Let $f,g:\mathbb Z\to\mathbb Z$ satisfy $f(x)=x+1$ and $g(x)=-x$. Compute $f\circ g$ and $g\circ f$, and determine whether the two compositions are equal.
+\examspace{3}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item $\mathbb N\times\mathbb N$ is countably infinite.\item The set of infinite binary sequences with exactly two ones is uncountable.\item The set of binary strings of length at most 8 is finite.\item $\mathbb Z$ and the positive even integers have equal cardinality.\item Every proper subset of an infinite set has smaller cardinality.\item $[0,1]$ is uncountable.\item If $f:A\to B$ is a bijection, then $f^{-1}:B\to A$ is a function.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} A journey from $A$ to $C$ is either one of three direct roads or exactly one road from $A$ to $B$ followed by one from $B$ to $C$. There are two $A$--$B$ roads and four $B$--$C$ roads. Count these journeys.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Count bit strings of length seven with exactly three ones and different first and last bits.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Count distinct strings formed by rearranging all letters of $\mathrm{BALLOON}$, with equal letters indistinguishable.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} Eight distinct files are assigned to labelled folders $A,B,C$, with respective sizes $2,3,3$. Within-folder order does not matter. Count the assignments.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Distribute nine indistinguishable tokens among four labelled boxes, with each box nonempty. Count the distributions.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} Find the constant term in $(2x^2-x^{-1})^9$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} Count right/up unit-step lattice paths from $(0,0)$ to $(5,4)$ that avoid $(2,2)$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} From five chemists and four physicists, all distinct and in disjoint groups, select an unordered four-person committee containing exactly two chemists. Count the committees.
+\examspace{1.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[10 points]} For nonnegative integers $m,n$ and $0\le r\le m+n$, prove combinatorially that\[\sum_{k=0}^{r}\binom mk\binom n{r-k}=\binom{m+n}{r}.\]Use $\binom ab=0$ when $b<0$ or $b>a$.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[9 points]} Six distinct jobs are assigned to three labelled servers $A,B,C$. Job 1 may use $A$ or $B$ only; the other jobs may use any server. Use inclusion--exclusion to count assignments in which every server is used.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Thirteen points lie in the closed rectangle $[0,8]\times[0,6]$. Prove that two are at distance at most $2\sqrt2$, and that four lie in some vertical strip of width two. The claims may use different points. Specify boundary conventions.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: A nonuniform experiment [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+The outcomes are $S=\{a,b,c,d\}$, with masses $k,2k,3k,4k$ in that order. Define $X(a)=X(d)=0$, $X(b)=1$, $X(c)=2$. Let $E=\{a,b\}$ and $F=\{a,c\}$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Find $k$ and verify that this is a probability mass function.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find $P(E\cup F)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Find $P(X=0)$.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Is $X$ a deterministic function on $S$? Explain.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Are $E,F$ independent? Show the required comparison.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: Selection without replacement [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Choose urn $A$ with probability $2/3$ and urn $B$ with probability $1/3$. $A$ contains two red and one blue labelled ball; $B$ contains one red and two blue labelled balls. Draw two balls uniformly in order without replacement.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Find the probability that both draws are red.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Given exactly one red draw, find the probability that $A$ was selected. Is this observation independent of the urn-selection event?
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Random hat returns [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+For $n\ge2$, return $n$ distinct hats to their owners using a uniformly random permutation. Let $I_i$ indicate that owner $i$ gets the correct hat, and let $H=\sum_{i=1}^n I_i$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Find $P(I_i=1)$ and $E(I_i)$.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Find $E(H)$. Does this step require independent indicators?
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} For $i\ne j$, find $P(I_i=I_j=1)$ and test independence.
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} For arbitrary finite-space random variables $U,V$ and real $a,b$, prove $E(aU+bV)=aE(U)+bE(V)$ directly from the definition.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

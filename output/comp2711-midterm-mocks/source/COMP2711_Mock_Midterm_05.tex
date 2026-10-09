@@ -1,0 +1,216 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+\usepackage{amsmath,amssymb}
+\usepackage[left=1.25in,right=1.25in,top=1.05in,bottom=1.38in,footskip=0.40in]{geometry}
+\usepackage{enumitem,graphicx,needspace}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlist{topsep=0.35em,itemsep=0.3em,parsep=0pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+\newcommand{\problemheading}[2][5\baselineskip]{\Needspace{#1}\par\noindent\hspace*{-0.625in}\textbf{#2}\par\nobreak\vspace{0.3em}}
+\newcommand{\examspace}[1]{\par\vspace*{#1cm}}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{COMP 2711}\\
+\textbf{Discrete Math Tools for Computer Science}\\
+{\large\bfseries Mock Midterm Examination 05}\\[1em]
+\textbf{Practice material -- not an official examination}\\[0.7em]
+Time allowed: 120 minutes \hfill Total: 100 points
+\end{center}
+\vspace{1.1cm}
+\begin{center}\fbox{\fbox{\begin{minipage}{0.93\textwidth}
+Name: \hrulefill\quad Student ID: \hrulefill\\[0.6em]
+Email: \hrulefill\quad Lecture: \hrulefill
+\end{minipage}}}\end{center}
+\vspace{0.6cm}
+\textbf{Instructions}
+\begin{itemize}[leftmargin=1.3em]
+\item This closed-book practice exam consists of 10 problems. You may use one A4 single-sided handwritten cheat sheet.
+\item Answer all problems in the spaces provided. You may also use the backs of pages and the draft pages. Each problem starts on a new page; some answers require only a few lines.
+\item Give a proof, justification, or counterexample when requested. State any additional notation you introduce.
+\item Answers may be left in exact form using binomial coefficients, factorials, and $C(n,k)$ or $P(n,k)$. For example, $\binom{5}{3}+\binom{4}{2}$ is acceptable. Avoid nonstandard notation such as $nCk$ or $nPk$.
+\item The separate solutions document contains derivations and marking notes. Attempt the exam before consulting it.
+\end{itemize}
+\vspace{1.0cm}
+\begin{center}
+\Large
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|l|*{11}{c|}}\hline
+Problems & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & Total\\\hline
+Points & 10 & 13 & 12 & 16 & 10 & 9 & 7 & 6 & 7 & 10 & 100\\\hline
+Score & & & & & & & & & & & \\[0.7em]\hline
+\end{tabular*}
+\end{center}
+\vspace{0.8cm}
+
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 1: Propositional logic and proofs [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Use logical equivalences to prove $\neg(p\leftrightarrow q)\equiv(p\lor q)\land\neg(p\land q)$.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Let $c$ mean \emph{the battery is charged} and $w$ mean \emph{the device works}. Translate \emph{charging the battery is sufficient for the device to work} and \emph{working is necessary for being charged}. Do these statements rule out $w=T,c=F$?
+\examspace{3}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Let $m$ be a fixed odd integer. Prove that for every integer $n$, $n+m$ is even if and only if $n$ is odd. Prove both directions from the definitions.
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 2: Predicate logic [13 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[4 points]} Over $\mathbb R$, evaluate with justification: (i) $\forall x\exists y(y>x)$; (ii) $\exists y\forall x(y>x)$ (1 point each). Explain whether $\forall x\forall yP(x,y)$ and $\forall y\forall xP(x,y)$ are always equivalent (2 points).
+\examspace{4}
+\Needspace{\dimexpr 4cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} All variables range over $\mathbb R$. Negate $\forall x(x>0\to\exists y(y>0\land\forall z(z>y\to P(x,y,z))))$. Leave no negation before a quantifier or compound formula.
+\examspace{4}
+\Needspace{\dimexpr 6cm+4\baselineskip\relax}
+\item[(c)] \textbf{[5 points]} Prove both equivalences by witness/arbitrary-element reasoning: (i) $\exists x(P(x)\lor Q(x))\equiv(\exists xP(x))\lor(\exists xQ(x))$ (3 points); (ii) $\forall x(P(x)\land Q(x))\equiv(\forall xP(x))\land(\forall xQ(x))$ (2 points).
+\examspace{6}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 3: Sets and functions [12 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Prove $A\cup(B\setminus A)=A\cup B$ by membership or set laws.
+\examspace{3}
+\Needspace{\dimexpr 5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} Describe an enumeration of all positive rationals that lists each rational exactly once. Explain why it reaches every rational and why the set is infinite.
+\examspace{5}
+\Needspace{\dimexpr 1cm+4\baselineskip\relax}
+\item[(c)] \textbf{[7 points]} Write T or F for each statement. No justification is required. Each item is worth 1 point.\begin{enumerate}[label=(\roman*)]\item $f:\mathbb Z\to\mathbb Z$, $f(x)=2x$, is injective.\item The same function is surjective.\item Changing that function\textquotesingle s codomain to the even integers makes it bijective.\item For arbitrary compatible functions, $f\circ g=g\circ f$.\item A function\textquotesingle s range is always a subset of its codomain.\item A relation from $A$ to $B$ must give exactly one output for each element of $A$.\item Every bijection gives equal cardinalities for its domain and codomain.\end{enumerate}
+\examspace{1}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 4: Short counting calculations [16 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Seven distinct people stand in a line. $A$ must be first and $B$ must not be last. Count the lines.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} Select an unordered four-person team from nine distinct people, then designate one member as captain. Count these teams with captains.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Count distinct strings formed by rearranging all letters of $\mathrm{STATISTICS}$, with $T$ as both the first and last letter. Equal letters are indistinguishable.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[2 points]} Eight distinct people sit around a circular table. $B$ must not be immediately clockwise from $A$. Rotations are equivalent; reflections are different. Count the seatings.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} Count length-six bit strings with four ones and first bit 1.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(f)] \textbf{[2 points]} Choose eight cookies from five unlimited types, with exactly two of type $A$. Cookies of one type are identical, and order does not matter. Count the choices.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(g)] \textbf{[2 points]} Find the coefficient of $x^6$ in $(x^2+2)^5$.
+\examspace{1.5}
+\Needspace{\dimexpr 1.5cm+4\baselineskip\relax}
+\item[(h)] \textbf{[2 points]} A string has length three or four over $\{A,B,C,D\}$, starts with $A$, and ends with a symbol other than $A$. Repetition is allowed. Count the strings.
+\examspace{1.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 5: Combinatorial proof [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} For $n\ge1$, give an explicit bijection between even-sized and odd-sized subsets of an $n$-element set, and prove that it is a bijection.
+\examspace{4}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Deduce both identities below by counting subsets:\[\sum_{k=0}^{n}\binom nk=2^n,\qquad \sum_{k=0}^{n}(-1)^k\binom nk=0.\]
+\examspace{3}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 6: Inclusion-exclusion [9 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[6 points]} Use inclusion--exclusion to count permutations of $\{1,\ldots,7\}$ with exactly two fixed points.
+\examspace{5}
+\Needspace{\dimexpr 3cm+4\baselineskip\relax}
+\item[(b)] \textbf{[3 points]} How many permutations of $\{1,\ldots,7\}$ have exactly six fixed points? Explain.
+\examspace{3}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 7: Pigeonhole principle [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[] \textbf{[7 points]} Consider eleven team result records, each for three games against arbitrary opponents. The records need not form a league among these teams. A win earns three points, a draw one point, and a loss zero. Each record also gains a single bonus point if it contains at least one win. Prove that two records have the same total score.
+\examspace{7}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 8: Continuous and stopping models [6 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+$U$ has density $f(x)=1/2$ on $[0,2]$ and zero elsewhere. A separate variable $N$ has density $g(x)=e^{-x^2/2}/\sqrt{2\pi}$. Independently repeated Bernoulli trials with success probability $1/4$ stop at the first success; $T$ includes that trial.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[1 points]} Is $f(1)=1/2$ the probability $P(U=1)$? Give that probability.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(b)] \textbf{[1 points]} Find $P(1/2\le U\le3/2)$ by interval area.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(c)] \textbf{[1 points]} Name the distribution represented by $g$; no integration is required.
+\examspace{1.2}
+\Needspace{\dimexpr 1.2cm+4\baselineskip\relax}
+\item[(d)] \textbf{[1 points]} Find $P(T\ge3)$.
+\examspace{1.2}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(e)] \textbf{[2 points]} State the countable stopping-outcome space and pmf of $T$, and verify normalization by a geometric series.
+\examspace{2.0}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 9: Knowledge and guessing [7 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+One test item is selected. A student knows its answer with probability $1/2$; with probability $1/3$ she only eliminates two of its four options; otherwise she has no information. She answers known items correctly and otherwise guesses uniformly among the remaining options.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[3 points]} Find the probability of a correct answer.
+\examspace{3.5}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(b)] \textbf{[4 points]} Given a correct answer, find the posterior probabilities of all three knowledge states. Verify that they sum to one.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage
+\vspace*{0.21in}
+\problemheading{Problem 10: Collecting types [10 points]}
+\begin{list}{}{\setlength{\leftmargin}{0.25in}\setlength{\rightmargin}{0.25in}}\item[]
+Each draw independently produces one of $n\ge2$ coupon types uniformly. Continue until all types are collected. Let $G_i$ count the additional draws, including the new type, needed to move from $i$ distinct types to $i+1$.
+\begin{description}[font=\normalfont,leftmargin=1.2em,labelsep=0.4em]
+\item[(a)] \textbf{[2 points]} Find $E(G_0)$ and explain.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(b)] \textbf{[2 points]} For $0\le i<n$, identify the distribution of $G_i$ and its mean.
+\examspace{2.0}
+\Needspace{\dimexpr 2.0cm+4\baselineskip\relax}
+\item[(c)] \textbf{[2 points]} Find the expected draws needed to obtain two distinct types, starting with none.
+\examspace{2.0}
+\Needspace{\dimexpr 4.5cm+4\baselineskip\relax}
+\item[(d)] \textbf{[4 points]} Derive the expected total draws needed for all $n$ types. Explain why each stage retains a fixed success probability until it ends.
+\examspace{4.5}
+\end{description}
+\end{list}
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\clearpage\textbf{Draft Paper}\par\textit{Mock examination working space.}\vfill
+\end{document}

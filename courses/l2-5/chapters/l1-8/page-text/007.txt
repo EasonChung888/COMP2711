@@ -1,0 +1,29 @@
+ Inclusion-Exclusion Principle
+
+
+▪ Theorem
+  Let 𝐴1,𝐴2,… ,𝐴𝑛 be finite sets. Then:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          8

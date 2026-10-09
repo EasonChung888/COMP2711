@@ -1,0 +1,108 @@
+[
+  {
+    "name": "counting-01-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-01-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-02-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-02-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-03-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-03-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-04-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-04-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-05-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-05-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-06-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-06-solutions",
+    "exit": 0,
+    "warnings": [
+      "warning: counting-06-solutions.tex:32: Overfull \\hbox (1.58011pt too wide) in paragraph at lines 31--32",
+      "warning: counting-06-solutions.tex:32: Overfull \\hbox (1.58011pt too wide) in paragraph at lines 31--32"
+    ]
+  },
+  {
+    "name": "counting-07-exam",
+    "exit": 0,
+    "warnings": [
+      "warning: counting-07-exam.tex:100: Overfull \\hbox (6.77448pt too wide) in paragraph at lines 99--100",
+      "warning: counting-07-exam.tex:100: Overfull \\hbox (6.77448pt too wide) in paragraph at lines 99--100"
+    ]
+  },
+  {
+    "name": "counting-07-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-08-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-08-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-09-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-09-solutions",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-10-exam",
+    "exit": 0,
+    "warnings": []
+  },
+  {
+    "name": "counting-10-solutions",
+    "exit": 0,
+    "warnings": []
+  }
+]

@@ -1,0 +1,22 @@
+ Cardinality of Union: Example 1
+
+▪ In a discrete mathematics class every student is a
+  major in computer science or mathematics, or both.
+  The number of students having computer science as a
+  major (possibly along with mathematics) is 25; the
+  number of students having mathematics as a major
+  (possibly along with computer science) is 13; and the
+  number of students majoring in both computer
+  science and mathematics is 8. How many students are
+  in this class?
+
+
+
+
+
+
+
+
+
+
+                                                                 2

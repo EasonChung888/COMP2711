@@ -1,0 +1,24 @@
+Number of Onto Functions (general case)
+
+▪  How many surjective (or onto) functions are there from a set A with m
+   elements to a set B with n elements (m≥n)?
+▪  Solution
+▪  What is the total number of functions (without any constraint) from             A to B?
+▪  nm
+▪  Let 𝑃𝑖 be the set of functions that do      not have 𝑏𝑖  in their range.
+▪  What is the value of each      𝑃𝑖 ?
+▪  (n-1)m because each element of A can be mapped to every element of B
+   except of 𝑏𝑖.
+▪  Since the sets 𝑃𝑖 may contain common elements, I use inclusion-exclusion
+   to compute the number of non-surjective functions             𝑃1∪  𝑃2 ∪ ⋯ ∪ 𝑃𝑛 . The
+   number of surjective functions is nm -       𝑃1 ∪ 𝑃2 ∪  ⋯ ∪ 𝑃𝑛  .
+▪   𝑃1 ∪ 𝑃2 ∪ ⋯ ∪  𝑃𝑛  =
+
+
+
+
+
+
+
+
+                                                                                      14

@@ -1,0 +1,2491 @@
+{
+  "papers": [
+    {
+      "number": 1,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Three distinct tasks are placed in an ordered schedule, chosen without reuse from six distinct tasks. How many schedules include task $T$?",
+              "solution": "Choose the position of $T$, then fill the remaining positions: $3\\cdot5\\cdot4=60$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A43",
+                "A51"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Let $U=\\{1,2,3,4\\}$ and $V=\\{a,b,c\\}$. Count (i) functions $f:U\\to V$ with $f(1)=f(2)$; (ii) injective functions $U\\to V$.",
+              "solution": "(i) Choose the common value and the two remaining values independently: $3^3=27$. (ii) $0$, since four distinct inputs cannot have distinct images among three outputs.",
+              "rubric": "1 mark for each correct count.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A44"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Encode $S=\\{1,3,5\\}\\subseteq\\{1,2,3,4,5\\}$ by its membership bit string in label order. Use this encoding to count all subsets of $\\{1,2,3,4,5\\}$.",
+              "solution": "The string is $10101$. Each subset has a unique membership string and conversely each string gives a subset; five independent bits give $2^5=32$.",
+              "rubric": "1 mark for 10101; 1 mark for the bijective encoding and $2^5$.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A45"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "The standard triple-loop algorithm computes $AB$ for a $3\\times4$ matrix $A$ and a $4\\times5$ matrix $B$, using four scalar multiplications per output entry. How many scalar multiplications occur?",
+              "solution": "There are $3\\cdot5$ output entries and four multiplications in each: $3\\cdot5\\cdot4=60$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A46"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "A code has length two or three over $\\{A,B,C,0,1\\}$, begins with a letter, and contains at least one digit. Repetition is allowed. Count the codes.",
+              "solution": "Split by length and subtract the all-letter codes: $3(5-3)+3(5^2-3^2)=54$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A47",
+                "A43"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Arrange the seven distinct letters $A,B,C,D,E,F,G$ in a row, with $A,B,C$ together in any internal order. Count the arrangements.",
+              "solution": "Compress the three-letter block. Its five units have $5!$ orders and its internal order has $3!$ choices, giving $5!3!$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A52"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Six distinct people sit around a circular table with $A$ and $B$ adjacent. Rotations are equivalent; reflections are different. Count the seatings.",
+              "solution": "Treat the adjacent pair as a circular block: $2(5-1)!=2\\cdot4!$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A53",
+                "A52"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "Find the coefficient of $x^4$ in $(2x-1)^7$.",
+              "solution": "Choose four factors contributing $2x$: $\\binom74 2^4(-1)^3=-560$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 10,
+              "question": "For $2\\le r\\le n$, prove combinatorially that\\[r(r-1)\\binom nr=n(n-1)\\binom{n-2}{r-2}.\\]",
+              "solution": "Count triples $(S,a,b)$ where $S$ is an $r$-element subset of a fixed $n$-element set and $a,b\\in S$ are distinct, ordered distinguished members. Choosing $S$, then $a$ and $b$, gives $\\binom nr r(r-1)$. Choosing the ordered pair first in $n(n-1)$ ways and then the other $r-2$ elements gives $n(n-1)\\binom{n-2}{r-2}$. Every triple is produced exactly once by each procedure, including $r=2$ and $r=n$.",
+              "rubric": "2 marks for the counted objects and ordered distinction; 3 for the first count; 3 for the second; 2 for explaining the exact correspondence.",
+              "space_cm": 7,
+              "concepts": [
+                "A54",
+                "A55"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P05",
+            "Q-2017-MID-P11"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 9,
+              "question": "Use inclusion--exclusion to count integer solutions of $x+y+z=12$ with $1\\le x\\le5$, $0\\le y\\le4$, and $2\\le z\\le7$.",
+              "solution": "Put $u=x-1$, $v=y$, $w=z-2$. Then $u+v+w=9$, with caps $4,4,5$. The unrestricted count is $\\binom{11}{2}$. Let the bad events be $u\\ge5$, $v\\ge5$, $w\\ge6$. Their sizes are $\\binom62,\\binom62,\\binom52$ after shifting. Every pairwise intersection needs a total shift at least ten and is empty. Thus inclusion--exclusion gives\\[\\binom{11}{2}-2\\binom62-\\binom52=15.\\]",
+              "rubric": "2 marks for shifting lower bounds and defining the universe; 2 for bad events; 3 for singleton counts; 1 for empty overlaps; 1 for the final IE expression.",
+              "space_cm": 7,
+              "concepts": [
+                "A58",
+                "A65"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P06"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "Any sixteen distinct integers selected from $\\{1,2,\\ldots,30\\}$ include a pair with sum 31 and a pair with difference 15. The pairs may differ. Prove both claims and show that sixteen is the smallest number guaranteeing both.",
+              "solution": "For the sum, partition the integers into fifteen pairs $\\{i,31-i\\}$ for $i=1,\\ldots,15$. Sixteen selections force both members of one pair. For the difference, use the different partition $\\{i,i+15\\}$ for $i=1,\\ldots,15$. Again sixteen selections force a complete pair. The fifteen-element selection $\\{1,\\ldots,15\\}$ contains neither a sum-31 pair nor a difference-15 pair, so sixteen is minimal.",
+              "rubric": "3 marks for the sum partition and PHP; 3 for the difference partition and PHP; 1 for the sharp selection.",
+              "space_cm": 7,
+              "concepts": [
+                "A49"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "A journey from $A$ to $C$ is either one of three direct roads or exactly one road from $A$ to $B$ followed by one from $B$ to $C$. There are two $A$--$B$ roads and four $B$--$C$ roads. Count these journeys.",
+              "solution": "The journey types are disjoint, so $3+2\\cdot4=11$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A43",
+                "A47"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Count bit strings of length seven with exactly three ones and different first and last bits.",
+              "solution": "Choose which endpoint is one in two ways, and choose two internal one positions: $2\\binom52=20$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Count distinct strings formed by rearranging all letters of $\\mathrm{BALLOON}$, with equal letters indistinguishable.",
+              "solution": "The two Ls and two Os repeat, so $7!/(2!2!)=1260$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A56"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Eight distinct files are assigned to labelled folders $A,B,C$, with respective sizes $2,3,3$. Within-folder order does not matter. Count the assignments.",
+              "solution": "Choose the folder contents successively: $\\binom82\\binom63=8!/(2!3!3!)$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A57"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Distribute nine indistinguishable tokens among four labelled boxes, with each box nonempty. Count the distributions.",
+              "solution": "Give each box one token; distribute the remaining five freely: $\\binom{5+4-1}{3}=\\binom83=56$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Find the constant term in $(2x^2-x^{-1})^9$.",
+              "solution": "If $k$ factors contribute $2x^2$, the exponent is $2k-(9-k)=3k-9$. Thus $k=3$ and the constant is $\\binom93 2^3(-1)^6=672$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Count right/up unit-step lattice paths from $(0,0)$ to $(5,4)$ that avoid $(2,2)$.",
+              "solution": "Total paths: $\\binom94$. Paths through the forbidden vertex split uniquely into two portions: $\\binom42\\binom53$. Subtract to get $\\binom94-\\binom42\\binom53=66$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A61",
+                "A47"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "From five chemists and four physicists, all distinct and in disjoint groups, select an unordered four-person committee containing exactly two chemists. Count the committees.",
+              "solution": "Independently choose two from each group: $\\binom52\\binom42=60$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 10,
+              "question": "For nonnegative integers $m,n$ and $0\\le r\\le m+n$, prove combinatorially that\\[\\sum_{k=0}^{r}\\binom mk\\binom n{r-k}=\\binom{m+n}{r}.\\]Use $\\binom ab=0$ when $b<0$ or $b>a$.",
+              "solution": "Take disjoint labelled groups of sizes $m$ and $n$, and count their $r$-element subsets. Direct selection gives $\\binom{m+n}{r}$. Classify each subset by the number $k$ selected from the first group. This class has $\\binom mk\\binom n{r-k}$ subsets; impossible classes contribute zero by the convention. The classes $k=0,\\ldots,r$ are disjoint and exhaustive. Their sum therefore equals the direct count, also when a group is empty or $r=0$.",
+              "rubric": "2 marks for the common objects; 2 for the direct count; 3 for each split count; 3 for disjointness, completeness and impossible splits.",
+              "space_cm": 7,
+              "concepts": [
+                "A55",
+                "A62"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P05"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 9,
+              "question": "Six distinct jobs are assigned to three labelled servers $A,B,C$. Job 1 may use $A$ or $B$ only; the other jobs may use any server. Use inclusion--exclusion to count assignments in which every server is used.",
+              "solution": "The universe has $2\\cdot3^5$ assignments. Let $E_X$ mean server $X$ is unused. Then $|E_A|=|E_B|=2^5$ and $|E_C|=2\\cdot2^5$. If both $A,B$ are unused, job 1 has no legal server, giving zero; if $A,C$ or $B,C$ are unused, exactly one assignment remains. The triple intersection is empty. Hence\\[2\\cdot3^5-(2^5+2^5+2\\cdot2^5)+(0+1+1)=360.\\]",
+              "rubric": "2 marks for the restricted universe and missing-server events; 3 for singleton counts; 2 for pair/triple intersections; 2 for correct IE and result.",
+              "space_cm": 7,
+              "concepts": [
+                "A65",
+                "A66"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P07"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "Thirteen points lie in the closed rectangle $[0,8]\\times[0,6]$. Prove that two are at distance at most $2\\sqrt2$, and that four lie in some vertical strip of width two. The claims may use different points. Specify boundary conventions.",
+              "solution": "Partition the rectangle into twelve $2\\times2$ boxes, using four horizontal-coordinate intervals and three vertical-coordinate intervals. Use half-open intervals except that each last interval includes the outer endpoint, assigning every point exactly once. Thirteen points force two in one box. Their coordinate differences are at most two, so their distance is at most $\\sqrt{2^2+2^2}=2\\sqrt2$. For the second claim, use the four width-two vertical strips as boxes. Generalized PHP gives a strip with at least $\\lceil13/4\\rceil=4$ points.",
+              "rubric": "2 marks for the twelve-box partition with boundary convention; 1 for PHP; 1 for the distance bound; 2 for the four-strip partition; 1 for the ceiling bound and four-point conclusion.",
+              "space_cm": 7,
+              "concepts": [
+                "A49",
+                "A50"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P07"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Four distinct prizes are awarded to different people among nine distinct entrants, and entrant $E$ must receive the first prize. Count the awards.",
+              "solution": "Fix $E$ and assign the other three labelled prizes without reuse: $8\\cdot7\\cdot6=336$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A51",
+                "A43"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Five-digit base-ten numbers use distinct digits and end in an even digit. Count them; the leading digit is nonzero.",
+              "solution": "If the last digit is zero: $9\\cdot8\\cdot7\\cdot6$. If it is one of $2,4,6,8$: $4\\cdot8\\cdot8\\cdot7\\cdot6$. The cases sum to $13776$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A43",
+                "A47"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Arrange eight distinct books in a row, with a specified three-book sequence $ABC$ contiguous and in that order. Count the arrangements.",
+              "solution": "Compress the fixed sequence to one unit: there are six distinct units, giving $6!$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A52"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Seven distinct people sit around a circular table with $B$ immediately clockwise from $A$. Rotations are equivalent; reflections are different. Count the seatings.",
+              "solution": "Fix $A$ to remove rotation and then fix $B$ in the specified neighbor position. The remaining people have $5!$ orders.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A53"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Count length-eight strings containing exactly three $R$s, three $S$s, and two $T$s; equal letters are indistinguishable.",
+              "solution": "Choose the positions of the repeated types: $8!/(3!3!2!)=560$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A56"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Choose six pastries from four unlimited types, with at least two of type $A$. Order does not matter and pastries of one type are identical. Count the choices.",
+              "solution": "Reserve two As and choose four more by frequencies: $\\binom{4+4-1}{3}=\\binom73=35$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Find the coefficient of $x^3y^5$ in $(x-2y)^8$.",
+              "solution": "Select five factors contributing $-2y$: $\\binom85(-2)^5=-1792$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "A match ends as soon as one of two teams has won two games. Draw the branching tree of legal win sequences and count its leaves. No game is drawn.",
+              "solution": "\\begin{center}\n\\setlength{\\unitlength}{0.72mm}\n\\begin{picture}(150,96)\n\\qbezier(75,77)(57,70)(39,63)\n\\qbezier(39,55)(27,48)(15,41)\n\\qbezier(39,55)(45,48)(51,41)\n\\qbezier(51,33)(45,26)(39,19)\n\\qbezier(51,33)(57,26)(63,19)\n\\qbezier(75,77)(93,70)(111,63)\n\\qbezier(111,55)(105,48)(99,41)\n\\qbezier(99,33)(93,26)(87,19)\n\\qbezier(99,33)(105,26)(111,19)\n\\qbezier(111,55)(123,48)(135,41)\n\\put(75,81){\\makebox(0,0){$ \\varepsilon $}}\n\\put(39,59){\\makebox(0,0){$ A $}}\n\\put(15,37){\\makebox(0,0){$ \\underline{AA} $}}\n\\put(51,37){\\makebox(0,0){$ AB $}}\n\\put(39,15){\\makebox(0,0){$ \\underline{ABA} $}}\n\\put(63,15){\\makebox(0,0){$ \\underline{ABB} $}}\n\\put(111,59){\\makebox(0,0){$ B $}}\n\\put(99,37){\\makebox(0,0){$ BA $}}\n\\put(87,15){\\makebox(0,0){$ \\underline{BAA} $}}\n\\put(111,15){\\makebox(0,0){$ \\underline{BAB} $}}\n\\put(135,37){\\makebox(0,0){$ \\underline{BB} $}}\n\\end{picture}\n\\end{center}\nHere $\\varepsilon$ is the root. Underlined nodes are terminal; no branch continues after a second win. The terminal sequences are $AA,ABA,ABB,BB,BAA,BAB$. The branches stop immediately at the second win, so the leaf count is $6$.",
+              "rubric": "1 mark for a correct tree stopping at the second win; 1 mark for six leaves.",
+              "space_cm": 4.0,
+              "concepts": [
+                "A48"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 10,
+              "question": "For $n\\ge1$, prove combinatorially that\\[\\sum_{k=0}^{n}k\\binom nk^2=n\\binom{2n-1}{n-1}.\\]",
+              "solution": "Take disjoint labelled groups $A,B$ of size $n$. Count pairs $(S,a)$ where $S$ is an $n$-element subset of $A\\cup B$ and $a\\in S\\cap A$ is distinguished. If $|S\\cap A|=k$, choose the $k$ A-elements and the $n-k$ B-elements, then the distinguished element, giving $k\\binom nk\\binom n{n-k}=k\\binom nk^2$. Summing over $k$ gives the left side. Alternatively choose $a$ in $n$ ways, then choose the other $n-1$ elements from the remaining $2n-1$, giving the right side. The two procedures count every pair exactly once.",
+              "rubric": "2 marks for the marked selection model; 4 for the split count and symmetry; 3 for choosing the mark first; 1 for the exhaustive double-count conclusion.",
+              "space_cm": 7,
+              "concepts": [
+                "A55",
+                "A63"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P05"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 9,
+              "question": "Use inclusion--exclusion to count five-digit base-ten numbers in which each of $0,1,2$ occurs at least once. Repetition is allowed, but the first digit is nonzero.",
+              "solution": "Let $E_d$ mean digit $d$ is missing. The universe has $9\\cdot10^4$ numbers. Missing zero gives $9^5$; missing 1 or 2 gives $8\\cdot9^4$ each. Missing $\\{0,1\\}$ or $\\{0,2\\}$ gives $8^5$ each, while missing $\\{1,2\\}$ gives $7\\cdot8^4$. Missing all three gives $7^5$. Thus\\[9\\cdot10^4-9^5-2\\cdot8\\cdot9^4+2\\cdot8^5+7\\cdot8^4-7^5=3376.\\]",
+              "rubric": "1 mark for the universe and bad events; 3 for single intersections; 3 for pair/triple intersections with leading-zero handling; 2 for IE and the exact answer.",
+              "space_cm": 7,
+              "concepts": [
+                "A65",
+                "A47"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P06"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 3,
+              "question": "A box contains seven tokens of each of five colours, one of which is red. Tokens are selected without replacement. What is the smallest number guaranteeing five of one colour? Justify both necessity and sufficiency.",
+              "solution": "At most $4\\cdot5=20$ tokens can be selected while keeping every colour count at most four. Hence 21 force five of some colour. Four of each colour realizes 20 without the desired event, so 21 is minimal.",
+              "rubric": "2 marks for the capacity/PHP bound; 1 for the sharp example.",
+              "space_cm": 3,
+              "concepts": [
+                "A50"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "What is the smallest number guaranteeing five red tokens from the same box? Justify both necessity and sufficiency.",
+              "solution": "The four nonred colours supply 28 tokens. A selection with at most four red therefore has size at most $28+4=32$. Thus 33 guarantee five red. Taking all 28 nonred tokens and four red shows that 32 do not suffice.",
+              "rubric": "2 marks for the specified-colour bound; 2 for a realizable sharp example and minimum.",
+              "space_cm": 4,
+              "concepts": [
+                "A50"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Count subsets of $\\{1,\\ldots,8\\}$ that contain 1 and do not contain 2.",
+              "solution": "Each of the other six membership bits is free, giving $2^6=64$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A45",
+                "A43"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Count injective functions $f:\\{1,2,3\\}\\to\\{a,b,c,d,e\\}$ with $f(1)\\ne a$.",
+              "solution": "The successive choice counts are $4,4,3$, giving $48$. The value $a$ becomes available to the later inputs.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A44",
+                "A43"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Count length-five palindromic strings over $\\{0,1,2\\}$ whose first symbol is nonzero. Repetition is allowed.",
+              "solution": "A string is determined by its first three symbols; there are $2\\cdot3\\cdot3=18$ choices.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A43"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Count length-four strings over $\\{A,B,0,1\\}$ with exactly two digit positions. Repetition is allowed.",
+              "solution": "Choose the two digit positions, then choose each symbol from its two-symbol type: $\\binom42 2^4=96$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54",
+                "A43"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Draw a branching tree for bit strings of length four with no consecutive ones, and count its leaves.",
+              "solution": "\\begin{center}\n\\setlength{\\unitlength}{0.72mm}\n\\begin{picture}(195,118)\n\\qbezier(97.5,99)(78.75,92)(60,85)\n\\qbezier(60,77)(48.75,70)(37.5,63)\n\\qbezier(37.5,55)(30,48)(22.5,41)\n\\qbezier(22.5,33)(18.75,26)(15,19)\n\\qbezier(22.5,33)(26.25,26)(30,19)\n\\qbezier(37.5,55)(45,48)(52.5,41)\n\\qbezier(52.5,33)(48.75,26)(45,19)\n\\qbezier(52.5,33)(56.25,26)(60,19)\n\\qbezier(60,77)(75,70)(90,63)\n\\qbezier(90,55)(86.25,48)(82.5,41)\n\\qbezier(82.5,33)(78.75,26)(75,19)\n\\qbezier(82.5,33)(86.25,26)(90,19)\n\\qbezier(90,55)(97.5,48)(105,41)\n\\qbezier(97.5,99)(123.75,92)(150,85)\n\\qbezier(150,77)(146.25,70)(142.5,63)\n\\qbezier(142.5,55)(135,48)(127.5,41)\n\\qbezier(127.5,33)(123.75,26)(120,19)\n\\qbezier(127.5,33)(131.25,26)(135,19)\n\\qbezier(142.5,55)(150,48)(157.5,41)\n\\qbezier(157.5,33)(153.75,26)(150,19)\n\\qbezier(157.5,33)(161.25,26)(165,19)\n\\qbezier(150,77)(165,70)(180,63)\n\\put(97.5,103){\\makebox(0,0){$ \\varepsilon $}}\n\\put(60,81){\\makebox(0,0){$ 0 $}}\n\\put(37.5,59){\\makebox(0,0){$ 00 $}}\n\\put(22.5,37){\\makebox(0,0){$ 000 $}}\n\\put(15,15){\\makebox(0,0){$ \\underline{0000} $}}\n\\put(30,15){\\makebox(0,0){$ \\underline{0001} $}}\n\\put(52.5,37){\\makebox(0,0){$ 001 $}}\n\\put(45,15){\\makebox(0,0){$ \\underline{0010} $}}\n\\put(60,15){\\makebox(0,0){$ \\times $}}\n\\put(90,59){\\makebox(0,0){$ 01 $}}\n\\put(82.5,37){\\makebox(0,0){$ 010 $}}\n\\put(75,15){\\makebox(0,0){$ \\underline{0100} $}}\n\\put(90,15){\\makebox(0,0){$ \\underline{0101} $}}\n\\put(105,37){\\makebox(0,0){$ \\times $}}\n\\put(150,81){\\makebox(0,0){$ 1 $}}\n\\put(142.5,59){\\makebox(0,0){$ 10 $}}\n\\put(127.5,37){\\makebox(0,0){$ 100 $}}\n\\put(120,15){\\makebox(0,0){$ \\underline{1000} $}}\n\\put(135,15){\\makebox(0,0){$ \\underline{1001} $}}\n\\put(157.5,37){\\makebox(0,0){$ 101 $}}\n\\put(150,15){\\makebox(0,0){$ \\underline{1010} $}}\n\\put(165,15){\\makebox(0,0){$ \\times $}}\n\\put(180,59){\\makebox(0,0){$ \\times $}}\n\\end{picture}\n\\end{center}\nHere $\\varepsilon$ is the root. Each cross marks a forbidden extension by 1 after 1; underlined strings are legal terminal leaves. The eight legal leaves are\\[0000,0001,0010,0100,0101,1000,1001,1010.\\] A branch ending in 1 may extend only by 0. Thus there are eight legal leaves; crosses are excluded extensions and are not counted.",
+              "rubric": "1 mark for a tree with exactly the legal branches; 1 mark for eight.",
+              "space_cm": 5.0,
+              "concepts": [
+                "A48"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "From ten distinct files, assign two to labelled folder $A$, three to labelled folder $B$, and leave the other five outside. A specified file $Z$ must not enter $A$. Within-folder order does not matter. Count the assignments.",
+              "solution": "Choose the two $A$-files from the nine files other than $Z$. Then choose the three $B$-files from the eight remaining files, which may include $Z$. The answer is $\\binom92\\binom83=2016$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A57",
+                "A47"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Count nonnegative integer solutions to $x_1+x_2+x_3+x_4=8$ in which $x_1$ is even.",
+              "solution": "Write $x_1=2t$ for $0\\le t\\le4$. Sum the other three-variable counts: $\\sum_{t=0}^4\\binom{10-2t}{2}=95$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58",
+                "A47"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "A row of Pascal's triangle is $1,4,6,4,1$. Give the next row, stating how boundary and interior entries are obtained.",
+              "solution": "The next row is $1,5,10,10,5,1$. Its boundary entries are 1; each interior entry is the sum of its two parents.",
+              "rubric": "1 mark for the row; 1 mark for the boundary and parent-sum rules.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A61"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 10,
+              "question": "For $1\\le r\\le t\\le n$, prove combinatorially that\\[\\sum_{j=t}^{n}\\binom{j-1}{r-1}=\\binom nr-\\binom{t-1}{r}.\\]",
+              "solution": "Count $r$-element subsets of $\\{1,\\ldots,n\\}$ whose largest element is at least $t$. Subtracting those entirely in $\\{1,\\ldots,t-1\\}$ gives $\\binom nr-\\binom{t-1}{r}$. Alternatively, if the largest element is $j$, include $j$ and choose the other $r-1$ elements from $\\{1,\\ldots,j-1\\}$, giving $\\binom{j-1}{r-1}$. The largest-element classes $j=t,\\ldots,n$ are disjoint and cover precisely the desired subsets. Summing proves the identity.",
+              "rubric": "2 marks for the restricted subset collection; 3 for the subtraction count; 3 for the maximum-label count; 2 for disjoint and exhaustive classes.",
+              "space_cm": 7,
+              "concepts": [
+                "A55",
+                "A64"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P05"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 6,
+              "question": "For $n\\ge2$, use inclusion--exclusion on fixed-point events to derive the number $D_n$ of permutations of $\\{1,\\ldots,n\\}$ with no fixed point.",
+              "solution": "Let $F_i$ contain permutations fixing $i$. Fixing a specified set of $j$ positions leaves $(n-j)!$ permutations. There are $\\binom nj$ such intersections. Taking the complement of the union by IE gives\\[D_n=\\sum_{j=0}^n(-1)^j\\binom nj(n-j)!=n!\\sum_{j=0}^n\\frac{(-1)^j}{j!}.\\]",
+              "rubric": "1 mark for events and universe; 2 for intersection sizes; 1 for the number of intersections; 2 for the IE sum and simplification.",
+              "space_cm": 5,
+              "concepts": [
+                "A65",
+                "A67"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "All $n!$ permutations are equally likely. Express the probability of no fixed point, and state the constant it approaches as $n$ grows. No limit proof is required.",
+              "solution": "The probability is $D_n/n!=\\sum_{j=0}^n(-1)^j/j!$. As stated in the lecture, it approaches $1/e$.",
+              "rubric": "1 mark for dividing by $n!$; 1 for the exact finite sum; 1 for $1/e$.",
+              "space_cm": 3,
+              "concepts": [
+                "A69"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P07"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "Prove that placing $N\\ge1$ objects in $k\\ge1$ labelled boxes forces one box to contain at least $\\lceil N/k\\rceil$ objects. Then suppose 22 files are placed in eight folders, each holding at most four files. Prove that at least three folders hold at least three files.",
+              "solution": "Put $q=\\lceil N/k\\rceil$. If every box contained at most $q-1$ objects, the total would be at most $k(q-1)<N$, since $q-1<N/k$, a contradiction. Thus some box has at least $q$ objects. For the restricted folders, if at most two held at least three files, those two could hold at most four each and the other six at most two each. The total would then be at most $2\\cdot4+6\\cdot2=20<22$, a contradiction. Hence at least three folders meet the requirement.",
+              "rubric": "2 marks for the contrary occupancy bound; 1 for the strict ceiling inequality; 1 for the contradiction; 2 for the restricted capacity bound of twenty; 1 for concluding three qualifying folders.",
+              "space_cm": 7,
+              "concepts": [
+                "A50"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Seven distinct people stand in a line. $A$ must be first and $B$ must not be last. Count the lines.",
+              "solution": "After fixing $A$, all $6!$ lines are possible, except $5!$ having $B$ last. Hence $6!-5!=600$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A51",
+                "A47"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Select an unordered four-person team from nine distinct people, then designate one member as captain. Count these teams with captains.",
+              "solution": "Choose the team and then its captain: $4\\binom94=504$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Count distinct strings formed by rearranging all letters of $\\mathrm{STATISTICS}$, with $T$ as both the first and last letter. Equal letters are indistinguishable.",
+              "solution": "Fix the two endpoint Ts. The eight free positions contain three Ss, two Is, one T, one A and one C. Hence the count is $8!/(3!2!)=3360$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A56",
+                "A43"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Eight distinct people sit around a circular table. $B$ must not be immediately clockwise from $A$. Rotations are equivalent; reflections are different. Count the seatings.",
+              "solution": "Fix $A$. Of $7!$ seatings, $6!$ put $B$ in the forbidden position. The answer is $7!-6!$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A53",
+                "A47"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Count length-six bit strings with four ones and first bit 1.",
+              "solution": "The remaining five positions contain three ones, giving $\\binom53=10$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Choose eight cookies from five unlimited types, with exactly two of type $A$. Cookies of one type are identical, and order does not matter. Count the choices.",
+              "solution": "The six remaining cookies use the four non-A types: $\\binom{6+4-1}{3}=\\binom93=84$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Find the coefficient of $x^6$ in $(x^2+2)^5$.",
+              "solution": "Exactly three factors contribute $x^2$, giving $\\binom53 2^2=40$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "A string has length three or four over $\\{A,B,C,D\\}$, starts with $A$, and ends with a symbol other than $A$. Repetition is allowed. Count the strings.",
+              "solution": "The disjoint length cases give $3\\cdot4+3\\cdot4^2=60$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A47",
+                "A43"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 6,
+              "question": "For $n\\ge1$, give an explicit bijection between even-sized and odd-sized subsets of an $n$-element set, and prove that it is a bijection.",
+              "solution": "Fix one ground-set element $a$. Map each subset $S$ to the subset obtained by toggling membership of $a$: remove $a$ if present and add it if absent. Size changes by one, so parity changes. Toggling twice returns $S$, giving an inverse and hence a bijection between even and odd subsets.",
+              "rubric": "2 marks for a well-defined toggle; 2 for parity change; 2 for the inverse argument.",
+              "space_cm": 4,
+              "concepts": [
+                "A55",
+                "A60"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Deduce both identities below by counting subsets:\\[\\sum_{k=0}^{n}\\binom nk=2^n,\\qquad \\sum_{k=0}^{n}(-1)^k\\binom nk=0.\\]",
+              "solution": "The $2^n$ membership strings encode all subsets bijectively. Partitioning these subsets by their size gives the first sum. The second sum is the number of even-sized subsets minus the number of odd-sized subsets, which is zero by part (a). Thus each parity class contains $2^{n-1}$ subsets.",
+              "rubric": "2 marks for all-subset count partitioned by size; 2 for the signed sum as the difference of equal parity counts.",
+              "space_cm": 3,
+              "concepts": [
+                "A45",
+                "A60"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P09-a",
+            "Q-2024F-MID-P09-b"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 6,
+              "question": "Use inclusion--exclusion to count permutations of $\\{1,\\ldots,7\\}$ with exactly two fixed points.",
+              "solution": "Choose the fixed labels in $\\binom72$ ways. No other label may be fixed. For the five remaining labels, an intersection specifying $j$ additional fixed labels has $(5-j)!$ permutations. IE therefore gives\\[\\binom72\\sum_{j=0}^{5}(-1)^j\\binom5j(5-j)!=\\binom72D_5=21\\cdot44=924.\\]Each permutation has exactly one chosen fixed-label set, so no overcount occurs.",
+              "rubric": "1 mark for selecting fixed labels; 2 for the remaining fixed-point events/intersections; 2 for the IE formula; 1 for correct evaluation and no overcount.",
+              "space_cm": 5,
+              "concepts": [
+                "A67",
+                "A68"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "How many permutations of $\\{1,\\ldots,7\\}$ have exactly six fixed points? Explain.",
+              "solution": "The count is zero. If six labels are fixed, bijectivity forces the only remaining label into its own position, so there are seven fixed points. Equivalently the remainder would require $D_1=0$.",
+              "rubric": "1 mark for zero; 2 for the forced seventh fixed point (or explained $D_1$).",
+              "space_cm": 3,
+              "concepts": [
+                "A68"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P07"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "Consider eleven team result records, each for three games against arbitrary opponents. The records need not form a league among these teams. A win earns three points, a draw one point, and a loss zero. Each record also gains a single bonus point if it contains at least one win. Prove that two records have the same total score.",
+              "solution": "Let $w,d$ be the numbers of wins and draws, so $w,d\\ge0$ and $w+d\\le3$. If $w=0$, there is no bonus, and the possible totals are $0,1,2,3$. If $w=1$, the total is $3+d+1$, giving $4,5,6$. If $w=2$, it is $6+d+1$, giving $7,8$. If $w=3$, it is $9+1=10$. Thus every score lies in the ten-element set $\\{0,1,\\ldots,8,10\\}$. Eleven records in these ten score boxes force at least two equal scores by PHP.",
+              "rubric": "2 marks for distinguishing the zero-win and positive-win bonus cases; 3 for the ten-score bound with correct win/draw restrictions; 2 for PHP records, boxes and conclusion.",
+              "space_cm": 7,
+              "concepts": [
+                "A49",
+                "A47"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Count functions $f:\\{1,2,3,4,5\\}\\to\\{A,B,C,D\\}$ with $f(1)=A$ and $f(2)\\ne A$.",
+              "solution": "The first value is fixed, the second has three choices, and the others have four each: $3\\cdot4^3=192$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A44",
+                "A43"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "For $0\\le k\\le n$, explain by choosing and then ordering why $P(n,k)=\\binom nk k!$. Include the case $k=0$, using $0!=1$.",
+              "solution": "Choose the unordered $k$-element set in $\\binom nk$ ways, then order its members in $k!$ ways. Each ordered selection has one underlying set and one order, so it is counted exactly once. If $k=0$, there is one empty selection and one empty ordering, giving $P(n,0)=\\binom n0 0!=1$.",
+              "rubric": "1 mark for selecting the unordered set; 1 mark for its $k!$ orders and the unique representation, including the empty case.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A51",
+                "A54"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Arrange $A,B,C,D,E,F$ in a row with $AB$ contiguous in that order and $C,D$ contiguous in either order. Count the arrangements.",
+              "solution": "The two blocks and $E,F$ are four distinct units. Only the CD block has two internal orders, giving $2\\cdot4!=48$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A52"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Deal unordered hands of two cards to each of three labelled players from nine distinct cards, leaving three undealt. Count the deals.",
+              "solution": "The three players and the undealt pile are labelled categories. Their sizes give\\[\\frac{9!}{2!2!2!3!}=7560.\\]",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A57"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Count five-digit base-five numbers whose digits are nondecreasing from left to right. Digits are $0,1,2,3,4$, repetitions are allowed, and the leading digit is nonzero.",
+              "solution": "Zero would have to lead, so it is forbidden altogether. Count frequency vectors for five digits of types $1,2,3,4$: $\\binom83=56$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Count length-six nonincreasing strings over $\\{0,1,2,3\\}$ whose first symbol is nonzero. Repetitions are allowed.",
+              "solution": "The four frequencies have total six, giving $\\binom93$ vectors. Only the all-zero string is invalid, so the count is $\\binom93-1=83$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58",
+                "A47"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "For a $4\\times2$ matrix $A$ and a $2\\times7$ matrix $B$, compute only entries $C_{ij}$ of $AB$ with $i+j$ even, where $1\\le i\\le4$ and $1\\le j\\le7$. Each computed entry uses two scalar multiplications. Count the multiplications.",
+              "solution": "The parity-matched index pairs number $2\\cdot4+2\\cdot3=14$: odd/odd or even/even. Two scalar multiplications per entry give $2\\cdot14=28$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A46",
+                "A47"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "Count right/up unit-step lattice paths from $(0,0)$ to $(3,3)$ whose first step is up.",
+              "solution": "After the first up step, arrange three right and two up steps: $\\binom52=10$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A61",
+                "A54"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 5,
+              "question": "Use membership bit strings and a partition by subset size to prove $\\sum_{k=0}^{n}\\binom nk=2^n$ for $n\\ge0$.",
+              "solution": "In a fixed order of the $n$ elements, record 1 for membership and 0 otherwise. This is a bijection between subsets and length-$n$ bit strings, of which there are $2^n$. There are $\\binom nk$ subsets of size $k$; these size classes are disjoint and exhaustive. Summing their sizes gives $2^n$. For $n=0$, both count the one empty subset.",
+              "rubric": "2 marks for the explicit bijection; 1 for the bit-string count; 2 for the size partition including the empty case.",
+              "space_cm": 4,
+              "concepts": [
+                "A45",
+                "A60"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 5,
+              "question": "Prove combinatorially that $\\sum_{k=0}^{n}2^k\\binom nk=3^n$.",
+              "solution": "Count subsets whose selected elements are each coloured red or blue. Choosing a $k$-element subset and then colouring it gives $\\binom nk2^k$; sum over $k$. Alternatively each ground-set element has three states: absent, red or blue. The independent states give $3^n$. These are two encodings of the same objects, including the empty coloured subset.",
+              "rubric": "2 marks for the coloured-subset model; 1 for the size-class count; 1 for three independent states; 1 for matching the objects.",
+              "space_cm": 4,
+              "concepts": [
+                "A55",
+                "A60"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P09-b"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 6,
+              "question": "Use inclusion--exclusion to count integers in $\\{1,\\ldots,180\\}$ divisible by none of $2,3,5$.",
+              "solution": "Let the bad sets be multiples of 2, 3 and 5. Their sizes are $90,60,36$; pairwise intersections are multiples of $6,10,15$, with sizes $30,18,12$; the triple intersection has six multiples of 30. Subtracting the union from 180 gives\\[180-90-60-36+30+18+12-6=48.\\]",
+              "rubric": "1 mark for bad sets; 2 for singleton sizes; 2 for intersection sizes; 1 for IE and the answer.",
+              "space_cm": 5,
+              "concepts": [
+                "A65"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "In the general inclusion--exclusion union formula, an element belongs to exactly $r\\ge1$ of the sets. Explain why its total signed contribution is one.",
+              "solution": "It occurs in exactly $\\binom rj$ intersections of $j$ sets, so its contribution is $\\sum_{j=1}^r(-1)^{j+1}\\binom rj$. Since $\\sum_{j=0}^r(-1)^j\\binom rj=(1-1)^r=0$ and the $j=0$ term is one, the contribution is one.",
+              "rubric": "1 mark for intersection multiplicities; 1 for the alternating binomial identity; 1 for the total contribution.",
+              "space_cm": 3,
+              "concepts": [
+                "A65",
+                "A60"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P06"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "Let $a_1,\\ldots,a_{2m+1}$ be a permutation of $1,\\ldots,2m+1$, where $m\\ge1$. Prove that $\\prod_{i=1}^{2m+1}(a_i-i)$ is even. Show by a construction that the corresponding statement need not hold for a permutation of $1,\\ldots,2m$.",
+              "solution": "For every factor to be odd, each odd value would have to occupy an even-indexed position. There are $m+1$ odd values but only $m$ such positions. Distinct values occupy distinct positions, so this placement is impossible by PHP. Thus some value and its index have the same parity, making one factor even and the entire integer product even (including a zero product). For even size, use $a_{2j-1}=2j$, $a_{2j}=2j-1$ for $j=1,\\ldots,m$. The factors alternate $1,-1$, so their product is $(-1)^m$, which is odd.",
+              "rubric": "2 marks for odd-difference parity requirement; 2 for the unequal PHP counts; 1 for the even-product conclusion; 2 for a valid even-size counterconstruction.",
+              "space_cm": 7,
+              "concepts": [
+                "A49"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "A visitor tours six distinct cities exactly once, beginning at a specified city $A$ and ending at a different specified city $B$. Count the visit orders.",
+              "solution": "Arrange the four remaining cities between the fixed endpoints: $4!$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A51"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Count functions from a labelled four-element set to a labelled five-element set whose range has exactly three elements.",
+              "solution": "Choose the three image values, then use each at least once: $\\binom53(3^4-3\\cdot2^4+3)=360$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A44",
+                "A66"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Count length-eight bit strings with at most one 1.",
+              "solution": "The zero-one-count cases are disjoint: one all-zero string plus eight single-one positions, giving $1+8=9$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A47",
+                "A54"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Arrange four identical red tokens and three identical blue tokens in a line, with red first and blue last. Count the colour strings.",
+              "solution": "After fixing the endpoints, the five free positions hold three reds and two blues: $5!/(3!2!)=10$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A56"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Seven distinct people sit around a circle, and $A,B,C$ must occur consecutively in that clockwise order. Rotations are equivalent; reflections are different. Count the seatings.",
+              "solution": "Treat the prescribed triple as one circular unit. Five units give $(5-1)!=4!$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A53",
+                "A52"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Count nonnegative integer triples $(x,y,z)$ satisfying $x+y+z\\le6$.",
+              "solution": "Add the uniquely determined slack $w=6-x-y-z\\ge0$. The four-variable sum has $\\binom93=84$ solutions.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Find the constant term in $(x^3+2x^{-2})^{10}$.",
+              "solution": "If $k$ factors contribute $x^3$, the exponent is $3k-2(10-k)=5k-20$. Thus $k=4$, giving $\\binom{10}{4}2^6=13440$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "Eight distinct files enter labelled folders $A,B$ of sizes three and two, leaving three outside. Exactly one of the specified files $X,Y$ must be outside. Within-folder order does not matter. Count the assignments.",
+              "solution": "Choose which of $X,Y$ is outside in two ways, then choose its two outside companions from the other six files. Of the five files left inside, choose three for $A$; the other two go to $B$. Thus $2\\binom62\\binom53=300$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A57",
+                "A54",
+                "A47"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 6,
+              "question": "For $1\\le r<n$, prove Pascal's identity by a disjoint partition of subsets:\\[\\binom nr=\\binom{n-1}{r-1}+\\binom{n-1}{r}.\\]",
+              "solution": "Fix an element $a$ of an $n$-element set. Its $r$-element subsets split into those containing $a$ and those not containing $a$. In the first class, choose the other $r-1$ elements from the remaining $n-1$, giving $\\binom{n-1}{r-1}$. The second class has $\\binom{n-1}{r}$ subsets. The classes are disjoint and exhaustive, so their sum is $\\binom nr$.",
+              "rubric": "1 mark for fixing an element; 2 for each class count; 1 for the disjoint exhaustive conclusion.",
+              "space_cm": 4,
+              "concepts": [
+                "A55",
+                "A61"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Let $p(a,b)$ count right/up unit-step paths from $(0,0)$ to $(a,b)$. Explain its Pascal recurrence and boundary values, then count paths to $(4,3)$ avoiding $(2,1)$.",
+              "solution": "For $a,b\\ge1$, the last step comes from $(a-1,b)$ or $(a,b-1)$, so $p(a,b)=p(a-1,b)+p(a,b-1)$. On either axis there is exactly one path, so $p(a,0)=p(0,b)=1$. Unrestricted paths to $(4,3)$ total $\\binom73=35$. Those through $(2,1)$ split uniquely into $\\binom31\\binom42=18$ paths, leaving $35-18=17$.",
+              "rubric": "1 mark for the last-step recurrence; 1 for boundary values; 1 for total and forbidden-path counts; 1 for subtraction and answer.",
+              "space_cm": 4,
+              "concepts": [
+                "A61",
+                "A47"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P04-a",
+            "Q-2025F-MID-P05"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 9,
+              "question": "Strings have six positions, with symbols from $\\{A,B,C,D\\}$; repetition is allowed. Use inclusion--exclusion to count strings whose endpoints differ and in which each of $A,B,C$ appears at least once.",
+              "solution": "With an alphabet of size $m$, endpoint inequality gives $m(m-1)$ endpoint choices and $m^4$ internal choices, so $(m-1)m^5$ strings. Let $E_A,E_B,E_C$ be the missing-symbol events. Missing a specified set of $j$ required symbols leaves $m=4-j$. IE therefore gives\\[3\\cdot4^5-\\binom31 2\\cdot3^5+\\binom32 1\\cdot2^5-0\\cdot1^5=1710.\\]The triple intersection is empty because the one remaining symbol cannot make unequal endpoints.",
+              "rubric": "2 marks for the endpoint-constrained universe; 2 for the missing events; 3 for all intersection counts including the empty triple; 2 for the IE expression and answer.",
+              "space_cm": 7,
+              "concepts": [
+                "A65",
+                "A66"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P06",
+            "Q-2024F-MID-P07"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "Among any 65 distinct bit strings of length seven, prove that two agree in their first six positions and differ only in the last position. Show that 64 strings do not suffice to force this.",
+              "solution": "Map each string to its six-bit prefix; there are $2^6=64$ prefix boxes. Sixty-five strings force two with one prefix. Their strings are distinct, so their last bits must differ. For sharpness, take all 64 six-bit prefixes and append 0 to each. These strings have distinct prefixes, so no forced pair occurs.",
+              "rubric": "2 marks for the prefix map and box count; 2 for PHP; 1 for distinctness forcing the last-bit difference; 2 for the sharp construction.",
+              "space_cm": 7,
+              "concepts": [
+                "A49",
+                "A45"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Tickets have format LDD or LLD, with letters from $\\{A,B,C\\}$ and digits from $\\{0,1,2,3\\}$. Within a ticket, letters cannot repeat and digits cannot repeat. Count the tickets.",
+              "solution": "The two formats are disjoint: $3\\cdot4\\cdot3+3\\cdot2\\cdot4=60$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A43",
+                "A47"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Choose and order four distinct people among eight, requiring $A$ to occur and $B$ not to occur. Count the ordered selections.",
+              "solution": "Choose the position of $A$ in four ways, then fill the others from six allowable people without reuse: $4\\cdot6\\cdot5\\cdot4=480$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A51",
+                "A43"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Seven distinct people stand in a line with $A$ and $B$ not adjacent. Count the lines.",
+              "solution": "Of $7!$ lines, $2\\cdot6!$ have the adjacent pair in either order. Thus $7!-2\\cdot6!=3600$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A52",
+                "A47"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Six distinct people sit at equally spaced places around a circular table, with $A$ and $B$ opposite. Rotations are equivalent; reflections are different. Count the seatings.",
+              "solution": "Fix $A$ to remove rotations and fix $B$ in its opposite place. The other four people have $4!$ orders.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A53"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Count length-nine bit strings containing four ones and ending in 00.",
+              "solution": "Choose the four one positions from the first seven: $\\binom74=35$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "An unlimited fruit supply has six types, $A$ through $F$. Choose ten pieces, with at least two of type $A$ and three of type $B$. The other four types may be absent. Fruit of a type is identical and order does not matter. Count the choices.",
+              "solution": "Reserve two As and three Bs, then distribute the remaining five among the six labelled types, allowing zero further pieces of any type. Stars and bars gives $\\binom{5+6-1}{5}=\\binom{10}{5}=252$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Find the coefficient of $x^2y^4$ in $(3x-y)^6$.",
+              "solution": "Choose the two $3x$ factors: $\\binom62 3^2(-1)^4=135$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "Count right/up unit-step lattice paths from $(0,0)$ to $(4,4)$ that pass through $(2,1)$.",
+              "solution": "The two portions have counts $\\binom31$ and $\\binom53$, so the answer is $3\\cdot10=30$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A61",
+                "A43"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 7,
+              "question": "Use the choices made when multiplying $n$ binomial factors to prove, for $n\\ge0$,\\[(x+y)^n=\\sum_{k=0}^{n}\\binom nk x^{n-k}y^k.\\]",
+              "solution": "To form one term from the product of $n$ factors, choose either $x$ or $y$ from each labelled factor. If $y$ is chosen in exactly $k$ factors, the resulting monomial is $x^{n-k}y^k$. There are $\\binom nk$ choices of those factors, so this is its coefficient. The values $k=0,\\ldots,n$ exhaust the possibilities and yield distinct exponent pairs. Summing all coefficients times their monomials proves the expansion. For $n=0$, the empty product and the single $k=0$ term are both 1.",
+              "rubric": "2 marks for factor-choice model; 2 for binomial coefficient count; 2 for grouping all terms by exponent pair; 1 for the empty-product case.",
+              "space_cm": 5,
+              "concepts": [
+                "A55",
+                "A59"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 3,
+              "question": "For $0\\le r\\le n$, deduce the coefficient of $x^{2n-2r}y^r$ in $(x^2-3y)^n$.",
+              "solution": "Substitute $x^2$ and $-3y$ into the expansion. Exactly $r$ factors contribute $-3y$, giving coefficient $\\binom nr(-3)^r$; the other $n-r$ contribute $x^2$, yielding the stated $x$ exponent.",
+              "rubric": "1 mark for matching $r$ factors to the $y$ exponent; 1 for the power $(-3)^r$; 1 for the binomial coefficient and final answer.",
+              "space_cm": 3,
+              "concepts": [
+                "A59"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P05",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 9,
+              "question": "A nine-element set contains three specified disjoint pairs. Use inclusion--exclusion to count its five-element subsets in which no specified pair has both members selected.",
+              "solution": "Let $E_i$ contain five-element subsets including both members of specified pair $i$. The universe has $\\binom95$ subsets. A specified complete pair leaves three elements to choose among seven, giving $|E_i|=\\binom73$. Two complete pairs leave one choice among five, giving $|E_i\\cap E_j|=\\binom51$. All three pairs require six distinct elements, so their intersection is empty. The result is\\[\\binom95-3\\binom73+3\\binom51=36.\\]",
+              "rubric": "2 marks for the universe and complete-pair bad events; 2 for singleton counts; 2 for pairwise counts; 1 for empty triple; 2 for IE and answer.",
+              "space_cm": 7,
+              "concepts": [
+                "A65",
+                "A54"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P06"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "A collection contains ten red, eight blue and six green tokens. Tokens are selected without replacement. Find the smallest number that guarantees at least six red, or at least four blue, or at least three green, and prove that your number is minimal.",
+              "solution": "A selection avoiding all three outcomes has at most five red, three blue and two green, hence at most $5+3+2=10$ tokens. Thus any eleven force at least one outcome by the capacity form of PHP. All these avoidance capacities are available in the collection, so selecting exactly five red, three blue and two green realizes ten without success. Therefore eleven is the minimum.",
+              "rubric": "3 marks for the three avoidance capacities; 2 for the eleven-token forcing argument; 2 for the attainable ten-token sharp construction.",
+              "space_cm": 7,
+              "concepts": [
+                "A50"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "A password has four symbols, chosen without repetition from five distinct letters and three distinct digits. It starts with a digit and its second symbol is a letter. Count the passwords.",
+              "solution": "The first two choices have $3\\cdot5$ possibilities; six symbols then remain, followed by five: $3\\cdot5\\cdot6\\cdot5=450$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A43"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Count functions $f:\\{1,2,3\\}\\to\\{A,B,C,D\\}$ with $f(1)=f(2)$ and $f(3)\\ne f(1)$.",
+              "solution": "Choose the common value in four ways and the different third value in three: $4\\cdot3=12$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A44"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Count length-ten bit strings containing exactly three ones, all consecutive.",
+              "solution": "The unique three-one block may start at positions 1 through 8, giving 8 strings.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54",
+                "A52"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Count distinct strings formed by rearranging all letters of $\\mathrm{MISSISSIPPI}$, with the two $P$s not adjacent. Equal letters are indistinguishable.",
+              "solution": "The unrestricted count is $11!/(4!4!2!)=34650$. Compressing an adjacent PP pair into one block gives $10!/(4!4!)=6300$ forbidden strings. Subtracting yields $34650-6300=28350$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A56",
+                "A52",
+                "A47"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Seven distinct books are assigned to three labelled shelves; at least one book must go to shelf 1. Order on a shelf does not matter. Count the assignments.",
+              "solution": "Subtract assignments using only shelves 2 and 3: $3^7-2^7=2059$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A44",
+                "A47"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Count integer solutions of $x_1+x_2+x_3=10$ with $x_1\\ge2$, $x_2\\ge3$, $x_3\\ge0$.",
+              "solution": "Shift the first two variables down by their lower bounds. The residual total is five, giving $\\binom72=21$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Find the coefficient of $x^5$ in $(x+1)^8-(x+1)^7$.",
+              "solution": "The coefficient is $\\binom85-\\binom75=\\binom74=35$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59",
+                "A61"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "Two teams play until one has three wins; no game is drawn. Count legal terminal win sequences separately by lengths three, four, and five, then give the total.",
+              "solution": "Fix the winner. The final game is its third win; choose its other two wins among the previous $\\ell-1$ games. Thus the counts are $2\\binom22=2$, $2\\binom32=6$, $2\\binom42=12$, totaling 20. No earlier third win is possible in such a prefix.",
+              "rubric": "1 mark for correct stopping-aware counts by length; 1 for total 20.",
+              "space_cm": 2,
+              "concepts": [
+                "A48",
+                "A54"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "a",
+              "points": 6,
+              "question": "For nonnegative $r,s$ with $r+s\\le n$, prove combinatorially that\\[\\binom nr\\binom{n-r}{s}=\\binom n{r+s}\\binom{r+s}{r}.\\]",
+              "solution": "Count ordered pairs $(R,S)$ of disjoint subsets of a fixed $n$-element set, with sizes $r,s$. Choose $R$ first and then $S$ from the remaining elements, giving the left side. Alternatively choose the union $U=R\\cup S$ of size $r+s$, then choose the $r$ members of $R$ inside it; $S=U\\setminus R$ is forced. This gives the right side. The assignments are inverse descriptions of each ordered pair, even if a group is empty.",
+              "rubric": "1 mark for disjoint labelled groups; 2 for the first count; 2 for the union-and-split count; 1 for the inverse correspondence/boundaries.",
+              "space_cm": 5,
+              "concepts": [
+                "A54",
+                "A55"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 4,
+              "question": "Explicitly relate these ordered pairs to length-$n$ strings with $r$ symbols $R$, $s$ symbols $S$, and $n-r-s$ symbols $U$. Deduce their common factorial count.",
+              "solution": "Label the ground-set elements $1,\\ldots,n$. At position $i$, write $R$ if $i\\in R$, $S$ if $i\\in S$, and $U$ otherwise. The disjointness makes the symbol well defined. Conversely the symbol positions recover both sets, so this is a bijection. Equal symbols are indistinguishable, and the common count is\\[\\frac{n!}{r!s!(n-r-s)!}.\\]This also counts allocation of $n$ distinct labelled objects into the three labelled categories of these sizes.",
+              "rubric": "2 marks for the explicit encoding and inverse; 1 for indistinguishable symbol interpretation; 1 for the factorial formula.",
+              "space_cm": 4,
+              "concepts": [
+                "A55",
+                "A56",
+                "A57"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P05"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 9,
+              "question": "Six distinct people $A,B,C,D,E,F$ occupy seats numbered 1 through 6, one per seat. $A$ may occupy neither seat 1 nor seat 2; $B$ may not occupy seat 3; $C$ may not occupy seat 4. Use inclusion--exclusion to count legal seatings.",
+              "solution": "Use four bad events: $A$ in seat 1, $A$ in seat 2, $B$ in seat 3, and $C$ in seat 4. Each has $5!$ seatings. The two A-events cannot overlap. Of the six pairs of events, the other five have compatible distinct people and seats, each giving $4!$. Of the four triples, only the two formed by one A-event and both B,C events are compatible, each giving $3!$. The quadruple is empty. IE gives\\[6!-4\\cdot5!+5\\cdot4!-2\\cdot3!=348.\\]",
+              "rubric": "2 marks for four bad events; 1 for singleton counts; 3 for compatible and incompatible pair/triple counts; 1 for empty quadruple; 2 for IE and answer.",
+              "space_cm": 7,
+              "concepts": [
+                "A65",
+                "A51"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P06"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "A $4\\times4\\times4$ cube is subdivided into 64 unit cubes. Nine different unit cubes are selected. Prove that two selected cubes share a vertex.",
+              "solution": "Pair consecutive coordinates in each of the three directions, partitioning the 64 unit cubes into $2\\cdot2\\cdot2=8$ disjoint $2\\times2\\times2$ blocks. Nine selected unit cubes force two in one block. All eight unit cubes of that block have its central point as a vertex; in particular the two selected cubes share that vertex.",
+              "rubric": "3 marks for the eight-block partition; 2 for objects/boxes and PHP; 2 for verifying the shared central vertex.",
+              "space_cm": 7,
+              "concepts": [
+                "A49"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P07"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "problems": [
+        {
+          "number": 4,
+          "points": 16,
+          "title": "Short counting calculations",
+          "stem": "Give exact answers. Factorials, powers, and binomial coefficients may be left unevaluated. No explanation is required unless requested.",
+          "parts": [
+            {
+              "label": "a",
+              "points": 2,
+              "question": "Evaluate $\\sum_{k=0}^{6}\\binom6k^2$ using a binomial identity.",
+              "solution": "The square-sum identity gives $\\sum_{k=0}^{6}\\binom6k^2=\\binom{12}{6}=924$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A63"
+              ]
+            },
+            {
+              "label": "b",
+              "points": 2,
+              "question": "Eight distinct people sit around a circle with three specified people consecutive in any internal order. Rotations are equivalent; reflections are different. Count the seatings.",
+              "solution": "The triple forms one of six circular units, whose orders number $5!$. Its internal orders number $3!$, giving $5!3!=720$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A53",
+                "A52"
+              ]
+            },
+            {
+              "label": "c",
+              "points": 2,
+              "question": "Count strings using exactly two $A$s, two $B$s and two $C$s, with the two $A$s not adjacent. Equal symbols are indistinguishable.",
+              "solution": "The unrestricted count is $6!/(2!2!2!)=90$. Compressing AA yields $5!/(2!2!)=30$ forbidden strings. Thus $90-30=60$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A56",
+                "A52",
+                "A47"
+              ]
+            },
+            {
+              "label": "d",
+              "points": 2,
+              "question": "Choose an unordered six-person committee from ten distinct people, with $A$ and $B$ not both selected. Count the committees.",
+              "solution": "Subtract committees containing the designated pair: $\\binom{10}{6}-\\binom84=140$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A54",
+                "A47"
+              ]
+            },
+            {
+              "label": "e",
+              "points": 2,
+              "question": "Choose six items from three unlimited types $A,B,C$, with an even number of type $A$. Items of a type are identical and order does not matter. Count the choices.",
+              "solution": "If the A-count is $2t$, for $t=0,1,2,3$, the remaining B,C counts have $7-2t$ possibilities. Sum: $7+5+3+1=16$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A58",
+                "A47"
+              ]
+            },
+            {
+              "label": "f",
+              "points": 2,
+              "question": "Find the constant term in $(x-2x^{-1})^8$.",
+              "solution": "Choose four of each term to obtain exponent zero, giving $\\binom84(-2)^4=1120$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A59"
+              ]
+            },
+            {
+              "label": "g",
+              "points": 2,
+              "question": "Count injective functions $f:\\{1,2,3,4\\}\\to\\{1,2,3,4\\}$ with $f(2)=2$ and $f(1)\\ne1$.",
+              "solution": "After fixing image 2, the first input can use only 3 or 4. The two remaining images are assigned in $2!$ ways, giving $2\\cdot2!=4$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A44"
+              ]
+            },
+            {
+              "label": "h",
+              "points": 2,
+              "question": "Count right/up unit-step lattice paths from $(0,0)$ to $(4,3)$ that do not begin with two right steps.",
+              "solution": "Total paths are $\\binom73$. A forbidden RR prefix leaves two right and three up steps, giving $\\binom53$. Subtract to get $35-10=25$.",
+              "rubric": "1 mark for a valid counting setup; 1 mark for the correct exact answer. An equivalent exact expression earns full credit.",
+              "space_cm": 1.5,
+              "concepts": [
+                "A61",
+                "A47"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2025F-MID-P04-a-i",
+            "Q-2025F-MID-P04-c-i",
+            "Q-2025F-MID-P04-d",
+            "Q-2024F-MID-P06-c",
+            "Q-2023F-MID-P04-a",
+            "Q-2023F-MID-P05",
+            "Q-2017-MID-P08-a"
+          ]
+        },
+        {
+          "number": 5,
+          "points": 10,
+          "title": "Combinatorial proof",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 10,
+              "question": "For $n\\ge1$, use a complement bijection to prove\\[\\sum_{k=0}^{n-1}\\binom{2n}{k}=\\frac{2^{2n}-\\binom{2n}{n}}{2}.\\]Explain why the subsets of size $n$ must be treated separately.",
+              "solution": "In a $2n$-element ground set, complementation is an inverse-to-itself bijection from subsets of size below $n$ to subsets of size above $n$, because complementary sizes add to $2n$. Exactly $\\binom{2n}{n}$ subsets have size $n$; they map within the middle-size class rather than between the small and large classes. Remove them from all $2^{2n}$ subsets. The remaining two classes have equal size, so the small class contains $(2^{2n}-\\binom{2n}{n})/2$ subsets. Partitioning that class by sizes $k=0,\\ldots,n-1$ gives the sum on the left.",
+              "rubric": "3 marks for the complement bijection and inverse; 2 for the middle-size class and its separation; 3 for subtracting and halving; 2 for the disjoint size-class sum.",
+              "space_cm": 7,
+              "concepts": [
+                "A54",
+                "A55",
+                "A60"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P09-a",
+            "Q-2024F-MID-P09-b"
+          ]
+        },
+        {
+          "number": 6,
+          "points": 9,
+          "title": "Inclusion-exclusion",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 9,
+              "question": "Use inclusion--exclusion to count integers in $\\{1,\\ldots,180\\}$ divisible by exactly two of $2,3,5$. Explain how your expression removes integers divisible by all three.",
+              "solution": "Let $A,B,C$ be the multiples of 2, 3 and 5. Apply IE to the three sets $A\\cap B$, $A\\cap C$, $B\\cap C$. Their sizes are $30,18,12$. Every pairwise intersection and the triple intersection equals $A\\cap B\\cap C$, of size 6. Thus the count divisible by at least two is $30+18+12-3\\cdot6+6=48$. Remove the six multiples divisible by all three, obtaining\\[30+18+12-3\\cdot6=42.\\]Equivalently each exactly-two integer occurs once in the sum of pair counts, whereas a triple-divisible integer occurs three times and must be subtracted three times.",
+              "rubric": "2 marks for forming the three pair-intersection sets; 2 for their sizes; 2 for the IE union with common overlap; 2 for removing all-three integers exactly; 1 for 42.",
+              "space_cm": 7,
+              "concepts": [
+                "A65"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2023F-MID-P06"
+          ]
+        },
+        {
+          "number": 7,
+          "points": 7,
+          "title": "Pigeonhole principle",
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "points": 7,
+              "question": "Prove that any seventeen distinct bit strings of length eight include three with the same number of ones. Show that seventeen is the smallest number with this guarantee.",
+              "solution": "The one-count boxes are 0 through 8. Boxes 0 and 8 contain at most one distinct string each. If no box had three strings, the seven other boxes would hold at most two each, so at most $1+7\\cdot2+1=16$ strings could be selected. Seventeen therefore force three equal-weight strings. To realize sixteen without a triple, take the unique weight-0 and weight-8 strings and two distinct strings of each weight 1 through 7. Each interior weight has at least two strings, for example ones in positions $1,\\ldots,k$ or $2,\\ldots,k+1$. Hence the construction is possible and the threshold is sharp.",
+              "rubric": "3 marks for recognizing endpoint capacities and the bound sixteen; 2 for the forcing conclusion; 2 for the explicit attainable sharp construction.",
+              "space_cm": 7,
+              "concepts": [
+                "A50",
+                "A54"
+              ]
+            }
+          ],
+          "sources": [
+            "Q-2024F-MID-P08"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "A43",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        4,
+        5
+      ],
+      "knowledge_point": "Sequential product rule",
+      "assessed_at": [
+        "01.4.a",
+        "01.4.e",
+        "02.4.a",
+        "03.4.a",
+        "03.4.b",
+        "04.4.a",
+        "04.4.b",
+        "04.4.c",
+        "04.4.d",
+        "05.4.c",
+        "05.4.h",
+        "06.4.a",
+        "08.4.a",
+        "08.4.b",
+        "08.4.h",
+        "09.4.a"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A44",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        6,
+        7,
+        8
+      ],
+      "knowledge_point": "Arbitrary and injective finite functions",
+      "assessed_at": [
+        "01.4.b",
+        "04.4.b",
+        "06.4.a",
+        "07.4.b",
+        "09.4.b",
+        "09.4.e",
+        "10.4.g"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A45",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        9,
+        10
+      ],
+      "knowledge_point": "Subset and bit-string bijection",
+      "assessed_at": [
+        "01.4.c",
+        "04.4.a",
+        "05.5.b",
+        "06.5.a",
+        "07.7"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A46",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        11,
+        12
+      ],
+      "knowledge_point": "Exact rectangular matrix multiplication count",
+      "assessed_at": [
+        "01.4.d",
+        "06.4.g"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A47",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "knowledge_point": "Disjoint cases and complement counting",
+      "assessed_at": [
+        "01.4.e",
+        "02.4.a",
+        "02.4.g",
+        "03.4.b",
+        "03.6",
+        "04.4.f",
+        "04.4.g",
+        "05.4.a",
+        "05.4.d",
+        "05.4.h",
+        "05.7",
+        "06.4.f",
+        "06.4.g",
+        "07.4.c",
+        "07.4.h",
+        "07.5.b",
+        "08.4.a",
+        "08.4.c",
+        "09.4.d",
+        "09.4.e",
+        "10.4.c",
+        "10.4.d",
+        "10.4.e",
+        "10.4.h"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A48",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        25,
+        26
+      ],
+      "knowledge_point": "Finite branching trees and stopping rules",
+      "assessed_at": [
+        "03.4.h",
+        "04.4.e",
+        "09.4.h"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A49",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "knowledge_point": "Ordinary pigeonhole proofs",
+      "assessed_at": [
+        "01.7",
+        "02.7",
+        "05.7",
+        "06.7",
+        "07.7",
+        "09.7"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A50",
+      "lecture": "L11-Counting-Counting.pdf",
+      "pages": [
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "knowledge_point": "Generalized pigeonhole and capacities",
+      "assessed_at": [
+        "02.7",
+        "03.7.a",
+        "03.7.b",
+        "04.7",
+        "08.7",
+        "10.7"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A51",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "knowledge_point": "Full and partial distinct-object permutations",
+      "assessed_at": [
+        "01.4.a",
+        "03.4.a",
+        "05.4.a",
+        "06.4.b",
+        "07.4.a",
+        "08.4.b",
+        "09.6"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A52",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        9
+      ],
+      "knowledge_point": "Contiguous block compression",
+      "assessed_at": [
+        "01.4.f",
+        "01.4.g",
+        "03.4.c",
+        "06.4.c",
+        "07.4.e",
+        "08.4.c",
+        "09.4.c",
+        "09.4.d",
+        "10.4.b",
+        "10.4.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A53",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        10
+      ],
+      "knowledge_point": "Circular arrangements modulo rotation",
+      "assessed_at": [
+        "01.4.g",
+        "03.4.d",
+        "05.4.d",
+        "07.4.e",
+        "08.4.d",
+        "10.4.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A54",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21
+      ],
+      "knowledge_point": "Combinations and fixed-weight selections",
+      "assessed_at": [
+        "01.5",
+        "02.4.b",
+        "02.4.h",
+        "04.4.d",
+        "05.4.b",
+        "05.4.e",
+        "06.4.b",
+        "06.4.h",
+        "07.4.c",
+        "07.4.h",
+        "08.4.e",
+        "08.6",
+        "09.4.c",
+        "09.4.h",
+        "09.5.a",
+        "10.4.d",
+        "10.5",
+        "10.7"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A55",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        18,
+        19
+      ],
+      "knowledge_point": "Combinatorial double counting and bijections",
+      "assessed_at": [
+        "01.5",
+        "02.5",
+        "03.5",
+        "04.5",
+        "05.5.a",
+        "06.5.b",
+        "07.5.a",
+        "08.5.a",
+        "09.5.a",
+        "09.5.b",
+        "10.5"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A56",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        23,
+        24
+      ],
+      "knowledge_point": "Permutations of indistinguishable types",
+      "assessed_at": [
+        "02.4.c",
+        "03.4.e",
+        "05.4.c",
+        "07.4.d",
+        "09.4.d",
+        "09.5.b",
+        "10.4.c"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A57",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "knowledge_point": "Distinguishable allocations and multinomial correspondence",
+      "assessed_at": [
+        "02.4.d",
+        "04.4.f",
+        "06.4.d",
+        "07.4.h",
+        "09.5.b"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A58",
+      "lecture": "L12-Counting-Combinations.pdf",
+      "pages": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "knowledge_point": "Stars and bars and unordered repeated selections",
+      "assessed_at": [
+        "01.6",
+        "02.4.e",
+        "03.4.f",
+        "04.4.g",
+        "05.4.f",
+        "06.4.e",
+        "06.4.f",
+        "07.4.f",
+        "08.4.f",
+        "09.4.f",
+        "10.4.e"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A59",
+      "lecture": "L13-Counting-Binomial.pdf",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "knowledge_point": "Binomial theorem and signed coefficient extraction",
+      "assessed_at": [
+        "01.4.h",
+        "02.4.f",
+        "03.4.g",
+        "05.4.g",
+        "07.4.g",
+        "08.4.g",
+        "08.5.a",
+        "08.5.b",
+        "09.4.g",
+        "10.4.f"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A60",
+      "lecture": "L13-Counting-Binomial.pdf",
+      "pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "knowledge_point": "Subset sums and weighted binomial sums",
+      "assessed_at": [
+        "05.5.a",
+        "05.5.b",
+        "06.5.a",
+        "06.5.b",
+        "06.6.b",
+        "10.5"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A61",
+      "lecture": "L13-Counting-Binomial.pdf",
+      "pages": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "knowledge_point": "Pascal identity triangle and monotone paths",
+      "assessed_at": [
+        "02.4.g",
+        "04.4.h",
+        "06.4.h",
+        "07.5.a",
+        "07.5.b",
+        "08.4.h",
+        "09.4.g",
+        "10.4.h"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A62",
+      "lecture": "L13-Counting-Binomial.pdf",
+      "pages": [
+        21,
+        22
+      ],
+      "knowledge_point": "Vandermonde selection partition",
+      "assessed_at": [
+        "02.5"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A63",
+      "lecture": "L13-Counting-Binomial.pdf",
+      "pages": [
+        23
+      ],
+      "knowledge_point": "Square-sum Vandermonde corollary",
+      "assessed_at": [
+        "03.5",
+        "10.4.a"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A64",
+      "lecture": "L13-Counting-Binomial.pdf",
+      "pages": [
+        24,
+        25,
+        26
+      ],
+      "knowledge_point": "Hockey-stick maximum-label partition",
+      "assessed_at": [
+        "04.5"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A65",
+      "lecture": "L14-Counting-IE.pdf",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "knowledge_point": "General inclusion-exclusion and its multiplicity proof",
+      "assessed_at": [
+        "01.6",
+        "02.6",
+        "03.6",
+        "04.6.a",
+        "06.6.a",
+        "06.6.b",
+        "07.6",
+        "08.6",
+        "09.6",
+        "10.6"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A66",
+      "lecture": "L14-Counting-IE.pdf",
+      "pages": [
+        9,
+        10
+      ],
+      "knowledge_point": "Surjections and missing target values",
+      "assessed_at": [
+        "02.6",
+        "07.4.b",
+        "07.6"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A67",
+      "lecture": "L14-Counting-IE.pdf",
+      "pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "knowledge_point": "Derangements and fixed-point intersections",
+      "assessed_at": [
+        "04.6.a",
+        "05.6.a"
+      ],
+      "depth": "proof"
+    },
+    {
+      "id": "A68",
+      "lecture": "L14-Counting-IE.pdf",
+      "pages": [
+        15
+      ],
+      "knowledge_point": "Exactly specified fixed-point count",
+      "assessed_at": [
+        "05.6.a",
+        "05.6.b"
+      ],
+      "depth": "application"
+    },
+    {
+      "id": "A69",
+      "lecture": "L14-Counting-IE.pdf",
+      "pages": [
+        16
+      ],
+      "knowledge_point": "Derangement probability and stated limit",
+      "assessed_at": [
+        "04.6.b"
+      ],
+      "depth": "application"
+    }
+  ]
+}

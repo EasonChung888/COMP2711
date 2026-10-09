@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "content/counting_checks.py",
+      "sha256": "566747e656f15b14613e69c80a7974587f3aac335faf6ff9153315f4514665e2",
+      "returncode": 0,
+      "stdout": "PASS: 1505 exact counting, identity, pigeonhole, structure, coverage and source checks.\nAll 80 Q4 labels and ten actual IE applications checked; general proofs manually audited in audit/counting-checks.md.\n",
+      "stderr": ""
+    },
+    {
+      "suite": "content/logic_checks.py",
+      "sha256": "d900e8023b2e9065b231ad757942cb9050b71591aa358cf6367140b44b1b62fe",
+      "returncode": 0,
+      "stdout": "PASS: 153,804 exact assertions; complete propositional tables, finite quantifier/predicate models, finite sets/functions, arithmetic witnesses, 30-problem schema, 42-cluster references, current verified MID sources and 70 classification keys.\nInfinite statements and general proof dependencies: see audit/logic-checks.md; finite testing alone does not certify them.\n",
+      "stderr": ""
+    },
+    {
+      "suite": "content/probability_checks.py",
+      "sha256": "f5772c01a6b9a06f9870b28f4752b0b26db9a87c8cb855feaea67274b7d51416",
+      "returncode": 0,
+      "stdout": "PASS: 30 independent construction checks; 10-paper/30-slot/230-point/26-cluster contract.\nExact methods: finite outcome masses, full binary joint laws, urn/host Bayes normalization, permutation algorithms, absorbing coupon states, occupancy moments, and geometric residual sums.\n",
+      "stderr": ""
+    }
+  ]
+}
