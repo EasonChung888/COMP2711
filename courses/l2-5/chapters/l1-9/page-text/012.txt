@@ -1,0 +1,23 @@
+  Sampling
+
+▪  What is the probability that the numbers 11, 4, 17, 39, and 23
+   are drawn in that order from a bin containing 50 balls labeled
+   with the numbers 1, 2, …, 50 if
+▪  The ball selected is not returned to the bin before the next ball is
+   selected (sampling without replacement)?
+▪  The number of 5 permutations of 50 balls is 𝑃              50, 5 . The,
+   probability of a single permutation is            1   .
+                                                  𝑃 50,5
+▪  The ball selected is returned to the bin before the next ball is
+   selected (sampling with replacement)?
+▪  The number of 5 permutations of 50 balls, with repetition, is                505.
+   The, probability of a single permutation is 1/505.
+
+
+
+
+
+
+
+
+                                                                                  12

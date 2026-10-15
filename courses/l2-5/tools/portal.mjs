@@ -43,6 +43,8 @@ function moduleCard(m) {
 export function buildPortal(config, questionCount, pageCount, {onlyCounting=false}={}) {
   const modules=catalog.map(m=>({...m,chapters:m.chapters.map(chapterData)}));
   const chapters=modules.flatMap(m=>m.chapters);
+  const probabilityModules = fs.existsSync(path.join(root,'chapters/l1-9/chapter.meta.json')) ? [{name:'Probability',file:'probability.html',description:'学习样本空间、事件概率、概率分布与独立事件。',chapters:[chapterData(['l1-9','L1.9',32])]}] : [];
+  const probabilityChapters=probabilityModules.flatMap(m=>m.chapters);
   const oldIds=config.topics.map(t=>t.slug).join(' ');
   const oldPaths=config.topics.map(t=>`lessons/${t.slug}.html`);
   const oldKeys=config.topics.map(t=>`comp2711:l2-5:lesson-complete:${t.slug}`);
@@ -56,16 +58,16 @@ export function buildPortal(config, questionCount, pageCount, {onlyCounting=fals
     return n+(fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')).length:0);
   },0);
   const newPaths=chapters.flatMap(c=>c.paths);
-  const allPaths=[...newPaths,...countingPaths];
-  const allKeys=[...chapters.flatMap(c=>c.keys),...countingKeys];
+  const allPaths=[...newPaths,...countingPaths,...probabilityChapters.flatMap(c=>c.paths)];
+  const allKeys=[...chapters.flatMap(c=>c.keys),...countingKeys,...probabilityChapters.flatMap(c=>c.keys)];
   const counts=`${pageCount} 页讲解 · ${config.topics.length} 课 · ${questionCount} 道真题`;
   const countingCounts=`${pageCount+countingChapters.reduce((n,c)=>n+c.pages,0)} 页讲解 · ${countingKeys.length} 课 · ${questionCount+extraQuestions} 道真题`;
   const countingCard=a('counting.html',`<div><h3>Counting</h3><p>计数</p><p class="module-description">学习计数法则、排列组合、组合恒等式与容斥应用。</p><p class="portal-meta">${1+countingChapters.length} 个章节 · ${countingCounts}</p></div><span class="entry-action">进入模块 <span aria-hidden="true">→</span></span>`,' class="module-entry"');
-  const home=`<header class="home-header"><h1>COMP2711</h1><p class="lead">按模块学习离散数学。<br>从课件讲解到真题练习，在这里继续你的课程。</p><div class="home-actions">${resume(allPaths,chapters[0].href,oldIds,newPaths[0]||chapters[0].href)}<a href="#modules">浏览课程模块</a></div><p class="portal-meta">${progress(allKeys,oldIds)}</p></header><section id="modules" aria-labelledby="modules-heading"><h2 id="modules-heading">课程模块</h2>${modules.map(moduleCard).join('')}${countingCard}</section>`;
+  const home=`<header class="home-header"><h1>COMP2711</h1><p class="lead">按模块学习离散数学。<br>从课件讲解到真题练习，在这里继续你的课程。</p><div class="home-actions">${resume(allPaths,chapters[0].href,oldIds,newPaths[0]||chapters[0].href)}<a href="#modules">浏览课程模块</a></div><p class="portal-meta">${progress(allKeys,oldIds)}</p></header><section id="modules" aria-labelledby="modules-heading"><h2 id="modules-heading">课程模块</h2>${modules.map(moduleCard).join('')}${countingCard}${probabilityModules.map(moduleCard).join('')}</section>`;
   fs.writeFileSync(path.join(root,'index.html'),shell('COMP2711',home,0,'site'));
 
-  for(const m of modules) {
-    if (onlyCounting) continue;
+  for(const m of [...modules,...probabilityModules]) {
+    if (onlyCounting && m.name !== 'Probability') continue;
     const paths=m.chapters.flatMap(c=>c.paths), keys=m.chapters.flatMap(c=>c.keys);
     const body=`<nav class="page-breadcrumb" aria-label="当前位置"><a href="index.html">COMP2711</a><span aria-hidden="true"> / </span><span aria-current="page">${m.name}</span></nav><header class="home-header"><h1>${m.name}</h1><p class="lead">${m.description}</p><div class="home-actions">${resume(paths,m.chapters[0].href)}<a href="#chapters">浏览章节</a></div><p class="portal-meta">${progress(keys)}</p></header><section id="chapters" aria-labelledby="chapters-heading"><h2 id="chapters-heading">学习章节</h2>${m.chapters.map(chapterCard).join('')}</section>`;
     fs.writeFileSync(path.join(root,m.file),shell(m.name,body,0,'module',{href:m.file,label:m.name}));

@@ -1,0 +1,23 @@
+Poker Exercises on Event Complement
+
+▪  A poker hand contains 5 out of 52 cards. The cards are 13 kinds (1-Ace,
+   2,..,10,J,Q,K) and 4 suites (spades, hearts, clubs, diamonds)
+▪  What is the probability that a hand contains at least 1 Ace?
+▪  I first compute the probability that the hand does not contain an Ace. In
+   this case I have C(48,5) choices for the five cards. Therefore, the
+   probability of no ace is: C(48,5)/ C(52,5).
+▪  The probability of at least 1 ace is 1-C(48,5)/C(52,5).
+▪  What is the probability that a hand does not contain the Ace of Spades:
+▪  If we exclude the AoS, we can select all cards in C(51,5) ways.
+▪  The probability of this is: C(51,5)/C(52,5)
+▪  Alternatively, if we have the AoS, then we can select the remaining cards
+   in C(51,4) ways. Thus, probability of having the AoS is: C(51,4)/C(52,5).
+▪  The probability of not having the AoS is: 1- C(51,4)/C(52,5).
+▪  C(51,5)/C(52,5) = 1- C(51,4)/C(52,5)
+
+
+
+
+
+
+                                                                                          15

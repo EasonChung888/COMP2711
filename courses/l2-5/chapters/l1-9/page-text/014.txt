@@ -1,0 +1,26 @@
+ Example on Complement of Event
+
+
+▪ A sequence of 10 bits is chosen randomly. What is the
+  probability that at least one of these bits is 0?
+▪ Solution:
+  𝐸: the event that at least one of the 10 bits is 0.
+  𝐸ത: the event that all of the bits are 1s.
+  The size of the sample space S is 210. Hence,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 14

@@ -1,0 +1,21 @@
+  Exercise: Hatcheck Problem
+
+
+▪  A new employee checks the hats of 𝑛 people at a restaurant,
+   forgetting to put claim check numbers on the hats. When
+   customers return for their hats, the checker gives them back hats
+   randomly. What is the probability that no one receives the correct
+   hat?
+▪  Answer: Number of derangements/Total number of permutations
+▪  Total number of permutations: 𝑛!
+▪  Number of derangements (from previous class):
+                   𝐷   = 𝑛! 1 −  1 +  1 − 1  + ⋯  −1  𝑛 1
+                     𝑛          1!   2!   3!            𝑛!
+▪  Probability of that a random permutation is a derangement:
+                   𝑝 = 𝐷𝑛  = 1 −  1 +  1 − 1  + ⋯  −1  𝑛 1
+                        𝑛!       1!   2!   3!            𝑛!
+
+
+
+
+                                                                            9

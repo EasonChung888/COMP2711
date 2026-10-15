@@ -1,0 +1,278 @@
+[
+  {
+    "id": "Q-2020-FINAL2-P06-a",
+    "topic": "permutation-and-sampling",
+    "sourceNote": "sources/notes/Q-2020-FINAL2-P06-a - Derangements.md",
+    "sourceNoteSha256": "63d5143f32a179afbd95cdc8d1d1d1e76aaa96420df5d16e4bfa81124a8c3d7b",
+    "stems": [
+      "STEM-2020-FINAL2-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      4
+    ],
+    "paper": "2020 Final Part 2",
+    "pdf": "sources/papers/2020-final-part-2.pdf",
+    "pdfSha256": "88d7c2386e0451544cb5b509e45c9aef05dcfca742b23085f8954f19eab1dff4",
+    "page": 4,
+    "solutionPages": [
+      4,
+      5
+    ],
+    "number": "6(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider the permutations of the 10 digits (0–9). We denote a permutation as $A$, whose elements are $A[0],A[1],\\ldots,A[9]$. Calculate the number of permutations that satisfy each of the following conditions:\n\n(a) There is exactly one $i$ such that $A[i]=i$.\n(b) There are exactly nine $i$’s such that $A[i]=i$.\n(c) $A[0]=1,A[1]=0$.\n(d) $A[4]=4,A[5]=5$.\n\nYou can express your answers using binomial coefficients, factorials, and $D_n$ (derangement number). However, you should not have summation $\\sum$ in your final answers.\n\nThere is exactly one $i$ such that $A[i]=i$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 4](../sources/papers/2020-final-part-2.pdf#page=4); [physical PDF page 5](../sources/papers/2020-final-part-2.pdf#page=5).\n\n$D_n$ is the number of derangements of a set with $n$ elements,\n$$D_n=n!\\left[1-\\frac1{1!}+\\frac1{2!}-\\cdots+(-1)^n\\frac1{n!}\\right].$$\nExactly $1$ digit appears in its index position means that, we randomly select $1$ digit and put it in its index position and dearrange the remaining $9$ digits. So the answer is,\n$$\\binom{10}1D_9=10\\cdot D_9.$$",
+    "solutionMarkdown": "**Answer.** $10D_9$.\n\n**Derivation/proof.** Choose the unique fixed index in 10 ways and put that digit there. The remaining nine digits must avoid their own nine positions, otherwise there would be more than one fixed point. They form a derangement counted by D9. Each permutation has one unique chosen fixed point, so the product 10D9 has no duplication.\n\nThe final expression uses the explicitly allowed derangement number and contains no summation sign.\n\nThe condition $A[i]=i$ is a fixed point. After choosing its unique index, the remaining positions must be deranged to exclude a second fixed point, which explains the factor $D_9$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "07ecb3efca60e96c49dd84eb28cdd57dfa8c90ad0f1b09bdc22c772ac4e66f78",
+    "supplementarySourceSha256": "30ecb6989418e2e44ff6f44c9eaf02e98e3704e6dfd3226fadaff467221ea197",
+    "independentVerification": "选择唯一固定位置有 10 种，其余九位必须错排，10D9=1334960。以九元素全排列枚举与错排递推交叉核验；首位可以为 0。"
+  },
+  {
+    "id": "Q-2020-FINAL2-P06-c",
+    "topic": "permutation-and-sampling",
+    "sourceNote": "sources/notes/Q-2020-FINAL2-P06-c - Combinatorial Selection.md",
+    "sourceNoteSha256": "4c5dee0700b4fc97465ca0f2a624792c6c6ac32b867265eddc3ad3b13b10fd59",
+    "stems": [
+      "STEM-2020-FINAL2-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      4
+    ],
+    "paper": "2020 Final Part 2",
+    "pdf": "sources/papers/2020-final-part-2.pdf",
+    "pdfSha256": "88d7c2386e0451544cb5b509e45c9aef05dcfca742b23085f8954f19eab1dff4",
+    "page": 4,
+    "solutionPages": [
+      5
+    ],
+    "number": "6(c)",
+    "marks": 1,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider the permutations of the 10 digits (0–9). We denote a permutation as $A$, whose elements are $A[0],A[1],\\ldots,A[9]$. Calculate the number of permutations that satisfy each of the following conditions:\n\n(a) There is exactly one $i$ such that $A[i]=i$.\n(b) There are exactly nine $i$’s such that $A[i]=i$.\n(c) $A[0]=1,A[1]=0$.\n(d) $A[4]=4,A[5]=5$.\n\nYou can express your answers using binomial coefficients, factorials, and $D_n$ (derangement number). However, you should not have summation $\\sum$ in your final answers.\n\n$A[0]=1,A[1]=0$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 5](../sources/papers/2020-final-part-2.pdf#page=5).\n\nFix the first two digits, and the remaining $8$ digits are randomly permuted, so the answer is $8!$.",
+    "solutionMarkdown": "**Answer.** $8!$.\n\n**Derivation/proof.** The conditions place digit 1 at position 0 and digit 0 at position 1. The other eight positions receive digits 2 through 9 bijectively with no remaining restriction, giving 8! assignments. They are allowed to be fixed or not; a derangement restriction is not present in this part.\n\nAfter fixing the swap of zero and one, the remaining digits are $2,3,\\ldots,9$. These may occupy their original positions, so do not use $D_8$; all $8!$ permutations are allowed.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "0cfa4e8b8b5ca4d1f2980d43b5a84a90c1a961683a69072af73948eec30797a1",
+    "supplementarySourceSha256": "78918ed90d4ace73d08e93ff24be987580c3148c59745acecf42c20475d8050d",
+    "independentVerification": "固定 0、1 两位互换，其余八个元素任意排列，8!=40320；没有额外错排要求。"
+  },
+  {
+    "id": "Q-2020-FINAL2-P06-d",
+    "topic": "permutation-and-sampling",
+    "sourceNote": "sources/notes/Q-2020-FINAL2-P06-d - Combinatorial Selection.md",
+    "sourceNoteSha256": "f4642343fe70e43ab5e779f32b9ab0fc73476f5784e88ad76b1ba0b8066ae23b",
+    "stems": [
+      "STEM-2020-FINAL2-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      4
+    ],
+    "paper": "2020 Final Part 2",
+    "pdf": "sources/papers/2020-final-part-2.pdf",
+    "pdfSha256": "88d7c2386e0451544cb5b509e45c9aef05dcfca742b23085f8954f19eab1dff4",
+    "page": 4,
+    "solutionPages": [
+      5
+    ],
+    "number": "6(d)",
+    "marks": 1,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider the permutations of the 10 digits (0–9). We denote a permutation as $A$, whose elements are $A[0],A[1],\\ldots,A[9]$. Calculate the number of permutations that satisfy each of the following conditions:\n\n(a) There is exactly one $i$ such that $A[i]=i$.\n(b) There are exactly nine $i$’s such that $A[i]=i$.\n(c) $A[0]=1,A[1]=0$.\n(d) $A[4]=4,A[5]=5$.\n\nYou can express your answers using binomial coefficients, factorials, and $D_n$ (derangement number). However, you should not have summation $\\sum$ in your final answers.\n\n$A[4]=4,A[5]=5$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 5](../sources/papers/2020-final-part-2.pdf#page=5).\n\nFix the middle two digits, and the remaining $8$ digits are randomly permuted, so the answer is $8!$.",
+    "solutionMarkdown": "**Answer.** $8!$.\n\n**Derivation/proof.** Positions 4 and 5 are already occupied by digits 4 and 5. Delete those two positions and digits; any bijection between the eight remaining positions and eight remaining digits extends uniquely to a valid permutation. There are 8! such bijections. Other fixed points are permitted because the condition does not say exactly two.\n\nEvery bijection of the eight remaining digits to the eight remaining positions has a unique extension after placing four and five in their prescribed positions. This establishes the count $8!$ without overcounting.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "d9714444ffde1c7b1fb8a7877fcae795ed637190e92db968896832bad1d5f35a",
+    "supplementarySourceSha256": "aeaecb1c05fee8efffd91e88cc2240166ee5e6654fdbfa7e4cde0621db92d1ee",
+    "independentVerification": "指定两个固定位置后，其余八位无约束，8!=40320；允许更多固定点，不能用 D8。"
+  },
+  {
+    "id": "Q-2019-FINAL-P08-a",
+    "topic": "complements-and-birthdays",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P08-a - Counting Principles.md",
+    "sourceNoteSha256": "bf879046b34ccfecd0f84c5c45a43a2a3a39eae347a99f726a25dfcf3fecb2d7",
+    "stems": [
+      "STEM-2019-FINAL-P08 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "8(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "How many strings of six lowercase letters from the English alphabet contain\n\n(a) the letter a?",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2019-final.pdf#page=10).\n\nThe only reasonable way to do this is by subtracting from the number of strings with no restrictions the number of strings that do not contain the letter $a$. The answer is $26^6-25^6$.",
+    "solutionMarkdown": "**Answer.** $26^6-25^6$.\n\n**Derivation/proof.** There are $26^6$ unrestricted length-six strings. A string with no a has 25 choices independently at each position, giving $25^6$. The complement of no a is at least one a, so subtracting counts every desired string exactly once, including those with several occurrences of a.\n\nThe requested letter needs at least one occurrence; subtracting strings with none avoids having to split into every possible number of occurrences.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "6e6b4d5660b3e517b1035442b74edf2702402b7347b2cb9463098ce33dfa617a",
+    "supplementarySourceSha256": "c87099307b459f835be41c347d26f58fd34d8f69f8fda6acd6ba4c130b880b27",
+    "independentVerification": "六位小写字母串允许重复。用补集排除无 a 的 25^6 个串，26^6−25^6。以是否出现 a 的状态动态规划独立检查。保留原计数题，不改为概率题。"
+  },
+  {
+    "id": "Q-2019-FINAL-P08-b",
+    "topic": "event-inclusion-exclusion",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P08-b - Inclusion-Exclusion.md",
+    "sourceNoteSha256": "b3946a56b4f680454baee26199d6018fa5242030527f1cfaac13f153d56be5dc",
+    "stems": [
+      "STEM-2019-FINAL-P08 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "8(b)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "How many strings of six lowercase letters from the English alphabet contain\n\n(b) the letters a and b?",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2019-final.pdf#page=10).\n\nWe use $W_a$ to denote the set of words containing $a$, and similarly $W_b,W_{a\\land b},W_{a\\lor b}$. By the inclusion-exclusion rule, we have $\\lvert W_{a\\lor b}\\rvert=\\lvert W_a\\rvert+\\lvert W_b\\rvert-\\lvert W_{a\\land b}\\rvert$.\nFrom (a), we know $\\lvert W_a\\rvert=\\lvert W_b\\rvert=26^6-25^6$. Similarly, $\\lvert W_{a\\lor b}\\rvert=26^6-24^6$. So\n$$\\lvert W_{a\\land b}\\rvert=\\lvert W_a\\rvert+\\lvert W_b\\rvert-\\lvert W_{a\\lor b}\\rvert=2(26^6-25^6)-(26^6-24^6)=26^6-2\\cdot25^6+24^6.$$",
+    "solutionMarkdown": "**Answer.** $26^6-2\\cdot25^6+24^6$.\n\n**Derivation/proof.** Let A be strings missing a and B strings missing b. Their sizes are $25^6$ each, and their intersection misses both, with $24^6$ strings. The strings containing both are outside $A\\cup B$. Inclusion-exclusion gives $26^6-(25^6+25^6-24^6)$, which simplifies to the answer.\n\nThe intersection omits both named letters, leaving twenty-four choices at each position, so $|A\\cap B|=24^6$. Inclusion-exclusion adds this intersection back after the two subtractions.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "a298f2e7831c85485e2125dea633052500c19c0c838202786e1516659e63844b",
+    "supplementarySourceSha256": "134871c883d487d348512ccd76a07c93b48396abf4aa351e2c698a58633f1131",
+    "independentVerification": "要求 a、b 均出现，用补集与容斥得 26^6−2×25^6+24^6；四状态动态规划独立核验。"
+  },
+  {
+    "id": "Q-2020-FINAL1-P04-a",
+    "topic": "event-inclusion-exclusion",
+    "sourceNote": "sources/notes/Q-2020-FINAL1-P04-a - Inclusion-Exclusion.md",
+    "sourceNoteSha256": "af3faa308d1a555f61f441384543413207cb733eab32fb5a64b1f4e02f5e02d2",
+    "stems": [
+      "STEM-2020-FINAL1-P04 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      2
+    ],
+    "paper": "2020 Final Part 1",
+    "pdf": "sources/papers/2020-final-part-1.pdf",
+    "pdfSha256": "dab6603922032b927f7dae8fdeae6b915f29522539c6d392cc8d83d7394a2306",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "4(a)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "How many integers $0\\le n<1000$ are there such that\n\n$n$ is divisible by 2, 3 or 5?",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 3](../sources/papers/2020-final-part-1.pdf#page=3).\n\nLet $f(k)$ be the number of integers $0\\le n<1000$ that are divided by $k$, then $f(k)=1+\\lfloor999/k\\rfloor$. We have $f(2)=500,f(3)=334,f(5)=200,f(6)=167,f(10)=100,f(15)=67$ and $f(30)=34$. By inclusion-exclusion principle, the answer is $f(2)+f(3)+f(5)-f(6)-f(10)-f(15)+f(30)=734$.",
+    "solutionMarkdown": "**Answer.** $734$.\n\n**Derivation/proof.** For d>0 the number of multiples in [0,999] is $f(d)=1+\\lfloor999/d\\rfloor$, including zero. The counts for 2,3,5 are 500,334,200; pairwise intersections use 6,10,15 and give 167,100,67; the triple uses 30 and gives 34. Inclusion-exclusion yields $500+334+200-167-100-67+34=734$. Zero is counted once after cancellation.\n\nThe coefficient of zero in inclusion-exclusion is $3-3+1=1$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "ce09bf6f31a948e0fd5b49a7404b0f2399208bc8f56e3c828c629bed6cbd0da8",
+    "supplementarySourceSha256": "a70a96f4c90075c22ed888447e47102d69fc9b8145b5fd0d4757305cecee228d",
+    "independentVerification": "原范围 0≤n<1000 包含 0，各整除类均计入 0。最小公倍数交集给 734，枚举全部 1000 个整数核验。共享题干在第 2 页，题目与答案在第 3 页。"
+  },
+  {
+    "id": "Q-2025S-FINAL-P10",
+    "topic": "event-inclusion-exclusion",
+    "sourceNote": "sources/notes/Q-2025S-FINAL-P10 - Inclusion-Exclusion.md",
+    "sourceNoteSha256": "521c3f910924e1abe4a793f6b783bd2f2151ac1a72ac77c8af1a2fb6d602591d",
+    "stems": [],
+    "stemPages": [],
+    "paper": "2025 Spring Final",
+    "pdf": "sources/papers/COMP2711_S2025_Final.pdf",
+    "pdfSha256": "15b253986652a8a846ad56904c0d61c46450bcc4b8369299e36002d2bdba647a",
+    "page": 13,
+    "solutionPages": [
+      13
+    ],
+    "number": "10",
+    "marks": 7,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "A 3-by-3 unit-square grid is to be colored such that each unit square is independently colored red or blue with equal probability. What is the probability that the grid does not contain any 2-by-2 red square? Justify your answer.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 13](../sources/papers/COMP2711_S2025_Final.pdf#page=13).\n\nSince each of the 9 unit squares of the 3-by-3 square can take one of two colors, in total there are $2^9$ different ways of coloring the 3-by-3 square.\n\nLet us count now the colorings that form a 2-by-2 red square. This red square can be formed in the upper left, upper right, bottom left or bottom right corner of the 3-by-3 square. Let $A,B,C,D$ be, respectively, the sets of the four types of colorings listed above that produce a 2-by-2 red square. Since the other 5 squares of the 3-by-3 square can have any color, we have $|A|=|B|=|C|=|D|=2^5$. These sets are however not disjoint, so we must apply inclusion-exclusion:\n$$\\begin{aligned}\n|A\\cup B\\cup C\\cup D|&=|A|+|B|+|C|+|D|\\\\\n&\\quad-|A\\cap B|-|A\\cap C|-|A\\cap D|-|B\\cap C|-|B\\cap D|-|C\\cap D|\\\\\n&\\quad+|A\\cap B\\cap C|+|A\\cap B\\cap D|+|A\\cap C\\cap D|+|B\\cap C\\cap D|\\\\\n&\\quad-|A\\cap B\\cap C\\cap D|.\n\\end{aligned}$$\nAs $A\\cap B$ represents the set of the colorings having the first two rows red (and the 3 squares of the lowest row free to take any of the two colors), we have $|A\\cap B|=2^3$. Similarly, $|A\\cap C|=2^3$, $|B\\cap D|=2^3$ and $|C\\cap D|=2^3$. We have a different situation for $A\\cap D$ and $B\\cap C$: if two opposing 2-by-2 squares are red, this leaves uncertain only the colors of the two remaining 1-by-1 corners, therefore $|A\\cap D|=|B\\cap C|=2^2$. The intersections of 3 of the sets leaves undecided only the color of one square, therefore each of these intersections has 2 elements. Finally, the intersection of all the four sets contains only the square completely colored in red, that is, one element. We obtain:\n$$|A\\cup B\\cup C\\cup D|=4\\cdot2^5-(4\\cdot2^3+2\\cdot2^2)+4\\cdot2-1=95.$$\nSo from the 512 possible colorings, $512-95=417$ do not contain any 2-by-2 red square, so the probability of not having a 2-by-2 red square is $\\frac{417}{512}$.",
+    "solutionMarkdown": "**Answer.** $417/512$.\n\n**Derivation/proof.** The nine independent fair colors give $2^9=512$ equally likely outcomes. Events A,B,C,D require the top-left, top-right, bottom-left and bottom-right $2\\times2$ squares to be all red. Each fixes four cells and permits $2^5=32$ colorings. Of the six pair intersections, four adjacent pairs fix six cells and permit eight colorings each; two diagonal pairs fix seven and permit four each. Any three events fix eight cells, yielding two colorings for each of four triple intersections. All four events require the unique all-red grid. Inclusion-exclusion gives $4\\cdot32-(4\\cdot8+2\\cdot4)+4\\cdot2-1=95$ colorings with a red square. The complement has $512-95=417$, giving probability $417/512$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "3fb7cd773885d5532ca1be24cdc012ec52fb4fe6d80f434d5ce35d0d92eecd45",
+    "supplementarySourceSha256": "540f4ffd664d8df51df85d9fe9d18e9e1d738092858dd273125371871a1da53a",
+    "independentVerification": "九格二色有 512 个等可能结果，四个 2×2 红方块事件容斥得坏结果 95、好结果 417。枚举 512 种格局与交集固定格数双重核验，答案 417/512。"
+  },
+  {
+    "id": "Q-2016-FINAL-P03-a-1",
+    "topic": "probability-distributions",
+    "sourceNote": "sources/notes/Q-2016-FINAL-P03-a-1 - Conditional Probability.md",
+    "sourceNoteSha256": "3f9769048c6c4b3f8a364d76d896237a8d248e66cd4a8498338f67de0e717b1b",
+    "stems": [
+      "STEM-2016-FINAL-P03 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      7
+    ],
+    "paper": "2016 Final",
+    "pdf": "sources/papers/2016-final.pdf",
+    "pdfSha256": "08045a966e9c27a4ac89219addb70af8f699286d12d0b9950a064eb5e2263f22",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "3(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "A bag contains two dice. One dice is a normal six-sided fair dice, while the other is a special dice also with six sides where each of the 4 sides shows one dot and each of the remaining 2 sides shows two dots. Each side of both dice is equally likely to be on top when the corresponding dice is rolled. One of the dice is picked from the bag at random (i.e., the event that the fair dice is picked and the event that the special dice is picked are equally likely to occur), and this dice is rolled 2 times. Let $A_1$ be the event that the number of dots on top is smaller or equal to two dots on the first roll, and $A_2$ be the event that the number of dots on top is smaller than or equal to two dots on the second roll. We denote the complement of $A_1$ and the complement of $A_2$ by $\\overline{A_1}$ and $\\overline{A_2}$, respectively.\n\n(a) What is $P(A_1)$ and $P(A_2)$?",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 7](../sources/papers/2016-final.pdf#page=7).\n\n(a) If a fair dice is picked, the probability that we get one or two dots on top is $\\frac13$. If a special dice is picked, the probability that we get one or two dots on top is 1. Therefore, $P(A_1)=\\frac12\\cdot\\frac13+\\frac12\\cdot1=\\frac23$. By the same argument, $P(A_2)=\\frac23$.",
+    "solutionMarkdown": "**Answer.** $P(A_1)=2/3$.\n\n**Derivation/proof.** Let $F$ and $S$ denote selecting the fair and special dice. They partition the experiment and each has probability $1/2$. Total probability gives $P(A_1)=P(A_1\\mid F)P(F)+P(A_1\\mid S)P(S)=\\frac13\\frac12+1\\frac12=\\frac23$.\n\nThe equal weights come from the random selection of the die, not from a uniform distribution over the resulting numerical values.\n\nExplicitly, $P(A_1\\mid F)=1/3$ and the weighted sum is $(1/2)(1/3)+(1/2)(1)=2/3$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "45fdb558d9d7ddd2c9c6cfb9cf538c80514dd2fca94ea6bfa1d4f9d0a2187bcc",
+    "supplementarySourceSha256": "501478ea1dbff95cc50e0820c6cc2ab826617199e1a149742bf6ee553dea7686",
+    "independentVerification": "保留完整印刷 3(a) 对 A1/A2 两个边际的提问，只计一道原题。选择骰子与当前朝上面的 12 种组合等可能，8 种满足条件，两个边际各 2/3。无需假设两次掷骰独立；排除本卷依赖未明确独立性的后续精确联合计算题。"
+  },
+  {
+    "id": "Q-2017-FINAL-P06-b",
+    "topic": "independent-events",
+    "sourceNote": "sources/notes/Q-2017-FINAL-P06-b - Random Variables.md",
+    "sourceNoteSha256": "cf2c8dddb04c8cadf2169b9dc9ba1030c27e264760e17ad049dbcf9508d2cee3",
+    "stems": [
+      "STEM-2017-FINAL-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2017 Final",
+    "pdf": "sources/papers/2017-final.pdf",
+    "pdfSha256": "1a3a43234b2f03f6503b3c0d648d3021cde963b37d33182642481a125300c8f8",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "6(b)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "64 fair coins are flipped independently randomly and then arranged in an 8 by 8 block randomly without looking. Each row contains eight coins and there are eight rows. If all eight coins in a row have the same symbol (heads or tails), we call it a homogeneous row. Let $X$ denote the number of homogeneous rows in the block.\n\n(b) Calculate $p(X=1)$.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2017-final.pdf#page=10).\n\nFor any given row, the chance it is homogeneous is $(1/2)^8\\cdot2=(1/2)^7$ (all heads or all tails). The chance that it is not homogeneous is $(1-(1/2)^7)$. Overall, seven rows must not be homogeneous and one row must be homogeneous, so $p(X=1)=8(1/2)^7(1-(1/2)^7)^7$.",
+    "solutionMarkdown": "**Answer.** $8(1/128)(127/128)^7$.\n\n**Derivation/proof.** A given row is homogeneous in two of its $2^8$ equally likely configurations, so its probability is $q=2/2^8=1/128$. Distinct rows use disjoint independent coins. Choose which of the eight rows succeeds, multiply by $q$ for it and $(1-q)^7$ for the failures. The eight choices are disjoint, giving $8q(1-q)^7$.\n\nRandomly arranging the coins without observing their faces preserves the independent fair distribution at all sixty-four positions.\n\nA row is homogeneous with probability $q=2(1/2)^8=1/128$, since either all eight coins are heads or all are tails. The independent eight rows then give $P(X=1)=8(1/128)(127/128)^7$ by selecting its unique homogeneous row.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "4a585578b5d7248c3105c6140421c0637313654a2c3aa3906a6969fb9b32637d",
+    "supplementarySourceSha256": "4671984f395350c597d612e87001c9b00ec165faaa4915ba19b2d1d664a3fbd7",
+    "independentVerification": "单行同类有全 H、全 T 两种，q=2/256=1/128。不同八行使用互不相交的独立硬币，恰好一行同类概率 8q(1−q)^7。只需事件、计数和独立乘法，不需要期望或方差。以八行状态的分组计数核验。"
+  }
+]

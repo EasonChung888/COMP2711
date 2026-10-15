@@ -1,0 +1,24 @@
+ Union of Events
+
+
+▪ Theorem
+  Let E1 and E2    be events in the  sample space S. Then
+
+
+
+▪ Proof:
+  Given the inclusion-exclusion formula |𝐴        ∪  𝐵| = |𝐴| +
+  | 𝐵|−  |𝐴 ∩ 𝐵|, it follows that
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                19

@@ -1,0 +1,19 @@
+  Uniform Distribution
+
+
+▪  Definition
+   Suppose that 𝑆 is a set with 𝑛 elements. The uniform
+   distribution assigns the probability 1/𝑛 to each
+   element of 𝑆, i.e., all outcomes are equally likely.
+▪  Example:
+   For a fair dice with 6 sides, we have 𝑝         𝑠  = 1 for all 𝑠.
+                                                        6
+
+                 1/6
+
+
+Histogram of the pmf   1   2   3   4  5   6
+▪  Uniform distribution corresponds to the Laplace
+   definition.
+
+                                                                    25

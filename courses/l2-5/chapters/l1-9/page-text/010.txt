@@ -1,0 +1,24 @@
+    Lottery Exercises
+
+▪   In a lottery, players win a prize when they guess a set of m numbers selected by a
+    random process out of the first n positive integers (n is usually between 30 and 60,
+    order is not important). What is the probability to win the prize?.
+▪   There are C(n,m) combinations, and you have to guess the correct one.
+▪   Probability of winning: 1/ C(n,m)
+▪   In a different lottery, players win a large prize when they pick n (decimal) digits that
+    match, in the correct order, n digits selected by a random process, where the same
+    digit may be repeated.
+▪   What is the probability that a player wins the large prize?
+▪   The number of n permutations with repetition is 10𝑛. Therefore, the probability of
+    guessing the correct permutation is: 1/ 10𝑛.
+▪   A small prize is won if only n-1 digits are matched. What is the probability that a
+    player wins the small prize?
+▪   There are C(n,1)=n ways to select the incorrect digit.
+▪   There are 9 choices for the value of the incorrect digit (all but the correct value).
+▪   There is only 1 choice for the remaining n-1 correct digits.
+▪   The probability that a player wins the small prize is: 9n / 10𝑛 (winning outcomes/all
+    outcomes).
+
+
+
+                                                                                                       10

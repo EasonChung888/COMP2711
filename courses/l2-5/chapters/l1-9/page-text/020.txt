@@ -1,0 +1,19 @@
+ Example of Union of Events
+
+
+▪ What is the probability that a positive integer selected
+  at random from the set of positive integers not
+  exceeding 100 is divisible by either 2 or 5?
+▪ Solution:
+  𝐸1: the event that the integer is divisible by 2;
+  𝐸2: the event that it is divisible 5;
+  𝐸1  ∪ 𝐸2: The event that the integer is divisible by 2 or 5;
+  𝐸1  ∩ 𝐸2: The event that it is divisible by 2 and 5.
+   It follows that:
+             𝑝  𝐸1 ∪ 𝐸2   = 𝑝  𝐸1  +  𝑝 𝐸2   − 𝑝(𝐸1  ∩ 𝐸2)
+                             =50/100+ 20/100   −  10/100   =  3/5.
+
+
+
+
+                                                                     20

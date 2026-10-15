@@ -1,0 +1,20 @@
+Review
+
+Experiment:              Sample space: 𝑆     = {1,2,3,4,5,6}
+
+ Roll a dice
+                              1           2           3
+
+                              4           5           6
+
+
+                            Every subset of 𝑆 is an event
+                            Event 𝐸 = “outcome is 4”
+
+
+
+
+
+
+
+                                                             5

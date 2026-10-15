@@ -1,0 +1,17 @@
+ Properties of Probability
+
+▪ 𝑝 𝑆  =  𝑆 =  1
+          𝑆
+
+▪ 𝑝 𝐸   ≤ 1, for all events 𝐸
+
+▪ 𝐸ത denotes the complement of 𝐸:        𝐸ത =  𝑆  − |𝐸|
+
+▪ 𝑝 𝐸ത  = 𝑆 − 𝐸 = 1  −  𝐸 = 1  − 𝑝(𝐸)
+            𝑆           𝑆
+
+▪ 𝑝 𝐸 ∪  𝐹  =  𝐸 ∪ 𝐹=  𝐸 +𝐹 − 𝐸 ∩ 𝐹=   𝑝𝐸  +  𝑝 𝐹   − 𝑝(𝐸 ∩ 𝐹)
+                𝑆           𝑆
+
+
+                                                             22

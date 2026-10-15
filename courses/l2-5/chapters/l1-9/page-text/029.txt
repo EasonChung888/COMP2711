@@ -1,0 +1,16 @@
+   Exercise on Child Gender
+▪ Each child has equal probability to be a boy or a girl
+▪ E: the event that a family of n children has children of
+  both sexes
+▪ F: the event that a family of n children has at most one
+  boy, respectively.
+▪ Are E and F independent if n=2?
+▪ 𝑝  𝐸  =  |𝐵𝐺,𝐺𝐵 |=  1
+              4       2
+▪ 𝑝  𝐹  =  |𝐵𝐺,𝐺𝐵,𝐺𝐺 |=  3
+                4        4
+▪ 𝑝  𝐸 ∩ 𝐹   = | 𝐵𝐺,𝐺𝐵 |=  1
+                   4       2
+
+▪ 𝑝  𝐸 ∩ 𝐹   = 1 ≠  𝑝 𝐸  𝑝 𝐹   = 3. So they are not independent
+               2                 8                                 29

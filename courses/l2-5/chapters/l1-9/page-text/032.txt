@@ -1,0 +1,20 @@
+   Exercise 4 on Child Gender
+▪ Each child has equal probability to be a boy or a girl
+▪ E: the event that a family of n children has children of
+  both sexes
+▪ F: the event that a family of n children has at most one
+  boy, respectively.
+▪ Are E and F independent for any value of n>3?
+▪ View each child as a bit (e.g., 0 for boy, 1 for girl) in  a
+                                      2𝑛−2
+  bit-string of length n: 𝑝     𝐸   =  2𝑛
+▪ 𝑝  𝐹  =  𝑛+1
+            2𝑛
+▪ 𝑝  𝐸 ∩ 𝐹   =  𝑛
+               2𝑛
+▪ For E and F to be independent it must hold:
+   𝑛   2𝑛−2𝑛+1      𝑛    𝑛                   𝑛
+▪ 2𝑛=   2𝑛  2𝑛 𝑛2   =(2   − 2)(𝑛 +  1)  2    −2𝑛  − 2 =  0
+▪ The equation is true only for n=3. For n>3, 2𝑛 >            2𝑛 +  2
+
+                                                                    32

@@ -1,0 +1,26 @@
+ Complement of Event
+
+
+▪ Theorem
+  Let 𝐸 be an event in a finite sample space 𝑆. The
+  probability of the event 𝐸ത    , the complementary event
+  of 𝐸, is given by 𝑝   𝐸ത  = 1 − 𝑝(𝐸).
+▪ Proof
+  Using the fact that |𝐸ത|   = |𝑆| − |𝐸|,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                13

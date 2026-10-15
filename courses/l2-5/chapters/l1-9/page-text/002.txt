@@ -1,0 +1,20 @@
+ Basic Definitions of Probability
+
+
+▪ An experiment is a procedure that yields one of a
+  given set of possible outcomes.
+▪ The sample space S of the experiment is the set of all
+  possible outcomes.
+▪ An event E is a subset of the sample space.
+▪ If 𝑆 is a finite sample space of equally likely outcomes,
+  and 𝐸 is an event, i.e., a subset of 𝑆, then the
+  probability of 𝐸 is (Laplace definition of probability):
+                           𝑝  𝐸  =   𝐸
+                                     𝑆
+
+
+
+
+
+
+                                                                   2

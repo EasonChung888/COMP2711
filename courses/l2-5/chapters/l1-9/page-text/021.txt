@@ -1,0 +1,19 @@
+ Inclusion-Exclusion Principle for
+ Probability
+
+▪ Theorem
+  Let 𝐸1 ,𝐸2,… ,𝐸𝑛 be events in a sample space S. Then
+
+
+
+
+
+
+▪ Disjoint union:
+  If 𝐸1,𝐸2,… is a sequence of pairwise disjoint events in a
+  sample space 𝑆, then
+
+
+
+
+                                                               21

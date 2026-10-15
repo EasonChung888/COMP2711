@@ -1,0 +1,18 @@
+ Exercise 2 on Child Gender
+▪ Suppose a family have 3 children, each of which has
+  equal probability to be a boy or a girl. Are these two
+  events independent?
+   ▪  𝐸: The family has children of both sexes
+   ▪  𝐹: The family has at most one boy
+▪ Solution:
+   ▪  𝑝 𝐸  =  |𝐵𝐵𝐺,𝐵𝐺𝐵,𝐵𝐺𝐺,𝐺𝐵𝐵,𝐺𝐵𝐺,𝐺𝐺𝐵  |=  3
+                           8                4
+   ▪  𝑝 𝐹  =  |𝐵𝐺𝐺,𝐺𝐵𝐺,𝐺𝐺𝐵,𝐺𝐺𝐺  |=  1
+                       8            2
+   ▪  𝑝 𝐸 ∩  𝐹  = | 𝐵𝐺𝐺,𝐺𝐵𝐺,𝐺𝐺𝐵 | = 3
+                         8          8
+   ▪  𝑝(𝐸 ∩  𝐹) = 𝑝(𝐸)𝑝(𝐹). So they are independent
+
+
+
+                                                                  30

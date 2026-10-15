@@ -1,0 +1,20 @@
+  Independence
+
+▪  Definition
+   Two events 𝐸 and 𝐹 are independent if and only if
+             𝑝(𝐸 ∩  𝐹) =  𝑝(𝐸)𝑝(𝐹)
+▪  How to check independence?
+    ▪  Two unrelated events are independent; one does not affect the
+       other.
+    ▪  Use definition
+▪  Examples
+▪  If two cards are drawn     with  replacement from a deck of cards, the
+   event of drawing a red card on the first trial and that of drawing a
+   red card on the second trial are      independent.
+▪  If two cards are drawn without replacement, the events are
+   not  independent because there are fewer red cards for the second
+   trial.
+
+
+
+                                                                               27

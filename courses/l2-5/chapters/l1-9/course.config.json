@@ -1,0 +1,101 @@
+{
+  "title": "概率入门",
+  "subtitle": "Introduction to Probability",
+  "storagePrefix": "comp2711:l1-9:",
+  "topics": [
+    {
+      "slug": "probability-foundations",
+      "title": "概率基础与样本空间",
+      "description": "从骰子和抽球建立试验、结果、事件与等可能计数。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "questions": []
+    },
+    {
+      "slug": "permutation-and-sampling",
+      "title": "排列、彩票与抽样概率",
+      "description": "用错排、组合、排列及放回与不放回模型计算概率。",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "questions": [
+        "Q-2020-FINAL2-P06-a",
+        "Q-2020-FINAL2-P06-c",
+        "Q-2020-FINAL2-P06-d"
+      ]
+    },
+    {
+      "slug": "complements-and-birthdays",
+      "title": "补事件与生日问题",
+      "description": "用相反事件计算至少一次、扑克牌与重复生日概率。",
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "questions": [
+        "Q-2019-FINAL-P08-a"
+      ]
+    },
+    {
+      "slug": "event-inclusion-exclusion",
+      "title": "并事件与概率容斥",
+      "description": "处理重叠事件、整除条件与多事件容斥。",
+      "pages": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "questions": [
+        "Q-2019-FINAL-P08-b",
+        "Q-2020-FINAL1-P04-a",
+        "Q-2025S-FINAL-P10"
+      ]
+    },
+    {
+      "slug": "probability-distributions",
+      "title": "均匀与非均匀概率分布",
+      "description": "认识 pmf，按结果概率求和，计算偏骰子的事件概率。",
+      "pages": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "questions": [
+        "Q-2016-FINAL-P03-a-1"
+      ]
+    },
+    {
+      "slug": "independent-events",
+      "title": "独立事件与判定",
+      "description": "检验交集与乘积，比较抽牌、bit string 和不同人数的模型。",
+      "pages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "questions": [
+        "Q-2017-FINAL-P06-b"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+ Exercise on Birthdays
+
+▪ What is the probability of a person having today,
+  assuming 366 days per year and uniform distribution
+  of birthdays?
+▪ 1/366
+▪ Probability of a person not having birthday today:
+▪ 365/366
+▪ Probability that none of n persons has birthday today:
+▪ p(no birthday today)=(365/366)n.
+▪ Probability that in a group of n people, at least one
+  has birthday today?
+▪ p(at least one birthday today)=1-(365/366)n
+
+
+
+
+
+                                                                  16

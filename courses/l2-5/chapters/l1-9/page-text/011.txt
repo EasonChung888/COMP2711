@@ -1,0 +1,20 @@
+     Exercise on Letter Arrangements
+▪  What is the probability of the following events when we randomly select a
+   permutation of the 26 lowercase letters of the English alphabet?
+▪  The first 13 letters of the permutation are in alphabetical order.
+▪  There are 13! possible permutations of the first 13 letters and only 1 has
+   them in alphabetical order. Thus, p=1/13!. Alternatively, since the first 13
+   letters are in order, we can only permute the remaining 13:
+   p=P(26,13)/26!=1/13!
+▪  The first letter of the permutation is A and the last letter is Z.
+▪  Once I fix the first and the last letter, there are 24! permutations for the
+   rest. Thus, p=24!/26!
+▪  A and Z are next to each other in the permutation.
+▪  I consider A and Z as a block. Thus, the number of possible permutations is
+   2x25! (2 because I need to select A or Z to be first). p= 2x25!/26!=1/13.
+▪  A and Z are not next to each other in the permutation.
+▪  p=12/13 (based on previous question).
+▪  Z precedes A in the permutation.
+▪  Z is equally likely to precede or follow A. Thus, p=1/2.
+▪  Z precedes both A and B in the permutation.
+▪  In 1/3 of permutations each of the 3 letters will be first. Thus, p=1/3.                11

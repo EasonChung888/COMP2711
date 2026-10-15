@@ -1,0 +1,24 @@
+    The Birthday Problem: Solution
+
+▪  Imagine the people entering the room one by one
+▪  𝑝𝑛: The prob. that the first 𝑛 people all have different birthdays.
+▪  𝑝1 = 1
+▪  𝑝  = 366×365  = 1 × 365
+    2     3662         366
+▪  𝑝  = 366×365×364  =  1 × 365 × 364
+    3       3663            366   366
+▪  𝑝  =  1×  365×  364×  ⋯ × 367−𝑛
+    𝑛        366   366         366
+▪  Want to find the maximum 𝑛 such that 𝑝𝑛          <  1/2. 1 −  𝑝𝑛 > 1/2 is the
+   prob. that at least 2 among the 𝑛 people have the same birthday.
+▪  It turns out 𝑝23  ≈ 0.494. Thus, for n=23 people there is 1        − 𝑝23 ≈ 0.506
+   probability that at least two people have the same birthday.
+
+
+
+
+
+
+
+
+                                                                               18

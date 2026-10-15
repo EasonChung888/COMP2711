@@ -1,0 +1,17 @@
+ The Birthday Problem
+
+▪ Question
+  What is the minimum number of people who need to
+  be in a room so that there must be two people with
+  the same birthday, assuming that there are 366 days
+  in a year?
+▪ Answer: 367 (pigeonhole principle)
+▪ Question
+  What is the minimum number of people who need to
+  be in a room so that the probability that at least two of
+  them have the same birthday is greater than 1/2,
+  assuming that there are 366 days in a year, the
+  birthdays of the people in the room are independent,
+  and each birthday is equally likely?
+
+                                                                 17

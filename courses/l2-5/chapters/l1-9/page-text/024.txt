@@ -1,0 +1,21 @@
+  Probability of an Event
+
+▪ Definition:
+  The probability of the event 𝐸 is the sum of the
+  probabilities of the outcomes in 𝐸.
+
+
+
+
+                                     𝐸
+▪ Uniform distribution: count
+▪ General distribution: sum
+▪ 𝑝  𝐸ത =  1  − 𝑝  𝐸  and Inclusion-Exclusion Principle are
+  still true under the new definition.
+
+
+
+
+
+
+                                                                    24

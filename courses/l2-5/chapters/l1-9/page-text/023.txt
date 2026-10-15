@@ -1,0 +1,16 @@
+  Probability Distribution
+What if outcomes are not equally likely?
+
+Definition
+Let 𝑆 be the sample space of an experiment with a finite
+number of outcomes. A probability distribution on 𝑆 is
+characterized by a probability mass function (pmf) 𝑝:            𝑆 →  𝐑
+where 𝑝(𝑠) is the probability of an outcome 𝑠, that is:
+ 𝑝(𝑠) is the probability the outcome of the experiment is 𝑠
+It must hold that:
+          1.   0 ≤ 𝑝  𝑠  ≤ 1 for each 𝑠   ∈ 𝑆
+          2.   σ𝑠∈𝑆 𝑝(𝑠) =  1
+
+▪ The sample space maybe infinite.
+
+                                                                   23

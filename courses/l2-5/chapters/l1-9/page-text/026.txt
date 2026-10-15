@@ -1,0 +1,20 @@
+ Non-Uniform Distribution
+
+▪ Example:
+  Suppose that a dice is biased so that
+  (1) 𝑝  2  = 2,
+              17
+  (1) 𝑝  𝑠 =  7 for all other 𝑠.
+
+                2/7
+
+
+                1/7
+
+
+
+                      1  2   3   4  5   6
+                   Histogram of the pmf
+▪ What is the probability that an even number appears
+  when we roll this dice?
+                                                                26
