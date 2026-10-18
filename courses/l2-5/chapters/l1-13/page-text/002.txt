@@ -1,0 +1,19 @@
+ Review of Primary School Knowledge
+
+▪ Definition
+  A positive integer 𝑝    greater than 1    is called prime   if
+  the only positive factors of 𝑝     are 1  and 𝑝. A positive
+  integer that is greater than 1      and is not prime is called
+  composite.
+▪ Theorem (The Fundamental Theorem of Arithmetic)
+  Every positive integer greater than 1       can be written
+  uniquely as a prime or as the product of two or more
+  primes where the prime factors are written in order of
+  nondecreasing      size.
+  (Will prove later by induction)
+
+
+
+
+
+                                                                  2

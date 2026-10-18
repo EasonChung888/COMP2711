@@ -1,0 +1,36 @@
+Now consider n = k + 1: As 2 k | Ak, there are two possibilities for the
+remainder of Ak dividing 2 k+1. Ak = 2 k · l, where l is even, which means
+Ak ≡ 0 (mod 2 k+1), or Ak = 2 k · (1 + l′), where l′ is even, which means
+Ak ≡ 2k (mod 2 k+1)
+1. Ak ≡ 0 (mod 2 k+1). In this scenario we add the digit 2 to the left side
+of Ak. So Ak+1 = 2Ak. We show that 2 k+1 | Ak+1.
+Ak+1 = 2 · 10k + Ak = 2 · 2k · 5k + Ak = 2k+1 · 5k + Ak. And we know
+that 2 k+1 · 5k ≡ 0 (mod 2 k+1) and Ak ≡ 0 (mod 2 k+1). So Ak+1 ≡ 0
+(mod 2 k+1).
+2. Ak ≡ 2k (mod 2 k+1). In this scenario we add the digit 1 to the left
+side of Ak. So Ak+1 = 1Ak. We show that 2 k+1 | Ak+1.
+Ak+1 = 1 · 10k + Ak = 2 k · 5k + Ak. And we know that Ak ≡ 2k
+(mod 2 k+1). So Ak+1 ≡ 2k + 2k · 5k ≡ 2k · (1 + 5k) (mod 2 k+1).
+1 + 5k is an even number so Ak+1 ≡ 0 (mod 2 k+1).
+Question 3: (5 pts) You are staying on point A and you are allowed to walk either up
+or to the right. Answer these questions:
+(a) (2 pts) In how many ways you can go to point B?
+(b) (3 pts) In how many ways you can go to point B without passing
+through point C?
+Solution: (a)
+(11
+5
+)
+(b)
+(11
+5
+)
+−
+(6
+3
+)
+·
+(5
+3
+)
+Question 4: (14 pts) How many integers 0 ≤ n < 1000 are there such that

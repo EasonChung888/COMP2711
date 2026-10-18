@@ -1,0 +1,27 @@
+Problem 5: [10 pts]
+(a) Use the Euclidean algorithm to find gcd(15, 221). Show the steps.
+(b) Find x ∈ Z such that 15x ≡ 2 (mod 221). Show your workings.
+221
+Solution: (a) gcd(221,15):
+221 = 15·14+11
+15 = 11·1+4
+11 = 4·2+3
+4 = 3·1+1
+3 = 1·3+0
+So, gcd(221,15) = 1.
+(a) Rewriting:
+11 = 221−15·14
+4 = 15−11·1
+3 = 11−4·2
+1 = 4−3·1
+Substituting:
+1 = 4−(11−4·2)·1
+= 4·3−11·1
+= (15−11·1)·3−11·1
+= 15·3−11·4
+= 15·3−(221−15·14)·4
+= 15·59−221·4
+Therefore, the inverse of 15 modulo 221 is 59.
+15−1 ·15x ≡ 15−1 ·2 (mod 221).
+x ≡ 59·2 ≡ 118 (mod 221).
+7

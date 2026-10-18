@@ -1,0 +1,23 @@
+ RSA Correctness Step 2
+
+▪ Proof of Step 2:
+   ▪ We already have
+                     𝑥𝑑𝑒 ≡ 𝑥  mod  𝑝
+                     𝑥𝑑𝑒 ≡ 𝑥  mod  𝑞
+   ▪ Because gcd   𝑝, 𝑞  = 1, by the Chinese Remainder
+     Theorem (treating 𝑥𝑑𝑒     as the unknown and 𝑥     as
+     given), 𝑥𝑑𝑒  has a unique solution in 𝒁𝑝𝑞:
+                     𝑥𝑑𝑒 ≡  𝑥  mod  𝑝𝑞
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             34

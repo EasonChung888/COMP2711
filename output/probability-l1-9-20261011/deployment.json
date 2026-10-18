@@ -1,0 +1,17 @@
+{
+  "id": "appgdep_6acb6923ebbc8191bebaa7efc2641ec2",
+  "project_id": "appgprj_6ac8b2809f588191a48eee2db7010972",
+  "title": "COMP2711 学习网站",
+  "version_id": "appgprj_6ac8b2809f588191a48eee2db7010972~appgver_4c5ecd1ff2708191bdbbcc3997328d6d",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://comp2711-study.solar-tick-5367.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ac8b2809f588191a48eee2db7010972",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-11T10:47:13.637053+00:00",
+  "commit_sha": "e82d1f9809fede097a77e18bac97283f723e009b",
+  "access": "existing owner-only access preserved"
+}

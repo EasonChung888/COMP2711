@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "2 density / 6 formatting",
+      "quote": "本页的三条规则都来自乘法可以先取模：底数先取余不影响最终结果；指数相加对应幂相乘；指数相乘对应连续乘方。",
+      "repair": "在各公式附近说明用途，减少公式之前的一整段重复预告。",
+      "evidence": "本页的三条规则都来自乘法可以先取模：底数先取余不影响最终结果；指数相加对应幂相乘；指数相乘对应连续乘方。"
+    }
+  ],
+  "facts": [
+    "a^i modn三规则底数可模，指数加=积，指数乘=连续幂，i,j非负；零指数空积1，负需逆元不涉及。",
+    "13≡6mod7=>四次幂同；3²2 3^4=4 gives3^6=1，3^8=(3^4)²=2。",
+    "第三a^ij非a^(i^j)，边算余免完整大幂，不许可指数直接modn。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T10:05:58.861622+00:00"
+}

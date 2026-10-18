@@ -1,0 +1,19 @@
+ Continuous Probability Distribution
+
+▪ Defined over a domain of real numbers
+▪ Characterized by a probability density function (pdf)
+▪ Example: The pdf of a normal (Gaussian) distribution
+               1    − 𝑥−𝜇 2
+  is 𝑓 𝑥  =        𝑒  2𝜎2  .
+              2𝜎2𝜋
+
+
+
+
+
+
+▪ Remark: 𝑓(𝑥)    does not   represent a probability!
+▪ The probability of an interval: Pr     𝑎 ≤ 𝑋  ≤ 𝑏  = ׬𝑏 𝑓  𝑥 𝑑𝑥
+                                                        𝑎
+
+                                                                7

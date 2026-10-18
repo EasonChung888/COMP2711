@@ -1,0 +1,19 @@
+  Modular Arithmetic and Congruences
+
+ Difference:
+    +𝑚  and ⋅𝑚  are defined only on elements of 𝐙𝑚
+    Congruences are defined over 𝐙
+ Examples
+    6 +8 7 = 5
+    6 + 15 ≡ 5 (mod  8)
+    6 + 15 ≡ 21  (mod 8)
+    Can’t write 6 +8 7 =  13 or 6+8  15 = 5
+
+
+
+
+
+
+
+
+                                                           21

@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "style §2 sentence structure",
+      "quote": "右图操作可按数对“500 ml 容器内水量，700 ml 容器内水量”记录：先将小容器装满并倒入大容器，得到 $(0,500)$；再装满小容器，把大容器补满，得到 $(300,700)$。",
+      "repair": "将操作拆成真正的顺序列表，数对约定只说明一次。",
+      "evidence": "右图操作可按数对“500 ml 容器内水量，700 ml 容器内水量”记录：先将小容器装满并倒入大容器，得到 $(0,500)$；再装满小容器，把大容器补满，得到 $(300,700)$。"
+    }
+  ],
+  "facts": [
+    "无刻度500/700ml容器无限水源，允许装满倒空互倒目标100；数对顺序小大。",
+    "依次(0,500),(300,700),(0,300),(100,700)；三次500减两700=100=gcd。",
+    "负系数移去水非负水量；可测100倍数，单容器有容量界，更大总量需额外收集累计，算术非忽略物理限制。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:57:43.533754+00:00"
+}

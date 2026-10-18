@@ -1,0 +1,19 @@
+ Variance and Standard Deviation
+
+▪ Definition
+  Let 𝑋  be a random variable on the sample space 𝑆. The
+  variance of 𝑋, denoted by 𝑉(𝑋)     is
+     𝑉  𝑋  = ෍   𝑋  𝑠 −  𝐸 𝑋   2𝑝(𝑠) = 𝐸   𝑋 −  𝐸 𝑋   2
+
+             𝑠∈𝑆
+▪ Definition
+  The standard deviation of 𝑋, denoted by 𝜎(𝑋), is         𝑉(𝑋)
+▪ Example
+  Bernoulli trial: 𝑋 = 1 with probability   𝑝, 0 otherwise
+      𝐸 𝑋   = 𝑝
+      𝑉 𝑋  =   1 − 𝑝 2𝑝 +  0 − 𝑝  2⋅(1 − 𝑝) =  (1−  𝑝)𝑝
+
+
+
+
+                                                             31

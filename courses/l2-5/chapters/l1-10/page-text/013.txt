@@ -1,0 +1,19 @@
+ Example
+
+
+ Example: There is a test for a particular disease.
+     The test’s false negative rate is 1%, i.e., it gives a
+      negative result with prob. 1% when given to
+      someone with the disease.
+     The test’s false positive rate is 0.5%, i.e., it gives a
+      positive result with prob. 0.5% when given to
+      someone without the disease.
+     On average, one person out of 100,000 has the
+      disease.
+ Question:
+  Should someone who tests positive be worried?
+
+
+
+
+                                                                    13

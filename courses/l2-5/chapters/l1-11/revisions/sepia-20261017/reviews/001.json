@@ -1,0 +1,27 @@
+{
+  "defects": [
+    {
+      "check": "6 formatting",
+      "evidence": "本章主题为Random Variables",
+      "repair": "从抛币数值记录引入，阅读信息放后。"
+    },
+    {
+      "check": "7 conclusion",
+      "evidence": "这一工具让我们用数字研究",
+      "repair": "去掉工具意义预告，保留建模基础与数值含义。"
+    }
+  ],
+  "facts": [
+    "RandomVariables，Rosen7.4，原图L17网站文件L1.11。",
+    "抛三币HTH，X正面次数，XHTH2；HTH THH HHT同值须合概率。",
+    "变量是给结果赋数，规则确定，随机是结果未定，已知结果值确定。",
+    "依赖样本空间事件概率，可研究正面次数骰点完成次数、均值波动，先知数值含义。"
+  ],
+  "protected": [
+    "某种情况是否发生",
+    "随机",
+    "数值记录什么"
+  ],
+  "styleScan": "去掉章节导览式开头和尾巴，保留例子展开。",
+  "deferred": []
+}

@@ -1,0 +1,16 @@
+ Bayes’ Theorem: Example
+
+ Breathalyzers have an error rate of 5%.
+     A sober driver is detected as “drunk” with prob. 5%
+     A drunk driver is not detected with prob. 5%
+ 1 in 1000 drivers is driving drunk
+ Police officers stops a driver at random
+ Breathalyzer detects “drunk”
+ Question
+  What’s the probability that the driver is really drunk?
+ Answer
+  95%?  Wrong! 𝑝(drunk | detected) ≠         𝑝(detected | drunk)
+ Answer
+  2%
+
+                                                                  9

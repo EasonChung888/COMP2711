@@ -1,0 +1,40 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "这一章到这里展示了同一个核心思想的几种用途：利用余数压缩状态、组织查找、检测某些错误，以及生成有周期的数列。",
+      "repair": "把这一章已有用途作为简短衔接放进正文，不用章末总括式结尾重复。",
+      "evidence": "这一章到这里展示了同一个核心思想的几种用途：利用余数压缩状态、组织查找、检测某些错误，以及生成有周期的数列。"
+    }
+  ],
+  "facts": [
+    "m2^31-1,a7^5,c0非零种子周期2^31-2，种子0永远0。",
+    "完整周期非零状态各一次，不等独立/不可预测，确定递推。",
+    "再mod6映0..5，原范围大小非6倍数可取模偏差，范围合法非严格均匀。",
+    "长周期范围合适不足用于不可预测抽签安全；课件大气噪声网站物理对比非本地网站依赖；余数用途压缩状态查找检错周期。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:55:41.721941+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "reviewed",
+  "all17LessonsDesktopAndMobile": true,
+  "contactSheets": [
+    "contact-desktop-1.png",
+    "contact-desktop-2.png",
+    "contact-desktop-3.png",
+    "contact-mobile-1.png",
+    "contact-mobile-2.png",
+    "contact-mobile-3.png"
+  ],
+  "fullScreensReviewed": [
+    "number-theory-desktop.png",
+    "chapters-l1-14-source-map-directory-mobile.png",
+    "l1-12-divisibility-desktop.png",
+    "l1-12-division-theorem-mobile.png",
+    "l1-12-modular-arithmetic-answer-mobile.png",
+    "l1-14-diffie-hellman-answer-mobile.png",
+    "l1-13-chinese-remainder-theorem-answer-mobile.png"
+  ],
+  "blockingDisplayIssues": [],
+  "nonBlockingObservations": [
+    "At 390 px the four-column source-map table wraps course names and provenance links into tall rows. Links remain usable and the page has no horizontal document overflow.",
+    "Long displayed equations use local horizontal scrolling; 42 overflowing formula regions were exercised successfully."
+  ],
+  "originalResponsesEdited": false
+}

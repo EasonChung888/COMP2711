@@ -1,0 +1,17 @@
+ Example
+
+▪ Suppose we take a measurement by repeating the
+  same experiment many times. Each trial returns a
+  random measurement that is correct in expectation,
+  but with some deviation. More precisely, let 𝑋𝑖       be the
+  measurement from the 𝑖-th       experiments we have
+                  𝐸 𝑋𝑖  =  𝜇,    𝑉  𝑋𝑖  = 𝜎2
+  If we repeat the experiments 𝑛      times independently,
+  and report the average     𝑌 =  (𝑋1 + ⋯  + 𝑋𝑛 )/𝑛. What is
+  𝐸  𝑌  and 𝑉   𝑌 ?
+▪ Solution
+               𝐸 𝑌  =  𝐸 𝑋1  + ⋯  + 𝐸  𝑋𝑛  =  𝜇
+                       𝑉 𝑋   + ⋯𝑛 + 𝑉  𝑋     𝜎2
+               𝑉 𝑌  =      1            𝑛  =
+                               𝑛2             𝑛
+                                                              37

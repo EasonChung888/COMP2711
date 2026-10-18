@@ -1,0 +1,21 @@
+  Hash Functions
+
+
+ Example
+  During exam checking, how to organize the exam
+  papers so that the TA can quickly find the paper for
+  any given student?
+ Solution
+    ℎ  𝑖𝑑  = 𝑖𝑑 mod  10
+    Hash by initials
+ A hash function maps a universe of keys to a small set
+  of locations
+
+
+
+
+
+
+
+
+                                                                26

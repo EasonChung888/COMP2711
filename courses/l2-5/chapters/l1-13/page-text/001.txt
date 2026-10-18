@@ -1,0 +1,22 @@
+ L06: GCDs and Congruences
+
+
+▪ Greatest Common Divisor (GCD)
+▪ Multiplicative Inverses
+▪ Solving Linear Congruences
+▪ The Chinese Remainder Theorem
+
+
+
+▪ Reading: Rosen 4.3, 4.4, 4.5
+
+
+
+
+
+
+
+
+
+
+                                                           1

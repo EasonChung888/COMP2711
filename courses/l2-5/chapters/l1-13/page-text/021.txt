@@ -1,0 +1,16 @@
+ HKID Checksum: Single Error
+
+▪ Note that for a valid HKID, we have
+          9𝑥1 + 8𝑥2  + 7𝑥3 +  ⋯ + 2𝑥8  + 𝑥9 ≡  0 (mod  11)
+▪ Suppose 𝑥3    is mistyped as 𝑥3′   ≠ 𝑥3
+▪ Suppose the checksum is still correct, i.e.,
+          9𝑥1 + 8𝑥2  + 7𝑥3′+  ⋯ + 2𝑥8  + 𝑥9 ≡  0 (mod  11)
+▪ Subtracting one congruence from the other:
+                     7 𝑥3 −  𝑥3′ ≡ 0 (mod  11)
+▪ Since gcd   7,11  =  1, 7 has an inverse. Multiply both
+  sides by 7−1:
+                     𝑥3 −  𝑥3′≡ 0 (mod  11)
+▪ This contradicts with the assumption 𝑥3′        ≠ 𝑥3  and they
+  are both in {0,  … ,9}
+▪ Note: If first or second letter is wrong, it may not be
+  detected!                                                     21

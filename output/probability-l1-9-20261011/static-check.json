@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "pages": 32,
+  "lessons": 6,
+  "questions": 9,
+  "questionsPerLesson": [
+    {
+      "topic": "probability-foundations",
+      "count": 0
+    },
+    {
+      "topic": "permutation-and-sampling",
+      "count": 3
+    },
+    {
+      "topic": "complements-and-birthdays",
+      "count": 1
+    },
+    {
+      "topic": "event-inclusion-exclusion",
+      "count": 3
+    },
+    {
+      "topic": "probability-distributions",
+      "count": 1
+    },
+    {
+      "topic": "independent-events",
+      "count": 1
+    }
+  ],
+  "serialLifecycleEvents": 128,
+  "localLinks": 996,
+  "allowedChanges": [
+    "courses/l2-5/index.html",
+    "courses/l2-5/tools/chapter-render.mjs",
+    "courses/l2-5/tools/portal.mjs",
+    "courses/l2-5/tools/portal.test.mjs"
+  ],
+  "originalResponsesPreserved": true
+}

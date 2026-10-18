@@ -1,0 +1,37 @@
+In many unique existence proofs, instead of proving (1), we prove the
+following:
+(2) ∃xP(x)
+(3) ∀x∀y(P(x)∧P(y) → x = y)
+Your task here is to prove (1) from (2) and (3) using the rules of inference
+for propositional and predicate logic.
+Answer:
+(4) P(c) for some c (2),existential instantiation
+(5) ∀y(P(c)∧P(y) → c = y) (3),universal instantiation
+(6) ∀y(¬P(c)∨¬P(y)∨c = y) (5),equivalence
+(7) ∀y(¬P(y)∨c = y) (4),(6),resolution
+(8) ∀y(P(y) → c = y) (7),equivalence
+(9) ∀y(P(c)∧(P(y) → c = y)) (4),(8),conjunction
+(10) ∃x∀y(P(x)∧(P(y) → x = y)) (9),existential generalization
+(11) ∃x(P(x)∧∀y(P(y) → x = y)) (10),null qualification
+Problem 5: [10 pts] Decide if the following sets are countable or uncountable. Let N
+be the set of natural numbers. P(S) denotes the power set of S. No need
+to justify your answers.
+(a) N3
+(b) P(N)
+(c) P(P(N))
+(d) The set of all functions from N to N
+(e) The set of all functions from {0,1} to N
+Answer: (a) Countable; (b) Uncountable; (c) Uncountable; (d) Uncountable; (e)
+Countable.
+Problem 6: [10 pts] Use the extended Euclid algorithm to find the inverse of 53
+(mod 180). Show the steps of the algorithm.
+Answer: Calculate gcd(180,53) using euclidean algorithm.
+180 = 53·3+21
+53 = 21·2+11
+21 = 11·1+10
+11 = 10·1+1
+10 = 1·10+0
+So gcd(180,53) = 1.
+Rewriting:
+21 = 180−53·3
+3

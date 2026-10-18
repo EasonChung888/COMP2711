@@ -1,0 +1,32 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [],
+  "facts": [
+    "252=198+54,198=3×54+36,54=36+18,36=2×18 =>gcd18。",
+    "回代18=54-36=54-(198-3×54)=4×54-198=4(252-198)-198=4×252-5×198；系数4,-5验1008-990。",
+    "扩展返gcd+系数，逐次消晚余数直到原输入，不能留54/36，不能把末余0作gcd。"
+  ],
+  "styleScan": "算例的每步代回和验算都有具体作用，无风格缺陷簇；重写将扩展的含义与所求系数相连。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:57:27.751558+00:00"
+}

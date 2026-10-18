@@ -1,0 +1,18 @@
+ The Chinese Remainder Theorem
+
+▪ Theorem
+  Let 𝑚1, 𝑚2, … ,𝑚𝑛  be pairwise relatively prime positive
+  integers greater than one and 𝑎1,     𝑎2,…  ,𝑎𝑛 arbitrary
+  integers. Then the system
+                    𝑥 ≡  𝑎1(mod   𝑚1)
+                    𝑥 ≡  𝑎2(mod  𝑚2)
+                             …
+                    𝑥 ≡ 𝑎𝑛 (mod   𝑚𝑛)
+   has a unique solution modulo 𝑚        = 𝑚1𝑚2  ⋯  𝑚𝑛.
+▪ Proof
+  We’ll show that a solution exists by describing a way
+  to construct the solution. (Uniqueness proof is left as
+  exercise.)
+
+
+                                                              25

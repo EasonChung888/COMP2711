@@ -1,0 +1,40 @@
+{
+  "status": "metadata-passed",
+  "mode": "--metadata",
+  "checkedAt": "2026-10-17T09:48:04.886Z",
+  "revision": "sepia-20261017",
+  "chapters": [
+    {
+      "id": "l1-12",
+      "written": 0,
+      "prepared": 1,
+      "expected": 31,
+      "topics": 5
+    },
+    {
+      "id": "l1-13",
+      "written": 0,
+      "prepared": 0,
+      "expected": 27,
+      "topics": 6
+    },
+    {
+      "id": "l1-14",
+      "written": 0,
+      "prepared": 0,
+      "expected": 34,
+      "topics": 6
+    }
+  ],
+  "contentRead": false,
+  "protection": {
+    "immutableFiles": 436,
+    "supplementalFiles": 1130,
+    "changedLessonHtml": []
+  },
+  "written": 0,
+  "prepared": 1,
+  "finalReady": false,
+  "fullValidation": "not run; no response/review/page-text/HTML content decoded",
+  "finishedAt": "2026-10-17T09:48:04.944Z"
+}

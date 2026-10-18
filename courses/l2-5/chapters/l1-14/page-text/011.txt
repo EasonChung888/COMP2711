@@ -1,0 +1,19 @@
+ Modular exponentiation
+
+
+
+Lemma:
+For any 𝑎 ∈ 𝐙𝑛 and any nonnegative integers 𝑖,   𝑗
+▪ 𝑎𝑖 mod 𝑛 =    𝑎mod  𝑛  𝑎 mod  𝑛   𝑎 mod  𝑛   mod  𝑛
+
+                              ifactors
+▪ 𝑎𝑖+𝑗 mod 𝑛 =    𝑎𝑖mod  𝑛  𝑎𝑗 mod  𝑛   mod  𝑛
+
+▪ 𝑎𝑖𝑗mod  𝑛 =    𝑎𝑖mod  𝑛 𝑗  mod  𝑛
+
+Proof: Directly from theorem in L05
+Examples
+    134 ≡ 64 (mod  7)
+    32+4 ≡ 32 34 ≡ 2 4 ≡ 1(mod   7)
+    34(2)≡ (34 )2≡  42 ≡ 2 (mod  7)
+                                                                11

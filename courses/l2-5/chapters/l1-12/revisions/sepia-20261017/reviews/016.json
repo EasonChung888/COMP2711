@@ -1,0 +1,38 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "至此两边相等。证明的关键层次是：模加法定义 → 模运算定理 → 普通整数结合律 → 转回模加法。",
+      "repair": "各等号旁直接解释依据，删去重复回顾全证明的句子。",
+      "evidence": "至此两边相等。证明的关键层次是：模加法定义 → 模运算定理 → 普通整数结合律 → 转回模加法。"
+    }
+  ],
+  "facts": [
+    "先按定义展开模加法，再局部取模规则去内部模，普通整数结合律换括号，再反向引入局部模和定义。",
+    "每个等号保留外层模；其他性质可同路线证，不能以外观似普通加法代证。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:52:04.780998+00:00"
+}

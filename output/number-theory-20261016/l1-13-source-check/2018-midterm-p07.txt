@@ -1,0 +1,21 @@
+Problem 5: Divisibility [6 pts]
+(a) Letx,y,z bepositiveintegers. Showthat,ifz|xy andy,z arerelatively
+prime, then z|x.
+(b) Let x,y be positive integers and p be a positive prime integer. Show
+that, if p|xy then p|x or p|y. (Note: You may use the result from (a)
+even if you did not solve that part.)
+Answer: (a) Since y,z are relatively prime, gcd(y,z) = 1. Using the extended
+Euclidean algorithm, we can calculate integers s,t such that
+sy +tz = 1 (1)
+Multiplying both sides of (1) with x, we get
+syx+tzx = x (2)
+From the problem statement, z|xy, thus z|syx. Moreover, it is obvious
+that z|tzx. We know that from this it follows that z divides their sum,
+that is, z|(syx+tzx). But, from (2), (syx+tzx) = x, therefore z|x.
+Students may choose to explicitly prove the fact that if a|b and a|c then
+a|(b+c). This is fine but not necessary.
+(b) Since p is prime, it follows that gcd(p,x) is either p or 1, because these
+are the only divisors of p. If gcd(p,x) = p, then x is a multiple of p,
+that is, p|x. Else, gcd(p,x) = 1, that is, x,p are relatively prime. In
+this case, using (a), we get that p|y.
+7

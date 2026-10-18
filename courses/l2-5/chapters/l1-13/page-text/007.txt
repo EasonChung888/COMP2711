@@ -1,0 +1,17 @@
+  The Extended Euclidean Algorithm
+
+▪ Example
+  Express gcd(252,198)      as a linear combination of 252 and
+  198.
+▪ Solution
+   ▪  First find gcd(252,198)     ▪ Rewriting:
+     1)  252 = 1∙198 + 54             ▪54 = 252 − 1∙198
+     2)  198 = 3∙54 + 36              ▪36 = 198 − 3∙54
+     3)  54 = 1∙36 + 18               ▪18 = 54 − 1∙36
+     4)  36 = 2∙18                ▪ Substituting:
+     5)  gcd(252,198)   =  18       18 = 54 − 1∙(198 − 3∙54)
+                                    = 4  ∙54 − 1 ∙ 198
+                                    = 4 ∙ (252 − 1∙198) − 1 ∙ 198
+                                    = 4  ∙252 −  5 ∙198
+
+                                                                   7

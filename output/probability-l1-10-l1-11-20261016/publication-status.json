@@ -1,0 +1,12 @@
+{
+  "status": "blocked",
+  "localBuild": "passed",
+  "existingSiteProjectId": "appgprj_6ac8b2809f588191a48eee2db7010972",
+  "sitesError": {
+    "error": "SitesConnectorError: Sites project not found",
+    "code": 404
+  },
+  "githubClient": "gh: command not found",
+  "deployed": false,
+  "identityAndAudienceUnchanged": true
+}

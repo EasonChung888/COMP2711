@@ -1,0 +1,20 @@
+ Secret Key Cryptography
+
+
+▪ In secret key cryptography, the sender (Bob) and the
+  receiver (Alice) first agree on a common secret key          in
+  advance
+
+                            plaintext
+
+
+
+
+
+
+
+                          ciphertext
+
+                           secret key
+
+                                                                 2

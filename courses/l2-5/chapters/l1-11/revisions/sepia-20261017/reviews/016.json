@@ -1,0 +1,23 @@
+{
+  "defects": [
+    {
+      "check": "7 conclusion",
+      "evidence": "这体现指示变量方法的用途",
+      "repair": "让不同pi的通式直接收尾，不另总结用途。"
+    },
+    {
+      "check": "6 formatting",
+      "evidence": "刚才求期望的步骤本身不需要独立性",
+      "repair": "用分布条件与期望条件的实际区别说明，不另加粗。"
+    }
+  ],
+  "facts": [
+    "Xi成功1失败0为indicator，逐结果X=sumXi非近似。",
+    "每次p时EXi=p，线性E总=np，比求二项pmf简。",
+    "课件独立同p使总量二项，求期望本身无需独立；相关同边际仍np但未必二项。",
+    "不同pi总期望sum pi，数事件可用指示量。"
+  ],
+  "styleScan": "保留条件层次，不增加夸方法的结尾。",
+  "deferred": [],
+  "protected": []
+}

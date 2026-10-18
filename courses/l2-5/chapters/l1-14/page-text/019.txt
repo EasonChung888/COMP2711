@@ -1,0 +1,16 @@
+ Another one-way function:
+ Multiplication and factoring
+
+
+▪ Let 𝑛  = 𝑝𝑞, where 𝑝   and 𝑞   are large primes (e.g. 1024
+  bits or longer)
+▪ The factoring problem: Given 𝑛, find 𝑝        and 𝑞
+▪ On the other hand, it is known how to find random
+  large primes efficiently
+▪ Public key in RSA: 𝑛    and 𝑒, such that 𝑒    is relatively
+  prime to (𝑝   − 1)(𝑞  − 1)
+   ▪ In practice: Pick 𝑒   randomly and check
+▪ Private key in RSA: 𝑝    and 𝑞
+   ▪ Actually, only 𝑑   (defined later) is needed
+▪ Everyone uses a different set of keys
+                                                                19

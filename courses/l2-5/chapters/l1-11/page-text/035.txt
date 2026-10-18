@@ -1,0 +1,20 @@
+  Proof of Bienaymé’s               Formula
+
+
+
+
+
+
+
+
+
+
+
+
+
+▪ The proof of the case with 𝑛     pairwise independent
+  random variables can be constructed by generalizing
+  the proof of the case for two random variables.
+
+
+                                                              35

@@ -1,0 +1,27 @@
+{
+  "defects": [
+    {
+      "check": "6 formatting",
+      "evidence": "本章主题是Conditional Probability与Bayes’ Theorem",
+      "repair": "从骰子条件变化讲起，阅读与编号信息后置。"
+    },
+    {
+      "check": "7 conclusion",
+      "evidence": "学习时需要持续区分三件事",
+      "repair": "把事件、条件、交集的区别写入符号解释，删除学习建议段。"
+    }
+  ],
+  "facts": [
+    "主题Conditional Probability/Bayes’Theorem，Rosen7.2/7.3，文件L1.10与原授课编号L16不同原图保留。",
+    "公平骰6原1/6，知偶数后{2,4,6}变1/3。",
+    "p(E|F)右为已知，左右不能换；Bayes逆向条件结合先验证据更新。",
+    "需区分所求E、已知F和交集。"
+  ],
+  "protected": [
+    "事件发生的机会是多少",
+    "已经知道另一件事发生后",
+    "已知 $F$，求 $E$"
+  ],
+  "styleScan": "删除预告加复述结构，讲解先具体后符号。",
+  "deferred": []
+}

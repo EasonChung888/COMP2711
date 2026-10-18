@@ -1,0 +1,15 @@
+ Pseudorandom Numbers
+
+ The linear congruential method generates repeating
+  patterns
+    It has been found that with 𝑚      =  231 − 1,𝑎 =  75,𝑐 = 0,
+     it generates   231 − 2 different numbers before
+     repeating
+    Take another mod if random numbers in a certain
+     range are needed
+ It generates uniformly distributed numbers
+ But they are not random!
+ Don’t use for lotteries, etc.
+ Whole theory about pseudorandom number generators
+ http://www.random.org        provides truly random
+  numbers (from atmospheric noise)                             31

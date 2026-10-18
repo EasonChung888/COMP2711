@@ -1,0 +1,18 @@
+ Properties of Divisibility
+
+ Theorem:
+  Let 𝑎, 𝑏, and 𝑐    be integers, where 𝑎       ≠  0.
+   i.   If 𝑎 |𝑏 and 𝑎   | 𝑐, then  𝑎 | (𝑏 + 𝑐);
+   ii.  If 𝑎 |𝑏,  then 𝑎  | 𝑏𝑐 for all integers 𝑐;
+   iii. If 𝑎 |𝑏 and 𝑏   |𝑐, then 𝑎   |𝑐.
+  Proof:
+   (i) Suppose 𝑎    |𝑏  and 𝑎  | 𝑐, then it follows that there are
+   integers 𝑠   and 𝑡   with 𝑏  =  𝑎𝑠 and 𝑐   = 𝑎𝑡. Hence,
+                  𝑏 +  𝑐 =  𝑎𝑠 + 𝑎𝑡  = 𝑎(𝑠  + 𝑡)
+   Therefore,  𝑎    |(𝑏 +  𝑐).
+ Proofs for (ii) and (iii) are left as exercises.
+
+
+
+
+                                                                      4

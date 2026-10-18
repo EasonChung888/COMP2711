@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "这说明使用不同权重的意义。",
+      "repair": "将相同权重检测不到交换的对照移到开头，以问题导向组织后续证明。",
+      "evidence": "这说明使用不同权重的意义。"
+    }
+  ],
+  "facts": [
+    "不同数字x3,x5权7,5交换，新旧贡献差2(x5-x3)；若检通过差0mod11，逆2消得差0，数字0..9迫等矛盾。",
+    "同数字交换不改变内容；其他不同权重差非11倍可逆同证。",
+    "相同权重总和不变不可检交换；多位错误可抵消非全检。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T10:01:31.170741+00:00"
+}

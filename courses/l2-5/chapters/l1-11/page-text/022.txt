@@ -1,0 +1,17 @@
+ Example: Linear Search
+
+  procedure     linear  search(x:integer,
+              a1, a2, …,an: distinct integers)
+  i := 1
+  while   (i≤  n and x  ≠ ai)
+       i:= i + 1
+  if i≤  n then   location  := i
+  else  location  := 0
+  return   location
+▪ Assume that 𝑥     is one of the 𝑎𝑖’s with equal probability
+▪ For asymptotic analysis, it’s enough to count the
+  number of iterations, denoted as 𝑋
+▪ 𝐸  𝑋  =  1 ⋅1 + 1 ⋅2 +  ⋯ +  1⋅ 𝑛 = 𝑛+1 =  Θ(𝑛)
+           𝑛      𝑛            𝑛       2
+
+                                                                 22

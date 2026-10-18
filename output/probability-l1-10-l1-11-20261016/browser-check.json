@@ -1,0 +1,156 @@
+{
+  "offline": true,
+  "protocol": "file:",
+  "lessons": [
+    {
+      "chapter": "l1-10",
+      "slug": "conditional-probability",
+      "pages": 8,
+      "questions": 3,
+      "displayFormulas": 21,
+      "images": 8,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-10",
+      "slug": "bayesian-inference",
+      "pages": 12,
+      "questions": 3,
+      "displayFormulas": 40,
+      "images": 12,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-10",
+      "slug": "monty-hall-strategies",
+      "pages": 5,
+      "questions": 3,
+      "displayFormulas": 13,
+      "images": 5,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-11",
+      "slug": "random-variable-foundations",
+      "pages": 3,
+      "questions": 1,
+      "displayFormulas": 6,
+      "images": 3,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-11",
+      "slug": "bernoulli-binomial-and-density",
+      "pages": 4,
+      "questions": 1,
+      "displayFormulas": 7,
+      "images": 4,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-11",
+      "slug": "expectation-and-indicators",
+      "pages": 11,
+      "questions": 3,
+      "displayFormulas": 25,
+      "images": 11,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-11",
+      "slug": "average-case-algorithms",
+      "pages": 4,
+      "questions": 0,
+      "displayFormulas": 6,
+      "images": 4,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-11",
+      "slug": "geometric-waiting-times",
+      "pages": 5,
+      "questions": 0,
+      "displayFormulas": 14,
+      "images": 5,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-11",
+      "slug": "independent-random-variables",
+      "pages": 3,
+      "questions": 1,
+      "displayFormulas": 11,
+      "images": 3,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "chapter": "l1-11",
+      "slug": "variance-and-averaging",
+      "pages": 7,
+      "questions": 3,
+      "displayFormulas": 24,
+      "images": 7,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    }
+  ],
+  "progress": [
+    {
+      "chapter": "l1-10",
+      "check": true,
+      "uncheck": true,
+      "reload": true,
+      "chapterCount": true,
+      "homeCount": true,
+      "resume": true,
+      "draft": true,
+      "slideNotes": true,
+      "legacyPageNotPromoted": true
+    },
+    {
+      "chapter": "l1-11",
+      "check": true,
+      "uncheck": true,
+      "reload": true,
+      "chapterCount": true,
+      "homeCount": true,
+      "resume": true,
+      "draft": true,
+      "slideNotes": true,
+      "legacyPageNotPromoted": true
+    }
+  ],
+  "screens": [
+    "probability-desktop.png",
+    "l1-10-conditional-probability-mobile.png",
+    "l1-10-bayesian-inference-mobile.png",
+    "l1-10-monty-hall-strategies-mobile.png",
+    "l1-11-random-variable-foundations-mobile.png",
+    "l1-11-bernoulli-binomial-and-density-mobile.png",
+    "l1-11-expectation-and-indicators-mobile.png",
+    "l1-11-average-case-algorithms-mobile.png",
+    "l1-11-geometric-waiting-times-mobile.png",
+    "l1-11-independent-random-variables-mobile.png",
+    "l1-11-variance-and-averaging-mobile.png",
+    "l1-10-explanation-mobile.png",
+    "l1-10-formula-desktop.png",
+    "l1-11-explanation-mobile.png",
+    "l1-11-formula-desktop.png"
+  ],
+  "overflowingFormulasScrolled": 52,
+  "oldProgressPreserved": true,
+  "narrowDirectories": true,
+  "status": "passed",
+  "pageErrors": [],
+  "remoteRequests": [],
+  "multipleChoice": "No multiple-choice originals selected; immediate-submit handler unchanged."
+}

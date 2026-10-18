@@ -1,0 +1,114 @@
+{
+  "title": "随机变量、期望与方差",
+  "subtitle": "Random Variables, Expectation & Variance",
+  "topics": [
+    {
+      "slug": "random-variable-foundations",
+      "title": "随机变量与分布",
+      "description": "把试验结果映射为数值，按相同数值汇总概率。",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "questions": [
+        "Q-2017-FINAL-P06-a"
+      ]
+    },
+    {
+      "slug": "bernoulli-binomial-and-density",
+      "title": "Bernoulli、二项分布与密度",
+      "description": "从独立重复试验构造二项分布，认识离散概率与连续密度的差别。",
+      "pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "questions": [
+        "Q-2017-FINAL-P06-b"
+      ]
+    },
+    {
+      "slug": "expectation-and-indicators",
+      "title": "期望、线性性与指示变量",
+      "description": "从加权平均到指示变量，分析帽子、雇用及球盒模型。",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "questions": [
+        "Q-2016-FINAL-P01-b",
+        "Q-2018-FINAL-P08-a",
+        "Q-2017-FINAL-P06-c"
+      ]
+    },
+    {
+      "slug": "average-case-algorithms",
+      "title": "算法的平均情况分析",
+      "description": "在明确输入分布后，用期望分析线性查找和插入排序。",
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "questions": []
+    },
+    {
+      "slug": "geometric-waiting-times",
+      "title": "几何分布与等待时间",
+      "description": "连接首次成功的分布、期望等待次数及 Coupon Collector。",
+      "pages": [
+        8,
+        9,
+        25,
+        26,
+        27
+      ],
+      "questions": []
+    },
+    {
+      "slug": "independent-random-variables",
+      "title": "随机变量的独立性",
+      "description": "检验联合概率，推导独立时的乘积期望，并比较相关变量。",
+      "pages": [
+        28,
+        29,
+        30
+      ],
+      "questions": [
+        "Q-2016-FINAL-P02-d"
+      ]
+    },
+    {
+      "slug": "variance-and-averaging",
+      "title": "方差、标准差与平均测量",
+      "description": "计算波动大小，使用独立方差相加分析骰子、二项分布和平均值。",
+      "pages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "questions": [
+        "Q-2016-FINAL-P02-a",
+        "Q-2017-FINAL-P06-d",
+        "Q-2025F-MID-P10-a-iii"
+      ]
+    }
+  ],
+  "storagePrefix": "comp2711:l1-11:"
+}

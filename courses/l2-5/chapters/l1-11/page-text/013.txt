@@ -1,0 +1,24 @@
+ Example: Binomial Distribution
+
+▪ Recall that a random variable 𝑋     with the binomial
+  distribution with parameter 𝑛     and 𝑝, 𝑞 has
+                 𝑝(𝑋  = 𝑘) =  𝐶 𝑛,𝑘  𝑝𝑘𝑞𝑛−𝑘
+▪ We can derive its expectation through a rather
+  complicated sequence of derivations:
+                         𝐸  𝑋  =  𝑛𝑝
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              13

@@ -1,0 +1,23 @@
+ Monty Hall Problem (cnt’d)
+
+ Overall winning probability if we adopt the strategy:
+   𝑝 𝑊  =  1 ;𝑀  =  2 +  𝑝 𝑊  =  2; 𝑀  = 3
+        = 𝑝  𝑊 =  1 𝑝 𝑀 = 2 𝑊  = 1  + 𝑝 𝑊  = 2 𝑝 𝑀  = 3 𝑊  = 2
+        = 0.5 ⋅0.5+ 0.3 ⋅1=  0.55
+ Alternatively,
+   𝑝 𝑊  =  1 ;𝑀  =  2 +  𝑝 𝑊  =  2; 𝑀  = 3
+        = 𝑝  𝑀 = 2 𝑝  𝑊 = 1 𝑀  = 2  + 𝑝 𝑀 = 3  𝑝 𝑊 =  2 𝑀 = 3
+        = 0.45 ⋅(5)+ 0.55 ⋅(6 )= 0.55
+                 9          11
+
+ Is there a better strategy? See 2019 Spring Final Exam Q11
+
+
+
+
+
+
+
+
+
+                                                                    25

@@ -1,0 +1,744 @@
+[
+  {
+    "id": "Q-2014-FINAL-P02-c",
+    "topic": "gcd-and-euclid",
+    "sourceNote": "sources/notes/Q-2014-FINAL-P02-c - Modular Congruence.md",
+    "sourceNoteSha256": "1205e82045f00bc3b1284ed3123e6b0f727a23e3123883ef6c041b5ab4963082",
+    "stems": [
+      "STEM-2014-FINAL-P02 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2014-FINAL-P02 - Shared Problem Prompt",
+        "sourceNote": "sources/notes/STEM-2014-FINAL-P02 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "e7f8905056dbfdcc4157245e00959b871b0c8fb3691870a26c67a8d2e09be73c",
+        "sourcePage": 4
+      }
+    ],
+    "stemPages": [
+      4
+    ],
+    "paper": "2014 Final",
+    "pdf": "sources/papers/2014-final.pdf",
+    "pdfSha256": "778a2a0e37c04a803edce848127f852e143166c5e472f3474a72cbbf0fc93e2b",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(c)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $a$, $m$ and $n$ be three positive integers that are larger than 1. Is each of the following statements true or false? If it is true, give a proof. If it is false, give a counterexample.\n\n(c) If $a\\bmod n=1$, then $gcd(a,n)=1$.",
+    "independentVerification": "For all positive a,n in the printed domain: a=qn+1, so every positive common divisor divides a-qn=1. Hence gcd(a,n)=1. This symbolic divisibility proof, rather than the sample check, proves the universal statement.",
+    "independentVerificationData": {
+      "proof": "For all positive a,n in the printed domain: a=qn+1, so every positive common divisor divides a-qn=1. Hence gcd(a,n)=1. This symbolic divisibility proof, rather than the sample check, proves the universal statement.",
+      "result": true,
+      "finiteCrossCheck": {
+        "a": [
+          2,
+          200
+        ],
+        "n": [
+          2,
+          200
+        ]
+      }
+    },
+    "scopeVerification": "Pages 3-5: common divisors and remainder preservation; a=qn+1 makes every common divisor divide 1. The complete original true/false instruction is supplied.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 4](../sources/papers/2014-final.pdf#page=4).\n\n(c) This is true. $a\\bmod n=1$ implies that there exist $q$ such that $a=qn+1$, or $a-qn=1$. The latter equation implies that any common divisor of $a$ and $n$ must divide 1, hence must be 1. Therefore, $\\gcd(a,n)=1$.",
+    "solutionMarkdown": "**Answer.** True.\n\n**Derivation/proof.** $a\\bmod n=1$ means $a=qn+1$. Any common divisor of $a$ and $n$ divides $a-qn=1$, hence it is one.\n\nIf $d$ is a positive common divisor, then $d\\mid a$ and $d\\mid qn$, so $d\\mid(a-qn)=1$. The only positive divisor of one is one.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "21ff97d4c118594e4dcff5ee1ee4a8352920d4971955a43a7f63120b3993779c",
+    "supplementarySourceSha256": "f2903d51152321346c7668ae48fdd79312498adb5d77bef6992ff48569e1b54b"
+  },
+  {
+    "id": "Q-2017-MID-P05-a",
+    "topic": "gcd-and-euclid",
+    "sourceNote": "sources/notes/Q-2017-MID-P05-a - Modular Congruence.md",
+    "sourceNoteSha256": "0636bbf40a21988a62010662fe2fe35dd55040e7c2bfdae8e32b14987c021a99",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2017 Midterm",
+    "pdf": "sources/papers/2017-midterm.pdf",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "5(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Use the Euclidean algorithm to find $\\gcd(15,221)$. Show the steps.",
+    "independentVerification": "Each Euclidean step preserves all common divisors; the last nonzero remainder is 1.",
+    "independentVerificationData": {
+      "proof": "Each Euclidean step preserves all common divisors; the last nonzero remainder is 1.",
+      "result": 1,
+      "divisions": [
+        {
+          "a": 221,
+          "b": 15,
+          "quotient": 14,
+          "remainder": 11
+        },
+        {
+          "a": 15,
+          "b": 11,
+          "quotient": 1,
+          "remainder": 4
+        },
+        {
+          "a": 11,
+          "b": 4,
+          "quotient": 2,
+          "remainder": 3
+        },
+        {
+          "a": 4,
+          "b": 3,
+          "quotient": 1,
+          "remainder": 1
+        },
+        {
+          "a": 3,
+          "b": 1,
+          "quotient": 3,
+          "remainder": 0
+        }
+      ]
+    },
+    "scopeVerification": "Pages 4-5: exactly the Euclidean remainder algorithm and its last nonzero remainder.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 7](../sources/papers/2017-midterm.pdf#page=7).\n\n$\\gcd(221,15)$:\n$$\\begin{aligned}221&=15\\cdot14+11\\\\15&=11\\cdot1+4\\\\11&=4\\cdot2+3\\\\4&=3\\cdot1+1\\\\3&=1\\cdot3+0.\\end{aligned}$$\nSo, $\\gcd(221,15)=1$.",
+    "solutionMarkdown": "**Answer.** $\\gcd(15,221)=1$.\n\n**Derivation/proof.** The divisions are $221=14\\cdot15+11$, $15=11+4$, $11=2\\cdot4+3$, $4=3+1$, and $3=3\\cdot1+0$. The last nonzero remainder is $1$, so the gcd is $1$. Each step preserves common divisors by replacing the larger number by its remainder.\n\nThe Euclidean divisions begin with $221=15\\cdot14+11$ and end with $4=3\\cdot1+1$. The final nonzero remainder is therefore one, so back-substitution supplies the required inverse.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "18d4223228622a82a289d0cb0b2a4972ce58548d746eb35f761ce4cf11269a8c",
+    "supplementarySourceSha256": "3fe4d7c69689c4c5f2499d7eb64e448e3cba54d15be0bad31189583c2a707193"
+  },
+  {
+    "id": "Q-2023S-MID-P06",
+    "topic": "gcd-and-euclid",
+    "sourceNote": "sources/notes/Q-2023S-MID-P06 - Modular Congruence.md",
+    "sourceNoteSha256": "9f1c0dcc93976d01fcc0a60050d01a3e148d685df257eb47bda90d3df193bac4",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2023 Spring Midterm",
+    "pdf": "sources/papers/COMP2711_S2023_Midterm.pdf",
+    "pdfSha256": "7cb61aa82894104e5769eb2c2a20c53874e401c9f1e41b1e0cd8e7191a318aa5",
+    "page": 9,
+    "solutionPages": [
+      9
+    ],
+    "number": "6",
+    "marks": 12,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Calculate $\\gcd(2^{100}-1,2^{65}-1)$.",
+    "independentVerification": "Direct integer division on the original two numbers gives valid nonnegative remainders 2^35-1, 2^30-1, 31, 0. This proves gcd=31 without any future modular theorem.",
+    "independentVerificationData": {
+      "proof": "Direct integer division on the original two numbers gives valid nonnegative remainders 2^35-1, 2^30-1, 31, 0. This proves gcd=31 without any future modular theorem.",
+      "result": 31,
+      "divisions": [
+        {
+          "a": 1267650600228229401496703205375,
+          "b": 36893488147419103231,
+          "quotient": 34359738368,
+          "remainder": 34359738367
+        },
+        {
+          "a": 36893488147419103231,
+          "b": 34359738367,
+          "quotient": 1073741824,
+          "remainder": 1073741823
+        },
+        {
+          "a": 34359738367,
+          "b": 1073741823,
+          "quotient": 32,
+          "remainder": 31
+        },
+        {
+          "a": 1073741823,
+          "b": 31,
+          "quotient": 34636833,
+          "remainder": 0
+        }
+      ]
+    },
+    "scopeVerification": "Pages 4-5: ordinary integer Euclidean division suffices even for these powers. Direct quotient/remainder certificates avoid requiring later modular exponentiation or cancellation theorems.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 9](../sources/papers/COMP2711_S2023_Midterm.pdf#page=9).\n\n> In fact, for any $a,m,n$, we can apply the Euclidean algorithm:\n> $$\\gcd(a^m-1,a^n-1)=\\gcd(a^m-a^n,a^n-1)=\\gcd(a^n(a^{m-n}-1),a^n-1)$$\n> Writing $a^m-a^n$ as $a^n(a^{m-n}$, we have\n> $$\\gcd(a^m-1,a^n-1)=\\gcd(a^n(a^{m-n}-1),a^n-1)$$\n> Since $\\gcd(a^n,a^n-1)=1$, we get:\n> $$\\gcd(a^m-1,a^n-1)=\\gcd(a^{m-n}-1,a^n-1).$$\n> We can now use this rule iteratively, in a way similar to the original Euclidean algorithm:\n> $$\\begin{aligned}\\gcd(2^{100}-1,2^{65}-1)&=\\gcd(2^{65}-1,2^{35}-1)\\\\&=\\gcd(2^{35}-1,2^{30}-1)\\\\&=\\gcd(2^{30}-1,2^5-1)\\\\&=\\gcd(2^{25}-1,2^5-1)\\\\&=\\cdots=\\gcd(2^5-1,2^5-1)=2^5-1=31.\\end{aligned}$$",
+    "solutionMarkdown": "**Answer.** $31$.\n\n**Derivation/proof.** For $m>n$, subtracting $2^n-1$ from $2^m-1$ gives $2^n(2^{m-n}-1)$. Since $\\gcd(2^n,2^n-1)=1$, this proves\n$$\\gcd(2^m-1,2^n-1)=\\gcd(2^{m-n}-1,2^n-1).$$\nThe Euclidean reductions of exponents are $(100,65)\\to(65,35)\\to(35,30)\\to(30,5)\\to(5,0)$. Hence the gcd is $2^5-1=31$. Both original exponents are multiples of 5, consistent with divisibility by 31.\n\nThe final form is $\\gcd(2^5-1,0)=31$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "06000edd020341ecff8ad6e57a52f0c4964c9be970ad6c4853f294714030538d",
+    "supplementarySourceSha256": "70c89646a24f1fc057c024ab80ef4f579cdc52eca10a534cb3ae8a4b4ee31967",
+    "reviewMarkdown": "官方答案第 9 页的一句行内因式分解漏写了结尾（应为 $a^n(a^{m-n}-1)$），邻近展示公式和结论 $31$ 正确。官方段落原样保留。\n\n本题也可完全按本课普通带余除法核验：\n\n$$2^{100}-1=2^{35}(2^{65}-1)+(2^{35}-1),$$\n$$2^{65}-1=2^{30}(2^{35}-1)+(2^{30}-1),$$\n$$2^{35}-1=2^5(2^{30}-1)+(2^5-1).$$\n\n最后 $31=2^5-1$ 整除 $2^{30}-1$，所以最后非零余数为 $31$。每步余数都在合法范围内；不需要 Fermat 定理或预先套用指数 GCD 公式。"
+  },
+  {
+    "id": "Q-2024S-MID-P12-a",
+    "topic": "bezout-and-extended-euclid",
+    "sourceNote": "sources/notes/Q-2024S-MID-P12-a - Modular Congruence.md",
+    "sourceNoteSha256": "6b8ec9e8bca18a1b78d67816d2bcb76dc560f58559fa86f9b6bb8d30592387e8",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2024 Spring Midterm",
+    "pdf": "sources/papers/COMP2711_S2024_Midterm.pdf",
+    "pdfSha256": "1cc40fb0f4795239949a0e2f0b4c0b789ab2d3e701f2eebddf5b407b97bae526",
+    "page": 18,
+    "solutionPages": [
+      18
+    ],
+    "number": "12(a)",
+    "marks": 5,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) Let $a$ and $m$ be positive integers. Prove that no positive integer smaller than $\\gcd(a,m)$ can be expressed as an integer linear combination of $a$ and $m$.",
+    "independentVerification": "Put d=gcd(a,m)>0. Since a=du and m=dv, any integer combination ra+sm=d(ru+sv). If positive, the integer multiplier is at least 1, so the value is >=d. This holds for all positive a,m and all integer r,s.",
+    "independentVerificationData": {
+      "proof": "Put d=gcd(a,m)>0. Since a=du and m=dv, any integer combination ra+sm=d(ru+sv). If positive, the integer multiplier is at least 1, so the value is >=d. This holds for all positive a,m and all integer r,s.",
+      "result": "Every positive combination is at least gcd(a,m)."
+    },
+    "scopeVerification": "Pages 6-7: every integer linear combination is divisible by the positive gcd; positivity supplies its lower bound.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 18](../sources/papers/COMP2711_S2024_Midterm.pdf#page=18).\n\n> Answer.\n> (a) Let $d=\\gcd(a,m)$. Let $y$ be a positive integer that is an integer linear combination of $a$ and $m$, that is, $y=ak+mk'$, for some integers $k$ and $k'$. By definition of gcd, we have $d\\mid a$ and $d\\mid m$. It follows that $d\\mid ak+mk'$. Since $y=ak+mk'$ is a positive integer, it cannot be smaller than $d$.",
+    "solutionMarkdown": "**Answer.** Every positive integer linear combination is at least $\\gcd(a,m)$.\n\n**Derivation/proof.** Let $d=\\gcd(a,m)>0$. There are integers $u,v$ with $a=du,m=dv$. For any integer linear combination $y=ra+sm$, with $r,s\\in\\mathbb Z$, we have $y=d(ru+sv)$, hence $d\\mid y$. If $y>0$, the integer $ru+sv$ is at least one, giving $y\\ge d$. Thus no integer with $0<y<d$ can be represented, as claimed.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "6d74580598bdeb54097de6ac704fb8670cc3ca4d785c6d58598245fada27b969",
+    "supplementarySourceSha256": "7b2bfb16e0f937c43b323aeceb07677686ac84a52b9be8d9e6cc0033c13abe54"
+  },
+  {
+    "id": "Q-2020-MID-P08",
+    "topic": "bezout-and-extended-euclid",
+    "sourceNote": "sources/notes/Q-2020-MID-P08 - Modular Congruence.md",
+    "sourceNoteSha256": "7cb46ee8bca9e268b23719902e6a0b62a91165c42df4725b5eaa2fa4e9bbe16c",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2020 Midterm",
+    "pdf": "sources/papers/2020-midterm.pdf",
+    "pdfSha256": "e4043254770981190c07d2a6729740cdf4ffed8ae0d370efff7f5d93f88bacc0",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "8",
+    "marks": 10,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Show that $\\gcd(21n+4,14n+3)=1$, for any $n\\in\\mathbb N$.",
+    "independentVerification": "The exact polynomial identity 3(14n+3)-2(21n+4)=1 has n coefficient 0 and constant 1. Every common divisor divides 1. This proves the result for all natural n (including either convention for zero).",
+    "independentVerificationData": {
+      "proof": "The exact polynomial identity 3(14n+3)-2(21n+4)=1 has n coefficient 0 and constant 1. Every common divisor divides 1. This proves the result for all natural n (including either convention for zero).",
+      "result": 1,
+      "identityCoefficients": [
+        3,
+        -2
+      ],
+      "polynomialCoefficients": [
+        0,
+        1
+      ],
+      "finiteCrossCheck": [
+        0,
+        1000
+      ]
+    },
+    "scopeVerification": "Pages 6-7: the identity 3(14n+3)-2(21n+4)=1 is a complete symbolic Bezout certificate. No induction or inverse theorem is needed.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 4](../sources/papers/2020-midterm.pdf#page=4).\n\nUsing the Euclid's algorithm, we have $\\gcd(21n+4,14n+3)=\\gcd(14n+3,7n+1)=\\gcd(7n+1,1)=1$.",
+    "solutionMarkdown": "**Answer.** The gcd equals 1 for every permitted n.\n\n**Derivation/proof.** Subtract the second argument from the first: $(21n+4)-(14n+3)=7n+1$. Subtract twice this remainder from the second: $(14n+3)-2(7n+1)=1$. Any common divisor therefore divides 1, so it is 1. Equivalently $3(14n+3)-2(21n+4)=1$ is a Bezout certificate valid for every integer n, including the requested naturals.\n\nThe independent Bezout certificate is $3(14n+3)-2(21n+4)=1$, also valid at $n=0$.\n\nThe Euclidean reductions end in $\\gcd(7n+1,1)=1$. This final gcd is one for every allowed $n$, so no exceptional natural-number case remains.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "6fc4ae5dea7478a6610fe48d9c72c6219ecfd01415c6ade1af3960fabe5eaac8",
+    "supplementarySourceSha256": "dd3b53f8694e8c646308a506373b54511f1d63f056b070cdf03469fb20cc6fd7"
+  },
+  {
+    "id": "Q-2018-MID-P05-a",
+    "topic": "bezout-and-extended-euclid",
+    "sourceNote": "sources/notes/Q-2018-MID-P05-a - Modular Congruence.md",
+    "sourceNoteSha256": "21e40aac440225305d8228ff62c048195df6e4d0658148158cc0707c5cc169d8",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2018 Midterm",
+    "pdf": "sources/papers/2018-midterm.pdf",
+    "pdfSha256": "dce916c9874ffbd95020baa62af4cd3da016e04bb196c62234344ff565d26a48",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "5(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) Let $x,y,z$ be positive integers. Show that, if $z\\mid xy$ and $y,z$ are relatively prime, then $z\\mid x$.",
+    "independentVerification": "Bezout supplies s*y+t*z=1 because gcd(y,z)=1. Multiply by x: x=s*(x*y)+t*z*x. Both terms are divisible by z under the printed hypotheses, hence z divides x. Without coprimality this is not valid (x=1,y=z=2).",
+    "independentVerificationData": {
+      "proof": "Bezout supplies s*y+t*z=1 because gcd(y,z)=1. Multiply by x: x=s*(x*y)+t*z*x. Both terms are divisible by z under the printed hypotheses, hence z divides x. Without coprimality this is not valid (x=1,y=z=2).",
+      "result": "z divides x",
+      "finiteCrossCheck": {
+        "x": [
+          1,
+          50
+        ],
+        "y": [
+          1,
+          50
+        ],
+        "z": [
+          1,
+          50
+        ]
+      },
+      "necessaryHypothesisCounterexample": [
+        1,
+        2,
+        2
+      ]
+    },
+    "scopeVerification": "Pages 6-7: multiply a Bezout identity sy+tz=1 by x and use divisibility. It requires no modular inverse or future theorem.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 7](../sources/papers/2018-midterm.pdf#page=7).\n\nSince $y,z$ are relatively prime, $\\gcd(y,z)=1$. Using the extended Euclidean algorithm, we can calculate integers $s,t$ such that\n$$sy+tz=1\\tag{1}$$\nMultiplying both sides of (1) with $x$, we get\n$$syx+tzx=x\\tag{2}$$\nFrom the problem statement, $z\\mid xy$, thus $z\\mid syx$. Moreover, it is obvious that $z\\mid tzx$. We know that from this it follows that $z$ divides their sum, that is, $z\\mid(syx+tzx)$. But, from (2), $(syx+tzx)=x$, therefore $z\\mid x$.\nStudents may choose to explicitly prove the fact that if $a\\mid b$ and $a\\mid c$ then $a\\mid(b+c)$. This is fine but not necessary.",
+    "solutionMarkdown": "**Answer.** $z\\mid x$.\n\n**Derivation/proof.** Since $\\gcd(y,z)=1$, Bezout's identity supplies integers $s,t$ with $sy+tz=1$. Multiply by $x$ to obtain $sxy+tzx=x$. The hypothesis $z\\mid xy$ gives $z\\mid sxy$, and $z\\mid tzx$ directly. Hence $z$ divides their sum $x$.\n\nMultiplying the Bezout equation by $x$ gives $sxy+tzx=x$. Both summands on the left are divisible by $z$, so $z\\mid(sxy+tzx)=x$, proving the required divisibility.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "7d0931d8c2ea5187ce0c5fdfac03adf3ce7218552332c110b59d1593d7789823",
+    "supplementarySourceSha256": "e912ebe2ebc329ec03e079926080d1fab73d2c84b1300fe79d29459e54d1de72"
+  },
+  {
+    "id": "Q-2024S-MID-P12-b",
+    "topic": "multiplicative-inverses",
+    "sourceNote": "sources/notes/Q-2024S-MID-P12-b - Modular Congruence.md",
+    "sourceNoteSha256": "a4f2dc99e338474ea60ab16c812c1b6bff96fab044976a8826851e46fc1e6c12",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [
+      18
+    ],
+    "paper": "2024 Spring Midterm",
+    "pdf": "sources/papers/COMP2711_S2024_Midterm.pdf",
+    "pdfSha256": "1cc40fb0f4795239949a0e2f0b4c0b789ab2d3e701f2eebddf5b407b97bae526",
+    "page": 18,
+    "solutionPages": [
+      18
+    ],
+    "number": "12(b)",
+    "marks": 5,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "**Original preceding part (a), supplied as context for part (b):**\n\n(a) Let $a$ and $m$ be positive integers. Prove that no positive integer smaller than $\\gcd(a,m)$ can be expressed as an integer linear combination of $a$ and $m$.\n\n**Part (b):**\n\n(b) Let $a$ and $m$ be positive integers. Use the fact given in part (a) to prove that if $\\gcd(a,m)>1$, then $a$ does not have a multiplicative inverse modulo $m$.",
+    "independentVerification": "If an inverse b existed, a*b-m*k=1 would represent a positive integer 1 smaller than d=gcd(a,m)>1, contradicting the supplied original part (a). Equivalently every left term is divisible by d, so d would divide 1.",
+    "independentVerificationData": {
+      "proof": "If an inverse b existed, a*b-m*k=1 would represent a positive integer 1 smaller than d=gcd(a,m)>1, contradicting the supplied original part (a). Equivalently every left term is divisible by d, so d would divide 1.",
+      "result": "No inverse when gcd(a,m)>1.",
+      "finiteCrossCheck": {
+        "a": [
+          1,
+          90
+        ],
+        "m": [
+          2,
+          90
+        ]
+      },
+      "prerequisite": "Q-2024S-MID-P12-a"
+    },
+    "scopeVerification": "Pages 10-12: an inverse would express 1 as an integer linear combination despite gcd>1. Original preceding part (a) is supplied verbatim as context, not counted as another exercise here.",
+    "prerequisites": [
+      {
+        "id": "Q-2024S-MID-P12-a",
+        "sourceNote": "sources/notes/Q-2024S-MID-P12-a - Modular Congruence.md",
+        "sourceNoteSha256": "6b8ec9e8bca18a1b78d67816d2bcb76dc560f58559fa86f9b6bb8d30592387e8",
+        "sourcePage": 18
+      }
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 18](../sources/papers/COMP2711_S2024_Midterm.pdf#page=18).\n\n> (b) Assume that $a$ has a multiplicative inverse modulo $m$. Let us denote it $a^{-1}$. By definition, $aa^{-1}\\equiv1\\pmod m$. It follows that $aa^{-1}-mk=1$ for some integer $k$. In other words, 1 can be obtained as an integer linear combination of $a$ and $m$. But 1 is smaller than $\\gcd(a,m)$, which contradicts part (a). This completes the proof.",
+    "solutionMarkdown": "**Answer.** If $\\gcd(a,m)>1$, then $a$ has no multiplicative inverse modulo $m$.\n\n**Derivation/proof.** Let $d=\\gcd(a,m)>1$ and suppose an inverse $b$ exists, so $ab\\equiv1\\pmod m$. The congruence means $ab-1=tm$ for some integer $t$, hence $1=ba-tm$. This is a linear combination of $a,m$ with integer coefficients $b,-t$. By part (a), any positive such combination is at least $d$, whereas $0<1<d$. This contradiction shows no such $b$ exists.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "8a2f939ceb9ff7e8873513b375949996183538db755e373150bddf9cf5b730ba",
+    "supplementarySourceSha256": "26e2db999c7dd4762ef3f6a5c2d704a322d89982db9016a7c2fdc97e147a34bd"
+  },
+  {
+    "id": "Q-2020-MID-P06",
+    "topic": "multiplicative-inverses",
+    "sourceNote": "sources/notes/Q-2020-MID-P06 - Modular Congruence.md",
+    "sourceNoteSha256": "85917bb7f88ca342d74a97e0436c3028766deecb07aa4d55dec8a9a34954183b",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2020 Midterm",
+    "pdf": "sources/papers/2020-midterm.pdf",
+    "pdfSha256": "e4043254770981190c07d2a6729740cdf4ffed8ae0d370efff7f5d93f88bacc0",
+    "page": 3,
+    "solutionPages": [
+      3,
+      4
+    ],
+    "number": "6",
+    "marks": 10,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Use the extended Euclid algorithm to find the inverse of $53\\pmod{180}$. Show the steps of the algorithm.",
+    "independentVerification": "Independent extended Euclid gives 17*53-5*180=1. All 180 standard representatives have been checked and only 17 multiplies 53 to residue 1.",
+    "independentVerificationData": {
+      "proof": "Independent extended Euclid gives 17*53-5*180=1. All 180 standard representatives have been checked and only 17 multiplies 53 to residue 1.",
+      "result": 17,
+      "certificate": {
+        "a": 53,
+        "b": 180,
+        "gcd": 1,
+        "coefficientA": 17,
+        "coefficientB": -5
+      },
+      "standardDomain": [
+        0,
+        179
+      ]
+    },
+    "scopeVerification": "Pages 13-14: extended Euclidean algorithm, the coefficient of 53, and normalization modulo 180.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 3](../sources/papers/2020-midterm.pdf#page=3); [physical PDF page 4](../sources/papers/2020-midterm.pdf#page=4).\n\nCalculate $\\gcd(180,53)$ using euclidean algorithm.\n$$\\begin{aligned}180&=53\\cdot3+21\\\\53&=21\\cdot2+11\\\\21&=11\\cdot1+10\\\\11&=10\\cdot1+1\\\\10&=1\\cdot10+0.\\end{aligned}$$\nSo $\\gcd(180,53)=1$.\nRewriting:\n$$\\begin{aligned}21&=180-53\\cdot3\\\\11&=53-21\\cdot2\\\\10&=21-11\\cdot1\\\\1&=11-10\\cdot1.\\end{aligned}$$\nSubstituting:\n$$\\begin{aligned}1&=11-10\\cdot1\\\\1&=11-(21-11\\cdot1)\\cdot1\\\\1&=21\\cdot(-1)+11\\cdot2\\\\1&=21\\cdot(-1)+(53-21\\cdot2)\\cdot2\\\\1&=53\\cdot2+21\\cdot(-5)\\\\1&=53\\cdot2+(180-53\\cdot3)\\cdot(-5)\\\\1&=180\\cdot(-5)+53\\cdot17.\\end{aligned}$$\nSo $17$ is the modular inverse of $53\\pmod{180}$.",
+    "solutionMarkdown": "**Answer.** $53^{-1}\\equiv17\\pmod{180}$.\n\n**Derivation/proof.** Euclidean divisions: $180=3\\cdot53+21$, $53=2\\cdot21+11$, $21=11+10$, $11=10+1$, $10=10\\cdot1$. Back substitution gives $1=11-10=2\\cdot11-21=2\\cdot53-5\\cdot21=17\\cdot53-5\\cdot180$. Thus the coefficient of 53 is the inverse. Check $53\\cdot17=901=5\\cdot180+1$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "4465851d6015e16970dd5404aa57887f0a1d7bee72afc89215d293ab2e9cfe79",
+    "supplementarySourceSha256": "907aaeeb273ac61d757c7c94767cf4278fe61efce8b9d9a471a32f5455fd3e89"
+  },
+  {
+    "id": "Q-2017-MID-P05-b",
+    "topic": "linear-congruences",
+    "sourceNote": "sources/notes/Q-2017-MID-P05-b - Modular Congruence.md",
+    "sourceNoteSha256": "7965b66f005ae8991a58ac4f9e79f740ef86605a40500beeb2efe642e2012501",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2017 Midterm",
+    "pdf": "sources/papers/2017-midterm.pdf",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "5(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Find $x\\in\\mathbb Z_{221}$ such that $15x\\equiv2\\pmod{221}$. Show your workings.",
+    "independentVerification": "Independent Euclid gives inverse 59; full enumeration of 0..220 yields exactly 118. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 118+221k; retain any printed standard-range restriction.",
+    "independentVerificationData": {
+      "proof": "Independent Euclid gives inverse 59; full enumeration of 0..220 yields exactly 118. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 118+221k; retain any printed standard-range restriction.",
+      "result": 118,
+      "modulus": 221,
+      "certificate": {
+        "a": 15,
+        "b": 221,
+        "gcd": 1,
+        "coefficientA": 59,
+        "coefficientB": -4
+      },
+      "allStandardSolutions": [
+        118
+      ],
+      "substitutionDifference": 1768
+    },
+    "scopeVerification": "Pages 15-18, using earlier inverse computation: solve a single coprime linear congruence in the explicitly printed standard range.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 7](../sources/papers/2017-midterm.pdf#page=7).\n\nRewriting:\n$$\\begin{aligned}11&=221-15\\cdot14\\\\4&=15-11\\cdot1\\\\3&=11-4\\cdot2\\\\1&=4-3\\cdot1.\\end{aligned}$$\nSubstituting:\n$$\\begin{aligned}1&=4-(11-4\\cdot2)\\cdot1\\\\&=4\\cdot3-11\\cdot1\\\\&=(15-11\\cdot1)\\cdot3-11\\cdot1\\\\&=15\\cdot3-11\\cdot4\\\\&=15\\cdot3-(221-15\\cdot14)\\cdot4\\\\&=15\\cdot59-221\\cdot4.\\end{aligned}$$\nTherefore, the inverse of $15$ modulo $221$ is $59$.\n$$15^{-1}\\cdot15x\\equiv15^{-1}\\cdot2\\pmod{221}.$$\n$$x\\equiv59\\cdot2\\equiv118\\pmod{221}.$$",
+    "solutionMarkdown": "**Answer.** $x=118$.\n\n**Derivation/proof.** Using $221=14\\cdot15+11$, $15=11+4$, $11=2\\cdot4+3$, $4=3+1$, back-substitute: $1=4-3=3\\cdot4-11=3\\cdot15-4\\cdot11=59\\cdot15-4\\cdot221$. Thus $15^{-1}\\equiv59\\pmod{221}$ and $x\\equiv2\\cdot59=118$. Direct check: $15\\cdot118=1770=8\\cdot221+2$.\n\nThe inverse also guarantees uniqueness of the residue class, and $118\\in\\mathbb Z_{221}$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "31dca275d7a8e4317b01cb8e2ad5e03bce0eb43e5c2c6390d6692fa67ca07651",
+    "supplementarySourceSha256": "a86110101752700a2599347783d3eb3381cad567ac3db5d2dd8c2e250613e646"
+  },
+  {
+    "id": "Q-2019-MID-P10-b",
+    "topic": "linear-congruences",
+    "sourceNote": "sources/notes/Q-2019-MID-P10-b - Modular Congruence.md",
+    "sourceNoteSha256": "068fcbfd8095795e0e0e0f434405aa986c6eab000e95f4b23e0de5f4a58c536b",
+    "stems": [
+      "STEM-2019-MID-P10 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2019-MID-P10 - Shared Problem Prompt",
+        "sourceNote": "sources/notes/STEM-2019-MID-P10 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "b7971b2f5f1e2b0cdef05db3a3e6f7b94e837c07d20c8197fbb619178f4c434f",
+        "sourcePage": 12
+      }
+    ],
+    "stemPages": [
+      12
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 12,
+    "solutionPages": [
+      12
+    ],
+    "number": "10(b)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Solve each of these congruences with $0\\le x\\le103$ and $0\\le y\\le103$ using the result $15\\cdot7\\equiv1\\pmod{104}$.\n\n(b) $15x+41\\equiv18\\pmod{104}$",
+    "independentVerification": "Independent Euclid gives inverse 7; full enumeration of 0..103 yields exactly 47. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 47+104k; retain any printed standard-range restriction.",
+    "independentVerificationData": {
+      "proof": "Independent Euclid gives inverse 7; full enumeration of 0..103 yields exactly 47. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 47+104k; retain any printed standard-range restriction.",
+      "result": 47,
+      "modulus": 104,
+      "certificate": {
+        "a": 15,
+        "b": 104,
+        "gcd": 1,
+        "coefficientA": 7,
+        "coefficientB": -1
+      },
+      "allStandardSolutions": [
+        47
+      ],
+      "substitutionDifference": 728
+    },
+    "scopeVerification": "Pages 15-18: move a constant, multiply by the inverse already supplied in the original shared prompt, and normalize into 0..103.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 12](../sources/papers/2019-midterm.pdf#page=12).\n\n$$\\begin{aligned}15x+41&\\equiv18\\pmod{104}\\\\\\to15x&\\equiv-23\\pmod{104}\\\\\\to7\\cdot15x&\\equiv7(-23)\\pmod{104}\\\\\\to x&\\equiv7(-23)\\pmod{104}\\\\\\to x&\\equiv47\\pmod{104}.\\end{aligned}$$",
+    "solutionMarkdown": "**Answer.** $x=47$.\n\n**Derivation/proof.** Subtract 41 to get $15x\\equiv-23\\pmod{104}$. Since 7 is inverse to 15, $x\\equiv7(-23)=-161\\equiv47\\pmod{104}$. Check $15\\cdot47+41=746=7\\cdot104+18$. Thus 47 is the allowed representative.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "c3ace4eacbf9aca6aace6d12a0871bce528bad7a1e61bf42246cf9d616c69938",
+    "supplementarySourceSha256": "4131e3354ec987c2ff552fb8ba694908f03681f2220caf9a813466f581c9eb09"
+  },
+  {
+    "id": "Q-2020-MID-P07",
+    "topic": "linear-congruences",
+    "sourceNote": "sources/notes/Q-2020-MID-P07 - Modular Congruence.md",
+    "sourceNoteSha256": "7cb1fd8c36f127c7a4d356577a8d8687cfa3322f207238ee6315a325dae14d8d",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2020 Midterm",
+    "pdf": "sources/papers/2020-midterm.pdf",
+    "pdfSha256": "e4043254770981190c07d2a6729740cdf4ffed8ae0d370efff7f5d93f88bacc0",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "7",
+    "marks": 10,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Solve $10x+4\\equiv0\\pmod{23}$.",
+    "independentVerification": "Independent Euclid gives inverse 7; full enumeration of 0..22 yields exactly 18. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 18+23k; retain any printed standard-range restriction.",
+    "independentVerificationData": {
+      "proof": "Independent Euclid gives inverse 7; full enumeration of 0..22 yields exactly 18. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 18+23k; retain any printed standard-range restriction.",
+      "result": 18,
+      "modulus": 23,
+      "certificate": {
+        "a": 10,
+        "b": 23,
+        "gcd": 1,
+        "coefficientA": 7,
+        "coefficientB": -3
+      },
+      "allStandardSolutions": [
+        18
+      ],
+      "substitutionDifference": 184
+    },
+    "scopeVerification": "Pages 15-18, using earlier extended Euclid: solve one affine congruence; preserve the official coefficient typo and explain it separately.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 4](../sources/papers/2020-midterm.pdf#page=4).\n\nSolve $10x\\equiv-4\\pmod{23}$.\nAs $\\gcd(10,23)=1$ we can multiply both sides by the inverse of $10\\pmod{23}$. We calculate the inverse of $10\\pmod{23}$ using extended Euclidean algorithm.\n$$\\begin{aligned}23&=10\\cdot2+3\\\\10&=3\\cdot3+1\\\\3&=1\\cdot3+0.\\end{aligned}$$\nRewriting:\n$$3=23-10\\cdot2,\\qquad1=10-3\\cdot3.$$\nSubstituting:\n$$\\begin{aligned}1&=10-3\\cdot3\\\\1&=10-(23-10\\cdot2)\\cdot3\\\\1&=23\\cdot(-1)+10\\cdot7.\\end{aligned}$$\n$7$ is the modular inverse of $10\\pmod{23}$. We multiply both sides by $7$.\n$10x\\equiv-4\\pmod{23}\\implies10x\\cdot10^{-1}\\equiv-4\\cdot10^{-1}\\implies x\\equiv-4\\cdot7\\equiv-28\\equiv18$. $x\\equiv18\\pmod{23}$ is the final answer.",
+    "solutionMarkdown": "**Answer.** $x\\equiv18\\pmod{23}$.\n\n**Derivation/proof.** Move the constant to get $10x\\equiv-4$. Since $23=2\\cdot10+3$ and $10=3\\cdot3+1$, back substitution gives $1=7\\cdot10-3\\cdot23$. Therefore multiply by 7: $x\\equiv-28\\equiv18\\pmod{23}$. Check $10\\cdot18+4=184=8\\cdot23$. Every solution is $18+23k$ for integer k.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "aa90e3f425caf1d9c09a52c95716afaa7320a358c818ed861bc5bea9e9b53365",
+    "supplementarySourceSha256": "515d908c6e7d0b214b803811f10de865b32060c5d04b055306b11d4ab0533cd2",
+    "reviewMarkdown": "官方第 4 页末行反向代回写成 $1=23(-1)+10\\cdot7$，右边实际为 $47$。正确系数是 $-3$：\n\n$$1=10-3\\cdot3=10-3(23-2\\cdot10)=7\\cdot10-3\\cdot23.$$\n\n因此逆元 $7$ 和官方最终解 $x\\equiv18\\pmod{23}$ 正确。验算 $10\\cdot18+4=184=8\\cdot23$。官方段落未改写，题库补充解析已给出正确系数。"
+  },
+  {
+    "id": "Q-2013-FINAL-P03",
+    "topic": "chinese-remainder-theorem",
+    "sourceNote": "sources/notes/Q-2013-FINAL-P03 - Modular Congruence.md",
+    "sourceNoteSha256": "23805c229b23449dd7bac4d23ac11ba7f4c28bfef07a25ccb610ab9d118acbae",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2013 Final",
+    "pdf": "sources/papers/2013-final.pdf",
+    "pdfSha256": "e378c89319b3e8cc14d5c57e75f8db0a16c9d6a2257487684b5687f6e30000f0",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "3",
+    "marks": 10,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $p$ and $q$ be two different prime numbers. Let $a\\in Z_p$ and $b\\in Z_q$. Consider the following two modular equations:\n$$x\\bmod p=a,\\qquad x\\bmod q=b.$$\nWe have learned in class that there exists $x\\in Z_{pq}$ that satisfies the two equations. Give a contrapositive proof for the following statement:\n\nThere is only one $x\\in Z_{pq}$ that satisfies the two equations.\n\nNote that this is the uniqueness part of the Chinese Reminder Theorem.",
+    "independentVerification": "For distinct standard representatives, 0<abs(x1-x2)<=pq-1<pq. Equal residues modulo distinct primes p,q would force pq to divide the difference, impossible. Thus distinct representatives differ in at least one residue (the contrapositive); given existence, this proves uniqueness. The official strict <pq-1 bound is a typo; <pq is sufficient.",
+    "independentVerificationData": {
+      "proof": "For distinct standard representatives, 0<abs(x1-x2)<=pq-1<pq. Equal residues modulo distinct primes p,q would force pq to divide the difference, impossible. Thus distinct representatives differ in at least one residue (the contrapositive); given existence, this proves uniqueness. The official strict <pq-1 bound is a typo; <pq is sufficient.",
+      "result": "Exactly one standard representative.",
+      "finiteCrossCheckPrimePairs": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      "correctDifferenceBound": "0 < abs(x1-x2) <= pq-1 < pq"
+    },
+    "scopeVerification": "Pages 25-26: uniqueness modulo the product of distinct primes; the question gives existence. Basic contrapositive/contradiction proof is prerequisite logic, not a future number-theory theorem.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 6](../sources/papers/2013-final.pdf#page=6).\n\nLet $s$ denote the statement. The premise is always true. So, the statement is $T\\to s$. By contrapositive rule, we prove $\\neg s\\to F$. This means that we assume $\\neg s$ and then derive some contradiction.\n\nAssume there are two different numbers $x_1$ and $x_2$ from $Z_{pq}$ that satisfy the equations.\n\nWithout losing generality, assume $x_1>x_2$. Then $0<(x_1-x_2)<pq-1$. Hence $(x_1-x_2)$ is not divisible by $pq$.\n\nBecause both $x_1$ and $x_2$ satisfy the equations, we have\n$$\\begin{aligned}x_1\\bmod p&=a,&x_1\\bmod q&=b.\\\\x_2\\bmod p&=a,&x_2\\bmod q&=b.\\end{aligned}$$\nBy subtracting the second line from the first, we\n$$x_1\\bmod p-x_2\\bmod p=0,\\qquad x_1\\bmod q-x_2\\bmod q=0,$$\nwhich imply:\n$$(x_1-x_2)\\bmod p=0,\\qquad(x_1-x_2)\\bmod q=0.$$\nThese two equations mean that $(x_1-x_2)$ is divisible by $p$ and $q$. Because $p$ and $q$ are different prime numbers, this implies that $(x_1-x_2)$ is divisible by $pq$, which contradicts our earlier conclusion that $(x_1-x_2)$ is not divisible by $pq$.\n\nThe statement is therefore proved. Q.E.D",
+    "solutionMarkdown": "**Answer.** Two distinct solutions cannot exist.\n\n**Derivation/proof.** Assume distinct $x_1,x_2\\in\\{0,\\ldots,pq-1\\}$ both satisfy both congruences. Then $p\\mid(x_1-x_2)$ and $q\\mid(x_1-x_2)$. Coprimality implies $pq\\mid(x_1-x_2)$, but $0<|x_1-x_2|<pq$, a contradiction.\n\nExistence is given in the question. Excluding two distinct solutions therefore proves that there is exactly one.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "4d3f8956b731f52f705e9c44bd01f664aee61a7f203a2f366488f1e7071df5fb",
+    "supplementarySourceSha256": "aa11e2e7ab91f52f49ab2dc4848e65182bbc44e4fc44614f9816bcce7e8fa4ae",
+    "reviewMarkdown": "官方第 6 页差值的严格上界写为 $0<x_1-x_2<pq-1$，一般应为 $0<x_1-x_2\\le pq-1<pq$。所需矛盾只用 $0<|x_1-x_2|<pq$；题库补充解析已采用正确界。\n\n按题目要求也可表述为逆否证明：若 $x_1\\ne x_2$ 且两者都在 $\\mathbb Z_{pq}$，差的绝对值为正且小于 $pq$；它不可能同时被不同素数 $p,q$ 整除，因此两者至少有一个余数不同。故余数均相同的两个标准代表必相等。官方段落保持原样。"
+  },
+  {
+    "id": "Q-2019-FINAL-P02",
+    "topic": "chinese-remainder-theorem",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P02 - Modular Congruence.md",
+    "sourceNoteSha256": "0e81e754734ebf8a69b79609e82b2b01953288e1a9dc1ff28096ef2c92d42faa",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Solve the following system of linear congruences by the Chinese remainder theorem. Show all steps except the extended Euclidean algorithm.\n\n$$\\begin{cases}x\\equiv4\\pmod9\\\\x\\equiv8\\pmod{14}\\\\x\\equiv3\\pmod5.\\end{cases}$$",
+    "independentVerification": "Pairwise gcds are 1. Independently calculated partial products [70, 45, 126], inverses [4, 5, 1], and raw sum 3298; exhaustive residue check gives only 148 modulo 630. CRT supplies exactly the full class 148+630k.",
+    "independentVerificationData": {
+      "proof": "Pairwise gcds are 1. Independently calculated partial products [70, 45, 126], inverses [4, 5, 1], and raw sum 3298; exhaustive residue check gives only 148 modulo 630. CRT supplies exactly the full class 148+630k.",
+      "result": 148,
+      "modulus": 630,
+      "partialProducts": [
+        70,
+        45,
+        126
+      ],
+      "inverses": [
+        4,
+        5,
+        1
+      ],
+      "rawSum": 3298,
+      "allStandardSolutions": [
+        148
+      ]
+    },
+    "scopeVerification": "Pages 25-27: pairwise coprime moduli, partial products, inverses and the explicit CRT construction.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 4](../sources/papers/2019-final.pdf#page=4).\n\nLet $m=9\\cdot14\\cdot5=630$. $M_1=14\\cdot5=70,M_2=9\\cdot5=45,M_3=9\\cdot14=126$. By the extended Eucildean algorithm, we find that $4$ is an inverse of $M_1\\pmod9$, $5$ is an inverse of $M_2\\pmod{14}$ and $1$ is an inverse of $M_3\\pmod5$. Hence, $x=4\\cdot70\\cdot4+8\\cdot45\\cdot5+3\\cdot126\\cdot1=3298\\equiv148\\pmod{630}$.",
+    "solutionMarkdown": "**Answer.** $x\\equiv148\\pmod{630}$.\n\n**Derivation/proof.** The moduli 9,14,5 are pairwise coprime and have product $M=630$. Partial products are $M_1=70,M_2=45,M_3=126$. Their respective inverses are 4,5,1 because $70\\cdot4\\equiv1\\pmod9$, $45\\cdot5\\equiv1\\pmod{14}$, and $126\\equiv1\\pmod5$. CRT gives $x\\equiv4\\cdot70\\cdot4+8\\cdot45\\cdot5+3\\cdot126=3298\\equiv148\\pmod{630}$. Check $148=16\\cdot9+4=10\\cdot14+8=29\\cdot5+3$. CRT ensures uniqueness modulo 630.\n\nThe full integer solution set is $148+630k$, $k\\in\\mathbb Z$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "b06d8df6a8f30d985f6192b9379adfa2bd8beccbe793343fa0f568afe0b71bbb",
+    "supplementarySourceSha256": "272e0f1547ac3e87a95d282e3a9550c8a94bd74a76115769908f925adb417865"
+  },
+  {
+    "id": "Q-2025F-FINAL-P06",
+    "topic": "chinese-remainder-theorem",
+    "sourceNote": "sources/notes/Q-2025F-FINAL-P06 - Modular Congruence.md",
+    "sourceNoteSha256": "8503f143b35f2620412d94c771ea2985fee4736bbab027f7eabbad01e18ba418",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2025 Fall Final",
+    "pdf": "sources/papers/COMP2711_F2025_Final.pdf",
+    "pdfSha256": "8c99ca5ef7b1426d42aedc27023a61333a17cef4f9133a2e253803604384388f",
+    "page": 10,
+    "solutionPages": [
+      10,
+      11
+    ],
+    "number": "6",
+    "marks": 8,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Use Chinese Remainder Theorem to solve the following system of congruences:\n$$x\\equiv1\\pmod2,\\quad x\\equiv1\\pmod3,\\quad x\\equiv3\\pmod4,\\quad x\\equiv1\\pmod5.$$\nYou must show all the steps. If you just write down your answer, you will get 0 points even if the answer is correct.\nHint: Note that one of the above congruences is redundant and can be omitted.",
+    "independentVerification": "Pairwise gcds are 1. Independently calculated partial products [20, 15, 12], inverses [2, 3, 3], and raw sum 211; exhaustive residue check gives only 31 modulo 60. CRT supplies exactly the full class 31+60k. The original mod-2 equation is implied by mod-4=3, so it must be omitted before using the product theorem; period is 60, not 120.",
+    "independentVerificationData": {
+      "proof": "Pairwise gcds are 1. Independently calculated partial products [20, 15, 12], inverses [2, 3, 3], and raw sum 211; exhaustive residue check gives only 31 modulo 60. CRT supplies exactly the full class 31+60k. The original mod-2 equation is implied by mod-4=3, so it must be omitted before using the product theorem; period is 60, not 120.",
+      "result": 31,
+      "modulus": 60,
+      "partialProducts": [
+        20,
+        15,
+        12
+      ],
+      "inverses": [
+        2,
+        3,
+        3
+      ],
+      "rawSum": 211,
+      "allStandardSolutions": [
+        31
+      ]
+    },
+    "scopeVerification": "Pages 25-27: first omit the implied mod-2 condition, then apply exactly the pairwise-coprime CRT taught here. No generalized noncoprime CRT is required.",
+    "prerequisites": [],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/COMP2711_F2025_Final.pdf#page=10), [physical PDF page 11](../sources/papers/COMP2711_F2025_Final.pdf#page=11).\n\nNote that the first equation is already included in the third one. So we can simply ignore the first equation. And just consider the following congruence system:\n$$\\begin{aligned}x&\\equiv1\\pmod3\\\\x&\\equiv3\\pmod4\\\\x&\\equiv1\\pmod5.\\end{aligned}$$\nWe solve the system\n$$\\begin{aligned}x&\\equiv1\\pmod3\\\\x&\\equiv3\\pmod4\\\\x&\\equiv1\\pmod5\\end{aligned}$$\nusing the explicit CRT formula. The moduli are pairwise coprime and $M=3\\cdot4\\cdot5=60$.\n\nDefine $M_1=M/3=20$, $M_2=M/4=15$, $M_3=M/5=12$.\n\nFind the inverses:\n- $y_1$ such that $20y_1\\equiv1\\pmod3$: $20\\equiv2\\pmod3$, inverse of 2 modulo 3 is 2 (because $2\\cdot2=4\\equiv1$). $\\Rightarrow y_1=2$.\n- $y_2$ such that $15y_2\\equiv1\\pmod4$: $15\\equiv3\\pmod4$, inverse of 3 modulo 4 is 3 (because $3\\cdot3=9\\equiv1$). $\\Rightarrow y_2=3$.\n- $y_3$ such that $12y_3\\equiv1\\pmod5$: $12\\equiv2\\pmod5$, inverse of 2 modulo 5 is 3 (because $2\\cdot3=6\\equiv1$). $\\Rightarrow y_3=3$.\n\nNow apply the formula:\n$$\\begin{aligned}x&=a_1M_1y_1+a_2M_2y_2+a_3M_3y_3\\\\&=1\\cdot20\\cdot2+3\\cdot15\\cdot3+1\\cdot12\\cdot3\\\\&=40+135+36\\\\&=211.\\end{aligned}$$\nReduce modulo $M=60$:\n$$211\\equiv31\\pmod{60}\\qquad(211-3\\cdot60=211-180=31).$$\nThus the unique solution is\n$$x\\equiv31\\pmod{60}.$$",
+    "solutionMarkdown": "**Answer.** $x\\equiv31\\pmod{60}$.\n\n**Derivation/proof.** Since $x\\equiv3\\pmod4$ implies $x\\equiv1\\pmod2$, the modulo-two condition is redundant. The remaining moduli 3, 4 and 5 are pairwise coprime, with product $M=60$. Set $M_1=20,M_2=15,M_3=12$. Their corresponding inverses are 2, 3 and 3, since $20\\cdot2\\equiv1\\pmod3$, $15\\cdot3\\equiv1\\pmod4$ and $12\\cdot3\\equiv1\\pmod5$. The CRT formula gives $x\\equiv1\\cdot20\\cdot2+3\\cdot15\\cdot3+1\\cdot12\\cdot3=211\\equiv31\\pmod{60}$. Checking 31 modulo 2, 3, 4 and 5 gives the residues 1, 1, 3, 1, respectively, so all original conditions hold. CRT guarantees one residue class modulo 60.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "99b8d1d4565647ef2287cd8a0f1af284cf35311df35d65a9a8a6190f93ba1274",
+    "supplementarySourceSha256": "39ae4b02e29844fa516119217010ee8ddf1a8dd0a0799a240a506c565e2a2366"
+  }
+]

@@ -1,0 +1,18 @@
+ Man-in-the-middle Attack
+
+
+
+
+
+
+
+
+
+
+
+▪ If attacker intercepts all traffic between two parties
+▪ Diffe-Hellman protocol can be compromised
+▪ Attacker
+   ▪ communicates with Alice pretending as Bob
+   ▪ communicates with Bob pretending as Alice
+                                                              15

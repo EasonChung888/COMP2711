@@ -1,0 +1,107 @@
+{
+  "title": "密码学与 RSA",
+  "subtitle": "Cryptography & RSA",
+  "storagePrefix": "comp2711:l1-14:",
+  "topics": [
+    {
+      "slug": "secret-key-ciphers",
+      "title": "秘密密钥、移位与仿射密码",
+      "description": "从共享密钥与字母编码理解可逆加密、分组及密钥分发。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "questions": []
+    },
+    {
+      "slug": "modular-exponentiation",
+      "title": "模幂、重复平方与离散对数",
+      "description": "用二进制高效计算模幂，区分正向计算和反求指数。",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "questions": [
+        "Q-2019-MID-P12",
+        "Q-2016-FINAL-P04-a",
+        "Q-2023F-FINAL-P06-b"
+      ]
+    },
+    {
+      "slug": "fermat-little-theorem",
+      "title": "费马小定理与幂的周期",
+      "description": "从非零余数排列证明小定理，使用周期计算大幂余数。",
+      "pages": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "questions": [
+        "Q-2022-MID-P07-a",
+        "Q-2025S-MID-P06-b",
+        "Q-2024S-MID-P11"
+      ]
+    },
+    {
+      "slug": "diffie-hellman",
+      "title": "密钥交换与中间人攻击",
+      "description": "从双锁模型到 Diffie–Hellman，区分共享值与身份认证。",
+      "pages": [
+        10,
+        14,
+        15,
+        16
+      ],
+      "questions": [
+        "Q-2021-MID-P05"
+      ]
+    },
+    {
+      "slug": "rsa-and-public-keys",
+      "title": "RSA、公钥身份与数字签名",
+      "description": "理解参数生成、加解密、公私钥分工及证书信任链。",
+      "pages": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "questions": [
+        "Q-2019-MID-P11-c",
+        "Q-2024S-MID-P09",
+        "Q-2025F-FINAL-P07-iii"
+      ]
+    },
+    {
+      "slug": "rsa-correctness",
+      "title": "RSA 正确性的完整证明",
+      "description": "按素因子分类，利用费马小定理与中国剩余定理恢复原消息。",
+      "pages": [
+        27,
+        32,
+        33,
+        34
+      ],
+      "questions": [
+        "Q-2013-FINAL-P04",
+        "Q-2021-MID-P07",
+        "Q-2015-FINAL-P07-a"
+      ]
+    }
+  ]
+}

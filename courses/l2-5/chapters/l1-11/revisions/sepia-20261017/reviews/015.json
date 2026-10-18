@@ -1,0 +1,23 @@
+{
+  "defects": [
+    {
+      "check": "3 relevance",
+      "evidence": "这一页继续证明线性性的第二部分",
+      "repair": "直接展开证明，不介绍页面的职责。"
+    },
+    {
+      "check": "8 templatedness",
+      "evidence": "第一步／第二步／最后一步",
+      "repair": "将关键依据接到相应等式后，省逐项复述。"
+    }
+  ],
+  "facts": [
+    "E(aX+b)=sum p[aXs+b]=a sum pXs+b sum p=aEX+b，分配律常数总概率1。",
+    "公平骰EX3.5，Y2X+5期望12无需列新表。",
+    "负a也可，E(-X)=-EX，平移所有结果b故均值+b。",
+    "仅固定常数可提出，非随机乘子；平方不线性E X²一般非(EX)²。"
+  ],
+  "styleScan": "删除页面元叙述，保留每步依据与实例。",
+  "deferred": [],
+  "protected": []
+}

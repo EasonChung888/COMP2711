@@ -1,0 +1,19 @@
+ Examples
+▪ Question
+  𝑋  = the sum of numbers of two dice
+  What’s 𝑉   𝑋  ?
+▪ Solution
+  Write 𝑋  =  𝑋1 + 𝑋2, where 𝑋1   is the number on the first dice,
+  𝑋2  is the number on the second dice
+  We already know 𝑉      𝑋   =  𝑉 𝑋   =  35
+                          1         2    12
+  So 𝑉  𝑋   = 35 + 35 = 35.
+              12   12   6
+▪ Question
+  Given that 𝑋   follows the binomial distribution. What’s 𝑉       𝑋  ?
+▪ Solution
+  Write 𝑋  =  𝑋1 + ⋯ +  𝑋𝑛, where 𝑋𝑖  =  1 with prob. 𝑝
+  We already know 𝑉      𝑋𝑖  = 𝑝(1 −  𝑝)
+  So 𝑉  𝑋   = 𝑛𝑝(1  − 𝑝).
+
+                                                                    36

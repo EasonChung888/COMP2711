@@ -1,0 +1,18 @@
+ HKID Checksum: Transposition Error
+
+▪ Note that for a valid HKID, we have
+         9𝑥1 + 8𝑥2 +  7𝑥3 + ⋯  + 2𝑥8 + 𝑥9 ≡  0 (mod  11)
+▪ Suppose 𝑥3    and 𝑥5  are swapped, and 𝑥3     ≠ 𝑥5
+▪ Suppose the checksum is still correct, i.e.,
+    9𝑥1 + 8𝑥2 +  7𝑥5 + 6𝑥4 +  5𝑥3 … + 2𝑥8 + 𝑥9 ≡  0  mod  11
+▪ Subtracting one congruence from the other:
+                    2 𝑥5 − 𝑥3  ≡  0 (mod  11)
+▪ Since gcd  2, 11  = 1, 2 has an inverse. Multiply both
+  sides by 2−1:
+                    𝑥5 − 𝑥3 ≡  0 (mod  11)
+▪ This contradicts with the assumption 𝑥3       ≠  𝑥5 and they
+  are both in {0,  ..,9}
+
+
+
+                                                              22

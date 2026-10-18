@@ -1,0 +1,19 @@
+ Variance
+
+▪ Theorem
+                   𝑉  𝑋  = 𝐸 𝑋2  − 𝐸  𝑋 2
+▪ Proof
+
+
+
+
+
+
+
+
+
+
+▪ Corollary
+  𝑉 𝑎𝑋   = 𝑎2𝑉(𝑋), for any real number 𝑎   ≥ 0.
+
+                                                          32

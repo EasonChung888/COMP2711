@@ -1,0 +1,32 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [],
+  "facts": [
+    "MITM能拦截替换转发不只被动，图红路用户攻击者服务器直路阻断。",
+    "未认证DH替两人公开值，以Bob冒Alice以Alice冒Bob，分别与两者建不同共享秘密，读改解一边再另一边加密。",
+    "不用求私密指数不用离散log，破身份绑定；被动难非主动安全，要签名/信任认证，增模无补。"
+  ],
+  "styleScan": "攻击步骤与身份认证结论均有具体对应，未发现风格簇；改从公开值被替换切入，再解读图中两段路径。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T10:07:11.166535+00:00"
+}

@@ -1,0 +1,20 @@
+ Independence Example Revisited
+
+ Example:
+  In a randomly generated bit string of length 4:
+  E: it begins with a 1
+  F: it contains an even number of 1s.
+  Are E  and F  independent?
+ Solution:
+    𝑝  𝐹  = 1/2.
+    𝑝  𝐹|𝐸  =  1/2
+    Note that whether 𝐹     happens or not only depends
+     on even/odd just before the last bit and the last bit.
+
+
+
+
+
+
+
+                                                                8

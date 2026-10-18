@@ -1,0 +1,22 @@
+{
+  "defects": [
+    {
+      "check": "6 formatting",
+      "evidence": "平均的平方与平方的平均不同。",
+      "repair": "紧接两项的计算含义说明，不另加粗。"
+    },
+    {
+      "check": "2 repetition",
+      "evidence": "两者不要混用。",
+      "repair": "公式和偏差推导已给因子，删末尾提醒。"
+    }
+  ],
+  "facts": [
+    "μEX展开V=E X²-2μEX+μ²=EX²-(EX)²，先均再平方均相减，非负推EX²>=EX²。",
+    "VaX=a²VX因中心偏差a倍，原页a>=0其实全实数都可。",
+    "平移不改偏差，V(aX+b)=a²VX，标准差|a|σX，负a反向平方仍a²。"
+  ],
+  "styleScan": "保持完整展开，删强调与泛泛混用提醒。",
+  "deferred": [],
+  "protected": []
+}

@@ -1,0 +1,22 @@
+Problem 12. [10 points]
+(a) Letaandmbepositiveintegers. Provethatnopositiveintegersmaller
+than gcd(a,m) can be expressed as an integer linear combination of a
+and m.
+(b) Let a and m be positive integers. Use the fact given in part (a) to
+prove that if gcd(a,m) > 1, then a does not have a multiplicative
+inverse modulo m.
+Answer.
+(a) Let d = gcd(a,m). Let y be a positive integer that is an integer linear
+combination of a and m, that is, y = ak + mk′, for some integers k
+and k′. By definition of gcd, we have d | a and d | m. It follows that
+d | ak + mk′. Since y = ak + mk′ is a positive integer, it cannot be
+smaller than d.
+(b) Assume that a has a multiplicative inverse modulo m. Let us denote it
+a−1. By definition, aa−1 ≡ 1 (mod m). It follows that aa−1−mk = 1
+for some integer k. In other words, 1 can be obtained as an integer
+linear combination of a and m. But 1 is smaller than gcd(a,m), which
+contradicts part (a). This completes the proof.
+Grading.
+• Each part carries 5 points (partial credit will be given if the proof has
+minor errors).
+18

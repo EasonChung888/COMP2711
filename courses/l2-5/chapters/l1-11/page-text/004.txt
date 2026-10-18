@@ -1,0 +1,19 @@
+ Bernoulli Trials
+
+▪ Definition:
+  Each performance of an experiment with two possible
+  outcomes is called a Bernoulli trial. The two possible
+  outcomes are generally referred to as success             and
+  failure.
+▪ Example:
+  A coin is biased so that the probability of heads is 2/3.
+  What is the probability that exactly four heads occur
+  when the coin is flipped seven times?
+▪ Solution:
+           2 4  1  3
+  𝐶  7,4   3    3
+
+
+
+
+                                                                    4

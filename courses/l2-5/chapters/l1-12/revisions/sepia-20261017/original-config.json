@@ -1,0 +1,94 @@
+{
+  "title": "模运算与整除",
+  "subtitle": "Divisibility & Modular Arithmetic",
+  "storagePrefix": "comp2711:l1-12:",
+  "topics": [
+    {
+      "slug": "divisibility",
+      "title": "整除与整数线性组合",
+      "description": "理解整除定义，证明加法、倍数与整数线性组合性质。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "questions": [
+        "Q-2019-MID-P06-a",
+        "Q-2019-MID-P06-b",
+        "Q-2025S-MID-P07"
+      ]
+    },
+    {
+      "slug": "division-theorem",
+      "title": "带余除法与唯一性",
+      "description": "用良序性质证明标准商和余数存在，并理解负数余数。",
+      "pages": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "questions": [
+        "Q-2013-FINAL-P01-a",
+        "Q-2014-FINAL-P02-a",
+        "Q-2014-FINAL-P02-b"
+      ]
+    },
+    {
+      "slug": "modular-arithmetic",
+      "title": "模运算与逆元入门",
+      "description": "在有限余数集合中计算，证明运算规律并区分两种逆元。",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "questions": [
+        "Q-2013-FINAL-P01-b",
+        "Q-2015-FINAL-P05-a",
+        "Q-2025S-FINAL-P03-a"
+      ]
+    },
+    {
+      "slug": "congruence-rules",
+      "title": "同余关系与运算规则",
+      "description": "连接余数、整除与同余，明确加减乘和除法的边界。",
+      "pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "questions": [
+        "Q-2017-MID-P04-b",
+        "Q-2019-MID-P09-a",
+        "Q-2019-MID-P09-c"
+      ]
+    },
+    {
+      "slug": "modular-applications",
+      "title": "校验、哈希与伪随机数",
+      "description": "用模运算检测错误、组织数据和生成有限状态序列。",
+      "pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "questions": []
+    }
+  ]
+}

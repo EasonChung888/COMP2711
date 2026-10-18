@@ -1,0 +1,41 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "discourse: page framing",
+      "quote": "本页为 Fermat’s Little Theorem（费马小定理）准备一个引理。",
+      "repair": "从乘法表中的具体排列进入引理，让证明直接承接观察。",
+      "evidence": "本页为 Fermat’s Little Theorem（费马小定理）准备一个引理。"
+    }
+  ],
+  "facts": [
+    "费马小定理的预备引理：素数 p 下非零 a 乘全部非零余数给出一个排列。",
+    "模7乘3得3,6,2,5,1,4；表中每行如此。",
+    "非零a可逆；ia≡0推出i≡0，与1≤i<p矛盾。",
+    "ia≡ja消去a得i≡j，范围保证i=j；p−1个不同非零余数覆盖全部。",
+    "模6乘2得到2,4,0,2,4，含零与重复，结论失效。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-18T06:07:59.799251+00:00"
+}

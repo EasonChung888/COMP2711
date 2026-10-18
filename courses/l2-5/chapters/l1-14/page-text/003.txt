@@ -1,0 +1,19 @@
+ Caesar Cipher (Shift Cypher)
+
+▪ Encryption
+   ▪ The secret key 𝑘    is a number from 𝐙26
+   ▪ Replace each letter by an integer from 𝐙26
+   ▪ The encryption function is 𝑓(𝑝)      =  (𝑝 + 𝑘) mod  26. It
+     replaces each integer 𝑝     by 𝑓(𝑝).
+   ▪ Replace each integer by the corresponding letter
+▪ Decryption
+   ▪ Just replace 𝑓(𝑝)   with 𝑓−1   𝑝  =  𝑝 −  𝑘  mod  26 in the
+     procedure above.
+
+
+
+
+
+
+
+                                                                3

@@ -1,0 +1,20 @@
+ The Chinese Remainder Theorem
+
+▪ Proof     𝑚
+  Let 𝑀𝑘 = 𝑚  ,𝑘 = 1,2,… ,𝑛
+             𝑘
+  Since gcd(𝑚𝑘, 𝑀𝑘) = 1, 𝑀𝑘 has an inverse 𝑦𝑘  modulo 𝑚𝑘:
+                   𝑀𝑘𝑦𝑘  ≡ 1  mod 𝑚𝑘
+  We claim that this is a solution:
+            𝑥=  𝑎1𝑀1𝑦1 + 𝑎2𝑀2𝑦2 + ⋯ +  𝑎𝑛𝑀𝑛𝑦𝑛
+  Check:
+                     𝑥 ≡ 𝑎𝑘  mod  𝑚𝑘 ?
+  𝑀𝑗 ≡ 0 (mod  𝑚𝑘) if 𝑗≠ 𝑘    𝑎𝑗𝑀𝑗𝑦𝑗 ≡ 0(mod  𝑚𝑘)  if 𝑗≠𝑘;
+  𝑀𝑘𝑦𝑘  ≡ 1  mod 𝑚𝑘           𝑎𝑘𝑀𝑘𝑦𝑘  ≡ 𝑎𝑘  mod  𝑚𝑘
+
+
+
+
+
+
+                                                         26

@@ -1,0 +1,19 @@
+ Independent Random Variables
+
+▪ Definition
+  The random variables X      and Y on a sample space S      are
+  independent if
+         𝑝 𝑋 =  𝑟1𝑎𝑛𝑑  𝑌 =  𝑟2 =  𝑝 𝑋 =  𝑟1 ∙ 𝑝 𝑌 =  𝑟2
+  for all 𝑟1,𝑟2
+▪ Theorem
+  If X and Y  are independent variables on a sample
+  space S, then E(XY) = E(X)E(Y).
+▪ Note
+  Linearity of expectation holds no matter the random
+  variables are independent or not.
+
+
+
+
+
+                                                              28

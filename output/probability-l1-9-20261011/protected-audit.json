@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "trackedContentChanges": [
+    "courses/l2-5/index.html",
+    "courses/l2-5/tools/chapter-render.mjs",
+    "courses/l2-5/tools/portal.mjs",
+    "courses/l2-5/tools/portal.test.mjs"
+  ],
+  "oldCourseContentAndKnowledgeBaseUnchanged": true,
+  "originalSourceHash": "6555c5056561dc4cbb5a38d67c98ec58b5fd288ec9ecc127150813672949facd"
+}

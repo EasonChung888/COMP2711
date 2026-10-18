@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "3 relevance",
+      "quote": "最后的练习也可以补证：",
+      "repair": "直接陈述非互素时的反证，取消讲解者在补什么的元叙述。",
+      "evidence": "最后的练习也可以补证："
+    }
+  ],
+  "facts": [
+    "逆元b,c:ab1,ac1，分别乘c,b得abc≡c与b，传递得b≡c，标准范围相等。",
+    "仅同乘不用未证约分避免循环，a^-1需模明确。",
+    "gcd d>1则ab-km1被d整除矛盾；m>1存在iff互素，先gcd再求逆。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:58:45.631802+00:00"
+}

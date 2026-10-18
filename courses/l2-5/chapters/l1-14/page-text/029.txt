@@ -1,0 +1,16 @@
+ Fermat Little Theorem
+
+
+▪ Theorem
+  Let 𝑝 be a prime number. Then for any non-zero 𝑎        ∈ 𝐙𝑝
+                       𝑎𝑝−1 ≡  1 mod  𝑝
+▪ Proof
+  From the lemma,
+𝑥=  123 𝑝 − 1  ≡   1∙𝑝 𝑎   2∙𝑝 𝑎 ⋯    𝑝 − 1  ∙𝑝𝑎    mod  𝑝
+                    ≡ 123  𝑝 − 1  𝑎𝑝−1         mod  𝑝
+
+  𝑥−1  exists in 𝐙𝑝, multiplying both sides by 𝑥−1    gives:
+                       1 ≡ 𝑎𝑝−1  mod  𝑝
+
+
+                                                            29

@@ -1,0 +1,19 @@
+ Euclid’s Division Theorem
+
+                                             Euclid
+ Theorem:                             (325 B.C.E.–265B.C.E.)
+  For any 𝑎   ∈  𝐙,𝑑 ∈ 𝐙+, there exist unique      integers 𝑞   and
+  𝑟, with 0  ≤  𝑟 < 𝑑, such that 𝑎    = 𝑑𝑞  + 𝑟.
+     𝑑 is called the  divisor.
+     𝑎 is called the dividend.         Notation:
+     𝑞 is called the  quotient.
+     𝑟 is called the remainder.              𝑞 = 𝑎 div 𝑑
+ Examples                                    𝑟 = 𝑎 mod   𝑑
+     11 div 3 = 3,  11  mod  3 =  2.
+     −11  div 3 = −4,   −11  mod  3  = 1.
+
+
+
+
+
+                                                                   6

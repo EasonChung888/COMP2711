@@ -1,0 +1,414 @@
+
+SOURCE 2019-midterm.pdf physical 13
+Student ID:
+Problem 11: [12 pts] Consider Bob is using RSA algorithm for public key cryptography.
+Bob starts by picking the two prime numbers p = 43 and q = 23. So,
+n = pq = 989.
+(a) Bob’s public key is a pair (989 , e). Which of the following integer(s)
+can Bob use for e? Why?
+(i) 21; (ii) 7; (iii) 25; (iv) 11
+(b) Suppose Bob chooses e = 53. What is the private key d? Show the
+steps of the extended Euclidean algorithm.
+(c) Suppose Bob’s public key is (989 , 53) and Alice wants to send a mes-
+sage m = 720 to Bob. Write down the modular expression that com-
+putes the encrypted message c. It is not necessary to evaluate the
+expression.
+Answer: (a) (iii). We have T = (p− 1)(q− 1) = 42· 22 = 924. Bob can use 25 as
+this is the only choice such that gcd(25 , 924) = 1.
+(b) The private key should satisfy ed≡ 1(mod T ), i.e., d is the multiplica-
+tive inverse of e in ZT . Run the extended Euclidean algorithm to ﬁnd
+d:
+924 = 53· 17 + 23
+53 = 23· 2 + 7
+23 = 7· 3 + 2
+7 = 2· 3 + 1
+2 = 1· 2 + 0
+Then,
+1 = 7− 2· 3
+= 7− (23− 7· 3)· 3
+= 7· 10 + 23· (−3)
+= (53− 23· 2)· 10 + 23· (−3)
+= 23·− 23 + 53· (10)
+= (924− 53· 17)·− 23 + 53· (10)
+= 53· 401 + 924· (−23)
+Thus, d = 401.
+(c) The encrypted message c = 72053 mod 989.
+Grading Scheme: 3, 6, 3
+13
+
+SOURCE 2019-midterm.pdf physical 14
+Student ID:
+Problem 12: [8 pts] Evaluate the following expression by repeated squaring method.
+Show the steps.
+81027 mod 22
+Answer: By the repeated squaring method, we have
+820≡ 8 (mod 22)
+821≡ 82≡ 20 (mod 22)
+822≡ 202≡ 4 (mod 22)
+823≡ 42≡ 16 (mod 22)
+824≡ 162≡ 14 (mod 22)
+825≡ 142≡ 20 (mod 22)
+We have 1027 = 20 + 21 + 210.
+8210≡ 4 (mod 22) since 8 2i≡ 4 (mod 22) if i≡ 2 (mod 4).
+81027≡ 820+21+210 (mod 22)
+≡ 820· 821· 8210 (mod 22)
+≡ 8· 20· 4 (mod 22)
+≡ 2 (mod 22)
+Therefore, we have 8 1027 mod 22 = 2
+14
+
+SOURCE 2016-final.pdf physical 8
+Seat Number:
+Problem 4: [15 pts]
+(a) Evaluate 6 1161 mod 602.
+(b) Is each of the following true? Please explain.
+(i) Is “(178 88 mod 89) = [(401 3,243,554 + 1, 197, 491) mod 97]”?
+(ii) Is “(21 70 mod 71) = (21 71 mod 72)”?
+Solution: (a)
+⌊log2 1161⌋ = 10
+R1 = 6 2 mod 602 = 6 × 6 mod 602 = 36
+R2 = 6 4 mod 602 = R1 × R1 mod 602 = 92
+R3 = 6 8 mod 602 = R2 × R2 mod 602 = 36
+R4 = 6 16 mod 602 = R3 × R3 mod 602 = 92
+R5 = 6 32 mod 602 = R4 × R4 mod 602 = 36
+R6 = 6 64 mod 602 = R5 × R5 mod 602 = 92
+R7 = 6 128 mod 602 = R6 × R6 mod 602 = 36
+R8 = 6 256 mod 602 = R7 × R7 mod 602 = 92
+R9 = 6 512 mod 602 = R8 × R8 mod 602 = 36
+R10 = 6 1024 mod 602 = R9 × R9 mod 602 = 92
+61161 mod 602 = 6 1024+128+8+1 mod 602
+= 6 1024 · 6128 · 68 · 61 mod 602
+= 92 · 36 · 36 · 6 mod 602
+= 216
+(b) (i) No.
+Consider LHS.
+17888 mod 89 = (178 mod 89) 88 mod 89
+= 0 88 mod 89
+= 0
+Consider RHS.
+(4013,243,554 + 1, 197, 491) mod 97
+= [((401 mod 97) 3,243,554 mod 97) + (1 , 197, 491 mod 97)] mod 97
+= [(13 3,243,554 mod 97) + 26] mod 97
+= [(13 3,243,554 mod (97 −1) mod 97) + 26] mod 97
+(By Fermat’s Little Theorem)
+= [(13 2 mod 97) + 26] mod 97
+= (72 + 26) mod 97
+= 1
+8
+
+SOURCE COMP2711_F2023_Final.pdf physical 10
+Problem 6 Number Theory, Modular Arithmetic [9 points]
+(a) [6 points] Let a, b, c, dbe integers. Show that the product
+(a − b)(a − c)(a − d)(b − c)(b − d)(c − d)
+is divisible by 12.
+(Hint: You might want to prove that there exist at least two numbers
+among a, b, c, dsuch that they have the same remainder mod 3 and
+this might help you with the main proof)
+(b) [3 points] What is the remainder of 17 2023 mod 14?
+Answer: (a) Out of 4 different numbers, two of them have the same remainder
+mod 3 based on pigeonhole principle. So one of those six elements are
+divisible by 3. Now out of these four numbers, either we have two
+odd and two even or there exists at least three numbers with same
+oddity. In each case we can get two different pair of numbers that
+their difference is an even number. So it would be dividable by 4. So
+the total would be dividable by 12.
+(b) 17 ≡ 3 (mod 14) So we have: 3 3 ≡ 27 ≡ −1 (mod 14)
+(33)674 ≡ 32022 ≡ (−1)674 ≡ 1 (mod 14) 3 2023 ≡ 3 · 32022 ≡ 3 · 1 ≡ 3.
+Marking scheme: (a) +3 points for the product is divisible by 3;
++3 points for the product is divisible by 4.
+(b) +3 points for correct answer with an acceptable explanation.
++1 point for correct answer without explanation.
+10
+
+SOURCE COMP2711_S2024_Midterm.pdf physical 13
+Problem 9. [10 points]
+We implement a “toy example” of the RSA cryptosystem by choosing two
+prime numbers p = 23 and q = 37. Assume that we use (851 , 17) as the
+public key in this example. Compute the private decryption key. Show all
+your calculations.
+Answer. n = p · q = 23 × 37 = 851, e = 17.
+t = ϕ(n) = (p − 1)(q − 1) = (23 − 1) × (37 − 1) = 792.
+The private key d satisfies e · d ≡ 1 (mod t), which means d = (17) −1
+(mod 792).
+Using the extended Euclidean algorithm.
+gcd(792, 17) 792 = 46 × 17 + 10 10 = 792 − 46 × 17 (1)
+gcd(17, 10) 17 = 1 × 10 + 7 7 = 17 − 1 × 10 (2)
+gcd(10, 7) 10 = 1 × 7 + 3 3 = 10 − 1 × 7 (3)
+gcd(7, 3) 7 = 2 × 3 + 1 1 = 7 − 2 × 3 (4)
+Substituting:
+1 = 7 − 2 × 3 (By (4))
+= 7 − 2 × (10 − 1 × 7) (By (3))
+= (−2) × 10 + 3 × 7
+= (−2) × 10 + 3 × (17 − 1 × 10) (By (2))
+= 3 × 17 + (−5) × 10
+= 3 × 17 + (−5) × (792 − 46 × 17) (By (1))
+= (−5) × 792 + 233 × 17
+Therefore, the private key d = 233.
+Remark: d must be a positive number. Considering that we are using C d mod n
+to compute the original message M , it is necessary to compute a positive
+multiplicative inverse.
+Grading Scheme:
+• 2 points for showing thatt = ϕ(n) = (p−1)(q−1) = (23−1)×(37−1) =
+792.
+• 2 points for finding the initial linear combination in the extended Eu-
+clidean algorithm.
+• 1 point for each step of the extended Euclidean algorithm.
+• All 5 points for executing the Euclidean algorithm correctly and finding
+the final answer d = 233.
+13
+
+SOURCE COMP2711_S2024_Midterm.pdf physical 16
+Problem 11. [15 points]
+Let p ≥ 7 be a prime. Prove that the number with decimal representation
+1111 · · ·1| {z }
+p-1 times
+is divisible by p.
+Note: For example, in the special case p = 7, note that 111111 is divisible
+by 7, since 111111 = 7 × 15873.
+Hint 1: Express the number as the sum of powers of 10.
+Hint 2: You may find Fermat’s Little Theorem helpful.
+Answer.
+Call the given number S. We want to prove that p | S. Following Hint 1,
+note that S can be written as:
+S = 100 + 101 · · ·+ 10p−2.
+This is the sum of the first p − 1 terms of a geometric series, for which we
+can apply the formula:
+r0 + r1 · · ·+ rn−1 = rn − 1r − 1 ,
+where r ̸= 1. Substituting r := 10, n:= p − 1, we obtain:
+S = 100 + 101 . . .10p−2
+= 10p−1 − 110 − 1
+= 10p−1 − 19 .
+Rearranging, we get that:
+9S = 10p−1 − 1.
+Taking this equation mod p, we get:
+9S ≡ 10p−1 − 1 (mod p). (*)
+Since p is a prime greater than or equal to 7, it follows thatp and 10 have no
+common factors. Following Hint 2, we note that Fermat’s Little Theorem
+is applicable here, and we can use it to obtain
+10p−1 ≡ 1 (mod p). (**)
+16
+
+SOURCE COMP2711_S2024_Midterm.pdf physical 17
+Substituting from ( ??) into (??), we get:
+9S ≡ 10p−1 − 1
+≡ 1 − 1
+≡ 0 (mod p),
+which implies that
+p | 9S.
+Since p is a prime and p | 9S, it follows that either p | 9 or p | S, but since
+9 = 3 · 3 and p ≥ 7, it cannot be the case that p | 9. Therefore, we conclude
+that p | S.
+Grading.
+• 4 points for using the formula for geometric sums.
+• 6 points for using Fermat’s little theorem in a manner that simplifies
+the problem.
+• 5 points for arriving at the conclusion, deducting 2 points if the so-
+lution does not provide justification for getting rid of the factor of
+9.
+17
+
+SOURCE 2022-midterm.pdf physical 3
+(c) Countable
+(d) Uncountable
+Problem 6: Assume p is a prime and n is a positive integer such that p| (4n2 + 1).
+(a) [8 pts] Show that p ∤ n.
+(b) [10 pts] Show that p≡ 1 (mod 4). (Hint: Analyze (2 n)p−1 using Fermat’s Little Theorem and
+part (a))
+(c) [Bonus 10 pts] Show that there are inﬁnitely many primes of the form 4 k + 1.
+Solution: (a) We use proof by contradiction. Suppose n = kp for some integer k. Then 4 n2 + 1 = 4(kp)2 + 1 =
+4k2p2 + 1 = pk′ for some integer k′, i.e., p(k′− 4k2p) = 1, which is impossible for prime p.
+(b) 4 n2 + 1 is an odd number so we know that p has to be odd. So either p≡ 1 (mod 4) or p≡ 3
+(mod 4). Assume p≡ 3 (mod 4) which means p = 4k + 3. Since p ∤ n and p is an odd prime,
+so p ∤ 2n. By Fermat’s Little Theorem, we have (2 n)p−1≡ (2n)4k+2≡ (4n2)2k+1≡ 1 (mod p).
+Recall that p| 4n2 + 1 =⇒ 4n2≡− 1 (mod p). So (4 n2)2k+1≡ (−1)2k+1≡− 1 (mod p). Now
+we have 1≡− 1 (mod p), which is impossible since p⁄= 2. This proves that p≡ 1 (mod 4).
+(c) Assume we have ﬁnitely many primes of form 4k+1, say p1, p2,··· , pt. Consider N = 4(p1p2...pt)2+
+1. Let p be any prime factor of N (p may be N itself if N is prime). Based on part (b), p = 4k +1
+for some k. Also note that p must be diﬀerent from p1, . . . , pt, since none of them divides N.
+Then we have found a new prime p in the form of 4 k + 1, which is a contradiction.
+Grading Scheme:
+Problem 7: Calculate the following quantities. Show your steps.
+(a) [5 pts] 2 542 mod 109.
+(b) [5 pts] 3 32022 mod 10.
+Solution: (a) 109 is a prime number. By using Fermat’s Little Theorem: 2 108≡ 1 (mod 109) =⇒ (2108)5≡
+15 =⇒ 2540≡ 1 (mod 109). So 2 542 = 22· 2540≡ 22≡ 4 (mod 109).
+(b) We use a similar idea but can’t use Fermat’s Little Theorem since 10 is not a prime. But observe
+that 3 4 ≡ 81≡ 1 (mod 10) = ⇒ 34t ≡ 1 (mod 10) for any integer t. So it suﬃces to ﬁnd
+32022 mod 4. Since 3 2≡ 1 (mod 4), 3 3022≡ 1 (mod 4). Then 3 32022 = 34t+1≡ 3 (mod 10).
+Problem 8: Consider RSA encryption with p = 7, q = 19 and e = 29.
+(a) [5 pts] What is the encrypted message for plaintext m = 12?
+(b) [8 pts] Compute the private key d. Show your steps.
+Your solution should be numbers.
+Solution: (a) c = 12e mod pq, which is 12 29 mod 133. This can be solved by repeated squaring. Set Ii≡ 122i
+(mod 133).
+I0 = 12
+I1 = I0· I0 mod 133 = 11
+I2 = I1· I1 mod 133 = 121
+I3 = I2· I2 mod 133 = 11
+I4 = I3· I3 mod 133 = 121
+Note that 12 29 = 1216· 128· 124· 12 = 1224· 1223· 1222· 1220.
+Thus, 1229≡ (I4I3I2I0) (mod 133)≡ (12· 11· 1212) (mod 133)≡ 122 (mod 133).
+So the encrypted message is 122.
+3
+
+SOURCE 2021-midterm.pdf physical 2
+Step Reason
+1.∀x(g(x)→ h(x)) Premise
+2. g(Sarah)→ h(Sarah) Universal instantiation using (1)
+3. g(Sarah) Premise
+4. h(Sarah) Modus ponens using (2) and (3)
+5. c(Sarah) Premise
+6. c(Sarah)∧h(Sarah) Conjunction using (4) and (5)
+7.∃x(c(x)∧ h(x)) Existential generalization using (6)
+Problem 3: [10 pts] Show that there is no largest prime number.
+Solution : We prove this by contradiction.
+Suppose there is a largest prime number n. Note that n! + 1 has no factors
+between 1 and n. Thus, if all primes were n or less, n! + 1 would have no
+prime factors, and it would be prime itself. Therefore, n!+1 is a prime number
+greater than n, which is a contradiction.
+Problem 4: [8 pts] Let N be the set of all natural numbers.
+(a) Show that {S| S⊆ N,|S| is ﬁnite} is countable.
+(b) Is {S| S⊆ N,|S| is inﬁnite} countable or uncountable? Justiﬁcation is
+not necessary.
+Solution : (a) Here is one enumeration method for {S| S⊆ N,|S| is ﬁnite}. We ﬁrst
+enumerate∅. Then for k = 0, 1, . . ., we enumerate all S⊆ N such that
+max S = k. For each k, there are ﬁnitely many such S, and we can
+enumerate them in any order.
+(b) Uncountable.
+Grading Scheme: 6, 2.
+Problem 5: [10 pts] Alice and Bob share a key using the Diﬃe-Hellman key exchange
+algorithm with a = 17 , p = 31 , k1 = 34 and k2 = 41. What is the shared
+key? Note that the shared key must be in Zp. Use Fermat’s Little Theorem
+and the repeated squaring method to simplify the calculation. Show all the
+computational steps.
+Solution : The shared key is ak1k2 mod p = 1734·41 mod 31.
+By Fermat’s Little Theorem, 17 34·41≡ 1734·41 mod 30 ≡ 174·11 mod 30 ≡ 1714
+(mod 31).
+We compute the shared key by repeated squaring method.
+1721 mod 31 = 10
+1722 mod 31 = 10 2 mod 31 = 7
+1723 mod 31 = 7 2 mod 31 = 18
+Note that 17 14 = 1721+22+23. So,
+1714≡ 172117221723
+≡ 10· 7· 18
+≡ 20 (mod 31)
+Problem 6: [12 pts] Consider the RSA encryption with parameters p = 443, q = 211.
+2
+
+SOURCE 2021-midterm.pdf physical 3
+(a) List out all possible public keys ( n, e) so that e in [120, 130]. Justiﬁcation
+is not necessary.
+(b) Suppose you select the smallest value e in your answer of (a) to be the
+public key ( n, e). Compute the corresponding private key d. Show all
+your steps.
+Solution : (a) T = (p−1)(q−1) = 442·210 = 2·2·3·5·7·13·17 = 92820. We need the
+values e in [120, 130] that are relatively prime to T . The values cannot
+contain any factor in {2, 3, 5, 7, 13, 17}. Therefore, 121 and 127 are the
+only possible values of e.
+(b) The private key should satisfy (ed) mod T = 1. i.e. d is the multiplicative
+inverse of e in ZT . Run the extended GCD algorithm to ﬁnd d:
+92820 = 121· 767 + 13
+121 = 13· 9 + 4
+13 = 4· 3 + 1
+4 = 1· 4 + 0
+Then,
+1 = 13− 4· 3
+= 13− (121− 13· 9)· 3
+= 13· 28− 121· 3
+= (92820− 121· 767)· 28− 121· 3
+= 92820· 28− 121· 21479
+Thus, d =−21479 mod 92820 = 71341 .
+Grading Scheme: 4, 8
+Problem 7: [10 pts] Show that pq−1 + qp−1 ≡ 1 (mod pq) for any two distinct prime
+numbers p and q.
+Solution : By Fermat’s little theorem, pq−1≡ 1 (mod q).
+Clearly, qp−1≡ 0 (mod q).
+Therefore, pq−1 + qp−1≡ 1 + 0≡ 1 (mod q).
+Similarly, pq−1 + qp−1≡ 0 + 1≡ 1 (mod p).
+By the Chinese remainder theorem, we have pq−1 + qp−1≡ 1 (mod pq).
+Problem 8: [15 pts] Consider the following three options.
+(i) f(x) = Θ(g(x)).
+(ii) f(x) = O(g(x)).
+(iii) f(x) = Ω(g(x)).
+For each of the following f, g pairs, choose all options that apply from above.
+No justiﬁcation is necessary. Note that it is possible that none of them apply.
+(a) f(x) = sin(x), g(x) = (cos(x))2.
+(b) f(x) = 2 sin(x), g(x) =| cos(x)| + 0.5.
+(c) f(x) = 0.5x, g(x) = x| cos(x)|.
+(d) f(x) = log3(x), g(x) = log20(x).
+(e) f(x) = 2log3 x, g(x) = 3log20 x.
+3
+
+SOURCE COMP2711_F2025_Final.pdf physical 11
+Now apply the formula:
+x = a1M1y1 + a2M2y2 + a3M3y3
+= 1 · 20 · 2 + 3 · 15 · 3 + 1 · 12 · 3
+= 40 + 135 + 36
+= 211
+Reduce modulo M = 60:
+211 ≡ 31 (mod 60) (211 − 3 · 60 = 211 − 180 = 31)
+Thus the unique solution is
+x ≡ 31 (mod 60)
+11
+
+SOURCE COMP2711_F2025_Final.pdf physical 12
+Question 7: RSA [9 pts]
+This problem is on the RSA algorithm for public key cryptogtaphy. To
+generate his keys, Bob uses two prime numbers p = 7, q= 11. So, n = pq =
+77 and T = (p − 1)(q − 1) = 60.
+(i) [3 pts] Write down the possible values for e if it has to be between 10
+and 20. No argument is needed.
+(ii) [3 pts] Assume that Bob chooses e = 7. Compute his private key d
+by running the extended Euclidean algorithm.
+(iii) [3 pts] Suppose Alice wants to encrypt message m = 3 using Bob’s
+public key (n, e). Note that n = 77, e = 7. Use the repeated squaring
+technique to calculate the ciphertext c = me.
+Answer: (i) Possible e with 10 ≤ e ≤ 20 and gcd( e, 60) = 1:
+e = 11, 13, 17, 19
+(ii) Bob chooses e = 7. Compute d such that 7 d ≡ 1 (mod 60) using
+Extended Euclidean Algorithm:
+60 = 8 · 7 + 4
+7 = 1 · 4 + 3
+4 = 1 · 3 + 1
+3 = 3 · 1 + 0
+Back-substitute:
+1 = 4 − 1 · 3 3 = 7 − 1 · 4 = ⇒ 1 = 4 − 1 · (7 − 1 · 4) = 2 · 4 − 1 · 7
+4 = 60 − 8 · 7 = ⇒ 1 = 2 · (60 − 8 · 7) − 1 · 7 = 2 · 60 − 17 · 7 = ⇒
+−17 · 7 ≡ 1 (mod 60) = ⇒ d ≡ 43 (mod 60) d = 43
+(iii) Encrypt message m = 3 using Bob’s public key ( n = 77 , e= 7) by
+repeated squaring to compute c = 37mod 77.
+31 ≡ 3 (mod 77)
+32 ≡ 9 (mod 77)
+34 = (32)2 ≡ 92 = 81 ≡ 4 (mod 77)
+Thus, the ciphertext is 3 7 = 3 × 32 × 34 (mod 77) = 3 × 9 × 4
+(mod 77) = 31
+c = 31
+12
+
+SOURCE 2013-final.pdf physical 7
+
+
+SOURCE 2015-final.pdf physical 13
+Student ID:
+Problem 7: [10 points]
+(a) Use Fermat’s Little Theorem and the Chinese Reminder Theorem to show
+that, if an integer a is not divisible by any of 3, 5 and 7, then
+a49 mod 105 = a mod 105.
+(b) Use Part (a) to calculate
+4385 mod 105.
+Solution:
+(a) Note that 105 = 3 × 5× 7. We also have:
+a49 mod 3 = (a24∗(3−1)+1) mod 3 = a mod 3 by FLT
+a49 mod 5 = (a12∗(5−1)+1) mod 5 = a mod 5 by FLT
+a49 mod 7 = (a8∗(7−1)+1) mod 7 = a mod 7 by FLT
+By CRT, we have
+a49 mod 3× 5 = a mod 15.
+Applying CRT again we get
+a49 mod 15× 7 = a mod 105.
+(b) By the result of (a)
+4385 mod 105 = 4 (7∗49)+42 mod 105
+= ((4 7∗49 mod 105)× 442) mod 105
+= ((4 7× 442) mod 105
+= 4 49 mod 105 = 4 mod 105 = 4 .
+Grading: 6, 4
+13

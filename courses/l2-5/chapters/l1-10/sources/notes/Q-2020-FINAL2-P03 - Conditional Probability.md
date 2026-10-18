@@ -1,0 +1,65 @@
+---
+id: "Q-2020-FINAL2-P03"
+note_type: "question"
+schema_version: 1
+course: "COMP2711"
+source_paper: "[[2020 Final Part 2]]"
+source_pdf: "knowledge_base/past_paper/2020-final-part-2.pdf"
+source_page: 2
+question_number: "3"
+year: 2020
+term: "spring"
+exam_type: "final"
+topics: ["[[Topic - Probability - 概率]]","[[Topic - Sets and Functions - 集合与函数]]"]
+subtopics: ["[[Subtopic - Conditional Probability - 条件概率]]","[[Subtopic - Sets and Functions - 集合与函数]]"]
+concepts: ["[[Conditional Probability - 条件概率]]","[[Set Operations - 集合运算]]"]
+methods: ["[[Conditional-Probability Method - 条件概率方法]]","[[Set Identity Method - 集合恒等式方法]]"]
+question_types: ["calculation"]
+difficulty: 2
+difficulty_basis: "Absorption in the numerator and complement of a difference in the denominator give five ninths."
+syllabus_version: "COMP2711-2026-27-fall"
+syllabus_status: "in-scope"
+answer_source: "official"
+verification_status: "verified"
+solution_page: [2]
+marks: 5
+---
+# Q-2020-FINAL2-P03
+
+## Source
+
+![[knowledge_base/past_paper/2020-final-part-2.pdf#page=2]]
+
+Published solution material: ![[knowledge_base/past_paper/2020-final-part-2.pdf#page=2]]
+
+## Question
+
+Let $A$ and $B$ be two events. It is known that $p(A)=0.7$, $p(B)=0.6$, $p(A\cap B)=0.5$, what is $p(B\mid A\cup\overline B)$?
+
+## Official Answer
+
+Source: [[knowledge_base/past_paper/2020-final-part-2.pdf#page=2|physical PDF page 2]].
+
+$$p(B\mid A\cup\overline B)=\frac{p(B\cap(A\cup\overline B))}{p(A\cup\overline B)}.$$
+Since $B\cap(A\cup\overline B)=(B\cap A)\cup(B\cap\overline B)=(B\cap A)\cup\varnothing=B\cap A$,
+$$p(B\cap(A\cup\overline B))=p(B\cap A)=0.5.$$
+$$p(A\cup\overline B)=1-p(\overline A\cap B)=1-(p(B)-p(A\cap B))=0.9.$$
+The final result is,
+$$p(B\mid A\cup\overline B)=\frac{p(B\cap(A\cup\overline B))}{p(A\cup\overline B)}=\frac59.$$
+
+## Supplementary Explanation
+
+**Answer.** $5/9$.
+
+**Derivation/proof.** The conditional numerator is $p(B\cap(A\cup\overline B))=p(A\cap B)=.5$, since $B\cap\overline B=\varnothing$. The conditioning event excludes exactly $\overline A\cap B$, of probability $.6-.5=.1$. Its probability is therefore .9. Dividing gives $.5/.9=5/9$. The bar over B is visible in the printed prompt and materially changes both event calculations.
+
+The probability of the excluded event is $0.6-0.5=0.1$, leaving conditioning probability $0.9$. The conditional numerator is $0.5$, hence the quotient is $0.5/0.9=5/9$.
+
+## Connections
+
+- [[Subtopic - Conditional Probability - 条件概率]]
+- [[Subtopic - Sets and Functions - 集合与函数]]
+- [[Conditional Probability - 条件概率]]
+- [[Set Operations - 集合运算]]
+- [[Conditional-Probability Method - 条件概率方法]]
+- [[Set Identity Method - 集合恒等式方法]]

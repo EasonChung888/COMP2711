@@ -1,0 +1,15 @@
+ The Key Exchange Puzzle
+▪ Alice wants to send a valuable item to Bob, but the
+  postman cannot be trusted
+   ▪  Alice can put an (unbreakable) lock on the box, but
+      Bob cannot open it without the key
+▪ Solution
+   ▪  Alice puts her lock on the box, and sends its to Bob.
+   ▪  Bob, after receiving the box, puts his lock on the
+      box as well, and returns to Alice.
+   ▪  Alice, after receiving the box, takes off her lock,
+      and sends it back to Bob.
+   ▪  Bob takes off his lock and opens the box.
+▪ “Locks” in cryptography are one-way functions: easy to
+  compute 𝑓(𝑥)      from 𝑥, but given 𝑦, it’s hard to find an
+  𝑥 such that 𝑓    𝑥  =  𝑦                                        10

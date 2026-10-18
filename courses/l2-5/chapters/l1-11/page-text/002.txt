@@ -1,0 +1,17 @@
+ Random Variables
+
+▪ Definition
+  A random variable is a function from the sample space
+  of an experiment to the set of real numbers, i.e., a
+  random variable assigns a real number to each
+  possible outcome.
+▪ Note: This function is not random!
+▪ Example
+  Suppose that a coin is flipped three times. Let 𝑋(𝑡)          be
+  the random variable that equals the number of heads
+  that appear when 𝑡      is the outcome. Then 𝑋(𝑡)       is the
+  function where:
+   𝑋(𝐻𝐻𝐻)   = 3,𝑋(𝑇𝑇𝑇)  =  0,
+   𝑋(𝐻𝐻𝑇)   = 𝑋(𝐻𝑇𝐻)   = 𝑋(𝑇𝐻𝐻)   = 2,
+   𝑋(𝑇𝑇𝐻)  =  𝑋(𝑇𝐻𝑇)  =  𝑋(𝐻𝑇𝑇)  = 1.
+                                                                  2

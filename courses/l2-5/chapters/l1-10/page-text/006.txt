@@ -1,0 +1,17 @@
+ The Birthday Problem: Solution
+
+ Imagine the people entering the room one by one
+ 𝐷𝑛: The event that the first 𝑛    people all have different
+  birthdays.
+ Want to find the smallest 𝑛     such that 𝑝(𝐷𝑛   ) < 1/2.
+ 𝐵𝑖: The birthday of the 𝑖-th    person
+ 𝑝(𝐷1)  = 1
+ 𝑝  𝐷   = 𝑝  𝐷   ⋅𝑝 𝐵   ≠ 𝐵    𝐷 ) = 1 × 365
+      2        1       2     1   1        366
+ 𝑝  𝐷   = 𝑝  𝐷   ⋅𝑝  𝐵  ≠ 𝐵  ∧ 𝐵   ≠ 𝐵   𝐷  ) = 1 × 365 × 364
+      3        2       3     1    3    2    2        366   366
+ 𝑝(𝐷𝑛)  =  𝑝(𝐷𝑛−1)  ⋅𝑝(∀𝑖 ∈  1, … ,𝑛 − 1 ,𝐵𝑛 ≠  𝐵𝑖 |𝐷𝑛−1)
+  =  1 × 365×  364× ⋯  × 367−𝑛
+         366   366        366
+ It turns out 𝑝(𝐷23)   ≈ 0.494
+                                                                6

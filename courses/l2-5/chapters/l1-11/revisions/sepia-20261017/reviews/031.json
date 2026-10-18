@@ -1,0 +1,18 @@
+{
+  "defects": [
+    {
+      "check": "6 formatting",
+      "evidence": "variance（方差）／standard deviation（标准差）",
+      "repair": "术语随定义直接出现，减少连续加粗。"
+    }
+  ],
+  "facts": [
+    "方差E(X-EX)^2原始概率加权，正负偏差E0会抵消所以平方非负大偏更重。",
+    "标准差sqrtV，秒变量V秒²标准差秒，二者非负。",
+    "Bernoulli均p，V=(1-p)^2p+p²(1-p)=p(1-p)，p0/1常量V0，p半V1/4。",
+    "方差非概率不要求<=1，小方差集中均值；均值需存在，有限V需有限二阶矩。"
+  ],
+  "styleScan": "定义、单位与例子的必要信息保留，不制造修辞性比喻。",
+  "deferred": [],
+  "protected": []
+}

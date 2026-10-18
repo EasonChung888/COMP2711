@@ -1,0 +1,18 @@
+ Proof of Associativity
+
+
+             𝑎 +𝑚  𝑏 +𝑚 𝑐
+             =  𝑎 +  𝑏+𝑚  𝑐  mod 𝑚
+             =  𝑎 +   𝑏+ 𝑐  mod 𝑚   mod  𝑚
+             =  𝑎 +  𝑏+ 𝑐   mod 𝑚
+             =   𝑎 + 𝑏 + 𝑐  mod 𝑚
+             =   𝑎 + 𝑏 mod  𝑚 + 𝑐 mod 𝑚
+             =   𝑎 +𝑚 𝑏  + 𝑐 mod 𝑚
+             =  𝑎 +𝑚 𝑏  +𝑚 𝑐
+
+Proof of other properties are similar.
+
+
+
+
+                                                     16

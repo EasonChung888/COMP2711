@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "3 relevance",
+      "quote": "补出证明：",
+      "repair": "直接由同余定义展开整数倍，省去对讲解动作的提示。",
+      "evidence": "补出证明："
+    }
+  ],
+  "facts": [
+    "同正m，a≡b,c≡d可和与积替换；a=b+ms,c=d+mt给差m(s+t)、m(bt+ds+mst)。",
+    "7≡2,11≡1mod5给18≡3、77≡2；链等号整数同余号余数关系。",
+    "重复乘法可同非负整数次幂替换底数，不许可指数随意模或两边任意除。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:53:29.485113+00:00"
+}

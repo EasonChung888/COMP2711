@@ -1,0 +1,20 @@
+ Solving congruences
+
+
+▪ Note: If gcd  𝑎,𝑚   1, the linear congruence
+                        𝑎𝑥 ≡  𝑏 mod  𝑚
+  may have no solution or multiple solutions in       𝐙𝑚
+
+Examples:
+▪ 2𝑥 ≡  1  mod  6  has no solution in  𝐙6
+▪ 2𝑥 ≡  4  mod  6  has two solutions in 𝐙6
+                    𝑥 =  2,5
+
+
+
+
+
+
+
+
+                                                             18

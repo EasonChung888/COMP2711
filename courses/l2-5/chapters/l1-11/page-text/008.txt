@@ -1,0 +1,19 @@
+ Infinite Sample Space
+
+▪ Example
+  Experiment: Flip a fair coin until it turns up heads.
+  Let random variable 𝑋     =  the number of flips.
+                      1/2
+
+
+                         1/4
+                             1/81/16
+                                     …
+                       1   2  3   4  5
+▪ Verify σ∞    𝑝(𝑋  = 𝑥) =  1+  1+ 1 + ⋯  =  1
+           𝑥=1              2   4  8
+▪ The probability of the event that we get 3 or more
+  flips = 𝑝  𝑋 = 3  +  𝑝 𝑋 =  4 +  ⋯  = 1 + 1 +  ⋯ =  1.
+                                        8   16        4
+
+                                                                8

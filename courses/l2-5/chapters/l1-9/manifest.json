@@ -9,16 +9,23 @@
       "prompt": "解释一下",
       "image": "slides/001.png",
       "text": "page-text/001.txt",
-      "response": "responses/001.md",
+      "response": "revisions/sepia-20261017/responses/001.md",
       "html": "pages/001.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:28:22.579414+00:00",
       "topic": "probability-foundations",
       "imageSha256": "887fd61494ae194d4f2f1a40b400bca88ad260c629f3f6b8f2462309309515bf",
-      "responseSha256": "fbcea814d3611e14f791ef7055b4daa63d5cd7d594673663775dd0188ac09e7e",
+      "responseSha256": "54c82a29f16e81aed861031ae0cc7e72372c9d211f94fe128690b7c0706d36dd",
       "responseSavedAt": "2026-10-11T10:28:36.927570+00:00",
-      "htmlSha256": "dcf116029eecf20639fe7773ddbca2d096516b27d883e92da5abf4e841b74974",
-      "writtenAt": "2026-10-11T10:28:37.016739+00:00"
+      "htmlSha256": "724db4c9c62eef5ba3fe7c2596ae840b714fa79005c1d7a3527af08be9782d0a",
+      "writtenAt": "2026-10-11T10:28:37.016739+00:00",
+      "previousResponse": {
+        "path": "responses/001.md",
+        "sha256": "fbcea814d3611e14f791ef7055b4daa63d5cd7d594673663775dd0188ac09e7e",
+        "savedAt": "2026-10-11T10:28:36.927570+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:31:48.815Z"
     },
     {
       "sourceId": "l1-9",
@@ -26,16 +33,23 @@
       "prompt": "解释一下",
       "image": "slides/002.png",
       "text": "page-text/002.txt",
-      "response": "responses/002.md",
+      "response": "revisions/sepia-20261017/responses/002.md",
       "html": "pages/002.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:28:37.251122+00:00",
       "topic": "probability-foundations",
       "imageSha256": "a2057830be766e95cf6f96a34d303c6de3fe7a2901a835e9717a7f424bbadd22",
-      "responseSha256": "920408bfb32a8d45f6332bc815fde34eafceac2c7bc83044331be0824e7a88c6",
+      "responseSha256": "2ba6dac1fa7085c6d2d069605641fa3a7f9fa39589ee29760d46dbcd83fe2499",
       "responseSavedAt": "2026-10-11T10:28:54.338710+00:00",
-      "htmlSha256": "d7a2cccb051dd4bb1d527eceb51857cec5629a488ffd25a4d7ede7b7bc5ffb4b",
-      "writtenAt": "2026-10-11T10:28:54.428613+00:00"
+      "htmlSha256": "6010560c372a9b988856b61438f95f692b27e2397afc48b8f9275b55f70beada",
+      "writtenAt": "2026-10-11T10:28:54.428613+00:00",
+      "previousResponse": {
+        "path": "responses/002.md",
+        "sha256": "920408bfb32a8d45f6332bc815fde34eafceac2c7bc83044331be0824e7a88c6",
+        "savedAt": "2026-10-11T10:28:54.338710+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:32:01.512Z"
     },
     {
       "sourceId": "l1-9",
@@ -43,16 +57,23 @@
       "prompt": "解释一下",
       "image": "slides/003.png",
       "text": "page-text/003.txt",
-      "response": "responses/003.md",
+      "response": "revisions/sepia-20261017/responses/003.md",
       "html": "pages/003.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:28:54.615320+00:00",
       "topic": "probability-foundations",
       "imageSha256": "42994bdc4add6f4967738a1459eed1a32bccc18591f72760aceebc2e0bdef605",
-      "responseSha256": "4df4fdecc4a6bfc622ce6361c54323e087348c2cd2df26a1768ebdc0355b5109",
+      "responseSha256": "288f7a3fc338d659bc96e5a004caf9f9817599d33e19dc0316e1d75287c885e6",
       "responseSavedAt": "2026-10-11T10:29:08.304483+00:00",
-      "htmlSha256": "a9e4248498706ab802226707d4836143c75becf6060dcd38f73632e602f15e13",
-      "writtenAt": "2026-10-11T10:29:08.393816+00:00"
+      "htmlSha256": "3c45edeb909a96baef29e0fb776947cc20d8d43257c0691fb21844ac328e79be",
+      "writtenAt": "2026-10-11T10:29:08.393816+00:00",
+      "previousResponse": {
+        "path": "responses/003.md",
+        "sha256": "4df4fdecc4a6bfc622ce6361c54323e087348c2cd2df26a1768ebdc0355b5109",
+        "savedAt": "2026-10-11T10:29:08.304483+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:32:11.788Z"
     },
     {
       "sourceId": "l1-9",
@@ -60,16 +81,23 @@
       "prompt": "解释一下",
       "image": "slides/004.png",
       "text": "page-text/004.txt",
-      "response": "responses/004.md",
+      "response": "revisions/sepia-20261017/responses/004.md",
       "html": "pages/004.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:29:08.582061+00:00",
       "topic": "probability-foundations",
       "imageSha256": "bef5b2641478c8a58be2b0838e3cc1822220366c67cb6af6f096c0b176ca6f22",
-      "responseSha256": "b48cbeb1a51d3044a4c258adf33965a5df061e07f58c09671576b8365b2fc139",
+      "responseSha256": "6c6ee33bfe229456759cd89be20dc3d8fe0125772908bcaced714ea6b8033398",
       "responseSavedAt": "2026-10-11T10:29:22.333230+00:00",
-      "htmlSha256": "5a6c93b4c87d232c82c23c762f15315bfefa26475bb7415b91645e4206099c38",
-      "writtenAt": "2026-10-11T10:29:22.423065+00:00"
+      "htmlSha256": "7b3e39f2439e7f1e42e17a4eb264f231fa3dc483c65481e7515a2601232464b2",
+      "writtenAt": "2026-10-11T10:29:22.423065+00:00",
+      "previousResponse": {
+        "path": "responses/004.md",
+        "sha256": "b48cbeb1a51d3044a4c258adf33965a5df061e07f58c09671576b8365b2fc139",
+        "savedAt": "2026-10-11T10:29:22.333230+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:32:22.044Z"
     },
     {
       "sourceId": "l1-9",
@@ -77,16 +105,23 @@
       "prompt": "解释一下",
       "image": "slides/005.png",
       "text": "page-text/005.txt",
-      "response": "responses/005.md",
+      "response": "revisions/sepia-20261017/responses/005.md",
       "html": "pages/005.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:29:22.625447+00:00",
       "topic": "probability-foundations",
       "imageSha256": "c51a7245ffbd3c4979f32569937acf735e33a3e5c071daaf65a5e3d1052e174e",
-      "responseSha256": "04ad8e69fa2325b3d53fab2de977082c1c1e86a958100ffd204d2b30f3898c3d",
+      "responseSha256": "ecef637e4ce05fc4912008a5855d66987cc3fe933b5b4d7bbbf2de3a42678e67",
       "responseSavedAt": "2026-10-11T10:29:37.681168+00:00",
-      "htmlSha256": "f3808526d62fcc70a11a2161721bc4e756049caf2f16507844d463832bb7fa9b",
-      "writtenAt": "2026-10-11T10:29:37.767244+00:00"
+      "htmlSha256": "10cff7e6c7c4aca47b8e64719ce51e24549b5244d579d9b437db6e16c4ac1443",
+      "writtenAt": "2026-10-11T10:29:37.767244+00:00",
+      "previousResponse": {
+        "path": "responses/005.md",
+        "sha256": "04ad8e69fa2325b3d53fab2de977082c1c1e86a958100ffd204d2b30f3898c3d",
+        "savedAt": "2026-10-11T10:29:37.681168+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:32:32.381Z"
     },
     {
       "sourceId": "l1-9",
@@ -94,16 +129,23 @@
       "prompt": "解释一下",
       "image": "slides/006.png",
       "text": "page-text/006.txt",
-      "response": "responses/006.md",
+      "response": "revisions/sepia-20261017/responses/006.md",
       "html": "pages/006.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:29:37.976111+00:00",
       "topic": "probability-foundations",
       "imageSha256": "f652977929b19806b4f538095b1e28e5158e3cd1dff1ccf2295e9ff69ad658b8",
-      "responseSha256": "55c642207cbb8d17bbf5b4859fb3224c09e9d0e56fd28b62f12a8bcdbac395f7",
+      "responseSha256": "e3cbd2e86af33bebb0d0d7bb21bbfeaf4d292b1b01bbd2f87886732ed991c441",
       "responseSavedAt": "2026-10-11T10:29:51.658408+00:00",
-      "htmlSha256": "4845f93804aac494ef2ebcc81483519563198de6f1ad9af077c6d73a407647da",
-      "writtenAt": "2026-10-11T10:29:51.747019+00:00"
+      "htmlSha256": "4e5f35ebf96beb412d75323aefeee3c4e12f8138da0baa2491c60d74bbfba556",
+      "writtenAt": "2026-10-11T10:29:51.747019+00:00",
+      "previousResponse": {
+        "path": "responses/006.md",
+        "sha256": "55c642207cbb8d17bbf5b4859fb3224c09e9d0e56fd28b62f12a8bcdbac395f7",
+        "savedAt": "2026-10-11T10:29:51.658408+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:32:43.066Z"
     },
     {
       "sourceId": "l1-9",
@@ -111,16 +153,23 @@
       "prompt": "解释一下",
       "image": "slides/007.png",
       "text": "page-text/007.txt",
-      "response": "responses/007.md",
+      "response": "revisions/sepia-20261017/responses/007.md",
       "html": "pages/007.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:29:51.960213+00:00",
       "topic": "probability-foundations",
       "imageSha256": "2f47c229e2f362aa68bb9eb00324ff3e070fbf703e9e63be93dc74228a5b434e",
-      "responseSha256": "86fcf6b985929d40b0c2e58a72795645575dd88ac638b25f74f10e8fefd94104",
+      "responseSha256": "a0cfd238874baba475f103b82239cff67a73e5d7f6f71db3182877283239086c",
       "responseSavedAt": "2026-10-11T10:30:04.611709+00:00",
-      "htmlSha256": "3fe05753ca1a4575e02352d8568bba2d8040e1561185fc1499de7cf05dee2057",
-      "writtenAt": "2026-10-11T10:30:04.705174+00:00"
+      "htmlSha256": "997f30b525744f49923a0876d72cdfb78fd4eeae4f781d3e85a75c8b8af3410c",
+      "writtenAt": "2026-10-11T10:30:04.705174+00:00",
+      "previousResponse": {
+        "path": "responses/007.md",
+        "sha256": "86fcf6b985929d40b0c2e58a72795645575dd88ac638b25f74f10e8fefd94104",
+        "savedAt": "2026-10-11T10:30:04.611709+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:32:53.193Z"
     },
     {
       "sourceId": "l1-9",
@@ -128,16 +177,23 @@
       "prompt": "解释一下",
       "image": "slides/008.png",
       "text": "page-text/008.txt",
-      "response": "responses/008.md",
+      "response": "revisions/sepia-20261017/responses/008.md",
       "html": "pages/008.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:30:04.947028+00:00",
       "topic": "probability-foundations",
       "imageSha256": "4f1d0f93638535f0bdc7b4ae225120ea49a2ac122c319d275a306e52be179089",
-      "responseSha256": "f78ffd38adf2af54abf7988c5708a2695358a232a5afa7474e71e23b5dfc5173",
+      "responseSha256": "62a2c53b991f4b5d702be12f50efaa5fec5b1a0310a81f6ca47c9a16c8979dcd",
       "responseSavedAt": "2026-10-11T10:30:22.055449+00:00",
-      "htmlSha256": "11f80dff99c9b3c8b8975fb64a6e705f847cf9dbce06bbc7f50666f1a7fd9b4a",
-      "writtenAt": "2026-10-11T10:30:22.144341+00:00"
+      "htmlSha256": "d657198e8ea95ea293e7fbacdd8d22fd82ed2528ef81f11d21009302e93c152e",
+      "writtenAt": "2026-10-11T10:30:22.144341+00:00",
+      "previousResponse": {
+        "path": "responses/008.md",
+        "sha256": "f78ffd38adf2af54abf7988c5708a2695358a232a5afa7474e71e23b5dfc5173",
+        "savedAt": "2026-10-11T10:30:22.055449+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:33:04.167Z"
     },
     {
       "sourceId": "l1-9",
@@ -145,16 +201,23 @@
       "prompt": "解释一下",
       "image": "slides/009.png",
       "text": "page-text/009.txt",
-      "response": "responses/009.md",
+      "response": "revisions/sepia-20261017/responses/009.md",
       "html": "pages/009.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:30:22.391097+00:00",
       "topic": "permutation-and-sampling",
       "imageSha256": "b52a2ed69b6eccfb1990950b35c870e00ea44bd64108002b9ac7b8f98f524524",
-      "responseSha256": "54ab6b46842c68281f4c91c9220fdc1559e6d1a84dce5152612c7dc179e2c5b0",
+      "responseSha256": "f2d7c77f58fc22ac86ede574db2dcbb3fb1a02c618765ee878c37595102f0b1a",
       "responseSavedAt": "2026-10-11T10:30:39.681143+00:00",
-      "htmlSha256": "58a8c3d2665c2c31aed146ef62eb51d097c4a9284a189ec3659b98b5d4766580",
-      "writtenAt": "2026-10-11T10:30:39.772690+00:00"
+      "htmlSha256": "c6416afce3f024f38339c8ca72861ce4ab46af576f852773b6b2630853806b13",
+      "writtenAt": "2026-10-11T10:30:39.772690+00:00",
+      "previousResponse": {
+        "path": "responses/009.md",
+        "sha256": "54ab6b46842c68281f4c91c9220fdc1559e6d1a84dce5152612c7dc179e2c5b0",
+        "savedAt": "2026-10-11T10:30:39.681143+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:33:16.250Z"
     },
     {
       "sourceId": "l1-9",
@@ -162,16 +225,23 @@
       "prompt": "解释一下",
       "image": "slides/010.png",
       "text": "page-text/010.txt",
-      "response": "responses/010.md",
+      "response": "revisions/sepia-20261017/responses/010.md",
       "html": "pages/010.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:30:40.069117+00:00",
       "topic": "permutation-and-sampling",
       "imageSha256": "7c3f494dfebc85b467251b711e2fcd75dfb6de09920391aed7e0c3d90f6878ae",
-      "responseSha256": "486b9843a69da50c95cd9be8f38c84eb1a07762c853b85cdda6089dddcaa8a41",
+      "responseSha256": "d0ae3a758e9d5a0788870388683f99307bb6c3dd71f8d40d4e6a913458c43fce",
       "responseSavedAt": "2026-10-11T10:30:59.667281+00:00",
-      "htmlSha256": "c6a19c4b5dd196bf2d91c574a1b2a872c83a44759742c16d80443cc83cc5c5bc",
-      "writtenAt": "2026-10-11T10:30:59.757355+00:00"
+      "htmlSha256": "1f3bafcf94f32a65dd7f066c4be0c1d925faa5f7bd1ced010dbc76e333924ff9",
+      "writtenAt": "2026-10-11T10:30:59.757355+00:00",
+      "previousResponse": {
+        "path": "responses/010.md",
+        "sha256": "486b9843a69da50c95cd9be8f38c84eb1a07762c853b85cdda6089dddcaa8a41",
+        "savedAt": "2026-10-11T10:30:59.667281+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:33:27.903Z"
     },
     {
       "sourceId": "l1-9",
@@ -179,16 +249,23 @@
       "prompt": "解释一下",
       "image": "slides/011.png",
       "text": "page-text/011.txt",
-      "response": "responses/011.md",
+      "response": "revisions/sepia-20261017/responses/011.md",
       "html": "pages/011.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:31:00.064279+00:00",
       "topic": "permutation-and-sampling",
       "imageSha256": "68333d6d71cadb0f3bac71018a452df32acf3d06924f68f371207c4180aa7100",
-      "responseSha256": "590476a60162c77ac2eb4fe4ffb713cd776c4ca8719186e585fa59f5c3d1de5c",
+      "responseSha256": "b1a021a29e606cd670a206f790b92289f782e2a9b687a40a3b7689e08cab40b3",
       "responseSavedAt": "2026-10-11T10:31:17.517156+00:00",
-      "htmlSha256": "9a26849f1e148dc2632215b515b57e4e7c90eb3da0b42dcf260c49a45574a545",
-      "writtenAt": "2026-10-11T10:31:17.606194+00:00"
+      "htmlSha256": "12dc6562b979e972cb96bd5497e5ac264cfed0f70c0cba62185ee0cf55d63051",
+      "writtenAt": "2026-10-11T10:31:17.606194+00:00",
+      "previousResponse": {
+        "path": "responses/011.md",
+        "sha256": "590476a60162c77ac2eb4fe4ffb713cd776c4ca8719186e585fa59f5c3d1de5c",
+        "savedAt": "2026-10-11T10:31:17.517156+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:33:42.077Z"
     },
     {
       "sourceId": "l1-9",
@@ -196,16 +273,23 @@
       "prompt": "解释一下",
       "image": "slides/012.png",
       "text": "page-text/012.txt",
-      "response": "responses/012.md",
+      "response": "revisions/sepia-20261017/responses/012.md",
       "html": "pages/012.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:31:17.858511+00:00",
       "topic": "permutation-and-sampling",
       "imageSha256": "c7e3c37cf5b4f24c4df50258f9c77d70f02320fb7c37f4fc90895267761b55ba",
-      "responseSha256": "3a03814163f2081d2fff6a58ff2c20cf72361ec98ea9188b70afcc9d4a33d1a1",
+      "responseSha256": "01adb9afa1411ac6a96516aa90f22aea01b5f75672aea5353b33216e2c10867e",
       "responseSavedAt": "2026-10-11T10:31:36.302678+00:00",
-      "htmlSha256": "7d0fc74e5ea9a26241ec368f2a5395023abfcbee2af56e6384ddf89b62ab6d22",
-      "writtenAt": "2026-10-11T10:31:36.391444+00:00"
+      "htmlSha256": "acf9dbb7e5dd9ef72155d8f14a6b25d6b5c439799a17bd821c63012bc8082cd5",
+      "writtenAt": "2026-10-11T10:31:36.391444+00:00",
+      "previousResponse": {
+        "path": "responses/012.md",
+        "sha256": "3a03814163f2081d2fff6a58ff2c20cf72361ec98ea9188b70afcc9d4a33d1a1",
+        "savedAt": "2026-10-11T10:31:36.302678+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:33:56.566Z"
     },
     {
       "sourceId": "l1-9",
@@ -213,16 +297,23 @@
       "prompt": "解释一下",
       "image": "slides/013.png",
       "text": "page-text/013.txt",
-      "response": "responses/013.md",
+      "response": "revisions/sepia-20261017/responses/013.md",
       "html": "pages/013.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:31:36.611675+00:00",
       "topic": "complements-and-birthdays",
       "imageSha256": "356378f490e07188c55c9772a0795bcfe18a1a5fbf649dd07cc6a110e1f22ffb",
-      "responseSha256": "fc9e30532a81a31122c8549cd4252e21a2f129ab01e535012cde01facba7cd30",
+      "responseSha256": "3883734780f4f448e681c9f83728da0880a3c1eff450c386962baa30066b6907",
       "responseSavedAt": "2026-10-11T10:31:51.723818+00:00",
-      "htmlSha256": "146b6e75a353f205e03064a28531654ddb4d295682213e0bbec8a68190406a9e",
-      "writtenAt": "2026-10-11T10:31:51.811494+00:00"
+      "htmlSha256": "782b0656e3e67fdae7328af74d9f59c77aafa368486d51f40a872705f65b6461",
+      "writtenAt": "2026-10-11T10:31:51.811494+00:00",
+      "previousResponse": {
+        "path": "responses/013.md",
+        "sha256": "fc9e30532a81a31122c8549cd4252e21a2f129ab01e535012cde01facba7cd30",
+        "savedAt": "2026-10-11T10:31:51.723818+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:34:10.826Z"
     },
     {
       "sourceId": "l1-9",
@@ -230,16 +321,23 @@
       "prompt": "解释一下",
       "image": "slides/014.png",
       "text": "page-text/014.txt",
-      "response": "responses/014.md",
+      "response": "revisions/sepia-20261017/responses/014.md",
       "html": "pages/014.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:31:52.031050+00:00",
       "topic": "complements-and-birthdays",
       "imageSha256": "3f11021791d3464f3b87753c886cb339630c140a83cc18ff866a9bcebcbe63f1",
-      "responseSha256": "f57e16ef498075c95d06d2657b7da0a44a8f6a909bad4b175b9e1314e119afe9",
+      "responseSha256": "df7f83a429e69bea5c38e48c9ab5737c6cbc329e7c29550bf428d91cb6bd1ff6",
       "responseSavedAt": "2026-10-11T10:32:07.470382+00:00",
-      "htmlSha256": "2a4d0a843427292b18b94f0a30263a672c2991ed899a2637871213f0962f41ce",
-      "writtenAt": "2026-10-11T10:32:07.559498+00:00"
+      "htmlSha256": "ee9fb21ab23dc870751167ea396fca068693530994e187cf3b030e7789241433",
+      "writtenAt": "2026-10-11T10:32:07.559498+00:00",
+      "previousResponse": {
+        "path": "responses/014.md",
+        "sha256": "f57e16ef498075c95d06d2657b7da0a44a8f6a909bad4b175b9e1314e119afe9",
+        "savedAt": "2026-10-11T10:32:07.470382+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:34:21.903Z"
     },
     {
       "sourceId": "l1-9",
@@ -247,16 +345,23 @@
       "prompt": "解释一下",
       "image": "slides/015.png",
       "text": "page-text/015.txt",
-      "response": "responses/015.md",
+      "response": "revisions/sepia-20261017/responses/015.md",
       "html": "pages/015.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:32:07.849890+00:00",
       "topic": "complements-and-birthdays",
       "imageSha256": "87a92492890c22a9e548973612e16901797b4fa5ef5e22f484d4afd456d78c76",
-      "responseSha256": "114e7e2a94507e8b08494c38df4831733e4bc28c050d62f76d73c428ed1715ab",
+      "responseSha256": "6c22caec8707e0521e047e8e21c12dab95b107dc11b7d84748924d250c019715",
       "responseSavedAt": "2026-10-11T10:32:25.305322+00:00",
-      "htmlSha256": "6aa29a96b0f643d0e8a44e732af5ef33d38d050fac8f20b7abb91f13b86c3c83",
-      "writtenAt": "2026-10-11T10:32:25.395934+00:00"
+      "htmlSha256": "bd5f7b423bff283210002dc496ea9101ab41ba45895bc2656400e842f4c4a735",
+      "writtenAt": "2026-10-11T10:32:25.395934+00:00",
+      "previousResponse": {
+        "path": "responses/015.md",
+        "sha256": "114e7e2a94507e8b08494c38df4831733e4bc28c050d62f76d73c428ed1715ab",
+        "savedAt": "2026-10-11T10:32:25.305322+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:34:33.069Z"
     },
     {
       "sourceId": "l1-9",
@@ -264,16 +369,23 @@
       "prompt": "解释一下",
       "image": "slides/016.png",
       "text": "page-text/016.txt",
-      "response": "responses/016.md",
+      "response": "revisions/sepia-20261017/responses/016.md",
       "html": "pages/016.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:32:25.634763+00:00",
       "topic": "complements-and-birthdays",
       "imageSha256": "bd293e7a1452e8cfb7678fec820f31c2e84fa9437d4af8aa922caa8dbcdfb124",
-      "responseSha256": "6e4053d9c6c52da46d23d62c0c651e7edadbffb598aba8480a29e9b84167190a",
+      "responseSha256": "a6b157949e19c2f14761aa86ab104514fe755885cae9cad34ccbd61d764b133c",
       "responseSavedAt": "2026-10-11T10:32:41.887670+00:00",
-      "htmlSha256": "37d1a18eae830856589bd5f9cb7bc63db6ac5edb35f8085ee5933d12771f0c89",
-      "writtenAt": "2026-10-11T10:32:41.989916+00:00"
+      "htmlSha256": "1b500cb4b48cd21ae2f9e8175a944e0e945f3a8590428c191eff6d6431272f23",
+      "writtenAt": "2026-10-11T10:32:41.989916+00:00",
+      "previousResponse": {
+        "path": "responses/016.md",
+        "sha256": "6e4053d9c6c52da46d23d62c0c651e7edadbffb598aba8480a29e9b84167190a",
+        "savedAt": "2026-10-11T10:32:41.887670+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:34:42.524Z"
     },
     {
       "sourceId": "l1-9",
@@ -281,16 +393,23 @@
       "prompt": "解释一下",
       "image": "slides/017.png",
       "text": "page-text/017.txt",
-      "response": "responses/017.md",
+      "response": "revisions/sepia-20261017/responses/017.md",
       "html": "pages/017.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:32:42.236399+00:00",
       "topic": "complements-and-birthdays",
       "imageSha256": "8142f1ca25ce7e405070eab4f0dabd581d2282776a8f28ac24d237f78250fa15",
-      "responseSha256": "15d95ea68eb70e4ff8a0761094ce9f36b40b0277c70e9d1ae774fbc8b34e16d4",
+      "responseSha256": "f087788f9f02bf3bd1b01607ad82a3fbf44ce07fec35c0bde9a02432a42983f9",
       "responseSavedAt": "2026-10-11T10:33:01.499517+00:00",
-      "htmlSha256": "4c6629130cc779a290da06efb04031e22ba0deba0e47564e8c8aa0e9d65bb1d9",
-      "writtenAt": "2026-10-11T10:33:01.585089+00:00"
+      "htmlSha256": "7ca9e55b6e29a170e72aac99292a3bb782e1bd51483d1e1c508b1cedce51fbbc",
+      "writtenAt": "2026-10-11T10:33:01.585089+00:00",
+      "previousResponse": {
+        "path": "responses/017.md",
+        "sha256": "15d95ea68eb70e4ff8a0761094ce9f36b40b0277c70e9d1ae774fbc8b34e16d4",
+        "savedAt": "2026-10-11T10:33:01.499517+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:34:55.910Z"
     },
     {
       "sourceId": "l1-9",
@@ -298,16 +417,23 @@
       "prompt": "解释一下",
       "image": "slides/018.png",
       "text": "page-text/018.txt",
-      "response": "responses/018.md",
+      "response": "revisions/sepia-20261017/responses/018.md",
       "html": "pages/018.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:33:01.830402+00:00",
       "topic": "complements-and-birthdays",
       "imageSha256": "2f8d00f0144716437d657f40961b7ee8f0fb7dbf86945b5c494f5eec4aae88bd",
-      "responseSha256": "afd721bac4d4faf45971967dc92bad7330c16eaff2f41503b2e11193a3e0d79b",
+      "responseSha256": "338ba2d7989d21fc2b1c949782795b8fed6d4bcaff9804eebd69858d15c55ba8",
       "responseSavedAt": "2026-10-11T10:33:28.539658+00:00",
-      "htmlSha256": "f7e67bb6bf844a44119ed314b7400c2e359e3e483f272989297102927b4e4a10",
-      "writtenAt": "2026-10-11T10:33:28.632489+00:00"
+      "htmlSha256": "dd0d465e8106643525c9d9cd05112aafac2d0b57747e41c38ef47010c6de79a2",
+      "writtenAt": "2026-10-11T10:33:28.632489+00:00",
+      "previousResponse": {
+        "path": "responses/018.md",
+        "sha256": "afd721bac4d4faf45971967dc92bad7330c16eaff2f41503b2e11193a3e0d79b",
+        "savedAt": "2026-10-11T10:33:28.539658+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:35:09.312Z"
     },
     {
       "sourceId": "l1-9",
@@ -315,16 +441,23 @@
       "prompt": "解释一下",
       "image": "slides/019.png",
       "text": "page-text/019.txt",
-      "response": "responses/019.md",
+      "response": "revisions/sepia-20261017/responses/019.md",
       "html": "pages/019.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:33:28.867995+00:00",
       "topic": "event-inclusion-exclusion",
       "imageSha256": "f8d0a0443447c0efc34f2be4b176be86c0618c68aef866fcef381617f3745ef0",
-      "responseSha256": "5d5e4f23029383cf220da563bcae38a9ca5f376234930f30dca480386646d43d",
+      "responseSha256": "ea76bb75e3a365c3d123a6d7a2a7cd7891fa63b41f887bca085a2c4125c04451",
       "responseSavedAt": "2026-10-11T10:33:44.098317+00:00",
-      "htmlSha256": "75235b435d0c229acf8e326a523071e82a9874d25c55ea81e43ecb0378150398",
-      "writtenAt": "2026-10-11T10:33:44.189956+00:00"
+      "htmlSha256": "76f33dd6f5e707d1b0a597ef7360753843ac58a53106747f9a8ba576896243f6",
+      "writtenAt": "2026-10-11T10:33:44.189956+00:00",
+      "previousResponse": {
+        "path": "responses/019.md",
+        "sha256": "5d5e4f23029383cf220da563bcae38a9ca5f376234930f30dca480386646d43d",
+        "savedAt": "2026-10-11T10:33:44.098317+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:35:19.828Z"
     },
     {
       "sourceId": "l1-9",
@@ -332,16 +465,23 @@
       "prompt": "解释一下",
       "image": "slides/020.png",
       "text": "page-text/020.txt",
-      "response": "responses/020.md",
+      "response": "revisions/sepia-20261017/responses/020.md",
       "html": "pages/020.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:33:44.439030+00:00",
       "topic": "event-inclusion-exclusion",
       "imageSha256": "94d6ee238a45278a997d224fe8ce45c2bda40f1b095300ae9f1743f186001a3f",
-      "responseSha256": "554b7720df78ef161c45e05ec6cb415132e531df706d6165557776f2c1784fe1",
+      "responseSha256": "70d8577ca89dddc7a4ae7660bac505c857cb05669af17b6dd23484f4681712bb",
       "responseSavedAt": "2026-10-11T10:34:00.373222+00:00",
-      "htmlSha256": "9dd07ca1bfcc2bdb92b34f1c0d0914bf1fbfeab3a66565e3b161d21d1f0492f9",
-      "writtenAt": "2026-10-11T10:34:00.464424+00:00"
+      "htmlSha256": "1a147f46af7cdc0cb515804731e1922b6913a83b5772790d17b0471131b63e46",
+      "writtenAt": "2026-10-11T10:34:00.464424+00:00",
+      "previousResponse": {
+        "path": "responses/020.md",
+        "sha256": "554b7720df78ef161c45e05ec6cb415132e531df706d6165557776f2c1784fe1",
+        "savedAt": "2026-10-11T10:34:00.373222+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:35:30.663Z"
     },
     {
       "sourceId": "l1-9",
@@ -349,16 +489,23 @@
       "prompt": "解释一下",
       "image": "slides/021.png",
       "text": "page-text/021.txt",
-      "response": "responses/021.md",
+      "response": "revisions/sepia-20261017/responses/021.md",
       "html": "pages/021.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:34:00.690742+00:00",
       "topic": "event-inclusion-exclusion",
       "imageSha256": "82cbe75bd80c1584b98371512483752d279203a66b1c1a4e152857bbae442352",
-      "responseSha256": "b7024275d0350fd049a607e53660c3f5ec879b009669ab1d3e28a25da8326245",
+      "responseSha256": "9225c02b3fce6988cea28448f9705dc41c2c4e830424161b10223fa65e15f137",
       "responseSavedAt": "2026-10-11T10:34:21.579717+00:00",
-      "htmlSha256": "4ca27de1faf5ae20e5ea0cc2be0b80e6123e8a72cd916520df0bd6c6c3a5e8c9",
-      "writtenAt": "2026-10-11T10:34:21.675247+00:00"
+      "htmlSha256": "ba2c5f520f23e37fbada8a8182a324485f6a1255419bf7d53b7035aa9427c737",
+      "writtenAt": "2026-10-11T10:34:21.675247+00:00",
+      "previousResponse": {
+        "path": "responses/021.md",
+        "sha256": "b7024275d0350fd049a607e53660c3f5ec879b009669ab1d3e28a25da8326245",
+        "savedAt": "2026-10-11T10:34:21.579717+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:35:43.073Z"
     },
     {
       "sourceId": "l1-9",
@@ -366,16 +513,23 @@
       "prompt": "解释一下",
       "image": "slides/022.png",
       "text": "page-text/022.txt",
-      "response": "responses/022.md",
+      "response": "revisions/sepia-20261017/responses/022.md",
       "html": "pages/022.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:34:21.877843+00:00",
       "topic": "event-inclusion-exclusion",
       "imageSha256": "07bb9dba57d90f38ee3857e9e8cfd023c85467e7b3e6482e8596aaaa32265b57",
-      "responseSha256": "4da9fe0b1f54160d33b10bdb2c0b628cb8ed3d67853783a1ae056bb0c52ff8fa",
+      "responseSha256": "825eb72410df4b65e45f485bfd6d4cf4b0d9aeea28e70316da926388b8c15f72",
       "responseSavedAt": "2026-10-11T10:34:37.996105+00:00",
-      "htmlSha256": "c8c3421edafb4cbf3beaaae868227ece7c863a6fe1a4183d69a1d02d5c66a2bd",
-      "writtenAt": "2026-10-11T10:34:38.088194+00:00"
+      "htmlSha256": "44f8232987a839d106d0aba1fc766b87c39129cd645d5146ef0cfdca4b593faa",
+      "writtenAt": "2026-10-11T10:34:38.088194+00:00",
+      "previousResponse": {
+        "path": "responses/022.md",
+        "sha256": "4da9fe0b1f54160d33b10bdb2c0b628cb8ed3d67853783a1ae056bb0c52ff8fa",
+        "savedAt": "2026-10-11T10:34:37.996105+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:35:56.639Z"
     },
     {
       "sourceId": "l1-9",
@@ -383,16 +537,23 @@
       "prompt": "解释一下",
       "image": "slides/023.png",
       "text": "page-text/023.txt",
-      "response": "responses/023.md",
+      "response": "revisions/sepia-20261017/responses/023.md",
       "html": "pages/023.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:34:38.347750+00:00",
       "topic": "probability-distributions",
       "imageSha256": "30081b28ae9212b426ff82698965cb25a4201934fc2b581b5cce48facfc8e12c",
-      "responseSha256": "beecd730cad47b27c8221141d83974a9f88c2bd74523322458eeedb33fc82621",
+      "responseSha256": "0bedcf5648b93aae5bd8061b8187ccf512b16ba7c7651b4273ecd0d9f5d07cbb",
       "responseSavedAt": "2026-10-11T10:34:55.496477+00:00",
-      "htmlSha256": "101221e2429ea342a0f89d7af96bcd140e017c71417d5e67cead61a3a43c42b8",
-      "writtenAt": "2026-10-11T10:34:55.586968+00:00"
+      "htmlSha256": "c43d9336146ecaaae7103b2cd8708f44f3d6b2f9696739d4a7675af59f1f3a27",
+      "writtenAt": "2026-10-11T10:34:55.586968+00:00",
+      "previousResponse": {
+        "path": "responses/023.md",
+        "sha256": "beecd730cad47b27c8221141d83974a9f88c2bd74523322458eeedb33fc82621",
+        "savedAt": "2026-10-11T10:34:55.496477+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:36:08.301Z"
     },
     {
       "sourceId": "l1-9",
@@ -400,16 +561,23 @@
       "prompt": "解释一下",
       "image": "slides/024.png",
       "text": "page-text/024.txt",
-      "response": "responses/024.md",
+      "response": "revisions/sepia-20261017/responses/024.md",
       "html": "pages/024.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:34:55.809611+00:00",
       "topic": "probability-distributions",
       "imageSha256": "924e94e8542959013a904e5abe02f028e07a6dbd48a6b519f19372195742f934",
-      "responseSha256": "b587b1086ec12501201dbb9982b96f96fb6ba6e09a1c225ed441e7f9832e4aaa",
+      "responseSha256": "c1f93470e0d30f0284ec6c8744186140b684db39825e723962fba5a86c55ae90",
       "responseSavedAt": "2026-10-11T10:35:12.724144+00:00",
-      "htmlSha256": "5f0b0e99e9e09ae77d5f22911b4b6bf3ebeb01e350618d06adf33b9125f72047",
-      "writtenAt": "2026-10-11T10:35:12.814043+00:00"
+      "htmlSha256": "0075a29e4652bb0eb9a3eb2e5eb1f09d8f1aba60c20c86657c32957c3c2cfb57",
+      "writtenAt": "2026-10-11T10:35:12.814043+00:00",
+      "previousResponse": {
+        "path": "responses/024.md",
+        "sha256": "b587b1086ec12501201dbb9982b96f96fb6ba6e09a1c225ed441e7f9832e4aaa",
+        "savedAt": "2026-10-11T10:35:12.724144+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:36:18.747Z"
     },
     {
       "sourceId": "l1-9",
@@ -417,16 +585,23 @@
       "prompt": "解释一下",
       "image": "slides/025.png",
       "text": "page-text/025.txt",
-      "response": "responses/025.md",
+      "response": "revisions/sepia-20261017/responses/025.md",
       "html": "pages/025.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:35:13.035492+00:00",
       "topic": "probability-distributions",
       "imageSha256": "13cbeecd6573daaa0d02f217451e1333b53346f861dc8f580810f5f2adc9edfe",
-      "responseSha256": "7b9434f2f8d8916b7509880331d2f1fba1f7229e29cb2463a4604326405202ac",
+      "responseSha256": "cf5c30bd190cd85195c18bc637d918b64f7e6d1a3d2a912c6104c0048aa518c7",
       "responseSavedAt": "2026-10-11T10:35:29.059129+00:00",
-      "htmlSha256": "36a6e9a9064f5f16d1f289b89b0f27866089ca11027f1d61255c7cc044e8f717",
-      "writtenAt": "2026-10-11T10:35:29.147649+00:00"
+      "htmlSha256": "50080d44d287b54008482cc7cfb8c146f7e079e0c96b2542ad6f3c964af7cf38",
+      "writtenAt": "2026-10-11T10:35:29.147649+00:00",
+      "previousResponse": {
+        "path": "responses/025.md",
+        "sha256": "7b9434f2f8d8916b7509880331d2f1fba1f7229e29cb2463a4604326405202ac",
+        "savedAt": "2026-10-11T10:35:29.059129+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:36:28.786Z"
     },
     {
       "sourceId": "l1-9",
@@ -434,16 +609,23 @@
       "prompt": "解释一下",
       "image": "slides/026.png",
       "text": "page-text/026.txt",
-      "response": "responses/026.md",
+      "response": "revisions/sepia-20261017/responses/026.md",
       "html": "pages/026.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:35:29.357848+00:00",
       "topic": "probability-distributions",
       "imageSha256": "00985c7acc04d93f94fade7f914458ab0594c1cc3797678345f17f75220294e2",
-      "responseSha256": "d434dbcf4503f7e5ca3c580a8495c2d17d8ba91b379ced57f3ddb33ff99b0d89",
+      "responseSha256": "f48d23bde3bf766990a973bdda15c9bf4add03631f9ec8571687b13bde38f1dd",
       "responseSavedAt": "2026-10-11T10:35:47.176079+00:00",
-      "htmlSha256": "7ff203998bb049b61a65cdbbdf0e17fb079ee1b9f678004ed9242040e74307fc",
-      "writtenAt": "2026-10-11T10:35:47.263196+00:00"
+      "htmlSha256": "6371c22fbfcfaf778ac47e670e1d6905e8661f0431a2b85dc64a6bfb77b02738",
+      "writtenAt": "2026-10-11T10:35:47.263196+00:00",
+      "previousResponse": {
+        "path": "responses/026.md",
+        "sha256": "d434dbcf4503f7e5ca3c580a8495c2d17d8ba91b379ced57f3ddb33ff99b0d89",
+        "savedAt": "2026-10-11T10:35:47.176079+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:36:40.656Z"
     },
     {
       "sourceId": "l1-9",
@@ -451,16 +633,23 @@
       "prompt": "解释一下",
       "image": "slides/027.png",
       "text": "page-text/027.txt",
-      "response": "responses/027.md",
+      "response": "revisions/sepia-20261017/responses/027.md",
       "html": "pages/027.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:35:47.509540+00:00",
       "topic": "independent-events",
       "imageSha256": "24c2edb755dce3544796df62bb501ffc665af32085f88c308fbad1e2330fd80b",
-      "responseSha256": "6266050eb23a6e3b7a75c3c5ec572143f95de7e2e27a6ac359242728fa502e1f",
+      "responseSha256": "a57030e71157c58215eb8a15024603b3ecdd4c668027a711bed27ef0fb65680e",
       "responseSavedAt": "2026-10-11T10:36:03.824801+00:00",
-      "htmlSha256": "791d28ed7816d5e089b0fec8f97dcb68a9fe89c671e1923e57cf4368bb01b363",
-      "writtenAt": "2026-10-11T10:36:03.912805+00:00"
+      "htmlSha256": "bb5288a53d9ee25c7f530d60ee15c6dbff53c3a3611e77e9a172aa1437a17c5d",
+      "writtenAt": "2026-10-11T10:36:03.912805+00:00",
+      "previousResponse": {
+        "path": "responses/027.md",
+        "sha256": "6266050eb23a6e3b7a75c3c5ec572143f95de7e2e27a6ac359242728fa502e1f",
+        "savedAt": "2026-10-11T10:36:03.824801+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:36:52.840Z"
     },
     {
       "sourceId": "l1-9",
@@ -468,16 +657,23 @@
       "prompt": "解释一下",
       "image": "slides/028.png",
       "text": "page-text/028.txt",
-      "response": "responses/028.md",
+      "response": "revisions/sepia-20261017/responses/028.md",
       "html": "pages/028.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:36:04.129960+00:00",
       "topic": "independent-events",
       "imageSha256": "a87c499a47570d9f90e17d51714a83a5b1d20fc4d453e7de9b52f4f3ad2a33dd",
-      "responseSha256": "a7f592b85573d567730b100c7aa5a258f73fc977e052cb6810d4d0852b366256",
+      "responseSha256": "cccd8e1eb8c0332d5734e57c8db6cf66c3402a80fbd033881c7995e3b7d378f2",
       "responseSavedAt": "2026-10-11T10:36:19.376124+00:00",
-      "htmlSha256": "677d76b459ff2180ca08e4371f8d57b2bbac1b85b525b42c4a8ef7d26e2c47ab",
-      "writtenAt": "2026-10-11T10:36:19.464935+00:00"
+      "htmlSha256": "5d70b6b85cb3c996c692d62a606bf46fa010706ae9927f30ac5961acc495ee1a",
+      "writtenAt": "2026-10-11T10:36:19.464935+00:00",
+      "previousResponse": {
+        "path": "responses/028.md",
+        "sha256": "a7f592b85573d567730b100c7aa5a258f73fc977e052cb6810d4d0852b366256",
+        "savedAt": "2026-10-11T10:36:19.376124+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:37:03.431Z"
     },
     {
       "sourceId": "l1-9",
@@ -485,16 +681,23 @@
       "prompt": "解释一下",
       "image": "slides/029.png",
       "text": "page-text/029.txt",
-      "response": "responses/029.md",
+      "response": "revisions/sepia-20261017/responses/029.md",
       "html": "pages/029.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:36:19.699508+00:00",
       "topic": "independent-events",
       "imageSha256": "c63edd835fe1547f242572bc43ed6de5a0f5d8a763169219b54938108ec37fe9",
-      "responseSha256": "c5e52beacf2c7baf28f5139de5e7dbed90aa39f4939cc82264f5d0e6e22e431a",
+      "responseSha256": "31d55abc422aa10be8de245137d95717b4a835cc64dfc11ebca50071f20eefc2",
       "responseSavedAt": "2026-10-11T10:36:34.899786+00:00",
-      "htmlSha256": "a010b71bf9dfdd993f5cf2e6cb2e99f71045c47b5133ffb781f90e7afe6a1e57",
-      "writtenAt": "2026-10-11T10:36:34.987975+00:00"
+      "htmlSha256": "980dca641fab8fd668e72ddbc7a140bf309e5ffc6edbc9990d128d831230d107",
+      "writtenAt": "2026-10-11T10:36:34.987975+00:00",
+      "previousResponse": {
+        "path": "responses/029.md",
+        "sha256": "c5e52beacf2c7baf28f5139de5e7dbed90aa39f4939cc82264f5d0e6e22e431a",
+        "savedAt": "2026-10-11T10:36:34.899786+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T05:37:14.040Z"
     },
     {
       "sourceId": "l1-9",
@@ -502,16 +705,23 @@
       "prompt": "解释一下",
       "image": "slides/030.png",
       "text": "page-text/030.txt",
-      "response": "responses/030.md",
+      "response": "revisions/sepia-20261017/responses/030.md",
       "html": "pages/030.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:36:35.233894+00:00",
       "topic": "independent-events",
       "imageSha256": "44bab6fe12d2d93c01dbedbee443c4c5a109f691077aabdcabf9bf23caa32112",
-      "responseSha256": "9c13eb55f17e51175653bd45bfcc56ff8a8b174792d37259f173c12438bce750",
+      "responseSha256": "72e3dcff870ba232d7d32fbe57b59b1c9e2a94dba2bde49d580242fc80c1f57f",
       "responseSavedAt": "2026-10-11T10:36:50.713230+00:00",
-      "htmlSha256": "1ab39dd611d8894676e2a089b47bf7aaffb506278bc13a9f335a1378f051a219",
-      "writtenAt": "2026-10-11T10:36:50.804200+00:00"
+      "htmlSha256": "debb55b3d184a98911b3b5581b8b6c4b33be5e632d86ac96d9cb6c2217d3ca21",
+      "writtenAt": "2026-10-11T10:36:50.804200+00:00",
+      "previousResponse": {
+        "path": "responses/030.md",
+        "sha256": "9c13eb55f17e51175653bd45bfcc56ff8a8b174792d37259f173c12438bce750",
+        "savedAt": "2026-10-11T10:36:50.713230+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T06:04:41.365Z"
     },
     {
       "sourceId": "l1-9",
@@ -519,16 +729,23 @@
       "prompt": "解释一下",
       "image": "slides/031.png",
       "text": "page-text/031.txt",
-      "response": "responses/031.md",
+      "response": "revisions/sepia-20261017/responses/031.md",
       "html": "pages/031.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:36:51.055271+00:00",
       "topic": "independent-events",
       "imageSha256": "3a986c692542310ba3fcb7d908cba5ada15c0ff00845ac02dbf9f4bc79f7941a",
-      "responseSha256": "86ab734b7f87c539ffa23f285d4c068918fb2d291dbb8cd272f9029992205fa4",
+      "responseSha256": "7528df27b4ffe99845b642cb47df6de9f0822a751c9f0ce52053bc7985b4aee6",
       "responseSavedAt": "2026-10-11T10:37:08.239819+00:00",
-      "htmlSha256": "eda487fd49a78f2ef1d0c5862f96f3072a58094ceb8f304fa76cb8e89577f387",
-      "writtenAt": "2026-10-11T10:37:08.330648+00:00"
+      "htmlSha256": "cfbb732b9db0889144a66262695ecf7857253f0b98ef1782ee345768d0cff5c6",
+      "writtenAt": "2026-10-11T10:37:08.330648+00:00",
+      "previousResponse": {
+        "path": "responses/031.md",
+        "sha256": "86ab734b7f87c539ffa23f285d4c068918fb2d291dbb8cd272f9029992205fa4",
+        "savedAt": "2026-10-11T10:37:08.239819+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T06:04:50.945Z"
     },
     {
       "sourceId": "l1-9",
@@ -536,16 +753,23 @@
       "prompt": "解释一下",
       "image": "slides/032.png",
       "text": "page-text/032.txt",
-      "response": "responses/032.md",
+      "response": "revisions/sepia-20261017/responses/032.md",
       "html": "pages/032.html",
       "status": "written",
       "preparedAt": "2026-10-11T10:37:08.595440+00:00",
       "topic": "independent-events",
       "imageSha256": "0b44b0481b1c7b310dec672dc5cbb742f8653b90db3c0c8cc30bc8c75ef248f9",
-      "responseSha256": "2928d05d6db866f0cb63321a2649c1e978e39b87e3add9ebd9f4102854fb47df",
+      "responseSha256": "4d87d16e07e24d3d11288862f56f7ea84868c9b129d630a832b0966a1d24fef3",
       "responseSavedAt": "2026-10-11T10:37:30.956764+00:00",
-      "htmlSha256": "757231e4a8767aa13f6def3e7544d00ab6f384c24bf221e2979b503c45d3f0b4",
-      "writtenAt": "2026-10-11T10:37:31.046553+00:00"
+      "htmlSha256": "7f9c87abaf01ae172b07c3895ee440d8198ab869ad16d176228cfe99af038820",
+      "writtenAt": "2026-10-11T10:37:31.046553+00:00",
+      "previousResponse": {
+        "path": "responses/032.md",
+        "sha256": "2928d05d6db866f0cb63321a2649c1e978e39b87e3add9ebd9f4102854fb47df",
+        "savedAt": "2026-10-11T10:37:30.956764+00:00"
+      },
+      "responseRevision": "sepia-20261017",
+      "revisionSavedAt": "2026-10-17T06:05:03.532Z"
     }
   ]
 }

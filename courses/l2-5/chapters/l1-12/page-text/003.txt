@@ -1,0 +1,18 @@
+ Divisibility
+
+
+ Definition:
+  Let 𝑎  and 𝑏   be integers with 𝑎     ≠  0. Then 𝑎   divides   𝑏 if
+  there exists an integer 𝑐       such that 𝑏   =  𝑎𝑐.
+     The notation 𝑎     |𝑏 denotes that 𝑎     divides 𝑏.
+     If 𝑎| 𝑏, then 𝑏/𝑎   is an integer.
+     If 𝑎 does not divide 𝑏, we write 𝑎       ∤ 𝑏.
+ When 𝑎    divides 𝑏   we say that 𝑎     is a factor  or divisor of
+  𝑏  and that 𝑏   is a multiple    of 𝑎.
+ Example:
+  Determine whether 3        | 7 and whether 3      | 12.
+
+
+
+
+                                                                     3

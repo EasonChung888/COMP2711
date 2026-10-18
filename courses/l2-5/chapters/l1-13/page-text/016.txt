@@ -1,0 +1,16 @@
+ Solving Congruences
+
+▪ Linear congruence
+                        𝑎𝑥 ≡  𝑏(mod  𝑚)
+▪ Given 𝑎, 𝑏, 𝑚, such that gcd   𝑎,𝑚   = 1. How to find 𝑥?
+▪ Solution:
+   ▪ Find 𝑎−1
+   ▪ Multiply 𝑎−1  on both sides
+▪ Example
+   ▪ Solve 3𝑥  ≡  4(mod  7)
+   ▪ Find 3−1  =  5
+   ▪ Multiply 5  on both sides:
+                 3−1 ⋅ 3𝑥 ≡ 3−1 ⋅ 4 mod  7
+                        𝑥 ≡ 5   4 ≡  6(mod  7)
+
+                                                              16

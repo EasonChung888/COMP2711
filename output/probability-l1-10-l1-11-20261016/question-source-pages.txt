@@ -1,0 +1,720 @@
+
+PDF 2020-final-part-2.pdf PAGE 2
+Combine the two terms together, we have,
+(n
+1
+)
++ 22·
+(n
+2
+)
++ ... + n2·
+(n
+n
+)
+=
+n∑
+i=1
+i(i− 1)·
+(n
+i
+)
++
+n∑
+i=1
+i·
+(n
+i
+)
+=n· 2n−1 + n(n− 1)· 2n−2
+=n(n + 1)· 2n−2
+Question 2: (5 pts) Three seminars were held by CSE department last week. 70% of
+students attended the seminar on Monday, 80% of students attended the
+seminar on Wednesday, and 90% of students attended the seminar on Fri-
+day. Prove that at least 40% of students attended all three seminars.
+Solution: U - Set of all students;
+A - Set of students having attended the seminar on Monday,|A| = 70%|U|;
+B - Set of students having attended the seminar on Wednesday, |B| =
+80%|U|;
+C - Set of students having attended the seminar on Friday, |C| = 90%|U|.
+|A∩ B∩ C| =|U|−| A∪ B∪ C|
+≥| U|− (|A| +|B| +|C|)
+=|U|− (30%|U| + 20%|U| + 10%|U|)
+= 40%|U|
+The inequality uses the fact that |X∪ Y∪ Z|≤| X| +|Y| +|Z|.
+Question 3: (5 pts) Let A and B be two events. It is known that p(A) = 0 .7, p(B) =
+0.6, p(A∩ B) = 0.5, what is p(B|A∪ B)?
+Solution:
+p(B|A∪ B) = p(B∩ (A∪ B))
+p(A∪ B)
+Since B∩ (A∪ B) = (B∩ A)∪ (B∩ B) = (B∩ A)∪ ∅ = B∩ A,
+p(B∩ (A∪ B)) = p(B∩ A) = 0.5
+p(A∪ B) = 1− p(A∩ B) = 1− (p(B)− p(A∩ B)) = 0.9
+The ﬁnal result is,
+p(B|A∪ B) = p(B∩ (A∪ B))
+p(A∪ B) = 5
+9
+
+PDF COMP2711_F2025_Final.pdf PAGE 7
+Problem 3: Probability [9 points] We have 14 volleyball players, all of different
+heights. All 14! permutations of rankings (tallest = rank 1 to shortest
+= rank 14) are equally likely. Answer the following questions and briefly
+explain. You do not need to calculate the final numerical answer.
+(a) [3 points] Given A is taller than B, what is the probability that A is
+tallest?
+(b) [3 points] Given A is taller than B, what is the probability that A is
+the third tallest?
+(c) [3 points] Given A is taller than B and shorter than C, what is the
+probability that A is seventh tallest?
+Answer: (a) Given A > B , permutations satisfying this: 14! /2. If A is tallest,
+arrange others: 13! permutations.
+Pr(A tallest | A > B ) = 13!
+14!/2 = 2
+14 = 1
+7 .
+(b) Given A > B . If A is rank 3, B must be in ranks 4, . . . ,14: 11 choices.
+Then arrange remaining 12 players: 12!.
+Pr(A rank 3 | A > B ) = 11 · 12!
+14!/2 = 11 · 2
+14 · 13 = 11
+91 .
+(c) Given C > A > B . Permutations satisfying this: 14! /6. If A is rank
+7, C in ranks 1 , . . . ,6 (6 choices), B in ranks 8 , . . . ,14 (7 choices),
+arrange remaining 11: 11!.
+Pr(A rank 7 | C > A > B ) = 6 · 7 · 11!
+14!/6 = 252
+14 · 13 · 12 = 3
+26 .
+7
+
+PDF 2017-final.pdf PAGE 8
+Problem 5: [9 pts] You play against your friend in a coin ﬂipping game, where the
+objective is to get the most heads after three coin ﬂips. A player wins if
+they have more heads than the opponent. If the numbers of heads are equal,
+then no one wins; it is a tie. You will take turns ﬂipping coins, and your
+friend ﬂips ﬁrst.
+You want to cheat, so you created a fake coin that looks identical to a real,
+fair coin. The fake coin has a 80% chance of getting heads. Your friend is
+suspicious, so your friend gets to pick ﬁrst from the two coins randomly,
+with equal probability. You are forced to take the other coin. You will both
+use your own coin for all three coin ﬂips. The game begins, and your friend
+ﬂips the coin once and gets heads.
+(a) Given that your friend’s ﬁrst coin ﬂip returns heads, what is the prob-
+ability that your friend got the fake coin, to your disadvantage?
+(b) Given that your friend’s ﬁrst coin ﬂip returns heads, what is the prob-
+ability that you will win the game? (Use your answer in part (a).)
+Solution: (a) Deﬁne the following events: E1: Your friend got the fake coin. E2:
+Your friend got the real coin. H: Your friend’s coin ﬂip returns heads.
+T : Your friend’s coin ﬂip returns tails.
+We want to know p(E1|H).
+We know that p(H) + p(T ) = 1, p(E1) + p(E2) = 1.
+Then we have:
+p(E1|H)· p(H) = p(H|E1)· p(E1)
+p(E1|H) = 0.8· 0.5/p(H) = 0.4/(0.5· 0.8 + 0.5· 0.5) = 0.4/0.65 = 8/13
+(b) There are two scenarios to consider: You have the real coin or the
+fake coin. In either case you must have at least 2 heads to consider
+winning.
+You have real coin: Chance of friend having 1 heads = 0.2·0.2, multiply
+chance of you having 2 heads or more = 0 .5· 0.5· 0.5· 4, makes 0.02.
+Chance of friend having 2 heads = 0.8 * 0.2 * 2, multiply chance of you
+having 3 heads = 0.5 * 0.5 * 0.5, makes 0.04. Add the two probabilities
+for 0.06, multiplied with chance in (a) = 0.48/13.
+You have fake coin: Chance of friend having 1 heads = 0.5·0.5, multiply
+chance of you having 2 heads or more = 0 .8· 0.8· 0.2· 3 + 0.8· 0.8· 0.8,
+makes 0.224. Chance of friend 2 heads = 0 .5· 0.5· 2, multiply chance
+of you having 3 heads = 0 .8· 0.8· 0.8, makes 0.256. Add the two
+probabilities for 0.48, multipled with chance in (b) = 2.4/13.
+Total = 2.88/13≈ 22%.
+8
+
+PDF 2017-final.pdf PAGE 9
+4 marks if the two cases are set up correctly and the student attempted
+to calculate most cases correctly but made minor mistakes. 3 marks
+if the two cases are set up correctly and the student missed some
+cases/mistakes or did not use combinatorics. 2 marks if there are
+many mistakes.
+Grading scheme: 4,5
+9
+
+PDF 2017-final.pdf PAGE 10
+Problem 6: [7 pts] 64 fair coins are ﬂipped independently randomly and then arranged
+in an 8 by 8 block randomly without looking. Each row contains eight coins
+and there are eight rows. If all eight coins in a row have the same symbol
+(heads or tails), we call it a homogeneous row. Let X denote the number
+of homogeneous rows in the block.
+(a) If all coin ﬂips come up heads, what is the value of X?
+(b) Calculate p(X = 1)
+(c) Calculate E(X)
+(d) Calculate V (X)
+Solution: (a) 8.
+(b) For any given row, the chance it is homogeneous is (1 /2)8· 2 = (1/2)7
+(all heads or all tails). The chance that it is not homogeneous is
+(1− (1/2)7). Overall, seven rows must not be homogeneous and one
+row must be homogeneous, so p(X = 1) = 8(1/2)7(1− (1/2)7)7.
+(c) Consider the homogeneity of each row as its own indicator variable
+Xi, all Xi are mutually independent. So E(X) = 8E(X1) = 8(1/2)7.
+(d) As above, V (X) = 8V (X1) = 8(1/2)7(1− (1/2)7).
+Grading scheme: 1,2,2,2
+10
+
+PDF COMP2711_F2023_Midterm.pdf PAGE 17
+Problem 8: Conditional Probability [8 pts]
+Two computers, a sender and a receiver, are communicating with each
+other. The sender transmits bit 1 with a probability of 30% and bit 0 with
+a probability of 70%. The communication channel is noisy, and we know
+the following information about the transition of data:
+1. If the sent bit is 0, there is a 90% probability that the receiver will
+receive bit 0 and a 10% probability that it will receive bit 1.
+2. If the sent bit is 1, there is an 80% probability that the receiver will
+receive bit 1 and a 20% probability that it will receive bit 0.
+Given that the receiver computer received bit 0, determine the probability
+that the bit being sent was also 0.
+Answer: Denote the bit sent by the sender to be S and the bit received by the
+receiver to be R.
+We know that:
+p(S = 1) = 0.3, p (S = 0) = 0.7
+p(R = 1 | S = 1) = 0.8, p (R = 0 | S = 1) = 0.2
+p(R = 1 | S = 0) = 0.1, p (R = 0 | S = 0) = 0.9
+By the Bayes’ theorem,
+p(S = 0 | R = 0)
+= p(R = 0 | S = 0) p(S = 0)
+p(R = 0)
+= p(R = 0 | S = 0) p(S = 0)
+p(R = 0 | S = 1) p(S = 1) + p(R = 0 | S = 0) p(S = 0)
+= 0.9 × 0.7
+0.2 × 0.3 + 0.9 × 0.7
+= 21
+23
+= 0 .913
+Marking scheme: 8 points
+1) You will get 2 points if you successfully conclude the know conditional
+probabilities.
+2) You will then get 2 points if you then show the correct expression of
+Baye’s theorem.
+so, 4 points if you know Baye’s theorem.
+3) You will then get 3 points if you write the correct expression: 0.9×0.7
+0.2×0.3+0.9×0.7
+17
+
+PDF COMP2711_F2023_Midterm.pdf PAGE 18
+4) The final calculation accounts for 1 point, if you get 21/23 or 63/69 or
+0.63/0.69, you can earn this 1 point.
+Incorrect conditional probabilities and calculation may cause lose of points.
+18
+
+PDF COMP2711_S2025_Final.pdf PAGE 15
+Question 11: Conditional Probability [7 pts]
+A man is known to tell the truth with probability 3
+4 (independent of the
+event outcome) and can only respond with “YES” or “NO”. He rolls a fair
+six-sided die and is then asked whether the die landed on 6. He responds,
+“YES”! What is the probability that the die actually landed on 6? Justify
+your answer.
+Answer: There are two scenarios in which the man responds YES: either he is being
+truthful, or he is not. Note that his truthfulness is independent of the die’s
+outcome.
+Let S be the event of rolling a six, P (S) = 1
+6.
+Let ¯S be the event of not rolling a six, P ( ¯S) = 5
+6.
+Let T be the event that the man tells the truth, regardless of the outcome,
+P (T ) = 3
+4.
+Let ¯T be the event that the man does not tell the truth, regardless of the
+outcome, P ( ¯T ) = 1
+4.
+Let M be the event that the man responds “YES” when asked if the die
+landed on 6. We want to find P (S | M).
+First Solution: Using the Bayes’ theorem:
+P (S | M) = P (M | S)P (S)
+P (M | S)P (S) + P (M | ¯S)P ( ¯S) =
+3
+4 · 1
+6
+3
+4 · 1
+6 + 1
+4 · 5
+6
+= 3
+8
+Second Solution:
+P (M) = P (S ∩ T ) + P ( ¯S ∩ ¯T ) = 1
+6 · 3
+4 + 5
+6 · 1
+4 = 8
+24
+P (S ∩ M) = 3
+4 · 1
+6 = 3
+24
+P (S | M) = P (S ∩ M)
+P (M) =
+3
+24
+8
+24
+= 3
+8
+15
+
+PDF 2019-final.pdf PAGE 13
+Student ID:
+Problem 11: [11 pts]
+Recall that we gave two explanations for the Monty Hall game. The
+ﬁrst is an intuitive one: Our initial guess is correct with probability 1
+3,
+which is not aﬀected by Monty opening another door, so switching will
+give us a winning probability of 2
+3. Then we gave a formal proof that
+p(W = 1 | M = 2) = p(W = 1) = 1
+3, where W denotes the winning
+door and M the door Monty opens. Below, we will see that the intuitive
+explanation only “happens” to be correct in this case, and can easily go
+wrong if we slightly perturb the probabilities.
+Now, suppose that the probabilities of the 3 doors having the prize are
+0.5, 0.3, and 0.2, respectively. Then obviously we should pick door 1 as
+our initial guess. Then Monty will open one of door 2 or 3 without the
+prize. If neither has the prize, he will pick one of them randomly with
+equal probability.
+(a) Suppose M = 2, i.e., Monty opens door 2. What is p(W = 1 |M =
+2) and p(W = 3 | M = 2)? Based on your calculation, should you
+switch to door 3?
+(b) Now suppose M = 3, i.e., Monty opens door 3. What is p(W = 1 |
+M = 3) and p(W = 2 |M = 3)? In this case, should you switch to
+door 2?
+(c) What’s the winning probability of your strategy above?
+(d) Can you design a better strategy? What’s its winning probability?
+[Hint: What is “obvious” is not obvious.]
+Answer: (a) By the Bayes’ theorem,
+p(W =w |M = 2) = p(M = 2 |W =w)p(W =w)
+p(M = 2) ,
+where p(M = 2) = ∑3
+w=1p(M = 2 | W = w)p(W = w). We have
+p(W = 1) = 0.5,p (W = 2) = 0.3,p (W = 3) = 0.2, p(M = 2 | W =
+1) = 1
+2,p (M = 2 | W = 2) = 0,p (M = 2 | W = 3) = 1. Plugging
+in these numbers, we obtain p(M = 2) = 0.45 and p(W = 1 | M =
+2) = 5
+9, p(W = 3 |M = 2) = 4
+9. So, we should not switch. Contrary
+to our intuition, the probability that our initial guess is correct has
+increased after door 2 is opened!
+(b) Same as above, but with p(M = 3 | W = 1) = 1
+2,p (M = 3 | W =
+2) = 1 ,p (M = 3 | W = 3) = 0. Plugging in these numbers, we
+obtain p(M = 3) = 0 .55 and p(W = 1 | M = 3) = 5
+11, p(W =
+2 | M = 3) = 6
+11. So, we should switch to door 2. This time, the
+probability that our initial guess is correct has decreased.
+(c) Let E denote the event that you win. We have p(E) =∑3
+m=2p(M =
+m)p(E | M =m) = 0.45 · 5
+9 + 0.55 · 6
+11 = 0.55.
+Alternatively, p(E) = p(W = 1,M = 2) + p(W = 2,M = 3) =
+0.5 · 0.5 + 0.3 · 1 = 0.55.
+13
+
+PDF 2019-final.pdf PAGE 14
+(d) We pick door 3 ﬁrst, then always switch. The winning probability is
+p(E) =p(W = 1,M = 2) +p(W = 2,M = 1) = 0.5 · 1 + 0.3 · 1 = 0.8.
+Grading Scheme: 3,3,2,3
+14
+
+PDF 2022-final-part-2.pdf PAGE 1
+COMP 2711 Discrete Mathematical Tools for Computer Science
+2022 Spring Semester – Final Exam (Part 2)
+Note 1: For all non-proof questions, showing your steps is not necessary unless
+required otherwise. However, in case your answer is wrong, showing your steps
+may earn you some partial credits.
+Note 2: You can express your answers using binomial coeﬃcients, factorials, and
+Dn (derangement number). However, you should not have summation∑in your
+ﬁnal answers. For example,
+(10
+3
+)
+D9 +4! and 1!+2!+3!+4! are valid, but ∑n
+i=0
+(n
+i
+)
+or
+(n
+0
+)
++
+(n
+1
+)
++··· +
+(n
+n
+)
+is not. The latter has to be simpliﬁed to 2 n.
+Question 1: (8 pts) Prove that in an undirected graph G = (V, E), if|E| >
+(|V|−1
+2
+)
+, then
+G is connected.
+Solution: Before we give a correct proof here, let us look at an incorrect proof that
+students often give for this exercise. It goes something like this. ”Suppose
+that the graph is not connected. Then no vertex can be adjacent to every
+other vertex, only to at most n− 2 other vertices. One vertex connected to
+n− 2 other vertices creates a component with n− 1 vertices in it. To get
+the most edges possible, we must use all the edges in this component. The
+number of edges in this component is thus C(n− 1, 2) = (n− 1)(n− 2)/2,
+and the other component (with only one vertex) has no edges. Thus we have
+shown that a disconnected graph has at most (n−1)(n−2)/2 edges, so every
+graph with more edges than that has to be connected.” The fallacy here
+is in assuming-without justiﬁcation-that the maximum number of edges is
+achieved when one component has n− 1 vertices. What if, say, there were
+two components of roughly equal size? Might they not together contain
+more edges? We will see that the answer is ”no”, but it is important to
+realize that this requires proof-it is not obvious without some calculations.
+Here is a correct proof, then. Suppose that the graph is not connected.
+Then it has a component with k vertices in it, for some k between 1 and
+n− 1, inclusive. The remaining n− k vertices are in one or more other
+components. The maximum number of edges this graph could have is then
+C(k, 2)+C(n−k, 2), which, after a bit of algebra, simpliﬁes tok2−nk+(n2−
+n)/2. This is a quadratic function of k. It is minimized when k = n/2 and
+maximized at two extreme values of the range, namely k = 1 and k = n−1.
+In the latter two cases its value is ( n− 1)(n− 2)/2. Therefore the largest
+number of edges that a disconnected graph can have is ( n− 1)(n− 2)/2, so
+every graph with more edges than this must be connected.
+This contradicts|E| >
+(v−1
+2
+)
+, so the assumption is wrong, G is connected.
+Question 2: (10 pts) Consider the following 5-door version of the Monty Hall problem.
+There are 5 doors, behind one of which (randomly with equal probability)
+
+PDF 2022-final-part-2.pdf PAGE 2
+there is a car (which you want), and behind the rest of which there are
+goats (which you don’t want). You choose a door. Monty then opens 2
+goat doors. Assume that Monty knows which door has the car, and will
+choose with equal probabilities from all his choices of which goat doors to
+open. Without loss of generality, assume your ﬁrst guess is door 1. Let W
+be the random variable denoting the door with the car and M the random
+variable denoting the two doors that Monty opens. Note thatM is a random
+variable whose value is a subset of {1, 2, 3, 4, 5}.
+(a) (2 pts) What is P (M ={2, 3}| W = 1)? What is P (M ={3, 5}|
+W = 1)?
+(b) (2 pts) What is P (M ={2, 3}| W = 2)?
+(c) (2 pts) What is P (M ={3, 4}| W = 2)? What is P (M ={3, 5}|
+W = 4)?
+(d) (2 pts) What is P (M ={3, 4})?
+(e) (2 pts) What is P (W = 2| M ={3, 4})?
+Solution: (a) P (M ={2, 3}| W = 1) = P (M ={3, 5}| W = 1) = 1/
+(4
+2
+)
+= 1/6.
+(b) P (M ={2, 3}| W = 2) = 0
+(c) P (M ={3, 4}| W = 2) = P (M ={3, 5}| W = 4) = 1/
+(3
+2
+)
+= 1/3.
+(d) P (M ={3, 4}) = P (M ={3, 4}| W = 1)· P (W = 1) + P (M =
+{3, 4}| W = 2)· P (W = 2) + P (M ={3, 4}| W = 5)· P (W = 5) =
+1/6· 1/5 + 1/3· 1/5 + 1/3· 1/5 = 1/6.
+(e) P (W = 2| M ={3, 4}) = P (M ={3,4}|W =2)·P (W =2)
+P (M ={3,4}) = 1/3·1/5
+1/6 = 2/5.
+Question 3: (6 pts) Solve the following system of congruences:
+5x + 9y≡ 5 (mod 11) ,
+3x− 4y≡ 2 (mod 11) .
+Solution:
+x≡ 9 (mod 11) ,
+y≡ 9 (mod 11) .
+Question 4: (6 pts) A basketball player makes 80% of his free throws. We put him on
+the free-throw line and ask him to shoot free throws until he misses one. Let
+X = the number of free throws the player takes until he misses (including
+the last one that he misses).
+
+PDF 2016-final.pdf PAGE 3
+Seat Number:
+Problem 1: [13 pts] You are given two fair dice where each dice has the number 1 to 6
+printed on it. You are also given one wheel so that a random spin of the
+wheel returns an integer from 2 to 12 in a uniform distribution. Answ er
+the following questions.
+(a) What is the probability to have a sum larger than 5 (excluding 5)
+when the two dice are tossed at the same time?
+(b) You are now playing a boardgame. Each time you move your token x
+steps forward if you spin the wheel and obtain a number x. What is
+the expected number of steps moved if you spin the wheel 5 times?
+(c) In the same boardgame mentioned in part (b), assume that you win
+the game if and only if you can move your token 10 steps or more with
+only 2 spins or fewer. What is your winning probability? (You win if
+you have moved the token 10 steps or more .)
+(d) In the same boardgame mentioned in part (b) and part (c), but you
+roll a pair of dice and take the sum of the two dice as the number x
+instead of spinning the wheel. Assume that you win the game if and
+only if you can move your token 10 steps or more with only 2 rolls or
+fewer, is your winning probability the same? If yes, brieﬂy explain
+your answer. If no, please identify whether spinning wheel or rolling
+a pair of dice has a higher probability of winning and brieﬂy explain
+your answer.
+Solution: (a) 5+6+5+4+3+2+1
+36 = 26
+36
+(b) E(5x) = 5 E(x) = 5 2+3+4+5+6+7+8+9+10+11+12
+11 = 35
+(c) P (Win) = P (Win with one spin only)+ P (Win with exactly two spins)
+Win with one spin only: The ﬁrst spin has to be 10, 11, or 12.
+P (Win with one spin only) = 3
+11
+Win with exactly two spins: The ﬁrst spin is s where s can be 2 to 9.
+The second spin has to be at least 10 − s. If s = 2, the second spin
+can be 8, 9, 10, 11, 12; if s = 3, the second spin can be 7, 8, 9, 10, 11,
+12, etc.
+P (Win with exactly two spins) =
+8∑
+s=2
+( 1
+11)( s + 3
+11 ) + 1
+11 ·11
+11
+= 67
+121
+P (Win) = 100
+121
+3
+
+PDF 2016-final.pdf PAGE 5
+Seat Number:
+Problem 2: [12 pts] Assume that f (x) is a linear function in the form of f (x) = ax + b
+where a and b are real numbers. Let n be a random variable with mean
+m and variance v. Expressing the following in terms of a, b, m, v and some
+constants. Show your steps .
+(a) Variance of f (n).
+(b) Expectation of f (n2).
+(c) Expectation of f (n)2.
+(d) Expectation of f (n)f (p), if p is another random variable that is inde-
+pendent of n and has the same distribution as n.
+Solution: Assume that S is the sample space of n.
+(a) Variance of f (n), ﬁrst need to ﬁnd E(f (n)). By the linearity of ex-
+pectation, E(f (n)) = am + b.
+V ar(f (n)) =
+∑
+x:x∈S
+p(x)(ax + b − E(f (n))2
+=
+∑
+x:x∈S
+p(x)(ax + b − am − b)2
+=
+∑
+x:x∈S
+p(x)a2(x − m)2
+= a2 ∑
+x:x∈S
+p(x)(x − m)2 = a2v.
+(b) Expectation of f (n2):
+E(f (n2)) =
+∑
+x:x∈S
+p(x)(ax2 + b)
+= a
+∑
+x:x∈S
+p(x) ·x2 +
+∑
+x:x∈S
+p(x) ·b
+= a
+∑
+x:x∈S
+p(x) ·x2 + b
+v = V ar(n) = (
+∑
+x:x∈S
+p(x)x2) − m2
+E(f (n2)) = a(v + m2) + b
+5
+
+PDF 2016-final.pdf PAGE 6
+(c) Expectation of f (n)2:
+E(f (n)2) =
+∑
+x:x∈S
+p(x)(ax + b)2
+=
+∑
+x:x∈S
+p(x)(a2x2 + 2abx + b2)
+= a2(v + m2) + 2abm + b2
+(d) By expected product of independent random variables, mean o f f (n)f (p) =
+E(f (n))E(f (p)). Thus,
+E(f (n)f (p)) = E(f (n))E(f (p))
+= E(f (n))E(f (n))
+= (am + b)2
+Suggested Marking: 3 pts each. Missing steps -1 pt for each part.
+6
+
+PDF 2018-final.pdf PAGE 11
+Problem 8: [8 pts] Consider throwing m balls into n boxes at random. The probability
+that a ball ends up in any given box is 1
+n. After all balls have been thrown,
+let X be the number of balls in the ﬁrst box and Y be the number of boxes
+that are empty.
+a) What is E(X)?
+b) What is V (X)?
+c) What is E(Y )?
+Show the steps of your calculations.
+Solution: 1. E(X): Each ball assignment is a Bernoulli trial with probability 1
+nof success, and there are m trials. Therefore, X follows the Binomial
+distribution for which we know E(X) = m
+(1
+n
+)
+= m
+n
+Alternative solution:
+Let Xi be the indicator random variable such that Xi = 1 if the i-th
+ball is in the ﬁrst box, Xi = 0 otherwise. Obviously, X =
+m∑
+i=1
+Xi. For
+1≤ i≤ m, E(Xi) = P (ball i in the ﬁrst box) = 1
+n.
+Therefore,
+E(X) = E(
+m∑
+i=1
+Xi) =
+m∑
+i=1
+E(Xi) =
+m∑
+i=1
+1
+n = m
+n
+2. V (X): Each ball assignment is a Bernoulli trial with probability 1
+n of
+success, and there are m trials. Therefore, X follows the Binomial dis-
+tribution for which we know V (X) = m
+(1
+n
+)(
+1− 1
+n
+)
+= m(n− 1)
+n2 .
+Alternative solution:
+V (X) = V (
+m∑
+i=1
+Xi) =
+m∑
+i=1
+V (Xi) since Xi and Xj are independent for
+i̸= j.
+For 1≤ i≤ m, V (Xi) = (0− E(Xi))2
+(n− 1
+n
+)
++(1− E(Xi))2
+(1
+n
+)
+=
+n− 1
+n3 + (n− 1)2
+n3 = n(n− 1)
+n3 = n− 1
+n2
+Therefore, V (X) =
+m∑
+i=1
+n− 1
+n2 = m(n− 1)
+n2
+11
+
+PDF COMP2711_F2025_Midterm.pdf PAGE 21
+Problem 10: Random Variable [10 points]
+(a) [6 points, 2 pts each] Let X1, X2, . . . , X100 be the outcomes of 100
+independent rolls of a fair die.
+(i) [2 points] What are E(X1) and var(X1)?
+(ii) [2 points] Define the random variable Y to be X1 − 2X2 + X3.
+What are E(Y ) and var(Y )?
+(iii) [2 points] Define the random variable Z = X1 − X2 + X3 − X4 +
+· · · + X99 − X100. What are E(Z) and var(Z)?
+21
+
+PDF COMP2711_F2025_Midterm.pdf PAGE 22
+(b) [4 points] Assume two scenarios.
+Scenario 1: Roll 1 fair die and take the square of the number that
+comes up.
+Scenario 2: Roll 2 fair dice and multiply the outputs.
+Which expected value is higher? Explain your reason.
+Answer: (a) (i) For a fair die, each outcome X1 is uniformly distributed over
+{1, 2, 3, 4, 5, 6}. The expected value is:
+E(X1) = 1 + 2 + 3 + 4 + 5 + 6
+6 = 21
+6 = 3.5
+The variance is:
+var(X1) = E(X 2
+1) − [E(X1)]2
+where E(X 2
+1) = 12+22+32+42+52+62
+6 = 91
+6 , so:
+var(X1) = 91
+6 −(3.5)2 = 91
+6 − 12.25
+1 = 91
+6 − 73.5
+6 = 17.5
+6 ≈ 2.9167
+(ii) For X = X1 − X2, since X1 and X2 are independent:
+E(X) = E(X1) − E(X2) = 3.5 − 3.5 = 0
+var(X) = var(X1) + var(X2) = 17.5
+6 + 17.5
+6 = 35
+6 ≈ 5.8333
+(iii) For Y = X1 − 2X2 + X3, since X1, X2, X3 are independent:
+E(Y ) = E(X1) − 2E(X2) + E(X3) = 3.5 − 2 · 3.5 + 3.5 = 0
+var(Y ) = var(X1)+(−2)2var(X2)+var(X3) = 17.5
+6 +4·17.5
+6 +17.5
+6 = 105
+6 = 17.5
+(iv) For Z = X1 − X2 + X3 − · · · + X99 − X100, there are 50 positive
+terms and 50 negative terms:
+E(Z) =
+50X
+i=1
+E(X2i−1) −
+50X
+i=1
+E(X2i) = 50 · 3.5 − 50 · 3.5 = 0
+var(Z) =
+50X
+i=1
+var(X2i−1)+
+50X
+i=1
+var(X2i) = 50·17.5
+6 +50·17.5
+6 = 100·17.5
+6 = 1750
+6
+(b) Let a and b be values of the two die rolls. The expected value of squar-
+ing the the first roll is E(a2) , and the expected value of multiplying
+the two values is E(ab). Since we can assume the two die rolls are iid,
+we have E(ab) = E(a)E(b) = E(a)2
+Since the difference between these two expected values is equal to the
+variance, V ar(a) = E(a2) − E(a)2 it must be nonnegative. Therefore,
+we have E(a2) ≥ E(a)2 so the expected value of squaring the result of
+one die roll is higher.
+22

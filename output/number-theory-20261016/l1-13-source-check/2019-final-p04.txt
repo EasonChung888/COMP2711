@@ -1,0 +1,17 @@
+Student ID:
+Problem 2: [4 pts] Solve the following system of linear congruences by the Chinese
+remainder theorem. Show all steps except the extended Euclidean algo-
+rithm.
+
+x ≡ 4 (mod 9)
+
+x ≡ 8 (mod 14)
+ x ≡ 3 (mod 5)
+Answer: Let m = 9·14·5 = 630. M = 14·5 = 70, M = 9·5 = 45, M = 9·14 =
+1 2 3
+126. By the extended Eucildean algorithm, we find that 4 is an inverse
+of M (mod 9), 5 is an inverse of M (mod 14) and 1 is an inverse of M
+1 2 3
+(mod 5). Hence, x = 4·70·4+8·45·5+3·126·1 = 3298 ≡ 148 (mod
+630).
+4

@@ -1,0 +1,25 @@
+ Problems with secret-key cryptography
+
+▪ How to send the secret key?
+   ▪ Keys had to be transmitted in physical form in
+     World War II
+▪ Electronic keys in modern days, but still have to be
+  delivered physically for maximum security
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                9

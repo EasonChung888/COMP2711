@@ -1,0 +1,16 @@
+ RSA in Use
+
+
+▪ How to prevent man-in-the-middle attacks?
+▪ How to make sure that Alice’s public key indeed
+  belongs Alice?
+▪ Certificate authority    (CA)
+   ▪  A small number of trusted third parties:
+      Comodo, Symantex, GoDaddy, GlobalSign, …
+▪ How to make sure that a CA’s public key indeed
+  belongs to that CA?
+▪ Built into Internet browsers
+▪ How can I trust my browser and the CAs?
+▪ Well, you have to …
+
+                                                                 25

@@ -1,0 +1,20 @@
+ Monty Hall Problem (cnt’d)
+
+ Explanation using Bayes’ theorem
+ 𝑊:  the door with the prize
+ 𝑀:  the door Monty (the host) opens
+ We know:
+                𝑝 𝑊  = 1  = 𝑝 𝑊  = 2  = 𝑝 𝑊  = 3  = 1/3
+ Suppose we pick door 1 first. Then Monty opens door 𝑀:
+             𝑝 𝑀  = 2 𝑊  = 1)=  1/2,𝑝 𝑀  = 3 𝑊 =  1)= 1/2
+             𝑝 𝑀  = 3 𝑊  = 2)=  1
+             𝑝 𝑀  = 2 𝑊  = 3)=  1
+ Suppose Monty opens door 2. Then
+  𝑝 𝑊 = 1 𝑀 =2
+  =                       𝑝 𝑀 = 2𝑊 = 1 𝑝𝑊  =1
+    𝑝 𝑀 = 2𝑊 = 1 𝑝𝑊  =1 + 𝑝 𝑀 = 2𝑊 = 2 𝑝𝑊  =2 + 𝑝 𝑀 = 2𝑊 = 3 𝑝𝑊  =3
+  = 1
+    3
+ 𝑝 𝑊 = 3 𝑀 =2  = 2
+                 3
+ Switch                                                            22

@@ -1,0 +1,15 @@
+ Multiplicative Inverses
+▪ Theorem
+  For any 𝑎   ∈ 𝐙𝑚, 𝑚  > 1, if gcd(𝑎,𝑚)  = 1  then 𝑎  has a
+  unique inverse in 𝐙𝑚.
+▪ Corollary
+  For any prime 𝑝,    every nonzero 𝑎    ∈ 𝐙𝑝  has a
+  multiplicative inverse.
+▪ Proof of Theorem
+  Since gcd(𝑎,  𝑚)  = 1, by Bézout’s   Theorem, there are
+  integers s  and t  such that 𝑠𝑎   + 𝑡𝑚  = 1.
+   ▪ Hence, 𝑠𝑎   =   −𝑡  𝑚 +  1
+   ▪ Since 𝑡𝑚   ≡ 0 (mod  𝑚), it follows that
+     𝑠𝑎  ≡ 1  mod  𝑚  .
+   ▪ Since s  may not be in 𝐙𝑚    , we write   𝑠 mod  𝑚   ⋅𝑚 𝑎 = 1
+   ▪ Consequently, s     mod m    is the inverse of a in 𝐙𝑚.   11

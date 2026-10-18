@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "这是一套可执行的方法：检查互素 → 记录除法步骤 → 反向代回得到 $1$ → 取对应系数的标准余数 → 乘回验算。",
+      "repair": "把各步骤直接体现在3模7的求解中，不在末尾再列一次路线。",
+      "evidence": "这是一套可执行的方法：检查互素 → 记录除法步骤 → 反向代回得到 $1$ → 取对应系数的标准余数 → 乘回验算。"
+    }
+  ],
+  "facts": [
+    "gcd1扩展Euclid得sa+tm1取a系数smodm非m系数。",
+    "7=2×3+1 gives1=-2×3+7，-2mod7=5，验3×5=15=2×7+1；-2,5同类。",
+    "流程先gcd除法回代标准系数验算；gcd非1仍线性组合但非逆元证。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:59:00.535486+00:00"
+}

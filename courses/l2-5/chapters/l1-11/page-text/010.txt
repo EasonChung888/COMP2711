@@ -1,0 +1,20 @@
+ Expected Value
+
+▪ Definition
+  The expected value (or expectation or mean) of a
+  random variable 𝑋      is
+                      𝐸 𝑋   = ෍   𝑝 𝑠  𝑋(𝑠)
+                              𝑥∈𝑆
+▪ Example
+  Let X  be the number that comes up when a fair            dice is
+  rolled. What is the expected value of        X?
+▪ Solution
+  The random variable 𝑋       takes the values 1, 2, 3, 4, 5,
+  or 6. Each has probability 1/6. It follows that
+
+
+
+
+
+
+                                                                 10

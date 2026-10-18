@@ -1,0 +1,21 @@
+ Random Numbers
+
+
+ Random numbers are needed for many purposes
+    Computer games
+    Computer simulation
+    Gambling
+    …
+ But how to generate
+  random numbers?
+    rand()
+
+
+
+
+
+
+
+
+
+                                                        29

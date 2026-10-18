@@ -1,0 +1,18 @@
+ Geometric Distribution
+
+▪ Theorem
+  Let 𝑋  be the number of independent Bernoulli trials
+  until success and the probability of success is p. Then
+             𝑝(𝑋  = 𝑘) =  (1 − 𝑝)𝑘−1𝑝
+▪ Note: 𝑋   follows a geometric distribution
+▪ Check:   σ∞    (1 −  𝑝)𝑖𝑝 =  1
+              𝑖=0
+▪ Example:
+  Experiment: Roll 2 dice, probability of seeing a sum of
+  6 is 5/36. Let random variable X be number of trials
+  until getting a sum of 6.
+▪ 𝑝  X = 3  =  (31)2 ( 5)
+                36    36
+
+
+                                                                  9

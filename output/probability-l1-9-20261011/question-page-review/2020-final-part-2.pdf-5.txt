@@ -1,0 +1,35 @@
+Exactly 1 digit appears in its index position means that, we randomly
+select 1 digit and put it in its index position and dearrange the re-
+maining 9 digits. So the answer is,
+(10
+1
+)
+D9 = 10· D9
+(b) If 9 digits appear in their corresponding index positions, the remaining
+one digit must also appear in its index position, so the answer is 0.
+(c) Fix the ﬁrst two digits, and the remaining 8 digits are randomly per-
+muted, so the answer is 8!.
+(d) Fix the middle two digits, and the remaining 8 digits are randomly
+permuted, so the answer is 8!.
+(e) We let A, B, C, D denote the sets of permutations that satisfy the
+above conditions (a), (b), (c), (d), respectively. Obviously, B = ∅,
+and we want to calculate|A∪ B∪ C∪ D| =|A∪ C∪ D|.
+Considering set A∩ C, ﬁxed the ﬁrst two digits, and pick 1 digit
+from{2, 3, ...,9} to put in the corresponding index position and then
+dearrange the remaining 7 digits. Thus,
+|A∩ C| = 8· D7
+Considering set C∩ D, ﬁx 4 digits and randomly permute the remain-
+ing, thus,
+|C∩ D| = 6!
+Considering set A∩ D, middle two index is 4 and 5, so A∩ D = ∅.
+And A∩ C∩ D = C∩ ∅ = ∅. So,
+|A∩ D| =|A∩ C∩ D| = 0
+By using inclusion-exclusion theorem,
+|A∪ C∪ D| =|A| +|C| +|D|−| A∩ C|−| A∩ D|−| C∩ D| +|A∩ C∩ D|
+= 10· D9 + 2· 8!− 8· D7− 6!
+Bonus: (10 pts) During a game show, two players are competing for a prize accord-
+ing to the following rule. They take turns to answer a randomly chosen
+question, and if the answer is wrong, the player will be eliminated. The
+player who remains last will be the winner. Suppose each question can be
+answered correctly with probability 1 /2 by any player.
+(a) (2 pts) Is this a fair game? If not, who has an advantage?

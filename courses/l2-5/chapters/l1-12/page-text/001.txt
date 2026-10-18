@@ -1,0 +1,17 @@
+ Part II: Number Theory
+
+ Number theory is the part of mathematics
+  devoted to the study of the integers and
+  their properties.
+ Number theory has a long history.
+     E.g.: Chinese Remainder Theorem
+      1700 years old
+ For a long time, it had been regarded as
+  pure mathematics       and useless.
+     G. H. Hardy (prominent British mathematician):
+      Pure mathematics is “beautiful” and “useless”.
+      Applied mathematics is “trivial”, “ugly”, and “dull”
+ However, number theory has found numerous
+  applications in computer science in recent decades.
+
+                                                                  1

@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "本页本身没有加入新的应用公式，起的是章节转场作用。",
+      "repair": "在介绍蓝色目录项时一次交代转场，不在末尾再说明页面作用。",
+      "evidence": "本页本身没有加入新的应用公式，起的是章节转场作用。"
+    }
+  ],
+  "facts": [
+    "蓝色Applications最后部分从性质转应用，目录本身无新公式。",
+    "工具为整除整数倍、带余除法唯一余数、加乘先模、同余替换复杂数，将大整数化有限余数。",
+    "读应用先认模数和整数意义，再看规则，不能只背公式忽略范围问题。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:53:54.117888+00:00"
+}

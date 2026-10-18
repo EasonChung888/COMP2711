@@ -1,0 +1,20 @@
+ RSA Decryption
+
+
+▪ Bob receives 𝐶
+▪ Bob decrypts 𝑥    from 𝐶   using his private key (𝑝,   𝑞)
+   ▪ Find 𝑑, the inverse of 𝑒    modulo     𝑝−  1  𝑞 − 1  , i.e.,
+                𝑑𝑒  ≡ 1 (mod   𝑝 − 1   𝑞 − 1 )
+   ▪ Compute
+                          𝐶𝑑  mod  𝑛
+▪ Will show later that 𝐶𝑑    ≡  𝑥𝑒  𝑑 ≡ 𝑥𝑑𝑒  ≡ 𝑥 (mod  𝑛)
+▪ Security:
+   ▪ It’s hard to find 𝑑   without knowing (𝑝,    𝑞)
+
+
+
+
+
+
+
+                                                               23

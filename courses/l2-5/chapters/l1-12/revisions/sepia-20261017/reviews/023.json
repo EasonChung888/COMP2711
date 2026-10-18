@@ -1,0 +1,32 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [],
+  "facts": [
+    "a≡b,c≡d同m则差同余，因两差相减仍m倍数；c自同余可两边同加减乘任整数。",
+    "4≡10mod6和2≡2但商2,5不同余；原not≡指推理并非普遍成立非永不成立。",
+    "非整数商不属整数同余域，类似除法需乘法逆元条件。"
+  ],
+  "styleScan": "反例、原页记号澄清和整数定义域限制均不可省；未发现风格缺陷簇，改从合法操作及失败的相除衔接。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:53:42.647122+00:00"
+}

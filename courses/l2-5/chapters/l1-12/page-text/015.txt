@@ -1,0 +1,19 @@
+  Properties of Arithmetic Modulo m
+
+
+  Closure: If 𝑎   and 𝑏   belong to 𝐙𝑚      , then 𝑎   +𝑚  𝑏  and
+   𝑎 ⋅𝑚 𝑏 belong to 𝐙𝑚.
+  Associativity: If 𝑎,   𝑏, and 𝑐  belong to 𝐙𝑚, then
+                   𝑎  +𝑚  𝑏  +𝑚   𝑐 =  𝑎 +𝑚    𝑏 +𝑚  𝑐
+                   𝑎  ∙𝑚 𝑏  ∙𝑚 𝑐  = 𝑎 ∙𝑚  (𝑏 ∙𝑚 𝑐)
+  Commutativity: If 𝑎      and 𝑏   belong to 𝐙𝑚     , then
+                           𝑎 +𝑚  𝑏  =  𝑏 +𝑚  𝑎
+                           𝑎 ∙𝑚 𝑏  = 𝑏 ∙𝑚  𝑎
+  Distributivity:   If a, b, and   c belong to Zm      , then
+                𝑎 ∙𝑚  𝑏 +𝑚   𝑐  =   𝑎 ∙𝑚 𝑏   +𝑚   𝑎  ∙𝑚 𝑐
+
+
+
+
+
+                                                                       15

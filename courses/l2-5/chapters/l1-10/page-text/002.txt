@@ -1,0 +1,17 @@
+ Conditional Probability
+
+
+ Definition: Let E  and F  be events with 𝑝(𝐹)    > 0. The
+  conditional probability of E   given F, denoted by 𝑝(𝐸|𝐹),
+  is defined as:
+                     𝑝 𝐸 𝐹   = 𝑝 𝐸 ∩ 𝐹
+                                 𝑝 𝐹
+
+
+ Corollary 1:
+                    𝑝 𝐸 ∩ 𝐹  =  𝑝 𝐹 𝑝(𝐸|𝐹)
+ Corollary 2:
+                      𝑝 𝐸1 ∩ 𝐸2 ∩ ⋯ ∩ 𝐸𝑛
+= 𝑝 𝐸1 ∩ 𝐸2 ∩ ⋯  ∩ 𝐸𝑛−1 𝑝  𝐸𝑛 𝐸1 ∩ 𝐸2 ∩ ⋯ ∩ 𝐸𝑛−1   = ⋯
+= 𝑝 𝐸1  𝑝 𝐸2 𝐸1 𝑝  𝐸3 𝐸1 ∩ 𝐸2 ⋯  𝑝 𝐸𝑛 𝐸1 ∩ 𝐸2 ∩ ⋯  ∩ 𝐸𝑛−1
+                                                             2

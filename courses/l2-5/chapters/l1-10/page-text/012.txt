@@ -1,0 +1,16 @@
+ Example
+
+ Example:     We have two boxes.
+     Box 1 contains 2 green balls and 7 red balls.
+     Box 2 contains 4 green balls and 3 red balls.
+   Bob first picks one of the boxes at random. Then he
+   selects a ball from that box at random.  If he has a
+   red ball, what is the probability that he picked box 1
+   at first.
+ Solution:
+     E: Bob has chosen a red ball
+     F: Bob has chosen box 1.
+   We are given that 𝑝      𝐸 𝐹   = 7 ,𝑝 𝐸  𝐹ത =  3,𝑝  𝐹  =  1
+                                    9             7          2
+   Applying Bayes’ theorem yields 𝑝          𝐹 𝐸   ≈ 0.645.
+                                                                   12

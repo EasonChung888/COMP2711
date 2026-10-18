@@ -1,0 +1,18 @@
+ Euclidean Algorithm
+
+▪ Idea: To obtain maximum efficiency, choose the
+  smallest 𝑟, i.e., 𝑟 =  𝑎 mod  𝑏 (suppose 𝑎    > 𝑏), and
+  iterate.                 Example:
+
+    gcd(𝑎, 𝑏):               gcd(287,  91)
+    𝑥←  𝑎                  = gcd  91,14
+    𝑦←  𝑏                  = gcd  14,7
+    while  𝑦 ≠ 0
+         𝑟← 𝑥 mod 𝑦        = gcd  7,0
+         𝑥←  𝑦             = 7
+         𝑦←  𝑟           • Correctness of algorithm
+    return  𝑥
+                           follows from previous lemma
+                         • Termination is obvious
+                         • Running time will be analyzed
+                           later                                5

@@ -1,0 +1,35 @@
+Student ID:
+Problem 10: [12 pts] Solve each of these congruences with 0 ≤ x ≤ 103 and 0 ≤ y ≤ 103
+using the result 15·7 ≡ 1 (mod 104).
+(a) 7x ≡ 31 (mod 104)
+(b) 15x+41 ≡ 18 (mod 104)
+(c) 49x ≡ 11 (mod 104)
+(d)
+(cid:26)
+9x+2y ≡ 10 (mod 104)
+x+y ≡ 1 (mod 104)
+Answer: (a)
+7x ≡ 31 (mod 104)
+→ 15·7x ≡ 15·31 (mod 104)
+→ x ≡ 49 (mod 104)
+(b)
+15x+41 ≡ 18 (mod 104)
+→ 15x ≡ −23 (mod 104)
+→ 7·15x ≡ 7(−23) (mod 104)
+→ x ≡ 7(−23) (mod 104)
+→ x ≡ 47 (mod 104)
+(c)
+49x ≡ 11 (mod 104)
+→ 15·7·7x ≡ 15·11 (mod 104)
+→ 7x ≡ 61 (mod 104)
+→ 15·7x ≡ 15·61 (mod 104)
+→ x ≡ 83 (mod 104)
+(d) We have 9x + 2y + (−2)(x + y) ≡ 10 − 2 (mod 104), which is 7x ≡
+8 (mod 104). So,
+7x ≡ 8 (mod 104)
+→ 15·7x ≡ 15·8 (mod 104)
+→ x ≡ 16 (mod 104)
+When x = 16, we have 16 + y ≡ 1 (mod 104), and thus y ≡ −15 ≡
+89 (mod 104).
+Grading Scheme: 2,3,3,4
+12

@@ -1,0 +1,38 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "这是一页目录过渡，没有额外计算。它把古老的余数问题接到本章已经建立的 GCD、Bézout 系数和逆元工具上。",
+      "repair": "将工具联系并入问题说明，末尾不复述目录页作用。",
+      "evidence": "这是一页目录过渡，没有额外计算。它把古老的余数问题接到本章已经建立的 GCD、Bézout 系数和逆元工具上。"
+    }
+  ],
+  "facts": [
+    "蓝CRT最后部分目录无额外计算；单模转同一整数多模指定余数须全满足。",
+    "GCD Bezout逆元用于古余数，模数互素影响存在唯一；区分系数模互素和多模两两互素。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T10:01:45.551474+00:00"
+}

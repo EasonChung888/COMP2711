@@ -1,0 +1,18 @@
+ RSA Correctness Step 1
+
+▪ Proof
+  We know 𝑑    is the inverse of 𝑒  modulo     𝑝 − 1  𝑞 − 1  , so
+                  𝑑𝑒 =  1+  𝑘 𝑝 − 1  𝑞 −  1 .
+  It follows that
+                  𝐶𝑑 ≡   𝑥𝑒 𝑑
+                     ≡  𝑥𝑑𝑒
+                     ≡  𝑥1+𝑘 𝑝−1  𝑞−1   mod  𝑝
+  Case 1: 𝑥  is not a multiple of 𝑝.
+  Applying Fermat’s Little Theorem:
+                   𝑥𝑘(𝑝−1)(𝑞−1) ≡  1 mod   𝑝 ,
+  so
+                  𝑥1+𝑘(𝑝−1)(𝑞−1) ≡  𝑥  mod  𝑝 ,
+
+
+
+                                                              32

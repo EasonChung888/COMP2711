@@ -1,0 +1,18 @@
+ Independence Revisited
+
+
+ Recall the definition of two events being independent
+                      𝑝 𝐸 ∩ 𝐹   = 𝑝 𝐸  𝑝(𝐹)
+ Since 𝑝  𝐸 ∩  𝐹  = 𝑝  𝐹 𝑝(𝐸|𝐹)
+    This always holds whether 𝐸       and 𝐹  are independent
+     or not
+ The independence condition can be rewritten as
+                         𝑝  𝐸|𝐹  =  𝑝(𝐸)
+ Symmetrically, the condition can also be
+                         𝑝  𝐹|𝐸  =  𝑝(𝐹)
+ This gives an alternative and more intuitive definition
+  of independence.
+
+
+
+                                                                7

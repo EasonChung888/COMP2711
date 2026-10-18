@@ -1,0 +1,17 @@
+ Example
+
+ The market share of a particular device is as follows:
+     Company A: 80%
+     Company B: 15%
+     Company C: 5%
+ The defect rate of devices by these companies:
+     Company A: 4%
+     Company B: 6%
+     Company C: 9%
+ Questions
+     Given a random device from the market, what are the
+      probabilities that it is made by these 3 companies,
+      respectively?
+     How do the results change if the random device is found
+      to be defective?
+                                                                      19

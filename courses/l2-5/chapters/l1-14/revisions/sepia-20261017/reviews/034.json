@@ -1,0 +1,41 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "style: abstract recap",
+      "quote": "它把整除、互素、逆元、模幂、费马小定理及中国剩余定理连接起来；",
+      "repair": "保留这些概念在证明中的关系，以具体的推理链表达，避免泛泛总结。",
+      "evidence": "它把整除、互素、逆元、模幂、费马小定理及中国剩余定理连接起来；"
+    }
+  ],
+  "facts": [
+    "所有整数x均有x^ed≡x modp及modq。",
+    "p,q不同素数互素，z≡x modp/modq有z=x及z=x^ed两个解；CRT唯一解类给x^ed≡x modpq。",
+    "等价整除证明：互素p,q各整除差则pq整除差。",
+    "C=x^e modn所以C^d≡x^ed≡x modn，两边标准代表0≤x<n保证C^d modn=x。",
+    "证明覆盖p/q整除消息，连接整除互素逆元模幂FLT CRT；代数恢复不推出保密性签名安全身份认证。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-18T06:10:21.039270+00:00"
+}

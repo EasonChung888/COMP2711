@@ -1,0 +1,29 @@
+ Proof
+
+▪ From the definition of expected value and because X
+  and Y are independent random variables, it follows
+  that
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 30

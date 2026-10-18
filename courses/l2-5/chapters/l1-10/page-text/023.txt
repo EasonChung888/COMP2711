@@ -1,0 +1,21 @@
+ Monty Hall Problem (cnt’d)
+
+ Now suppose:
+         𝑝 𝑊  = 1  = 0.5,    𝑝 𝑊  = 2  = 0.3,    𝑝 𝑊  = 3  = 0.2
+ Suppose we pick door 1 first. Then Monty opens door 2:
+                         𝑝 𝑀  = 2 𝑊  = 1) = 1/2
+                         𝑝 𝑀  = 2 𝑊  = 2) = 0
+                         𝑝 𝑀  = 2 𝑊  = 3) = 1
+ 𝑝  𝑊 =  1 𝑀 = 2  =  𝑝𝑀  = 2 𝑊  = 1 𝑝 𝑊=1
+                             𝑝(𝑀=2)
+=                       𝑝 𝑀  = 2 𝑊 =  1 𝑝𝑊=1
+  𝑝𝑀  = 2 𝑊  = 1 𝑝 𝑊=1 +𝑝 𝑀  = 2 𝑊 =  2 𝑝𝑊=2  +𝑝 𝑀 = 2 𝑊  = 3 𝑝 𝑊=3
+       1(0.5)       5
+= 1    2         =
+  20.5+0 0.3+1(0.2) 9
+ 𝑝  𝑊 =  3 𝑀 = 2  =  4
+                      9
+The probability that our initial pick containing a prize has increased
+after door 2 is opened. So should not switch    to door 3.
+
+                                                                      23

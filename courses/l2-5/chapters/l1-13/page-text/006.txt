@@ -1,0 +1,23 @@
+ gcds      as Linear Combinations
+
+
+▪ Theorem (Bézout’s      Theorem)
+  If 𝑎 and 𝑏  are positive integers, then there exist
+  integers 𝑠  and 𝑡  such that gcd(𝑎,   𝑏) = 𝑠𝑎 + 𝑡𝑏.
+▪ Example
+                  gcd(6,14)  = (−2)  ∙6 + 1 ∙14
+▪ Instead of proving this theorem directly, we give an
+  algorithm to find such 𝑠     and 𝑡.
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                6

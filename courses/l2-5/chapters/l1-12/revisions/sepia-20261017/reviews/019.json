@@ -1,0 +1,33 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [],
+  "facts": [
+    "整数a,b正m，a modm=b modm定义同余，记a≡b(modm)，m叫modulus。",
+    "等价m整除a-b或a=b+mt整数t；17与5模6余5差12，24与14余0/2差10不同余。",
+    "mod二元运算返回整数，≡真假关系不要求右数标准余数；17≡11mod6但17mod6=5≠11。",
+    "等价关系自反对称传递，可按余数分类整数。"
+  ],
+  "styleScan": "定义、术语、正反例及关系/运算区别都直接服务理解；未发现风格簇，重写时先用17与11说明记号差异。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:52:48.788017+00:00"
+}

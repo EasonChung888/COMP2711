@@ -1,0 +1,16 @@
+ The Chinese Remainder Theorem
+
+
+▪ Consider the 3   congruences from Sun-Tsu’s       problem:
+    𝑥 ≡ 2 (mod  3), 𝑥 ≡ 3 (mod  5),  𝑥 ≡ 2 (mod  7).
+▪ Let 𝑚  = 3 ∙5 ∙7 =  105, 𝑀1 =  𝑚/3  = 35, 𝑀2  = 𝑚/5  = 21,
+  𝑀3  =  𝑚/7  = 15.
+▪ We see that
+   ▪ 2 is an inverse of 𝑀1(mod 3)
+   ▪ 1 is an inverse of 𝑀2(mod 5)
+   ▪ 1 is an inverse of 𝑀3(mod 7)
+▪ Hence,
+    𝑥 = 𝑎1𝑀1𝑦1  + 𝑎2𝑀2𝑦2  + 𝑎3𝑀3𝑦3
+     =  2∙ 35 ∙2 + 3 ∙21 ∙1 + 2 ∙15 ∙1 =  233 ≡  23 (mod  105)
+
+                                                             27

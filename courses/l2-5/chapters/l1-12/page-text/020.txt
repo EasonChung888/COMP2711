@@ -1,0 +1,16 @@
+  Modular Arithmetic and Congruences
+
+ Congruences provide another way to express modular
+  arithmetic, by replacing +𝑚, ⋅𝑚     , = with +, ⋅, ≡, adding
+  (mod  𝑚)  in the end.
+ For any integer 𝑎,  𝑏, 𝑐, positive integer 𝑚
+    Associativity:
+              𝑎 + 𝑏  + 𝑐 ≡ 𝑎 +  𝑏 + 𝑐    mod  𝑚
+              𝑎 ⋅𝑏  ⋅𝑐 ≡ 𝑎 ⋅ 𝑏 ⋅𝑐  (mod  𝑚)
+    Commutativity:
+                  𝑎 +  𝑏≡  𝑏 + 𝑎   mod  𝑚
+                  𝑎 ⋅𝑏 ≡  𝑏 ⋅𝑎 (mod  𝑚)
+    Distributivity:
+                𝑎 𝑏 + 𝑐  ≡ 𝑎𝑏 +  𝑎𝑐  (mod  𝑚)
+
+                                                              20

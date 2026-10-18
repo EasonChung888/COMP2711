@@ -1,0 +1,17 @@
+ Modular Arithmetic
+
+
+ Example
+  Prove the property
+              (𝑎 mod 𝑚𝑛)  mod  𝑛 = 𝑎 mod  𝑛
+ Proof:
+    𝑎 = 𝑞𝑚𝑛  + 𝑠,0 ≤ 𝑠 < 𝑚𝑛
+    𝑠=  𝑝𝑛 + 𝑟,0≤  𝑟<  𝑛
+    Then, (𝑎 mod  𝑚𝑛) mod  𝑛 = 𝑟
+    On the other hand
+                   𝑎 = (𝑞𝑚  + 𝑝)𝑛 + 𝑟,
+    So, 𝑎mod  𝑛 =  𝑟
+    The equation is proved.
+
+
+                                                         11

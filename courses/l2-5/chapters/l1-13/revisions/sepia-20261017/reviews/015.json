@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "8 templatedness",
+      "quote": "本页仅提示学习方向，具体方程形式在后续内容中展开。",
+      "repair": "在开头交代目录转场，末尾停在解的含义而非再谈学习方向。",
+      "evidence": "本页仅提示学习方向，具体方程形式在后续内容中展开。"
+    }
+  ],
+  "facts": [
+    "蓝SolvingLinearCongruences第三部分，前置Euclid判互素扩展求逆。",
+    "未知整数同余想孤立未知系数，除需合法逆；先判互素再乘逆。",
+    "解常是同余整数全类非单数；本页无具体方程后续展开。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:59:32.585445+00:00"
+}

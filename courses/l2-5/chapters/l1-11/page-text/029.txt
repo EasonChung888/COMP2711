@@ -1,0 +1,16 @@
+ Example
+
+▪ Let 𝑋  and 𝑌  be random variables that count the
+  number of heads and the number of tails when a fair
+  coin is flipped twice.
+▪ Show that 𝑋   and 𝑌  are not independent.
+   ▪ 𝑝 𝑋  = 2 𝑎𝑛𝑑 𝑌 =  2  = 0
+   ▪ 𝑝 𝑋  = 2  = 1/4, 𝑝 𝑌  = 2  = 1/4
+▪ Check
+   ▪ 𝐸  𝑋𝑌  =  1⋅ 1= 1
+                  2  2
+   ▪ 𝐸  𝑋  = 𝐸  𝑌  = 1
+   ▪ 𝐸  𝑋𝑌  ≠  𝐸 𝑋  𝐸(𝑌)
+▪ Check 𝐸   𝑋 + 𝑌   = 2 = 𝐸  𝑋  + 𝐸(𝑌)
+
+                                                             29

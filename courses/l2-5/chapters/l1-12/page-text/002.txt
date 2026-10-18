@@ -1,0 +1,22 @@
+ L05: Modular Arithmetic
+
+
+ Divisibility
+ Modular Arithmetic
+ Congruences
+ Applications of Modular Arithmetic
+
+
+
+ Reading: Rosen 4.1, 4.5
+
+
+
+
+
+
+
+
+
+
+                                                            2

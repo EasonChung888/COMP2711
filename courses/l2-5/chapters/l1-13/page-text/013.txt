@@ -1,0 +1,17 @@
+ Finding Inverses
+
+▪ Given 𝑎,  𝑚  such that gcd    𝑎,𝑚   = 1, how to find the
+  inverse of 𝑎   in 𝐙𝑚?
+▪ Look at the proof of the previous theorem
+   ▪  Use the extended Euclidean algorithm to find 𝑠          and  𝑡
+      such that 𝑠𝑎   + 𝑡𝑚  = 1
+   ▪  s mod m    is the multiplicative inverse of a in 𝐙𝑚.
+▪ Example
+  Find an inverse of 3     modulo 7
+▪ Solution
+  Using the extended Euclidean algorithm: 7           = 2∙3 + 1.
+  we get −2∙3    + 1∙7 = 1, so 𝑠 =  −2.
+  −2  mod  7 =  5 is the inverse of 3   in 𝐙7
+
+
+                                                                 13

@@ -1,0 +1,17 @@
+ Multiplicative Inverses are Unique
+
+▪ Proof of uniqueness
+   ▪ Suppose 𝑏,    𝑐 are both inverses of 𝑎, i.e.,
+                  𝑎𝑏 ≡  1  mod   𝑚     (1)
+                  𝑎𝑐 ≡  1  mod  𝑚        2
+   ▪ Multiply both sides of      1  by 𝑐:
+                      𝑎𝑏𝑐  ≡ 𝑐   mod  𝑚
+   ▪ Multiply both sides of      2  by 𝑏:
+                      𝑎𝑏𝑐  ≡ 𝑏   mod  𝑚
+   ▪ So 𝑏  ≡  𝑐 (mod  𝑚), i.e., 𝑎 has a unique inverse in 𝐙𝑚      .
+▪ The inverse of 𝑎    is written as 𝑎−1.
+▪ Note: It’s also true that if gcd    𝑎,𝑚   ≠ 1, 𝑎−1  doesn’t
+  exist. (Left as an exercise.)
+
+
+                                                                12

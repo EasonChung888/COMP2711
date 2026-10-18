@@ -1,0 +1,41 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "discourse: consolidate scope statement",
+      "quote": "我们只得到一个分支；另一个分支和模 $q$ 的对应推理还需补齐，再将结果合并到模 $pq$。",
+      "repair": "用简洁的后续证明条件收尾，保留当前分支的适用范围。",
+      "evidence": "我们只得到一个分支；另一个分支和模 $q$ 的对应推理还需补齐，再将结果合并到模 $pq$。"
+    }
+  ],
+  "facts": [
+    "de逆元条件mod(p−1)(q−1)给普通等式de=1+k(p−1)(q−1)，通常正整数d,e时k非负。",
+    "C≡x^e modpq因此modp也成立，C^d≡x^de=x(x^(p−1))^(k(q−1))。",
+    "Case1 p不整除x，FLT令x^(p−1)≡1从而C^d≡x modp。",
+    "指数缩小依赖非零底数周期p−1，q−1只是重复次数，非任意指数同余替换。",
+    "尚需p整除x分支、模q对应证明，最后合并modpq。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-18T06:09:25.958290+00:00"
+}

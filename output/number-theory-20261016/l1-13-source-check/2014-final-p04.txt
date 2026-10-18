@@ -1,0 +1,36 @@
+Student ID:
+Problem 2: [10 pts]
+Let a, m and n be three positive integers that are larger than 1. Is each
+of the following statements true or false? If it is true, give a proof. If it is
+false, give a counterexample.
+(a) (a mod mn) mod n = a mod n.
+(b) (a mod mn) mod n = a mod m.
+(c) If a mod n = 1, then gcd(a,n) = 1.
+(d) If gcd(a,n) = 1, then a mod n = 1.
+Answer: (a) This is true. According to Euclid’s Division Theorem, there exist q
+1
+and r such that
+1
+a = q mn+r , 0 ≤ r < mn,
+1 1 1
+where r = (a mod mn). Similarly, there exist q and r such that
+1 2 2
+r = q n+r , 0 ≤ r < n,
+1 2 2 2
+where r = r mod n = (a mod mn) mod n. Combining the two equa-
+2 1
+tions, we get
+a = (q m+q )n+r , 0 ≤ r < n.
+1 2 2 2
+Hence, a mod n = r . Consequently,
+2
+(a mod mn) mod n = r = a mod n.
+2
+(b) This is false. Let a = 8, m = 2 and n = 3. We have
+(a mod mn) mod n = (8 mod 6) mod 3 = 2,
+a mod m = 8 mod 2 = 0.
+(c) This is true. a mod n = 1 implies that there exist q such that a = qn+
+1, or a−qn = 1. The latter equation implies that any common divisor
+of a and n must divide 1, hence must be 1. Therefore, gcd(a,n) = 1.
+(d) This is false. For example, gcd(5,3) = 1, but 5 mod 3 = 2.
+4

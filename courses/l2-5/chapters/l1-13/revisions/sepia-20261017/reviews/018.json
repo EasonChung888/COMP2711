@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "3 relevance",
+      "quote": "本页取系数 $2$、模数 $6$，二者 GCD 为 $2$，所以 $2$ 没有模 $6$ 的逆元。",
+      "repair": "从两个方程各自的整除条件进入，将GCD说明接在一般规律处。",
+      "evidence": "本页取系数 $2$、模数 $6$，二者 GCD 为 $2$，所以 $2$ 没有模 $6$ 的逆元。"
+    }
+  ],
+  "facts": [
+    "系数2模6gcd2无逆；2x≡1 =>2x=1+6k偶奇矛盾。",
+    "2x≡4=>2x-4=6k整数等式除2得x-2=3k，x≡2mod3，Z6解2,5乘4,10余4；模也除2。",
+    "一般d=gcd(a,m)，有解iffd|b，除d成modm/d互素问题，有d个modm标准解；2不除1但除4。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T10:00:22.862135+00:00"
+}

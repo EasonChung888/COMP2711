@@ -1,0 +1,68 @@
+{
+  "title": "条件概率与 Bayes 推断",
+  "subtitle": "Conditional Probability & Bayes’ Theorem",
+  "topics": [
+    {
+      "slug": "conditional-probability",
+      "title": "条件概率与独立性",
+      "description": "在已知事件下缩小样本空间，连接乘法法则、生日问题与独立性。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "questions": [
+        "Q-2020-FINAL2-P03",
+        "Q-2025F-FINAL-P03-a",
+        "Q-2025F-FINAL-P03-c"
+      ]
+    },
+    {
+      "slug": "bayesian-inference",
+      "title": "Bayes 推断与全概率",
+      "description": "从检验结果、盒子、垃圾邮件及生产来源更新先验概率。",
+      "pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "questions": [
+        "Q-2017-FINAL-P05-a",
+        "Q-2023F-MID-P08",
+        "Q-2025S-FINAL-P11"
+      ]
+    },
+    {
+      "slug": "monty-hall-strategies",
+      "title": "Monty Hall 与条件决策",
+      "description": "区分先验、主持人规则及观测后的最优决策，比较完整策略。",
+      "pages": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "questions": [
+        "Q-2019-FINAL-P11",
+        "Q-2022-FINAL2-P02-a",
+        "Q-2022-FINAL2-P02-b"
+      ]
+    }
+  ],
+  "storagePrefix": "comp2711:l1-10:"
+}

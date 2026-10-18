@@ -1,0 +1,17 @@
+ A One-Way Function: Modular
+ Exponentiation and Logarithm
+▪ How to compute
+                        𝑎𝑛 mod  𝑚
+  efficiently for large 𝑛?
+▪ Repeated squaring method
+   ▪ Compute
+     𝑎2 mod 𝑚
+     𝑎22mod  𝑚 =  𝑎4mod  𝑚 =  𝑎2 mod 𝑚  2 mod 𝑚
+     𝑎23mod  𝑚 =  𝑎8mod  𝑚 =  𝑎4 mod 𝑚  2 mod 𝑚
+     ⋯
+   ▪ Write 𝑛 in binary 𝑛=  𝑏𝑘 … 𝑏1𝑏02
+   ▪ 𝑎𝑛 ≡ 𝑎𝑏0⋅1⋅𝑎𝑏1⋅2⋅𝑎𝑏2⋅22⋯ (mod  𝑚)
+
+▪ Example: 𝑛  = 50 =  110010  2
+   ▪ 𝑎50≡  𝑎21𝑎24𝑎25 (mod 𝑚)
+                                                        12

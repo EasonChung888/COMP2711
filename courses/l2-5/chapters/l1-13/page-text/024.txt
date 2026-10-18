@@ -1,0 +1,18 @@
+Sun-Tsu’s         Problem
+
+There are certain things whose
+number is unknown. If we count
+them by threes, we have two
+left over; by fives, we have three
+left over; and by sevens, two are
+left over. How many things are
+there?
+
+System of linear congruences:
+          𝑥  ≡  2  mod  3 ,
+          𝑥  ≡  3  mod  5 ,
+          𝑥  ≡  2 (mod  7).
+
+
+
+                                                               24

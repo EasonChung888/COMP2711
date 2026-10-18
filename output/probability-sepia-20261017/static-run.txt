@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "pages": 94,
+  "lessons": 16,
+  "chapters": [
+    {
+      "id": "l1-9",
+      "pages": 32,
+      "lessons": 6
+    },
+    {
+      "id": "l1-10",
+      "pages": 25,
+      "lessons": 3
+    },
+    {
+      "id": "l1-11",
+      "pages": 37,
+      "lessons": 7
+    }
+  ],
+  "localLinks": 2779,
+  "originalAnswersAndImagesPreserved": true,
+  "originalLogsPreservedAsPrefix": true,
+  "serialRevisionEvents": 282,
+  "exactRenderedResponses": true,
+  "courseAndPracticeUnchanged": true,
+  "unchangedBaselineFiles": 2906,
+  "concurrentChangesPreserved": 104
+}

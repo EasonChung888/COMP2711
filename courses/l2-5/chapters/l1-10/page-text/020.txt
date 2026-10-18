@@ -1,0 +1,17 @@
+ Example: Solution
+
+ Solution to the first question: Just the market shares
+ Solution to the second question
+    𝐴,𝐵, 𝐶: The events that the device is made by these
+     3 companies, respectively
+     𝑝 𝐴  =  0.8,𝑝 𝐵  =  0.15,𝑝 𝐶  = 0.05
+    𝐷: The device is defective
+     𝑝 𝐷|𝐴   = 0.04,𝑝  𝐷|𝐵  =  0.06,𝑝 𝐷|𝐶   = 0.09
+   𝑝 𝐴  𝐷  =                𝑝 𝐷  𝐴 𝑝 𝐴                 ≈ 0.7
+             𝑝 𝐷  𝐴 𝑝  𝐴  + 𝑝 𝐷 𝐵  𝑝 𝐵  +  𝑝 𝐷 𝐶  𝑝 𝐶
+   𝑝 𝐵  𝐷  =                𝑝 𝐷 𝐵  𝑝 𝐵                 ≈ 0.2
+             𝑝  𝐷 𝐴 𝑝  𝐴  + 𝑝 𝐷 𝐵  𝑝 𝐵  +  𝑝 𝐷 𝐶  𝑝 𝐶
+   𝑝 𝐶  𝐷  =                𝑝 𝐷  𝐶 𝑝 𝐶                 ≈ 0.1
+             𝑝 𝐷  𝐴 𝑝  𝐴  + 𝑝 𝐷 𝐵  𝑝 𝐵  +  𝑝 𝐷 𝐶  𝑝 𝐶
+
+                                                             20

@@ -1,0 +1,288 @@
+{
+  "Q-2017-MID-P05-a": {
+    "proof": "Each Euclidean step preserves all common divisors; the last nonzero remainder is 1.",
+    "result": 1,
+    "divisions": [
+      {
+        "a": 221,
+        "b": 15,
+        "quotient": 14,
+        "remainder": 11
+      },
+      {
+        "a": 15,
+        "b": 11,
+        "quotient": 1,
+        "remainder": 4
+      },
+      {
+        "a": 11,
+        "b": 4,
+        "quotient": 2,
+        "remainder": 3
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "quotient": 1,
+        "remainder": 1
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "quotient": 3,
+        "remainder": 0
+      }
+    ]
+  },
+  "Q-2023S-MID-P06": {
+    "proof": "Direct integer division on the original two numbers gives valid nonnegative remainders 2^35-1, 2^30-1, 31, 0. This proves gcd=31 without any future modular theorem.",
+    "result": 31,
+    "divisions": [
+      {
+        "a": 1267650600228229401496703205375,
+        "b": 36893488147419103231,
+        "quotient": 34359738368,
+        "remainder": 34359738367
+      },
+      {
+        "a": 36893488147419103231,
+        "b": 34359738367,
+        "quotient": 1073741824,
+        "remainder": 1073741823
+      },
+      {
+        "a": 34359738367,
+        "b": 1073741823,
+        "quotient": 32,
+        "remainder": 31
+      },
+      {
+        "a": 1073741823,
+        "b": 31,
+        "quotient": 34636833,
+        "remainder": 0
+      }
+    ]
+  },
+  "Q-2014-FINAL-P02-c": {
+    "proof": "For all positive a,n in the printed domain: a=qn+1, so every positive common divisor divides a-qn=1. Hence gcd(a,n)=1. This symbolic divisibility proof, rather than the sample check, proves the universal statement.",
+    "result": true,
+    "finiteCrossCheck": {
+      "a": [
+        2,
+        200
+      ],
+      "n": [
+        2,
+        200
+      ]
+    }
+  },
+  "Q-2024S-MID-P12-a": {
+    "proof": "Put d=gcd(a,m)>0. Since a=du and m=dv, any integer combination ra+sm=d(ru+sv). If positive, the integer multiplier is at least 1, so the value is >=d. This holds for all positive a,m and all integer r,s.",
+    "result": "Every positive combination is at least gcd(a,m)."
+  },
+  "Q-2020-MID-P08": {
+    "proof": "The exact polynomial identity 3(14n+3)-2(21n+4)=1 has n coefficient 0 and constant 1. Every common divisor divides 1. This proves the result for all natural n (including either convention for zero).",
+    "result": 1,
+    "identityCoefficients": [
+      3,
+      -2
+    ],
+    "polynomialCoefficients": [
+      0,
+      1
+    ],
+    "finiteCrossCheck": [
+      0,
+      1000
+    ]
+  },
+  "Q-2018-MID-P05-a": {
+    "proof": "Bezout supplies s*y+t*z=1 because gcd(y,z)=1. Multiply by x: x=s*(x*y)+t*z*x. Both terms are divisible by z under the printed hypotheses, hence z divides x. Without coprimality this is not valid (x=1,y=z=2).",
+    "result": "z divides x",
+    "finiteCrossCheck": {
+      "x": [
+        1,
+        50
+      ],
+      "y": [
+        1,
+        50
+      ],
+      "z": [
+        1,
+        50
+      ]
+    },
+    "necessaryHypothesisCounterexample": [
+      1,
+      2,
+      2
+    ]
+  },
+  "Q-2024S-MID-P12-b": {
+    "proof": "If an inverse b existed, a*b-m*k=1 would represent a positive integer 1 smaller than d=gcd(a,m)>1, contradicting the supplied original part (a). Equivalently every left term is divisible by d, so d would divide 1.",
+    "result": "No inverse when gcd(a,m)>1.",
+    "finiteCrossCheck": {
+      "a": [
+        1,
+        90
+      ],
+      "m": [
+        2,
+        90
+      ]
+    },
+    "prerequisite": "Q-2024S-MID-P12-a"
+  },
+  "Q-2020-MID-P06": {
+    "proof": "Independent extended Euclid gives 17*53-5*180=1. All 180 standard representatives have been checked and only 17 multiplies 53 to residue 1.",
+    "result": 17,
+    "certificate": {
+      "a": 53,
+      "b": 180,
+      "gcd": 1,
+      "coefficientA": 17,
+      "coefficientB": -5
+    },
+    "standardDomain": [
+      0,
+      179
+    ]
+  },
+  "Q-2017-MID-P05-b": {
+    "proof": "Independent Euclid gives inverse 59; full enumeration of 0..220 yields exactly 118. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 118+221k; retain any printed standard-range restriction.",
+    "result": 118,
+    "modulus": 221,
+    "certificate": {
+      "a": 15,
+      "b": 221,
+      "gcd": 1,
+      "coefficientA": 59,
+      "coefficientB": -4
+    },
+    "allStandardSolutions": [
+      118
+    ],
+    "substitutionDifference": 1768
+  },
+  "Q-2019-MID-P10-b": {
+    "proof": "Independent Euclid gives inverse 7; full enumeration of 0..103 yields exactly 47. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 47+104k; retain any printed standard-range restriction.",
+    "result": 47,
+    "modulus": 104,
+    "certificate": {
+      "a": 15,
+      "b": 104,
+      "gcd": 1,
+      "coefficientA": 7,
+      "coefficientB": -1
+    },
+    "allStandardSolutions": [
+      47
+    ],
+    "substitutionDifference": 728
+  },
+  "Q-2020-MID-P07": {
+    "proof": "Independent Euclid gives inverse 7; full enumeration of 0..22 yields exactly 18. Substitution satisfies the original affine congruence. Coprimality proves all integer solutions are 18+23k; retain any printed standard-range restriction.",
+    "result": 18,
+    "modulus": 23,
+    "certificate": {
+      "a": 10,
+      "b": 23,
+      "gcd": 1,
+      "coefficientA": 7,
+      "coefficientB": -3
+    },
+    "allStandardSolutions": [
+      18
+    ],
+    "substitutionDifference": 184
+  },
+  "Q-2013-FINAL-P03": {
+    "proof": "For distinct standard representatives, 0<abs(x1-x2)<=pq-1<pq. Equal residues modulo distinct primes p,q would force pq to divide the difference, impossible. Thus distinct representatives differ in at least one residue (the contrapositive); given existence, this proves uniqueness. The official strict <pq-1 bound is a typo; <pq is sufficient.",
+    "result": "Exactly one standard representative.",
+    "finiteCrossCheckPrimePairs": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        7,
+        11
+      ]
+    ],
+    "correctDifferenceBound": "0 < abs(x1-x2) <= pq-1 < pq"
+  },
+  "Q-2019-FINAL-P02": {
+    "proof": "Pairwise gcds are 1. Independently calculated partial products [70, 45, 126], inverses [4, 5, 1], and raw sum 3298; exhaustive residue check gives only 148 modulo 630. CRT supplies exactly the full class 148+630k.",
+    "result": 148,
+    "modulus": 630,
+    "partialProducts": [
+      70,
+      45,
+      126
+    ],
+    "inverses": [
+      4,
+      5,
+      1
+    ],
+    "rawSum": 3298,
+    "allStandardSolutions": [
+      148
+    ]
+  },
+  "Q-2025F-FINAL-P06": {
+    "proof": "Pairwise gcds are 1. Independently calculated partial products [20, 15, 12], inverses [2, 3, 3], and raw sum 211; exhaustive residue check gives only 31 modulo 60. CRT supplies exactly the full class 31+60k. The original mod-2 equation is implied by mod-4=3, so it must be omitted before using the product theorem; period is 60, not 120.",
+    "result": 31,
+    "modulus": 60,
+    "partialProducts": [
+      20,
+      15,
+      12
+    ],
+    "inverses": [
+      2,
+      3,
+      3
+    ],
+    "rawSum": 211,
+    "allStandardSolutions": [
+      31
+    ]
+  }
+}

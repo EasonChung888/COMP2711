@@ -1,0 +1,18 @@
+ Parity Bits
+
+
+ Digital information is transmitted as a bit stream
+  000100101011110101010101010101
+ Denote the bits as 𝑥1    ,𝑥2, … ,𝑥𝑛
+ At the end of the stream, we often add a parity bit
+                𝑥𝑛+1  =  𝑥1 + 𝑥2 +  ⋯ +  𝑥𝑛  mod  2
+ This can detect one wrong bit
+     Or an odd number of wrong bits
+ It cannot detect if there are an even number of wrong
+  bits
+     Will come back to this later
+
+
+
+
+                                                                 25

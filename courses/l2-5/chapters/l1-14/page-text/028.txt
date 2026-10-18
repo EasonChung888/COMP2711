@@ -1,0 +1,22 @@
+ Fermat Little Theorem
+
+▪ Lemma:     Let 𝑝  be a prime number. For any non-zero
+  𝑎 ∈ 𝐙𝑝, 1 ∙𝑝 𝑎,  2 ∙𝑝𝑎,  ,    (𝑝 − 1) ∙𝑝 𝑎
+   are a permutation of the set     {1,2,,  𝑝 − 1}
+▪ Proof sketch
+   ▪ None of them is 0
+   ▪ If 𝑥 ⋅𝑎 ≡ 𝑦 ⋅𝑎  mod   𝑝 ,then 𝑥  ⋅𝑎 ⋅𝑎−1  ≡ 𝑦 ⋅𝑎 ⋅ 𝑎−1,𝑥 ≡  𝑦
+▪ Example
+
+
+
+
+
+
+
+
+
+
+
+
+                                                               28

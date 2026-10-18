@@ -1,0 +1,41 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "style: generic reminder",
+      "quote": "它也提醒我们：选择离散对数或密钥交换的底数时，底数产生的循环大小很重要；",
+      "repair": "以不同底数的循环长度直接连接密钥交换中的底数选择。",
+      "evidence": "它也提醒我们：选择离散对数或密钥交换的底数时，底数产生的循环大小很重要；"
+    }
+  ],
+  "facts": [
+    "表中行a=1至6，列a^0至a^6的模7余数；最后列全1吻合FLT。",
+    "最短周期a1为1、a2为3序列1,2,4、a4为3、a6为2交替1,6、a3和5为6。",
+    "p−1是可用周期未必最短，本例最短周期均整除6。",
+    "2^100 mod7，100 mod3=1得2，或mod6=4得2^4≡2。",
+    "具体表格不是一般证明；不同非零底数未必遍历全部非零余数，循环大小影响离散对数/密钥交换底数选择。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-18T06:08:45.087612+00:00"
+}

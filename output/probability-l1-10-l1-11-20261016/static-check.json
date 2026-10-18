@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "chapters": [
+    {
+      "id": "l1-10",
+      "pages": 25,
+      "lessons": 3,
+      "questions": 9,
+      "questionsPerLesson": [
+        {
+          "topic": "conditional-probability",
+          "count": 3
+        },
+        {
+          "topic": "bayesian-inference",
+          "count": 3
+        },
+        {
+          "topic": "monty-hall-strategies",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "l1-11",
+      "pages": 37,
+      "lessons": 7,
+      "questions": 9,
+      "questionsPerLesson": [
+        {
+          "topic": "random-variable-foundations",
+          "count": 1
+        },
+        {
+          "topic": "bernoulli-binomial-and-density",
+          "count": 1
+        },
+        {
+          "topic": "expectation-and-indicators",
+          "count": 3
+        },
+        {
+          "topic": "average-case-algorithms",
+          "count": 0
+        },
+        {
+          "topic": "geometric-waiting-times",
+          "count": 0
+        },
+        {
+          "topic": "independent-random-variables",
+          "count": 1
+        },
+        {
+          "topic": "variance-and-averaging",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "pages": 62,
+  "lessons": 10,
+  "questions": 18,
+  "lifecycleEvents": 248,
+  "crossSourceSerialOrder": true,
+  "selectionAfterAllSources": true,
+  "exactOriginalResponses": true,
+  "localLinks": 1899,
+  "protectedFiles": 3471,
+  "allowedExistingChanges": [
+    "courses/l2-5/tools/chapter-render.mjs",
+    "courses/l2-5/tools/portal.mjs",
+    "courses/l2-5/index.html",
+    "courses/l2-5/probability.html"
+  ]
+}

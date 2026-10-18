@@ -1,0 +1,17 @@
+ Puzzle: Water Measuring
+
+▪ Given
+   ▪ Two bottles: one has
+     volume of 500     ml and
+     the other one 700 ml.
+   ▪ Infinite water supply
+▪ Goal: Get exactly 100 ml
+  of water
+▪ This follows exactly from
+    100  = gcd  500,700
+    = 3 ×  500 − 2 × 700
+▪ Corollary: Any multiple of
+  the gcd   can be obtained.
+
+
+                                                               8

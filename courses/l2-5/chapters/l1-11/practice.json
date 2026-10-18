@@ -1,0 +1,306 @@
+[
+  {
+    "id": "Q-2017-FINAL-P06-a",
+    "topic": "random-variable-foundations",
+    "sourceNote": "sources/notes/Q-2017-FINAL-P06-a - Random Variables.md",
+    "sourceNoteSha256": "a34809dcdd68a1dccc5c082ef30a902c7b01b9adc4f4e3c27603f55586176d52",
+    "stems": [
+      "STEM-2017-FINAL-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2017 Final",
+    "pdf": "sources/papers/2017-final.pdf",
+    "pdfSha256": "1a3a43234b2f03f6503b3c0d648d3021cde963b37d33182642481a125300c8f8",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "6(a)",
+    "marks": 1,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "64 fair coins are flipped independently randomly and then arranged in an 8 by 8 block randomly without looking. Each row contains eight coins and there are eight rows. If all eight coins in a row have the same symbol (heads or tails), we call it a homogeneous row. Let $X$ denote the number of homogeneous rows in the block.\n\n(a) If all coin flips come up heads, what is the value of $X$?",
+    "independentVerification": "Eight rows each homogeneous if all64heads; X counts rows, so8.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2017-final.pdf#page=10).\n\n$8$.",
+    "solutionMarkdown": "**Answer.** $X=8$.\n\n**Derivation/proof.** Each row consists of eight heads and therefore satisfies the definition of homogeneous. There are eight rows, so exactly eight row indicators equal one and their sum $X$ is eight, not sixty-four.\n\nIn indicator notation, $I_1=\\cdots=I_8=1$ and $X=\\sum_{i=1}^8I_i=8$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "9ba67f63d4851f5e9af36c6c44ba891df3261cb90a03b4c6461a9fb6b8c73374",
+    "supplementarySourceSha256": "dff3067fb091d89ab06e8d8098a136e98b3a0ee995a3179ab4f9580efa0a7d76"
+  },
+  {
+    "id": "Q-2017-FINAL-P06-b",
+    "topic": "bernoulli-binomial-and-density",
+    "sourceNote": "sources/notes/Q-2017-FINAL-P06-b - Random Variables.md",
+    "sourceNoteSha256": "cf2c8dddb04c8cadf2169b9dc9ba1030c27e264760e17ad049dbcf9508d2cee3",
+    "stems": [
+      "STEM-2017-FINAL-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2017 Final",
+    "pdf": "sources/papers/2017-final.pdf",
+    "pdfSha256": "1a3a43234b2f03f6503b3c0d648d3021cde963b37d33182642481a125300c8f8",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "6(b)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "64 fair coins are flipped independently randomly and then arranged in an 8 by 8 block randomly without looking. Each row contains eight coins and there are eight rows. If all eight coins in a row have the same symbol (heads or tails), we call it a homogeneous row. Let $X$ denote the number of homogeneous rows in the block.\n\n(b) Calculate $p(X=1)$.",
+    "independentVerification": "Independent coins in disjoint rows give iid row indicators with q=2/256=1/128; independent rational binomial PMF gives P(X=1)=8q(1-q)^7.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2017-final.pdf#page=10).\n\nFor any given row, the chance it is homogeneous is $(1/2)^8\\cdot2=(1/2)^7$ (all heads or all tails). The chance that it is not homogeneous is $(1-(1/2)^7)$. Overall, seven rows must not be homogeneous and one row must be homogeneous, so $p(X=1)=8(1/2)^7(1-(1/2)^7)^7$.",
+    "solutionMarkdown": "**Answer.** $8(1/128)(127/128)^7$.\n\n**Derivation/proof.** A given row is homogeneous in two of its $2^8$ equally likely configurations, so its probability is $q=2/2^8=1/128$. Distinct rows use disjoint independent coins. Choose which of the eight rows succeeds, multiply by $q$ for it and $(1-q)^7$ for the failures. The eight choices are disjoint, giving $8q(1-q)^7$.\n\nRandomly arranging the coins without observing their faces preserves the independent fair distribution at all sixty-four positions.\n\nA row is homogeneous with probability $q=2(1/2)^8=1/128$, since either all eight coins are heads or all are tails. The independent eight rows then give $P(X=1)=8(1/128)(127/128)^7$ by selecting its unique homogeneous row.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "4a585578b5d7248c3105c6140421c0637313654a2c3aa3906a6969fb9b32637d",
+    "supplementarySourceSha256": "4671984f395350c597d612e87001c9b00ec165faaa4915ba19b2d1d664a3fbd7"
+  },
+  {
+    "id": "Q-2016-FINAL-P01-b",
+    "topic": "expectation-and-indicators",
+    "sourceNote": "sources/notes/Q-2016-FINAL-P01-b - Probability Events.md",
+    "sourceNoteSha256": "1ea1819909d1b5783cd98be315c38ce8fa0b6f80ee0f542d34e7c274500e9d94",
+    "stems": [
+      "STEM-2016-FINAL-P01 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      3
+    ],
+    "paper": "2016 Final",
+    "pdf": "sources/papers/2016-final.pdf",
+    "pdfSha256": "08045a966e9c27a4ac89219addb70af8f699286d12d0b9950a064eb5e2263f22",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(b)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "You are given two fair dice where each dice has the number 1 to 6 printed on it. You are also given one wheel so that a random spin of the wheel returns an integer from 2 to 12 in a uniform distribution. Answer the following questions.\n\n(b) You are now playing a boardgame. Each time you move your token $x$ steps forward if you spin the wheel and obtain a number $x$. What is the expected number of steps moved if you spin the wheel 5 times?",
+    "independentVerification": "Exact average of uniform integers2..12 is77/11=7; expectation of five-spin sum is35 without requiring independence.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 3](../sources/papers/2016-final.pdf#page=3).\n\n(b) $E(5x)=5E(x)=5\\frac{2+3+4+5+6+7+8+9+10+11+12}{11}=35$",
+    "solutionMarkdown": "**Answer.** $35$ steps.\n\n**Derivation/proof.** For spin $X_i$, $E[X_i]=(2+3+\\cdots+12)/11=7$. The total is $S=X_1+\\cdots+X_5$, so $E[S]=\\sum_{i=1}^{5}E[X_i]=5\\cdot7=35$. Independence is not needed for this use of linearity.\n\nThe single-spin sum is $77$, so its expectation is $77/11=7$. The total is a sum of five random variables, rather than five copies of the same realized spin.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "793bd6bacad1cd6eb6e5bc9026dab93965fb600ee165a6d702c1593d5dd5359d",
+    "supplementarySourceSha256": "9b210d314096ce71fc8ed7280fda0a86d682870c2417b1a0f7e891f10dc2158d"
+  },
+  {
+    "id": "Q-2018-FINAL-P08-a",
+    "topic": "expectation-and-indicators",
+    "sourceNote": "sources/notes/Q-2018-FINAL-P08-a - Random Variables.md",
+    "sourceNoteSha256": "16019a292b7fe2012886e1202a696f0c7ca91969dc9f6a1d447451fb5642963c",
+    "stems": [
+      "STEM-2018-FINAL-P08 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      11
+    ],
+    "paper": "2018 Final",
+    "pdf": "sources/papers/2018-final.pdf",
+    "pdfSha256": "4107217a4179737cc7e7aedd960d091d0d74288516b45cd1fc64322b72474ce9",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "8(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider throwing $m$ balls into $n$ boxes at random. The probability that a ball ends up in any given box is $\\frac1n$. After all balls have been thrown, let $X$ be the number of balls in the first box and $Y$ be the number of boxes that are empty.\n\nShow the steps of your calculations.\n\na) What is $E(X)$? Show the steps of your calculations.",
+    "independentVerification": "X=sum of m indicators, each mean1/n; linearity givesm/n using only the explicitly supplied marginals, avoiding unwarranted independence.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 11](../sources/papers/2018-final.pdf#page=11).\n\n$E(X)$: Each ball assignment is a Bernoulli trial with probability $1/n$ of success, and there are $m$ trials. Therefore, $X$ follows the Binomial distribution for which we know $E(X)=m(1/n)=m/n$.\nAlternative solution:\nLet $X_i$ be the indicator random variable such that $X_i=1$ if the $i$-th ball is in the first box, $X_i=0$ otherwise. Obviously, $X=\\sum_{i=1}^mX_i$. For $1\\le i\\le m$, $E(X_i)=P(\\text{ball }i\\text{ in the first box})=1/n$.\nTherefore,\n$$E(X)=E\\left(\\sum_{i=1}^mX_i\\right)=\\sum_{i=1}^mE(X_i)=\\sum_{i=1}^m\\frac1n=\\frac mn.$$",
+    "solutionMarkdown": "**Answer.** $E(X)=m/n$.\n\n**Derivation/proof.** Let $I_i$ be one if ball $i$ lands in box 1 and zero otherwise. Then $X=\\sum_{i=1}^mI_i$ and $E(I_i)=P(I_i=1)=1/n$. Linearity gives $E(X)=\\sum_{i=1}^m1/n=m/n$. Equal marginals alone suffice for this particular expectation.\n\nEven if every ball shares one uniformly selected box, the same expectation holds. This illustrates why independence must not be added to this proof.\n\nLet $I_i$ indicate that ball $i$ enters the specified box. Then $X=\\sum_{i=1}^m I_i$ and $E(I_i)=1/n$, so linearity gives $E(X)=m/n$; independence between balls is not required for this expectation.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "ebf9496d783da02a5fe82a95d52c8871d13666826ffeae6909ef5d9afd9688a2",
+    "supplementarySourceSha256": "388c753fd28a5bae0d1d338bae45fd2ae206d86261747108a9074d6efc2734b0"
+  },
+  {
+    "id": "Q-2017-FINAL-P06-c",
+    "topic": "expectation-and-indicators",
+    "sourceNote": "sources/notes/Q-2017-FINAL-P06-c - Random Variables.md",
+    "sourceNoteSha256": "1f01b4eec48f3cfd13cd83d20fe837686a46aa8b66bdeb219ad69d692bac0859",
+    "stems": [
+      "STEM-2017-FINAL-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2017 Final",
+    "pdf": "sources/papers/2017-final.pdf",
+    "pdfSha256": "1a3a43234b2f03f6503b3c0d648d3021cde963b37d33182642481a125300c8f8",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "6(c)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "64 fair coins are flipped independently randomly and then arranged in an 8 by 8 block randomly without looking. Each row contains eight coins and there are eight rows. If all eight coins in a row have the same symbol (heads or tails), we call it a homogeneous row. Let $X$ denote the number of homogeneous rows in the block.\n\n(c) Calculate $E(X)$.",
+    "independentVerification": "Exact rational binomial PMF over0..8 independently gives mean1/16; equivalently8*(2/256).",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2017-final.pdf#page=10).\n\nConsider the homogeneity of each row as its own indicator variable $X_i$, all $X_i$ are mutually independent. So $E(X)=8E(X_1)=8(1/2)^7$.",
+    "solutionMarkdown": "**Answer.** $E(X)=8/128=1/16$.\n\n**Derivation/proof.** Let $I_i$ indicate that row $i$ is homogeneous. Then $X=\\sum_{i=1}^8I_i$ and $E(I_i)=P(I_i=1)=2(1/2)^8=1/128$. By linearity, $E(X)=\\sum E(I_i)=8/128=1/16$. Independence is not needed for this expectation step.\n\nThe row probability uses the explicitly stated independence of the individual coin flips, even though linearity of expectation itself does not need row independence.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "5cf477516accb6507bd5f6c1116f9bb251e9d4347de8999f3639e7107b90cc9f",
+    "supplementarySourceSha256": "5b9bef1b4c1003333ae42c45a7e69ed4b78b35ada53cc063086607b3e1c0ae83"
+  },
+  {
+    "id": "Q-2016-FINAL-P02-d",
+    "topic": "independent-random-variables",
+    "sourceNote": "sources/notes/Q-2016-FINAL-P02-d - Random Variables.md",
+    "sourceNoteSha256": "ed68073b5f0d1c9465832a671c17f447cc362f9cd2f0c43779214622b55aad2c",
+    "stems": [
+      "STEM-2016-FINAL-P02 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      5
+    ],
+    "paper": "2016 Final",
+    "pdf": "sources/papers/2016-final.pdf",
+    "pdfSha256": "08045a966e9c27a4ac89219addb70af8f699286d12d0b9950a064eb5e2263f22",
+    "page": 5,
+    "solutionPages": [
+      6
+    ],
+    "number": "2(d)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Assume that $f(x)$ is a linear function in the form of $f(x)=ax+b$ where $a$ and $b$ are real numbers. Let $n$ be a random variable with mean $m$ and variance $v$. Expressing the following in terms of $a,b,m,v$ and some constants. Show your steps.\n\n(d) Expectation of $f(n)f(p)$, if $p$ is another random variable that is independent of $n$ and has the same distribution as $n$.",
+    "independentVerification": "Expand (an+b)(ap+b); independence and identical means give E(np)=m^2 and result a^2*m^2+2abm+b^2=(am+b)^2. Finite variance supplies integrability.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 6](../sources/papers/2016-final.pdf#page=6).\n\n(d) By expected product of independent random variables, mean of $f(n)f(p)=E(f(n))E(f(p))$. Thus,\n$$\\begin{aligned}\nE(f(n)f(p))&=E(f(n))E(f(p))\\\\&=E(f(n))E(f(n))\\\\&=(am+b)^2\n\\end{aligned}$$",
+    "solutionMarkdown": "**Answer.** $E[f(n)f(p)]=(am+b)^2$.\n\n**Derivation/proof.** Independence implies $E[np]=E[n]E[p]=m^2$. Expand $(an+b)(ap+b)=a^2np+abn+abp+b^2$ and take expectations: $a^2m^2+2abm+b^2=(am+b)^2$. Equivalently, $f(n)$ and $f(p)$ are independent and each has expectation $am+b$.\n\nIndependence and equal means give $E(np)=m^2$, so the expanded expectation is $a^2m^2+abm+abm+b^2=(am+b)^2$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "5c43e759ef8de46dc6eecd47562f36f5d562b3f517d33ad4101ba5bcad1360dc",
+    "supplementarySourceSha256": "cad332c4af8fd639a273fef8b178117a6e98844a7669d1f89c9df6b768ba4e12"
+  },
+  {
+    "id": "Q-2016-FINAL-P02-a",
+    "topic": "variance-and-averaging",
+    "sourceNote": "sources/notes/Q-2016-FINAL-P02-a - Random Variables.md",
+    "sourceNoteSha256": "6a964bc99ffec6927928497fac72bbca77cd1558f1f8819abd4422201f9b5289",
+    "stems": [
+      "STEM-2016-FINAL-P02 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      5
+    ],
+    "paper": "2016 Final",
+    "pdf": "sources/papers/2016-final.pdf",
+    "pdfSha256": "08045a966e9c27a4ac89219addb70af8f699286d12d0b9950a064eb5e2263f22",
+    "page": 5,
+    "solutionPages": [
+      5
+    ],
+    "number": "2(a)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Assume that $f(x)$ is a linear function in the form of $f(x)=ax+b$ where $a$ and $b$ are real numbers. Let $n$ be a random variable with mean $m$ and variance $v$. Expressing the following in terms of $a,b,m,v$ and some constants. Show your steps.\n\n(a) Variance of $f(n)$.",
+    "independentVerification": "Centering: f(n)-E[f(n)]=a(n-m); square and average givesa^2*v for all reala,b includinga=0. Official first-line missing parenthesis retained as printed, supplementary derivation correct.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 5](../sources/papers/2016-final.pdf#page=5).\n\nAssume that $S$ is the sample space of $n$.\n\n(a) Variance of $f(n)$, first need to find $E(f(n))$. By the linearity of expectation, $E(f(n))=am+b$.\n$$\\begin{aligned}\nVar(f(n))&=\\sum_{x:x\\in S}p(x)(ax+b-E(f(n))^2\\\\\n&=\\sum_{x:x\\in S}p(x)(ax+b-am-b)^2\\\\\n&=\\sum_{x:x\\in S}p(x)a^2(x-m)^2\\\\\n&=a^2\\sum_{x:x\\in S}p(x)(x-m)^2=a^2v.\n\\end{aligned}$$",
+    "solutionMarkdown": "**Answer.** $\\operatorname{Var}(f(n))=a^2v$.\n\n**Derivation/proof.** Linearity gives $E[f(n)]=am+b$. Therefore $\\operatorname{Var}(f(n))=E[(an+b-(am+b))^2]=a^2E[(n-m)^2]=a^2v$. This also covers $a=0$, when $f(n)$ is constant.\n\nThe centered variable is $a(n-m)$ because the shift cancels.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "74651f15c77f00349def22a422b83cef623c7f795d129e853e7043a8ec889a70",
+    "supplementarySourceSha256": "dfebfb3df4d6b12665b4228a8b30b26d1d64ad5e159128114c07d176e3a36508"
+  },
+  {
+    "id": "Q-2017-FINAL-P06-d",
+    "topic": "variance-and-averaging",
+    "sourceNote": "sources/notes/Q-2017-FINAL-P06-d - Random Variables.md",
+    "sourceNoteSha256": "71c0882982afa40111322e0c1396263c823184a2768b027b2e4ec82a460ee5b5",
+    "stems": [
+      "STEM-2017-FINAL-P06 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2017 Final",
+    "pdf": "sources/papers/2017-final.pdf",
+    "pdfSha256": "1a3a43234b2f03f6503b3c0d648d3021cde963b37d33182642481a125300c8f8",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "6(d)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "64 fair coins are flipped independently randomly and then arranged in an 8 by 8 block randomly without looking. Each row contains eight coins and there are eight rows. If all eight coins in a row have the same symbol (heads or tails), we call it a homogeneous row. Let $X$ denote the number of homogeneous rows in the block.\n\n(d) Calculate $V(X)$.",
+    "independentVerification": "Exact rational binomial PMF over0..8 gives variance127/2048; independent disjoint rows justify8q(1-q).",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 10](../sources/papers/2017-final.pdf#page=10).\n\nAs above, $V(X)=8V(X_1)=8(1/2)^7(1-(1/2)^7)$.",
+    "solutionMarkdown": "**Answer.** $V(X)=8\\frac1{128}\\frac{127}{128}=\\frac{127}{2048}$.\n\n**Derivation/proof.** For row indicator $I_i$, $I_i^2=I_i$, so $V(I_i)=E(I_i)-E(I_i)^2=q(1-q)$ with $q=1/128$. Disjoint row coin sets are independent, making all cross covariances zero. Therefore $V(X)=\\sum_{i=1}^8V(I_i)=8q(1-q)=127/2048$.\n\nExplicitly, $\\operatorname{Cov}(I_i,I_j)=0$ for $i\\ne j$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "59df9d7797003f21ad845f7d45f6f857e24eed111cc507905438fdc62720ff58",
+    "supplementarySourceSha256": "12151c47165730c15b443b21cfa84a7ed6c94b6c794934d0a94b8fbeec173beb"
+  },
+  {
+    "id": "Q-2025F-MID-P10-a-iii",
+    "topic": "variance-and-averaging",
+    "sourceNote": "sources/notes/Q-2025F-MID-P10-a-iii-E - Random Variables.md",
+    "sourceNoteSha256": "6541e84de08474a71c5a42ab669ebc0b267236576096a2650d299767e74d9ae2",
+    "stems": [
+      "STEM-2025F-MID-P10-a-iii - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      21
+    ],
+    "paper": "2025 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2025_Midterm.pdf",
+    "pdfSha256": "3788b124362e1897cf11b78ff30651c01d24394d9c74afb01cc98f3c34b8a38e",
+    "page": 21,
+    "solutionPages": [
+      22
+    ],
+    "number": "10(a)(iii)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) Let $X_1,X_2,\\ldots,X_{100}$ be the outcomes of 100 independent rolls of a fair die.\n(iii) [2 points] Define the random variable $Z=X_1-X_2+X_3-X_4+\\cdots+X_{99}-X_{100}$.\n\nWhat are $E(Z)$ and $var(Z)$?",
+    "independentVerification": "Reconstructed printed joint request; exact single-die enumeration gives mean7/2,variance35/12; 50 positive and50 negative means cancel, 100 squared coefficients1 give variance875/3. Independence explicitly printed.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 22](../sources/papers/COMP2711_F2025_Midterm.pdf#page=22).\n\n> (iv) For $Z=X_1-X_2+X_3-\\cdots+X_{99}-X_{100}$, there are $50$ positive terms and $50$ negative terms:\n> $$E(Z)=\\sum_{i=1}^{50}E(X_{2i-1})-\\sum_{i=1}^{50}E(X_{2i})=50\\cdot3.5-50\\cdot3.5=0.$$\n> $$\\operatorname{var}(Z)=\\sum_{i=1}^{50}\\operatorname{var}(X_{2i-1})+\\sum_{i=1}^{50}\\operatorname{var}(X_{2i})=50\\cdot\\frac{17.5}{6}+50\\cdot\\frac{17.5}{6}=100\\cdot\\frac{17.5}{6}=\\frac{1750}{6}.$$",
+    "solutionMarkdown": "**Answer.** $E(Z)=0$.\n\n**Derivation/proof.** Linearity gives $E(Z)=E(X_1)-E(X_2)+\\cdots+E(X_{99})-E(X_{100})$. There are fifty positive and fifty negative terms, each with mean 7/2, so $E(Z)=50(7/2)-50(7/2)=0$. Equivalently, sum fifty adjacent differences $E(X_{2j-1}-X_{2j})$, each with mean zero.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "77e6877d724dc0b93edb494e999da1252c6df196ddc0d5d7cf82b77161b8294f",
+    "supplementarySourceSha256": "9c0217c7fd442b69c6542c060da3c3b04682930c927b7c01c0de3fa3ceca36dc",
+    "answerParts": [
+      {
+        "id": "Q-2025F-MID-P10-a-iii-E",
+        "sourceNote": "sources/notes/Q-2025F-MID-P10-a-iii-E - Random Variables.md",
+        "sourceNoteSha256": "6541e84de08474a71c5a42ab669ebc0b267236576096a2650d299767e74d9ae2",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 22](../sources/papers/COMP2711_F2025_Midterm.pdf#page=22).\n\n> (iv) For $Z=X_1-X_2+X_3-\\cdots+X_{99}-X_{100}$, there are $50$ positive terms and $50$ negative terms:\n> $$E(Z)=\\sum_{i=1}^{50}E(X_{2i-1})-\\sum_{i=1}^{50}E(X_{2i})=50\\cdot3.5-50\\cdot3.5=0.$$\n> $$\\operatorname{var}(Z)=\\sum_{i=1}^{50}\\operatorname{var}(X_{2i-1})+\\sum_{i=1}^{50}\\operatorname{var}(X_{2i})=50\\cdot\\frac{17.5}{6}+50\\cdot\\frac{17.5}{6}=100\\cdot\\frac{17.5}{6}=\\frac{1750}{6}.$$",
+        "solutionMarkdown": "**Answer.** $E(Z)=0$.\n\n**Derivation/proof.** Linearity gives $E(Z)=E(X_1)-E(X_2)+\\cdots+E(X_{99})-E(X_{100})$. There are fifty positive and fifty negative terms, each with mean 7/2, so $E(Z)=50(7/2)-50(7/2)=0$. Equivalently, sum fifty adjacent differences $E(X_{2j-1}-X_{2j})$, each with mean zero.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "77e6877d724dc0b93edb494e999da1252c6df196ddc0d5d7cf82b77161b8294f",
+        "supplementarySourceSha256": "9c0217c7fd442b69c6542c060da3c3b04682930c927b7c01c0de3fa3ceca36dc"
+      },
+      {
+        "id": "Q-2025F-MID-P10-a-iii-var",
+        "sourceNote": "sources/notes/Q-2025F-MID-P10-a-iii-var - Random Variables.md",
+        "sourceNoteSha256": "bc3b082e72f0913bf7fe3088341e9e4b8065f0233ab63b93e3f0d2f97db218e8",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 22](../sources/papers/COMP2711_F2025_Midterm.pdf#page=22).\n\n> (iv) For $Z=X_1-X_2+X_3-\\cdots+X_{99}-X_{100}$, there are $50$ positive terms and $50$ negative terms:\n> $$E(Z)=\\sum_{i=1}^{50}E(X_{2i-1})-\\sum_{i=1}^{50}E(X_{2i})=50\\cdot3.5-50\\cdot3.5=0.$$\n> $$\\operatorname{var}(Z)=\\sum_{i=1}^{50}\\operatorname{var}(X_{2i-1})+\\sum_{i=1}^{50}\\operatorname{var}(X_{2i})=50\\cdot\\frac{17.5}{6}+50\\cdot\\frac{17.5}{6}=100\\cdot\\frac{17.5}{6}=\\frac{1750}{6}.$$",
+        "solutionMarkdown": "**Answer.** $\\operatorname{var}(Z)=875/3$.\n\n**Derivation/proof.** The hundred die variables are mutually independent and each has variance 35/12. Every coefficient is +1 or −1, so every squared coefficient is one and all cross-covariance terms vanish. Consequently $\\operatorname{var}(Z)=100\\cdot35/12=3500/12=875/3$. The printed 1750/6 reduces to the same 875/3. Although the mean is zero, all hundred variance contributions accumulate.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "77e6877d724dc0b93edb494e999da1252c6df196ddc0d5d7cf82b77161b8294f",
+        "supplementarySourceSha256": "76372135eddb43e0a283e587d23af4c5c446de3601fe799d57614b5a6c0b44f0"
+      }
+    ],
+    "originalRestoration": "Restored original joint expectation-and-variance request from physical PDF page21. Original solution labels Z as(iv); preserved. Counts once."
+  }
+]

@@ -1,0 +1,19 @@
+  Hash Table
+
+  Example
+     Build a student database, where each student had
+      id, name, address, phone, GPA, etc.
+     Given a student id, wants to quickly retrieve it.
+  Solution
+     Suppose there are 𝑛        students.
+      Create an array 𝐻       of size 𝑚.   H[0]  51230    12350
+     Put student with id 𝑥       at
+                                           H[1]  null
+      location 𝐻[ℎ(𝑥)].
+                                           H[2]  12352     562       122
+     Resolving collision: 𝐻[𝑖]
+      stores a linked list of
+                                           H[9]  969
+      elements 𝑥     with ℎ(𝑥)    =  𝑖.
+
+                                                                       27

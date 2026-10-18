@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "2 density",
+      "quote": "这一页强调：按课件的定义，",
+      "repair": "去掉讲解页面的包装，从合法与不合法的式子解释定义域。",
+      "evidence": "这一页强调：按课件的定义，"
+    }
+  ],
+  "facts": [
+    "课件+m,·m仅Zm输入输出，同余定义全Z。",
+    "6+8 7=5不能13；6+15≡5mod8与≡21都真，差16，右方不必标准余数。",
+    "6+8 15不合法因15不在Z8，先模成7或用整数同余；判断先查域再查关系符。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:53:13.874671+00:00"
+}

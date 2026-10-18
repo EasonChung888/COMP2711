@@ -1,0 +1,16 @@
+  RSA in Use
+
+▪  Sending secrete keys (e.g., for use in AES)
+    ▪ Alice encodes the secret key using Bob’s public key
+    ▪ Bob decodes the secret key using his private key
+▪  Digital signatures (authentication)
+    ▪ Alice encodes her message using her private key            d and
+      her public key n
+        ▪ Computes 𝐶     = 𝑥𝑑  mod  𝑛
+        ▪ Sends (𝐶,  𝑥) to Bob
+    ▪ Bob decodes the message using Alice’s public key (𝑛,             𝑒)
+        ▪ Computes 𝐶𝑒     mod  𝑛 =  𝑥𝑑𝑒 mod   𝑛
+        ▪ He will know the message indeed came from Alice if
+          𝐶𝑒 mod  𝑛 =  𝑥
+    ▪ The scheme above transmits 𝑥         in plaintext. How to also
+      keep it secret? (See textbook for the answer.)                   24

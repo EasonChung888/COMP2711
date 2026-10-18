@@ -1,0 +1,20 @@
+ Generalized Bayes’ Theorem
+
+ Theorem:
+  Suppose that 𝐸    is an event from a sample space 𝑆        and
+  that 𝐹1, 𝐹2,… ,𝐹𝑛 are mutually exclusive events such that
+  ∪𝑛   𝐹𝑖 = 𝑆. Assume that 𝑝(𝐸)     ≠  0and 𝑝  𝐹𝑖  ≠ 0 for 𝑖=
+    𝑖=1
+  1,2, … ,𝑛. Then
+
+
+
+
+ Remark:
+  This degenerates into the standard Bayes’ theorem
+  when 𝑛   =  2.
+ Proof:
+  Similar, just using 𝐸   =∪𝑛    (𝐸 ∩ 𝐹𝑖)
+                             𝑖=1
+
+                                                               18

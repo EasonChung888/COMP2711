@@ -1,0 +1,16 @@
+ Breathalyzer Example Explained
+
+ Let
+    𝐷: drunk
+    𝐵: detected by breathalyzer
+ We know
+    𝑝(𝐵|𝐷) = 0.95
+    𝑝 𝐵 𝐷ഥ = 0.05
+    𝑝 𝐷  = 0.001
+    Want 𝑝(𝐷|𝐵)
+      𝑝 𝐷  𝐵  =        𝑝 𝐵 𝐷  𝑝 𝐷
+                𝑝 𝐵 𝐷 𝑝  𝐷  + 𝑝 𝐵 𝐷ഥ𝑝(𝐷ഥ)
+            =        0.95 × 0.001        ≈ 0.02
+              0.95 × 0.001 + 0.05× 0.999
+
+                                                         11

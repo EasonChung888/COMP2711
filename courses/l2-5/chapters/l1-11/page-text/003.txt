@@ -1,0 +1,19 @@
+ Distribution of a Random Variable
+
+▪ Definition
+  The distribution of a random variable 𝑋       on a sample
+  space 𝑆  is the set of pairs (𝑟, 𝑝(𝑋  = 𝑟)) for all 𝑟∈ 𝑋(𝑆),
+  where 𝑝(𝑋   =  𝑟) is the probability that  𝑋  takes the value
+  𝑟, i.e., 𝑝𝑋 =  𝑟  = σ𝑠∈𝑆,𝑋 𝑠 =𝑟 𝑝(𝑠)
+▪ Example
+  Continuing with the previous example, we have
+  𝑝 𝑋  = 3  =  1/8
+  𝑝 𝑋  = 2  =  3/8
+  𝑝 𝑋  = 1  =  3/8
+  𝑝 𝑋  = 0  =  1/8
+
+
+
+
+
+                                                               3

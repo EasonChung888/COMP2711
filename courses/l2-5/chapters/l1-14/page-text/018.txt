@@ -1,0 +1,23 @@
+  The RSA Cryptosystem
+
+
+
+                            Adi Shamir               Leonard
+  Ronald Rivest             (Born 1952)              Adelman
+  (Born 1948)                                        (Born 1945)
+
+
+
+
+                                        Clifford Cocks
+                                        (Born 1950)
+
+▪  RSA was introduced in 1976          by RSA.
+▪  In fact, Clifford Cocks, working secretly for the UK
+   government, discovered it 3 years earlier.
+    ▪ Made known to public in 1997.
+
+
+
+
+                                                                       18

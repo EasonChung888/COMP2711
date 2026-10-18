@@ -1,0 +1,34 @@
+Problem 10: Inclusion-Exclusion Principle, Probability [7 pts ]
+A 3-by-3 unit-square grid is to be colored such that each unit square is
+independently colored red or blue with equal probability. What is the
+probability that the grid does not contain any 2-by-2 red square? Justify
+your answer.
+Answer: Since each of the 9 unit squares of the 3-by-3 square can take one of two
+colors, in total there are 2 9 different ways of coloring the 3-by-3 square.
+Let us count now the colorings that form a 2-by-2 red square. This red
+square can be formed in the upper left, upper right, bottom left or bottom
+right corner of the 3-by-3 square. Let A, B, C, D be, respectively, the sets
+of the four types of colorings listed above that produce a 2-by-2 red square.
+Since the other 5 squares of the 3-by-3 square can have any color, we have
+|A| = |B| = |C| = |D| = 2 5. These sets are however not disjoint, so we
+must apply inclusion-exclusion:
+|A ∪ B ∪ C ∪ D|
+= |A| + |B| + |C| + |D|
+− |A ∩ B| − |A ∩ C| − |A ∩ D| − |B ∩ C| − |B ∩ D| − |C ∩ D|
++ |A ∩ B ∩ C| + |A ∩ B ∩ D| + |A ∩ C ∩ D| + |B ∩ C ∩ D|
+− |A ∩ B ∩ C ∩ D|.
+As A ∩ B represents the set of the colorings having the first two rows red
+(and the 3 squares of the lowest row free to take any of the two colors), we
+have |A ∩ B| = 23. Similarly, |A ∩ C| = 23, |B ∩ D| = 23 and |C ∩ D| = 23.
+We have a different situation for A ∩ D and B ∩ C: if two opposing 2-by-2
+squares are red, this leaves uncertain only the colors of the two remaining
+1-by-1 corners, therefore |A ∩ D| = |B ∩ C| = 2 2. The intersections of 3
+of the sets leaves undecided only the color of one square, therefore each of
+these intersections has 2 elements. Finally, the intersection of all the four
+sets contains only the square completely colored in red, that is, one element.
+We obtain:
+|A ∪ B ∪ C ∪ D| = 4 · 25 − (4 · 23 + 2 · 22) + 4 · 2 − 1 = 95.
+So from the 512 possible colorings, 512−95 = 417 do not contain any 2-by-2
+red square, so the probability of not having a 2-by-2 red square is 417
+512.
+13

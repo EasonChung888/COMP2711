@@ -1,0 +1,17 @@
+ Solving Congruences
+
+▪ Corollary
+  If gcd 𝑎,𝑚   = 1, the linear congruence
+                       𝑎𝑥 ≡ 𝑏  mod  𝑚
+  has a unique solution in 𝐙𝑚
+▪ Proof
+   ▪ Existence has already been proved by construction.
+   ▪ Uniqueness: Suppose it has two solutions 𝑥1,       𝑥2:
+                    𝑎𝑥1  ≡ 𝑏  mod  𝑚
+                    𝑎𝑥2  ≡ 𝑏  mod  𝑚
+     Multiply both by 𝑎−1:
+                    𝑥1 ≡  𝑏𝑎−1  mod  𝑚
+                    𝑥2 ≡  𝑏𝑎−1  mod  𝑚
+     So, 𝑥1 ≡  𝑥2(mod  𝑚).
+
+                                                             17

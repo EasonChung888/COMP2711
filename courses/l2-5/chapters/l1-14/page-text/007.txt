@@ -1,0 +1,18 @@
+ Advanced Encryption Standard (AES)
+
+
+▪ Used in Transport Layer Security       (TLS)
+   ▪ Previously known as      Secure Sockets Layer     (SSL)
+   ▪ Provides security for https, email, etc.
+▪ A block cipher
+   ▪ Block size 128 bits
+   ▪ Key lengths: 128, 192,
+     256 bits
+▪ Complicated operations that
+  make it very difficult to
+  break
+
+
+
+
+                                                                7

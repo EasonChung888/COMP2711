@@ -1,0 +1,19 @@
+{
+  "defects": [
+    {
+      "check": "8 templatedness",
+      "evidence": "本页给出Insertion Sort伪代码",
+      "repair": "从有序前缀的实际操作讲起，省页面介绍。"
+    }
+  ],
+  "facts": [
+    "第j轮前j-1有序，存A[j]为key，i=j-1；i>=1且Ai>key时右移并减i，最后A[i+1]=key，存key防丢。",
+    "例[2,5,7]插4移7/5得[2,4,5,7]，图sorted/key/unsorted边界。",
+    "不变式前缀有序保留原元素，逐轮扩至j最终全有序。",
+    "key最大0移最小j-1移，平均需随机次序模型。",
+    "严格>等值不跨越；随机排列一般互异支持对称。"
+  ],
+  "styleScan": "算法描述本身无须花样，保留逐步操作和不变式。",
+  "deferred": [],
+  "protected": []
+}

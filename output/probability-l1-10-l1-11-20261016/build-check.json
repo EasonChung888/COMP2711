@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "byteIdenticalFiles": 2465,
+  "source": "courses/l2-5",
+  "build": "dist",
+  "includesNewChapters": true,
+  "toolingExcluded": true
+}

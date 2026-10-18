@@ -1,0 +1,39 @@
+Question 6: Chinese Remainder Theorem [8 pts]
+Use Chinese Remainder Theorem to solve the following system of congru-
+ences:
+x ≡ 1 (mod 2)
+x ≡ 1 (mod 3)
+x ≡ 3 (mod 4)
+x ≡ 1 (mod 5)
+You must show all the steps. If you just write down your answer, you will
+get 0 points even if the answer is correct.
+Hint: Note that one of the above congruences is redundant and can be
+omitted.
+Answer: Note that the first equation is already included in the third one. So we can
+simplyignorethefirstequation. Andjustconsiderthefollowingcongruence
+system :
+x ≡ 1 (mod 3)
+x ≡ 3 (mod 4)
+x ≡ 1 (mod 5)
+We solve the system
+x ≡ 1 (mod 3)
+x ≡ 3 (mod 4)
+x ≡ 1 (mod 5)
+using the explicit CRT formula. The moduli are pairwise coprime and
+M = 3·4·5 = 60.
+Define M = M/3 = 20, M = M/4 = 15, M = M/5 = 12.
+1 2 3
+Find the inverses:
+– y such that 20y ≡ 1 (mod 3): 20 ≡ 2 (mod 3), inverse of 2 modulo
+1 1
+3 is 2 (because 2·2 = 4 ≡ 1). ⇒ y = 2.
+1
+– y such that 15y ≡ 1 (mod 4): 15 ≡ 3 (mod 4), inverse of 3 modulo
+2 2
+4 is 3 (because 3·3 = 9 ≡ 1). ⇒ y = 3.
+2
+– y such that 12y ≡ 1 (mod 5): 12 ≡ 2 (mod 5), inverse of 2 modulo
+3 3
+5 is 3 (because 2·3 = 6 ≡ 1). ⇒ y = 3.
+3
+10

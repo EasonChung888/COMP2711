@@ -1,0 +1,19 @@
+ Binomial Distribution
+
+▪ Theorem
+  Let 𝑋  be the number of successes in n        independent
+  Bernoulli trials, with probability of success p      and
+  probability of failure q   = 1  − p. Then
+            𝑝(𝑋 =  𝑘) = 𝑏(𝑘: 𝑛, 𝑝) = 𝐶  𝑛,𝑘 𝑝𝑘 𝑞𝑛−𝑘
+▪ Definition:
+  𝑋  follows the binomial distribution with parameters 𝑛
+  and 𝑝, and 𝑏(𝑘:   𝑛, 𝑝) is the pmf.
+▪ Check (from the binomial theorem)
+                 𝑛
+                ෍    𝑛  𝑝𝑘𝑞𝑛−𝑘  =   𝑝 + 𝑞 𝑛 =  1
+                     𝑘
+                𝑘=0
+
+
+
+                                                                5

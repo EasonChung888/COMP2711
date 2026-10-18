@@ -1,0 +1,17 @@
+ Proof of Existence
+
+
+ Let 𝑆  =  𝑥   𝑥 = 𝑎 −  𝑑𝑞, 𝑥 ≥ 0,𝑞  ∈ 𝐙}.
+     Note: The set is nonempty since −𝑑𝑞          can be made
+      as large as needed.
+ Let 𝑟  be the smallest integer in 𝑆. By the definition of
+  𝑆, there is a 𝑞  ∈  𝐙 such that
+                           𝑟 =  𝑎 − 𝑑𝑞
+ By the definition of 𝑆, we have 𝑟       ≥ 0.
+ We must also have 𝑟       < 𝑑. If not, then there would be a
+  smaller nonnegative integer in 𝑆, which is
+            𝑎 − 𝑑(𝑞  + 1) =  𝑎 − 𝑑𝑞  − 𝑑 =  𝑟 − 𝑑 >  0
+ We will see an alternative proof       by induction later.
+
+
+                                                                   7

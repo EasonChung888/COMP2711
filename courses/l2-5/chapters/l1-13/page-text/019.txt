@@ -1,0 +1,16 @@
+ Revisiting the String Hash Function
+
+▪ Consider the case with only 3 characters:
+    ℎ 𝑠  =     𝑠 0  ⋅31 + 𝑠 1   ⋅31 +  𝑠 2   mod  232  mod  𝑛
+▪ Note gcd   31, 232  = 1
+▪ Given any 𝑠   2  and 𝑏, the congruence
+                   31𝑥  + 𝑠 2  ≡ 𝑏   mod  232
+  has a unique solution. This means, given         𝑠 2 , ℎ(𝑠)
+  depends on     𝑥 = 𝑠 0  ⋅31 + 𝑠[1] and every 𝑏   is possible.
+▪ Similarly, given any 𝑠   1  ,𝑥 can possibly take any value
+  depending on 𝑠[0].
+▪ Other reasons:
+   ▪ Performance: x*31 = x << 5 –       x
+   ▪ Using 31 produces more balanced hashes over
+     English text
+                                                               19

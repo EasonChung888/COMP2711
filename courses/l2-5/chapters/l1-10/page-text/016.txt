@@ -1,0 +1,15 @@
+ Bayesian Spam Filter
+ Given:
+    A set 𝐵   of spam messages
+    A set 𝐺   of non-spam messages
+ Goal: Compute the probability that a new email
+  message is spam
+ We look at a particular word 𝑤, and count the number
+  of messages in which it occurs in 𝐵        and in 𝐺; 𝑛𝐵(𝑤)    and
+  𝑛𝐺 (𝑤).
+    (Estimated) prob. that a spam email contains 𝑤:
+     𝑝(𝑤|𝐵)   = 𝑛𝐵 (𝑤)/|𝐵|
+    Prob. that a good email contains 𝑤:
+     𝑝(𝑤|𝐺)   = 𝑛𝐺 (𝑤)/|𝐺|
+    The prob. that a new email is spam is 𝑝         𝐵  =    𝐵   .
+                                                           𝐵 +|𝐺16|

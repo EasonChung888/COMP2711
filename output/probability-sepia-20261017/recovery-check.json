@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "isolatedCopy": true,
+  "realRenderer": true,
+  "pendingBlocksNextPage": true,
+  "interruptionAfterHTMLWrite": true,
+  "savedHashPersistsBeforeRendering": true,
+  "tamperingBlocked": true,
+  "resumeUsesExactSavedResponse": true,
+  "noDuplicateSaveEvent": true,
+  "duplicateCommitBlocked": true
+}

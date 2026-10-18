@@ -1,0 +1,25 @@
+ Average-case Analysis of Algorithms
+
+▪ Definition
+  Let 𝑋  be the random variable representing the running
+  time (i.e., # of instructions) of an algorithm, when the
+  input is drawn from a certain distribution (usually,
+  uniform). Then the average-case running time of the
+  algorithm is 𝐸(𝑋).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                21

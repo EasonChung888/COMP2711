@@ -1,0 +1,24 @@
+ RSA: Correctness
+
+▪ Proof plan
+  We want to show
+                  𝐶𝑑 =  𝑥𝑑𝑒≡  𝑥 mod  𝑛 .
+  Step 1: Show that
+                      𝑥𝑑𝑒 ≡ 𝑥  mod  𝑝
+                      𝑥𝑑𝑒 ≡ 𝑥  mod  𝑞
+  Step 2: Show that
+                      𝑥𝑑𝑒 ≡ 𝑥 mod  𝑝𝑞
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          27

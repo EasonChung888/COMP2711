@@ -1,0 +1,16 @@
+ RSA Encryption
+
+
+▪ Let 𝑥  < 𝑛 be the message to be encrypted
+▪ Alice encrypts it as
+                          𝐶 =  𝑥𝑒 mod  𝑛
+   ▪ (𝑛, 𝑒) is Bob’s public key
+   ▪ Sends 𝐶   to Bob
+   ▪ 𝐶  may be eavesdropped
+▪ Security
+   ▪ Exponentiation can be computed efficiently
+       ▪ Proportional to the length of the key
+   ▪ Computing 𝑥     from 𝐶,  𝑛, 𝑒 is believed to be difficult
+       ▪ Known as the RSA problem
+
+                                                                22

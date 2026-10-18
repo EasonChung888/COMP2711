@@ -1,0 +1,101 @@
+{
+  "title": "最大公约数、逆元与同余方程",
+  "subtitle": "GCDs, Inverses & Congruences",
+  "storagePrefix": "comp2711:l1-13:",
+  "topics": [
+    {
+      "slug": "gcd-and-euclid",
+      "title": "最大公约数与欧几里得算法",
+      "description": "用素因子理解公约数，并以余数迭代直接计算 GCD。",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "questions": [
+        "Q-2014-FINAL-P02-c",
+        "Q-2017-MID-P05-a",
+        "Q-2023S-MID-P06"
+      ]
+    },
+    {
+      "slug": "bezout-and-extended-euclid",
+      "title": "Bézout 与扩展欧几里得算法",
+      "description": "反向代回构造整数线性组合，联系量水问题。",
+      "pages": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "questions": [
+        "Q-2024S-MID-P12-a",
+        "Q-2020-MID-P08",
+        "Q-2018-MID-P05-a"
+      ]
+    },
+    {
+      "slug": "multiplicative-inverses",
+      "title": "乘法逆元的存在、唯一与计算",
+      "description": "通过互素条件判定可逆性，用扩展算法求标准逆元。",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "questions": [
+        "Q-2024S-MID-P12-b",
+        "Q-2020-MID-P06"
+      ]
+    },
+    {
+      "slug": "linear-congruences",
+      "title": "线性同余方程与解的数量",
+      "description": "用逆元求解，分析不互素时的无解与多解情况。",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "questions": [
+        "Q-2017-MID-P05-b",
+        "Q-2019-MID-P10-b",
+        "Q-2020-MID-P07"
+      ]
+    },
+    {
+      "slug": "hashing-and-checksums",
+      "title": "可逆变换与加权校验",
+      "description": "以字符串哈希和校验码说明互素与合法消去的应用。",
+      "pages": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "questions": []
+    },
+    {
+      "slug": "chinese-remainder-theorem",
+      "title": "中国剩余定理",
+      "description": "从孙子问题到构造公式，证明模数乘积下的唯一解类。",
+      "pages": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "questions": [
+        "Q-2013-FINAL-P03",
+        "Q-2019-FINAL-P02",
+        "Q-2025F-FINAL-P06"
+      ]
+    }
+  ]
+}

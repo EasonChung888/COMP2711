@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "mode": "--full",
+  "checkedAt": "2026-10-18T06:10:56.366Z",
+  "revision": "sepia-20261017",
+  "chapters": [
+    {
+      "id": "l1-12",
+      "written": 31,
+      "prepared": 0,
+      "expected": 31,
+      "topics": 5
+    },
+    {
+      "id": "l1-13",
+      "written": 27,
+      "prepared": 0,
+      "expected": 27,
+      "topics": 6
+    },
+    {
+      "id": "l1-14",
+      "written": 34,
+      "prepared": 0,
+      "expected": 34,
+      "topics": 6
+    }
+  ],
+  "contentRead": true,
+  "protection": {
+    "immutableFiles": 436,
+    "supplementalFiles": 1130,
+    "changedLessonHtml": [
+      "courses/l2-5/chapters/l1-12/lessons/congruence-rules.html",
+      "courses/l2-5/chapters/l1-12/lessons/divisibility.html",
+      "courses/l2-5/chapters/l1-12/lessons/division-theorem.html",
+      "courses/l2-5/chapters/l1-12/lessons/modular-applications.html",
+      "courses/l2-5/chapters/l1-12/lessons/modular-arithmetic.html",
+      "courses/l2-5/chapters/l1-13/lessons/bezout-and-extended-euclid.html",
+      "courses/l2-5/chapters/l1-13/lessons/chinese-remainder-theorem.html",
+      "courses/l2-5/chapters/l1-13/lessons/gcd-and-euclid.html",
+      "courses/l2-5/chapters/l1-13/lessons/hashing-and-checksums.html",
+      "courses/l2-5/chapters/l1-13/lessons/linear-congruences.html",
+      "courses/l2-5/chapters/l1-13/lessons/multiplicative-inverses.html",
+      "courses/l2-5/chapters/l1-14/lessons/diffie-hellman.html",
+      "courses/l2-5/chapters/l1-14/lessons/fermat-little-theorem.html",
+      "courses/l2-5/chapters/l1-14/lessons/modular-exponentiation.html",
+      "courses/l2-5/chapters/l1-14/lessons/rsa-and-public-keys.html",
+      "courses/l2-5/chapters/l1-14/lessons/rsa-correctness.html",
+      "courses/l2-5/chapters/l1-14/lessons/secret-key-ciphers.html"
+    ]
+  },
+  "written": 92,
+  "prepared": 0,
+  "finalReady": true,
+  "lessons": 17,
+  "questions": 39,
+  "reviewFacts": 304,
+  "reviewDefects": 70,
+  "localLinks": 2835,
+  "exactRenderedResponses": true,
+  "nonResponseMarkupUnchanged": true,
+  "originalsPreserved": true,
+  "protectedFiles": 1549,
+  "baselineDifferences": [
+    {
+      "file": "courses/l2-5/chapters/l1-12/lessons/congruence-rules.html",
+      "expectedSha256": "eaae05340b1b4c95e2c90ecde4daa949efce48e8d5031bf4a0e8c570976941a8",
+      "currentSha256": "83bd53ec743264646d9b9abf895dd6b586d81dadefeaaae7c66af2a4ef5c86a9",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-12/lessons/divisibility.html",
+      "expectedSha256": "868aafab52178a8e58921938449338d060c16d3a99ecb56bc1bbcd180041bd65",
+      "currentSha256": "60f79124238dba506d09764d627c1cfa2fd01405c2bfb14a22a9602b220f3079",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-12/lessons/division-theorem.html",
+      "expectedSha256": "f94cd0ab6fb2b69fb71f747b453a1dc305a386edc85e46820d32c2e76a12633a",
+      "currentSha256": "d1d735e92d846901a1cad54219d4ca625358e78bd2810c209dcaf4b119c17d73",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-12/lessons/modular-applications.html",
+      "expectedSha256": "b0a7caa4fb26bd63789d386c594eb2865ea09446fabf9b2e1c3b309594ff7ee3",
+      "currentSha256": "d23e54ce74169c116edc299126c748b5124299a82e0b07fa2f96984bf6338133",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-12/lessons/modular-arithmetic.html",
+      "expectedSha256": "b0a08d7b928f80eb56de944678c10c84318fe07279d2df193b0b61b63aa57f00",
+      "currentSha256": "e60e7569675531ac5efe77368bfbf6ed70e77952f8aa57e711898eb0aaeb6b9e",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-13/lessons/bezout-and-extended-euclid.html",
+      "expectedSha256": "7195daba4cef3b195d907ebb19ea67593641e85af4c3d186111d81420686d05d",
+      "currentSha256": "1aa46cdfefb9ce5bff0528c10f301389d0028ffedfec27d173d28365bf431144",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-13/lessons/chinese-remainder-theorem.html",
+      "expectedSha256": "5b89f25dc004cc46e1861aa413848edffd711eb353705c475fc19d4483de7d96",
+      "currentSha256": "1db03eb484e29adf739f744a3ffee8e8c528c90509c677a5b1268eeeb6d11405",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-13/lessons/gcd-and-euclid.html",
+      "expectedSha256": "ce2bbc5d7284301a9db835b97472e075f8c61a28182007df67682133c1dc4612",
+      "currentSha256": "12fb899392b9f1b1d1e39c47ba13341f2f2154707ffc8b35162e3d4697c7442d",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-13/lessons/hashing-and-checksums.html",
+      "expectedSha256": "568e9bd58b59ac888ac5e455be6835694bf7bc8eac94b2549c437c49de1612f0",
+      "currentSha256": "1e27c6142821d3888148019e8bb768fb2b43696e03ea91878ac31304ffbde96e",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-13/lessons/linear-congruences.html",
+      "expectedSha256": "f4f4dc2127d0ddb254d03d2943b2ece11038f90aad8e21f50c9414f8163abc8f",
+      "currentSha256": "78946c16fd89cc3f4e8b06673c218d753e431255d86d6afc9c16b11bd93614ff",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-13/lessons/multiplicative-inverses.html",
+      "expectedSha256": "32c5605c662b03e1ca59222e98a4573854f32d11f7e318a1cc12aad6c84c240c",
+      "currentSha256": "ae30b015694ea9d5c3b27fedd76a38a8eb1f7f4fb7a53d3594cf813ba8272c3c",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-14/lessons/diffie-hellman.html",
+      "expectedSha256": "74c573724b4b545d46e3392bcc71ee75ca61a658b95910824a0153d4eb22c5af",
+      "currentSha256": "25672164c2d1f95292197bdbc3779d86f11cc9a5252b96b5d41b02c1927988c9",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-14/lessons/fermat-little-theorem.html",
+      "expectedSha256": "22c5529af76a80871229654dab9d0f03206a4cf22d18012068a0dde01aa29e97",
+      "currentSha256": "ddfd42acc3d455872e2d0623fe3453bd83a8faafece6340e8085944437581479",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-14/lessons/modular-exponentiation.html",
+      "expectedSha256": "c8f2e74af858d12c788cdb3a399ebd86918b94ab6e5b532264b007e13cf8e1c1",
+      "currentSha256": "3fab1a2be15a6ca3485adf15199dd897f3100dc29082923af39b0fc3b2b01cb5",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-14/lessons/rsa-and-public-keys.html",
+      "expectedSha256": "2117bca88f4fa8816d35a6d447cc876ac22d3dbd8955f829f314234142b2c946",
+      "currentSha256": "3897bfe6eb94cca30ff8a4889182a3f9657fdd91fe13031ade68a818bd903917",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-14/lessons/rsa-correctness.html",
+      "expectedSha256": "30be01c540487a53f7d5f67f6bcea29a947c6c855a042f285bdc27d279f898da",
+      "currentSha256": "7036a2256b45c3b0841360b17b6c9bb7762cab9023d6a7d64f3650ebf4895961",
+      "category": "authorized Number theory response revision"
+    },
+    {
+      "file": "courses/l2-5/chapters/l1-14/lessons/secret-key-ciphers.html",
+      "expectedSha256": "57f35d26a12fca4126199d62b59bbfaa13c0b25068789d2fb2f14ce0ebfad79e",
+      "currentSha256": "1d246ab640a333046bf73459dbf657e15e1777ab1069b1b04617e0ecceb942b5",
+      "category": "authorized Number theory response revision"
+    }
+  ],
+  "fullBaselineUnchanged": false,
+  "finishedAt": "2026-10-18T06:10:56.911Z"
+}

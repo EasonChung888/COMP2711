@@ -1,0 +1,19 @@
+{
+  "defects": [
+    {
+      "check": "6 formatting",
+      "evidence": "两两独立（pairwise independent）",
+      "repair": "将条件与平方展开的交叉项说明相连，不靠加粗。"
+    }
+  ],
+  "facts": [
+    "有限二阶矩独立XY方差和可加，多变量两两独立即足够。",
+    "一般V和=VX+VY+2Cov，CovEXY-EXEY，独立使0；期望线性无需此。",
+    "平方只两两项，不需相互独立，两两不相关也足但不推独立。",
+    "Y=X且VX正反例V2X=4VX非2VX。",
+    "加权两两独立V(sum aiXi)=sum ai²VXi，标准差不可通常直接加。"
+  ],
+  "styleScan": "保留必需的对比与反例，不将数学反例当作修辞性对照删除。",
+  "deferred": [],
+  "protected": []
+}

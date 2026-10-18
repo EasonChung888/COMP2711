@@ -1,0 +1,344 @@
+[
+  {
+    "id": "Q-2020-FINAL2-P03",
+    "topic": "conditional-probability",
+    "sourceNote": "sources/notes/Q-2020-FINAL2-P03 - Conditional Probability.md",
+    "sourceNoteSha256": "d1afda7a7de37c7f23d80ad24607ee9f244f3a469ed9d0c1331fa2af935af98c",
+    "stems": [],
+    "stemPages": [],
+    "paper": "2020 Final Part 2",
+    "pdf": "sources/papers/2020-final-part-2.pdf",
+    "pdfSha256": "88d7c2386e0451544cb5b509e45c9aef05dcfca742b23085f8954f19eab1dff4",
+    "page": 2,
+    "solutionPages": [
+      2
+    ],
+    "number": "3",
+    "marks": 5,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $A$ and $B$ be two events. It is known that $p(A)=0.7$, $p(B)=0.6$, $p(A\\cap B)=0.5$, what is $p(B\\mid A\\cup\\overline B)$?",
+    "independentVerification": "Venn masses (both,A only,B only,neither)=(.5,.2,.1,.2); denominator .9, numerator .5: 5/9.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 2](../sources/papers/2020-final-part-2.pdf#page=2).\n\n$$p(B\\mid A\\cup\\overline B)=\\frac{p(B\\cap(A\\cup\\overline B))}{p(A\\cup\\overline B)}.$$\nSince $B\\cap(A\\cup\\overline B)=(B\\cap A)\\cup(B\\cap\\overline B)=(B\\cap A)\\cup\\varnothing=B\\cap A$,\n$$p(B\\cap(A\\cup\\overline B))=p(B\\cap A)=0.5.$$\n$$p(A\\cup\\overline B)=1-p(\\overline A\\cap B)=1-(p(B)-p(A\\cap B))=0.9.$$\nThe final result is,\n$$p(B\\mid A\\cup\\overline B)=\\frac{p(B\\cap(A\\cup\\overline B))}{p(A\\cup\\overline B)}=\\frac59.$$",
+    "solutionMarkdown": "**Answer.** $5/9$.\n\n**Derivation/proof.** The conditional numerator is $p(B\\cap(A\\cup\\overline B))=p(A\\cap B)=.5$, since $B\\cap\\overline B=\\varnothing$. The conditioning event excludes exactly $\\overline A\\cap B$, of probability $.6-.5=.1$. Its probability is therefore .9. Dividing gives $.5/.9=5/9$. The bar over B is visible in the printed prompt and materially changes both event calculations.\n\nThe probability of the excluded event is $0.6-0.5=0.1$, leaving conditioning probability $0.9$. The conditional numerator is $0.5$, hence the quotient is $0.5/0.9=5/9$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "613724255f331df79365403567cd6ea2b1ed4932053810d60fbcee845620e9f4",
+    "supplementarySourceSha256": "32460a829b5786106416f7d7af4806767fbe0100c43631ddb1da4f27c551c222"
+  },
+  {
+    "id": "Q-2025F-FINAL-P03-a",
+    "topic": "conditional-probability",
+    "sourceNote": "sources/notes/Q-2025F-FINAL-P03-a - Conditional Probability.md",
+    "sourceNoteSha256": "9d37d09d1545735cd814b62caa1dee7a081354af1c118c16284678e93235aab7",
+    "stems": [
+      "STEM-2025F-FINAL-P03 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      7
+    ],
+    "paper": "2025 Fall Final",
+    "pdf": "sources/papers/COMP2711_F2025_Final.pdf",
+    "pdfSha256": "8c99ca5ef7b1426d42aedc27023a61333a17cef4f9133a2e253803604384388f",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "3(a)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "We have 14 volleyball players, all of different heights. All $14!$ permutations of rankings (tallest = rank 1 to shortest = rank 14) are equally likely. Answer the following questions and briefly explain. You do not need to calculate the final numerical answer.\n\n(a) [3 points] Given A is taller than B, what is the probability that A is tallest?",
+    "independentVerification": "Enumerated all 14*13*12 ordered placements of A,B,C; among A taller than B, A at rank 1 occurs with conditional probability 1/7.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 7](../sources/papers/COMP2711_F2025_Final.pdf#page=7).\n\n(a) Given $A>B$, permutations satisfying this: $14!/2$. If $A$ is tallest, arrange others: $13!$ permutations.\n$$\\Pr(A\\text{ tallest}\\mid A>B)=\\frac{13!}{14!/2}=\\frac2{14}=\\frac17.$$",
+    "solutionMarkdown": "**Answer.** $1/7$.\n\n**Derivation/proof.** All $14!$ rankings are equally likely. Swapping $A$ and $B$ gives a bijection between rankings with $A>B$ and those with $B>A$, so the conditional sample space contains $14!/2$ rankings. If $A$ is first, $A>B$ holds automatically and the other 13 players have $13!$ arrangements. Thus the conditional probability is $13!/(14!/2)=2/14=1/7$. The denominator counts rankings satisfying the condition, not all rankings.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "96de487f8145fbfe33e7245cb99ff6b3db5c595cfc77ac07bc2e4f412c75535c",
+    "supplementarySourceSha256": "6db5427f674118459b43dc8512f5ca6174b41a9da823b6de3c007684d35071bf"
+  },
+  {
+    "id": "Q-2025F-FINAL-P03-c",
+    "topic": "conditional-probability",
+    "sourceNote": "sources/notes/Q-2025F-FINAL-P03-c - Conditional Probability.md",
+    "sourceNoteSha256": "4d8d94b1d6ed12cec78a514030c2d36123b7498f47033209e4bc8516abb75e43",
+    "stems": [
+      "STEM-2025F-FINAL-P03 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      7
+    ],
+    "paper": "2025 Fall Final",
+    "pdf": "sources/papers/COMP2711_F2025_Final.pdf",
+    "pdfSha256": "8c99ca5ef7b1426d42aedc27023a61333a17cef4f9133a2e253803604384388f",
+    "page": 7,
+    "solutionPages": [
+      7
+    ],
+    "number": "3(c)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "We have 14 volleyball players, all of different heights. All $14!$ permutations of rankings (tallest = rank 1 to shortest = rank 14) are equally likely. Answer the following questions and briefly explain. You do not need to calculate the final numerical answer.\n\n(c) [3 points] Given A is taller than B and shorter than C, what is the probability that A is seventh tallest?",
+    "independentVerification": "Enumerated distinct ranks A,B,C; among C<A<B, A at rank 7 has 6*7 favorable placements, yielding 3/26.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 7](../sources/papers/COMP2711_F2025_Final.pdf#page=7).\n\n(c) Given $C>A>B$. Permutations satisfying this: $14!/6$. If $A$ is rank 7, $C$ in ranks $1,\\ldots,6$ (6 choices), $B$ in ranks $8,\\ldots,14$ (7 choices), arrange remaining 11: $11!$.\n$$\\Pr(A\\text{ rank }7\\mid C>A>B)=\\frac{6\\cdot7\\cdot11!}{14!/6}=\\frac{252}{14\\cdot13\\cdot12}=\\frac3{26}.$$",
+    "solutionMarkdown": "**Answer.** $3/26$.\n\n**Derivation/proof.** The three distinct-height players have $3!=6$ equally likely relative orders, so $C>A>B$ leaves $14!/6$ rankings. Fix $A$ seventh. Player $C$ has six choices among ranks 1–6; player $B$ has seven choices among ranks 8–14. The other 11 players can be arbitrarily arranged, giving $6\\cdot7\\cdot11!$ favorable rankings. Hence the conditional probability is $6\\cdot7\\cdot11!/(14!/6)=252/(14\\cdot13\\cdot12)=3/26$. The position sets for $C$ and $B$ are disjoint, so multiplication does not create collisions.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "c30ff598fa8c47a75c018f2faf1ed7b5c990bcaf766be3da872df9dd2a7600ec",
+    "supplementarySourceSha256": "8ce9056ba55b1ba8044ad6876577163c3bfc9fe1068b4f579f1adbde4d188945"
+  },
+  {
+    "id": "Q-2017-FINAL-P05-a",
+    "topic": "bayesian-inference",
+    "sourceNote": "sources/notes/Q-2017-FINAL-P05-a - Conditional Probability.md",
+    "sourceNoteSha256": "49daa3c057bb91bac1568bca9150198bf1da62ec8c3f1c06050a00e110be2222",
+    "stems": [
+      "STEM-2017-FINAL-P05 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      8
+    ],
+    "paper": "2017 Final",
+    "pdf": "sources/papers/2017-final.pdf",
+    "pdfSha256": "1a3a43234b2f03f6503b3c0d648d3021cde963b37d33182642481a125300c8f8",
+    "page": 8,
+    "solutionPages": [
+      8,
+      9
+    ],
+    "number": "5(a)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "You play against your friend in a coin flipping game, where the objective is to get the most heads after three coin flips. A player wins if they have more heads than the opponent. If the numbers of heads are equal, then no one wins; it is a tie. You will take turns flipping coins, and your friend flips first.\n\nYou want to cheat, so you created a fake coin that looks identical to a real, fair coin. The fake coin has a 80% chance of getting heads. Your friend is suspicious, so your friend gets to pick first from the two coins, randomly, with equal probability. You are forced to take the other coin. You will both use your own coin for all three coin flips. The game begins, and your friend flips the coin once and gets heads.\n\n(a) Given that your friend’s first coin flip returns heads, what is the probability that your friend got the fake coin, to your disadvantage?",
+    "independentVerification": "Equal coin priors: (.5*.8)/(.5*.8+.5*.5)=8/13; first flip only, no other evidence.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 8](../sources/papers/2017-final.pdf#page=8); [physical PDF page 9](../sources/papers/2017-final.pdf#page=9).\n\nDefine the following events: $E_1$: Your friend got the fake coin. $E_2$: Your friend got the real coin. $H$: Your friend's coin flip returns heads. $T$: Your friend's coin flip returns tails.\nWe want to know $p(E_1\\mid H)$.\nWe know that $p(H)+p(T)=1,p(E_1)+p(E_2)=1$.\nThen we have:\n$$p(E_1\\mid H)\\cdot p(H)=p(H\\mid E_1)\\cdot p(E_1)$$\n$$p(E_1\\mid H)=0.8\\cdot0.5/p(H)=0.4/(0.5\\cdot0.8+0.5\\cdot0.5)=0.4/0.65=8/13.$$",
+    "solutionMarkdown": "**Answer.** $8/13$.\n\n**Derivation/proof.** Let $F$ mean the friend holds the fake coin and $H$ mean the observed head. Then $P(F)=1/2$, $P(H\\mid F)=4/5$, and $P(H\\mid F^c)=1/2$. Total probability gives $P(H)=(1/2)(4/5)+(1/2)(1/2)=13/20$. Bayes gives $P(F\\mid H)=(2/5)/(13/20)=8/13$.\n\nThe joint probability is $P(F\\cap H)=2/5$. Only the observed first toss enters this calculation; no assumption about later tosses is needed.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "c82b4e3aaf3283510942903d8e245db4e2d604c8f6d2a592acedaca64300c8c7",
+    "supplementarySourceSha256": "327b7d8342261cf57388d2624cdab07cfdc58ea84faa589f9d3ace6b03a6b666"
+  },
+  {
+    "id": "Q-2023F-MID-P08",
+    "topic": "bayesian-inference",
+    "sourceNote": "sources/notes/Q-2023F-MID-P08 - Conditional Probability.md",
+    "sourceNoteSha256": "26b13a870720026c982c15b43eb07a4659ab5d6f51cdad2ca9fe3ec3948afcc6",
+    "stems": [],
+    "stemPages": [],
+    "paper": "2023 Fall Midterm",
+    "pdf": "sources/papers/COMP2711_F2023_Midterm.pdf",
+    "pdfSha256": "4ced9291189c331f77d1a2d614cac17c95b372cf3153db6403c3946af2c1ea9b",
+    "page": 17,
+    "solutionPages": [
+      17,
+      18
+    ],
+    "number": "8",
+    "marks": 8,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Two computers, a sender and a receiver, are communicating with each other. The sender transmits bit 1 with a probability of 30% and bit 0 with a probability of 70%. The communication channel is noisy, and we know the following information about the transition of data:\n\n1. If the sent bit is 0, there is a 90% probability that the receiver will receive bit 0 and a 10% probability that it will receive bit 1.\n2. If the sent bit is 1, there is an 80% probability that the receiver will receive bit 1 and a 20% probability that it will receive bit 0.\n\nGiven that the receiver computer received bit 0, determine the probability that the bit being sent was also 0.",
+    "independentVerification": "Bayes with send0=.7 and likelihoods .9,.2: .63/(.63+.06)=21/23.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 17](../sources/papers/COMP2711_F2023_Midterm.pdf#page=17).\n\n> Denote the bit sent by the sender to be $S$ and the bit received by the receiver to be $R$.\n> We know that:\n> $$p(S=1)=0.3,\\ p(S=0)=0.7$$\n> $$p(R=1\\mid S=1)=0.8,\\ p(R=0\\mid S=1)=0.2$$\n> $$p(R=1\\mid S=0)=0.1,\\ p(R=0\\mid S=0)=0.9$$\n> By the Bayes’ theorem,\n> $$\\begin{aligned}p(S=0\\mid R=0)&=\\frac{p(R=0\\mid S=0)p(S=0)}{p(R=0)}\\\\&=\\frac{p(R=0\\mid S=0)p(S=0)}{p(R=0\\mid S=1)p(S=1)+p(R=0\\mid S=0)p(S=0)}\\\\&=\\frac{0.9\\times0.7}{0.2\\times0.3+0.9\\times0.7}\\\\&=\\frac{21}{23}\\\\&=0.913.\\end{aligned}$$",
+    "solutionMarkdown": "**Answer.** $\\displaystyle P(S=0\\mid R=0)=\\frac{21}{23}\\approx0.91304$.\n\n**Derivation/proof.** Let S be the sent bit and R the received bit. The joint probability of a sent zero and received zero is $P(S=0,R=0)=0.7\\cdot0.9=0.63$. Total probability gives $P(R=0)=0.7\\cdot0.9+0.3\\cdot0.2=0.69$. Dividing the joint event by the conditioning event yields $P(S=0\\mid R=0)=0.63/0.69=21/23$. The alternative posterior is $0.06/0.69=2/23$, so the two possible sent-bit posteriors sum to 1.\n\nThe second joint probability is $0.3\\cdot0.2=0.06$. The source’s final decimal is rounded; the exact value is $21/23$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "73377f698bc5356753fe78d08084fa543a4425ccaf9f210b609032370198e828",
+    "supplementarySourceSha256": "e9507739d7deb71a0bf6eebf5373d189f3644b611d5d126aef2a7fa3918577af"
+  },
+  {
+    "id": "Q-2025S-FINAL-P11",
+    "topic": "bayesian-inference",
+    "sourceNote": "sources/notes/Q-2025S-FINAL-P11 - Conditional Probability.md",
+    "sourceNoteSha256": "3eadb2bd5f425464d5ad61b48f2d35b4eb28f082fda652d56822b4372b16beb0",
+    "stems": [],
+    "stemPages": [],
+    "paper": "2025 Spring Final",
+    "pdf": "sources/papers/COMP2711_S2025_Final.pdf",
+    "pdfSha256": "15b253986652a8a846ad56904c0d61c46450bcc4b8369299e36002d2bdba647a",
+    "page": 15,
+    "solutionPages": [
+      15
+    ],
+    "number": "11",
+    "marks": 7,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "A man is known to tell the truth with probability $\\frac34$ (independent of the event outcome) and can only respond with “YES” or “NO”. He rolls a fair six-sided die and is then asked whether the die landed on 6. He responds, “YES”! What is the probability that the die actually landed on 6? Justify your answer.",
+    "independentVerification": "Independent die and truthfulness: P(6,YES)=1/6*3/4; P(YES)=1/6*3/4+5/6*1/4; ratio3/8.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 15](../sources/papers/COMP2711_S2025_Final.pdf#page=15).\n\nThere are two scenarios in which the man responds YES: either he is being truthful, or he is not. Note that his truthfulness is independent of the die's outcome.\n\nLet $S$ be the event of rolling a six, $P(S)=\\frac16$.\n\nLet $\\overline S$ be the event of not rolling a six, $P(\\overline S)=\\frac56$.\n\nLet $T$ be the event that the man tells the truth, regardless of the outcome, $P(T)=\\frac34$.\n\nLet $\\overline T$ be the event that the man does not tell the truth, regardless of the outcome, $P(\\overline T)=\\frac14$.\n\nLet $M$ be the event that the man responds \"YES\" when asked if the die landed on 6. We want to find $P(S\\mid M)$.\n\nFirst Solution: Using the Bayes' theorem:\n$$P(S\\mid M)=\\frac{P(M\\mid S)P(S)}{P(M\\mid S)P(S)+P(M\\mid\\overline S)P(\\overline S)}=\\frac{\\frac34\\cdot\\frac16}{\\frac34\\cdot\\frac16+\\frac14\\cdot\\frac56}=\\frac38.$$\nSecond Solution:\n$$P(M)=P(S\\cap T)+P(\\overline S\\cap\\overline T)=\\frac16\\cdot\\frac34+\\frac56\\cdot\\frac14=\\frac8{24}$$\n$$P(S\\cap M)=\\frac34\\cdot\\frac16=\\frac3{24}$$\n$$P(S\\mid M)=\\frac{P(S\\cap M)}{P(M)}=\\frac{3/24}{8/24}=\\frac38$$",
+    "solutionMarkdown": "**Answer.** $3/8$.\n\n**Derivation/proof.** Let S mean a six and M mean YES. Truthfulness is explicitly independent of the outcome, so $P(S)=1/6$, $P(M\\mid S)=3/4$, and $P(M\\mid\\overline S)=1/4$. The disjoint, exhaustive sources of YES give $P(M)=\\frac16\\frac34+\\frac56\\frac14=8/24$. Rolling a six and saying YES has probability $P(S\\cap M)=3/24$. Thus $P(S\\mid M)=(3/24)/(8/24)=3/8$. This is lower than the truthfulness rate because the prior probability of a non-six is much larger.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "8755b72af031a2940732342a81e41212cbb54dcadf82f1ab41cc581ce7435329",
+    "supplementarySourceSha256": "fcee3ff3cd02bfae8705c8f545212d66317afa9a4f6fdb2506833edb92ac3049"
+  },
+  {
+    "id": "Q-2019-FINAL-P11",
+    "topic": "monty-hall-strategies",
+    "sourceNote": "sources/notes/Q-2019-FINAL-P11-a-W1 - Conditional Probability.md",
+    "sourceNoteSha256": "94424aafcf6f669c976ad110dbd4845a00033519e20aca9c6682f6c8e6d82a16",
+    "stems": [
+      "STEM-2019-FINAL-P11 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      13
+    ],
+    "paper": "2019 Final",
+    "pdf": "sources/papers/2019-final.pdf",
+    "pdfSha256": "5a29841efef7c05f72bf6d63c44256b2810443f113f9a91f7ee1b649c25edcd7",
+    "page": 13,
+    "solutionPages": [
+      13,
+      14
+    ],
+    "number": "11(a)–(d)",
+    "marks": 11,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Recall that we gave two explanations for the Monty Hall game. The first is an intuitive one: Our initial guess is correct with probability $\\frac13$, which is not affected by Monty opening another door, so switching will give us a winning probability of $\\frac23$. Then we gave a formal proof that $p(W=1\\mid M=2)=p(W=1)=\\frac13$, where $W$ denotes the winning door and $M$ the door Monty opens. Below, we will see that the intuitive explanation only “happens” to be correct in this case, and can easily go wrong if we slightly perturb the probabilities.\n\nNow, suppose that the probabilities of the 3 doors having the prize are 0.5, 0.3, and 0.2, respectively. Then obviously we should pick door 1 as our initial guess. Then Monty will open one of door 2 or 3 without the prize. If neither has the prize, he will pick one of them randomly with equal probability.\n\n(a) Suppose $M=2$, i.e., Monty opens door 2. What is $p(W=1\\mid M=2)$ and $p(W=3\\mid M=2)$? Based on your calculation, should you switch to door 3?\n\n(b) Now suppose $M=3$, i.e., Monty opens door 3. What is $p(W=1\\mid M=3)$ and $p(W=2\\mid M=3)$? In this case, should you switch to door 2?\n\n(c) What’s the winning probability of your strategy above?\n\n(d) Can you design a better strategy? What’s its winning probability?\n\n[Hint: What is “obvious” is not obvious.]",
+    "independentVerification": "Enumerated joint masses (.25,.25,.30,.20) for (W,M)=(1,2),(1,3),(2,3),(3,2). Posteriors5/9,4/9,5/11,6/11; keep/switch policy11/20; choose3 then switch4/5.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 13](../sources/papers/2019-final.pdf#page=13); [physical PDF page 14](../sources/papers/2019-final.pdf#page=14).\n\nBy the Bayes\\' theorem,\n$$p(W=w\\mid M=2)=\\frac{p(M=2\\mid W=w)p(W=w)}{p(M=2)},$$\nwhere $p(M=2)=\\sum_{w=1}^3p(M=2\\mid W=w)p(W=w)$. We have $p(W=1)=0.5,p(W=2)=0.3,p(W=3)=0.2,p(M=2\\mid W=1)=1/2,p(M=2\\mid W=2)=0,p(M=2\\mid W=3)=1$. Plugging in these numbers, we obtain $p(M=2)=0.45$ and $p(W=1\\mid M=2)=5/9,p(W=3\\mid M=2)=4/9$. So, we should not switch. Contrary to our intuition, the probability that our initial guess is correct has increased after door 2 is opened!",
+    "solutionMarkdown": "**Answer.** $5/9$.\n\n**Derivation/proof.** Monty opens door 2 with probability $1/2$ if $W=1$, zero if $W=2$, and one if $W=3$. Therefore $P(M=2)=0.5(1/2)+0.3(0)+0.2(1)=0.45$. The joint mass for $W=1,M=2$ is $0.25$. Bayes gives $0.25/0.45=5/9$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "66bf1fd28182b8951f3a1fea1ab0747a8121bd6866c4d5c396c92dee6be03991",
+    "supplementarySourceSha256": "17b2deb2365260d78348add20d10f82ef9582706bd5d41fe5f8dde6b09b95e54",
+    "answerParts": [
+      {
+        "id": "Q-2019-FINAL-P11-a-W1",
+        "sourceNote": "sources/notes/Q-2019-FINAL-P11-a-W1 - Conditional Probability.md",
+        "sourceNoteSha256": "94424aafcf6f669c976ad110dbd4845a00033519e20aca9c6682f6c8e6d82a16",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 13](../sources/papers/2019-final.pdf#page=13); [physical PDF page 14](../sources/papers/2019-final.pdf#page=14).\n\nBy the Bayes\\' theorem,\n$$p(W=w\\mid M=2)=\\frac{p(M=2\\mid W=w)p(W=w)}{p(M=2)},$$\nwhere $p(M=2)=\\sum_{w=1}^3p(M=2\\mid W=w)p(W=w)$. We have $p(W=1)=0.5,p(W=2)=0.3,p(W=3)=0.2,p(M=2\\mid W=1)=1/2,p(M=2\\mid W=2)=0,p(M=2\\mid W=3)=1$. Plugging in these numbers, we obtain $p(M=2)=0.45$ and $p(W=1\\mid M=2)=5/9,p(W=3\\mid M=2)=4/9$. So, we should not switch. Contrary to our intuition, the probability that our initial guess is correct has increased after door 2 is opened!",
+        "solutionMarkdown": "**Answer.** $5/9$.\n\n**Derivation/proof.** Monty opens door 2 with probability $1/2$ if $W=1$, zero if $W=2$, and one if $W=3$. Therefore $P(M=2)=0.5(1/2)+0.3(0)+0.2(1)=0.45$. The joint mass for $W=1,M=2$ is $0.25$. Bayes gives $0.25/0.45=5/9$.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "66bf1fd28182b8951f3a1fea1ab0747a8121bd6866c4d5c396c92dee6be03991",
+        "supplementarySourceSha256": "17b2deb2365260d78348add20d10f82ef9582706bd5d41fe5f8dde6b09b95e54"
+      },
+      {
+        "id": "Q-2019-FINAL-P11-b-W1",
+        "sourceNote": "sources/notes/Q-2019-FINAL-P11-b-W1 - Conditional Probability.md",
+        "sourceNoteSha256": "d3f5c24a84e9a69c9d33fbb6d922833c0a4a74d5181beb0048d500025efa54f2",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 13](../sources/papers/2019-final.pdf#page=13); [physical PDF page 14](../sources/papers/2019-final.pdf#page=14).\n\nSame as above, but with $p(M=3\\mid W=1)=1/2,p(M=3\\mid W=2)=1,p(M=3\\mid W=3)=0$. Plugging in these numbers, we obtain $p(M=3)=0.55$ and $p(W=1\\mid M=3)=5/11,p(W=2\\mid M=3)=6/11$. So, we should switch to door 2. This time, the probability that our initial guess is correct has decreased.",
+        "solutionMarkdown": "**Answer.** $5/11$.\n\n**Derivation/proof.** Here $P(M=3\\mid W=1)=1/2$, $P(M=3\\mid W=2)=1$, and $P(M=3\\mid W=3)=0$. Hence $P(M=3)=0.5(1/2)+0.3=0.55$. The joint mass $P(W=1,M=3)=0.25$, giving posterior $0.25/0.55=5/11$.\n\nThe total probability of the observed opening is $0.5(1/2)+0.3(1)+0.2(0)=0.55$. These terms condition on the three mutually exclusive prize locations.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "a6fca1f1d521a3de312ef1c392b771c8da7938a2c16667f14e2c26328e5f937f",
+        "supplementarySourceSha256": "e871a37c46499c1810b2160799e309124f50239ff64e9e55ef96b4670837594e"
+      },
+      {
+        "id": "Q-2019-FINAL-P11-c",
+        "sourceNote": "sources/notes/Q-2019-FINAL-P11-c - Conditional Probability.md",
+        "sourceNoteSha256": "2aa76bc300f003ed462be3aa12f81409f3e5d3b30b55802f09ea005396133c25",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 13](../sources/papers/2019-final.pdf#page=13); [physical PDF page 14](../sources/papers/2019-final.pdf#page=14).\n\nLet $E$ denote the event that you win. We have $p(E)=\\sum_{m=2}^3p(M=m)p(E\\mid M=m)=0.45\\cdot5/9+0.55\\cdot6/11=0.55$.\nAlternatively, $p(E)=p(W=1,M=2)+p(W=2,M=3)=0.5\\cdot0.5+0.3\\cdot1=0.55$.",
+        "solutionMarkdown": "**Answer.** $0.55=11/20$.\n\n**Derivation/proof.** Keep door 1 when $M=2$, and choose door 2 when $M=3$. These disjoint winning events are $(W=1,M=2)$ with mass $0.5(1/2)=0.25$, and $(W=2,M=3)$ with mass $0.3(1)=0.3$. Thus the overall win probability is $0.25+0.3=0.55$. Equivalently total probability gives $0.45(5/9)+0.55(6/11)=0.55$.\n\nThe complete strategy wins in branches of total probability $0.25+0.3=0.55=11/20$. Equivalently, average the conditional optimal outcomes: $0.45\\cdot(5/9)+0.55\\cdot(6/11)=0.55$.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "63b6fc573502d12ec87a1049179bab95d58b73d96c57974e0ddfa9e087ffeb7e",
+        "supplementarySourceSha256": "f812939ee4916f6fff8b76ab433df8a8b8d829b39524257ee29f43777d89afe8"
+      },
+      {
+        "id": "Q-2019-FINAL-P11-d-strategy",
+        "sourceNote": "sources/notes/Q-2019-FINAL-P11-d-strategy - Conditional Probability.md",
+        "sourceNoteSha256": "94e0b4876a109f7fcce44d93168319e361d1e2474e6549705e5e793a60eb2cc5",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 14](../sources/papers/2019-final.pdf#page=14).\n\nWe pick door 3 first, then always switch. The winning probability is $p(E)=p(W=1,M=2)+p(W=2,M=1)=0.5\\cdot1+0.3\\cdot1=0.8$.",
+        "solutionMarkdown": "**Answer.** Initially choose door 3 and always switch to the remaining unopened door.\n\n**Derivation/proof.** Door 3 initially has the prize with probability 0.2. If that initial choice is wrong, Monty must reveal the other losing unchosen door, leaving the prize behind the remaining unopened door. Switching then wins. If the initial choice is right, switching loses. Thus this strategy wins exactly when $W\\ne3$, an event of probability $0.5+0.3=0.8$, which exceeds the previous 0.55 and proves it is better.\n\nSince $0.8>0.55$, the strategy is strictly better as requested; no separate claim of global optimality is needed.\n\nTo maximize the probability of success by always switching, initially choose the door with the smallest prior probability of containing the prize. Switching succeeds exactly when the initial choice was wrong.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "8012ae10bfc5d1de34d2a4e879659d5edc8d20a8dad7a96ff84f48cd7a860bb3",
+        "supplementarySourceSha256": "1acff75c73af72c41a95b711b216bff419d46891230bd60732403d1dfffb3a9c"
+      }
+    ],
+    "originalRestoration": "Entire original problem11, parts(a)-(d), from the shared printed wording; no repeated atomic fragments. Official parts retain original source notes."
+  },
+  {
+    "id": "Q-2022-FINAL2-P02-a",
+    "topic": "monty-hall-strategies",
+    "sourceNote": "sources/notes/Q-2022-FINAL2-P02-a-23 - Conditional Probability.md",
+    "sourceNoteSha256": "2bef6cc3fb4d34ec5790bf352f55235e7d4d1128eb342f5fdfc2580d31a32d5d",
+    "stems": [
+      "STEM-2022-FINAL2-P02 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      1
+    ],
+    "paper": "2022 Final Part 2",
+    "pdf": "sources/papers/2022-final-part-2.pdf",
+    "pdfSha256": "fd0da2bac7f4bd6e968efc605f2e50e0150080318d0c52231fc5800c329a5dc5",
+    "page": 2,
+    "solutionPages": [
+      2
+    ],
+    "number": "2(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider the following 5-door version of the Monty Hall problem. There are 5 doors, behind one of which (randomly with equal probability) there is a car (which you want), and behind the rest of which there are goats (which you don’t want). You choose a door. Monty then opens 2 goat doors. Assume that Monty knows which door has the car, and will choose with equal probabilities from all his choices of which goat doors to open. Without loss of generality, assume your first guess is door 1. Let $W$ be the random variable denoting the door with the car and $M$ the random variable denoting the two doors that Monty opens. Note that $M$ is a random variable whose value is a subset of $\\{1,2,3,4,5\\}$.\n\n(a) (2 pts) What is $P(M=\\{2,3\\}\\mid W=1)$? What is $P(M=\\{3,5\\}\\mid W=1)$?",
+    "independentVerification": "Given W=1 the eligible set is {2,3,4,5}; enumerated six unordered pairs, each target has probability1/6. No ambiguity about opening the initial door affects this condition.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 2](../sources/papers/2022-final-part-2.pdf#page=2).\n\n> (a) $P(M=\\{2,3\\}\\mid W=1)=P(M=\\{3,5\\}\\mid W=1)=1/\\binom42=1/6$.",
+    "solutionMarkdown": "**Answer.** $1/6$.\n\n**Derivation/proof.** Given W=1, all four other doors 2,3,4,5 contain goats and remain eligible for Monty's opening. He selects an unordered two-door subset uniformly; there are C(4,2)=6 such pairs. {2,3} is one pair, so its conditional probability is 1/6. The two openings are not ordered outcomes.\n\nThere are $\\binom42=6$ pairs and $P(M=\\{2,3\\}\\mid W=1)=1/6$. The eligible goat-door set is the same under either interpretation of whether the initially chosen door may be opened, because that door contains the car.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "0cde35fb9a6aa9ca83579ab1a7ce5cd5f40287f3c6a13d75c83ef6ae737bd374",
+    "supplementarySourceSha256": "f20f73280ac7f817c8c3c987a78ee7b25bd1d316f8ab333700ddd44866b84252",
+    "answerParts": [
+      {
+        "id": "Q-2022-FINAL2-P02-a-23",
+        "sourceNote": "sources/notes/Q-2022-FINAL2-P02-a-23 - Conditional Probability.md",
+        "sourceNoteSha256": "2bef6cc3fb4d34ec5790bf352f55235e7d4d1128eb342f5fdfc2580d31a32d5d",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 2](../sources/papers/2022-final-part-2.pdf#page=2).\n\n> (a) $P(M=\\{2,3\\}\\mid W=1)=P(M=\\{3,5\\}\\mid W=1)=1/\\binom42=1/6$.",
+        "solutionMarkdown": "**Answer.** $1/6$.\n\n**Derivation/proof.** Given W=1, all four other doors 2,3,4,5 contain goats and remain eligible for Monty's opening. He selects an unordered two-door subset uniformly; there are C(4,2)=6 such pairs. {2,3} is one pair, so its conditional probability is 1/6. The two openings are not ordered outcomes.\n\nThere are $\\binom42=6$ pairs and $P(M=\\{2,3\\}\\mid W=1)=1/6$. The eligible goat-door set is the same under either interpretation of whether the initially chosen door may be opened, because that door contains the car.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "0cde35fb9a6aa9ca83579ab1a7ce5cd5f40287f3c6a13d75c83ef6ae737bd374",
+        "supplementarySourceSha256": "f20f73280ac7f817c8c3c987a78ee7b25bd1d316f8ab333700ddd44866b84252"
+      },
+      {
+        "id": "Q-2022-FINAL2-P02-a-35",
+        "sourceNote": "sources/notes/Q-2022-FINAL2-P02-a-35 - Conditional Probability.md",
+        "sourceNoteSha256": "9d4e89c40908a8e00331652f3f6bb6643b92613436ffb5c5fa0c3c8f6c98007f",
+        "answerFormatVersion": 2,
+        "officialMarkdown": "Source: [physical PDF page 2](../sources/papers/2022-final-part-2.pdf#page=2).\n\n> (a) $P(M=\\{2,3\\}\\mid W=1)=P(M=\\{3,5\\}\\mid W=1)=1/\\binom42=1/6$.",
+        "solutionMarkdown": "**Answer.** $1/6$.\n\n**Derivation/proof.** With the car fixed behind door 1, Monty can choose any pair from goat doors 2,3,4,5. Uniformity assigns equal weight1/C(4,2) to each of the six pairs, including {3,5}. This is a fresh pair selection event under the same condition, not a sequential probability after already opening {2,3}.\n\nThe pairs are $\\{2,3\\},\\{2,4\\},\\{2,5\\},\\{3,4\\},\\{3,5\\},\\{4,5\\}$. The target occupies one of six pairs. Both interpretations of the initially chosen door give the same set when the car is at one.",
+        "solutionSection": "Supplementary Explanation",
+        "officialSourceSha256": "0cde35fb9a6aa9ca83579ab1a7ce5cd5f40287f3c6a13d75c83ef6ae737bd374",
+        "supplementarySourceSha256": "9a991e2287a1cfdd16bbec5b8dd299a3c4921441859b5d30b32c769a796550d1"
+      }
+    ],
+    "originalRestoration": "Restored original combined2(a) from physical PDF page2; no independent atomic marks invented."
+  },
+  {
+    "id": "Q-2022-FINAL2-P02-b",
+    "topic": "monty-hall-strategies",
+    "sourceNote": "sources/notes/Q-2022-FINAL2-P02-b - Conditional Probability.md",
+    "sourceNoteSha256": "3b0b1d38bbedba359c8c253127f7093cf1944de8c0fae8f886bc4d24b23ee349",
+    "stems": [
+      "STEM-2022-FINAL2-P02 - Shared Problem Prompt"
+    ],
+    "stemPages": [
+      1
+    ],
+    "paper": "2022 Final Part 2",
+    "pdf": "sources/papers/2022-final-part-2.pdf",
+    "pdfSha256": "fd0da2bac7f4bd6e968efc605f2e50e0150080318d0c52231fc5800c329a5dc5",
+    "page": 2,
+    "solutionPages": [
+      2
+    ],
+    "number": "2(b)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Consider the following 5-door version of the Monty Hall problem. There are 5 doors, behind one of which (randomly with equal probability) there is a car (which you want), and behind the rest of which there are goats (which you don’t want). You choose a door. Monty then opens 2 goat doors. Assume that Monty knows which door has the car, and will choose with equal probabilities from all his choices of which goat doors to open. Without loss of generality, assume your first guess is door 1. Let $W$ be the random variable denoting the door with the car and $M$ the random variable denoting the two doors that Monty opens. Note that $M$ is a random variable whose value is a subset of $\\{1,2,3,4,5\\}$.\n\nWhat is $P(M=\\{2,3\\}\\mid W=2)$?",
+    "independentVerification": "Given W=2 every permitted goat-door pair excludes2; event{2,3} is impossible, probability0.",
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 2](../sources/papers/2022-final-part-2.pdf#page=2).\n\n> (b) $P(M=\\{2,3\\}\\mid W=2)=0$",
+    "solutionMarkdown": "**Answer.** $0$.\n\n**Derivation/proof.** The condition W=2 places the car behind door 2. The event M={2,3} requires Monty to open that car door, contrary to the stated rule that he opens goat doors. Hence no permitted choice realizes this event and its conditional probability is zero, regardless of the number of other eligible pairs.\n\nThus $P(M=\\{2,3\\}\\mid W=2)=0$, independently of whether the initially chosen goat door may be opened. No count of the other eligible pairs is needed.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "140540f21fe905b31f1a16129c7a24d00b4149835356dbfaf13e54f2465f93ac",
+    "supplementarySourceSha256": "288c03821c36a05f28104796fc97d9f795ebd5c74cc4c7cea49b4bcc5bc53e91"
+  }
+]

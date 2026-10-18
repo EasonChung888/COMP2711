@@ -1,0 +1,15 @@
+ Congruences
+
+ Definition
+  Let 𝑎, 𝑏 ∈ 𝐙,𝑚  ∈ 𝐙+. Then 𝑎   is congruent   to 𝑏 modulo   𝑚
+  if 𝑎mod  𝑚  = 𝑏 mod  𝑚.
+    Notation: 𝑎   ≡ 𝑏 (mod  𝑚)
+    𝑎 ≡  𝑏(mod  𝑚)  is a congruence; 𝑚    is its modulus.
+    Alternative definitions: (  i) 𝑚| 𝑎 − 𝑏 ;
+                                (ii)∃𝑡 ∈ 𝐙 (𝑎 = 𝑏 + 𝑚𝑡)
+ Examples
+    17  ≡ 5 (mod 6)              24 ≢ 14  (mod 6)
+ Note
+    In 𝑎 mod  𝑚,  mod  is a binary operator
+    𝑎 ≡  𝑏 mod  𝑚   denotes an equivalence relationship
+     between 𝑎    and 𝑏.                                      19

@@ -1,0 +1,18 @@
+ Fermat’s Little Theorem
+
+
+                                                     Pierre de Fermat
+▪ Corollary                                          (1601-1665)
+  If 𝑝 is prime and 𝑎    is an integer not divisible by 𝑝, then
+                       𝑎𝑝−1  ≡ 1  mod   𝑝
+▪ Examples:
+       96 ≡ 26  ≡ 1  mod  7           146 ≡ 0  mod   7
+▪ Useful in computing the remainders of large powers
+▪ Example:
+  Find  7222  mod  11.
+  By the theorem, we know that 710         ≡ 1 (mod  11), and so
+  (710 )𝑘 ≡ 1 (mod  11), for any positive integer 𝑘.
+  Therefore,
+   ▪ 7222 = 722⋅10+2 =   710  22⋅ 72 ≡ 122 ⋅ 49 ≡ 5 (mod   11)
+
+                                                                 31

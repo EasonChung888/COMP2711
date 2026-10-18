@@ -1,0 +1,20 @@
+ More on Congruences
+
+
+ Corollary
+  If 𝑎≡ 𝑏 (mod 𝑚) and 𝑐  ≡ 𝑑 (mod 𝑚), then
+                 𝑎 − 𝑐 ≡ 𝑏− 𝑑  (mod 𝑚)
+ Note: 𝑎/𝑐 ≢ 𝑏/𝑑  mod  𝑚
+ Corollary
+  If 𝑎≡ 𝑏  mod 𝑚  , then for any 𝑐∈ 𝐙,
+                 𝑎 + 𝑐 ≡ 𝑏 + 𝑐 mod  𝑚
+                 𝑎 − 𝑐 ≡ 𝑏 − 𝑐 mod  𝑚
+                 𝑎𝑐 ≡ 𝑏𝑐 (mod  𝑚)
+
+
+
+
+
+
+
+                                                        23

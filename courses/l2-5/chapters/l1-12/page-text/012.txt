@@ -1,0 +1,17 @@
+ Modular Arithmetic
+
+ Theorem
+  For any 𝑎, 𝑘 ∈ 𝐙,𝑚 ∈ 𝐙+,
+     𝑎 + 𝑏  mod  𝑚 =    𝑎mod  𝑚  +  𝑏 mod  𝑚   mod  𝑚
+ Proof:
+    By Euclid’s Division Theorem, there exist unique
+     𝑞1,𝑞2, s.t.
+                 𝑎 = 𝑞1𝑚  +  𝑎 mod 𝑚
+                 𝑏 = 𝑞2𝑚  +  𝑏 mod 𝑚
+    Adding these 2 equations and take modulo       𝑚
+      𝑎 + 𝑏 mod  𝑚
+     =   𝑞1 + 𝑞2 𝑚 +  𝑎 mod  𝑚  +  𝑏 mod  𝑚   mod  𝑚
+    The theorem then follows from the previous
+     Lemma.
+
+                                                          12

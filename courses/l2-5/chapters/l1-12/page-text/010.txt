@@ -1,0 +1,16 @@
+ Modular Arithmetic
+
+ Lemma
+  For any 𝑎, 𝑘 ∈  𝐙,𝑚 ∈  𝐙+, 𝑎 mod  𝑚 =   𝑎 + 𝑘𝑚   mod  𝑚.
+ Proof
+    By Euclid’s Division Theorem, there exist unique
+     𝑞,𝑟,0 ≤  𝑟 < 𝑚, s.t.
+                 𝑎 = 𝑚𝑞  + 𝑟          (1)
+    Similarly, there exist unique 𝑞′,   𝑟′,0≤ 𝑟′ < 𝑚, s.t.
+                𝑎 + 𝑘𝑚  =  𝑚𝑞′ + 𝑟′       (2)
+    Adding 𝑘𝑚    to both sides of (1):
+                  𝑎 +  𝑘𝑚  = 𝑚  𝑞 + 𝑘  + 𝑟
+    By the uniqueness in Division Theorem, we have
+                           𝑟 =  𝑟′
+    By definition of mod, 𝑎    mod  𝑚 =   𝑎 + 𝑘𝑚   mod  𝑚.
+                                                              10

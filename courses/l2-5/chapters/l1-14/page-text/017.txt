@@ -1,0 +1,17 @@
+ Public Key Cryptography
+
+▪ All previous ciphers need a common secret key
+▪ Encryption and decryption are symmetric
+▪ The key has to be
+   ▪ communicated physically in secret
+   ▪ using the DH protocol (secure to eavesdropping but
+     not man-in-the-middle)
+▪ Public key cryptography
+   ▪ Encryption and decryption are asymmetric
+   ▪ Everyone has
+       ▪ a public key: shared with everyone else
+       ▪ a private key: kept secret
+
+
+
+                                                                17

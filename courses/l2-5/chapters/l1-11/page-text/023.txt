@@ -1,0 +1,19 @@
+Example: Insertion Sort
+
+       Insertion-Sort(𝐴):
+       for  𝑗←  2to  𝑛  do
+            𝑘𝑒𝑦 ← 𝐴[𝑗]
+            𝑖←  𝑗− 1
+            while 𝑖  ≥ 1 and 𝐴[𝑖]  > 𝑘𝑒𝑦  do
+                 𝐴[𝑖+ 1] ← 𝐴[𝑖]
+                 𝑖←  𝑖− 1
+            endwhile
+            𝐴 𝑖+ 1  ← 𝑘𝑒𝑦
+       endfor
+
+
+      sorted      key            unsorted
+
+
+
+                                                      23

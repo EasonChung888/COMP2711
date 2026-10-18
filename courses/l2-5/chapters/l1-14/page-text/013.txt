@@ -1,0 +1,16 @@
+ A Hard Problem: Discrete Logarithm
+
+▪ Discrete logarithm is one such problem
+   ▪ Inverse of modular exponentiation
+   ▪ Given a prime 𝑝     (potentially very large) and 𝑟,   𝑎  ∈ 𝐙𝑝,
+     find 𝑥  such that
+                       𝑎𝑥 ≡ 𝑟 (mod  𝑝)
+▪ Modular exponential and discrete logarithm is
+  believed   to be a one-way function
+   ▪ Yes, if you can solve discrete logarithm, you can
+     break current crypto systems
+▪ In 2015, it was reported that for 512-bit primes, the
+  problem can be solved with a few thousands of CPUs
+  in a week
+   ▪ Estimated cost to break 1024 bits: US$100 million.
+                                                                13

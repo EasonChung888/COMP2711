@@ -1,0 +1,42 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "对接下来的数学学习而言，关键是理解 RSA 如何选择整数参数、建立加密与解密指数，以及为什么能恢复原消息；人物照片和出生年份不参与算法运算。",
+      "repair": "简短注明历史页与后面算法的分工，不以泛称关键的学习提醒收尾。",
+      "evidence": "对接下来的数学学习而言，关键是理解 RSA 如何选择整数参数、建立加密与解密指数，以及为什么能恢复原消息；人物照片和出生年份不参与算法运算。"
+    }
+  ],
+  "facts": [
+    "RSA名字RivestShamirAdleman，图照片，Cocks英国保密独立相关后公开。",
+    "原1976需澄清MIT原memo1977April，正式1978，MIT链接保留非1976准确公开年。",
+    "GCHQ链接1997公开先行研究，早3年依原前提不可任意相减。",
+    "历史页无公式，算法后讲参数指数恢复，照片生年不参与。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [
+    "MIT/GCHQ来源链接保留；原引述“早三年”保留。"
+  ],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T10:08:02.916730+00:00"
+}

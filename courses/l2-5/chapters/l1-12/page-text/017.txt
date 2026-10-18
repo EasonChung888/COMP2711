@@ -1,0 +1,16 @@
+  Additive inverses and multiplicative inverses
+
+ Identity elements: The elements 0 and 1 are identity
+  elements for addition and multiplication modulo 𝑚,
+  respectively.
+     For 𝑎 ∈  𝒁𝑚, 𝑎  +𝑚  0 =  𝑎 and 𝑎   ⋅𝑚 1 = 𝑎.
+ Additive inverses
+  For 𝑎  ∈ 𝐙𝑚  ,(−𝑎  mod  𝑚)  is the additive inverse of 𝑎:
+     𝑎 +𝑚   −𝑎  mod  𝑚   =   𝑎 +   −𝑎 mod   𝑚    mod  𝑚
+      =  𝑎 +   −𝑎    mod  𝑚  = 0
+ Example: What is the additive inverse of 27 in          𝐙58?
+ Answer: 31
+ For 𝑎  ∈ 𝐙𝑚  ,𝑏 is its multiplicative inverse if 𝑎    ⋅𝑚 𝑏 = 1
+ Example: Let 𝑚     =  4. What is the multiplicative inverse
+  of 3? What is the multiplicative inverse of        2?
+                                                                  17

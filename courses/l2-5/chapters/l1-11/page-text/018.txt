@@ -1,0 +1,24 @@
+ Example: Hiring Problem
+
+
+
+        Hire-Assistant(𝑛):
+        randomly permute all 𝑛     candiates
+        𝑏𝑒𝑠𝑡← 0
+        for 𝑖 ← 1 to 𝑛
+            interview candidate 𝑖
+            if candidate 𝑖    is better than 𝑏𝑒𝑠𝑡    then
+                 fire 𝑏𝑒𝑠𝑡
+                 hire candidate 𝑖
+                 𝑏𝑒𝑠𝑡 ← 𝑖
+
+▪ Questions: What’s the expected number of hires?
+
+
+
+
+
+
+
+
+                                                              18

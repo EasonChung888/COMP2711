@@ -1,0 +1,15 @@
+ Example
+
+ Example
+  If a student knows 80% of the material in a course,
+  what is the probability that she answers a question
+  correctly on a well-balanced true-false test assuming
+  that she randomly guesses on any question for which
+  she does not know the answer?
+ Solution
+    𝑄: The question is in the student’s knowledge,
+     𝑝  𝑄  =  0.8,𝑝 𝑄ത  = 0.2
+    𝐶 : The student answers the question correctly,
+     𝑝  𝐶 𝑄   = 1,𝑝  𝐶 𝑄ത  = 0.5
+    𝑝  𝐶  =  𝑝 𝐶⋂𝑄    + 𝑝  𝐶⋂𝑄ത
+           = 𝑝  𝑄  𝑝 𝐶 𝑄   + 𝑝 𝑄ത 𝑝  𝐶 𝑄ത  = 0.9                 4

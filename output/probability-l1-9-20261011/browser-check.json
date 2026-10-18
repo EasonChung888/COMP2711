@@ -1,0 +1,92 @@
+{
+  "offline": true,
+  "protocol": "file:",
+  "screens": [
+    "chapter-desktop.png",
+    "probability-foundations-mobile.png",
+    "permutation-and-sampling-mobile.png",
+    "complements-and-birthdays-mobile.png",
+    "event-inclusion-exclusion-mobile.png",
+    "probability-distributions-mobile.png",
+    "independent-events-mobile.png",
+    "explanation-mobile.png",
+    "formula-desktop.png"
+  ],
+  "lessons": [
+    {
+      "slug": "probability-foundations",
+      "pages": 8,
+      "questions": 0,
+      "displayFormulas": 19,
+      "images": 8,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "permutation-and-sampling",
+      "pages": 4,
+      "questions": 3,
+      "displayFormulas": 16,
+      "images": 4,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "complements-and-birthdays",
+      "pages": 6,
+      "questions": 1,
+      "displayFormulas": 20,
+      "images": 6,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "event-inclusion-exclusion",
+      "pages": 4,
+      "questions": 3,
+      "displayFormulas": 15,
+      "images": 4,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "probability-distributions",
+      "pages": 4,
+      "questions": 1,
+      "displayFormulas": 10,
+      "images": 4,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    },
+    {
+      "slug": "independent-events",
+      "pages": 6,
+      "questions": 1,
+      "displayFormulas": 25,
+      "images": 6,
+      "desktopAndNarrow": true,
+      "answersExpanded": true
+    }
+  ],
+  "progress": {
+    "check": true,
+    "uncheck": true,
+    "reload": true,
+    "chapterCount": true,
+    "homeCount": true,
+    "resume": true,
+    "legacyPageNotPromoted": true
+  },
+  "draft": true,
+  "oldProgressPreserved": true,
+  "slideNotes": true,
+  "narrowDirectories": true,
+  "longFormulaScroll": {
+    "overflowingFormulas": 1,
+    "actualScrollPassed": true
+  },
+  "status": "passed",
+  "pageErrors": [],
+  "remoteRequests": [],
+  "multipleChoice": "No multiple-choice original questions selected; existing immediate-submit handler unchanged."
+}

@@ -1,0 +1,25 @@
+ Outline
+
+
+▪ Greatest Common Divisor (GCD)
+▪ Multiplicative Inverses
+▪ Solving Linear Congruences
+▪ The Chinese Remainder Theorem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             15

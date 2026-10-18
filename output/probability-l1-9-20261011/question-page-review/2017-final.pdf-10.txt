@@ -1,0 +1,19 @@
+Problem 6: [7 pts] 64 fair coins are ﬂipped independently randomly and then arranged
+in an 8 by 8 block randomly without looking. Each row contains eight coins
+and there are eight rows. If all eight coins in a row have the same symbol
+(heads or tails), we call it a homogeneous row. Let X denote the number
+of homogeneous rows in the block.
+(a) If all coin ﬂips come up heads, what is the value of X?
+(b) Calculate p(X = 1)
+(c) Calculate E(X)
+(d) Calculate V (X)
+Solution: (a) 8.
+(b) For any given row, the chance it is homogeneous is (1 /2)8· 2 = (1/2)7
+(all heads or all tails). The chance that it is not homogeneous is
+(1− (1/2)7). Overall, seven rows must not be homogeneous and one
+row must be homogeneous, so p(X = 1) = 8(1/2)7(1− (1/2)7)7.
+(c) Consider the homogeneity of each row as its own indicator variable
+Xi, all Xi are mutually independent. So E(X) = 8E(X1) = 8(1/2)7.
+(d) As above, V (X) = 8V (X1) = 8(1/2)7(1− (1/2)7).
+Grading scheme: 1,2,2,2
+10

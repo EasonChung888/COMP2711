@@ -1,0 +1,16 @@
+  Checksums
+▪  Example
+   HKID numbers are of the format X123456(Y), where
+    ▪ X is one or two letters
+    ▪ Y is check digit, 0 to 9 or A.
+▪  How is it computed
+    ▪ Replace the first two letters as follows:
+      A = 10  B = 11 C = 12 D = 13 E = 14  F = 15 G = 16H = 17 I = 18 J = 19
+      K = 20   L = 21 M = 22  N = 23 O = 24 P = 25  Q = 26  R = 27 S = 28
+      T = 29  U = 30  V = 31 W = 32  X = 33 Y = 34  Z = 35   empty = 36
+    ▪ Denote the resulting two numbers and 6 digits as
+      𝑥1, …  ,𝑥8
+    ▪ 𝑐  =   9𝑥1 +  8𝑥2  +  7𝑥3  +  6𝑥4 +  ⋯  +  2𝑥8   mod   11
+    ▪ Check digit 𝑥9      =  11  −  𝑐
+      If 𝑥9  = 11, check digit = 0
+      If 𝑥9  = 10, check digit = A                                        20

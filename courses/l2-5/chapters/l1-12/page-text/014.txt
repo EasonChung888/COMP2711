@@ -1,0 +1,19 @@
+ Modular Arithmetic on 𝐙𝑚
+
+
+ Definition
+                      𝐙𝑚 =  {0,1,… ,𝑚 −  1}
+ Definition
+  For 𝑎, 𝑏 ∈ 𝐙𝑚
+    𝑎 +𝑚  𝑏 = (𝑎 +  𝑏)mod  𝑚
+    𝑎 ∙𝑚 𝑏 = (𝑎 ⋅𝑏) mod  𝑚
+ Examples
+    7 +11 9 = (7 + 9)  mod 11 = 16 mod 11 = 5
+    7 ∙11 9 = (7 ∙9)  mod 11 = 63 mod 11 = 8
+
+
+
+
+
+
+                                                              14

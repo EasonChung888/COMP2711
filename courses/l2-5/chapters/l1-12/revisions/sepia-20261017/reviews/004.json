@@ -1,0 +1,34 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [],
+  "facts": [
+    "整数变量，约数非零；均以整数倍定义证明。",
+    "a|b,a|c则和被整除：b=as,c=at，s+t整数。",
+    "a|b则任意整数c有a|bc，因sc整数；例3|12故3|12×7。",
+    "a|b,b|c则a|c，因c=a(st)；例2|6,6|30得2|30。",
+    "和可整除不反推两项各可整除，反例3|(1+2)但3不整除1,2。"
+  ],
+  "styleScan": "三个性质属于必要的平行数学陈述，未标作模板缺陷；句长与段落已有变化，未发现需单列的风格簇。按用户要求重新组织讲解。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:49:21.609654+00:00"
+}

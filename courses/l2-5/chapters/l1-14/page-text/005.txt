@@ -1,0 +1,14 @@
+ Affine Ciphers
+▪ The shift cipher is easy to break:
+   ▪  Just try all 26 possible keys!
+▪ Affine ciphers make it (a little bit) safer by using both
+  additions and multiplications
+▪ Use the function 𝑓     𝑝  =   𝑎𝑝 +  𝑏  mod  26
+   ▪  The (𝑎, 𝑏) pair is the secret key
+   ▪  Now there are 262     = 676  possible secret keys
+▪ However, suppose 𝑎       =  13,𝑏 =  1
+   ▪  𝑓 1  =  𝑓 3  =  𝑓 5  =  𝑓 7  =  ⋯  = 14
+   ▪  If we receive a 14, which number does it decrypt to?
+▪ How to fix?
+   ▪  Choose 𝑎    such that gcd   𝑎, 26  =  1, e.g., 𝑎 = 7
+   ▪  Then 𝑎𝑥   + 𝑏 ≡  𝑦 (mod  𝑝) has a unique solution           5

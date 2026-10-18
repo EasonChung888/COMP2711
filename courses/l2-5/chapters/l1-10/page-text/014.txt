@@ -1,0 +1,28 @@
+ Example: Solution
+
+
+ 𝐷: the person has the disease
+ 𝐸: this person tests positive.
+ We need to compute 𝑝(𝐷|𝐸)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              14

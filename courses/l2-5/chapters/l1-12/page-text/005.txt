@@ -1,0 +1,23 @@
+ Example
+
+
+ Corollary:
+  If 𝑎, 𝑏, and 𝑐  be integers, where 𝑎     ≠  0, such that
+  𝑎 | 𝑏 and 𝑎  |𝑐, then 𝑎  |𝑚𝑏   +  𝑛𝑐 whenever 𝑚     and 𝑛   are
+  integers.
+ Proof:
+  By (ii) of the theorem, we have 𝑎       |𝑚𝑏  and 𝑎  | 𝑛𝑐.
+  By (i) of the theorem, we have 𝑎       |𝑚𝑏   +  𝑛𝑐.
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                  5

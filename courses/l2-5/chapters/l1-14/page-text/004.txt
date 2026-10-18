@@ -1,0 +1,18 @@
+ Caesar Cipher: Example
+
+
+▪ Example
+  Encrypt the message “MEET YOU IN THE PARK” using
+  𝑘  = 3
+▪ Solution
+   ▪  Replace letters by numbers:
+      12 4 4 19    24 14 20    8 13    19 7 4    15 0 17 10.
+   ▪  Replace each of these numbers 𝑝          by 𝑓(𝑝):
+      15 7 7 22    1 17 23    11 16    22 10 7    18 3 20 13.
+   ▪  Translating the numbers back to letters
+      “PHHW  BRX LQ  WKH  SDUN.”
+
+
+
+
+                                                                    4

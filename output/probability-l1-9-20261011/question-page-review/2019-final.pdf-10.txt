@@ -1,0 +1,31 @@
+Student ID:
+Problem 8: [10 pts] How many strings of six lowercase letters from the English alpha-
+bet contain
+(a) the letter a?
+(b) the letters a and b?
+(c) the letters a and b in consecutive positions with a preceding b, with
+all the letters distinct?
+(d) the letters a andb, where a is somewhere to the left ofb in the string,
+with all the letters distinct?
+Answer: (a) The only reasonable way to do this is by subtracting from the number
+of strings with no restrictions the number of strings that do not
+contain the letter a. The answer is 26 6 − 256.
+(b) We use Wa to denote the set of words containing a, and similarly
+Wb,Wa∧b,Wa∨b. By the inclusion-exclusion rule, we have
+|Wa∨b| = |Wa| + |Wb| − |Wa∧b|.
+From (a), we know |Wa| = |Wb| = 26 6 − 256. Similarly, |Wa∨b| =
+266 − 246. So
+|Wa∧b| = |Wa|+|Wb|−|Wa∨b| = 2(266−256)−(266−246) = 266−2·256+246.
+(c) First choose the position for the a; this can be done in 5 ways,
+since the b must follow it. There are four remaining positions, and
+these can be ﬁlled in P (24, 4) ways, since there are 24 letters left
+(no repetitions being allowed this time). Therefore the answer is
+5P (24, 4) = 1275120.
+(d) First choose the positions for the a andb; this can be done in C(6, 2)
+ways, since once we pick two positions, we put the a in the left-
+most and the b in the other. There are four remaining positions,
+and these can be ﬁlled in P (24, 4) ways, since there are 24 letters
+left (no repetitions being allowed this time). Therefore the answer
+is C(6, 2)P (24, 4) = 3825360.
+Grading scheme: 2, 3, 2, 3
+10

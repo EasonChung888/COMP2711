@@ -1,0 +1,17 @@
+ Binomial Distribution
+
+▪ Question
+  What is Pr   10 ≤  𝑋 ≤  20  ?
+▪ Solution𝑛
+  σ20        𝑝𝑘𝑞𝑛−𝑘  ,
+    𝑘=10  𝑘
+  which, unfortunately, has no closed form.
+▪ For large 𝑛, and 𝑝    not too
+  close to 0 or 1, the normal
+  distribution approximates
+  binomial distribution well.
+   ▪ A special case of the
+     central limit theorem.
+   ▪ The Galton Board
+
+                                                                 6

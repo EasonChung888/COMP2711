@@ -1,0 +1,32 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [],
+  "facts": [
+    "整数a正m,n，(a mod mn) mod n=a mod n。",
+    "a=qmn+s,0≤s<mn；s=pn+r,0≤r<n，代回商qm+p整数，余r唯一。",
+    "29mod12=5再mod4=1，直接mod4也1；任意模数不行，8mod5再mod3=0而8mod3=2。"
+  ],
+  "styleScan": "证明步骤清楚，正例和反例都服务于模数倍数条件；未发现风格缺陷簇，按要求改从条件切入。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:50:57.535741+00:00"
+}

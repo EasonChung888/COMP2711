@@ -1,0 +1,17 @@
+ Diffe-Hellman Key Exchange
+
+▪ Fix 𝑝  and 𝑎
+   ▪ E.g., hardcoded in the TLS library
+▪ The protocol
+  1)  Alice chooses a secret integer 𝑘1      and Bob chooses 𝑘2
+  2)  Alice sends 𝑎𝑘1   mod  𝑝 to Bob.
+      Secure to eavesdropping: Even this value is known to
+      attackers, they cannot compute 𝑘1
+  3)  Bob computes       𝑎𝑘1 𝑘2mod  𝑝.
+  4)  Bob sends 𝑎𝑘2    mod  𝑝 to Alice.
+  5)  Alice computes      𝑎𝑘2 𝑘1mod  𝑝.
+▪ The shared key is
+            𝑎𝑘1 𝑘2mod   𝑝 =  𝑎𝑘2  𝑘1mod  𝑝 = 𝑎𝑘1𝑘2 mod  𝑝
+
+
+                                                               14

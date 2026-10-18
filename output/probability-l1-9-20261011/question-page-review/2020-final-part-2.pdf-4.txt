@@ -1,0 +1,70 @@
+(d) (3 pts) What is the probability that G with n = 4 vertices is connected
+and X takes its minimal possible value?
+Solution: (a) G is also connected if and only if u connects with at least one vertex
+in G′. Since we know u links to any other vertex with probability p,
+the probability that it has no edge with other vertices is, (1 − p)n−1.
+So the probability that G is connected is 1− (1− p)n−1.
+(b) Xe is the indicator random variable that indicates the event, pair of
+vertices e = (u, v) has an edge. Xe is a Bernoulli trial, thus E(Xe) = p,
+V (Xe) = p(1− p).
+There are
+(n
+2
+)
+pairs of vertices in total. So that E(X) =
+(n
+2
+)
+p and
+V (X) =
+(n
+2
+)
+p(1− p).
+(c) Suppose that the k connected components are C1, C2, ..., Ck. Since Ci
+is a connected component with vi vertices, the minimum number of
+edges to connect them is vi− 1, which is a tree.
+The minimum of X is equal to all components reach minimal the same
+time.
+min(X) = min
+Ci
+k∑
+i=1
+min(Ci) = min
+Ci
+k∑
+i=1
+(vi− 1) = n− k
+(d) G is connected and X is minimal if and only if G is a tree. The
+probability of having 3 edges in G is
+(6
+3
+)
+p3(1− p)3. However, if the 3
+edges form a triangle, then the last vertex will be disconnected, which
+happens with probability
+(4
+3
+)
+p3(1− p)3. So, the ﬁnal probability is
+(6
+3
+)
+p3(1− p)3−
+(4
+3
+)
+p3(1− p)3 = 16p3(1− p)3
+Question 6: (10 pts) Consider the permutations of the 10 digits (0–9). We denote a
+permutation as A, whose elements are A[0], A[1], . . . , A[9]. Calculate the
+number of permutations that satisfy each of the following conditions:
+(a) (2 pts) There is exactly one i such that A[i] = i.
+(b) (1 pts) There are exactly nine i’s such that A[i] = i.
+(c) (1 pts) A[0] = 1, A[1] = 0.
+(d) (1 pts) A[4] = 4, A[5] = 5.
+(e) (5 pts) Satisfying any of the above conditions.
+Solution: (a) Dn is the number of derangements of a set with n elements,
+Dn = n![1− 1
+1! + 1
+2!− ... + (−1)n 1
+n!]

@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "2 density",
+      "quote": "证明唯一性的常用做法是：先假设有两组符合条件的解，再证明它们相同。",
+      "repair": "直接写出两组表示，把证明方法落实到算式，省去预告。",
+      "evidence": "证明唯一性的常用做法是：先假设有两组符合条件的解，再证明它们相同。"
+    }
+  ],
+  "facts": [
+    "假定a=dq1+r1=dq2+r2且两余数0到d-1，相减得d(q1-q2)=r2-r1。",
+    "余数差是d倍数且在(-d,d)，只能0；d>0再推商相同。",
+    "无限制余数则(q+1,r-d)也表示a，不唯一；11=3×3+2=3×2+5后一余数不合法。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:50:19.630068+00:00"
+}

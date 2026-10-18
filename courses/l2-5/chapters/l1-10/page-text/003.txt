@@ -1,0 +1,16 @@
+ Example
+
+ Question:
+  In a random bit string of length 4 (all 16 possible
+  strings are equally likely), what is the probability that
+  it contains at least two consecutive 0s, given that its
+  first bit is a 0?
+ Solution:
+  E: The event that the bit string contains at least two
+  consecutive 0s
+  F: The event that the first bit is a 0.
+     Since E⋂F    = {0000,  0001,   0010,  0011,  0100},
+      𝑝(𝐸⋂𝐹)    = 5/16.
+     𝑝(𝐹)  =  1/2.
+     So 𝑝  𝐸  𝐹  =  𝑝 𝐸⋂𝐹   = 5/8
+                      𝑝 𝐹                                             3

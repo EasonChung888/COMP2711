@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-17T06:09:08.185Z",
+  "actualSummaryClicks": 272,
+  "lessons": [
+    {
+      "chapter": "l1-12",
+      "slug": "divisibility",
+      "clicks": 16
+    },
+    {
+      "chapter": "l1-12",
+      "slug": "division-theorem",
+      "clicks": 14
+    },
+    {
+      "chapter": "l1-12",
+      "slug": "modular-arithmetic",
+      "clicks": 24
+    },
+    {
+      "chapter": "l1-12",
+      "slug": "congruence-rules",
+      "clicks": 18
+    },
+    {
+      "chapter": "l1-12",
+      "slug": "modular-applications",
+      "clicks": 14
+    },
+    {
+      "chapter": "l1-13",
+      "slug": "gcd-and-euclid",
+      "clicks": 18
+    },
+    {
+      "chapter": "l1-13",
+      "slug": "bezout-and-extended-euclid",
+      "clicks": 14
+    },
+    {
+      "chapter": "l1-13",
+      "slug": "multiplicative-inverses",
+      "clicks": 16
+    },
+    {
+      "chapter": "l1-13",
+      "slug": "linear-congruences",
+      "clicks": 14
+    },
+    {
+      "chapter": "l1-13",
+      "slug": "hashing-and-checksums",
+      "clicks": 8
+    },
+    {
+      "chapter": "l1-13",
+      "slug": "chinese-remainder-theorem",
+      "clicks": 18
+    },
+    {
+      "chapter": "l1-14",
+      "slug": "secret-key-ciphers",
+      "clicks": 18
+    },
+    {
+      "chapter": "l1-14",
+      "slug": "modular-exponentiation",
+      "clicks": 12
+    },
+    {
+      "chapter": "l1-14",
+      "slug": "fermat-little-theorem",
+      "clicks": 14
+    },
+    {
+      "chapter": "l1-14",
+      "slug": "diffie-hellman",
+      "clicks": 10
+    },
+    {
+      "chapter": "l1-14",
+      "slug": "rsa-and-public-keys",
+      "clicks": 28
+    },
+    {
+      "chapter": "l1-14",
+      "slug": "rsa-correctness",
+      "clicks": 16
+    }
+  ],
+  "finishedAt": "2026-10-17T06:09:14.480Z"
+}

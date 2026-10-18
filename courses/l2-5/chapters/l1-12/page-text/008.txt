@@ -1,0 +1,18 @@
+ Proof of Uniqueness
+
+
+ Suppose there are 𝑞1,   𝑟1,𝑞2,𝑟2 such that
+                      𝑎 = 𝑑𝑞1 + 𝑟1  (1)
+                      𝑎 = 𝑑𝑞2 + 𝑟2  (2)
+                      0 ≤ 𝑟1<  𝑑
+                      0 ≤ 𝑟2 < 𝑑
+  1  −  2 :
+                   0 = 𝑑  𝑞1−  𝑞2 +   𝑟1− 𝑟2
+                   𝑑 𝑞1 − 𝑞2  =  𝑟2− 𝑟1
+ So, 𝑑 | 𝑟2 − 𝑟1
+ Since −𝑑   < 𝑟2−  𝑟1< 𝑑  and 𝑑  | 𝑟2− 𝑟1 , we must have
+  𝑟2 − 𝑟1=  0, so 𝑟1=  𝑟2and thus 𝑞1   = 𝑞2 too.
+
+
+
+                                                              8

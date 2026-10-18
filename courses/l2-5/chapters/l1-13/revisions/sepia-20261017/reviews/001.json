@@ -1,0 +1,39 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "8 templatedness",
+      "quote": "这条路线解释上一章留下的关键问题：为什么模运算中有些数能“除”，有些数不能？",
+      "repair": "从模除法的已有疑问直接连接GCD和逆元，不使用先宣布路线再自问的写法。",
+      "evidence": "这条路线解释上一章留下的关键问题：为什么模运算中有些数能“除”，有些数不能？"
+    }
+  ],
+  "facts": [
+    "L06原标题GCDs andCongruences对应L113；蓝GCD为起点，顺序GCD逆元线性同余CRT。",
+    "GCD共享因子结构解释可除差异，逆元把除改乘，线性求未知，CRT同时多模数须看模数关系。",
+    "Rosen4.3,4.4,4.5阅读范围；目录无具体定理前提。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T09:55:56.711746+00:00"
+}

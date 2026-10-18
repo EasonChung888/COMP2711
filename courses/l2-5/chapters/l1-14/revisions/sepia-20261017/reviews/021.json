@@ -1,0 +1,41 @@
+{
+  "operation": "recreate",
+  "documentType": "中文数学教学笔记 / technical tutorial",
+  "loaded": [
+    "professional-pass.md",
+    "domains/tech-articles.md",
+    "discourse-pass.md §1–3",
+    "style-pass.md",
+    "languages/zh.md",
+    "model-fingerprints.md GPT prose"
+  ],
+  "model": {
+    "author": "GPT version=unknown",
+    "executor": "GPT version=unknown"
+  },
+  "proseLayer": {
+    "author": "prior",
+    "executor": "prior"
+  },
+  "venueCorpus": "none — using domain baseline",
+  "defects": [
+    {
+      "check": "7 conclusion residue",
+      "quote": "学习重点是把抽象的公钥参数与现实中的可交换文件联系起来，并继续区分编码、加密和身份认证。",
+      "repair": "直接用文件字段解释编码与身份区别，省去总结学习重点的句子。",
+      "evidence": "学习重点是把抽象的公钥参数与现实中的可交换文件联系起来，并继续区分编码、加密和身份认证。"
+    }
+  ],
+  "facts": [
+    "SSH2PUBLICKEY首尾界数据 Comment标签长串编码二进制；RSA(n,e)实际含算法整数边界便于文字复制保存非短十进制/秘密密文。",
+    "public可分享非private泄露，Comment名字日期不证身份可改。",
+    "My演示者非用户网站生成，原示例不需导入使用发送，区分编码加密认证。"
+  ],
+  "styleScan": "已检查中文词句、连接词和句长；仅处理下列有引据问题，不以公式或常规技术术语判定风格。",
+  "deferred": [],
+  "protected": [
+    "Comment、SSH2 PUBLIC KEY、“My”保留。"
+  ],
+  "verdict": "recreate as requested",
+  "reviewedAt": "2026-10-17T10:08:57.330427+00:00"
+}

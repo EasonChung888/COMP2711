@@ -1,0 +1,12 @@
+Problem 6: GCD [12 pts] Calculate gcd(2100 −1,265 −1).
+Answer: In fact, for any a,m,n, we can apply the Euclidean algorithm:
+gcd(am −1,an −1) = gcd(am −an,an −1) = gcd(an(am−n −1),an −1)
+Writing am −an as an(am−n, we have
+gcd(am −1,an −1) = gcd(an(am−n −1),an −1)
+Since gcd(an,an −1) = 1, we get:
+gcd(am −1,an −1) = gcd(am−n −1,an −1).
+We can now use this rule iteratively, in a way similar to the original Eu-
+clidean algorithm:
+gcd(2100−1,265−1) = gcd(265−1,235−1) = gcd(235−1,230−1) = gcd(230−
+1,25 −1) = gcd(225 −1,25 −1) = ··· = gcd(25 −1,25 −1) = 25 −1 = 31.
+9

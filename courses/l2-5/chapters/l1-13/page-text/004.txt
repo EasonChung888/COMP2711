@@ -1,0 +1,16 @@
+ Euclidean Algorithm
+
+▪ However, factoring large numbers is hard!
+   ▪ No efficient algorithms exist
+▪ Lemma
+  Let 𝑎  = 𝑏𝑞 +  𝑟, where 𝑎, 𝑏, 𝑞, and 𝑟    are integers. Then
+  gcd(𝑎, 𝑏) =  gcd(𝑏, 𝑟).
+▪ Proof
+   ▪ Suppose that 𝑑     divides both 𝑎    and 𝑏. Then 𝑑    also
+     divides 𝑎   − 𝑏𝑞 =  𝑟. Hence, any common divisor of 𝑎
+     and 𝑏   must also be any common divisor of 𝑏          and 𝑟.
+   ▪ Suppose that 𝑑     divides both 𝑏    and 𝑟. Then 𝑑    also
+     divides 𝑏𝑞   + 𝑟 =  𝑎. Hence, any common divisor of        𝑏
+     and 𝑟  must also be a common divisor of 𝑏          and  𝑎.
+   ▪ Therefore, gcd(𝑎,    𝑏) = gcd(𝑏, 𝑟).
+                                                                 4

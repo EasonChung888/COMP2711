@@ -1,0 +1,453 @@
+[
+  {
+    "id": "Q-2019-MID-P06-a",
+    "topic": "divisibility",
+    "sourceNote": "sources/notes/Q-2019-MID-P06-a - Modular Congruence.md",
+    "sourceNoteSha256": "f9bcf68ddbb31ba47c933a0e4bbc172474213bc6740bfc0cb6eb57337c95f87c",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 8,
+    "solutionPages": [
+      8
+    ],
+    "number": "6(a)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Prove or disprove the following statements:\n\n(a) For all integers $a,b,c$, if $a\\mid c$ and $b\\mid c$, then $ab\\mid c^2$.",
+    "independentVerification": "Write c=ak=bl with integer witnesses; multiply to get c^2=ab(kl). The integer kl is the divisibility witness, with no coprimality or division assumption. Exhaustive small-integer witness checks include zero under the convention allowing 0|0; the nonzero-divisor convention also satisfies the proof.",
+    "originalSourceIds": [
+      "Q-2019-MID-P06-a"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 8](../sources/papers/2019-midterm.pdf#page=8).\n\nTrue. If $c=ak$ and $c=bl$, then $c^2=ab(kl)$, so $ab\\mid c^2$.",
+    "solutionMarkdown": "**Answer.** True.\n\n**Derivation/proof.** The premises give integers $k,l$ with $c=ak$ and $c=bl$. Multiplying these equalities produces $c^2=(ak)(bl)=ab(kl)$. Since $kl$ is an integer, this is exactly the divisibility witness for $ab\\mid c^2$. No coprimality assumption is required.\n\nNo division is used, so zero values are also covered under the divisibility convention permitting $0\\mid0$.\n\nThere is no division by a possibly zero integer in the product argument: expand the integer factors directly. Thus the reasoning remains valid even when one of the integers is zero.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "11663e3706952add1fb21d27bdbf48fb238c626c0da1301d210f75d492f9ba7c",
+    "supplementarySourceSha256": "ebf4b0c7f261a3f8596c55df4b9d619d4b2924f02d974ea170d5e58314dfff63",
+    "originalRestoration": "Restored the exact shared printed instruction from original 2019-midterm.pdf physical page 8; the atomic KB note omits this instruction. The selected printed subpart itself is unchanged."
+  },
+  {
+    "id": "Q-2019-MID-P06-b",
+    "topic": "divisibility",
+    "sourceNote": "sources/notes/Q-2019-MID-P06-b - Modular Congruence.md",
+    "sourceNoteSha256": "286445ad89377a6861d6c4889e07420a21f6aca026bcf258fee7fbc876e4c304",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 8,
+    "solutionPages": [
+      8
+    ],
+    "number": "6(b)",
+    "marks": 3,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Prove or disprove the following statements:\n\n(b) For all integers $a,b$, if $a\\mid b$ and $b\\mid a$, then $a=b$.",
+    "independentVerification": "Counterexample a=1,b=-1: -1=1*(-1), 1=(-1)*(-1), but 1!=-1. Both divisibilities hold over the printed integer domain. No unstated positivity assumption is added.",
+    "originalSourceIds": [
+      "Q-2019-MID-P06-b"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 8](../sources/papers/2019-midterm.pdf#page=8).\n\nFalse. Set $a=1$ and $b=-1$.",
+    "solutionMarkdown": "**Answer.** False; $a=1,b=-1$.\n\n**Derivation/proof.** Here $-1=1\\cdot(-1)$, so $1\\mid-1$. Also $1=(-1)(-1)$, so $-1\\mid1$. Yet $1\\ne-1$. The hypotheses determine absolute values for nonzero inputs, not their signs, and the integer domain allows this counterexample.\n\nMutual divisibility forces equal absolute values, not necessarily equal signs.\n\nThe example $1=(-1)\\cdot(-1)$ shows why a product equal to one need not have both integer factors equal to positive one; the negative unit is the missing case.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "d141a1147189c7597bd0ea3b30693e2da4d2b06186538b8ed36789b01627cbda",
+    "supplementarySourceSha256": "7fb7c173247e8ca66bb1ab5e7fd18f7066839730bd68d2800c7aea2110cc0cdb",
+    "originalRestoration": "Restored the exact shared printed instruction from original 2019-midterm.pdf physical page 8; the atomic KB note omits this instruction. The selected printed subpart itself is unchanged."
+  },
+  {
+    "id": "Q-2025S-MID-P07",
+    "topic": "divisibility",
+    "sourceNote": "sources/notes/Q-2025S-MID-P07 - Modular Congruence.md",
+    "sourceNoteSha256": "2cd81f1d8c84f837c559e053164bdc3d779fa9f1dd9920a11108a386f4a412fa",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2025 Spring Midterm",
+    "pdf": "sources/papers/COMP2711_S2025_Midterm.pdf",
+    "pdfSha256": "48c1146c444e656e80b6525864946de08f287ab4dddf92190c2188faa6284fde",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "7",
+    "marks": 8,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Prove that for any odd natural number $a$, $8\\mid a^2-1$.",
+    "independentVerification": "For arbitrary odd natural a=2k+1, a^2-1=4k(k+1). Consecutive k,k+1 have even product, so 4k(k+1)=8t for an integer t. The boundary a=1 gives 0, divisible by 8. Supplemented with enumeration of odd a=1..199.",
+    "originalSourceIds": [
+      "Q-2025S-MID-P07"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 11](../sources/papers/COMP2711_S2025_Midterm.pdf#page=11).\n\nWe need to prove $(a-1)(a+1)$ is divisible by 8.\n\nNote that $a=2k+1$ So we know that $a-1=2k$ and $a+1=2k+2$.\n\n$(a-1)(a+1)=2k\\cdot(2k+2)=4k^2+4k=4\\cdot k\\cdot(k+1)$. Note that $2\\mid k\\cdot(k+1)$ as $k$ and $k+1$ are two consecutive numbers. So $(a-1)(a+1)=4\\cdot2k'=8k'$ and this completes the proof.",
+    "solutionMarkdown": "**Answer.** $8\\mid a^2-1$.\n\n**Derivation/proof.** An odd natural number has the form $a=2k+1$. Thus $a^2-1=(a-1)(a+1)=2k(2k+2)=4k(k+1)$. One of the consecutive integers $k,k+1$ is even, so $k(k+1)=2t$ for some integer $t$. Substitution gives $a^2-1=8t$, exactly the divisibility claim. At $a=1$, $k=0$ and the difference is zero; eight divides zero, so there is no boundary exception.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "473dab17e3b6a2d6a8c9517398700d251310d9a70ccaf6a19c1a5b288373ca59",
+    "supplementarySourceSha256": "27e162bbc87b2fb91cc021913129f1760006146d779888ff1b3042d87443c048"
+  },
+  {
+    "id": "Q-2013-FINAL-P01-a",
+    "topic": "division-theorem",
+    "sourceNote": "sources/notes/Q-2013-FINAL-P01-a - Modular Congruence.md",
+    "sourceNoteSha256": "13f24402d871e2cd4909564e6dd5559f2d57bac7575107d2ef22d7490324d6ae",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2013 Final",
+    "pdf": "sources/papers/2013-final.pdf",
+    "pdfSha256": "e378c89319b3e8cc14d5c57e75f8db0a16c9d6a2257487684b5687f6e30000f0",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(a) Let $m$ and $n$ be two positive integers such that $m$ divides $n$, i.e., $n=sm$ for some other integer $s$. Show that, for any integer $x$, $(x\\bmod n)\\bmod m=x\\bmod m$.",
+    "independentVerification": "For positive m|n, write n=sm, x=q1*n+r1 and r1=q2*m+r2 with 0<=r2<m. Then x=(q1*s+q2)*m+r2; uniqueness of the standard remainder proves the identity, also for negative x. Exhaustive checks cover x=-100..100, m=1..12, s=1..12. Only Division Theorem and divisibility are needed.",
+    "originalSourceIds": [
+      "Q-2013-FINAL-P01-a"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 3](../sources/papers/2013-final.pdf#page=3).\n\n(a) Let $x\\bmod n=r_1$. Then $x=q_1n+r_1$ for some integer $q_1$. Further let $r_1\\bmod m=r_2$. Then $r_1=q_2m+r_2$ for some integer $q_2$. Hence,\n$$x=q_1n+q_2m+r_2=q_1sm+q_2m+r_2=(q_1s+q_2)m+r_2,$$\nwhere $0\\le r_2<m$. Consequently,\n$$x\\bmod m=r_2=(x\\bmod n)\\bmod m.$$",
+    "solutionMarkdown": "**Answer.** The two remainders are equal.\n\n**Derivation/proof.** Let $r_1=x\\bmod n$, so $x=q_1n+r_1$. Let $r_2=r_1\\bmod m$, so $r_1=q_2m+r_2$ with $0\\le r_2<m$. Since $n=sm$, $x=(q_1s+q_2)m+r_2$; uniqueness of the remainder modulo $m$ gives $x\\bmod m=r_2$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "514691cfd409cbc6b40c086916d52064b279e086352dce9ff54cbc695398bb0c",
+    "supplementarySourceSha256": "352541d16431823138497c23ab0317bc836b67b18f76b8be3ba49c4bb8de71c8"
+  },
+  {
+    "id": "Q-2014-FINAL-P02-a",
+    "topic": "division-theorem",
+    "sourceNote": "sources/notes/Q-2014-FINAL-P02-a - Modular Congruence.md",
+    "sourceNoteSha256": "8400c29bae172447b69bf87d0b5ac57759919769338f990ca86f4cd2e82d5573",
+    "stems": [
+      "STEM-2014-FINAL-P02 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2014-FINAL-P02",
+        "sourceNote": "sources/notes/STEM-2014-FINAL-P02 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "e7f8905056dbfdcc4157245e00959b871b0c8fb3691870a26c67a8d2e09be73c",
+        "page": 4
+      }
+    ],
+    "stemPages": [
+      4
+    ],
+    "paper": "2014 Final",
+    "pdf": "sources/papers/2014-final.pdf",
+    "pdfSha256": "778a2a0e37c04a803edce848127f852e143166c5e472f3474a72cbbf0fc93e2b",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(a)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $a$, $m$ and $n$ be three positive integers that are larger than 1. Is each of the following statements true or false? If it is true, give a proof. If it is false, give a counterexample.\n\n(a) $(a\\bmod mn)\\bmod n=a\\bmod n$.",
+    "independentVerification": "For the printed a,m,n>1, write a=q1*mn+r1 and r1=q2*n+r2, 0<=r2<n. Thus a=(q1*m+q2)*n+r2 and remainder uniqueness proves True. No congruence theorem or GCD assumption is required. Exhaustive positive-parameter checks supplement the proof.",
+    "originalSourceIds": [
+      "Q-2014-FINAL-P02-a"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 4](../sources/papers/2014-final.pdf#page=4).\n\n(a) This is true. According to Euclid's Division Theorem, there exist $q_1$ and $r_1$ such that\n$$a=q_1mn+r_1,\\quad0\\le r_1<mn,$$\nwhere $r_1=(a\\bmod mn)$. Similarly, there exist $q_2$ and $r_2$ such that\n$$r_1=q_2n+r_2,\\quad0\\le r_2<n,$$\nwhere $r_2=r_1\\bmod n=(a\\bmod mn)\\bmod n$. Combining the two equations, we get\n$$a=(q_1m+q_2)n+r_2,\\quad0\\le r_2<n.$$\nHence, $a\\bmod n=r_2$. Consequently,\n$$(a\\bmod mn)\\bmod n=r_2=a\\bmod n.$$",
+    "solutionMarkdown": "**Answer.** True.\n\n**Derivation/proof.** Write $a=q_1mn+r_1$ with $r_1=a\\bmod mn$, then $r_1=q_2n+r_2$ with $r_2=r_1\\bmod n$. Thus $a=(q_1m+q_2)n+r_2$ and $0\\le r_2<n$, so $r_2=a\\bmod n$.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "efd2eb8502c36dd486d57b532b1258ebe58f7c87e878f8fbafe891479a79aaac",
+    "supplementarySourceSha256": "d78b7ce9feae2dd87a438ca9301fdf521e9650c6193f0fc3ef4c64af59b7ad6a"
+  },
+  {
+    "id": "Q-2014-FINAL-P02-b",
+    "topic": "division-theorem",
+    "sourceNote": "sources/notes/Q-2014-FINAL-P02-b - Modular Congruence.md",
+    "sourceNoteSha256": "19d4860345a61a5f7a9ffa91e9afef134353a4c344fc84243c7134bb5bfb8c45",
+    "stems": [
+      "STEM-2014-FINAL-P02 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2014-FINAL-P02",
+        "sourceNote": "sources/notes/STEM-2014-FINAL-P02 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "e7f8905056dbfdcc4157245e00959b871b0c8fb3691870a26c67a8d2e09be73c",
+        "page": 4
+      }
+    ],
+    "stemPages": [
+      4
+    ],
+    "paper": "2014 Final",
+    "pdf": "sources/papers/2014-final.pdf",
+    "pdfSha256": "778a2a0e37c04a803edce848127f852e143166c5e472f3474a72cbbf0fc93e2b",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "2(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $a$, $m$ and $n$ be three positive integers that are larger than 1. Is each of the following statements true or false? If it is true, give a proof. If it is false, give a counterexample.\n\n(b) $(a\\bmod mn)\\bmod n=a\\bmod m$.",
+    "independentVerification": "The printed domain requires a,m,n>1. With a=8,m=2,n=3, (8 mod 6) mod 3=2 whereas 8 mod 2=0. This allowed triple disproves the universal assertion.",
+    "originalSourceIds": [
+      "Q-2014-FINAL-P02-b"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 4](../sources/papers/2014-final.pdf#page=4).\n\n(b) This is false. Let $a=8,m=2$ and $n=3$. We have\n$$(a\\bmod mn)\\bmod n=(8\\bmod6)\\bmod3=2,$$\n$$a\\bmod m=8\\bmod2=0.$$",
+    "solutionMarkdown": "**Answer.** False: $a=8,m=2,n=3$ gives $2\\ne0$.\n\n**Derivation/proof.** Here $(8\\bmod6)\\bmod3=2\\bmod3=2$, but $8\\bmod2=0$. One concrete allowed triple disproves the universal claim.\n\nAll three selected parameters are positive integers larger than one, as required.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "0a7f471c237d6813c3ab94f53440629c8b7eadfbeafad66867cf9f8da00716ce",
+    "supplementarySourceSha256": "62e02abe6cb93ba38cca973d06b7f0ab2f857d3560a86fe3cd3b6993edb858a3"
+  },
+  {
+    "id": "Q-2013-FINAL-P01-b",
+    "topic": "modular-arithmetic",
+    "sourceNote": "sources/notes/Q-2013-FINAL-P01-b - Modular Congruence.md",
+    "sourceNoteSha256": "fbf0b385d4d3dec55de0f1cc51aac07a2a87a61835df819a5262d776efbeb340",
+    "stems": [],
+    "stemSources": [],
+    "stemPages": [],
+    "paper": "2013 Final",
+    "pdf": "sources/papers/2013-final.pdf",
+    "pdfSha256": "e378c89319b3e8cc14d5c57e75f8db0a16c9d6a2257487684b5687f6e30000f0",
+    "page": 3,
+    "solutionPages": [
+      3
+    ],
+    "number": "1(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "(b) For each number in $Z_8$, state if it has a multiplicative inverse mod 8, and if it has, state its inverse. There is no need to explain your answer.",
+    "independentVerification": "Enumerated all 64 products x*y mod 8 for x,y=0..7, independently of any GCD theorem. Rows 0,2,4,6 never contain 1; rows 1,3,5,7 contain 1 only at y=x. Hence the inverse list is exactly 1->1,3->3,5->5,7->7. The source supplementary GCD criterion is retained, but is not a prerequisite for solving the finite table question.",
+    "originalSourceIds": [
+      "Q-2013-FINAL-P01-b"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 3](../sources/papers/2013-final.pdf#page=3).\n\n(b) 0 has no inverse; 1's inverse is 1; 2 has no inverse; 3's inverse is 3; 4 has no inverse; 5's inverse is 5; 6 has no inverse; 7's inverse is 7.",
+    "solutionMarkdown": "**Answer.** $1^{-1}=1$, $3^{-1}=3$, $5^{-1}=5$, $7^{-1}=7$; $0,2,4,6$ have none.\n\n**Derivation/proof.** A residue has an inverse modulo $8$ exactly when it is coprime to $8$. The odd residues are coprime; direct products $1^2,3^2,5^2,7^2$ are all $1\\pmod8$.\n\nThe even residues $0,2,4,6$ have gcd greater than one with $8$. The odd squares are $1,9,25,49$, all congruent to one modulo eight.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "23d64ea673f930ca42364ceac618dac1f814d2e2bd9edc828c57dea3d87a4f0e",
+    "supplementarySourceSha256": "8e657b5fb8127d27b34ed31eaeec5f3f25922d781ae8d30eaacf6fdc36fc7c1b"
+  },
+  {
+    "id": "Q-2015-FINAL-P05-a",
+    "topic": "modular-arithmetic",
+    "sourceNote": "sources/notes/Q-2015-FINAL-P05-a - Modular Congruence.md",
+    "sourceNoteSha256": "614a68e7ba9ca28ca179b0b64e8f605f1ef725c1fe3250f866decccd2c314d54",
+    "stems": [
+      "STEM-2015-FINAL-P05 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2015-FINAL-P05",
+        "sourceNote": "sources/notes/STEM-2015-FINAL-P05 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "5411301d6312d1e9b5a4fff64f4ec9b4ae26e267ce5eff763edc0043fa33fe87",
+        "page": 10
+      }
+    ],
+    "stemPages": [
+      10
+    ],
+    "paper": "2015 Final",
+    "pdf": "sources/papers/2015-final.pdf",
+    "pdfSha256": "ca2e596dadc10d8c088cbd6f5cebb4de54fd11cabe38bc7e2acea57f6943639c",
+    "page": 10,
+    "solutionPages": [
+      10
+    ],
+    "number": "5(a)",
+    "marks": 4,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Let $p$ be a prime number. For any two integers $x$ and $y$ from $\\mathbb Z_p$, if\n$$x=y^2\\bmod p,$$\nthen we say that $x$ is a quadratic residue mod $p$, and that $y$ is a square root of $x$ mod $p$.\n\n(a) Find all integers in $\\mathbb Z_{11}$ that are quadratic residues mod 11.",
+    "independentVerification": "Enumerated y^2 mod 11 for every y in 0..10: [0,1,4,9,5,3,3,5,9,4,1]. The image set is {0,1,3,4,5,9}. The shared original definition explicitly includes y=0, so 0 must be retained. No quadratic-residue theorem is needed beyond the printed definition.",
+    "originalSourceIds": [
+      "Q-2015-FINAL-P05-a"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [PDF physical page 10](../sources/papers/2015-final.pdf#page=10).\n\n(a) $0\\ (y=0),\\ 1\\ (y=1,10),\\ 3\\ (y=5,6),\\ 4\\ (y=2,9),\\ 5\\ (y=4,7),\\ 9\\ (y=3,8)$.\n\n(Note on grading: Only the value of $x$ is required.)",
+    "solutionMarkdown": "**Answer.** $\\{0,1,3,4,5,9\\}$.\n\n**Derivation/proof.** Squaring $y=0,1,2,3,4,5$ gives residues $0,1,4,9,5,3$. The remaining roots $6,7,8,9,10$ are congruent to $-5,-4,-3,-2,-1$ and repeat the same squares. This covers every residue class.\n\nThe source definition permits the root zero, so zero belongs in the answer.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "993e10aef8f2996d364a87044be023f9143894c3377c31783a7a57b7887cdb41",
+    "supplementarySourceSha256": "916fd5380791174bd5df4a464c36e70df7a9b6ba45bcc5a82da80218d41bf421"
+  },
+  {
+    "id": "Q-2025S-FINAL-P03-a",
+    "topic": "modular-arithmetic",
+    "sourceNote": "sources/notes/Q-2025S-FINAL-P03-a - Modular Congruence.md",
+    "sourceNoteSha256": "ba98511b7ed882d0db71c1db43c7ef673a92801cac5fce89dd6c36c992d5db40",
+    "stems": [
+      "STEM-2025S-FINAL-P03 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2025S-FINAL-P03",
+        "sourceNote": "sources/notes/STEM-2025S-FINAL-P03 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "0cebbad37bd2c3b3456d6fa2a83bc033af025b13affd7bf22ad78c86b4d246ef",
+        "page": 4
+      }
+    ],
+    "stemPages": [
+      4
+    ],
+    "paper": "2025 Spring Final",
+    "pdf": "sources/papers/COMP2711_S2025_Final.pdf",
+    "pdfSha256": "15b253986652a8a846ad56904c0d61c46450bcc4b8369299e36002d2bdba647a",
+    "page": 4,
+    "solutionPages": [
+      4
+    ],
+    "number": "3(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "For a positive integer $p$, define the positive integer $n$ to be $p$-safe if $n$ differs in absolute value by more than 2 from all multiples of $p$. For example, the set of 10-safe numbers are $3,4,5,6,7,13,14,15,16,17,\\cdots$.\n\n(a) [2 pts] Let $x$ be a 7-safe number. What are the possible values of $x\\bmod7$?",
+    "independentVerification": "Write positive x=7q+r, 0<=r<7. Distances to the adjacent multiples are r and 7-r; both must exceed 2, so 2<r<5 and r is 3 or 4. More distant multiples cannot violate the condition. Enumerating x=1..140 against nearby multiples independently confirms exactly residues {3,4}. Only part (a) is selected; the later CRT/counting part (b) is excluded.",
+    "originalSourceIds": [
+      "Q-2025S-FINAL-P03-a"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 4](../sources/papers/COMP2711_S2025_Final.pdf#page=4).\n\n(a) $3,4$",
+    "solutionMarkdown": "**Answer.** $3,4$.\n\n**Derivation/proof.** Write $x=7q+r$, $0\\le r<7$. The distance to $7q$ is r and the distance to $7(q+1)$ is $7-r$. Both must exceed two: $r>2$ and $7-r>2$. Thus $2<r<5$, allowing exactly the integer residues three and four. Every more distant multiple is farther away, so both residues satisfy the full condition.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "7d19b68079ee540ade4483bfcd0f8fe92cf7fe7df43dd6dd5b1b720757850ae9",
+    "supplementarySourceSha256": "5084e5b0c5dfb67b41154d4631a07e1cb39abfec03560112b376b34e9b042fb8"
+  },
+  {
+    "id": "Q-2017-MID-P04-b",
+    "topic": "congruence-rules",
+    "sourceNote": "sources/notes/Q-2017-MID-P04-b - Modular Congruence.md",
+    "sourceNoteSha256": "cfae8e32f90ed61f713ebfd3e987af143c71bb87ecefeb5ec05409b3d2275c45",
+    "stems": [
+      "STEM-2017-MID-P04 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2017-MID-P04",
+        "sourceNote": "sources/notes/STEM-2017-MID-P04 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "4037b2f5f549c6341bfe425795ffd8d39c9a378eebb64c91f03d9f6eefbf9a88",
+        "page": 6
+      }
+    ],
+    "stemPages": [
+      6
+    ],
+    "paper": "2017 Midterm",
+    "pdf": "sources/papers/2017-midterm.pdf",
+    "pdfSha256": "918ffd11449e799ce54c62ca0c25961d218ce172f0e034035dbf6604cc2a09b3",
+    "page": 6,
+    "solutionPages": [
+      6
+    ],
+    "number": "4(b)",
+    "marks": null,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Prove or disprove the following statements. Assume that $a,b,c,d$, and $m$ are integers and $m>1$.\n\n(b) If $a\\equiv b\\pmod m$, then $2a\\equiv2b\\pmod{2m}$.",
+    "independentVerification": "For printed integer a,b and m>1, a-b=k*m for integer k. Multiplying the equality by 2 gives 2a-2b=k*(2m), proving True with the modulus scaled too. Exhaustive a,b=-12..12, m=2..12 checks supplement this general proof.",
+    "originalSourceIds": [
+      "Q-2017-MID-P04-b"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 6](../sources/papers/2017-midterm.pdf#page=6).\n\nTrue. $a\\equiv b\\pmod m$ implies $m\\mid a-b$, i.e., $a-b=km$ for some integer $k$. Multiplying both sides by $2$ gives $2a-2b=2mk$. Therefore $2a\\equiv2b\\pmod{2m}$.",
+    "solutionMarkdown": "**Answer.** True.\n\n**Derivation/proof.** The hypothesis means $a-b=km$ for some integer $k$. Multiplying the equality by two gives $2a-2b=k(2m)$. Thus $2m$ divides $2a-2b$, exactly the definition of the required congruence.\n\nStarting from $m\\mid(a-b)$, multiplication by two yields $2m\\mid(2a-2b)$, which is precisely the congruence modulo $2m$. Conversely, cancel two from the integer multiple identity to recover the original divisibility.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "f1197bff7f9050c8eeb5b2be875a5fa34e9fe35da203df90c69b87d5c9213090",
+    "supplementarySourceSha256": "204fa3c28f4af93c8766d4a43d4474576bd134f8913f5a8cc4b3cc2e697dc637"
+  },
+  {
+    "id": "Q-2019-MID-P09-a",
+    "topic": "congruence-rules",
+    "sourceNote": "sources/notes/Q-2019-MID-P09-a - Modular Congruence.md",
+    "sourceNoteSha256": "9e8976f8d2252d8ff70574dc7717fdb8485732210fd581ec473ad13adf55ec35",
+    "stems": [
+      "STEM-2019-MID-P09 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2019-MID-P09",
+        "sourceNote": "sources/notes/STEM-2019-MID-P09 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "3ac5915355ef3dea9fc0e62b6e49786c51136edd13889667a0115acf0fe5c942",
+        "page": 11
+      }
+    ],
+    "stemPages": [
+      11
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "9(a)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Suppose that $a$ and $b$ are integers, $a\\equiv11\\pmod{19}$, and $b\\equiv3\\pmod{19}$. Find the integer $c$ with $0\\le c\\le18$ such that\n\n(a) $c\\equiv a-b\\pmod{19}$",
+    "independentVerification": "The shared original premise is a=11 mod 19 and b=3 mod 19. Subtraction gives c=11-3=8, in the required interval 0..18. Every other representative differs by 19, so 8 is unique in that interval.",
+    "originalSourceIds": [
+      "Q-2019-MID-P09-a"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 11](../sources/papers/2019-midterm.pdf#page=11).\n\n$8$.",
+    "solutionMarkdown": "**Answer.** $c=8$.\n\n**Derivation/proof.** Congruence respects subtraction, so $a-b\\equiv11-3=8\\pmod{19}$. Since $8$ lies between 0 and 18, no further adjustment is necessary. Any other solution differs by a multiple of 19, so only this representative lies in the requested interval.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "9f34244bed950f8e4cef126656922b9d1c280382bc5e1bfb5df5192b20ed0f2b",
+    "supplementarySourceSha256": "6461b6eed17461dc27ea8203345322dd0b7c183ea305852b86c5ccc644d0d225"
+  },
+  {
+    "id": "Q-2019-MID-P09-c",
+    "topic": "congruence-rules",
+    "sourceNote": "sources/notes/Q-2019-MID-P09-c - Modular Congruence.md",
+    "sourceNoteSha256": "724cfbfd0b4f928888c2ad5a364b6168ae383dd48481a56226f4388f256717c6",
+    "stems": [
+      "STEM-2019-MID-P09 - Shared Problem Prompt"
+    ],
+    "stemSources": [
+      {
+        "id": "STEM-2019-MID-P09",
+        "sourceNote": "sources/notes/STEM-2019-MID-P09 - Shared Problem Prompt.md",
+        "sourceNoteSha256": "3ac5915355ef3dea9fc0e62b6e49786c51136edd13889667a0115acf0fe5c942",
+        "page": 11
+      }
+    ],
+    "stemPages": [
+      11
+    ],
+    "paper": "2019 Midterm",
+    "pdf": "sources/papers/2019-midterm.pdf",
+    "pdfSha256": "912bb71f57d3c5e787eed9ba912ff61ed623f9221e54908f569c5df5a1b16c4f",
+    "page": 11,
+    "solutionPages": [
+      11
+    ],
+    "number": "9(c)",
+    "marks": 2,
+    "verificationStatus": "verified",
+    "answerSource": "official",
+    "questionMarkdown": "Suppose that $a$ and $b$ are integers, $a\\equiv11\\pmod{19}$, and $b\\equiv3\\pmod{19}$. Find the integer $c$ with $0\\le c\\le18$ such that\n\n(c) $c\\equiv ab^2\\pmod{19}$",
+    "independentVerification": "Use the same supplied residues. The exponent applies only to b: a*b^2=11*3^2=99=5*19+4, hence c=4 in 0..18. Independent checks also test arbitrary supplied representatives a=11+19u,b=3+19v.",
+    "originalSourceIds": [
+      "Q-2019-MID-P09-c"
+    ],
+    "answerFormatVersion": 2,
+    "officialMarkdown": "Source: [physical PDF page 11](../sources/papers/2019-midterm.pdf#page=11).\n\n$4$.",
+    "solutionMarkdown": "**Answer.** $c=4$.\n\n**Derivation/proof.** First $b^2\\equiv3^2=9\\pmod{19}$. Then $ab^2\\equiv11\\cdot9=99=5\\cdot19+4$. Thus $c=4$, already in the range 0 through 18. The expression is $a$ times $b^2$, not $(ab)^2$.\n\nDirect substitution gives $11\\cdot3^2=99$. Reduce this value modulo the stated modulus to obtain the required residue.",
+    "solutionSection": "Supplementary Explanation",
+    "officialSourceSha256": "9ca5bb8933b77c96f73602a28e2a5e903a7e94d9c55af6236990786425b8a6e6",
+    "supplementarySourceSha256": "5afd47925c682380f6be348e614eb7b8e49180586f39e3f435b64db272df77e3"
+  }
+]

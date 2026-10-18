@@ -1,0 +1,15 @@
+ Block Ciphers
+▪ Each character is a number between 0 and 255
+   ▪  A byte = 8 bits
+▪ Partition the message into blocks of 𝑘         characters
+   ▪  Treat each block as a big number of 8𝑘         bits
+   ▪  Use arithmetic modulo 28𝑘
+▪ Example
+   ▪  Choose 𝑘   =  10
+   ▪  Encryption: 𝑓   𝑥  =  (𝑎𝑥 +  𝑏) mod  280
+   ▪  Decryption: 𝑓   −1 𝑦  =  𝑎−1(𝑦  − 𝑏) mod  280
+                       280    80     159
+   ▪  Now there are     2  × 2   =  2    different keys
+▪ There are libraries on arbitrary-precision arithmetic
+▪ But affine ciphers are subject to known-plaintext attacks!
+                                                                  6

@@ -1,0 +1,24 @@
+ Linearity of Expectations
+
+▪ Theorem
+  If 𝑋𝑖,𝑖= 1,2,… ,𝑛 are random variables on S, and if a
+  and b  are real numbers, then
+   ▪ 𝐸(𝑋1 + 𝑋2 + ⋯  + 𝑋𝑛 ) = 𝐸(𝑋1) + 𝐸(𝑋2) +  ⋯ +  𝐸(𝑋𝑛 )
+   ▪ 𝐸(𝑎𝑋  + 𝑏) = 𝑎𝐸(𝑋)  + 𝑏
+▪ Proof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           14

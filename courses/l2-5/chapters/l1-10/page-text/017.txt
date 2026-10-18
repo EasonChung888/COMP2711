@@ -1,0 +1,16 @@
+ Bayesian Spam Filter: Example
+
+ Given:
+     𝐵  = 2000
+     𝐺  = 1000
+    The word “Rolex” occurs in 250 spam messages and
+     5 good messages
+    𝑝(𝑤|𝐵)  = 250/2000
+    𝑝(𝑤|𝐺)  = 5/1000
+    𝑝 𝐵  =    2000
+             1000+2000
+ Suppose the new email contains “Rolex”
+ The prob. that it is spam is
+         𝑝  𝐵|𝑤  =         𝑝 𝑤 𝐵  𝑝 𝐵         ≈  0.98
+                    𝑝 𝑤 𝐵  𝑝 𝐵  + 𝑝 𝑤  𝐺 𝑝(𝐺)
+                                                           17

@@ -1,0 +1,24 @@
+ RSA Correctness Step 1 (cnt’d)
+
+
+▪ Case 2: 𝑥  is a multiple of 𝑝.
+  Then
+                       𝑥 ≡ 0 (mod  𝑝)
+  Thus in this case, we have
+                𝑥1+𝑘(𝑝−1)(𝑞−1)≡  𝑥 ≡ 0  mod  𝑝 .
+▪ The proof for 𝑥𝑑𝑒   ≡ 𝑥  mod  𝑞  is symmetric.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             33
