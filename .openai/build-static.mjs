@@ -13,7 +13,8 @@ cpSync(source, destination, {
   recursive: true,
   filter: filename => {
     const parts = path.relative(source, filename).split(path.sep);
-    return parts[0] !== 'tools' && !parts.some(part => part.startsWith('.'));
+    const revisionStaging = parts.includes('revisions') && parts.includes('staging');
+    return parts[0] !== 'tools' && !revisionStaging && !parts.some(part => part.startsWith('.'));
   },
 });
 console.log('Prepared COMP2711 static website in dist/');

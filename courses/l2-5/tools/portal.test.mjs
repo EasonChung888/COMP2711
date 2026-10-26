@@ -39,13 +39,16 @@ function runSite({prefix='comp2711:l2-5:',href='file:///courses/l2-5/index.html'
 test('portal orders modules and chapter links without changing Counting URLs',()=>{
   const home=html('index.html');
   const moduleLinks=[...home.matchAll(/class="module-entry" href="([^"]+)"/g)].map(m=>m[1]);
-  assert.deepEqual(moduleLinks,['logic.html','sets-and-functions.html','counting.html','probability.html']);
+  assert.deepEqual(moduleLinks,['logic.html','sets-and-functions.html','counting.html','probability.html','number-theory.html']);
   const logic=[...html('logic.html').matchAll(/class="module-entry" href="([^"]+)"/g)].map(m=>m[1]);
   assert.deepEqual(logic,['chapters/l1-1/index.html','chapters/l1-2/index.html','chapters/l1-3/index.html']);
   assert.match(html('sets-and-functions.html'),/class="module-entry" href="chapters\/l1-4\/index.html"/);
   assert.match(html('counting.html'),/class="module-entry" href="l2-5.html"/);
   assert.match(html('counting.html'),/L1\.5 · 计数基础/);
   assert.match(html('probability.html'),/class="module-entry" href="chapters\/l1-9\/index.html"/);
+  const numberTheory=[...html('number-theory.html').matchAll(/class="module-entry" href="([^"]+)"/g)].map(m=>m[1]);
+  assert.deepEqual(numberTheory,['chapters/l1-12/index.html','chapters/l1-13/index.html','chapters/l1-14/index.html']);
+  for(const target of numberTheory) assert.ok(fs.existsSync(path.join(root,target)),target);
   for(const target of [...logic,'chapters/l1-4/index.html']) assert.ok(fs.existsSync(path.join(root,target)),target);
 });
 
@@ -57,6 +60,7 @@ test('module utility navigation points to the current module',()=>{
   assert.doesNotMatch(utility('sets-and-functions.html'),/counting\.html/);
   assert.match(utility('counting.html'),/<a href="counting.html">Counting<\/a>/);
   assert.match(utility('probability.html'),/<a href="probability.html">Probability<\/a>/);
+  assert.match(utility('number-theory.html'),/<a href="number-theory.html">Number theory<\/a>/);
 });
 
 test('homepage aggregates chapter keys and resumes the latest available lesson',()=>{
